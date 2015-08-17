@@ -2,7 +2,8 @@
 layout: default
 ---
 
-{% markdown front.md %}
+{% capture front %}{% include front.md %}{% endcapture %}
+{{ front | markdownify }}
 
 <div class="home">
 
