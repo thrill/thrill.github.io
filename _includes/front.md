@@ -13,7 +13,7 @@ See our [WordCount example](http://i10login.iti.kit.edu/c7adox/word__count_8hpp_
 
 - Leverage newest **C++11 and C++14 features** like lambda functions and auto types to **make writing user programs easy and convenient**.
 
-- Enable compilation of **binary programs with full compile-time optimization** runnable directly on hardware without a virtual machine interpreter. Exploit cache effects due to less indirections than in Java and other languages. **Save enery and money** by reducing computation overhead.
+- Enable compilation of **binary programs with full compile-time optimization** runnable directly on hardware without a virtual machine interpreter. Exploit cache effects due to less indirections than in Java and other languages. **Save energy and money** by reducing computation overhead.
 
 - Due to the **zero-overhead** concept of C++, enable applications to process small datatypes efficiently with no overhead.
 
