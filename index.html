@@ -5,9 +5,9 @@ layout: default
 {% capture front %}{% include front.md %}{% endcapture %}
 {{ front | markdownify }}
 
-<div class="home">
+<div class="home" style="border-top: 1px solid #2a7ae2">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Weblog Posts</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -20,7 +20,5 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

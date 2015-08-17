@@ -1,4 +1,4 @@
-# About Thrill
+## About Thrill
 
 Thrill is a C++ framework for distributed Big Data computations on a cluster of machines. It is currently being designed and developed as a research project at [Karlsruhe Institute of Technology](http://algo2.iti.kit.edu) and is in early testing.
 
@@ -13,7 +13,7 @@ See our [WordCount example](http://i10login.iti.kit.edu/c7adox/word__count_8hpp_
 
 - Leverage newest **C++11 and C++14 features** like lambda functions and auto types to **make writing user programs easy and convenient**.
 
-- Enable compilation of **binary programs with full compile-time optimization** runnable directly on hardware without a virtual machine interpreter. Exploit cache effects due to less indirections than in Java and other languages.
+- Enable compilation of **binary programs with full compile-time optimization** runnable directly on hardware without a virtual machine interpreter. Exploit cache effects due to less indirections than in Java and other languages. **Save enery and money** by reducing computation overhead.
 
 - Due to the **zero-overhead** concept of C++, enable applications to process small datatypes efficiently with no overhead.
 
@@ -30,3 +30,16 @@ In the long term the framework can play a **mediator role** between Big Data app
 - Support fault tolerant execution with lower overheads due to fault-resilient algorithms and better checkpointing.
 
 - Join Big Data research with succinct data structures and compression to enable more computations to be performed in RAM.
+
+## Current Authors and Contributors:
+
+Michael Axtmann,
+[Timo Bingmann](http://panthema.net),
+Emanuel Jöbstl,
+Sebastian Lamm,
+Huyen Chau Nguyen,
+Alexander Noe,
+Matthias Stumpp,
+[Peter Sanders](http://algo2.iti.kit.edu/sanders.php),
+Sebastian Schlag,
+[Tobias Sturm](http://tobiassturm.de).
