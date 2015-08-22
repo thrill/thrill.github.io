@@ -2,14 +2,14 @@
 
 Thrill is a C++ framework for distributed Big Data computations on a cluster of machines. It is currently being designed and developed as a research project at [Karlsruhe Institute of Technology](http://algo2.iti.kit.edu) and is in early testing.
 
-The [development code is available on github](http://github.com/thrill/thrill) under the MIT license and outside contributors are welcome to join and contact us. [Doxygen documentation](http://i10login.iti.kit.edu/c7adox/) automatically built from the master is available.
+The [development code is available on github](http://github.com/thrill/thrill) under the MIT license and outside contributors are welcome to join and contact us. [Doxygen documentation](http://i10login.iti.kit.edu/thrill-doxygen/) automatically built from the master is available.
 
 Some of the main goals for the design are:
 
 - To create a high-performance Big Data processing framework.
 
 - Expose a **powerful C++ user interface**, that is efficiently tied to the framework's internals. The interface supports the Map/Reduce paradigm, but also versatile **"dataflow graph" style computations** like Apache Spark or Apache Flink with host language control flow.<br>
-See our [WordCount example](http://i10login.iti.kit.edu/c7adox/word__count_8hpp_source.html#l00035).
+See our [WordCount example](http://i10login.iti.kit.edu/thrill-doxygen/word__count_8hpp_source.html#l00035).
 
 - Leverage newest **C++11 and C++14 features** like lambda functions and auto types to **make writing user programs easy and convenient**.
 
