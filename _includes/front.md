@@ -3,10 +3,11 @@
 Thrill is a C++ framework for distributed Big Data computations on a cluster of machines. It is currently being designed and developed as a research project at [Karlsruhe Institute of Technology](http://algo2.iti.kit.edu) and is in early testing.
 
 The [development code is available on github](http://github.com/thrill/thrill) under a yet-to-be-determined open-source license and outside contributors are welcome to join and contact us. [Doxygen documentation](http://i10login.iti.kit.edu/thrill-doxygen/) automatically built from the master is available.
+An [older presentation on the project](https://panthema.net/2015/0327-Project-DALKIT/) gives a good overview our target, even though many details have changed in the meantime.
 
 Some of the main goals for the design are:
 
-- To create a high-performance Big Data processing framework.
+- To create a high-performance Big Data batch processing framework.
 
 - Expose a **powerful C++ user interface**, that is efficiently tied to the framework's internals. The interface supports the Map/Reduce paradigm, but also versatile **"dataflow graph" style computations** like Apache Spark or Apache Flink with host language control flow.<br>
 See our [WordCount example](http://i10login.iti.kit.edu/thrill-doxygen/word__count_8hpp_source.html#l00035).
@@ -19,7 +20,9 @@ See our [WordCount example](http://i10login.iti.kit.edu/thrill-doxygen/word__cou
 
 - Support external memory well by implementing **I/O-efficient algorithms** where needed, but **keep most computations in RAM**.
 
-- Perform **full pipelining of data flows**, where pipelined stages are often combined at compile time. Avoid all unnecessary round trips of data to memory or disk.
+- Perform **full pipelining of data flows**, where pipelined stages are often combined at compile time.
+
+- **Avoid all unnecessary round trips of data to memory or disk**.
 
 - Enable **reproducible benchmarking** of programs due to RAII memory management.
 
