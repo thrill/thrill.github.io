@@ -16,10 +16,11 @@ An [older presentation on the project](https://panthema.net/2015/0327-Project-DA
 <iframe src="http://ghbtns.com/github-btn.html?user=thrill&repo=thrill&type=watch&count=true" frameborder="0" scrolling="no" width="80" height="20"></iframe>
 <iframe src="http://ghbtns.com/github-btn.html?user=thrill&repo=thrill&type=follow&count=true" frameborder="0" scrolling="no" width="110" height="20"></iframe>
 </td>
+<td>
+Travis-CI: <a href="https://travis-ci.org/thrill/thrill"><img src="https://travis-ci.org/thrill/thrill.svg?branch=master" alt="Travis-CI Status" /></a>
+</td>
 </tr>
 </table>
-
-Travis-CI: [![Travis-CI Status](https://travis-ci.org/thrill/thrill.svg?branch=master)](https://travis-ci.org/thrill/thrill)
 
 Some of the main goals for the design are:
 
