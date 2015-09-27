@@ -1,9 +1,6 @@
 ---
 title: Word Count Example
-bg: "#F5C45E"
-color: black
-"fa-icon": sun-o
-published: true
+layout: post
 ---
 
 This C++ snippet shows our (unoptimized) working example of Word Count in Thrill.

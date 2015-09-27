@@ -9,6 +9,18 @@ The [development code is available on github <span class="icon  icon--github">
               </span>](http://github.com/thrill/thrill) under a BSD open-source license and outside contributors are welcome to join and contact us. [Doxygen documentation](http://i10login.iti.kit.edu/thrill-doxygen/) automatically built from the master is available.
 An [older presentation on the project](https://panthema.net/2015/0327-Project-DALKIT/) gives a good overview our target, even though many details have changed in the meantime.
 
+<table>
+<tr>
+<td>GitHub:</td>
+<td>
+<iframe src="http://ghbtns.com/github-btn.html?user=thrill&repo=thrill&type=watch&count=true" frameborder="0" scrolling="no" width="80" height="20"></iframe>
+<iframe src="http://ghbtns.com/github-btn.html?user=thrill&repo=thrill&type=follow&count=true" frameborder="0" scrolling="no" width="110" height="20"></iframe>
+</td>
+</tr>
+</table>
+
+Travis-CI: [![Travis-CI Status](https://travis-ci.org/thrill/thrill.svg?branch=master)](https://travis-ci.org/thrill/thrill)
+
 Some of the main goals for the design are:
 
 - To create a high-performance Big Data batch processing framework.
