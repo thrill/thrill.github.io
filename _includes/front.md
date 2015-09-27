@@ -36,13 +36,13 @@ In the long term the framework can play a **mediator role** between Big Data app
 
 ## Current Authors and Contributors:
 
-Michael Axtmann,
+[Michael Axtmann](https://github.com/MichaelAxtmann),
 [Timo Bingmann](http://panthema.net),
-Emanuel Jöbstl,
-Sebastian Lamm,
-Huyen Chau Nguyen,
-Alexander Noe,
-Matthias Stumpp,
+[Emanuel Jöbstl](http://eex-dev.net/),
+[Sebastian Lamm](https://github.com/sebalamm),
+[Huyen Chau Nguyen](http://chau-nguyen.de/),
+[Alexander Noe](https://github.com/alexnoe),
+[Matthias Stumpp](https://matstumpp.wordpress.com/),
 [Peter Sanders](http://algo2.iti.kit.edu/sanders.php),
-Sebastian Schlag,
+[Sebastian Schlag](https://github.com/SebastianSchlag),
 [Tobias Sturm](http://tobiassturm.de).
