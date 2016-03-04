@@ -27,7 +27,7 @@ Some of the main goals for the design are:
 - To create a high-performance Big Data batch processing framework.
 
 - Expose a **powerful C++ user interface**, that is efficiently tied to the framework's internals. The interface supports the Map/Reduce paradigm, but also versatile **"dataflow graph" style computations** like Apache Spark or Apache Flink with host language control flow.<br>
-See our [WordCount example](http://i10login.iti.kit.edu/thrill-doxygen/word__count_8hpp_source.html#l00035).
+See our examples of [WordCount](http://i10login.iti.kit.edu/thrill-doxygen/word__count_8hpp_source.html#l00035), [PageRank](http://i10login.iti.kit.edu/thrill-doxygen/page__rank_8hpp_source.html#l00063), and [k-Means](http://i10login.iti.kit.edu/thrill-doxygen/k-means_8hpp_source.html).
 
 - Leverage newest **C++11 and C++14 features** like lambda functions and auto types to **make writing user programs easy and convenient**.
 
