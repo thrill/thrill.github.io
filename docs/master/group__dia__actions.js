@@ -1,0 +1,27 @@
+var group__dia__actions =
+[
+    [ "AllGather", "group__dia__actions.html#gaf915f2ce3441536fe19b056cda06e9d5", null ],
+    [ "AllGather", "group__dia__actions.html#ga4f1cfb938b38fc4206ffcbf33d866064", null ],
+    [ "AllGatherFuture", "group__dia__actions.html#ga2e18bd7df9a0c6351baa096268502dbd", null ],
+    [ "AllReduce", "group__dia__actions.html#ga8d1115c8341eaed781e9493f47b9584f", null ],
+    [ "AllReduceFuture", "group__dia__actions.html#ga96cca6c3df3e3adc1404c89c0d9564c6", null ],
+    [ "Gather", "group__dia__actions.html#gac0f2000b2084791ab995d68fe834a77c", null ],
+    [ "Gather", "group__dia__actions.html#gab067879533045257776c0a4f05d53970", null ],
+    [ "Max", "group__dia__actions.html#gaaec8d360c7ca7381765f9a53086152d1", null ],
+    [ "MaxFuture", "group__dia__actions.html#ga3b3f167108dcf01b5658e8f37db96aca", null ],
+    [ "Min", "group__dia__actions.html#ga03f2dc35dec08be51504c3a36096d1ca", null ],
+    [ "MinFuture", "group__dia__actions.html#gaab60224bebd7b05eb48b0e53b688a282", null ],
+    [ "Print", "group__dia__actions.html#ga07c415d92ca5f6eff65d7b7f3f8efdc8", null ],
+    [ "Print", "group__dia__actions.html#ga53daec340bb2155b22e46bb621dcbacb", null ],
+    [ "Sample", "group__dia__actions.html#gad919e503e3bba7032d8451392cf6b807", null ],
+    [ "Size", "group__dia__actions.html#gab3bace7b51e6e7d78048999bc2189e27", null ],
+    [ "SizeFuture", "group__dia__actions.html#gaf78c7ddfa0c902dcfa2057acf189687b", null ],
+    [ "Sum", "group__dia__actions.html#ga27710801087dbabf67fe324220f3d940", null ],
+    [ "SumFuture", "group__dia__actions.html#ga9d157188b59f0e61c637c7dd4ca3be11", null ],
+    [ "WriteBinary", "group__dia__actions.html#ga90052d8f105adde80951a3c7aac9f4e0", null ],
+    [ "WriteBinaryFuture", "group__dia__actions.html#ga2e4f32adaa87f18e7e7df1841af7f7f4", null ],
+    [ "WriteLines", "group__dia__actions.html#gaafe381644ee80a36ff443134b5245740", null ],
+    [ "WriteLinesFuture", "group__dia__actions.html#gacd87cd7f9c4b535a5260636030e92ee1", null ],
+    [ "WriteLinesOne", "group__dia__actions.html#gab987cd5bfad35a70c02f1e4e70672743", null ],
+    [ "WriteLinesOneFuture", "group__dia__actions.html#ga2480def856cab6e9d749a4e51879abc0", null ]
+];

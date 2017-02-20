@@ -1,0 +1,28 @@
+var classthrill_1_1common_1_1Aggregate =
+[
+    [ "Type", "classthrill_1_1common_1_1Aggregate.html#a19fffb7a6788d346a4ab677ce5d61f4c", null ],
+    [ "Aggregate", "classthrill_1_1common_1_1Aggregate.html#abc966fa249ac5d77d4fbef4473bf09b3", null ],
+    [ "Aggregate", "classthrill_1_1common_1_1Aggregate.html#a4afcdec4cb3510b219dde9bd20807d9f", null ],
+    [ "Add", "classthrill_1_1common_1_1Aggregate.html#a98896547e6e2c1c6776bf52543050731", null ],
+    [ "Average", "classthrill_1_1common_1_1Aggregate.html#aeb59db03c542342bee949403be7c5c30", null ],
+    [ "Avg", "classthrill_1_1common_1_1Aggregate.html#ad027b5155086c9345f660678a7a5a631", null ],
+    [ "Count", "classthrill_1_1common_1_1Aggregate.html#a36bf15f1ed34c66314bad5943527bf48", null ],
+    [ "Max", "classthrill_1_1common_1_1Aggregate.html#a9be9270be00b397bf2bd8bb5a7511cec", null ],
+    [ "Mean", "classthrill_1_1common_1_1Aggregate.html#a1a0c4559bb1ee733040116588e356cd0", null ],
+    [ "merged_variance", "classthrill_1_1common_1_1Aggregate.html#ae7e6bb078e70e186db383b171d3eada0", null ],
+    [ "Min", "classthrill_1_1common_1_1Aggregate.html#a7e90680ae1322a24caf16c4b6af6990c", null ],
+    [ "operator+", "classthrill_1_1common_1_1Aggregate.html#ab1e48aa0991d569ae9f119d843c5b074", null ],
+    [ "operator+=", "classthrill_1_1common_1_1Aggregate.html#a37ee7134e4d76ba9f8eaef7b300fd2ce", null ],
+    [ "StandardDeviation", "classthrill_1_1common_1_1Aggregate.html#a55e279ee98ab21329d4ed08884519c55", null ],
+    [ "StDev", "classthrill_1_1common_1_1Aggregate.html#a9ac4018c8909a06a1cfee6163b31e93e", null ],
+    [ "ThrillDeserialize", "classthrill_1_1common_1_1Aggregate.html#a52ce80b700691e2ee5af2806ac12191b", null ],
+    [ "ThrillSerialize", "classthrill_1_1common_1_1Aggregate.html#adea219cd31e5c4ad169abf7e5b6fff88", null ],
+    [ "Total", "classthrill_1_1common_1_1Aggregate.html#a00a20d88f77e44c09a81f7e415cb8d1e", null ],
+    [ "count_", "classthrill_1_1common_1_1Aggregate.html#a6b06728795e8f208c0755874665b3a51", null ],
+    [ "max_", "classthrill_1_1common_1_1Aggregate.html#aaf9bdab94087c129e5821251a47c4f2b", null ],
+    [ "mean_", "classthrill_1_1common_1_1Aggregate.html#a830b1880f9dc271a7b6415047d893783", null ],
+    [ "min_", "classthrill_1_1common_1_1Aggregate.html#a9b6c971971d60d5363382c1246d3d7ca", null ],
+    [ "nvar_", "classthrill_1_1common_1_1Aggregate.html#ad0a5355aca9c3db644144f06d6598705", null ],
+    [ "thrill_fixed_size", "classthrill_1_1common_1_1Aggregate.html#a307ece87ac4e13dfd56079394799e073", null ],
+    [ "thrill_is_fixed_size", "classthrill_1_1common_1_1Aggregate.html#af313692db0e74de4c09676afcece6325", null ]
+];

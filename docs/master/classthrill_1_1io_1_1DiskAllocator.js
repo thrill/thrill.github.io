@@ -1,0 +1,25 @@
+var classthrill_1_1io_1_1DiskAllocator =
+[
+    [ "DiskAllocator", "classthrill_1_1io_1_1DiskAllocator.html#abef714ac4389eeed15d8504970209b4a", null ],
+    [ "DiskAllocator", "classthrill_1_1io_1_1DiskAllocator.html#a37b05c9d2b66ef892bb5d1a4da37dfc7", null ],
+    [ "~DiskAllocator", "classthrill_1_1io_1_1DiskAllocator.html#a4248a725e1aaca295a5d371359acee9b", null ],
+    [ "AddFreeRegion", "classthrill_1_1io_1_1DiskAllocator.html#ac276c581b5bec2a235b6bf9869775c85", null ],
+    [ "DeallocationError", "classthrill_1_1io_1_1DiskAllocator.html#ac7f19c17b6de9d539d7ffdcd798a85b5", null ],
+    [ "DeleteBlock", "classthrill_1_1io_1_1DiskAllocator.html#a99b713cb1a80e83fee1a6346eded3b45", null ],
+    [ "Dump", "classthrill_1_1io_1_1DiskAllocator.html#abe282d7396372e58ab4c9cf209f0e150", null ],
+    [ "free_bytes", "classthrill_1_1io_1_1DiskAllocator.html#af4d65ab20e8d4aa68b4c6ed9f5515989", null ],
+    [ "GrowFile", "classthrill_1_1io_1_1DiskAllocator.html#ac8dd443ceda26673cbb4036c861ffdaa", null ],
+    [ "NewBlocks", "classthrill_1_1io_1_1DiskAllocator.html#af5b71511017a0ff7eda0cc1bf38ffe22", null ],
+    [ "NewBlocks", "classthrill_1_1io_1_1DiskAllocator.html#a9285e33ee920ee594c7ee57216ca3b77", null ],
+    [ "operator=", "classthrill_1_1io_1_1DiskAllocator.html#a6981cbb3ad645e19c9927c75cb67f774", null ],
+    [ "total_bytes", "classthrill_1_1io_1_1DiskAllocator.html#a67b972ad9e4a09575fbf33b1307f5d81", null ],
+    [ "used_bytes", "classthrill_1_1io_1_1DiskAllocator.html#aabfdf50792b230b1e51e13e4102d9bfb", null ],
+    [ "autogrow_", "classthrill_1_1io_1_1DiskAllocator.html#ad48781fc27074d0e0ec88598cdf6ba31", null ],
+    [ "cfg_bytes_", "classthrill_1_1io_1_1DiskAllocator.html#a171ab8fbe2a764d60f179dc1162534df", null ],
+    [ "data_", "classthrill_1_1io_1_1DiskAllocator.html#a9197b7d6c70cb99b6aaee4a6a68a4b08", null ],
+    [ "debug", "classthrill_1_1io_1_1DiskAllocator.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
+    [ "disk_bytes_", "classthrill_1_1io_1_1DiskAllocator.html#a965d45426bc95d56e4cad0dc5ae18729", null ],
+    [ "free_bytes_", "classthrill_1_1io_1_1DiskAllocator.html#adcc17f8d19d04327cada55b95c75c60a", null ],
+    [ "mutex_", "classthrill_1_1io_1_1DiskAllocator.html#a281b5ec791338d4378e22ef44a51b4a1", null ],
+    [ "storage_", "classthrill_1_1io_1_1DiskAllocator.html#aa9cc6469c7f5478971a575cd14999cbf", null ]
+];

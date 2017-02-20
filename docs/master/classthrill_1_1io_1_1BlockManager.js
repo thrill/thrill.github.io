@@ -1,0 +1,26 @@
+var classthrill_1_1io_1_1BlockManager =
+[
+    [ "~BlockManager", "classthrill_1_1io_1_1BlockManager.html#a96ca56575dbc894ae12b9cc82fdf6083", null ],
+    [ "BlockManager", "classthrill_1_1io_1_1BlockManager.html#a26371085524468d789e27e2fb60c61cb", null ],
+    [ "current_allocation", "classthrill_1_1io_1_1BlockManager.html#a82e97d4f6e74a31e57c2a6911db8367d", null ],
+    [ "delete_block", "group__io__layer.html#ga1ed5a9414d69bc0471ead7fc21f0b81a", null ],
+    [ "delete_blocks", "classthrill_1_1io_1_1BlockManager.html#a1c72b15f40dae6d1d6a42aa3afcee6af", null ],
+    [ "get_free_bytes", "classthrill_1_1io_1_1BlockManager.html#af2be6d99a79762452425e8e50535cdc3", null ],
+    [ "get_total_bytes", "classthrill_1_1io_1_1BlockManager.html#afe67286b0eabbc1a0ada426ed58cdc31", null ],
+    [ "maximum_allocation", "classthrill_1_1io_1_1BlockManager.html#af94d116a1eb8aba26800e12d088bcfd5", null ],
+    [ "new_block", "classthrill_1_1io_1_1BlockManager.html#a01e30de38daaadd3aeddf8467f82a512", null ],
+    [ "new_blocks", "classthrill_1_1io_1_1BlockManager.html#a7b6d0c0bb076be6b62c6aa9c7b83416a", null ],
+    [ "new_blocks", "classthrill_1_1io_1_1BlockManager.html#a87687f708a040057e6e288d8852ce555", null ],
+    [ "new_blocks_int", "classthrill_1_1io_1_1BlockManager.html#a162853ab07adea41dcb8bdf44eadff77", null ],
+    [ "new_blocks_int", "group__io__layer.html#ga98e862ff72abc0788f9fa88c21bb30c4", null ],
+    [ "total_allocation", "classthrill_1_1io_1_1BlockManager.html#a097ac4c6ac7ef4833d568f5d71bdd6d7", null ],
+    [ "common::Singleton< BlockManager >", "classthrill_1_1io_1_1BlockManager.html#ab7125be6820da5947af0beecbebce093", null ],
+    [ "current_allocation_", "classthrill_1_1io_1_1BlockManager.html#aab34b3c304bac5bf0825c7ad6ca9a6bc", null ],
+    [ "debug", "classthrill_1_1io_1_1BlockManager.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
+    [ "disk_allocators_", "classthrill_1_1io_1_1BlockManager.html#a921df55bc01ea64ac2ad88706a513519", null ],
+    [ "disk_files_", "classthrill_1_1io_1_1BlockManager.html#ae68b8498da33533639b548ada5083c5a", null ],
+    [ "maximum_allocation_", "classthrill_1_1io_1_1BlockManager.html#a26fba9d60c465f5e8f85ae15454e5810", null ],
+    [ "mutex_", "classthrill_1_1io_1_1BlockManager.html#a281b5ec791338d4378e22ef44a51b4a1", null ],
+    [ "ndisks_", "classthrill_1_1io_1_1BlockManager.html#a4c5b3cfb808162e372a2109d085fcd94", null ],
+    [ "total_allocation_", "classthrill_1_1io_1_1BlockManager.html#addab24e9b5923ec604622e340ebf8721", null ]
+];
