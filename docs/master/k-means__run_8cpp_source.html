@@ -175,11 +175,11 @@ $(document).ready(function(){initNavTree('k-means__run_8cpp_source.html','');});
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">//! Output the points and centroids as a 2-D SVG drawing</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="k-means__run_8cpp.html#addc1c142f189cdbb8c05be1b14de832f">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="k-means__run_8cpp.html#a45d15359ffef152ff306250ecc91e613" title="Output the points and centroids as a SVG drawing.">OutputSVG</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a>&amp; svg_path, <span class="keywordtype">double</span> svg_scale,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;               <span class="keyword">const</span> DIA&lt;<a class="code" href="classexamples_1_1k__means_1_1Point.html" title="A D-dimensional point with double precision.">Point&lt;2&gt;</a> &gt;&amp; point_dia,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;               <span class="keyword">const</span> <a class="code" href="classexamples_1_1k__means_1_1KMeansModel.html" title="Model returned by KMeans algorithm containing results.">KMeansModel</a>&lt;<a class="code" href="classexamples_1_1k__means_1_1Point.html" title="A D-dimensional point with double precision.">Point&lt;2&gt;</a> &gt;&amp; model) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;               <span class="keyword">const</span> DIA&lt;Point&lt;2&gt; &gt;&amp; point_dia,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;               <span class="keyword">const</span> <a class="code" href="classexamples_1_1k__means_1_1KMeansModel.html" title="Model returned by KMeans algorithm containing results.">KMeansModel</a>&lt;Point&lt;2&gt; &gt;&amp; model) {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">double</span> width = 0, height = 0;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">using</span> Point2D = <a class="code" href="classexamples_1_1k__means_1_1Point.html" title="A D-dimensional point with double precision.">Point&lt;2&gt;</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">using</span> Point2D = Point&lt;2&gt;;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">const</span> std::vector&lt;Point2D&gt;&amp; centroids = model.centroids();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    std::vector&lt;PointClusterId&lt;Point2D&gt; &gt; list =</div>
@@ -241,7 +241,7 @@ $(document).ready(function(){initNavTree('k-means__run_8cpp_source.html','');});
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1" title="Generate is a Source-DOp, which creates a DIA of given size using a generator function.">Generate</a>(</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            ctx, num_points,</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            [&amp;](<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp; <span class="comment">/* index */</span>) {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classexamples_1_1k__means_1_1Point.html#a1aa8db5708fe3c0a637d1f77287b31e4">Point::Random</a>(dimensions, dist, rng);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1common_1_1Vector.html#a2d62414edc60ea352ca42211e48983de">Point::Random</a>(dimensions, dist, rng);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            })</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        .Cache().KeepForever();</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
@@ -267,11 +267,11 @@ $(document).ready(function(){initNavTree('k-means__run_8cpp_source.html','');});
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <a class="code" href="group__dia__sources.html#ga2cc91996c91259fea9434632b58bf14c" title="ReadLines is a DOp, which reads a file from the file system and creates an ordered DIA according to a...">ReadLines</a>(ctx, input_paths).Map(</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            [dimensions](<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a>&amp; input) {</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                <span class="comment">// parse &quot;&lt;pt&gt; &lt;pt&gt; &lt;pt&gt; ...&quot; lines</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                <a class="code" href="classexamples_1_1k__means_1_1Point.html" title="A D-dimensional point with double precision.">Point</a> p = <a class="code" href="classexamples_1_1k__means_1_1Point.html#ab878c7445862037f838255c66b9845ce">Point::Make</a>(dimensions);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> p = <a class="code" href="classthrill_1_1common_1_1Vector.html#a4fc9d54967955cbf7a3cce62a1d94e8e">Point::Make</a>(dimensions);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                <span class="keywordtype">char</span>* endptr = <span class="keyword">const_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(input.c_str());</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; dimensions; ++i) {</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                    <span class="keywordflow">while</span> (*endptr == <span class="charliteral">&#39; &#39;</span>) ++endptr;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                    p.<a class="code" href="classexamples_1_1k__means_1_1Point.html#a7e9cc8b44efb0b2819b640217b1d1a61" title="coordinates array">x</a>[i] = std::strtod(endptr, &amp;endptr);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                    p.x[i] = std::strtod(endptr, &amp;endptr);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                    <span class="keywordflow">if</span> (!endptr || (*endptr != <span class="charliteral">&#39; &#39;</span> &amp;&amp; i != dimensions - 1)) {</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                        <a class="code" href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e" title="Print via logger and abort().">die</a>(<span class="stringliteral">&quot;Could not parse point coordinates: &quot;</span> &lt;&lt; input);</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                    }</div>
@@ -387,7 +387,7 @@ $(document).ready(function(){initNavTree('k-means__run_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_7cfeeafec65df6bfc8f341d24ea96c6b.html">k-means</a></li><li class="navelem"><a class="el" href="k-means__run_8cpp.html">k-means_run.cpp</a></li>
-    <li class="footer">Generated on Mon Feb 20 2017 14:26:33 for Thrill by
+    <li class="footer">Generated on Sun Feb 26 2017 22:11:38 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -132,37 +132,71 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexamples_1_1k__means_1_1KMeansModel.html">KMeansModel</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Model returned by KMeans algorithm containing results.  <a href="classexamples_1_1k__means_1_1KMeansModel.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexamples_1_1k__means_1_1Point.html">Point</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A D-dimensional point with double precision.  <a href="classexamples_1_1k__means_1_1Point.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classexamples_1_1k__means_1_1VPoint.html">VPoint</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A D-dimensional point with double precision.  <a href="classexamples_1_1k__means_1_1VPoint.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a02993ce2639dd142c90b522ca051044a"><td class="memTemplParams" colspan="2">template&lt;size_t D&gt; </td></tr>
+<tr class="memitem:a02993ce2639dd142c90b522ca051044a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a">Point</a> = <a class="el" href="classthrill_1_1common_1_1Vector.html">thrill::common::Vector</a>&lt; D, double &gt;</td></tr>
+<tr class="memdesc:a02993ce2639dd142c90b522ca051044a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile-Time Fixed-Dimensional Points.  <a href="#a02993ce2639dd142c90b522ca051044a">More...</a><br/></td></tr>
+<tr class="separator:a02993ce2639dd142c90b522ca051044a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf5d527c89798d5984297ee3b01f3885"><td class="memTemplParams" colspan="2">template&lt;typename Point &gt; </td></tr>
-<tr class="memitem:adf5d527c89798d5984297ee3b01f3885"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexamples_1_1k__means.html#adf5d527c89798d5984297ee3b01f3885">PointClusterId</a> = std::pair&lt; <a class="el" href="classexamples_1_1k__means_1_1Point.html">Point</a>, size_t &gt;</td></tr>
+<tr class="memitem:adf5d527c89798d5984297ee3b01f3885"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexamples_1_1k__means.html#adf5d527c89798d5984297ee3b01f3885">PointClusterId</a> = std::pair&lt; <a class="el" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a">Point</a>, size_t &gt;</td></tr>
 <tr class="separator:adf5d527c89798d5984297ee3b01f3885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a647782c82608555fc27ba5fca68ce64d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceexamples_1_1k__means.html#a647782c82608555fc27ba5fca68ce64d">VPoint</a> = <a class="el" href="classthrill_1_1common_1_1VVector.html">thrill::common::VVector</a>&lt; double &gt;</td></tr>
+<tr class="memdesc:a647782c82608555fc27ba5fca68ce64d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A variable D-dimensional point with double precision.  <a href="#a647782c82608555fc27ba5fca68ce64d">More...</a><br/></td></tr>
+<tr class="separator:a647782c82608555fc27ba5fca68ce64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a555e2afaf5b6ae7dd0487138d228d002"><td class="memTemplParams" colspan="2">template&lt;typename Point , typename InStack &gt; </td></tr>
-<tr class="memitem:a555e2afaf5b6ae7dd0487138d228d002"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexamples_1_1k__means.html#a555e2afaf5b6ae7dd0487138d228d002">KMeans</a> (const DIA&lt; <a class="el" href="classexamples_1_1k__means_1_1Point.html">Point</a>, InStack &gt; &amp;input_points, size_t dimensions, size_t num_clusters, size_t iterations)</td></tr>
+<tr class="memitem:a555e2afaf5b6ae7dd0487138d228d002"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceexamples_1_1k__means.html#a555e2afaf5b6ae7dd0487138d228d002">KMeans</a> (const DIA&lt; <a class="el" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a">Point</a>, InStack &gt; &amp;input_points, size_t dimensions, size_t num_clusters, size_t iterations)</td></tr>
 <tr class="separator:a555e2afaf5b6ae7dd0487138d228d002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a02993ce2639dd142c90b522ca051044a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a">Point</a> =  <a class="el" href="classthrill_1_1common_1_1Vector.html">thrill::common::Vector</a>&lt;D, double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compile-Time Fixed-Dimensional Points. </p>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="examples_2tutorial_2k-means_step1_8cpp-example.html#a0">examples/tutorial/k-means_step1.cpp</a>, <a class="el" href="examples_2tutorial_2k-means_step2_8cpp-example.html#a0">examples/tutorial/k-means_step2.cpp</a>, <a class="el" href="examples_2tutorial_2k-means_step3_8cpp-example.html#a0">examples/tutorial/k-means_step3.cpp</a>, <a class="el" href="examples_2tutorial_2k-means_step4_8cpp-example.html#a0">examples/tutorial/k-means_step4.cpp</a>, <a class="el" href="examples_2tutorial_2k-means_step5_8cpp-example.html#a0">examples/tutorial/k-means_step5.cpp</a>, and <a class="el" href="examples_2tutorial_2k-means_step6_8cpp-example.html#a0">examples/tutorial/k-means_step6.cpp</a>.</dd>
+</dl>
+<p>Definition at line <a class="el" href="k-means_8hpp_source.html#l00039">39</a> of file <a class="el" href="k-means_8hpp_source.html">k-means.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="adf5d527c89798d5984297ee3b01f3885"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceexamples_1_1k__means.html#adf5d527c89798d5984297ee3b01f3885">PointClusterId</a> =  std::pair&lt;<a class="el" href="classexamples_1_1k__means_1_1Point.html">Point</a>, size_t&gt;</td>
+          <td class="memname">using <a class="el" href="namespaceexamples_1_1k__means.html#adf5d527c89798d5984297ee3b01f3885">PointClusterId</a> =  std::pair&lt;<a class="el" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a">Point</a>, size_t&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="k-means_8hpp_source.html#l00169">169</a> of file <a class="el" href="k-means_8hpp_source.html">k-means.hpp</a>.</p>
+<p>Definition at line <a class="el" href="k-means_8hpp_source.html#l00045">45</a> of file <a class="el" href="k-means_8hpp_source.html">k-means.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a647782c82608555fc27ba5fca68ce64d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceexamples_1_1k__means.html#a647782c82608555fc27ba5fca68ce64d">VPoint</a> =  <a class="el" href="classthrill_1_1common_1_1VVector.html">thrill::common::VVector</a>&lt;double&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A variable D-dimensional point with double precision. </p>
+
+<p>Definition at line <a class="el" href="k-means_8hpp_source.html#l00042">42</a> of file <a class="el" href="k-means_8hpp_source.html">k-means.hpp</a>.</p>
 
 </div>
 </div>
@@ -204,9 +238,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Calculate k-Means using Lloyd's Algorithm. The DIA centroids is both an input and an output parameter. The method returns a std::pair&lt;Point2D, size_t&gt; = Point2DClusterId into the centroids for each input point. </p>
 
-<p>Definition at line <a class="el" href="k-means_8hpp_source.html#l00299">299</a> of file <a class="el" href="k-means_8hpp_source.html">k-means.hpp</a>.</p>
+<p>Definition at line <a class="el" href="k-means_8hpp_source.html#l00175">175</a> of file <a class="el" href="k-means_8hpp_source.html">k-means.hpp</a>.</p>
 
-<p>References <a class="el" href="k-means_8hpp_source.html#l00187">ClosestCentroid&lt; Point &gt;::center</a>, <a class="el" href="k-means_8hpp_source.html#l00186">ClosestCentroid&lt; Point &gt;::cluster_id</a>, and <a class="el" href="k-means_8hpp_source.html#l00065">Point&lt; D &gt;::DistanceSquare()</a>.</p>
+<p>References <a class="el" href="k-means_8hpp_source.html#l00063">ClosestCentroid&lt; Point &gt;::center</a>, <a class="el" href="k-means_8hpp_source.html#l00062">ClosestCentroid&lt; Point &gt;::cluster_id</a>, and <a class="el" href="vector_8hpp_source.html#l00053">Vector&lt; D, Type &gt;::DistanceSquare()</a>.</p>
 
 <p>Referenced by <a class="el" href="k-means__run_8cpp_source.html#l00142">RunKMeansFile()</a>, and <a class="el" href="k-means__run_8cpp_source.html#l00108">RunKMeansGenerated()</a>.</p>
 
@@ -218,7 +252,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceexamples.html">examples</a></li><li class="navelem"><a class="el" href="namespaceexamples_1_1k__means.html">k_means</a></li>
-    <li class="footer">Generated on Mon Feb 20 2017 14:26:37 for Thrill by
+    <li class="footer">Generated on Sun Feb 26 2017 22:11:41 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

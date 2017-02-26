@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('kmeans_tutorial_step5.html','');});
 <div class="line">            [](<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a>&amp; input) {</div>
 <div class="line">                <span class="comment">// parse &quot;&lt;x&gt; &lt;y&gt;&quot; lines</span></div>
 <div class="line">                std::istringstream iss(input);</div>
-<div class="line">                Point p;</div>
+<div class="line">                <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> p;</div>
 <div class="line">                iss &gt;&gt; p.x &gt;&gt; p.y;</div>
 <div class="line">                <span class="keywordflow">if</span> (iss.peek() != EOF)</div>
 <div class="line">                    <a class="code" href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e" title="Print via logger and abort().">die</a>(<span class="stringliteral">&quot;Could not parse point coordinates: &quot;</span> &lt;&lt; input);</div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('kmeans_tutorial_step5.html','');});
 <div class="line">        <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1" title="Generate is a Source-DOp, which creates a DIA of given size using a generator function.">Generate</a>(</div>
 <div class="line">            ctx, <span class="comment">/* size */</span> 100,</div>
 <div class="line">            [&amp;](<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp;) {</div>
-<div class="line">                <span class="keywordflow">return</span> Point { dist(rng), dist(rng) };</div>
+<div class="line">                <span class="keywordflow">return</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> { dist(rng), dist(rng) };</div>
 <div class="line">            });</div>
 <div class="line">    <span class="comment">// Execute() is require due to lazy evaluation</span></div>
 <div class="line">    <span class="keywordflow">return</span> points.Cache().Execute();</div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('kmeans_tutorial_step5.html','');});
 <div class="fragment"><div class="line">    <span class="keywordflow">if</span> (output) {</div>
 <div class="line">        <span class="comment">// write output as &quot;x y&quot; lines</span></div>
 <div class="line">        centers</div>
-<div class="line">        .Map([](<span class="keyword">const</span> Point&amp; p) {</div>
+<div class="line">        .Map([](<span class="keyword">const</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a>&amp; p) {</div>
 <div class="line">                 <span class="keywordflow">return</span> <a class="code" href="namespacethrill_1_1mem.html#a83c1c233231a5bfd03944ee141b9609a" title="convert to string">std::to_string</a>(p.x) + <span class="stringliteral">&quot; &quot;</span> + <a class="code" href="namespacethrill_1_1mem.html#a83c1c233231a5bfd03944ee141b9609a" title="convert to string">std::to_string</a>(p.y);</div>
 <div class="line">             })</div>
 <div class="line">        .WriteLines(output);</div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('kmeans_tutorial_step5.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Thrill Documentation Overview</a></li><li class="navelem"><a class="el" href="kmeans_tutorial.html">K-Means Tutorial</a></li>
-    <li class="footer">Generated on Mon Feb 20 2017 14:26:37 for Thrill by
+    <li class="footer">Generated on Sun Feb 26 2017 22:11:41 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

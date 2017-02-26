@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"classthrill_1_1io_1_1UfsFileBase.html#a1913b5bfc1fd8822e405ccbd377e2be0":[1,1,3,1,6,7],
+"classthrill_1_1io_1_1UfsFileBase.html#a2d594997663f1d265361898812a96af5":[1,1,3,1,6,4],
 "classthrill_1_1io_1_1UfsFileBase.html#a434acf05453759b8ae02c3f70e2c3db6":[1,1,3,1,6,13],
 "classthrill_1_1io_1_1UfsFileBase.html#a5ae591df94fc66ccb85cbb6565368bca":[1,1,3,1,6,5],
 "classthrill_1_1io_1_1UfsFileBase.html#a614364b9ff05da1b619ef30e1ce5dee0":[1,1,3,1,6,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "classthrill_1_1mem_1_1PoolAllocator.html#a5485252cb202b5d33f98409d3390f233":[3,0,2,5,12,1],
 "classthrill_1_1mem_1_1PoolAllocator.html#a5907763b5b2a3e572e9741eb55b32e94":[3,0,2,5,12,16],
 "classthrill_1_1mem_1_1PoolAllocator.html#a6f5ffa417c77fc24c2932a11f08311ec":[3,0,2,5,12,6],
-"classthrill_1_1mem_1_1PoolAllocator.html#a74f9d3869e6f93d70151c1099e5ce429":[3,0,2,5,12,11],
-"classthrill_1_1mem_1_1PoolAllocator.html#a9292c3e34b31f09cb6cd0b42b511fa7a":[3,0,2,5,12,2],
-"classthrill_1_1mem_1_1PoolAllocator.html#a96805d5608516f1b0436874900768619":[3,0,2,5,12,4]
+"classthrill_1_1mem_1_1PoolAllocator.html#a74f9d3869e6f93d70151c1099e5ce429":[3,0,2,5,12,11]
 };

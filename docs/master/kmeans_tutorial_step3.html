@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('kmeans_tutorial_step3.html','');});
 <div class="fragment"><div class="line"><span class="comment">//! Assignment of a point to a cluster.</span></div>
 <div class="line"><span class="comment"></span><span class="keyword">struct </span>ClosestCenter {</div>
 <div class="line">    <span class="keywordtype">size_t</span> cluster_id;</div>
-<div class="line">    Point  point;</div>
+<div class="line">    <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a>  point;</div>
 <div class="line">    <span class="keywordtype">size_t</span> count;</div>
 <div class="line">};<span class="comment"></span></div>
 <div class="line"><span class="comment">//! make ostream-able for Print()</span></div>
@@ -154,18 +154,18 @@ $(document).ready(function(){initNavTree('kmeans_tutorial_step3.html','');});
 <p>The resulting <code>new_centers</code> is a <code>DIA&lt;Point&gt;</code> containing the next iteration's cluster centers.</p>
 <p>We implicitly used some vector operators on <code>Point</code> inside the reduction: plus and scalar division. Again, with high-flying object-oriented spirits, we extended the <code>Point</code> class with the appropriate operators, which make the functions above very readable.</p>
 <div class="fragment"><div class="line"><span class="comment">//! A 2-dimensional point with double precision</span></div>
-<div class="line"><span class="comment"></span><span class="keyword">struct </span>Point {<span class="comment"></span></div>
+<div class="line"><span class="comment"></span><span class="keyword">struct </span><a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> {<span class="comment"></span></div>
 <div class="line"><span class="comment">    //! point coordinates</span></div>
 <div class="line"><span class="comment"></span>    <span class="keywordtype">double</span> x, y;</div>
 <div class="line"></div>
-<div class="line">    <span class="keywordtype">double</span> DistanceSquare(<span class="keyword">const</span> Point&amp; b)<span class="keyword"> const </span>{</div>
+<div class="line">    <span class="keywordtype">double</span> DistanceSquare(<span class="keyword">const</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a>&amp; b)<span class="keyword"> const </span>{</div>
 <div class="line">        <span class="keywordflow">return</span> (x - b.x) * (x - b.x) + (y - b.y) * (y - b.y);</div>
 <div class="line">    }</div>
-<div class="line">    Point operator + (<span class="keyword">const</span> Point&amp; b)<span class="keyword"> const </span>{</div>
-<div class="line">        <span class="keywordflow">return</span> Point { x + b.x, y + b.y };</div>
+<div class="line">    <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> operator + (<span class="keyword">const</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a>&amp; b)<span class="keyword"> const </span>{</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> { x + b.x, y + b.y };</div>
 <div class="line">    }</div>
-<div class="line">    Point operator / (<span class="keywordtype">double</span> s)<span class="keyword"> const </span>{</div>
-<div class="line">        <span class="keywordflow">return</span> Point { x / s, y / s };</div>
+<div class="line">    <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> operator / (<span class="keywordtype">double</span> s)<span class="keyword"> const </span>{</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> { x / s, y / s };</div>
 <div class="line">    }</div>
 <div class="line">};</div>
 </div><!-- fragment --><p> See the complete example code <a class="el" href="examples_2tutorial_2k-means_step3_8cpp-example.html">examples/tutorial/k-means_step3.cpp</a></p>
@@ -215,7 +215,7 @@ new_centers --- End DIA.Print() --- size=10
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Thrill Documentation Overview</a></li><li class="navelem"><a class="el" href="kmeans_tutorial.html">K-Means Tutorial</a></li>
-    <li class="footer">Generated on Mon Feb 20 2017 14:26:37 for Thrill by
+    <li class="footer">Generated on Sun Feb 26 2017 22:11:41 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

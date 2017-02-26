@@ -5,7 +5,7 @@ var searchData=
   ['catblocksource',['CatBlockSource',['../classthrill_1_1data_1_1CatBlockSource.html',1,'thrill::data']]],
   ['catstream',['CatStream',['../exceptionthrill_1_1data_1_1CatStream.html',1,'thrill::data']]],
   ['centroidaccumulated',['CentroidAccumulated',['../structexamples_1_1k__means_1_1CentroidAccumulated.html',1,'examples::k_means']]],
-  ['centroidaccumulated_3c_20examples_3a_3ak_5fmeans_3a_3apoint_20_3e',['CentroidAccumulated&lt; examples::k_means::Point &gt;',['../structexamples_1_1k__means_1_1CentroidAccumulated.html',1,'examples::k_means']]],
+  ['centroidaccumulated_3c_20vector_3c_20d_2c_20double_20_3e_20_3e',['CentroidAccumulated&lt; Vector&lt; D, double &gt; &gt;',['../structexamples_1_1k__means_1_1CentroidAccumulated.html',1,'examples::k_means']]],
   ['child',['Child',['../structthrill_1_1api_1_1DIANode_1_1Child.html',1,'thrill::api::DIANode']]],
   ['closestcentroid',['ClosestCentroid',['../structexamples_1_1k__means_1_1ClosestCentroid.html',1,'examples::k_means']]],
   ['cmdlineparser',['CmdlineParser',['../classthrill_1_1common_1_1CmdlineParser.html',1,'thrill::common']]],

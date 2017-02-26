@@ -12,6 +12,6 @@ var searchData=
   ['vectostr',['VecToStr',['../namespacethrill_1_1common.html#a4dcfa0783f3e01b7ccd182711f77cc0c',1,'thrill::common::VecToStr(const std::array&lt; T, N &gt; &amp;data)'],['../namespacethrill_1_1common.html#a19dadeee63f8e024ef3438a09c03cc1c',1,'thrill::common::VecToStr(const std::vector&lt; T &gt; &amp;data)']]],
   ['vecvectostr',['VecVecToStr',['../classthrill_1_1api_1_1MergeNode.html#ab8a1d21b50d474aa464140a4dc42e03e',1,'thrill::api::MergeNode']]],
   ['volatilekeyflag',['VolatileKeyFlag',['../structthrill_1_1api_1_1VolatileKeyFlag.html#a2db945cd858ff2089c779af3536fce05',1,'thrill::api::VolatileKeyFlag']]],
-  ['vpoint',['VPoint',['../classexamples_1_1k__means_1_1VPoint.html#a810972adbe5d91b09fb582fc6b7730e5',1,'examples::k_means::VPoint::VPoint(size_t D=0)'],['../classexamples_1_1k__means_1_1VPoint.html#a9681a50216bbb1ea11ccf2673993eaed',1,'examples::k_means::VPoint::VPoint(Vector &amp;&amp;v)']]],
-  ['vtostr',['VToStr',['../classthrill_1_1api_1_1MergeNode.html#a06a0d88316d639685a052b7eafc6b212',1,'thrill::api::MergeNode']]]
+  ['vtostr',['VToStr',['../classthrill_1_1api_1_1MergeNode.html#a06a0d88316d639685a052b7eafc6b212',1,'thrill::api::MergeNode']]],
+  ['vvector',['VVector',['../classthrill_1_1common_1_1VVector.html#acf785def9ee74f1a80c65411bc9d30d4',1,'thrill::common::VVector::VVector(size_t D=0)'],['../classthrill_1_1common_1_1VVector.html#a74d3c44d3f44dc965171c7fc6163ddd6',1,'thrill::common::VVector::VVector(TypeVector &amp;&amp;v)']]]
 ];

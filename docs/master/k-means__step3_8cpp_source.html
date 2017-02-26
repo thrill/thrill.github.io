@@ -143,24 +143,24 @@ $(document).ready(function(){initNavTree('k-means__step3_8cpp_source.html','');}
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//! [Point class]</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//! A 2-dimensional point with double precision</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span><span class="keyword">struct </span>Point {<span class="comment"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span><span class="keyword">struct </span><a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> {<span class="comment"></span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">    //! point coordinates</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"></span>    <span class="keywordtype">double</span> x, y;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">double</span> DistanceSquare(<span class="keyword">const</span> Point&amp; b)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">double</span> DistanceSquare(<span class="keyword">const</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a>&amp; b)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">return</span> (x - b.x) * (x - b.x) + (y - b.y) * (y - b.y);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Point operator + (<span class="keyword">const</span> Point&amp; b)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> Point { x + b.x, y + b.y };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> operator + (<span class="keyword">const</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a>&amp; b)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> { x + b.x, y + b.y };</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    Point operator / (<span class="keywordtype">double</span> s)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> Point { x / s, y / s };</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> operator / (<span class="keywordtype">double</span> s)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> { x / s, y / s };</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};<span class="comment"></span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//! [Point class]</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span><span class="comment"></span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//! make ostream-able for Print()</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="k-means__step3_8cpp.html#aab55cf13db83c55c46a961b2b2441960">   45</a></span>&#160;<span class="comment"></span>std::ostream&amp; <a class="code" href="namespacethrill_1_1api.html#ae8473cbd67ac02098251c03a8218ae49" title="make ostream-able.">operator &lt;&lt; </a>(std::ostream&amp; os, <span class="keyword">const</span> Point&amp; p) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="k-means__step3_8cpp.html#aab55cf13db83c55c46a961b2b2441960">   45</a></span>&#160;<span class="comment"></span>std::ostream&amp; <a class="code" href="namespacethrill_1_1api.html#ae8473cbd67ac02098251c03a8218ae49" title="make ostream-able.">operator &lt;&lt; </a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a>&amp; p) {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> os &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; p.x &lt;&lt; <span class="charliteral">&#39;,&#39;</span> &lt;&lt; p.y &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"></span></div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('k-means__step3_8cpp_source.html','');}
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">//! Assignment of a point to a cluster.</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"></span><span class="keyword">struct </span>ClosestCenter {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">size_t</span> cluster_id;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    Point  point;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a>  point;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">size_t</span> count;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};<span class="comment"></span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">//! make ostream-able for Print()</span></div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('k-means__step3_8cpp_source.html','');}
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1" title="Generate is a Source-DOp, which creates a DIA of given size using a generator function.">Generate</a>(</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            ctx, <span class="comment">/* size */</span> 100,</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            [&amp;](<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp;) {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordflow">return</span> Point { dist(rng), dist(rng) };</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> { dist(rng), dist(rng) };</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            })</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        .Cache();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('k-means__step3_8cpp_source.html','');}
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// calculate the closest center for each point</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">auto</span> closest = points.Map(</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        [local_centers](<span class="keyword">const</span> Point&amp; p) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        [local_centers](<span class="keyword">const</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a>&amp; p) {</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordtype">double</span> min_dist = p.DistanceSquare(local_centers[0]);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordtype">size_t</span> cluster_id = 0;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
@@ -261,7 +261,7 @@ $(document).ready(function(){initNavTree('k-means__step3_8cpp_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_c50d2afd70e5c3c2ece378b240fbc8fd.html">tutorial</a></li><li class="navelem"><a class="el" href="k-means__step3_8cpp.html">k-means_step3.cpp</a></li>
-    <li class="footer">Generated on Mon Feb 20 2017 14:26:33 for Thrill by
+    <li class="footer">Generated on Sun Feb 26 2017 22:11:39 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

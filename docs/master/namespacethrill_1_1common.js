@@ -94,6 +94,8 @@ var namespacethrill_1_1common =
     [ "VariadicCallEnumerateImpl< Index, 0, Functor >", "classthrill_1_1common_1_1VariadicCallEnumerateImpl_3_01Index_00_010_00_01Functor_01_4.html", "classthrill_1_1common_1_1VariadicCallEnumerateImpl_3_01Index_00_010_00_01Functor_01_4" ],
     [ "VariadicMapEnumerateImpl", "classthrill_1_1common_1_1VariadicMapEnumerateImpl.html", "classthrill_1_1common_1_1VariadicMapEnumerateImpl" ],
     [ "VariadicMapEnumerateImpl< Index, 0, Functor >", "classthrill_1_1common_1_1VariadicMapEnumerateImpl_3_01Index_00_010_00_01Functor_01_4.html", "classthrill_1_1common_1_1VariadicMapEnumerateImpl_3_01Index_00_010_00_01Functor_01_4" ],
+    [ "Vector", "classthrill_1_1common_1_1Vector.html", "classthrill_1_1common_1_1Vector" ],
     [ "VectorConcat", "classthrill_1_1common_1_1VectorConcat.html", "classthrill_1_1common_1_1VectorConcat" ],
+    [ "VVector", "classthrill_1_1common_1_1VVector.html", "classthrill_1_1common_1_1VVector" ],
     [ "ZipfDistribution", "classthrill_1_1common_1_1ZipfDistribution.html", "classthrill_1_1common_1_1ZipfDistribution" ]
 ];

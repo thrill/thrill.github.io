@@ -1,5 +1,7 @@
 var NAVTREEINDEX16 =
 {
+"context_8cpp.html#a05fb432b2eb6f0d80fadf62e834e8328":[4,0,2,0,8,15],
+"context_8cpp.html#a18e9c4ba006581d6b16849dd01da4346":[4,0,2,0,8,9],
 "context_8cpp.html#a3cdb312b55891229178c2837ef378533":[4,0,2,0,8,4],
 "context_8cpp.html#a3d4f6920a4e2c31e3908801bc2217c2e":[4,0,2,0,8,17],
 "context_8cpp.html#a3ee5fb2a456001a5451668c4b863247f":[4,0,2,0,8,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX16 =
 "examples_2select_2select_8hpp_source.html":[4,0,1,4,0],
 "examples_2tutorial_2k-means_step1_8cpp-example.html":[5,0],
 "examples_2tutorial_2k-means_step2_8cpp-example.html":[5,1],
-"examples_2tutorial_2k-means_step3_8cpp-example.html":[5,2],
-"examples_2tutorial_2k-means_step4_8cpp-example.html":[5,3],
-"examples_2tutorial_2k-means_step5_8cpp-example.html":[5,4]
+"examples_2tutorial_2k-means_step3_8cpp-example.html":[5,2]
 };

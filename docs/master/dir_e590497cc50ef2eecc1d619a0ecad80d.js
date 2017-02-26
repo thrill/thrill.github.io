@@ -50,5 +50,6 @@ var dir_e590497cc50ef2eecc1d619a0ecad80d =
     [ "thread_pool.hpp", "thread__pool_8hpp.html", "thread__pool_8hpp" ],
     [ "timed_counter.hpp", "timed__counter_8hpp.html", "timed__counter_8hpp" ],
     [ "uint_types.hpp", "uint__types_8hpp.html", "uint__types_8hpp" ],
+    [ "vector.hpp", "vector_8hpp.html", "vector_8hpp" ],
     [ "zipf_distribution.hpp", "zipf__distribution_8hpp.html", "zipf__distribution_8hpp" ]
 ];

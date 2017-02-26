@@ -1,13 +1,17 @@
 var NAVTREEINDEX27 =
 {
+"structexamples_1_1suffix__sorting_1_1IndexChar.html":[3,0,0,4,2],
+"structexamples_1_1suffix__sorting_1_1IndexChar.html#a5ca764401b2114456b5366bfcc5d798a":[3,0,0,4,2,1],
+"structexamples_1_1suffix__sorting_1_1IndexChar.html#a7875de9269063a44a5480b1c0c530a84":[3,0,0,4,2,2],
+"structexamples_1_1suffix__sorting_1_1IndexChar.html#ac757e9c030be80c0500b96cdc0061231":[3,0,0,4,2,0],
 "structexamples_1_1suffix__sorting_1_1IndexFlag.html":[3,0,0,4,3],
 "structexamples_1_1suffix__sorting_1_1IndexFlag.html#a7875de9269063a44a5480b1c0c530a84":[3,0,0,4,3,2],
 "structexamples_1_1suffix__sorting_1_1IndexFlag.html#a7a305628b442336f6aba6241fb97d62a":[3,0,0,4,3,0],
 "structexamples_1_1suffix__sorting_1_1IndexFlag.html#a8b3ab54ed3e81c69863d65e4e6c424a0":[3,0,0,4,3,1],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html":[3,0,0,4,4],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a0594e9f341a41ec7622edddb13e52dfb":[3,0,0,4,4,4],
-"structexamples_1_1suffix__sorting_1_1IndexRank.html#a4d77b3fb48833ee41178f27ba47560c8":[3,0,0,4,4,1],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a4d77b3fb48833ee41178f27ba47560c8":[3,0,0,4,4,2],
+"structexamples_1_1suffix__sorting_1_1IndexRank.html#a4d77b3fb48833ee41178f27ba47560c8":[3,0,0,4,4,1],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a5d5b22eb77c392277e53ecec6b85cf2d":[3,0,0,4,4,0],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a7875de9269063a44a5480b1c0c530a84":[3,0,0,4,4,3],
 "structexamples_1_1suffix__sorting_1_1IndexRankFlag.html":[3,0,0,4,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX27 =
 "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1tuple_3_01Args_8_8_8_4_01_4.html#a6e81ae5b0bf62285532c430bbbb02d85":[1,1,1,36,1],
 "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1tuple_3_01Args_8_8_8_4_01_4.html#aa59ac0fcd44b9c87dee7a6fb4281e02d":[1,1,1,36,3],
 "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1tuple_3_01Args_8_8_8_4_01_4.html#afe0c79ad36aa53ebf5a1dd069a541357":[1,1,1,36,0],
-"structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1vector_3_01T_01_4_01_4.html":[1,1,1,37],
-"structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1vector_3_01T_01_4_01_4.html#a2c5bde91e5ea916a64e8cbe6892cdfef":[1,1,1,37,2],
-"structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1vector_3_01T_01_4_01_4.html#a39ac9b3d9b7b4540936d51cfa2c7abd0":[1,1,1,37,1],
-"structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1vector_3_01T_01_4_01_4.html#a3c9769ed663843391d9ec49c68b4068a":[1,1,1,37,0],
-"structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1vector_3_01T_01_4_01_4.html#aa59ac0fcd44b9c87dee7a6fb4281e02d":[1,1,1,37,3]
+"structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1vector_3_01T_01_4_01_4.html":[1,1,1,37]
 };

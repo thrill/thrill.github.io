@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('kmeans_tutorial_step2.html','');});
 <div class="line"></div>
 <div class="line">    <span class="comment">// calculate the closest center for each point</span></div>
 <div class="line">    <span class="keyword">auto</span> closest = points.Map(</div>
-<div class="line">        [local_centers](<span class="keyword">const</span> Point&amp; p) {</div>
+<div class="line">        [local_centers](<span class="keyword">const</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a>&amp; p) {</div>
 <div class="line">            <span class="keywordtype">double</span> min_dist = p.DistanceSquare(local_centers[0]);</div>
 <div class="line">            <span class="keywordtype">size_t</span> cluster_id = 0;</div>
 <div class="line"></div>
@@ -138,11 +138,11 @@ $(document).ready(function(){initNavTree('kmeans_tutorial_step2.html','');});
 <div class="line">    closest.Print(<span class="stringliteral">&quot;closest&quot;</span>);</div>
 </div><!-- fragment --><p> To perform the actual classification loop over all centers, we need to calculate the distance of the point to each center. With high-flying object-oriented spirits, we decided to add a <code>.DistanceSquare()</code> method to our Point. For the classification the squared distance is sufficient, since square root is a monotone increasing function.</p>
 <div class="fragment"><div class="line"><span class="comment">//! A 2-dimensional point with double precision</span></div>
-<div class="line"><span class="comment"></span><span class="keyword">struct </span>Point {<span class="comment"></span></div>
+<div class="line"><span class="comment"></span><span class="keyword">struct </span><a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> {<span class="comment"></span></div>
 <div class="line"><span class="comment">    //! point coordinates</span></div>
 <div class="line"><span class="comment"></span>    <span class="keywordtype">double</span> x, y;</div>
 <div class="line"></div>
-<div class="line">    <span class="keywordtype">double</span> DistanceSquare(<span class="keyword">const</span> Point&amp; b)<span class="keyword"> const </span>{</div>
+<div class="line">    <span class="keywordtype">double</span> DistanceSquare(<span class="keyword">const</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a>&amp; b)<span class="keyword"> const </span>{</div>
 <div class="line">        <span class="keywordflow">return</span> (x - b.x) * (x - b.x) + (y - b.y) * (y - b.y);</div>
 <div class="line">    }</div>
 <div class="line">};</div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('kmeans_tutorial_step2.html','');});
 <div class="fragment"><div class="line"><span class="comment">//! Assignment of a point to a cluster.</span></div>
 <div class="line"><span class="comment"></span><span class="keyword">struct </span>ClosestCenter {</div>
 <div class="line">    <span class="keywordtype">size_t</span> cluster_id;</div>
-<div class="line">    Point  point;</div>
+<div class="line">    <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a>  point;</div>
 <div class="line">};<span class="comment"></span></div>
 <div class="line"><span class="comment">//! make ostream-able for Print()</span></div>
 <div class="line"><span class="comment"></span>std::ostream&amp; <a class="code" href="namespacethrill_1_1api.html#ae8473cbd67ac02098251c03a8218ae49" title="make ostream-able.">operator &lt;&lt; </a>(std::ostream&amp; os, <span class="keyword">const</span> ClosestCenter&amp; cc) {</div>
@@ -193,7 +193,7 @@ closest --- End DIA.Print() --- size=100
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Thrill Documentation Overview</a></li><li class="navelem"><a class="el" href="kmeans_tutorial.html">K-Means Tutorial</a></li>
-    <li class="footer">Generated on Mon Feb 20 2017 14:26:37 for Thrill by
+    <li class="footer">Generated on Sun Feb 26 2017 22:11:41 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

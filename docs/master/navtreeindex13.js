@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"classthrill_1_1mem_1_1PoolAllocator.html#a9292c3e34b31f09cb6cd0b42b511fa7a":[3,0,2,5,12,2],
+"classthrill_1_1mem_1_1PoolAllocator.html#a96805d5608516f1b0436874900768619":[3,0,2,5,12,4],
 "classthrill_1_1mem_1_1PoolAllocator.html#ab7b2a80659b6404c51826dd90e840d40":[3,0,2,5,12,13],
 "classthrill_1_1mem_1_1PoolAllocator.html#ac0c3877400a1a18e7197db7da4547b7c":[3,0,2,5,12,17],
 "classthrill_1_1mem_1_1PoolAllocator.html#ac2a85e463df4e95c1bf051cfb8237805":[3,0,2,5,12,14],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "classthrill_1_1net_1_1Connection.html#a597a259166090cf9a92740c4b7b423ec":[1,1,2,13,25],
 "classthrill_1_1net_1_1Connection.html#a6582abbd3fd5c98a95bd2b410806183b":[1,1,2,13,19],
 "classthrill_1_1net_1_1Connection.html#a6d3794ec6f14fe26bac1b878c96ac152":[1,1,2,13,4],
-"classthrill_1_1net_1_1Connection.html#a7797ce7c715f383c3538fc93bab9ddf1":[1,1,2,13,17],
-"classthrill_1_1net_1_1Connection.html#a8c1e110583b20eb54fecb89dfa624790":[1,1,2,13,12],
-"classthrill_1_1net_1_1Connection.html#a8d9343cf64d90942f33ff2d537e84f32":[1,1,2,13,21]
+"classthrill_1_1net_1_1Connection.html#a7797ce7c715f383c3538fc93bab9ddf1":[1,1,2,13,17]
 };

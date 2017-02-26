@@ -10,7 +10,7 @@ var hierarchy =
       [ "Allocator< T >", "classthrill_1_1mem_1_1Allocator.html", null ]
     ] ],
     [ "BinaryHeap< Timer >", "classthrill_1_1common_1_1BinaryHeap.html", null ],
-    [ "CentroidAccumulated< examples::k_means::Point >", "structexamples_1_1k__means_1_1CentroidAccumulated.html", null ],
+    [ "CentroidAccumulated< Vector< D, double > >", "structexamples_1_1k__means_1_1CentroidAccumulated.html", null ],
     [ "InputArchive", null, [
       [ "ThrillInputArchive< Reader >", "classthrill_1_1data_1_1serialization__cereal_1_1ThrillInputArchive.html", null ]
     ] ],
@@ -40,8 +40,6 @@ var hierarchy =
     [ "CentroidAccumulated< Point >", "structexamples_1_1k__means_1_1CentroidAccumulated.html", null ],
     [ "ClosestCentroid< Point >", "structexamples_1_1k__means_1_1ClosestCentroid.html", null ],
     [ "KMeansModel< Point >", "classexamples_1_1k__means_1_1KMeansModel.html", null ],
-    [ "Point< D >", "classexamples_1_1k__means_1_1Point.html", null ],
-    [ "VPoint", "classexamples_1_1k__means_1_1VPoint.html", null ],
     [ "PagePageLink", "structexamples_1_1page__rank_1_1PagePageLink.html", null ],
     [ "PageRankPair", "structexamples_1_1page__rank_1_1PageRankPair.html", null ],
     [ "ZipfGraphGen", "classexamples_1_1page__rank_1_1ZipfGraphGen.html", null ],
@@ -402,6 +400,8 @@ var hierarchy =
     [ "VariadicCallEnumerateImpl< Index, 0, Functor >", "classthrill_1_1common_1_1VariadicCallEnumerateImpl_3_01Index_00_010_00_01Functor_01_4.html", null ],
     [ "VariadicMapEnumerateImpl< Index, Size, Functor >", "classthrill_1_1common_1_1VariadicMapEnumerateImpl.html", null ],
     [ "VariadicMapEnumerateImpl< Index, 0, Functor >", "classthrill_1_1common_1_1VariadicMapEnumerateImpl_3_01Index_00_010_00_01Functor_01_4.html", null ],
+    [ "Vector< D, Type >", "classthrill_1_1common_1_1Vector.html", null ],
+    [ "VVector< Type >", "classthrill_1_1common_1_1VVector.html", null ],
     [ "ZipfDistribution", "classthrill_1_1common_1_1ZipfDistribution.html", null ],
     [ "BitStreamReader< BlockReader >", "classthrill_1_1core_1_1BitStreamReader.html", [
       [ "GolombBitStreamReader< BlockReader >", "classthrill_1_1core_1_1GolombBitStreamReader.html", null ]
@@ -630,6 +630,7 @@ var hierarchy =
         [ "ExpandStruct< Type, RawSize >", "classthrill_1_1io_1_1mng__local_1_1ExpandStruct.html", null ]
       ] ]
     ] ],
+    [ "Vector< D, double >", "classthrill_1_1common_1_1Vector.html", null ],
     [ "BaseType", null, [
       [ "AddFiller< BaseType, FillSize >", "classthrill_1_1io_1_1mng__local_1_1AddFiller.html", null ],
       [ "AddFiller< BaseType, 0 >", "classthrill_1_1io_1_1mng__local_1_1AddFiller_3_01BaseType_00_010_01_4.html", null ]

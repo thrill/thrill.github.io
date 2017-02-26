@@ -8,7 +8,6 @@ var searchData=
   ['pinnedbyteblockptr',['PinnedByteBlockPtr',['../classthrill_1_1data_1_1PinnedByteBlockPtr.html',1,'thrill::data']]],
   ['pinrequest',['PinRequest',['../classthrill_1_1data_1_1PinRequest.html',1,'thrill::data']]],
   ['pivot',['Pivot',['../structthrill_1_1api_1_1MergeNode_1_1Pivot.html',1,'thrill::api::MergeNode']]],
-  ['point',['Point',['../classexamples_1_1k__means_1_1Point.html',1,'examples::k_means']]],
   ['pool',['Pool',['../classthrill_1_1mem_1_1Pool.html',1,'thrill::mem']]],
   ['poolallocator',['PoolAllocator',['../classthrill_1_1mem_1_1PoolAllocator.html',1,'thrill::mem']]],
   ['prefixsumnode',['PrefixSumNode',['../exceptionthrill_1_1api_1_1PrefixSumNode.html',1,'thrill::api']]],
