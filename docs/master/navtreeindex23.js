@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"hdfs3__file_8hpp.html#a808dc1ad2bf23fe5db1bb79dde183fc0":[4,0,2,7,7,2],
 "hdfs3__file_8hpp.html#aa9f49fc6c46b77651f4a0208c0d4ee7a":[4,0,2,7,7,1],
 "hdfs3__file_8hpp_source.html":[4,0,2,7,7],
 "hierarchy.html":[3,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "malloc__tracker_8cpp.html#aa436704814afb6abd70b0ec1332852b7":[4,0,2,5,3,18],
 "malloc__tracker_8cpp.html#aa61b81e77299224deae90d0ae0785fe2":[4,0,2,5,3,28],
 "malloc__tracker_8cpp.html#aab2d6fb5cbfffb1c8474b5cd5d675467":[4,0,2,5,3,24],
-"malloc__tracker_8cpp.html#ab1cbc56ca79132826f17395e22842c21":[4,0,2,5,3,26],
-"malloc__tracker_8cpp.html#ab2e9221036513f304e849ea0def84ce7":[4,0,2,5,3,19]
+"malloc__tracker_8cpp.html#ab1cbc56ca79132826f17395e22842c21":[4,0,2,5,3,26]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"classthrill_1_1core_1_1LoserTreePointerUnguarded_3_01true_00_01ValueType_00_01Comparator_01_4.html#ad5337a75c57de3d0723290eac9d89f87":[3,0,2,2,21,2],
 "classthrill_1_1core_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html":[3,0,2,2,18],
 "classthrill_1_1core_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html#a071fda465da2cd47c848c51e802635ed":[3,0,2,2,18,0],
 "classthrill_1_1core_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html#a662020d2414024ea935bf7fc67423d26":[3,0,2,2,18,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "classthrill_1_1core_1_1ReduceTable.html#abff6cab86ab6aef08ca3e3c91af15d1d":[3,0,2,2,40,41],
 "classthrill_1_1core_1_1ReduceTable.html#ac6ee36d212451ac3467b124bc7c1d03e":[3,0,2,2,40,23],
 "classthrill_1_1core_1_1ReduceTable.html#acaae3c7e8a28143b7e4d6a3b9a30b882":[3,0,2,2,40,3],
-"classthrill_1_1core_1_1ReduceTable.html#acd22eacceb03df690ed22ffbe97be62b":[3,0,2,2,40,26],
-"classthrill_1_1core_1_1ReduceTable.html#ad0cebaf696f70a52b25e2216475ec4ee":[3,0,2,2,40,29]
+"classthrill_1_1core_1_1ReduceTable.html#acd22eacceb03df690ed22ffbe97be62b":[3,0,2,2,40,26]
 };

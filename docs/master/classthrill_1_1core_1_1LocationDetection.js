@@ -11,6 +11,7 @@ var classthrill_1_1core_1_1LocationDetection =
     [ "ReduceConfig", "classthrill_1_1core_1_1LocationDetection.html#a310ffc4f1bb6ca80691a12f65f941561", null ],
     [ "Table", "classthrill_1_1core_1_1LocationDetection.html#a35b2c90fa390ab8f8b9e96d67c0ed8fb", null ],
     [ "LocationDetection", "classthrill_1_1core_1_1LocationDetection.html#a009845774cbb8da15bb08d7492938976", null ],
+    [ "Dispose", "classthrill_1_1core_1_1LocationDetection.html#a6e2d745cdb7a7b983f861ed6a9a541a7", null ],
     [ "Flush", "classthrill_1_1core_1_1LocationDetection.html#aa576a3cac2f4dbf6de7a018f95739230", null ],
     [ "Initialize", "classthrill_1_1core_1_1LocationDetection.html#a15553bb11319296f7e29f76a981b3769", null ],
     [ "Insert", "classthrill_1_1core_1_1LocationDetection.html#aca876b9a09c98a001e80d0a12aa1151f", null ],

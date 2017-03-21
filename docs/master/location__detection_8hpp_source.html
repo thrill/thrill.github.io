@@ -470,33 +470,38 @@ $(document).ready(function(){initNavTree('location__detection_8hpp_source.html',
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="keywordflow">return</span> max_hash;</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    }</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">    //! Target vector for vector emitter</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a04d054651ce951f86daec373a080001d">  357</a></span>&#160;<span class="comment"></span>    std::vector&lt;HashCount&gt; <a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a04d054651ce951f86daec373a080001d" title="Target vector for vector emitter.">hash_occ_</a>;<span class="comment"></span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">    //! Emitter to vector</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1LocationDetection.html#ace47485e4dbd6106a4a7b7854cff4e2b">  359</a></span>&#160;<span class="comment"></span>    <a class="code" href="classthrill_1_1core_1_1ToVectorEmitter.html">Emitter</a> <a class="code" href="classthrill_1_1core_1_1LocationDetection.html#ace47485e4dbd6106a4a7b7854cff4e2b" title="Emitter to vector.">emit_</a>;<span class="comment"></span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment">    //! Thrill context</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1LocationDetection.html#ae8f38e2955f476fde7f144a0f76129bb">  361</a></span>&#160;<span class="comment"></span>    Context&amp; <a class="code" href="classthrill_1_1core_1_1LocationDetection.html#ae8f38e2955f476fde7f144a0f76129bb" title="Thrill context.">context_</a>;</div>
-<div class="line"><a name="l00362"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a802518f1133d686c0444ff642dc65d88">  362</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a802518f1133d686c0444ff642dc65d88">dia_id_</a>;<span class="comment"></span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment">    //! Reduce configuration used</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1LocationDetection.html#ad0cebaf696f70a52b25e2216475ec4ee">  364</a></span>&#160;<span class="comment"></span>    <a class="code" href="classthrill_1_1core_1_1DefaultReduceConfig.html" title="Configuration class to define operational parameters of reduce hash tables and reduce phases...">ReduceConfig</a> <a class="code" href="classthrill_1_1core_1_1LocationDetection.html#ad0cebaf696f70a52b25e2216475ec4ee" title="Reduce configuration used.">config_</a>;<span class="comment"></span></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment">    //! Reduce table used to count keys</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a543326072cdb6f956f813d58a92905fa">  366</a></span>&#160;<span class="comment"></span>    <a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a35b2c90fa390ab8f8b9e96d67c0ed8fb">Table</a> <a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a543326072cdb6f956f813d58a92905fa" title="Reduce table used to count keys.">table_</a>;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;};</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;} <span class="comment">// namespace core</span></div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;} <span class="comment">// namespace thrill</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="preprocessor">#endif // !THRILL_CORE_LOCATION_DETECTION_HEADER</span></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
+<div class="line"><a name="l00356"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a6e2d745cdb7a7b983f861ed6a9a541a7">  356</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a6e2d745cdb7a7b983f861ed6a9a541a7">Dispose</a>() {</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a543326072cdb6f956f813d58a92905fa" title="Reduce table used to count keys.">table_</a>.Dispose();</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        std::vector&lt;HashCount&gt;().<a class="code" href="namespacethrill_1_1common.html#aeb0f9e37913273e9110bcb574230ce08">swap</a>(<a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a04d054651ce951f86daec373a080001d" title="Target vector for vector emitter.">hash_occ_</a>);</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    }</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment">    //! Target vector for vector emitter</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a04d054651ce951f86daec373a080001d">  362</a></span>&#160;<span class="comment"></span>    std::vector&lt;HashCount&gt; <a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a04d054651ce951f86daec373a080001d" title="Target vector for vector emitter.">hash_occ_</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment">    //! Emitter to vector</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1LocationDetection.html#ace47485e4dbd6106a4a7b7854cff4e2b">  364</a></span>&#160;<span class="comment"></span>    <a class="code" href="classthrill_1_1core_1_1ToVectorEmitter.html">Emitter</a> <a class="code" href="classthrill_1_1core_1_1LocationDetection.html#ace47485e4dbd6106a4a7b7854cff4e2b" title="Emitter to vector.">emit_</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment">    //! Thrill context</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1LocationDetection.html#ae8f38e2955f476fde7f144a0f76129bb">  366</a></span>&#160;<span class="comment"></span>    Context&amp; <a class="code" href="classthrill_1_1core_1_1LocationDetection.html#ae8f38e2955f476fde7f144a0f76129bb" title="Thrill context.">context_</a>;</div>
+<div class="line"><a name="l00367"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a802518f1133d686c0444ff642dc65d88">  367</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a802518f1133d686c0444ff642dc65d88">dia_id_</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment">    //! Reduce configuration used</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1LocationDetection.html#ad0cebaf696f70a52b25e2216475ec4ee">  369</a></span>&#160;<span class="comment"></span>    <a class="code" href="classthrill_1_1core_1_1DefaultReduceConfig.html" title="Configuration class to define operational parameters of reduce hash tables and reduce phases...">ReduceConfig</a> <a class="code" href="classthrill_1_1core_1_1LocationDetection.html#ad0cebaf696f70a52b25e2216475ec4ee" title="Reduce configuration used.">config_</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">    //! Reduce table used to count keys</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a543326072cdb6f956f813d58a92905fa">  371</a></span>&#160;<span class="comment"></span>    <a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a35b2c90fa390ab8f8b9e96d67c0ed8fb">Table</a> <a class="code" href="classthrill_1_1core_1_1LocationDetection.html#a543326072cdb6f956f813d58a92905fa" title="Reduce table used to count keys.">table_</a>;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;};</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;} <span class="comment">// namespace core</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;} <span class="comment">// namespace thrill</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="preprocessor">#endif // !THRILL_CORE_LOCATION_DETECTION_HEADER</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_8bfba075c6cd97373f9ca7badca61766.html">core</a></li><li class="navelem"><a class="el" href="location__detection_8hpp.html">location_detection.hpp</a></li>
-    <li class="footer">Generated on Tue Mar 21 2017 12:57:03 for Thrill by
+    <li class="footer">Generated on Tue Mar 21 2017 15:03:49 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"exceptionthrill_1_1net_1_1mpi_1_1Group.html#af842a25bc6c61ce103ec86cd5786ee2f":[1,1,2,2,3,14],
 "exceptionthrill_1_1net_1_1mpi_1_1Group.html#afc377dcff3b640ad255b48fad3ead591":[1,1,2,2,3,32],
 "exceptionthrill_1_1net_1_1tcp_1_1Connection.html":[1,1,2,1,0],
 "exceptionthrill_1_1net_1_1tcp_1_1Connection.html#a108e0e7d05d9884a64dce2d88adfc425":[1,1,2,1,0,24],
@@ -207,8 +208,8 @@ var NAVTREEINDEX20 =
 "functions_func_0x7a.html":[3,3,1,24],
 "functions_func_0x7e.html":[3,3,1,25],
 "functions_rela.html":[3,3,6],
-"functions_type.html":[3,3,3],
 "functions_type.html":[3,3,3,0],
+"functions_type.html":[3,3,3],
 "functions_type_0x62.html":[3,3,3,1],
 "functions_type_0x63.html":[3,3,3,2],
 "functions_type_0x64.html":[3,3,3,3],
@@ -231,8 +232,8 @@ var NAVTREEINDEX20 =
 "functions_type_0x76.html":[3,3,3,20],
 "functions_type_0x77.html":[3,3,3,21],
 "functions_type_0x7a.html":[3,3,3,22],
-"functions_vars.html":[3,3,2],
 "functions_vars.html":[3,3,2,0],
+"functions_vars.html":[3,3,2],
 "functions_vars_0x62.html":[3,3,2,1],
 "functions_vars_0x63.html":[3,3,2,2],
 "functions_vars_0x64.html":[3,3,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "functions_vars_0x6e.html":[3,3,2,13],
 "functions_vars_0x6f.html":[3,3,2,14],
 "functions_vars_0x70.html":[3,3,2,15],
-"functions_vars_0x71.html":[3,3,2,16],
-"functions_vars_0x72.html":[3,3,2,17]
+"functions_vars_0x71.html":[3,3,2,16]
 };

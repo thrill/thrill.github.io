@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"examples_2tutorial_2k-means_step3_8cpp-example.html":[5,2],
 "examples_2tutorial_2k-means_step4_8cpp-example.html":[5,3],
 "examples_2tutorial_2k-means_step5_8cpp-example.html":[5,4],
 "examples_2tutorial_2k-means_step6_8cpp-example.html":[5,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "exceptionthrill_1_1api_1_1SortNode.html#ab184572dc4d3b603565e2a09315cfe5e":[1,1,0,29,6],
 "exceptionthrill_1_1api_1_1SortNode.html#abb33460ce80c85811386527ddb26268a":[1,1,0,29,31],
 "exceptionthrill_1_1api_1_1SortNode.html#ad03dc3b1e0b254d4ce63540d5c7a26a6":[1,1,0,29,4],
-"exceptionthrill_1_1api_1_1SortNode.html#ae44f144f9d4a6ac67ad75ea0c9d6c0de":[1,1,0,29,26],
-"exceptionthrill_1_1api_1_1SortNode.html#aea91265b5f735320de42ce48d9f7f678":[1,1,0,29,17]
+"exceptionthrill_1_1api_1_1SortNode.html#ae44f144f9d4a6ac67ad75ea0c9d6c0de":[1,1,0,29,26]
 };

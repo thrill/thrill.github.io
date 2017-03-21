@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"rl__bwt_8cpp.html":[4,0,1,6,13],
 "rl__bwt_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[4,0,1,6,13,1],
 "rl__bwt_8cpp.html#a9b63210dbe505d01b5f03386d064bd4e":[4,0,1,6,13,0],
 "rl__bwt_8cpp.html#a9f3df7b49615d442d49c1bf7557c7dbc":[4,0,1,6,13,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "structexamples_1_1page__rank_1_1PagePageLink.html#ae5635a2fdcd2d3c932e8682fe5f3b464":[3,0,0,2,0,1],
 "structexamples_1_1page__rank_1_1PageRankPair.html":[3,0,0,2,1],
 "structexamples_1_1page__rank_1_1PageRankPair.html#a0882652f2514e5b107399ebe33f36688":[3,0,0,2,1,1],
-"structexamples_1_1page__rank_1_1PageRankPair.html#a420e59726263f526ac83effecba02401":[3,0,0,2,1,2],
-"structexamples_1_1page__rank_1_1PageRankPair.html#a6f8de43bb9178720720f91cd0628fd0e":[3,0,0,2,1,0]
+"structexamples_1_1page__rank_1_1PageRankPair.html#a420e59726263f526ac83effecba02401":[3,0,0,2,1,2]
 };

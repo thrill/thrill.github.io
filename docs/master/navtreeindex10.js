@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"classthrill_1_1data_1_1PinnedByteBlockPtr.html#a14f406dd3db4af71f3634ff63cedac2e":[1,1,1,30,11],
 "classthrill_1_1data_1_1PinnedByteBlockPtr.html#a44d63ba8a6e61dbd70a0f690ee05bbae":[1,1,1,30,7],
 "classthrill_1_1data_1_1PinnedByteBlockPtr.html#a4c5a4399fd2559c3a8eb1498c516bcb7":[1,1,1,30,3],
 "classthrill_1_1data_1_1PinnedByteBlockPtr.html#a4f87a29ae74c99330713a7616cfb7fd7":[1,1,1,30,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "classthrill_1_1io_1_1FileBase.html#a820f01a693f2f9a8afeb0d62061c1382":[1,1,3,1,1,15],
 "classthrill_1_1io_1_1FileBase.html#a9c9b26e28b028e75ef6c3da4bd32eeac":[1,1,3,1,1,19],
 "classthrill_1_1io_1_1FileBase.html#a9f8d071c0770920251cf0cfaf1a95c6a":[1,1,3,1,1,12],
-"classthrill_1_1io_1_1FileBase.html#aa1e6759e35c6f0abf91a75276fff80d9":[1,1,3,1,1,9],
-"classthrill_1_1io_1_1FileBase.html#aab10c9723f5746b356566924ad9bc4ca":[1,1,3,1,1,1]
+"classthrill_1_1io_1_1FileBase.html#aa1e6759e35c6f0abf91a75276fff80d9":[1,1,3,1,1,9]
 };
