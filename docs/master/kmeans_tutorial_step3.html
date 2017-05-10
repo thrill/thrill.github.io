@@ -156,16 +156,16 @@ $(document).ready(function(){initNavTree('kmeans_tutorial_step3.html','');});
 <div class="fragment"><div class="line"><span class="comment">//! A 2-dimensional point with double precision</span></div>
 <div class="line"><span class="comment"></span><span class="keyword">struct </span><a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> {<span class="comment"></span></div>
 <div class="line"><span class="comment">    //! point coordinates</span></div>
-<div class="line"><span class="comment"></span>    <span class="keywordtype">double</span> x, y;</div>
+<div class="line"><span class="comment"></span>    <span class="keywordtype">double</span> <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a>, y;</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordtype">double</span> DistanceSquare(<span class="keyword">const</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a>&amp; b)<span class="keyword"> const </span>{</div>
-<div class="line">        <span class="keywordflow">return</span> (x - b.x) * (x - b.x) + (y - b.y) * (y - b.y);</div>
+<div class="line">        <span class="keywordflow">return</span> (<a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a> - b.x) * (<a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a> - b.x) + (y - b.y) * (y - b.y);</div>
 <div class="line">    }</div>
 <div class="line">    <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> operator + (<span class="keyword">const</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a>&amp; b)<span class="keyword"> const </span>{</div>
-<div class="line">        <span class="keywordflow">return</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> { x + b.x, y + b.y };</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> { <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a> + b.x, y + b.y };</div>
 <div class="line">    }</div>
 <div class="line">    <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> operator / (<span class="keywordtype">double</span> s)<span class="keyword"> const </span>{</div>
-<div class="line">        <span class="keywordflow">return</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> { x / s, y / s };</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code" href="namespaceexamples_1_1k__means.html#a02993ce2639dd142c90b522ca051044a" title="Compile-Time Fixed-Dimensional Points.">Point</a> { <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a> / s, y / s };</div>
 <div class="line">    }</div>
 <div class="line">};</div>
 </div><!-- fragment --><p> See the complete example code <a class="el" href="examples_2tutorial_2k-means_step3_8cpp-example.html">examples/tutorial/k-means_step3.cpp</a></p>
@@ -215,7 +215,7 @@ new_centers --- End DIA.Print() --- size=10
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Thrill Documentation Overview</a></li><li class="navelem"><a class="el" href="kmeans_tutorial.html">K-Means Tutorial</a></li>
-    <li class="footer">Generated on Tue Mar 21 2017 15:03:51 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:30:37 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

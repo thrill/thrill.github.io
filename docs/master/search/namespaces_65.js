@@ -7,6 +7,7 @@ var searchData=
   ['logistic_5fregression',['logistic_regression',['../namespaceexamples_1_1logistic__regression.html',1,'examples']]],
   ['page_5frank',['page_rank',['../namespaceexamples_1_1page__rank.html',1,'examples']]],
   ['select',['select',['../namespaceexamples_1_1select.html',1,'examples']]],
+  ['stochastic_5fgradient_5fdescent',['stochastic_gradient_descent',['../namespaceexamples_1_1stochastic__gradient__descent.html',1,'examples']]],
   ['suffix_5fsorting',['suffix_sorting',['../namespaceexamples_1_1suffix__sorting.html',1,'examples']]],
   ['triangles',['triangles',['../namespaceexamples_1_1triangles.html',1,'examples']]],
   ['word_5fcount',['word_count',['../namespaceexamples_1_1word__count.html',1,'examples']]]

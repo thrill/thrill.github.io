@@ -36,6 +36,7 @@ var searchData=
   ['timespan_5f',['timespan_',['../exceptionthrill_1_1data_1_1BlockQueue.html#a0f5b8e096afb06ebf3b666ae76ed9995',1,'thrill::data::BlockQueue::timespan_()'],['../exceptionthrill_1_1data_1_1StreamSink.html#a0f5b8e096afb06ebf3b666ae76ed9995',1,'thrill::data::StreamSink::timespan_()']]],
   ['tl_5fdelay_5fthreshold',['tl_delay_threshold',['../namespacethrill_1_1mem.html#ab5414e76a419b6c3d5a533d12f0d9fe6',1,'thrill::mem']]],
   ['tl_5fstats',['tl_stats',['../namespacethrill_1_1mem.html#a109046ac361e4e709706f77784e16d3e',1,'thrill::mem']]],
+  ['tolerance',['tolerance',['../classexamples_1_1stochastic__gradient__descent_1_1StochasticGradientDescent.html#a97eab6d709b80585fe9e8a54b1e3da27',1,'examples::stochastic_gradient_descent::StochasticGradientDescent']]],
   ['total_5f',['total_',['../classthrill_1_1mem_1_1Manager.html#a202fbb2570445495ea2030f0258e16e4',1,'thrill::mem::Manager']]],
   ['total_5fallocation_5f',['total_allocation_',['../classthrill_1_1io_1_1BlockManager.html#addab24e9b5923ec604622e340ebf8721',1,'thrill::io::BlockManager']]],
   ['total_5fallocs',['total_allocs',['../namespacethrill_1_1mem.html#a74912ef5e2bc3060ca0475035fb10b4f',1,'thrill::mem']]],

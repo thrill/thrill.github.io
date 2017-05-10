@@ -442,7 +442,7 @@ $(document).ready(function(){initNavTree('block__reader_8hpp_source.html','');})
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment">    //! advancing the cursor. Be careful with implicit type conversions!</span></div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment"></span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="line"><a name="l00326"></a><span class="lineno"><a class="code" href="classthrill_1_1data_1_1BlockReader.html#a584725102547b76380bf324032dab87e">  326</a></span>&#160;    <a class="code" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7" title="VFS object type.">Type</a> <a class="code" href="classthrill_1_1data_1_1BlockReader.html#a584725102547b76380bf324032dab87e">GetRaw</a>() {</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        static_assert(std::is_pod&lt;Type&gt;::value,</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        static_assert(<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">std::is_pod&lt;Type&gt;::value</a>,</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                      <span class="stringliteral">&quot;You only want to GetRaw() POD types as raw values.&quot;</span>);</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <a class="code" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7" title="VFS object type.">Type</a> ret;</div>
@@ -520,7 +520,7 @@ $(document).ready(function(){initNavTree('block__reader_8hpp_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1b62fa212cebae5dc6aa23a01bf7093d.html">data</a></li><li class="navelem"><a class="el" href="block__reader_8hpp.html">block_reader.hpp</a></li>
-    <li class="footer">Generated on Tue Mar 21 2017 15:03:50 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:30:36 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -137,6 +137,7 @@ var searchData=
   ['thrill_5fexamples_5fpage_5frank_5fpage_5frank_5fheader',['THRILL_EXAMPLES_PAGE_RANK_PAGE_RANK_HEADER',['../page__rank_8hpp.html#a4e4419a8909fe793a4194d0955b90c28',1,'page_rank.hpp']]],
   ['thrill_5fexamples_5fpage_5frank_5fzipf_5fgraph_5fgen_5fheader',['THRILL_EXAMPLES_PAGE_RANK_ZIPF_GRAPH_GEN_HEADER',['../zipf__graph__gen_8hpp.html#ae7099dcf7fb049b8fda6ad02dccaefea',1,'zipf_graph_gen.hpp']]],
   ['thrill_5fexamples_5fselect_5fselect_5fheader',['THRILL_EXAMPLES_SELECT_SELECT_HEADER',['../examples_2select_2select_8hpp.html#ab44666bad24e2a13f12783ccfa9eed56',1,'select.hpp']]],
+  ['thrill_5fexamples_5fstochastic_5fgradient_5fdescent_5fstochastic_5fgradient_5fdescent_5fheader',['THRILL_EXAMPLES_STOCHASTIC_GRADIENT_DESCENT_STOCHASTIC_GRADIENT_DESCENT_HEADER',['../stochastic__gradient__descent_8hpp.html#aeeeb3ab4dba7db842f46a9f904fdb75e',1,'stochastic_gradient_descent.hpp']]],
   ['thrill_5fexamples_5fsuffix_5fsorting_5fcheck_5fsa_5fheader',['THRILL_EXAMPLES_SUFFIX_SORTING_CHECK_SA_HEADER',['../check__sa_8hpp.html#a8c6c86b5e9bea5ea132b2559c583d2d1',1,'check_sa.hpp']]],
   ['thrill_5fexamples_5fsuffix_5fsorting_5fconstruct_5fbwt_5fheader',['THRILL_EXAMPLES_SUFFIX_SORTING_CONSTRUCT_BWT_HEADER',['../construct__bwt_8hpp.html#a51121db30ad37d3b5dcfd10ab5f055ee',1,'construct_bwt.hpp']]],
   ['thrill_5fexamples_5fsuffix_5fsorting_5fconstruct_5flcp_5fheader',['THRILL_EXAMPLES_SUFFIX_SORTING_CONSTRUCT_LCP_HEADER',['../construct__lcp_8hpp.html#acfa8e58a756d7cdaa36f5a5812798b68',1,'construct_lcp.hpp']]],

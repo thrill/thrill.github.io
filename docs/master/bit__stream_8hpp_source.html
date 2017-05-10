@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('bit__stream_8hpp_source.html','');});
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">     * \param value new value</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">     * \param bits k = size of the new value in bits</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1BitStreamWriter.html#a3369a39d5f0142902615fa03171949b6">   60</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1BitStreamWriter.html#a3369a39d5f0142902615fa03171949b6" title="Append k bits to the data array.">PutBits</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp; value, <span class="keywordtype">unsigned</span> bits) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1BitStreamWriter.html#a3369a39d5f0142902615fa03171949b6">   60</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1BitStreamWriter.html#a3369a39d5f0142902615fa03171949b6" title="Append k bits to the data array.">PutBits</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp; <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>, <span class="keywordtype">unsigned</span> bits) {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">// check that only valid bits are set in value</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        assert(bits == 64 || (value &amp; (~<span class="keywordtype">size_t</span>(0) &lt;&lt; bits)) == 0);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('bit__stream_8hpp_source.html','');});
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1core_1_1BitStreamWriter.html#aaaa4a0c86e6c6c408de0933efd604522" title="currently filled number of bits">pos_</a> + bits == <a class="code" href="classthrill_1_1core_1_1BitStreamWriter.html#a2deb189a076cc7ed1c4e213baf15f269a7a20ae7351465afcf3e049fdcb268cb0">buffer_bits_</a>) {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="comment">// buffer just filled</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="classthrill_1_1core_1_1BitStreamWriter.html#a532f6357f4e00269d11c5175e483ee20" title="current buffer of 32/64 bits">buffer_</a> |= value;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="classthrill_1_1core_1_1BitStreamWriter.html#a532f6357f4e00269d11c5175e483ee20" title="current buffer of 32/64 bits">buffer_</a> |= <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="classthrill_1_1core_1_1BitStreamWriter.html#ad68ce23e140849e4976a6fe69844db12" title="Output BlockWriter.">block_writer_</a>.PutRaw(<a class="code" href="classthrill_1_1core_1_1BitStreamWriter.html#a532f6357f4e00269d11c5175e483ee20" title="current buffer of 32/64 bits">buffer_</a>);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <a class="code" href="classthrill_1_1core_1_1BitStreamWriter.html#a532f6357f4e00269d11c5175e483ee20" title="current buffer of 32/64 bits">buffer_</a> = 0;</div>
@@ -355,7 +355,7 @@ $(document).ready(function(){initNavTree('bit__stream_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_8bfba075c6cd97373f9ca7badca61766.html">core</a></li><li class="navelem"><a class="el" href="bit__stream_8hpp.html">bit_stream.hpp</a></li>
-    <li class="footer">Generated on Tue Mar 21 2017 15:03:49 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:30:36 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

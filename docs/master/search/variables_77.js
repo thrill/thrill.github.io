@@ -9,6 +9,7 @@ var searchData=
   ['waiting_5frequests_5f',['waiting_requests_',['../exceptionthrill_1_1io_1_1LinuxaioQueue.html#ab7a75c266c486e722963074a6a52072f',1,'thrill::io::LinuxaioQueue']]],
   ['watch_5f',['watch_',['../exceptionthrill_1_1net_1_1mpi_1_1Dispatcher.html#ae25584fb8f8ab5b7c8677a03345288ba',1,'thrill::net::mpi::Dispatcher::watch_()'],['../exceptionthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#ae25584fb8f8ab5b7c8677a03345288ba',1,'thrill::net::tcp::SelectDispatcher::watch_()']]],
   ['watch_5factive_5f',['watch_active_',['../exceptionthrill_1_1net_1_1mpi_1_1Dispatcher.html#ae9757576c65c27b50601af29eed6217f',1,'thrill::net::mpi::Dispatcher']]],
+  ['weights',['weights',['../structexamples_1_1stochastic__gradient__descent_1_1GradientResult.html#a2da256b74c049d8736ff4bf8d0343495',1,'examples::stochastic_gradient_descent::GradientResult']]],
   ['window_5f',['window_',['../classthrill_1_1api_1_1BaseWindowNode.html#aff67b98ca560509411bffe7b6bf02773',1,'thrill::api::BaseWindowNode']]],
   ['window_5ffunction_5f',['window_function_',['../classthrill_1_1api_1_1BaseWindowNode.html#a61048aa463baa0c66067c0ea56e3b4ea',1,'thrill::api::BaseWindowNode']]],
   ['window_5fsize_5f',['window_size_',['../classthrill_1_1api_1_1BaseWindowNode.html#a4dafb4e490c9fdfd6c20d4d554b79b44',1,'thrill::api::BaseWindowNode::window_size_()'],['../exceptionthrill_1_1api_1_1ZipWindowNode.html#af9025cc92ed0a91c2eac06b8e908f1e2',1,'thrill::api::ZipWindowNode::window_size_()']]],

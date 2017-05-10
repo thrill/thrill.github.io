@@ -345,7 +345,7 @@ $(document).ready(function(){initNavTree('context_8cpp_source.html','');});
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">// Windows porting madness because setenv() is apparently dangerous</span></div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor">#if defined(_MSC_VER)</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor"></span><span class="keywordtype">int</span> <a class="code" href="namespacethrill_1_1api.html#a558c181f87ccc28665a2a282787d987f">wrap_setenv</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keyword">const</span> <span class="keywordtype">char</span>* value, <span class="keywordtype">int</span> overwrite) {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor"></span><span class="keywordtype">int</span> <a class="code" href="namespacethrill_1_1api.html#a558c181f87ccc28665a2a282787d987f">wrap_setenv</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>, <span class="keywordtype">int</span> overwrite) {</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">if</span> (!overwrite) {</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordtype">size_t</span> envsize = 0;</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordtype">int</span> errcode = getenv_s(&amp;envsize, <span class="keyword">nullptr</span>, 0, name);</div>
@@ -1312,7 +1312,7 @@ $(document).ready(function(){initNavTree('context_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="context_8cpp.html">context.cpp</a></li>
-    <li class="footer">Generated on Tue Mar 21 2017 15:03:49 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:30:35 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

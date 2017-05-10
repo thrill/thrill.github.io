@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['datapoint',['DataPoint',['../structexamples_1_1stochastic__gradient__descent_1_1DataPoint.html',1,'examples::stochastic_gradient_descent']]],
   ['defaultcountingptrdeleter',['DefaultCountingPtrDeleter',['../classthrill_1_1common_1_1DefaultCountingPtrDeleter.html',1,'thrill::common']]],
   ['defaultreduceconfig',['DefaultReduceConfig',['../classthrill_1_1api_1_1DefaultReduceConfig.html',1,'thrill::api']]],
   ['defaultreduceconfig',['DefaultReduceConfig',['../classthrill_1_1core_1_1DefaultReduceConfig.html',1,'thrill::core']]],

@@ -43,12 +43,18 @@ var hierarchy =
     [ "PagePageLink", "structexamples_1_1page__rank_1_1PagePageLink.html", null ],
     [ "PageRankPair", "structexamples_1_1page__rank_1_1PageRankPair.html", null ],
     [ "ZipfGraphGen", "classexamples_1_1page__rank_1_1ZipfGraphGen.html", null ],
+    [ "DataPoint< Vector >", "structexamples_1_1stochastic__gradient__descent_1_1DataPoint.html", null ],
+    [ "GradientResult< Vector >", "structexamples_1_1stochastic__gradient__descent_1_1GradientResult.html", null ],
+    [ "LeastSquaresGradient< Vector >", "classexamples_1_1stochastic__gradient__descent_1_1LeastSquaresGradient.html", null ],
+    [ "StochasticGradientDescent< Vector >", "classexamples_1_1stochastic__gradient__descent_1_1StochasticGradientDescent.html", null ],
+    [ "SumResult< Vector >", "structexamples_1_1stochastic__gradient__descent_1_1SumResult.html", null ],
     [ "IndexChar< Char, Index >", "structexamples_1_1suffix__sorting_1_1IndexChar.html", null ],
     [ "IndexFlag< Index >", "structexamples_1_1suffix__sorting_1_1IndexFlag.html", null ],
     [ "IndexRank< Index >", "structexamples_1_1suffix__sorting_1_1IndexRank.html", null ],
     [ "IndexRankFlag< Index >", "structexamples_1_1suffix__sorting_1_1IndexRankFlag.html", null ],
     [ "HashWordHasher", "structexamples_1_1word__count_1_1HashWordHasher.html", null ],
     [ "FillerStruct< FillSize >", "classthrill_1_1io_1_1mng__local_1_1FillerStruct.html", null ],
+    [ "GradientResult< thrill::common::Vector >", "structexamples_1_1stochastic__gradient__descent_1_1GradientResult.html", null ],
     [ "ItemReaderToolsBase< BlockReader< BlockSource > >", "classthrill_1_1common_1_1ItemReaderToolsBase.html", [
       [ "BlockReader< BlockSource >", "classthrill_1_1data_1_1BlockReader.html", null ]
     ] ],

@@ -250,7 +250,7 @@ $(document).ready(function(){initNavTree('fixed__buffer__builder_8hpp_source.htm
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">    //! careful with implicit type conversions!</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"></span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="line"><a name="l00134"></a><span class="lineno"><a class="code" href="classthrill_1_1net_1_1FixedBufferBuilder.html#a8e28a6feab7cf32aceafc05bca702b53">  134</a></span>&#160;    <a class="code" href="classthrill_1_1net_1_1FixedBufferBuilder.html" title="Represents a FIXED length area of memory, which can be modified by appending integral data types via ...">FixedBufferBuilder</a>&amp; <a class="code" href="classthrill_1_1net_1_1FixedBufferBuilder.html#a8e28a6feab7cf32aceafc05bca702b53">Put</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7" title="VFS object type.">Type</a>&amp; item) {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        static_assert(std::is_pod&lt;Type&gt;::value,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        static_assert(<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">std::is_pod&lt;Type&gt;::value</a>,</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                      <span class="stringliteral">&quot;You only want to Put() POD types as raw values.&quot;</span>);</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        assert(<a class="code" href="classthrill_1_1net_1_1FixedBufferBuilder.html#a5f31775800bbb46b35b5791def1f3acc" title="Size of valid data.">size_</a> + <span class="keyword">sizeof</span>(<a class="code" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7" title="VFS object type.">Type</a>) &lt;= Capacity);</div>
@@ -315,7 +315,7 @@ $(document).ready(function(){initNavTree('fixed__buffer__builder_8hpp_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_877fdf1e6de6dbbd26be6a4f8db0e6bf.html">net</a></li><li class="navelem"><a class="el" href="fixed__buffer__builder_8hpp.html">fixed_buffer_builder.hpp</a></li>
-    <li class="footer">Generated on Tue Mar 21 2017 15:03:50 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:30:36 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

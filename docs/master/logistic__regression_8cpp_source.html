@@ -169,12 +169,12 @@ $(document).ready(function(){initNavTree('logistic__regression_8cpp_source.html'
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                               <span class="stringliteral">&quot;Could not parse input line&quot;</span>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="logistic__regression_8cpp.html#a9ca5d4657704ea8d11a0de3e6ba5eed2">dim</a>; ++i) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        <a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> value = common::from_cstr&lt;T&gt;(endptr + 1, &amp;endptr);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        <a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a> = common::from_cstr&lt;T&gt;(endptr + 1, &amp;endptr);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                        <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(endptr &amp;&amp;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                   ((i + 1 &lt;= dim &amp;&amp; *endptr == <span class="charliteral">&#39;,&#39;</span>) ||</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                    (i + 1 == dim &amp;&amp; *endptr == 0)) &amp;&amp;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                   <span class="stringliteral">&quot;Could not parse input line&quot;</span>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        obj.second[i] = value;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        obj.second[i] = <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                    }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                    <span class="keywordflow">return</span> obj;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                })</div>
@@ -319,7 +319,7 @@ $(document).ready(function(){initNavTree('logistic__regression_8cpp_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_2df761f1a21a178c27f97e32477e0d89.html">logistic_regression</a></li><li class="navelem"><a class="el" href="logistic__regression_8cpp.html">logistic_regression.cpp</a></li>
-    <li class="footer">Generated on Tue Mar 21 2017 15:03:49 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:30:35 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

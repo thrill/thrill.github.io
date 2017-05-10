@@ -314,9 +314,9 @@ $(document).ready(function(){initNavTree('splay__tree_8hpp_source.html','');});
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            t = t-&gt;right;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        }</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            Tree* x = <a class="code" href="namespacethrill_1_1common.html#a3e9bdfab3ae32f9d5bd2e6dd27dac16c">splay</a>(k, t-&gt;left, cmp);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            Tree* <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a> = <a class="code" href="namespacethrill_1_1common.html#a3e9bdfab3ae32f9d5bd2e6dd27dac16c">splay</a>(k, t-&gt;left, cmp);</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            x-&gt;right = t-&gt;right;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            t = x;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            t = <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a>;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        }</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">return</span> r;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div>
@@ -337,9 +337,9 @@ $(document).ready(function(){initNavTree('splay__tree_8hpp_source.html','');});
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        t = t-&gt;right;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    }</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        Tree* x = <a class="code" href="namespacethrill_1_1common.html#a3e9bdfab3ae32f9d5bd2e6dd27dac16c">splay</a>(r, t-&gt;left, cmp);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        Tree* <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a> = <a class="code" href="namespacethrill_1_1common.html#a3e9bdfab3ae32f9d5bd2e6dd27dac16c">splay</a>(r, t-&gt;left, cmp);</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        x-&gt;right = t-&gt;right;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        t = x;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        t = <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a>;</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    }</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">return</span> r;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
@@ -357,7 +357,7 @@ $(document).ready(function(){initNavTree('splay__tree_8hpp_source.html','');});
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">// splayz -- Free Splay Tree methods with tree sizes</span></div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Tree&gt;</div>
-<div class="line"><a name="l00242"></a><span class="lineno"><a class="code" href="namespacethrill_1_1common.html#ae650f5366e8ce88786211de056d15d2c">  242</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="namespacethrill_1_1common.html#ae650f5366e8ce88786211de056d15d2c">splayz_size</a>(Tree* x) {</div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="code" href="namespacethrill_1_1common.html#ae650f5366e8ce88786211de056d15d2c">  242</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">size_t</span> <a class="code" href="namespacethrill_1_1common.html#ae650f5366e8ce88786211de056d15d2c">splayz_size</a>(Tree* <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a>) {</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">return</span> (x == <span class="keyword">nullptr</span>) ? 0 : x-&gt;size;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;}</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment"></span></div>
@@ -520,9 +520,9 @@ $(document).ready(function(){initNavTree('splay__tree_8hpp_source.html','');});
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            t = t-&gt;right;</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        }</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;            Tree* x = <a class="code" href="namespacethrill_1_1common.html#a7fe5cc8bfc8c5de6b6443b6492dc5e63">splayz</a>(k, t-&gt;left, cmp);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;            Tree* <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a> = <a class="code" href="namespacethrill_1_1common.html#a7fe5cc8bfc8c5de6b6443b6492dc5e63">splayz</a>(k, t-&gt;left, cmp);</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            x-&gt;right = t-&gt;right;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            t = x;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            t = <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a>;</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        }</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        <span class="keywordflow">if</span> (t != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;            t-&gt;size = tsize - 1;</div>
@@ -547,9 +547,9 @@ $(document).ready(function(){initNavTree('splay__tree_8hpp_source.html','');});
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        t = t-&gt;right;</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    }</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        Tree* x = <a class="code" href="namespacethrill_1_1common.html#a7fe5cc8bfc8c5de6b6443b6492dc5e63">splayz</a>(r, t-&gt;left, cmp);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        Tree* <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a> = <a class="code" href="namespacethrill_1_1common.html#a7fe5cc8bfc8c5de6b6443b6492dc5e63">splayz</a>(r, t-&gt;left, cmp);</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        x-&gt;right = t-&gt;right;</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        t = x;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        t = <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a>;</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    }</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordflow">if</span> (t != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        t-&gt;size = tsize - 1;</div>
@@ -672,7 +672,7 @@ $(document).ready(function(){initNavTree('splay__tree_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="splay__tree_8hpp.html">splay_tree.hpp</a></li>
-    <li class="footer">Generated on Tue Mar 21 2017 15:03:49 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:30:35 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -139,10 +139,10 @@ $(document).ready(function(){initNavTree('classthrill_1_1common_1_1ThreadPool.ht
 <p>Note that the threads in the pool start <b>before</b> the two loop functions are called. In case of <a class="el" href="classthrill_1_1common_1_1ThreadPool.html#a258f22f3d9bd615d29958d96ce0e15a2">LoopUntilEmpty()</a> the threads continue to be idle afterwards, and can be reused, until the <a class="el" href="classthrill_1_1common_1_1ThreadPool.html" title="ThreadPool starts a fixed number p of std::threads which process Jobs that are enqueued into a concur...">ThreadPool</a> is destroyed.</p>
 <div class="fragment"><div class="line"><a class="code" href="classthrill_1_1common_1_1ThreadPool.html#a652357386d4c67fe3ae6f36459c501be" title="Construct running thread pool of num_threads.">ThreadPool</a> pool(4); <span class="comment">// pool with 4 threads</span></div>
 <div class="line"></div>
-<div class="line"><span class="keywordtype">int</span> value = 0;</div>
+<div class="line"><span class="keywordtype">int</span> <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a> = 0;</div>
 <div class="line">pool.Enqueue([&amp;value]() {</div>
 <div class="line">  <span class="comment">// increment value in another thread.</span></div>
-<div class="line">  ++value;</div>
+<div class="line">  ++<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>;</div>
 <div class="line">});</div>
 <div class="line"></div>
 <div class="line">pool.LoopUntilEmpty();</div>
@@ -778,7 +778,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1common.html">common</a></li><li class="navelem"><a class="el" href="classthrill_1_1common_1_1ThreadPool.html">ThreadPool</a></li>
-    <li class="footer">Generated on Tue Mar 21 2017 15:03:52 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:30:39 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

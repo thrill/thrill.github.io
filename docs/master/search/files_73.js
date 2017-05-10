@@ -29,6 +29,8 @@ var searchData=
   ['start_2edox',['start.dox',['../start_8dox.html',1,'']]],
   ['stats_5fcounter_2ehpp',['stats_counter.hpp',['../stats__counter_8hpp.html',1,'']]],
   ['stats_5ftimer_2ehpp',['stats_timer.hpp',['../stats__timer_8hpp.html',1,'']]],
+  ['stochastic_5fgradient_5fdescent_2ehpp',['stochastic_gradient_descent.hpp',['../stochastic__gradient__descent_8hpp.html',1,'']]],
+  ['stochastic_5fgradient_5fdescent_5frun_2ecpp',['stochastic_gradient_descent_run.cpp',['../stochastic__gradient__descent__run_8cpp.html',1,'']]],
   ['stream_2ecpp',['stream.cpp',['../stream_8cpp.html',1,'']]],
   ['stream_2ehpp',['stream.hpp',['../stream_8hpp.html',1,'']]],
   ['stream_5fsink_2ecpp',['stream_sink.cpp',['../stream__sink_8cpp.html',1,'']]],

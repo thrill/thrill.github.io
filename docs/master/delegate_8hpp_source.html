@@ -294,7 +294,7 @@ $(document).ready(function(){initNavTree('delegate_8hpp_source.html','');});
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment"></span>    <span class="keyword">template</span> &lt;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keyword">typename</span> <a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>,</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keyword">typename</span> = <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            !std::is_same&lt;Delegate, typename std::decay&lt;T&gt;::type&gt;::value</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            !std::is_same&lt;Delegate, typename std::decay&lt;T&gt;::type&gt;<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">::value</a></div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            &gt;::type</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        &gt;</div>
 <div class="line"><a name="l00182"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html#a38e2b8453bb16d24f6b226c003947c58">  182</a></span>&#160;    <a class="code" href="classthrill_1_1common_1_1Delegate.html">Delegate</a>(<a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&amp;&amp; f)</div>
@@ -520,7 +520,7 @@ $(document).ready(function(){initNavTree('delegate_8hpp_source.html','');});
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment">    //! function caller for functor class.</span></div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment"></span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keyword">static</span> <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        !(IsMemberPair&lt;T&gt;::value || IsConstMemberPair&lt;T&gt;::value), R</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        !(<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">IsMemberPair&lt;T&gt;::value</a> || <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">IsConstMemberPair&lt;T&gt;::value</a>), R</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        &gt;::type</div>
 <div class="line"><a name="l00407"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html#a3998aab84ff84dc56f415fc0c08afeaf">  407</a></span>&#160;    <a class="code" href="classthrill_1_1common_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html#a3998aab84ff84dc56f415fc0c08afeaf" title="function caller for functor class.">functor_caller</a>(<span class="keywordtype">void</span>* <span class="keyword">const</span> object_ptr, A&amp;&amp; ... args) {</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <span class="keywordflow">return</span> (*static_cast&lt;T*&gt;(object_ptr))(std::forward&lt;A&gt;(args) ...);</div>
@@ -529,7 +529,7 @@ $(document).ready(function(){initNavTree('delegate_8hpp_source.html','');});
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">    //! function caller for const functor class.</span></div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment"></span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keyword">static</span> <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        (IsMemberPair&lt;T&gt;::value || IsConstMemberPair&lt;T&gt;::value), R</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        (<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">IsMemberPair&lt;T&gt;::value</a> || <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">IsConstMemberPair&lt;T&gt;::value</a>), R</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        &gt;::type</div>
 <div class="line"><a name="l00416"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html#aab7e238270860f97f119cc36f9720f03">  416</a></span>&#160;    <a class="code" href="classthrill_1_1common_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html#aab7e238270860f97f119cc36f9720f03" title="function caller for const functor class.">functor_caller</a>(<span class="keywordtype">void</span>* <span class="keyword">const</span> object_ptr, A&amp;&amp; ... args) {</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        <span class="keywordflow">return</span> (static_cast&lt;T*&gt;(object_ptr)-&gt;first-&gt;*</div>
@@ -583,7 +583,7 @@ $(document).ready(function(){initNavTree('delegate_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="delegate_8hpp.html">delegate.hpp</a></li>
-    <li class="footer">Generated on Tue Mar 21 2017 15:03:49 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:30:35 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

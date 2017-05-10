@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['leastsquaresgradient',['LeastSquaresGradient',['../classexamples_1_1stochastic__gradient__descent_1_1LeastSquaresGradient.html',1,'examples::stochastic_gradient_descent']]],
   ['linuxaiofile',['LinuxaioFile',['../exceptionthrill_1_1io_1_1LinuxaioFile.html',1,'thrill::io']]],
   ['linuxaioqueue',['LinuxaioQueue',['../exceptionthrill_1_1io_1_1LinuxaioQueue.html',1,'thrill::io']]],
   ['linuxaiorequest',['LinuxaioRequest',['../exceptionthrill_1_1io_1_1LinuxaioRequest.html',1,'thrill::io']]],
@@ -17,10 +18,10 @@ var searchData=
   ['log2floor_3c_201_20_3e',['Log2Floor&lt; 1 &gt;',['../classthrill_1_1common_1_1Log2Floor_3_011_01_4.html',1,'thrill::common']]],
   ['logger',['Logger',['../classthrill_1_1common_1_1Logger.html',1,'thrill::common']]],
   ['loggervoidify',['LoggerVoidify',['../classthrill_1_1common_1_1LoggerVoidify.html',1,'thrill::common']]],
+  ['loser',['Loser',['../structthrill_1_1core_1_1LoserTreePointerBase_1_1Loser.html',1,'thrill::core::LoserTreePointerBase']]],
   ['loser',['Loser',['../structthrill_1_1core_1_1LoserTreePointerUnguardedBase_1_1Loser.html',1,'thrill::core::LoserTreePointerUnguardedBase']]],
   ['loser',['Loser',['../structthrill_1_1core_1_1LoserTreeCopyBase_1_1Loser.html',1,'thrill::core::LoserTreeCopyBase']]],
   ['loser',['Loser',['../structthrill_1_1core_1_1LoserTreeCopyUnguardedBase_1_1Loser.html',1,'thrill::core::LoserTreeCopyUnguardedBase']]],
-  ['loser',['Loser',['../structthrill_1_1core_1_1LoserTreePointerBase_1_1Loser.html',1,'thrill::core::LoserTreePointerBase']]],
   ['losertreecopy',['LoserTreeCopy',['../classthrill_1_1core_1_1LoserTreeCopy.html',1,'thrill::core']]],
   ['losertreecopy_3c_20true_2c_20valuetype_2c_20comparator_20_3e',['LoserTreeCopy&lt; true, ValueType, Comparator &gt;',['../classthrill_1_1core_1_1LoserTreeCopy_3_01true_00_01ValueType_00_01Comparator_01_4.html',1,'thrill::core']]],
   ['losertreecopybase',['LoserTreeCopyBase',['../classthrill_1_1core_1_1LoserTreeCopyBase.html',1,'thrill::core']]],

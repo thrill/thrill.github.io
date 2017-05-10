@@ -55,6 +55,7 @@ var searchData=
   ['statstimerbasestopped',['StatsTimerBaseStopped',['../classthrill_1_1common_1_1StatsTimerBaseStopped.html',1,'thrill::common']]],
   ['statstimerbasestopped_3c_20enable_5fstats_20_3e',['StatsTimerBaseStopped&lt; enable_stats &gt;',['../classthrill_1_1common_1_1StatsTimerBaseStopped.html',1,'thrill::common']]],
   ['statstimerbasestopped_3c_20stats_5fenabled_20_3e',['StatsTimerBaseStopped&lt; stats_enabled &gt;',['../classthrill_1_1common_1_1StatsTimerBaseStopped.html',1,'thrill::common']]],
+  ['stochasticgradientdescent',['StochasticGradientDescent',['../classexamples_1_1stochastic__gradient__descent_1_1StochasticGradientDescent.html',1,'examples::stochastic_gradient_descent']]],
   ['stream',['Stream',['../classthrill_1_1data_1_1Stream.html',1,'thrill::data']]],
   ['streammultiplexerheader',['StreamMultiplexerHeader',['../classthrill_1_1data_1_1StreamMultiplexerHeader.html',1,'thrill::data']]],
   ['streamset',['StreamSet',['../classthrill_1_1data_1_1StreamSet.html',1,'thrill::data']]],
@@ -62,6 +63,7 @@ var searchData=
   ['streamsink',['StreamSink',['../exceptionthrill_1_1data_1_1StreamSink.html',1,'thrill::data']]],
   ['stringview',['StringView',['../classthrill_1_1common_1_1StringView.html',1,'thrill::common']]],
   ['striping',['Striping',['../structthrill_1_1io_1_1Striping.html',1,'thrill::io']]],
+  ['sumresult',['SumResult',['../structexamples_1_1stochastic__gradient__descent_1_1SumResult.html',1,'examples::stochastic_gradient_descent']]],
   ['syscallfile',['SyscallFile',['../exceptionthrill_1_1io_1_1SyscallFile.html',1,'thrill::io']]],
   ['systemexception',['SystemException',['../classthrill_1_1common_1_1SystemException.html',1,'thrill::common']]]
 ];

@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('golomb__bit__stream_8hpp_source.html',
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">    /*!</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">     * Append new Golomb-encoded value to bitset</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1GolombBitStreamWriter.html#a90f74317a1f54986000fb65b45815a0e">   67</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1GolombBitStreamWriter.html#a90f74317a1f54986000fb65b45815a0e" title="Append new Golomb-encoded value to bitset.">PutGolomb</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp; value) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1GolombBitStreamWriter.html#a90f74317a1f54986000fb65b45815a0e">   67</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1GolombBitStreamWriter.html#a90f74317a1f54986000fb65b45815a0e" title="Append new Golomb-encoded value to bitset.">PutGolomb</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp; <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>) {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="defines_8hpp.html#abecc5d13bae37bbcb38d534a9e6a2db4">THRILL_UNLIKELY</a>(<a class="code" href="classthrill_1_1core_1_1GolombBitStreamWriter.html#ab880637c5a949c598e765244ccc84937" title="false, when PutGolomb_in was called already">first_call_</a>)) {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="comment">// First value can be very large. It is therefore not encoded.</span></div>
@@ -236,7 +236,7 @@ $(document).ready(function(){initNavTree('golomb__bit__stream_8hpp_source.html',
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1GolombBitStreamWriter.html#a6002470c2e3eec6303be38b4d30a3a3b">  121</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1GolombBitStreamWriter.html#a6002470c2e3eec6303be38b4d30a3a3b">Put</a>(<span class="keywordtype">size_t</span> value) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1GolombBitStreamWriter.html#a6002470c2e3eec6303be38b4d30a3a3b">  121</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1GolombBitStreamWriter.html#a6002470c2e3eec6303be38b4d30a3a3b">Put</a>(<span class="keywordtype">size_t</span> <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>) {</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="classthrill_1_1core_1_1GolombBitStreamWriter.html#a90f74317a1f54986000fb65b45815a0e" title="Append new Golomb-encoded value to bitset.">PutGolomb</a>(value);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
@@ -307,7 +307,7 @@ $(document).ready(function(){initNavTree('golomb__bit__stream_8hpp_source.html',
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type2&gt;</div>
 <div class="line"><a name="l00190"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1GolombBitStreamReader.html#a79dec2f4d5f93ac67fc2fe072c942ea2">  190</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1core_1_1GolombBitStreamReader.html#a79dec2f4d5f93ac67fc2fe072c942ea2">Next</a>() {</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        static_assert(</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            std::is_same&lt;size_t, Type2&gt;::value, <span class="stringliteral">&quot;Invalid Next() call&quot;</span>);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">std::is_same&lt;size_t, Type2&gt;::value</a>, <span class="stringliteral">&quot;Invalid Next() call&quot;</span>);</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1core_1_1GolombBitStreamReader.html#a8894ddc7769659a9ea4f628cc387e2d7">GetGolomb</a>();</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
@@ -339,7 +339,7 @@ $(document).ready(function(){initNavTree('golomb__bit__stream_8hpp_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_8bfba075c6cd97373f9ca7badca61766.html">core</a></li><li class="navelem"><a class="el" href="golomb__bit__stream_8hpp.html">golomb_bit_stream.hpp</a></li>
-    <li class="footer">Generated on Tue Mar 21 2017 15:03:49 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:30:36 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

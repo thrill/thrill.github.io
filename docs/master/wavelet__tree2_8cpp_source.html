@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('wavelet__tree2_8cpp_source.html','');}
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">using</span> PairBI = std::pair&lt;uint8_t, uint64_t&gt;;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">auto</span> wt = input_dia.template FlatMap&lt;PairBI&gt;(</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        [level](<span class="keyword">const</span> uint64_t&amp; x, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        [level](<span class="keyword">const</span> uint64_t&amp; <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a>, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt;= level; ++i) {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                emit(std::make_pair(i, x));</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            }</div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('wavelet__tree2_8cpp_source.html','');}
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                       });</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="wavelet__tree2_8cpp.html#a6b72e54baf646b08b4b87f987f583dcb">debug</a>)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        wt2.Map([](<span class="keyword">const</span> PairBI&amp; x) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        wt2.Map([](<span class="keyword">const</span> PairBI&amp; <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a>) {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                    <span class="keywordflow">return</span> <a class="code" href="namespacethrill_1_1mem.html#a83c1c233231a5bfd03944ee141b9609a" title="convert to string">std::to_string</a>(x.first) + <span class="stringliteral">&quot; &quot;</span> + <a class="code" href="namespacethrill_1_1mem.html#a83c1c233231a5bfd03944ee141b9609a" title="convert to string">std::to_string</a>(x.second);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                }).Print(<span class="stringliteral">&quot;wt&quot;</span>);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('wavelet__tree2_8cpp_source.html','');}
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                uint64_t b = (v[i].second &amp; ((maskbit) &gt;&gt; v[i].first)) != 0;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                x |= (b &lt;&lt; i);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">return</span> x;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        });</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="wavelet__tree2_8cpp.html#a6b72e54baf646b08b4b87f987f583dcb">debug</a>)</div>
@@ -238,7 +238,7 @@ $(document).ready(function(){initNavTree('wavelet__tree2_8cpp_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_0b8cd80b43220fb0eacec85b2381def2.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="wavelet__tree2_8cpp.html">wavelet_tree2.cpp</a></li>
-    <li class="footer">Generated on Tue Mar 21 2017 15:03:49 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:30:35 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

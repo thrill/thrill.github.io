@@ -398,7 +398,7 @@ $(document).ready(function(){initNavTree('merge_8hpp_source.html','');});
 <div class="line"><a name="l00280"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1MergeNode_1_1Stats.html#a04ff8a533b6ba80199aaf605d6d3b0a5">  280</a></span>&#160;<span class="comment"></span>        <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1api_1_1MergeNode_1_1Stats.html#a04ff8a533b6ba80199aaf605d6d3b0a5" title="The count of search iterations needed for balancing.">iterations_</a> = 0;</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
 <div class="line"><a name="l00282"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1MergeNode_1_1Stats.html#a1d09ce2c9eb2fc0636cfe6a7a1565381">  282</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1MergeNode_1_1Stats.html#a1d09ce2c9eb2fc0636cfe6a7a1565381">PrintToSQLPlotTool</a>(</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            <span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a>&amp; <a class="code" href="classthrill_1_1api_1_1DIABase.html#a84c26b3ea1701ac19d446aa9fd87d82d" title="return label() of DIANode subclass as stored by StatsNode">label</a>, <span class="keywordtype">size_t</span> p, <span class="keywordtype">size_t</span> value) {</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            <span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a>&amp; <a class="code" href="classthrill_1_1api_1_1DIABase.html#a84c26b3ea1701ac19d446aa9fd87d82d" title="return label() of DIANode subclass as stored by StatsNode">label</a>, <span class="keywordtype">size_t</span> p, <span class="keywordtype">size_t</span> <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>) {</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;RESULT &quot;</span> &lt;&lt; <span class="stringliteral">&quot;operation=&quot;</span> &lt;&lt; label &lt;&lt; <span class="stringliteral">&quot; time=&quot;</span> &lt;&lt; value</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot; workers=&quot;</span> &lt;&lt; p &lt;&lt; <span class="stringliteral">&quot; result_size_=&quot;</span> &lt;&lt; <a class="code" href="classthrill_1_1api_1_1MergeNode_1_1Stats.html#ac27645f20e9c3ae01d416b693300915f" title="The count of all elements processed on this host.">result_size_</a>;</div>
@@ -521,7 +521,7 @@ $(document).ready(function(){initNavTree('merge_8hpp_source.html','');});
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                stats_.<a class="code" href="classthrill_1_1api_1_1MergeNode_1_1Stats.html#a3154570af54c87bbde686121c7e61972" title="A Timer accumulating all time spent in File operations.">file_op_timer_</a>.Start();</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                <span class="keywordtype">size_t</span> idx = files_[i]-&gt;GetIndexOf(</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                    pivots[s].value, pivots[s].tie_idx,</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                    pivots[s].<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>, pivots[s].tie_idx,</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                    left[s][i], left[s][i] + width[s][i],</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                    comparator_);</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
@@ -824,14 +824,14 @@ $(document).ready(function(){initNavTree('merge_8hpp_source.html','');});
 <div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;        std::is_convertible&lt;</div>
 <div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;            ValueType,</div>
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;            <span class="keyword">typename</span> common::FunctionTraits&lt;Comparator&gt;::template arg&lt;0&gt;</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;            &gt;::value,</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;        <span class="stringliteral">&quot;Comparator has the wrong input type in argument 0&quot;</span>);</div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;</div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    static_assert(</div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;        std::is_convertible&lt;</div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;            ValueType,</div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;            <span class="keyword">typename</span> common::FunctionTraits&lt;Comparator&gt;::template arg&lt;1&gt;</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;            &gt;::value,</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        <span class="stringliteral">&quot;Comparator has the wrong input type in argument 1&quot;</span>);</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    <span class="comment">// Assert meaningful return type of comperator.</span></div>
@@ -839,7 +839,7 @@ $(document).ready(function(){initNavTree('merge_8hpp_source.html','');});
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;        std::is_convertible&lt;</div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;            CompareResult,</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;            <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;            &gt;::value,</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;        <span class="stringliteral">&quot;Comparator must return bool&quot;</span>);</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    <span class="keyword">auto</span> merge_node =</div>
@@ -871,7 +871,7 @@ $(document).ready(function(){initNavTree('merge_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="merge_8hpp.html">merge.hpp</a></li>
-    <li class="footer">Generated on Tue Mar 21 2017 15:03:49 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:30:35 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

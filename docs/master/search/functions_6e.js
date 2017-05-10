@@ -21,6 +21,7 @@ var searchData=
   ['node_5frefcount',['node_refcount',['../classthrill_1_1api_1_1DIA.html#a76c9b4a047328cf9705c411d1dc59f38',1,'thrill::api::DIA']]],
   ['nooperation',['NoOperation',['../structthrill_1_1common_1_1NoOperation.html#afdcb88e0f2e0c3faf3323e6bba1feef3',1,'thrill::common::NoOperation']]],
   ['norebalancetag',['NoRebalanceTag',['../structthrill_1_1api_1_1NoRebalanceTag.html#a0fcc6b317ffcb94e2ddd554376d080e7',1,'thrill::api::NoRebalanceTag']]],
+  ['norm',['Norm',['../classthrill_1_1common_1_1Vector.html#a789960451505e63dc79ec19ff575ca55',1,'thrill::common::Vector::Norm()'],['../classthrill_1_1common_1_1VVector.html#a789960451505e63dc79ec19ff575ca55',1,'thrill::common::VVector::Norm()']]],
   ['notify',['Notify',['../exceptionthrill_1_1net_1_1mock_1_1Dispatcher.html#a9b1d16452be22fe061b7abbd955b94af',1,'thrill::net::mock::Dispatcher']]],
   ['num_5fblocks',['num_blocks',['../classthrill_1_1core_1_1ReduceBucketHashTable.html#ae0f9086a50c83cba3e748cd7f2ab44ce',1,'thrill::core::ReduceBucketHashTable::num_blocks()'],['../classthrill_1_1data_1_1File.html#ae0f9086a50c83cba3e748cd7f2ab44ce',1,'thrill::data::File::num_blocks()']]],
   ['num_5fbuckets',['num_buckets',['../classthrill_1_1core_1_1ReduceTable.html#a46fdaa65eee84a26bb9139761bd287f9',1,'thrill::core::ReduceTable']]],
