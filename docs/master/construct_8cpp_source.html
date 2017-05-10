@@ -523,7 +523,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        dispatcher_.AsyncWriteCopy(</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            tcp, &amp;hello, <span class="keyword">sizeof</span>(hello),</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            AsyncWriteCallback::make&lt;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                Construction, &amp; Construction::OnHelloSent&gt;(<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                Construction, &amp;Construction::OnHelloSent&gt;(<span class="keyword">this</span>));</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; sent active hello to &quot;</span></div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;            &lt;&lt; <span class="stringliteral">&quot;client &quot;</span> &lt;&lt; tcp.peer_id() &lt;&lt; <span class="stringliteral">&quot; group id &quot;</span> &lt;&lt; tcp.group_id();</div>
@@ -531,7 +531,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        dispatcher_.AsyncRead(</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;            tcp, <span class="keyword">sizeof</span>(hello),</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            AsyncReadBufferCallback::make&lt;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                Construction, &amp; Construction::OnIncomingWelcome&gt;(<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                Construction, &amp;Construction::OnIncomingWelcome&gt;(<span class="keyword">this</span>));</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    }</div>
@@ -614,7 +614,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        dispatcher_.AsyncWriteCopy(</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;            c, &amp;msg_out, <span class="keyword">sizeof</span>(msg_out),</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            AsyncWriteCallback::make&lt;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;                Construction, &amp; Construction::OnHelloSent&gt;(<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;                Construction, &amp;Construction::OnHelloSent&gt;(<span class="keyword">this</span>));</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; my_rank_</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;            &lt;&lt; <span class="stringliteral">&quot; sent passive hello to client &quot;</span> &lt;&lt; msg_in-&gt;id;</div>
@@ -644,7 +644,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        dispatcher_.AsyncRead(</div>
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;            connections_.back(), <span class="keyword">sizeof</span>(WelcomeMsg),</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;            AsyncReadBufferCallback::make&lt;</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;                Construction, &amp; Construction::OnIncomingWelcomeAndReply&gt;(<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;                Construction, &amp;Construction::OnIncomingWelcomeAndReply&gt;(<span class="keyword">this</span>));</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        <span class="comment">// wait for more connections.</span></div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -684,7 +684,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_877fdf1e6de6dbbd26be6a4f8db0e6bf.html">net</a></li><li class="navelem"><a class="el" href="dir_6932eba81436afd0bb7e09bea6fff5b7.html">tcp</a></li><li class="navelem"><a class="el" href="construct_8cpp.html">construct.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:36 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:57 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

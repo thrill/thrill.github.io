@@ -179,14 +179,14 @@ $(document).ready(function(){initNavTree('meta_8hpp_source.html','');});
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// to it. Hence, this expands the content of the tuple as the arguments.</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Functor, <span class="keyword">typename</span> Tuple, std::size_t ... Is&gt;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="namespacethrill_1_1common.html#a679bc79bf573577cc707e1051f51cf51">   64</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacethrill_1_1common.html#a679bc79bf573577cc707e1051f51cf51">ApplyTupleImpl</a>(Functor &amp;&amp; f, Tuple &amp;&amp; t, <a class="code" href="structthrill_1_1common_1_1index__sequence.html">common::index_sequence&lt;Is ...&gt;</a>) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="namespacethrill_1_1common.html#a679bc79bf573577cc707e1051f51cf51">   64</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacethrill_1_1common.html#a679bc79bf573577cc707e1051f51cf51">ApplyTupleImpl</a>(Functor&amp;&amp; f, Tuple&amp;&amp; t, <a class="code" href="structthrill_1_1common_1_1index__sequence.html">common::index_sequence&lt;Is ...&gt;</a>) {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> std::forward&lt;Functor&gt;(f)(</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        std::get&lt;Is&gt;(std::forward&lt;Tuple&gt;(t)) ...);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//! Call the functor f with the contents of t as arguments.</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Functor, <span class="keyword">typename</span> Tuple&gt;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="namespacethrill_1_1common.html#a99cb8ab65b26e1aee033874b15b2ff74">   71</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacethrill_1_1common.html#a99cb8ab65b26e1aee033874b15b2ff74" title="Call the functor f with the contents of t as arguments.">ApplyTuple</a>(Functor &amp;&amp; f, Tuple &amp;&amp; t) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="namespacethrill_1_1common.html#a99cb8ab65b26e1aee033874b15b2ff74">   71</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacethrill_1_1common.html#a99cb8ab65b26e1aee033874b15b2ff74" title="Call the functor f with the contents of t as arguments.">ApplyTuple</a>(Functor&amp;&amp; f, Tuple&amp;&amp; t) {</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">using</span> Indices = <a class="code" href="structthrill_1_1common_1_1make__index__sequence.html">common::make_index_sequence</a>&lt;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;              std::tuple_size&lt;std::decay_t&lt;Tuple&gt; &gt;<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">::value</a>&gt;;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacethrill_1_1common.html#a679bc79bf573577cc707e1051f51cf51">ApplyTupleImpl</a>(std::forward&lt;Functor&gt;(f), std::forward&lt;Tuple&gt;(t),</div>
@@ -342,92 +342,87 @@ $(document).ready(function(){initNavTree('meta_8hpp_source.html','');});
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment">//! helper for VariadicMapIndex: base case</span></div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Index, <span class="keyword">typename</span> Functor, <span class="keyword">typename</span> Arg&gt;</div>
-<div class="line"><a name="l00227"></a><span class="lineno"><a class="code" href="namespacethrill_1_1common.html#a03a88d5c13c6a69b72a94cc1b3a53332">  227</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacethrill_1_1common.html#a03a88d5c13c6a69b72a94cc1b3a53332" title="helper for VariadicMapIndex: base case">VariadicMapIndexImpl</a>(Functor &amp;&amp; f, Arg &amp;&amp; arg)</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;{</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">return</span> std::make_tuple(</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        std::forward&lt;Functor&gt;(f)(<a class="code" href="structthrill_1_1common_1_1IndexSaver.html">IndexSaver&lt;Index&gt;</a>(), std::forward&lt;Arg&gt;(arg)));</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">//! helper for VariadicMapIndex: general recursive case</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Index, <span class="keyword">typename</span> Functor, <span class="keyword">typename</span> Arg, <span class="keyword">typename</span> ... MoreArgs&gt;</div>
-<div class="line"><a name="l00235"></a><span class="lineno"><a class="code" href="namespacethrill_1_1common.html#a00e5f9642cf87b075f51ab6c2135a4e5">  235</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacethrill_1_1common.html#a03a88d5c13c6a69b72a94cc1b3a53332" title="helper for VariadicMapIndex: base case">VariadicMapIndexImpl</a>(Functor &amp;&amp; f, Arg &amp;&amp; arg, MoreArgs &amp;&amp; ... rest)</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;{</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">return</span> std::tuple_cat(</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        std::make_tuple(</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            std::forward&lt;Functor&gt;(f)(<a class="code" href="structthrill_1_1common_1_1IndexSaver.html">IndexSaver&lt;Index&gt;</a>(),</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                                     std::forward&lt;Arg&gt;(arg))),</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        VariadicMapIndexImpl&lt;Index + 1&gt;(</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            std::forward&lt;Functor&gt;(f), std::forward&lt;MoreArgs&gt;(rest) ...));</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;}</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment">//! Collect a generic functor (like a generic lambda) for each variadic template</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment">//! argument together with its zero-based index.</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Functor, <span class="keyword">typename</span> ... Args&gt;</div>
-<div class="line"><a name="l00248"></a><span class="lineno"><a class="code" href="namespacethrill_1_1common.html#aff05572074360aae667cd3933b3acb62">  248</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacethrill_1_1common.html#aff05572074360aae667cd3933b3acb62">VariadicMapIndex</a>(Functor &amp;&amp; f, Args &amp;&amp; ... args)</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;{</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordflow">return</span> VariadicMapIndexImpl&lt;0&gt;(</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        std::forward&lt;Functor&gt;(f), std::forward&lt;Args&gt;(args) ...);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;}</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment">// Variadic Template Enumerate Mapper: run a generic templated functor (like a</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">// generic lambda) for each value from [Begin,End), and collect the return</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment">// values in a generic std::tuple. Called with func(IndexSaver&lt;&gt; index).</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment">//! helper for VariadicMapEnumerate: general recursive case</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Index, <span class="keywordtype">size_t</span> Size, <span class="keyword">typename</span> Functor&gt;</div>
-<div class="line"><a name="l00261"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl.html">  261</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl.html" title="helper for VariadicMapEnumerate: general recursive case">VariadicMapEnumerateImpl</a></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;{</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00264"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl.html#abf80e5dbef2cdd3aec8e2ad1b1633b13">  264</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl.html#abf80e5dbef2cdd3aec8e2ad1b1633b13">Map</a>(Functor &amp;&amp; f) {</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">return</span> std::tuple_cat(</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            std::make_tuple(std::forward&lt;Functor&gt;(f)(<a class="code" href="structthrill_1_1common_1_1IndexSaver.html">IndexSaver&lt;Index&gt;</a>())),</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl.html" title="helper for VariadicMapEnumerate: general recursive case">VariadicMapEnumerateImpl&lt;Index + 1, Size - 1, Functor&gt;::Map</a>(</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                std::forward&lt;Functor&gt;(f)));</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;};</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">//! helper for VariadicMapEnumerate: base case</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Index, <span class="keyword">typename</span> Functor&gt;</div>
-<div class="line"><a name="l00274"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl_3_01Index_00_010_00_01Functor_01_4.html">  274</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl.html" title="helper for VariadicMapEnumerate: general recursive case">VariadicMapEnumerateImpl</a>&lt;Index, 0, Functor&gt;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;{</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00277"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl_3_01Index_00_010_00_01Functor_01_4.html#a4fa204cad2052d5d68a3b95c7963614c">  277</a></span>&#160;    <span class="keyword">static</span> std::tuple&lt;&gt; <a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl_3_01Index_00_010_00_01Functor_01_4.html#a4fa204cad2052d5d68a3b95c7963614c">Map</a>(Functor&amp;&amp; <span class="comment">/* f */</span>) {</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keywordflow">return</span> std::tuple&lt;&gt;();</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    }</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;};</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="comment">//! Call a generic functor (like a generic lambda) for the integers [0,Size),</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment">//! and collect the return values in a generic std::tuple.</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Size, <span class="keyword">typename</span> Functor&gt;</div>
-<div class="line"><a name="l00285"></a><span class="lineno"><a class="code" href="namespacethrill_1_1common.html#a342736424f9251d5f245d24226077580">  285</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacethrill_1_1common.html#a342736424f9251d5f245d24226077580">VariadicMapEnumerate</a>(Functor &amp;&amp; f)</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;{</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl.html#abf80e5dbef2cdd3aec8e2ad1b1633b13">VariadicMapEnumerateImpl&lt;0, Size, Functor&gt;::Map</a>(</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        std::forward&lt;Functor&gt;(f));</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;}</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment">//! Call a generic functor (like a generic lambda) for the integers [Begin,End),</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment">//! and collect the return values in a generic std::tuple.</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Begin, <span class="keywordtype">size_t</span> End, <span class="keyword">typename</span> Functor&gt;</div>
-<div class="line"><a name="l00294"></a><span class="lineno"><a class="code" href="namespacethrill_1_1common.html#ae8330e7dd28ed00d9ad84a5d5872a8e5">  294</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacethrill_1_1common.html#a342736424f9251d5f245d24226077580">VariadicMapEnumerate</a>(Functor &amp;&amp; f)</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;{</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl.html#abf80e5dbef2cdd3aec8e2ad1b1633b13">VariadicMapEnumerateImpl&lt;Begin, End - Begin, Functor&gt;::Map</a>(</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        std::forward&lt;Functor&gt;(f));</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;}</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;} <span class="comment">// namespace common</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;} <span class="comment">// namespace thrill</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor">#endif // !THRILL_COMMON_META_HEADER</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="code" href="namespacethrill_1_1common.html#a03a88d5c13c6a69b72a94cc1b3a53332">  227</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacethrill_1_1common.html#a03a88d5c13c6a69b72a94cc1b3a53332" title="helper for VariadicMapIndex: base case">VariadicMapIndexImpl</a>(Functor&amp;&amp; f, Arg&amp;&amp; arg) {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">return</span> std::make_tuple(</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        std::forward&lt;Functor&gt;(f)(<a class="code" href="structthrill_1_1common_1_1IndexSaver.html">IndexSaver&lt;Index&gt;</a>(), std::forward&lt;Arg&gt;(arg)));</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;}</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">//! helper for VariadicMapIndex: general recursive case</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Index, <span class="keyword">typename</span> Functor, <span class="keyword">typename</span> Arg, <span class="keyword">typename</span> ... MoreArgs&gt;</div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="code" href="namespacethrill_1_1common.html#a00e5f9642cf87b075f51ab6c2135a4e5">  234</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacethrill_1_1common.html#a03a88d5c13c6a69b72a94cc1b3a53332" title="helper for VariadicMapIndex: base case">VariadicMapIndexImpl</a>(Functor&amp;&amp; f, Arg&amp;&amp; arg, MoreArgs&amp;&amp; ... rest) {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">return</span> std::tuple_cat(</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        std::make_tuple(</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            std::forward&lt;Functor&gt;(f)(<a class="code" href="structthrill_1_1common_1_1IndexSaver.html">IndexSaver&lt;Index&gt;</a>(),</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                                     std::forward&lt;Arg&gt;(arg))),</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        VariadicMapIndexImpl&lt;Index + 1&gt;(</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            std::forward&lt;Functor&gt;(f), std::forward&lt;MoreArgs&gt;(rest) ...));</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment">//! Collect a generic functor (like a generic lambda) for each variadic template</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment">//! argument together with its zero-based index.</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Functor, <span class="keyword">typename</span> ... Args&gt;</div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="code" href="namespacethrill_1_1common.html#aff05572074360aae667cd3933b3acb62">  246</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacethrill_1_1common.html#aff05572074360aae667cd3933b3acb62">VariadicMapIndex</a>(Functor&amp;&amp; f, Args&amp;&amp; ... args) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordflow">return</span> VariadicMapIndexImpl&lt;0&gt;(</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        std::forward&lt;Functor&gt;(f), std::forward&lt;Args&gt;(args) ...);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;}</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">// Variadic Template Enumerate Mapper: run a generic templated functor (like a</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment">// generic lambda) for each value from [Begin,End), and collect the return</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">// values in a generic std::tuple. Called with func(IndexSaver&lt;&gt; index).</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">//! helper for VariadicMapEnumerate: general recursive case</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Index, <span class="keywordtype">size_t</span> Size, <span class="keyword">typename</span> Functor&gt;</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl.html">  258</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl.html" title="helper for VariadicMapEnumerate: general recursive case">VariadicMapEnumerateImpl</a></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;{</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl.html#abf80e5dbef2cdd3aec8e2ad1b1633b13">  261</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl.html#abf80e5dbef2cdd3aec8e2ad1b1633b13">Map</a>(Functor&amp;&amp; f) {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordflow">return</span> std::tuple_cat(</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            std::make_tuple(std::forward&lt;Functor&gt;(f)(<a class="code" href="structthrill_1_1common_1_1IndexSaver.html">IndexSaver&lt;Index&gt;</a>())),</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl.html" title="helper for VariadicMapEnumerate: general recursive case">VariadicMapEnumerateImpl&lt;Index + 1, Size - 1, Functor&gt;::Map</a>(</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                std::forward&lt;Functor&gt;(f)));</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;};</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">//! helper for VariadicMapEnumerate: base case</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Index, <span class="keyword">typename</span> Functor&gt;</div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl_3_01Index_00_010_00_01Functor_01_4.html">  271</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl.html" title="helper for VariadicMapEnumerate: general recursive case">VariadicMapEnumerateImpl</a>&lt;Index, 0, Functor&gt;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;{</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00274"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl_3_01Index_00_010_00_01Functor_01_4.html#a4fa204cad2052d5d68a3b95c7963614c">  274</a></span>&#160;    <span class="keyword">static</span> std::tuple&lt;&gt; <a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl_3_01Index_00_010_00_01Functor_01_4.html#a4fa204cad2052d5d68a3b95c7963614c">Map</a>(Functor&amp;&amp; <span class="comment">/* f */</span>) {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">return</span> std::tuple&lt;&gt;();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;};</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment">//! Call a generic functor (like a generic lambda) for the integers [0,Size),</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">//! and collect the return values in a generic std::tuple.</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Size, <span class="keyword">typename</span> Functor&gt;</div>
+<div class="line"><a name="l00282"></a><span class="lineno"><a class="code" href="namespacethrill_1_1common.html#a342736424f9251d5f245d24226077580">  282</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacethrill_1_1common.html#a342736424f9251d5f245d24226077580">VariadicMapEnumerate</a>(Functor&amp;&amp; f) {</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl.html#abf80e5dbef2cdd3aec8e2ad1b1633b13">VariadicMapEnumerateImpl&lt;0, Size, Functor&gt;::Map</a>(</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        std::forward&lt;Functor&gt;(f));</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">//! Call a generic functor (like a generic lambda) for the integers [Begin,End),</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">//! and collect the return values in a generic std::tuple.</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Begin, <span class="keywordtype">size_t</span> End, <span class="keyword">typename</span> Functor&gt;</div>
+<div class="line"><a name="l00290"></a><span class="lineno"><a class="code" href="namespacethrill_1_1common.html#ae8330e7dd28ed00d9ad84a5d5872a8e5">  290</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacethrill_1_1common.html#a342736424f9251d5f245d24226077580">VariadicMapEnumerate</a>(Functor&amp;&amp; f) {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1common_1_1VariadicMapEnumerateImpl.html#abf80e5dbef2cdd3aec8e2ad1b1633b13">VariadicMapEnumerateImpl&lt;Begin, End - Begin, Functor&gt;::Map</a>(</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        std::forward&lt;Functor&gt;(f));</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;}</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;} <span class="comment">// namespace common</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;} <span class="comment">// namespace thrill</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">#endif // !THRILL_COMMON_META_HEADER</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="meta_8hpp.html">meta.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:35 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:56 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -711,7 +711,7 @@ $(document).ready(function(){initNavTree('dispatcher_8hpp_source.html','');});
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        <span class="comment">// register read callback</span></div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Dispatcher_1_1AsyncReadBuffer.html">AsyncReadBuffer</a>&amp; arb = <a class="code" href="classthrill_1_1net_1_1Dispatcher.html#ac1572d8f02e006bbb710c1d8f4753b0e" title="deque of asynchronous readers">async_read_</a>.back();</div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Dispatcher.html#a99f1e0312db37812afcceb605745d88b" title="Register a buffered read callback and a default exception callback.">AddRead</a>(c, AsyncCallback::make&lt;</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;                    <a class="code" href="classthrill_1_1net_1_1Dispatcher_1_1AsyncReadBuffer.html">AsyncReadBuffer</a>, &amp; AsyncReadBuffer::operator ()&gt;(&amp;arb));</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;                    <a class="code" href="classthrill_1_1net_1_1Dispatcher_1_1AsyncReadBuffer.html">AsyncReadBuffer</a>, &amp;AsyncReadBuffer::operator ()&gt;(&amp;arb));</div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    }</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="comment">    //! asynchronously read the full ByteBlock and deliver it to the callback</span></div>
@@ -732,7 +732,7 @@ $(document).ready(function(){initNavTree('dispatcher_8hpp_source.html','');});
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        <span class="comment">// register read callback</span></div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        <a class="code" href="classthrill_1_1net_1_1AsyncReadByteBlock.html">AsyncReadByteBlock</a>&amp; arbb = <a class="code" href="classthrill_1_1net_1_1Dispatcher.html#a65a99da00010d4e7865dbe97c9e5bdcc" title="deque of asynchronous readers">async_read_block_</a>.back();</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Dispatcher.html#a99f1e0312db37812afcceb605745d88b" title="Register a buffered read callback and a default exception callback.">AddRead</a>(c, AsyncCallback::make&lt;</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;                    <a class="code" href="classthrill_1_1net_1_1AsyncReadByteBlock.html">AsyncReadByteBlock</a>, &amp; AsyncReadByteBlock::operator ()&gt;(&amp;arbb));</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;                    <a class="code" href="classthrill_1_1net_1_1AsyncReadByteBlock.html">AsyncReadByteBlock</a>, &amp;AsyncReadByteBlock::operator ()&gt;(&amp;arbb));</div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    }</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;<span class="comment">    //! asynchronously write buffer and callback when delivered. The buffer is</span></div>
@@ -753,7 +753,7 @@ $(document).ready(function(){initNavTree('dispatcher_8hpp_source.html','');});
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;        <span class="comment">// register write callback</span></div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        <a class="code" href="classthrill_1_1net_1_1AsyncWriteBuffer.html">AsyncWriteBuffer</a>&amp; awb = <a class="code" href="classthrill_1_1net_1_1Dispatcher.html#a533866be70cee74439128c6b8f479fe4" title="deque of asynchronous writers">async_write_</a>.back();</div>
 <div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Dispatcher.html#aac5adaf99f608f55bbec8deff08ea886" title="Register a buffered write callback and a default exception callback.">AddWrite</a>(c, AsyncCallback::make&lt;</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;                     <a class="code" href="classthrill_1_1net_1_1AsyncWriteBuffer.html">AsyncWriteBuffer</a>, &amp; AsyncWriteBuffer::operator ()&gt;(&amp;awb));</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;                     <a class="code" href="classthrill_1_1net_1_1AsyncWriteBuffer.html">AsyncWriteBuffer</a>, &amp;AsyncWriteBuffer::operator ()&gt;(&amp;awb));</div>
 <div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    }</div>
 <div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;<span class="comment">    //! asynchronously write buffer and callback when delivered. The buffer is</span></div>
@@ -774,7 +774,7 @@ $(document).ready(function(){initNavTree('dispatcher_8hpp_source.html','');});
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;        <span class="comment">// register write callback</span></div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        <a class="code" href="classthrill_1_1net_1_1AsyncWriteBlock.html">AsyncWriteBlock</a>&amp; awb = <a class="code" href="classthrill_1_1net_1_1Dispatcher.html#a3d3f59c423810c2cc9cbecb9137c69ad" title="deque of asynchronous writers">async_write_block_</a>.back();</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Dispatcher.html#aac5adaf99f608f55bbec8deff08ea886" title="Register a buffered write callback and a default exception callback.">AddWrite</a>(c, AsyncCallback::make&lt;</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                     <a class="code" href="classthrill_1_1net_1_1AsyncWriteBlock.html">AsyncWriteBlock</a>, &amp; AsyncWriteBlock::operator ()&gt;(&amp;awb));</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                     <a class="code" href="classthrill_1_1net_1_1AsyncWriteBlock.html">AsyncWriteBlock</a>, &amp;AsyncWriteBlock::operator ()&gt;(&amp;awb));</div>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    }</div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;<span class="comment">    //! asynchronously write buffer and callback when delivered. COPIES the data</span></div>
@@ -1018,7 +1018,7 @@ $(document).ready(function(){initNavTree('dispatcher_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_877fdf1e6de6dbbd26be6a4f8db0e6bf.html">net</a></li><li class="navelem"><a class="el" href="dispatcher_8hpp.html">dispatcher.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:36 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:57 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

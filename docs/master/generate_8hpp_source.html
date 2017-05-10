@@ -200,8 +200,8 @@ $(document).ready(function(){initNavTree('generate_8hpp_source.html','');});
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> GenerateFunction&gt;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1">   85</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1" title="Generate is a Source-DOp, which creates a DIA of given size using a generator function.">Generate</a>(<a class="code" href="classthrill_1_1api_1_1Context.html" title="The Context of a job is a unique instance per worker which holds references to all underlying parts o...">Context</a> &amp; ctx, <span class="keywordtype">size_t</span> size,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;              <span class="keyword">const</span> GenerateFunction &amp;generate_function) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1">   85</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1" title="Generate is a Source-DOp, which creates a DIA of given size using a generator function.">Generate</a>(<a class="code" href="classthrill_1_1api_1_1Context.html" title="The Context of a job is a unique instance per worker which holds references to all underlying parts o...">Context</a>&amp; ctx, <span class="keywordtype">size_t</span> size,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;              <span class="keyword">const</span> GenerateFunction&amp; generate_function) {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">using</span> GenerateResult =</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;              <span class="keyword">typename</span> common::FunctionTraits&lt;GenerateFunction&gt;::result_type;</div>
@@ -237,7 +237,7 @@ $(document).ready(function(){initNavTree('generate_8hpp_source.html','');});
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="code" href="group__dia__sources.html#ga2433432b71ba99d3fef753f8dda30c4c">  122</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1" title="Generate is a Source-DOp, which creates a DIA of given size using a generator function.">Generate</a>(<a class="code" href="classthrill_1_1api_1_1Context.html" title="The Context of a job is a unique instance per worker which holds references to all underlying parts o...">Context</a> &amp; ctx, <span class="keywordtype">size_t</span> size) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="code" href="group__dia__sources.html#ga2433432b71ba99d3fef753f8dda30c4c">  122</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1" title="Generate is a Source-DOp, which creates a DIA of given size using a generator function.">Generate</a>(<a class="code" href="classthrill_1_1api_1_1Context.html" title="The Context of a job is a unique instance per worker which holds references to all underlying parts o...">Context</a>&amp; ctx, <span class="keywordtype">size_t</span> size) {</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1" title="Generate is a Source-DOp, which creates a DIA of given size using a generator function.">Generate</a>(ctx, size, [](<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp; index) { <span class="keywordflow">return</span> index; });</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
@@ -257,7 +257,7 @@ $(document).ready(function(){initNavTree('generate_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="generate_8hpp.html">generate.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:35 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:55 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

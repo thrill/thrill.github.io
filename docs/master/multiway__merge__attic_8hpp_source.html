@@ -529,15 +529,15 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;            <span class="keywordflow">goto</span> s210;</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    }</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor">#define THRILL_MERGE3CASE(a, b, c, c0, c1)           \</span></div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="preprocessor">    s ## a ## b ## c:                                \</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="preprocessor">    *target = *seq ## a;                             \</span></div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="preprocessor">    ++target;                                        \</span></div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="preprocessor">    --length;                                        \</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="preprocessor">    ++seq ## a;                                      \</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">    if (length == 0) goto finish;                    \</span></div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="preprocessor">    if (seq ## a c0 seq ## b) goto s ## a ## b ## c; \</span></div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">    if (seq ## a c1 seq ## c) goto s ## b ## a ## c; \</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="preprocessor">#define THRILL_MERGE3CASE(a, b, c, c0, c1)            \</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="preprocessor">    s ## a ## b ## c:                                 \</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="preprocessor">    *target = *seq ## a;                              \</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="preprocessor">    ++target;                                         \</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="preprocessor">    --length;                                         \</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="preprocessor">    ++seq ## a;                                       \</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">    if (length == 0) goto finish;                     \</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="preprocessor">    if (seq ## a c0 seq ## b) goto s ## a ## b ## c;  \</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">    if (seq ## a c1 seq ## c) goto s ## b ## a ## c;  \</span></div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="preprocessor">    goto s ## b ## c ## a;</span></div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    THRILL_MERGE3CASE(0, 1, 2, &lt;=, &lt;=);</div>
@@ -675,12 +675,12 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    seq2(seqs_begin[2].first, seqs_begin[2].second, comp),</div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    seq3(seqs_begin[3].first, seqs_begin[3].second, comp);</div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;<span class="preprocessor">#define THRILL_DECISION(a, b, c, d) do {                     \</span></div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;<span class="preprocessor">        if (seq ## d &lt; seq ## a) goto s ## d ## a ## b ## c; \</span></div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;<span class="preprocessor">        if (seq ## d &lt; seq ## b) goto s ## a ## d ## b ## c; \</span></div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="preprocessor">        if (seq ## d &lt; seq ## c) goto s ## a ## b ## d ## c; \</span></div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="preprocessor">        goto s ## a ## b ## c ## d;                          \</span></div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;<span class="preprocessor">}                                                            \</span></div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;<span class="preprocessor">#define THRILL_DECISION(a, b, c, d) do {                      \</span></div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;<span class="preprocessor">        if (seq ## d &lt; seq ## a) goto s ## d ## a ## b ## c;  \</span></div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;<span class="preprocessor">        if (seq ## d &lt; seq ## b) goto s ## a ## d ## b ## c;  \</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="preprocessor">        if (seq ## d &lt; seq ## c) goto s ## a ## b ## d ## c;  \</span></div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="preprocessor">        goto s ## a ## b ## c ## d;                           \</span></div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;<span class="preprocessor">}                                                             \</span></div>
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;<span class="preprocessor">    while (0)</span></div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;    <span class="keywordflow">if</span> (seq0 &lt;= seq1)</div>
@@ -705,15 +705,15 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;            THRILL_DECISION(2, 1, 0, 3);</div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    }</div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="preprocessor">#define THRILL_MERGE4CASE(a, b, c, d, c0, c1, c2)         \</span></div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="preprocessor">    s ## a ## b ## c ## d:                                \</span></div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="preprocessor">    if (length == 0) goto finish;                         \</span></div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;<span class="preprocessor">    target(*seq ## a);                                    \</span></div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;<span class="preprocessor">    --length;                                             \</span></div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;<span class="preprocessor">    ++seq ## a;                                           \</span></div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;<span class="preprocessor">    if (seq ## a c0 seq ## b) goto s ## a ## b ## c ## d; \</span></div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;<span class="preprocessor">    if (seq ## a c1 seq ## c) goto s ## b ## a ## c ## d; \</span></div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;<span class="preprocessor">    if (seq ## a c2 seq ## d) goto s ## b ## c ## a ## d; \</span></div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="preprocessor">#define THRILL_MERGE4CASE(a, b, c, d, c0, c1, c2)          \</span></div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="preprocessor">    s ## a ## b ## c ## d:                                 \</span></div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="preprocessor">    if (length == 0) goto finish;                          \</span></div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;<span class="preprocessor">    target(*seq ## a);                                     \</span></div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;<span class="preprocessor">    --length;                                              \</span></div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;<span class="preprocessor">    ++seq ## a;                                            \</span></div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;<span class="preprocessor">    if (seq ## a c0 seq ## b) goto s ## a ## b ## c ## d;  \</span></div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;<span class="preprocessor">    if (seq ## a c1 seq ## c) goto s ## b ## a ## c ## d;  \</span></div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;<span class="preprocessor">    if (seq ## a c2 seq ## d) goto s ## b ## c ## a ## d;  \</span></div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="preprocessor">    goto s ## b ## c ## d ## a;</span></div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    THRILL_MERGE4CASE(0, 1, 2, 3, &lt;=, &lt;=, &lt;=);</div>
@@ -803,12 +803,12 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    seq2(seqs_begin[2].first, seqs_begin[2].second, comp),</div>
 <div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    seq3(seqs_begin[3].first, seqs_begin[3].second, comp);</div>
 <div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;<span class="preprocessor">#define THRILL_DECISION(a, b, c, d) do {                     \</span></div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;<span class="preprocessor">        if (seq ## d &lt; seq ## a) goto s ## d ## a ## b ## c; \</span></div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;<span class="preprocessor">        if (seq ## d &lt; seq ## b) goto s ## a ## d ## b ## c; \</span></div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;<span class="preprocessor">        if (seq ## d &lt; seq ## c) goto s ## a ## b ## d ## c; \</span></div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;<span class="preprocessor">        goto s ## a ## b ## c ## d;                          \</span></div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;<span class="preprocessor">}                                                            \</span></div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;<span class="preprocessor">#define THRILL_DECISION(a, b, c, d) do {                      \</span></div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;<span class="preprocessor">        if (seq ## d &lt; seq ## a) goto s ## d ## a ## b ## c;  \</span></div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;<span class="preprocessor">        if (seq ## d &lt; seq ## b) goto s ## a ## d ## b ## c;  \</span></div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;<span class="preprocessor">        if (seq ## d &lt; seq ## c) goto s ## a ## b ## d ## c;  \</span></div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;<span class="preprocessor">        goto s ## a ## b ## c ## d;                           \</span></div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;<span class="preprocessor">}                                                             \</span></div>
 <div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;<span class="preprocessor">    while (0)</span></div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;    <span class="keywordflow">if</span> (seq0 &lt;= seq1)</div>
@@ -833,16 +833,16 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;            THRILL_DECISION(2, 1, 0, 3);</div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    }</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;<span class="preprocessor">#define THRILL_MERGE4CASE(a, b, c, d, c0, c1, c2)         \</span></div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;<span class="preprocessor">    s ## a ## b ## c ## d:                                \</span></div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;<span class="preprocessor">    if (length == 0) goto finish;                         \</span></div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;<span class="preprocessor">    *target = *seq ## a;                                  \</span></div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="preprocessor">    ++target;                                             \</span></div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;<span class="preprocessor">    --length;                                             \</span></div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="preprocessor">    ++seq ## a;                                           \</span></div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;<span class="preprocessor">    if (seq ## a c0 seq ## b) goto s ## a ## b ## c ## d; \</span></div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;<span class="preprocessor">    if (seq ## a c1 seq ## c) goto s ## b ## a ## c ## d; \</span></div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;<span class="preprocessor">    if (seq ## a c2 seq ## d) goto s ## b ## c ## a ## d; \</span></div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;<span class="preprocessor">#define THRILL_MERGE4CASE(a, b, c, d, c0, c1, c2)          \</span></div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;<span class="preprocessor">    s ## a ## b ## c ## d:                                 \</span></div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;<span class="preprocessor">    if (length == 0) goto finish;                          \</span></div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;<span class="preprocessor">    *target = *seq ## a;                                   \</span></div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="preprocessor">    ++target;                                              \</span></div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;<span class="preprocessor">    --length;                                              \</span></div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="preprocessor">    ++seq ## a;                                            \</span></div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;<span class="preprocessor">    if (seq ## a c0 seq ## b) goto s ## a ## b ## c ## d;  \</span></div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;<span class="preprocessor">    if (seq ## a c1 seq ## c) goto s ## b ## a ## c ## d;  \</span></div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;<span class="preprocessor">    if (seq ## a c2 seq ## d) goto s ## b ## c ## a ## d;  \</span></div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;<span class="preprocessor">    goto s ## b ## c ## d ## a;</span></div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    THRILL_MERGE4CASE(0, 1, 2, 3, &lt;=, &lt;=, &lt;=);</div>
@@ -2086,7 +2086,7 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_8bfba075c6cd97373f9ca7badca61766.html">core</a></li><li class="navelem"><a class="el" href="multiway__merge__attic_8hpp.html">multiway_merge_attic.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:36 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:56 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

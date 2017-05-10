@@ -231,7 +231,7 @@ $(document).ready(function(){initNavTree('stochastic__gradient__descent__run_8cp
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            [&amp;](<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp; <span class="comment">/* index */</span>) {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keyword">auto</span> <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a> = <a class="code" href="classthrill_1_1common_1_1Vector.html#a2d62414edc60ea352ca42211e48983de">Vector::Random</a>(dimensions, uni_dist, rng);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <span class="keyword">auto</span> y = weights.<a class="code" href="classthrill_1_1common_1_1Vector.html#ae269a00cd7b89954756c64df942c622e">dot</a>(<a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a>) * norm_dist(rng);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="structexamples_1_1stochastic__gradient__descent_1_1DataPoint.html" title="Model for one point consisting of a d-dimensional position and a label.">DataPoint&lt;Vector&gt;</a>{ <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a>, y };</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="structexamples_1_1stochastic__gradient__descent_1_1DataPoint.html" title="Model for one point consisting of a d-dimensional position and a label.">DataPoint&lt;Vector&gt;</a>({ <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a>, y });</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            })</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        .Cache().KeepForever().Execute();</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
@@ -294,7 +294,7 @@ $(document).ready(function(){initNavTree('stochastic__gradient__descent__run_8cp
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <span class="keywordflow">if</span> (!endptr || *endptr != 0) {</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                    <a class="code" href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e" title="Print via logger and abort().">die</a>(<span class="stringliteral">&quot;Could not parse point coordinates: &quot;</span> &lt;&lt; input);</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                }</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="structexamples_1_1stochastic__gradient__descent_1_1DataPoint.html" title="Model for one point consisting of a d-dimensional position and a label.">DataPoint&lt;Vector&gt;</a>{ v, l };</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="structexamples_1_1stochastic__gradient__descent_1_1DataPoint.html" title="Model for one point consisting of a d-dimensional position and a label.">DataPoint&lt;Vector&gt;</a>({ v, l });</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            })</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        .Cache().KeepForever().Execute();</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
@@ -432,7 +432,7 @@ $(document).ready(function(){initNavTree('stochastic__gradient__descent__run_8cp
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_10a18793c5e52e0d310748fcbb801b08.html">stochastic_gradient_descent</a></li><li class="navelem"><a class="el" href="stochastic__gradient__descent__run_8cpp.html">stochastic_gradient_descent_run.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:35 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:55 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

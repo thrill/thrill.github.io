@@ -794,7 +794,7 @@ $(document).ready(function(){initNavTree('block__pool_8cpp_source.html','');});
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;            data, block_ptr-&gt;<a class="code" href="classthrill_1_1data_1_1ByteBlock.html#a51a6e07eb694e16d10121033444d5186">em_bid_</a>.<a class="code" href="classthrill_1_1io_1_1BID_3_010_01_4.html#ae25fb5067bd6b3b1b319efc61685a98f" title="offset within the file of the block">offset</a>, block_ptr-&gt;<a class="code" href="classthrill_1_1data_1_1ByteBlock.html#aac782da1f912bceb5d8ad00c8dc892ac" title="the block size">size</a>(),</div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;            <span class="comment">// construct an immediate CompletionHandler callback</span></div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;            io::CompletionHandler::make&lt;</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;                <a class="code" href="classthrill_1_1data_1_1BlockPool.html#a45df2befa3a0de6ccacb8475cad4a2c1" title="for calling OnReadComplete and access to mutex and cvs">PinRequest</a>, &amp; <a class="code" href="classthrill_1_1data_1_1PinRequest.html#aebdb5c866cc00b0e1e206b968560c4f4" title="calls BlockPool::OnReadComplete used to common::delegate">PinRequest::OnComplete</a>&gt;(*read));</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;                <a class="code" href="classthrill_1_1data_1_1BlockPool.html#a45df2befa3a0de6ccacb8475cad4a2c1" title="for calling OnReadComplete and access to mutex and cvs">PinRequest</a>, &amp;<a class="code" href="classthrill_1_1data_1_1PinRequest.html#aebdb5c866cc00b0e1e206b968560c4f4" title="calls BlockPool::OnReadComplete used to common::delegate">PinRequest::OnComplete</a>&gt;(*read));</div>
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;</div>
 <div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    <a class="code" href="classthrill_1_1data_1_1BlockPool.html#a6c7b671e2f53e5f40b2ff21a7a02b4ce" title="pimpl data structure">d_</a>-&gt;reading_bytes_ += block_ptr-&gt;<a class="code" href="classthrill_1_1data_1_1ByteBlock.html#aac782da1f912bceb5d8ad00c8dc892ac" title="the block size">size</a>();</div>
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;</div>
@@ -1330,7 +1330,7 @@ $(document).ready(function(){initNavTree('block__pool_8cpp_source.html','');});
 <div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;            block_ptr-&gt;data_, block_ptr-&gt;em_bid_.offset, block_ptr-&gt;size(),</div>
 <div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;            <span class="comment">// construct an immediate CompletionHandler callback</span></div>
 <div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;            io::CompletionHandler::make&lt;</div>
-<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;                ByteBlock, &amp; <a class="code" href="classthrill_1_1data_1_1ByteBlock.html#a2b290c6fe8ffe77c2f13946e8be2ae8f" title="forwarded to block_pool_">ByteBlock::OnWriteComplete</a>&gt;(block_ptr));</div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;                ByteBlock, &amp;<a class="code" href="classthrill_1_1data_1_1ByteBlock.html#a2b290c6fe8ffe77c2f13946e8be2ae8f" title="forwarded to block_pool_">ByteBlock::OnWriteComplete</a>&gt;(block_ptr));</div>
 <div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;</div>
 <div class="line"><a name="l01217"></a><span class="lineno"> 1217</span>&#160;    <span class="keywordflow">return</span> (writing_[block_ptr] = std::move(req));</div>
 <div class="line"><a name="l01218"></a><span class="lineno"> 1218</span>&#160;}</div>
@@ -1441,7 +1441,7 @@ $(document).ready(function(){initNavTree('block__pool_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1b62fa212cebae5dc6aa23a01bf7093d.html">data</a></li><li class="navelem"><a class="el" href="block__pool_8cpp.html">block_pool.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:36 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:56 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

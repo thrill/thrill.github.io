@@ -363,11 +363,11 @@ $(document).ready(function(){initNavTree('reduce__to__index_8hpp_source.html',''
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig&gt;</div>
 <div class="line"><a name="l00247"></a><span class="lineno"><a class="code" href="group__dia__dops.html#gabc59492dd0253c9aa2d5964d3477bde3">  247</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#gabc59492dd0253c9aa2d5964d3477bde3" title="ReduceToIndex is a DOp, which groups elements of the DIA with the key_extractor returning an unsigned...">DIA&lt;ValueType, Stack&gt;::ReduceToIndex</a>(</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keyword">const</span> KeyExtractor &amp;key_extractor,</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">const</span> ReduceFunction &amp;reduce_function,</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordtype">size_t</span> size,</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a> &amp;neutral_element,</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keyword">const</span> ReduceConfig &amp;reduce_config)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>&amp; neutral_element,</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="comment">// forward to main function</span></div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">return</span> ReduceToIndex(</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <a class="code" href="namespacethrill_1_1api.html#a74c72f956bb65637f126676b079059df" title="global const VolatileKeyFlag instance">NoVolatileKeyTag</a>,</div>
@@ -379,11 +379,11 @@ $(document).ready(function(){initNavTree('reduce__to__index_8hpp_source.html',''
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;          <span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig&gt;</div>
 <div class="line"><a name="l00262"></a><span class="lineno"><a class="code" href="group__dia__dops.html#gac16cdb4737df4e291089d8ba5cfad6c3">  262</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#gabc59492dd0253c9aa2d5964d3477bde3" title="ReduceToIndex is a DOp, which groups elements of the DIA with the key_extractor returning an unsigned...">DIA&lt;ValueType, Stack&gt;::ReduceToIndex</a>(</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1VolatileKeyFlag.html" title="tag structure for ReduceByKey(), and ReduceToIndex()">VolatileKeyFlag&lt;VolatileKeyValue&gt;</a>&amp;,</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keyword">const</span> KeyExtractor &amp;key_extractor,</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keyword">const</span> ReduceFunction &amp;reduce_function,</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordtype">size_t</span> size,</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a> &amp;neutral_element,</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keyword">const</span> ReduceConfig &amp;reduce_config)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>&amp; neutral_element,</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    assert(IsValid());</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keyword">using</span> DOpResult</div>
@@ -445,7 +445,7 @@ $(document).ready(function(){initNavTree('reduce__to__index_8hpp_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="reduce__to__index_8hpp.html">reduce_to_index.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:35 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:56 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

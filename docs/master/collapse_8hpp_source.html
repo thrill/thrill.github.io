@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('collapse_8hpp_source.html','');});
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#ad1759538446397b32733b1f0747cda56" title="Virtual execution method. Triggers actual computation in sub-classes.">Execute</a>() final { abort(); }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#a4b3ddda1418ebf0574a00f8ebf341265" title="Virtual method for preparing start of PushData.">StartPreOp</a>(<span class="keywordtype">size_t</span> <span class="comment">/* id */</span>) final {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> Super::Child &amp; child : <a class="code" href="classthrill_1_1api_1_1DIANode.html#a8bbcd1a71ef8571ad25ddadcfdfba883" title="Callback functions from the child nodes.">Super::children_</a>)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> Super::Child&amp; child : <a class="code" href="classthrill_1_1api_1_1DIANode.html#a8bbcd1a71ef8571ad25ddadcfdfba883" title="Callback functions from the child nodes.">Super::children_</a>)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            child.node-&gt;StartPreOp(child.parent_index);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span></div>
@@ -193,7 +193,7 @@ $(document).ready(function(){initNavTree('collapse_8hpp_source.html','');});
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#ae1434a566c104eefe027936856588f33" title="Virtual method for preparing end of PushData.">StopPreOp</a>(<span class="keywordtype">size_t</span> <span class="comment">/* id */</span>) final {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> Super::Child &amp; child : Super::children_)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> Super::Child&amp; child : Super::children_)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            child.node-&gt;StopPreOp(child.parent_index);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
@@ -288,7 +288,7 @@ $(document).ready(function(){initNavTree('collapse_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="collapse_8hpp.html">collapse.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:35 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:55 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

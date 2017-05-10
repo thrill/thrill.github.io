@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('tcp_2group_8cpp_source.html','');});
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="exceptionthrill_1_1net_1_1tcp_1_1Group.html#a0feec208eeb70870e8ace6f308a03405" title="Return number of connections in this group (= number computing hosts)">num_hosts</a>; i++) {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        threads[i] = std::thread(</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            [i, &amp;endpoints, &amp;groups]() {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                        <span class="comment">// construct Group i with endpoints</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="comment">// construct Group i with endpoints</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <a class="code" href="group__net__tcp.html#gadf82af5b60886257f643df0a78421c32">Construct</a>(i, endpoints, groups.data() + i, 1);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            });</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('tcp_2group_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_877fdf1e6de6dbbd26be6a4f8db0e6bf.html">net</a></li><li class="navelem"><a class="el" href="dir_6932eba81436afd0bb7e09bea6fff5b7.html">tcp</a></li><li class="navelem"><a class="el" href="tcp_2group_8cpp.html">group.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:36 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:57 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

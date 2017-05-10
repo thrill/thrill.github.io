@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('flow__control__channel_8cpp_source.htm
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        [&amp;]() {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="classthrill_1_1common_1_1RunTimer.html" title="RIAA class for running the timer until destruction.">RunTimer</a> net_timer(<a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#a12c7b6d7f9398f99c9b5483545c701fc">timer_communication_</a>);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="comment">// Global all reduce</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="comment">// Global all reduce</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordtype">size_t</span> i = 0;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#a4aaf0495d34f4921a5759faf85ff9a13" title="The group associated with this channel.">group_</a>.<a class="code" href="group__net__layer.html#ga6331da9c2000bb2e7f1a21ca55c3af72" title="Reduce a value from all workers to all workers.">AllReduce</a>(i);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        });</div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('flow__control__channel_8cpp_source.htm
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    std::array&lt;size_t, 4&gt;&amp;, <span class="keyword">const</span> std::array&lt;size_t, 4&gt;&amp;,</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1ComponentSum.html" title="template for computing the component-wise sum of std::array or std::vector.">common::ComponentSum</a>&lt;std::array&lt;size_t, 4&gt; &gt;&amp;);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">template</span> <span class="keywordtype">size_t</span> <a class="code" href="group__net__layer.html#gab19e498b9d9ea7ec1e7dbd39c193835b" title="Broadcasts a value of a serializable type T from the master (the worker with id 0) to all other worke...">FlowControlChannel::Broadcast</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> &amp;, <span class="keywordtype">size_t</span>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">template</span> <span class="keywordtype">size_t</span> <a class="code" href="group__net__layer.html#gab19e498b9d9ea7ec1e7dbd39c193835b" title="Broadcasts a value of a serializable type T from the master (the worker with id 0) to all other worke...">FlowControlChannel::Broadcast</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp;, <span class="keywordtype">size_t</span>);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">template</span> std::array&lt;size_t, 2&gt; <a class="code" href="group__net__layer.html#gab19e498b9d9ea7ec1e7dbd39c193835b" title="Broadcasts a value of a serializable type T from the master (the worker with id 0) to all other worke...">FlowControlChannel::Broadcast</a>(</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">const</span> std::array&lt;size_t, 2&gt;&amp;, <span class="keywordtype">size_t</span>);</div>
@@ -234,7 +234,7 @@ $(document).ready(function(){initNavTree('flow__control__channel_8cpp_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_877fdf1e6de6dbbd26be6a4f8db0e6bf.html">net</a></li><li class="navelem"><a class="el" href="flow__control__channel_8cpp.html">flow_control_channel.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:36 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:57 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

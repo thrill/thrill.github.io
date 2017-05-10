@@ -150,11 +150,11 @@ $(document).ready(function(){initNavTree('word__count_8hpp_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">//! The most basic WordCount user program: reads a DIA containing std::string</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//! words, and returns a DIA containing WordCountPairs.</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputStack&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="namespaceexamples_1_1word__count.html#a6a08b95e1db32760c640f77ab72a05e9">   35</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespaceexamples_1_1word__count.html#a6a08b95e1db32760c640f77ab72a05e9">WordCount</a>(<span class="keyword">const</span> DIA&lt;std::string, InputStack&gt;&amp;input) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="namespaceexamples_1_1word__count.html#a6a08b95e1db32760c640f77ab72a05e9">   35</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespaceexamples_1_1word__count.html#a6a08b95e1db32760c640f77ab72a05e9">WordCount</a>(<span class="keyword">const</span> DIA&lt;std::string, InputStack&gt;&amp; input) {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">auto</span> word_pairs = input.template FlatMap&lt;WordCountPair&gt;(</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        [](<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a>&amp; line, <span class="keyword">auto</span> emit) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <span class="comment">/* map lambda: emit each word */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="comment">/* map lambda: emit each word */</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="namespacethrill_1_1common.html#a9bff4b064afd6216c0b11d6e816140d1" title="Split the given string at each separator character into distinct substrings, and call the given callb...">common::SplitView</a>(</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                line, <span class="charliteral">&#39; &#39;</span>, [&amp;](<span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1StringView.html" title="StringView is a reference to a part of a string, consisting of only a char pointer and a length...">common::StringView</a>&amp; sv) {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    <span class="keywordflow">if</span> (sv.<a class="code" href="classthrill_1_1common_1_1StringView.html#a3caedb145a667c26028740417dcf32c3" title="Returns the size of this StringView.">size</a>() == 0) <span class="keywordflow">return</span>;</div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('word__count_8hpp_source.html','');});
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//! creates hash values from the words prior to reducing by hash and</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//! word. Returns a DIA containing WordCountPairs.</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputStack&gt;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="namespaceexamples_1_1word__count.html#a2269673635fecefe4af7cb026dea3b31">   74</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespaceexamples_1_1word__count.html#a2269673635fecefe4af7cb026dea3b31">HashWordCountExample</a>(<span class="keyword">const</span> DIA&lt;std::string, InputStack&gt;&amp;input) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="namespaceexamples_1_1word__count.html#a2269673635fecefe4af7cb026dea3b31">   74</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespaceexamples_1_1word__count.html#a2269673635fecefe4af7cb026dea3b31">HashWordCountExample</a>(<span class="keyword">const</span> DIA&lt;std::string, InputStack&gt;&amp; input) {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::hash&lt;std::string&gt; string_hasher;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
@@ -235,7 +235,7 @@ $(document).ready(function(){initNavTree('word__count_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_6a66f5e7e6dbcec557024422dd288192.html">word_count</a></li><li class="navelem"><a class="el" href="word__count_8hpp.html">word_count.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:35 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:55 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

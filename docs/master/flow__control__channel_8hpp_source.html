@@ -366,7 +366,7 @@ $(document).ready(function(){initNavTree('flow__control__channel_8hpp_source.htm
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            [&amp;]() {</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                <a class="code" href="classthrill_1_1common_1_1RunTimer.html" title="RIAA class for running the timer until destruction.">RunTimer</a> net_timer(<a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#a12c7b6d7f9398f99c9b5483545c701fc">timer_communication_</a>);</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                    <span class="comment">// global prefix</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                <span class="comment">// global prefix</span></div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                <a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>** locals = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>**<span class="keyword">&gt;</span>(alloca(<a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#ae29834b2827b2988d6916046f17bb760" title="The count of all workers connected to this group.">thread_count_</a> * <span class="keyword">sizeof</span>(<a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>*)));</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#ae29834b2827b2988d6916046f17bb760" title="The count of all workers connected to this group.">thread_count_</a>; i++) {</div>
@@ -528,7 +528,7 @@ $(document).ready(function(){initNavTree('flow__control__channel_8hpp_source.htm
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        <a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#a09e0534d4b9f1e88f95a11e306047064">barrier_</a>.<a class="code" href="classthrill_1_1common_1_1ThreadBarrierSpinning.html#ae5f022814fce33965236a9f7d5b7e424" title="Waits for n threads to arrive.">Await</a>(</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;            [&amp;]() {</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                    <span class="comment">// copy from primary PE to all others</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                <span class="comment">// copy from primary PE to all others</span></div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                <a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> res = *GetLocalShared&lt;T&gt;(step, primary_pe);</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#ae29834b2827b2988d6916046f17bb760" title="The count of all workers connected to this group.">thread_count_</a>; i++) {</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                    *GetLocalShared&lt;T&gt;(step, i) = res;</div>
@@ -569,7 +569,7 @@ $(document).ready(function(){initNavTree('flow__control__channel_8hpp_source.htm
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;            [&amp;]() {</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;                <a class="code" href="classthrill_1_1common_1_1RunTimer.html" title="RIAA class for running the timer until destruction.">RunTimer</a> net_timer(<a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#a12c7b6d7f9398f99c9b5483545c701fc">timer_communication_</a>);</div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                    <span class="comment">// local reduce</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                <span class="comment">// local reduce</span></div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                <a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> local_sum = *GetLocalShared&lt;T&gt;(step, 0);</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; <a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#ae29834b2827b2988d6916046f17bb760" title="The count of all workers connected to this group.">thread_count_</a>; i++) {</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;                    local_sum = sum_op(local_sum, *GetLocalShared&lt;T&gt;(step, i));</div>
@@ -578,7 +578,7 @@ $(document).ready(function(){initNavTree('flow__control__channel_8hpp_source.htm
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;                <span class="comment">// global reduce</span></div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;                <a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#a4aaf0495d34f4921a5759faf85ff9a13" title="The group associated with this channel.">group_</a>.<a class="code" href="group__net__layer.html#ga7023111c8a94e4985bd8b53d6fdf78a0" title="Reduce a value from all workers to the worker 0.">Reduce</a>(local_sum, root / thread_count_, sum_op);</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                    <span class="comment">// set the local value only at the root</span></div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                <span class="comment">// set the local value only at the root</span></div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                <span class="keywordflow">if</span> (root / thread_count_ == <a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#a4aaf0495d34f4921a5759faf85ff9a13" title="The group associated with this channel.">group_</a>.<a class="code" href="classthrill_1_1net_1_1Group.html#ae75328939a4b19114b4f83b395d1d1e3" title="Return our rank among hosts in this group.">my_host_rank</a>())</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;                    *GetLocalShared&lt;T&gt;(step, root % thread_count_) = local_sum;</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            });</div>
@@ -614,7 +614,7 @@ $(document).ready(function(){initNavTree('flow__control__channel_8hpp_source.htm
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;            [&amp;]() {</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;                <a class="code" href="classthrill_1_1common_1_1RunTimer.html" title="RIAA class for running the timer until destruction.">RunTimer</a> net_timer(<a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#a12c7b6d7f9398f99c9b5483545c701fc">timer_communication_</a>);</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;                    <span class="comment">// local reduce</span></div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;                <span class="comment">// local reduce</span></div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;                <a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> local_sum = *GetLocalShared&lt;T&gt;(step, 0);</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; <a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#ae29834b2827b2988d6916046f17bb760" title="The count of all workers connected to this group.">thread_count_</a>; i++) {</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;                    local_sum = sum_op(local_sum, *GetLocalShared&lt;T&gt;(step, i));</div>
@@ -623,7 +623,7 @@ $(document).ready(function(){initNavTree('flow__control__channel_8hpp_source.htm
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                <span class="comment">// global reduce</span></div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                <a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#a4aaf0495d34f4921a5759faf85ff9a13" title="The group associated with this channel.">group_</a>.<a class="code" href="group__net__layer.html#ga6331da9c2000bb2e7f1a21ca55c3af72" title="Reduce a value from all workers to all workers.">AllReduce</a>(local_sum, sum_op);</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                    <span class="comment">// distribute back to local workers</span></div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                <span class="comment">// distribute back to local workers</span></div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#ae29834b2827b2988d6916046f17bb760" title="The count of all workers connected to this group.">thread_count_</a>; i++) {</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;                    *GetLocalShared&lt;T&gt;(step, i) = local_sum;</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;                }</div>
@@ -801,7 +801,7 @@ $(document).ready(function(){initNavTree('flow__control__channel_8hpp_source.htm
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    std::array&lt;size_t, 4&gt;&amp;, <span class="keyword">const</span> std::array&lt;size_t, 4&gt;&amp;,</div>
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1ComponentSum.html" title="template for computing the component-wise sum of std::array or std::vector.">common::ComponentSum</a>&lt;std::array&lt;size_t, 4&gt; &gt;&amp;);</div>
 <div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;<span class="keyword">extern</span> <span class="keyword">template</span> <span class="keywordtype">size_t</span> <a class="code" href="group__net__layer.html#gab19e498b9d9ea7ec1e7dbd39c193835b" title="Broadcasts a value of a serializable type T from the master (the worker with id 0) to all other worke...">FlowControlChannel::Broadcast</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> &amp;, <span class="keywordtype">size_t</span>);</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;<span class="keyword">extern</span> <span class="keyword">template</span> <span class="keywordtype">size_t</span> <a class="code" href="group__net__layer.html#gab19e498b9d9ea7ec1e7dbd39c193835b" title="Broadcasts a value of a serializable type T from the master (the worker with id 0) to all other worke...">FlowControlChannel::Broadcast</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp;, <span class="keywordtype">size_t</span>);</div>
 <div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;</div>
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;<span class="keyword">extern</span> <span class="keyword">template</span> std::array&lt;size_t, 2&gt; <a class="code" href="group__net__layer.html#gab19e498b9d9ea7ec1e7dbd39c193835b" title="Broadcasts a value of a serializable type T from the master (the worker with id 0) to all other worke...">FlowControlChannel::Broadcast</a>(</div>
 <div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    <span class="keyword">const</span> std::array&lt;size_t, 2&gt;&amp;, <span class="keywordtype">size_t</span>);</div>
@@ -829,7 +829,7 @@ $(document).ready(function(){initNavTree('flow__control__channel_8hpp_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_877fdf1e6de6dbbd26be6a4f8db0e6bf.html">net</a></li><li class="navelem"><a class="el" href="flow__control__channel_8hpp.html">flow_control_channel.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:36 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:57 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

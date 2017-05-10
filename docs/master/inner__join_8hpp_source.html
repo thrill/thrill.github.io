@@ -313,8 +313,8 @@ $(document).ready(function(){initNavTree('inner__join_8hpp_source.html','');});
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ElementType, <span class="keyword">typename</span> CompareFunction&gt;</div>
-<div class="line"><a name="l00198"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1api_1_1JoinNode.html#a3c8b0f8db72fe958759db87528b70a0c">  198</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="exceptionthrill_1_1api_1_1JoinNode.html#a3c8b0f8db72fe958759db87528b70a0c">MakePuller</a>(std::deque&lt;data::File&gt;&amp;files,</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                    std::vector&lt;data::File::Reader&gt;&amp;seq,</div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1api_1_1JoinNode.html#a3c8b0f8db72fe958759db87528b70a0c">  198</a></span>&#160;    <span class="keyword">auto</span> <a class="code" href="exceptionthrill_1_1api_1_1JoinNode.html#a3c8b0f8db72fe958759db87528b70a0c">MakePuller</a>(std::deque&lt;data::File&gt;&amp; files,</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                    std::vector&lt;data::File::Reader&gt;&amp; seq,</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                    CompareFunction compare_function, <span class="keywordtype">bool</span> consume) {</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordtype">size_t</span> merge_degree, prefetch;</div>
@@ -848,9 +848,9 @@ $(document).ready(function(){initNavTree('inner__join_8hpp_source.html','');});
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;        std::hash&lt;typename common::FunctionTraits&lt;KeyExtractor1&gt;::result_type&gt; &gt;</div>
 <div class="line"><a name="l00731"></a><span class="lineno"><a class="code" href="group__dia__dops.html#ga9d277ca38339e83d0ddad4fe3a91f9ce">  731</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga9d277ca38339e83d0ddad4fe3a91f9ce" title="Performs an inner join between this DIA and the DIA given in the first parameter.">InnerJoin</a>(</div>
 <div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1LocationDetectionFlag.html" title="tag structure for GroupByKey(), and InnerJoin()">LocationDetectionFlag&lt;LocationDetectionValue&gt;</a>&amp;,</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    <span class="keyword">const</span> FirstDIA &amp;first_dia, <span class="keyword">const</span> SecondDIA &amp;second_dia,</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    <span class="keyword">const</span> KeyExtractor1 &amp;key_extractor1, <span class="keyword">const</span> KeyExtractor2 &amp;key_extractor2,</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    <span class="keyword">const</span> JoinFunction &amp;join_function,</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    <span class="keyword">const</span> FirstDIA&amp; first_dia, <span class="keyword">const</span> SecondDIA&amp; second_dia,</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    <span class="keyword">const</span> KeyExtractor1&amp; key_extractor1, <span class="keyword">const</span> KeyExtractor2&amp; key_extractor2,</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    <span class="keyword">const</span> JoinFunction&amp; join_function,</div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    <span class="keyword">const</span> HashFunction&amp; hash_function = HashFunction()) {</div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;</div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    assert(first_dia.IsValid());</div>
@@ -943,9 +943,9 @@ $(document).ready(function(){initNavTree('inner__join_8hpp_source.html','');});
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    <span class="keyword">typename</span> HashFunction =</div>
 <div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        std::hash&lt;typename common::FunctionTraits&lt;KeyExtractor1&gt;::result_type&gt; &gt;</div>
 <div class="line"><a name="l00827"></a><span class="lineno"><a class="code" href="group__dia__dops.html#ga1c7353d35a313e9874c2522fb81fb36e">  827</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga9d277ca38339e83d0ddad4fe3a91f9ce" title="Performs an inner join between this DIA and the DIA given in the first parameter.">InnerJoin</a>(</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    <span class="keyword">const</span> FirstDIA &amp;first_dia, <span class="keyword">const</span> SecondDIA &amp;second_dia,</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    <span class="keyword">const</span> KeyExtractor1 &amp;key_extractor1, <span class="keyword">const</span> KeyExtractor2 &amp;key_extractor2,</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    <span class="keyword">const</span> JoinFunction &amp;join_function,</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    <span class="keyword">const</span> FirstDIA&amp; first_dia, <span class="keyword">const</span> SecondDIA&amp; second_dia,</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    <span class="keyword">const</span> KeyExtractor1&amp; key_extractor1, <span class="keyword">const</span> KeyExtractor2&amp; key_extractor2,</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    <span class="keyword">const</span> JoinFunction&amp; join_function,</div>
 <div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    <span class="keyword">const</span> HashFunction&amp; hash_function = HashFunction()) {</div>
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    <span class="comment">// forward to method _with_ location detection ON</span></div>
 <div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__dia__dops.html#ga9d277ca38339e83d0ddad4fe3a91f9ce" title="Performs an inner join between this DIA and the DIA given in the first parameter.">InnerJoin</a>(</div>
@@ -972,7 +972,7 @@ $(document).ready(function(){initNavTree('inner__join_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="inner__join_8hpp.html">inner_join.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:35 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:55 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

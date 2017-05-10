@@ -246,7 +246,7 @@ $(document).ready(function(){initNavTree('context_8cpp_source.html','');});
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            host_mem_config, num_hosts, workers_per_host);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// launch thread for each of the workers on this host.</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    std::vector&lt;std::thread&gt; threads(num_hosts * workers_per_host);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    std::vector&lt;std::thread&gt; threads(num_hosts* workers_per_host);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> host = 0; host &lt; num_hosts; ++host) {</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="namespacethrill_1_1mem.html#a18ff93b570414e0855bc7119bb1a3c6a" title="string without malloc tracking">mem::by_string</a> log_prefix = <span class="stringliteral">&quot;host &quot;</span> + <a class="code" href="namespacethrill_1_1mem.html#a83c1c233231a5bfd03944ee141b9609a" title="convert to string">mem::to_string</a>(host);</div>
@@ -1312,7 +1312,7 @@ $(document).ready(function(){initNavTree('context_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="context_8cpp.html">context.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:35 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:55 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

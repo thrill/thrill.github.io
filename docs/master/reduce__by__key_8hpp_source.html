@@ -353,9 +353,9 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig&gt;</div>
 <div class="line"><a name="l00237"></a><span class="lineno"><a class="code" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6">  237</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6" title="ReduceByKey is a DOp, which groups elements of the DIA with the key_extractor and reduces each key-bu...">DIA&lt;ValueType, Stack&gt;::ReduceByKey</a>(</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keyword">const</span> KeyExtractor &amp;key_extractor,</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">const</span> ReduceFunction &amp;reduce_function,</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keyword">const</span> ReduceConfig &amp;reduce_config)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="comment">// forward to main function</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keyword">using</span> Key = <span class="keyword">typename</span> common::FunctionTraits&lt;KeyExtractor&gt;::result_type;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">return</span> ReduceByKey(</div>
@@ -368,10 +368,10 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> ReduceFunction,</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;          <span class="keyword">typename</span> ReduceConfig, <span class="keyword">typename</span> KeyHashFunction&gt;</div>
 <div class="line"><a name="l00252"></a><span class="lineno"><a class="code" href="group__dia__dops.html#ga2fb344604fe3e665a1cefb6af63ef27b">  252</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6" title="ReduceByKey is a DOp, which groups elements of the DIA with the key_extractor and reduces each key-bu...">DIA&lt;ValueType, Stack&gt;::ReduceByKey</a>(</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keyword">const</span> KeyExtractor &amp;key_extractor,</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keyword">const</span> ReduceFunction &amp;reduce_function,</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keyword">const</span> ReduceConfig &amp;reduce_config,</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keyword">const</span> KeyHashFunction &amp;key_hash_function)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="comment">// forward to main function</span></div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keyword">using</span> Key = <span class="keyword">typename</span> common::FunctionTraits&lt;KeyExtractor&gt;::result_type;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">return</span> ReduceByKey(</div>
@@ -385,12 +385,12 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;          <span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig,</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;          <span class="keyword">typename</span> KeyHashFunction, <span class="keyword">typename</span> KeyEqualFunction&gt;</div>
 <div class="line"><a name="l00269"></a><span class="lineno"><a class="code" href="group__dia__dops.html#gacc9ba2ee1e11caa4eb7fa52ea5dbe6f1">  269</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6" title="ReduceByKey is a DOp, which groups elements of the DIA with the key_extractor and reduces each key-bu...">DIA&lt;ValueType, Stack&gt;::ReduceByKey</a>(</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1VolatileKeyFlag.html" title="tag structure for ReduceByKey(), and ReduceToIndex()">VolatileKeyFlag&lt;VolatileKeyValue&gt;</a>&amp;volatile_key_flag,</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keyword">const</span> KeyExtractor &amp;key_extractor,</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keyword">const</span> ReduceFunction &amp;reduce_function,</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keyword">const</span> ReduceConfig &amp;reduce_config,</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keyword">const</span> KeyHashFunction &amp;key_hash_function,</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keyword">const</span> KeyEqualFunction &amp;key_equal_funtion)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1VolatileKeyFlag.html" title="tag structure for ReduceByKey(), and ReduceToIndex()">VolatileKeyFlag&lt;VolatileKeyValue&gt;</a>&amp; volatile_key_flag,</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function,</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keyword">const</span> KeyEqualFunction&amp; key_equal_funtion)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="comment">// forward to main function</span></div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">return</span> ReduceByKey(</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        volatile_key_flag, <a class="code" href="namespacethrill_1_1api.html#a2ffc8e712901611b441823ab28b04045" title="global const DuplicateDetectionFlag instance">NoDuplicateDetectionTag</a>,</div>
@@ -403,12 +403,12 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;          <span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig,</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;          <span class="keyword">typename</span> KeyHashFunction, <span class="keyword">typename</span> KeyEqualFunction&gt;</div>
 <div class="line"><a name="l00287"></a><span class="lineno"><a class="code" href="group__dia__dops.html#gaaf28c6a4e66f961e7bd21c936ac1ae04">  287</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6" title="ReduceByKey is a DOp, which groups elements of the DIA with the key_extractor and reduces each key-bu...">DIA&lt;ValueType, Stack&gt;::ReduceByKey</a>(</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1DuplicateDetectionFlag.html" title="tag structure for ReduceByKey()">DuplicateDetectionFlag&lt;DuplicateDetectionValue&gt;</a>&amp;duplicate_detection_flag,</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keyword">const</span> KeyExtractor &amp;key_extractor,</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keyword">const</span> ReduceFunction &amp;reduce_function,</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keyword">const</span> ReduceConfig &amp;reduce_config,</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keyword">const</span> KeyHashFunction &amp;key_hash_function,</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keyword">const</span> KeyEqualFunction &amp;key_equal_funtion)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1DuplicateDetectionFlag.html" title="tag structure for ReduceByKey()">DuplicateDetectionFlag&lt;DuplicateDetectionValue&gt;</a>&amp; duplicate_detection_flag,</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function,</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keyword">const</span> KeyEqualFunction&amp; key_equal_funtion)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="comment">// forward to main function</span></div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordflow">return</span> ReduceByKey(</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <a class="code" href="namespacethrill_1_1api.html#a74c72f956bb65637f126676b079059df" title="global const VolatileKeyFlag instance">NoVolatileKeyTag</a>, duplicate_detection_flag,</div>
@@ -424,11 +424,11 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="line"><a name="l00306"></a><span class="lineno"><a class="code" href="group__dia__dops.html#gaa79f670abaff6f17cb7d17002c475eb7">  306</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6" title="ReduceByKey is a DOp, which groups elements of the DIA with the key_extractor and reduces each key-bu...">DIA&lt;ValueType, Stack&gt;::ReduceByKey</a>(</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1VolatileKeyFlag.html" title="tag structure for ReduceByKey(), and ReduceToIndex()">VolatileKeyFlag&lt;VolatileKeyValue&gt;</a>&amp;,</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1DuplicateDetectionFlag.html" title="tag structure for ReduceByKey()">DuplicateDetectionFlag&lt;DuplicateDetectionValue&gt;</a>&amp;,</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keyword">const</span> KeyExtractor &amp;key_extractor,</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keyword">const</span> ReduceFunction &amp;reduce_function,</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keyword">const</span> ReduceConfig &amp;reduce_config,</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keyword">const</span> KeyHashFunction &amp;key_hash_function,</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keyword">const</span> KeyEqualFunction &amp;key_equal_funtion)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function,</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keyword">const</span> KeyEqualFunction&amp; key_equal_funtion)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    assert(IsValid());</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keyword">using</span> DOpResult</div>
@@ -480,8 +480,8 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig&gt;</div>
 <div class="line"><a name="l00364"></a><span class="lineno"><a class="code" href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd">  364</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd" title="ReducePair is a DOp, which groups key-value-pairs in the input DIA by their key and reduces each key-...">DIA&lt;ValueType, Stack&gt;::ReducePair</a>(</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="keyword">const</span> ReduceFunction &amp;reduce_function,</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="keyword">const</span> ReduceConfig &amp;reduce_config)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="comment">// forward to main function</span></div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keyword">using</span> Key = <span class="keyword">typename</span> ValueType::first_type;</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keywordflow">return</span> ReducePair(reduce_function, reduce_config,</div>
@@ -492,9 +492,9 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig,</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;          <span class="keyword">typename</span> KeyHashFunction&gt;</div>
 <div class="line"><a name="l00376"></a><span class="lineno"><a class="code" href="group__dia__dops.html#gad79593a4c7c411a3883e49741b68a586">  376</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd" title="ReducePair is a DOp, which groups key-value-pairs in the input DIA by their key and reduces each key-...">DIA&lt;ValueType, Stack&gt;::ReducePair</a>(</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keyword">const</span> ReduceFunction &amp;reduce_function,</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keyword">const</span> ReduceConfig &amp;reduce_config,</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keyword">const</span> KeyHashFunction &amp;key_hash_function)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="comment">// forward to main function</span></div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keyword">using</span> Key = <span class="keyword">typename</span> ValueType::first_type;</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keywordflow">return</span> ReducePair(reduce_function, reduce_config,</div>
@@ -505,10 +505,10 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig,</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;          <span class="keyword">typename</span> KeyHashFunction, <span class="keyword">typename</span> KeyEqualFunction&gt;</div>
 <div class="line"><a name="l00389"></a><span class="lineno"><a class="code" href="group__dia__dops.html#gaa83c4de24f28079cb3842d7306990ae5">  389</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd" title="ReducePair is a DOp, which groups key-value-pairs in the input DIA by their key and reduces each key-...">DIA&lt;ValueType, Stack&gt;::ReducePair</a>(</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keyword">const</span> ReduceFunction &amp;reduce_function,</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keyword">const</span> ReduceConfig &amp;reduce_config,</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keyword">const</span> KeyHashFunction &amp;key_hash_function,</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keyword">const</span> KeyEqualFunction &amp;key_equal_funtion)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function,</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keyword">const</span> KeyEqualFunction&amp; key_equal_funtion)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="comment">// forward to main function</span></div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordflow">return</span> ReducePair(<a class="code" href="namespacethrill_1_1api.html#a2ffc8e712901611b441823ab28b04045" title="global const DuplicateDetectionFlag instance">NoDuplicateDetectionTag</a>,</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                      reduce_function, reduce_config,</div>
@@ -521,10 +521,10 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;          <span class="keyword">typename</span> KeyHashFunction, <span class="keyword">typename</span> KeyEqualFunction&gt;</div>
 <div class="line"><a name="l00404"></a><span class="lineno"><a class="code" href="group__dia__dops.html#ga0c2fd8eb498c64eeb3acad27398d4770">  404</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd" title="ReducePair is a DOp, which groups key-value-pairs in the input DIA by their key and reduces each key-...">DIA&lt;ValueType, Stack&gt;::ReducePair</a>(</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1DuplicateDetectionFlag.html" title="tag structure for ReduceByKey()">DuplicateDetectionFlag&lt;DuplicateDetectionValue&gt;</a>&amp;,</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keyword">const</span> ReduceFunction &amp;reduce_function,</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keyword">const</span> ReduceConfig &amp;reduce_config,</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keyword">const</span> KeyHashFunction &amp;key_hash_function,</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keyword">const</span> KeyEqualFunction &amp;key_equal_funtion)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function,</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keyword">const</span> KeyEqualFunction&amp; key_equal_funtion)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    assert(IsValid());</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keyword">using</span> DOpResult</div>
@@ -586,7 +586,7 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="reduce__by__key_8hpp.html">reduce_by_key.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:35 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:56 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

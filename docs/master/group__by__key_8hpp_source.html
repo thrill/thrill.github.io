@@ -512,9 +512,9 @@ $(document).ready(function(){initNavTree('group__by__key_8hpp_source.html','');}
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;          <span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> GroupFunction, <span class="keyword">typename</span> HashFunction&gt;</div>
 <div class="line"><a name="l00395"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1DIA.html#aec8eefe9b6477d94b1d3a43df5344af5">  395</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#gaada7421986d91977c873cbe15ce2d5e1" title="GroupByKey is a DOp, which groups elements of the DIA by its key.">DIA&lt;ValueType, Stack&gt;::GroupByKey</a>(</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1LocationDetectionFlag.html" title="tag structure for GroupByKey(), and InnerJoin()">LocationDetectionFlag&lt;LocationDetectionValue&gt;</a>&amp;,</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="keyword">const</span> KeyExtractor &amp;key_extractor,</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keyword">const</span> GroupFunction &amp;groupby_function,</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keyword">const</span> HashFunction &amp;hash_function)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keyword">const</span> GroupFunction&amp; groupby_function,</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keyword">const</span> HashFunction&amp; hash_function)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    static_assert(</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        std::is_same&lt;</div>
@@ -537,9 +537,9 @@ $(document).ready(function(){initNavTree('group__by__key_8hpp_source.html','');}
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueOut, <span class="keyword">typename</span> KeyExtractor,</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;          <span class="keyword">typename</span> GroupFunction, <span class="keyword">typename</span> HashFunction&gt;</div>
 <div class="line"><a name="l00421"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1DIA.html#a6784e64f0e1c302e5910989ab2a4a78f">  421</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#gaada7421986d91977c873cbe15ce2d5e1" title="GroupByKey is a DOp, which groups elements of the DIA by its key.">DIA&lt;ValueType, Stack&gt;::GroupByKey</a>(</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keyword">const</span> KeyExtractor &amp;key_extractor,</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keyword">const</span> GroupFunction &amp;groupby_function,</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keyword">const</span> HashFunction &amp;hash_function)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keyword">const</span> GroupFunction&amp; groupby_function,</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keyword">const</span> HashFunction&amp; hash_function)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <span class="comment">// forward to other method _without_ location detection</span></div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    <span class="keywordflow">return</span> GroupByKey&lt;ValueOut&gt;(</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        <a class="code" href="namespacethrill_1_1api.html#abff53205cc7bcee8b2f23c9e9b69b34f" title="global const LocationDetectionFlag instance">NoLocationDetectionTag</a>, key_extractor, groupby_function, hash_function);</div>
@@ -548,8 +548,8 @@ $(document).ready(function(){initNavTree('group__by__key_8hpp_source.html','');}
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueOut, <span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> GroupFunction&gt;</div>
 <div class="line"><a name="l00432"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1DIA.html#ad3ada8f1d3a216e36f5f4a6bf8ed821d">  432</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#gaada7421986d91977c873cbe15ce2d5e1" title="GroupByKey is a DOp, which groups elements of the DIA by its key.">DIA&lt;ValueType, Stack&gt;::GroupByKey</a>(</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keyword">const</span> KeyExtractor &amp;key_extractor,</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keyword">const</span> GroupFunction &amp;groupby_function)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keyword">const</span> GroupFunction&amp; groupby_function)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="comment">// forward to other method _without_ location detection</span></div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordflow">return</span> GroupByKey&lt;ValueOut&gt;(</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <a class="code" href="namespacethrill_1_1api.html#abff53205cc7bcee8b2f23c9e9b69b34f" title="global const LocationDetectionFlag instance">NoLocationDetectionTag</a>, key_extractor, groupby_function,</div>
@@ -568,7 +568,7 @@ $(document).ready(function(){initNavTree('group__by__key_8hpp_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="group__by__key_8hpp.html">group_by_key.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 11:30:35 for Thrill by
+    <li class="footer">Generated on Wed May 10 2017 11:54:55 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
