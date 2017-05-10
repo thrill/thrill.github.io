@@ -1,5 +1,13 @@
 var NAVTREEINDEX4 =
 {
+"classthrill_1_1common_1_1JsonLogger.html#a5d7f0a289f25885895bdd997eab78da2":[3,0,3,1,39,7],
+"classthrill_1_1common_1_1JsonLogger.html#a7c0a92de6256c83c7510902f868285d1":[3,0,3,1,39,2],
+"classthrill_1_1common_1_1JsonLogger.html#a824c5a63878911c3c4ffa86cad95deb3":[3,0,3,1,39,3],
+"classthrill_1_1common_1_1JsonLogger.html#ac8f2ed44013260403ac039f5ecf73a56":[3,0,3,1,39,11],
+"classthrill_1_1common_1_1JsonLogger.html#aec116ece334cf05d16528b8f6b78e2c1":[3,0,3,1,39,12],
+"classthrill_1_1common_1_1JsonLogger.html#aed0cf6f210920c3979bac0bd4114306c":[3,0,3,1,39,4],
+"classthrill_1_1common_1_1JsonLogger.html#af0b68d6281041d627baab035160e032a":[3,0,3,1,39,0],
+"classthrill_1_1common_1_1JsonVerbatim.html":[3,0,3,1,40],
 "classthrill_1_1common_1_1JsonVerbatim.html#a00880f7eec082a87a9219cb415423c1a":[3,0,3,1,40,0],
 "classthrill_1_1common_1_1JsonVerbatim.html#a6dca7628931e11a50914bf5580ffa473":[3,0,3,1,40,1],
 "classthrill_1_1common_1_1Log2.html":[3,0,3,1,41],
@@ -241,13 +249,5 @@ var NAVTREEINDEX4 =
 "classthrill_1_1common_1_1SharedState.html#ac199105976c0e609bf8fcfd1dd19f132":[3,0,3,1,70,4],
 "classthrill_1_1common_1_1SharedState.html#adac6883bb4d269efd77ef45e10e5b0cb":[3,0,3,1,70,3],
 "classthrill_1_1common_1_1SharedState.html#ae743c8a7961c798510c1c2344d28a68e":[3,0,3,1,70,2],
-"classthrill_1_1common_1_1Singleton.html":[3,0,3,1,71],
-"classthrill_1_1common_1_1Singleton.html#a14b3f1eb13a4977fa246fdf10cb8ed2e":[3,0,3,1,71,1],
-"classthrill_1_1common_1_1Singleton.html#a2fc63d3dd7a3accc66a41f573f10c248":[3,0,3,1,71,0],
-"classthrill_1_1common_1_1Singleton.html#a4261e9a2454202cd68bdb9c2fa4bf294":[3,0,3,1,71,4],
-"classthrill_1_1common_1_1Singleton.html#a46b408d049e924e42e743a9ea05b9f6d":[3,0,3,1,71,5],
-"classthrill_1_1common_1_1Singleton.html#a48d1fc15e788981ec5f7fe3e5c8641d7":[3,0,3,1,71,3],
-"classthrill_1_1common_1_1Singleton.html#a595a91c7a88735687865436625c851d4":[3,0,3,1,71,8],
-"classthrill_1_1common_1_1Singleton.html#a6773e98f43af2cd356c99c16e96bbdaa":[3,0,3,1,71,6],
-"classthrill_1_1common_1_1Singleton.html#a6eddcf4e98fd5e97b4163e162231e351":[3,0,3,1,71,10]
+"classthrill_1_1common_1_1Singleton.html":[3,0,3,1,71]
 };

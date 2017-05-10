@@ -1,5 +1,13 @@
 var NAVTREEINDEX11 =
 {
+"classthrill_1_1io_1_1FileBase.html#a24f05930681d0e35014298e3bf4349e3":[1,1,3,1,1,29],
+"classthrill_1_1io_1_1FileBase.html#a28af9471bbdf262321af663e02899a47":[1,1,3,1,1,23],
+"classthrill_1_1io_1_1FileBase.html#a31550e41f7a6a85629a26ed026393128":[1,1,3,1,1,6],
+"classthrill_1_1io_1_1FileBase.html#a32cec3a921a937e618fd302dd118a234":[1,1,3,1,1,21],
+"classthrill_1_1io_1_1FileBase.html#a34d141ebe4b350f7b40b06f32cc0de20":[1,1,3,1,1,30],
+"classthrill_1_1io_1_1FileBase.html#a3a70f8b621474c9885f80fe709e2dca2":[1,1,3,1,1,2],
+"classthrill_1_1io_1_1FileBase.html#a3a70f8b621474c9885f80fe709e2dca2a023bd6f83dd317b9553228b72c0ebf54":[1,1,3,1,1,2,8],
+"classthrill_1_1io_1_1FileBase.html#a3a70f8b621474c9885f80fe709e2dca2a0923cd50d8e7c084f39e131c69ddb7f6":[1,1,3,1,1,2,5],
 "classthrill_1_1io_1_1FileBase.html#a3a70f8b621474c9885f80fe709e2dca2a1847b83bced76d46cc18bf58ba95cd49":[1,1,3,1,1,2,7],
 "classthrill_1_1io_1_1FileBase.html#a3a70f8b621474c9885f80fe709e2dca2a1ea328a644e627283a35716a54108248":[1,1,3,1,1,2,4],
 "classthrill_1_1io_1_1FileBase.html#a3a70f8b621474c9885f80fe709e2dca2a27f634c8b10fed65260b0ada3b92d6c1":[1,1,3,1,1,2,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX11 =
 "classthrill_1_1io_1_1Stats_1_1ScopedReadWriteTimer.html#afda2c30bc9013035a9f289071e014981":[1,1,3,11,1,3],
 "classthrill_1_1io_1_1Stats_1_1ScopedWaitTimer.html":[1,1,3,11,2],
 "classthrill_1_1io_1_1Stats_1_1ScopedWaitTimer.html#a053f79dbf54ac20f52be9b05d5f2ee35":[1,1,3,11,2,1],
-"classthrill_1_1io_1_1Stats_1_1ScopedWaitTimer.html#a07aaf1227e4d645f15e0a964f54ef291":[1,1,3,11,2,2],
-"classthrill_1_1io_1_1Stats_1_1ScopedWaitTimer.html#a17a237457e57625296e6b24feb19c60a":[1,1,3,11,2,3],
-"classthrill_1_1io_1_1Stats_1_1ScopedWaitTimer.html#aed0a42d3d3b9f6e193b771d6f6985397":[1,1,3,11,2,0],
-"classthrill_1_1io_1_1Stats_1_1ScopedWriteTimer.html":[1,1,3,11,3],
-"classthrill_1_1io_1_1Stats_1_1ScopedWriteTimer.html#a17a237457e57625296e6b24feb19c60a":[1,1,3,11,3,4],
-"classthrill_1_1io_1_1Stats_1_1ScopedWriteTimer.html#a21f3d99d41157a4b9856dba1b3715cc6":[1,1,3,11,3,2],
-"classthrill_1_1io_1_1Stats_1_1ScopedWriteTimer.html#a8560ac5527cd0ed38d71e0e58acc8021":[1,1,3,11,3,0],
-"classthrill_1_1io_1_1Stats_1_1ScopedWriteTimer.html#a8902adf4052e602b006412465602a5cb":[1,1,3,11,3,1],
-"classthrill_1_1io_1_1Stats_1_1ScopedWriteTimer.html#aa440b02cc99bc6923375b0c9db2f2dca":[1,1,3,11,3,5]
+"classthrill_1_1io_1_1Stats_1_1ScopedWaitTimer.html#a07aaf1227e4d645f15e0a964f54ef291":[1,1,3,11,2,2]
 };

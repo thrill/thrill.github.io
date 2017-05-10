@@ -1,5 +1,13 @@
 var NAVTREEINDEX20 =
 {
+"exceptionthrill_1_1net_1_1mpi_1_1Group.html#a2b76f992d7f29f794aff47b8289480d0":[1,1,2,2,3,45],
+"exceptionthrill_1_1net_1_1mpi_1_1Group.html#a2bfebcdb4b6be5cdc3c6c2ac9d1e8708":[1,1,2,2,3,11],
+"exceptionthrill_1_1net_1_1mpi_1_1Group.html#a2c1531a926389d8214d07daa80bb312b":[1,1,2,2,3,39],
+"exceptionthrill_1_1net_1_1mpi_1_1Group.html#a2c316a06af528b992001b3816021bc86":[1,1,2,2,3,0],
+"exceptionthrill_1_1net_1_1mpi_1_1Group.html#a2db0d5eb9010c978199d4582b7c28bb6":[1,1,2,2,3,4],
+"exceptionthrill_1_1net_1_1mpi_1_1Group.html#a40789710478e0f3a1af3de8effd50127":[1,1,2,2,3,16],
+"exceptionthrill_1_1net_1_1mpi_1_1Group.html#a42f82aac0c5b1c8c5e7217f8c264413f":[1,1,2,2,3,33],
+"exceptionthrill_1_1net_1_1mpi_1_1Group.html#a4f2c7b0ba9b3bcddfd50c6232d21d606":[1,1,2,2,3,6],
 "exceptionthrill_1_1net_1_1mpi_1_1Group.html#a54775df0490e235736312e5aaca1e07d":[1,1,2,2,3,28],
 "exceptionthrill_1_1net_1_1mpi_1_1Group.html#a568196016a8f7e046a5599f15ea856b2":[1,1,2,2,3,38],
 "exceptionthrill_1_1net_1_1mpi_1_1Group.html#a5d152e608e120410c7d860ef70d64b96":[1,1,2,2,3,37],
@@ -172,8 +180,8 @@ var NAVTREEINDEX20 =
 "functional_8hpp.html#ac55d70406741c4f4be46fbb8f4dfd832":[4,0,2,1,13,24],
 "functional_8hpp.html#af06fbf706bdaafea92ddc5c8351e7177":[4,0,2,1,13,25],
 "functional_8hpp_source.html":[4,0,2,1,13],
-"functions.html":[3,3,0,0],
 "functions.html":[3,3,0],
+"functions.html":[3,3,0,0],
 "functions_0x61.html":[3,3,0,1],
 "functions_0x62.html":[3,3,0,2],
 "functions_0x63.html":[3,3,0,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX20 =
 "functions_type_0x68.html":[3,3,3,7],
 "functions_type_0x69.html":[3,3,3,8],
 "functions_type_0x6a.html":[3,3,3,9],
-"functions_type_0x6b.html":[3,3,3,10],
-"functions_type_0x6c.html":[3,3,3,11],
-"functions_type_0x6d.html":[3,3,3,12],
-"functions_type_0x6f.html":[3,3,3,13],
-"functions_type_0x70.html":[3,3,3,14],
-"functions_type_0x71.html":[3,3,3,15],
-"functions_type_0x72.html":[3,3,3,16],
-"functions_type_0x73.html":[3,3,3,17],
-"functions_type_0x74.html":[3,3,3,18]
+"functions_type_0x6b.html":[3,3,3,10]
 };

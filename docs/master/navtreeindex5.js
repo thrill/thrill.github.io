@@ -1,5 +1,13 @@
 var NAVTREEINDEX5 =
 {
+"classthrill_1_1common_1_1Singleton.html#a14b3f1eb13a4977fa246fdf10cb8ed2e":[3,0,3,1,71,1],
+"classthrill_1_1common_1_1Singleton.html#a2fc63d3dd7a3accc66a41f573f10c248":[3,0,3,1,71,0],
+"classthrill_1_1common_1_1Singleton.html#a4261e9a2454202cd68bdb9c2fa4bf294":[3,0,3,1,71,4],
+"classthrill_1_1common_1_1Singleton.html#a46b408d049e924e42e743a9ea05b9f6d":[3,0,3,1,71,5],
+"classthrill_1_1common_1_1Singleton.html#a48d1fc15e788981ec5f7fe3e5c8641d7":[3,0,3,1,71,3],
+"classthrill_1_1common_1_1Singleton.html#a595a91c7a88735687865436625c851d4":[3,0,3,1,71,8],
+"classthrill_1_1common_1_1Singleton.html#a6773e98f43af2cd356c99c16e96bbdaa":[3,0,3,1,71,6],
+"classthrill_1_1common_1_1Singleton.html#a6eddcf4e98fd5e97b4163e162231e351":[3,0,3,1,71,10],
 "classthrill_1_1common_1_1Singleton.html#a8ed7edda5d64c5dae9cd89351e232e58":[3,0,3,1,71,7],
 "classthrill_1_1common_1_1Singleton.html#a9e4d9c2f2bbfbab46a5dd8fedabaa875":[3,0,3,1,71,9],
 "classthrill_1_1common_1_1Singleton.html#ad50077d2a4a65716ccf279affb2c0c3e":[3,0,3,1,71,11],
@@ -241,13 +249,5 @@ var NAVTREEINDEX5 =
 "classthrill_1_1common_1_1VariadicCallEnumerateImpl.html":[3,0,3,1,90],
 "classthrill_1_1common_1_1VariadicCallEnumerateImpl.html#ad358ab80bc7db640b306e8d1f1ab79fd":[3,0,3,1,90,0],
 "classthrill_1_1common_1_1VariadicCallEnumerateImpl_3_01Index_00_010_00_01Functor_01_4.html":[3,0,3,1,91],
-"classthrill_1_1common_1_1VariadicCallEnumerateImpl_3_01Index_00_010_00_01Functor_01_4.html#ab40c37a73ee7c4fa8825c12a2934b933":[3,0,3,1,91,0],
-"classthrill_1_1common_1_1VariadicMapEnumerateImpl.html":[3,0,3,1,92],
-"classthrill_1_1common_1_1VariadicMapEnumerateImpl.html#abf80e5dbef2cdd3aec8e2ad1b1633b13":[3,0,3,1,92,0],
-"classthrill_1_1common_1_1VariadicMapEnumerateImpl_3_01Index_00_010_00_01Functor_01_4.html":[3,0,3,1,93],
-"classthrill_1_1common_1_1VariadicMapEnumerateImpl_3_01Index_00_010_00_01Functor_01_4.html#a4fa204cad2052d5d68a3b95c7963614c":[3,0,3,1,93,0],
-"classthrill_1_1common_1_1Vector.html":[3,0,3,1,94],
-"classthrill_1_1common_1_1Vector.html#a0a22581a091167da9d9db49104dbf751":[3,0,3,1,94,16],
-"classthrill_1_1common_1_1Vector.html#a1d1e43ec5542692f8a159e452a11d494":[3,0,3,1,94,3],
-"classthrill_1_1common_1_1Vector.html#a2d62414edc60ea352ca42211e48983de":[3,0,3,1,94,14]
+"classthrill_1_1common_1_1VariadicCallEnumerateImpl_3_01Index_00_010_00_01Functor_01_4.html#ab40c37a73ee7c4fa8825c12a2934b933":[3,0,3,1,91,0]
 };

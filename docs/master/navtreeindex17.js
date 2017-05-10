@@ -1,5 +1,13 @@
 var NAVTREEINDEX17 =
 {
+"error__handling_8hpp.html#a2d5e764622d413fa40ba7d3b78293e0c":[4,0,2,4,15,14],
+"error__handling_8hpp.html#a3177a63c7a0af0edb8602d7e1862f32f":[4,0,2,4,15,1],
+"error__handling_8hpp.html#a3d94da9daf60d17cc9da6b578f22dac1":[4,0,2,4,15,8],
+"error__handling_8hpp.html#a5817dbcf0cc37d3cd98ccc76e825c6c5":[4,0,2,4,15,3],
+"error__handling_8hpp.html#a6183d0a639c0ee4f031e54e948e224ca":[4,0,2,4,15,9],
+"error__handling_8hpp.html#a71dd970eea1cbd95e3024551ab57a765":[4,0,2,4,15,10],
+"error__handling_8hpp.html#a7252751707e8c2007f6614a5953b9347":[4,0,2,4,15,2],
+"error__handling_8hpp.html#a7ed5bd9a73df231396efbef416ebd920":[4,0,2,4,15,11],
 "error__handling_8hpp.html#aad80f3577d4e4efe59a6519857460d54":[4,0,2,4,15,13],
 "error__handling_8hpp.html#aba6384db4bc87917c66f4593becab631":[4,0,2,4,15,0],
 "error__handling_8hpp.html#abba534fbcb5ac4c00b16a92e120944ef":[4,0,2,4,15,16],
@@ -241,13 +249,5 @@ var NAVTREEINDEX17 =
 "exceptionthrill_1_1api_1_1SizeNode.html#aba1b83567fe525df2fa68abcbc3d01be":[1,1,0,28,0],
 "exceptionthrill_1_1api_1_1SizeNode.html#aff8c59ed6a98a2174e415bc8d7983cd3":[1,1,0,28,4],
 "exceptionthrill_1_1api_1_1SortNode.html":[1,1,0,29],
-"exceptionthrill_1_1api_1_1SortNode.html#a0d7162ae18271da189b121f2c783dd22":[1,1,0,29,7],
-"exceptionthrill_1_1api_1_1SortNode.html#a0e7929fae361337345f8906f6980b6a5":[1,1,0,29,24],
-"exceptionthrill_1_1api_1_1SortNode.html#a17d4faa0ddcae3da8b8f4f11e868555d":[1,1,0,29,35],
-"exceptionthrill_1_1api_1_1SortNode.html#a22fe2886cbd447fdbc616b3f4664856e":[1,1,0,29,15],
-"exceptionthrill_1_1api_1_1SortNode.html#a2b95c36536a528b306bb30b0757e7b03":[1,1,0,29,28],
-"exceptionthrill_1_1api_1_1SortNode.html#a39113678f1d139d90f5ea6278fe04d8c":[1,1,0,29,32],
-"exceptionthrill_1_1api_1_1SortNode.html#a3eb09279defe44700454730d5c86a1c4":[1,1,0,29,22],
-"exceptionthrill_1_1api_1_1SortNode.html#a40bbdefc2ba8b16185518813b671ba9d":[1,1,0,29,14],
-"exceptionthrill_1_1api_1_1SortNode.html#a48b29016e03713497c4d6890c7e17a48":[1,1,0,29,23]
+"exceptionthrill_1_1api_1_1SortNode.html#a0d7162ae18271da189b121f2c783dd22":[1,1,0,29,7]
 };

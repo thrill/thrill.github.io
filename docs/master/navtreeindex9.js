@@ -1,5 +1,13 @@
 var NAVTREEINDEX9 =
 {
+"classthrill_1_1data_1_1ByteBlock.html#ac2af81cbc457d21a00f09f5e7e5c4ddf":[1,1,1,9,20],
+"classthrill_1_1data_1_1ByteBlock.html#ac2b3dbbbb8b391a8de55270b4169c55c":[1,1,1,9,31],
+"classthrill_1_1data_1_1ByteBlock.html#ac9f02e9b91734f36b23a41a9aebfc830":[1,1,1,9,7],
+"classthrill_1_1data_1_1ByteBlock.html#adbe4d6e73e6ed321c805857bf57d8c24":[1,1,1,9,32],
+"classthrill_1_1data_1_1ByteBlock.html#ae4e3cd5edb441099face8d40212345aa":[1,1,1,9,2],
+"classthrill_1_1data_1_1ByteBlock.html#ae9b0f64178dcb6dc73d13898b52e94da":[1,1,1,9,26],
+"classthrill_1_1data_1_1ByteBlock.html#af480aa248eb366476448947497b5e53a":[1,1,1,9,23],
+"classthrill_1_1data_1_1ByteBlock.html#afa65be12e7fc52b47b138d5bc5f8ef49":[1,1,1,9,22],
 "classthrill_1_1data_1_1ByteBlock.html#afb4bedf5b59f060a9ce5d17478f1bd23":[1,1,1,9,4],
 "classthrill_1_1data_1_1ByteBlock_1_1Deleter.html":[1,1,1,9,0],
 "classthrill_1_1data_1_1ByteBlock_1_1Deleter.html#a0f5d5bc0186092ee81692bc8b6ff636f":[1,1,1,9,0,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX9 =
 "classthrill_1_1data_1_1PinnedBlock.html#a14f406dd3db4af71f3634ff63cedac2e":[1,1,1,29,31],
 "classthrill_1_1data_1_1PinnedBlock.html#a1b5e417b1ebe749364acd64744c3e8ab":[1,1,1,29,18],
 "classthrill_1_1data_1_1PinnedBlock.html#a1d3b34c761e80e943f34028970edf349":[1,1,1,29,19],
-"classthrill_1_1data_1_1PinnedBlock.html#a2523d434e0e0f436989a032e8ff075e3":[1,1,1,29,6],
-"classthrill_1_1data_1_1PinnedBlock.html#a2d04db100d635980055be17dc052c40c":[1,1,1,29,14],
-"classthrill_1_1data_1_1PinnedBlock.html#a372de693ad40b3f42839c8ec6ac845f4":[1,1,1,29,21],
-"classthrill_1_1data_1_1PinnedBlock.html#a3bfeb03ff5db0332d641cb6cfc5d30d3":[1,1,1,29,16],
-"classthrill_1_1data_1_1PinnedBlock.html#a525d17951f3e787bb18f87d41701b9fb":[1,1,1,29,5],
-"classthrill_1_1data_1_1PinnedBlock.html#a5c95878a5e377dd22f2864a4ceb46708":[1,1,1,29,22],
-"classthrill_1_1data_1_1PinnedBlock.html#a635ef9bab591ccbb7a5f200d6a7b5fab":[1,1,1,29,8],
-"classthrill_1_1data_1_1PinnedBlock.html#a742ee921bd380a292afbf85c4cef9349":[1,1,1,29,17],
-"classthrill_1_1data_1_1PinnedBlock.html#a7b037d13cf0f1f1a32a7589e886322cf":[1,1,1,29,7]
+"classthrill_1_1data_1_1PinnedBlock.html#a2523d434e0e0f436989a032e8ff075e3":[1,1,1,29,6]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX13 =
 {
+"classthrill_1_1mem_1_1Pool.html#a5f31775800bbb46b35b5791def1f3acc":[3,0,3,5,11,25],
+"classthrill_1_1mem_1_1Pool.html#a6293b67ea9192f41895db566a3d1d3d6":[3,0,3,5,11,1],
+"classthrill_1_1mem_1_1Pool.html#a6b72e54baf646b08b4b87f987f583dcb":[3,0,3,5,11,16],
+"classthrill_1_1mem_1_1Pool.html#a7019c68cf2e752e301a9e51c87ca6da0":[3,0,3,5,11,8],
+"classthrill_1_1mem_1_1Pool.html#a74f373e8d0a98bdf2887cd54dce6453d":[3,0,3,5,11,22],
+"classthrill_1_1mem_1_1Pool.html#a76ba65891286992f414b16e5135e63e8":[3,0,3,5,11,0],
+"classthrill_1_1mem_1_1Pool.html#a85e2f47ae8114e808909930ea1123929":[3,0,3,5,11,4],
+"classthrill_1_1mem_1_1Pool.html#a8b4c08b8731fdb6eb213f775b6d0c6ac":[3,0,3,5,11,7],
 "classthrill_1_1mem_1_1Pool.html#a9f96cff04ddf5a82827218eb420297c5":[3,0,3,5,11,24],
 "classthrill_1_1mem_1_1Pool.html#aa0dbea07d6dc485d60ecb6f4ca1dc10b":[3,0,3,5,11,5],
 "classthrill_1_1mem_1_1Pool.html#aa4a019beb07c56090182e2283103a36f":[3,0,3,5,11,14],
@@ -241,13 +249,5 @@ var NAVTREEINDEX13 =
 "classthrill_1_1net_1_1BufferReader.html#aa707e9b0442b5b0e22c402394d5eaad1":[1,1,2,11,9],
 "classthrill_1_1net_1_1BufferReader.html#aa91949fff95e0ee05c5dce22a32512e5":[1,1,2,11,8],
 "classthrill_1_1net_1_1BufferReader.html#ab3bace7b51e6e7d78048999bc2189e27":[1,1,2,11,15],
-"classthrill_1_1net_1_1BufferReader.html#ac47b5d5f5637303647dd9a13e4ff053b":[1,1,2,11,0],
-"classthrill_1_1net_1_1BufferReader.html#ac6e61de369e994009e36f344f99c15ad":[1,1,2,11,6],
-"classthrill_1_1net_1_1BufferReader.html#af8777c641422485f8f43ad26e6923208":[1,1,2,11,4],
-"classthrill_1_1net_1_1BufferRef.html":[1,1,2,12],
-"classthrill_1_1net_1_1BufferRef.html#a2cffdcba2d0d1c3fc3f91da8d0a2adb3":[1,1,2,12,4],
-"classthrill_1_1net_1_1BufferRef.html#a2ed6f0f1eb8d14c1a7ac38fd7688a753":[1,1,2,12,5],
-"classthrill_1_1net_1_1BufferRef.html#a3b833d9ea3e62bbe0da71cd149a30142":[1,1,2,12,11],
-"classthrill_1_1net_1_1BufferRef.html#a3e709114cc06520c87d6c05b57caea67":[1,1,2,12,3],
-"classthrill_1_1net_1_1BufferRef.html#a4275730dc474ec62db0cc5483b18c348":[1,1,2,12,2]
+"classthrill_1_1net_1_1BufferReader.html#ac47b5d5f5637303647dd9a13e4ff053b":[1,1,2,11,0]
 };

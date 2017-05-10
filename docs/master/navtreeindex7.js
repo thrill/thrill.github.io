@@ -1,5 +1,13 @@
 var NAVTREEINDEX7 =
 {
+"classthrill_1_1core_1_1LoserTreePointerBase.html#ad8edee2d573626e6b6a8775eaa088716":[3,0,3,2,19,10],
+"classthrill_1_1core_1_1LoserTreePointerBase.html#ae685674ee260e306f6c7f3b82dd46834":[3,0,3,2,19,14],
+"classthrill_1_1core_1_1LoserTreePointerBase.html#af6695151c0a339749b609b9fb0503480":[3,0,3,2,19,16],
+"classthrill_1_1core_1_1LoserTreePointerBase.html#af78fc9969ffaee71f0d79532fcb9c88b":[3,0,3,2,19,8],
+"classthrill_1_1core_1_1LoserTreePointerUnguarded.html":[3,0,3,2,20],
+"classthrill_1_1core_1_1LoserTreePointerUnguarded.html#a071fda465da2cd47c848c51e802635ed":[3,0,3,2,20,0],
+"classthrill_1_1core_1_1LoserTreePointerUnguarded.html#a20eac0731e90502f8c7a2017e51c8ab0":[3,0,3,2,20,3],
+"classthrill_1_1core_1_1LoserTreePointerUnguarded.html#ab5fcec817a4a7cca2287696c3d8151e6":[3,0,3,2,20,1],
 "classthrill_1_1core_1_1LoserTreePointerUnguarded.html#ad5337a75c57de3d0723290eac9d89f87":[3,0,3,2,20,2],
 "classthrill_1_1core_1_1LoserTreePointerUnguardedBase.html":[3,0,3,2,22],
 "classthrill_1_1core_1_1LoserTreePointerUnguardedBase.html#a02fd73d861ef2e4aabb38c0c9ff82947":[3,0,3,2,22,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX7 =
 "classthrill_1_1core_1_1ReduceTable.html#a22a9d75707686233ccea908e880daf6f":[3,0,3,2,40,40],
 "classthrill_1_1core_1_1ReduceTable.html#a24c3662064793a9514da5cf878ed956a":[3,0,3,2,40,4],
 "classthrill_1_1core_1_1ReduceTable.html#a271f4c8af2921281d7cfba80f09449c9":[3,0,3,2,40,21],
-"classthrill_1_1core_1_1ReduceTable.html#a3617dfeb12a3a1587588bb6380e17343":[3,0,3,2,40,27],
-"classthrill_1_1core_1_1ReduceTable.html#a376994c77e0d09def009c7039fd91c26":[3,0,3,2,40,24],
-"classthrill_1_1core_1_1ReduceTable.html#a3b9cb13c0e876f3e02496c9789e74c3c":[3,0,3,2,40,9],
-"classthrill_1_1core_1_1ReduceTable.html#a3ff5001dc979bf4942adc33338569f3a":[3,0,3,2,40,1],
-"classthrill_1_1core_1_1ReduceTable.html#a444208b92dce35e4e0d49940d9615610":[3,0,3,2,40,12],
-"classthrill_1_1core_1_1ReduceTable.html#a46fdaa65eee84a26bb9139761bd287f9":[3,0,3,2,40,20],
-"classthrill_1_1core_1_1ReduceTable.html#a491d552a053426804b8e8ad2a199e850":[3,0,3,2,40,39],
-"classthrill_1_1core_1_1ReduceTable.html#a4a31cc8d9e12a21f498f792c6816b8f0":[3,0,3,2,40,43],
-"classthrill_1_1core_1_1ReduceTable.html#a4f8283130f28a115ee398b2876e90f92":[3,0,3,2,40,45]
+"classthrill_1_1core_1_1ReduceTable.html#a3617dfeb12a3a1587588bb6380e17343":[3,0,3,2,40,27]
 };

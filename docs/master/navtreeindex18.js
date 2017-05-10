@@ -1,5 +1,13 @@
 var NAVTREEINDEX18 =
 {
+"exceptionthrill_1_1api_1_1SortNode.html#a0e7929fae361337345f8906f6980b6a5":[1,1,0,29,24],
+"exceptionthrill_1_1api_1_1SortNode.html#a17d4faa0ddcae3da8b8f4f11e868555d":[1,1,0,29,35],
+"exceptionthrill_1_1api_1_1SortNode.html#a22fe2886cbd447fdbc616b3f4664856e":[1,1,0,29,15],
+"exceptionthrill_1_1api_1_1SortNode.html#a2b95c36536a528b306bb30b0757e7b03":[1,1,0,29,28],
+"exceptionthrill_1_1api_1_1SortNode.html#a39113678f1d139d90f5ea6278fe04d8c":[1,1,0,29,32],
+"exceptionthrill_1_1api_1_1SortNode.html#a3eb09279defe44700454730d5c86a1c4":[1,1,0,29,22],
+"exceptionthrill_1_1api_1_1SortNode.html#a40bbdefc2ba8b16185518813b671ba9d":[1,1,0,29,14],
+"exceptionthrill_1_1api_1_1SortNode.html#a48b29016e03713497c4d6890c7e17a48":[1,1,0,29,23],
 "exceptionthrill_1_1api_1_1SortNode.html#a49097b7af150fb81915b0a03f8661bcd":[1,1,0,29,27],
 "exceptionthrill_1_1api_1_1SortNode.html#a5031b3a3d48b6a2814675466c8bcf630":[1,1,0,29,30],
 "exceptionthrill_1_1api_1_1SortNode.html#a50bbe9134ad3a335b52a0ca1ad4f54ab":[1,1,0,29,10],
@@ -241,13 +249,5 @@ var NAVTREEINDEX18 =
 "exceptionthrill_1_1data_1_1MixBlockQueueSink.html#a7fa9fd3c46cfeb0f2d935733704fd017":[1,1,1,24,10],
 "exceptionthrill_1_1data_1_1MixBlockQueueSink.html#a86a685ea35fd63df45d4a3443d7f88e8":[1,1,1,24,7],
 "exceptionthrill_1_1data_1_1MixBlockQueueSink.html#a8a52a84f0a2aa480b76baeb8a219ef68":[1,1,1,24,6],
-"exceptionthrill_1_1data_1_1MixBlockQueueSink.html#a9445a581fc47ebf6bb90fce05dc79596":[1,1,1,24,8],
-"exceptionthrill_1_1data_1_1MixBlockQueueSink.html#a96afa7b02f38d829f95c05b2db930e79":[1,1,1,24,12],
-"exceptionthrill_1_1data_1_1MixBlockQueueSink.html#aa6d7cdea9046d4b809b22790707d78d5":[1,1,1,24,15],
-"exceptionthrill_1_1data_1_1MixBlockQueueSink.html#aae397f28cff2214b2abee8fee94cb86d":[1,1,1,24,0],
-"exceptionthrill_1_1data_1_1MixBlockQueueSink.html#acd96ff70e772de9f023dc32d9f3964bb":[1,1,1,24,5],
-"exceptionthrill_1_1data_1_1MixBlockQueueSink.html#ada566291cbb5fc9aca0d1c68b51381dc":[1,1,1,24,1],
-"exceptionthrill_1_1data_1_1MixBlockQueueSink.html#ae13f411828e2e9cdd02cc4df5d7bd3ff":[1,1,1,24,13],
-"exceptionthrill_1_1data_1_1MixBlockQueueSink.html#af8d26baa0deb8ac6fead132d4cf2d366":[1,1,1,24,4],
-"exceptionthrill_1_1data_1_1MixStream.html":[1,1,1,25]
+"exceptionthrill_1_1data_1_1MixBlockQueueSink.html#a9445a581fc47ebf6bb90fce05dc79596":[1,1,1,24,8]
 };

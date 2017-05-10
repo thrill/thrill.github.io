@@ -1,5 +1,13 @@
 var NAVTREEINDEX3 =
 {
+"classthrill_1_1common_1_1Aggregate.html#a36bf15f1ed34c66314bad5943527bf48":[3,0,3,1,1,6],
+"classthrill_1_1common_1_1Aggregate.html#a37ee7134e4d76ba9f8eaef7b300fd2ce":[3,0,3,1,1,12],
+"classthrill_1_1common_1_1Aggregate.html#a4afcdec4cb3510b219dde9bd20807d9f":[3,0,3,1,1,2],
+"classthrill_1_1common_1_1Aggregate.html#a52ce80b700691e2ee5af2806ac12191b":[3,0,3,1,1,15],
+"classthrill_1_1common_1_1Aggregate.html#a55e279ee98ab21329d4ed08884519c55":[3,0,3,1,1,13],
+"classthrill_1_1common_1_1Aggregate.html#a6b06728795e8f208c0755874665b3a51":[3,0,3,1,1,18],
+"classthrill_1_1common_1_1Aggregate.html#a7e90680ae1322a24caf16c4b6af6990c":[3,0,3,1,1,10],
+"classthrill_1_1common_1_1Aggregate.html#a830b1880f9dc271a7b6415047d893783":[3,0,3,1,1,20],
 "classthrill_1_1common_1_1Aggregate.html#a98896547e6e2c1c6776bf52543050731":[3,0,3,1,1,3],
 "classthrill_1_1common_1_1Aggregate.html#a9ac4018c8909a06a1cfee6163b31e93e":[3,0,3,1,1,14],
 "classthrill_1_1common_1_1Aggregate.html#a9b6c971971d60d5363382c1246d3d7ca":[3,0,3,1,1,21],
@@ -241,13 +249,5 @@ var NAVTREEINDEX3 =
 "classthrill_1_1common_1_1JsonLogger.html#a281b5ec791338d4378e22ef44a51b4a1":[3,0,3,1,39,10],
 "classthrill_1_1common_1_1JsonLogger.html#a2f538ea23eb2528d3409e7969ebdb02c":[3,0,3,1,39,8],
 "classthrill_1_1common_1_1JsonLogger.html#a48dada27435178a19cdf36fdc8d60d02":[3,0,3,1,39,6],
-"classthrill_1_1common_1_1JsonLogger.html#a49a2e9de8a1f711ec86e20a3e4fdd473":[3,0,3,1,39,5],
-"classthrill_1_1common_1_1JsonLogger.html#a5d7f0a289f25885895bdd997eab78da2":[3,0,3,1,39,7],
-"classthrill_1_1common_1_1JsonLogger.html#a7c0a92de6256c83c7510902f868285d1":[3,0,3,1,39,2],
-"classthrill_1_1common_1_1JsonLogger.html#a824c5a63878911c3c4ffa86cad95deb3":[3,0,3,1,39,3],
-"classthrill_1_1common_1_1JsonLogger.html#ac8f2ed44013260403ac039f5ecf73a56":[3,0,3,1,39,11],
-"classthrill_1_1common_1_1JsonLogger.html#aec116ece334cf05d16528b8f6b78e2c1":[3,0,3,1,39,12],
-"classthrill_1_1common_1_1JsonLogger.html#aed0cf6f210920c3979bac0bd4114306c":[3,0,3,1,39,4],
-"classthrill_1_1common_1_1JsonLogger.html#af0b68d6281041d627baab035160e032a":[3,0,3,1,39,0],
-"classthrill_1_1common_1_1JsonVerbatim.html":[3,0,3,1,40]
+"classthrill_1_1common_1_1JsonLogger.html#a49a2e9de8a1f711ec86e20a3e4fdd473":[3,0,3,1,39,5]
 };

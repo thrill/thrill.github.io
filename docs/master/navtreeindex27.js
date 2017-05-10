@@ -1,5 +1,13 @@
 var NAVTREEINDEX27 =
 {
+"string_8cpp.html#a814228e95a58d58db77b965e50917791":[4,0,2,1,41,1],
+"string_8cpp.html#aab1e631a0b75cbb13718a333d1da2e92":[4,0,2,1,41,8],
+"string_8cpp.html#aabf566fb14c34777ca25099cb928ad17":[4,0,2,1,41,0],
+"string_8cpp.html#af434e261fb746035f722ea531e11705e":[4,0,2,1,41,3],
+"string_8cpp.html#afc8016fa950601ded700bc90a096cec0":[4,0,2,1,41,10],
+"string_8cpp_source.html":[4,0,2,1,41],
+"string_8hpp.html":[4,0,2,1,42],
+"string_8hpp.html#a0c3156790baa82fbfc1cdfa961358671":[4,0,2,1,42,21],
 "string_8hpp.html#a18a2c76df2f962df3fcaf14db3f46902":[4,0,2,1,42,7],
 "string_8hpp.html#a19dadeee63f8e024ef3438a09c03cc1c":[4,0,2,1,42,34],
 "string_8hpp.html#a23baa63711463deab3859dd5220eef0c":[4,0,2,1,42,24],
@@ -80,8 +88,8 @@ var NAVTREEINDEX27 =
 "structexamples_1_1suffix__sorting_1_1IndexFlag.html#a8b3ab54ed3e81c69863d65e4e6c424a0":[3,0,0,5,3,1],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html":[3,0,0,5,4],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a0594e9f341a41ec7622edddb13e52dfb":[3,0,0,5,4,4],
-"structexamples_1_1suffix__sorting_1_1IndexRank.html#a4d77b3fb48833ee41178f27ba47560c8":[3,0,0,5,4,1],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a4d77b3fb48833ee41178f27ba47560c8":[3,0,0,5,4,2],
+"structexamples_1_1suffix__sorting_1_1IndexRank.html#a4d77b3fb48833ee41178f27ba47560c8":[3,0,0,5,4,1],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a5d5b22eb77c392277e53ecec6b85cf2d":[3,0,0,5,4,0],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a7875de9269063a44a5480b1c0c530a84":[3,0,0,5,4,3],
 "structexamples_1_1suffix__sorting_1_1IndexRankFlag.html":[3,0,0,5,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX27 =
 "structthrill_1_1common_1_1is__std__pair.html":[3,0,3,1,27],
 "structthrill_1_1common_1_1is__std__pair_3_01std_1_1pair_3_01S_00_01T_01_4_01_4.html":[3,0,3,1,28],
 "structthrill_1_1common_1_1is__std__tuple.html":[3,0,3,1,29],
-"structthrill_1_1common_1_1is__std__tuple_3_01std_1_1tuple_3_01Ts_8_8_8_4_01_4.html":[3,0,3,1,30],
-"structthrill_1_1common_1_1is__std__vector.html":[3,0,3,1,31],
-"structthrill_1_1common_1_1is__std__vector_3_01std_1_1vector_3_01T_01_4_01_4.html":[3,0,3,1,32],
-"structthrill_1_1common_1_1make__index__sequence.html":[3,0,3,1,51],
-"structthrill_1_1common_1_1make__index__sequence__helper.html":[3,0,3,1,52],
-"structthrill_1_1common_1_1make__index__sequence__helper.html#ac5d8f3ae49e7fb6500e04b1839bca17e":[3,0,3,1,52,0],
-"structthrill_1_1common_1_1make__index__sequence__helper_3_010_00_01Indexes_8_8_8_4.html":[3,0,3,1,53],
-"structthrill_1_1common_1_1make__index__sequence__helper_3_010_00_01Indexes_8_8_8_4.html#ab027fb1516563b3e1d86d7efd8d1d4df":[3,0,3,1,53,0],
-"structthrill_1_1core_1_1LocationDetection_1_1ExtractHash.html":[3,0,3,2,10,0]
+"structthrill_1_1common_1_1is__std__tuple_3_01std_1_1tuple_3_01Ts_8_8_8_4_01_4.html":[3,0,3,1,30]
 };

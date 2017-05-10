@@ -1,5 +1,13 @@
 var NAVTREEINDEX12 =
 {
+"classthrill_1_1io_1_1Stats_1_1ScopedWaitTimer.html#a17a237457e57625296e6b24feb19c60a":[1,1,3,11,2,3],
+"classthrill_1_1io_1_1Stats_1_1ScopedWaitTimer.html#aed0a42d3d3b9f6e193b771d6f6985397":[1,1,3,11,2,0],
+"classthrill_1_1io_1_1Stats_1_1ScopedWriteTimer.html":[1,1,3,11,3],
+"classthrill_1_1io_1_1Stats_1_1ScopedWriteTimer.html#a17a237457e57625296e6b24feb19c60a":[1,1,3,11,3,4],
+"classthrill_1_1io_1_1Stats_1_1ScopedWriteTimer.html#a21f3d99d41157a4b9856dba1b3715cc6":[1,1,3,11,3,2],
+"classthrill_1_1io_1_1Stats_1_1ScopedWriteTimer.html#a8560ac5527cd0ed38d71e0e58acc8021":[1,1,3,11,3,0],
+"classthrill_1_1io_1_1Stats_1_1ScopedWriteTimer.html#a8902adf4052e602b006412465602a5cb":[1,1,3,11,3,1],
+"classthrill_1_1io_1_1Stats_1_1ScopedWriteTimer.html#aa440b02cc99bc6923375b0c9db2f2dca":[1,1,3,11,3,5],
 "classthrill_1_1io_1_1Stats_1_1ScopedWriteTimer.html#afda2c30bc9013035a9f289071e014981":[1,1,3,11,3,3],
 "classthrill_1_1io_1_1TypedBlock.html":[1,1,3,13],
 "classthrill_1_1io_1_1TypedBlock.html#a16af7b253440dadd46a80a4b9fddba4da052a2b4924452fb4a73f2cb52b6e9d41":[1,1,3,13,10],
@@ -241,13 +249,5 @@ var NAVTREEINDEX12 =
 "classthrill_1_1mem_1_1Pool.html#a281b5ec791338d4378e22ef44a51b4a1":[3,0,3,5,11,23],
 "classthrill_1_1mem_1_1Pool.html#a388f572c62279f839ee138a9afbdeeb5":[3,0,3,5,11,13],
 "classthrill_1_1mem_1_1Pool.html#a51acfc437dfbb4ae11930b2e22e01aef":[3,0,3,5,11,2],
-"classthrill_1_1mem_1_1Pool.html#a5b739176a908464d4cb2c28f34143a56":[3,0,3,5,11,18],
-"classthrill_1_1mem_1_1Pool.html#a5f31775800bbb46b35b5791def1f3acc":[3,0,3,5,11,25],
-"classthrill_1_1mem_1_1Pool.html#a6293b67ea9192f41895db566a3d1d3d6":[3,0,3,5,11,1],
-"classthrill_1_1mem_1_1Pool.html#a6b72e54baf646b08b4b87f987f583dcb":[3,0,3,5,11,16],
-"classthrill_1_1mem_1_1Pool.html#a7019c68cf2e752e301a9e51c87ca6da0":[3,0,3,5,11,8],
-"classthrill_1_1mem_1_1Pool.html#a74f373e8d0a98bdf2887cd54dce6453d":[3,0,3,5,11,22],
-"classthrill_1_1mem_1_1Pool.html#a76ba65891286992f414b16e5135e63e8":[3,0,3,5,11,0],
-"classthrill_1_1mem_1_1Pool.html#a85e2f47ae8114e808909930ea1123929":[3,0,3,5,11,4],
-"classthrill_1_1mem_1_1Pool.html#a8b4c08b8731fdb6eb213f775b6d0c6ac":[3,0,3,5,11,7]
+"classthrill_1_1mem_1_1Pool.html#a5b739176a908464d4cb2c28f34143a56":[3,0,3,5,11,18]
 };
