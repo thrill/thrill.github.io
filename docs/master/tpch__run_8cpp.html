@@ -127,10 +127,11 @@ $(document).ready(function(){initNavTree('tpch__run_8cpp.html','');});
 <code>#include &lt;<a class="el" href="inner__join_8hpp_source.html">thrill/api/inner_join.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="read__lines_8hpp_source.html">thrill/api/read_lines.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="size_8hpp_source.html">thrill/api/size.hpp</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="cmdline__parser_8hpp_source.html">thrill/common/cmdline_parser.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="logger_8hpp_source.html">thrill/common/logger.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="stats__timer_8hpp_source.html">thrill/common/stats_timer.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="string_8hpp_source.html">thrill/common/string.hpp</a>&gt;</code><br/>
+<code>#include &lt;tlx/cmdline_parser.hpp&gt;</code><br/>
+<code>#include &lt;tlx/string/split.hpp&gt;</code><br/>
 <code>#include &lt;algorithm&gt;</code><br/>
 <code>#include &lt;cmath&gt;</code><br/>
 <code>#include &lt;ctime&gt;</code><br/>
@@ -143,7 +144,7 @@ $(document).ready(function(){initNavTree('tpch__run_8cpp.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="tpch__run_8cpp__incl.svg" width="10544" height="1886"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="tpch__run_8cpp__incl.svg" width="10062" height="1752"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -162,8 +163,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac471584b5597a3d4ac221818e35f4536"><td class="memItemLeft" align="right" valign="top">struct LineItem&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tpch__run_8cpp.html#ac471584b5597a3d4ac221818e35f4536">THRILL_ATTRIBUTE_PACKED</a></td></tr>
-<tr class="separator:ac471584b5597a3d4ac221818e35f4536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8aadd11b51b43663a4d2b05a818cb3b"><td class="memItemLeft" align="right" valign="top">struct LineItem&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tpch__run_8cpp.html#aa8aadd11b51b43663a4d2b05a818cb3b">TLX_ATTRIBUTE_PACKED</a></td></tr>
+<tr class="separator:aa8aadd11b51b43663a4d2b05a818cb3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a24ae2f219493abc3558ce09851d5f593"></a>
@@ -190,9 +191,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tpch__run_8cpp_source.html#l00098">98</a> of file <a class="el" href="tpch__run_8cpp_source.html">tpch_run.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tpch__run_8cpp_source.html#l00100">100</a> of file <a class="el" href="tpch__run_8cpp_source.html">tpch_run.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="tpch__run_8cpp_source.html#l00165">JoinTPCH4()</a>.</p>
+<p>Referenced by <a class="el" href="tpch__run_8cpp_source.html#l00167">JoinTPCH4()</a>.</p>
 
 </div>
 </div>
@@ -228,11 +229,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tpch__run_8cpp_source.html#l00165">165</a> of file <a class="el" href="tpch__run_8cpp_source.html">tpch_run.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tpch__run_8cpp_source.html#l00167">167</a> of file <a class="el" href="tpch__run_8cpp_source.html">tpch_run.cpp</a>.</p>
 
-<p>References <a class="el" href="flow__control__channel_8cpp_source.html#l00050">FlowControlChannel::Barrier()</a>, <a class="el" href="tpch__run_8cpp_source.html#l00098">ConstructJoinedElement()</a>, <a class="el" href="context_8hpp_source.html#l00390">Context::enable_consume()</a>, <a class="el" href="inner__join_8hpp_source.html#l00731">thrill::api::InnerJoin()</a>, <a class="el" href="logger_8hpp_source.html#l00171">LOG1</a>, <a class="el" href="context_8hpp_source.html#l00245">Context::my_rank()</a>, <a class="el" href="context_8hpp_source.html#l00439">Context::net</a>, <a class="el" href="context_8hpp_source.html#l00336">Context::net_manager()</a>, <a class="el" href="context_8hpp_source.html#l00235">Context::num_hosts()</a>, <a class="el" href="read__lines_8hpp_source.html#l00450">thrill::api::ReadLines()</a>, <a class="el" href="string_8cpp_source.html#l00046">thrill::common::SplitRef()</a>, <a class="el" href="tpch__run_8cpp_source.html#l00136">time_to_epoch()</a>, and <a class="el" href="group_8cpp_source.html#l00063">Manager::Traffic()</a>.</p>
+<p>References <a class="el" href="flow__control__channel_8cpp_source.html#l00050">FlowControlChannel::Barrier()</a>, <a class="el" href="tpch__run_8cpp_source.html#l00100">ConstructJoinedElement()</a>, <a class="el" href="context_8hpp_source.html#l00390">Context::enable_consume()</a>, <a class="el" href="inner__join_8hpp_source.html#l00731">thrill::api::InnerJoin()</a>, <a class="el" href="logger_8hpp_source.html#l00171">LOG1</a>, <a class="el" href="context_8hpp_source.html#l00245">Context::my_rank()</a>, <a class="el" href="context_8hpp_source.html#l00439">Context::net</a>, <a class="el" href="context_8hpp_source.html#l00336">Context::net_manager()</a>, <a class="el" href="context_8hpp_source.html#l00235">Context::num_hosts()</a>, <a class="el" href="read__lines_8hpp_source.html#l00452">thrill::api::ReadLines()</a>, <a class="el" href="tpch__run_8cpp_source.html#l00138">time_to_epoch()</a>, and <a class="el" href="group_8cpp_source.html#l00063">Manager::Traffic()</a>.</p>
 
-<p>Referenced by <a class="el" href="tpch__run_8cpp_source.html#l00278">main()</a>.</p>
+<p>Referenced by <a class="el" href="tpch__run_8cpp_source.html#l00280">main()</a>.</p>
 
 </div>
 </div>
@@ -260,9 +261,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tpch__run_8cpp_source.html#l00278">278</a> of file <a class="el" href="tpch__run_8cpp_source.html">tpch_run.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tpch__run_8cpp_source.html#l00280">280</a> of file <a class="el" href="tpch__run_8cpp_source.html">tpch_run.cpp</a>.</p>
 
-<p>References <a class="el" href="cmdline__parser_8cpp_source.html#l00683">CmdlineParser::AddParamStringlist()</a>, <a class="el" href="die_8hpp_source.html#l00033">die_unless</a>, <a class="el" href="context_8hpp_source.html#l00390">Context::enable_consume()</a>, <a class="el" href="tpch__run_8cpp_source.html#l00165">JoinTPCH4()</a>, <a class="el" href="logger_8hpp_source.html#l00171">LOG1</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l01022">CmdlineParser::PrintResult()</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l00859">CmdlineParser::Process()</a>, and <a class="el" href="context_8cpp_source.html#l00796">thrill::api::Run()</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00390">Context::enable_consume()</a>, <a class="el" href="tpch__run_8cpp_source.html#l00167">JoinTPCH4()</a>, <a class="el" href="logger_8hpp_source.html#l00171">LOG1</a>, and <a class="el" href="context_8cpp_source.html#l00801">thrill::api::Run()</a>.</p>
 
 </div>
 </div>
@@ -280,19 +281,19 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tpch__run_8cpp_source.html#l00136">136</a> of file <a class="el" href="tpch__run_8cpp_source.html">tpch_run.cpp</a>.</p>
+<p>Definition at line <a class="el" href="tpch__run_8cpp_source.html#l00138">138</a> of file <a class="el" href="tpch__run_8cpp_source.html">tpch_run.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="tpch__run_8cpp_source.html#l00165">JoinTPCH4()</a>.</p>
+<p>Referenced by <a class="el" href="tpch__run_8cpp_source.html#l00167">JoinTPCH4()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="ac471584b5597a3d4ac221818e35f4536"></a>
+<a class="anchor" id="aa8aadd11b51b43663a4d2b05a818cb3b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct JoinedElement  THRILL_ATTRIBUTE_PACKED</td>
+          <td class="memname">struct JoinedElement  TLX_ATTRIBUTE_PACKED</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -305,7 +306,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_1340bf24f4000ea6080926378a2febbb.html">tpch</a></li><li class="navelem"><a class="el" href="tpch__run_8cpp.html">tpch_run.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:04 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:34 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

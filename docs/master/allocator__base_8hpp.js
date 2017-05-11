@@ -1,6 +1,5 @@
 var allocator__base_8hpp =
 [
-    [ "AllocatorBase", "classthrill_1_1mem_1_1AllocatorBase.html", "classthrill_1_1mem_1_1AllocatorBase" ],
     [ "FixedAllocator", "classthrill_1_1mem_1_1FixedAllocator.html", "classthrill_1_1mem_1_1FixedAllocator" ],
     [ "rebind", "structthrill_1_1mem_1_1FixedAllocator_1_1rebind.html", "structthrill_1_1mem_1_1FixedAllocator_1_1rebind" ],
     [ "FixedAllocator< void, manager_ >", "classthrill_1_1mem_1_1FixedAllocator_3_01void_00_01manager___01_4.html", "classthrill_1_1mem_1_1FixedAllocator_3_01void_00_01manager___01_4" ],

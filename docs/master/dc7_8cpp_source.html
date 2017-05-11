@@ -145,9 +145,9 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="window_8hpp.html">thrill/api/window.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="zip__window_8hpp.html">thrill/api/zip_window.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="zip__with__index_8hpp.html">thrill/api/zip_with_index.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cmdline__parser_8hpp.html">thrill/common/cmdline_parser.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="radix__sort_8hpp.html">thrill/common/radix_sort.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uint__types_8hpp.html">thrill/common/uint_types.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="radix__sort_8hpp.html">thrill/common/radix_sort.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uint__types_8hpp.html">thrill/common/uint_types.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;tlx/cmdline_parser.hpp&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
@@ -200,7 +200,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                   }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        };</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#afa859ce6e9f9b669ac8f08d298187e29">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#abc013bc38bfa1a5de6b896e8475d53cb">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">//! A tuple with index (i,t_i,t_{i+1},t_{i+2}).</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index, <span class="keyword">typename</span> AlphabetType&gt;</div>
@@ -213,7 +213,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="namespacethrill_1_1api.html#ae8473cbd67ac02098251c03a8218ae49" title="make ostream-able.">operator &lt;&lt; </a>(std::ostream&amp; os, <span class="keyword">const</span> IndexChars&amp; tc) {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <span class="charliteral">&#39;[&#39;</span> &lt;&lt; tc.index &lt;&lt; <span class="charliteral">&#39;|&#39;</span> &lt;&lt; tc.chars &lt;&lt; <span class="charliteral">&#39;]&#39;</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#afa859ce6e9f9b669ac8f08d298187e29">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#abc013bc38bfa1a5de6b896e8475d53cb">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">//! A pair (index, rank)</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index&gt;</div>
@@ -224,7 +224,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="namespacethrill_1_1api.html#ae8473cbd67ac02098251c03a8218ae49" title="make ostream-able.">operator &lt;&lt; </a>(std::ostream&amp; os, <span class="keyword">const</span> IndexRank&amp; tr) {</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; tr.index &lt;&lt; <span class="charliteral">&#39;|&#39;</span> &lt;&lt; tr.rank &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#afa859ce6e9f9b669ac8f08d298187e29">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#abc013bc38bfa1a5de6b896e8475d53cb">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">//! fragments at string positions i = 0 mod 7.</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index, <span class="keyword">typename</span> AlphabetType&gt;</div>
@@ -243,7 +243,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; t0=&quot;</span> &lt;&lt; sf.t[0] &lt;&lt; <span class="stringliteral">&quot; t1=&quot;</span> &lt;&lt; sf.t[1] &lt;&lt; <span class="stringliteral">&quot; t2=&quot;</span> &lt;&lt; sf.t[2]</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; r0=&quot;</span> &lt;&lt; sf.r0 &lt;&lt; <span class="stringliteral">&quot; r1=&quot;</span> &lt;&lt; sf.r1 &lt;&lt; <span class="stringliteral">&quot; r3=&quot;</span> &lt;&lt; sf.r3;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#afa859ce6e9f9b669ac8f08d298187e29">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#abc013bc38bfa1a5de6b896e8475d53cb">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">//! fragments at string positions i = 1 mod 7.</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index, <span class="keyword">typename</span> AlphabetType&gt;</div>
@@ -263,7 +263,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; t3=&quot;</span> &lt;&lt; sf.t[3] &lt;&lt; <span class="stringliteral">&quot; t4=&quot;</span> &lt;&lt; sf.t[4] &lt;&lt; <span class="stringliteral">&quot; t5=&quot;</span> &lt;&lt; sf.t[5]</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; r0=&quot;</span> &lt;&lt; sf.r0 &lt;&lt; <span class="stringliteral">&quot; r2=&quot;</span> &lt;&lt; sf.r2 &lt;&lt; <span class="stringliteral">&quot; r6=&quot;</span> &lt;&lt; sf.r6;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#afa859ce6e9f9b669ac8f08d298187e29">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#abc013bc38bfa1a5de6b896e8475d53cb">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">//! fragments at string positions i = 2 mod 7.</span></div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index, <span class="keyword">typename</span> AlphabetType&gt;</div>
@@ -283,7 +283,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; t3=&quot;</span> &lt;&lt; sf.t[3] &lt;&lt; <span class="stringliteral">&quot; t4=&quot;</span> &lt;&lt; sf.t[4] &lt;&lt; <span class="stringliteral">&quot; t5=&quot;</span> &lt;&lt; sf.t[5]</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; r1=&quot;</span> &lt;&lt; sf.r1 &lt;&lt; <span class="stringliteral">&quot; r5=&quot;</span> &lt;&lt; sf.r5 &lt;&lt; <span class="stringliteral">&quot; r6=&quot;</span> &lt;&lt; sf.r6;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#afa859ce6e9f9b669ac8f08d298187e29">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#abc013bc38bfa1a5de6b896e8475d53cb">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">//! fragments at string positions i = 3 mod 7.</span></div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index, <span class="keyword">typename</span> AlphabetType&gt;</div>
@@ -304,7 +304,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; t3=&quot;</span> &lt;&lt; sf.t[3] &lt;&lt; <span class="stringliteral">&quot; t4=&quot;</span> &lt;&lt; sf.t[4]</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; r0=&quot;</span> &lt;&lt; sf.r0 &lt;&lt; <span class="stringliteral">&quot; r4=&quot;</span> &lt;&lt; sf.r4 &lt;&lt; <span class="stringliteral">&quot; r5=&quot;</span> &lt;&lt; sf.r5;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#afa859ce6e9f9b669ac8f08d298187e29">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#abc013bc38bfa1a5de6b896e8475d53cb">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">//! fragments at string positions i = 4 mod 7.</span></div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index, <span class="keyword">typename</span> AlphabetType&gt;</div>
@@ -324,7 +324,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; t3=&quot;</span> &lt;&lt; sf.t[3] &lt;&lt; <span class="stringliteral">&quot; t4=&quot;</span> &lt;&lt; sf.t[4] &lt;&lt; <span class="stringliteral">&quot; t5=&quot;</span> &lt;&lt; sf.t[5]</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; r3=&quot;</span> &lt;&lt; sf.r3 &lt;&lt; <span class="stringliteral">&quot; r4=&quot;</span> &lt;&lt; sf.r4 &lt;&lt; <span class="stringliteral">&quot; r6=&quot;</span> &lt;&lt; sf.r6;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#afa859ce6e9f9b669ac8f08d298187e29">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#abc013bc38bfa1a5de6b896e8475d53cb">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">//! fragments at string positions i = 5 mod 7.</span></div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index, <span class="keyword">typename</span> AlphabetType&gt;</div>
@@ -344,7 +344,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; t3=&quot;</span> &lt;&lt; sf.t[3] &lt;&lt; <span class="stringliteral">&quot; t4=&quot;</span> &lt;&lt; sf.t[4]</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; r2=&quot;</span> &lt;&lt; sf.r2 &lt;&lt; <span class="stringliteral">&quot; r3=&quot;</span> &lt;&lt; sf.r3 &lt;&lt; <span class="stringliteral">&quot; r5=&quot;</span> &lt;&lt; sf.r5;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    }</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#afa859ce6e9f9b669ac8f08d298187e29">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#abc013bc38bfa1a5de6b896e8475d53cb">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment">//! fragments at string positions i = 6 mod 7.</span></div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index, <span class="keyword">typename</span> AlphabetType&gt;</div>
@@ -364,7 +364,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; t3=&quot;</span> &lt;&lt; sf.t[3]</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; r1=&quot;</span> &lt;&lt; sf.r1 &lt;&lt; <span class="stringliteral">&quot; r2=&quot;</span> &lt;&lt; sf.r2 &lt;&lt; <span class="stringliteral">&quot; r4=&quot;</span> &lt;&lt; sf.r4;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#afa859ce6e9f9b669ac8f08d298187e29">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#abc013bc38bfa1a5de6b896e8475d53cb">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment">//! Union of String Fragments with Index</span></div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index, <span class="keyword">typename</span> AlphabetType&gt;</div>
@@ -373,7 +373,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keyword">struct </span>Common {</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        Index        index;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        AlphabetType t[6];</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    } <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#afa859ce6e9f9b669ac8f08d298187e29">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    } <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#abc013bc38bfa1a5de6b896e8475d53cb">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        Index                                   index;</div>
@@ -385,7 +385,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        StringFragmentMod4&lt;Index, AlphabetType&gt; mod4;</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        StringFragmentMod5&lt;Index, AlphabetType&gt; mod5;</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        StringFragmentMod6&lt;Index, AlphabetType&gt; mod6;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    } <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#afa859ce6e9f9b669ac8f08d298187e29">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    } <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#abc013bc38bfa1a5de6b896e8475d53cb">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    StringFragment() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
@@ -453,7 +453,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keyword">const</span> Index * ranks()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">return</span> ranks(index % 7);</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    }</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#afa859ce6e9f9b669ac8f08d298187e29">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#abc013bc38bfa1a5de6b896e8475d53cb">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
 <div class="line"><a name="l00340"></a><span class="lineno"><a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#a267bffb25e4b39041126f35e3d470847">  340</a></span>&#160;<span class="keyword">static</span> constexpr <span class="keywordtype">size_t</span> <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#a267bffb25e4b39041126f35e3d470847">fragment_comparator_params</a>[7][7][3] =</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;{</div>
@@ -519,14 +519,14 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; r0=&quot;</span> &lt;&lt; c.rank0 &lt;&lt; <span class="stringliteral">&quot; r1=&quot;</span> &lt;&lt; c.rank1</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; r3=&quot;</span> &lt;&lt; c.rank3 &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    }</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#afa859ce6e9f9b669ac8f08d298187e29">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#abc013bc38bfa1a5de6b896e8475d53cb">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index, <span class="keyword">typename</span> Char&gt;</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="keyword">struct </span>IndexCR013Pair {</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    Index                      index;</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    CharsRanks013&lt;Index, Char&gt; cr0;</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    CharsRanks013&lt;Index, Char&gt; cr1;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#afa859ce6e9f9b669ac8f08d298187e29">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#abc013bc38bfa1a5de6b896e8475d53cb">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type, <span class="keywordtype">size_t</span> MaxDepth&gt;</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;<span class="keyword">class </span>RadixSortFragment</div>
@@ -559,7 +559,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;} <span class="comment">// namespace dc7_local</span></div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="keyword">using namespace </span>thrill; <span class="comment">// NOLINT</span></div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="keyword">using</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">thrill::common::RingBuffer</a>;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="keyword">using</span> <a class="code" href="namespacethrill_1_1common.html#a7257714934d02f6e535768589e507ce9">thrill::common::RingBuffer</a>;</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;</div>
 <div class="line"><a name="l00446"></a><span class="lineno"><a class="code" href="namespaceexamples_1_1suffix__sorting.html#a8adbdff8dfb30f5c3b85c63a53db2216">  446</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a8adbdff8dfb30f5c3b85c63a53db2216">IsDiffCover7</a>(<span class="keywordtype">size_t</span> i) {</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="keywordtype">size_t</span> m = i % 7;</div>
@@ -582,7 +582,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        <span class="comment">// map (t_i) -&gt; (i,t_i,t_{i+1},...,t_{i+6}) where i = 0,1,3 mod 7</span></div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        .template FlatWindow&lt;IndexChars&gt;(</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            7,</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            [input_size](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;Char&gt;</a>&amp; r, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            [input_size](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;Char&gt;&amp; r, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="namespaceexamples_1_1suffix__sorting.html#a8adbdff8dfb30f5c3b85c63a53db2216">IsDiffCover7</a>(index))</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                    emit(IndexChars {</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                             Index(index), {</div>
@@ -590,7 +590,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                             }</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                         });</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            },</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            [input_size](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;Char&gt;</a>&amp; r, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            [input_size](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;Char&gt;&amp; r, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                <span class="comment">// emit last sentinel items.</span></div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="namespaceexamples_1_1suffix__sorting.html#a8adbdff8dfb30f5c3b85c63a53db2216">IsDiffCover7</a>(index)) {</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                    emit(IndexChars {</div>
@@ -636,7 +636,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <span class="keyword">auto</span> tuple_prerank_sums =</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        tuple_sorted</div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        .template FlatWindow&lt;Index&gt;(</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            2, [](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;IndexChars&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            2, [](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;IndexChars&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                assert(rb.size() == 2);</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;</div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;                <span class="comment">// emit one sentinel for index 0.</span></div>
@@ -677,23 +677,23 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    }</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;</div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespaceexamples_1_1suffix__sorting.html#a363eaffff6eaa8040e98d838b3c0b585">debug_print</a>) {</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        <a class="code" href="die_8hpp.html#a5085068329fda13af995242db4555038">assert_equal</a>(</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        assert_equal(</div>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;            tuple_sorted.Keep().Filter([](<span class="keyword">const</span> IndexChars&amp; a) {</div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                                           <span class="keywordflow">return</span> a.index % 7 == 0;</div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;                                       }).Size(), size_mod0);</div>
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        <a class="code" href="die_8hpp.html#a5085068329fda13af995242db4555038">assert_equal</a>(</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        assert_equal(</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;            tuple_sorted.Keep().Filter([](<span class="keyword">const</span> IndexChars&amp; a) {</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;                                           <span class="keywordflow">return</span> a.index % 7 == 1;</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;                                       }).Size(), size_mod1);</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        <a class="code" href="die_8hpp.html#a5085068329fda13af995242db4555038">assert_equal</a>(</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        assert_equal(</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;            tuple_sorted.Keep().Filter([](<span class="keyword">const</span> IndexChars&amp; a) {</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;                                           <span class="keywordflow">return</span> a.index % 7 == 3;</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;                                       }).Size(), size_mod3);</div>
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    }</div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    <a class="code" href="die_8hpp.html#a5085068329fda13af995242db4555038">assert_equal</a>(tuple_index_sorted.Keep().Size(), size_subp);</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    assert_equal(tuple_index_sorted.Keep().Size(), size_subp);</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;</div>
 <div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    DIA&lt;IndexRank&gt; ranks_mod013;</div>
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;</div>
@@ -731,7 +731,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespaceexamples_1_1suffix__sorting.html#a363eaffff6eaa8040e98d838b3c0b585">debug_print</a>)</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;            string_mod013.Keep().Print(<span class="stringliteral">&quot;string_mod013&quot;</span>);</div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <a class="code" href="die_8hpp.html#a5085068329fda13af995242db4555038">assert_equal</a>(string_mod013.Keep().Size(), size_subp);</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        assert_equal(string_mod013.Keep().Size(), size_subp);</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;</div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;        <span class="keyword">using</span> RecStringFragment = dc7_local::StringFragment&lt;Index, Index&gt;;</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;</div>
@@ -772,9 +772,9 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;            .Window(</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;                <a class="code" href="namespacethrill_1_1api.html#afe8c544f0064d1307753a0ee2a8a35e5" title="global const DisjointTag instance">DisjointTag</a>, 3,</div>
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;                [size_mod0, size_mod01](<span class="keywordtype">size_t</span>, <span class="keyword">const</span> std::vector&lt;IndexRank&gt;&amp; ir) {</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;                    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(ir[0].index &lt; size_mod0);</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;                    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(ir[1].index &gt;= size_mod0 || ir[1].rank &lt; size_mod01);</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(ir[2].index &gt;= size_mod01);</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;                    die_unless(ir[0].index &lt; size_mod0);</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;                    die_unless(ir[1].index &gt;= size_mod0 || ir[1].rank &lt; size_mod01);</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                    die_unless(ir[2].index &gt;= size_mod01);</div>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;                })</div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;            .Execute();</div>
@@ -809,9 +809,9 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;            .Window(</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;                <a class="code" href="namespacethrill_1_1api.html#afe8c544f0064d1307753a0ee2a8a35e5" title="global const DisjointTag instance">DisjointTag</a>, 3,</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;                [](<span class="keywordtype">size_t</span>, <span class="keyword">const</span> std::vector&lt;IndexRank&gt;&amp; ir) {</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(ir[0].index % 7 == 0);</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;                    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(ir[1].index % 7 == 1);</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;                    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(ir[2].index % 7 == 3);</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                    die_unless(ir[0].index % 7 == 0);</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;                    die_unless(ir[1].index % 7 == 1);</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;                    die_unless(ir[2].index % 7 == 3);</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;                })</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;            .Execute();</div>
@@ -858,7 +858,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        zip_tuple_pairs1</div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        .template FlatWindow&lt;IndexCR013Pair&gt;(</div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;            2, [size_mod0](</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                <span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;CharsRanks013&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;                <span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;CharsRanks013&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;                emit(IndexCR013Pair { Index(7 * index), rb[0], rb[1] });</div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                <span class="keywordflow">if</span> (index + 2 == size_mod0) {</div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;                    <span class="comment">// emit last sentinel</span></div>
@@ -1088,7 +1088,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_0b8cd80b43220fb0eacec85b2381def2.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="dc7_8cpp.html">dc7.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:02 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

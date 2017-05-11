@@ -130,8 +130,8 @@ $(document).ready(function(){initNavTree('line__count_8cpp_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="read__lines_8hpp.html">thrill/api/read_lines.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="size_8hpp.html">thrill/api/size.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cmdline__parser_8hpp.html">thrill/common/cmdline_parser.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;tlx/cmdline_parser.hpp&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
@@ -139,17 +139,17 @@ $(document).ready(function(){initNavTree('line__count_8cpp_source.html','');});
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="line__count_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">   22</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="k-means__run_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]) {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classthrill_1_1common_1_1CmdlineParser.html" title="Command line parser which automatically fills variables and prints nice usage messages.">common::CmdlineParser</a> clp;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    tlx::CmdlineParser clp;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a> input;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    clp.<a class="code" href="classthrill_1_1common_1_1CmdlineParser.html#a4a99009524e2f9a0ac0f202a9cd9edbf" title="add string parameter [name] with description and store to dest">AddParamString</a>(<span class="stringliteral">&quot;input&quot;</span>, input,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                       <span class="stringliteral">&quot;input file pattern&quot;</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    clp.add_param_string(<span class="stringliteral">&quot;input&quot;</span>, input,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                         <span class="stringliteral">&quot;input file pattern&quot;</span>);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span> (!clp.<a class="code" href="classthrill_1_1common_1_1CmdlineParser.html#aeac551d1456648b7c55e2c709866164f">Process</a>(argc, argv)) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span> (!clp.process(argc, argv)) {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    clp.<a class="code" href="classthrill_1_1common_1_1CmdlineParser.html#a8c017e05598dada32030049e5afe69f0" title="print nicely formatted result of processing">PrintResult</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    clp.print_result();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">auto</span> start_func =</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        [input](<a class="code" href="classthrill_1_1api_1_1Context.html" title="The Context of a job is a unique instance per worker which holds references to all underlying parts o...">api::Context</a>&amp; ctx) {</div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('line__count_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_6a66f5e7e6dbcec557024422dd288192.html">word_count</a></li><li class="navelem"><a class="el" href="line__count_8cpp.html">line_count.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:02 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

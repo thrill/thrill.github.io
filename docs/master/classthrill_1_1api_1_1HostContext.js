@@ -7,7 +7,7 @@ var classthrill_1_1api_1_1HostContext =
     [ "flow_manager", "classthrill_1_1api_1_1HostContext.html#a97fc46e2b73976ed9c462af356ce4e75", null ],
     [ "host_rank", "classthrill_1_1api_1_1HostContext.html#a41568191e0932671a5b14744fd690d87", null ],
     [ "local_host_id", "classthrill_1_1api_1_1HostContext.html#a61e4b7137d2efefe92a3de8531b59b28", null ],
-    [ "MakeHostLogPath", "classthrill_1_1api_1_1HostContext.html#a0263a79e9eab1e91996530abeb1a67e3", null ],
+    [ "MakeHostLogPath", "classthrill_1_1api_1_1HostContext.html#a571902578fbf6b3ce57b3d09937c342f", null ],
     [ "mem_config", "classthrill_1_1api_1_1HostContext.html#a80afc95f00def5fb3da2ec06319d315e", null ],
     [ "mem_manager", "classthrill_1_1api_1_1HostContext.html#a140117ebf6f0d19c52948868ce94cd9a", null ],
     [ "net_manager", "classthrill_1_1api_1_1HostContext.html#a3e0a4a600fb7c76b723af38b59d9c012", null ],

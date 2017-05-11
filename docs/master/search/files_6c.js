@@ -13,7 +13,5 @@ var searchData=
   ['logger_2ecpp',['logger.cpp',['../logger_8cpp.html',1,'']]],
   ['logger_2ehpp',['logger.hpp',['../logger_8hpp.html',1,'']]],
   ['logistic_5fregression_2ecpp',['logistic_regression.cpp',['../logistic__regression_8cpp.html',1,'']]],
-  ['logistic_5fregression_2ehpp',['logistic_regression.hpp',['../logistic__regression_8hpp.html',1,'']]],
-  ['losertree_2ehpp',['losertree.hpp',['../losertree_8hpp.html',1,'']]],
-  ['lru_5fcache_2ehpp',['lru_cache.hpp',['../lru__cache_8hpp.html',1,'']]]
+  ['logistic_5fregression_2ehpp',['logistic_regression.hpp',['../logistic__regression_8hpp.html',1,'']]]
 ];

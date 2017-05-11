@@ -8,6 +8,5 @@ var dir_53acb5567af01d44d8f1449f2e4fb497 =
     [ "manager.cpp", "manager_8cpp.html", "manager_8cpp" ],
     [ "manager.hpp", "mem_2manager_8hpp.html", "mem_2manager_8hpp" ],
     [ "pool.cpp", "pool_8cpp.html", "pool_8cpp" ],
-    [ "pool.hpp", "pool_8hpp.html", "pool_8hpp" ],
-    [ "stack_allocator.hpp", "stack__allocator_8hpp.html", "stack__allocator_8hpp" ]
+    [ "pool.hpp", "pool_8hpp.html", "pool_8hpp" ]
 ];

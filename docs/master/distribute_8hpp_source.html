@@ -192,15 +192,15 @@ $(document).ready(function(){initNavTree('distribute_8hpp_source.html','');});
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html#a77109353f39e9fb5fab00c9cccac822e">   74</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html#a77109353f39e9fb5fab00c9cccac822e" title="Virtual method for pushing data. Triggers actual pushing in sub-classes.">PushData</a>(<span class="keywordtype">bool</span> consume) <span class="keyword">final</span> {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="classthrill_1_1data_1_1BlockReader.html">data::CatStream::CatReader</a> readers = <a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html#a05756a54b8232245714df128b69a89db">stream_</a>-&gt;GetCatReader(consume);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">while</span> (readers.<a class="code" href="classthrill_1_1data_1_1BlockReader.html#a89b7f446cb14eb3cb9be9f55b876d75b" title="HasNext() returns true if at least one more item is available.">HasNext</a>()) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            this-&gt;<a class="code" href="classthrill_1_1api_1_1DIANode.html#a68a9de78be2b39c646e465f610a2e8b2" title="Method for derived classes to Push a single item to all children.">PushItem</a>(readers.<a class="code" href="classthrill_1_1data_1_1BlockReader.html#a2a589226500d4922843d0fabe1276782" title="Next() reads a complete item T.">Next</a>&lt;ValueType&gt;());</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">while</span> (readers.<a class="code" href="classthrill_1_1data_1_1BlockReader.html#aec475639ee4bb45df40e1ce269a35a0c" title="HasNext() returns true if at least one more item is available.">HasNext</a>()) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            this-&gt;<a class="code" href="classthrill_1_1api_1_1DIANode.html#a68a9de78be2b39c646e465f610a2e8b2" title="Method for derived classes to Push a single item to all children.">PushItem</a>(readers.<a class="code" href="classthrill_1_1data_1_1BlockReader.html#a702ea54d622e0077caae37848a1d8bd9" title="Next() reads a complete item T.">Next</a>&lt;ValueType&gt;());</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html#a05756a54b8232245714df128b69a89db">stream_</a>-&gt;Close();</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html#ab184572dc4d3b603565e2a09315cfe5e">   84</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html#ab184572dc4d3b603565e2a09315cfe5e" title="Virtual clear method. Triggers actual disposing in sub-classes.">Dispose</a>() final {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        std::vector&lt;ValueType&gt;().<a class="code" href="namespacethrill_1_1common.html#aeb0f9e37913273e9110bcb574230ce08">swap</a>(<a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html#a511f78f13353983256fc08aec28f28f2" title="Vector pointer to read elements from.">in_vector_</a>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        std::vector&lt;ValueType&gt;().swap(<a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html#a511f78f13353983256fc08aec28f28f2" title="Vector pointer to read elements from.">in_vector_</a>);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:<span class="comment"></span></div>
@@ -209,7 +209,7 @@ $(document).ready(function(){initNavTree('distribute_8hpp_source.html','');});
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">    //! source worker id, which sends vector</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html#aca9e991c9e25adefc4644f53ad8a3772">   92</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html#aca9e991c9e25adefc4644f53ad8a3772" title="source worker id, which sends vector">source_id_</a>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html#a05756a54b8232245714df128b69a89db">   94</a></span>&#160;    <a class="code" href="classthrill_1_1common_1_1CountingPtr.html">data::CatStreamPtr</a> <a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html#a05756a54b8232245714df128b69a89db">stream_</a> { <a class="code" href="classthrill_1_1api_1_1DIABase.html#ae8f38e2955f476fde7f144a0f76129bb" title="associated Context">context_</a>.<a class="code" href="classthrill_1_1api_1_1Context.html#a92b6ec0c56ca33dc491f8c2e72414c7b">GetNewCatStream</a>(<span class="keyword">this</span>) };</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html#a05756a54b8232245714df128b69a89db">   94</a></span>&#160;    <a class="code" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a> <a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html#a05756a54b8232245714df128b69a89db">stream_</a> { <a class="code" href="classthrill_1_1api_1_1DIABase.html#ae8f38e2955f476fde7f144a0f76129bb" title="associated Context">context_</a>.<a class="code" href="classthrill_1_1api_1_1Context.html#a92b6ec0c56ca33dc491f8c2e72414c7b">GetNewCatStream</a>(<span class="keyword">this</span>) };</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">/*!</span></div>
@@ -226,7 +226,7 @@ $(document).ready(function(){initNavTree('distribute_8hpp_source.html','');});
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">using</span> <a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html">DistributeNode</a> = <a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html">api::DistributeNode&lt;ValueType&gt;</a>;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">auto</span> node = common::MakeCounting&lt;DistributeNode&gt;(</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;DistributeNode&gt;(</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        ctx, in_vector, source_id);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework.">DIA&lt;ValueType&gt;</a>(node);</div>
@@ -246,7 +246,7 @@ $(document).ready(function(){initNavTree('distribute_8hpp_source.html','');});
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keyword">using</span> <a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html">DistributeNode</a> = <a class="code" href="exceptionthrill_1_1api_1_1DistributeNode.html">api::DistributeNode&lt;ValueType&gt;</a>;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">auto</span> node = common::MakeCounting&lt;DistributeNode&gt;(</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;DistributeNode&gt;(</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        ctx, std::move(in_vector), source_id);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework.">DIA&lt;ValueType&gt;</a>(node);</div>
@@ -268,7 +268,7 @@ $(document).ready(function(){initNavTree('distribute_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="distribute_8hpp.html">distribute.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:03 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

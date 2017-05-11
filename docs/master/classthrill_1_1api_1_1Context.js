@@ -14,7 +14,7 @@ var classthrill_1_1api_1_1Context =
     [ "GetNewCatStream", "classthrill_1_1api_1_1Context.html#abd62ea645969d2767be10125e7b99cf6", null ],
     [ "GetNewMixStream", "classthrill_1_1api_1_1Context.html#a551db90416f6156ee6d9e416990bac25", null ],
     [ "GetNewMixStream", "classthrill_1_1api_1_1Context.html#af826919042a6a62fb37d989f058e6649", null ],
-    [ "GetNewStream", "classthrill_1_1api_1_1Context.html#a7ba71247618c51a906f1bd22528aa50d", null ],
+    [ "GetNewStream", "classthrill_1_1api_1_1Context.html#a65dcf8898795aa1da93b5dd58ae1e9e6", null ],
     [ "host_rank", "classthrill_1_1api_1_1Context.html#a41568191e0932671a5b14744fd690d87", null ],
     [ "Launch", "classthrill_1_1api_1_1Context.html#a4da8234a4d6dfbaeedd939f147d9bcf0", null ],
     [ "local_host_id", "classthrill_1_1api_1_1Context.html#a61e4b7137d2efefe92a3de8531b59b28", null ],

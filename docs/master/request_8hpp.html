@@ -122,11 +122,11 @@ $(document).ready(function(){initNavTree('request_8hpp.html','');});
 <div class="title">request.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="counting__ptr_8hpp_source.html">thrill/common/counting_ptr.hpp</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="delegate_8hpp_source.html">thrill/common/delegate.hpp</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="shared__state_8hpp_source.html">thrill/common/shared_state.hpp</a>&gt;</code><br/>
+<div class="textblock"><code>#include &lt;<a class="el" href="shared__state_8hpp_source.html">thrill/common/shared_state.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="exceptions_8hpp_source.html">thrill/io/exceptions.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="pool_8hpp_source.html">thrill/mem/pool.hpp</a>&gt;</code><br/>
+<code>#include &lt;tlx/counting_ptr.hpp&gt;</code><br/>
+<code>#include &lt;tlx/delegate.hpp&gt;</code><br/>
 <code>#include &lt;cassert&gt;</code><br/>
 <code>#include &lt;memory&gt;</code><br/>
 <code>#include &lt;mutex&gt;</code><br/>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('request_8hpp.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="request_8hpp__incl.svg" width="1710" height="560"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="request_8hpp__incl.svg" width="2136" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -173,11 +173,11 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga22f456234acefe2102a0b4ef2501bb61"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io__layer__req.html#ga22f456234acefe2102a0b4ef2501bb61">CompletionHandler</a> = common::Delegate&lt; void(Request *, bool)&gt;</td></tr>
-<tr class="separator:ga22f456234acefe2102a0b4ef2501bb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7cb03f5ebec97e6a511bc48537e570f9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io__layer__req.html#ga7cb03f5ebec97e6a511bc48537e570f9">RequestPtr</a> = common::CountingPtr&lt; Request, RequestDeleter &gt;</td></tr>
-<tr class="memdesc:ga7cb03f5ebec97e6a511bc48537e570f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference counting pointer for <code>request</code>.  <a href="group__io__layer__req.html#ga7cb03f5ebec97e6a511bc48537e570f9">More...</a><br/></td></tr>
-<tr class="separator:ga7cb03f5ebec97e6a511bc48537e570f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d564039f520d56584770abb56692cb3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io__layer__req.html#ga4d564039f520d56584770abb56692cb3">CompletionHandler</a> = tlx::delegate&lt; void(Request *, bool)&gt;</td></tr>
+<tr class="separator:ga4d564039f520d56584770abb56692cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad77b608fd5cf3b231643f26467ae4338"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io__layer__req.html#gad77b608fd5cf3b231643f26467ae4338">RequestPtr</a> = tlx::CountingPtr&lt; Request, RequestDeleter &gt;</td></tr>
+<tr class="memdesc:gad77b608fd5cf3b231643f26467ae4338"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference counting pointer for <code>request</code>.  <a href="group__io__layer__req.html#gad77b608fd5cf3b231643f26467ae4338">More...</a><br/></td></tr>
+<tr class="separator:gad77b608fd5cf3b231643f26467ae4338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -206,7 +206,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_b3d161c3d1247f1befe1ba5893f47ab8.html">io</a></li><li class="navelem"><a class="el" href="request_8hpp.html">request.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:05 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:35 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

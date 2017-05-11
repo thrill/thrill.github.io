@@ -123,9 +123,11 @@ $(document).ready(function(){initNavTree('terasort_8cpp.html','');});
 <code>#include &lt;<a class="el" href="read__binary_8hpp_source.html">thrill/api/read_binary.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="sort_8hpp_source.html">thrill/api/sort.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="write__binary_8hpp_source.html">thrill/api/write_binary.hpp</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="cmdline__parser_8hpp_source.html">thrill/common/cmdline_parser.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="logger_8hpp_source.html">thrill/common/logger.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="string_8hpp_source.html">thrill/common/string.hpp</a>&gt;</code><br/>
+<code>#include &lt;tlx/cmdline_parser.hpp&gt;</code><br/>
+<code>#include &lt;tlx/string/hexdump.hpp&gt;</code><br/>
+<code>#include &lt;tlx/string/parse_si_iec_units.hpp&gt;</code><br/>
 <code>#include &lt;algorithm&gt;</code><br/>
 <code>#include &lt;random&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
@@ -136,7 +138,7 @@ $(document).ready(function(){initNavTree('terasort_8cpp.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="terasort_8cpp__incl.svg" width="10067" height="1696"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="terasort_8cpp__incl.svg" width="9122" height="1446"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -149,8 +151,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a4982ffb0be0e07d738f63fc09c83ac4b"><td class="memItemLeft" align="right" valign="top">struct Record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terasort_8cpp.html#a4982ffb0be0e07d738f63fc09c83ac4b">THRILL_ATTRIBUTE_PACKED</a></td></tr>
-<tr class="separator:a4982ffb0be0e07d738f63fc09c83ac4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41f9531b5286a898c9710f428d8fbf7"><td class="memItemLeft" align="right" valign="top">struct Record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terasort_8cpp.html#aa41f9531b5286a898c9710f428d8fbf7">TLX_ATTRIBUTE_PACKED</a></td></tr>
+<tr class="separator:aa41f9531b5286a898c9710f428d8fbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a0ddf1224851353fc92bfbff6f499fa97"></a>
@@ -177,19 +179,19 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="terasort_8cpp_source.html#l00116">116</a> of file <a class="el" href="terasort_8cpp_source.html">terasort.cpp</a>.</p>
+<p>Definition at line <a class="el" href="terasort_8cpp_source.html#l00119">119</a> of file <a class="el" href="terasort_8cpp_source.html">terasort.cpp</a>.</p>
 
-<p>References <a class="el" href="cmdline__parser_8cpp_source.html#l00465">CmdlineParser::AddFlag()</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l00683">CmdlineParser::AddParamStringlist()</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l00534">CmdlineParser::AddString()</a>, <a class="el" href="die_8hpp_source.html#l00038">die_unequal</a>, <a class="el" href="die_8hpp_source.html#l00033">die_unless</a>, <a class="el" href="context_8hpp_source.html#l00390">Context::enable_consume()</a>, <a class="el" href="generate_8hpp_source.html#l00085">thrill::api::Generate()</a>, <a class="el" href="string_8cpp_source.html#l00200">thrill::common::ParseSiIecUnits()</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l01022">CmdlineParser::PrintResult()</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l00859">CmdlineParser::Process()</a>, and <a class="el" href="context_8cpp_source.html#l00796">thrill::api::Run()</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00390">Context::enable_consume()</a>, <a class="el" href="generate_8hpp_source.html#l00085">thrill::api::Generate()</a>, and <a class="el" href="context_8cpp_source.html#l00801">thrill::api::Run()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a4982ffb0be0e07d738f63fc09c83ac4b"></a>
+<a class="anchor" id="aa41f9531b5286a898c9710f428d8fbf7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct RecordSigned  THRILL_ATTRIBUTE_PACKED</td>
+          <td class="memname">struct RecordSigned  TLX_ATTRIBUTE_PACKED</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -202,7 +204,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_d8b26c95b1f7b12d43099dd9552a78bc.html">terasort</a></li><li class="navelem"><a class="el" href="terasort_8cpp.html">terasort.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:04 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:34 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

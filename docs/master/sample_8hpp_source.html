@@ -148,13 +148,13 @@ $(document).ready(function(){initNavTree('sample_8hpp_source.html','');});
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1api_1_1SampleNode.html#a6b72e54baf646b08b4b87f987f583dcb">   31</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="exceptionthrill_1_1api_1_1SampleNode.html#a6b72e54baf646b08b4b87f987f583dcb">debug</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1api_1_1SampleNode.html#a891fa9a850833efd80b9a9aced7b443c">   33</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1DOpNode.html" title="A DOpNode is a typed node representing and distributed operations in Thrill.">Super</a> = <a class="code" href="classthrill_1_1api_1_1DOpNode.html" title="A DOpNode is a typed node representing and distributed operations in Thrill.">DOpNode&lt;ValueType&gt;</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1api_1_1SampleNode.html#a891fa9a850833efd80b9a9aced7b443c">   33</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill.">Super</a> = <a class="code" href="classthrill_1_1api_1_1DOpNode.html" title="A DOpNode is a typed node representing and distributed operations in Thrill.">DOpNode&lt;ValueType&gt;</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#ae8f38e2955f476fde7f144a0f76129bb" title="associated Context">Super::context_</a>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ParentDIA&gt;</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1api_1_1SampleNode.html#a391cdd33f939064fea15c915e98b13c9">   38</a></span>&#160;    <a class="code" href="exceptionthrill_1_1api_1_1SampleNode.html#a391cdd33f939064fea15c915e98b13c9">SampleNode</a>(<span class="keyword">const</span> ParentDIA&amp; parent, <span class="keywordtype">size_t</span> sample_size)</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1api_1_1SampleNode.html#a9e0e9a1dd0cca537e66bdbdd89765761">   39</a></span>&#160;        : <a class="code" href="classthrill_1_1api_1_1DOpNode.html" title="A DOpNode is a typed node representing and distributed operations in Thrill.">Super</a>(parent.ctx(), <span class="stringliteral">&quot;Sample&quot;</span>, { parent.id() }, { parent.node() }),</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1api_1_1SampleNode.html#a9e0e9a1dd0cca537e66bdbdd89765761">   39</a></span>&#160;        : <a class="code" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill.">Super</a>(parent.ctx(), <span class="stringliteral">&quot;Sample&quot;</span>, { parent.id() }, { parent.node() }),</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;          sample_size_(sample_size)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="exceptionthrill_1_1api_1_1SampleNode.html#a9e0e9a1dd0cca537e66bdbdd89765761" title="local samples">samples_</a>.reserve(sample_size);</div>
@@ -204,9 +204,9 @@ $(document).ready(function(){initNavTree('sample_8hpp_source.html','');});
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">if</span> (r &lt; local_rank || r &gt;= local_rank + local_size) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="comment">// swap selected item to front.</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacethrill_1_1common.html#aeb0f9e37913273e9110bcb574230ce08">std::swap</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keyword">using</span> std::swap;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">if</span> (it &lt; <a class="code" href="exceptionthrill_1_1api_1_1SampleNode.html#a9e0e9a1dd0cca537e66bdbdd89765761" title="local samples">samples_</a>.end()) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <a class="code" href="namespacethrill_1_1common.html#aeb0f9e37913273e9110bcb574230ce08">swap</a>(*it, <a class="code" href="exceptionthrill_1_1api_1_1SampleNode.html#a9e0e9a1dd0cca537e66bdbdd89765761" title="local samples">samples_</a>[r - local_rank]);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                swap(*it, <a class="code" href="exceptionthrill_1_1api_1_1SampleNode.html#a9e0e9a1dd0cca537e66bdbdd89765761" title="local samples">samples_</a>[r - local_rank]);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                it = <a class="code" href="exceptionthrill_1_1api_1_1SampleNode.html#a9e0e9a1dd0cca537e66bdbdd89765761" title="local samples">samples_</a>.insert(it, <a class="code" href="exceptionthrill_1_1api_1_1SampleNode.html#a9e0e9a1dd0cca537e66bdbdd89765761" title="local samples">samples_</a>[r - local_rank]);</div>
@@ -229,11 +229,11 @@ $(document).ready(function(){initNavTree('sample_8hpp_source.html','');});
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            this-&gt;<a class="code" href="classthrill_1_1api_1_1DIANode.html#a68a9de78be2b39c646e465f610a2e8b2" title="Method for derived classes to Push a single item to all children.">PushItem</a>(v);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">if</span> (consume)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            std::vector&lt;ValueType&gt;().<a class="code" href="namespacethrill_1_1common.html#aeb0f9e37913273e9110bcb574230ce08">swap</a>(samples_);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            std::vector&lt;ValueType&gt;().swap(samples_);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#a1b40a2658f30f8466f310ceea310afb5" title="Virtual clear method. Triggers actual disposing in sub-classes.">Dispose</a>() final {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        std::vector&lt;ValueType&gt;().<a class="code" href="namespacethrill_1_1common.html#aeb0f9e37913273e9110bcb574230ce08">swap</a>(samples_);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        std::vector&lt;ValueType&gt;().swap(samples_);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">private</span>:</div>
@@ -252,7 +252,7 @@ $(document).ready(function(){initNavTree('sample_8hpp_source.html','');});
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">using</span> <a class="code" href="exceptionthrill_1_1api_1_1SampleNode.html">SampleNode</a> = <a class="code" href="exceptionthrill_1_1api_1_1SampleNode.html">api::SampleNode&lt;ValueType&gt;</a>;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">auto</span> node = common::MakeCounting&lt;SampleNode&gt;(</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;SampleNode&gt;(</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        *<span class="keyword">this</span>, sample_size);</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework.">DIA&lt;ValueType&gt;</a>(node);</div>
@@ -270,7 +270,7 @@ $(document).ready(function(){initNavTree('sample_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="sample_8hpp.html">sample.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:03 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

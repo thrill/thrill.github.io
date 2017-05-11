@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('block__sink_8hpp_source.html','');});
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">    //! Release an unused ByteBlock with n bytes backing memory.</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="classthrill_1_1data_1_1BlockSink.html#af486a27d4543d700ab9ec19d2cba0d2e">   56</a></span>&#160;<span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1data_1_1BlockSink.html#af486a27d4543d700ab9ec19d2cba0d2e" title="Release an unused ByteBlock with n bytes backing memory.">ReleaseByteBlock</a>(<a class="code" href="classthrill_1_1common_1_1CountingPtr.html" title="High-performance smart pointer used as a wrapping reference counting pointer.">ByteBlockPtr</a>&amp; block) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="classthrill_1_1data_1_1BlockSink.html#af486a27d4543d700ab9ec19d2cba0d2e">   56</a></span>&#160;<span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1data_1_1BlockSink.html#af486a27d4543d700ab9ec19d2cba0d2e" title="Release an unused ByteBlock with n bytes backing memory.">ReleaseByteBlock</a>(<a class="code" href="group__data__layer.html#ga8eb59a5f16aacf17b53f2fef06bff83f">ByteBlockPtr</a>&amp; block) {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        block = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"></span></div>
@@ -240,7 +240,7 @@ $(document).ready(function(){initNavTree('block__sink_8hpp_source.html','');});
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1data_1_1BlockSink.html#a013ffd4efe66c5afa88905f42b07ee89">BlockSink::AllocateByteBlock</a>(block_size);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="code" href="classthrill_1_1data_1_1BoundedBlockSink.html#a17117f37c0f94164e5b09c06433be09c">  125</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1data_1_1BoundedBlockSink.html#a17117f37c0f94164e5b09c06433be09c" title="Release an unused ByteBlock with n bytes backing memory.">ReleaseByteBlock</a>(<a class="code" href="classthrill_1_1common_1_1CountingPtr.html" title="High-performance smart pointer used as a wrapping reference counting pointer.">ByteBlockPtr</a>&amp; block) <span class="keyword">final</span> {</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="code" href="classthrill_1_1data_1_1BoundedBlockSink.html#a17117f37c0f94164e5b09c06433be09c">  125</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1data_1_1BoundedBlockSink.html#a17117f37c0f94164e5b09c06433be09c" title="Release an unused ByteBlock with n bytes backing memory.">ReleaseByteBlock</a>(<a class="code" href="group__data__layer.html#ga8eb59a5f16aacf17b53f2fef06bff83f">ByteBlockPtr</a>&amp; block) <span class="keyword">final</span> {</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">if</span> (block)</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <a class="code" href="classthrill_1_1data_1_1BoundedBlockSink.html#a692ef009500e2c85254ef6239a2b8406" title="currently allocated ByteBlock for this BlockSink.">available_</a> += block-&gt;size();</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        block = <span class="keyword">nullptr</span>;</div>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('block__sink_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1b62fa212cebae5dc6aa23a01bf7093d.html">data</a></li><li class="navelem"><a class="el" href="block__sink_8hpp.html">block_sink.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:03 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

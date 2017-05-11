@@ -162,7 +162,7 @@ $(document).ready(function(){initNavTree('cache_8hpp_source.html','');});
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;          <a class="code" href="exceptionthrill_1_1api_1_1CacheNode.html#a0e7929fae361337345f8906f6980b6a5" title="Whether the parent stack is empty.">parent_stack_empty_</a>(ParentDIA::stack_empty)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">auto</span> save_fn = [<span class="keyword">this</span>](<span class="keyword">const</span> ValueType&amp; input) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                           <a class="code" href="exceptionthrill_1_1api_1_1CacheNode.html#ade1c31d89c1a1059e34d33d03507fd9b" title="Data writer to local file (only active in PreOp).">writer_</a>.<a class="code" href="classthrill_1_1data_1_1BlockWriter.html#ab2286b437e10b8d7f4ae0bf829110493" title="Put appends a complete item, or fails with a FullException.">Put</a>(input);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                           <a class="code" href="exceptionthrill_1_1api_1_1CacheNode.html#ade1c31d89c1a1059e34d33d03507fd9b" title="Data writer to local file (only active in PreOp).">writer_</a>.<a class="code" href="classthrill_1_1data_1_1BlockWriter.html#ad886b996667ffc717fffad9330045c20" title="Put appends a complete item, or fails with a FullException.">Put</a>(input);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                       };</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">auto</span> lop_chain = parent.stack().push(save_fn).fold();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        parent.node()-&gt;AddChild(<span class="keyword">this</span>, lop_chain);</div>
@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('cache_8hpp_source.html','');});
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework.">DIA&lt;ValueType&gt;</a>(</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        common::MakeCounting&lt;api::CacheNode&lt;ValueType&gt; &gt;(*this));</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        tlx::make_counting&lt;api::CacheNode&lt;ValueType&gt; &gt;(*this));</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;} <span class="comment">// namespace api</span></div>
@@ -237,7 +237,7 @@ $(document).ready(function(){initNavTree('cache_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="cache_8hpp.html">cache.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:02 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

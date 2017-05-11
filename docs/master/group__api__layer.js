@@ -93,7 +93,7 @@ var group__api__layer =
         [ "node", "structthrill_1_1api_1_1DIANode_1_1Child.html#a654314b060039dd69fd7992da344ce57", null ],
         [ "parent_index", "structthrill_1_1api_1_1DIANode_1_1Child.html#ab55c3b6af476322ebf410196f1fc4ba2", null ]
       ] ],
-      [ "Callback", "classthrill_1_1api_1_1DIANode.html#a68491042a7e67788c3e369b50cef0a90", null ],
+      [ "Callback", "classthrill_1_1api_1_1DIANode.html#aee28d6cdfe25b4ccb931314859d9551f", null ],
       [ "DIANode", "classthrill_1_1api_1_1DIANode.html#ae932885fd74d07124e0b5396e0230096", null ],
       [ "DIANode", "classthrill_1_1api_1_1DIANode.html#a6c410afa333025363ed82b6837a3f5ac", null ],
       [ "AddChild", "classthrill_1_1api_1_1DIANode.html#ab874030f3e9151292701059fa46616d2", null ],
@@ -372,7 +372,7 @@ var group__api__layer =
       [ "HashIndexFunction", "exceptionthrill_1_1api_1_1ReduceNode.html#a25c4ed0613d19b7f957f1fd5dd58872f", null ],
       [ "Key", "exceptionthrill_1_1api_1_1ReduceNode.html#a17e6ef244d4d03395a813cf2a45a9648", null ],
       [ "Super", "exceptionthrill_1_1api_1_1ReduceNode.html#a891fa9a850833efd80b9a9aced7b443c", null ],
-      [ "TableItem", "exceptionthrill_1_1api_1_1ReduceNode.html#a8f7855b88e9b833f7b3c54c6eedefe95", null ],
+      [ "TableItem", "exceptionthrill_1_1api_1_1ReduceNode.html#a204dee530e24efc047ecb3caef72bf3b", null ],
       [ "ReduceNode", "exceptionthrill_1_1api_1_1ReduceNode.html#aede38730624c0541a2fcad2446eaa721", null ],
       [ "cat_stream_", "exceptionthrill_1_1api_1_1ReduceNode.html#a8d115b456cc5f148d35663f6061cf30d", null ],
       [ "debug", "exceptionthrill_1_1api_1_1ReduceNode.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
@@ -392,7 +392,7 @@ var group__api__layer =
       ] ],
       [ "Key", "exceptionthrill_1_1api_1_1ReduceToIndexNode.html#a17e6ef244d4d03395a813cf2a45a9648", null ],
       [ "Super", "exceptionthrill_1_1api_1_1ReduceToIndexNode.html#a891fa9a850833efd80b9a9aced7b443c", null ],
-      [ "TableItem", "exceptionthrill_1_1api_1_1ReduceToIndexNode.html#a8f7855b88e9b833f7b3c54c6eedefe95", null ],
+      [ "TableItem", "exceptionthrill_1_1api_1_1ReduceToIndexNode.html#a204dee530e24efc047ecb3caef72bf3b", null ],
       [ "ReduceToIndexNode", "exceptionthrill_1_1api_1_1ReduceToIndexNode.html#a349fe15e4125785658156e50b23f3d00", null ],
       [ "cat_stream_", "exceptionthrill_1_1api_1_1ReduceToIndexNode.html#a8d115b456cc5f148d35663f6061cf30d", null ],
       [ "debug", "exceptionthrill_1_1api_1_1ReduceToIndexNode.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
@@ -590,7 +590,7 @@ var group__api__layer =
       [ "parent_stack_empty_", "exceptionthrill_1_1api_1_1ZipWithIndexNode.html#a0e7929fae361337345f8906f6980b6a5", null ],
       [ "writer_", "exceptionthrill_1_1api_1_1ZipWithIndexNode.html#ade1c31d89c1a1059e34d33d03507fd9b", null ]
     ] ],
-    [ "DIABasePtr", "group__api__layer.html#ga9bc823b9483b7df80264de0cc50d3d35", null ],
+    [ "DIABasePtr", "group__api__layer.html#gafd807377b556060aa33d5dd9c12b75e2", null ],
     [ "DIAState", "group__api__layer.html#gaefcbecbc4c0751ab5eaa2eff901c2aa2", [
       [ "NEW", "group__api__layer.html#ggaefcbecbc4c0751ab5eaa2eff901c2aa2a24d459a81449d7210c8f9a86c2913034", null ],
       [ "EXECUTED", "group__api__layer.html#ggaefcbecbc4c0751ab5eaa2eff901c2aa2aca966251f856595642d61bfa4026b086", null ],

@@ -5,5 +5,5 @@ var uint__types_8hpp =
     [ "THRILL_COMMON_UINT_TYPES_HEADER", "uint__types_8hpp.html#a78e85120a9aef6bf98cc7ac8b9692a6e", null ],
     [ "uint40", "uint__types_8hpp.html#ab54c9c3cffe0f8c6912f042cbc132404", null ],
     [ "uint48", "uint__types_8hpp.html#a9b99cc208a20a9eeb4bcd6a0e8c908ca", null ],
-    [ "THRILL_ATTRIBUTE_PACKED", "uint__types_8hpp.html#ac59dea4f4b08a71c5886107d4ac7d09d", null ]
+    [ "TLX_ATTRIBUTE_PACKED", "uint__types_8hpp.html#aa8cefeaf73ed55f25567a5f582e0dc47", null ]
 ];

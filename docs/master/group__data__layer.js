@@ -84,7 +84,7 @@ var group__data__layer =
       [ "size_", "classthrill_1_1data_1_1BlockPoolMemoryHolder.html#a5f31775800bbb46b35b5791def1f3acc", null ]
     ] ],
     [ "BlockQueue", "exceptionthrill_1_1data_1_1BlockQueue.html", [
-      [ "CloseCallback", "exceptionthrill_1_1data_1_1BlockQueue.html#abd51902f26d99d20474c6385e2ea5032", null ],
+      [ "CloseCallback", "exceptionthrill_1_1data_1_1BlockQueue.html#a08335ba0424d579b47e3fb4d0c144aa2", null ],
       [ "ConsumeReader", "exceptionthrill_1_1data_1_1BlockQueue.html#a7d765cf1578228934745a49ec446e67f", null ],
       [ "Reader", "exceptionthrill_1_1data_1_1BlockQueue.html#ac306eb24ea466acd3e0d87ea82f56916", null ],
       [ "Writer", "exceptionthrill_1_1data_1_1BlockQueue.html#ab0b45a23642f91075005b1874dba86fd", null ],
@@ -137,10 +137,10 @@ var group__data__layer =
       [ "GetByte", "classthrill_1_1data_1_1BlockReader.html#aa707e9b0442b5b0e22c402394d5eaad1", null ],
       [ "GetItemBatch", "classthrill_1_1data_1_1BlockReader.html#a27581d97f872c1b776ee21e5ac24f64d", null ],
       [ "GetRaw", "classthrill_1_1data_1_1BlockReader.html#a584725102547b76380bf324032dab87e", null ],
-      [ "HasNext", "classthrill_1_1data_1_1BlockReader.html#a89b7f446cb14eb3cb9be9f55b876d75b", null ],
-      [ "Next", "classthrill_1_1data_1_1BlockReader.html#a2a589226500d4922843d0fabe1276782", null ],
+      [ "HasNext", "classthrill_1_1data_1_1BlockReader.html#aec475639ee4bb45df40e1ce269a35a0c", null ],
+      [ "Next", "classthrill_1_1data_1_1BlockReader.html#a702ea54d622e0077caae37848a1d8bd9", null ],
       [ "NextBlock", "classthrill_1_1data_1_1BlockReader.html#a91e9a1fa7664c8284a28e0ee6acb6e24", null ],
-      [ "NextNoSelfVerify", "classthrill_1_1data_1_1BlockReader.html#a9ee3ca0c952d32d25eb1196d43b6ed1b", null ],
+      [ "NextNoSelfVerify", "classthrill_1_1data_1_1BlockReader.html#a7a837158882f1d7ca816761b3a1974bd", null ],
       [ "operator=", "classthrill_1_1data_1_1BlockReader.html#af4f7b18e936cb93430724a9534a9bca5", null ],
       [ "operator=", "classthrill_1_1data_1_1BlockReader.html#a35752e00c5e6dbf97aa266b96e704da1", null ],
       [ "Read", "classthrill_1_1data_1_1BlockReader.html#a09d66010f0c378b89be3f4f8e4e1aae1", null ],
@@ -195,15 +195,15 @@ var group__data__layer =
       [ "Close", "classthrill_1_1data_1_1BlockWriter.html#a7f7a3199c392465d0767c6506c1af5b4", null ],
       [ "Flush", "classthrill_1_1data_1_1BlockWriter.html#a0e2644b2df3c228e8d71a55b60723f31", null ],
       [ "IsValid", "classthrill_1_1data_1_1BlockWriter.html#afa8720abaf6972d6dac22a8cd1a67225", null ],
-      [ "MarkItem", "classthrill_1_1data_1_1BlockWriter.html#abb5e19048343c6d442a021adf687c480", null ],
+      [ "MarkItem", "classthrill_1_1data_1_1BlockWriter.html#acde8f45219be53fa65ca6cf51113e011", null ],
       [ "operator=", "classthrill_1_1data_1_1BlockWriter.html#ae3e584e36d955be4b40da1cbe91d0ce5", null ],
       [ "operator=", "classthrill_1_1data_1_1BlockWriter.html#ad4a47e14359b3e2b68643663c448057c", null ],
-      [ "Put", "classthrill_1_1data_1_1BlockWriter.html#ab2286b437e10b8d7f4ae0bf829110493", null ],
+      [ "Put", "classthrill_1_1data_1_1BlockWriter.html#ad886b996667ffc717fffad9330045c20", null ],
       [ "PutByte", "classthrill_1_1data_1_1BlockWriter.html#ac858c616ef4a15ba945c19048b40cd49", null ],
-      [ "PutNoSelfVerify", "classthrill_1_1data_1_1BlockWriter.html#a817720f1c6bdf035c4bfcfb99b48cb8a", null ],
+      [ "PutNoSelfVerify", "classthrill_1_1data_1_1BlockWriter.html#a1543b1c2d0198d5dff5c6a3d8c923ddc", null ],
       [ "PutRaw", "classthrill_1_1data_1_1BlockWriter.html#a2eaade193cdc3ee94ad85a9ddd6a0f93", null ],
-      [ "PutSafe", "classthrill_1_1data_1_1BlockWriter.html#a5c5e082f74530fc50c120b141afcbc96", null ],
-      [ "PutUnsafe", "classthrill_1_1data_1_1BlockWriter.html#a3503505a4d9e6e2100597ba211216938", null ],
+      [ "PutSafe", "classthrill_1_1data_1_1BlockWriter.html#a3f27fd459ba848c3b74ee533eff94152", null ],
+      [ "PutUnsafe", "classthrill_1_1data_1_1BlockWriter.html#a5675fc4b08bc48f1e5f5e9e35831c675", null ],
       [ "block_size_", "classthrill_1_1data_1_1BlockWriter.html#a9444f84cb3ece249a0cb4552f1bea018", null ],
       [ "bytes_", "classthrill_1_1data_1_1BlockWriter.html#a0e2f2dc9a896eb4c68153d594e03f40c", null ],
       [ "closed_", "classthrill_1_1data_1_1BlockWriter.html#afb2b91acc8a5e9aa1a295c8da42f8067", null ],
@@ -232,8 +232,8 @@ var group__data__layer =
         [ "operator()", "classthrill_1_1data_1_1ByteBlock_1_1Deleter.html#a0f5d5bc0186092ee81692bc8b6ff636f", null ],
         [ "operator()", "classthrill_1_1data_1_1ByteBlock_1_1Deleter.html#a8557032d89bc1f0efd76ae6bed0accf0", null ]
       ] ],
-      [ "ByteBlockCPtr", "classthrill_1_1data_1_1ByteBlock.html#a4dc7387fedab4795c19752fe2f8380b0", null ],
-      [ "ByteBlockPtr", "classthrill_1_1data_1_1ByteBlock.html#ae4e3cd5edb441099face8d40212345aa", null ],
+      [ "ByteBlockCPtr", "classthrill_1_1data_1_1ByteBlock.html#a2006279567f7015338183af8617dfe72", null ],
+      [ "ByteBlockPtr", "classthrill_1_1data_1_1ByteBlock.html#a07ff5f64ca2cb4cf9e0d5963df489453", null ],
       [ "ByteBlock", "classthrill_1_1data_1_1ByteBlock.html#aa2d8d5e68690de7bff4df3809de58888", null ],
       [ "ByteBlock", "classthrill_1_1data_1_1ByteBlock.html#afb4bedf5b59f060a9ce5d17478f1bd23", null ],
       [ "ByteBlock", "classthrill_1_1data_1_1ByteBlock.html#a0b2b205a39e0a63346029dc3078ed2e2", null ],
@@ -354,10 +354,10 @@ var group__data__layer =
     ] ],
     [ "DynBlockSource", "classthrill_1_1data_1_1DynBlockSource.html", [
       [ "DynBlockSource", "classthrill_1_1data_1_1DynBlockSource.html#abb286b8f928856946f5042a411b14cea", null ],
-      [ "DynBlockSource", "classthrill_1_1data_1_1DynBlockSource.html#ab748072d2f7189850f9634fca75a58ab", null ],
+      [ "DynBlockSource", "classthrill_1_1data_1_1DynBlockSource.html#a0348ee3f5e5759bb771f49863a047df9", null ],
       [ "NextBlock", "classthrill_1_1data_1_1DynBlockSource.html#a968d65e397adaf3d7488ffec0b649d53", null ],
       [ "Prefetch", "classthrill_1_1data_1_1DynBlockSource.html#ae123ce606924f4792e64a7b6537e157b", null ],
-      [ "block_source_ptr_", "classthrill_1_1data_1_1DynBlockSource.html#a1793289e495318443598d7c9a3ae0c3b", null ]
+      [ "block_source_ptr_", "classthrill_1_1data_1_1DynBlockSource.html#a43a8b8b0dee7a7d9030a3403f268c479", null ]
     ] ],
     [ "DynBlockSourceAdapter", "exceptionthrill_1_1data_1_1DynBlockSourceAdapter.html", [
       [ "DynBlockSourceAdapter", "exceptionthrill_1_1data_1_1DynBlockSourceAdapter.html#a35d34af7bca4a8a8abd09892a8be50d4", null ],
@@ -683,7 +683,7 @@ var group__data__layer =
       [ "is_fixed_size", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1string_01_4.html#aa59ac0fcd44b9c87dee7a6fb4281e02d", null ]
     ] ],
     [ "Serialization< Archive, std::tuple< Args...> >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1tuple_3_01Args_8_8_8_4_01_4.html", [
-      [ "Deserialize", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1tuple_3_01Args_8_8_8_4_01_4.html#afe0c79ad36aa53ebf5a1dd069a541357", null ],
+      [ "Deserialize", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1tuple_3_01Args_8_8_8_4_01_4.html#a12ee63aee037eb88243150d027389e03", null ],
       [ "Serialize", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1tuple_3_01Args_8_8_8_4_01_4.html#a6e81ae5b0bf62285532c430bbbb02d85", null ],
       [ "fixed_size", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1tuple_3_01Args_8_8_8_4_01_4.html#a2c5bde91e5ea916a64e8cbe6892cdfef", null ],
       [ "is_fixed_size", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1tuple_3_01Args_8_8_8_4_01_4.html#aa59ac0fcd44b9c87dee7a6fb4281e02d", null ]
@@ -694,17 +694,17 @@ var group__data__layer =
       [ "fixed_size", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1vector_3_01T_01_4_01_4.html#a2c5bde91e5ea916a64e8cbe6892cdfef", null ],
       [ "is_fixed_size", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1vector_3_01T_01_4_01_4.html#aa59ac0fcd44b9c87dee7a6fb4281e02d", null ]
     ] ],
-    [ "Serialization< Archive, T, typename std::enable_if< cereal::traits::is_input_serializable< T, Archive >::value &&!std::is_pod< T >::value &&!std::is_same< T, std::string >::value &&!common::is_std_pair< T >::value &&!common::is_std_array< T >::value &&!common::is_std_vector< T >::value &&!common::is_std_tuple< T >::value >::type >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01cf544e12f7324e20ac76a4f449208111e.html", [
-      [ "Deserialize", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01cf544e12f7324e20ac76a4f449208111e.html#a91024ecef9d9e0ac0f7649be0c8e4225", null ],
-      [ "Serialize", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01cf544e12f7324e20ac76a4f449208111e.html#a31c1eb6b75254795478398cdd1b58c72", null ],
-      [ "fixed_size", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01cf544e12f7324e20ac76a4f449208111e.html#a2c5bde91e5ea916a64e8cbe6892cdfef", null ],
-      [ "is_fixed_size", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01cf544e12f7324e20ac76a4f449208111e.html#aa59ac0fcd44b9c87dee7a6fb4281e02d", null ]
+    [ "Serialization< Archive, T, typename std::enable_if< cereal::traits::is_input_serializable< T, Archive >::value &&!std::is_pod< T >::value &&!std::is_same< T, std::string >::value &&!tlx::is_std_pair< T >::value &&!tlx::is_std_array< T >::value &&!tlx::is_std_vector< T >::value &&!tlx::is_std_tuple< T >::value >::type >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01ce5d6e20fe42ba95a9a6db50ee3d26580.html", [
+      [ "Deserialize", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01ce5d6e20fe42ba95a9a6db50ee3d26580.html#a91024ecef9d9e0ac0f7649be0c8e4225", null ],
+      [ "Serialize", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01ce5d6e20fe42ba95a9a6db50ee3d26580.html#a31c1eb6b75254795478398cdd1b58c72", null ],
+      [ "fixed_size", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01ce5d6e20fe42ba95a9a6db50ee3d26580.html#a2c5bde91e5ea916a64e8cbe6892cdfef", null ],
+      [ "is_fixed_size", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01ce5d6e20fe42ba95a9a6db50ee3d26580.html#aa59ac0fcd44b9c87dee7a6fb4281e02d", null ]
     ] ],
-    [ "Serialization< Archive, T, typename std::enable_if< has_method_thrill_is_fixed_size< T >::value >::type >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01he80cfba1216039172b8976ffbd5af686.html", [
-      [ "Deserialize", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01he80cfba1216039172b8976ffbd5af686.html#a91024ecef9d9e0ac0f7649be0c8e4225", null ],
-      [ "Serialize", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01he80cfba1216039172b8976ffbd5af686.html#aa5f32b5312ce16193d62d98d5bad01b1", null ],
-      [ "fixed_size", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01he80cfba1216039172b8976ffbd5af686.html#a2c5bde91e5ea916a64e8cbe6892cdfef", null ],
-      [ "is_fixed_size", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01he80cfba1216039172b8976ffbd5af686.html#aa59ac0fcd44b9c87dee7a6fb4281e02d", null ]
+    [ "Serialization< Archive, T, typename std::enable_if< has_member_thrill_is_fixed_size< T >::value >::type >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01hd08c951b6c13e047834610b1a9aacbeb.html", [
+      [ "Deserialize", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01hd08c951b6c13e047834610b1a9aacbeb.html#a91024ecef9d9e0ac0f7649be0c8e4225", null ],
+      [ "Serialize", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01hd08c951b6c13e047834610b1a9aacbeb.html#aa5f32b5312ce16193d62d98d5bad01b1", null ],
+      [ "fixed_size", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01hd08c951b6c13e047834610b1a9aacbeb.html#a2c5bde91e5ea916a64e8cbe6892cdfef", null ],
+      [ "is_fixed_size", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01hd08c951b6c13e047834610b1a9aacbeb.html#aa59ac0fcd44b9c87dee7a6fb4281e02d", null ]
     ] ],
     [ "Serialization< Archive, T, typename std::enable_if< std::is_pod< T >::value &&!std::is_pointer< T >::value >::type >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01s42c784ecbd504c6802ce2ce0ffd1d579.html", [
       [ "Deserialize", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01s42c784ecbd504c6802ce2ce0ffd1d579.html#a91024ecef9d9e0ac0f7649be0c8e4225", null ],
@@ -763,7 +763,7 @@ var group__data__layer =
       [ "stream_id", "classthrill_1_1data_1_1StreamMultiplexerHeader.html#a7b907a938e7393c6fc987fe5c1c79991", null ]
     ] ],
     [ "StreamSet", "classthrill_1_1data_1_1StreamSet.html", [
-      [ "StreamPtr", "classthrill_1_1data_1_1StreamSet.html#a258a0aa590e69bed32b6c6593d06b3a5", null ],
+      [ "StreamPtr", "classthrill_1_1data_1_1StreamSet.html#ac59d85cbcbfab63b84f5e598c17d94a8", null ],
       [ "StreamSet", "classthrill_1_1data_1_1StreamSet.html#aca3a73a8696a9e225648edfe23ddd4b1", null ],
       [ "Close", "classthrill_1_1data_1_1StreamSet.html#a29dc6798f18d73abd4ba8e4910f6831f", null ],
       [ "peer", "classthrill_1_1data_1_1StreamSet.html#a93b7577070cb48cdb52104429267db33", null ],
@@ -807,18 +807,18 @@ var group__data__layer =
     ] ],
     [ "Byte", "group__data__layer.html#ga5df5518b488228d9937501d80f7b70e2", null ],
     [ "ByteBlockPtr", "group__data__layer.html#ga8eb59a5f16aacf17b53f2fef06bff83f", null ],
-    [ "CatStreamPtr", "group__data__layer.html#ga4f54fb5157eeb6ac882e04d7cb1a71f6", null ],
+    [ "CatStreamPtr", "group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf", null ],
     [ "CatStreamSet", "group__data__layer.html#gad468d9d6927f81737fcbcaec29a67b62", null ],
-    [ "CatStreamSetPtr", "group__data__layer.html#ga82a341d47c6943d5d9c2ef71c20ffc29", null ],
+    [ "CatStreamSetPtr", "group__data__layer.html#ga3fcda4fc0d05fc4422028bbd351557e2", null ],
     [ "DynBlockReader", "group__data__layer.html#ga75466e8af722e6fd8ff9139ad6eeee40", null ],
     [ "DynBlockWriter", "group__data__layer.html#gae7356058967e82c4fa0b97f39a9d8afc", null ],
-    [ "FilePtr", "group__data__layer.html#ga9c3384608b1c540d34a8321134ad02b2", null ],
-    [ "MixStreamPtr", "group__data__layer.html#ga5f75350532f75f225c79d560798f9e3a", null ],
+    [ "FilePtr", "group__data__layer.html#gabaaa4abd7671f0df32e251b9e891ce2f", null ],
+    [ "MixStreamPtr", "group__data__layer.html#ga969da325e57eeefa9e0e2544086bee2d", null ],
     [ "MixStreamSet", "group__data__layer.html#ga0027bc9b57c2e4e8c1298ad22b63c960", null ],
-    [ "MixStreamSetPtr", "group__data__layer.html#gaafd7182bcc35056ae9b7ee5f339431b1", null ],
-    [ "PinRequestPtr", "group__data__layer.html#gae484ae7c45d3d1ebddb0e5dd6a2044a5", null ],
+    [ "MixStreamSetPtr", "group__data__layer.html#gaea50deae76186c5642c23f2c926753b2", null ],
+    [ "PinRequestPtr", "group__data__layer.html#ga4b9f085af7a96d5667c0754e791ac028", null ],
     [ "StreamId", "group__data__layer.html#ga03df594c744fac6cea6f4559bc7494d2", null ],
-    [ "StreamPtr", "group__data__layer.html#ga258a0aa590e69bed32b6c6593d06b3a5", null ],
+    [ "StreamPtr", "group__data__layer.html#gac59d85cbcbfab63b84f5e598c17d94a8", null ],
     [ "MagicByte", "group__data__layer.html#gaddbdb24c59770f58b29329385d0cfe73", [
       [ "Invalid", "group__data__layer.html#ggaddbdb24c59770f58b29329385d0cfe73a4bbb8f967da6d1a610596d7257179c2b", null ],
       [ "CatStreamBlock", "group__data__layer.html#ggaddbdb24c59770f58b29329385d0cfe73a68c027e3d04ee89b3173a67b8f6c171f", null ],
@@ -832,7 +832,8 @@ var group__data__layer =
     [ "GetItemRange", "group__data__layer.html#ga6372ade9eb234ee2672234f3ce646bf3", null ],
     [ "GetReaderAt", "group__data__layer.html#gad5e79aac8c43bb96bd9e226b378b7884", null ],
     [ "StartPrefetch", "group__data__layer.html#gadc3c5c53e3d31621402d1402c3459f7c", null ],
+    [ "TLX_MAKE_HAS_MEMBER", "group__data__layer.html#ga0b2104d36418070caaf9f237b0acb306", null ],
     [ "default_block_size", "group__data__layer.html#gaf7e35b7b12aa89f4b4566640a03c62fb", null ],
     [ "start_block_size", "group__data__layer.html#ga9355b062ce0e3489f840275c5b1502cf", null ],
-    [ "THRILL_ATTRIBUTE_PACKED", "group__data__layer.html#ga186c6c6dd18d4e0b2117437c6ec30d80", null ]
+    [ "TLX_ATTRIBUTE_PACKED", "group__data__layer.html#ga9a2c120e8740bb9113ba1d410be51213", null ]
 ];

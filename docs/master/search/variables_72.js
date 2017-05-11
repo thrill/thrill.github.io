@@ -37,7 +37,6 @@ var searchData=
   ['reduce_5ffunction_5f',['reduce_function_',['../classthrill_1_1core_1_1ReduceTable.html#ad27a239234aa7970527538a2815e0870',1,'thrill::core::ReduceTable']]],
   ['reduced_5f',['reduced_',['../exceptionthrill_1_1api_1_1ReduceNode.html#aec7a79b2ac83344b8470699cc128df00',1,'thrill::api::ReduceNode::reduced_()'],['../exceptionthrill_1_1api_1_1ReduceToIndexNode.html#aec7a79b2ac83344b8470699cc128df00',1,'thrill::api::ReduceToIndexNode::reduced_()']]],
   ['ref_5f',['ref_',['../classthrill_1_1io_1_1mng__local_1_1BlockWithBids.html#a97ac1443229208357e4dfedd3124bed5',1,'thrill::io::mng_local::BlockWithBids']]],
-  ['reference_5fcount_5f',['reference_count_',['../classthrill_1_1common_1_1ReferenceCount.html#a2b224b651bbb7b05801cfa6e2c7bb35a',1,'thrill::common::ReferenceCount']]],
   ['remain_5fsize_5f',['remain_size_',['../classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource.html#aa7e10a1069be5c6122f4680d2d67d2a8',1,'thrill::api::ReadBinaryNode::FileBlockSource']]],
   ['remaining_5fclosing_5fblocks_5f',['remaining_closing_blocks_',['../classthrill_1_1data_1_1Stream.html#a14462dd43d98b102fb217461e069f93c',1,'thrill::data::Stream']]],
   ['remaining_5fhash',['remaining_hash',['../structthrill_1_1core_1_1ReduceByHash_1_1Result.html#af453d2dff3cd741f696ebdf154d260b3',1,'thrill::core::ReduceByHash::Result']]],

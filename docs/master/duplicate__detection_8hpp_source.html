@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('duplicate__detection_8hpp_source.html'
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">     * \param num_workers Number of workers in this Thrill process</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">     * \param max_hash Modulo for all hashes</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#a718ffba8857ab1c5c6f070eee475309b">   74</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#a718ffba8857ab1c5c6f070eee475309b" title="Sends all hashes in the range [max_hash / num_workers * p, max_hash / num_workers * (p + 1)) to worke...">WriteEncodedHashes</a>(<span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1CountingPtr.html">data::CatStreamPtr</a>&amp; stream_pointer,</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#a718ffba8857ab1c5c6f070eee475309b">   74</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#a718ffba8857ab1c5c6f070eee475309b" title="Sends all hashes in the range [max_hash / num_workers * p, max_hash / num_workers * (p + 1)) to worke...">WriteEncodedHashes</a>(<span class="keyword">const</span> <a class="code" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a>&amp; stream_pointer,</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                            <span class="keyword">const</span> std::vector&lt;size_t&gt;&amp; hashes,</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                            <span class="keywordtype">size_t</span> golomb_param,</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                            <span class="keywordtype">size_t</span> num_workers,</div>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('duplicate__detection_8hpp_source.html'
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">     * \param non_duplicates Target vector for hashes, should be empty beforehand</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">     * \param golomb_param Golomb parameter</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#ace42b93b36e002e64751abea9d4fe36e">  113</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#ace42b93b36e002e64751abea9d4fe36e" title="Reads a golomb encoded bitset from a data stream and returns it&#39;s contents in form of a vector of has...">ReadEncodedHashesToVector</a>(<span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1CountingPtr.html">data::CatStreamPtr</a>&amp; stream_pointer,</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#ace42b93b36e002e64751abea9d4fe36e">  113</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#ace42b93b36e002e64751abea9d4fe36e" title="Reads a golomb encoded bitset from a data stream and returns it&#39;s contents in form of a vector of has...">ReadEncodedHashesToVector</a>(<span class="keyword">const</span> <a class="code" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a>&amp; stream_pointer,</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                   std::vector&lt;bool&gt;&amp; non_duplicates,</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                   <span class="keywordtype">size_t</span> golomb_param) {</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
@@ -288,7 +288,7 @@ $(document).ready(function(){initNavTree('duplicate__detection_8hpp_source.html'
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        std::sort(hashes.begin(), hashes.end());</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <a class="code" href="classthrill_1_1common_1_1CountingPtr.html">data::CatStreamPtr</a> golomb_data_stream = context.GetNewCatStream(dia_id);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <a class="code" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a> golomb_data_stream = context.GetNewCatStream(dia_id);</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#a718ffba8857ab1c5c6f070eee475309b" title="Sends all hashes in the range [max_hash / num_workers * p, max_hash / num_workers * (p + 1)) to worke...">WriteEncodedHashes</a>(golomb_data_stream,</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                           hashes, golomb_param,</div>
@@ -319,7 +319,7 @@ $(document).ready(function(){initNavTree('duplicate__detection_8hpp_source.html'
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="comment">// create streams (delta/Golomb encoded) to notify workers of duplicates</span></div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <a class="code" href="classthrill_1_1common_1_1CountingPtr.html">data::CatStreamPtr</a> duplicates_stream = context.GetNewCatStream(dia_id);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <a class="code" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a> duplicates_stream = context.GetNewCatStream(dia_id);</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        std::vector&lt;data::CatStream::Writer&gt; duplicates_writers =</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            duplicates_stream-&gt;GetWriters();</div>
@@ -402,7 +402,7 @@ $(document).ready(function(){initNavTree('duplicate__detection_8hpp_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_8bfba075c6cd97373f9ca7badca61766.html">core</a></li><li class="navelem"><a class="el" href="duplicate__detection_8hpp.html">duplicate_detection.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:03 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

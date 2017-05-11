@@ -126,10 +126,10 @@ $(document).ready(function(){initNavTree('vfs__tool_8cpp_source.html','');});
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * All rights reserved. Published under the BSD-2 license in the LICENSE file.</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cmdline__parser_8hpp.html">thrill/common/cmdline_parser.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="die_8hpp.html">thrill/common/die.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="file__io_8hpp.html">thrill/vfs/file_io.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="file__io_8hpp.html">thrill/vfs/file_io.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;tlx/cmdline_parser.hpp&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;tlx/die.hpp&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
@@ -139,17 +139,17 @@ $(document).ready(function(){initNavTree('vfs__tool_8cpp_source.html','');});
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="vfs__tool_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">   22</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="k-means__run_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]) {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classthrill_1_1common_1_1CmdlineParser.html" title="Command line parser which automatically fills variables and prints nice usage messages.">common::CmdlineParser</a> clp;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    tlx::CmdlineParser clp;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    clp.<a class="code" href="classthrill_1_1common_1_1CmdlineParser.html#a400afd5e9bd0a3fda1f979bbeb19c1b2" title="Set description of program, text will be wrapped.">SetDescription</a>(<span class="stringliteral">&quot;Simple VFS tool for Thrill&quot;</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    clp.set_description(<span class="stringliteral">&quot;Simple VFS tool for Thrill&quot;</span>);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a> op;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    clp.<a class="code" href="classthrill_1_1common_1_1CmdlineParser.html#a4a99009524e2f9a0ac0f202a9cd9edbf" title="add string parameter [name] with description and store to dest">AddParamString</a>(<span class="stringliteral">&quot;op&quot;</span>, op, <span class="stringliteral">&quot;operation: glob|read|write&quot;</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    clp.add_param_string(<span class="stringliteral">&quot;op&quot;</span>, op, <span class="stringliteral">&quot;operation: glob|read|write&quot;</span>);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::vector&lt;std::string&gt; paths;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    clp.<a class="code" href="classthrill_1_1common_1_1CmdlineParser.html#a59ed1231742e422c46dbadd24624ede9">AddParamStringlist</a>(<span class="stringliteral">&quot;paths&quot;</span>, paths, <span class="stringliteral">&quot;file path(s)&quot;</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    clp.add_param_stringlist(<span class="stringliteral">&quot;paths&quot;</span>, paths, <span class="stringliteral">&quot;file path(s)&quot;</span>);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (!clp.<a class="code" href="classthrill_1_1common_1_1CmdlineParser.html#aeac551d1456648b7c55e2c709866164f">Process</a>(argc, argv)) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (!clp.process(argc, argv)) {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('vfs__tool_8cpp_source.html','');});
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="structthrill_1_1vfs_1_1FileList.html" title="List of file info and additional overall info.">vfs::FileList</a> fl = <a class="code" href="namespacethrill_1_1vfs.html#a450b58546a2e963ca683ca36df31fd06" title="Reads a glob path list and deliver a file list, sizes, and prefixsums (in bytes) for all matching fil...">vfs::Glob</a>(paths);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="structthrill_1_1vfs_1_1FileInfo.html" title="General information of vfs file.">vfs::FileInfo</a>&amp; fi : fl) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="classthrill_1_1common_1_1CountingPtr.html">vfs::ReadStreamPtr</a> rs = <a class="code" href="namespacethrill_1_1vfs.html#aac8eb89402fe5b04fc6dca45ef789784" title="Construct reader for given path uri.">vfs::OpenReadStream</a>(fi.path);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="namespacethrill_1_1vfs.html#a0f28a2b7a33f4cb305900fb9121f6da5">vfs::ReadStreamPtr</a> rs = <a class="code" href="namespacethrill_1_1vfs.html#aac8eb89402fe5b04fc6dca45ef789784" title="Construct reader for given path uri.">vfs::OpenReadStream</a>(fi.path);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">char</span> buffer[1024 * 1024];</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            ssize_t rb = 0;</div>
@@ -186,9 +186,9 @@ $(document).ready(function(){initNavTree('vfs__tool_8cpp_source.html','');});
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op == <span class="stringliteral">&quot;write&quot;</span>)</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(paths.size() == 1);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        die_unless(paths.size() == 1);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="classthrill_1_1common_1_1CountingPtr.html">vfs::WriteStreamPtr</a> ws = <a class="code" href="namespacethrill_1_1vfs.html#a0a8b2856ab92a59f0685870efb47b92c">vfs::OpenWriteStream</a>(paths[0]);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="namespacethrill_1_1vfs.html#a2b0d718704d03d646c5c5126b4c75326">vfs::WriteStreamPtr</a> ws = <a class="code" href="namespacethrill_1_1vfs.html#a0a8b2856ab92a59f0685870efb47b92c">vfs::OpenWriteStream</a>(paths[0]);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">char</span> buffer[1024 * 1024];</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">while</span> (std::cin.read(buffer, <span class="keyword">sizeof</span>(buffer)), std::cin.gcount()) {</div>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('vfs__tool_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_05db75a104ff3a2906a585c29c165785.html">vfs_tool</a></li><li class="navelem"><a class="el" href="vfs__tool_8cpp.html">vfs_tool.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:02 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

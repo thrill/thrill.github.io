@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('dia__base_8cpp_source.html','');});
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="wavelet__tree2_8cpp.html#a6b72e54baf646b08b4b87f987f583dcb">debug</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">explicit</span> Stage(<span class="keyword">const</span> <a class="code" href="group__api__layer.html#ga9bc823b9483b7df80264de0cc50d3d35">DIABasePtr</a>&amp; node)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">explicit</span> Stage(<span class="keyword">const</span> <a class="code" href="group__api__layer.html#gafd807377b556060aa33d5dd9c12b75e2">DIABasePtr</a>&amp; node)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        : node_(node), context_(node-&gt;context()),</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;          verbose_(context_.mem_config().verbose_)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    { }</div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('dia__base_8cpp_source.html','');});
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        std::vector&lt;DIABase*&gt; children = node_-&gt;children();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        std::reverse(children.begin(), children.end());</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">while</span> (children.size()) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">while</span> (!children.empty()) {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            DIABase* child = children.back();</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            children.pop_back();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('dia__base_8cpp_source.html','');});
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">bool</span> first = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        oss &lt;&lt; <span class="charliteral">&#39;[&#39;</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">while</span> (children.size())</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">while</span> (!children.empty())</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            DIABase* child = children.back();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            children.pop_back();</div>
@@ -340,7 +340,7 @@ $(document).ready(function(){initNavTree('dia__base_8cpp_source.html','');});
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="comment">// distribute remaining memory to nodes requesting maximum RAM amount</span></div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">if</span> (max_mem_nodes.size()) {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">if</span> (!max_mem_nodes.empty()) {</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="keywordtype">size_t</span> remaining_mem = mem_limit - const_mem;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            remaining_mem /= max_mem_nodes.size();</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
@@ -393,7 +393,7 @@ $(document).ready(function(){initNavTree('dia__base_8cpp_source.html','');});
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    }</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="comment">    //! shared pointer to node</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment"></span>    <a class="code" href="group__api__layer.html#ga9bc823b9483b7df80264de0cc50d3d35">DIABasePtr</a> node_;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="comment"></span>    <a class="code" href="group__api__layer.html#gafd807377b556060aa33d5dd9c12b75e2">DIABasePtr</a> node_;</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">    //! reference to Context of node</span></div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment"></span>    Context&amp; context_;</div>
@@ -416,47 +416,47 @@ $(document).ready(function(){initNavTree('dia__base_8cpp_source.html','');});
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment">//! Do a BFS on parents to find all DIANodes (Stages) needed to Execute or</span></div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">//! PushData to calculate this action node.</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno"><a class="code" href="namespacethrill_1_1api.html#a19356ec10763157bebdab6c7aff7c5f3">  301</a></span>&#160;<span class="comment"></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1api.html#a19356ec10763157bebdab6c7aff7c5f3">FindStages</a>(</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <a class="code" href="classthrill_1_1api_1_1Context.html" title="The Context of a job is a unique instance per worker which holds references to all underlying parts o...">Context</a>&amp; ctx, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1CountingPtr.html">DIABasePtr</a>&amp; action, <a class="code" href="namespacethrill_1_1api.html#a6df885623e867f56c4416fc436cd5c41">mm_set&lt;Stage&gt;</a>&amp; stages) {</div>
+<div class="line"><a name="l00301"></a><span class="lineno"><a class="code" href="namespacethrill_1_1api.html#af17b27d0381ed455bc0a3f0dadf627df">  301</a></span>&#160;<span class="comment"></span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1api.html#af17b27d0381ed455bc0a3f0dadf627df">FindStages</a>(</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <a class="code" href="classthrill_1_1api_1_1Context.html" title="The Context of a job is a unique instance per worker which holds references to all underlying parts o...">Context</a>&amp; ctx, <span class="keyword">const</span> <a class="code" href="group__api__layer.html#gafd807377b556060aa33d5dd9c12b75e2">DIABasePtr</a>&amp; action, <a class="code" href="namespacethrill_1_1api.html#a6df885623e867f56c4416fc436cd5c41">mm_set&lt;Stage&gt;</a>* stages) {</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="wavelet__tree2_8cpp.html#a6b72e54baf646b08b4b87f987f583dcb">debug</a> = <a class="code" href="wavelet__tree2_8cpp.html#a6b72e54baf646b08b4b87f987f583dcb">Stage::debug</a>;</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordflow">if</span> (ctx.<a class="code" href="classthrill_1_1api_1_1Context.html#aa19a1fcaa55994b754d544e4587be4ff" title="Global rank of this worker among all other workers in the system.">my_rank</a>() == 0)</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Finding Stages:&quot;</span>;</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#ad84eda546ec3ea86bcf0631dd459c92c" title="deque with Manager tracking">mem::deque&lt;DIABasePtr&gt;</a> bfs_stack(</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <a class="code" href="classthrill_1_1mem_1_1Allocator.html">mem::Allocator&lt;DIABasePtr&gt;</a>(action-&gt;<a class="code" href="classthrill_1_1api_1_1DIABase.html#a140117ebf6f0d19c52948868ce94cd9a" title="Return the Context&#39;s memory manager.">mem_manager</a>()));</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <a class="code" href="classthrill_1_1mem_1_1Allocator.html">mem::Allocator&lt;DIABasePtr&gt;</a>(action-&gt;mem_manager()));</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    bfs_stack.push_back(action);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    stages.insert(Stage(action));</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    stages-&gt;insert(Stage(action));</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordflow">while</span> (!bfs_stack.empty()) {</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <a class="code" href="classthrill_1_1common_1_1CountingPtr.html">DIABasePtr</a> curr = bfs_stack.front();</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <a class="code" href="group__api__layer.html#gafd807377b556060aa33d5dd9c12b75e2">DIABasePtr</a> curr = bfs_stack.front();</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        bfs_stack.pop_front();</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keyword">const</span> std::vector&lt;DIABasePtr&gt;&amp; parents = curr-&gt;<a class="code" href="classthrill_1_1api_1_1DIABase.html#a90b708ca304934aa9be03f692014b158" title="Returns the parents of this DIABase.">parents</a>();</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keyword">const</span> std::vector&lt;DIABasePtr&gt;&amp; parents = curr-&gt;parents();</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; parents.size(); ++i) {</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1CountingPtr.html">DIABasePtr</a>&amp; p = parents[i];</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            <span class="keyword">const</span> <a class="code" href="group__api__layer.html#gafd807377b556060aa33d5dd9c12b75e2">DIABasePtr</a>&amp; p = parents[i];</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            <span class="comment">// if parent was already seen, done.</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            <span class="keywordflow">if</span> (stages.count(Stage(p))) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            <span class="keywordflow">if</span> (stages-&gt;count(Stage(p)) != 0) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="keywordflow">if</span> (!curr-&gt;<a class="code" href="classthrill_1_1api_1_1DIABase.html#a6f0547afe813f388a8f84c181479c3b3">ForwardDataOnly</a>()) {</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="keywordflow">if</span> (!curr-&gt;ForwardDataOnly()) {</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                <span class="keywordflow">if</span> (ctx.<a class="code" href="classthrill_1_1api_1_1Context.html#aa19a1fcaa55994b754d544e4587be4ff" title="Global rank of this worker among all other workers in the system.">my_rank</a>() == 0)</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                    <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;  Stage: &quot;</span> &lt;&lt; *p;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                stages.insert(Stage(p));</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                stages-&gt;emplace(p);</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                <span class="comment">// If parent was not executed push it to the BFS queue and</span></div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                <span class="comment">// continue upwards. if state is EXECUTED, then we only need to</span></div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                <span class="comment">// PushData(), which is already indicated by stages.insert().</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                <span class="keywordflow">if</span> (p-&gt;<a class="code" href="classthrill_1_1api_1_1DIABase.html#ab51a60a59bad0bb22556b3e1d15472b4">state</a>() == <a class="code" href="group__api__layer.html#ggaefcbecbc4c0751ab5eaa2eff901c2aa2a24d459a81449d7210c8f9a86c2913034" title="The DIABase has not been computed yet.">DIAState::NEW</a>)</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                <span class="keywordflow">if</span> (p-&gt;state() == <a class="code" href="group__api__layer.html#ggaefcbecbc4c0751ab5eaa2eff901c2aa2a24d459a81449d7210c8f9a86c2913034" title="The DIABase has not been computed yet.">DIAState::NEW</a>)</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                    bfs_stack.push_back(p);</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            }</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                <span class="comment">// If parent cannot hold data continue upward.</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                <span class="keywordflow">if</span> (curr-&gt;<a class="code" href="classthrill_1_1api_1_1DIABase.html#a8ae5c30554877de438b321d0e39f32e3">RequireParentPushData</a>(i)) {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                <span class="keywordflow">if</span> (curr-&gt;RequireParentPushData(i)) {</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                    <span class="keywordflow">if</span> (ctx.<a class="code" href="classthrill_1_1api_1_1Context.html#aa19a1fcaa55994b754d544e4587be4ff" title="Global rank of this worker among all other workers in the system.">my_rank</a>() == 0)</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                        <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;  Stage: &quot;</span> &lt;&lt; *p;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                    stages.insert(Stage(p));</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                    stages-&gt;emplace(p);</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                    bfs_stack.push_back(p);</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                }</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            }</div>
@@ -464,34 +464,34 @@ $(document).ready(function(){initNavTree('dia__base_8cpp_source.html','');});
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    }</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;}</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
-<div class="line"><a name="l00349"></a><span class="lineno"><a class="code" href="namespacethrill_1_1api.html#a1b4c5b4bd446cd06cf3619cec3283c39">  349</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1api.html#a1b4c5b4bd446cd06cf3619cec3283c39">TopoSortVisit</a>(</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keyword">const</span> Stage&amp; s, <a class="code" href="namespacethrill_1_1api.html#a6df885623e867f56c4416fc436cd5c41">mm_set&lt;Stage&gt;</a>&amp; stages, <a class="code" href="namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7" title="vector with Manager tracking">mem::vector&lt;Stage&gt;</a>&amp; result) {</div>
+<div class="line"><a name="l00349"></a><span class="lineno"><a class="code" href="namespacethrill_1_1api.html#aba77a05ebe1110f073be896c96f0cc88">  349</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1api.html#aba77a05ebe1110f073be896c96f0cc88">TopoSortVisit</a>(</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keyword">const</span> Stage&amp; s, <a class="code" href="namespacethrill_1_1api.html#a6df885623e867f56c4416fc436cd5c41">mm_set&lt;Stage&gt;</a>* stages, <a class="code" href="namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7" title="vector with Manager tracking">mem::vector&lt;Stage&gt;</a>* result) {</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="comment">// check markers</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(!s.cycle_mark_ &amp;&amp; <span class="stringliteral">&quot;Cycle in toposort of Stages? Impossible.&quot;</span>);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    die_unless(!s.cycle_mark_ &amp;&amp; <span class="stringliteral">&quot;Cycle in toposort of Stages? Impossible.&quot;</span>);</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keywordflow">if</span> (s.topo_seen_) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    s.cycle_mark_ = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="comment">// iterate over all children of s which are in the to-be-calculate stages</span></div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="classthrill_1_1api_1_1DIABase.html" title="The DIABase is the untyped super class of DIANode.">DIABase</a>* child : s.node_-&gt;children()) {</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keyword">auto</span> it = stages.find(Stage(<a class="code" href="group__api__layer.html#ga9bc823b9483b7df80264de0cc50d3d35">DIABasePtr</a>(child)));</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keyword">auto</span> it = stages-&gt;find(Stage(<a class="code" href="group__api__layer.html#gafd807377b556060aa33d5dd9c12b75e2">DIABasePtr</a>(child)));</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="comment">// child not in stage set</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">if</span> (it == stages.end()) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">if</span> (it == stages-&gt;end()) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="comment">// depth-first search</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <a class="code" href="namespacethrill_1_1api.html#a1b4c5b4bd446cd06cf3619cec3283c39">TopoSortVisit</a>(*it, stages, result);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <a class="code" href="namespacethrill_1_1api.html#aba77a05ebe1110f073be896c96f0cc88">TopoSortVisit</a>(*it, stages, result);</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    }</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    s.topo_seen_ = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    s.cycle_mark_ = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    result.push_back(s);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    result-&gt;push_back(s);</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;}</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
-<div class="line"><a name="l00372"></a><span class="lineno"><a class="code" href="namespacethrill_1_1api.html#a2da11099d865c3210906aa03b1b2ebbc">  372</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1api.html#a2da11099d865c3210906aa03b1b2ebbc">TopoSortStages</a>(<a class="code" href="namespacethrill_1_1api.html#a6df885623e867f56c4416fc436cd5c41">mm_set&lt;Stage&gt;</a>&amp; stages, <a class="code" href="namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7" title="vector with Manager tracking">mem::vector&lt;Stage&gt;</a>&amp; result) {</div>
+<div class="line"><a name="l00372"></a><span class="lineno"><a class="code" href="namespacethrill_1_1api.html#a4cd7bb14ec327d57f32b1bc9ea570524">  372</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1api.html#a4cd7bb14ec327d57f32b1bc9ea570524">TopoSortStages</a>(<a class="code" href="namespacethrill_1_1api.html#a6df885623e867f56c4416fc436cd5c41">mm_set&lt;Stage&gt;</a>* stages, <a class="code" href="namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7" title="vector with Manager tracking">mem::vector&lt;Stage&gt;</a>* result) {</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="comment">// iterate over all stages and visit nodes in DFS search</span></div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> Stage&amp; s : stages) {</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> Stage&amp; s : *stages) {</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keywordflow">if</span> (s.topo_seen_) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <a class="code" href="namespacethrill_1_1api.html#a1b4c5b4bd446cd06cf3619cec3283c39">TopoSortVisit</a>(s, stages, result);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <a class="code" href="namespacethrill_1_1api.html#aba77a05ebe1110f073be896c96f0cc88">TopoSortVisit</a>(s, stages, result);</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    }</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;}</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
@@ -507,7 +507,7 @@ $(document).ready(function(){initNavTree('dia__base_8cpp_source.html','');});
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1api_1_1DIABase.html#a6f0547afe813f388a8f84c181479c3b3">ForwardDataOnly</a>()) {</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="comment">// CollapseNodes cannot be executed: execute their parent(s)</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1CountingPtr.html">DIABasePtr</a>&amp; p : <a class="code" href="classthrill_1_1api_1_1DIABase.html#a6ac997bf500c1a8d1d2cacfed864c1c2" title="Parents of this DIABase.">parents_</a>)</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#afd807377b556060aa33d5dd9c12b75e2">DIABasePtr</a>&amp; p : <a class="code" href="classthrill_1_1api_1_1DIABase.html#a6ac997bf500c1a8d1d2cacfed864c1c2" title="Parents of this DIABase.">parents_</a>)</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            p-&gt;RunScope();</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    }</div>
@@ -515,12 +515,12 @@ $(document).ready(function(){initNavTree('dia__base_8cpp_source.html','');});
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <a class="code" href="namespacethrill_1_1api.html#a6df885623e867f56c4416fc436cd5c41">mm_set&lt;Stage&gt;</a> stages {</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <a class="code" href="classthrill_1_1mem_1_1Allocator.html">mem::Allocator&lt;Stage&gt;</a>(<a class="code" href="classthrill_1_1api_1_1DIABase.html#a140117ebf6f0d19c52948868ce94cd9a" title="Return the Context&#39;s memory manager.">mem_manager</a>())</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    };</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <a class="code" href="namespacethrill_1_1api.html#a19356ec10763157bebdab6c7aff7c5f3">FindStages</a>(<a class="code" href="classthrill_1_1api_1_1DIABase.html#ae8f38e2955f476fde7f144a0f76129bb" title="associated Context">context_</a>, <a class="code" href="classthrill_1_1api_1_1DIABase.html#a9bc823b9483b7df80264de0cc50d3d35">DIABasePtr</a>(<span class="keyword">this</span>), stages);</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <a class="code" href="namespacethrill_1_1api.html#af17b27d0381ed455bc0a3f0dadf627df">FindStages</a>(<a class="code" href="classthrill_1_1api_1_1DIABase.html#ae8f38e2955f476fde7f144a0f76129bb" title="associated Context">context_</a>, <a class="code" href="classthrill_1_1api_1_1DIABase.html#afd807377b556060aa33d5dd9c12b75e2">DIABasePtr</a>(<span class="keyword">this</span>), &amp;stages);</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7" title="vector with Manager tracking">mem::vector&lt;Stage&gt;</a> toporder {</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <a class="code" href="classthrill_1_1mem_1_1Allocator.html">mem::Allocator&lt;Stage&gt;</a>(<a class="code" href="classthrill_1_1api_1_1DIABase.html#a140117ebf6f0d19c52948868ce94cd9a" title="Return the Context&#39;s memory manager.">mem_manager</a>())</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    };</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <a class="code" href="namespacethrill_1_1api.html#a2da11099d865c3210906aa03b1b2ebbc">TopoSortStages</a>(stages, toporder);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <a class="code" href="namespacethrill_1_1api.html#a4cd7bb14ec327d57f32b1bc9ea570524">TopoSortStages</a>(&amp;stages, &amp;toporder);</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1api_1_1DIABase.html#ae8f38e2955f476fde7f144a0f76129bb" title="associated Context">context_</a>.<a class="code" href="classthrill_1_1api_1_1Context.html#aa19a1fcaa55994b754d544e4587be4ff" title="Global rank of this worker among all other workers in the system.">my_rank</a>() == 0) {</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Topological order&quot;</span>;</div>
@@ -531,7 +531,7 @@ $(document).ready(function(){initNavTree('dia__base_8cpp_source.html','');});
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    assert(toporder.front().node_.get() == <span class="keyword">this</span>);</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordflow">while</span> (toporder.size())</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordflow">while</span> (!toporder.empty())</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    {</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        Stage&amp; s = toporder.back();</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
@@ -577,7 +577,7 @@ $(document).ready(function(){initNavTree('dia__base_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="dia__base_8cpp.html">dia_base.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:03 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

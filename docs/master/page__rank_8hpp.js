@@ -14,5 +14,5 @@ var page__rank_8hpp =
     [ "PageRankJoin", "page__rank_8hpp.html#afc9a1d772eda541775d6c038f113c93a", null ],
     [ "dampening", "page__rank_8hpp.html#a0d07e4b1678f009bb0d75026a20ddd0c", null ],
     [ "debug", "page__rank_8hpp.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
-    [ "THRILL_ATTRIBUTE_PACKED", "page__rank_8hpp.html#a5d3cdca324f1e2309f592588fd90da3d", null ]
+    [ "TLX_ATTRIBUTE_PACKED", "page__rank_8hpp.html#adc1510e95f83e4ce5ddb1795be392ec3", null ]
 ];

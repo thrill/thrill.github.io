@@ -152,13 +152,13 @@ $(document).ready(function(){initNavTree('request__operations_8hpp_source.html',
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> RequestIterator&gt;</div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="group__io__layer__req.html#ga30824f07a5024685567e7aefd78d927b">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__io__layer__req.html#ga30824f07a5024685567e7aefd78d927b" title="Collection of functions to track statuses of a number of requests.">wait_all</a>(RequestIterator reqs_begin, RequestIterator reqs_end) {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">for</span> ( ; reqs_begin != reqs_end; ++reqs_begin)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        (<a class="code" href="group__io__layer__req.html#ga7cb03f5ebec97e6a511bc48537e570f9" title="A reference counting pointer for request.">RequestPtr</a>(*reqs_begin))-&gt;wait();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        (<a class="code" href="group__io__layer__req.html#gad77b608fd5cf3b231643f26467ae4338" title="A reference counting pointer for request.">RequestPtr</a>(*reqs_begin))-&gt;wait();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//! Suspends calling thread until \b all given requests are completed.</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//! \param req_array array of request_ptr objects</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//! \param count size of req_array</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="group__io__layer__req.html#ga18e394c99ed1b9dc29626ec50043fadc">   43</a></span>&#160;<span class="comment"></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group__io__layer__req.html#ga30824f07a5024685567e7aefd78d927b" title="Collection of functions to track statuses of a number of requests.">wait_all</a>(<a class="code" href="classthrill_1_1common_1_1CountingPtr.html">RequestPtr</a> req_array[], <span class="keywordtype">size_t</span> count) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="group__io__layer__req.html#ga18e394c99ed1b9dc29626ec50043fadc">   43</a></span>&#160;<span class="comment"></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="group__io__layer__req.html#ga30824f07a5024685567e7aefd78d927b" title="Collection of functions to track statuses of a number of requests.">wait_all</a>(<a class="code" href="group__io__layer__req.html#gad77b608fd5cf3b231643f26467ae4338" title="A reference counting pointer for request.">RequestPtr</a> req_array[], <span class="keywordtype">size_t</span> count) {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="group__io__layer__req.html#ga30824f07a5024685567e7aefd78d927b" title="Collection of functions to track statuses of a number of requests.">wait_all</a>(req_array, req_array + count);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span></div>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('request__operations_8hpp_source.html',
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">typename</span> std::iterator_traits&lt;RequestIterator&gt;::difference_type num_canceled = 0;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">while</span> (reqs_begin != reqs_end)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span> ((<a class="code" href="group__io__layer__req.html#ga7cb03f5ebec97e6a511bc48537e570f9" title="A reference counting pointer for request.">RequestPtr</a>(*reqs_begin))-&gt;cancel())</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span> ((<a class="code" href="group__io__layer__req.html#gad77b608fd5cf3b231643f26467ae4338" title="A reference counting pointer for request.">RequestPtr</a>(*reqs_begin))-&gt;cancel())</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            ++num_canceled;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        ++reqs_begin;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('request__operations_8hpp_source.html',
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="group__io__layer__req.html#gae447c1a4c8baa2b5ef0524171f14b5a1">   73</a></span>&#160;RequestIterator <a class="code" href="group__io__layer__req.html#gae447c1a4c8baa2b5ef0524171f14b5a1">poll_any</a>(RequestIterator reqs_begin, RequestIterator reqs_end) {</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">while</span> (reqs_begin != reqs_end)</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span> ((<a class="code" href="group__io__layer__req.html#ga7cb03f5ebec97e6a511bc48537e570f9" title="A reference counting pointer for request.">RequestPtr</a>(*reqs_begin))-&gt;poll())</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span> ((<a class="code" href="group__io__layer__req.html#gad77b608fd5cf3b231643f26467ae4338" title="A reference counting pointer for request.">RequestPtr</a>(*reqs_begin))-&gt;poll())</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">return</span> reqs_begin;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        ++reqs_begin;</div>
@@ -204,8 +204,8 @@ $(document).ready(function(){initNavTree('request__operations_8hpp_source.html',
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">//! \param count size of req_array</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">//! \param index contains index of the \b first completed request if any</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">//! \return \c true if any of requests is completed, then index contains valid value, otherwise \c false</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="group__io__layer__req.html#gaca464f311e4d6b54292ac49cb0d3ee3d">   89</a></span>&#160;<span class="comment"></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group__io__layer__req.html#gae447c1a4c8baa2b5ef0524171f14b5a1">poll_any</a>(<a class="code" href="classthrill_1_1common_1_1CountingPtr.html">RequestPtr</a> req_array[], <span class="keywordtype">size_t</span> count, <span class="keywordtype">size_t</span>&amp; index) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="classthrill_1_1common_1_1CountingPtr.html">RequestPtr</a>* res = <a class="code" href="group__io__layer__req.html#gae447c1a4c8baa2b5ef0524171f14b5a1">poll_any</a>(req_array, req_array + count);</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="group__io__layer__req.html#gaca464f311e4d6b54292ac49cb0d3ee3d">   89</a></span>&#160;<span class="comment"></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group__io__layer__req.html#gae447c1a4c8baa2b5ef0524171f14b5a1">poll_any</a>(<a class="code" href="group__io__layer__req.html#gad77b608fd5cf3b231643f26467ae4338" title="A reference counting pointer for request.">RequestPtr</a> req_array[], <span class="keywordtype">size_t</span> count, <span class="keywordtype">size_t</span>&amp; index) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="group__io__layer__req.html#gad77b608fd5cf3b231643f26467ae4338" title="A reference counting pointer for request.">RequestPtr</a>* res = <a class="code" href="group__io__layer__req.html#gae447c1a4c8baa2b5ef0524171f14b5a1">poll_any</a>(req_array, req_array + count);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    index = res - req_array;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> res != (req_array + count);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
@@ -224,7 +224,7 @@ $(document).ready(function(){initNavTree('request__operations_8hpp_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_b3d161c3d1247f1befe1ba5893f47ab8.html">io</a></li><li class="navelem"><a class="el" href="request__operations_8hpp.html">request_operations.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:04 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:34 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

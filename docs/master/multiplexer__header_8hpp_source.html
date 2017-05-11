@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('multiplexer__header_8hpp_source.html',
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="classthrill_1_1data_1_1MultiplexerHeader.html#a38a16bef8917c125159a9b16e5e12103">   66</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1MultiplexerHeader.html#a38a16bef8917c125159a9b16e5e12103">total_size</a> =</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="classthrill_1_1data_1_1MultiplexerHeader.html#ac9a0c0d3a0eb73be7c7149c7c124220a">header_size</a> + 3 * <span class="keyword">sizeof</span>(size_t);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;} <a class="code" href="group__data__layer.html#ga186c6c6dd18d4e0b2117437c6ec30d80">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;} <a class="code" href="group__data__layer.html#ga9a2c120e8740bb9113ba1d410be51213">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;static_assert(<span class="keyword">sizeof</span>(<a class="code" href="classthrill_1_1data_1_1MultiplexerHeader.html">MultiplexerHeader</a>) == <a class="code" href="classthrill_1_1data_1_1MultiplexerHeader.html#ac9a0c0d3a0eb73be7c7149c7c124220a">MultiplexerHeader::header_size</a>,</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;              <span class="stringliteral">&quot;MultiplexerHeader has invalid size&quot;</span>);</div>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('multiplexer__header_8hpp_source.html',
 <div class="line"><a name="l00110"></a><span class="lineno"><a class="code" href="classthrill_1_1data_1_1StreamMultiplexerHeader.html#afdda666c86d8dbc82f35a1b42cb22d4a">  110</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1StreamMultiplexerHeader.html#afdda666c86d8dbc82f35a1b42cb22d4a" title="Calculate the sender host_rank from sender_worker and workers_per_host.">CalcHostRank</a>(<span class="keywordtype">size_t</span> workers_per_host)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1data_1_1StreamMultiplexerHeader.html#a941ce43ab1fac8ed3b4f1daed141d822" title="global worker rank of sender">sender_worker</a> / workers_per_host;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;} <a class="code" href="group__data__layer.html#ga186c6c6dd18d4e0b2117437c6ec30d80">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;} <a class="code" href="group__data__layer.html#ga9a2c120e8740bb9113ba1d410be51213">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;static_assert(<span class="keyword">sizeof</span>(StreamMultiplexerHeader) == <a class="code" href="classthrill_1_1data_1_1MultiplexerHeader.html#a38a16bef8917c125159a9b16e5e12103">MultiplexerHeader::total_size</a>,</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;              <span class="stringliteral">&quot;StreamMultiplexerHeader has invalid size&quot;</span>);</div>
@@ -262,7 +262,7 @@ $(document).ready(function(){initNavTree('multiplexer__header_8hpp_source.html',
 <div class="line"><a name="l00144"></a><span class="lineno"><a class="code" href="classthrill_1_1data_1_1PartitionMultiplexerHeader.html#a4c7821ca6ddef8aef8165936da1884d7">  144</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code" href="classthrill_1_1data_1_1PartitionMultiplexerHeader.html#a4c7821ca6ddef8aef8165936da1884d7" title="Indicates if this is the end-of-line block header.">IsEnd</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1data_1_1MultiplexerHeader.html#ab2c6b258f02add8fdf4cfc7c371dd772">size</a> == 0;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    }</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;} <a class="code" href="group__data__layer.html#ga186c6c6dd18d4e0b2117437c6ec30d80">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;} <a class="code" href="group__data__layer.html#ga9a2c120e8740bb9113ba1d410be51213">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;static_assert(</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">sizeof</span>(PartitionMultiplexerHeader) == <a class="code" href="classthrill_1_1data_1_1MultiplexerHeader.html#a38a16bef8917c125159a9b16e5e12103">MultiplexerHeader::total_size</a>,</div>
@@ -286,7 +286,7 @@ $(document).ready(function(){initNavTree('multiplexer__header_8hpp_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1b62fa212cebae5dc6aa23a01bf7093d.html">data</a></li><li class="navelem"><a class="el" href="multiplexer__header_8hpp.html">multiplexer_header.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:03 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

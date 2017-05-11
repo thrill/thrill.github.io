@@ -5,8 +5,6 @@ var searchData=
   ['cat_5fstream_2ecpp',['cat_stream.cpp',['../cat__stream_8cpp.html',1,'']]],
   ['cat_5fstream_2ehpp',['cat_stream.hpp',['../cat__stream_8hpp.html',1,'']]],
   ['check_5fsa_2ehpp',['check_sa.hpp',['../check__sa_8hpp.html',1,'']]],
-  ['cmdline_5fparser_2ecpp',['cmdline_parser.cpp',['../cmdline__parser_8cpp.html',1,'']]],
-  ['cmdline_5fparser_2ehpp',['cmdline_parser.hpp',['../cmdline__parser_8hpp.html',1,'']]],
   ['collapse_2ehpp',['collapse.hpp',['../collapse_8hpp.html',1,'']]],
   ['collective_2ehpp',['collective.hpp',['../collective_8hpp.html',1,'']]],
   ['common_2edox',['common.dox',['../common_8dox.html',1,'']]],
@@ -17,8 +15,8 @@ var searchData=
   ['config_2ehpp',['config.hpp',['../config_8hpp.html',1,'']]],
   ['config_5ffile_2ecpp',['config_file.cpp',['../config__file_8cpp.html',1,'']]],
   ['config_5ffile_2ehpp',['config_file.hpp',['../config__file_8hpp.html',1,'']]],
-  ['connection_2ehpp',['connection.hpp',['../tcp_2connection_8hpp.html',1,'']]],
   ['connection_2ehpp',['connection.hpp',['../connection_8hpp.html',1,'']]],
+  ['connection_2ehpp',['connection.hpp',['../tcp_2connection_8hpp.html',1,'']]],
   ['construct_2ecpp',['construct.cpp',['../construct_8cpp.html',1,'']]],
   ['construct_2ehpp',['construct.hpp',['../construct_8hpp.html',1,'']]],
   ['construct_5fbwt_2ehpp',['construct_bwt.hpp',['../construct__bwt_8hpp.html',1,'']]],
@@ -26,7 +24,6 @@ var searchData=
   ['construct_5fwt_2ehpp',['construct_wt.hpp',['../construct__wt_8hpp.html',1,'']]],
   ['context_2ecpp',['context.cpp',['../context_8cpp.html',1,'']]],
   ['context_2ehpp',['context.hpp',['../context_8hpp.html',1,'']]],
-  ['counting_5fptr_2ehpp',['counting_ptr.hpp',['../counting__ptr_8hpp.html',1,'']]],
   ['create_5ffile_2ecpp',['create_file.cpp',['../create__file_8cpp.html',1,'']]],
   ['create_5ffile_2ehpp',['create_file.hpp',['../create__file_8hpp.html',1,'']]]
 ];

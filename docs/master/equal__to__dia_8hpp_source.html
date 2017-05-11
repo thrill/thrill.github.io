@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('equal__to__dia_8hpp_source.html','');}
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1api_1_1EqualToDIANode.html#ab184572dc4d3b603565e2a09315cfe5e">   54</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="exceptionthrill_1_1api_1_1EqualToDIANode.html#ab184572dc4d3b603565e2a09315cfe5e" title="Virtual clear method. Triggers actual disposing in sub-classes.">Dispose</a>() final {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        std::vector&lt;ValueType&gt;().<a class="code" href="namespacethrill_1_1common.html#aeb0f9e37913273e9110bcb574230ce08">swap</a>(<a class="code" href="exceptionthrill_1_1api_1_1EqualToDIANode.html#a511f78f13353983256fc08aec28f28f2" title="Vector pointer to read elements from.">in_vector_</a>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        std::vector&lt;ValueType&gt;().swap(<a class="code" href="exceptionthrill_1_1api_1_1EqualToDIANode.html#a511f78f13353983256fc08aec28f28f2" title="Vector pointer to read elements from.">in_vector_</a>);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:<span class="comment"></span></div>
@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('equal__to__dia_8hpp_source.html','');}
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">using</span> <a class="code" href="exceptionthrill_1_1api_1_1EqualToDIANode.html">EqualToDIANode</a> = <a class="code" href="exceptionthrill_1_1api_1_1EqualToDIANode.html">api::EqualToDIANode&lt;ValueType&gt;</a>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework.">DIA&lt;ValueType&gt;</a>(common::MakeCounting&lt;EqualToDIANode&gt;(ctx, in_vector));</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework.">DIA&lt;ValueType&gt;</a>(tlx::make_counting&lt;EqualToDIANode&gt;(ctx, in_vector));</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/*!</span></div>
@@ -220,7 +220,7 @@ $(document).ready(function(){initNavTree('equal__to__dia_8hpp_source.html','');}
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">using</span> <a class="code" href="exceptionthrill_1_1api_1_1EqualToDIANode.html">EqualToDIANode</a> = <a class="code" href="exceptionthrill_1_1api_1_1EqualToDIANode.html">api::EqualToDIANode&lt;ValueType&gt;</a>;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework.">DIA&lt;ValueType&gt;</a>(</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        common::MakeCounting&lt;EqualToDIANode&gt;(ctx, std::move(in_vector)));</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        tlx::make_counting&lt;EqualToDIANode&gt;(ctx, std::move(in_vector)));</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;} <span class="comment">// namespace api</span></div>
@@ -239,7 +239,7 @@ $(document).ready(function(){initNavTree('equal__to__dia_8hpp_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="equal__to__dia_8hpp.html">equal_to_dia.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:03 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

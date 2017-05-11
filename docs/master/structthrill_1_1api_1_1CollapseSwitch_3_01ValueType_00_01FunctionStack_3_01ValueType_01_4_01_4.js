@@ -1,4 +1,0 @@
-var structthrill_1_1api_1_1CollapseSwitch_3_01ValueType_00_01FunctionStack_3_01ValueType_01_4_01_4 =
-[
-    [ "MakeCollapse", "structthrill_1_1api_1_1CollapseSwitch_3_01ValueType_00_01FunctionStack_3_01ValueType_01_4_01_4.html#ac2fc96343e5d9e61d547dd5b533ff93e", null ]
-];

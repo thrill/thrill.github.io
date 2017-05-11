@@ -294,7 +294,7 @@ $(document).ready(function(){initNavTree('select__dispatcher_8cpp_source.html','
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">while</span> ((wb = write(<a class="code" href="exceptionthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a9ce6f99486145fdeda95fe307f6c23fb" title="self-pipe to wake up select.">self_pipe_</a>[1], <span class="keyword">this</span>, 1)) == 0) {</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;WakeUp: error sending to self-pipe: &quot;</span> &lt;&lt; errno;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(wb == 1);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    die_unless(wb == 1);</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
 <div class="line"><a name="l00182"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a91aa47d1aebd5de469e6f1b9f3d25524">  182</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="exceptionthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a91aa47d1aebd5de469e6f1b9f3d25524" title="Self-pipe callback.">SelectDispatcher::SelfPipeCallback</a>() {</div>
@@ -316,7 +316,7 @@ $(document).ready(function(){initNavTree('select__dispatcher_8cpp_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_877fdf1e6de6dbbd26be6a4f8db0e6bf.html">net</a></li><li class="navelem"><a class="el" href="dir_6932eba81436afd0bb7e09bea6fff5b7.html">tcp</a></li><li class="navelem"><a class="el" href="select__dispatcher_8cpp.html">select_dispatcher.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:04 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:34 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

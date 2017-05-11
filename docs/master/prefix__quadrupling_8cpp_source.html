@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span>suffix_sorting {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">using namespace </span>thrill; <span class="comment">// NOLINT</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">using</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">thrill::common::RingBuffer</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">using</span> <a class="code" href="namespacethrill_1_1common.html#a7257714934d02f6e535768589e507ce9">thrill::common::RingBuffer</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//! A pair (index, rank)</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index&gt;</div>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html#a4d77b3fb48833ee41178f27ba47560c8">   52</a></span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="namespacethrill_1_1api.html#ae8473cbd67ac02098251c03a8218ae49" title="make ostream-able.">operator &lt;&lt; </a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html" title="A pair (index, rank)">IndexRank</a>&amp; ri) {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; ri.index &lt;&lt; <span class="charliteral">&#39;|&#39;</span> &lt;&lt; ri.rank &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting.html#ad4eb793e03d7da1857ee9ca6182da0b5">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a310bb7986bfbce0ca295fd9faa722ce3">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">//! A pair (index, rank)</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index&gt;</div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; ri.index &lt;&lt; <span class="charliteral">&#39;|&#39;</span> &lt;&lt; ri.rank[0] &lt;&lt; <span class="charliteral">&#39;|&#39;</span> &lt;&lt; ri.rank[1]</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                  &lt;&lt; <span class="charliteral">&#39;|&#39;</span> &lt;&lt; ri.rank[2] &lt;&lt; <span class="charliteral">&#39;|&#39;</span> &lt;&lt; ri.rank[3] &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting.html#ad4eb793e03d7da1857ee9ca6182da0b5">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a310bb7986bfbce0ca295fd9faa722ce3">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> AlphabetType, <span class="keyword">typename</span> Index&gt;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">struct </span>QuadCharIndex {</div>
@@ -220,7 +220,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <span class="charliteral">&#39;[&#39;</span> &lt;&lt; chars.index &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; chars.ch[0] &lt;&lt; <span class="charliteral">&#39;,&#39;</span> &lt;&lt; chars.ch[1]</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                  &lt;&lt; <span class="charliteral">&#39;,&#39;</span> &lt;&lt; chars.ch[2] &lt;&lt; <span class="charliteral">&#39;,&#39;</span> &lt;&lt; chars.ch[3] &lt;&lt; <span class="charliteral">&#39;]&#39;</span>;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting.html#ad4eb793e03d7da1857ee9ca6182da0b5">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a310bb7986bfbce0ca295fd9faa722ce3">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
 <div class="line"><a name="l00107"></a><span class="lineno"><a class="code" href="namespaceexamples_1_1suffix__sorting.html#a0a4f3a9529720d35be02b55b8f7444d0">  107</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a0a4f3a9529720d35be02b55b8f7444d0">Status</a> : uint8_t {</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a0a4f3a9529720d35be02b55b8f7444d0a8ba8ac037709b266f6ec856ea77e4489">UNDECIDED</a> = 0,</div>
@@ -252,7 +252,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <span class="stringliteral">&quot;(i: &quot;</span> &lt;&lt; irs.index &lt;&lt; <span class="stringliteral">&quot;| r: &quot;</span> &lt;&lt; irs.rank &lt;&lt; <span class="stringliteral">&quot;| s: &quot;</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                  &lt;&lt; <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(irs.status) &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting.html#ad4eb793e03d7da1857ee9ca6182da0b5">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a310bb7986bfbce0ca295fd9faa722ce3">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">//! A triple (index, rank [4], status)</span></div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index&gt;</div>
@@ -266,7 +266,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                  &lt;&lt; iqrs.rank[1] &lt;&lt; <span class="stringliteral">&quot;| r3: &quot;</span> &lt;&lt; iqrs.rank[2] &lt;&lt; <span class="stringliteral">&quot;| r4: &quot;</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                  &lt;&lt; iqrs.rank[3] &lt;&lt; <span class="stringliteral">&quot;| s: &quot;</span> &lt;&lt; <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(iqrs.status) &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    }</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting.html#ad4eb793e03d7da1857ee9ca6182da0b5">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a310bb7986bfbce0ca295fd9faa722ce3">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">//! A triple with index (index, rank_1, rank_2, rank_3)</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index&gt;</div>
@@ -280,7 +280,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <span class="stringliteral">&quot;( i: &quot;</span> &lt;&lt; irrr.index &lt;&lt; <span class="stringliteral">&quot;| r1: &quot;</span> &lt;&lt; irrr.rank1</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;| r2: &quot;</span> &lt;&lt; irrr.rank2 &lt;&lt; <span class="stringliteral">&quot;| r3: &quot;</span> &lt;&lt; irrr.rank3 &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting.html#ad4eb793e03d7da1857ee9ca6182da0b5">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;} <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a310bb7986bfbce0ca295fd9faa722ce3">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index, <span class="keyword">typename</span> InputDIA&gt;</div>
 <div class="line"><a name="l00168"></a><span class="lineno"><a class="code" href="namespaceexamples_1_1suffix__sorting.html#a57e820c114400e04bd082ba4cc711d1f">  168</a></span>&#160;DIA&lt;Index&gt; <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a6fb0c730af49429b22c5f509a02558cd">PrefixQuadruplingDiscarding</a>(<span class="keyword">const</span> InputDIA&amp; input_dia, <span class="keywordtype">size_t</span> input_size, <span class="keywordtype">bool</span> packed) {</div>
@@ -324,7 +324,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            input_dia</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            .template FlatWindow&lt;IndexRank&gt;(</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                k_fitting,</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;Char&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;Char&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                    <span class="keywordtype">size_t</span> result = rb[0];</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; k_fitting; ++i)</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                        result = (result &lt;&lt; input_bit_size) | rb[i];</div>
@@ -350,7 +350,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            chars_sorted</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            .template FlatWindow&lt;IndexRank&gt;(</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                2,</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                [](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;IndexRank&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                [](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;IndexRank&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                    <span class="keywordflow">if</span> (index == 0)</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                        emit(<a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html" title="A pair (index, rank)">IndexRank</a> { rb[0].<a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html#a7875de9269063a44a5480b1c0c530a84">index</a>, Index(1) });</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                    emit(<a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html" title="A pair (index, rank)">IndexRank</a> {</div>
@@ -369,12 +369,12 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            input_dia</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            .template FlatWindow&lt;QuadCharIndex&gt;(</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                4,</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;Char&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;Char&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                    emit(QuadCharIndex {</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                             { rb[0], rb[1], rb[2], rb[3] }, Index(index)</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                         });</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                },</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;Char&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;Char&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                    <span class="keywordflow">if</span> (index == input_size - 3) {</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                        emit(QuadCharIndex {</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                                 { rb[0], rb[1], rb[2],</div>
@@ -405,7 +405,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            chars_sorted</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            .template FlatWindow&lt;IndexRank&gt;(</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                2,</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                [](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;QuadCharIndex&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                [](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;QuadCharIndex&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                    <span class="keywordflow">if</span> (index == 0)</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                        emit(<a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html" title="A pair (index, rank)">IndexRank</a> { rb[0].<a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html#a7875de9269063a44a5480b1c0c530a84">index</a>, Index(1) });</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                    <span class="keywordflow">if</span> (rb[0] == rb[1])</div>
@@ -428,7 +428,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        names</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        .template FlatWindow&lt;IndexRankStatus&gt;(</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            3,</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;IndexRank&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;IndexRank&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                <span class="keywordflow">if</span> (index == 0) {</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                    <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a0a4f3a9529720d35be02b55b8f7444d0">Status</a> status = rb[0].rank != rb[1].rank ? Status::UNIQUE : Status::UNDECIDED;</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                    emit(IndexRankStatus { rb[0].index, rb[0].rank, status });</div>
@@ -470,7 +470,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            names_unique_sorted.Keep()</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            .template FlatWindow&lt;IndexQuadRankStatus&gt;(</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                5,</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;IndexRankStatus&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;IndexRankStatus&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                    <span class="comment">// Discarded names (we need to change the status since we remove it one step later)</span></div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                    <span class="keywordflow">if</span> (index == 0) {</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                        <span class="keywordflow">if</span> (rb[0].status == Status::UNIQUE)</div>
@@ -520,7 +520,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                        emit(IndexQuadRankStatus { rb[0].index, { rb[0].rank, rank1, rank2, rank3 }, Status::UNDECIDED });</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                    }</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                },</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;IndexRankStatus&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;IndexRankStatus&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                    <span class="keywordflow">if</span> (index == 0) {</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                        <span class="keywordflow">if</span> (rb[0].status == Status::UNIQUE)</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                            emit(IndexQuadRankStatus {</div>
@@ -672,7 +672,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;            undiscarded</div>
 <div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;            .template FlatWindow&lt;Index3Rank&gt;(</div>
 <div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;                2,</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;IndexQuadRank&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;IndexQuadRank&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;                    <span class="keywordflow">if</span> (index == 0) {</div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;                        emit(Index3Rank { rb[0].index, Index(0), Index(0), rb[0].rank[0] });</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;                    }</div>
@@ -686,7 +686,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;                             rb[0].rank[3] == rb[1].rank[3]) ? Index(0) : Index(index + 1);</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;                    emit(Index3Rank { rb[1].index, i, r, rb[1].rank[0] });</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;                },</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;                [](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;IndexQuadRank&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;                [](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;IndexQuadRank&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;                    <span class="keywordflow">if</span> (index == 0)</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;                        emit(Index3Rank { rb[0].index, Index(0), Index(0), rb[0].rank[0] });</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;                })</div>
@@ -708,7 +708,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;            new_ranks</div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;            .template FlatWindow&lt;IndexRankStatus&gt;(</div>
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;                3,</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;IndexRank&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;IndexRank&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;                    <span class="keywordflow">if</span> (index == 0) {</div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;                        <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a0a4f3a9529720d35be02b55b8f7444d0">Status</a> status = rb[0].rank != rb[1].rank ? Status::UNIQUE : Status::UNDECIDED;</div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;                        emit(IndexRankStatus { rb[0].index, rb[0].rank, status });</div>
@@ -722,7 +722,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;                        emit(IndexRankStatus { rb[2].index, rb[2].rank, status });</div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;                    }</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;                },</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;                [](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;IndexRank&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;                [](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;IndexRank&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;                    <span class="keywordflow">if</span> (index == 0) { <span class="comment">// We know that there are exactly 2 names</span></div>
 <div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;                        emit(IndexRankStatus { rb[0].index, rb[0].rank, Status::UNIQUE });</div>
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;                        emit(IndexRankStatus { rb[1].index, rb[1].rank, Status::UNIQUE });</div>
@@ -789,7 +789,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;            input_dia</div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;            .template FlatWindow&lt;IndexRank&gt;(</div>
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;                k_fitting,</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;Char&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;Char&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;                    <span class="keywordtype">size_t</span> result = rb[0];</div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; k_fitting; ++i)</div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;                        result = (result &lt;&lt; input_bit_size) | rb[i];</div>
@@ -815,7 +815,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;            chars_sorted</div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;            .template FlatWindow&lt;IndexRank&gt;(</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;                2,</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;                [](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;IndexRank&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;                [](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;IndexRank&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;                    <span class="keywordflow">if</span> (index == 0)</div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;                        emit(<a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html" title="A pair (index, rank)">IndexRank</a> { rb[0].<a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html#a7875de9269063a44a5480b1c0c530a84">index</a>, Index(1) });</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;                    emit(<a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html" title="A pair (index, rank)">IndexRank</a> {</div>
@@ -828,12 +828,12 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;            input_dia</div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;            .template FlatWindow&lt;QuadCharIndex&gt;(</div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;                4,</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;Char&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;Char&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;                    emit(QuadCharIndex {</div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;                             { rb[0], rb[1], rb[2], rb[3] }, Index(index)</div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;                         });</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;                },</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;Char&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;Char&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;                    <span class="keywordflow">if</span> (index == input_size - 3) {</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;                        emit(QuadCharIndex {</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;                                 { rb[0], rb[1], rb[2],</div>
@@ -861,7 +861,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;            chars_sorted</div>
 <div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;            .template FlatWindow&lt;IndexRank&gt;(</div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                2,</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;                [](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;QuadCharIndex&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;                [](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;QuadCharIndex&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;                    <span class="keywordflow">if</span> (index == 0)</div>
 <div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;                        emit(<a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html" title="A pair (index, rank)">IndexRank</a> { rb[0].<a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html#a7875de9269063a44a5480b1c0c530a84">index</a>, Index(1) });</div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;                    <span class="keywordflow">if</span> (rb[0] == rb[1])</div>
@@ -921,14 +921,14 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;            names_sorted</div>
 <div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;            .template FlatWindow&lt;IndexQuadRank&gt;(</div>
 <div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;                4,</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;                [=](<span class="keywordtype">size_t</span> <span class="comment">/*index*/</span>, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;IndexRank&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;                [=](<span class="keywordtype">size_t</span> <span class="comment">/*index*/</span>, <span class="keyword">const</span> RingBuffer&lt;IndexRank&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;                    Index rank1 = (rb[0].index + Index(next_index) == rb[1].index) ? rb[1].rank : Index(0);</div>
 <div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;                    Index rank2 = (rb[0].index + Index(2 * next_index) == rb[2].index) ? rb[2].rank : Index(0);</div>
 <div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;                    Index rank3 = (rb[0].index + Index(3 * next_index) == rb[3].index) ? rb[3].rank : Index(0);</div>
 <div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;                    emit(IndexQuadRank { rb[0].index, { rb[0].rank, rank1, rank2, rank3 }</div>
 <div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;                         });</div>
 <div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;                },</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;IndexRank&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;                [=](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;IndexRank&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;                    <span class="keywordflow">if</span> (index == input_size - 3) {</div>
 <div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;                        Index rank1 = (rb[0].index + Index(next_index) == rb[1].index) ? rb[1].rank : Index(0);</div>
 <div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;                        Index rank2 = (rb[0].index + Index(2 * next_index) == rb[2].index) ? rb[2].rank : Index(0);</div>
@@ -948,7 +948,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;            triple_sorted</div>
 <div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;            .template FlatWindow&lt;IndexRank&gt;(</div>
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;                2,</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;                [](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1RingBuffer.html" title="A ring (circular) buffer of static (non-growing) size allocated.">RingBuffer&lt;IndexQuadRank&gt;</a>&amp; rb, <span class="keyword">auto</span> emit) {</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;                [](<span class="keywordtype">size_t</span> index, <span class="keyword">const</span> RingBuffer&lt;IndexQuadRank&gt;&amp; rb, <span class="keyword">auto</span> emit) {</div>
 <div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;                    <span class="keywordflow">if</span> (index == 0) emit(<a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html" title="A pair (index, rank)">IndexRank</a> { rb[0].<a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html#a7875de9269063a44a5480b1c0c530a84">index</a>, Index(1) });</div>
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;</div>
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;                    <span class="keywordflow">if</span> (rb[0] == rb[1] &amp;&amp; (rb[0].rank[1] != Index(0) || rb[0].rank[2] != Index(0) || rb[0].rank[3] != Index(0)))</div>
@@ -1012,7 +1012,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_0b8cd80b43220fb0eacec85b2381def2.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="prefix__quadrupling_8cpp.html">prefix_quadrupling.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:02 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -180,8 +180,8 @@ var group__io__layer__req =
       [ "RequestQueueImpl1Q", "exceptionthrill_1_1io_1_1ServingRequest.html#a48b95edb832537c00312ffcb2f7b1661", null ],
       [ "RequestQueueImplQwQr", "exceptionthrill_1_1io_1_1ServingRequest.html#ac7fc38a9634ae156e00f174e47a06a2b", null ]
     ] ],
-    [ "CompletionHandler", "group__io__layer__req.html#ga22f456234acefe2102a0b4ef2501bb61", null ],
-    [ "RequestPtr", "group__io__layer__req.html#ga7cb03f5ebec97e6a511bc48537e570f9", null ],
+    [ "CompletionHandler", "group__io__layer__req.html#ga4d564039f520d56584770abb56692cb3", null ],
+    [ "RequestPtr", "group__io__layer__req.html#gad77b608fd5cf3b231643f26467ae4338", null ],
     [ "cancel_all", "group__io__layer__req.html#ga85c0a74a3ba925aec3af051dd2e3460e", null ],
     [ "operator<<", "group__io__layer__req.html#gacbf254abcf2b18c9213ef63e5d689e81", null ],
     [ "poll_any", "group__io__layer__req.html#gae447c1a4c8baa2b5ef0524171f14b5a1", null ],

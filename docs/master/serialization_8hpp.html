@@ -115,13 +115,14 @@ $(document).ready(function(){initNavTree('serialization_8hpp.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">serialization.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="functional_8hpp_source.html">thrill/common/functional.hpp</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="meta_8hpp_source.html">thrill/common/meta.hpp</a>&gt;</code><br/>
+<code>#include &lt;tlx/meta/has_member.hpp&gt;</code><br/>
 <code>#include &lt;array&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;tuple&gt;</code><br/>
@@ -133,7 +134,7 @@ $(document).ready(function(){initNavTree('serialization_8hpp.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="serialization_8hpp__incl.svg" width="755" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="serialization_8hpp__incl.svg" width="880" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -171,7 +172,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1vector_3_01T_01_4_01_4.html">Serialization&lt; Archive, std::vector&lt; T &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01he80cfba1216039172b8976ffbd5af686.html">Serialization&lt; Archive, T, typename std::enable_if&lt; has_method_thrill_is_fixed_size&lt; T &gt;::value &gt;::type &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01hd08c951b6c13e047834610b1a9aacbeb.html">Serialization&lt; Archive, T, typename std::enable_if&lt; has_member_thrill_is_fixed_size&lt; T &gt;::value &gt;::type &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01s42c784ecbd504c6802ce2ce0ffd1d579.html">Serialization&lt; Archive, T, typename std::enable_if&lt; std::is_pod&lt; T &gt;::value &amp;&amp;!std::is_pointer&lt; T &gt;::value &gt;::type &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,6 +190,11 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a3473f4ca2bc681218320b02d7a26062f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="serialization_8hpp.html#a3473f4ca2bc681218320b02d7a26062f">THRILL_DATA_SERIALIZATION_HEADER</a></td></tr>
 <tr class="separator:a3473f4ca2bc681218320b02d7a26062f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga0b2104d36418070caaf9f237b0acb306"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga0b2104d36418070caaf9f237b0acb306">TLX_MAKE_HAS_MEMBER</a> (thrill_is_fixed_size)</td></tr>
+<tr class="separator:ga0b2104d36418070caaf9f237b0acb306"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a3473f4ca2bc681218320b02d7a26062f"></a>
@@ -211,7 +217,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1b62fa212cebae5dc6aa23a01bf7093d.html">data</a></li><li class="navelem"><a class="el" href="serialization_8hpp.html">serialization.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:05 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:35 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -120,10 +120,11 @@ $(document).ready(function(){initNavTree('just__sort_8cpp.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="context_8hpp_source.html">thrill/api/context.hpp</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="cmdline__parser_8hpp_source.html">thrill/common/cmdline_parser.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="defines_8hpp_source.html">thrill/common/defines.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="logger_8hpp_source.html">thrill/common/logger.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="qsort_8hpp_source.html">thrill/common/qsort.hpp</a>&gt;</code><br/>
+<code>#include &lt;tlx/cmdline_parser.hpp&gt;</code><br/>
+<code>#include &lt;tlx/string/format_si_iec_units.hpp&gt;</code><br/>
 <code>#include &lt;algorithm&gt;</code><br/>
 <code>#include &lt;limits&gt;</code><br/>
 <code>#include &lt;random&gt;</code><br/>
@@ -136,7 +137,7 @@ $(document).ready(function(){initNavTree('just__sort_8cpp.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="just__sort_8cpp__incl.svg" width="10663" height="1598"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="just__sort_8cpp__incl.svg" width="10582" height="1616"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -149,8 +150,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a8d1a3988a0ff2b797471bda0249b6a8c"><td class="memItemLeft" align="right" valign="top">struct Chars&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="just__sort_8cpp.html#a8d1a3988a0ff2b797471bda0249b6a8c">THRILL_ATTRIBUTE_PACKED</a></td></tr>
-<tr class="separator:a8d1a3988a0ff2b797471bda0249b6a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afefec265ea1ad4fc8ae61cbd45620714"><td class="memItemLeft" align="right" valign="top">struct Chars&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="just__sort_8cpp.html#afefec265ea1ad4fc8ae61cbd45620714">TLX_ATTRIBUTE_PACKED</a></td></tr>
+<tr class="separator:afefec265ea1ad4fc8ae61cbd45620714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a0ddf1224851353fc92bfbff6f499fa97"></a>
@@ -177,19 +178,19 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="just__sort_8cpp_source.html#l00075">75</a> of file <a class="el" href="just__sort_8cpp_source.html">just_sort.cpp</a>.</p>
+<p>Definition at line <a class="el" href="just__sort_8cpp_source.html#l00076">76</a> of file <a class="el" href="just__sort_8cpp_source.html">just_sort.cpp</a>.</p>
 
-<p>References <a class="el" href="string_8cpp_source.html#l00289">thrill::common::FormatIecUnits()</a>, <a class="el" href="logger_8hpp_source.html#l00171">LOG1</a>, <a class="el" href="qsort_8hpp_source.html#l00244">thrill::common::qsort_three_pivots()</a>, <a class="el" href="qsort_8hpp_source.html#l00186">thrill::common::qsort_two_pivots_yaroslavskiy()</a>, <a class="el" href="context_8cpp_source.html#l00796">thrill::api::Run()</a>, and <a class="el" href="cmdline__parser_8cpp_source.html#l00452">CmdlineParser::SetAuthor()</a>.</p>
+<p>References <a class="el" href="logger_8hpp_source.html#l00171">LOG1</a>, <a class="el" href="qsort_8hpp_source.html#l00244">thrill::common::qsort_three_pivots()</a>, <a class="el" href="qsort_8hpp_source.html#l00186">thrill::common::qsort_two_pivots_yaroslavskiy()</a>, and <a class="el" href="context_8cpp_source.html#l00801">thrill::api::Run()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a8d1a3988a0ff2b797471bda0249b6a8c"></a>
+<a class="anchor" id="afefec265ea1ad4fc8ae61cbd45620714"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct IndexChars  THRILL_ATTRIBUTE_PACKED</td>
+          <td class="memname">struct JoinedElement TLX_ATTRIBUTE_PACKED</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -202,7 +203,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_0b8cd80b43220fb0eacec85b2381def2.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="just__sort_8cpp.html">just_sort.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:04 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:34 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

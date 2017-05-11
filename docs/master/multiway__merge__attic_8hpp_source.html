@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="group__by__iterator_8hpp.html">thrill/api/group_by_iterator.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="losertree_8hpp.html">thrill/core/losertree.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;tlx/loser_tree.hpp&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;iterator&gt;</span></div>
@@ -1003,8 +1003,8 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;                <span class="keywordflow">if</span> (comp(pl[pi], pl[pi - 1]) ||</div>
 <div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;                    (!comp(pl[pi - 1], pl[pi]) &amp;&amp; source[pi] &lt; source[pi - 1]))</div>
 <div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                {</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;                    <a class="code" href="namespacethrill_1_1common.html#aeb0f9e37913273e9110bcb574230ce08">std::swap</a>(pl[pi - 1], pl[pi]);</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;                    <a class="code" href="namespacethrill_1_1common.html#aeb0f9e37913273e9110bcb574230ce08">std::swap</a>(source[pi - 1], source[pi]);</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;                    std::swap(pl[pi - 1], pl[pi]);</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;                    std::swap(source[pi - 1], source[pi]);</div>
 <div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;                }</div>
 <div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    }</div>
 <div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    <span class="keywordflow">else</span></div>
@@ -1013,8 +1013,8 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> pi = nrp - 1; pi &gt; k; --pi)</div>
 <div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;                <span class="keywordflow">if</span> (comp(pl[pi], pl[pi - 1]))</div>
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;                {</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;                    <a class="code" href="namespacethrill_1_1common.html#aeb0f9e37913273e9110bcb574230ce08">std::swap</a>(pl[pi - 1], pl[pi]);</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;                    <a class="code" href="namespacethrill_1_1common.html#aeb0f9e37913273e9110bcb574230ce08">std::swap</a>(source[pi - 1], source[pi]);</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;                    std::swap(pl[pi - 1], pl[pi]);</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;                    std::swap(source[pi - 1], source[pi]);</div>
 <div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;                }</div>
 <div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;    }</div>
 <div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160;</div>
@@ -1077,8 +1077,8 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;            <span class="keywordflow">while</span> ((j &lt; nrp) &amp;&amp; (comp(pl[j], pl[j - 1]) ||</div>
 <div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;                                 (!comp(pl[j - 1], pl[j]) &amp;&amp; (source[j] &lt; source[j - 1]))))</div>
 <div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;            {</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;                <a class="code" href="namespacethrill_1_1common.html#aeb0f9e37913273e9110bcb574230ce08">std::swap</a>(pl[j - 1], pl[j]);</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;                <a class="code" href="namespacethrill_1_1common.html#aeb0f9e37913273e9110bcb574230ce08">std::swap</a>(source[j - 1], source[j]);</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;                std::swap(pl[j - 1], pl[j]);</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;                std::swap(source[j - 1], source[j]);</div>
 <div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;                ++j;</div>
 <div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;            }</div>
 <div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;        }</div>
@@ -1113,8 +1113,8 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;            j = 1;</div>
 <div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;            <span class="keywordflow">while</span> ((j &lt; nrp) &amp;&amp; comp(pl[j], pl[j - 1]))</div>
 <div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;            {</div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;                <a class="code" href="namespacethrill_1_1common.html#aeb0f9e37913273e9110bcb574230ce08">std::swap</a>(pl[j - 1], pl[j]);</div>
-<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;                <a class="code" href="namespacethrill_1_1common.html#aeb0f9e37913273e9110bcb574230ce08">std::swap</a>(source[j - 1], source[j]);</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;                std::swap(pl[j - 1], pl[j]);</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;                std::swap(source[j - 1], source[j]);</div>
 <div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;                ++j;</div>
 <div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;            }</div>
 <div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;        }</div>
@@ -1173,7 +1173,7 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;</div>
 <div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;    <span class="keywordflow">for</span> (Source t = 0; t &lt; k; ++t)</div>
 <div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;    {</div>
-<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="defines_8hpp.html#abecc5d13bae37bbcb38d534a9e6a2db4">THRILL_UNLIKELY</a>(seqs_begin[t].first == seqs_begin[t].second))</div>
+<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;        <span class="keywordflow">if</span> (TLX_UNLIKELY(seqs_begin[t].first == seqs_begin[t].second))</div>
 <div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;            lt.insert_start(*arbitrary_element, t, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;            lt.insert_start(*seqs_begin[t].first, t, <span class="keyword">false</span>);</div>
@@ -1241,7 +1241,7 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;</div>
 <div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;    <span class="keywordflow">for</span> (Source t = 0; t &lt; k; ++t)</div>
 <div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;    {</div>
-<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="defines_8hpp.html#abecc5d13bae37bbcb38d534a9e6a2db4">THRILL_UNLIKELY</a>(seqs_begin[t].first == seqs_begin[t].second))</div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;        <span class="keywordflow">if</span> (TLX_UNLIKELY(seqs_begin[t].first == seqs_begin[t].second))</div>
 <div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;            lt.insert_start(<span class="keyword">nullptr</span>, t, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;            lt.insert_start(&amp;*seqs_begin[t].first, t, <span class="keyword">false</span>);</div>
@@ -1379,7 +1379,7 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;    {</div>
 <div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;        DiffType unguarded_length = <a class="code" href="namespacethrill_1_1common.html#af06fbf706bdaafea92ddc5c8351e7177" title="template for constexpr min, because std::min is not good enough.">std::min</a>(length, total_length - overhang);</div>
 <div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;        target_end = multiway_merge_loser_tree_unguarded&lt;</div>
-<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7" title="VFS object type.">LoserTreeTraitsUnguarded&lt;Stable, value_type, Comparator&gt;::Type</a>&gt;(</div>
+<div class="line"><a name="l01264"></a><span class="lineno"> 1264</span>&#160;            tlx::LoserTreeUnguarded&lt;Stable, value_type, Comparator&gt; &gt;(</div>
 <div class="line"><a name="l01265"></a><span class="lineno"> 1265</span>&#160;            seqs_begin, seqs_end, target, unguarded_length, comp);</div>
 <div class="line"><a name="l01266"></a><span class="lineno"> 1266</span>&#160;        overhang = length - unguarded_length;</div>
 <div class="line"><a name="l01267"></a><span class="lineno"> 1267</span>&#160;    }</div>
@@ -1394,7 +1394,7 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;    <span class="comment">// THRILL_DEBUG_ASSERT(stxxl::is_sorted(target, target_end, comp));</span></div>
 <div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;</div>
 <div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;    target_end = multiway_merge_loser_tree&lt;</div>
-<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;        <span class="keyword">typename</span> <a class="code" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7" title="VFS object type.">LoserTreeTraits&lt;Stable, value_type, Comparator&gt;::Type</a>&gt;(</div>
+<div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;        tlx::LoserTree&lt;Stable, value_type, Comparator&gt; &gt;(</div>
 <div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;        seqs_begin, seqs_end, target_end, overhang, comp);</div>
 <div class="line"><a name="l01281"></a><span class="lineno"> 1281</span>&#160;</div>
 <div class="line"><a name="l01282"></a><span class="lineno"> 1282</span>&#160;    <span class="comment">// THRILL_DEBUG_ASSERT(target_end == target + length);</span></div>
@@ -1426,7 +1426,7 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;</div>
 <div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;    RandomAccessIterator3 target_end</div>
 <div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;        = multiway_merge_loser_tree_unguarded&lt;</div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;        <span class="keyword">typename</span> <a class="code" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7" title="VFS object type.">LoserTreeTraitsUnguarded&lt;Stable, value_type, Comparator&gt;::Type</a>&gt;(</div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;        tlx::LoserTreeUnguarded&lt;Stable, value_type, Comparator&gt; &gt;(</div>
 <div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;        seqs_begin, seqs_end, target, length, comp);</div>
 <div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;</div>
 <div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;    <span class="comment">// THRILL_DEBUG_ASSERT(target_end == target + length);</span></div>
@@ -1488,7 +1488,7 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;    <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;    {</div>
 <div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;        return_target = file_multiway_merge_loser_tree&lt;</div>
-<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7" title="VFS object type.">LoserTreeTraits&lt;Stable, value_type, Comparator&gt;::Type</a>&gt;(</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;            tlx::LoserTree&lt;Stable, value_type, Comparator&gt; &gt;(</div>
 <div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;            seqs_begin, seqs_end, target, length, comp);</div>
 <div class="line"><a name="l01375"></a><span class="lineno"> 1375</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01376"></a><span class="lineno"> 1376</span>&#160;    }</div>
@@ -1605,7 +1605,7 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;        <span class="comment">//     break;</span></div>
 <div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;        <span class="comment">// case SETTINGS::LOSER_TREE:</span></div>
 <div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;        return_target = multiway_merge_loser_tree&lt;</div>
-<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;            <span class="keyword">typename</span> <a class="code" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7" title="VFS object type.">LoserTreeTraits&lt;Stable, value_type, Comparator&gt;::Type</a>&gt;(</div>
+<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;            tlx::LoserTree&lt;Stable, value_type, Comparator&gt; &gt;(</div>
 <div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;            seqs_begin, seqs_end, target, length, comp);</div>
 <div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;        <span class="comment">// case SETTINGS::LOSER_TREE_COMBINED:</span></div>
@@ -2086,7 +2086,7 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_8bfba075c6cd97373f9ca7badca61766.html">core</a></li><li class="navelem"><a class="el" href="multiway__merge__attic_8hpp.html">multiway_merge_attic.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:03 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

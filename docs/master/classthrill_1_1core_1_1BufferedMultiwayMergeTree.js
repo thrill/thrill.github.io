@@ -1,6 +1,6 @@
 var classthrill_1_1core_1_1BufferedMultiwayMergeTree =
 [
-    [ "LoserTreeType", "classthrill_1_1core_1_1BufferedMultiwayMergeTree.html#af63a947d69484d550c05271361b43da2", null ],
+    [ "LoserTreeType", "classthrill_1_1core_1_1BufferedMultiwayMergeTree.html#adb521ea0cbff881aa8564a20f8ef6f1c", null ],
     [ "Reader", "classthrill_1_1core_1_1BufferedMultiwayMergeTree.html#aa71240154b372bca01a04325047dc154", null ],
     [ "BufferedMultiwayMergeTree", "classthrill_1_1core_1_1BufferedMultiwayMergeTree.html#a3a888edd1b916302ff0fa5cbb4062fb8", null ],
     [ "HasNext", "classthrill_1_1core_1_1BufferedMultiwayMergeTree.html#a083952563949a6a6d009f67a26a2b207", null ],

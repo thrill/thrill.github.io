@@ -131,8 +131,8 @@ $(document).ready(function(){initNavTree('wavelet__tree3_8cpp_source.html','');}
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="generate_8hpp.html">thrill/api/generate.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="read__binary_8hpp.html">thrill/api/read_binary.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="write__binary_8hpp.html">thrill/api/write_binary.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cmdline__parser_8hpp.html">thrill/common/cmdline_parser.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;tlx/cmdline_parser.hpp&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
@@ -148,16 +148,16 @@ $(document).ready(function(){initNavTree('wavelet__tree3_8cpp_source.html','');}
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">using namespace </span>thrill; <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">using namespace </span>examples::suffix_sorting;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classthrill_1_1common_1_1CmdlineParser.html" title="Command line parser which automatically fills variables and prints nice usage messages.">common::CmdlineParser</a> cp;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    tlx::CmdlineParser cp;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    cp.<a class="code" href="classthrill_1_1common_1_1CmdlineParser.html#aa8a54030af243b127f3c048017ff19e4" title="Set author of program, will be wrapped.">SetAuthor</a>(<span class="stringliteral">&quot;Timo Bingmann &lt;tb@panthema.net&gt;&quot;</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    cp.set_author(<span class="stringliteral">&quot;Timo Bingmann &lt;tb@panthema.net&gt;&quot;</span>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a> input_path;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    cp.AddOptParamString(<span class="stringliteral">&quot;input&quot;</span>, input_path,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                         <span class="stringliteral">&quot;Path to input file.&quot;</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    cp.add_opt_param_string(<span class="stringliteral">&quot;input&quot;</span>, input_path,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                            <span class="stringliteral">&quot;Path to input file.&quot;</span>);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (!cp.Process(argc, argv))</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (!cp.process(argc, argv))</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacethrill_1_1api.html#ab78331325e7577a5ba26b90cd40c92eb" title="Runs the given job startpoint with a Context instance.">Run</a>(</div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('wavelet__tree3_8cpp_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_0b8cd80b43220fb0eacec85b2381def2.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="wavelet__tree3_8cpp.html">wavelet_tree3.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:02 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

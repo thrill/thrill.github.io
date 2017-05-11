@@ -5,8 +5,8 @@ var file__io_8hpp =
     [ "ReadStream", "classthrill_1_1vfs_1_1ReadStream.html", "classthrill_1_1vfs_1_1ReadStream" ],
     [ "WriteStream", "classthrill_1_1vfs_1_1WriteStream.html", "classthrill_1_1vfs_1_1WriteStream" ],
     [ "THRILL_VFS_FILE_IO_HEADER", "file__io_8hpp.html#ac3dee12f32d07d520a487fe5fc838883", null ],
-    [ "ReadStreamPtr", "file__io_8hpp.html#a9a87b13fd6467684d49482e46a43ba38", null ],
-    [ "WriteStreamPtr", "file__io_8hpp.html#aba685d7203ec5302d9b1e60a3aa0ee68", null ],
+    [ "ReadStreamPtr", "file__io_8hpp.html#a0f28a2b7a33f4cb305900fb9121f6da5", null ],
+    [ "WriteStreamPtr", "file__io_8hpp.html#a2b0d718704d03d646c5c5126b4c75326", null ],
     [ "GlobType", "file__io_8hpp.html#ac7206d989022001555916ee86ef21cf5", [
       [ "All", "file__io_8hpp.html#ac7206d989022001555916ee86ef21cf5ab1c94ca2fbc3e78fc30069c8d0f01680", null ],
       [ "File", "file__io_8hpp.html#ac7206d989022001555916ee86ef21cf5a0b27918290ff5323bea1e3b78a9cf04e", null ],

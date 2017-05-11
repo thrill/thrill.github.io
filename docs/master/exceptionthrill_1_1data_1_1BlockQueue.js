@@ -1,6 +1,6 @@
 var exceptionthrill_1_1data_1_1BlockQueue =
 [
-    [ "CloseCallback", "exceptionthrill_1_1data_1_1BlockQueue.html#abd51902f26d99d20474c6385e2ea5032", null ],
+    [ "CloseCallback", "exceptionthrill_1_1data_1_1BlockQueue.html#a08335ba0424d579b47e3fb4d0c144aa2", null ],
     [ "ConsumeReader", "exceptionthrill_1_1data_1_1BlockQueue.html#a7d765cf1578228934745a49ec446e67f", null ],
     [ "Reader", "exceptionthrill_1_1data_1_1BlockQueue.html#ac306eb24ea466acd3e0d87ea82f56916", null ],
     [ "Writer", "exceptionthrill_1_1data_1_1BlockQueue.html#ab0b45a23642f91075005b1874dba86fd", null ],

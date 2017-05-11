@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('concurrent__bounded__queue_8hpp_source
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">    //! Pushes a new element into the queue. The element is constructed with</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">    //! given arguments.</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"></span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ... Arguments&gt;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"></span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Arguments&gt;</div>
 <div class="line"><a name="l00102"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1OurConcurrentBoundedQueue.html#adb6454f47cdb28fc777e0c93a03247f6">  102</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1common_1_1OurConcurrentBoundedQueue.html#adb6454f47cdb28fc777e0c93a03247f6">emplace</a>(Arguments&amp;&amp; ... args) {</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="classthrill_1_1common_1_1OurConcurrentBoundedQueue.html#a281b5ec791338d4378e22ef44a51b4a1" title="the mutex to lock before accessing the queue">mutex_</a>);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="classthrill_1_1common_1_1OurConcurrentBoundedQueue.html#ab204700c604f853c5a6e383e93bbf0d8" title="the actual data queue">queue_</a>.emplace(std::forward&lt;Arguments&gt;(args) ...);</div>
@@ -303,7 +303,7 @@ $(document).ready(function(){initNavTree('concurrent__bounded__queue_8hpp_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="concurrent__bounded__queue_8hpp.html">concurrent_bounded_queue.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:03 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

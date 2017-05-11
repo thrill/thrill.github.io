@@ -137,9 +137,9 @@ $(document).ready(function(){initNavTree('rl__bwt_8cpp_source.html','');});
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="window_8hpp.html">thrill/api/window.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="write__binary_8hpp.html">thrill/api/write_binary.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="zip_8hpp.html">thrill/api/zip.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cmdline__parser_8hpp.html">thrill/common/cmdline_parser.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ring__buffer_8hpp.html">thrill/common/ring_buffer.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ring__buffer_8hpp.html">thrill/common/ring_buffer.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;tlx/cmdline_parser.hpp&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
@@ -162,7 +162,7 @@ $(document).ready(function(){initNavTree('rl__bwt_8cpp_source.html','');});
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        std::ostream&amp; os, <span class="keyword">const</span> IndexChar&amp; ri) {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; ri.index &lt;&lt; <span class="charliteral">&#39;|&#39;</span> &lt;&lt; ri.c &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <a class="code" href="defines_8hpp.html#a20e99acaa0d5c41a37b4eba0f35d1e05">THRILL_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <a class="code" href="namespacethrill_1_1common.html#aa8cefeaf73ed55f25567a5f582e0dc47">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> InputDIA&gt;</div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="rl__bwt_8cpp.html#a9b63210dbe505d01b5f03386d064bd4e">   50</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="rl__bwt_8cpp.html#a9b63210dbe505d01b5f03386d064bd4e">ConstructRLBWT</a>(<span class="keyword">const</span> InputDIA&amp; input_dia) {</div>
@@ -198,19 +198,19 @@ $(document).ready(function(){initNavTree('rl__bwt_8cpp_source.html','');});
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="code" href="rl__bwt_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">   82</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="k-means__run_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]) {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="classthrill_1_1common_1_1CmdlineParser.html" title="Command line parser which automatically fills variables and prints nice usage messages.">common::CmdlineParser</a> cp;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    tlx::CmdlineParser cp;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    cp.<a class="code" href="classthrill_1_1common_1_1CmdlineParser.html#aa8a54030af243b127f3c048017ff19e4" title="Set author of program, will be wrapped.">SetAuthor</a>(<span class="stringliteral">&quot;Simon Gog &lt;gog@kit.edu&gt;&quot;</span>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    cp.set_author(<span class="stringliteral">&quot;Simon Gog &lt;gog@kit.edu&gt;&quot;</span>);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a> input_path;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">size_t</span> output_result = 0;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    cp.<a class="code" href="classthrill_1_1common_1_1CmdlineParser.html#a5b4a81041d7ebd7d71399d9375c641b7" title="add optional string parameter [name] with description and store to dest">AddOptParamString</a>(<span class="stringliteral">&quot;input&quot;</span>, input_path,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                         <span class="stringliteral">&quot;Path to input file.&quot;</span>);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    cp.<a class="code" href="classthrill_1_1common_1_1CmdlineParser.html#ab64da3402a24dbed56ac468f311e9936" title="add optional size_t parameter [name] with description and store to dest">AddOptParamSizeT</a>(<span class="stringliteral">&quot;output_result&quot;</span>, output_result,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                        <span class="stringliteral">&quot;Output result.&quot;</span>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    cp.add_opt_param_string(<span class="stringliteral">&quot;input&quot;</span>, input_path,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                            <span class="stringliteral">&quot;Path to input file.&quot;</span>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    cp.add_opt_param_size_t(<span class="stringliteral">&quot;output_result&quot;</span>, output_result,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                            <span class="stringliteral">&quot;Output result.&quot;</span>);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (!cp.<a class="code" href="classthrill_1_1common_1_1CmdlineParser.html#aeac551d1456648b7c55e2c709866164f">Process</a>(argc, argv))</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (!cp.process(argc, argv))</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacethrill_1_1api.html#ab78331325e7577a5ba26b90cd40c92eb" title="Runs the given job startpoint with a Context instance.">Run</a>(</div>
@@ -241,7 +241,7 @@ $(document).ready(function(){initNavTree('rl__bwt_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_0b8cd80b43220fb0eacec85b2381def2.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="rl__bwt_8cpp.html">rl_bwt.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:02 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

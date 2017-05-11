@@ -2,7 +2,7 @@ var classthrill_1_1core_1_1ReduceTable =
 [
     [ "MakeTableItem", "classthrill_1_1core_1_1ReduceTable.html#aa26d3023668a46fc71d141934d8a8fdb", null ],
     [ "ReduceConfig", "classthrill_1_1core_1_1ReduceTable.html#a3ff5001dc979bf4942adc33338569f3a", null ],
-    [ "TableItem", "classthrill_1_1core_1_1ReduceTable.html#a15a83190c794cf5ad8b949a4b69d8c9a", null ],
+    [ "TableItem", "classthrill_1_1core_1_1ReduceTable.html#a23c9487b76a1bc9414bf3d37d5ede9a4", null ],
     [ "ReduceTable", "classthrill_1_1core_1_1ReduceTable.html#acaae3c7e8a28143b7e4d6a3b9a30b882", null ],
     [ "ReduceTable", "classthrill_1_1core_1_1ReduceTable.html#a24c3662064793a9514da5cf878ed956a", null ],
     [ "ctx", "classthrill_1_1core_1_1ReduceTable.html#aaebb097af339676d4faf1415e1184872", null ],

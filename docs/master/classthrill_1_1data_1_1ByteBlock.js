@@ -1,8 +1,8 @@
 var classthrill_1_1data_1_1ByteBlock =
 [
     [ "Deleter", "classthrill_1_1data_1_1ByteBlock_1_1Deleter.html", "classthrill_1_1data_1_1ByteBlock_1_1Deleter" ],
-    [ "ByteBlockCPtr", "classthrill_1_1data_1_1ByteBlock.html#a4dc7387fedab4795c19752fe2f8380b0", null ],
-    [ "ByteBlockPtr", "classthrill_1_1data_1_1ByteBlock.html#ae4e3cd5edb441099face8d40212345aa", null ],
+    [ "ByteBlockCPtr", "classthrill_1_1data_1_1ByteBlock.html#a2006279567f7015338183af8617dfe72", null ],
+    [ "ByteBlockPtr", "classthrill_1_1data_1_1ByteBlock.html#a07ff5f64ca2cb4cf9e0d5963df489453", null ],
     [ "ByteBlock", "classthrill_1_1data_1_1ByteBlock.html#aa2d8d5e68690de7bff4df3809de58888", null ],
     [ "ByteBlock", "classthrill_1_1data_1_1ByteBlock.html#afb4bedf5b59f060a9ce5d17478f1bd23", null ],
     [ "ByteBlock", "classthrill_1_1data_1_1ByteBlock.html#a0b2b205a39e0a63346029dc3078ed2e2", null ],

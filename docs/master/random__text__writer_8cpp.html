@@ -122,8 +122,9 @@ $(document).ready(function(){initNavTree('random__text__writer_8cpp.html','');})
 <div class="textblock"><code>#include &lt;<a class="el" href="random__text__writer_8hpp_source.html">examples/word_count/random_text_writer.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="generate_8hpp_source.html">thrill/api/generate.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="write__lines_8hpp_source.html">thrill/api/write_lines.hpp</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="cmdline__parser_8hpp_source.html">thrill/common/cmdline_parser.hpp</a>&gt;</code><br/>
+<code>#include &lt;tlx/cmdline_parser.hpp&gt;</code><br/>
 <code>#include &lt;fstream&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
 <code>#include &lt;random&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;vector&gt;</code><br/>
@@ -132,7 +133,7 @@ $(document).ready(function(){initNavTree('random__text__writer_8cpp.html','');})
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="random__text__writer_8cpp__incl.svg" width="9682" height="1888"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="random__text__writer_8cpp__incl.svg" width="9344" height="1774"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -193,9 +194,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00104">104</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00105">105</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
 
-<p>References <a class="el" href="cmdline__parser_8cpp_source.html#l00465">CmdlineParser::AddFlag()</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l00656">CmdlineParser::AddParamBytes()</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l00534">CmdlineParser::AddString()</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l00485">CmdlineParser::AddUInt()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00028">max_words_key</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00029">max_words_value</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00028">min_words_key</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00029">min_words_value</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00068">Parallel()</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l01022">CmdlineParser::PrintResult()</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l00859">CmdlineParser::Process()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00036">range_words_key</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00036">range_words_value</a>, <a class="el" href="context_8cpp_source.html#l00796">thrill::api::Run()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00031">seed</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00038">Sequential()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00034">tab_separator</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00033">totalbytes</a>.</p>
+<p>References <a class="el" href="random__text__writer_8cpp_source.html#l00029">max_words_key</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00030">max_words_value</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00029">min_words_key</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00030">min_words_value</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00069">Parallel()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00037">range_words_key</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00037">range_words_value</a>, <a class="el" href="context_8cpp_source.html#l00801">thrill::api::Run()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00032">seed</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00039">Sequential()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00035">tab_separator</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00034">totalbytes</a>.</p>
 
 </div>
 </div>
@@ -231,11 +232,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00068">68</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00069">69</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
 
-<p>References <a class="el" href="generate_8hpp_source.html#l00085">thrill::api::Generate()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00028">min_words_key</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00029">min_words_value</a>, <a class="el" href="context_8hpp_source.html#l00245">Context::my_rank()</a>, <a class="el" href="context_8hpp_source.html#l00253">Context::num_workers()</a>, <a class="el" href="random__text__writer_8hpp_source.html#l00229">examples::word_count::RandomTextWriterGenerate()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00036">range_words_key</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00036">range_words_value</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00031">seed</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00034">tab_separator</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00033">totalbytes</a>.</p>
+<p>References <a class="el" href="generate_8hpp_source.html#l00085">thrill::api::Generate()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00029">min_words_key</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00030">min_words_value</a>, <a class="el" href="context_8hpp_source.html#l00245">Context::my_rank()</a>, <a class="el" href="context_8hpp_source.html#l00253">Context::num_workers()</a>, <a class="el" href="random__text__writer_8hpp_source.html#l00229">examples::word_count::RandomTextWriterGenerate()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00037">range_words_key</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00037">range_words_value</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00032">seed</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00035">tab_separator</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00034">totalbytes</a>.</p>
 
-<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00104">main()</a>.</p>
+<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00105">main()</a>.</p>
 
 </div>
 </div>
@@ -261,11 +262,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00038">38</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00039">39</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
 
-<p>References <a class="el" href="random__text__writer_8cpp_source.html#l00028">min_words_key</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00029">min_words_value</a>, <a class="el" href="random__text__writer_8hpp_source.html#l00229">examples::word_count::RandomTextWriterGenerate()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00036">range_words_key</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00036">range_words_value</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00031">seed</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00034">tab_separator</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00033">totalbytes</a>.</p>
+<p>References <a class="el" href="random__text__writer_8cpp_source.html#l00029">min_words_key</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00030">min_words_value</a>, <a class="el" href="random__text__writer_8hpp_source.html#l00229">examples::word_count::RandomTextWriterGenerate()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00037">range_words_key</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00037">range_words_value</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00032">seed</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00035">tab_separator</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00034">totalbytes</a>.</p>
 
-<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00104">main()</a>.</p>
+<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00105">main()</a>.</p>
 
 </div>
 </div>
@@ -280,9 +281,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00028">28</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00029">29</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00104">main()</a>.</p>
+<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00105">main()</a>.</p>
 
 </div>
 </div>
@@ -296,9 +297,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00029">29</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00030">30</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00104">main()</a>.</p>
+<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00105">main()</a>.</p>
 
 </div>
 </div>
@@ -312,9 +313,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00028">28</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00029">29</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00104">main()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00068">Parallel()</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00038">Sequential()</a>.</p>
+<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00105">main()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00069">Parallel()</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00039">Sequential()</a>.</p>
 
 </div>
 </div>
@@ -328,9 +329,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00029">29</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00030">30</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00104">main()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00068">Parallel()</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00038">Sequential()</a>.</p>
+<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00105">main()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00069">Parallel()</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00039">Sequential()</a>.</p>
 
 </div>
 </div>
@@ -344,9 +345,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00036">36</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00037">37</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00104">main()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00068">Parallel()</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00038">Sequential()</a>.</p>
+<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00105">main()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00069">Parallel()</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00039">Sequential()</a>.</p>
 
 </div>
 </div>
@@ -360,9 +361,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00036">36</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00037">37</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00104">main()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00068">Parallel()</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00038">Sequential()</a>.</p>
+<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00105">main()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00069">Parallel()</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00039">Sequential()</a>.</p>
 
 </div>
 </div>
@@ -376,9 +377,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00031">31</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00032">32</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00104">main()</a>, <a class="el" href="triangles_8hpp_source.html#l00029">hash&lt; Edge &gt;::operator()()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00068">Parallel()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00038">Sequential()</a>, and <a class="el" href="hash_8hpp_source.html#l00222">TabulationHashing&lt; size, hash_t, prng_t &gt;::TabulationHashing()</a>.</p>
+<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00105">main()</a>, <a class="el" href="triangles_8hpp_source.html#l00029">hash&lt; Edge &gt;::operator()()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00069">Parallel()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00039">Sequential()</a>, and <a class="el" href="hash_8hpp_source.html#l00222">TabulationHashing&lt; size, hash_t, prng_t &gt;::TabulationHashing()</a>.</p>
 
 </div>
 </div>
@@ -392,9 +393,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00034">34</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00035">35</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00104">main()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00068">Parallel()</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00038">Sequential()</a>.</p>
+<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00105">main()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00069">Parallel()</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00039">Sequential()</a>.</p>
 
 </div>
 </div>
@@ -408,9 +409,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00033">33</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="random__text__writer_8cpp_source.html#l00034">34</a> of file <a class="el" href="random__text__writer_8cpp_source.html">random_text_writer.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00104">main()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00068">Parallel()</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00038">Sequential()</a>.</p>
+<p>Referenced by <a class="el" href="random__text__writer_8cpp_source.html#l00105">main()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00069">Parallel()</a>, and <a class="el" href="random__text__writer_8cpp_source.html#l00039">Sequential()</a>.</p>
 
 </div>
 </div>
@@ -420,7 +421,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_6a66f5e7e6dbcec557024422dd288192.html">word_count</a></li><li class="navelem"><a class="el" href="random__text__writer_8cpp.html">random_text_writer.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:04 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:34 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

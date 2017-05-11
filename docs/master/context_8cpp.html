@@ -122,7 +122,6 @@ $(document).ready(function(){initNavTree('context_8cpp.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="context_8hpp_source.html">thrill/api/context.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="dia__base_8hpp_source.html">thrill/api/dia_base.hpp</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="cmdline__parser_8hpp_source.html">thrill/common/cmdline_parser.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="linux__proc__stats_8hpp_source.html">thrill/common/linux_proc_stats.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="logger_8hpp_source.html">thrill/common/logger.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="math_8hpp_source.html">thrill/common/math.hpp</a>&gt;</code><br/>
@@ -132,9 +131,14 @@ $(document).ready(function(){initNavTree('context_8cpp.html','');});
 <code>#include &lt;<a class="el" href="system__exception_8hpp_source.html">thrill/common/system_exception.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="iostats_8hpp_source.html">thrill/io/iostats.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="file__io_8hpp_source.html">thrill/vfs/file_io.hpp</a>&gt;</code><br/>
+<code>#include &lt;tlx/math/abs_diff.hpp&gt;</code><br/>
+<code>#include &lt;tlx/string/format_si_iec_units.hpp&gt;</code><br/>
+<code>#include &lt;tlx/string/parse_si_iec_units.hpp&gt;</code><br/>
+<code>#include &lt;tlx/string/split.hpp&gt;</code><br/>
 <code>#include &lt;<a class="el" href="mock_2group_8hpp_source.html">thrill/net/mock/group.hpp</a>&gt;</code><br/>
 <code>#include &lt;algorithm&gt;</code><br/>
 <code>#include &lt;csignal&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
 <code>#include &lt;memory&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;thread&gt;</code><br/>
@@ -146,7 +150,7 @@ $(document).ready(function(){initNavTree('context_8cpp.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="context_8cpp__incl.svg" width="10003" height="1619"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="context_8cpp__incl.svg" width="9571" height="1368"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -171,14 +175,12 @@ Functions</h2></td></tr>
 &lt; std::unique_ptr&lt; HostContext &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1api.html#a879f5a32e17fada2ee41c22bffbdae18">ConstructLoopbackHostContexts</a> (const MemoryConfig &amp;mem_config, size_t num_hosts, size_t workers_per_host)</td></tr>
 <tr class="memdesc:a879f5a32e17fada2ee41c22bffbdae18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic network constructor for net backends supporting loopback tests.  <a href="#a879f5a32e17fada2ee41c22bffbdae18">More...</a><br/></td></tr>
 <tr class="separator:a879f5a32e17fada2ee41c22bffbdae18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0424a13dffa534a0ae8b0c68633334a8"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:a0424a13dffa534a0ae8b0c68633334a8"><td class="memTemplItemLeft" align="right" valign="top">common::CountingPtr<br class="typebreak"/>
-&lt; data::CatStream &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1api.html#a0424a13dffa534a0ae8b0c68633334a8">Context::GetNewStream&lt; data::CatStream &gt;</a> (size_t dia_id)</td></tr>
-<tr class="separator:a0424a13dffa534a0ae8b0c68633334a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb87b224131a1c6a455dd988bee8df06"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:afb87b224131a1c6a455dd988bee8df06"><td class="memTemplItemLeft" align="right" valign="top">common::CountingPtr<br class="typebreak"/>
-&lt; data::MixStream &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1api.html#afb87b224131a1c6a455dd988bee8df06">Context::GetNewStream&lt; data::MixStream &gt;</a> (size_t dia_id)</td></tr>
-<tr class="separator:afb87b224131a1c6a455dd988bee8df06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd81a0be76257f1e6b53a9f2462e543d"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:abd81a0be76257f1e6b53a9f2462e543d"><td class="memTemplItemLeft" align="right" valign="top">tlx::CountingPtr&lt; data::CatStream &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1api.html#abd81a0be76257f1e6b53a9f2462e543d">Context::GetNewStream&lt; data::CatStream &gt;</a> (size_t dia_id)</td></tr>
+<tr class="separator:abd81a0be76257f1e6b53a9f2462e543d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda2983fcd6bfc661ccfeb0d105f6d9b"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:acda2983fcd6bfc661ccfeb0d105f6d9b"><td class="memTemplItemLeft" align="right" valign="top">tlx::CountingPtr&lt; data::MixStream &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1api.html#acda2983fcd6bfc661ccfeb0d105f6d9b">Context::GetNewStream&lt; data::MixStream &gt;</a> (size_t dia_id)</td></tr>
+<tr class="separator:acda2983fcd6bfc661ccfeb0d105f6d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cdb312b55891229178c2837ef378533"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1api.html#a3cdb312b55891229178c2837ef378533">Deinitialize</a> ()</td></tr>
 <tr class="separator:a3cdb312b55891229178c2837ef378533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b6d358b47e88a3d2aeb67c9182f12d8"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1api.html#a5b6d358b47e88a3d2aeb67c9182f12d8">DetectNetBackend</a> ()</td></tr>
@@ -228,7 +230,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="context_8cpp.html">context.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:04 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:34 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

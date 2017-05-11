@@ -5,5 +5,5 @@ var dc7_8cpp =
     [ "DC7Recursive", "dc7_8cpp.html#a0c485f437d1b8d7e87612c0ddc5e1b0d", null ],
     [ "IsDiffCover7", "dc7_8cpp.html#a8adbdff8dfb30f5c3b85c63a53db2216", null ],
     [ "fragment_comparator_params", "dc7_8cpp.html#a267bffb25e4b39041126f35e3d470847", null ],
-    [ "THRILL_ATTRIBUTE_PACKED", "dc7_8cpp.html#afa859ce6e9f9b669ac8f08d298187e29", null ]
+    [ "TLX_ATTRIBUTE_PACKED", "dc7_8cpp.html#abc013bc38bfa1a5de6b896e8475d53cb", null ]
 ];

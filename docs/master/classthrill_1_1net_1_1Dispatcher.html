@@ -175,33 +175,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aaadc0875674af79e302b1aad7bd5cc1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-copyable: delete assignment operator  <a href="#aaadc0875674af79e302b1aad7bd5cc1f">More...</a><br/></td></tr>
 <tr class="separator:aaadc0875674af79e302b1aad7bd5cc1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Timeout Callbacks</div></td></tr>
-<tr class="memitem:a546500057260f33a40f41c8af033d063"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a546500057260f33a40f41c8af033d063">AddTimer</a> (const std::chrono::milliseconds &amp;timeout, const <a class="el" href="group__net__layer.html#gaf170ee9902ffc8ecca2181e7ce2dda1a">TimerCallback</a> &amp;cb)</td></tr>
+<tr class="memitem:a546500057260f33a40f41c8af033d063"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a546500057260f33a40f41c8af033d063">AddTimer</a> (const std::chrono::milliseconds &amp;timeout, const <a class="el" href="group__net__layer.html#ga1fa68e048e9a6416596a5122fb10bd3f">TimerCallback</a> &amp;cb)</td></tr>
 <tr class="memdesc:a546500057260f33a40f41c8af033d063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a relative timeout callback.  <a href="#a546500057260f33a40f41c8af033d063">More...</a><br/></td></tr>
 <tr class="separator:a546500057260f33a40f41c8af033d063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Connection Callbacks</div></td></tr>
-<tr class="memitem:a99f1e0312db37812afcceb605745d88b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a99f1e0312db37812afcceb605745d88b">AddRead</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, const <a class="el" href="group__net__layer.html#ga09aa7c2ba8de117585fdb3214aa9ca0e">AsyncCallback</a> &amp;read_cb)=0</td></tr>
+<tr class="memitem:a99f1e0312db37812afcceb605745d88b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a99f1e0312db37812afcceb605745d88b">AddRead</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, const <a class="el" href="group__net__layer.html#ga34ceb21e2ae70c580b58ed72632c18a8">AsyncCallback</a> &amp;read_cb)=0</td></tr>
 <tr class="memdesc:a99f1e0312db37812afcceb605745d88b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a buffered read callback and a default exception callback.  <a href="#a99f1e0312db37812afcceb605745d88b">More...</a><br/></td></tr>
 <tr class="separator:a99f1e0312db37812afcceb605745d88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac5adaf99f608f55bbec8deff08ea886"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#aac5adaf99f608f55bbec8deff08ea886">AddWrite</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, const <a class="el" href="group__net__layer.html#ga09aa7c2ba8de117585fdb3214aa9ca0e">AsyncCallback</a> &amp;write_cb)=0</td></tr>
+<tr class="memitem:aac5adaf99f608f55bbec8deff08ea886"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#aac5adaf99f608f55bbec8deff08ea886">AddWrite</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, const <a class="el" href="group__net__layer.html#ga34ceb21e2ae70c580b58ed72632c18a8">AsyncCallback</a> &amp;write_cb)=0</td></tr>
 <tr class="memdesc:aac5adaf99f608f55bbec8deff08ea886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a buffered write callback and a default exception callback.  <a href="#aac5adaf99f608f55bbec8deff08ea886">More...</a><br/></td></tr>
 <tr class="separator:aac5adaf99f608f55bbec8deff08ea886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dfc5bdbc6082a2eeeee09fa0a25f489"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a6dfc5bdbc6082a2eeeee09fa0a25f489">Cancel</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c)=0</td></tr>
 <tr class="memdesc:a6dfc5bdbc6082a2eeeee09fa0a25f489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel all callbacks on a given connection.  <a href="#a6dfc5bdbc6082a2eeeee09fa0a25f489">More...</a><br/></td></tr>
 <tr class="separator:a6dfc5bdbc6082a2eeeee09fa0a25f489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Asynchronous Data Reader/Writer Callbacks</div></td></tr>
-<tr class="memitem:a070b0e5180eb0c205f63b6322446f9f1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a070b0e5180eb0c205f63b6322446f9f1">AsyncRead</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, size_t size, const <a class="el" href="group__net__layer.html#ga631b50ca80a90bad50d09e1ede9cefef">AsyncReadBufferCallback</a> &amp;done_cb)</td></tr>
+<tr class="memitem:a070b0e5180eb0c205f63b6322446f9f1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a070b0e5180eb0c205f63b6322446f9f1">AsyncRead</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, size_t size, const <a class="el" href="group__net__layer.html#gae630be4bcb9ca8ce29c37c7c201ec131">AsyncReadBufferCallback</a> &amp;done_cb)</td></tr>
 <tr class="memdesc:a070b0e5180eb0c205f63b6322446f9f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">asynchronously read n bytes and deliver them to the callback  <a href="#a070b0e5180eb0c205f63b6322446f9f1">More...</a><br/></td></tr>
 <tr class="separator:a070b0e5180eb0c205f63b6322446f9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a074fd8f6d8b0525dfe6265730095d8f0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a074fd8f6d8b0525dfe6265730095d8f0">AsyncRead</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, size_t size, <a class="el" href="classthrill_1_1data_1_1PinnedByteBlockPtr.html">data::PinnedByteBlockPtr</a> &amp;&amp;block, const <a class="el" href="group__net__layer.html#gaf8e1ebcf27af592b5187cd73913b6ae3">AsyncReadByteBlockCallback</a> &amp;done_cb)</td></tr>
+<tr class="memitem:a074fd8f6d8b0525dfe6265730095d8f0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a074fd8f6d8b0525dfe6265730095d8f0">AsyncRead</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, size_t size, <a class="el" href="classthrill_1_1data_1_1PinnedByteBlockPtr.html">data::PinnedByteBlockPtr</a> &amp;&amp;block, const <a class="el" href="group__net__layer.html#gad2343b2eb0250c6531e377a7c50d30c1">AsyncReadByteBlockCallback</a> &amp;done_cb)</td></tr>
 <tr class="memdesc:a074fd8f6d8b0525dfe6265730095d8f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">asynchronously read the full ByteBlock and deliver it to the callback  <a href="#a074fd8f6d8b0525dfe6265730095d8f0">More...</a><br/></td></tr>
 <tr class="separator:a074fd8f6d8b0525dfe6265730095d8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a095c9e3816693a104fc36a4702305aea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a095c9e3816693a104fc36a4702305aea">AsyncWrite</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, <a class="el" href="classthrill_1_1net_1_1Buffer.html">Buffer</a> &amp;&amp;buffer, const <a class="el" href="group__net__layer.html#ga12a6913949db205c4214d794e5e2009b">AsyncWriteCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#ga12a6913949db205c4214d794e5e2009b">AsyncWriteCallback</a>())</td></tr>
+<tr class="memitem:a095c9e3816693a104fc36a4702305aea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a095c9e3816693a104fc36a4702305aea">AsyncWrite</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, <a class="el" href="classthrill_1_1net_1_1Buffer.html">Buffer</a> &amp;&amp;buffer, const <a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a>())</td></tr>
 <tr class="separator:a095c9e3816693a104fc36a4702305aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9c817a04039b6ec09c4aa55818ff0c8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#aa9c817a04039b6ec09c4aa55818ff0c8">AsyncWrite</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, <a class="el" href="classthrill_1_1data_1_1PinnedBlock.html">data::PinnedBlock</a> &amp;&amp;block, const <a class="el" href="group__net__layer.html#ga12a6913949db205c4214d794e5e2009b">AsyncWriteCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#ga12a6913949db205c4214d794e5e2009b">AsyncWriteCallback</a>())</td></tr>
+<tr class="memitem:aa9c817a04039b6ec09c4aa55818ff0c8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#aa9c817a04039b6ec09c4aa55818ff0c8">AsyncWrite</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, <a class="el" href="classthrill_1_1data_1_1PinnedBlock.html">data::PinnedBlock</a> &amp;&amp;block, const <a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a>())</td></tr>
 <tr class="separator:aa9c817a04039b6ec09c4aa55818ff0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a853b595ec344509a5da31edd1e6f64fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a853b595ec344509a5da31edd1e6f64fa">AsyncWriteCopy</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, const void *buffer, size_t size, const <a class="el" href="group__net__layer.html#ga12a6913949db205c4214d794e5e2009b">AsyncWriteCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#ga12a6913949db205c4214d794e5e2009b">AsyncWriteCallback</a>())</td></tr>
+<tr class="memitem:a853b595ec344509a5da31edd1e6f64fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a853b595ec344509a5da31edd1e6f64fa">AsyncWriteCopy</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, const void *buffer, size_t size, const <a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a>())</td></tr>
 <tr class="separator:a853b595ec344509a5da31edd1e6f64fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecd3f1a184219a9df11c74f6473a4a6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#aecd3f1a184219a9df11c74f6473a4a6c">AsyncWriteCopy</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, const std::string &amp;str, const <a class="el" href="group__net__layer.html#ga12a6913949db205c4214d794e5e2009b">AsyncWriteCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#ga12a6913949db205c4214d794e5e2009b">AsyncWriteCallback</a>())</td></tr>
+<tr class="memitem:aecd3f1a184219a9df11c74f6473a4a6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#aecd3f1a184219a9df11c74f6473a4a6c">AsyncWriteCopy</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, const std::string &amp;str, const <a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a>())</td></tr>
 <tr class="separator:aecd3f1a184219a9df11c74f6473a4a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Dispatch</div></td></tr>
 <tr class="memitem:aa6a1f4b031a0fdda685d8423fb0c0d92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#aa6a1f4b031a0fdda685d8423fb0c0d92">Dispatch</a> ()</td></tr>
@@ -453,7 +453,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__net__layer.html#ga09aa7c2ba8de117585fdb3214aa9ca0e">AsyncCallback</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__net__layer.html#ga34ceb21e2ae70c580b58ed72632c18a8">AsyncCallback</a> &amp;&#160;</td>
           <td class="paramname"><em>read_cb</em>&#160;</td>
         </tr>
         <tr>
@@ -493,7 +493,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__net__layer.html#gaf170ee9902ffc8ecca2181e7ce2dda1a">TimerCallback</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__net__layer.html#ga1fa68e048e9a6416596a5122fb10bd3f">TimerCallback</a> &amp;&#160;</td>
           <td class="paramname"><em>cb</em>&#160;</td>
         </tr>
         <tr>
@@ -533,7 +533,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__net__layer.html#ga09aa7c2ba8de117585fdb3214aa9ca0e">AsyncCallback</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__net__layer.html#ga34ceb21e2ae70c580b58ed72632c18a8">AsyncCallback</a> &amp;&#160;</td>
           <td class="paramname"><em>write_cb</em>&#160;</td>
         </tr>
         <tr>
@@ -579,7 +579,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__net__layer.html#ga631b50ca80a90bad50d09e1ede9cefef">AsyncReadBufferCallback</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__net__layer.html#gae630be4bcb9ca8ce29c37c7c201ec131">AsyncReadBufferCallback</a> &amp;&#160;</td>
           <td class="paramname"><em>done_cb</em>&#160;</td>
         </tr>
         <tr>
@@ -633,7 +633,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__net__layer.html#gaf8e1ebcf27af592b5187cd73913b6ae3">AsyncReadByteBlockCallback</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__net__layer.html#gad2343b2eb0250c6531e377a7c50d30c1">AsyncReadByteBlockCallback</a> &amp;&#160;</td>
           <td class="paramname"><em>done_cb</em>&#160;</td>
         </tr>
         <tr>
@@ -681,8 +681,8 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__net__layer.html#ga12a6913949db205c4214d794e5e2009b">AsyncWriteCallback</a> &amp;&#160;</td>
-          <td class="paramname"><em>done_cb</em> = <code><a class="el" href="group__net__layer.html#ga12a6913949db205c4214d794e5e2009b">AsyncWriteCallback</a>()</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>done_cb</em> = <code><a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -730,8 +730,8 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__net__layer.html#ga12a6913949db205c4214d794e5e2009b">AsyncWriteCallback</a> &amp;&#160;</td>
-          <td class="paramname"><em>done_cb</em> = <code><a class="el" href="group__net__layer.html#ga12a6913949db205c4214d794e5e2009b">AsyncWriteCallback</a>()</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>done_cb</em> = <code><a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -783,8 +783,8 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__net__layer.html#ga12a6913949db205c4214d794e5e2009b">AsyncWriteCallback</a> &amp;&#160;</td>
-          <td class="paramname"><em>done_cb</em> = <code><a class="el" href="group__net__layer.html#ga12a6913949db205c4214d794e5e2009b">AsyncWriteCallback</a>()</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>done_cb</em> = <code><a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -830,8 +830,8 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="group__net__layer.html#ga12a6913949db205c4214d794e5e2009b">AsyncWriteCallback</a> &amp;&#160;</td>
-          <td class="paramname"><em>done_cb</em> = <code><a class="el" href="group__net__layer.html#ga12a6913949db205c4214d794e5e2009b">AsyncWriteCallback</a>()</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>done_cb</em> = <code><a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1258,7 +1258,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00765">765</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="select__dispatcher_8hpp_source.html#l00086">SelectDispatcher::CheckSize()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00046">Dispatcher::Dispatcher()</a>, and <a class="el" href="mock_2group_8cpp_source.html#l00268">Dispatcher::GetWatch()</a>.</p>
+<p>Referenced by <a class="el" href="select__dispatcher_8hpp_source.html#l00086">SelectDispatcher::CheckSize()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00046">Dispatcher::Dispatcher()</a>, and <a class="el" href="mock_2group_8cpp_source.html#l00270">Dispatcher::GetWatch()</a>.</p>
 
 </div>
 </div>
@@ -1322,7 +1322,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net.html">net</a></li><li class="navelem"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html">Dispatcher</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:08 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:37 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

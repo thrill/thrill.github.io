@@ -128,7 +128,7 @@ var group__io__layer__fileimpl =
       [ "io_type", "exceptionthrill_1_1io_1_1WincallFile.html#abcbd386bf4679abe1280f1a272f1ed73", null ],
       [ "serve", "exceptionthrill_1_1io_1_1WincallFile.html#a6367ad6c75ca8bd48249a9c8489c8c21", null ]
     ] ],
-    [ "FileBasePtr", "group__io__layer__fileimpl.html#ga82db656757f2f0f6e0289d0113c3712e", null ],
+    [ "FileBasePtr", "group__io__layer__fileimpl.html#ga8ff1b764dd7a393ec32a7d4d1443300e", null ],
     [ "is_managed", "group__io__layer__fileimpl.html#gacbad5cbcef5d05c790fa55587e83cf9c", null ],
     [ "is_managed", "group__io__layer__fileimpl.html#gacbad5cbcef5d05c790fa55587e83cf9c", null ]
 ];

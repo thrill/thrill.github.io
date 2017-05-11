@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('classthrill_1_1core_1_1DuplicateDetect
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Duplicate detection to identify all elements occuring only on one worker. </p>
-<p>This information can be used to locally reduce uniquely-occuring elements. Therefore this saves communication volume in operations such as api::Reduce() or <a class="el" href="namespacethrill_1_1common.html#a43723870e943fa0239902eef9caf4310" title="Join a sequence of strings by some glue string between each pair from the sequence.">api::Join()</a>.</p>
+<p>This information can be used to locally reduce uniquely-occuring elements. Therefore this saves communication volume in operations such as api::Reduce() or api::Join().</p>
 <p>Internally, this duplicate detection uses a golomb encoded distributed single shot bloom filter to find duplicates and non-duplicates with as low communication volume as possible. Due to the bloom filter's inherent properties, this has false duplicates but no false non-duplicates.</p>
 <p>Should only be used when a large amount of uniquely-occuring elements are expected. </p>
 
@@ -153,10 +153,10 @@ Private Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ace42b93b36e002e64751abea9d4fe36e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1DuplicateDetection.html#ace42b93b36e002e64751abea9d4fe36e">ReadEncodedHashesToVector</a> (const <a class="el" href="group__data__layer.html#ga4f54fb5157eeb6ac882e04d7cb1a71f6">data::CatStreamPtr</a> &amp;stream_pointer, std::vector&lt; bool &gt; &amp;non_duplicates, size_t golomb_param)</td></tr>
+<tr class="memitem:ace42b93b36e002e64751abea9d4fe36e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1DuplicateDetection.html#ace42b93b36e002e64751abea9d4fe36e">ReadEncodedHashesToVector</a> (const <a class="el" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a> &amp;stream_pointer, std::vector&lt; bool &gt; &amp;non_duplicates, size_t golomb_param)</td></tr>
 <tr class="memdesc:ace42b93b36e002e64751abea9d4fe36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a golomb encoded bitset from a data stream and returns it's contents in form of a vector of hashes.  <a href="#ace42b93b36e002e64751abea9d4fe36e">More...</a><br/></td></tr>
 <tr class="separator:ace42b93b36e002e64751abea9d4fe36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a718ffba8857ab1c5c6f070eee475309b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1DuplicateDetection.html#a718ffba8857ab1c5c6f070eee475309b">WriteEncodedHashes</a> (const <a class="el" href="group__data__layer.html#ga4f54fb5157eeb6ac882e04d7cb1a71f6">data::CatStreamPtr</a> &amp;stream_pointer, const std::vector&lt; size_t &gt; &amp;hashes, size_t golomb_param, size_t num_workers, size_t max_hash)</td></tr>
+<tr class="memitem:a718ffba8857ab1c5c6f070eee475309b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1DuplicateDetection.html#a718ffba8857ab1c5c6f070eee475309b">WriteEncodedHashes</a> (const <a class="el" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a> &amp;stream_pointer, const std::vector&lt; size_t &gt; &amp;hashes, size_t golomb_param, size_t num_workers, size_t max_hash)</td></tr>
 <tr class="memdesc:a718ffba8857ab1c5c6f070eee475309b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends all hashes in the range [max_hash / num_workers * p, max_hash / num_workers * (p + 1)) to worker p.  <a href="#a718ffba8857ab1c5c6f070eee475309b">More...</a><br/></td></tr>
 <tr class="separator:a718ffba8857ab1c5c6f070eee475309b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -330,7 +330,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void ReadEncodedHashesToVector </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__data__layer.html#ga4f54fb5157eeb6ac882e04d7cb1a71f6">data::CatStreamPtr</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a> &amp;&#160;</td>
           <td class="paramname"><em>stream_pointer</em>, </td>
         </tr>
         <tr>
@@ -386,7 +386,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void WriteEncodedHashes </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__data__layer.html#ga4f54fb5157eeb6ac882e04d7cb1a71f6">data::CatStreamPtr</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a> &amp;&#160;</td>
           <td class="paramname"><em>stream_pointer</em>, </td>
         </tr>
         <tr>
@@ -441,7 +441,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="duplicate__detection_8hpp_source.html#l00074">74</a> of file <a class="el" href="duplicate__detection_8hpp_source.html">duplicate_detection.hpp</a>.</p>
 
-<p>References <a class="el" href="math_8hpp_source.html#l00171">thrill::common::CalculateLocalRange()</a>, <a class="el" href="math_8hpp_source.html#l00144">Range::end</a>, and <a class="el" href="delta__stream_8hpp_source.html#l00034">DeltaStreamWriter&lt; StreamWriter, Type, offset_ &gt;::Put()</a>.</p>
+<p>References <a class="el" href="math_8hpp_source.html#l00081">thrill::common::CalculateLocalRange()</a>, <a class="el" href="math_8hpp_source.html#l00054">Range::end</a>, and <a class="el" href="delta__stream_8hpp_source.html#l00034">DeltaStreamWriter&lt; StreamWriter, Type, offset_ &gt;::Put()</a>.</p>
 
 <p>Referenced by <a class="el" href="duplicate__detection_8hpp_source.html#l00151">DuplicateDetection::FindNonDuplicates()</a>.</p>
 
@@ -479,7 +479,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1core.html">core</a></li><li class="navelem"><a class="el" href="classthrill_1_1core_1_1DuplicateDetection.html">DuplicateDetection</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:07 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:36 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

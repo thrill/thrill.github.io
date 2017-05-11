@@ -121,9 +121,7 @@ $(document).ready(function(){initNavTree('block__pool_8cpp.html','');});
 <div class="title">block_pool.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="die_8hpp_source.html">thrill/common/die.hpp</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="logger_8hpp_source.html">thrill/common/logger.hpp</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="lru__cache_8hpp_source.html">thrill/common/lru_cache.hpp</a>&gt;</code><br/>
+<div class="textblock"><code>#include &lt;<a class="el" href="logger_8hpp_source.html">thrill/common/logger.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="math_8hpp_source.html">thrill/common/math.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="block_8hpp_source.html">thrill/data/block.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="block__pool_8hpp_source.html">thrill/data/block_pool.hpp</a>&gt;</code><br/>
@@ -131,6 +129,10 @@ $(document).ready(function(){initNavTree('block__pool_8cpp.html','');});
 <code>#include &lt;<a class="el" href="iostats_8hpp_source.html">thrill/io/iostats.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="aligned__allocator_8hpp_source.html">thrill/mem/aligned_allocator.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="pool_8hpp_source.html">thrill/mem/pool.hpp</a>&gt;</code><br/>
+<code>#include &lt;tlx/die.hpp&gt;</code><br/>
+<code>#include &lt;tlx/lru_cache.hpp&gt;</code><br/>
+<code>#include &lt;tlx/math/is_power_of_two.hpp&gt;</code><br/>
+<code>#include &lt;tlx/string/join_generic.hpp&gt;</code><br/>
 <code>#include &lt;algorithm&gt;</code><br/>
 <code>#include &lt;functional&gt;</code><br/>
 <code>#include &lt;limits&gt;</code><br/>
@@ -144,7 +146,7 @@ $(document).ready(function(){initNavTree('block__pool_8cpp.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="block__pool_8cpp__incl.svg" width="5994" height="984"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="block__pool_8cpp__incl.svg" width="5923" height="907"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -159,12 +161,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ad61fe528b5bde19a50e9d1adfb3e0eb3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1data.html#ad61fe528b5bde19a50e9d1adfb3e0eb3">ReadingMap</a> = std::unordered_map&lt; ByteBlock *, PinRequestPtr, std::hash&lt; ByteBlock * &gt;, std::equal_to&lt; ByteBlock * &gt;, mem::GPoolAllocator&lt; std::pair&lt; ByteBlock *const, PinRequestPtr &gt; &gt; &gt;</td></tr>
-<tr class="memdesc:ad61fe528b5bde19a50e9d1adfb3e0eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of set of ByteBlocks currently begin read from EM.  <a href="#ad61fe528b5bde19a50e9d1adfb3e0eb3">More...</a><br/></td></tr>
-<tr class="separator:ad61fe528b5bde19a50e9d1adfb3e0eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb1b93a0783a0194ba9133caab297161"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1data.html#afb1b93a0783a0194ba9133caab297161">WritingMap</a> = std::unordered_map&lt; ByteBlock *, io::RequestPtr, std::hash&lt; ByteBlock * &gt;, std::equal_to&lt; ByteBlock * &gt;, mem::GPoolAllocator&lt; std::pair&lt; ByteBlock *const, io::RequestPtr &gt; &gt; &gt;</td></tr>
-<tr class="memdesc:afb1b93a0783a0194ba9133caab297161"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of set of ByteBlocks currently begin written to EM.  <a href="#afb1b93a0783a0194ba9133caab297161">More...</a><br/></td></tr>
-<tr class="separator:afb1b93a0783a0194ba9133caab297161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad887a784727b61be20dad5f45c91df8d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1data.html#ad887a784727b61be20dad5f45c91df8d">ReadingMap</a> = std::unordered_map&lt; ByteBlock *, PinRequestPtr, std::hash&lt; ByteBlock * &gt;, std::equal_to&lt;&gt;, mem::GPoolAllocator&lt; std::pair&lt; ByteBlock *const, PinRequestPtr &gt; &gt; &gt;</td></tr>
+<tr class="memdesc:ad887a784727b61be20dad5f45c91df8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of set of ByteBlocks currently begin read from EM.  <a href="#ad887a784727b61be20dad5f45c91df8d">More...</a><br/></td></tr>
+<tr class="separator:ad887a784727b61be20dad5f45c91df8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84fa74f8acdf008fd2c6ec55860b7264"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1data.html#a84fa74f8acdf008fd2c6ec55860b7264">WritingMap</a> = std::unordered_map&lt; ByteBlock *, io::RequestPtr, std::hash&lt; ByteBlock * &gt;, std::equal_to&lt;&gt;, mem::GPoolAllocator&lt; std::pair&lt; ByteBlock *const, io::RequestPtr &gt; &gt; &gt;</td></tr>
+<tr class="memdesc:a84fa74f8acdf008fd2c6ec55860b7264"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of set of ByteBlocks currently begin written to EM.  <a href="#a84fa74f8acdf008fd2c6ec55860b7264">More...</a><br/></td></tr>
+<tr class="separator:a84fa74f8acdf008fd2c6ec55860b7264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -200,7 +202,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1b62fa212cebae5dc6aa23a01bf7093d.html">data</a></li><li class="navelem"><a class="el" href="block__pool_8cpp.html">block_pool.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:05 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:34 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

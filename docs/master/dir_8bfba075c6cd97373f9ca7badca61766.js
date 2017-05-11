@@ -6,7 +6,6 @@ var dir_8bfba075c6cd97373f9ca7badca61766 =
     [ "duplicate_detection.hpp", "duplicate__detection_8hpp.html", "duplicate__detection_8hpp" ],
     [ "golomb_bit_stream.hpp", "golomb__bit__stream_8hpp.html", "golomb__bit__stream_8hpp" ],
     [ "location_detection.hpp", "location__detection_8hpp.html", "location__detection_8hpp" ],
-    [ "losertree.hpp", "losertree_8hpp.html", "losertree_8hpp" ],
     [ "multiway_merge.hpp", "multiway__merge_8hpp.html", "multiway__merge_8hpp" ],
     [ "multiway_merge_attic.hpp", "multiway__merge__attic_8hpp.html", "multiway__merge__attic_8hpp" ],
     [ "reduce_bucket_hash_table.hpp", "reduce__bucket__hash__table_8hpp.html", "reduce__bucket__hash__table_8hpp" ],

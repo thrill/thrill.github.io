@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('aggregate_8hpp_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef THRILL_COMMON_AGGREGATE_HEADER</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="aggregate_8hpp.html#a94b7325ec50844a85958339cd5fa0d51">   13</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define THRILL_COMMON_AGGREGATE_HEADER</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="defines_8hpp.html">thrill/common/defines.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;tlx/define/likely.hpp&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('aggregate_8hpp_source.html','');});
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classthrill_1_1common_1_1Aggregate.html#a6b06728795e8f208c0755874665b3a51" title="number of values aggregated">count_</a>++;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classthrill_1_1common_1_1Aggregate.html#a9b6c971971d60d5363382c1246d3d7ca" title="minimum value">min_</a> = <a class="code" href="namespacethrill_1_1common.html#af06fbf706bdaafea92ddc5c8351e7177" title="template for constexpr min, because std::min is not good enough.">std::min</a>(<a class="code" href="classthrill_1_1common_1_1Aggregate.html#a9b6c971971d60d5363382c1246d3d7ca" title="minimum value">min_</a>, <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classthrill_1_1common_1_1Aggregate.html#aaf9bdab94087c129e5821251a47c4f2b" title="maximum value">max_</a> = <a class="code" href="namespacethrill_1_1common.html#ac55d70406741c4f4be46fbb8f4dfd832" title="template for constexpr max, because std::max is not good enough.">std::max</a>(<a class="code" href="classthrill_1_1common_1_1Aggregate.html#aaf9bdab94087c129e5821251a47c4f2b" title="maximum value">max_</a>, <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="defines_8hpp.html#abecc5d13bae37bbcb38d534a9e6a2db4">THRILL_UNLIKELY</a>(<a class="code" href="classthrill_1_1common_1_1Aggregate.html#a6b06728795e8f208c0755874665b3a51" title="number of values aggregated">count_</a> == 1)) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">if</span> (TLX_UNLIKELY(<a class="code" href="classthrill_1_1common_1_1Aggregate.html#a6b06728795e8f208c0755874665b3a51" title="number of values aggregated">count_</a> == 1)) {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="classthrill_1_1common_1_1Aggregate.html#a830b1880f9dc271a7b6415047d893783" title="mean of values">mean_</a> = <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">else</span> {</div>
@@ -299,7 +299,7 @@ $(document).ready(function(){initNavTree('aggregate_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="aggregate_8hpp.html">aggregate.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:03 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -17,7 +17,6 @@ var dir_fbeb8aa52172167bbf39dee15dce81ea =
     [ "distribute.hpp", "distribute_8hpp.html", "distribute_8hpp" ],
     [ "dop_node.hpp", "dop__node_8hpp.html", "dop__node_8hpp" ],
     [ "equal_to_dia.hpp", "equal__to__dia_8hpp.html", "equal__to__dia_8hpp" ],
-    [ "function_stack.hpp", "function__stack_8hpp.html", "function__stack_8hpp" ],
     [ "gather.hpp", "gather_8hpp.html", "gather_8hpp" ],
     [ "generate.hpp", "generate_8hpp.html", "generate_8hpp" ],
     [ "group_by_iterator.hpp", "group__by__iterator_8hpp.html", "group__by__iterator_8hpp" ],

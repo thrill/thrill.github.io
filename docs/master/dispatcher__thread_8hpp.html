@@ -122,19 +122,18 @@ $(document).ready(function(){initNavTree('dispatcher__thread_8hpp.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="concurrent__queue_8hpp_source.html">thrill/common/concurrent_queue.hpp</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="delegate_8hpp_source.html">thrill/common/delegate.hpp</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="thread__pool_8hpp_source.html">thrill/common/thread_pool.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="block_8hpp_source.html">thrill/data/block.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="allocator_8hpp_source.html">thrill/mem/allocator.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="buffer_8hpp_source.html">thrill/net/buffer.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="connection_8hpp_source.html">thrill/net/connection.hpp</a>&gt;</code><br/>
+<code>#include &lt;tlx/delegate.hpp&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for dispatcher_thread.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="dispatcher__thread_8hpp__incl.svg" width="5259" height="984"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="dispatcher__thread_8hpp__incl.svg" width="4592" height="907"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -168,9 +167,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga9ffb851b4921780eb437151c4141d83d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga9ffb851b4921780eb437151c4141d83d">AsyncReadCallback</a> = common::Delegate&lt; void(Connection &amp;c, Buffer &amp;&amp;buffer), mem::GPoolAllocator&lt; char &gt; &gt;</td></tr>
-<tr class="memdesc:ga9ffb851b4921780eb437151c4141d83d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature of async read callbacks.  <a href="group__net__layer.html#ga9ffb851b4921780eb437151c4141d83d">More...</a><br/></td></tr>
-<tr class="separator:ga9ffb851b4921780eb437151c4141d83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6dd6a130c9178669f504958ce7592366"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga6dd6a130c9178669f504958ce7592366">AsyncReadCallback</a> = tlx::delegate&lt; void(Connection &amp;c, Buffer &amp;&amp;buffer), mem::GPoolAllocator&lt; char &gt; &gt;</td></tr>
+<tr class="memdesc:ga6dd6a130c9178669f504958ce7592366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature of async read callbacks.  <a href="group__net__layer.html#ga6dd6a130c9178669f504958ce7592366">More...</a><br/></td></tr>
+<tr class="separator:ga6dd6a130c9178669f504958ce7592366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a7fa019401c157d4f5a76cba6f56cb433"></a>
@@ -193,7 +192,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_877fdf1e6de6dbbd26be6a4f8db0e6bf.html">net</a></li><li class="navelem"><a class="el" href="dispatcher__thread_8hpp.html">dispatcher_thread.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:05 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:35 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

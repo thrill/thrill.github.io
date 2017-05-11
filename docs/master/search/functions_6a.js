@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['join',['Join',['../namespacethrill_1_1common.html#a43723870e943fa0239902eef9caf4310',1,'thrill::common::Join(const Glue &amp;glue, Iterator first, Iterator last)'],['../namespacethrill_1_1common.html#a28648674aaccbb521c4338b158a54937',1,'thrill::common::Join(const Glue &amp;glue, const Container &amp;parts)']]],
   ['joinallelements',['JoinAllElements',['../exceptionthrill_1_1api_1_1JoinNode.html#a5a92c245e407e7d8bd3b33aa0caa9f5b',1,'thrill::api::JoinNode']]],
   ['joincapacity',['JoinCapacity',['../exceptionthrill_1_1api_1_1JoinNode.html#acbc936d1bbd2262b78894e0dc8b9f2d8',1,'thrill::api::JoinNode']]],
   ['joinnode',['JoinNode',['../exceptionthrill_1_1api_1_1JoinNode.html#acd96389b8b95616597c7749b9e9c6a10',1,'thrill::api::JoinNode']]],

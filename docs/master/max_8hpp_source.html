@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('max_8hpp_source.html','');});
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    assert(IsValid());</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">using</span> MaxNode = <a class="code" href="exceptionthrill_1_1api_1_1AllReduceNode.html">api::AllReduceNode&lt;ValueType, common::maximum&lt;ValueType&gt;</a> &gt;;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">auto</span> node = common::MakeCounting&lt;MaxNode&gt;(*<span class="keyword">this</span>, <span class="stringliteral">&quot;Max&quot;</span>, initial_value);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;MaxNode&gt;(*<span class="keyword">this</span>, <span class="stringliteral">&quot;Max&quot;</span>, initial_value);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    node-&gt;<a class="code" href="classthrill_1_1api_1_1DIABase.html#a6f08336c9541bf46985085eaa6f3e771">RunScope</a>();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> node-&gt;result();</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('max_8hpp_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    assert(IsValid());</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">using</span> MaxNode = <a class="code" href="exceptionthrill_1_1api_1_1AllReduceNode.html">api::AllReduceNode&lt;ValueType, common::maximum&lt;ValueType&gt;</a> &gt;;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">auto</span> node = common::MakeCounting&lt;MaxNode&gt;(*<span class="keyword">this</span>, <span class="stringliteral">&quot;Max&quot;</span>, initial_value);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;MaxNode&gt;(*<span class="keyword">this</span>, <span class="stringliteral">&quot;Max&quot;</span>, initial_value);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1Future.html" title="The return type class for all ActionFutures.">Future&lt;ValueType&gt;</a>(node);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('max_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="max_8hpp.html">max.hpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:03 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

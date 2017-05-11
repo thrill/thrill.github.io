@@ -143,9 +143,9 @@ $(document).ready(function(){initNavTree('suffix__sorting_8cpp_source.html','');
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="print_8hpp.html">thrill/api/print.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="read__binary_8hpp.html">thrill/api/read_binary.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="write__binary_8hpp.html">thrill/api/write_binary.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cmdline__parser_8hpp.html">thrill/common/cmdline_parser.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uint__types_8hpp.html">thrill/common/uint_types.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uint__types_8hpp.html">thrill/common/uint_types.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;tlx/cmdline_parser.hpp&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
@@ -292,7 +292,7 @@ $(document).ready(function(){initNavTree('suffix__sorting_8cpp_source.html','');
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="comment">// else if (sa_index_bytes_ == 5)</span></div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="comment">//     return StartInput&lt;common::uint40&gt;(input_dia, input_size);</span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <a class="code" href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e" title="Print via logger and abort().">die</a>(<span class="stringliteral">&quot;Unsupported index byte size: &quot;</span> &lt;&lt; sa_index_bytes_ &lt;&lt;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            die(<span class="stringliteral">&quot;Unsupported index byte size: &quot;</span> &lt;&lt; sa_index_bytes_ &lt;&lt;</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                <span class="stringliteral">&quot;. Byte size has to be 4,5,6 or 8&quot;</span>);</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
@@ -341,7 +341,7 @@ $(document).ready(function(){initNavTree('suffix__sorting_8cpp_source.html','');
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">if</span> (check_flag_) {</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <span class="keywordflow">if</span> (input_dia.context().my_rank() == 0)</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;checking suffix array...&quot;</span>;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(<a class="code" href="namespaceexamples_1_1suffix__sorting.html#ada83b17dd7aeeedb42de771a3c16fdcc">CheckSA</a>(input_dia.Keep(), suffix_array.Keep()));</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            die_unless(<a class="code" href="namespaceexamples_1_1suffix__sorting.html#ada83b17dd7aeeedb42de771a3c16fdcc">CheckSA</a>(input_dia.Keep(), suffix_array.Keep()));</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">if</span> (text_output_flag_) {</div>
@@ -388,72 +388,72 @@ $(document).ready(function(){initNavTree('suffix__sorting_8cpp_source.html','');
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keyword">using namespace </span>thrill; <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <a class="code" href="classthrill_1_1common_1_1CmdlineParser.html" title="Command line parser which automatically fills variables and prints nice usage messages.">common::CmdlineParser</a> cp;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    tlx::CmdlineParser cp;</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    cp.<a class="code" href="classthrill_1_1common_1_1CmdlineParser.html#a400afd5e9bd0a3fda1f979bbeb19c1b2" title="Set description of program, text will be wrapped.">SetDescription</a>(<span class="stringliteral">&quot;A collection of suffix array construction algorithms.&quot;</span>);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    cp.SetAuthor(<span class="stringliteral">&quot;Florian Kurpicz &lt;florian.kurpicz@tu-dortmund.de&gt;&quot;</span>);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    cp.SetAuthor(<span class="stringliteral">&quot;Timo Bingmann &lt;tb@panthema.net&gt;&quot;</span>);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    cp.set_description(<span class="stringliteral">&quot;A collection of suffix array construction algorithms.&quot;</span>);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    cp.set_author(<span class="stringliteral">&quot;Florian Kurpicz &lt;florian.kurpicz@tu-dortmund.de&gt;&quot;</span>);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    cp.set_author(<span class="stringliteral">&quot;Timo Bingmann &lt;tb@panthema.net&gt;&quot;</span>);</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    SuffixSorting ss;</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    cp.AddParamString(<span class="stringliteral">&quot;input&quot;</span>, ss.input_path_,</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                      <span class="stringliteral">&quot;Path to input file (or verbatim text).\n&quot;</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                      <span class="stringliteral">&quot;The special inputs &quot;</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                      <span class="stringliteral">&quot;&#39;random&#39;, &#39;random10&#39;, &#39;random2&#39; and &#39;unary&#39; &quot;</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                      <span class="stringliteral">&quot;generate such text on-the-fly.&quot;</span>);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    cp.add_param_string(<span class="stringliteral">&quot;input&quot;</span>, ss.input_path_,</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                        <span class="stringliteral">&quot;Path to input file (or verbatim text).\n&quot;</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                        <span class="stringliteral">&quot;The special inputs &quot;</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                        <span class="stringliteral">&quot;&#39;random&#39;, &#39;random10&#39;, &#39;random2&#39; and &#39;unary&#39; &quot;</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                        <span class="stringliteral">&quot;generate such text on-the-fly.&quot;</span>);</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    cp.AddString(<span class="charliteral">&#39;a&#39;</span>, <span class="stringliteral">&quot;algorithm&quot;</span>, ss.algorithm_,</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                 <span class="stringliteral">&quot;The algorithm which is used to construct the suffix array. &quot;</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                 <span class="stringliteral">&quot;Available are: &quot;</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                 <span class="stringliteral">&quot;[fl]ick (default), [de]mentiev, dementiev with [dis]carding, &quot;</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                 <span class="stringliteral">&quot;[q]uadrupling, [qd] quadrupling with carding, &quot;</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                 <span class="stringliteral">&quot;[dc3], and [dc7]&quot;</span>);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    cp.add_string(<span class="charliteral">&#39;a&#39;</span>, <span class="stringliteral">&quot;algorithm&quot;</span>, ss.algorithm_,</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                  <span class="stringliteral">&quot;The algorithm which is used to construct the suffix array. &quot;</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                  <span class="stringliteral">&quot;Available are: &quot;</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                  <span class="stringliteral">&quot;[fl]ick (default), [de]mentiev, dementiev with [dis]carding, &quot;</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                  <span class="stringliteral">&quot;[q]uadrupling, [qd] quadrupling with carding, &quot;</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                  <span class="stringliteral">&quot;[dc3], and [dc7]&quot;</span>);</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    cp.AddSizeT(<span class="charliteral">&#39;b&#39;</span>, <span class="stringliteral">&quot;bytes&quot;</span>, ss.sa_index_bytes_,</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                <span class="stringliteral">&quot;Suffix array bytes per index: &quot;</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                <span class="stringliteral">&quot;4 (32-bit) (default), 5 (40-bit), 6 (48-bit), 8 (64-bit)&quot;</span>);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    cp.add_size_t(<span class="charliteral">&#39;b&#39;</span>, <span class="stringliteral">&quot;bytes&quot;</span>, ss.sa_index_bytes_,</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                  <span class="stringliteral">&quot;Suffix array bytes per index: &quot;</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                  <span class="stringliteral">&quot;4 (32-bit) (default), 5 (40-bit), 6 (48-bit), 8 (64-bit)&quot;</span>);</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    cp.AddString(<span class="charliteral">&#39;B&#39;</span>, <span class="stringliteral">&quot;bwt&quot;</span>, ss.output_bwt_,</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                 <span class="stringliteral">&quot;Compute the Burrows–Wheeler transform in addition to the &quot;</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                 <span class="stringliteral">&quot;suffix array, and write to file.&quot;</span>);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    cp.add_string(<span class="charliteral">&#39;B&#39;</span>, <span class="stringliteral">&quot;bwt&quot;</span>, ss.output_bwt_,</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                  <span class="stringliteral">&quot;Compute the Burrows–Wheeler transform in addition to the &quot;</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                  <span class="stringliteral">&quot;suffix array, and write to file.&quot;</span>);</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    cp.AddFlag(<span class="charliteral">&#39;c&#39;</span>, <span class="stringliteral">&quot;check&quot;</span>, ss.check_flag_,</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;               <span class="stringliteral">&quot;Check suffix array for correctness.&quot;</span>);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    cp.add_bool(<span class="charliteral">&#39;c&#39;</span>, <span class="stringliteral">&quot;check&quot;</span>, ss.check_flag_,</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                <span class="stringliteral">&quot;Check suffix array for correctness.&quot;</span>);</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    cp.AddFlag(<span class="charliteral">&#39;d&#39;</span>, <span class="stringliteral">&quot;debug&quot;</span>, <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a363eaffff6eaa8040e98d838b3c0b585">examples::suffix_sorting::debug_print</a>,</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;               <span class="stringliteral">&quot;Print debug info.&quot;</span>);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    cp.add_bool(<span class="charliteral">&#39;d&#39;</span>, <span class="stringliteral">&quot;debug&quot;</span>, <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a363eaffff6eaa8040e98d838b3c0b585">examples::suffix_sorting::debug_print</a>,</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                <span class="stringliteral">&quot;Print debug info.&quot;</span>);</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    cp.AddString(<span class="charliteral">&#39;i&#39;</span>, <span class="stringliteral">&quot;input-copy&quot;</span>, ss.input_copy_path_,</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                 <span class="stringliteral">&quot;Write input text to given path.&quot;</span>);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    cp.add_string(<span class="charliteral">&#39;i&#39;</span>, <span class="stringliteral">&quot;input-copy&quot;</span>, ss.input_copy_path_,</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                  <span class="stringliteral">&quot;Write input text to given path.&quot;</span>);</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    cp.AddString(<span class="charliteral">&#39;o&#39;</span>, <span class="stringliteral">&quot;output&quot;</span>, ss.output_path_,</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                 <span class="stringliteral">&quot;Output suffix array [and if constructed Burrows–Wheeler &quot;</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                 <span class="stringliteral">&quot;transform] to given path.&quot;</span>);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    cp.add_string(<span class="charliteral">&#39;o&#39;</span>, <span class="stringliteral">&quot;output&quot;</span>, ss.output_path_,</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                  <span class="stringliteral">&quot;Output suffix array [and if constructed Burrows–Wheeler &quot;</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                  <span class="stringliteral">&quot;transform] to given path.&quot;</span>);</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    cp.AddBytes(<span class="charliteral">&#39;s&#39;</span>, <span class="stringliteral">&quot;size&quot;</span>, ss.sizelimit_,</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                <span class="stringliteral">&quot;Cut input text to given size, e.g. 2 GiB.&quot;</span>);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    cp.add_bytes(<span class="charliteral">&#39;s&#39;</span>, <span class="stringliteral">&quot;size&quot;</span>, ss.sizelimit_,</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                 <span class="stringliteral">&quot;Cut input text to given size, e.g. 2 GiB.&quot;</span>);</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    cp.AddFlag(<span class="charliteral">&#39;t&#39;</span>, <span class="stringliteral">&quot;text&quot;</span>, ss.text_output_flag_,</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;               <span class="stringliteral">&quot;Print out suffix array [and if constructed Burrows-Wheeler &quot;</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;               <span class="stringliteral">&quot;transform] in readable text.&quot;</span>);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    cp.add_bool(<span class="charliteral">&#39;t&#39;</span>, <span class="stringliteral">&quot;text&quot;</span>, ss.text_output_flag_,</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                <span class="stringliteral">&quot;Print out suffix array [and if constructed Burrows-Wheeler &quot;</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                <span class="stringliteral">&quot;transform] in readable text.&quot;</span>);</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    cp.AddFlag(<span class="charliteral">&#39;v&#39;</span>, <span class="stringliteral">&quot;verbatim&quot;</span>, ss.input_verbatim_,</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;               <span class="stringliteral">&quot;Consider \&quot;input\&quot; as verbatim text to construct &quot;</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;               <span class="stringliteral">&quot;suffix array on.&quot;</span>);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    cp.add_bool(<span class="charliteral">&#39;v&#39;</span>, <span class="stringliteral">&quot;verbatim&quot;</span>, ss.input_verbatim_,</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <span class="stringliteral">&quot;Consider \&quot;input\&quot; as verbatim text to construct &quot;</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                <span class="stringliteral">&quot;suffix array on.&quot;</span>);</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    cp.AddString(<span class="charliteral">&#39;w&#39;</span>, <span class="stringliteral">&quot;wavelet&quot;</span>, ss.output_wavelet_tree_,</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                 <span class="stringliteral">&quot;Compute the Wavelet Tree of the Burrows-Wheeler transform, &quot;</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                 <span class="stringliteral">&quot;and write to file.&quot;</span>);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    cp.add_string(<span class="charliteral">&#39;w&#39;</span>, <span class="stringliteral">&quot;wavelet&quot;</span>, ss.output_wavelet_tree_,</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                  <span class="stringliteral">&quot;Compute the Wavelet Tree of the Burrows-Wheeler transform, &quot;</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                  <span class="stringliteral">&quot;and write to file.&quot;</span>);</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    cp.AddFlag(<span class="charliteral">&#39;p&#39;</span>, <span class="stringliteral">&quot;packed&quot;</span>, ss.pack_input_,</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;               <span class="stringliteral">&quot;Fit as many characters of the input in the bytes used per index&quot;</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;               <span class="stringliteral">&quot; in the suffix array.&quot;</span>);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    cp.add_bool(<span class="charliteral">&#39;p&#39;</span>, <span class="stringliteral">&quot;packed&quot;</span>, ss.pack_input_,</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                <span class="stringliteral">&quot;Fit as many characters of the input in the bytes used per index&quot;</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                <span class="stringliteral">&quot; in the suffix array.&quot;</span>);</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    cp.AddFlag(<span class="charliteral">&#39;l&#39;</span>, <span class="stringliteral">&quot;lcp&quot;</span>, ss.lcp_computation_,</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;               <span class="stringliteral">&quot;Compute the LCP array in addition to the SA. Currently this &quot;</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;               <span class="stringliteral">&quot;requires the construction of the BWT.&quot;</span>);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    cp.add_bool(<span class="charliteral">&#39;l&#39;</span>, <span class="stringliteral">&quot;lcp&quot;</span>, ss.lcp_computation_,</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                <span class="stringliteral">&quot;Compute the LCP array in addition to the SA. Currently this &quot;</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                <span class="stringliteral">&quot;requires the construction of the BWT.&quot;</span>);</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordflow">if</span> (!cp.Process(argc, argv))</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordflow">if</span> (!cp.process(argc, argv))</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacethrill_1_1api.html#ab78331325e7577a5ba26b90cd40c92eb" title="Runs the given job startpoint with a Context instance.">Run</a>([&amp;](Context&amp; ctx) { <span class="keywordflow">return</span> ss.Run(ctx); });</div>
@@ -466,7 +466,7 @@ $(document).ready(function(){initNavTree('suffix__sorting_8cpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_0b8cd80b43220fb0eacec85b2381def2.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="suffix__sorting_8cpp.html">suffix_sorting.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:02 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

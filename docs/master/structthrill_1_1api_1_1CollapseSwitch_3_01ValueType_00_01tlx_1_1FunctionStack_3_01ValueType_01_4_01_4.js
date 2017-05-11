@@ -1,0 +1,4 @@
+var structthrill_1_1api_1_1CollapseSwitch_3_01ValueType_00_01tlx_1_1FunctionStack_3_01ValueType_01_4_01_4 =
+[
+    [ "MakeCollapse", "structthrill_1_1api_1_1CollapseSwitch_3_01ValueType_00_01tlx_1_1FunctionStack_3_01ValueType_01_4_01_4.html#af8bbce4b1092043028868abf659e9c34", null ]
+];

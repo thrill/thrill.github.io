@@ -14,6 +14,6 @@ var searchData=
   ['bypassallocator',['BypassAllocator',['../namespacethrill_1_1mem.html#a74237b06130d70256a8695cdea8cca6d',1,'thrill::mem']]],
   ['byte',['Byte',['../classthrill_1_1io_1_1mng__local_1_1FillerStruct.html#a4598833cddd0ea684d351ebd793b5bb7',1,'thrill::io::mng_local::FillerStruct::Byte()'],['../classthrill_1_1net_1_1BufferBuilder.html#a4598833cddd0ea684d351ebd793b5bb7',1,'thrill::net::BufferBuilder::Byte()'],['../classthrill_1_1net_1_1BufferRef.html#a4598833cddd0ea684d351ebd793b5bb7',1,'thrill::net::BufferRef::Byte()'],['../classthrill_1_1net_1_1FixedBufferBuilder.html#a4598833cddd0ea684d351ebd793b5bb7',1,'thrill::net::FixedBufferBuilder::Byte()'],['../group__data__layer.html#ga5df5518b488228d9937501d80f7b70e2',1,'thrill::data::Byte()']]],
   ['byte_5ftype',['byte_type',['../classthrill_1_1io_1_1mng__local_1_1FillerStruct_3_010_01_4.html#ad3d9f3ce78785f7137493f564b7dc59c',1,'thrill::io::mng_local::FillerStruct&lt; 0 &gt;']]],
-  ['byteblockcptr',['ByteBlockCPtr',['../classthrill_1_1data_1_1ByteBlock.html#a4dc7387fedab4795c19752fe2f8380b0',1,'thrill::data::ByteBlock']]],
-  ['byteblockptr',['ByteBlockPtr',['../classthrill_1_1data_1_1ByteBlock.html#ae4e3cd5edb441099face8d40212345aa',1,'thrill::data::ByteBlock::ByteBlockPtr()'],['../group__data__layer.html#ga8eb59a5f16aacf17b53f2fef06bff83f',1,'thrill::data::ByteBlockPtr()']]]
+  ['byteblockcptr',['ByteBlockCPtr',['../classthrill_1_1data_1_1ByteBlock.html#a2006279567f7015338183af8617dfe72',1,'thrill::data::ByteBlock']]],
+  ['byteblockptr',['ByteBlockPtr',['../classthrill_1_1data_1_1ByteBlock.html#a07ff5f64ca2cb4cf9e0d5963df489453',1,'thrill::data::ByteBlock::ByteBlockPtr()'],['../group__data__layer.html#ga8eb59a5f16aacf17b53f2fef06bff83f',1,'thrill::data::ByteBlockPtr()']]]
 ];

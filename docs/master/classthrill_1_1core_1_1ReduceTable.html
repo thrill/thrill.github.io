@@ -145,12 +145,12 @@ class thrill::core::ReduceTable&lt; ValueType, Key, Value, KeyExtractor, ReduceF
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa26d3023668a46fc71d141934d8a8fdb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceTable.html#aa26d3023668a46fc71d141934d8a8fdb">MakeTableItem</a> = <a class="el" href="classthrill_1_1core_1_1ReduceMakeTableItem.html">ReduceMakeTableItem</a>&lt; Value, <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a15a83190c794cf5ad8b949a4b69d8c9a">TableItem</a>, VolatileKey &gt;</td></tr>
+<tr class="memitem:aa26d3023668a46fc71d141934d8a8fdb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceTable.html#aa26d3023668a46fc71d141934d8a8fdb">MakeTableItem</a> = <a class="el" href="classthrill_1_1core_1_1ReduceMakeTableItem.html">ReduceMakeTableItem</a>&lt; Value, <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a23c9487b76a1bc9414bf3d37d5ede9a4">TableItem</a>, VolatileKey &gt;</td></tr>
 <tr class="separator:aa26d3023668a46fc71d141934d8a8fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ff5001dc979bf4942adc33338569f3a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a3ff5001dc979bf4942adc33338569f3a">ReduceConfig</a> = ReduceConfig_</td></tr>
 <tr class="separator:a3ff5001dc979bf4942adc33338569f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15a83190c794cf5ad8b949a4b69d8c9a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a15a83190c794cf5ad8b949a4b69d8c9a">TableItem</a> = typename <a class="el" href="structthrill_1_1common_1_1If.html">common::If</a>&lt; VolatileKey, std::pair&lt; Key, Value &gt;, Value &gt;::type</td></tr>
-<tr class="separator:a15a83190c794cf5ad8b949a4b69d8c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c9487b76a1bc9414bf3d37d5ede9a4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a23c9487b76a1bc9414bf3d37d5ede9a4">TableItem</a> = typename std::conditional&lt; VolatileKey, std::pair&lt; Key, Value &gt;, Value &gt;::type</td></tr>
+<tr class="separator:a23c9487b76a1bc9414bf3d37d5ede9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -226,9 +226,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6284e84d7027e575866738582d5d668a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a6284e84d7027e575866738582d5d668a">has_spilled_data_on_partition</a> (size_t partition_id)</td></tr>
 <tr class="separator:a6284e84d7027e575866738582d5d668a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Switches for VolatileKey</div></td></tr>
-<tr class="memitem:a9175e77c920b294cea5e9f0111a13880"><td class="memItemLeft" align="right" valign="top">Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a9175e77c920b294cea5e9f0111a13880">key</a> (const <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a15a83190c794cf5ad8b949a4b69d8c9a">TableItem</a> &amp;t)</td></tr>
+<tr class="memitem:a9175e77c920b294cea5e9f0111a13880"><td class="memItemLeft" align="right" valign="top">Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a9175e77c920b294cea5e9f0111a13880">key</a> (const <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a23c9487b76a1bc9414bf3d37d5ede9a4">TableItem</a> &amp;t)</td></tr>
 <tr class="separator:a9175e77c920b294cea5e9f0111a13880"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3617dfeb12a3a1587588bb6380e17343"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a15a83190c794cf5ad8b949a4b69d8c9a">TableItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a3617dfeb12a3a1587588bb6380e17343">reduce</a> (const <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a15a83190c794cf5ad8b949a4b69d8c9a">TableItem</a> &amp;a, const <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a15a83190c794cf5ad8b949a4b69d8c9a">TableItem</a> &amp;b)</td></tr>
+<tr class="memitem:a3617dfeb12a3a1587588bb6380e17343"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a23c9487b76a1bc9414bf3d37d5ede9a4">TableItem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a3617dfeb12a3a1587588bb6380e17343">reduce</a> (const <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a23c9487b76a1bc9414bf3d37d5ede9a4">TableItem</a> &amp;a, const <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a23c9487b76a1bc9414bf3d37d5ede9a4">TableItem</a> &amp;b)</td></tr>
 <tr class="separator:a3617dfeb12a3a1587588bb6380e17343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
@@ -296,7 +296,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#aa26d3023668a46fc71d141934d8a8fdb">MakeTableItem</a> =  <a class="el" href="classthrill_1_1core_1_1ReduceMakeTableItem.html">ReduceMakeTableItem</a>&lt;Value, <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a15a83190c794cf5ad8b949a4b69d8c9a">TableItem</a>, VolatileKey&gt;</td>
+          <td class="memname">using <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#aa26d3023668a46fc71d141934d8a8fdb">MakeTableItem</a> =  <a class="el" href="classthrill_1_1core_1_1ReduceMakeTableItem.html">ReduceMakeTableItem</a>&lt;Value, <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a23c9487b76a1bc9414bf3d37d5ede9a4">TableItem</a>, VolatileKey&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -319,12 +319,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a15a83190c794cf5ad8b949a4b69d8c9a"></a>
+<a class="anchor" id="a23c9487b76a1bc9414bf3d37d5ede9a4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a15a83190c794cf5ad8b949a4b69d8c9a">TableItem</a> =  typename <a class="el" href="structthrill_1_1common_1_1If.html">common::If</a>&lt; VolatileKey, std::pair&lt;Key, Value&gt;, Value&gt;::type</td>
+          <td class="memname">using <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a23c9487b76a1bc9414bf3d37d5ede9a4">TableItem</a> =  typename std::conditional&lt; VolatileKey, std::pair&lt;Key, Value&gt;, Value&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -700,7 +700,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">Key key </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a15a83190c794cf5ad8b949a4b69d8c9a">TableItem</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a23c9487b76a1bc9414bf3d37d5ede9a4">TableItem</a> &amp;&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1050,15 +1050,15 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a15a83190c794cf5ad8b949a4b69d8c9a">TableItem</a> reduce </td>
+          <td class="memname"><a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a23c9487b76a1bc9414bf3d37d5ede9a4">TableItem</a> reduce </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a15a83190c794cf5ad8b949a4b69d8c9a">TableItem</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a23c9487b76a1bc9414bf3d37d5ede9a4">TableItem</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a15a83190c794cf5ad8b949a4b69d8c9a">TableItem</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a23c9487b76a1bc9414bf3d37d5ede9a4">TableItem</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -1575,7 +1575,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1core.html">core</a></li><li class="navelem"><a class="el" href="classthrill_1_1core_1_1ReduceTable.html">ReduceTable</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:07 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:36 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

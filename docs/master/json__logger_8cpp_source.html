@@ -128,73 +128,74 @@ $(document).ready(function(){initNavTree('json__logger_8cpp_source.html','');});
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * All rights reserved. Published under the BSD-2 license in the LICENSE file.</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="die_8hpp.html">thrill/common/die.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="json__logger_8hpp.html">thrill/common/json_logger.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="string_8hpp.html">thrill/common/string.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;cerrno&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>thrill {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>common {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// JsonLogger</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1JsonLogger.html#a231e2f7226ed47e3416c59f519e5d528">   30</a></span>&#160;<a class="code" href="classthrill_1_1common_1_1JsonLogger.html#af0b68d6281041d627baab035160e032a" title="open JsonLogger with ofstream uninitialized to discard log output.">JsonLogger::JsonLogger</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a>&amp; path) {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span> (!path.size()) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classthrill_1_1common_1_1JsonLogger.html#ac8f2ed44013260403ac039f5ecf73a56" title="direct output stream for top loggers">os_</a>.open(path.c_str());</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classthrill_1_1common_1_1JsonLogger.html#ac8f2ed44013260403ac039f5ecf73a56" title="direct output stream for top loggers">os_</a>.good()) {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e" title="Print via logger and abort().">die</a>(<span class="stringliteral">&quot;Could not open json log output: &quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            &lt;&lt; path &lt;&lt; <span class="stringliteral">&quot; : &quot;</span> &lt;&lt; strerror(errno));</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1JsonLogger.html#a7c0a92de6256c83c7510902f868285d1">   40</a></span>&#160;<a class="code" href="classthrill_1_1common_1_1JsonLogger.html#af0b68d6281041d627baab035160e032a" title="open JsonLogger with ofstream uninitialized to discard log output.">JsonLogger::JsonLogger</a>(<a class="code" href="classthrill_1_1common_1_1JsonLogger.html" title="JsonLogger is a receiver of JSON output objects for logging.">JsonLogger</a>* super)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    : super_(super) { }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1JsonLogger.html#aed0cf6f210920c3979bac0bd4114306c">   43</a></span>&#160;<a class="code" href="classthrill_1_1common_1_1JsonLine.html" title="JsonLine is an object used to aggregate a set of key:value pairs for output into a JSON log...">JsonLine</a> <a class="code" href="classthrill_1_1common_1_1JsonLogger.html#aed0cf6f210920c3979bac0bd4114306c" title="create new JsonLine instance which will be written to this logger.">JsonLogger::line</a>() {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1common_1_1JsonLogger.html#aec116ece334cf05d16528b8f6b78e2c1" title="output to superior JsonLogger">super_</a>) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classthrill_1_1common_1_1JsonLine.html" title="JsonLine is an object used to aggregate a set of key:value pairs for output into a JSON log...">JsonLine</a> out = <a class="code" href="classthrill_1_1common_1_1JsonLogger.html#aec116ece334cf05d16528b8f6b78e2c1" title="output to superior JsonLogger">super_</a>-&gt;<a class="code" href="classthrill_1_1common_1_1JsonLogger.html#aed0cf6f210920c3979bac0bd4114306c" title="create new JsonLine instance which will be written to this logger.">line</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">// append common key:value pairs</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1common_1_1JsonLogger.html#a04dcad3a200be202a3ef0d87d3b0cf17" title="common items outputted to each line">common_</a>.<a class="code" href="classthrill_1_1common_1_1JsonVerbatim.html#a6dca7628931e11a50914bf5580ffa473">str_</a>.size())</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            out &lt;&lt; <a class="code" href="classthrill_1_1common_1_1JsonLogger.html#a04dcad3a200be202a3ef0d87d3b0cf17" title="common items outputted to each line">common_</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> out;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classthrill_1_1common_1_1JsonLine.html" title="JsonLine is an object used to aggregate a set of key:value pairs for output into a JSON log...">JsonLine</a> out(<span class="keyword">this</span>, <a class="code" href="classthrill_1_1common_1_1JsonLogger.html#ac8f2ed44013260403ac039f5ecf73a56" title="direct output stream for top loggers">os_</a>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classthrill_1_1common_1_1JsonLogger.html#ac8f2ed44013260403ac039f5ecf73a56" title="direct output stream for top loggers">os_</a> &lt;&lt; <span class="charliteral">&#39;{&#39;</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// output timestamp in microseconds</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    out &lt;&lt; <span class="stringliteral">&quot;ts&quot;</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        &lt;&lt; std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        std::chrono::system_clock::now().time_since_epoch()).count();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// append common key:value pairs</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1common_1_1JsonLogger.html#a04dcad3a200be202a3ef0d87d3b0cf17" title="common items outputted to each line">common_</a>.<a class="code" href="classthrill_1_1common_1_1JsonVerbatim.html#a6dca7628931e11a50914bf5580ffa473">str_</a>.size())</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        out &lt;&lt; <a class="code" href="classthrill_1_1common_1_1JsonLogger.html#a04dcad3a200be202a3ef0d87d3b0cf17" title="common items outputted to each line">common_</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> out;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <span class="comment">// namespace common</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;} <span class="comment">// namespace thrill</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="json__logger_8hpp.html">thrill/common/json_logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="string_8hpp.html">thrill/common/string.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;tlx/die.hpp&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;cerrno&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>thrill {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>common {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// JsonLogger</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1JsonLogger.html#a231e2f7226ed47e3416c59f519e5d528">   31</a></span>&#160;<a class="code" href="classthrill_1_1common_1_1JsonLogger.html#af0b68d6281041d627baab035160e032a" title="open JsonLogger with ofstream uninitialized to discard log output.">JsonLogger::JsonLogger</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a>&amp; path) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> (path.empty()) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classthrill_1_1common_1_1JsonLogger.html#ac8f2ed44013260403ac039f5ecf73a56" title="direct output stream for top loggers">os_</a>.open(path.c_str());</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classthrill_1_1common_1_1JsonLogger.html#ac8f2ed44013260403ac039f5ecf73a56" title="direct output stream for top loggers">os_</a>.good()) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        die(<span class="stringliteral">&quot;Could not open json log output: &quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            &lt;&lt; path &lt;&lt; <span class="stringliteral">&quot; : &quot;</span> &lt;&lt; strerror(errno));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1JsonLogger.html#a7c0a92de6256c83c7510902f868285d1">   41</a></span>&#160;<a class="code" href="classthrill_1_1common_1_1JsonLogger.html#af0b68d6281041d627baab035160e032a" title="open JsonLogger with ofstream uninitialized to discard log output.">JsonLogger::JsonLogger</a>(<a class="code" href="classthrill_1_1common_1_1JsonLogger.html" title="JsonLogger is a receiver of JSON output objects for logging.">JsonLogger</a>* super)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    : super_(super) { }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="classthrill_1_1common_1_1JsonLogger.html#aed0cf6f210920c3979bac0bd4114306c">   44</a></span>&#160;<a class="code" href="classthrill_1_1common_1_1JsonLine.html" title="JsonLine is an object used to aggregate a set of key:value pairs for output into a JSON log...">JsonLine</a> <a class="code" href="classthrill_1_1common_1_1JsonLogger.html#aed0cf6f210920c3979bac0bd4114306c" title="create new JsonLine instance which will be written to this logger.">JsonLogger::line</a>() {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1common_1_1JsonLogger.html#aec116ece334cf05d16528b8f6b78e2c1" title="output to superior JsonLogger">super_</a> != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classthrill_1_1common_1_1JsonLine.html" title="JsonLine is an object used to aggregate a set of key:value pairs for output into a JSON log...">JsonLine</a> out = <a class="code" href="classthrill_1_1common_1_1JsonLogger.html#aec116ece334cf05d16528b8f6b78e2c1" title="output to superior JsonLogger">super_</a>-&gt;<a class="code" href="classthrill_1_1common_1_1JsonLogger.html#aed0cf6f210920c3979bac0bd4114306c" title="create new JsonLine instance which will be written to this logger.">line</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">// append common key:value pairs</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classthrill_1_1common_1_1JsonLogger.html#a04dcad3a200be202a3ef0d87d3b0cf17" title="common items outputted to each line">common_</a>.<a class="code" href="classthrill_1_1common_1_1JsonVerbatim.html#a6dca7628931e11a50914bf5580ffa473">str_</a>.empty())</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            out &lt;&lt; <a class="code" href="classthrill_1_1common_1_1JsonLogger.html#a04dcad3a200be202a3ef0d87d3b0cf17" title="common items outputted to each line">common_</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> out;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classthrill_1_1common_1_1JsonLine.html" title="JsonLine is an object used to aggregate a set of key:value pairs for output into a JSON log...">JsonLine</a> out(<span class="keyword">this</span>, <a class="code" href="classthrill_1_1common_1_1JsonLogger.html#ac8f2ed44013260403ac039f5ecf73a56" title="direct output stream for top loggers">os_</a>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classthrill_1_1common_1_1JsonLogger.html#ac8f2ed44013260403ac039f5ecf73a56" title="direct output stream for top loggers">os_</a> &lt;&lt; <span class="charliteral">&#39;{&#39;</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// output timestamp in microseconds</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    out &lt;&lt; <span class="stringliteral">&quot;ts&quot;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        &lt;&lt; std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        std::chrono::system_clock::now().time_since_epoch()).count();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// append common key:value pairs</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classthrill_1_1common_1_1JsonLogger.html#a04dcad3a200be202a3ef0d87d3b0cf17" title="common items outputted to each line">common_</a>.<a class="code" href="classthrill_1_1common_1_1JsonVerbatim.html#a6dca7628931e11a50914bf5580ffa473">str_</a>.empty())</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        out &lt;&lt; <a class="code" href="classthrill_1_1common_1_1JsonLogger.html#a04dcad3a200be202a3ef0d87d3b0cf17" title="common items outputted to each line">common_</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> out;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;} <span class="comment">// namespace common</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <span class="comment">// namespace thrill</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="json__logger_8cpp.html">json_logger.cpp</a></li>
-    <li class="footer">Generated on Wed May 10 2017 13:05:03 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 15:15:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>
