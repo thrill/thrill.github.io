@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('malloc__tracker_8cpp_source.html','');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="porting_8hpp.html">thrill/common/porting.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="profile__thread_8hpp.html">thrill/common/profile_thread.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="malloc__tracker_8hpp.html">thrill/mem/malloc_tracker.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;tlx/define.hpp&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="define_8hpp.html">tlx/define.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#if __linux__ || __APPLE__ || __FreeBSD__</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span></div>
@@ -774,7 +774,7 @@ $(document).ready(function(){initNavTree('malloc__tracker_8cpp_source.html','');
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;<span class="comment"></span><a class="code" href="malloc__tracker_8cpp.html#a2add2c6de87682e038d71da560853acc">ATTRIBUTE_NO_SANITIZE</a></div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;<span class="keywordtype">void</span> * <a class="code" href="malloc__tracker_8cpp.html#a465faf99e79df99ffbc1db0571879dfa" title="exported malloc symbol that overrides loading from libc">malloc</a>(<span class="keywordtype">size_t</span> size) NOEXCEPT {</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <span class="keywordflow">if</span> (TLX_UNLIKELY(!<a class="code" href="namespacethrill_1_1mem.html#a77c7ac8dc42f36d2c7667399b42ddc83">real_malloc</a>))</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="likely_8hpp.html#a106afbc6d1f1fe01b3a4614eebf55113">TLX_UNLIKELY</a>(!<a class="code" href="namespacethrill_1_1mem.html#a77c7ac8dc42f36d2c7667399b42ddc83">real_malloc</a>))</div>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="malloc__tracker_8cpp.html#aa61b81e77299224deae90d0ae0785fe2">preinit_malloc</a>(size);</div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;<span class="comment">    //! call real malloc procedure in libc</span></div>
@@ -828,14 +828,14 @@ $(document).ready(function(){initNavTree('malloc__tracker_8cpp_source.html','');
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;</div>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    <span class="keywordflow">if</span> (!ptr) <span class="keywordflow">return</span>;   <span class="comment">//! free(nullptr) is no operation</span></div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    <span class="keywordflow">if</span> (TLX_UNLIKELY(</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="likely_8hpp.html#a106afbc6d1f1fe01b3a4614eebf55113">TLX_UNLIKELY</a>(</div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;            static_cast&lt;char*&gt;(ptr) &gt;= <a class="code" href="namespacethrill_1_1mem.html#a1694ae25a2a144a342d2978ca86f8cc9">init_heap</a> &amp;&amp;</div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;            static_cast&lt;char*&gt;(ptr) &lt;= <a class="code" href="namespacethrill_1_1mem.html#a1694ae25a2a144a342d2978ca86f8cc9">init_heap</a> + <span class="keyword">get</span>(<a class="code" href="namespacethrill_1_1mem.html#a1ce0aba33db67a9d2dcf8b6cf8e1fc11">init_heap_use</a>)))</div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    {</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="malloc__tracker_8cpp.html#a798e857b45c8aec7780e7d09d0caccb9">preinit_free</a>(ptr);</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    }</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    <span class="keywordflow">if</span> (TLX_UNLIKELY(!<a class="code" href="namespacethrill_1_1mem.html#a8766254c71c5a69aee1a959119f70144">real_free</a>)) {</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="likely_8hpp.html#a106afbc6d1f1fe01b3a4614eebf55113">TLX_UNLIKELY</a>(!<a class="code" href="namespacethrill_1_1mem.html#a8766254c71c5a69aee1a959119f70144">real_free</a>)) {</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;        fprintf(stderr, <a class="code" href="malloc__tracker_8cpp.html#a9dd06750db6f694a834a9aa3b628e08f" title="output">PPREFIX</a></div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;                <span class="stringliteral">&quot;free(%p) outside init heap and without real_free !!!\n&quot;</span>, ptr);</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;        <span class="keywordflow">return</span>;</div>
@@ -1061,8 +1061,8 @@ $(document).ready(function(){initNavTree('malloc__tracker_8cpp_source.html','');
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_53acb5567af01d44d8f1449f2e4fb497.html">mem</a></li><li class="navelem"><a class="el" href="malloc__tracker_8cpp.html">malloc_tracker.cpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:47 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_96505d4a0489fe0acf3ba18761348e23.html">mem</a></li><li class="navelem"><a class="el" href="malloc__tracker_8cpp.html">malloc_tracker.cpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:03 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

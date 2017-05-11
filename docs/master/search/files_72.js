@@ -16,6 +16,8 @@ var searchData=
   ['reduce_5fprobing_5fhash_5ftable_2ehpp',['reduce_probing_hash_table.hpp',['../reduce__probing__hash__table_8hpp.html',1,'']]],
   ['reduce_5ftable_2ehpp',['reduce_table.hpp',['../reduce__table_8hpp.html',1,'']]],
   ['reduce_5fto_5findex_2ehpp',['reduce_to_index.hpp',['../reduce__to__index_8hpp.html',1,'']]],
+  ['replace_2ecpp',['replace.cpp',['../replace_8cpp.html',1,'']]],
+  ['replace_2ehpp',['replace.hpp',['../replace_8hpp.html',1,'']]],
   ['request_2ecpp',['request.cpp',['../request_8cpp.html',1,'']]],
   ['request_2ehpp',['request.hpp',['../request_8hpp.html',1,'']]],
   ['request_5foperations_2ehpp',['request_operations.hpp',['../request__operations_8hpp.html',1,'']]],
@@ -26,6 +28,9 @@ var searchData=
   ['request_5fqueue_5fimpl_5fqw_5fqr_2ehpp',['request_queue_impl_qw_qr.hpp',['../request__queue__impl__qw__qr_8hpp.html',1,'']]],
   ['request_5fqueue_5fimpl_5fworker_2ecpp',['request_queue_impl_worker.cpp',['../request__queue__impl__worker_8cpp.html',1,'']]],
   ['request_5fqueue_5fimpl_5fworker_2ehpp',['request_queue_impl_worker.hpp',['../request__queue__impl__worker_8hpp.html',1,'']]],
-  ['ring_5fbuffer_2ehpp',['ring_buffer.hpp',['../ring__buffer_8hpp.html',1,'']]],
-  ['rl_5fbwt_2ecpp',['rl_bwt.cpp',['../rl__bwt_8cpp.html',1,'']]]
+  ['ring_5fbuffer_2ehpp',['ring_buffer.hpp',['../extlib_2tlx_2tlx_2ring__buffer_8hpp.html',1,'']]],
+  ['ring_5fbuffer_2ehpp',['ring_buffer.hpp',['../thrill_2common_2ring__buffer_8hpp.html',1,'']]],
+  ['rl_5fbwt_2ecpp',['rl_bwt.cpp',['../rl__bwt_8cpp.html',1,'']]],
+  ['round_5fto_5fpower_5fof_5ftwo_2ecpp',['round_to_power_of_two.cpp',['../round__to__power__of__two_8cpp.html',1,'']]],
+  ['round_5fto_5fpower_5fof_5ftwo_2ehpp',['round_to_power_of_two.hpp',['../round__to__power__of__two_8hpp.html',1,'']]]
 ];

@@ -130,12 +130,12 @@ $(document).ready(function(){initNavTree('terasort_8cpp_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="read__binary_8hpp.html">thrill/api/read_binary.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="sort_8hpp.html">thrill/api/sort.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="write__binary_8hpp.html">thrill/api/write_binary.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="string_8hpp.html">thrill/common/string.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;tlx/cmdline_parser.hpp&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2string_8hpp.html">thrill/common/string.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cmdline__parser_8hpp.html">tlx/cmdline_parser.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;tlx/string/hexdump.hpp&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;tlx/string/parse_si_iec_units.hpp&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="hexdump_8hpp.html">tlx/string/hexdump.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="parse__si__iec__units_8hpp.html">tlx/string/parse_si_iec_units.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
@@ -153,9 +153,9 @@ $(document).ready(function(){initNavTree('terasort_8cpp_source.html','');});
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> std::lexicographical_compare(key, key + 10, b.key, b.key + 10);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="namespacethrill_1_1api.html#ae8473cbd67ac02098251c03a8218ae49" title="make ostream-able.">operator &lt;&lt; </a>(std::ostream&amp; os, <span class="keyword">const</span> Record&amp; c) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; tlx::hexdump(c.key, 10);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="group__string.html#gab4c0ada9ff7b0d905361e60050316899" title="Dump a (binary) string as a sequence of uppercase hexadecimal pairs.">tlx::hexdump</a>(c.key, 10);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <a class="code" href="namespacethrill_1_1common.html#aa8cefeaf73ed55f25567a5f582e0dc47">TLX_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <a class="code" href="attribute__packed_8hpp.html#afefec265ea1ad4fc8ae61cbd45620714">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;static_assert(<span class="keyword">sizeof</span>(Record) == 100, <span class="stringliteral">&quot;struct Record packing incorrect.&quot;</span>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
@@ -169,9 +169,9 @@ $(document).ready(function(){initNavTree('terasort_8cpp_source.html','');});
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> std::lexicographical_compare(key, key + 10, b.key, b.key + 10);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="namespacethrill_1_1api.html#ae8473cbd67ac02098251c03a8218ae49" title="make ostream-able.">operator &lt;&lt; </a>(std::ostream&amp; os, <span class="keyword">const</span> RecordSigned&amp; c) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; tlx::hexdump(c.key, 10);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <a class="code" href="group__string.html#gab4c0ada9ff7b0d905361e60050316899" title="Dump a (binary) string as a sequence of uppercase hexadecimal pairs.">tlx::hexdump</a>(c.key, 10);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <a class="code" href="namespacethrill_1_1common.html#aa8cefeaf73ed55f25567a5f582e0dc47">TLX_ATTRIBUTE_PACKED</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <a class="code" href="attribute__packed_8hpp.html#afefec265ea1ad4fc8ae61cbd45620714">TLX_ATTRIBUTE_PACKED</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">/*!</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> * Generate a Record in a similar way as the &quot;binary&quot; version of Hadoop&#39;s</span></div>
@@ -236,55 +236,55 @@ $(document).ready(function(){initNavTree('terasort_8cpp_source.html','');});
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 <div class="line"><a name="l00119"></a><span class="lineno"><a class="code" href="terasort_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">  119</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="k-means__run_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]) {</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    tlx::CmdlineParser clp;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="classtlx_1_1CmdlineParser.html" title="Command line parser which automatically fills variables and prints nice usage messages.">tlx::CmdlineParser</a> clp;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">bool</span> use_signed_char = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    clp.add_bool(<span class="charliteral">&#39;s&#39;</span>, <span class="stringliteral">&quot;signed_char&quot;</span>, use_signed_char,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    clp.<a class="code" href="classtlx_1_1CmdlineParser.html#ae588fb1164112dfe0fb1ff99bf5463ab">add_bool</a>(<span class="charliteral">&#39;s&#39;</span>, <span class="stringliteral">&quot;signed_char&quot;</span>, use_signed_char,</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                 <span class="stringliteral">&quot;compare with signed chars to compare with broken Java &quot;</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                 <span class="stringliteral">&quot;implementations, default: false&quot;</span>);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">bool</span> generate = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    clp.add_bool(<span class="charliteral">&#39;g&#39;</span>, <span class="stringliteral">&quot;generate&quot;</span>, generate,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    clp.<a class="code" href="classtlx_1_1CmdlineParser.html#ae588fb1164112dfe0fb1ff99bf5463ab">add_bool</a>(<span class="charliteral">&#39;g&#39;</span>, <span class="stringliteral">&quot;generate&quot;</span>, generate,</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                 <span class="stringliteral">&quot;generate binary record on-the-fly for testing.&quot;</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                 <span class="stringliteral">&quot; size: first input pattern, default: false&quot;</span>);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">bool</span> generate_only = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    clp.add_bool(<span class="charliteral">&#39;G&#39;</span>, <span class="stringliteral">&quot;generate-only&quot;</span>, generate_only,</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    clp.<a class="code" href="classtlx_1_1CmdlineParser.html#ae588fb1164112dfe0fb1ff99bf5463ab">add_bool</a>(<span class="charliteral">&#39;G&#39;</span>, <span class="stringliteral">&quot;generate-only&quot;</span>, generate_only,</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                 <span class="stringliteral">&quot;write unsorted generated binary records to output.&quot;</span>);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a> output;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    clp.add_string(<span class="charliteral">&#39;o&#39;</span>, <span class="stringliteral">&quot;output&quot;</span>, output,</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    clp.<a class="code" href="classtlx_1_1CmdlineParser.html#a280f9b14a70f4d9e7141c7babae0a993" title="add string option -key, –longkey [keytype] and store to dest">add_string</a>(<span class="charliteral">&#39;o&#39;</span>, <span class="stringliteral">&quot;output&quot;</span>, output,</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                   <span class="stringliteral">&quot;output file pattern&quot;</span>);</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    std::vector&lt;std::string&gt; input;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    clp.add_param_stringlist(<span class="stringliteral">&quot;input&quot;</span>, input,</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    clp.<a class="code" href="classtlx_1_1CmdlineParser.html#a1ff64cfe0fa2f734b08a72098fdb0c94">add_param_stringlist</a>(<span class="stringliteral">&quot;input&quot;</span>, input,</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                             <span class="stringliteral">&quot;input file pattern(s)&quot;</span>);</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">if</span> (!clp.process(argc, argv)) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">if</span> (!clp.<a class="code" href="classtlx_1_1CmdlineParser.html#afedddf45a2632737e231a1252c60812f">process</a>(argc, argv)) {</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    clp.print_result();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    clp.<a class="code" href="classtlx_1_1CmdlineParser.html#a94bd05e82551d28e54f294c3392a294f" title="print nicely formatted result of processing">print_result</a>();</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacethrill_1_1api.html#ab78331325e7577a5ba26b90cd40c92eb" title="Runs the given job startpoint with a Context instance.">api::Run</a>(</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        [&amp;](<a class="code" href="classthrill_1_1api_1_1Context.html" title="The Context of a job is a unique instance per worker which holds references to all underlying parts o...">api::Context</a>&amp; ctx) {</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            ctx.<a class="code" href="classthrill_1_1api_1_1Context.html#ae814d75e761e49ef81f07ad47e791190" title="Sets consume-mode flag such that DIA contents may be consumed during PushData().">enable_consume</a>();</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordflow">if</span> (generate_only) {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                die_unequal(input.size(), 1u);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                <a class="code" href="die_8hpp.html#a334b021076c0dff0e3964c6819774ceb">die_unequal</a>(input.size(), 1u);</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                <span class="comment">// parse first argument like &quot;100mib&quot; size</span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                uint64_t size;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                die_unless(tlx::parse_si_iec_units(input[0].c_str(), &amp;size));</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                die_unless(!use_signed_char);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(<a class="code" href="group__string.html#ga58be0557b1b38913b28d947c935aed42" title="Parse a string like &quot;343KB&quot; or &quot;44 GiB&quot; into the corresponding size in bytes.">tlx::parse_si_iec_units</a>(input[0].c_str(), &amp;size));</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(!use_signed_char);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1" title="Generate is a Source-DOp, which creates a DIA of given size using a generator function.">Generate</a>(ctx, size / <span class="keyword">sizeof</span>(Record), GenerateRecord())</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                .WriteBinary(output);</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            }</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (generate) {</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                die_unequal(input.size(), 1u);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                <a class="code" href="die_8hpp.html#a334b021076c0dff0e3964c6819774ceb">die_unequal</a>(input.size(), 1u);</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                <span class="comment">// parse first argument like &quot;100mib&quot; size</span></div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                uint64_t size;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                die_unless(tlx::parse_si_iec_units(input[0].c_str(), &amp;size));</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                die_unless(!use_signed_char);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(<a class="code" href="group__string.html#ga58be0557b1b38913b28d947c935aed42" title="Parse a string like &quot;343KB&quot; or &quot;44 GiB&quot; into the corresponding size in bytes.">tlx::parse_si_iec_units</a>(input[0].c_str(), &amp;size));</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(!use_signed_char);</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                <span class="keyword">auto</span> r =</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                    <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1" title="Generate is a Source-DOp, which creates a DIA of given size using a generator function.">Generate</a>(ctx, size / <span class="keyword">sizeof</span>(Record), GenerateRecord())</div>
@@ -322,8 +322,8 @@ $(document).ready(function(){initNavTree('terasort_8cpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_d8b26c95b1f7b12d43099dd9552a78bc.html">terasort</a></li><li class="navelem"><a class="el" href="terasort_8cpp.html">terasort.cpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:46 for Thrill by
+    <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_5cf86abf49c7a4f4fc4f3b795c9b8400.html">terasort</a></li><li class="navelem"><a class="el" href="terasort_8cpp.html">terasort.cpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:01 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

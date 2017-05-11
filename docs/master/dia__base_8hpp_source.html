@@ -202,10 +202,10 @@ $(document).ready(function(){initNavTree('dia__base_8hpp_source.html','');});
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> * previously. Not all DIABases have children (ActionNodes do not), hence,</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"> * children are first introduced in DIANode.</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1DIABase.html">   87</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthrill_1_1api_1_1DIABase.html" title="The DIABase is the untyped super class of DIANode.">DIABase</a> : <span class="keyword">public</span> tlx::ReferenceCounter</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1DIABase.html">   87</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthrill_1_1api_1_1DIABase.html" title="The DIABase is the untyped super class of DIANode.">DIABase</a> : <span class="keyword">public</span> <a class="code" href="classtlx_1_1ReferenceCounter.html" title="Provides reference counting abilities for use with CountingPtr.">tlx::ReferenceCounter</a></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1DIABase.html#afd807377b556060aa33d5dd9c12b75e2">   90</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#afd807377b556060aa33d5dd9c12b75e2">DIABasePtr</a> = tlx::CountingPtr&lt;DIABase&gt;;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1DIABase.html#afd807377b556060aa33d5dd9c12b75e2">   90</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classtlx_1_1CountingPtr.html">DIABasePtr</a> = <a class="code" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr&lt;DIABase&gt;</a>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">    /*!</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">     * The constructor for a DIABase. Sets the parents for this node, but does</span></div>
@@ -256,7 +256,7 @@ $(document).ready(function(){initNavTree('dia__base_8hpp_source.html','');});
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;parents&quot;</span> &lt;&lt; <a class="code" href="classthrill_1_1api_1_1DIABase.html#a548c187ac192a55c25278cbac58b2a2b" title="Returns the parents of this DIABase.">parent_ids</a>();</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="comment">// de-register at parents (if still hooked there)</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#afd807377b556060aa33d5dd9c12b75e2">DIABasePtr</a>&amp; p : <a class="code" href="classthrill_1_1api_1_1DIABase.html#a6ac997bf500c1a8d1d2cacfed864c1c2" title="Parents of this DIABase.">parents_</a>)</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="classtlx_1_1CountingPtr.html">DIABasePtr</a>&amp; p : <a class="code" href="classthrill_1_1api_1_1DIABase.html#a6ac997bf500c1a8d1d2cacfed864c1c2" title="Parents of this DIABase.">parents_</a>)</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            p-&gt;RemoveChild(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment"></span></div>
@@ -375,7 +375,7 @@ $(document).ready(function(){initNavTree('dia__base_8hpp_source.html','');});
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment">    //! Returns the parents of this DIABase.</span></div>
 <div class="line"><a name="l00258"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1DIABase.html#a548c187ac192a55c25278cbac58b2a2b">  258</a></span>&#160;<span class="comment"></span>    std::vector&lt;size_t&gt; <a class="code" href="classthrill_1_1api_1_1DIABase.html#a548c187ac192a55c25278cbac58b2a2b" title="Returns the parents of this DIABase.">parent_ids</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        std::vector&lt;size_t&gt; ids;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#afd807377b556060aa33d5dd9c12b75e2">DIABasePtr</a>&amp; p : <a class="code" href="classthrill_1_1api_1_1DIABase.html#a6ac997bf500c1a8d1d2cacfed864c1c2" title="Parents of this DIABase.">parents_</a>) ids.push_back(p-&gt;id());</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="classtlx_1_1CountingPtr.html">DIABasePtr</a>&amp; p : <a class="code" href="classthrill_1_1api_1_1DIABase.html#a6ac997bf500c1a8d1d2cacfed864c1c2" title="Parents of this DIABase.">parents_</a>) ids.push_back(p-&gt;id());</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">return</span> ids;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment"></span></div>
@@ -384,7 +384,7 @@ $(document).ready(function(){initNavTree('dia__base_8hpp_source.html','');});
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <a class="code" href="classthrill_1_1api_1_1DIABase.html#a6ac997bf500c1a8d1d2cacfed864c1c2" title="Parents of this DIABase.">parents_</a>.erase(</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            std::remove_if(</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                <a class="code" href="classthrill_1_1api_1_1DIABase.html#a6ac997bf500c1a8d1d2cacfed864c1c2" title="Parents of this DIABase.">parents_</a>.begin(), <a class="code" href="classthrill_1_1api_1_1DIABase.html#a6ac997bf500c1a8d1d2cacfed864c1c2" title="Parents of this DIABase.">parents_</a>.end(),</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                [p](<span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#afd807377b556060aa33d5dd9c12b75e2">DIABasePtr</a>&amp; parent) { <span class="keywordflow">return</span> parent.get() == p; }),</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                [p](<span class="keyword">const</span> <a class="code" href="classtlx_1_1CountingPtr.html">DIABasePtr</a>&amp; parent) { <span class="keywordflow">return</span> parent.get() == p; }),</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <a class="code" href="classthrill_1_1api_1_1DIABase.html#a6ac997bf500c1a8d1d2cacfed864c1c2" title="Parents of this DIABase.">parents_</a>.end());</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    }</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment"></span></div>
@@ -449,7 +449,7 @@ $(document).ready(function(){initNavTree('dia__base_8hpp_source.html','');});
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    };</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;};</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno"><a class="code" href="group__api__layer.html#gafd807377b556060aa33d5dd9c12b75e2">  334</a></span>&#160;<span class="keyword">using</span> <a class="code" href="group__api__layer.html#gafd807377b556060aa33d5dd9c12b75e2">DIABasePtr</a> = tlx::CountingPtr&lt;DIABase&gt;;</div>
+<div class="line"><a name="l00334"></a><span class="lineno"><a class="code" href="group__api__layer.html#gafd807377b556060aa33d5dd9c12b75e2">  334</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classtlx_1_1CountingPtr.html">DIABasePtr</a> = <a class="code" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr&lt;DIABase&gt;</a>;</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment">//! \}</span></div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment"></span></div>
@@ -464,8 +464,8 @@ $(document).ready(function(){initNavTree('dia__base_8hpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="dia__base_8hpp.html">dia_base.hpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:47 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1f06a9dab790f88a2b6eb40fd2f445f5.html">api</a></li><li class="navelem"><a class="el" href="dia__base_8hpp.html">dia_base.hpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:02 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

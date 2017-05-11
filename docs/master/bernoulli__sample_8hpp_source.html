@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('bernoulli__sample_8hpp_source.html',''
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="classthrill_1_1api_1_1BernoulliSampleNode.html#aac4bc73f16716afeb7c5ca3322efd17e">skip_dist_</a> = std::geometric_distribution&lt;SkipDistValueType&gt;(p);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="classthrill_1_1api_1_1BernoulliSampleNode.html#ac06a94f3b43eb6fdc303d169a3f9a5cd">skip_remaining_</a> = <a class="code" href="classthrill_1_1api_1_1BernoulliSampleNode.html#aac4bc73f16716afeb7c5ca3322efd17e">skip_dist_</a>(<a class="code" href="classthrill_1_1api_1_1BernoulliSampleNode.html#ac023b2d92ac1b207e7f3e2c0521e51fa">engine_</a>);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Skip value initialised with &quot;</span> &lt;&lt; <a class="code" href="classthrill_1_1api_1_1BernoulliSampleNode.html#ac06a94f3b43eb6fdc303d169a3f9a5cd">skip_remaining_</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Skip value initialised with &quot;</span> &lt;&lt; <a class="code" href="classthrill_1_1api_1_1BernoulliSampleNode.html#ac06a94f3b43eb6fdc303d169a3f9a5cd">skip_remaining_</a>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="classthrill_1_1api_1_1BernoulliSampleNode.html#abfdc6c6e98e6f6d52fe7e7879ee1ae1a">simple_dist_</a> = std::bernoulli_distribution(p);</div>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('bernoulli__sample_8hpp_source.html',''
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="comment">// use geometric distribution and skip values</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1api_1_1BernoulliSampleNode.html#ac06a94f3b43eb6fdc303d169a3f9a5cd">skip_remaining_</a> == 0) {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="comment">// sample element</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;sampled item &quot;</span> &lt;&lt; item;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;sampled item &quot;</span> &lt;&lt; item;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                emit(item);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <a class="code" href="classthrill_1_1api_1_1BernoulliSampleNode.html#ac06a94f3b43eb6fdc303d169a3f9a5cd">skip_remaining_</a> = <a class="code" href="classthrill_1_1api_1_1BernoulliSampleNode.html#aac4bc73f16716afeb7c5ca3322efd17e">skip_dist_</a>(<a class="code" href="classthrill_1_1api_1_1BernoulliSampleNode.html#ac023b2d92ac1b207e7f3e2c0521e51fa">engine_</a>);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            }</div>
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('bernoulli__sample_8hpp_source.html',''
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="comment">// use bernoulli distribution</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1api_1_1BernoulliSampleNode.html#abfdc6c6e98e6f6d52fe7e7879ee1ae1a">simple_dist_</a>(<a class="code" href="classthrill_1_1api_1_1BernoulliSampleNode.html#ac023b2d92ac1b207e7f3e2c0521e51fa">engine_</a>)) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;sampled item &quot;</span> &lt;&lt; item;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;sampled item &quot;</span> &lt;&lt; item;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                emit(item);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
@@ -234,8 +234,8 @@ $(document).ready(function(){initNavTree('bernoulli__sample_8hpp_source.html',''
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="bernoulli__sample_8hpp.html">bernoulli_sample.hpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:46 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1f06a9dab790f88a2b6eb40fd2f445f5.html">api</a></li><li class="navelem"><a class="el" href="bernoulli__sample_8hpp.html">bernoulli_sample.hpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:02 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

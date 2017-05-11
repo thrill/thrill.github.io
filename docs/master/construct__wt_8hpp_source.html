@@ -137,8 +137,8 @@ $(document).ready(function(){initNavTree('construct__wt_8hpp_source.html','');})
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="sort_8hpp.html">thrill/api/sort.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="window_8hpp.html">thrill/api/window.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="write__binary_8hpp.html">thrill/api/write_binary.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;tlx/math/integer_log2.hpp&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="integer__log2_8hpp.html">tlx/math/integer_log2.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
@@ -157,9 +157,9 @@ $(document).ready(function(){initNavTree('construct__wt_8hpp_source.html','');})
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">using namespace </span>thrill; <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    uint64_t max_value = input_dia.Keep().Max();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;max_value&quot;</span> &lt;&lt; max_value;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;max_value&quot;</span> &lt;&lt; max_value;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    uint64_t level = tlx::integer_log2_ceil(max_value);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    uint64_t level = <a class="code" href="group__math.html#ga308b250faae05a10c7d606e06d070f54" title="calculate the log2 ceiling of an integer type (by repeated bit shifts)">tlx::integer_log2_ceil</a>(max_value);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    uint64_t mask = (~uint64_t(0)) &lt;&lt; level;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    uint64_t maskbit = uint64_t(1) &lt;&lt; level;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('construct__wt_8hpp_source.html','');})
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        mask = (mask &gt;&gt; 1) | 0x8000000000000000llu;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        maskbit &gt;&gt;= 1;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;maskbit&quot;</span> &lt;&lt; maskbit &lt;&lt; <span class="stringliteral">&quot;mask&quot;</span> &lt;&lt; std::hex &lt;&lt; mask;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;maskbit&quot;</span> &lt;&lt; maskbit &lt;&lt; <span class="stringliteral">&quot;mask&quot;</span> &lt;&lt; std::hex &lt;&lt; mask;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        wt.Keep().Window(</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="namespacethrill_1_1api.html#afe8c544f0064d1307753a0ee2a8a35e5" title="global const DisjointTag instance">DisjointTag</a>, 64,</div>
@@ -208,8 +208,8 @@ $(document).ready(function(){initNavTree('construct__wt_8hpp_source.html','');})
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_0b8cd80b43220fb0eacec85b2381def2.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="construct__wt_8hpp.html">construct_wt.hpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:46 for Thrill by
+    <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_d4e83805c7df9bb812106585527f7df7.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="construct__wt_8hpp.html">construct_wt.hpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:01 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -133,8 +133,8 @@ $(document).ready(function(){initNavTree('cat__stream_8cpp_source.html','');});
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="multiplexer_8hpp.html">thrill/data/multiplexer.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="multiplexer__header_8hpp.html">thrill/data/multiplexer_header.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;tlx/math/round_to_power_of_two.hpp&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;tlx/string/hexdump.hpp&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="round__to__power__of__two_8hpp.html">tlx/math/round_to_power_of_two.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="hexdump_8hpp.html">tlx/string/hexdump.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
@@ -231,7 +231,7 @@ $(document).ready(function(){initNavTree('cat__stream_8cpp_source.html','');});
 <div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1data_1_1CatStream.html#a7995188bc278a110b0979c47c753d43a">  113</a></span>&#160;std::vector&lt;CatStream::Writer&gt; CatStream::GetWriters() {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">size_t</span> hard_ram_limit = multiplexer_.block_pool_.hard_ram_limit();</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">size_t</span> block_size_base = hard_ram_limit / 16 / multiplexer_.num_workers();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">size_t</span> block_size = tlx::round_down_to_power_of_two(block_size_base);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">size_t</span> block_size = <a class="code" href="group__math.html#gaa50e73c46089254357071626407f6ae5" title="does what it says: round down to next power of two">tlx::round_down_to_power_of_two</a>(block_size_base);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span> (block_size == 0 || block_size &gt; <a class="code" href="group__data__layer.html#gaf7e35b7b12aa89f4b4566640a03c62fb" title="default size of blocks in File, Channel, BlockQueue, etc.">default_block_size</a>)</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        block_size = <a class="code" href="group__data__layer.html#gaf7e35b7b12aa89f4b4566640a03c62fb" title="default size of blocks in File, Channel, BlockQueue, etc.">default_block_size</a>;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
@@ -243,7 +243,7 @@ $(document).ready(function(){initNavTree('cat__stream_8cpp_source.html','');});
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                     multiplexer_.active_streams_.load());</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;CatStream::GetWriters()&quot;</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;CatStream::GetWriters()&quot;</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; hard_ram_limit=&quot;</span> &lt;&lt; hard_ram_limit</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; block_size_base=&quot;</span> &lt;&lt; block_size_base</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; block_size=&quot;</span> &lt;&lt; block_size</div>
@@ -318,14 +318,14 @@ $(document).ready(function(){initNavTree('cat__stream_8cpp_source.html','');});
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">if</span> (is_closed_) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    is_closed_ = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;CatStream&quot;</span> &lt;&lt; id() &lt;&lt; <span class="stringliteral">&quot;close&quot;</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;CatStream&quot;</span> &lt;&lt; id() &lt;&lt; <span class="stringliteral">&quot;close&quot;</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;         &lt;&lt; <span class="stringliteral">&quot;host&quot;</span> &lt;&lt; my_host_rank()</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;         &lt;&lt; <span class="stringliteral">&quot;local_worker_id_&quot;</span> &lt;&lt; local_worker_id_;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="comment">// close all sinks, this should emit sentinel to all other worker.</span></div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; sinks_.size(); ++i) {</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordflow">if</span> (sinks_[i].closed()) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;CatStream&quot;</span> &lt;&lt; id() &lt;&lt; <span class="stringliteral">&quot;close&quot;</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;CatStream&quot;</span> &lt;&lt; id() &lt;&lt; <span class="stringliteral">&quot;close&quot;</span></div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;             &lt;&lt; <span class="stringliteral">&quot;unopened sink&quot;</span> &lt;&lt; i;</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        sinks_[i].Close();</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div>
@@ -348,7 +348,7 @@ $(document).ready(function(){initNavTree('cat__stream_8cpp_source.html','');});
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    tx_timespan_.StopEventually();</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    OnAllClosed(<span class="stringliteral">&quot;CatStream&quot;</span>);</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;CatStream::Close() finished&quot;</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;CatStream::Close() finished&quot;</span></div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; id_=&quot;</span> &lt;&lt; id_</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; local_worker_id_=&quot;</span> &lt;&lt; local_worker_id_;</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;}</div>
@@ -369,11 +369,11 @@ $(document).ready(function(){initNavTree('cat__stream_8cpp_source.html','');});
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    rx_net_bytes_ += b.size();</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    rx_net_blocks_++;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;OnCatStreamBlock&quot;</span> &lt;&lt; b;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;OnCatStreamBlock&quot;</span> &lt;&lt; b;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">if</span> (debug_data) {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;stream&quot;</span> &lt;&lt; id_ &lt;&lt; <span class="stringliteral">&quot;receive from&quot;</span> &lt;&lt; from &lt;&lt; <span class="stringliteral">&quot;:&quot;</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;             &lt;&lt; tlx::hexdump(b.ToString());</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;stream&quot;</span> &lt;&lt; id_ &lt;&lt; <span class="stringliteral">&quot;receive from&quot;</span> &lt;&lt; from &lt;&lt; <span class="stringliteral">&quot;:&quot;</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;             &lt;&lt; <a class="code" href="group__string.html#gab4c0ada9ff7b0d905361e60050316899" title="Dump a (binary) string as a sequence of uppercase hexadecimal pairs.">tlx::hexdump</a>(b.ToString());</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    queues_[from].AppendPinnedBlock(std::move(b), <span class="comment">/* is_last_block */</span> <span class="keyword">false</span>);</div>
@@ -385,7 +385,7 @@ $(document).ready(function(){initNavTree('cat__stream_8cpp_source.html','');});
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    rx_net_blocks_++;</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;OnCatCloseStream from=&quot;</span> &lt;&lt; from;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;OnCatCloseStream from=&quot;</span> &lt;&lt; from;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">if</span> (--remaining_closing_blocks_ == 0) {</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        rx_lifetime_.StopEventually();</div>
@@ -398,7 +398,7 @@ $(document).ready(function(){initNavTree('cat__stream_8cpp_source.html','');});
 <div class="line"><a name="l00280"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1data_1_1CatStream.html#a7f8d0a8ed0772b09cae61fd8a5762cea">  280</a></span>&#160;<a class="code" href="exceptionthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads.">BlockQueue</a>* CatStream::loopback_queue(<span class="keywordtype">size_t</span> from_worker_id) {</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    assert(from_worker_id &lt; workers_per_host());</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordtype">size_t</span> global_worker_rank = workers_per_host() * my_host_rank() + from_worker_id;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;expose loopback queue for&quot;</span> &lt;&lt; from_worker_id &lt;&lt; <span class="stringliteral">&quot;-&gt;&quot;</span> &lt;&lt; local_worker_id_;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;expose loopback queue for&quot;</span> &lt;&lt; from_worker_id &lt;&lt; <span class="stringliteral">&quot;-&gt;&quot;</span> &lt;&lt; local_worker_id_;</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">return</span> &amp;(queues_[global_worker_rank]);</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
@@ -411,8 +411,8 @@ $(document).ready(function(){initNavTree('cat__stream_8cpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1b62fa212cebae5dc6aa23a01bf7093d.html">data</a></li><li class="navelem"><a class="el" href="cat__stream_8cpp.html">cat_stream.cpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:47 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_c0e49fec6cb6c78dde854e77e0fc73d0.html">data</a></li><li class="navelem"><a class="el" href="cat__stream_8cpp.html">cat_stream.cpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:02 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

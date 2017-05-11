@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('tcp_2connection_8hpp_source.html','');
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">    //! move assignment-operator</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="exceptionthrill_1_1net_1_1tcp_1_1Connection.html#a5fb35606241e73321f58438dc5a15295">   84</a></span>&#160;<span class="comment"></span>    <a class="code" href="exceptionthrill_1_1net_1_1tcp_1_1Connection.html" title="Connection is a rich point-to-point socket connection to another client (worker, master, or whatever).">Connection</a>&amp; <a class="code" href="exceptionthrill_1_1net_1_1tcp_1_1Connection.html#a5fb35606241e73321f58438dc5a15295" title="move assignment-operator">operator = </a>(<a class="code" href="exceptionthrill_1_1net_1_1tcp_1_1Connection.html" title="Connection is a rich point-to-point socket connection to another client (worker, master, or whatever).">Connection</a>&amp;&amp; other) {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="exceptionthrill_1_1net_1_1tcp_1_1Connection.html#ada0eaf84b2b8c8db68d6d24ad1a0a34a" title="Check whether the contained file descriptor is valid.">IsValid</a>()) {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;Assignment-destruction of valid Connection&quot;</span> &lt;&lt; <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;Assignment-destruction of valid Connection&quot;</span> &lt;&lt; <span class="keyword">this</span>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <a class="code" href="exceptionthrill_1_1net_1_1tcp_1_1Connection.html#a7f7a3199c392465d0767c6506c1af5b4" title="Close this Connection.">Close</a>();</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="exceptionthrill_1_1net_1_1tcp_1_1Connection.html#a3704a65fe4db37dd1593d8be55455243" title="Underlying socket or connection handle.">socket_</a> = std::move(other.socket_);</div>
@@ -366,8 +366,8 @@ $(document).ready(function(){initNavTree('tcp_2connection_8hpp_source.html','');
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_877fdf1e6de6dbbd26be6a4f8db0e6bf.html">net</a></li><li class="navelem"><a class="el" href="dir_6932eba81436afd0bb7e09bea6fff5b7.html">tcp</a></li><li class="navelem"><a class="el" href="tcp_2connection_8hpp.html">connection.hpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:48 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1498198843d04809400c3646bfa82d14.html">net</a></li><li class="navelem"><a class="el" href="dir_799329db1e6d16b2654e0d7c443db071.html">tcp</a></li><li class="navelem"><a class="el" href="tcp_2connection_8hpp.html">connection.hpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:03 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

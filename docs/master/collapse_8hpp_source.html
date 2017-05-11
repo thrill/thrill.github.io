@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('collapse_8hpp_source.html','');});
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="dia_8hpp.html">thrill/api/dia.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="dia__node_8hpp.html">thrill/api/dia_node.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;tlx/meta/function_stack.hpp&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="function__stack_8hpp.html">tlx/meta/function_stack.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
@@ -181,13 +181,13 @@ $(document).ready(function(){initNavTree('collapse_8hpp_source.html','');});
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">    //! Receive a whole data::File of ValueType, but only if our stack is empty.</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#a7d9d7bf697b0de4d68da279180d7075c">OnPreOpFile</a>(<span class="keyword">const</span> data::File&amp; file, <span class="keywordtype">size_t</span> <span class="comment">/* parent_index */</span>) final {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span> (!parent_stack_empty_) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Collapse rejected File from parent &quot;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Collapse rejected File from parent &quot;</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;due to non-empty function stack.&quot;</span>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="comment">// forward file</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Collapse accepted File from parent&quot;</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Collapse accepted File from parent&quot;</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        data::File file_copy = file.Copy();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        this-&gt;<a class="code" href="classthrill_1_1api_1_1DIANode.html#af1141f587343e155be749261427172ca">PushFile</a>(file_copy, <span class="comment">/* consume */</span> <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -242,9 +242,9 @@ $(document).ready(function(){initNavTree('collapse_8hpp_source.html','');});
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<a class="code" href="classthrill_1_1api_1_1DIA.html#a2358e3f716f78627cd361af589ee2d85" title="default-constructor: invalid DIA">DIA&lt;ValueType, Stack&gt;::DIA</a>(<span class="keyword">const</span> DIA&lt;ValueType, AnyStack&gt;&amp; rhs)</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">// Create new CollapseNode. Transfer stack from rhs to CollapseNode. Build new</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">// DIA with empty stack and CollapseNode</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    : DIA(tlx::make_counting&lt;api::CollapseNode&lt;ValueType&gt; &gt;(rhs)) {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="logger_8hpp.html#aa92cc370e6906ac3887db96a0a628ce8" title="Override default output: never or always output log.">LOG0</a> &lt;&lt; <span class="stringliteral">&quot;WARNING: cast to DIA creates CollapseNode instead of inline chaining.&quot;</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="logger_8hpp.html#aa92cc370e6906ac3887db96a0a628ce8" title="Override default output: never or always output log.">LOG0</a> &lt;&lt; <span class="stringliteral">&quot;Consider whether you can use auto instead of DIA.&quot;</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    : DIA(tlx::<a class="code" href="namespacetlx.html#ae38d352a065543cf324f52a58bd2b026" title="method analogous to std::make_shared and std::make_unique.">make_counting</a>&lt;api::CollapseNode&lt;ValueType&gt; &gt;(rhs)) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="thrill_2common_2logger_8hpp.html#aa92cc370e6906ac3887db96a0a628ce8" title="Override default output: never or always output log.">LOG0</a> &lt;&lt; <span class="stringliteral">&quot;WARNING: cast to DIA creates CollapseNode instead of inline chaining.&quot;</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="thrill_2common_2logger_8hpp.html#aa92cc370e6906ac3887db96a0a628ce8" title="Override default output: never or always output log.">LOG0</a> &lt;&lt; <span class="stringliteral">&quot;Consider whether you can use auto instead of DIA.&quot;</span>;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif  // THRILL_DOXYGEN_IGNORE</span></div>
@@ -267,7 +267,7 @@ $(document).ready(function(){initNavTree('collapse_8hpp_source.html','');});
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
 <div class="line"><a name="l00150"></a><span class="lineno"><a class="code" href="structthrill_1_1api_1_1CollapseSwitch_3_01ValueType_00_01tlx_1_1FunctionStack_3_01ValueType_01_4_01_4.html">  150</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structthrill_1_1api_1_1CollapseSwitch.html" title="Template switch to generate a CollapseNode if there is a non-empty Stack.">CollapseSwitch</a>&lt;ValueType, tlx::FunctionStack&lt;ValueType&gt; &gt;{</div>
 <div class="line"><a name="l00151"></a><span class="lineno"><a class="code" href="structthrill_1_1api_1_1CollapseSwitch_3_01ValueType_00_01tlx_1_1FunctionStack_3_01ValueType_01_4_01_4.html#af8bbce4b1092043028868abf659e9c34">  151</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework.">DIA&lt;ValueType&gt;</a> <a class="code" href="structthrill_1_1api_1_1CollapseSwitch.html#ab27bef747c04b79fc283b9101f61369f">MakeCollapse</a>(</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework.">DIA</a>&lt;ValueType, tlx::FunctionStack&lt;ValueType&gt; &gt;&amp; dia) {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework.">DIA</a>&lt;ValueType, <a class="code" href="classtlx_1_1FunctionStack.html" title="A FunctionStack is a chain of functor that can be folded to a single functor (which is usually optimi...">tlx::FunctionStack&lt;ValueType&gt;</a> &gt;&amp; dia) {</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">return</span> dia;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;};</div>
@@ -288,8 +288,8 @@ $(document).ready(function(){initNavTree('collapse_8hpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="collapse_8hpp.html">collapse.hpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:46 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1f06a9dab790f88a2b6eb40fd2f445f5.html">api</a></li><li class="navelem"><a class="el" href="collapse_8hpp.html">collapse.hpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:02 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

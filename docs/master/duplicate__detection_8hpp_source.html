@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('duplicate__detection_8hpp_source.html'
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="duplicate__detection_8hpp.html#a72aa96d6cd9d5d4995ec8d2cb22ed536">   16</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define THRILL_CORE_DUPLICATE_DETECTION_HEADER</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="context_8hpp.html">thrill/api/context.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="delta__stream_8hpp.html">thrill/core/delta_stream.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="golomb__bit__stream_8hpp.html">thrill/core/golomb_bit_stream.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="multiway__merge_8hpp.html">thrill/core/multiway_merge.hpp</a>&gt;</span></div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('duplicate__detection_8hpp_source.html'
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">     * \param num_workers Number of workers in this Thrill process</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">     * \param max_hash Modulo for all hashes</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#a718ffba8857ab1c5c6f070eee475309b">   74</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#a718ffba8857ab1c5c6f070eee475309b" title="Sends all hashes in the range [max_hash / num_workers * p, max_hash / num_workers * (p + 1)) to worke...">WriteEncodedHashes</a>(<span class="keyword">const</span> <a class="code" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a>&amp; stream_pointer,</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#a718ffba8857ab1c5c6f070eee475309b">   74</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#a718ffba8857ab1c5c6f070eee475309b" title="Sends all hashes in the range [max_hash / num_workers * p, max_hash / num_workers * (p + 1)) to worke...">WriteEncodedHashes</a>(<span class="keyword">const</span> <a class="code" href="classtlx_1_1CountingPtr.html">data::CatStreamPtr</a>&amp; stream_pointer,</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                            <span class="keyword">const</span> std::vector&lt;size_t&gt;&amp; hashes,</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                            <span class="keywordtype">size_t</span> golomb_param,</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                            <span class="keywordtype">size_t</span> num_workers,</div>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('duplicate__detection_8hpp_source.html'
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">     * \param non_duplicates Target vector for hashes, should be empty beforehand</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">     * \param golomb_param Golomb parameter</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#ace42b93b36e002e64751abea9d4fe36e">  113</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#ace42b93b36e002e64751abea9d4fe36e" title="Reads a golomb encoded bitset from a data stream and returns it&#39;s contents in form of a vector of has...">ReadEncodedHashesToVector</a>(<span class="keyword">const</span> <a class="code" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a>&amp; stream_pointer,</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#ace42b93b36e002e64751abea9d4fe36e">  113</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#ace42b93b36e002e64751abea9d4fe36e" title="Reads a golomb encoded bitset from a data stream and returns it&#39;s contents in form of a vector of has...">ReadEncodedHashesToVector</a>(<span class="keyword">const</span> <a class="code" href="classtlx_1_1CountingPtr.html">data::CatStreamPtr</a>&amp; stream_pointer,</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                   std::vector&lt;bool&gt;&amp; non_duplicates,</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                   <span class="keywordtype">size_t</span> golomb_param) {</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
@@ -288,7 +288,7 @@ $(document).ready(function(){initNavTree('duplicate__detection_8hpp_source.html'
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        std::sort(hashes.begin(), hashes.end());</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <a class="code" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a> golomb_data_stream = context.GetNewCatStream(dia_id);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <a class="code" href="classtlx_1_1CountingPtr.html">data::CatStreamPtr</a> golomb_data_stream = context.GetNewCatStream(dia_id);</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <a class="code" href="classthrill_1_1core_1_1DuplicateDetection.html#a718ffba8857ab1c5c6f070eee475309b" title="Sends all hashes in the range [max_hash / num_workers * p, max_hash / num_workers * (p + 1)) to worke...">WriteEncodedHashes</a>(golomb_data_stream,</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                           hashes, golomb_param,</div>
@@ -319,7 +319,7 @@ $(document).ready(function(){initNavTree('duplicate__detection_8hpp_source.html'
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="comment">// create streams (delta/Golomb encoded) to notify workers of duplicates</span></div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <a class="code" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a> duplicates_stream = context.GetNewCatStream(dia_id);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <a class="code" href="classtlx_1_1CountingPtr.html">data::CatStreamPtr</a> duplicates_stream = context.GetNewCatStream(dia_id);</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        std::vector&lt;data::CatStream::Writer&gt; duplicates_writers =</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            duplicates_stream-&gt;GetWriters();</div>
@@ -351,26 +351,26 @@ $(document).ready(function(){initNavTree('duplicate__detection_8hpp_source.html'
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                <span class="keywordflow">if</span> (this_item.first != next_item.first) {</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                    <span class="comment">// this_item is a unique</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                    <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;!&quot;</span> &lt;&lt; this_item.first &lt;&lt; <span class="stringliteral">&quot;-&gt;&quot;</span> &lt;&lt; this_item.second;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                    <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;!&quot;</span> &lt;&lt; this_item.first &lt;&lt; <span class="stringliteral">&quot;-&gt;&quot;</span> &lt;&lt; this_item.second;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                    duplicates_dw[this_item.second].Put(this_item.first);</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                }</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                    <span class="comment">// this_item is a duplicate with next_item</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                    <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;=&quot;</span> &lt;&lt; this_item.first &lt;&lt; <span class="stringliteral">&quot;-&quot;</span> &lt;&lt; this_item.second;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                    <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;=&quot;</span> &lt;&lt; this_item.first &lt;&lt; <span class="stringliteral">&quot;-&quot;</span> &lt;&lt; this_item.second;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                    <span class="comment">// read more items into next_item until the key mismatches</span></div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                    <span class="keywordflow">while</span> (puller.HasNext() &amp;&amp;</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                           (next_item = puller.NextWithSource(),</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                            next_item.first == this_item.first))</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                    {</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                        <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; next_item.first &lt;&lt; <span class="stringliteral">&quot;-&quot;</span> &lt;&lt; next_item.second;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                        <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;.&quot;</span> &lt;&lt; next_item.first &lt;&lt; <span class="stringliteral">&quot;-&quot;</span> &lt;&lt; next_item.second;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                    }</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                }</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            }</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <span class="keywordflow">if</span> (this_item.first != next_item.first) {</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                <span class="comment">// last item (next_item) is a unique</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;!&quot;</span> &lt;&lt; next_item.first &lt;&lt; <span class="stringliteral">&quot;-&gt;&quot;</span> &lt;&lt; next_item.second;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;!&quot;</span> &lt;&lt; next_item.first &lt;&lt; <span class="stringliteral">&quot;-&gt;&quot;</span> &lt;&lt; next_item.second;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                duplicates_dw[next_item.second].Put(next_item.first);</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            }</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        }</div>
@@ -401,8 +401,8 @@ $(document).ready(function(){initNavTree('duplicate__detection_8hpp_source.html'
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_8bfba075c6cd97373f9ca7badca61766.html">core</a></li><li class="navelem"><a class="el" href="duplicate__detection_8hpp.html">duplicate_detection.hpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:47 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_bf197d76390958e69efa59db59e29814.html">core</a></li><li class="navelem"><a class="el" href="duplicate__detection_8hpp.html">duplicate_detection.hpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:02 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

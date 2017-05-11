@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('dispatcher_8cpp_source.html','');});
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> (r != MPI_SUCCESS)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classthrill_1_1net_1_1mpi_1_1Exception.html" title="A derived exception class which looks up MPI error strings.">Exception</a>(<span class="stringliteral">&quot;Error during ISend&quot;</span>, r);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="logger_8hpp.html#af14c6f708bfe284dacf04d7866461a32" title="Override default output: never or always output log.">sLOG0</a> &lt;&lt; <span class="stringliteral">&quot;Isend size&quot;</span> &lt;&lt; size;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="thrill_2common_2logger_8hpp.html#af14c6f708bfe284dacf04d7866461a32" title="Override default output: never or always output log.">sLOG0</a> &lt;&lt; <span class="stringliteral">&quot;Isend size&quot;</span> &lt;&lt; size;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    c.<a class="code" href="classthrill_1_1net_1_1Connection.html#a597a259166090cf9a92740c4b7b423ec" title="sent bytes">tx_bytes_</a> += size;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> request;</div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('dispatcher_8cpp_source.html','');});
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span> (r != MPI_SUCCESS)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classthrill_1_1net_1_1mpi_1_1Exception.html" title="A derived exception class which looks up MPI error strings.">Exception</a>(<span class="stringliteral">&quot;Error during IRecv&quot;</span>, r);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="logger_8hpp.html#af14c6f708bfe284dacf04d7866461a32" title="Override default output: never or always output log.">sLOG0</a> &lt;&lt; <span class="stringliteral">&quot;Irecv size&quot;</span> &lt;&lt; size;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="thrill_2common_2logger_8hpp.html#af14c6f708bfe284dacf04d7866461a32" title="Override default output: never or always output log.">sLOG0</a> &lt;&lt; <span class="stringliteral">&quot;Irecv size&quot;</span> &lt;&lt; size;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    c.<a class="code" href="classthrill_1_1net_1_1Connection.html#abedb4f733de28a4e8e8228e3d7d0bc3a" title="received bytes">rx_bytes_</a> += size;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> request;</div>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('dispatcher_8cpp_source.html','');});
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">int</span> out_count;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;DispatchOne(): MPI_Testsome()&quot;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;DispatchOne(): MPI_Testsome()&quot;</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;             &lt;&lt; <span class="stringliteral">&quot; mpi_async_requests_=&quot;</span> &lt;&lt; <a class="code" href="exceptionthrill_1_1net_1_1mpi_1_1Dispatcher.html#a24de91f85dfc34cc6a94726bb0e1443a" title="array of current async MPI_Request for MPI_Testsome().">mpi_async_requests_</a>.size();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">int</span> r = MPI_Testsome(</div>
@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('dispatcher_8cpp_source.html','');});
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="comment">// nothing returned</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (out_count &gt; 0) {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;DispatchOne(): MPI_Testsome() out_count=&quot;</span> &lt;&lt; out_count;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;DispatchOne(): MPI_Testsome() out_count=&quot;</span> &lt;&lt; out_count;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="comment">// run through finished requests back to front, swap last entry into</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="comment">// finished ones, such that preceding indexes remain valid.</span></div>
@@ -269,11 +269,11 @@ $(document).ready(function(){initNavTree('dispatcher_8cpp_source.html','');});
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <a class="code" href="structthrill_1_1net_1_1mpi_1_1Dispatcher_1_1Watch.html" title="callback vectors per peer">Watch</a>&amp; w = <a class="code" href="exceptionthrill_1_1net_1_1mpi_1_1Dispatcher.html#ae25584fb8f8ab5b7c8677a03345288ba" title="callback watch vector">watch_</a>[p];</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">if</span> (!w.active) {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;Got Iprobe() for unwatched peer&quot;</span> &lt;&lt; p;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;Got Iprobe() for unwatched peer&quot;</span> &lt;&lt; p;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;Got iprobe for peer&quot;</span> &lt;&lt; p;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;Got iprobe for peer&quot;</span> &lt;&lt; p;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">if</span> (w.read_cb.size()) {</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="comment">// run read callbacks until one returns true (in which case it wants</span></div>
@@ -288,7 +288,7 @@ $(document).ready(function(){initNavTree('dispatcher_8cpp_source.html','');});
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            }</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        }</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Dispatcher: got MPI_Iprobe() for peer &quot;</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Dispatcher: got MPI_Iprobe() for peer &quot;</span></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                &lt;&lt; p &lt;&lt; <span class="stringliteral">&quot; without a read handler.&quot;</span>;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        }</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
@@ -304,8 +304,8 @@ $(document).ready(function(){initNavTree('dispatcher_8cpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_877fdf1e6de6dbbd26be6a4f8db0e6bf.html">net</a></li><li class="navelem"><a class="el" href="dir_d5c61acbedd3d6670269b8fd2a22ff6d.html">mpi</a></li><li class="navelem"><a class="el" href="dispatcher_8cpp.html">dispatcher.cpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:48 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1498198843d04809400c3646bfa82d14.html">net</a></li><li class="navelem"><a class="el" href="dir_14ae19520c21a71b8599391fc07827cb.html">mpi</a></li><li class="navelem"><a class="el" href="dispatcher_8cpp.html">dispatcher.cpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:03 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

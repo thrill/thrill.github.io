@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('group__to__index_8hpp_source.html','')
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="dop__node_8hpp.html">thrill/api/dop_node.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="group__by__iterator_8hpp.html">thrill/api/group_by_iterator.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="functional_8hpp.html">thrill/common/functional.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
@@ -230,7 +230,7 @@ $(document).ready(function(){initNavTree('group__to__index_8hpp_source.html','')
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#a7b55875187fc15ca2640cb6b9266a624" title="Virtual method for pushing data. Triggers actual pushing in sub-classes.">PushData</a>(<span class="keywordtype">bool</span> consume) <span class="keyword">final</span> {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;GroupToIndexNode::PushData()&quot;</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;GroupToIndexNode::PushData()&quot;</span>;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">size_t</span> num_runs = <a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a8bb9d507163ac6bc0f856fbf84ac01e6">files_</a>.size();</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">if</span> (num_runs == 0) {</div>
@@ -291,7 +291,7 @@ $(document).ready(function(){initNavTree('group__to__index_8hpp_source.html','')
 <div class="line"><a name="l00173"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#acd42fc0dbf2d6301b29209a5df4e1dfe">  173</a></span>&#160;    <a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a9e721b57080f8913af8816aadc2d1d66">ValueOut</a> <a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#acd42fc0dbf2d6301b29209a5df4e1dfe">neutral_element_</a>;</div>
 <div class="line"><a name="l00174"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a1e12a457648e17ad318b37cfb9269893">  174</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a1e12a457648e17ad318b37cfb9269893">totalsize_</a> = 0;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a05756a54b8232245714df128b69a89db">  176</a></span>&#160;    <a class="code" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a> <a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a05756a54b8232245714df128b69a89db">stream_</a> { <a class="code" href="classthrill_1_1api_1_1DIABase.html#ae8f38e2955f476fde7f144a0f76129bb" title="associated Context">context_</a>.<a class="code" href="classthrill_1_1api_1_1Context.html#a92b6ec0c56ca33dc491f8c2e72414c7b">GetNewCatStream</a>(<span class="keyword">this</span>) };</div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a05756a54b8232245714df128b69a89db">  176</a></span>&#160;    <a class="code" href="classtlx_1_1CountingPtr.html">data::CatStreamPtr</a> <a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a05756a54b8232245714df128b69a89db">stream_</a> { <a class="code" href="classthrill_1_1api_1_1DIABase.html#ae8f38e2955f476fde7f144a0f76129bb" title="associated Context">context_</a>.<a class="code" href="classthrill_1_1api_1_1Context.html#a92b6ec0c56ca33dc491f8c2e72414c7b">GetNewCatStream</a>(<span class="keyword">this</span>) };</div>
 <div class="line"><a name="l00177"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a95ebce64c91834de1bde0bc50c4775c2">  177</a></span>&#160;    std::vector&lt;data::CatStream::Writer&gt; <a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a95ebce64c91834de1bde0bc50c4775c2">emitter_</a> { <a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a05756a54b8232245714df128b69a89db">stream_</a>-&gt;GetWriters() };</div>
 <div class="line"><a name="l00178"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a8bb9d507163ac6bc0f856fbf84ac01e6">  178</a></span>&#160;    std::vector&lt;data::File&gt; <a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a8bb9d507163ac6bc0f856fbf84ac01e6">files_</a>;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
@@ -342,7 +342,7 @@ $(document).ready(function(){initNavTree('group__to__index_8hpp_source.html','')
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment">    //! Receive elements from other workers.</span></div>
 <div class="line"><a name="l00226"></a><span class="lineno"><a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a50bbe9134ad3a335b52a0ca1ad4f54ab">  226</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a50bbe9134ad3a335b52a0ca1ad4f54ab" title="Receive elements from other workers.">MainOp</a>() {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Running GroupBy MainOp&quot;</span>;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Running GroupBy MainOp&quot;</span>;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        std::vector&lt;ValueIn&gt; incoming;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
@@ -358,7 +358,7 @@ $(document).ready(function(){initNavTree('group__to__index_8hpp_source.html','')
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            incoming.emplace_back(reader.template Next&lt;ValueIn&gt;());</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        }</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a6b4bf40541e2c8488d0155533faa9350" title="Sort and store elements in a file.">FlushVectorToFile</a>(incoming);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        std::vector&lt;ValueIn&gt;().swap(incoming);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        std::vector&lt;ValueIn&gt;().<a class="code" href="namespacetlx.html#a5dee8d3837365def6ce2290d6e76bd55">swap</a>(incoming);</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="classthrill_1_1api_1_1GroupToIndexNode.html#a05756a54b8232245714df128b69a89db">stream_</a>-&gt;Close();</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    }</div>
@@ -404,8 +404,8 @@ $(document).ready(function(){initNavTree('group__to__index_8hpp_source.html','')
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="group__to__index_8hpp.html">group_to_index.hpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:47 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1f06a9dab790f88a2b6eb40fd2f445f5.html">api</a></li><li class="navelem"><a class="el" href="group__to__index_8hpp.html">group_to_index.hpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:02 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

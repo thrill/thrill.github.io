@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['make_5findex_5fsequence',['make_index_sequence',['../structtlx_1_1make__index__sequence.html',1,'tlx']]],
+  ['make_5findex_5fsequence_5fhelper',['make_index_sequence_helper',['../structtlx_1_1detail_1_1make__index__sequence__helper.html',1,'tlx::detail']]],
+  ['make_5findex_5fsequence_5fhelper_3c_200_2c_20indexes_2e_2e_2e_3e',['make_index_sequence_helper&lt; 0, Indexes...&gt;',['../structtlx_1_1detail_1_1make__index__sequence__helper_3_010_00_01Indexes_8_8_8_4.html',1,'tlx::detail']]],
   ['manager',['Manager',['../classthrill_1_1mem_1_1Manager.html',1,'thrill::mem']]],
   ['manager',['Manager',['../exceptionthrill_1_1net_1_1Manager.html',1,'thrill::net']]],
   ['matrix',['Matrix',['../classthrill_1_1common_1_1Matrix.html',1,'thrill::common']]],

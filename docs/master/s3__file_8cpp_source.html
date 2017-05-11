@@ -128,12 +128,12 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="s3__file_8hpp.html">thrill/vfs/s3_file.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="string_8hpp.html">thrill/common/string.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2string_8hpp.html">thrill/common/string.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;tlx/die.hpp&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;tlx/string/split.hpp&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;tlx/string/starts_with.hpp&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="die_8hpp.html">tlx/die.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="split_8hpp.html">tlx/string/split.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="starts__with_8hpp.html">tlx/string/starts_with.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#if THRILL_HAVE_LIBS3</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;libs3.h&gt;</span></div>
@@ -171,22 +171,22 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"></span><span class="keywordtype">void</span> LibS3LogError(S3Status status, <span class="keyword">const</span> S3ErrorDetails* error) {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span> (status != S3StatusOK) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-ERROR - Status: &quot;</span> &lt;&lt; S3_get_status_name(status);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-ERROR - Status: &quot;</span> &lt;&lt; S3_get_status_name(status);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (error != <span class="keyword">nullptr</span> &amp;&amp; error-&gt;message != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-ERROR - Message: &quot;</span> &lt;&lt; error-&gt;message;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-ERROR - Message: &quot;</span> &lt;&lt; error-&gt;message;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> (error != <span class="keyword">nullptr</span> &amp;&amp; error-&gt;resource != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-ERROR - Resource: &quot;</span> &lt;&lt; error-&gt;resource;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-ERROR - Resource: &quot;</span> &lt;&lt; error-&gt;resource;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (error != <span class="keyword">nullptr</span> &amp;&amp; error-&gt;furtherDetails != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-ERROR - Further Details: &quot;</span> &lt;&lt; error-&gt;furtherDetails;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-ERROR - Further Details: &quot;</span> &lt;&lt; error-&gt;furtherDetails;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span> (error != <span class="keyword">nullptr</span> &amp;&amp; error-&gt;extraDetailsCount != 0) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-ERROR - Extra Details:&quot;</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-ERROR - Extra Details:&quot;</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; error-&gt;extraDetailsCount; i++) {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-ERROR - - &quot;</span> &lt;&lt; error-&gt;extraDetails[i].name</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-ERROR - - &quot;</span> &lt;&lt; error-&gt;extraDetails[i].name</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; error-&gt;extraDetails[i].value;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
@@ -199,17 +199,17 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="wavelet__tree2_8cpp.html#a6b72e54baf646b08b4b87f987f583dcb">debug</a>) <span class="keywordflow">return</span> S3StatusOK;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (properties-&gt;contentType != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-DEBUG - Content-Type: &quot;</span> &lt;&lt; properties-&gt;contentType;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-DEBUG - Content-Type: &quot;</span> &lt;&lt; properties-&gt;contentType;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span> (properties-&gt;requestId != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-DEBUG - Request-Id: &quot;</span> &lt;&lt; properties-&gt;requestId;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-DEBUG - Request-Id: &quot;</span> &lt;&lt; properties-&gt;requestId;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span> (properties-&gt;requestId2 != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-DEBUG - Request-Id-2: &quot;</span> &lt;&lt; properties-&gt;requestId2;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-DEBUG - Request-Id-2: &quot;</span> &lt;&lt; properties-&gt;requestId2;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">if</span> (properties-&gt;contentLength &gt; 0)</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-DEBUG - Content-Length: &quot;</span> &lt;&lt; properties-&gt;contentLength;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-DEBUG - Content-Length: &quot;</span> &lt;&lt; properties-&gt;contentLength;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (properties-&gt;server != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-DEBUG - Server: &quot;</span> &lt;&lt; properties-&gt;server;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-DEBUG - Server: &quot;</span> &lt;&lt; properties-&gt;server;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span> (properties-&gt;eTag != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-DEBUG - ETag: &quot;</span> &lt;&lt; properties-&gt;eTag;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-DEBUG - ETag: &quot;</span> &lt;&lt; properties-&gt;eTag;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (properties-&gt;lastModified &gt; 0) {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">char</span> timebuf[256];</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        time_t t = (time_t)properties-&gt;lastModified;</div>
@@ -218,10 +218,10 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="comment">// gmtime is not thread-safe but we don&#39;t care here.</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        strftime(timebuf, <span class="keyword">sizeof</span>(timebuf),</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                 <span class="stringliteral">&quot;%Y-%m-%dT%H:%M:%SZ&quot;</span>, localtime_r(&amp;t, &amp;tm));</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-DEBUG - Last-Modified: &quot;</span> &lt;&lt; timebuf;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-DEBUG - Last-Modified: &quot;</span> &lt;&lt; timebuf;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; properties-&gt;metaDataCount; i++) {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-DEBUG - x-amz-meta-&quot;</span> &lt;&lt; properties-&gt;metaData[i].name</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-DEBUG - x-amz-meta-&quot;</span> &lt;&lt; properties-&gt;metaData[i].name</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;             &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; properties-&gt;metaData[i].value;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
@@ -243,10 +243,10 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    bkt.secretAccessKey = getenv(<span class="stringliteral">&quot;THRILL_S3_SECRET&quot;</span>);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">if</span> (bkt.accessKeyId != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        die(<span class="stringliteral">&quot;S3-ERROR - set environment variable THRILL_S3_KEY&quot;</span>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e" title="Instead of abort(), throw the output the message via an exception.">die</a>(<span class="stringliteral">&quot;S3-ERROR - set environment variable THRILL_S3_KEY&quot;</span>);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">if</span> (bkt.secretAccessKey != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        die(<span class="stringliteral">&quot;S3-ERROR - set environment variable THRILL_S3_SECRET&quot;</span>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e" title="Instead of abort(), throw the output the message via an exception.">die</a>(<span class="stringliteral">&quot;S3-ERROR - set environment variable THRILL_S3_SECRET&quot;</span>);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
@@ -370,11 +370,11 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a> path = _path;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="comment">// crop off s3://</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    die_unless(tlx::starts_with(path, <span class="stringliteral">&quot;s3://&quot;</span>));</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(<a class="code" href="group__string.html#gadc5cce7e8c7fd30078b9129a7ae1d74b" title="Checks if the given match string is located at the start of this string.">tlx::starts_with</a>(path, <span class="stringliteral">&quot;s3://&quot;</span>));</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    path = path.substr(5);</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="comment">// split uri into host/path</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    std::vector&lt;std::string&gt; splitted = tlx::split(<span class="charliteral">&#39;/&#39;</span>, path, 2);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    std::vector&lt;std::string&gt; splitted = <a class="code" href="group__string.html#ga4fb56b145f00428be03f74257c61f1cc" title="Split the given string at each separator character into distinct substrings.">tlx::split</a>(<span class="charliteral">&#39;/&#39;</span>, path, 2);</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="comment">// construct bucket</span></div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    S3BucketContext bkt;</div>
@@ -429,7 +429,7 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <span class="comment">// create request context</span></div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        S3Status status = S3_create_request_context(&amp;req_ctx_);</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">if</span> (status != S3StatusOK || req_ctx_ == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            die(<span class="stringliteral">&quot;S3_create_request_context() failed.&quot;</span>);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            <a class="code" href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e" title="Instead of abort(), throw the output the message via an exception.">die</a>(<span class="stringliteral">&quot;S3_create_request_context() failed.&quot;</span>);</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="comment">// issue request but do not wait for data</span></div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        S3_get_object(</div>
@@ -457,7 +457,7 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        assert(req_ctx_);</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keywordflow">if</span> (status_ != S3StatusOK)</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            die(<span class="stringliteral">&quot;S3-ERROR during read: &quot;</span> &lt;&lt; S3_get_status_name(status_));</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <a class="code" href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e" title="Instead of abort(), throw the output the message via an exception.">die</a>(<span class="stringliteral">&quot;S3-ERROR during read: &quot;</span> &lt;&lt; S3_get_status_name(status_));</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        status_ = S3StatusOK;</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        uint8_t* output_begin = <span class="keyword">reinterpret_cast&lt;</span>uint8_t*<span class="keyword">&gt;</span>(data);</div>
@@ -484,14 +484,14 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            S3Status status = S3_get_request_context_fdsets(</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                req_ctx_, &amp;read_fds, &amp;write_fds, &amp;except_fds, &amp;max_fd);</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            die_unless(status == S3StatusOK);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(status == S3StatusOK);</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            <span class="keywordflow">if</span> (max_fd != -1) {</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                int64_t timeout = S3_get_request_context_timeout(req_ctx_);</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                <span class="keyword">struct </span>timeval tv = { timeout / 1000, (timeout % 1000) * 1000 };</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                <span class="keywordtype">int</span> r = select(max_fd + 1, &amp;read_fds, &amp;write_fds, &amp;except_fds,</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                               <span class="comment">/* timeout */</span> (timeout == -1) ? 0 : &amp;tv);</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                die_unless(r &gt;= 0);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(r &gt;= 0);</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            }</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            <span class="comment">// run callbacks</span></div>
@@ -560,8 +560,8 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="comment">// store remaining unneeded bytes in buffer_</span></div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <span class="keywordflow">if</span> (wb != static_cast&lt;uintptr_t&gt;(bufferSize))</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        {</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;            die_unless(output_ == output_end_);</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;            die_unless(buffer_.empty());</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;            <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(output_ == output_end_);</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;            <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(buffer_.empty());</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;            buffer_.resize(bufferSize - wb);</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            std::copy(buffer + wb, buffer + bufferSize, buffer_.data());</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        }</div>
@@ -582,11 +582,11 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a> path_ = path;</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <span class="comment">// crop off s3://</span></div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    die_unless(tlx::starts_with(path_, <span class="stringliteral">&quot;s3://&quot;</span>));</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(<a class="code" href="group__string.html#gadc5cce7e8c7fd30078b9129a7ae1d74b" title="Checks if the given match string is located at the start of this string.">tlx::starts_with</a>(path_, <span class="stringliteral">&quot;s3://&quot;</span>));</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    path_ = path_.substr(5);</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    <span class="comment">// split uri into host/path</span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    std::vector&lt;std::string&gt; splitted = tlx::split(<span class="charliteral">&#39;/&#39;</span>, path_, 2);</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    std::vector&lt;std::string&gt; splitted = <a class="code" href="group__string.html#ga4fb56b145f00428be03f74257c61f1cc" title="Split the given string at each separator character into distinct substrings.">tlx::split</a>(<span class="charliteral">&#39;/&#39;</span>, path_, 2);</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="keywordflow">return</span> tlx::make_counting&lt;S3ReadStream&gt;(</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        splitted[0], splitted[1],</div>
@@ -655,7 +655,7 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        <span class="keywordflow">if</span> (!buffer_.empty())</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;            UploadMultipart();</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;commit multipart&quot;</span>;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;commit multipart&quot;</span>;</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        <span class="comment">// construct commit XML</span></div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;</div>
@@ -769,7 +769,7 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    <span class="comment">/**************************************************************************/</span></div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;</div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="keywordtype">void</span> UploadMultipart() {</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-INFO - Upload multipart[&quot;</span> &lt;&lt; upload_seq_ &lt;&lt; <span class="stringliteral">&quot;]&quot;</span></div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;S3-INFO - Upload multipart[&quot;</span> &lt;&lt; upload_seq_ &lt;&lt; <span class="stringliteral">&quot;]&quot;</span></div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;             &lt;&lt; <span class="stringliteral">&quot; size &quot;</span> &lt;&lt; buffer_.size();</div>
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;</div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        S3BucketContext bucket_context;</div>
@@ -831,11 +831,11 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;</div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a> path_ = path;</div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    <span class="comment">// crop off s3://</span></div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    die_unless(tlx::starts_with(path_, <span class="stringliteral">&quot;s3://&quot;</span>));</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(<a class="code" href="group__string.html#gadc5cce7e8c7fd30078b9129a7ae1d74b" title="Checks if the given match string is located at the start of this string.">tlx::starts_with</a>(path_, <span class="stringliteral">&quot;s3://&quot;</span>));</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    path_ = path_.substr(5);</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    <span class="comment">// split uri into host/path</span></div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    std::vector&lt;std::string&gt; splitted = tlx::split(<span class="charliteral">&#39;/&#39;</span>, path_, 2);</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    std::vector&lt;std::string&gt; splitted = <a class="code" href="group__string.html#ga4fb56b145f00428be03f74257c61f1cc" title="Split the given string at each separator character into distinct substrings.">tlx::split</a>(<span class="charliteral">&#39;/&#39;</span>, path_, 2);</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;</div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <span class="keywordflow">return</span> tlx::make_counting&lt;S3WriteStream&gt;(splitted[0], splitted[1]);</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;}</div>
@@ -850,16 +850,16 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;</div>
 <div class="line"><a name="l00733"></a><span class="lineno"><a class="code" href="namespacethrill_1_1vfs.html#a8c2745b7b447bc014805030cc2f7f046">  733</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1vfs.html#a8c2745b7b447bc014805030cc2f7f046">S3Glob</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a>&amp; <span class="comment">/* path */</span>, <span class="keyword">const</span> <a class="code" href="namespacethrill_1_1vfs.html#ac7206d989022001555916ee86ef21cf5" title="Type of objects to include in glob result.">GlobType</a>&amp; <span class="comment">/* gtype */</span>,</div>
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;            <a class="code" href="structthrill_1_1vfs_1_1FileList.html" title="List of file info and additional overall info.">FileList</a>&amp; <span class="comment">/* filelist */</span>) {</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    die(<span class="stringliteral">&quot;s3:// is not available, because Thrill was built without libS3.&quot;</span>);</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    <a class="code" href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e" title="Instead of abort(), throw the output the message via an exception.">die</a>(<span class="stringliteral">&quot;s3:// is not available, because Thrill was built without libS3.&quot;</span>);</div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;}</div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;</div>
-<div class="line"><a name="l00738"></a><span class="lineno"><a class="code" href="namespacethrill_1_1vfs.html#a731638c904f4cde7198251cebadb29bf">  738</a></span>&#160;<a class="code" href="namespacethrill_1_1vfs.html#a0f28a2b7a33f4cb305900fb9121f6da5">ReadStreamPtr</a> <a class="code" href="namespacethrill_1_1vfs.html#a731638c904f4cde7198251cebadb29bf">S3OpenReadStream</a>(</div>
+<div class="line"><a name="l00738"></a><span class="lineno"><a class="code" href="namespacethrill_1_1vfs.html#a731638c904f4cde7198251cebadb29bf">  738</a></span>&#160;<a class="code" href="classtlx_1_1CountingPtr.html" title="High-performance smart pointer used as a wrapping reference counting pointer.">ReadStreamPtr</a> <a class="code" href="namespacethrill_1_1vfs.html#a731638c904f4cde7198251cebadb29bf">S3OpenReadStream</a>(</div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    <span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a>&amp; <span class="comment">/* path */</span>, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1Range.html" title="represents a 1 dimensional range (interval) [begin,end)">common::Range</a>&amp; <span class="comment">/* range */</span>) {</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    die(<span class="stringliteral">&quot;s3:// is not available, because Thrill was built without libS3.&quot;</span>);</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    <a class="code" href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e" title="Instead of abort(), throw the output the message via an exception.">die</a>(<span class="stringliteral">&quot;s3:// is not available, because Thrill was built without libS3.&quot;</span>);</div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;}</div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;</div>
-<div class="line"><a name="l00743"></a><span class="lineno"><a class="code" href="namespacethrill_1_1vfs.html#abfb124f0662491881956497794ea30d9">  743</a></span>&#160;<a class="code" href="namespacethrill_1_1vfs.html#a2b0d718704d03d646c5c5126b4c75326">WriteStreamPtr</a> <a class="code" href="namespacethrill_1_1vfs.html#abfb124f0662491881956497794ea30d9">S3OpenWriteStream</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a>&amp; <span class="comment">/* path */</span>) {</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    die(<span class="stringliteral">&quot;s3:// is not available, because Thrill was built without libS3.&quot;</span>);</div>
+<div class="line"><a name="l00743"></a><span class="lineno"><a class="code" href="namespacethrill_1_1vfs.html#abfb124f0662491881956497794ea30d9">  743</a></span>&#160;<a class="code" href="classtlx_1_1CountingPtr.html">WriteStreamPtr</a> <a class="code" href="namespacethrill_1_1vfs.html#abfb124f0662491881956497794ea30d9">S3OpenWriteStream</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a>&amp; <span class="comment">/* path */</span>) {</div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    <a class="code" href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e" title="Instead of abort(), throw the output the message via an exception.">die</a>(<span class="stringliteral">&quot;s3:// is not available, because Thrill was built without libS3.&quot;</span>);</div>
 <div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;}</div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;</div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;<span class="preprocessor">#endif  // !THRILL_HAVE_LIBS3</span></div>
@@ -873,8 +873,8 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_0b7691f3a099eb00850528ebd98dd2b2.html">vfs</a></li><li class="navelem"><a class="el" href="s3__file_8cpp.html">s3_file.cpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:48 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_81266845cf742a60aec00334689e5513.html">vfs</a></li><li class="navelem"><a class="el" href="s3__file_8cpp.html">s3_file.cpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:03 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

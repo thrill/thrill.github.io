@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('disk__queues_8cpp_source.html','');});
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">delete</span> it.second;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="classthrill_1_1io_1_1DiskQueues.html#a10a94175f4b57e3725458dbf570b0ede">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classthrill_1_1io_1_1DiskQueues.html#a10a94175f4b57e3725458dbf570b0ede">DiskQueues::MakeQueue</a>(<span class="keyword">const</span> <a class="code" href="group__io__layer__fileimpl.html#ga8ff1b764dd7a393ec32a7d4d1443300e">FileBasePtr</a>&amp; file) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="classthrill_1_1io_1_1DiskQueues.html#a10a94175f4b57e3725458dbf570b0ede">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classthrill_1_1io_1_1DiskQueues.html#a10a94175f4b57e3725458dbf570b0ede">DiskQueues::MakeQueue</a>(<span class="keyword">const</span> <a class="code" href="classtlx_1_1CountingPtr.html">FileBasePtr</a>&amp; file) {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> queue_id = file-&gt;get_queue_id();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    RequestQueueMap::iterator qi = <a class="code" href="classthrill_1_1io_1_1DiskQueues.html#a6c7b671e2f53e5f40b2ff21a7a02b4ce">d_</a>-&gt;queues.find(queue_id);</div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('disk__queues_8cpp_source.html','');});
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// create new request queue</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#if THRILL_HAVE_LINUXAIO_FILE</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (<span class="keyword">const</span> <a class="code" href="exceptionthrill_1_1io_1_1LinuxaioFile.html">LinuxaioFile</a>* af =</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            dynamic_cast&lt;const LinuxaioFile*&gt;(file.get())) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            dynamic_cast&lt;const LinuxaioFile*&gt;(file.<a class="code" href="classtlx_1_1CountingPtr.html#a8db0d2fc192644bf209e350cfb486091" title="return the enclosed pointer.">get</a>())) {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="classthrill_1_1io_1_1DiskQueues.html#a6c7b671e2f53e5f40b2ff21a7a02b4ce">d_</a>-&gt;queues[queue_id] = <span class="keyword">new</span> <a class="code" href="exceptionthrill_1_1io_1_1LinuxaioQueue.html">LinuxaioQueue</a>(af-&gt;desired_queue_length());</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('disk__queues_8cpp_source.html','');});
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span>    <a class="code" href="classthrill_1_1io_1_1DiskQueues.html#a6c7b671e2f53e5f40b2ff21a7a02b4ce">d_</a>-&gt;queues[queue_id] = <span class="keyword">new</span> <a class="code" href="classthrill_1_1io_1_1RequestQueueImplQwQr.html">RequestQueueImplQwQr</a>();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="classthrill_1_1io_1_1DiskQueues.html#a71b1802956a70bc8bf181985279879bb">   67</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classthrill_1_1io_1_1DiskQueues.html#a71b1802956a70bc8bf181985279879bb">DiskQueues::AddRequest</a>(<a class="code" href="group__io__layer__req.html#gad77b608fd5cf3b231643f26467ae4338" title="A reference counting pointer for request.">RequestPtr</a>&amp; req, <a class="code" href="classthrill_1_1io_1_1DiskQueues.html#a37a6c32ca6441ec0c437ea506657c6a9">DiskId</a> disk) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="classthrill_1_1io_1_1DiskQueues.html#a71b1802956a70bc8bf181985279879bb">   67</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classthrill_1_1io_1_1DiskQueues.html#a71b1802956a70bc8bf181985279879bb">DiskQueues::AddRequest</a>(<a class="code" href="classtlx_1_1CountingPtr.html">RequestPtr</a>&amp; req, <a class="code" href="classthrill_1_1io_1_1DiskQueues.html#a37a6c32ca6441ec0c437ea506657c6a9">DiskId</a> disk) {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#ifdef THRILL_HACK_SINGLE_IO_THREAD</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span>    disk = 42;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -192,9 +192,9 @@ $(document).ready(function(){initNavTree('disk__queues_8cpp_source.html','');});
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="comment">// create new request queue</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#if THRILL_HAVE_LINUXAIO_FILE</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> (dynamic_cast&lt;LinuxaioRequest*&gt;(req.get()))</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span>        <span class="keywordflow">if</span> (dynamic_cast&lt;LinuxaioRequest*&gt;(req.<a class="code" href="classtlx_1_1CountingPtr.html#a8db0d2fc192644bf209e350cfb486091" title="return the enclosed pointer.">get</a>()))</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            q = <a class="code" href="classthrill_1_1io_1_1DiskQueues.html#a6c7b671e2f53e5f40b2ff21a7a02b4ce">d_</a>-&gt;queues[disk] = <span class="keyword">new</span> <a class="code" href="exceptionthrill_1_1io_1_1LinuxaioQueue.html">LinuxaioQueue</a>(</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                    dynamic_cast&lt;LinuxaioFile*&gt;(req-&gt;file().get())</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                    dynamic_cast&lt;LinuxaioFile*&gt;(req-&gt;file().<a class="code" href="classtlx_1_1CountingPtr.html#a8db0d2fc192644bf209e350cfb486091" title="return the enclosed pointer.">get</a>())</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    -&gt;desired_queue_length());</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -237,8 +237,8 @@ $(document).ready(function(){initNavTree('disk__queues_8cpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_b3d161c3d1247f1befe1ba5893f47ab8.html">io</a></li><li class="navelem"><a class="el" href="disk__queues_8cpp.html">disk_queues.cpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:47 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_c5add5f0a27348adc8388b1a95f76f2d.html">io</a></li><li class="navelem"><a class="el" href="disk__queues_8cpp.html">disk_queues.cpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:03 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

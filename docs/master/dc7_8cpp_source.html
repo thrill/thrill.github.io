@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="zip__with__index_8hpp.html">thrill/api/zip_with_index.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="radix__sort_8hpp.html">thrill/common/radix_sort.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uint__types_8hpp.html">thrill/common/uint_types.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;tlx/cmdline_parser.hpp&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cmdline__parser_8hpp.html">tlx/cmdline_parser.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
@@ -669,7 +669,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <span class="keyword">const</span> Index size_subp = size_mod01 + size_mod3;</div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;</div>
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespaceexamples_1_1suffix__sorting.html#a363eaffff6eaa8040e98d838b3c0b585">debug_print</a>) {</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;        <a class="code" href="logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;max_lexname=&quot;</span> &lt;&lt; max_lexname</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;max_lexname=&quot;</span> &lt;&lt; max_lexname</div>
 <div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;              &lt;&lt; <span class="stringliteral">&quot; size_subp=&quot;</span> &lt;&lt; size_subp</div>
 <div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;              &lt;&lt; <span class="stringliteral">&quot; size_mod0=&quot;</span> &lt;&lt; size_mod0</div>
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;              &lt;&lt; <span class="stringliteral">&quot; size_mod1=&quot;</span> &lt;&lt; size_mod1</div>
@@ -677,23 +677,23 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    }</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;</div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespaceexamples_1_1suffix__sorting.html#a363eaffff6eaa8040e98d838b3c0b585">debug_print</a>) {</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        assert_equal(</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        <a class="code" href="die_8hpp.html#a5085068329fda13af995242db4555038">assert_equal</a>(</div>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;            tuple_sorted.Keep().Filter([](<span class="keyword">const</span> IndexChars&amp; a) {</div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;                                           <span class="keywordflow">return</span> a.index % 7 == 0;</div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;                                       }).Size(), size_mod0);</div>
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        assert_equal(</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        <a class="code" href="die_8hpp.html#a5085068329fda13af995242db4555038">assert_equal</a>(</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;            tuple_sorted.Keep().Filter([](<span class="keyword">const</span> IndexChars&amp; a) {</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;                                           <span class="keywordflow">return</span> a.index % 7 == 1;</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;                                       }).Size(), size_mod1);</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        assert_equal(</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        <a class="code" href="die_8hpp.html#a5085068329fda13af995242db4555038">assert_equal</a>(</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;            tuple_sorted.Keep().Filter([](<span class="keyword">const</span> IndexChars&amp; a) {</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;                                           <span class="keywordflow">return</span> a.index % 7 == 3;</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;                                       }).Size(), size_mod3);</div>
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    }</div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    assert_equal(tuple_index_sorted.Keep().Size(), size_subp);</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    <a class="code" href="die_8hpp.html#a5085068329fda13af995242db4555038">assert_equal</a>(tuple_index_sorted.Keep().Size(), size_subp);</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;</div>
 <div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    DIA&lt;IndexRank&gt; ranks_mod013;</div>
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;</div>
@@ -731,7 +731,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespaceexamples_1_1suffix__sorting.html#a363eaffff6eaa8040e98d838b3c0b585">debug_print</a>)</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;            string_mod013.Keep().Print(<span class="stringliteral">&quot;string_mod013&quot;</span>);</div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        assert_equal(string_mod013.Keep().Size(), size_subp);</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <a class="code" href="die_8hpp.html#a5085068329fda13af995242db4555038">assert_equal</a>(string_mod013.Keep().Size(), size_subp);</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;</div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;        <span class="keyword">using</span> RecStringFragment = dc7_local::StringFragment&lt;Index, Index&gt;;</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;</div>
@@ -772,9 +772,9 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;            .Window(</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;                <a class="code" href="namespacethrill_1_1api.html#afe8c544f0064d1307753a0ee2a8a35e5" title="global const DisjointTag instance">DisjointTag</a>, 3,</div>
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;                [size_mod0, size_mod01](<span class="keywordtype">size_t</span>, <span class="keyword">const</span> std::vector&lt;IndexRank&gt;&amp; ir) {</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;                    die_unless(ir[0].index &lt; size_mod0);</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;                    die_unless(ir[1].index &gt;= size_mod0 || ir[1].rank &lt; size_mod01);</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                    die_unless(ir[2].index &gt;= size_mod01);</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;                    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(ir[0].index &lt; size_mod0);</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;                    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(ir[1].index &gt;= size_mod0 || ir[1].rank &lt; size_mod01);</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(ir[2].index &gt;= size_mod01);</div>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;                })</div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;            .Execute();</div>
@@ -783,7 +783,7 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    }</div>
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        <span class="keywordflow">if</span> (ctx.my_rank() == 0)</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;            <a class="code" href="logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;*** recursion finished ***&quot;</span>;</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;*** recursion finished ***&quot;</span>;</div>
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;</div>
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespaceexamples_1_1suffix__sorting.html#a363eaffff6eaa8040e98d838b3c0b585">debug_print</a>)</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;            tuple_index_sorted.Keep().Print(<span class="stringliteral">&quot;tuple_index_sorted&quot;</span>);</div>
@@ -809,9 +809,9 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;            .Window(</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;                <a class="code" href="namespacethrill_1_1api.html#afe8c544f0064d1307753a0ee2a8a35e5" title="global const DisjointTag instance">DisjointTag</a>, 3,</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;                [](<span class="keywordtype">size_t</span>, <span class="keyword">const</span> std::vector&lt;IndexRank&gt;&amp; ir) {</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                    die_unless(ir[0].index % 7 == 0);</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;                    die_unless(ir[1].index % 7 == 1);</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;                    die_unless(ir[2].index % 7 == 3);</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(ir[0].index % 7 == 0);</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;                    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(ir[1].index % 7 == 1);</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;                    <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(ir[2].index % 7 == 3);</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;                })</div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;            .Execute();</div>
@@ -1087,8 +1087,8 @@ $(document).ready(function(){initNavTree('dc7_8cpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_0b8cd80b43220fb0eacec85b2381def2.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="dc7_8cpp.html">dc7.cpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:46 for Thrill by
+    <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_d4e83805c7df9bb812106585527f7df7.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="dc7_8cpp.html">dc7.cpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:01 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

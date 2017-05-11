@@ -12,6 +12,8 @@ var searchData=
   ['word_5fcount_5frun_2ecpp',['word_count_run.cpp',['../word__count__run_8cpp.html',1,'']]],
   ['word_5fcount_5fsequential_2ecpp',['word_count_sequential.cpp',['../word__count__sequential_8cpp.html',1,'']]],
   ['word_5fcount_5fsimple_2ecpp',['word_count_simple.cpp',['../word__count__simple_8cpp.html',1,'']]],
+  ['word_5fwrap_2ecpp',['word_wrap.cpp',['../word__wrap_8cpp.html',1,'']]],
+  ['word_5fwrap_2ehpp',['word_wrap.hpp',['../word__wrap_8hpp.html',1,'']]],
   ['write_5fbinary_2ehpp',['write_binary.hpp',['../write__binary_8hpp.html',1,'']]],
   ['write_5flines_2ehpp',['write_lines.hpp',['../write__lines_8hpp.html',1,'']]],
   ['write_5flines_5fone_2ehpp',['write_lines_one.hpp',['../write__lines__one_8hpp.html',1,'']]]

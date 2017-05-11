@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('buffer_8hpp_source.html','');});
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef THRILL_NET_BUFFER_HEADER</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="buffer_8hpp.html#a9f5146466ac470c5a1348486447606aa">   15</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define THRILL_NET_BUFFER_HEADER</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
@@ -235,7 +235,7 @@ $(document).ready(function(){initNavTree('buffer_8hpp_source.html','');});
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">    //! swap buffer with another one</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno"><a class="code" href="classthrill_1_1net_1_1Buffer.html#a1bf6beb91e98a04f0538f1b68264f7d8">  119</a></span>&#160;<span class="comment"></span>    <span class="keyword">friend</span> <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1net_1_1Buffer.html#a1bf6beb91e98a04f0538f1b68264f7d8" title="swap buffer with another one">swap</a>(<a class="code" href="classthrill_1_1net_1_1Buffer.html" title="Simple buffer of characters without initialization or growing functionality.">Buffer</a>&amp; a, <a class="code" href="classthrill_1_1net_1_1Buffer.html" title="Simple buffer of characters without initialization or growing functionality.">Buffer</a>&amp; b) noexcept {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keyword">using</span> std::swap;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keyword">using</span> <a class="code" href="namespacetlx.html#a5dee8d3837365def6ce2290d6e76bd55">std::swap</a>;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Buffer.html#a1bf6beb91e98a04f0538f1b68264f7d8" title="swap buffer with another one">swap</a>(a.data_, b.data_);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Buffer.html#a1bf6beb91e98a04f0538f1b68264f7d8" title="swap buffer with another one">swap</a>(a.size_, b.size_);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
@@ -310,7 +310,7 @@ $(document).ready(function(){initNavTree('buffer_8hpp_source.html','');});
 <div class="line"><a name="l00192"></a><span class="lineno"><a class="code" href="classthrill_1_1net_1_1Buffer.html#a7c6b00ed080b304af54f75d5efd4f2f5">  192</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1net_1_1Buffer.html#a7c6b00ed080b304af54f75d5efd4f2f5">Resize</a>(<a class="code" href="classthrill_1_1net_1_1Buffer.html#a8560ac5527cd0ed38d71e0e58acc8021" title="size and offset type of buffer">size_type</a> new_size) {</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1net_1_1Buffer.html#a0c47801601a9aa271a075cec74adf98b" title="the buffer, typed as character data">data_</a>)</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        {</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Warning: resizing non-empty Buffer&quot;</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Warning: resizing non-empty Buffer&quot;</span>;</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <a class="code" href="classthrill_1_1net_1_1Buffer.html#a0c47801601a9aa271a075cec74adf98b" title="the buffer, typed as character data">data_</a> = <span class="keyword">reinterpret_cast&lt;</span><a class="code" href="classthrill_1_1net_1_1Buffer.html#a7f885ee7afef166d26d4208624566958" title="value type stored in the buffer">value_type</a>*<span class="keyword">&gt;</span>(<a class="code" href="malloc__tracker_8cpp.html#a738ec7c3305286151ab9a21d2b879092" title="exported realloc() symbol that overrides loading from libc">::realloc</a>(<a class="code" href="classthrill_1_1net_1_1Buffer.html#a0c47801601a9aa271a075cec74adf98b" title="the buffer, typed as character data">data_</a>, new_size));</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <a class="code" href="classthrill_1_1net_1_1Buffer.html#a4f3592f75c4916a9a92255c165bd65d2" title="size of the buffer.">size_</a> = new_size;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        }</div>
@@ -366,8 +366,8 @@ $(document).ready(function(){initNavTree('buffer_8hpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_877fdf1e6de6dbbd26be6a4f8db0e6bf.html">net</a></li><li class="navelem"><a class="el" href="buffer_8hpp.html">buffer.hpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:48 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1498198843d04809400c3646bfa82d14.html">net</a></li><li class="navelem"><a class="el" href="buffer_8hpp.html">buffer.hpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:03 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

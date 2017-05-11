@@ -133,10 +133,10 @@ $(document).ready(function(){initNavTree('file__io_8hpp_source.html','');});
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef THRILL_VFS_FILE_IO_HEADER</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="file__io_8hpp.html#ac3dee12f32d07d520a487fe5fc838883">   16</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define THRILL_VFS_FILE_IO_HEADER</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="math_8hpp.html">thrill/common/math.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2math_8hpp.html">thrill/common/math.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="porting_8hpp.html">thrill/common/porting.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="system__exception_8hpp.html">thrill/common/system_exception.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;tlx/counting_ptr.hpp&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="counting__ptr_8hpp.html">tlx/counting_ptr.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('file__io_8hpp_source.html','');});
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"> * Reader object from any source. Streams can be created for any supported URI</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"> * and seek to the given range&#39;s offset.</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="code" href="classthrill_1_1vfs_1_1ReadStream.html">  117</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthrill_1_1vfs_1_1ReadStream.html" title="Reader object from any source.">ReadStream</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> tlx::ReferenceCounter</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="code" href="classthrill_1_1vfs_1_1ReadStream.html">  117</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthrill_1_1vfs_1_1ReadStream.html" title="Reader object from any source.">ReadStream</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> <a class="code" href="classtlx_1_1ReferenceCounter.html" title="Provides reference counting abilities for use with CountingPtr.">tlx::ReferenceCounter</a></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classthrill_1_1vfs_1_1ReadStream.html#ab20cf3cec1282999781a0c56b0fb30bc">~ReadStream</a>();</div>
@@ -247,7 +247,7 @@ $(document).ready(function(){initNavTree('file__io_8hpp_source.html','');});
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">/*!</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment"> * Writer object to output data to any supported URI.</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="code" href="classthrill_1_1vfs_1_1WriteStream.html">  132</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthrill_1_1vfs_1_1WriteStream.html" title="Writer object to output data to any supported URI.">WriteStream</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> tlx::ReferenceCounter</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="code" href="classthrill_1_1vfs_1_1WriteStream.html">  132</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthrill_1_1vfs_1_1WriteStream.html" title="Writer object to output data to any supported URI.">WriteStream</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> <a class="code" href="classtlx_1_1ReferenceCounter.html" title="Provides reference counting abilities for use with CountingPtr.">tlx::ReferenceCounter</a></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classthrill_1_1vfs_1_1WriteStream.html#ac0eea188f953495e6def783d1f9b6f7d">~WriteStream</a>();</div>
@@ -257,8 +257,8 @@ $(document).ready(function(){initNavTree('file__io_8hpp_source.html','');});
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1vfs_1_1WriteStream.html#af6ee7eacbde6b379b68d954e44f6e549">close</a>() = 0;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;};</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="code" href="namespacethrill_1_1vfs.html#a0f28a2b7a33f4cb305900fb9121f6da5">  142</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespacethrill_1_1vfs.html#a0f28a2b7a33f4cb305900fb9121f6da5">ReadStreamPtr</a> = tlx::CountingPtr&lt;ReadStream&gt;;</div>
-<div class="line"><a name="l00143"></a><span class="lineno"><a class="code" href="namespacethrill_1_1vfs.html#a2b0d718704d03d646c5c5126b4c75326">  143</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespacethrill_1_1vfs.html#a2b0d718704d03d646c5c5126b4c75326">WriteStreamPtr</a> = tlx::CountingPtr&lt;WriteStream&gt;;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="code" href="namespacethrill_1_1vfs.html#a0f28a2b7a33f4cb305900fb9121f6da5">  142</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classtlx_1_1CountingPtr.html" title="High-performance smart pointer used as a wrapping reference counting pointer.">ReadStreamPtr</a> = <a class="code" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr&lt;ReadStream&gt;</a>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="code" href="namespacethrill_1_1vfs.html#a2b0d718704d03d646c5c5126b4c75326">  143</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classtlx_1_1CountingPtr.html">WriteStreamPtr</a> = <a class="code" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr&lt;WriteStream&gt;</a>;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment"></span></div>
@@ -273,10 +273,10 @@ $(document).ready(function(){initNavTree('file__io_8hpp_source.html','');});
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment"> * which data to fetch from S3. Hence, once e is reached, read() will return</span></div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment"> * EOF.</span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<a class="code" href="namespacethrill_1_1vfs.html#a0f28a2b7a33f4cb305900fb9121f6da5">ReadStreamPtr</a> <a class="code" href="namespacethrill_1_1vfs.html#aac8eb89402fe5b04fc6dca45ef789784" title="Construct reader for given path uri.">OpenReadStream</a>(</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<a class="code" href="classtlx_1_1CountingPtr.html" title="High-performance smart pointer used as a wrapping reference counting pointer.">ReadStreamPtr</a> <a class="code" href="namespacethrill_1_1vfs.html#aac8eb89402fe5b04fc6dca45ef789784" title="Construct reader for given path uri.">OpenReadStream</a>(</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a>&amp; path, <span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1Range.html" title="represents a 1 dimensional range (interval) [begin,end)">common::Range</a>&amp; range = <a class="code" href="classthrill_1_1common_1_1Range.html" title="represents a 1 dimensional range (interval) [begin,end)">common::Range</a>());</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<a class="code" href="namespacethrill_1_1vfs.html#a2b0d718704d03d646c5c5126b4c75326">WriteStreamPtr</a> <a class="code" href="namespacethrill_1_1vfs.html#a0a8b2856ab92a59f0685870efb47b92c">OpenWriteStream</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a>&amp; path);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<a class="code" href="classtlx_1_1CountingPtr.html">WriteStreamPtr</a> <a class="code" href="namespacethrill_1_1vfs.html#a0a8b2856ab92a59f0685870efb47b92c">OpenWriteStream</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f" title="string with Manager tracking">std::string</a>&amp; path);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
@@ -291,8 +291,8 @@ $(document).ready(function(){initNavTree('file__io_8hpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_0b7691f3a099eb00850528ebd98dd2b2.html">vfs</a></li><li class="navelem"><a class="el" href="file__io_8hpp.html">file_io.hpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:48 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_81266845cf742a60aec00334689e5513.html">vfs</a></li><li class="navelem"><a class="el" href="file__io_8hpp.html">file_io.hpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:03 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

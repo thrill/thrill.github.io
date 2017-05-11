@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('json__logger_8hpp_source.html','');});
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef THRILL_COMMON_JSON_LOGGER_HEADER</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="json__logger_8hpp.html#af12037cd672987b86fdcbf76fe58cb00">   15</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define THRILL_COMMON_JSON_LOGGER_HEADER</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;tlx/meta/vexpand.hpp&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vexpand_8hpp.html">tlx/meta/vexpand.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
@@ -538,7 +538,7 @@ $(document).ready(function(){initNavTree('json__logger_8hpp_source.html','');});
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    {</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        <span class="comment">// use JsonLine writer without a Logger to generate a valid string.</span></div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        <a class="code" href="classthrill_1_1common_1_1JsonLine.html" title="JsonLine is an object used to aggregate a set of key:value pairs for output into a JSON log...">JsonLine</a> json(<span class="keyword">nullptr</span>, oss);</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        tlx::vexpand((json &lt;&lt; (args), 0) ...);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <a class="code" href="group__meta.html#ga44a90b0de44f0e1aa17ae215db35f458">tlx::vexpand</a>((json &lt;&lt; (args), 0) ...);</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    }</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <a class="code" href="classthrill_1_1common_1_1JsonLogger.html#a04dcad3a200be202a3ef0d87d3b0cf17" title="common items outputted to each line">common_</a> = <a class="code" href="classthrill_1_1common_1_1JsonVerbatim.html" title="A special class to output verbatim text.">JsonVerbatim</a>(oss.str());</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;}</div>
@@ -561,8 +561,8 @@ $(document).ready(function(){initNavTree('json__logger_8hpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="json__logger_8hpp.html">json_logger.hpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:47 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_19de9a7cb0ad0c6b03f8c7369b4f5139.html">common</a></li><li class="navelem"><a class="el" href="json__logger_8hpp.html">json_logger.hpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:02 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

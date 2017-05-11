@@ -129,10 +129,10 @@ $(document).ready(function(){initNavTree('json__logger_8cpp_source.html','');});
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="json__logger_8hpp.html">thrill/common/json_logger.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="string_8hpp.html">thrill/common/string.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2string_8hpp.html">thrill/common/string.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;tlx/die.hpp&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="die_8hpp.html">tlx/die.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;cerrno&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('json__logger_8cpp_source.html','');});
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classthrill_1_1common_1_1JsonLogger.html#ac8f2ed44013260403ac039f5ecf73a56" title="direct output stream for top loggers">os_</a>.open(path.c_str());</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classthrill_1_1common_1_1JsonLogger.html#ac8f2ed44013260403ac039f5ecf73a56" title="direct output stream for top loggers">os_</a>.good()) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        die(<span class="stringliteral">&quot;Could not open json log output: &quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e" title="Instead of abort(), throw the output the message via an exception.">die</a>(<span class="stringliteral">&quot;Could not open json log output: &quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            &lt;&lt; path &lt;&lt; <span class="stringliteral">&quot; : &quot;</span> &lt;&lt; strerror(errno));</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
@@ -194,8 +194,8 @@ $(document).ready(function(){initNavTree('json__logger_8cpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="json__logger_8cpp.html">json_logger.cpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:47 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_19de9a7cb0ad0c6b03f8c7369b4f5139.html">common</a></li><li class="navelem"><a class="el" href="json__logger_8cpp.html">json_logger.cpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:02 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

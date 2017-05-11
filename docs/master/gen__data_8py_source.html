@@ -148,14 +148,14 @@ $(document).ready(function(){initNavTree('gen__data_8py_source.html','');});
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="namespacegen__data.html#ad4a342a882e80fb0b1b0a80df4b9321b">   30</a></span>&#160;params = [random.gauss(param_mu, param_sig) <span class="keywordflow">for</span> x <span class="keywordflow">in</span> range(0, D)]</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="namespacegen__data.html#ab41a179bb7208ea52fd49e567b24ba29">   32</a></span>&#160;comment = <span class="stringliteral">&quot;# Params: &quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;comment += <span class="stringliteral">&quot; &quot;</span>.join(map(str,params))</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;comment += <span class="stringliteral">&quot; &quot;</span>.<a class="code" href="group__string.html#gad383d32ace209b51abe936d256d0bb1e" title="Join a vector of strings by some glue character between each pair from the sequence.">join</a>(map(str,params))</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;print(comment)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;print(<span class="stringliteral">&quot;# D = &quot;</span> + str(D) + <span class="stringliteral">&quot;, N = &quot;</span> + str(N) + <span class="stringliteral">&quot;, SEED = &quot;</span> + str(SEED))</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(0,N):</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">   39</a></span>&#160;        x = [random.uniform(minx, maxx) <span class="keywordflow">for</span> x <span class="keywordflow">in</span> range(0,D)]</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="namespacegen__data.html#aa155970f5deeb5cb509ed1313e8dfdfa">   40</a></span>&#160;        string = <span class="stringliteral">&quot; &quot;</span>.join(map(str,x)) + <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="namespacegen__data.html#aa155970f5deeb5cb509ed1313e8dfdfa">   40</a></span>&#160;        string = <span class="stringliteral">&quot; &quot;</span>.<a class="code" href="group__string.html#gad383d32ace209b51abe936d256d0bb1e" title="Join a vector of strings by some glue character between each pair from the sequence.">join</a>(map(str,x)) + <span class="stringliteral">&quot; &quot;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">   41</a></span>&#160;        value = 0</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">for</span> d <span class="keywordflow">in</span> range(0,D):</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                value += x[d] * params[d]</div>
@@ -169,8 +169,8 @@ $(document).ready(function(){initNavTree('gen__data_8py_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_10a18793c5e52e0d310748fcbb801b08.html">stochastic_gradient_descent</a></li><li class="navelem"><a class="el" href="gen__data_8py.html">gen_data.py</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:46 for Thrill by
+    <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_0a65839e29cd2440da56bdce03279729.html">stochastic_gradient_descent</a></li><li class="navelem"><a class="el" href="gen__data_8py.html">gen_data.py</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:01 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

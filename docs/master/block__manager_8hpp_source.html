@@ -325,7 +325,7 @@ $(document).ready(function(){initNavTree('block__manager_8hpp_source.html','');}
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        it-&gt;storage = disk_file;</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        disk_alloc-&gt;<a class="code" href="classthrill_1_1io_1_1DiskAllocator.html#af5b71511017a0ff7eda0cc1bf38ffe22">NewBlocks</a>(it, it + 1);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <a class="code" href="logger_8hpp.html#aa92cc370e6906ac3887db96a0a628ce8" title="Override default output: never or always output log.">LOG0</a> &lt;&lt; <span class="stringliteral">&quot;BLC:new    &quot;</span> &lt;&lt; *it;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#aa92cc370e6906ac3887db96a0a628ce8" title="Override default output: never or always output log.">LOG0</a> &lt;&lt; <span class="stringliteral">&quot;BLC:new    &quot;</span> &lt;&lt; *it;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <a class="code" href="classthrill_1_1io_1_1BlockManager.html#addab24e9b5923ec604622e340ebf8721" title="total requested allocation in bytes">total_allocation_</a> += it-&gt;size;</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <a class="code" href="classthrill_1_1io_1_1BlockManager.html#aab34b3c304bac5bf0825c7ad6ca9a6bc" title="currently allocated bytes">current_allocation_</a> += it-&gt;size;</div>
@@ -345,7 +345,7 @@ $(document).ready(function(){initNavTree('block__manager_8hpp_source.html','');}
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="classthrill_1_1io_1_1BlockManager.html#a281b5ec791338d4378e22ef44a51b4a1">mutex_</a>);</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <a class="code" href="logger_8hpp.html#aa92cc370e6906ac3887db96a0a628ce8" title="Override default output: never or always output log.">LOG0</a> &lt;&lt; <span class="stringliteral">&quot;BLC:delete &quot;</span> &lt;&lt; bid;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <a class="code" href="thrill_2common_2logger_8hpp.html#aa92cc370e6906ac3887db96a0a628ce8" title="Override default output: never or always output log.">LOG0</a> &lt;&lt; <span class="stringliteral">&quot;BLC:delete &quot;</span> &lt;&lt; bid;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    assert(bid.storage-&gt;get_allocator_id() &gt;= 0);</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="classthrill_1_1io_1_1BlockManager.html#a921df55bc01ea64ac2ad88706a513519">disk_allocators_</a>[bid.storage-&gt;get_allocator_id()]-&gt;DeleteBlock(bid);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="code" href="classthrill_1_1io_1_1BlockManager.html#ae68b8498da33533639b548ada5083c5a">disk_files_</a>[bid.storage-&gt;get_allocator_id()]-&gt;discard(bid.offset, bid.size);</div>
@@ -371,8 +371,8 @@ $(document).ready(function(){initNavTree('block__manager_8hpp_source.html','');}
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_b3d161c3d1247f1befe1ba5893f47ab8.html">io</a></li><li class="navelem"><a class="el" href="block__manager_8hpp.html">block_manager.hpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:47 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_c5add5f0a27348adc8388b1a95f76f2d.html">io</a></li><li class="navelem"><a class="el" href="block__manager_8hpp.html">block_manager.hpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:02 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

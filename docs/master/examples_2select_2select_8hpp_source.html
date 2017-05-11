@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('examples_2select_2select_8hpp_source.h
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="gather_8hpp.html">thrill/api/gather.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="size_8hpp.html">thrill/api/size.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="sum_8hpp.html">thrill/api/sum.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('examples_2select_2select_8hpp_source.h
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::pair&lt;ValueType, ValueType&gt; pivots;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (ctx.<a class="code" href="classthrill_1_1api_1_1Context.html#aa19a1fcaa55994b754d544e4587be4ff" title="Global rank of this worker among all other workers in the system.">my_rank</a>() == 0) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;got &quot;</span> &lt;&lt; sample.size() &lt;&lt; <span class="stringliteral">&quot; samples (p = &quot;</span> &lt;&lt; p &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;got &quot;</span> &lt;&lt; sample.size() &lt;&lt; <span class="stringliteral">&quot; samples (p = &quot;</span> &lt;&lt; p &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">// Sort the samples</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        std::sort(sample.begin(), sample.end(), compare);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('examples_2select_2select_8hpp_source.h
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        assert(0 &lt;= lower &amp;&amp; lower &lt; sample.size());</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        assert(0 &lt;= upper &amp;&amp; upper &lt; sample.size());</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Selected pivots at positions &quot;</span> &lt;&lt; lower &lt;&lt; <span class="stringliteral">&quot; and &quot;</span> &lt;&lt; upper</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Selected pivots at positions &quot;</span> &lt;&lt; lower &lt;&lt; <span class="stringliteral">&quot; and &quot;</span> &lt;&lt; upper</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; sample[lower] &lt;&lt; <span class="stringliteral">&quot; and &quot;</span> &lt;&lt; sample[upper];</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        pivots = std::make_pair(sample[lower], sample[upper]);</div>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('examples_2select_2select_8hpp_source.h
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            result = elements[rank];</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;base case: &quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot; elements remaining, result is &quot;</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;base case: &quot;</span> &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot; elements remaining, result is &quot;</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                &lt;&lt; result;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
@@ -319,8 +319,8 @@ $(document).ready(function(){initNavTree('examples_2select_2select_8hpp_source.h
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_74d10a837207e77fc3b341f47ddbb599.html">select</a></li><li class="navelem"><a class="el" href="examples_2select_2select_8hpp.html">select.hpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:48 for Thrill by
+    <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_58d1fc43032e60206b61793164c0ef54.html">select</a></li><li class="navelem"><a class="el" href="examples_2select_2select_8hpp.html">select.hpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:03 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

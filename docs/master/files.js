@@ -1,6 +1,7 @@
 var files =
 [
-    [ "doc", "dir_55ec26149671cde1ec5cb7789ffe3c51.html", "dir_55ec26149671cde1ec5cb7789ffe3c51" ],
-    [ "examples", "dir_37fe638abcaf0b770f4bbf8e34158a25.html", "dir_37fe638abcaf0b770f4bbf8e34158a25" ],
-    [ "thrill", "dir_797bdb82f8ebf7321361fb31ef626aaf.html", "dir_797bdb82f8ebf7321361fb31ef626aaf" ]
+    [ "doc", "dir_e68e8157741866f444e17edd764ebbae.html", "dir_e68e8157741866f444e17edd764ebbae" ],
+    [ "examples", "dir_d28a4824dc47e487b107a5db32ef43c4.html", "dir_d28a4824dc47e487b107a5db32ef43c4" ],
+    [ "extlib", "dir_caacaa4f3b8d02b4020eb7fe043e6252.html", "dir_caacaa4f3b8d02b4020eb7fe043e6252" ],
+    [ "thrill", "dir_5fdb396fad1e5f0fc72d07871826fecf.html", "dir_5fdb396fad1e5f0fc72d07871826fecf" ]
 ];

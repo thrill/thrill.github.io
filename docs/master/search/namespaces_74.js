@@ -4,6 +4,7 @@ var searchData=
   ['common',['common',['../namespacethrill_1_1common.html',1,'thrill']]],
   ['core',['core',['../namespacethrill_1_1core.html',1,'thrill']]],
   ['data',['data',['../namespacethrill_1_1data.html',1,'thrill']]],
+  ['detail',['detail',['../namespacetlx_1_1detail.html',1,'tlx']]],
   ['detail',['detail',['../namespacethrill_1_1data_1_1detail.html',1,'thrill::data']]],
   ['glob_5flocal',['glob_local',['../namespacethrill_1_1vfs_1_1glob__local.html',1,'thrill::vfs']]],
   ['io',['io',['../namespacethrill_1_1io.html',1,'thrill']]],
@@ -16,5 +17,6 @@ var searchData=
   ['serialization_5fcereal',['serialization_cereal',['../namespacethrill_1_1data_1_1serialization__cereal.html',1,'thrill::data']]],
   ['tcp',['tcp',['../namespacethrill_1_1net_1_1tcp.html',1,'thrill::net']]],
   ['thrill',['thrill',['../namespacethrill.html',1,'']]],
+  ['tlx',['tlx',['../namespacetlx.html',1,'']]],
   ['vfs',['vfs',['../namespacethrill_1_1vfs.html',1,'thrill']]]
 ];

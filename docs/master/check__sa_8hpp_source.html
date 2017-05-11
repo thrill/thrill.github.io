@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('check__sa_8hpp_source.html','');});
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        .Max();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span> (perm_check != Index(0)) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Error: suffix array is not a permutation of 0..n-1.&quot;</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Error: suffix array is not a permutation of 0..n-1.&quot;</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('check__sa_8hpp_source.html','');});
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">if</span> (rb[0].ch &gt; rb[1].ch) {</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                    <span class="comment">// simple check of first character of suffix failed.</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Error: suffix array position &quot;</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Error: suffix array position &quot;</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                         &lt;&lt; index &lt;&lt; <span class="stringliteral">&quot; ordered incorrectly.&quot;</span>;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                    <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                }</div>
@@ -230,7 +230,7 @@ $(document).ready(function(){initNavTree('check__sa_8hpp_source.html','');});
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    <span class="keywordflow">if</span> (rb[1].next == Index(input_size)) {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                        <span class="comment">// last suffix of string must be first among those with</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                        <span class="comment">// same first character</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Error: suffix array position &quot;</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Error: suffix array position &quot;</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                             &lt;&lt; index &lt;&lt; <span class="stringliteral">&quot; ordered incorrectly.&quot;</span>;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    }</div>
@@ -238,7 +238,7 @@ $(document).ready(function(){initNavTree('check__sa_8hpp_source.html','');});
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                        <span class="comment">// positions SA[i] and SA[i-1] has same first character</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                        <span class="comment">// but their suffixes are ordered incorrectly: the</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                        <span class="comment">// suffix position of SA[i] is given by ISA[SA[i]]</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Error: suffix array position &quot;</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Error: suffix array position &quot;</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                             &lt;&lt; index &lt;&lt; <span class="stringliteral">&quot; ordered incorrectly.&quot;</span>;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                    }</div>
@@ -262,8 +262,8 @@ $(document).ready(function(){initNavTree('check__sa_8hpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_0b8cd80b43220fb0eacec85b2381def2.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="check__sa_8hpp.html">check_sa.hpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:46 for Thrill by
+    <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_d4e83805c7df9bb812106585527f7df7.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="check__sa_8hpp.html">check_sa.hpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:01 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

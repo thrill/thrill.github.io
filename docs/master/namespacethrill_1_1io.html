@@ -227,13 +227,13 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga36ebdbfb724bfb85d4f41430590f1b64"><td class="memTemplParams" colspan="2">template&lt;size_t BlockSize&gt; </td></tr>
 <tr class="memitem:ga36ebdbfb724bfb85d4f41430590f1b64"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__io__layer.html#ga36ebdbfb724bfb85d4f41430590f1b64">BIDArray</a> = std::vector&lt; <a class="el" href="classthrill_1_1io_1_1BID.html">BID</a>&lt; BlockSize &gt; &gt;</td></tr>
 <tr class="separator:ga36ebdbfb724bfb85d4f41430590f1b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4d564039f520d56584770abb56692cb3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io__layer__req.html#ga4d564039f520d56584770abb56692cb3">CompletionHandler</a> = tlx::delegate&lt; void(<a class="el" href="classthrill_1_1io_1_1Request.html">Request</a> *, bool)&gt;</td></tr>
+<tr class="memitem:ga4d564039f520d56584770abb56692cb3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io__layer__req.html#ga4d564039f520d56584770abb56692cb3">CompletionHandler</a> = <a class="el" href="namespacetlx.html#afacc9643f535d390fd0ead73790a6d56">tlx::delegate</a>&lt; void(<a class="el" href="classthrill_1_1io_1_1Request.html">Request</a> *, bool)&gt;</td></tr>
 <tr class="separator:ga4d564039f520d56584770abb56692cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ff1b764dd7a393ec32a7d4d1443300e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io__layer__fileimpl.html#ga8ff1b764dd7a393ec32a7d4d1443300e">FileBasePtr</a> = tlx::CountingPtr&lt; <a class="el" href="classthrill_1_1io_1_1FileBase.html">FileBase</a> &gt;</td></tr>
+<tr class="memitem:ga8ff1b764dd7a393ec32a7d4d1443300e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io__layer__fileimpl.html#ga8ff1b764dd7a393ec32a7d4d1443300e">FileBasePtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; <a class="el" href="classthrill_1_1io_1_1FileBase.html">FileBase</a> &gt;</td></tr>
 <tr class="separator:ga8ff1b764dd7a393ec32a7d4d1443300e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c2110e1e1e2ef589b70dc66f7eca731"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1io.html#a5c2110e1e1e2ef589b70dc66f7eca731">Place</a> = std::pair&lt; int64_t, int64_t &gt;</td></tr>
 <tr class="separator:a5c2110e1e1e2ef589b70dc66f7eca731"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad77b608fd5cf3b231643f26467ae4338"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io__layer__req.html#gad77b608fd5cf3b231643f26467ae4338">RequestPtr</a> = tlx::CountingPtr&lt; <a class="el" href="classthrill_1_1io_1_1Request.html">Request</a>, <a class="el" href="classthrill_1_1io_1_1RequestDeleter.html">RequestDeleter</a> &gt;</td></tr>
+<tr class="memitem:gad77b608fd5cf3b231643f26467ae4338"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__io__layer__req.html#gad77b608fd5cf3b231643f26467ae4338">RequestPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; <a class="el" href="classthrill_1_1io_1_1Request.html">Request</a>, <a class="el" href="classthrill_1_1io_1_1RequestDeleter.html">RequestDeleter</a> &gt;</td></tr>
 <tr class="memdesc:gad77b608fd5cf3b231643f26467ae4338"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference counting pointer for <code>request</code>.  <a href="group__io__layer__req.html#gad77b608fd5cf3b231643f26467ae4338">More...</a><br/></td></tr>
 <tr class="separator:gad77b608fd5cf3b231643f26467ae4338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5a8840a1df0c0b3c2b89130509f2d26"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1io.html#ac5a8840a1df0c0b3c2b89130509f2d26">RequestQueueMap</a> = std::map&lt; <a class="el" href="classthrill_1_1io_1_1DiskQueues.html#a37a6c32ca6441ec0c437ea506657c6a9">DiskQueues::DiskId</a>, <a class="el" href="classthrill_1_1io_1_1RequestQueue.html">RequestQueue</a> * &gt;</td></tr>
@@ -447,7 +447,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="config__file_8cpp_source.html#l00042">42</a> of file <a class="el" href="config__file_8cpp_source.html">config_file.cpp</a>.</p>
 
-<p>References <a class="el" href="logger_8hpp_source.html#l00170">LOG0</a>.</p>
+<p>References <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00170">LOG0</a>.</p>
 
 <p>Referenced by <a class="el" href="config__file_8cpp_source.html#l00072">Config::find_config()</a>.</p>
 
@@ -487,7 +487,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="wfs__file__base_8cpp_source.html#l00035">35</a> of file <a class="el" href="wfs__file__base_8cpp_source.html">wfs_file_base.cpp</a>.</p>
 
-<p>References <a class="el" href="file__base_8hpp_source.html#l00081">FileBase::CREAT</a>, <a class="el" href="create__file_8cpp_source.html#l00032">CreateFile()</a>, <a class="el" href="file__base_8hpp_source.html#l00085">FileBase::DIRECT</a>, <a class="el" href="logger_8hpp_source.html#l00171">LOG1</a>, <a class="el" href="file__base_8hpp_source.html#l00074">FileBase::RDONLY</a>, <a class="el" href="file__base_8hpp_source.html#l00078">FileBase::RDWR</a>, <a class="el" href="file__base_8hpp_source.html#l00093">FileBase::REQUIRE_DIRECT</a>, <a class="el" href="file__base_8hpp_source.html#l00089">FileBase::SYNC</a>, <a class="el" href="error__handling_8hpp_source.html#l00133">THRILL_THROW_WIN_LASTERROR</a>, <a class="el" href="file__base_8hpp_source.html#l00087">FileBase::TRUNC</a>, and <a class="el" href="file__base_8hpp_source.html#l00076">FileBase::WRONLY</a>.</p>
+<p>References <a class="el" href="file__base_8hpp_source.html#l00081">FileBase::CREAT</a>, <a class="el" href="create__file_8cpp_source.html#l00032">CreateFile()</a>, <a class="el" href="file__base_8hpp_source.html#l00085">FileBase::DIRECT</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00171">LOG1</a>, <a class="el" href="file__base_8hpp_source.html#l00074">FileBase::RDONLY</a>, <a class="el" href="file__base_8hpp_source.html#l00078">FileBase::RDWR</a>, <a class="el" href="file__base_8hpp_source.html#l00093">FileBase::REQUIRE_DIRECT</a>, <a class="el" href="file__base_8hpp_source.html#l00089">FileBase::SYNC</a>, <a class="el" href="error__handling_8hpp_source.html#l00133">THRILL_THROW_WIN_LASTERROR</a>, <a class="el" href="file__base_8hpp_source.html#l00087">FileBase::TRUNC</a>, and <a class="el" href="file__base_8hpp_source.html#l00076">FileBase::WRONLY</a>.</p>
 
 <p>Referenced by <a class="el" href="wfs__file__base_8cpp_source.html#l00178">WfsFileBase::set_size()</a>, and <a class="el" href="wfs__file__base_8cpp_source.html#l00106">WfsFileBase::WfsFileBase()</a>.</p>
 
@@ -577,7 +577,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1io.html">io</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:50 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 16:11:06 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

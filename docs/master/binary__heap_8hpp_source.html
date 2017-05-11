@@ -200,7 +200,7 @@ $(document).ready(function(){initNavTree('binary__heap_8hpp_source.html','');});
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;             it &lt; <a class="code" href="classthrill_1_1common_1_1BinaryHeap.html#a748eaf2b602b6abb16f3a9513881556c" title="array holding binary heap">c_</a>.end(); ++it)</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        {</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">if</span> (!std::forward&lt;Functor&gt;(f)(*it)) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            std::swap(*it, <a class="code" href="classthrill_1_1common_1_1BinaryHeap.html#a748eaf2b602b6abb16f3a9513881556c" title="array holding binary heap">c_</a>.back());</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="namespacetlx.html#a5dee8d3837365def6ce2290d6e76bd55">std::swap</a>(*it, <a class="code" href="classthrill_1_1common_1_1BinaryHeap.html#a748eaf2b602b6abb16f3a9513881556c" title="array holding binary heap">c_</a>.back());</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="classthrill_1_1common_1_1BinaryHeap.html#a1cb677e11368c183fe9038b5866045ff">sift_down</a>(<a class="code" href="classthrill_1_1common_1_1BinaryHeap.html#a748eaf2b602b6abb16f3a9513881556c" title="array holding binary heap">c_</a>.begin(), <a class="code" href="classthrill_1_1common_1_1BinaryHeap.html#a748eaf2b602b6abb16f3a9513881556c" title="array holding binary heap">c_</a>.end(), <a class="code" href="classthrill_1_1common_1_1BinaryHeap.html#aca7808f9cdac8962f945d682f1d10ffd" title="compare">cmp_</a>, <a class="code" href="classthrill_1_1common_1_1BinaryHeap.html#a748eaf2b602b6abb16f3a9513881556c" title="array holding binary heap">c_</a>.size() - 1, it);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <a class="code" href="classthrill_1_1common_1_1BinaryHeap.html#a748eaf2b602b6abb16f3a9513881556c" title="array holding binary heap">c_</a>.pop_back();</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
@@ -292,7 +292,7 @@ $(document).ready(function(){initNavTree('binary__heap_8hpp_source.html','');});
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                         <span class="keyword">const</span> Compare&amp; comp, <a class="code" href="classthrill_1_1common_1_1BinaryHeap.html#ada64f32076f686e713697ad54d1bc2e9">difference_type</a> len) {</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">if</span> (len &gt; 1)</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        {</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            std::swap(*first, *(--last));</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <a class="code" href="namespacetlx.html#a5dee8d3837365def6ce2290d6e76bd55">std::swap</a>(*first, *(--last));</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <a class="code" href="classthrill_1_1common_1_1BinaryHeap.html#a1cb677e11368c183fe9038b5866045ff">sift_down</a>(first, last, comp, len - 1, first);</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        }</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
@@ -323,8 +323,8 @@ $(document).ready(function(){initNavTree('binary__heap_8hpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="binary__heap_8hpp.html">binary_heap.hpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:47 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_19de9a7cb0ad0c6b03f8c7369b4f5139.html">common</a></li><li class="navelem"><a class="el" href="binary__heap_8hpp.html">binary_heap.hpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:02 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

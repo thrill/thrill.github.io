@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('size_8hpp_source.html','');});
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">if</span> (parent_stack_empty_ &amp;&amp;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keyword">dynamic_cast&lt;</span>CacheNode&lt;ValueType&gt;*<span class="keyword">&gt;</span>(parent.node().get()) != <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="comment">// Add as child, but do not receive items via PreOp Hook.</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;SizeNode: skipping callback, accessing CacheNode directly&quot;</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;SizeNode: skipping callback, accessing CacheNode directly&quot;</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            parent.node()-&gt;AddChild(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">else</span> {</div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('size_8hpp_source.html','');});
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">    //! Receive a whole data::File of ValueType, but only if our stack is empty.</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#a7d9d7bf697b0de4d68da279180d7075c">OnPreOpFile</a>(<span class="keyword">const</span> data::File&amp; file, <span class="keywordtype">size_t</span> <span class="comment">/* parent_index */</span>) final {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span> (!parent_stack_empty_) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="logger_8hpp.html#a3938cd201c5d6a7e8f9ff5af368daccc" title="Explicitly specify the condition for logging.">LOGC</a>(<a class="code" href="namespacethrill_1_1common.html#a53d23ccb06a539a86608ab7906313a2a">common::g_debug_push_file</a>)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a3938cd201c5d6a7e8f9ff5af368daccc" title="Explicitly specify the condition for logging.">LOGC</a>(<a class="code" href="namespacethrill_1_1common.html#a53d23ccb06a539a86608ab7906313a2a">common::g_debug_push_file</a>)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;Size rejected File from parent &quot;</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;due to non-empty function stack.&quot;</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('size_8hpp_source.html','');});
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <a class="code" href="exceptionthrill_1_1api_1_1SizeNode.html#aff8c59ed6a98a2174e415bc8d7983cd3">local_size_</a> = parent_cache-&gt;NumItems();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">// get the number of elements that are stored on this worker</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;MainOp processing, sum: &quot;</span> &lt;&lt; <a class="code" href="exceptionthrill_1_1api_1_1SizeNode.html#aff8c59ed6a98a2174e415bc8d7983cd3">local_size_</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;MainOp processing, sum: &quot;</span> &lt;&lt; <a class="code" href="exceptionthrill_1_1api_1_1SizeNode.html#aff8c59ed6a98a2174e415bc8d7983cd3">local_size_</a>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="comment">// process the reduce, default argument is SumOp.</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="exceptionthrill_1_1api_1_1SizeNode.html#a5d7023782b6b1ed5672cbe0846989ffa">global_size_</a> = <a class="code" href="classthrill_1_1api_1_1DIABase.html#ae8f38e2955f476fde7f144a0f76129bb" title="associated Context">context_</a>.<a class="code" href="classthrill_1_1api_1_1Context.html#aea6bd2f5fe241819865a3713c71b6158">net</a>.<a class="code" href="group__net__layer.html#gac3aee749e82c42410595c44eed93fa5d" title="Reduces a value of a serializable type T over all workers given a certain reduce function.">AllReduce</a>(local_size_);</div>
@@ -244,8 +244,8 @@ $(document).ready(function(){initNavTree('size_8hpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="size_8hpp.html">size.hpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:47 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1f06a9dab790f88a2b6eb40fd2f445f5.html">api</a></li><li class="navelem"><a class="el" href="size_8hpp.html">size.hpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:02 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

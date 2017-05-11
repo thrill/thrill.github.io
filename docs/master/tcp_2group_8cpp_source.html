@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('tcp_2group_8cpp_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * All rights reserved. Published under the BSD-2 license in the LICENSE file.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="construct_8hpp.html">thrill/net/tcp/construct.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="tcp_2group_8hpp.html">thrill/net/tcp/group.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="select__dispatcher_8hpp.html">thrill/net/tcp/select_dispatcher.hpp</a>&gt;</span></div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('tcp_2group_8cpp_source.html','');});
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// construct a stream socket pair for (i,j) with i &lt; j</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i != <a class="code" href="exceptionthrill_1_1net_1_1tcp_1_1Group.html#a0feec208eeb70870e8ace6f308a03405" title="Return number of connections in this group (= number computing hosts)">num_hosts</a>; ++i) {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = i + 1; j &lt; <a class="code" href="exceptionthrill_1_1net_1_1tcp_1_1Group.html#a0feec208eeb70870e8ace6f308a03405" title="Return number of connections in this group (= number computing hosts)">num_hosts</a>; ++j) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;doing Socket::CreatePair() for i=&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; j=&quot;</span> &lt;&lt; j;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;doing Socket::CreatePair() for i=&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; j=&quot;</span> &lt;&lt; j;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            std::pair&lt;Socket, Socket&gt; sp = <a class="code" href="classthrill_1_1net_1_1tcp_1_1Socket.html#aa6b9fe6cd6404d714622bec0dfcf857c">Socket::CreatePair</a>();</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
@@ -193,7 +193,7 @@ $(document).ready(function(){initNavTree('tcp_2group_8cpp_source.html','');});
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        endpoints.push_back(<span class="stringliteral">&quot;127.0.0.1:&quot;</span> + <a class="code" href="namespacethrill_1_1mem.html#a83c1c233231a5bfd03944ee141b9609a" title="convert to string">std::to_string</a>(port_base + i));</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;Group test uses ports&quot;</span> &lt;&lt; port_base &lt;&lt; <span class="stringliteral">&quot;-&quot;</span> &lt;&lt; port_base + <a class="code" href="exceptionthrill_1_1net_1_1tcp_1_1Group.html#a0feec208eeb70870e8ace6f308a03405" title="Return number of connections in this group (= number computing hosts)">num_hosts</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;Group test uses ports&quot;</span> &lt;&lt; port_base &lt;&lt; <span class="stringliteral">&quot;-&quot;</span> &lt;&lt; port_base + <a class="code" href="exceptionthrill_1_1net_1_1tcp_1_1Group.html#a0feec208eeb70870e8ace6f308a03405" title="Return number of connections in this group (= number computing hosts)">num_hosts</a>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::vector&lt;std::thread&gt; threads(num_hosts);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
@@ -227,8 +227,8 @@ $(document).ready(function(){initNavTree('tcp_2group_8cpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_877fdf1e6de6dbbd26be6a4f8db0e6bf.html">net</a></li><li class="navelem"><a class="el" href="dir_6932eba81436afd0bb7e09bea6fff5b7.html">tcp</a></li><li class="navelem"><a class="el" href="tcp_2group_8cpp.html">group.cpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:48 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1498198843d04809400c3646bfa82d14.html">net</a></li><li class="navelem"><a class="el" href="dir_799329db1e6d16b2654e0d7c443db071.html">tcp</a></li><li class="navelem"><a class="el" href="tcp_2group_8cpp.html">group.cpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:03 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

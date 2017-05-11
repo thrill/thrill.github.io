@@ -207,7 +207,7 @@ $(document).ready(function(){initNavTree('wfs__file__base_8cpp_source.html','');
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> ((mode&amp; FileBase::DIRECT) &amp;&amp; !(mode &amp; <a class="code" href="classthrill_1_1io_1_1FileBase.html#a3a70f8b621474c9885f80fe709e2dca2a023bd6f83dd317b9553228b72c0ebf54" title="implies DIRECT, fail if opening with DIRECT flag does not work.">FileBase::REQUIRE_DIRECT</a>))</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;CreateFile() error on path=&quot;</span> &lt;&lt; filename &lt;&lt; <span class="stringliteral">&quot; mode=&quot;</span> &lt;&lt; mode &lt;&lt; <span class="stringliteral">&quot;, retrying without DIRECT mode.&quot;</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;CreateFile() error on path=&quot;</span> &lt;&lt; filename &lt;&lt; <span class="stringliteral">&quot; mode=&quot;</span> &lt;&lt; mode &lt;&lt; <span class="stringliteral">&quot;, retrying without DIRECT mode.&quot;</span>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        dwFlagsAndAttributes &amp;= ~FILE_FLAG_NO_BUFFERING;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
@@ -237,7 +237,7 @@ $(document).ready(function(){initNavTree('wfs__file__base_8cpp_source.html','');
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">char</span> buf[32768], * part;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span> (!GetFullPathName(filename.c_str(), <span class="keyword">sizeof</span>(buf), buf, &amp;part))</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;wfs_file_base::wfs_file_base(): GetFullPathName() error for file &quot;</span> &lt;&lt; <a class="code" href="classthrill_1_1io_1_1WfsFileBase.html#a42a21beb8018ac623f4d09db1343b9cf">filename</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;wfs_file_base::wfs_file_base(): GetFullPathName() error for file &quot;</span> &lt;&lt; <a class="code" href="classthrill_1_1io_1_1WfsFileBase.html#a42a21beb8018ac623f4d09db1343b9cf">filename</a>;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <a class="code" href="classthrill_1_1io_1_1WfsFileBase.html#ace857fd28664aaff87ad1b5747b5854f">bytes_per_sector</a> = 512;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">else</span></div>
@@ -246,7 +246,7 @@ $(document).ready(function(){initNavTree('wfs__file__base_8cpp_source.html','');
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            DWORD bytes_per_sector_;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">if</span> (!GetDiskFreeSpace(buf, <span class="keyword">nullptr</span>, &amp;bytes_per_sector_, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>))</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;wfs_file_base::wfs_file_base(): GetDiskFreeSpace() error for path &quot;</span> &lt;&lt; buf;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;wfs_file_base::wfs_file_base(): GetDiskFreeSpace() error for path &quot;</span> &lt;&lt; buf;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                <a class="code" href="classthrill_1_1io_1_1WfsFileBase.html#ace857fd28664aaff87ad1b5747b5854f">bytes_per_sector</a> = 512;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            }</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordflow">else</span></div>
@@ -348,8 +348,8 @@ $(document).ready(function(){initNavTree('wfs__file__base_8cpp_source.html','');
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_b3d161c3d1247f1befe1ba5893f47ab8.html">io</a></li><li class="navelem"><a class="el" href="wfs__file__base_8cpp.html">wfs_file_base.cpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:47 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_c5add5f0a27348adc8388b1a95f76f2d.html">io</a></li><li class="navelem"><a class="el" href="wfs__file__base_8cpp.html">wfs_file_base.cpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:03 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

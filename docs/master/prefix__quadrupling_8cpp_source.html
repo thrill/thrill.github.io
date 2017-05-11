@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="union_8hpp.html">thrill/api/union.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="window_8hpp.html">thrill/api/window.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="zip_8hpp.html">thrill/api/zip.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uint__types_8hpp.html">thrill/common/uint_types.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
@@ -284,7 +284,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index, <span class="keyword">typename</span> InputDIA&gt;</div>
 <div class="line"><a name="l00168"></a><span class="lineno"><a class="code" href="namespaceexamples_1_1suffix__sorting.html#a57e820c114400e04bd082ba4cc711d1f">  168</a></span>&#160;DIA&lt;Index&gt; <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a6fb0c730af49429b22c5f509a02558cd">PrefixQuadruplingDiscarding</a>(<span class="keyword">const</span> InputDIA&amp; input_dia, <span class="keywordtype">size_t</span> input_size, <span class="keywordtype">bool</span> packed) {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Running PrefixQuadruplingDiscarding&quot;</span>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Running PrefixQuadruplingDiscarding&quot;</span>;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keyword">using</span> Char = <span class="keyword">typename</span> InputDIA::ValueType;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keyword">using</span> <a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html" title="A pair (index, rank)">IndexRank</a> = <a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html" title="A pair (index, rank)">suffix_sorting::IndexRank&lt;Index&gt;</a>;</div>
@@ -298,14 +298,14 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">size_t</span> k_fitting = <span class="keyword">sizeof</span>(Index) / <span class="keyword">sizeof</span>(Char);</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">if</span> (packed &amp;&amp; k_fitting &lt;= 4) {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Ignoring packing, as it would have no effect.&quot;</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Ignoring packing, as it would have no effect.&quot;</span></div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;             &lt;&lt; <span class="stringliteral">&quot; More than 4 characters must be packed to make a difference.&quot;</span></div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;             &lt;&lt; <span class="stringliteral">&quot; Currently &quot;</span> &lt;&lt; k_fitting &lt;&lt; <span class="stringliteral">&quot; characters are packed.&quot;</span>;</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        packed = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">if</span> (packed &amp;&amp; k_fitting &lt; 16) {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; k_fitting &lt;&lt; <span class="stringliteral">&quot; bytes can be packed into the space used by one suffix array index.&quot;</span>;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;This is not enough to skip quadrupling steps. We can decide more suffixes initially, though.&quot;</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; k_fitting &lt;&lt; <span class="stringliteral">&quot; bytes can be packed into the space used by one suffix array index.&quot;</span>;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;This is not enough to skip quadrupling steps. We can decide more suffixes initially, though.&quot;</span>;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">size_t</span> iteration = 1;</div>
@@ -653,7 +653,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        <span class="keywordtype">size_t</span> duplicates = undiscarded.Keep().Size();</div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        <span class="keywordflow">if</span> (input_dia.context().my_rank() == 0) {</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;            <a class="code" href="logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;iteration&quot;</span> &lt;&lt; iteration - 1</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;iteration&quot;</span> &lt;&lt; iteration - 1</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;duplicates&quot;</span> &lt;&lt; duplicates;</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;        }</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;</div>
@@ -752,7 +752,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;</div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index, <span class="keyword">typename</span> InputDIA&gt;</div>
 <div class="line"><a name="l00636"></a><span class="lineno"><a class="code" href="namespaceexamples_1_1suffix__sorting.html#a26453144c065aff8fb8e9dce441db6a0">  636</a></span>&#160;DIA&lt;Index&gt; <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a3a33aa2c945a0dd98a0aa3b28d3cb4de">PrefixQuadrupling</a>(<span class="keyword">const</span> InputDIA&amp; input_dia, <span class="keywordtype">size_t</span> input_size, <span class="keywordtype">bool</span> packed) {</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Running PrefixQuadrupling&quot;</span>;</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Running PrefixQuadrupling&quot;</span>;</div>
 <div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;</div>
 <div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="keyword">using</span> Char = <span class="keyword">typename</span> InputDIA::ValueType;</div>
 <div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    <span class="keyword">using</span> <a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html" title="A pair (index, rank)">IndexRank</a> = <a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html" title="A pair (index, rank)">suffix_sorting::IndexRank&lt;Index&gt;</a>;</div>
@@ -763,14 +763,14 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <span class="keywordtype">size_t</span> k_fitting = <span class="keyword">sizeof</span>(Index) / <span class="keyword">sizeof</span>(Char);</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;</div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    <span class="keywordflow">if</span> (packed &amp;&amp; k_fitting &lt;= 4) {</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Ignoring packing, as it would have no effect.&quot;</span></div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Ignoring packing, as it would have no effect.&quot;</span></div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;             &lt;&lt; <span class="stringliteral">&quot; More than 4 characters must be packed to make a difference.&quot;</span></div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;             &lt;&lt; <span class="stringliteral">&quot; Currently &quot;</span> &lt;&lt; k_fitting &lt;&lt; <span class="stringliteral">&quot; characters are packed.&quot;</span>;</div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;        packed = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    }</div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="keywordflow">if</span> (packed &amp;&amp; k_fitting &lt; 16) {</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; k_fitting &lt;&lt; <span class="stringliteral">&quot; bytes can be packed into the space used by one suffix array index.&quot;</span>;</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;This is not enough to skip quadrupling steps. We can decide more suffixes initially, though.&quot;</span>;</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; k_fitting &lt;&lt; <span class="stringliteral">&quot; bytes can be packed into the space used by one suffix array index.&quot;</span>;</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;This is not enough to skip quadrupling steps. We can decide more suffixes initially, though.&quot;</span>;</div>
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    }</div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    <span class="keywordtype">size_t</span> iteration = 1;</div>
@@ -880,7 +880,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;</div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    <span class="keywordflow">if</span> (number_duplicates == 0) {</div>
 <div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;        <span class="keywordflow">if</span> (input_dia.context().my_rank() == 0)</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;            <a class="code" href="logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;Finished before doubling in loop&quot;</span>;</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;Finished before doubling in loop&quot;</span>;</div>
 <div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;</div>
 <div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;        <span class="keyword">auto</span> sa =</div>
 <div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;            names</div>
@@ -965,7 +965,7 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;            .Size();</div>
 <div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;</div>
 <div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;        <span class="keywordflow">if</span> (input_dia.context().my_rank() == 0) {</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;            <a class="code" href="logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;iteration&quot;</span> &lt;&lt; iteration - 1</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;iteration&quot;</span> &lt;&lt; iteration - 1</div>
 <div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;duplicates&quot;</span> &lt;&lt; number_duplicates;</div>
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;        }</div>
 <div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;</div>
@@ -1011,8 +1011,8 @@ $(document).ready(function(){initNavTree('prefix__quadrupling_8cpp_source.html',
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_0b8cd80b43220fb0eacec85b2381def2.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="prefix__quadrupling_8cpp.html">prefix_quadrupling.cpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:46 for Thrill by
+    <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_d4e83805c7df9bb812106585527f7df7.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="prefix__quadrupling_8cpp.html">prefix_quadrupling.cpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:01 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

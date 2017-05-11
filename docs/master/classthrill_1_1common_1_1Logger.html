@@ -125,11 +125,11 @@ $(document).ready(function(){initNavTree('classthrill_1_1common_1_1Logger.html',
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>LOG and sLOG for development and debugging. </p>
-<p>This is a short description of how to use <a class="el" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> and <a class="el" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a">sLOG</a> for rapid development of modules with debug output, and how to <b>keep it afterwards</b>.</p>
+<p>This is a short description of how to use <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> and <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a">sLOG</a> for rapid development of modules with debug output, and how to <b>keep it afterwards</b>.</p>
 <p>There are two classes <a class="el" href="classthrill_1_1common_1_1Logger.html" title="LOG and sLOG for development and debugging.">Logger</a> and <a class="el" href="classthrill_1_1common_1_1SpacingLogger.html" title="A logging class which outputs spaces between elements pushed via operator&lt;&lt;.">SpacingLogger</a>, but one does not use these directly.</p>
-<p>Instead there are the macros: <a class="el" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> and <a class="el" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a">sLOG</a> that can be used as such: </p>
-<div class="fragment"><div class="line"><a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;This will be printed with a newline&quot;</span>;</div>
-<div class="line"><a class="code" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;Print variables a&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;b&quot;</span> &lt;&lt; b &lt;&lt; <span class="stringliteral">&quot;c&quot;</span> &lt;&lt; c;</div>
+<p>Instead there are the macros: <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> and <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a">sLOG</a> that can be used as such: </p>
+<div class="fragment"><div class="line"><a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;This will be printed with a newline&quot;</span>;</div>
+<div class="line"><a class="code" href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a" title="Default logging method: output if the local debug variable is true.">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;Print variables a&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;b&quot;</span> &lt;&lt; b &lt;&lt; <span class="stringliteral">&quot;c&quot;</span> &lt;&lt; c;</div>
 </div><!-- fragment --><p>There macros only print the lines if the boolean variable <b>debug</b> is true. This variable is searched for in the scope of the LOG, which means it can be set or overridden in the function scope, the class scope, from <b>inherited classes</b>, or even the global scope.</p>
 <div class="fragment"><div class="line"><span class="keyword">class </span>MyClass</div>
 <div class="line">{</div>
@@ -137,27 +137,27 @@ $(document).ready(function(){initNavTree('classthrill_1_1common_1_1Logger.html',
 <div class="line"></div>
 <div class="line">    <span class="keywordtype">void</span> func1()</div>
 <div class="line">    {</div>
-<div class="line">        <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Hello World&quot;</span>;</div>
+<div class="line">        <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Hello World&quot;</span>;</div>
 <div class="line"></div>
-<div class="line">        <a class="code" href="logger_8hpp.html#aa92cc370e6906ac3887db96a0a628ce8" title="Override default output: never or always output log.">LOG0</a> &lt;&lt; <span class="stringliteral">&quot;This is temporarily disabled.&quot;</span>;</div>
+<div class="line">        <a class="code" href="thrill_2common_2logger_8hpp.html#aa92cc370e6906ac3887db96a0a628ce8" title="Override default output: never or always output log.">LOG0</a> &lt;&lt; <span class="stringliteral">&quot;This is temporarily disabled.&quot;</span>;</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordtype">void</span> func2()</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="wavelet__tree2_8cpp.html#a6b72e54baf646b08b4b87f987f583dcb">debug</a> = <span class="keyword">false</span>;</div>
-<div class="line">        <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;This is not printed any more.&quot;</span>;</div>
+<div class="line">        <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;This is not printed any more.&quot;</span>;</div>
 <div class="line"></div>
-<div class="line">        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;But this is forced.&quot;</span>;</div>
+<div class="line">        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;But this is forced.&quot;</span>;</div>
 <div class="line">    }</div>
 <div class="line">};</div>
-</div><!-- fragment --><p>There are two variation of <a class="el" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> and <a class="el" href="logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a">sLOG</a> : append 0 or 1 for temporarily disabled or enabled debug lines. These macros are then <a class="el" href="logger_8hpp.html#aa92cc370e6906ac3887db96a0a628ce8">LOG0</a>, <a class="el" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a>, <a class="el" href="logger_8hpp.html#af14c6f708bfe284dacf04d7866461a32">sLOG0</a>, and <a class="el" href="logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a>. The suffix overrides the debug variable's setting.</p>
+</div><!-- fragment --><p>There are two variation of <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> and <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a">sLOG</a> : append 0 or 1 for temporarily disabled or enabled debug lines. These macros are then <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#aa92cc370e6906ac3887db96a0a628ce8">LOG0</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#af14c6f708bfe284dacf04d7866461a32">sLOG0</a>, and <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a>. The suffix overrides the debug variable's setting.</p>
 <p>After a module works as intended, one can just set <code>debug = false</code>, and all debug output will disappear.</p>
 <h2>Critique of LOG and sLOG</h2>
 <p>The macros are only for rapid module-based development. It cannot be used as an extended logging system for our network framework, where logs of network execution and communication are collected for later analysis. Something else is needed here. </p>
 
-<p>Definition at line <a class="el" href="logger_8hpp_source.html#l00096">96</a> of file <a class="el" href="logger_8hpp_source.html">logger.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00096">96</a> of file <a class="el" href="thrill_2common_2logger_8hpp_source.html">logger.hpp</a>.</p>
 </div>
-<p><code>#include &lt;<a class="el" href="logger_8hpp_source.html">logger.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="thrill_2common_2logger_8hpp_source.html">logger.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -203,9 +203,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="logger_8cpp_source.html#l00111">111</a> of file <a class="el" href="logger_8cpp_source.html">logger.cpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2common_2logger_8cpp_source.html#l00111">111</a> of file <a class="el" href="thrill_2common_2logger_8cpp_source.html">logger.cpp</a>.</p>
 
-<p>References <a class="el" href="logger_8cpp_source.html#l00056">thrill::common::FormatNameForThisThread()</a>, and <a class="el" href="logger_8hpp_source.html#l00100">Logger::oss_</a>.</p>
+<p>References <a class="el" href="thrill_2common_2logger_8cpp_source.html#l00056">thrill::common::FormatNameForThisThread()</a>, and <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00100">Logger::oss_</a>.</p>
 
 </div>
 </div>
@@ -224,9 +224,9 @@ Private Attributes</h2></td></tr>
 
 <p>destructor: output a newline </p>
 
-<p>Definition at line <a class="el" href="logger_8cpp_source.html#l00117">117</a> of file <a class="el" href="logger_8cpp_source.html">logger.cpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2common_2logger_8cpp_source.html#l00117">117</a> of file <a class="el" href="thrill_2common_2logger_8cpp_source.html">logger.cpp</a>.</p>
 
-<p>References <a class="el" href="logger_8hpp_source.html#l00100">Logger::oss_</a>, and <a class="el" href="logger_8cpp_source.html#l00090">Logger::Output()</a>.</p>
+<p>References <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00100">Logger::oss_</a>, and <a class="el" href="thrill_2common_2logger_8cpp_source.html#l00090">Logger::Output()</a>.</p>
 
 </div>
 </div>
@@ -255,9 +255,9 @@ Private Attributes</h2></td></tr>
 
 <p>output any type, including io manipulators </p>
 
-<p>Definition at line <a class="el" href="logger_8hpp_source.html#l00114">114</a> of file <a class="el" href="logger_8hpp_source.html">logger.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00114">114</a> of file <a class="el" href="thrill_2common_2logger_8hpp_source.html">logger.hpp</a>.</p>
 
-<p>References <a class="el" href="logger_8hpp_source.html#l00100">Logger::oss_</a>.</p>
+<p>References <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00100">Logger::oss_</a>.</p>
 
 </div>
 </div>
@@ -285,11 +285,11 @@ Private Attributes</h2></td></tr>
 
 <p>mutex synchronized output to std::cout </p>
 
-<p>Definition at line <a class="el" href="logger_8cpp_source.html#l00090">90</a> of file <a class="el" href="logger_8cpp_source.html">logger.cpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2common_2logger_8cpp_source.html#l00090">90</a> of file <a class="el" href="thrill_2common_2logger_8cpp_source.html">logger.cpp</a>.</p>
 
-<p>References <a class="el" href="logger_8cpp_source.html#l00088">thrill::common::s_logger_mutex</a>.</p>
+<p>References <a class="el" href="thrill_2common_2logger_8cpp_source.html#l00088">thrill::common::s_logger_mutex</a>.</p>
 
-<p>Referenced by <a class="el" href="logger_8cpp_source.html#l00117">Logger::~Logger()</a>, and <a class="el" href="logger_8cpp_source.html#l00128">SpacingLogger::~SpacingLogger()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2common_2logger_8cpp_source.html#l00117">Logger::~Logger()</a>, and <a class="el" href="thrill_2common_2logger_8cpp_source.html#l00128">SpacingLogger::~SpacingLogger()</a>.</p>
 
 </div>
 </div>
@@ -317,9 +317,9 @@ Private Attributes</h2></td></tr>
 
 <p>mutex synchronized output to std::cout </p>
 
-<p>Definition at line <a class="el" href="logger_8cpp_source.html#l00097">97</a> of file <a class="el" href="logger_8cpp_source.html">logger.cpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2common_2logger_8cpp_source.html#l00097">97</a> of file <a class="el" href="thrill_2common_2logger_8cpp_source.html">logger.cpp</a>.</p>
 
-<p>References <a class="el" href="logger_8cpp_source.html#l00088">thrill::common::s_logger_mutex</a>.</p>
+<p>References <a class="el" href="thrill_2common_2logger_8cpp_source.html#l00088">thrill::common::s_logger_mutex</a>.</p>
 
 </div>
 </div>
@@ -347,9 +347,9 @@ Private Attributes</h2></td></tr>
 
 <p>mutex synchronized output to std::cout </p>
 
-<p>Definition at line <a class="el" href="logger_8cpp_source.html#l00104">104</a> of file <a class="el" href="logger_8cpp_source.html">logger.cpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2common_2logger_8cpp_source.html#l00104">104</a> of file <a class="el" href="thrill_2common_2logger_8cpp_source.html">logger.cpp</a>.</p>
 
-<p>References <a class="el" href="logger_8cpp_source.html#l00088">thrill::common::s_logger_mutex</a>.</p>
+<p>References <a class="el" href="thrill_2common_2logger_8cpp_source.html#l00088">thrill::common::s_logger_mutex</a>.</p>
 
 </div>
 </div>
@@ -374,15 +374,15 @@ Private Attributes</h2></td></tr>
 
 <p>collector stream </p>
 
-<p>Definition at line <a class="el" href="logger_8hpp_source.html#l00100">100</a> of file <a class="el" href="logger_8hpp_source.html">logger.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00100">100</a> of file <a class="el" href="thrill_2common_2logger_8hpp_source.html">logger.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="logger_8cpp_source.html#l00111">Logger::Logger()</a>, <a class="el" href="logger_8hpp_source.html#l00114">Logger::operator&lt;&lt;()</a>, and <a class="el" href="logger_8cpp_source.html#l00117">Logger::~Logger()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2common_2logger_8cpp_source.html#l00111">Logger::Logger()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00114">Logger::operator&lt;&lt;()</a>, and <a class="el" href="thrill_2common_2logger_8cpp_source.html#l00117">Logger::~Logger()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>thrill/common/<a class="el" href="logger_8hpp_source.html">logger.hpp</a></li>
-<li>thrill/common/<a class="el" href="logger_8cpp_source.html">logger.cpp</a></li>
+<li>thrill/common/<a class="el" href="thrill_2common_2logger_8hpp_source.html">logger.hpp</a></li>
+<li>thrill/common/<a class="el" href="thrill_2common_2logger_8cpp_source.html">logger.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -390,7 +390,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1common.html">common</a></li><li class="navelem"><a class="el" href="classthrill_1_1common_1_1Logger.html">Logger</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:49 for Thrill by
+    <li class="footer">Generated on Thu May 11 2017 16:11:05 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

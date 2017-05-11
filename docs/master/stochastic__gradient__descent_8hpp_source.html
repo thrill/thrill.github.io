@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('stochastic__gradient__descent_8hpp_sou
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="bernoulli__sample_8hpp.html">thrill/api/bernoulli_sample.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="dia_8hpp.html">thrill/api/dia.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="sum_8hpp.html">thrill/api/sum.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vector_8hpp.html">thrill/common/vector.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;cereal/types/vector.hpp&gt;</span></div>
@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('stochastic__gradient__descent_8hpp_sou
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordtype">bool</span> converged = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">size_t</span> i = 1;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">while</span> (!converged &amp;&amp; i &lt;= <a class="code" href="classexamples_1_1stochastic__gradient__descent_1_1StochasticGradientDescent.html#a22fec0af810a755e77ecbb7179c193d4">num_iterations</a>) {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;weights: &quot;</span> &lt;&lt; weights;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;weights: &quot;</span> &lt;&lt; weights;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keyword">auto</span> old_weights = weights;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keyword">auto</span> sample = input_points.BernoulliSample(<a class="code" href="classexamples_1_1stochastic__gradient__descent_1_1StochasticGradientDescent.html#ad52209dab1d2bccb346f98acdf814703">mini_batch_fraction</a>);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keyword">auto</span> sum_result =</div>
@@ -260,9 +260,9 @@ $(document).ready(function(){initNavTree('stochastic__gradient__descent_8hpp_sou
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keyword">auto</span> weight_gradient_sum = sum_result.grad;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;n: &quot;</span> &lt;&lt; sum_result.count;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;grad: &quot;</span> &lt;&lt; weight_gradient_sum.weights;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;loss: &quot;</span> &lt;&lt; weight_gradient_sum.loss;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;n: &quot;</span> &lt;&lt; sum_result.count;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;grad: &quot;</span> &lt;&lt; weight_gradient_sum.weights;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;loss: &quot;</span> &lt;&lt; weight_gradient_sum.loss;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="comment">// w = w - eta sum_i=0^n Q(w_i) / n</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <span class="comment">// with adaptive step_size eta, and gradient Q(w_i)</span></div>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('stochastic__gradient__descent_8hpp_sou
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            ++i;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            converged = <a class="code" href="classexamples_1_1stochastic__gradient__descent_1_1StochasticGradientDescent.html#a011d1532593e27cca85ffb9987ae32d2">is_converged</a>(old_weights, weights, <a class="code" href="classexamples_1_1stochastic__gradient__descent_1_1StochasticGradientDescent.html#a97eab6d709b80585fe9e8a54b1e3da27">tolerance</a>);</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;iterations: &quot;</span> &lt;&lt; i;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;iterations: &quot;</span> &lt;&lt; i;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">return</span> weights;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
@@ -298,8 +298,8 @@ $(document).ready(function(){initNavTree('stochastic__gradient__descent_8hpp_sou
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_10a18793c5e52e0d310748fcbb801b08.html">stochastic_gradient_descent</a></li><li class="navelem"><a class="el" href="stochastic__gradient__descent_8hpp.html">stochastic_gradient_descent.hpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:46 for Thrill by
+    <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_0a65839e29cd2440da56bdce03279729.html">stochastic_gradient_descent</a></li><li class="navelem"><a class="el" href="stochastic__gradient__descent_8hpp.html">stochastic_gradient_descent.hpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:01 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

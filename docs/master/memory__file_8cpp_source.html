@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('memory__file_8cpp_source.html','');});
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::unique_lock&lt;std::mutex&gt; <a class="code" href="exceptionthrill_1_1io_1_1MemoryFile.html#a614364b9ff05da1b619ef30e1ce5dee0" title="Locks file for reading and writing (acquires a lock in the file system).">lock</a>(<a class="code" href="exceptionthrill_1_1io_1_1MemoryFile.html#a281b5ec791338d4378e22ef44a51b4a1" title="sequentialize function calls">mutex_</a>);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#ifndef THRILL_MEMFILE_DONT_CLEAR_FREED_MEMORY</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span>    <span class="comment">// overwrite the freed region with uninitialized memory</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;discard at &quot;</span> &lt;&lt; offset &lt;&lt; <span class="stringliteral">&quot; len &quot;</span> &lt;&lt; <a class="code" href="exceptionthrill_1_1io_1_1MemoryFile.html#a90705b490d2440ccf71390be1828b5bf">size</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19" title="Default logging method: output if the local debug variable is true.">LOG</a> &lt;&lt; <span class="stringliteral">&quot;discard at &quot;</span> &lt;&lt; offset &lt;&lt; <span class="stringliteral">&quot; len &quot;</span> &lt;&lt; <a class="code" href="exceptionthrill_1_1io_1_1MemoryFile.html#a90705b490d2440ccf71390be1828b5bf">size</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span>* uninitialized = <a class="code" href="malloc__tracker_8cpp.html#a465faf99e79df99ffbc1db0571879dfa" title="exported malloc symbol that overrides loading from libc">malloc</a>(<a class="code" href="aligned__allocator_8hpp.html#a971e250d339eb487f7abaddfb3eb9998">THRILL_DEFAULT_ALIGN</a>);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">while</span> (size &gt;= <a class="code" href="aligned__allocator_8hpp.html#a971e250d339eb487f7abaddfb3eb9998">THRILL_DEFAULT_ALIGN</a>) {</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        memcpy(<a class="code" href="exceptionthrill_1_1io_1_1MemoryFile.html#aa5ec38c854291ed98296bd00efbf90ae" title="pointer to memory area of &quot;file&quot;">ptr_</a> + offset, uninitialized, <a class="code" href="aligned__allocator_8hpp.html#a971e250d339eb487f7abaddfb3eb9998">THRILL_DEFAULT_ALIGN</a>);</div>
@@ -198,8 +198,8 @@ $(document).ready(function(){initNavTree('memory__file_8cpp_source.html','');});
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        memcpy(<a class="code" href="exceptionthrill_1_1io_1_1MemoryFile.html#aa5ec38c854291ed98296bd00efbf90ae" title="pointer to memory area of &quot;file&quot;">ptr_</a> + offset, uninitialized, (<span class="keywordtype">size_t</span>)size);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="malloc__tracker_8cpp.html#aa436704814afb6abd70b0ec1332852b7" title="exported free symbol that overrides loading from libc">free</a>(uninitialized);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span>    tlx::unused(offset);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    tlx::unused(size);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span>    <a class="code" href="namespacetlx.html#a5a63b398e6678264958fb8590e9332bf">tlx::unused</a>(offset);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="namespacetlx.html#a5a63b398e6678264958fb8590e9332bf">tlx::unused</a>(size);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
@@ -212,8 +212,8 @@ $(document).ready(function(){initNavTree('memory__file_8cpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_b3d161c3d1247f1befe1ba5893f47ab8.html">io</a></li><li class="navelem"><a class="el" href="memory__file_8cpp.html">memory_file.cpp</a></li>
-    <li class="footer">Generated on Thu May 11 2017 15:29:47 for Thrill by
+    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_c5add5f0a27348adc8388b1a95f76f2d.html">io</a></li><li class="navelem"><a class="el" href="memory__file_8cpp.html">memory_file.cpp</a></li>
+    <li class="footer">Generated on Thu May 11 2017 16:11:03 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

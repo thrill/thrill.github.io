@@ -18,6 +18,8 @@ var searchData=
   ['flowcontrolchannelmanager',['FlowControlChannelManager',['../classthrill_1_1net_1_1FlowControlChannelManager.html',1,'thrill::net']]],
   ['fullexception',['FullException',['../classthrill_1_1data_1_1FullException.html',1,'thrill::data']]],
   ['fullyrandom',['FullyRandom',['../structthrill_1_1io_1_1FullyRandom.html',1,'thrill::io']]],
+  ['functionchain',['FunctionChain',['../classtlx_1_1FunctionChain.html',1,'tlx']]],
+  ['functionstack',['FunctionStack',['../classtlx_1_1FunctionStack.html',1,'tlx']]],
   ['functiontraits_3c_20returntype_28_2a_29_28args_2e_2e_2e_29_3e',['FunctionTraits&lt; ReturnType(*)(Args...)&gt;',['../structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4.html',1,'thrill::common']]],
   ['functiontraits_3c_20returntype_28classtype_3a_3a_2a_29_28args_2e_2e_2e_29_20const_20_20_3e',['FunctionTraits&lt; ReturnType(ClassType::*)(Args...) const  &gt;',['../structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4.html',1,'thrill::common']]],
   ['functiontraits_3c_20returntype_28classtype_3a_3a_2a_29_28args_2e_2e_2e_29_3e',['FunctionTraits&lt; ReturnType(ClassType::*)(Args...)&gt;',['../structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_4.html',1,'thrill::common']]],

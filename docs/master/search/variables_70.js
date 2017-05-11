@@ -11,6 +11,8 @@ var searchData=
   ['parallel_5fio_5ftime_5f',['parallel_io_time_',['../classthrill_1_1io_1_1Stats.html#aa928cab4b9693f3059c6365852a65756',1,'thrill::io::Stats::parallel_io_time_()'],['../classthrill_1_1io_1_1StatsData.html#aa928cab4b9693f3059c6365852a65756',1,'thrill::io::StatsData::parallel_io_time_()']]],
   ['parallel_5fread_5ftime_5f',['parallel_read_time_',['../classthrill_1_1io_1_1Stats.html#a868bb2b2ce9ba6b9d4da101d4324e307',1,'thrill::io::Stats::parallel_read_time_()'],['../classthrill_1_1io_1_1StatsData.html#a868bb2b2ce9ba6b9d4da101d4324e307',1,'thrill::io::StatsData::parallel_read_time_()']]],
   ['parallel_5fwrite_5ftime_5f',['parallel_write_time_',['../classthrill_1_1io_1_1Stats.html#a69351cd5847f37312954990be2746672',1,'thrill::io::Stats::parallel_write_time_()'],['../classthrill_1_1io_1_1StatsData.html#a69351cd5847f37312954990be2746672',1,'thrill::io::StatsData::parallel_write_time_()']]],
+  ['param_5flist_5f',['param_list_',['../classtlx_1_1CmdlineParser.html#a82f067cc288f8abd50470ff6794da04f',1,'tlx::CmdlineParser']]],
+  ['param_5fmax_5fwidth_5f',['param_max_width_',['../classtlx_1_1CmdlineParser.html#af3bc88b7e683319e684d3e715ee060eb',1,'tlx::CmdlineParser']]],
   ['param_5fmu',['param_mu',['../namespacegen__data.html#a8c59000c278bbdd5b3b543b3eed7262e',1,'gen_data']]],
   ['param_5fsig',['param_sig',['../namespacegen__data.html#a7eb8ea66a31812ea4270d1a465c47d55',1,'gen_data']]],
   ['params',['params',['../namespacegen__data.html#ad4a342a882e80fb0b1b0a80df4b9321b',1,'gen_data']]],
@@ -54,6 +56,7 @@ var searchData=
   ['prev_5ftx_5fbytes_5f',['prev_tx_bytes_',['../classthrill_1_1net_1_1Connection.html#a3e7d95c83f7aa336c291822006b0dc73',1,'thrill::net::Connection']]],
   ['priority_5fop_5f',['priority_op_',['../exceptionthrill_1_1io_1_1LinuxaioQueue.html#a7346ead5fee378ce1f79b316e4169624',1,'thrill::io::LinuxaioQueue::priority_op_()'],['../classthrill_1_1io_1_1RequestQueueImpl1Q.html#a7346ead5fee378ce1f79b316e4169624',1,'thrill::io::RequestQueueImpl1Q::priority_op_()'],['../classthrill_1_1io_1_1RequestQueueImplQwQr.html#a7346ead5fee378ce1f79b316e4169624',1,'thrill::io::RequestQueueImplQwQr::priority_op_()']]],
   ['profiler_5f',['profiler_',['../classthrill_1_1api_1_1HostContext.html#ac975eee51af1aac6a0743f3d1ccd560b',1,'thrill::api::HostContext::profiler_()'],['../classthrill_1_1common_1_1ProfileTaskRegistration.html#aa6bb4de5a7d362f8864f86d549816fab',1,'thrill::common::ProfileTaskRegistration::profiler_()']]],
-  ['ptr_5f',['ptr_',['../exceptionthrill_1_1io_1_1MemoryFile.html#aa5ec38c854291ed98296bd00efbf90ae',1,'thrill::io::MemoryFile']]],
+  ['program_5fname_5f',['program_name_',['../classtlx_1_1CmdlineParser.html#a46ae7a27b899e9a86ad04807eb1ad34e',1,'tlx::CmdlineParser']]],
+  ['ptr_5f',['ptr_',['../exceptionthrill_1_1io_1_1MemoryFile.html#aa5ec38c854291ed98296bd00efbf90ae',1,'thrill::io::MemoryFile::ptr_()'],['../classtlx_1_1CountingPtr.html#aa0957c00054156f1af9fce986cbfcb4f',1,'tlx::CountingPtr::ptr_()'],['../classtlx_1_1StackArena.html#aa5ec38c854291ed98296bd00efbf90ae',1,'tlx::StackArena::ptr_()']]],
   ['pushed_5finputs',['pushed_inputs',['../structthrill_1_1api_1_1UnionNode_1_1UnionChild.html#aa4b42662c875af16068a75c59b306071',1,'thrill::api::UnionNode::UnionChild']]]
 ];
