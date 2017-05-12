@@ -1,5 +1,6 @@
 var dir_d28a4824dc47e487b107a5db32ef43c4 =
 [
+    [ "bfs", "dir_6075719908f4ebbcd2a6fe61dcb96ff2.html", "dir_6075719908f4ebbcd2a6fe61dcb96ff2" ],
     [ "k-means", "dir_681e72180800ab841db57404088a671f.html", "dir_681e72180800ab841db57404088a671f" ],
     [ "logistic_regression", "dir_2fdd20bc1849795d233f0799a9c0f4bc.html", "dir_2fdd20bc1849795d233f0799a9c0f4bc" ],
     [ "page_rank", "dir_b4a9ae35ce98e7d313854de25bc4f0ec.html", "dir_b4a9ae35ce98e7d313854de25bc4f0ec" ],

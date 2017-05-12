@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['bfs',['bfs',['../namespaceexamples_1_1bfs.html',1,'examples']]],
   ['dc3_5flocal',['dc3_local',['../namespaceexamples_1_1suffix__sorting_1_1dc3__local.html',1,'examples::suffix_sorting']]],
   ['dc7_5flocal',['dc7_local',['../namespaceexamples_1_1suffix__sorting_1_1dc7__local.html',1,'examples::suffix_sorting']]],
   ['examples',['examples',['../namespaceexamples.html',1,'']]],

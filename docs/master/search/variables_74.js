@@ -50,6 +50,7 @@ var searchData=
   ['totalsize_5f',['totalsize_',['../classthrill_1_1api_1_1GroupByNode.html#a1e12a457648e17ad318b37cfb9269893',1,'thrill::api::GroupByNode::totalsize_()'],['../classthrill_1_1api_1_1GroupToIndexNode.html#a1e12a457648e17ad318b37cfb9269893',1,'thrill::api::GroupToIndexNode::totalsize_()']]],
   ['tp_5flast_5f',['tp_last_',['../exceptionthrill_1_1net_1_1Manager.html#a1f496ea4169e2a39630c429489997ae1',1,'thrill::net::Manager']]],
   ['tree_5f',['tree_',['../classthrill_1_1api_1_1SortNode_1_1TreeBuilder.html#a5ba87094f3d66686368c030110cf9846',1,'thrill::api::SortNode::TreeBuilder']]],
+  ['treeindex',['treeIndex',['../classexamples_1_1bfs_1_1BfsNode.html#a59ea0394b70938e4e241e21a69ce24f5',1,'examples::bfs::BfsNode']]],
   ['tx_5fbytes_5f',['tx_bytes_',['../classthrill_1_1net_1_1Connection.html#a597a259166090cf9a92740c4b7b423ec',1,'thrill::net::Connection']]],
   ['tx_5fint_5fblocks_5f',['tx_int_blocks_',['../classthrill_1_1data_1_1Stream.html#a651909fafd662aa9193bc7d95a165051',1,'thrill::data::Stream']]],
   ['tx_5fint_5fbytes_5f',['tx_int_bytes_',['../classthrill_1_1data_1_1Stream.html#a344f9c6321c7333551e1bd4199e0d4ef',1,'thrill::data::Stream']]],

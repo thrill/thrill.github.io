@@ -2,6 +2,7 @@ var searchData=
 [
   ['node',['Node',['../structthrill_1_1common_1_1SplayzTree_1_1Node.html',1,'thrill::common::SplayzTree']]],
   ['nodecompare',['NodeCompare',['../structthrill_1_1common_1_1SplayzTree_1_1NodeCompare.html',1,'thrill::common::SplayzTree']]],
+  ['nodeparentpair',['NodeParentPair',['../structexamples_1_1bfs_1_1NodeParentPair.html',1,'examples::bfs']]],
   ['nooperation',['NoOperation',['../structthrill_1_1common_1_1NoOperation.html',1,'thrill::common']]],
   ['nooperation_3c_20void_20_3e',['NoOperation&lt; void &gt;',['../structthrill_1_1common_1_1NoOperation_3_01void_01_4.html',1,'thrill::common']]],
   ['norebalancetag',['NoRebalanceTag',['../structthrill_1_1api_1_1NoRebalanceTag.html',1,'thrill::api']]],

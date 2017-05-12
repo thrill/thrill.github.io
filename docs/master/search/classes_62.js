@@ -4,6 +4,7 @@ var searchData=
   ['basewindownode',['BaseWindowNode',['../classthrill_1_1api_1_1BaseWindowNode.html',1,'thrill::api']]],
   ['basicallocationstrategy',['BasicAllocationStrategy',['../structthrill_1_1io_1_1BasicAllocationStrategy.html',1,'thrill::io']]],
   ['bernoullisamplenode',['BernoulliSampleNode',['../classthrill_1_1api_1_1BernoulliSampleNode.html',1,'thrill::api']]],
+  ['bfsnode',['BfsNode',['../classexamples_1_1bfs_1_1BfsNode.html',1,'examples::bfs']]],
   ['bid',['BID',['../classthrill_1_1io_1_1BID.html',1,'thrill::io']]],
   ['bid_3c_200_20_3e',['BID&lt; 0 &gt;',['../classthrill_1_1io_1_1BID_3_010_01_4.html',1,'thrill::io']]],
   ['binaryheap',['BinaryHeap',['../classthrill_1_1common_1_1BinaryHeap.html',1,'thrill::common']]],

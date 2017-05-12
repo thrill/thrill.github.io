@@ -14,6 +14,7 @@ var searchData=
   ['tovectoremitter_3c_20thrill_3a_3aapi_3a_3agroupbynode_3a_3ahashcount_20_3e',['ToVectorEmitter&lt; thrill::api::GroupByNode::HashCount &gt;',['../classthrill_1_1core_1_1ToVectorEmitter.html',1,'thrill::core']]],
   ['tovectoremitter_3c_20thrill_3a_3aapi_3a_3ajoinnode_3a_3ahashcount_20_3e',['ToVectorEmitter&lt; thrill::api::JoinNode::HashCount &gt;',['../classthrill_1_1core_1_1ToVectorEmitter.html',1,'thrill::core']]],
   ['treebuilder',['TreeBuilder',['../classthrill_1_1api_1_1SortNode_1_1TreeBuilder.html',1,'thrill::api::SortNode']]],
+  ['treeinfo',['TreeInfo',['../structexamples_1_1bfs_1_1TreeInfo.html',1,'examples::bfs']]],
   ['tupledeserializer',['TupleDeserializer',['../structthrill_1_1data_1_1detail_1_1TupleDeserializer.html',1,'thrill::data::detail']]],
   ['tupledeserializer_3c_20archive_2c_200_2c_20std_3a_3atuple_3c_3e_20_3e',['TupleDeserializer&lt; Archive, 0, std::tuple&lt;&gt; &gt;',['../structthrill_1_1data_1_1detail_1_1TupleDeserializer_3_01Archive_00_010_00_01std_1_1tuple_3_4_01_4.html',1,'thrill::data::detail']]],
   ['tupledeserializer_3c_20archive_2c_20revindex_2c_20std_3a_3atuple_3c_20t_2c_20args_2e_2e_2e_3e_20_3e',['TupleDeserializer&lt; Archive, RevIndex, std::tuple&lt; T, Args...&gt; &gt;',['../structthrill_1_1data_1_1detail_1_1TupleDeserializer_3_01Archive_00_01RevIndex_00_01std_1_1tuple_3_01T_00_01Args_8_8_8_4_01_4.html',1,'thrill::data::detail']]],

@@ -40,6 +40,9 @@ var hierarchy =
     [ "type", null, [
       [ "make_index_sequence< Size >", "structtlx_1_1make__index__sequence.html", null ]
     ] ],
+    [ "BfsNode", "classexamples_1_1bfs_1_1BfsNode.html", null ],
+    [ "NodeParentPair", "structexamples_1_1bfs_1_1NodeParentPair.html", null ],
+    [ "TreeInfo", "structexamples_1_1bfs_1_1TreeInfo.html", null ],
     [ "CentroidAccumulated< Point >", "structexamples_1_1k__means_1_1CentroidAccumulated.html", null ],
     [ "ClosestCentroid< Point >", "structexamples_1_1k__means_1_1ClosestCentroid.html", null ],
     [ "KMeansModel< Point >", "classexamples_1_1k__means_1_1KMeansModel.html", null ],

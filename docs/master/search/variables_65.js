@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['edges',['edges',['../classexamples_1_1bfs_1_1BfsNode.html#ab83378a6657eb8052f547838416499f9',1,'examples::bfs::BfsNode']]],
   ['elapsed_5ftime_5f',['elapsed_time_',['../classthrill_1_1io_1_1StatsData.html#afab57f8dc928f0fab5a42dbedb90c69d',1,'thrill::io::StatsData']]],
   ['elem_5f',['elem_',['../classthrill_1_1api_1_1GroupByIterator.html#abe0fd2bc78cb59ed2f13d1878de1fc6c',1,'thrill::api::GroupByIterator::elem_()'],['../classthrill_1_1api_1_1GroupByMultiwayMergeIterator.html#abe0fd2bc78cb59ed2f13d1878de1fc6c',1,'thrill::api::GroupByMultiwayMergeIterator::elem_()'],['../classthrill_1_1io_1_1mng__local_1_1ElementBlock.html#aab4b7dda1b685a370a3494c8e8557313',1,'thrill::io::mng_local::ElementBlock::elem_()']]],
   ['em_5fbid_5f',['em_bid_',['../classthrill_1_1data_1_1ByteBlock.html#a51a6e07eb694e16d10121033444d5186',1,'thrill::data::ByteBlock']]],

@@ -6,6 +6,8 @@ var searchData=
   ['last_5freset_5ftime_5f',['last_reset_time_',['../classthrill_1_1io_1_1Stats.html#aa970501a52d7a1e0cabc972bb43665df',1,'thrill::io::Stats']]],
   ['last_5fstart_5f',['last_start_',['../classthrill_1_1common_1_1StatsTimerBase_3_01true_01_4.html#a150465210c012550561227a3a1065089',1,'thrill::common::StatsTimerBase&lt; true &gt;']]],
   ['left',['left',['../structthrill_1_1common_1_1SplayzTree_1_1Node.html#a58fb104c04bf9132852fe55bdaf2298e',1,'thrill::common::SplayzTree::Node']]],
+  ['level',['level',['../classexamples_1_1bfs_1_1BfsNode.html#af1cd5c067fda870cc8631b8790fee06c',1,'examples::bfs::BfsNode']]],
+  ['levels',['levels',['../structexamples_1_1bfs_1_1TreeInfo.html#a16f98361587382b9a449f609231ec13b',1,'examples::bfs::TreeInfo']]],
   ['limit_5f',['limit_',['../classthrill_1_1api_1_1DIAMemUse.html#a71e2ea01a825bc4059411276f2f50f86',1,'thrill::api::DIAMemUse']]],
   ['limit_5fblocks_5f',['limit_blocks_',['../classthrill_1_1core_1_1ReduceBucketHashTable.html#afa9c5992cd040da8a63320957ca79e3d',1,'thrill::core::ReduceBucketHashTable']]],
   ['limit_5fitems_5fper_5fpartition_5f',['limit_items_per_partition_',['../classthrill_1_1core_1_1ReduceProbingHashTable.html#aeee4510e95ba3beee101fdf888c25045',1,'thrill::core::ReduceProbingHashTable::limit_items_per_partition_()'],['../classthrill_1_1core_1_1ReduceTable.html#a491d552a053426804b8e8ad2a199e850',1,'thrill::core::ReduceTable::limit_items_per_partition_()']]],

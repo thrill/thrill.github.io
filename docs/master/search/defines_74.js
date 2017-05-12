@@ -119,6 +119,7 @@ var searchData=
   ['thrill_5fdata_5fstream_5fsink_5fheader',['THRILL_DATA_STREAM_SINK_HEADER',['../stream__sink_8hpp.html#ab3ea6a32735cd9aa691462351117b82d',1,'stream_sink.hpp']]],
   ['thrill_5fdefault_5falign',['THRILL_DEFAULT_ALIGN',['../aligned__allocator_8hpp.html#a971e250d339eb487f7abaddfb3eb9998',1,'aligned_allocator.hpp']]],
   ['thrill_5fdo_5fnot_5fcount_5fwait_5ftime',['THRILL_DO_NOT_COUNT_WAIT_TIME',['../iostats_8hpp.html#a695a3ae1d50e8ca988055ad718afd8e6',1,'iostats.hpp']]],
+  ['thrill_5fexamples_5fbfs_5fbfs_5fheader',['THRILL_EXAMPLES_BFS_BFS_HEADER',['../bfs_8hpp.html#a9332a62fa01cfbe2500a71807243a8fa',1,'bfs.hpp']]],
   ['thrill_5fexamples_5fk_5fmeans_5fk_5fmeans_5fheader',['THRILL_EXAMPLES_K_MEANS_K_MEANS_HEADER',['../k-means_8hpp.html#af165c865d54faac3e47d683a8ae5b723',1,'k-means.hpp']]],
   ['thrill_5fexamples_5flogistic_5fregression_5flogistic_5fregression_5fheader',['THRILL_EXAMPLES_LOGISTIC_REGRESSION_LOGISTIC_REGRESSION_HEADER',['../logistic__regression_8hpp.html#a5ba4f04f218a997847c0a40aef4cc6cc',1,'logistic_regression.hpp']]],
   ['thrill_5fexamples_5fpage_5frank_5fpage_5frank_5fheader',['THRILL_EXAMPLES_PAGE_RANK_PAGE_RANK_HEADER',['../page__rank_8hpp.html#a4e4419a8909fe793a4194d0955b90c28',1,'page_rank.hpp']]],

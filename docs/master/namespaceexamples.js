@@ -1,5 +1,6 @@
 var namespaceexamples =
 [
+    [ "bfs", "namespaceexamples_1_1bfs.html", "namespaceexamples_1_1bfs" ],
     [ "k_means", "namespaceexamples_1_1k__means.html", "namespaceexamples_1_1k__means" ],
     [ "logistic_regression", "namespaceexamples_1_1logistic__regression.html", null ],
     [ "page_rank", "namespaceexamples_1_1page__rank.html", "namespaceexamples_1_1page__rank" ],

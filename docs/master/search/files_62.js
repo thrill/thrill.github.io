@@ -3,6 +3,8 @@ var searchData=
   ['base64_2ecpp',['base64.cpp',['../base64_8cpp.html',1,'']]],
   ['base64_2ehpp',['base64.hpp',['../base64_8hpp.html',1,'']]],
   ['bernoulli_5fsample_2ehpp',['bernoulli_sample.hpp',['../bernoulli__sample_8hpp.html',1,'']]],
+  ['bfs_2ecpp',['bfs.cpp',['../bfs_8cpp.html',1,'']]],
+  ['bfs_2ehpp',['bfs.hpp',['../bfs_8hpp.html',1,'']]],
   ['bid_2ecpp',['bid.cpp',['../bid_8cpp.html',1,'']]],
   ['bid_2ehpp',['bid.hpp',['../bid_8hpp.html',1,'']]],
   ['binary_5fheap_2ehpp',['binary_heap.hpp',['../binary__heap_8hpp.html',1,'']]],
