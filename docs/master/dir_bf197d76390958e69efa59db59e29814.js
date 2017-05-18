@@ -5,6 +5,8 @@ var dir_bf197d76390958e69efa59db59e29814 =
     [ "delta_stream.hpp", "delta__stream_8hpp.html", "delta__stream_8hpp" ],
     [ "duplicate_detection.hpp", "duplicate__detection_8hpp.html", "duplicate__detection_8hpp" ],
     [ "golomb_bit_stream.hpp", "golomb__bit__stream_8hpp.html", "golomb__bit__stream_8hpp" ],
+    [ "hyperloglog.cpp", "hyperloglog_8cpp.html", "hyperloglog_8cpp" ],
+    [ "hyperloglog.hpp", "core_2hyperloglog_8hpp.html", "core_2hyperloglog_8hpp" ],
     [ "location_detection.hpp", "location__detection_8hpp.html", "location__detection_8hpp" ],
     [ "multiway_merge.hpp", "multiway__merge_8hpp.html", "multiway__merge_8hpp" ],
     [ "multiway_merge_attic.hpp", "multiway__merge__attic_8hpp.html", "multiway__merge__attic_8hpp" ],

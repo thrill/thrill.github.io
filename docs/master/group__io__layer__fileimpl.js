@@ -52,38 +52,38 @@ var group__io__layer__fileimpl =
       [ "need_alignment_", "classthrill_1_1io_1_1FileBase.html#a24f05930681d0e35014298e3bf4349e3", null ],
       [ "NO_ALLOCATOR", "classthrill_1_1io_1_1FileBase.html#a34d141ebe4b350f7b40b06f32cc0de20", null ]
     ] ],
-    [ "LinuxaioFile", "exceptionthrill_1_1io_1_1LinuxaioFile.html", [
-      [ "LinuxaioFile", "exceptionthrill_1_1io_1_1LinuxaioFile.html#a211a867d45ff84c16305fcf05980fbcb", null ],
-      [ "aread", "exceptionthrill_1_1io_1_1LinuxaioFile.html#a06fa598c8e022e6906c1172e9b8375df", null ],
-      [ "awrite", "exceptionthrill_1_1io_1_1LinuxaioFile.html#a4fdcee71fd34b66e9ac5144b1fc21a29", null ],
-      [ "desired_queue_length", "exceptionthrill_1_1io_1_1LinuxaioFile.html#abe55ea6cf63d7592417931429a4fb9d0", null ],
-      [ "io_type", "exceptionthrill_1_1io_1_1LinuxaioFile.html#abcbd386bf4679abe1280f1a272f1ed73", null ],
-      [ "serve", "exceptionthrill_1_1io_1_1LinuxaioFile.html#a6367ad6c75ca8bd48249a9c8489c8c21", null ],
-      [ "LinuxaioRequest", "exceptionthrill_1_1io_1_1LinuxaioFile.html#a4262e7994c113d36f238fdbc2f1aff90", null ],
-      [ "desired_queue_length_", "exceptionthrill_1_1io_1_1LinuxaioFile.html#a6d63e1e6b94442074116b797a4de146a", null ]
+    [ "LinuxaioFile", "classthrill_1_1io_1_1LinuxaioFile.html", [
+      [ "LinuxaioFile", "classthrill_1_1io_1_1LinuxaioFile.html#a211a867d45ff84c16305fcf05980fbcb", null ],
+      [ "aread", "classthrill_1_1io_1_1LinuxaioFile.html#a06fa598c8e022e6906c1172e9b8375df", null ],
+      [ "awrite", "classthrill_1_1io_1_1LinuxaioFile.html#a4fdcee71fd34b66e9ac5144b1fc21a29", null ],
+      [ "desired_queue_length", "classthrill_1_1io_1_1LinuxaioFile.html#abe55ea6cf63d7592417931429a4fb9d0", null ],
+      [ "io_type", "classthrill_1_1io_1_1LinuxaioFile.html#abcbd386bf4679abe1280f1a272f1ed73", null ],
+      [ "serve", "classthrill_1_1io_1_1LinuxaioFile.html#a6367ad6c75ca8bd48249a9c8489c8c21", null ],
+      [ "LinuxaioRequest", "classthrill_1_1io_1_1LinuxaioFile.html#a4262e7994c113d36f238fdbc2f1aff90", null ],
+      [ "desired_queue_length_", "classthrill_1_1io_1_1LinuxaioFile.html#a6d63e1e6b94442074116b797a4de146a", null ]
     ] ],
-    [ "MemoryFile", "exceptionthrill_1_1io_1_1MemoryFile.html", [
-      [ "MemoryFile", "exceptionthrill_1_1io_1_1MemoryFile.html#a1fbc860102344bc9e36789c522ff9001", null ],
-      [ "~MemoryFile", "exceptionthrill_1_1io_1_1MemoryFile.html#a52cbc778bee172892c53e442067d3cdc", null ],
-      [ "discard", "exceptionthrill_1_1io_1_1MemoryFile.html#a2a2c0a10e9efdc05ec7770afa95f444e", null ],
-      [ "io_type", "exceptionthrill_1_1io_1_1MemoryFile.html#abcbd386bf4679abe1280f1a272f1ed73", null ],
-      [ "lock", "exceptionthrill_1_1io_1_1MemoryFile.html#a614364b9ff05da1b619ef30e1ce5dee0", null ],
-      [ "serve", "exceptionthrill_1_1io_1_1MemoryFile.html#a7f53acddc275461eed9ef3428f2daafd", null ],
-      [ "set_size", "exceptionthrill_1_1io_1_1MemoryFile.html#ab869d78aab63d9868cfc0f6a9105092b", null ],
-      [ "size", "exceptionthrill_1_1io_1_1MemoryFile.html#a90705b490d2440ccf71390be1828b5bf", null ],
-      [ "mutex_", "exceptionthrill_1_1io_1_1MemoryFile.html#a281b5ec791338d4378e22ef44a51b4a1", null ],
-      [ "ptr_", "exceptionthrill_1_1io_1_1MemoryFile.html#aa5ec38c854291ed98296bd00efbf90ae", null ],
-      [ "size_", "exceptionthrill_1_1io_1_1MemoryFile.html#acb5e0e9c9d399921f3a12b13c38e36f3", null ]
+    [ "MemoryFile", "classthrill_1_1io_1_1MemoryFile.html", [
+      [ "MemoryFile", "classthrill_1_1io_1_1MemoryFile.html#a1fbc860102344bc9e36789c522ff9001", null ],
+      [ "~MemoryFile", "classthrill_1_1io_1_1MemoryFile.html#a52cbc778bee172892c53e442067d3cdc", null ],
+      [ "discard", "classthrill_1_1io_1_1MemoryFile.html#a2a2c0a10e9efdc05ec7770afa95f444e", null ],
+      [ "io_type", "classthrill_1_1io_1_1MemoryFile.html#abcbd386bf4679abe1280f1a272f1ed73", null ],
+      [ "lock", "classthrill_1_1io_1_1MemoryFile.html#a614364b9ff05da1b619ef30e1ce5dee0", null ],
+      [ "serve", "classthrill_1_1io_1_1MemoryFile.html#a7f53acddc275461eed9ef3428f2daafd", null ],
+      [ "set_size", "classthrill_1_1io_1_1MemoryFile.html#ab869d78aab63d9868cfc0f6a9105092b", null ],
+      [ "size", "classthrill_1_1io_1_1MemoryFile.html#a90705b490d2440ccf71390be1828b5bf", null ],
+      [ "mutex_", "classthrill_1_1io_1_1MemoryFile.html#a281b5ec791338d4378e22ef44a51b4a1", null ],
+      [ "ptr_", "classthrill_1_1io_1_1MemoryFile.html#aa5ec38c854291ed98296bd00efbf90ae", null ],
+      [ "size_", "classthrill_1_1io_1_1MemoryFile.html#acb5e0e9c9d399921f3a12b13c38e36f3", null ]
     ] ],
-    [ "MmapFile", "exceptionthrill_1_1io_1_1MmapFile.html", [
-      [ "MmapFile", "exceptionthrill_1_1io_1_1MmapFile.html#afe99965cab33f17625e7b54ba37712cc", null ],
-      [ "io_type", "exceptionthrill_1_1io_1_1MmapFile.html#abcbd386bf4679abe1280f1a272f1ed73", null ],
-      [ "serve", "exceptionthrill_1_1io_1_1MmapFile.html#a6367ad6c75ca8bd48249a9c8489c8c21", null ]
+    [ "MmapFile", "classthrill_1_1io_1_1MmapFile.html", [
+      [ "MmapFile", "classthrill_1_1io_1_1MmapFile.html#afe99965cab33f17625e7b54ba37712cc", null ],
+      [ "io_type", "classthrill_1_1io_1_1MmapFile.html#abcbd386bf4679abe1280f1a272f1ed73", null ],
+      [ "serve", "classthrill_1_1io_1_1MmapFile.html#a6367ad6c75ca8bd48249a9c8489c8c21", null ]
     ] ],
-    [ "SyscallFile", "exceptionthrill_1_1io_1_1SyscallFile.html", [
-      [ "SyscallFile", "exceptionthrill_1_1io_1_1SyscallFile.html#af00a4d9e998d7d6013844ef8159582e0", null ],
-      [ "io_type", "exceptionthrill_1_1io_1_1SyscallFile.html#abcbd386bf4679abe1280f1a272f1ed73", null ],
-      [ "serve", "exceptionthrill_1_1io_1_1SyscallFile.html#a6367ad6c75ca8bd48249a9c8489c8c21", null ]
+    [ "SyscallFile", "classthrill_1_1io_1_1SyscallFile.html", [
+      [ "SyscallFile", "classthrill_1_1io_1_1SyscallFile.html#af00a4d9e998d7d6013844ef8159582e0", null ],
+      [ "io_type", "classthrill_1_1io_1_1SyscallFile.html#abcbd386bf4679abe1280f1a272f1ed73", null ],
+      [ "serve", "classthrill_1_1io_1_1SyscallFile.html#a6367ad6c75ca8bd48249a9c8489c8c21", null ]
     ] ],
     [ "UfsFileBase", "classthrill_1_1io_1_1UfsFileBase.html", [
       [ "UfsFileBase", "classthrill_1_1io_1_1UfsFileBase.html#a96bcfa3ab6883c27fdf560fb1434178c", null ],
@@ -123,10 +123,10 @@ var group__io__layer__fileimpl =
       [ "locked", "classthrill_1_1io_1_1WfsFileBase.html#a18a0f1e6c3d21c252b14ea6ae162e2ff", null ],
       [ "mode_", "classthrill_1_1io_1_1WfsFileBase.html#accb821e0d9a39a87dc9757268afc1258", null ]
     ] ],
-    [ "WincallFile", "exceptionthrill_1_1io_1_1WincallFile.html", [
-      [ "WincallFile", "exceptionthrill_1_1io_1_1WincallFile.html#abc9e81c811fde38c3abc1af463eaa310", null ],
-      [ "io_type", "exceptionthrill_1_1io_1_1WincallFile.html#abcbd386bf4679abe1280f1a272f1ed73", null ],
-      [ "serve", "exceptionthrill_1_1io_1_1WincallFile.html#a6367ad6c75ca8bd48249a9c8489c8c21", null ]
+    [ "WincallFile", "classthrill_1_1io_1_1WincallFile.html", [
+      [ "WincallFile", "classthrill_1_1io_1_1WincallFile.html#abc9e81c811fde38c3abc1af463eaa310", null ],
+      [ "io_type", "classthrill_1_1io_1_1WincallFile.html#abcbd386bf4679abe1280f1a272f1ed73", null ],
+      [ "serve", "classthrill_1_1io_1_1WincallFile.html#a6367ad6c75ca8bd48249a9c8489c8c21", null ]
     ] ],
     [ "FileBasePtr", "group__io__layer__fileimpl.html#ga8ff1b764dd7a393ec32a7d4d1443300e", null ],
     [ "is_managed", "group__io__layer__fileimpl.html#gacbad5cbcef5d05c790fa55587e83cf9c", null ],

@@ -45,40 +45,43 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classexamples_1_1k__means_1_1KMeansModel.html#a90f553cb2e4ff8f646141dd9d3b0020d",
-"classthrill_1_1api_1_1Future.html#ae4bfcb91eb15a150f51caf97d36f0872",
-"classthrill_1_1api_1_1ReduceToIndexNode_1_1Emitter.html#a42d1005f945ede17523c4064dc8f848c",
-"classthrill_1_1common_1_1ProfileTask.html#aa5c95973d65329ec3e03bf03ae2c55d6",
-"classthrill_1_1common_1_1UIntPair.html#a546919992dbc211ccdd70a224405f979",
-"classthrill_1_1core_1_1ReduceBucketHashTable.html#ae0f9086a50c83cba3e748cd7f2ab44ce",
-"classthrill_1_1data_1_1Block.html#abe8a2b51e698f23e407d5eb40b8983a6",
-"classthrill_1_1data_1_1File.html#a29dc6798f18d73abd4ba8e4910f6831f",
-"classthrill_1_1data_1_1Stream.html#aacb6d0e5e6d570cdc2b0da14c3921ff0",
-"classthrill_1_1io_1_1Request.html#a8560ac5527cd0ed38d71e0e58acc8021",
-"classthrill_1_1io_1_1mng__local_1_1BlockWithBids.html",
-"classthrill_1_1net_1_1AsyncWriteBlock.html#a8d4e66ffb6192b8b07f14a0fe774de7a",
-"classthrill_1_1net_1_1FixedBufferBuilder.html#a204f15fff69f8a0a4cf4f7b685139ce7",
-"classthrill_1_1net_1_1tcp_1_1SocketAddress.html#aa68c0af0717c9a1d9c77e41a961b2f77",
-"classtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html#af052163798eec358c5ea6d0e59288a72",
-"classtlx_1_1SimpleVector.html#a52422eb0a58c3a0dbe6eadf2727e78f8",
-"dc3_8cpp.html#ad8edbe20ae70c17f9243d89f75bf5ab0",
-"escape__html_8cpp_source.html",
-"exceptionthrill_1_1api_1_1SortNode.html#a49097b7af150fb81915b0a03f8661bcd",
-"exceptionthrill_1_1data_1_1MixStream.html#a003ef159b7259479c2b087912970e4c4",
-"exceptionthrill_1_1net_1_1mpi_1_1Group.html#a54775df0490e235736312e5aaca1e07d",
-"functions_0x6c.html",
-"group__dia__actions.html#gaab60224bebd7b05eb48b0e53b688a282",
-"group__net__layer.html#ga36377c99a3197e354b1a46c9dc759fd2",
-"has__member_8hpp.html",
-"k-means__step6_8cpp.html",
-"multiplexer__header_8hpp_source.html",
-"print_8hpp.html#a7c142f195bad79f7ba7e0948f20fb6fb",
-"serialization__cereal_8hpp_source.html",
-"structexamples_1_1suffix__sorting_1_1IndexRank.html#a5d5b22eb77c392277e53ecec6b85cf2d",
-"structthrill_1_1io_1_1RandomCyclic.html#aeb68c873ee10455d5add02e809d97eb7",
-"thrill_2net_2tcp_2select_8hpp.html#a5a6733bdd7b3d643207e02a29c913fc3"
+"classexamples_1_1k__means_1_1KMeansModel.html#a6adb3f5905cd8d45736e5004b968f8a8",
+"classthrill_1_1api_1_1DIABase.html#ab5080e39708f2981da7d90b625b4cf5f",
+"classthrill_1_1api_1_1JoinNode.html#ab81cc4bf0a597a8622f031da623c52d8",
+"classthrill_1_1api_1_1SortNode.html#aea91265b5f735320de42ce48d9f7f678",
+"classthrill_1_1common_1_1JsonLine.html",
+"classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html#a9db9b50e2f23598e0672943903e0e96d",
+"classthrill_1_1core_1_1DefaultReduceConfig.html#adfbde11ebaa1a20bcb45880be66d80af",
+"classthrill_1_1core_1_1ReducePrePhase_3_01TableItem_00_01Key_00_01Value_00_01KeyExtractor_00_01R8f9089bf912627d049d4ca588d14a45c.html",
+"classthrill_1_1data_1_1BlockReader.html#a66c84a328e3bab02edd01052693dbcb8",
+"classthrill_1_1data_1_1File.html#acddd255992227853660a9c8b8f02d1cb",
+"classthrill_1_1data_1_1Stream.html#a344f9c6321c7333551e1bd4199e0d4ef",
+"classthrill_1_1io_1_1FileBase.html#a7eec1f9aa6aa37a90da428dae8bde219",
+"classthrill_1_1io_1_1StatsData.html#a5a88308cb6959c0d29ba8af12f6f85ba",
+"classthrill_1_1mem_1_1FixedPoolAllocator.html#a27c1411c7e56cf4fa88f594b97c6b3fa",
+"classthrill_1_1net_1_1BufferReader.html#af8777c641422485f8f43ad26e6923208",
+"classthrill_1_1net_1_1Group.html#acdbdbe4c2b6fd1fbe6ac2d899baecf99",
+"classthrill_1_1net_1_1tcp_1_1Select.html#a1923e7ee5851c0260576b3b8b6a32e8a",
+"classtlx_1_1CmdlineParser.html#ad2481fa543e06ef38c8b35f3e3069c31",
+"classtlx_1_1LruCacheMap.html#a3f99800022cfebd038a6ce06a1f99942",
+"config__file_8cpp.html",
+"disk__queued__file_8hpp.html",
+"flow__control__manager_8hpp.html#a42ceeb78add14a571f647632fb85db14",
+"group__data__layer.html#ga9355b062ce0e3489f840275c5b1502cf",
+"group__math.html#gad221e96917e629c78fde55e8a365691f",
+"group__string.html#ga937bd46650d317c28df7c7723ae84119",
+"is__power__of__two_8hpp_source.html",
+"malloc__tracker_8cpp.html#acf58967dd2753036a881b7be8fbf5f04",
+"page__rank_8hpp.html#afc9a1d772eda541775d6c038f113c93a",
+"request__operations_8hpp.html#gaca464f311e4d6b54292ac49cb0d3ee3d",
+"start_environment.html",
+"structthrill_1_1common_1_1alias__cast__helper.html",
+"syscall__file_8cpp.html",
+"vmap__for__range_8hpp.html#ga4a1c233e7ab713b8f8f77f7149f2bc4b"
 ];
 
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';
 var SYNCONMSG = 'click to disable panel synchronisation';
 var SYNCOFFMSG = 'click to enable panel synchronisation';
 var navTreeSubIndices = new Array();
@@ -161,12 +164,12 @@ function createIndent(o,domNode,node,level)
   var level=-1;
   var n = node;
   while (n.parentNode) { level++; n=n.parentNode; }
-  var imgNode = document.createElement("img");
-  imgNode.style.paddingLeft=(16*level).toString()+'px';
-  imgNode.width  = 16;
-  imgNode.height = 22;
-  imgNode.border = 0;
   if (node.childrenData) {
+    var imgNode = document.createElement("img");
+    imgNode.style.paddingLeft=(16*level).toString()+'px';
+    imgNode.width  = 16;
+    imgNode.height = 22;
+    imgNode.border = 0;
     node.plus_img = imgNode;
     node.expandToggle = document.createElement("a");
     node.expandToggle.href = "javascript:void(0)";
@@ -183,8 +186,12 @@ function createIndent(o,domNode,node,level)
     domNode.appendChild(node.expandToggle);
     imgNode.src = node.relpath+"ftv2pnode.png";
   } else {
-    imgNode.src = node.relpath+"ftv2node.png";
-    domNode.appendChild(imgNode);
+    var span = document.createElement("span");
+    span.style.display = 'inline-block';
+    span.style.width   = 16*(level+1)+'px';
+    span.style.height  = '22px';
+    span.innerHTML = '&#160;';
+    domNode.appendChild(span);
   } 
 }
 
@@ -403,7 +410,7 @@ function showNode(o, node, index, hash)
       if (!node.childrenVisited) {
         getNode(o, node);
       }
-      $(node.getChildrenUL()).show();
+      $(node.getChildrenUL()).css({'display':'block'});
       if (node.isLast) {
         node.plus_img.src = node.relpath+"ftv2mlastnode.png";
       } else {
@@ -435,8 +442,22 @@ function showNode(o, node, index, hash)
   }
 }
 
+function removeToInsertLater(element) {
+  var parentNode = element.parentNode;
+  var nextSibling = element.nextSibling;
+  parentNode.removeChild(element);
+  return function() {
+    if (nextSibling) {
+      parentNode.insertBefore(element, nextSibling);
+    } else {
+      parentNode.appendChild(element);
+    }
+  };
+}
+
 function getNode(o, po)
 {
+  var insertFunction = removeToInsertLater(po.li);
   po.childrenVisited = true;
   var l = po.childrenData.length-1;
   for (var i in po.childrenData) {
@@ -444,6 +465,7 @@ function getNode(o, po)
     po.children[i] = newNode(o, po, nodeData[0], nodeData[1], nodeData[2],
       i==l);
   }
+  insertFunction();
 }
 
 function gotoNode(o,subIndex,root,hash,relpath)
@@ -547,7 +569,10 @@ function initNavTree(toroot,relpath)
     navSync.click(function(){ toggleSyncButton(relpath); });
   }
 
-  navTo(o,toroot,window.location.hash,relpath);
+  $(window).load(function(){
+    navTo(o,toroot,window.location.hash,relpath);
+    showRoot();
+  });
 
   $(window).bind('hashchange', function(){
      if (window.location.hash && window.location.hash.length>1){
@@ -570,7 +595,5 @@ function initNavTree(toroot,relpath)
        navTo(o,toroot,window.location.hash,relpath);
      }
   })
-
-  $(window).load(showRoot);
 }
 

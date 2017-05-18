@@ -1,7 +1,7 @@
 var zip__window_8hpp =
 [
     [ "ArrayTag", "structthrill_1_1api_1_1ArrayTag.html", "structthrill_1_1api_1_1ArrayTag" ],
-    [ "ZipWindowNode", "exceptionthrill_1_1api_1_1ZipWindowNode.html", "exceptionthrill_1_1api_1_1ZipWindowNode" ],
+    [ "ZipWindowNode", "classthrill_1_1api_1_1ZipWindowNode.html", "classthrill_1_1api_1_1ZipWindowNode" ],
     [ "RegisterParent", "classthrill_1_1api_1_1ZipWindowNode_1_1RegisterParent.html", "classthrill_1_1api_1_1ZipWindowNode_1_1RegisterParent" ],
     [ "ZipWindowReader", "classthrill_1_1api_1_1ZipWindowReader.html", null ],
     [ "ZipWindowReader< ZipWindowNode, false >", "classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01false_01_4.html", "classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01false_01_4" ],
@@ -16,5 +16,5 @@ var zip__window_8hpp =
     [ "ZipWindow", "zip__window_8hpp.html#gafae88e90ddf6912aed0782e443dda3f2", null ],
     [ "ZipWindow", "zip__window_8hpp.html#gae49cb737d0dfd79c4ef90caf7324b476", null ],
     [ "ZipWindow", "zip__window_8hpp.html#ga28e9fdc1bf77faf34ccf6237447606cd", null ],
-    [ "ArrayTag", "zip__window_8hpp.html#abe02bb81edbee4aa3d4d9c7203be1621", null ]
+    [ "ArrayTag", "zip__window_8hpp.html#aa447a2d411fbebecfc2b6b2ca3671f15", null ]
 ];

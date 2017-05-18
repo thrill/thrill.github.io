@@ -7,6 +7,7 @@ var group__dia__actions =
     [ "AllReduceFuture", "group__dia__actions.html#ga96cca6c3df3e3adc1404c89c0d9564c6", null ],
     [ "Gather", "group__dia__actions.html#gac0f2000b2084791ab995d68fe834a77c", null ],
     [ "Gather", "group__dia__actions.html#gab067879533045257776c0a4f05d53970", null ],
+    [ "HyperLogLog", "group__dia__actions.html#ga8c181321b75884a8b8994e1c6c9d2e13", null ],
     [ "Max", "group__dia__actions.html#gaaec8d360c7ca7381765f9a53086152d1", null ],
     [ "MaxFuture", "group__dia__actions.html#ga3b3f167108dcf01b5658e8f37db96aca", null ],
     [ "Min", "group__dia__actions.html#ga03f2dc35dec08be51504c3a36096d1ca", null ],

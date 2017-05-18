@@ -21,5 +21,5 @@ var namespacethrill_1_1net =
     [ "FlowControlChannel", "classthrill_1_1net_1_1FlowControlChannel.html", "classthrill_1_1net_1_1FlowControlChannel" ],
     [ "FlowControlChannelManager", "classthrill_1_1net_1_1FlowControlChannelManager.html", "classthrill_1_1net_1_1FlowControlChannelManager" ],
     [ "Group", "classthrill_1_1net_1_1Group.html", "classthrill_1_1net_1_1Group" ],
-    [ "Manager", "exceptionthrill_1_1net_1_1Manager.html", "exceptionthrill_1_1net_1_1Manager" ]
+    [ "Manager", "classthrill_1_1net_1_1Manager.html", "classthrill_1_1net_1_1Manager" ]
 ];

@@ -27,6 +27,7 @@ var dir_c0e49fec6cb6c78dde854e77e0fc73d0 =
     [ "multiplexer_header.hpp", "multiplexer__header_8hpp.html", "multiplexer__header_8hpp" ],
     [ "serialization.hpp", "serialization_8hpp.html", "serialization_8hpp" ],
     [ "serialization_cereal.hpp", "serialization__cereal_8hpp.html", "serialization__cereal_8hpp" ],
+    [ "serialization_fwd.hpp", "serialization__fwd_8hpp.html", "serialization__fwd_8hpp" ],
     [ "stream.cpp", "stream_8cpp.html", null ],
     [ "stream.hpp", "stream_8hpp.html", "stream_8hpp" ],
     [ "stream_sink.cpp", "stream__sink_8cpp.html", null ],

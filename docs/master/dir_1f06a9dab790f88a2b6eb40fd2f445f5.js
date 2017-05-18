@@ -22,6 +22,7 @@ var dir_1f06a9dab790f88a2b6eb40fd2f445f5 =
     [ "group_by_iterator.hpp", "group__by__iterator_8hpp.html", "group__by__iterator_8hpp" ],
     [ "group_by_key.hpp", "group__by__key_8hpp.html", "group__by__key_8hpp" ],
     [ "group_to_index.hpp", "group__to__index_8hpp.html", "group__to__index_8hpp" ],
+    [ "hyperloglog.hpp", "api_2hyperloglog_8hpp.html", "api_2hyperloglog_8hpp" ],
     [ "inner_join.hpp", "inner__join_8hpp.html", "inner__join_8hpp" ],
     [ "max.hpp", "max_8hpp.html", "max_8hpp" ],
     [ "merge.hpp", "merge_8hpp.html", "merge_8hpp" ],

@@ -39,6 +39,9 @@ var NAVTREEINDEX0 =
 "allocator_8hpp.html#ad84eda546ec3ea86bcf0631dd459c92c":[4,0,3,5,1,6],
 "allocator_8hpp_source.html":[4,0,3,5,1],
 "annotated.html":[3,0],
+"api_2hyperloglog_8hpp.html":[4,0,3,0,22],
+"api_2hyperloglog_8hpp.html#a67a2dab5f627fe54c6d2d1af34a3e861":[4,0,3,0,22,0],
+"api_2hyperloglog_8hpp_source.html":[4,0,3,0,22],
 "apply__tuple_8hpp.html":[4,0,2,0,0,2,0],
 "apply__tuple_8hpp.html#ad9746dc2ad8271c539cc24ca9f840dcd":[4,0,2,0,0,2,0,1],
 "apply__tuple_8hpp.html#ga697505eebc05040893022611ce8866c1":[4,0,2,0,0,2,0,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX0 =
 "classexamples_1_1k__means_1_1KMeansModel.html#a1ed0d7487b54586d5a24eb39afed2c78":[3,0,0,1,2,9],
 "classexamples_1_1k__means_1_1KMeansModel.html#a25852fda6086826370f2230b22549c0f":[3,0,0,1,2,7],
 "classexamples_1_1k__means_1_1KMeansModel.html#a3cd87c5f4c5de3e5de00f535842fe848":[3,0,0,1,2,13],
-"classexamples_1_1k__means_1_1KMeansModel.html#a593ca3f12178bbaac05a5aed038ed6bc":[3,0,0,1,2,11],
-"classexamples_1_1k__means_1_1KMeansModel.html#a6adb3f5905cd8d45736e5004b968f8a8":[3,0,0,1,2,1],
-"classexamples_1_1k__means_1_1KMeansModel.html#a6ec73d4763aac3686fce4eb363cca4e8":[3,0,0,1,2,4],
-"classexamples_1_1k__means_1_1KMeansModel.html#a8dd215675c501bdaa7429e64ec4a1a73":[3,0,0,1,2,0]
+"classexamples_1_1k__means_1_1KMeansModel.html#a593ca3f12178bbaac05a5aed038ed6bc":[3,0,0,1,2,11]
 };

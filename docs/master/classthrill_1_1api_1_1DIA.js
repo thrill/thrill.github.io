@@ -38,6 +38,7 @@ var classthrill_1_1api_1_1DIA =
     [ "GroupByKey", "group__dia__dops.html#gac0a6c31c31530fcbe43e70ea436ecc06", null ],
     [ "GroupToIndex", "classthrill_1_1api_1_1DIA.html#afaa47078cd8d80ec7375503573ee8a06", null ],
     [ "GroupToIndex", "group__dia__dops.html#gaf8f67e7b8ba7a85bd2391edf43da2a57", null ],
+    [ "HyperLogLog", "group__dia__actions.html#ga8c181321b75884a8b8994e1c6c9d2e13", null ],
     [ "id", "classthrill_1_1api_1_1DIA.html#a791725677e61655a901f97cfb39192f5", null ],
     [ "IsValid", "classthrill_1_1api_1_1DIA.html#afa8720abaf6972d6dac22a8cd1a67225", null ],
     [ "Keep", "classthrill_1_1api_1_1DIA.html#abe53b76f00a59b79305508dedfd849ec", null ],

@@ -47,6 +47,7 @@ var dir_4c5cb83148e98355e323096051cdb415 =
       [ "RingBuffer", "classtlx_1_1RingBuffer.html", "classtlx_1_1RingBuffer" ]
     ] ],
     [ "simple_vector.hpp", "simple__vector_8hpp.html", "simple__vector_8hpp" ],
+    [ "siphash.hpp", "siphash_8hpp.html", "siphash_8hpp" ],
     [ "stack_allocator.hpp", "stack__allocator_8hpp.html", [
       [ "StackAllocator", "classtlx_1_1StackAllocator.html", "classtlx_1_1StackAllocator" ],
       [ "rebind", "structtlx_1_1StackAllocator_1_1rebind.html", "structtlx_1_1StackAllocator_1_1rebind" ],

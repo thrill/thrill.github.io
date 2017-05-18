@@ -1,5 +1,6 @@
 var namespacethrill_1_1core =
 [
+    [ "hyperloglog", "namespacethrill_1_1core_1_1hyperloglog.html", null ],
     [ "BitStreamReader", "classthrill_1_1core_1_1BitStreamReader.html", "classthrill_1_1core_1_1BitStreamReader" ],
     [ "BitStreamWriter", "classthrill_1_1core_1_1BitStreamWriter.html", "classthrill_1_1core_1_1BitStreamWriter" ],
     [ "BufferedMultiwayMergeTree", "classthrill_1_1core_1_1BufferedMultiwayMergeTree.html", "classthrill_1_1core_1_1BufferedMultiwayMergeTree" ],
@@ -10,6 +11,7 @@ var namespacethrill_1_1core =
     [ "DuplicateDetection", "classthrill_1_1core_1_1DuplicateDetection.html", "classthrill_1_1core_1_1DuplicateDetection" ],
     [ "GolombBitStreamReader", "classthrill_1_1core_1_1GolombBitStreamReader.html", "classthrill_1_1core_1_1GolombBitStreamReader" ],
     [ "GolombBitStreamWriter", "classthrill_1_1core_1_1GolombBitStreamWriter.html", "classthrill_1_1core_1_1GolombBitStreamWriter" ],
+    [ "HyperLogLogRegisters", "classthrill_1_1core_1_1HyperLogLogRegisters.html", "classthrill_1_1core_1_1HyperLogLogRegisters" ],
     [ "LocationDetection", "classthrill_1_1core_1_1LocationDetection.html", "classthrill_1_1core_1_1LocationDetection" ],
     [ "MultiwayMergeTree", "classthrill_1_1core_1_1MultiwayMergeTree.html", "classthrill_1_1core_1_1MultiwayMergeTree" ],
     [ "ReduceBucketHashTable", "classthrill_1_1core_1_1ReduceBucketHashTable.html", "classthrill_1_1core_1_1ReduceBucketHashTable" ],
