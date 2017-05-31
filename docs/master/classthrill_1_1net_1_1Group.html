@@ -318,49 +318,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ga6331da9c2000bb2e7f1a21ca55c3af72"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga6331da9c2000bb2e7f1a21ca55c3af72">AllReduce</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp())</td></tr>
 <tr class="memdesc:ga6331da9c2000bb2e7f1a21ca55c3af72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduce a value from all workers to all workers.  <a href="group__net__layer.html#ga6331da9c2000bb2e7f1a21ca55c3af72">More...</a><br/></td></tr>
 <tr class="separator:ga6331da9c2000bb2e7f1a21ca55c3af72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Additional Synchronous Collective Communication Functions</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Do not use these directly in user code. </p>
-</div></td></tr>
-<tr class="memitem:ga36377c99a3197e354b1a46c9dc759fd2"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:ga36377c99a3197e354b1a46c9dc759fd2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga36377c99a3197e354b1a46c9dc759fd2">PrefixSumSelect</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp(), bool inclusive=true)</td></tr>
-<tr class="memdesc:ga36377c99a3197e354b1a46c9dc759fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">select prefixsum implementation (often due to total number of processors)  <a href="group__net__layer.html#ga36377c99a3197e354b1a46c9dc759fd2">More...</a><br/></td></tr>
-<tr class="separator:ga36377c99a3197e354b1a46c9dc759fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga472b985193483514c7e1ecc9dd6352eb"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:ga472b985193483514c7e1ecc9dd6352eb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga472b985193483514c7e1ecc9dd6352eb">PrefixSumDoubling</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp(), bool inclusive=true)</td></tr>
-<tr class="memdesc:ga472b985193483514c7e1ecc9dd6352eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate for every worker his prefix sum.  <a href="group__net__layer.html#ga472b985193483514c7e1ecc9dd6352eb">More...</a><br/></td></tr>
-<tr class="separator:ga472b985193483514c7e1ecc9dd6352eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac1478a2c817954c511b07adba04ab60e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:gac1478a2c817954c511b07adba04ab60e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gac1478a2c817954c511b07adba04ab60e">PrefixSumHypercube</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp())</td></tr>
-<tr class="memdesc:gac1478a2c817954c511b07adba04ab60e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate for every worker his prefix sum.  <a href="group__net__layer.html#gac1478a2c817954c511b07adba04ab60e">More...</a><br/></td></tr>
-<tr class="separator:gac1478a2c817954c511b07adba04ab60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae799f1ae6032f08b8ce2d886e38aec67"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:gae799f1ae6032f08b8ce2d886e38aec67"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gae799f1ae6032f08b8ce2d886e38aec67">BroadcastSelect</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, size_t origin=0)</td></tr>
-<tr class="memdesc:gae799f1ae6032f08b8ce2d886e38aec67"><td class="mdescLeft">&#160;</td><td class="mdescRight">select broadcast implementation (often due to total number of processors)  <a href="group__net__layer.html#gae799f1ae6032f08b8ce2d886e38aec67">More...</a><br/></td></tr>
-<tr class="separator:gae799f1ae6032f08b8ce2d886e38aec67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa2e3580526e2df85173cb0767a2a541a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:gaa2e3580526e2df85173cb0767a2a541a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gaa2e3580526e2df85173cb0767a2a541a">BroadcastTrivial</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, size_t origin=0)</td></tr>
-<tr class="memdesc:gaa2e3580526e2df85173cb0767a2a541a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts the value of the peer with index 0 to all the others.  <a href="group__net__layer.html#gaa2e3580526e2df85173cb0767a2a541a">More...</a><br/></td></tr>
-<tr class="separator:gaa2e3580526e2df85173cb0767a2a541a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae7d43ddc63095a29b23cc436d5d41cb9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:gae7d43ddc63095a29b23cc436d5d41cb9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gae7d43ddc63095a29b23cc436d5d41cb9">BroadcastBinomialTree</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, size_t origin=0)</td></tr>
-<tr class="memdesc:gae7d43ddc63095a29b23cc436d5d41cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts the value of the worker with index "origin" to all the others.  <a href="group__net__layer.html#gae7d43ddc63095a29b23cc436d5d41cb9">More...</a><br/></td></tr>
-<tr class="separator:gae7d43ddc63095a29b23cc436d5d41cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga694fa1adf7b657071cf893bc3b10de34"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:ga694fa1adf7b657071cf893bc3b10de34"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga694fa1adf7b657071cf893bc3b10de34">AllReduceSelect</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp())</td></tr>
-<tr class="memdesc:ga694fa1adf7b657071cf893bc3b10de34"><td class="mdescLeft">&#160;</td><td class="mdescRight">select allreduce implementation (often due to total number of processors)  <a href="group__net__layer.html#ga694fa1adf7b657071cf893bc3b10de34">More...</a><br/></td></tr>
-<tr class="separator:ga694fa1adf7b657071cf893bc3b10de34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac0c4e82c8a6eacf69922d4125b7b434b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:gac0c4e82c8a6eacf69922d4125b7b434b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gac0c4e82c8a6eacf69922d4125b7b434b">AllReduceSimple</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp())</td></tr>
-<tr class="memdesc:gac0c4e82c8a6eacf69922d4125b7b434b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform an All-Reduce on the workers.  <a href="group__net__layer.html#gac0c4e82c8a6eacf69922d4125b7b434b">More...</a><br/></td></tr>
-<tr class="separator:gac0c4e82c8a6eacf69922d4125b7b434b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9ccd463f9c043717c09ca0899950226"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:gac9ccd463f9c043717c09ca0899950226"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gac9ccd463f9c043717c09ca0899950226">AllReduceAtRoot</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp())</td></tr>
-<tr class="memdesc:gac9ccd463f9c043717c09ca0899950226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts the value of the peer with index 0 to all the others.  <a href="group__net__layer.html#gac9ccd463f9c043717c09ca0899950226">More...</a><br/></td></tr>
-<tr class="separator:gac9ccd463f9c043717c09ca0899950226"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa252eba5e789326ec0360441b8317a9e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
-<tr class="memitem:gaa252eba5e789326ec0360441b8317a9e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gaa252eba5e789326ec0360441b8317a9e">AllReduceHypercube</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp())</td></tr>
-<tr class="memdesc:gaa252eba5e789326ec0360441b8317a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform an All-Reduce for powers of two.  <a href="group__net__layer.html#gaa252eba5e789326ec0360441b8317a9e">More...</a><br/></td></tr>
-<tr class="separator:gaa252eba5e789326ec0360441b8317a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -443,6 +400,63 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a8a90c216189062638962001978db6003"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Group.html#a8a90c216189062638962001978db6003">my_rank_</a></td></tr>
 <tr class="memdesc:a8a90c216189062638962001978db6003"><td class="mdescLeft">&#160;</td><td class="mdescRight">our rank in the network group  <a href="#a8a90c216189062638962001978db6003">More...</a><br/></td></tr>
 <tr class="separator:a8a90c216189062638962001978db6003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Additional Synchronous Collective Communication Functions</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp94c6ca0fe3c2e404b03e602fdb71f67e"></a>Do not use these directly in user code. </p>
+</td></tr>
+<tr class="memitem:ga36377c99a3197e354b1a46c9dc759fd2"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:ga36377c99a3197e354b1a46c9dc759fd2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga36377c99a3197e354b1a46c9dc759fd2">PrefixSumSelect</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp(), bool inclusive=true)</td></tr>
+<tr class="memdesc:ga36377c99a3197e354b1a46c9dc759fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">select prefixsum implementation (often due to total number of processors)  <a href="group__net__layer.html#ga36377c99a3197e354b1a46c9dc759fd2">More...</a><br/></td></tr>
+<tr class="separator:ga36377c99a3197e354b1a46c9dc759fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga472b985193483514c7e1ecc9dd6352eb"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:ga472b985193483514c7e1ecc9dd6352eb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga472b985193483514c7e1ecc9dd6352eb">PrefixSumDoubling</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp(), bool inclusive=true)</td></tr>
+<tr class="memdesc:ga472b985193483514c7e1ecc9dd6352eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate for every worker his prefix sum.  <a href="group__net__layer.html#ga472b985193483514c7e1ecc9dd6352eb">More...</a><br/></td></tr>
+<tr class="separator:ga472b985193483514c7e1ecc9dd6352eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1478a2c817954c511b07adba04ab60e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:gac1478a2c817954c511b07adba04ab60e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gac1478a2c817954c511b07adba04ab60e">PrefixSumHypercube</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp())</td></tr>
+<tr class="memdesc:gac1478a2c817954c511b07adba04ab60e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate for every worker his prefix sum.  <a href="group__net__layer.html#gac1478a2c817954c511b07adba04ab60e">More...</a><br/></td></tr>
+<tr class="separator:gac1478a2c817954c511b07adba04ab60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae799f1ae6032f08b8ce2d886e38aec67"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gae799f1ae6032f08b8ce2d886e38aec67"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gae799f1ae6032f08b8ce2d886e38aec67">BroadcastSelect</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, size_t origin=0)</td></tr>
+<tr class="memdesc:gae799f1ae6032f08b8ce2d886e38aec67"><td class="mdescLeft">&#160;</td><td class="mdescRight">select broadcast implementation (often due to total number of processors)  <a href="group__net__layer.html#gae799f1ae6032f08b8ce2d886e38aec67">More...</a><br/></td></tr>
+<tr class="separator:gae799f1ae6032f08b8ce2d886e38aec67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa2e3580526e2df85173cb0767a2a541a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gaa2e3580526e2df85173cb0767a2a541a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gaa2e3580526e2df85173cb0767a2a541a">BroadcastTrivial</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, size_t origin=0)</td></tr>
+<tr class="memdesc:gaa2e3580526e2df85173cb0767a2a541a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts the value of the peer with index 0 to all the others.  <a href="group__net__layer.html#gaa2e3580526e2df85173cb0767a2a541a">More...</a><br/></td></tr>
+<tr class="separator:gaa2e3580526e2df85173cb0767a2a541a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7d43ddc63095a29b23cc436d5d41cb9"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gae7d43ddc63095a29b23cc436d5d41cb9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gae7d43ddc63095a29b23cc436d5d41cb9">BroadcastBinomialTree</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, size_t origin=0)</td></tr>
+<tr class="memdesc:gae7d43ddc63095a29b23cc436d5d41cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts the value of the worker with index "origin" to all the others.  <a href="group__net__layer.html#gae7d43ddc63095a29b23cc436d5d41cb9">More...</a><br/></td></tr>
+<tr class="separator:gae7d43ddc63095a29b23cc436d5d41cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga694fa1adf7b657071cf893bc3b10de34"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:ga694fa1adf7b657071cf893bc3b10de34"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga694fa1adf7b657071cf893bc3b10de34">AllReduceSelect</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp())</td></tr>
+<tr class="memdesc:ga694fa1adf7b657071cf893bc3b10de34"><td class="mdescLeft">&#160;</td><td class="mdescRight">select allreduce implementation (often due to total number of processors)  <a href="group__net__layer.html#ga694fa1adf7b657071cf893bc3b10de34">More...</a><br/></td></tr>
+<tr class="separator:ga694fa1adf7b657071cf893bc3b10de34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0c4e82c8a6eacf69922d4125b7b434b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:gac0c4e82c8a6eacf69922d4125b7b434b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gac0c4e82c8a6eacf69922d4125b7b434b">AllReduceSimple</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp())</td></tr>
+<tr class="memdesc:gac0c4e82c8a6eacf69922d4125b7b434b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform an All-Reduce on the workers.  <a href="group__net__layer.html#gac0c4e82c8a6eacf69922d4125b7b434b">More...</a><br/></td></tr>
+<tr class="separator:gac0c4e82c8a6eacf69922d4125b7b434b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9ccd463f9c043717c09ca0899950226"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:gac9ccd463f9c043717c09ca0899950226"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gac9ccd463f9c043717c09ca0899950226">AllReduceAtRoot</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp())</td></tr>
+<tr class="memdesc:gac9ccd463f9c043717c09ca0899950226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts the value of the peer with index 0 to all the others.  <a href="group__net__layer.html#gac9ccd463f9c043717c09ca0899950226">More...</a><br/></td></tr>
+<tr class="separator:gac9ccd463f9c043717c09ca0899950226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa252eba5e789326ec0360441b8317a9e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:gaa252eba5e789326ec0360441b8317a9e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gaa252eba5e789326ec0360441b8317a9e">AllReduceHypercube</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp())</td></tr>
+<tr class="memdesc:gaa252eba5e789326ec0360441b8317a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform an All-Reduce for powers of two.  <a href="group__net__layer.html#gaa252eba5e789326ec0360441b8317a9e">More...</a><br/></td></tr>
+<tr class="separator:gaa252eba5e789326ec0360441b8317a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae02411d0f825324e4da3e2ed1456c09a"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:gae02411d0f825324e4da3e2ed1456c09a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gae02411d0f825324e4da3e2ed1456c09a">AllReduceElimination</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp())</td></tr>
+<tr class="memdesc:gae02411d0f825324e4da3e2ed1456c09a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform an All-Reduce using the elimination protocol described in R.  <a href="group__net__layer.html#gae02411d0f825324e4da3e2ed1456c09a">More...</a><br/></td></tr>
+<tr class="separator:gae02411d0f825324e4da3e2ed1456c09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39b75bf62b9532370f1aaaceb76a725d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp &gt; </td></tr>
+<tr class="memitem:ga39b75bf62b9532370f1aaaceb76a725d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga39b75bf62b9532370f1aaaceb76a725d">SendReceiveReduce</a> (size_t peer, const <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op)</td></tr>
+<tr class="memdesc:ga39b75bf62b9532370f1aaaceb76a725d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends and Receives a serializable type from the given peer and returns the value after reduction.  <a href="group__net__layer.html#ga39b75bf62b9532370f1aaaceb76a725d">More...</a><br/></td></tr>
+<tr class="separator:ga39b75bf62b9532370f1aaaceb76a725d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae884a2065a3eabdb30820ec77a7c13f4"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp &gt; </td></tr>
+<tr class="memitem:gae884a2065a3eabdb30820ec77a7c13f4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gae884a2065a3eabdb30820ec77a7c13f4">AllReduceEliminationProcess</a> (size_t host_id, size_t group_size, size_t remaining_hosts, size_t send_to, <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op)</td></tr>
+<tr class="memdesc:gae884a2065a3eabdb30820ec77a7c13f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">used for the recursive implementation of the elimination protocol  <a href="group__net__layer.html#gae884a2065a3eabdb30820ec77a7c13f4">More...</a><br/></td></tr>
+<tr class="separator:gae884a2065a3eabdb30820ec77a7c13f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae7d681e429d78fb240ea60e9fb0d4f19"></a>
@@ -581,9 +595,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00200">200</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00354">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00376">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -613,9 +627,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00236">236</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00402">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00424">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -645,9 +659,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00272">272</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00450">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00472">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -677,9 +691,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00218">218</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00378">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00400">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -709,9 +723,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00254">254</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00426">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00448">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -741,9 +755,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00290">290</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00474">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00496">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -773,9 +787,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00197">197</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00350">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00372">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -805,9 +819,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00233">233</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00398">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00420">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -837,9 +851,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00269">269</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00446">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00468">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -869,9 +883,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00215">215</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00374">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00396">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -901,9 +915,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00251">251</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00422">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00444">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -933,9 +947,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00287">287</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00470">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00492">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -965,9 +979,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00194">194</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00346">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00368">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -997,9 +1011,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00230">230</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00394">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00416">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -1029,9 +1043,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00266">266</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00442">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00464">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -1061,9 +1075,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00212">212</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00370">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00392">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -1093,9 +1107,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00248">248</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00418">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00440">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -1125,9 +1139,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00284">284</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00466">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00488">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -1167,9 +1181,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00191">191</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00230">Group::BroadcastSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00231">Group::BroadcastSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00342">Group::Broadcast()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00364">Group::Broadcast()</a>.</p>
 
 </div>
 </div>
@@ -1209,9 +1223,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00227">227</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00230">Group::BroadcastSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00231">Group::BroadcastSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00390">Group::Broadcast()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00412">Group::Broadcast()</a>.</p>
 
 </div>
 </div>
@@ -1251,9 +1265,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00263">263</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00230">Group::BroadcastSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00231">Group::BroadcastSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00438">Group::Broadcast()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00460">Group::Broadcast()</a>.</p>
 
 </div>
 </div>
@@ -1293,9 +1307,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00209">209</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00230">Group::BroadcastSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00231">Group::BroadcastSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00366">Group::Broadcast()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00388">Group::Broadcast()</a>.</p>
 
 </div>
 </div>
@@ -1335,9 +1349,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00245">245</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00230">Group::BroadcastSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00231">Group::BroadcastSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00414">Group::Broadcast()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00436">Group::Broadcast()</a>.</p>
 
 </div>
 </div>
@@ -1377,9 +1391,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00281">281</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00230">Group::BroadcastSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00231">Group::BroadcastSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00462">Group::Broadcast()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00484">Group::Broadcast()</a>.</p>
 
 </div>
 </div>
@@ -1438,7 +1452,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classthrill_1_1net_1_1mpi_1_1Group.html#a18d879317c4d0bba5b8705dfc1370a7f">Group</a>, <a class="el" href="classthrill_1_1net_1_1mock_1_1Group.html#a11981ae99902ce37f82b627a877beb07">Group</a>, and <a class="el" href="classthrill_1_1net_1_1tcp_1_1Group.html#a88758e2fbe63a0928848bb6d19529805">Group</a>.</p>
 
-<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00346">Group::AllReduceHypercube()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00026">MixStream::MixStream()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00114">Multiplexer::Multiplexer()</a>, <a class="el" href="group_8hpp_source.html#l00119">Group::ReceiveFrom()</a>, <a class="el" href="group_8cpp_source.html#l00080">Manager::RunTask()</a>, <a class="el" href="group_8hpp_source.html#l00108">Group::SendTo()</a>, and <a class="el" href="group_8cpp_source.html#l00063">Manager::Traffic()</a>.</p>
+<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00349">Group::AllReduceHypercube()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00026">MixStream::MixStream()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00114">Multiplexer::Multiplexer()</a>, <a class="el" href="group_8hpp_source.html#l00119">Group::ReceiveFrom()</a>, <a class="el" href="group_8cpp_source.html#l00080">Manager::RunTask()</a>, <a class="el" href="collective_8hpp_source.html#l00400">Group::SendReceiveReduce()</a>, <a class="el" href="group_8hpp_source.html#l00108">Group::SendTo()</a>, and <a class="el" href="group_8cpp_source.html#l00063">Manager::Traffic()</a>.</p>
 
 </div>
 </div>
@@ -1495,9 +1509,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00188">188</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00146">Group::PrefixSumSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00338">Group::ExPrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00360">Group::ExPrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1527,9 +1541,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00224">224</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00146">Group::PrefixSumSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00386">Group::ExPrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00408">Group::ExPrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1559,9 +1573,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00260">260</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00146">Group::PrefixSumSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00434">Group::ExPrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00456">Group::ExPrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1591,9 +1605,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00206">206</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00146">Group::PrefixSumSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00362">Group::ExPrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00384">Group::ExPrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1623,9 +1637,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00242">242</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00146">Group::PrefixSumSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00410">Group::ExPrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00432">Group::ExPrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1655,9 +1669,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00278">278</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00146">Group::PrefixSumSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00458">Group::ExPrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00480">Group::ExPrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1686,9 +1700,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8hpp_source.html#l00069">69</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
-<p>References <a class="el" href="group_8hpp_source.html#l00194">Group::my_rank_</a>.</p>
+<p>References <a class="el" href="group_8hpp_source.html#l00216">Group::my_rank_</a>.</p>
 
-<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00316">Group::AllReduceAtRoot()</a>, <a class="el" href="collective_8hpp_source.html#l00346">Group::AllReduceHypercube()</a>, <a class="el" href="collective_8hpp_source.html#l00196">Group::BroadcastBinomialTree()</a>, <a class="el" href="collective_8hpp_source.html#l00172">Group::BroadcastTrivial()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00114">Multiplexer::Multiplexer()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00090">Multiplexer::my_host_rank()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00195">FlowControlChannel::my_rank()</a>, <a class="el" href="group_8hpp_source.html#l00092">Group::OneFactorPeer()</a>, <a class="el" href="collective_8hpp_source.html#l00049">Group::PrefixSumDoubling()</a>, <a class="el" href="collective_8hpp_source.html#l00105">Group::PrefixSumHypercube()</a>, <a class="el" href="collective_8hpp_source.html#l00265">Group::Reduce()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00438">FlowControlChannel::Reduce()</a>, <a class="el" href="group_8cpp_source.html#l00080">Manager::RunTask()</a>, and <a class="el" href="group_8cpp_source.html#l00063">Manager::Traffic()</a>.</p>
+<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00317">Group::AllReduceAtRoot()</a>, <a class="el" href="collective_8hpp_source.html#l00394">Group::AllReduceElimination()</a>, <a class="el" href="collective_8hpp_source.html#l00414">Group::AllReduceEliminationProcess()</a>, <a class="el" href="collective_8hpp_source.html#l00349">Group::AllReduceHypercube()</a>, <a class="el" href="collective_8hpp_source.html#l00197">Group::BroadcastBinomialTree()</a>, <a class="el" href="collective_8hpp_source.html#l00173">Group::BroadcastTrivial()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00114">Multiplexer::Multiplexer()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00090">Multiplexer::my_host_rank()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00195">FlowControlChannel::my_rank()</a>, <a class="el" href="group_8hpp_source.html#l00092">Group::OneFactorPeer()</a>, <a class="el" href="collective_8hpp_source.html#l00050">Group::PrefixSumDoubling()</a>, <a class="el" href="collective_8hpp_source.html#l00106">Group::PrefixSumHypercube()</a>, <a class="el" href="collective_8hpp_source.html#l00266">Group::Reduce()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00438">FlowControlChannel::Reduce()</a>, <a class="el" href="group_8cpp_source.html#l00080">Manager::RunTask()</a>, <a class="el" href="collective_8hpp_source.html#l00400">Group::SendReceiveReduce()</a>, and <a class="el" href="group_8cpp_source.html#l00063">Manager::Traffic()</a>.</p>
 
 </div>
 </div>
@@ -1717,7 +1731,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classthrill_1_1net_1_1mpi_1_1Group.html#a0feec208eeb70870e8ace6f308a03405">Group</a>, <a class="el" href="classthrill_1_1net_1_1mock_1_1Group.html#a0feec208eeb70870e8ace6f308a03405">Group</a>, and <a class="el" href="classthrill_1_1net_1_1tcp_1_1Group.html#a0feec208eeb70870e8ace6f308a03405">Group</a>.</p>
 
-<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00316">Group::AllReduceAtRoot()</a>, <a class="el" href="collective_8hpp_source.html#l00346">Group::AllReduceHypercube()</a>, <a class="el" href="collective_8hpp_source.html#l00387">Group::AllReduceSelect()</a>, <a class="el" href="collective_8hpp_source.html#l00196">Group::BroadcastBinomialTree()</a>, <a class="el" href="collective_8hpp_source.html#l00172">Group::BroadcastTrivial()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00114">Multiplexer::Multiplexer()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00085">Multiplexer::num_hosts()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00200">FlowControlChannel::num_workers()</a>, <a class="el" href="group_8hpp_source.html#l00092">Group::OneFactorPeer()</a>, <a class="el" href="group_8hpp_source.html#l00086">Group::OneFactorSize()</a>, <a class="el" href="collective_8hpp_source.html#l00049">Group::PrefixSumDoubling()</a>, <a class="el" href="collective_8hpp_source.html#l00105">Group::PrefixSumHypercube()</a>, <a class="el" href="collective_8hpp_source.html#l00265">Group::Reduce()</a>, <a class="el" href="group_8cpp_source.html#l00080">Manager::RunTask()</a>, and <a class="el" href="group_8cpp_source.html#l00063">Manager::Traffic()</a>.</p>
+<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00317">Group::AllReduceAtRoot()</a>, <a class="el" href="collective_8hpp_source.html#l00394">Group::AllReduceElimination()</a>, <a class="el" href="collective_8hpp_source.html#l00349">Group::AllReduceHypercube()</a>, <a class="el" href="collective_8hpp_source.html#l00197">Group::BroadcastBinomialTree()</a>, <a class="el" href="collective_8hpp_source.html#l00173">Group::BroadcastTrivial()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00114">Multiplexer::Multiplexer()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00085">Multiplexer::num_hosts()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00200">FlowControlChannel::num_workers()</a>, <a class="el" href="group_8hpp_source.html#l00092">Group::OneFactorPeer()</a>, <a class="el" href="group_8hpp_source.html#l00086">Group::OneFactorSize()</a>, <a class="el" href="collective_8hpp_source.html#l00050">Group::PrefixSumDoubling()</a>, <a class="el" href="collective_8hpp_source.html#l00106">Group::PrefixSumHypercube()</a>, <a class="el" href="collective_8hpp_source.html#l00266">Group::Reduce()</a>, <a class="el" href="group_8cpp_source.html#l00080">Manager::RunTask()</a>, and <a class="el" href="group_8cpp_source.html#l00063">Manager::Traffic()</a>.</p>
 
 </div>
 </div>
@@ -1857,9 +1871,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00185">185</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00146">Group::PrefixSumSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00334">Group::PrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00356">Group::PrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1889,9 +1903,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00221">221</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00146">Group::PrefixSumSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00382">Group::PrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00404">Group::PrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1921,9 +1935,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00257">257</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00146">Group::PrefixSumSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00430">Group::PrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00452">Group::PrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1953,9 +1967,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00203">203</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00146">Group::PrefixSumSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00358">Group::PrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00380">Group::PrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1985,9 +1999,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00239">239</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00146">Group::PrefixSumSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00406">Group::PrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00428">Group::PrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -2017,9 +2031,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00275">275</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00146">Group::PrefixSumSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00454">Group::PrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00476">Group::PrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -2068,7 +2082,7 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="classthrill_1_1net_1_1Group.html#a6752d8d0b3cd2d27170254b51203e0b4">Group::connection()</a>, and <a class="el" href="connection_8hpp_source.html#l00184">Connection::Receive()</a>.</p>
 
-<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00316">Group::AllReduceAtRoot()</a>, <a class="el" href="collective_8hpp_source.html#l00196">Group::BroadcastBinomialTree()</a>, <a class="el" href="collective_8hpp_source.html#l00172">Group::BroadcastTrivial()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00530">FlowControlChannel::Predecessor()</a>, <a class="el" href="collective_8hpp_source.html#l00049">Group::PrefixSumDoubling()</a>, <a class="el" href="collective_8hpp_source.html#l00105">Group::PrefixSumHypercube()</a>, and <a class="el" href="collective_8hpp_source.html#l00265">Group::Reduce()</a>.</p>
+<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00317">Group::AllReduceAtRoot()</a>, <a class="el" href="collective_8hpp_source.html#l00414">Group::AllReduceEliminationProcess()</a>, <a class="el" href="collective_8hpp_source.html#l00197">Group::BroadcastBinomialTree()</a>, <a class="el" href="collective_8hpp_source.html#l00173">Group::BroadcastTrivial()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00530">FlowControlChannel::Predecessor()</a>, <a class="el" href="collective_8hpp_source.html#l00050">Group::PrefixSumDoubling()</a>, <a class="el" href="collective_8hpp_source.html#l00106">Group::PrefixSumHypercube()</a>, and <a class="el" href="collective_8hpp_source.html#l00266">Group::Reduce()</a>.</p>
 
 </div>
 </div>
@@ -2117,7 +2131,7 @@ Protected Attributes</h2></td></tr>
 
 <p>References <a class="el" href="classthrill_1_1net_1_1Group.html#a6752d8d0b3cd2d27170254b51203e0b4">Group::connection()</a>, and <a class="el" href="connection_8hpp_source.html#l00105">Connection::Send()</a>.</p>
 
-<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00316">Group::AllReduceAtRoot()</a>, <a class="el" href="collective_8hpp_source.html#l00196">Group::BroadcastBinomialTree()</a>, <a class="el" href="collective_8hpp_source.html#l00172">Group::BroadcastTrivial()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00530">FlowControlChannel::Predecessor()</a>, <a class="el" href="collective_8hpp_source.html#l00049">Group::PrefixSumDoubling()</a>, <a class="el" href="collective_8hpp_source.html#l00105">Group::PrefixSumHypercube()</a>, and <a class="el" href="collective_8hpp_source.html#l00265">Group::Reduce()</a>.</p>
+<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00317">Group::AllReduceAtRoot()</a>, <a class="el" href="collective_8hpp_source.html#l00414">Group::AllReduceEliminationProcess()</a>, <a class="el" href="collective_8hpp_source.html#l00197">Group::BroadcastBinomialTree()</a>, <a class="el" href="collective_8hpp_source.html#l00173">Group::BroadcastTrivial()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00530">FlowControlChannel::Predecessor()</a>, <a class="el" href="collective_8hpp_source.html#l00050">Group::PrefixSumDoubling()</a>, <a class="el" href="collective_8hpp_source.html#l00106">Group::PrefixSumHypercube()</a>, and <a class="el" href="collective_8hpp_source.html#l00266">Group::Reduce()</a>.</p>
 
 </div>
 </div>
@@ -2142,7 +2156,7 @@ Protected Attributes</h2></td></tr>
 
 <p>our rank in the network group </p>
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00194">194</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00216">216</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="tcp_2group_8hpp_source.html#l00132">Group::Close()</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="mock_2group_8cpp_source.html#l00186">Group::Send()</a>, and <a class="el" href="tcp_2group_8hpp_source.html#l00085">Group::tcp_connection()</a>.</p>
 
@@ -2159,7 +2173,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net.html">net</a></li><li class="navelem"><a class="el" href="classthrill_1_1net_1_1Group.html">Group</a></li>
-    <li class="footer">Generated on Thu May 18 2017 17:11:55 for Thrill by
+    <li class="footer">Generated on Wed May 31 2017 14:12:36 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

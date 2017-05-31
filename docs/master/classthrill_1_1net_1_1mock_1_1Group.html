@@ -368,6 +368,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:gaa252eba5e789326ec0360441b8317a9e inherit pub_methods_classthrill_1_1net_1_1Group"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gaa252eba5e789326ec0360441b8317a9e">AllReduceHypercube</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp())</td></tr>
 <tr class="memdesc:gaa252eba5e789326ec0360441b8317a9e inherit pub_methods_classthrill_1_1net_1_1Group"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform an All-Reduce for powers of two.  <a href="group__net__layer.html#gaa252eba5e789326ec0360441b8317a9e">More...</a><br/></td></tr>
 <tr class="separator:gaa252eba5e789326ec0360441b8317a9e inherit pub_methods_classthrill_1_1net_1_1Group"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae02411d0f825324e4da3e2ed1456c09a inherit pub_methods_classthrill_1_1net_1_1Group"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
+<tr class="memitem:gae02411d0f825324e4da3e2ed1456c09a inherit pub_methods_classthrill_1_1net_1_1Group"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gae02411d0f825324e4da3e2ed1456c09a">AllReduceElimination</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp())</td></tr>
+<tr class="memdesc:gae02411d0f825324e4da3e2ed1456c09a inherit pub_methods_classthrill_1_1net_1_1Group"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform an All-Reduce using the elimination protocol described in R.  <a href="group__net__layer.html#gae02411d0f825324e4da3e2ed1456c09a">More...</a><br/></td></tr>
+<tr class="separator:gae02411d0f825324e4da3e2ed1456c09a inherit pub_methods_classthrill_1_1net_1_1Group"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -476,6 +480,14 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ad41af7d2f5535206b22455104203ba6e inherit pro_methods_classthrill_1_1net_1_1Group"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a056700b09b981e15b5c5b494188e2817 inherit pro_methods_classthrill_1_1net_1_1Group"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Group.html#a056700b09b981e15b5c5b494188e2817">AllReduceMaximumUnsignedLongLong</a> (unsigned long long &amp;value)</td></tr>
 <tr class="separator:a056700b09b981e15b5c5b494188e2817 inherit pro_methods_classthrill_1_1net_1_1Group"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39b75bf62b9532370f1aaaceb76a725d inherit pro_methods_classthrill_1_1net_1_1Group"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp &gt; </td></tr>
+<tr class="memitem:ga39b75bf62b9532370f1aaaceb76a725d inherit pro_methods_classthrill_1_1net_1_1Group"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga39b75bf62b9532370f1aaaceb76a725d">SendReceiveReduce</a> (size_t peer, const <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op)</td></tr>
+<tr class="memdesc:ga39b75bf62b9532370f1aaaceb76a725d inherit pro_methods_classthrill_1_1net_1_1Group"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends and Receives a serializable type from the given peer and returns the value after reduction.  <a href="group__net__layer.html#ga39b75bf62b9532370f1aaaceb76a725d">More...</a><br/></td></tr>
+<tr class="separator:ga39b75bf62b9532370f1aaaceb76a725d inherit pro_methods_classthrill_1_1net_1_1Group"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae884a2065a3eabdb30820ec77a7c13f4 inherit pro_methods_classthrill_1_1net_1_1Group"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp &gt; </td></tr>
+<tr class="memitem:gae884a2065a3eabdb30820ec77a7c13f4 inherit pro_methods_classthrill_1_1net_1_1Group"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gae884a2065a3eabdb30820ec77a7c13f4">AllReduceEliminationProcess</a> (size_t host_id, size_t group_size, size_t remaining_hosts, size_t send_to, <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op)</td></tr>
+<tr class="memdesc:gae884a2065a3eabdb30820ec77a7c13f4 inherit pro_methods_classthrill_1_1net_1_1Group"><td class="mdescLeft">&#160;</td><td class="mdescRight">used for the recursive implementation of the elimination protocol  <a href="group__net__layer.html#gae884a2065a3eabdb30820ec77a7c13f4">More...</a><br/></td></tr>
+<tr class="separator:gae884a2065a3eabdb30820ec77a7c13f4 inherit pro_methods_classthrill_1_1net_1_1Group"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classthrill_1_1net_1_1Group"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classthrill_1_1net_1_1Group')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classthrill_1_1net_1_1Group.html">Group</a></td></tr>
 <tr class="memitem:a8a90c216189062638962001978db6003 inherit pro_attribs_classthrill_1_1net_1_1Group"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Group.html#a8a90c216189062638962001978db6003">my_rank_</a></td></tr>
 <tr class="memdesc:a8a90c216189062638962001978db6003 inherit pro_attribs_classthrill_1_1net_1_1Group"><td class="mdescLeft">&#160;</td><td class="mdescRight">our rank in the network group  <a href="#a8a90c216189062638962001978db6003">More...</a><br/></td></tr>
@@ -779,7 +791,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mock_2group_8cpp_source.html#l00186">186</a> of file <a class="el" href="mock_2group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="mock_2group_8hpp_source.html#l00118">Group::debug</a>, <a class="el" href="mock_2group_8cpp_source.html#l00179">Group::MaybeHexdump()</a>, <a class="el" href="group_8hpp_source.html#l00194">Group::my_rank_</a>, <a class="el" href="mock_2group_8hpp_source.html#l00153">Group::peers_</a>, and <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00179">sLOG</a>.</p>
+<p>References <a class="el" href="mock_2group_8hpp_source.html#l00118">Group::debug</a>, <a class="el" href="mock_2group_8cpp_source.html#l00179">Group::MaybeHexdump()</a>, <a class="el" href="group_8hpp_source.html#l00216">Group::my_rank_</a>, <a class="el" href="mock_2group_8hpp_source.html#l00153">Group::peers_</a>, and <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00179">sLOG</a>.</p>
 
 <p>Referenced by <a class="el" href="mock_2group_8cpp_source.html#l00076">Connection::SyncSend()</a>.</p>
 
@@ -896,7 +908,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net.html">net</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net_1_1mock.html">mock</a></li><li class="navelem"><a class="el" href="classthrill_1_1net_1_1mock_1_1Group.html">Group</a></li>
-    <li class="footer">Generated on Thu May 18 2017 17:11:55 for Thrill by
+    <li class="footer">Generated on Wed May 31 2017 14:12:36 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

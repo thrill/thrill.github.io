@@ -24,6 +24,8 @@ var classthrill_1_1net_1_1Group =
     [ "AllReduce", "group__net__layer.html#ga344d79722179b1c450d5179bb719e95e", null ],
     [ "AllReduce", "group__net__layer.html#gae03866bfb420edc944e5c886e33f05af", null ],
     [ "AllReduceAtRoot", "group__net__layer.html#gac9ccd463f9c043717c09ca0899950226", null ],
+    [ "AllReduceElimination", "group__net__layer.html#gae02411d0f825324e4da3e2ed1456c09a", null ],
+    [ "AllReduceEliminationProcess", "group__net__layer.html#gae884a2065a3eabdb30820ec77a7c13f4", null ],
     [ "AllReduceHypercube", "group__net__layer.html#gaa252eba5e789326ec0360441b8317a9e", null ],
     [ "AllReduceMaximumInt", "classthrill_1_1net_1_1Group.html#a3283e63cd085242bfeba7848b7e4d210", null ],
     [ "AllReduceMaximumLong", "classthrill_1_1net_1_1Group.html#acb6cfbbff14a9827f91535b0c44cf9f8", null ],
@@ -101,6 +103,7 @@ var classthrill_1_1net_1_1Group =
     [ "PrefixSumSelect", "group__net__layer.html#ga36377c99a3197e354b1a46c9dc759fd2", null ],
     [ "ReceiveFrom", "classthrill_1_1net_1_1Group.html#a88e218ddff7b4b059a8c2dd92931a541", null ],
     [ "Reduce", "group__net__layer.html#ga7023111c8a94e4985bd8b53d6fdf78a0", null ],
+    [ "SendReceiveReduce", "group__net__layer.html#ga39b75bf62b9532370f1aaaceb76a725d", null ],
     [ "SendTo", "classthrill_1_1net_1_1Group.html#a0c58b14d497c76dfda26c725eb9af0e6", null ],
     [ "my_rank_", "classthrill_1_1net_1_1Group.html#a8a90c216189062638962001978db6003", null ]
 ];
