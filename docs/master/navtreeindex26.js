@@ -1,5 +1,12 @@
 var NAVTREEINDEX26 =
 {
+"is__power__of__two_8cpp.html#ga73ba4e580abaebcd88684ab089ba22e3":[4,0,2,0,0,1,6,4],
+"is__power__of__two_8cpp.html#ga8aeeed5b11812ed9fc4e12c093f887ee":[4,0,2,0,0,1,6,1],
+"is__power__of__two_8cpp.html#gab4bb5d2b01bb4f7abee2de54f1dca2f9":[4,0,2,0,0,1,6,3],
+"is__power__of__two_8cpp.html#gae254dcf57628545d17e5b70148c63c47":[4,0,2,0,0,1,6,5],
+"is__power__of__two_8cpp.html#gaea4dbc101569da260c218aad97698847":[4,0,2,0,0,1,6,0],
+"is__power__of__two_8cpp_source.html":[4,0,2,0,0,1,6],
+"is__power__of__two_8hpp.html":[4,0,2,0,0,1,7],
 "is__power__of__two_8hpp.html#ga5cef6cc9dc38f1ba57d4759906369852":[4,0,2,0,0,1,7,2],
 "is__power__of__two_8hpp.html#ga73ba4e580abaebcd88684ab089ba22e3":[4,0,2,0,0,1,7,4],
 "is__power__of__two_8hpp.html#ga8aeeed5b11812ed9fc4e12c093f887ee":[4,0,2,0,0,1,7,1],
@@ -139,10 +146,10 @@ var NAVTREEINDEX26 =
 "less__icase_8hpp.html#ga3a73759be8d7ec5778cb6192bc32c4c2":[4,0,2,0,0,3,30,0],
 "less__icase_8hpp.html#ga9fb49f152c6bf0d96ec46bfb90a38bfc":[4,0,2,0,0,3,30,3],
 "less__icase_8hpp_source.html":[4,0,2,0,0,3,30],
-"likely_8hpp.html":[4,0,2,0,0,0,4],
-"likely_8hpp.html#a106afbc6d1f1fe01b3a4614eebf55113":[4,0,2,0,0,0,4,1],
-"likely_8hpp.html#a2c4b5b038e88004e67c779cf9afcecc7":[4,0,2,0,0,0,4,0],
-"likely_8hpp_source.html":[4,0,2,0,0,0,4],
+"likely_8hpp.html":[4,0,2,0,0,0,5],
+"likely_8hpp.html#a106afbc6d1f1fe01b3a4614eebf55113":[4,0,2,0,0,0,5,1],
+"likely_8hpp.html#a2c4b5b038e88004e67c779cf9afcecc7":[4,0,2,0,0,0,5,0],
+"likely_8hpp_source.html":[4,0,2,0,0,0,5],
 "line__count_8cpp.html":[4,0,1,14,0],
 "line__count_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[4,0,1,14,0,0],
 "line__count_8cpp_source.html":[4,0,1,14,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX26 =
 "malloc__tracker_8cpp.html#a8e52d8a3eef1134c1e5e5d57eabc0923":[4,0,3,5,3,33],
 "malloc__tracker_8cpp.html#a97c3e492bfe586e55c72270a0cf2065a":[4,0,3,5,3,57],
 "malloc__tracker_8cpp.html#a98c0bc4255790bd39491ab7004f8db38":[4,0,3,5,3,12],
-"malloc__tracker_8cpp.html#a9b7d59c5b262bf2f56ec52783c6cb9f0":[4,0,3,5,3,39],
-"malloc__tracker_8cpp.html#a9dd06750db6f694a834a9aa3b628e08f":[4,0,3,5,3,7],
-"malloc__tracker_8cpp.html#a9f30fbeffe775eef438d17653bdf9754":[4,0,3,5,3,8],
-"malloc__tracker_8cpp.html#aa436704814afb6abd70b0ec1332852b7":[4,0,3,5,3,18],
-"malloc__tracker_8cpp.html#aa61b81e77299224deae90d0ae0785fe2":[4,0,3,5,3,28],
-"malloc__tracker_8cpp.html#aab2d6fb5cbfffb1c8474b5cd5d675467":[4,0,3,5,3,24],
-"malloc__tracker_8cpp.html#ab1cbc56ca79132826f17395e22842c21":[4,0,3,5,3,26],
-"malloc__tracker_8cpp.html#ab2e9221036513f304e849ea0def84ce7":[4,0,3,5,3,19]
+"malloc__tracker_8cpp.html#a9b7d59c5b262bf2f56ec52783c6cb9f0":[4,0,3,5,3,39]
 };
