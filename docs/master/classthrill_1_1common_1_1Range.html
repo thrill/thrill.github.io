@@ -137,6 +137,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2c7f856c2189f514f3f80acf341193b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fb6cc5d176b9af51e8f640c23ea18f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1Range.html#a7fb6cc5d176b9af51e8f640c23ea18f0">Range</a> (size_t _begin, size_t _end)</td></tr>
 <tr class="separator:a7fb6cc5d176b9af51e8f640c23ea18f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a8d3265e9bfe713dd85f85ec4be11e1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1Range.html#a9a8d3265e9bfe713dd85f85ec4be11e1">CalculateBeginOfPart</a> (size_t index, size_t parts) const </td></tr>
+<tr class="separator:a9a8d3265e9bfe713dd85f85ec4be11e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaef62c8761ddd1b95824fc57b1b277b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1Range.html#aaef62c8761ddd1b95824fc57b1b277b5">IsEmpty</a> () const </td></tr>
 <tr class="memdesc:aaef62c8761ddd1b95824fc57b1b277b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">range is empty (begin == end)  <a href="#aaef62c8761ddd1b95824fc57b1b277b5">More...</a><br/></td></tr>
 <tr class="separator:aaef62c8761ddd1b95824fc57b1b277b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,6 +237,46 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a9a8d3265e9bfe713dd85f85ec4be11e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t CalculateBeginOfPart </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>parts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="thrill_2common_2math_8hpp_source.html#l00075">75</a> of file <a class="el" href="thrill_2common_2math_8hpp_source.html">math.hpp</a>.</p>
+
+<p>References <a class="el" href="thrill_2common_2math_8hpp_source.html#l00057">Range::size()</a>.</p>
+
+<p>Referenced by <a class="el" href="thrill_2common_2math_8hpp_source.html#l00069">Range::Partition()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a4569af92d324746ba3766f7ab3912f38"></a>
 <div class="memitem">
 <div class="memproto">
@@ -359,9 +401,9 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="thrill_2common_2math_8hpp_source.html#l00069">69</a> of file <a class="el" href="thrill_2common_2math_8hpp_source.html">math.hpp</a>.</p>
 
-<p>References <a class="el" href="classthrill_1_1common_1_1Range.html#a2c7f856c2189f514f3f80acf341193b2">Range::Range()</a>, and <a class="el" href="thrill_2common_2math_8hpp_source.html#l00057">Range::size()</a>.</p>
+<p>References <a class="el" href="thrill_2common_2math_8hpp_source.html#l00075">Range::CalculateBeginOfPart()</a>, and <a class="el" href="classthrill_1_1common_1_1Range.html#a2c7f856c2189f514f3f80acf341193b2">Range::Range()</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00072">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2common_2math_8hpp_source.html#l00088">thrill::common::CalculateLocalRange()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00072">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>.</p>
 
 </div>
 </div>
@@ -392,7 +434,7 @@ Friends</h2></td></tr>
 
 <p>References <a class="el" href="thrill_2common_2math_8hpp_source.html#l00052">Range::begin</a>, and <a class="el" href="thrill_2common_2math_8hpp_source.html#l00054">Range::end</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00072">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00101">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>, <a class="el" href="reduce__functional_8hpp_source.html#l00132">ReduceByIndex&lt; Key &gt;::inverse()</a>, <a class="el" href="reduce__functional_8hpp_source.html#l00113">ReduceByIndex&lt; Key &gt;::operator()()</a>, and <a class="el" href="thrill_2common_2math_8hpp_source.html#l00069">Range::Partition()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2common_2math_8hpp_source.html#l00075">Range::CalculateBeginOfPart()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00072">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00101">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>, <a class="el" href="reduce__functional_8hpp_source.html#l00132">ReduceByIndex&lt; Key &gt;::inverse()</a>, and <a class="el" href="reduce__functional_8hpp_source.html#l00113">ReduceByIndex&lt; Key &gt;::operator()()</a>.</p>
 
 </div>
 </div>
@@ -460,7 +502,7 @@ Friends</h2></td></tr>
 
 <p>ostream-able </p>
 
-<p>Definition at line <a class="el" href="thrill_2common_2math_8hpp_source.html#l00074">74</a> of file <a class="el" href="thrill_2common_2math_8hpp_source.html">math.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2common_2math_8hpp_source.html#l00081">81</a> of file <a class="el" href="thrill_2common_2math_8hpp_source.html">math.hpp</a>.</p>
 
 </div>
 </div>
@@ -479,7 +521,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="thrill_2common_2math_8hpp_source.html#l00052">52</a> of file <a class="el" href="thrill_2common_2math_8hpp_source.html">math.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="distribute_8hpp_source.html#l00054">DistributeNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="read__lines_8hpp_source.html#l00300">ReadLinesNode::InputLineIteratorCompressed::InputLineIteratorCompressed()</a>, <a class="el" href="read__lines_8hpp_source.html#l00175">ReadLinesNode::InputLineIteratorUncompressed::InputLineIteratorUncompressed()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00101">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>, <a class="el" href="reduce__functional_8hpp_source.html#l00132">ReduceByIndex&lt; Key &gt;::inverse()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00060">Range::IsEmpty()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00062">Range::IsValid()</a>, <a class="el" href="file__io_8cpp_source.html#l00179">thrill::vfs::OpenReadStream()</a>, <a class="el" href="reduce__functional_8hpp_source.html#l00113">ReduceByIndex&lt; Key &gt;::operator()()</a>, <a class="el" href="equal__to__dia_8hpp_source.html#l00046">EqualToDIANode&lt; ValueType &gt;::PushData()</a>, <a class="el" href="generate_8hpp_source.html#l00055">GenerateNode&lt; ValueType, GenerateFunction &gt;::PushData()</a>, <a class="el" href="read__binary_8hpp_source.html#l00076">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>, <a class="el" href="group__to__index_8hpp_source.html#l00180">GroupToIndexNode&lt; ValueType, KeyExtractor, GroupFunction &gt;::RunUserFunc()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00057">Range::size()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00065">Range::Swap()</a>, and <a class="el" href="sys__file_8cpp_source.html#l00230">thrill::vfs::SysOpenReadStream()</a>.</p>
+<p>Referenced by <a class="el" href="distribute_8hpp_source.html#l00054">DistributeNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="read__lines_8hpp_source.html#l00300">ReadLinesNode::InputLineIteratorCompressed::InputLineIteratorCompressed()</a>, <a class="el" href="read__lines_8hpp_source.html#l00175">ReadLinesNode::InputLineIteratorUncompressed::InputLineIteratorUncompressed()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00101">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>, <a class="el" href="reduce__functional_8hpp_source.html#l00132">ReduceByIndex&lt; Key &gt;::inverse()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00060">Range::IsEmpty()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00062">Range::IsValid()</a>, <a class="el" href="file__io_8cpp_source.html#l00179">thrill::vfs::OpenReadStream()</a>, <a class="el" href="reduce__functional_8hpp_source.html#l00113">ReduceByIndex&lt; Key &gt;::operator()()</a>, <a class="el" href="equal__to__dia_8hpp_source.html#l00046">EqualToDIANode&lt; ValueType &gt;::PushData()</a>, <a class="el" href="generate_8hpp_source.html#l00055">GenerateNode&lt; ValueType, GenerateFunction &gt;::PushData()</a>, <a class="el" href="read__binary_8hpp_source.html#l00076">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>, <a class="el" href="group__to__index_8hpp_source.html#l00185">GroupToIndexNode&lt; ValueType, KeyExtractor, GroupFunction &gt;::RunUserFunc()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00057">Range::size()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00065">Range::Swap()</a>, and <a class="el" href="sys__file_8cpp_source.html#l00230">thrill::vfs::SysOpenReadStream()</a>.</p>
 
 </div>
 </div>
@@ -497,7 +539,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="thrill_2common_2math_8hpp_source.html#l00054">54</a> of file <a class="el" href="thrill_2common_2math_8hpp_source.html">math.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="distribute_8hpp_source.html#l00054">DistributeNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="read__lines_8hpp_source.html#l00279">ReadLinesNode::InputLineIteratorUncompressed::HasNext()</a>, <a class="el" href="read__lines_8hpp_source.html#l00399">ReadLinesNode::InputLineIteratorCompressed::HasNext()</a>, <a class="el" href="read__lines_8hpp_source.html#l00300">ReadLinesNode::InputLineIteratorCompressed::InputLineIteratorCompressed()</a>, <a class="el" href="read__lines_8hpp_source.html#l00175">ReadLinesNode::InputLineIteratorUncompressed::InputLineIteratorUncompressed()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00101">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00060">Range::IsEmpty()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00062">Range::IsValid()</a>, <a class="el" href="equal__to__dia_8hpp_source.html#l00046">EqualToDIANode&lt; ValueType &gt;::PushData()</a>, <a class="el" href="generate_8hpp_source.html#l00055">GenerateNode&lt; ValueType, GenerateFunction &gt;::PushData()</a>, <a class="el" href="read__binary_8hpp_source.html#l00076">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>, <a class="el" href="group__to__index_8hpp_source.html#l00180">GroupToIndexNode&lt; ValueType, KeyExtractor, GroupFunction &gt;::RunUserFunc()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00057">Range::size()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00065">Range::Swap()</a>, <a class="el" href="duplicate__detection_8hpp_source.html#l00074">DuplicateDetection::WriteEncodedHashes()</a>, and <a class="el" href="location__detection_8hpp_source.html#l00116">LocationDetection&lt; thrill::api::JoinNode::HashCount &gt;::WriteOccurenceCounts()</a>.</p>
+<p>Referenced by <a class="el" href="distribute_8hpp_source.html#l00054">DistributeNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="read__lines_8hpp_source.html#l00279">ReadLinesNode::InputLineIteratorUncompressed::HasNext()</a>, <a class="el" href="read__lines_8hpp_source.html#l00399">ReadLinesNode::InputLineIteratorCompressed::HasNext()</a>, <a class="el" href="read__lines_8hpp_source.html#l00300">ReadLinesNode::InputLineIteratorCompressed::InputLineIteratorCompressed()</a>, <a class="el" href="read__lines_8hpp_source.html#l00175">ReadLinesNode::InputLineIteratorUncompressed::InputLineIteratorUncompressed()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00101">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00060">Range::IsEmpty()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00062">Range::IsValid()</a>, <a class="el" href="equal__to__dia_8hpp_source.html#l00046">EqualToDIANode&lt; ValueType &gt;::PushData()</a>, <a class="el" href="generate_8hpp_source.html#l00055">GenerateNode&lt; ValueType, GenerateFunction &gt;::PushData()</a>, <a class="el" href="read__binary_8hpp_source.html#l00076">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>, <a class="el" href="group__to__index_8hpp_source.html#l00185">GroupToIndexNode&lt; ValueType, KeyExtractor, GroupFunction &gt;::RunUserFunc()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00057">Range::size()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00065">Range::Swap()</a>, <a class="el" href="duplicate__detection_8hpp_source.html#l00074">DuplicateDetection::WriteEncodedHashes()</a>, and <a class="el" href="location__detection_8hpp_source.html#l00116">LocationDetection&lt; thrill::api::JoinNode::HashCount &gt;::WriteOccurenceCounts()</a>.</p>
 
 </div>
 </div>
@@ -510,7 +552,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1common.html">common</a></li><li class="navelem"><a class="el" href="classthrill_1_1common_1_1Range.html">Range</a></li>
-    <li class="footer">Generated on Tue Oct 10 2017 12:26:36 for Thrill by
+    <li class="footer">Generated on Tue Oct 10 2017 13:12:11 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

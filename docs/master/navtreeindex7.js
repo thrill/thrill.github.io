@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"classthrill_1_1core_1_1DefaultReduceConfig.html#ab2c4552c87902aff3cd748f9d39de5bb":[3,0,3,2,4,7],
 "classthrill_1_1core_1_1DefaultReduceConfig.html#ab7720884640646dadf204801b9b8ff6b":[3,0,3,2,4,1],
 "classthrill_1_1core_1_1DefaultReduceConfig.html#acf027a5129f577575157181ac1007fbc":[3,0,3,2,4,6],
 "classthrill_1_1core_1_1DefaultReduceConfig.html#ad5cbd7d497b3933f17c69f5d71f6bec7":[3,0,3,2,4,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "classthrill_1_1core_1_1ReduceOldProbingHashTable.html#adeb990d1b9ef4c59ab2e6d2d7abf269d":[3,0,3,2,22,3],
 "classthrill_1_1core_1_1ReduceOldProbingHashTable.html#af0b9a01be4be91b78045639dacbf62ae":[3,0,3,2,22,12],
 "classthrill_1_1core_1_1ReducePostPhaseEmitter.html":[3,0,3,2,23],
-"classthrill_1_1core_1_1ReducePostPhaseEmitter.html#a1eb412b828042cb457ebc97d4d7c8d41":[3,0,3,2,23,1],
-"classthrill_1_1core_1_1ReducePostPhaseEmitter.html#aafc0c2cb6fda031a6f4d6eb002110bbd":[3,0,3,2,23,0]
+"classthrill_1_1core_1_1ReducePostPhaseEmitter.html#a1eb412b828042cb457ebc97d4d7c8d41":[3,0,3,2,23,1]
 };

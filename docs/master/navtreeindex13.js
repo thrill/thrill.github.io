@@ -1,5 +1,8 @@
 var NAVTREEINDEX13 =
 {
+"classthrill_1_1io_1_1Stats.html#af9c2ee141442b4e3568af2e9f14a45fe":[1,1,3,11,52],
+"classthrill_1_1io_1_1Stats.html#afb8ec0470eba32126bceb97c6904a8c2":[1,1,3,11,6],
+"classthrill_1_1io_1_1StatsData.html":[1,1,3,12],
 "classthrill_1_1io_1_1StatsData.html#a0135f923fddf9c042c159a8d0407637d":[1,1,3,12,30],
 "classthrill_1_1io_1_1StatsData.html#a0a9f75d5de6117dada8f7a77bf758066":[1,1,3,12,17],
 "classthrill_1_1io_1_1StatsData.html#a0cd86584435ac2298fc9ed6fdb2cf073":[1,1,3,12,19],
@@ -246,8 +249,5 @@ var NAVTREEINDEX13 =
 "classthrill_1_1mem_1_1FixedAllocator.html#a8bf8cb47703cdb6e8a78015eccb283e3":[3,0,3,5,5,16],
 "classthrill_1_1mem_1_1FixedAllocator.html#a91849e5baadfa954744988366bc11028":[3,0,3,5,5,14],
 "classthrill_1_1mem_1_1FixedAllocator.html#a9292c3e34b31f09cb6cd0b42b511fa7a":[3,0,3,5,5,2],
-"classthrill_1_1mem_1_1FixedAllocator.html#a979ec2b51fa3236ac4352b40b8ba993f":[3,0,3,5,5,10],
-"classthrill_1_1mem_1_1FixedAllocator.html#ab7b2a80659b6404c51826dd90e840d40":[3,0,3,5,5,13],
-"classthrill_1_1mem_1_1FixedAllocator.html#acc49e799fff83ac0952614d5e36b3237":[3,0,3,5,5,12],
-"classthrill_1_1mem_1_1FixedAllocator.html#ace405568d0b2f3fad4990044252c7732":[3,0,3,5,5,3]
+"classthrill_1_1mem_1_1FixedAllocator.html#a979ec2b51fa3236ac4352b40b8ba993f":[3,0,3,5,5,10]
 };

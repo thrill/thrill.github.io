@@ -1,5 +1,8 @@
 var NAVTREEINDEX19 =
 {
+"classtlx_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html#a071fda465da2cd47c848c51e802635ed":[3,0,4,33,0],
+"classtlx_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html#a45e849c0b6c9d347cbedcbec2374c40b":[3,0,4,33,2],
+"classtlx_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html#a662020d2414024ea935bf7fc67423d26":[3,0,4,33,3],
 "classtlx_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html#aada5162d8b9a9b7198193729d9cca18e":[3,0,4,33,1],
 "classtlx_1_1LoserTreeSwitch.html":[3,0,4,38],
 "classtlx_1_1LoserTreeSwitch.html#ad6f8a9e3078ec4056859079611e2ce2b":[3,0,4,38,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX19 =
 "concurrent__bounded__queue_8hpp.html":[4,0,3,1,3],
 "concurrent__bounded__queue_8hpp.html#a10374cf53d327fcf2ca319487ca56bae":[4,0,3,1,3,2],
 "concurrent__bounded__queue_8hpp.html#aaf12834d45ca2dd82a442b8b97dde59d":[4,0,3,1,3,1],
-"concurrent__bounded__queue_8hpp_source.html":[4,0,3,1,3],
-"concurrent__queue_8hpp.html":[4,0,3,1,4],
-"concurrent__queue_8hpp.html#a3036130ba042e85595aa12e63d69782e":[4,0,3,1,4,2],
-"concurrent__queue_8hpp.html#a49d75c267736693a8963d1cc80a4a12a":[4,0,3,1,4,1]
+"concurrent__bounded__queue_8hpp_source.html":[4,0,3,1,3]
 };

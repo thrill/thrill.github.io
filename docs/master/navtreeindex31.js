@@ -1,5 +1,8 @@
 var NAVTREEINDEX31 =
 {
+"structthrill_1_1common_1_1HashDataSwitch_3_01std_1_1string_01_4.html":[3,0,3,1,14],
+"structthrill_1_1common_1_1HashDataSwitch_3_01std_1_1string_01_4.html#a96a19d72119f1ccfb880abd843f9a23a":[3,0,3,1,14,1],
+"structthrill_1_1common_1_1HashDataSwitch_3_01std_1_1string_01_4.html#ab49e604c20f6e1a33c989ed126f2b3de":[3,0,3,1,14,0],
 "structthrill_1_1common_1_1Identity.html":[3,0,3,1,15],
 "structthrill_1_1common_1_1Identity.html#ab0a709b481eb7ea5c2764d918223ad35":[3,0,3,1,15,0],
 "structthrill_1_1common_1_1JsonLinePutSwitch.html":[3,0,3,1,21],
@@ -246,8 +249,5 @@ var NAVTREEINDEX31 =
 "structtlx_1_1index__sequence.html#a0a22581a091167da9d9db49104dbf751":[1,3,3,0],
 "structtlx_1_1is__std__array.html":[1,3,4],
 "structtlx_1_1is__std__array_3_01std_1_1array_3_01T_00_01N_01_4_01_4.html":[1,3,5],
-"structtlx_1_1is__std__pair.html":[1,3,6],
-"structtlx_1_1is__std__pair_3_01std_1_1pair_3_01S_00_01T_01_4_01_4.html":[1,3,7],
-"structtlx_1_1is__std__tuple.html":[1,3,8],
-"structtlx_1_1is__std__tuple_3_01std_1_1tuple_3_01Ts_8_8_8_4_01_4.html":[1,3,9]
+"structtlx_1_1is__std__pair.html":[1,3,6]
 };
