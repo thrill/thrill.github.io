@@ -139,6 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a57552981971ef2fdc170cc7a79f8fc64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1io_1_1DiskConfig.html#a57552981971ef2fdc170cc7a79f8fc64">DiskConfig</a> (const std::string &amp;line)</td></tr>
 <tr class="memdesc:a57552981971ef2fdc170cc7a79f8fc64"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializing constructor, parse full line as in config files  <a href="#a57552981971ef2fdc170cc7a79f8fc64">More...</a><br/></td></tr>
 <tr class="separator:a57552981971ef2fdc170cc7a79f8fc64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafa8f4c53a9c21a840d3617047dbc581"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1io_1_1DiskConfig.html#aafa8f4c53a9c21a840d3617047dbc581">expand_path</a> (std::string) const </td></tr>
+<tr class="memdesc:aafa8f4c53a9c21a840d3617047dbc581"><td class="mdescLeft">&#160;</td><td class="mdescRight">expand environmental variables in path  <a href="#aafa8f4c53a9c21a840d3617047dbc581">More...</a><br/></td></tr>
+<tr class="separator:aafa8f4c53a9c21a840d3617047dbc581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9436dc8cd93c9abe01d40dac3ab4cb37"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1io_1_1DiskConfig.html#a9436dc8cd93c9abe01d40dac3ab4cb37">fileio_string</a> () const </td></tr>
 <tr class="memdesc:a9436dc8cd93c9abe01d40dac3ab4cb37"><td class="mdescLeft">&#160;</td><td class="mdescRight">return formatted fileio name and optional configuration parameters  <a href="#a9436dc8cd93c9abe01d40dac3ab4cb37">More...</a><br/></td></tr>
 <tr class="separator:a9436dc8cd93c9abe01d40dac3ab4cb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,7 +214,7 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00086">86</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00089">89</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
 
 </div>
 </div>
@@ -231,7 +234,7 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 
 <p>default constructor </p>
 
-<p>Definition at line <a class="el" href="config__file_8cpp_source.html#l00210">210</a> of file <a class="el" href="config__file_8cpp_source.html">config_file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="config__file_8cpp_source.html#l00211">211</a> of file <a class="el" href="config__file_8cpp_source.html">config_file.cpp</a>.</p>
 
 </div>
 </div>
@@ -267,9 +270,9 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 
 <p>initializing constructor, also parses fileio parameter </p>
 
-<p>Definition at line <a class="el" href="config__file_8cpp_source.html#l00223">223</a> of file <a class="el" href="config__file_8cpp_source.html">config_file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="config__file_8cpp_source.html#l00224">224</a> of file <a class="el" href="config__file_8cpp_source.html">config_file.cpp</a>.</p>
 
-<p>References <a class="el" href="config__file_8cpp_source.html#l00316">DiskConfig::parse_fileio()</a>.</p>
+<p>References <a class="el" href="config__file_8cpp_source.html#l00317">DiskConfig::parse_fileio()</a>.</p>
 
 </div>
 </div>
@@ -297,13 +300,37 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 
 <p>initializing constructor, parse full line as in config files </p>
 
-<p>Definition at line <a class="el" href="config__file_8cpp_source.html#l00240">240</a> of file <a class="el" href="config__file_8cpp_source.html">config_file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="config__file_8cpp_source.html#l00241">241</a> of file <a class="el" href="config__file_8cpp_source.html">config_file.cpp</a>.</p>
 
-<p>References <a class="el" href="config__file_8cpp_source.html#l00254">DiskConfig::parse_line()</a>.</p>
+<p>References <a class="el" href="config__file_8cpp_source.html#l00255">DiskConfig::parse_line()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aafa8f4c53a9c21a840d3617047dbc581"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string expand_path </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>expand environmental variables in path </p>
+
+<p>Definition at line <a class="el" href="config__file_8cpp_source.html#l00489">489</a> of file <a class="el" href="config__file_8cpp_source.html">config_file.cpp</a>.</p>
+
+<p>References <a class="el" href="config__file_8hpp_source.html#l00043">DiskConfig::path</a>.</p>
+
+<p>Referenced by <a class="el" href="config__file_8cpp_source.html#l00255">DiskConfig::parse_line()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a9436dc8cd93c9abe01d40dac3ab4cb37"></a>
 <div class="memitem">
 <div class="memproto">
@@ -319,9 +346,9 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 
 <p>return formatted fileio name and optional configuration parameters </p>
 
-<p>Definition at line <a class="el" href="config__file_8cpp_source.html#l00445">445</a> of file <a class="el" href="config__file_8cpp_source.html">config_file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="config__file_8cpp_source.html#l00446">446</a> of file <a class="el" href="config__file_8cpp_source.html">config_file.cpp</a>.</p>
 
-<p>References <a class="el" href="config__file_8hpp_source.html#l00078">DiskConfig::autogrow</a>, <a class="el" href="file__base_8hpp_source.html#l00099">FileBase::DEFAULT_DEVICE_ID</a>, <a class="el" href="file__base_8hpp_source.html#l00097">FileBase::DEFAULT_LINUXAIO_QUEUE</a>, <a class="el" href="file__base_8hpp_source.html#l00096">FileBase::DEFAULT_QUEUE</a>, <a class="el" href="config__file_8hpp_source.html#l00081">DiskConfig::delete_on_exit</a>, <a class="el" href="config__file_8hpp_source.html#l00097">DiskConfig::device_id</a>, <a class="el" href="classthrill_1_1io_1_1DiskConfig.html#a8b4ab951d0a076bf8697093dd50cf67f">DiskConfig::direct</a>, <a class="el" href="config__file_8hpp_source.html#l00086">DiskConfig::DIRECT_OFF</a>, <a class="el" href="config__file_8hpp_source.html#l00086">DiskConfig::DIRECT_ON</a>, <a class="el" href="config__file_8hpp_source.html#l00086">DiskConfig::DIRECT_TRY</a>, <a class="el" href="config__file_8hpp_source.html#l00089">DiskConfig::flash</a>, <a class="el" href="config__file_8hpp_source.html#l00049">DiskConfig::io_impl</a>, <a class="el" href="config__file_8hpp_source.html#l00093">DiskConfig::queue</a>, <a class="el" href="config__file_8hpp_source.html#l00106">DiskConfig::queue_length</a>, <a class="el" href="config__file_8hpp_source.html#l00100">DiskConfig::raw_device</a>, <a class="el" href="error__handling_8hpp_source.html#l00055">THRILL_THROW</a>, and <a class="el" href="config__file_8hpp_source.html#l00103">DiskConfig::unlink_on_open</a>.</p>
+<p>References <a class="el" href="config__file_8hpp_source.html#l00081">DiskConfig::autogrow</a>, <a class="el" href="file__base_8hpp_source.html#l00099">FileBase::DEFAULT_DEVICE_ID</a>, <a class="el" href="file__base_8hpp_source.html#l00097">FileBase::DEFAULT_LINUXAIO_QUEUE</a>, <a class="el" href="file__base_8hpp_source.html#l00096">FileBase::DEFAULT_QUEUE</a>, <a class="el" href="config__file_8hpp_source.html#l00084">DiskConfig::delete_on_exit</a>, <a class="el" href="config__file_8hpp_source.html#l00100">DiskConfig::device_id</a>, <a class="el" href="classthrill_1_1io_1_1DiskConfig.html#a8b4ab951d0a076bf8697093dd50cf67f">DiskConfig::direct</a>, <a class="el" href="config__file_8hpp_source.html#l00089">DiskConfig::DIRECT_OFF</a>, <a class="el" href="config__file_8hpp_source.html#l00089">DiskConfig::DIRECT_ON</a>, <a class="el" href="config__file_8hpp_source.html#l00089">DiskConfig::DIRECT_TRY</a>, <a class="el" href="config__file_8hpp_source.html#l00092">DiskConfig::flash</a>, <a class="el" href="config__file_8hpp_source.html#l00049">DiskConfig::io_impl</a>, <a class="el" href="config__file_8hpp_source.html#l00096">DiskConfig::queue</a>, <a class="el" href="config__file_8hpp_source.html#l00109">DiskConfig::queue_length</a>, <a class="el" href="config__file_8hpp_source.html#l00103">DiskConfig::raw_device</a>, <a class="el" href="error__handling_8hpp_source.html#l00055">THRILL_THROW</a>, and <a class="el" href="config__file_8hpp_source.html#l00106">DiskConfig::unlink_on_open</a>.</p>
 
 <p>Referenced by <a class="el" href="block__manager_8cpp_source.html#l00033">BlockManager::BlockManager()</a>.</p>
 
@@ -342,11 +369,11 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 
 <p>parse the "io_impl" parameter into the optional parameter fields. </p>
 
-<p>Definition at line <a class="el" href="config__file_8cpp_source.html#l00316">316</a> of file <a class="el" href="config__file_8cpp_source.html">config_file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="config__file_8cpp_source.html#l00317">317</a> of file <a class="el" href="config__file_8cpp_source.html">config_file.cpp</a>.</p>
 
-<p>References <a class="el" href="config__file_8hpp_source.html#l00078">DiskConfig::autogrow</a>, <a class="el" href="config__file_8hpp_source.html#l00081">DiskConfig::delete_on_exit</a>, <a class="el" href="config__file_8hpp_source.html#l00097">DiskConfig::device_id</a>, <a class="el" href="classthrill_1_1io_1_1DiskConfig.html#a8b4ab951d0a076bf8697093dd50cf67f">DiskConfig::direct</a>, <a class="el" href="config__file_8hpp_source.html#l00086">DiskConfig::DIRECT_OFF</a>, <a class="el" href="config__file_8hpp_source.html#l00086">DiskConfig::DIRECT_ON</a>, <a class="el" href="config__file_8hpp_source.html#l00086">DiskConfig::DIRECT_TRY</a>, <a class="el" href="config__file_8hpp_source.html#l00049">DiskConfig::io_impl</a>, <a class="el" href="config__file_8hpp_source.html#l00093">DiskConfig::queue</a>, <a class="el" href="config__file_8hpp_source.html#l00106">DiskConfig::queue_length</a>, <a class="el" href="config__file_8hpp_source.html#l00100">DiskConfig::raw_device</a>, <a class="el" href="split_8cpp_source.html#l00020">tlx::split()</a>, <a class="el" href="error__handling_8hpp_source.html#l00055">THRILL_THROW</a>, and <a class="el" href="config__file_8hpp_source.html#l00103">DiskConfig::unlink_on_open</a>.</p>
+<p>References <a class="el" href="config__file_8hpp_source.html#l00081">DiskConfig::autogrow</a>, <a class="el" href="config__file_8hpp_source.html#l00084">DiskConfig::delete_on_exit</a>, <a class="el" href="config__file_8hpp_source.html#l00100">DiskConfig::device_id</a>, <a class="el" href="classthrill_1_1io_1_1DiskConfig.html#a8b4ab951d0a076bf8697093dd50cf67f">DiskConfig::direct</a>, <a class="el" href="config__file_8hpp_source.html#l00089">DiskConfig::DIRECT_OFF</a>, <a class="el" href="config__file_8hpp_source.html#l00089">DiskConfig::DIRECT_ON</a>, <a class="el" href="config__file_8hpp_source.html#l00089">DiskConfig::DIRECT_TRY</a>, <a class="el" href="config__file_8hpp_source.html#l00049">DiskConfig::io_impl</a>, <a class="el" href="config__file_8hpp_source.html#l00096">DiskConfig::queue</a>, <a class="el" href="config__file_8hpp_source.html#l00109">DiskConfig::queue_length</a>, <a class="el" href="config__file_8hpp_source.html#l00103">DiskConfig::raw_device</a>, <a class="el" href="split_8cpp_source.html#l00020">tlx::split()</a>, <a class="el" href="error__handling_8hpp_source.html#l00055">THRILL_THROW</a>, and <a class="el" href="config__file_8hpp_source.html#l00106">DiskConfig::unlink_on_open</a>.</p>
 
-<p>Referenced by <a class="el" href="config__file_8cpp_source.html#l00223">DiskConfig::DiskConfig()</a>, and <a class="el" href="config__file_8cpp_source.html#l00254">DiskConfig::parse_line()</a>.</p>
+<p>Referenced by <a class="el" href="config__file_8cpp_source.html#l00224">DiskConfig::DiskConfig()</a>, and <a class="el" href="config__file_8cpp_source.html#l00255">DiskConfig::parse_line()</a>.</p>
 
 </div>
 </div>
@@ -365,11 +392,11 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 </div><div class="memdoc">
 <p>parse a disk=&lt;path&gt;,&lt;size&gt;,&lt;fileio&gt; options line into disk_config, throws std::runtime_error on parse errors. </p>
 
-<p>Definition at line <a class="el" href="config__file_8cpp_source.html#l00254">254</a> of file <a class="el" href="config__file_8cpp_source.html">config_file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="config__file_8cpp_source.html#l00255">255</a> of file <a class="el" href="config__file_8cpp_source.html">config_file.cpp</a>.</p>
 
-<p>References <a class="el" href="config__file_8hpp_source.html#l00078">DiskConfig::autogrow</a>, <a class="el" href="file__base_8hpp_source.html#l00099">FileBase::DEFAULT_DEVICE_ID</a>, <a class="el" href="file__base_8hpp_source.html#l00096">FileBase::DEFAULT_QUEUE</a>, <a class="el" href="config__file_8hpp_source.html#l00081">DiskConfig::delete_on_exit</a>, <a class="el" href="config__file_8hpp_source.html#l00097">DiskConfig::device_id</a>, <a class="el" href="classthrill_1_1io_1_1DiskConfig.html#a8b4ab951d0a076bf8697093dd50cf67f">DiskConfig::direct</a>, <a class="el" href="config__file_8hpp_source.html#l00086">DiskConfig::DIRECT_TRY</a>, <a class="el" href="config__file_8hpp_source.html#l00089">DiskConfig::flash</a>, <a class="el" href="config__file_8hpp_source.html#l00049">DiskConfig::io_impl</a>, <a class="el" href="config__file_8cpp_source.html#l00316">DiskConfig::parse_fileio()</a>, <a class="el" href="parse__si__iec__units_8cpp_source.html#l00017">tlx::parse_si_iec_units()</a>, <a class="el" href="config__file_8hpp_source.html#l00043">DiskConfig::path</a>, <a class="el" href="config__file_8hpp_source.html#l00093">DiskConfig::queue</a>, <a class="el" href="config__file_8hpp_source.html#l00046">DiskConfig::size</a>, <a class="el" href="split_8cpp_source.html#l00020">tlx::split()</a>, <a class="el" href="error__handling_8hpp_source.html#l00055">THRILL_THROW</a>, <a class="el" href="thrill_2mem_2allocator__base_8hpp_source.html#l00190">thrill::mem::to_string()</a>, and <a class="el" href="config__file_8hpp_source.html#l00103">DiskConfig::unlink_on_open</a>.</p>
+<p>References <a class="el" href="config__file_8hpp_source.html#l00081">DiskConfig::autogrow</a>, <a class="el" href="file__base_8hpp_source.html#l00099">FileBase::DEFAULT_DEVICE_ID</a>, <a class="el" href="file__base_8hpp_source.html#l00096">FileBase::DEFAULT_QUEUE</a>, <a class="el" href="config__file_8hpp_source.html#l00084">DiskConfig::delete_on_exit</a>, <a class="el" href="config__file_8hpp_source.html#l00100">DiskConfig::device_id</a>, <a class="el" href="classthrill_1_1io_1_1DiskConfig.html#a8b4ab951d0a076bf8697093dd50cf67f">DiskConfig::direct</a>, <a class="el" href="config__file_8hpp_source.html#l00089">DiskConfig::DIRECT_TRY</a>, <a class="el" href="config__file_8cpp_source.html#l00489">DiskConfig::expand_path()</a>, <a class="el" href="config__file_8hpp_source.html#l00092">DiskConfig::flash</a>, <a class="el" href="config__file_8hpp_source.html#l00049">DiskConfig::io_impl</a>, <a class="el" href="config__file_8cpp_source.html#l00317">DiskConfig::parse_fileio()</a>, <a class="el" href="parse__si__iec__units_8cpp_source.html#l00017">tlx::parse_si_iec_units()</a>, <a class="el" href="config__file_8hpp_source.html#l00043">DiskConfig::path</a>, <a class="el" href="config__file_8hpp_source.html#l00096">DiskConfig::queue</a>, <a class="el" href="config__file_8hpp_source.html#l00046">DiskConfig::size</a>, <a class="el" href="split_8cpp_source.html#l00020">tlx::split()</a>, <a class="el" href="error__handling_8hpp_source.html#l00055">THRILL_THROW</a>, <a class="el" href="thrill_2mem_2allocator__base_8hpp_source.html#l00190">thrill::mem::to_string()</a>, and <a class="el" href="config__file_8hpp_source.html#l00106">DiskConfig::unlink_on_open</a>.</p>
 
-<p>Referenced by <a class="el" href="config__file_8cpp_source.html#l00240">DiskConfig::DiskConfig()</a>, and <a class="el" href="config__file_8cpp_source.html#l00144">Config::load_config_file()</a>.</p>
+<p>Referenced by <a class="el" href="config__file_8cpp_source.html#l00241">DiskConfig::DiskConfig()</a>, and <a class="el" href="config__file_8cpp_source.html#l00145">Config::load_config_file()</a>.</p>
 
 </div>
 </div>
@@ -386,9 +413,9 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 
 <p>autogrow file if more disk space is needed, automatically set if size == 0. </p>
 
-<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00078">78</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00081">81</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00445">DiskConfig::fileio_string()</a>, <a class="el" href="config__file_8cpp_source.html#l00119">Config::load_default_config()</a>, <a class="el" href="config__file_8cpp_source.html#l00316">DiskConfig::parse_fileio()</a>, and <a class="el" href="config__file_8cpp_source.html#l00254">DiskConfig::parse_line()</a>.</p>
+<p>Referenced by <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00446">DiskConfig::fileio_string()</a>, <a class="el" href="config__file_8cpp_source.html#l00120">Config::load_default_config()</a>, <a class="el" href="config__file_8cpp_source.html#l00317">DiskConfig::parse_fileio()</a>, and <a class="el" href="config__file_8cpp_source.html#l00255">DiskConfig::parse_line()</a>.</p>
 
 </div>
 </div>
@@ -404,9 +431,9 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 
 <p>delete file on program exit (default for autoconfigurated files) </p>
 
-<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00081">81</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00084">84</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00445">DiskConfig::fileio_string()</a>, <a class="el" href="config__file_8cpp_source.html#l00119">Config::load_default_config()</a>, <a class="el" href="config__file_8cpp_source.html#l00316">DiskConfig::parse_fileio()</a>, and <a class="el" href="config__file_8cpp_source.html#l00254">DiskConfig::parse_line()</a>.</p>
+<p>Referenced by <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00446">DiskConfig::fileio_string()</a>, <a class="el" href="config__file_8cpp_source.html#l00120">Config::load_default_config()</a>, <a class="el" href="config__file_8cpp_source.html#l00317">DiskConfig::parse_fileio()</a>, and <a class="el" href="config__file_8cpp_source.html#l00255">DiskConfig::parse_line()</a>.</p>
 
 </div>
 </div>
@@ -421,9 +448,9 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 </div><div class="memdoc">
 <p>the selected physical device id (e.g. for calculating prefetching sequences). If -1 then the device id is chosen automatically. </p>
 
-<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00097">97</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00100">100</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00445">DiskConfig::fileio_string()</a>, <a class="el" href="config__file_8cpp_source.html#l00316">DiskConfig::parse_fileio()</a>, and <a class="el" href="config__file_8cpp_source.html#l00254">DiskConfig::parse_line()</a>.</p>
+<p>Referenced by <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00446">DiskConfig::fileio_string()</a>, <a class="el" href="config__file_8cpp_source.html#l00317">DiskConfig::parse_fileio()</a>, and <a class="el" href="config__file_8cpp_source.html#l00255">DiskConfig::parse_line()</a>.</p>
 
 </div>
 </div>
@@ -438,7 +465,7 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 </div><div class="memdoc">
 <p>tristate variable: direct=0 -&gt; force direct OFF, direct=1 -&gt; try direct ON, if fails print warning and open without direct, direct=2 -&gt; force direct ON, fail if unavailable. </p>
 
-<p>Referenced by <a class="el" href="create__file_8cpp_source.html#l00032">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00445">DiskConfig::fileio_string()</a>, <a class="el" href="config__file_8cpp_source.html#l00316">DiskConfig::parse_fileio()</a>, and <a class="el" href="config__file_8cpp_source.html#l00254">DiskConfig::parse_line()</a>.</p>
+<p>Referenced by <a class="el" href="create__file_8cpp_source.html#l00032">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00446">DiskConfig::fileio_string()</a>, <a class="el" href="config__file_8cpp_source.html#l00317">DiskConfig::parse_fileio()</a>, and <a class="el" href="config__file_8cpp_source.html#l00255">DiskConfig::parse_line()</a>.</p>
 
 </div>
 </div>
@@ -454,9 +481,9 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 
 <p>marks flash drives (configuration entries with flash= instead of disk=) </p>
 
-<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00089">89</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00092">92</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="config__file_8cpp_source.html#l00445">DiskConfig::fileio_string()</a>, <a class="el" href="config__file_8cpp_source.html#l00144">Config::load_config_file()</a>, and <a class="el" href="config__file_8cpp_source.html#l00254">DiskConfig::parse_line()</a>.</p>
+<p>Referenced by <a class="el" href="config__file_8cpp_source.html#l00446">DiskConfig::fileio_string()</a>, <a class="el" href="config__file_8cpp_source.html#l00145">Config::load_config_file()</a>, and <a class="el" href="config__file_8cpp_source.html#l00255">DiskConfig::parse_line()</a>.</p>
 
 </div>
 </div>
@@ -474,7 +501,7 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 
 <p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00049">49</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00445">DiskConfig::fileio_string()</a>, <a class="el" href="config__file_8cpp_source.html#l00316">DiskConfig::parse_fileio()</a>, and <a class="el" href="config__file_8cpp_source.html#l00254">DiskConfig::parse_line()</a>.</p>
+<p>Referenced by <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00446">DiskConfig::fileio_string()</a>, <a class="el" href="config__file_8cpp_source.html#l00317">DiskConfig::parse_fileio()</a>, and <a class="el" href="config__file_8cpp_source.html#l00255">DiskConfig::parse_line()</a>.</p>
 
 </div>
 </div>
@@ -492,7 +519,7 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 
 <p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00043">43</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__manager_8cpp_source.html#l00033">BlockManager::BlockManager()</a>, <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00119">Config::load_default_config()</a>, and <a class="el" href="config__file_8cpp_source.html#l00254">DiskConfig::parse_line()</a>.</p>
+<p>Referenced by <a class="el" href="block__manager_8cpp_source.html#l00033">BlockManager::BlockManager()</a>, <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00489">DiskConfig::expand_path()</a>, <a class="el" href="config__file_8cpp_source.html#l00120">Config::load_default_config()</a>, and <a class="el" href="config__file_8cpp_source.html#l00255">DiskConfig::parse_line()</a>.</p>
 
 </div>
 </div>
@@ -507,9 +534,9 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 </div><div class="memdoc">
 <p>select request queue for disk. Use different queues for files on different disks. queue=-1 -&gt; default queue (one for each disk). </p>
 
-<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00093">93</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00096">96</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__manager_8cpp_source.html#l00033">BlockManager::BlockManager()</a>, <a class="el" href="create__file_8cpp_source.html#l00032">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00445">DiskConfig::fileio_string()</a>, <a class="el" href="config__file_8cpp_source.html#l00316">DiskConfig::parse_fileio()</a>, and <a class="el" href="config__file_8cpp_source.html#l00254">DiskConfig::parse_line()</a>.</p>
+<p>Referenced by <a class="el" href="block__manager_8cpp_source.html#l00033">BlockManager::BlockManager()</a>, <a class="el" href="create__file_8cpp_source.html#l00032">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00446">DiskConfig::fileio_string()</a>, <a class="el" href="config__file_8cpp_source.html#l00317">DiskConfig::parse_fileio()</a>, and <a class="el" href="config__file_8cpp_source.html#l00255">DiskConfig::parse_line()</a>.</p>
 
 </div>
 </div>
@@ -525,9 +552,9 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 
 <p>desired queue length for linuxaio_file and linuxaio_queue </p>
 
-<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00106">106</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00109">109</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00445">DiskConfig::fileio_string()</a>, and <a class="el" href="config__file_8cpp_source.html#l00316">DiskConfig::parse_fileio()</a>.</p>
+<p>Referenced by <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00446">DiskConfig::fileio_string()</a>, and <a class="el" href="config__file_8cpp_source.html#l00317">DiskConfig::parse_fileio()</a>.</p>
 
 </div>
 </div>
@@ -543,9 +570,9 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 
 <p>turned on by syscall fileio when the path points to a raw block device </p>
 
-<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00100">100</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00103">103</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00445">DiskConfig::fileio_string()</a>, and <a class="el" href="config__file_8cpp_source.html#l00316">DiskConfig::parse_fileio()</a>.</p>
+<p>Referenced by <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00446">DiskConfig::fileio_string()</a>, and <a class="el" href="config__file_8cpp_source.html#l00317">DiskConfig::parse_fileio()</a>.</p>
 
 </div>
 </div>
@@ -563,7 +590,7 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 
 <p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00046">46</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__manager_8cpp_source.html#l00033">BlockManager::BlockManager()</a>, <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="disk__allocator_8cpp_source.html#l00050">DiskAllocator::DiskAllocator()</a>, and <a class="el" href="config__file_8cpp_source.html#l00254">DiskConfig::parse_line()</a>.</p>
+<p>Referenced by <a class="el" href="block__manager_8cpp_source.html#l00033">BlockManager::BlockManager()</a>, <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="disk__allocator_8cpp_source.html#l00050">DiskAllocator::DiskAllocator()</a>, and <a class="el" href="config__file_8cpp_source.html#l00255">DiskConfig::parse_line()</a>.</p>
 
 </div>
 </div>
@@ -579,9 +606,9 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 
 <p>unlink file immediately after opening (available on most Unix) </p>
 
-<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00103">103</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="config__file_8hpp_source.html#l00106">106</a> of file <a class="el" href="config__file_8hpp_source.html">config_file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00445">DiskConfig::fileio_string()</a>, <a class="el" href="config__file_8cpp_source.html#l00119">Config::load_default_config()</a>, <a class="el" href="config__file_8cpp_source.html#l00316">DiskConfig::parse_fileio()</a>, and <a class="el" href="config__file_8cpp_source.html#l00254">DiskConfig::parse_line()</a>.</p>
+<p>Referenced by <a class="el" href="create__file_8cpp_source.html#l00046">thrill::io::CreateFile()</a>, <a class="el" href="config__file_8cpp_source.html#l00446">DiskConfig::fileio_string()</a>, <a class="el" href="config__file_8cpp_source.html#l00120">Config::load_default_config()</a>, <a class="el" href="config__file_8cpp_source.html#l00317">DiskConfig::parse_fileio()</a>, and <a class="el" href="config__file_8cpp_source.html#l00255">DiskConfig::parse_line()</a>.</p>
 
 </div>
 </div>
@@ -595,7 +622,7 @@ Optional Disk / File I/O Implementation Parameters</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1io.html">io</a></li><li class="navelem"><a class="el" href="classthrill_1_1io_1_1DiskConfig.html">DiskConfig</a></li>
-    <li class="footer">Generated on Tue Oct 10 2017 13:38:41 for Thrill by
+    <li class="footer">Generated on Tue Oct 10 2017 14:26:57 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

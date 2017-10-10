@@ -84,6 +84,7 @@ var searchData=
   ['string',['string',['../namespacegen__data.html#aa155970f5deeb5cb509ed1313e8dfdfa',1,'gen_data']]],
   ['sub_5farray_5f',['sub_array_',['../classthrill_1_1common_1_1JsonLine.html#ac322e09524dd171cab3d8dc6ffb072b3',1,'thrill::common::JsonLine']]],
   ['sub_5fdict_5f',['sub_dict_',['../classthrill_1_1common_1_1JsonLine.html#abf4356ea5a3de8e8035b22a054ea8a2f',1,'thrill::common::JsonLine']]],
+  ['subrange_5ffiles_5f',['subrange_files_',['../classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a449eba0e435a57c78041c88578e689e4',1,'thrill::core::ReduceByIndexPostPhase']]],
   ['sum_5f',['sum_',['../classthrill_1_1api_1_1AllReduceNode.html#a01de27794b95210640b34a986763f78d',1,'thrill::api::AllReduceNode']]],
   ['sup',['sup',['../structtlx_1_1LoserTreeCopyBase_1_1Loser.html#a2f796f727a94170767ff7bc8e02655ec',1,'tlx::LoserTreeCopyBase::Loser']]],
   ['super_5f',['super_',['../classthrill_1_1common_1_1JsonLogger.html#aec116ece334cf05d16528b8f6b78e2c1',1,'thrill::common::JsonLogger::super_()'],['../classthrill_1_1mem_1_1Manager.html#aec6d7410b0b55226d8ce15a765ccc26e',1,'thrill::mem::Manager::super_()']]]

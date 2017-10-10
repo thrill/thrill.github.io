@@ -1,5 +1,13 @@
 var NAVTREEINDEX8 =
 {
+"classthrill_1_1core_1_1ReducePostPhaseEmitter.html#ac542472b062872744ab49551f4bdac21":[3,0,3,2,23,2],
+"classthrill_1_1core_1_1ReducePostPhaseEmitter.html#ace47485e4dbd6106a4a7b7854cff4e2b":[3,0,3,2,23,3],
+"classthrill_1_1core_1_1ReducePrePhase.html":[3,0,3,2,24],
+"classthrill_1_1core_1_1ReducePrePhaseEmitter.html":[3,0,3,2,27],
+"classthrill_1_1core_1_1ReducePrePhaseEmitter.html#a16320b0eb199b75a8dbbf9f7b5b016e4":[3,0,3,2,27,1],
+"classthrill_1_1core_1_1ReducePrePhaseEmitter.html#a3edd9c89ce0306bee991dc8900666003":[3,0,3,2,27,3],
+"classthrill_1_1core_1_1ReducePrePhaseEmitter.html#a52432d27c8586c68dedf2fddc994698b":[3,0,3,2,27,0],
+"classthrill_1_1core_1_1ReducePrePhaseEmitter.html#a6b72e54baf646b08b4b87f987f583dcb":[3,0,3,2,27,4],
 "classthrill_1_1core_1_1ReducePrePhaseEmitter.html#a6c0116f9320f99ee6b1faef359fd1505":[3,0,3,2,27,2],
 "classthrill_1_1core_1_1ReducePrePhaseEmitter.html#aaebb68d97ed69a1d4ba8a377dd8aa274":[3,0,3,2,27,6],
 "classthrill_1_1core_1_1ReducePrePhaseEmitter.html#ac41cdc850e23796448097f11d1364734":[3,0,3,2,27,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX8 =
 "classthrill_1_1data_1_1BlockQueue.html#aee07660e06d3ad9cc060960eaed02111":[1,1,1,4,19],
 "classthrill_1_1data_1_1BlockReader.html":[1,1,1,5],
 "classthrill_1_1data_1_1BlockReader.html#a09cb8e8768411539fbca6c5b2d20d4e8":[1,1,1,5,19],
-"classthrill_1_1data_1_1BlockReader.html#a09d66010f0c378b89be3f4f8e4e1aae1":[1,1,1,5,15],
-"classthrill_1_1data_1_1BlockReader.html#a1343e333515cdc03e23690564290f495":[1,1,1,5,2],
-"classthrill_1_1data_1_1BlockReader.html#a2744bf82223ddbfcea6e9bd82570ac23":[1,1,1,5,5],
-"classthrill_1_1data_1_1BlockReader.html#a27581d97f872c1b776ee21e5ac24f64d":[1,1,1,5,7],
-"classthrill_1_1data_1_1BlockReader.html#a35752e00c5e6dbf97aa266b96e704da1":[1,1,1,5,14],
-"classthrill_1_1data_1_1BlockReader.html#a3ef5de5fc0b51c11f737da620e7376f9":[1,1,1,5,18],
-"classthrill_1_1data_1_1BlockReader.html#a4a31cc8d9e12a21f498f792c6816b8f0":[1,1,1,5,25],
-"classthrill_1_1data_1_1BlockReader.html#a50dd34095b70d531578ef33d3f548ecf":[1,1,1,5,3],
-"classthrill_1_1data_1_1BlockReader.html#a51f3d93e980ccb92259a9ad807abf54b":[1,1,1,5,26]
+"classthrill_1_1data_1_1BlockReader.html#a09d66010f0c378b89be3f4f8e4e1aae1":[1,1,1,5,15]
 };

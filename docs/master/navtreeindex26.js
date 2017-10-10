@@ -1,5 +1,14 @@
 var NAVTREEINDEX26 =
 {
+"iostats_8hpp.html#a695a3ae1d50e8ca988055ad718afd8e6":[4,0,3,4,20,4],
+"iostats_8hpp.html#afcf4651c88093872dba7203d31ce27e2":[4,0,3,4,20,5],
+"iostats_8hpp.html#ga23b1d9fadc803056b119a0fbcc49ddf2":[4,0,3,4,20,8],
+"iostats_8hpp.html#gaafde8f160d2daf0751bd26c33328aaf8":[4,0,3,4,20,9],
+"iostats_8hpp.html#gad22c880aabcde6b9047eb42aa9763464":[4,0,3,4,20,7],
+"iostats_8hpp_source.html":[4,0,3,4,20],
+"is__power__of__two_8cpp.html":[4,0,2,0,0,1,6],
+"is__power__of__two_8cpp.html#a6bd0c156caa682f81c584b29f1d62104":[4,0,2,0,0,1,6,6],
+"is__power__of__two_8cpp.html#ga5cef6cc9dc38f1ba57d4759906369852":[4,0,2,0,0,1,6,2],
 "is__power__of__two_8cpp.html#ga73ba4e580abaebcd88684ab089ba22e3":[4,0,2,0,0,1,6,4],
 "is__power__of__two_8cpp.html#ga8aeeed5b11812ed9fc4e12c093f887ee":[4,0,2,0,0,1,6,1],
 "is__power__of__two_8cpp.html#gab4bb5d2b01bb4f7abee2de54f1dca2f9":[4,0,2,0,0,1,6,3],
@@ -240,14 +249,5 @@ var NAVTREEINDEX26 =
 "malloc__tracker_8cpp.html#a738ec7c3305286151ab9a21d2b879092":[4,0,3,5,3,30],
 "malloc__tracker_8cpp.html#a74912ef5e2bc3060ca0475035fb10b4f":[4,0,3,5,3,60],
 "malloc__tracker_8cpp.html#a75d24d2eb6ec14c3c79eaa2f3f199e3b":[4,0,3,5,3,3],
-"malloc__tracker_8cpp.html#a7612bfeb672d2f57f71561541e6e007b":[4,0,3,5,3,36],
-"malloc__tracker_8cpp.html#a774f3d67301af142bdf83c4d2b99e01b":[4,0,3,5,3,22],
-"malloc__tracker_8cpp.html#a77c7ac8dc42f36d2c7667399b42ddc83":[4,0,3,5,3,55],
-"malloc__tracker_8cpp.html#a798e857b45c8aec7780e7d09d0caccb9":[4,0,3,5,3,27],
-"malloc__tracker_8cpp.html#a831aebf83f716aa3c203011c4e54c793":[4,0,3,5,3,52],
-"malloc__tracker_8cpp.html#a8766254c71c5a69aee1a959119f70144":[4,0,3,5,3,54],
-"malloc__tracker_8cpp.html#a8e52d8a3eef1134c1e5e5d57eabc0923":[4,0,3,5,3,33],
-"malloc__tracker_8cpp.html#a97c3e492bfe586e55c72270a0cf2065a":[4,0,3,5,3,57],
-"malloc__tracker_8cpp.html#a98c0bc4255790bd39491ab7004f8db38":[4,0,3,5,3,12],
-"malloc__tracker_8cpp.html#a9b7d59c5b262bf2f56ec52783c6cb9f0":[4,0,3,5,3,39]
+"malloc__tracker_8cpp.html#a7612bfeb672d2f57f71561541e6e007b":[4,0,3,5,3,36]
 };
