@@ -1,5 +1,13 @@
 var NAVTREEINDEX13 =
 {
+"classthrill_1_1io_1_1StatsData.html#a0135f923fddf9c042c159a8d0407637d":[1,1,3,12,30],
+"classthrill_1_1io_1_1StatsData.html#a0a9f75d5de6117dada8f7a77bf758066":[1,1,3,12,17],
+"classthrill_1_1io_1_1StatsData.html#a0cd86584435ac2298fc9ed6fdb2cf073":[1,1,3,12,19],
+"classthrill_1_1io_1_1StatsData.html#a0f1c058b38ff6931ce12ca45a7d6a2f6":[1,1,3,12,13],
+"classthrill_1_1io_1_1StatsData.html#a136dc3dcaffd8bab26c4f59c0bc22b06":[1,1,3,12,24],
+"classthrill_1_1io_1_1StatsData.html#a187fce297211fc7f3d2f30282015b462":[1,1,3,12,14],
+"classthrill_1_1io_1_1StatsData.html#a31419ca54759e103a70ad40a7f27c42f":[1,1,3,12,8],
+"classthrill_1_1io_1_1StatsData.html#a3f317aaa2e2ae0b7145cc62611b648ae":[1,1,3,12,7],
 "classthrill_1_1io_1_1StatsData.html#a4081df6629e47f313b84b3d13c585ea3":[1,1,3,12,4],
 "classthrill_1_1io_1_1StatsData.html#a4b592f40ca4ac9696f9a8d3201cd24bd":[1,1,3,12,1],
 "classthrill_1_1io_1_1StatsData.html#a56af12ac782232c506ad96ba6fe2baee":[1,1,3,12,9],
@@ -241,13 +249,5 @@ var NAVTREEINDEX13 =
 "classthrill_1_1mem_1_1FixedAllocator.html#a979ec2b51fa3236ac4352b40b8ba993f":[3,0,3,5,5,10],
 "classthrill_1_1mem_1_1FixedAllocator.html#ab7b2a80659b6404c51826dd90e840d40":[3,0,3,5,5,13],
 "classthrill_1_1mem_1_1FixedAllocator.html#acc49e799fff83ac0952614d5e36b3237":[3,0,3,5,5,12],
-"classthrill_1_1mem_1_1FixedAllocator.html#ace405568d0b2f3fad4990044252c7732":[3,0,3,5,5,3],
-"classthrill_1_1mem_1_1FixedAllocator.html#ad8acb4ffc2764058760aba90739a73c1":[3,0,3,5,5,17],
-"classthrill_1_1mem_1_1FixedAllocator.html#af0f70ef64d23e2379bacb63968e68b45":[3,0,3,5,5,8],
-"classthrill_1_1mem_1_1FixedAllocator.html#af38ce1af42d538f410180c265518d4f0":[3,0,3,5,5,7],
-"classthrill_1_1mem_1_1FixedAllocator_3_01void_00_01manager___01_4.html":[3,0,3,5,6],
-"classthrill_1_1mem_1_1FixedAllocator_3_01void_00_01manager___01_4.html#a202984703e816559d7feb6da50c1e0e0":[3,0,3,5,6,1],
-"classthrill_1_1mem_1_1FixedAllocator_3_01void_00_01manager___01_4.html#a255c0fead66e58f628ec80393826f64f":[3,0,3,5,6,2],
-"classthrill_1_1mem_1_1FixedAllocator_3_01void_00_01manager___01_4.html#abe3a6c0f48f358556e6527ca54021cff":[3,0,3,5,6,3],
-"classthrill_1_1mem_1_1FixedPoolAllocator.html":[3,0,3,5,7]
+"classthrill_1_1mem_1_1FixedAllocator.html#ace405568d0b2f3fad4990044252c7732":[3,0,3,5,5,3]
 };

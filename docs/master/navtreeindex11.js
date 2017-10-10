@@ -1,5 +1,13 @@
 var NAVTREEINDEX11 =
 {
+"classthrill_1_1data_1_1Stream.html#a0b173d0ccadd2c20be68054fe610fd0c":[1,1,1,41,12],
+"classthrill_1_1data_1_1Stream.html#a0cf3d8c420028eeee6224e9b6ac8c498":[1,1,1,41,24],
+"classthrill_1_1data_1_1Stream.html#a0e7fd7ca77f77da1e0b65d4b35451f44":[1,1,1,41,14],
+"classthrill_1_1data_1_1Stream.html#a13ef393e64458da714691f90545824e9":[1,1,1,41,4],
+"classthrill_1_1data_1_1Stream.html#a14462dd43d98b102fb217461e069f93c":[1,1,1,41,19],
+"classthrill_1_1data_1_1Stream.html#a14f406dd3db4af71f3634ff63cedac2e":[1,1,1,41,17],
+"classthrill_1_1data_1_1Stream.html#a228f5a252cf1837042bba0df69a803be":[1,1,1,41,31],
+"classthrill_1_1data_1_1Stream.html#a22beda3d71a767ab4601c6e3eee69491":[1,1,1,41,2],
 "classthrill_1_1data_1_1Stream.html#a29ff2835c7c73a1c4affe843ed8c4006":[1,1,1,41,34],
 "classthrill_1_1data_1_1Stream.html#a2c49f50b089be0600db695d04e3b9426":[1,1,1,41,32],
 "classthrill_1_1data_1_1Stream.html#a30f814b85f665384c0e2c821fe92756a":[1,1,1,41,28],
@@ -241,13 +249,5 @@ var NAVTREEINDEX11 =
 "classthrill_1_1io_1_1FileBase.html#a3a70f8b621474c9885f80fe709e2dca2a1ea328a644e627283a35716a54108248":[1,1,3,1,1,2,4],
 "classthrill_1_1io_1_1FileBase.html#a3a70f8b621474c9885f80fe709e2dca2a27f634c8b10fed65260b0ada3b92d6c1":[1,1,3,1,1,2,1],
 "classthrill_1_1io_1_1FileBase.html#a3a70f8b621474c9885f80fe709e2dca2a447bfe7992c2fe70bfe561225f74d379":[1,1,3,1,1,2,6],
-"classthrill_1_1io_1_1FileBase.html#a3a70f8b621474c9885f80fe709e2dca2a9c89853ac6d2bd2650e0bd24fc1d7212":[1,1,3,1,1,2,3],
-"classthrill_1_1io_1_1FileBase.html#a3a70f8b621474c9885f80fe709e2dca2ab09b7a53605905f9291e7bed1f17aedc":[1,1,3,1,1,2,0],
-"classthrill_1_1io_1_1FileBase.html#a3a70f8b621474c9885f80fe709e2dca2ad51a018a1a3314998bc32fded84629c7":[1,1,3,1,1,2,2],
-"classthrill_1_1io_1_1FileBase.html#a3b876349b7a4b15bd2c10a04e68b400a":[1,1,3,1,1,13],
-"classthrill_1_1io_1_1FileBase.html#a41c178dc17791817c470e0de5bb3ae26":[1,1,3,1,1,28],
-"classthrill_1_1io_1_1FileBase.html#a44781adcc4f255a9d422cf23859422f8":[1,1,3,1,1,8],
-"classthrill_1_1io_1_1FileBase.html#a5f51f5585e8ae4a0302895ced42f3200":[1,1,3,1,1,10],
-"classthrill_1_1io_1_1FileBase.html#a617f76262339ddecb81b2094ddbe7834":[1,1,3,1,1,27],
-"classthrill_1_1io_1_1FileBase.html#a6b72e54baf646b08b4b87f987f583dcb":[1,1,3,1,1,24]
+"classthrill_1_1io_1_1FileBase.html#a3a70f8b621474c9885f80fe709e2dca2a9c89853ac6d2bd2650e0bd24fc1d7212":[1,1,3,1,1,2,3]
 };

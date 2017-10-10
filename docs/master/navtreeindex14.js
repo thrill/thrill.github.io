@@ -1,5 +1,13 @@
 var NAVTREEINDEX14 =
 {
+"classthrill_1_1mem_1_1FixedAllocator.html#ad8acb4ffc2764058760aba90739a73c1":[3,0,3,5,5,17],
+"classthrill_1_1mem_1_1FixedAllocator.html#af0f70ef64d23e2379bacb63968e68b45":[3,0,3,5,5,8],
+"classthrill_1_1mem_1_1FixedAllocator.html#af38ce1af42d538f410180c265518d4f0":[3,0,3,5,5,7],
+"classthrill_1_1mem_1_1FixedAllocator_3_01void_00_01manager___01_4.html":[3,0,3,5,6],
+"classthrill_1_1mem_1_1FixedAllocator_3_01void_00_01manager___01_4.html#a202984703e816559d7feb6da50c1e0e0":[3,0,3,5,6,1],
+"classthrill_1_1mem_1_1FixedAllocator_3_01void_00_01manager___01_4.html#a255c0fead66e58f628ec80393826f64f":[3,0,3,5,6,2],
+"classthrill_1_1mem_1_1FixedAllocator_3_01void_00_01manager___01_4.html#abe3a6c0f48f358556e6527ca54021cff":[3,0,3,5,6,3],
+"classthrill_1_1mem_1_1FixedPoolAllocator.html":[3,0,3,5,7],
 "classthrill_1_1mem_1_1FixedPoolAllocator.html#a057b554e3401bd69bb0fdc7ab0e38031":[3,0,3,5,7,10],
 "classthrill_1_1mem_1_1FixedPoolAllocator.html#a06dc3f6b9a2ad2f3d76632dbc5c9e883":[3,0,3,5,7,17],
 "classthrill_1_1mem_1_1FixedPoolAllocator.html#a1e67311e1f4ae3600af384f0a7e6addc":[3,0,3,5,7,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX14 =
 "classthrill_1_1net_1_1BufferReader.html#a055d87b78f69c9d039b7e12ead7aa6b6":[1,1,2,11,11],
 "classthrill_1_1net_1_1BufferReader.html#a24b722211a6596c0284359f7f1d1e3c4":[1,1,2,11,1],
 "classthrill_1_1net_1_1BufferReader.html#a2ef90b24a2f3db0cf4d34e31c2f6900a":[1,1,2,11,5],
-"classthrill_1_1net_1_1BufferReader.html#a3b488f44223835760f64c944c7c90906":[1,1,2,11,3],
-"classthrill_1_1net_1_1BufferReader.html#a584725102547b76380bf324032dab87e":[1,1,2,11,10],
-"classthrill_1_1net_1_1BufferReader.html#a5e95e5f3669ded30d904a5a0e7585b45":[1,1,2,11,17],
-"classthrill_1_1net_1_1BufferReader.html#a66522c190ff0d391f9325ec88677a48d":[1,1,2,11,2],
-"classthrill_1_1net_1_1BufferReader.html#a697fa0708ac3496a0eab929d14451cbf":[1,1,2,11,13],
-"classthrill_1_1net_1_1BufferReader.html#a73baca6cc76214ebd0a6b5eb6e4a4692":[1,1,2,11,7],
-"classthrill_1_1net_1_1BufferReader.html#aa508967960776c6f6ecdd8c34c393546":[1,1,2,11,12],
-"classthrill_1_1net_1_1BufferReader.html#aa707e9b0442b5b0e22c402394d5eaad1":[1,1,2,11,9],
-"classthrill_1_1net_1_1BufferReader.html#aa91949fff95e0ee05c5dce22a32512e5":[1,1,2,11,8]
+"classthrill_1_1net_1_1BufferReader.html#a3b488f44223835760f64c944c7c90906":[1,1,2,11,3]
 };
