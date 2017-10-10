@@ -1,4 +1,4 @@
-var group__meta =
+var group__tlx__meta =
 [
     [ "detail", "namespacetlx_1_1detail.html", null ],
     [ "FunctionChain", "classtlx_1_1FunctionChain.html", [
@@ -62,24 +62,24 @@ var group__meta =
       [ "operator size_t", "structtlx_1_1StaticIndex.html#a71d124e0deb33bacc550df99ab1e5b25", null ],
       [ "index", "structtlx_1_1StaticIndex.html#a5db12ccaeb69abb440e410e47b86d6cf", null ]
     ] ],
-    [ "TLX_MAKE_HAS_MEMBER", "group__meta.html#ga57d4934d6831a219db7ed2003093fde9", null ],
-    [ "TLX_MAKE_HAS_METHOD", "group__meta.html#ga77dd8d7d27ca0d3d6d34983bf69e8c83", null ],
-    [ "TLX_MAKE_HAS_STATIC_METHOD", "group__meta.html#gadc1ae15eca75b43b2028efa9214da70b", null ],
-    [ "TLX_MAKE_HAS_TEMPLATE_MEMBER", "group__meta.html#ga6b232298e50502336cb17c51f450b49c", null ],
-    [ "TLX_MAKE_HAS_TEMPLATE_METHOD", "group__meta.html#ga6025c1e576e81301e612ed7b5d9a639b", null ],
-    [ "apply_tuple", "group__meta.html#ga697505eebc05040893022611ce8866c1", null ],
-    [ "call_for_range", "group__meta.html#gaabdeef74e74806d7a81fa708ce9828e2", null ],
-    [ "call_for_range", "group__meta.html#ga2abdae3c630ff66ff635822c14f8c72a", null ],
-    [ "call_foreach", "group__meta.html#ga754cf6d5c1cb28e539cbc996af91ecb5", null ],
-    [ "call_foreach_tuple", "group__meta.html#ga592749f0b74d1c116893d4bc880343e3", null ],
-    [ "call_foreach_tuple_with_index", "group__meta.html#ga83551ec4ad5da9352345f7178abeb056", null ],
-    [ "call_foreach_with_index", "group__meta.html#ga9a8854506459ec185c2bcbdd6fe6428b", null ],
-    [ "make_function_chain", "group__meta.html#gab2afc1ff7d0b9ea7a6583d0573e36ef7", null ],
-    [ "make_function_chain", "group__meta.html#gadd2b32ffd2415899c6a69ccac4d7138f", null ],
-    [ "make_function_stack", "group__meta.html#gaf4f5461dca9e4be26479c56a5500357e", null ],
-    [ "vexpand", "group__meta.html#ga44a90b0de44f0e1aa17ae215db35f458", null ],
-    [ "vmap_for_range", "group__meta.html#ga4a1c233e7ab713b8f8f77f7149f2bc4b", null ],
-    [ "vmap_for_range", "group__meta.html#ga36807642146dd614b63d26ed6bba9c19", null ],
-    [ "vmap_foreach", "group__meta.html#gaf379571cbffcf0273d0203ef53bca2b8", null ],
-    [ "vmap_foreach_with_index", "group__meta.html#ga1a5c01183e4cc91ffbec284e8bd9437e", null ]
+    [ "TLX_MAKE_HAS_MEMBER", "group__tlx__meta.html#ga57d4934d6831a219db7ed2003093fde9", null ],
+    [ "TLX_MAKE_HAS_METHOD", "group__tlx__meta.html#ga77dd8d7d27ca0d3d6d34983bf69e8c83", null ],
+    [ "TLX_MAKE_HAS_STATIC_METHOD", "group__tlx__meta.html#gadc1ae15eca75b43b2028efa9214da70b", null ],
+    [ "TLX_MAKE_HAS_TEMPLATE_MEMBER", "group__tlx__meta.html#ga6b232298e50502336cb17c51f450b49c", null ],
+    [ "TLX_MAKE_HAS_TEMPLATE_METHOD", "group__tlx__meta.html#ga6025c1e576e81301e612ed7b5d9a639b", null ],
+    [ "apply_tuple", "group__tlx__meta.html#ga697505eebc05040893022611ce8866c1", null ],
+    [ "call_for_range", "group__tlx__meta.html#gaabdeef74e74806d7a81fa708ce9828e2", null ],
+    [ "call_for_range", "group__tlx__meta.html#ga2abdae3c630ff66ff635822c14f8c72a", null ],
+    [ "call_foreach", "group__tlx__meta.html#ga754cf6d5c1cb28e539cbc996af91ecb5", null ],
+    [ "call_foreach_tuple", "group__tlx__meta.html#ga592749f0b74d1c116893d4bc880343e3", null ],
+    [ "call_foreach_tuple_with_index", "group__tlx__meta.html#ga83551ec4ad5da9352345f7178abeb056", null ],
+    [ "call_foreach_with_index", "group__tlx__meta.html#ga9a8854506459ec185c2bcbdd6fe6428b", null ],
+    [ "make_function_chain", "group__tlx__meta.html#gab2afc1ff7d0b9ea7a6583d0573e36ef7", null ],
+    [ "make_function_chain", "group__tlx__meta.html#gadd2b32ffd2415899c6a69ccac4d7138f", null ],
+    [ "make_function_stack", "group__tlx__meta.html#gaf4f5461dca9e4be26479c56a5500357e", null ],
+    [ "vexpand", "group__tlx__meta.html#ga44a90b0de44f0e1aa17ae215db35f458", null ],
+    [ "vmap_for_range", "group__tlx__meta.html#ga4a1c233e7ab713b8f8f77f7149f2bc4b", null ],
+    [ "vmap_for_range", "group__tlx__meta.html#ga36807642146dd614b63d26ed6bba9c19", null ],
+    [ "vmap_foreach", "group__tlx__meta.html#gaf379571cbffcf0273d0203ef53bca2b8", null ],
+    [ "vmap_foreach_with_index", "group__tlx__meta.html#ga1a5c01183e4cc91ffbec284e8bd9437e", null ]
 ];

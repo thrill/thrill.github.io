@@ -6,7 +6,7 @@ var searchData=
   ['ull',['ull',['../classthrill_1_1common_1_1UIntPair.html#a02db6a0f110438d2d7eb89eca3771c91',1,'thrill::common::UIntPair']]],
   ['unify',['unify',['../classtlx_1_1CountingPtr.html#a28653b45bfba9a4135bc0c5903a45c4e',1,'tlx::CountingPtr']]],
   ['union',['Union',['../group__dia__lops.html#ga3adb351cf1b523536cbe1840793c8546',1,'thrill::api::DIA::Union()'],['../group__dia__lops.html#ga1ad6d6f5862636d832c0407ea54f9862',1,'thrill::api::Union(const FirstDIA &amp;first_dia, const DIAs &amp;...dias)'],['../group__dia__lops.html#ga7ab20d2ba92e929c35d14969eddeff4b',1,'thrill::api::Union(const std::initializer_list&lt; DIA&lt; ValueType &gt; &gt; &amp;dias)'],['../group__dia__lops.html#ga1e2637cf64a85693667e15a974f445a3',1,'thrill::api::Union(const std::vector&lt; DIA&lt; ValueType &gt; &gt; &amp;dias)']]],
-  ['union_5fwords',['union_words',['../group__string.html#ga39619db78c7e916bff3544fb07cbe462',1,'tlx']]],
+  ['union_5fwords',['union_words',['../group__tlx__string.html#ga39619db78c7e916bff3544fb07cbe462',1,'tlx']]],
   ['unionnode',['UnionNode',['../classthrill_1_1api_1_1UnionNode.html#ac29dba1ba60ae0bd8393318193f02b56',1,'thrill::api::UnionNode']]],
   ['unique',['unique',['../classtlx_1_1CountingPtr.html#a17f79efcc0f2e0d5cb9afcdee013e64c',1,'tlx::CountingPtr::unique()'],['../classtlx_1_1ReferenceCounter.html#a17f79efcc0f2e0d5cb9afcdee013e64c',1,'tlx::ReferenceCounter::unique()']]],
   ['unlink',['unlink',['../classthrill_1_1io_1_1FileBase.html#a28af9471bbdf262321af663e02899a47',1,'thrill::io::FileBase::unlink()'],['../classthrill_1_1io_1_1UfsFileBase.html#acefbc7d5aa5a6fad7b468b9a84b3db7d',1,'thrill::io::UfsFileBase::unlink()']]],

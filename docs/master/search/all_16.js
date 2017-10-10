@@ -20,7 +20,7 @@ var searchData=
   ['unify',['unify',['../classtlx_1_1CountingPtr.html#a28653b45bfba9a4135bc0c5903a45c4e',1,'tlx::CountingPtr']]],
   ['union',['Union',['../group__dia__lops.html#ga3adb351cf1b523536cbe1840793c8546',1,'thrill::api::DIA::Union()'],['../group__dia__lops.html#ga1ad6d6f5862636d832c0407ea54f9862',1,'thrill::api::Union(const FirstDIA &amp;first_dia, const DIAs &amp;...dias)'],['../group__dia__lops.html#ga7ab20d2ba92e929c35d14969eddeff4b',1,'thrill::api::Union(const std::initializer_list&lt; DIA&lt; ValueType &gt; &gt; &amp;dias)'],['../group__dia__lops.html#ga1e2637cf64a85693667e15a974f445a3',1,'thrill::api::Union(const std::vector&lt; DIA&lt; ValueType &gt; &gt; &amp;dias)']]],
   ['union_2ehpp',['union.hpp',['../union_8hpp.html',1,'']]],
-  ['union_5fwords',['union_words',['../group__string.html#ga39619db78c7e916bff3544fb07cbe462',1,'tlx']]],
+  ['union_5fwords',['union_words',['../group__tlx__string.html#ga39619db78c7e916bff3544fb07cbe462',1,'tlx']]],
   ['union_5fwords_2ecpp',['union_words.cpp',['../union__words_8cpp.html',1,'']]],
   ['union_5fwords_2ehpp',['union_words.hpp',['../union__words_8hpp.html',1,'']]],
   ['unionchild',['UnionChild',['../structthrill_1_1api_1_1UnionNode_1_1UnionChild.html',1,'thrill::api::UnionNode']]],

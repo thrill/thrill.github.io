@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('apply__tuple_8hpp_source.html','');});
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>tlx {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//! \addtogroup meta</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//! \addtogroup tlx_meta</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//! \{</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/******************************************************************************/</span></div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('apply__tuple_8hpp_source.html','');});
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">//! Call the functor f with the contents of t as arguments.</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Functor, <span class="keyword">typename</span> Tuple&gt;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group__meta.html#ga697505eebc05040893022611ce8866c1">   39</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__meta.html#ga697505eebc05040893022611ce8866c1">apply_tuple</a>(Functor&amp;&amp; f, Tuple&amp;&amp; t) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group__tlx__meta.html#ga697505eebc05040893022611ce8866c1">   39</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__tlx__meta.html#ga697505eebc05040893022611ce8866c1">apply_tuple</a>(Functor&amp;&amp; f, Tuple&amp;&amp; t) {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">using</span> Indices = <a class="code" href="structtlx_1_1make__index__sequence.html">make_index_sequence</a>&lt;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;              std::tuple_size&lt;typename std::decay&lt;Tuple&gt;::type&gt;<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">::value</a>&gt;;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacetlx_1_1detail.html#ad9746dc2ad8271c539cc24ca9f840dcd">detail::apply_tuple_impl</a>(</div>
@@ -169,10 +169,10 @@ $(document).ready(function(){initNavTree('apply__tuple_8hpp_source.html','');});
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="structtlx_1_1make__index__sequence_html"><div class="ttname"><a href="structtlx_1_1make__index__sequence.html">tlx::make_index_sequence</a></div><div class="ttdef"><b>Definition:</b> <a href="index__sequence_8hpp_source.html#l00048">index_sequence.hpp:48</a></div></div>
-<div class="ttc" id="group__meta_html_ga697505eebc05040893022611ce8866c1"><div class="ttname"><a href="group__meta.html#ga697505eebc05040893022611ce8866c1">tlx::apply_tuple</a></div><div class="ttdeci">auto apply_tuple(Functor &amp;&amp;f, Tuple &amp;&amp;t)</div><div class="ttdoc">Call the functor f with the contents of t as arguments. </div><div class="ttdef"><b>Definition:</b> <a href="apply__tuple_8hpp_source.html#l00039">apply_tuple.hpp:39</a></div></div>
 <div class="ttc" id="namespacetlx_1_1detail_html_ad9746dc2ad8271c539cc24ca9f840dcd"><div class="ttname"><a href="namespacetlx_1_1detail.html#ad9746dc2ad8271c539cc24ca9f840dcd">tlx::detail::apply_tuple_impl</a></div><div class="ttdeci">auto apply_tuple_impl(Functor &amp;&amp;f, Tuple &amp;&amp;t, index_sequence&lt; Is...&gt;)</div><div class="ttdef"><b>Definition:</b> <a href="apply__tuple_8hpp_source.html#l00030">apply_tuple.hpp:30</a></div></div>
 <div class="ttc" id="index__sequence_8hpp_html"><div class="ttname"><a href="index__sequence_8hpp.html">index_sequence.hpp</a></div></div>
 <div class="ttc" id="namespacegen__data_html_ac4f474c82e82cbb89ca7c36dd52be0ed"><div class="ttname"><a href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">gen_data.value</a></div><div class="ttdeci">int value</div><div class="ttdef"><b>Definition:</b> <a href="gen__data_8py_source.html#l00041">gen_data.py:41</a></div></div>
+<div class="ttc" id="group__tlx__meta_html_ga697505eebc05040893022611ce8866c1"><div class="ttname"><a href="group__tlx__meta.html#ga697505eebc05040893022611ce8866c1">tlx::apply_tuple</a></div><div class="ttdeci">auto apply_tuple(Functor &amp;&amp;f, Tuple &amp;&amp;t)</div><div class="ttdoc">Call the functor f with the contents of t as arguments. </div><div class="ttdef"><b>Definition:</b> <a href="apply__tuple_8hpp_source.html#l00039">apply_tuple.hpp:39</a></div></div>
 <div class="ttc" id="structtlx_1_1index__sequence_html"><div class="ttname"><a href="structtlx_1_1index__sequence.html">tlx::index_sequence</a></div><div class="ttdef"><b>Definition:</b> <a href="index__sequence_8hpp_source.html#l00025">index_sequence.hpp:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('apply__tuple_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_caacaa4f3b8d02b4020eb7fe043e6252.html">extlib</a></li><li class="navelem"><a class="el" href="dir_7a0d59963e57ff0db60447211f189ef0.html">tlx</a></li><li class="navelem"><a class="el" href="dir_4c5cb83148e98355e323096051cdb415.html">tlx</a></li><li class="navelem"><a class="el" href="dir_6ccd53008f403c6d71e170eabcc96351.html">meta</a></li><li class="navelem"><a class="el" href="apply__tuple_8hpp.html">apply_tuple.hpp</a></li>
-    <li class="footer">Generated on Tue Oct 10 2017 17:56:47 for Thrill by
+    <li class="footer">Generated on Tue Oct 10 2017 21:39:53 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

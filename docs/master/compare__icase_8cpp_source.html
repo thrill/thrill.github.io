@@ -133,12 +133,12 @@ $(document).ready(function(){initNavTree('compare__icase_8cpp_source.html','');}
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>tlx {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="group__string.html#ga7a87b7f6120ebcde0c01ad293465f9d7">   18</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__string.html#ga7a87b7f6120ebcde0c01ad293465f9d7">compare_icase</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* a, <span class="keyword">const</span> <span class="keywordtype">char</span>* b) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="group__tlx__string.html#ga7a87b7f6120ebcde0c01ad293465f9d7">   18</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__tlx__string.html#ga7a87b7f6120ebcde0c01ad293465f9d7">compare_icase</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* a, <span class="keyword">const</span> <span class="keywordtype">char</span>* b) {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">while</span> (*a != 0 &amp;&amp; *b != 0)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">int</span> ca = <a class="code" href="group__string.html#ga355a332620f8220ecbb0dc5a0aa67350">to_lower</a>(*a++);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">int</span> cb = <a class="code" href="group__string.html#ga355a332620f8220ecbb0dc5a0aa67350">to_lower</a>(*b++);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">int</span> ca = <a class="code" href="group__tlx__string.html#ga355a332620f8220ecbb0dc5a0aa67350">to_lower</a>(*a++);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">int</span> cb = <a class="code" href="group__tlx__string.html#ga355a332620f8220ecbb0dc5a0aa67350">to_lower</a>(*b++);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">if</span> (ca == cb) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">if</span> (ca &lt; cb) <span class="keywordflow">return</span> -1;</div>
@@ -150,14 +150,14 @@ $(document).ready(function(){initNavTree('compare__icase_8cpp_source.html','');}
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group__string.html#ga061e7b66eb332d7621ef99d11b724c16">   35</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__string.html#ga7a87b7f6120ebcde0c01ad293465f9d7">compare_icase</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* a, <span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; b) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group__tlx__string.html#ga061e7b66eb332d7621ef99d11b724c16">   35</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__tlx__string.html#ga7a87b7f6120ebcde0c01ad293465f9d7">compare_icase</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* a, <span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; b) {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::string::const_iterator bi = b.begin();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">while</span> (*a != 0 &amp;&amp; bi != b.end())</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">int</span> ca = <a class="code" href="group__string.html#ga355a332620f8220ecbb0dc5a0aa67350">to_lower</a>(*a++);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">int</span> cb = <a class="code" href="group__string.html#ga355a332620f8220ecbb0dc5a0aa67350">to_lower</a>(*bi++);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">int</span> ca = <a class="code" href="group__tlx__string.html#ga355a332620f8220ecbb0dc5a0aa67350">to_lower</a>(*a++);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">int</span> cb = <a class="code" href="group__tlx__string.html#ga355a332620f8220ecbb0dc5a0aa67350">to_lower</a>(*bi++);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span> (ca == cb) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">if</span> (ca &lt; cb) <span class="keywordflow">return</span> -1;</div>
@@ -169,13 +169,13 @@ $(document).ready(function(){initNavTree('compare__icase_8cpp_source.html','');}
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group__string.html#gad6b99f43a01b6d2ff8ca49f4518297b9">   54</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__string.html#ga7a87b7f6120ebcde0c01ad293465f9d7">compare_icase</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; a, <span class="keyword">const</span> <span class="keywordtype">char</span>* b) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group__tlx__string.html#gad6b99f43a01b6d2ff8ca49f4518297b9">   54</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__tlx__string.html#ga7a87b7f6120ebcde0c01ad293465f9d7">compare_icase</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; a, <span class="keyword">const</span> <span class="keywordtype">char</span>* b) {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::string::const_iterator ai = a.begin();</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">while</span> (ai != a.end() &amp;&amp; *b != 0)</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">int</span> ca = <a class="code" href="group__string.html#ga355a332620f8220ecbb0dc5a0aa67350">to_lower</a>(*ai++);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">int</span> cb = <a class="code" href="group__string.html#ga355a332620f8220ecbb0dc5a0aa67350">to_lower</a>(*b++);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">int</span> ca = <a class="code" href="group__tlx__string.html#ga355a332620f8220ecbb0dc5a0aa67350">to_lower</a>(*ai++);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">int</span> cb = <a class="code" href="group__tlx__string.html#ga355a332620f8220ecbb0dc5a0aa67350">to_lower</a>(*b++);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (ca == cb) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">if</span> (ca &lt; cb) <span class="keywordflow">return</span> -1;</div>
@@ -187,14 +187,14 @@ $(document).ready(function(){initNavTree('compare__icase_8cpp_source.html','');}
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group__string.html#ga988bb20efc727413da0a9d9d11f488b0">   72</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__string.html#ga7a87b7f6120ebcde0c01ad293465f9d7">compare_icase</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; b) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="group__tlx__string.html#ga988bb20efc727413da0a9d9d11f488b0">   72</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="group__tlx__string.html#ga7a87b7f6120ebcde0c01ad293465f9d7">compare_icase</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; b) {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::string::const_iterator ai = a.begin();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    std::string::const_iterator bi = b.begin();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">while</span> (ai != a.end() &amp;&amp; bi != b.end())</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">int</span> ca = <a class="code" href="group__string.html#ga355a332620f8220ecbb0dc5a0aa67350">to_lower</a>(*ai++);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">int</span> cb = <a class="code" href="group__string.html#ga355a332620f8220ecbb0dc5a0aa67350">to_lower</a>(*bi++);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">int</span> ca = <a class="code" href="group__tlx__string.html#ga355a332620f8220ecbb0dc5a0aa67350">to_lower</a>(*ai++);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">int</span> cb = <a class="code" href="group__tlx__string.html#ga355a332620f8220ecbb0dc5a0aa67350">to_lower</a>(*bi++);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">if</span> (ca == cb) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">if</span> (ca &lt; cb) <span class="keywordflow">return</span> -1;</div>
@@ -210,17 +210,17 @@ $(document).ready(function(){initNavTree('compare__icase_8cpp_source.html','');}
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="compare__icase_8hpp_html"><div class="ttname"><a href="compare__icase_8hpp.html">compare_icase.hpp</a></div></div>
-<div class="ttc" id="group__string_html_ga355a332620f8220ecbb0dc5a0aa67350"><div class="ttname"><a href="group__string.html#ga355a332620f8220ecbb0dc5a0aa67350">tlx::to_lower</a></div><div class="ttdeci">char to_lower(char ch)</div><div class="ttdoc">Transform the given character to lower case without any localization. </div><div class="ttdef"><b>Definition:</b> <a href="to__lower_8cpp_source.html#l00017">to_lower.cpp:17</a></div></div>
+<div class="ttc" id="group__tlx__string_html_ga355a332620f8220ecbb0dc5a0aa67350"><div class="ttname"><a href="group__tlx__string.html#ga355a332620f8220ecbb0dc5a0aa67350">tlx::to_lower</a></div><div class="ttdeci">char to_lower(char ch)</div><div class="ttdoc">Transform the given character to lower case without any localization. </div><div class="ttdef"><b>Definition:</b> <a href="to__lower_8cpp_source.html#l00017">to_lower.cpp:17</a></div></div>
 <div class="ttc" id="namespacethrill_1_1mem_html_a5568fe0d00a794e5f063e9fe040bc07f"><div class="ttname"><a href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">thrill::mem::string</a></div><div class="ttdeci">std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt; string</div><div class="ttdoc">string with Manager tracking </div><div class="ttdef"><b>Definition:</b> <a href="allocator_8hpp_source.html#l00220">allocator.hpp:220</a></div></div>
-<div class="ttc" id="group__string_html_ga7a87b7f6120ebcde0c01ad293465f9d7"><div class="ttname"><a href="group__string.html#ga7a87b7f6120ebcde0c01ad293465f9d7">tlx::compare_icase</a></div><div class="ttdeci">int compare_icase(const char *a, const char *b)</div><div class="ttdoc">returns +1/0/-1 like strcmp(a, b) but without regard for letter case </div><div class="ttdef"><b>Definition:</b> <a href="compare__icase_8cpp_source.html#l00018">compare_icase.cpp:18</a></div></div>
 <div class="ttc" id="to__lower_8hpp_html"><div class="ttname"><a href="to__lower_8hpp.html">to_lower.hpp</a></div></div>
+<div class="ttc" id="group__tlx__string_html_ga7a87b7f6120ebcde0c01ad293465f9d7"><div class="ttname"><a href="group__tlx__string.html#ga7a87b7f6120ebcde0c01ad293465f9d7">tlx::compare_icase</a></div><div class="ttdeci">int compare_icase(const char *a, const char *b)</div><div class="ttdoc">returns +1/0/-1 like strcmp(a, b) but without regard for letter case </div><div class="ttdef"><b>Definition:</b> <a href="compare__icase_8cpp_source.html#l00018">compare_icase.cpp:18</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_caacaa4f3b8d02b4020eb7fe043e6252.html">extlib</a></li><li class="navelem"><a class="el" href="dir_7a0d59963e57ff0db60447211f189ef0.html">tlx</a></li><li class="navelem"><a class="el" href="dir_4c5cb83148e98355e323096051cdb415.html">tlx</a></li><li class="navelem"><a class="el" href="dir_45f902ba5d3b3ca33d73c364af6c6bce.html">string</a></li><li class="navelem"><a class="el" href="compare__icase_8cpp.html">compare_icase.cpp</a></li>
-    <li class="footer">Generated on Tue Oct 10 2017 17:56:47 for Thrill by
+    <li class="footer">Generated on Tue Oct 10 2017 21:39:53 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -51,7 +51,7 @@ var searchData=
   ['word_5fcount_5frun_2ecpp',['word_count_run.cpp',['../word__count__run_8cpp.html',1,'']]],
   ['word_5fcount_5fsequential_2ecpp',['word_count_sequential.cpp',['../word__count__sequential_8cpp.html',1,'']]],
   ['word_5fcount_5fsimple_2ecpp',['word_count_simple.cpp',['../word__count__simple_8cpp.html',1,'']]],
-  ['word_5fwrap',['word_wrap',['../group__string.html#ga2d0ada76ddce7fc09d770fa512780839',1,'tlx']]],
+  ['word_5fwrap',['word_wrap',['../group__tlx__string.html#ga2d0ada76ddce7fc09d770fa512780839',1,'tlx']]],
   ['word_5fwrap_2ecpp',['word_wrap.cpp',['../word__wrap_8cpp.html',1,'']]],
   ['word_5fwrap_2ehpp',['word_wrap.hpp',['../word__wrap_8hpp.html',1,'']]],
   ['wordcount',['WordCount',['../namespaceexamples_1_1word__count.html#a6a08b95e1db32760c640f77ab72a05e9',1,'examples::word_count::WordCount()'],['../word__count__simple_8cpp.html#afe71643710c70e7c6e138fd98dce4b79',1,'WordCount():&#160;word_count_simple.cpp']]],

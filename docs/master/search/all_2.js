@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['abs_5fdiff',['abs_diff',['../group__math.html#ga72ac8fb39736ae5d2b8d920b17d815a8',1,'tlx']]],
+  ['abs_5fdiff',['abs_diff',['../group__tlx__math.html#ga72ac8fb39736ae5d2b8d920b17d815a8',1,'tlx']]],
   ['abs_5fdiff_2ehpp',['abs_diff.hpp',['../abs__diff_8hpp.html',1,'']]],
   ['accept',['accept',['../classthrill_1_1net_1_1tcp_1_1Socket.html#a525836944c18e35b425d946cfc31e8ce',1,'thrill::net::tcp::Socket']]],
   ['accumulated',['Accumulated',['../classthrill_1_1common_1_1StatsTimerBase_3_01true_01_4.html#ac1c1b05f6a8f25b2dd55562a14587cc2',1,'thrill::common::StatsTimerBase&lt; true &gt;::Accumulated()'],['../classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html#ac1c1b05f6a8f25b2dd55562a14587cc2',1,'thrill::common::StatsTimerBase&lt; false &gt;::Accumulated()']]],
@@ -158,7 +158,7 @@ var searchData=
   ['appendpinnedblock',['AppendPinnedBlock',['../classthrill_1_1data_1_1BlockSink.html#a038360e70ff49a3333aae1f4dc686123',1,'thrill::data::BlockSink::AppendPinnedBlock(const PinnedBlock &amp;b, bool is_last_block)'],['../classthrill_1_1data_1_1BlockSink.html#a9524d616e33d2c9a20cad0851a6ccedd',1,'thrill::data::BlockSink::AppendPinnedBlock(PinnedBlock &amp;&amp;b, bool is_last_block)'],['../classthrill_1_1data_1_1StreamSink.html#afe0a3ee2980baf1aea3bfb18c360f84d',1,'thrill::data::StreamSink::AppendPinnedBlock(const PinnedBlock &amp;block, bool is_last_block) final'],['../classthrill_1_1data_1_1StreamSink.html#aa6e13076adab81acb027d682dede8a8b',1,'thrill::data::StreamSink::AppendPinnedBlock(PinnedBlock &amp;&amp;block, bool is_last_block) final']]],
   ['appendstring',['AppendString',['../classthrill_1_1net_1_1BufferBuilder.html#a46d216018c441d23e4d76c2aa345c97a',1,'thrill::net::BufferBuilder::AppendString()'],['../classthrill_1_1net_1_1FixedBufferBuilder.html#afe695960c99dfffd8adc217cbe1be8be',1,'thrill::net::FixedBufferBuilder::AppendString()']]],
   ['apply',['apply',['../classthrill_1_1api_1_1MemoryConfig.html#a95067243b72a23863ec07c821797455c',1,'thrill::api::MemoryConfig']]],
-  ['apply_5ftuple',['apply_tuple',['../group__meta.html#ga697505eebc05040893022611ce8866c1',1,'tlx']]],
+  ['apply_5ftuple',['apply_tuple',['../group__tlx__meta.html#ga697505eebc05040893022611ce8866c1',1,'tlx']]],
   ['apply_5ftuple_2ehpp',['apply_tuple.hpp',['../apply__tuple_8hpp.html',1,'']]],
   ['apply_5ftuple_5fimpl',['apply_tuple_impl',['../namespacetlx_1_1detail.html#ad9746dc2ad8271c539cc24ca9f840dcd',1,'tlx::detail']]],
   ['aread',['aread',['../classthrill_1_1io_1_1DiskQueuedFile.html#a4d0f294dbe40491c1fed362ff5dd6d17',1,'thrill::io::DiskQueuedFile::aread()'],['../classthrill_1_1io_1_1FileBase.html#a71157fd9b083ef80779ba6209015da0d',1,'thrill::io::FileBase::aread()'],['../classthrill_1_1io_1_1LinuxaioFile.html#a06fa598c8e022e6906c1172e9b8375df',1,'thrill::io::LinuxaioFile::aread()']]],

@@ -132,38 +132,38 @@ $(document).ready(function(){initNavTree('to__upper_8cpp_source.html','');});
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>tlx {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="group__string.html#gaa00b5d705507da8f74f1ba3874174d8d">   17</a></span>&#160;<span class="keywordtype">char</span> <a class="code" href="group__string.html#gaa00b5d705507da8f74f1ba3874174d8d">to_upper</a>(<span class="keywordtype">char</span> ch) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="group__tlx__string.html#gaa00b5d705507da8f74f1ba3874174d8d">   17</a></span>&#160;<span class="keywordtype">char</span> <a class="code" href="group__tlx__string.html#gaa00b5d705507da8f74f1ba3874174d8d">to_upper</a>(<span class="keywordtype">char</span> ch) {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">if</span> (static_cast&lt;unsigned&gt;(ch - <span class="charliteral">&#39;a&#39;</span>) &lt; 26u)</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        ch = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(ch - <span class="charliteral">&#39;a&#39;</span> + <span class="charliteral">&#39;A&#39;</span>);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> ch;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="group__string.html#ga7d9edcc3303203825126d7d422e8ab75">   23</a></span>&#160;<a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; <a class="code" href="group__string.html#gaa00b5d705507da8f74f1ba3874174d8d">to_upper</a>(<a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>* str) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="group__tlx__string.html#ga7d9edcc3303203825126d7d422e8ab75">   23</a></span>&#160;<a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; <a class="code" href="group__tlx__string.html#gaa00b5d705507da8f74f1ba3874174d8d">to_upper</a>(<a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>* str) {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::transform(str-&gt;begin(), str-&gt;end(), str-&gt;begin(),</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                   [](<span class="keywordtype">char</span> c) { <span class="keywordflow">return</span> <a class="code" href="group__string.html#gaa00b5d705507da8f74f1ba3874174d8d">to_upper</a>(c); });</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                   [](<span class="keywordtype">char</span> c) { <span class="keywordflow">return</span> <a class="code" href="group__tlx__string.html#gaa00b5d705507da8f74f1ba3874174d8d">to_upper</a>(c); });</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> *str;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="group__string.html#ga2be559f6e498862bec070f122feb6e14">   29</a></span>&#160;<a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> <a class="code" href="group__string.html#gaa00b5d705507da8f74f1ba3874174d8d">to_upper</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; str) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="group__tlx__string.html#ga2be559f6e498862bec070f122feb6e14">   29</a></span>&#160;<a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> <a class="code" href="group__tlx__string.html#gaa00b5d705507da8f74f1ba3874174d8d">to_upper</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; str) {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> str_copy(str.size(), 0);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::transform(str.begin(), str.end(), str_copy.begin(),</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                   [](<span class="keywordtype">char</span> c) { <span class="keywordflow">return</span> <a class="code" href="group__string.html#gaa00b5d705507da8f74f1ba3874174d8d">to_upper</a>(c); });</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                   [](<span class="keywordtype">char</span> c) { <span class="keywordflow">return</span> <a class="code" href="group__tlx__string.html#gaa00b5d705507da8f74f1ba3874174d8d">to_upper</a>(c); });</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> str_copy;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <span class="comment">// namespace tlx</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="ttc" id="group__string_html_gaa00b5d705507da8f74f1ba3874174d8d"><div class="ttname"><a href="group__string.html#gaa00b5d705507da8f74f1ba3874174d8d">tlx::to_upper</a></div><div class="ttdeci">char to_upper(char ch)</div><div class="ttdoc">Transform the given character to upper case without any localization. </div><div class="ttdef"><b>Definition:</b> <a href="to__upper_8cpp_source.html#l00017">to_upper.cpp:17</a></div></div>
 <div class="ttc" id="namespacethrill_1_1mem_html_a5568fe0d00a794e5f063e9fe040bc07f"><div class="ttname"><a href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">thrill::mem::string</a></div><div class="ttdeci">std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt; string</div><div class="ttdoc">string with Manager tracking </div><div class="ttdef"><b>Definition:</b> <a href="allocator_8hpp_source.html#l00220">allocator.hpp:220</a></div></div>
 <div class="ttc" id="to__upper_8hpp_html"><div class="ttname"><a href="to__upper_8hpp.html">to_upper.hpp</a></div></div>
+<div class="ttc" id="group__tlx__string_html_gaa00b5d705507da8f74f1ba3874174d8d"><div class="ttname"><a href="group__tlx__string.html#gaa00b5d705507da8f74f1ba3874174d8d">tlx::to_upper</a></div><div class="ttdeci">char to_upper(char ch)</div><div class="ttdoc">Transform the given character to upper case without any localization. </div><div class="ttdef"><b>Definition:</b> <a href="to__upper_8cpp_source.html#l00017">to_upper.cpp:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_caacaa4f3b8d02b4020eb7fe043e6252.html">extlib</a></li><li class="navelem"><a class="el" href="dir_7a0d59963e57ff0db60447211f189ef0.html">tlx</a></li><li class="navelem"><a class="el" href="dir_4c5cb83148e98355e323096051cdb415.html">tlx</a></li><li class="navelem"><a class="el" href="dir_45f902ba5d3b3ca33d73c364af6c6bce.html">string</a></li><li class="navelem"><a class="el" href="to__upper_8cpp.html">to_upper.cpp</a></li>
-    <li class="footer">Generated on Tue Oct 10 2017 17:56:48 for Thrill by
+    <li class="footer">Generated on Tue Oct 10 2017 21:39:53 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

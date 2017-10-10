@@ -392,7 +392,7 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordtype">int</span> s = 0;</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordflow">for</span> (s = 0; s &lt;= min_sequence; ++s)</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    {</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        RandomAccessIterator <a class="code" href="group__string.html#ga4fb56b145f00428be03f74257c61f1cc">split</a>;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        RandomAccessIterator <a class="code" href="group__tlx__string.html#ga4fb56b145f00428be03f74257c61f1cc">split</a>;</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keywordflow">if</span> (Stable)</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            split = std::upper_bound(seqs_begin[s].first, seqs_begin[s].second,</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                                     min, comp);</div>
@@ -400,15 +400,15 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            split = std::lower_bound(seqs_begin[s].first, seqs_begin[s].second,</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                                     min, comp);</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        overhang_size += seqs_begin[s].second - <a class="code" href="group__string.html#ga4fb56b145f00428be03f74257c61f1cc">split</a>;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        overhang_size += seqs_begin[s].second - <a class="code" href="group__tlx__string.html#ga4fb56b145f00428be03f74257c61f1cc">split</a>;</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    }</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">for</span> ( ; s &lt; (seqs_end - seqs_begin); ++s)</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        RandomAccessIterator <a class="code" href="group__string.html#ga4fb56b145f00428be03f74257c61f1cc">split</a> =</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        RandomAccessIterator <a class="code" href="group__tlx__string.html#ga4fb56b145f00428be03f74257c61f1cc">split</a> =</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            std::lower_bound(seqs_begin[s].first, seqs_begin[s].second,</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                             min, comp);</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        overhang_size += seqs_begin[s].second - <a class="code" href="group__string.html#ga4fb56b145f00428be03f74257c61f1cc">split</a>;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        overhang_size += seqs_begin[s].second - <a class="code" href="group__tlx__string.html#ga4fb56b145f00428be03f74257c61f1cc">split</a>;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    }</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">return</span> overhang_size;           <span class="comment">// so many elements will be left over afterwards</span></div>
@@ -450,8 +450,8 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordflow">for</span> (RandomAccessIteratorIterator s = seqs_begin; s != seqs_end; ++s)</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    {</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        RandomAccessIterator <a class="code" href="group__string.html#ga4fb56b145f00428be03f74257c61f1cc">split</a> = std::lower_bound((*s).first, (*s).second, *max_value, comp);</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        overhang_size += (*s).second - <a class="code" href="group__string.html#ga4fb56b145f00428be03f74257c61f1cc">split</a>;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        RandomAccessIterator <a class="code" href="group__tlx__string.html#ga4fb56b145f00428be03f74257c61f1cc">split</a> = std::lower_bound((*s).first, (*s).second, *max_value, comp);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        overhang_size += (*s).second - <a class="code" href="group__tlx__string.html#ga4fb56b145f00428be03f74257c61f1cc">split</a>;</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        *((*s).second) = *max_value;           <span class="comment">// set sentinel</span></div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    }</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
@@ -2081,7 +2081,7 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="thrill_2common_2logger_8hpp_html"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html">logger.hpp</a></div></div>
-<div class="ttc" id="group__string_html_ga4fb56b145f00428be03f74257c61f1cc"><div class="ttname"><a href="group__string.html#ga4fb56b145f00428be03f74257c61f1cc">tlx::split</a></div><div class="ttdeci">std::vector&lt; std::string &gt; split(char sep, const std::string &amp;str, std::string::size_type limit)</div><div class="ttdoc">Split the given string at each separator character into distinct substrings. </div><div class="ttdef"><b>Definition:</b> <a href="split_8cpp_source.html#l00020">split.cpp:20</a></div></div>
+<div class="ttc" id="group__tlx__string_html_ga4fb56b145f00428be03f74257c61f1cc"><div class="ttname"><a href="group__tlx__string.html#ga4fb56b145f00428be03f74257c61f1cc">tlx::split</a></div><div class="ttdeci">std::vector&lt; std::string &gt; split(char sep, const std::string &amp;str, std::string::size_type limit)</div><div class="ttdoc">Split the given string at each separator character into distinct substrings. </div><div class="ttdef"><b>Definition:</b> <a href="split_8cpp_source.html#l00020">split.cpp:20</a></div></div>
 <div class="ttc" id="namespacethrill_1_1common_html_a2ccde75485682c9a6486b3657487771c"><div class="ttname"><a href="namespacethrill_1_1common.html#a2ccde75485682c9a6486b3657487771c">thrill::common::operator*</a></div><div class="ttdeci">Vector&lt; D &gt; operator*(const double a, const Vector&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="vector_8hpp_source.html#l00115">vector.hpp:115</a></div></div>
 <div class="ttc" id="namespacetlx_html_a5dee8d3837365def6ce2290d6e76bd55"><div class="ttname"><a href="namespacetlx.html#a5dee8d3837365def6ce2290d6e76bd55">tlx::swap</a></div><div class="ttdeci">void swap(CountingPtr&lt; A &gt; &amp;a1, CountingPtr&lt; A &gt; &amp;a2) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="counting__ptr_8hpp_source.html#l00251">counting_ptr.hpp:251</a></div></div>
 <div class="ttc" id="namespacethrill_1_1mem_html_a0dd305ebee8568fb376553a1f70b46a7"><div class="ttname"><a href="namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7">thrill::mem::vector</a></div><div class="ttdeci">std::vector&lt; T, Allocator&lt; T &gt; &gt; vector</div><div class="ttdoc">vector with Manager tracking </div><div class="ttdef"><b>Definition:</b> <a href="allocator_8hpp_source.html#l00228">allocator.hpp:228</a></div></div>
@@ -2095,7 +2095,7 @@ $(document).ready(function(){initNavTree('multiway__merge__attic_8hpp_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_bf197d76390958e69efa59db59e29814.html">core</a></li><li class="navelem"><a class="el" href="multiway__merge__attic_8hpp.html">multiway_merge_attic.hpp</a></li>
-    <li class="footer">Generated on Tue Oct 10 2017 17:56:49 for Thrill by
+    <li class="footer">Generated on Tue Oct 10 2017 21:39:54 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

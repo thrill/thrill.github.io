@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['pad',['pad',['../group__string.html#ga03240bad0b02669f254c21c28009c21a',1,'tlx']]],
+  ['pad',['pad',['../group__tlx__string.html#ga03240bad0b02669f254c21c28009c21a',1,'tlx']]],
   ['padtag',['PadTag',['../structthrill_1_1api_1_1PadTag.html#a14a39ea5b4655be9e6b3b8dcbdcd6e44',1,'thrill::api::PadTag']]],
   ['pagerank',['PageRank',['../namespaceexamples_1_1page__rank.html#a2cb4196cf70cefd35290cb0e46e3662b',1,'examples::page_rank']]],
   ['pagerankjoin',['PageRankJoin',['../namespaceexamples_1_1page__rank.html#afc9a1d772eda541775d6c038f113c93a',1,'examples::page_rank']]],
@@ -12,9 +12,9 @@ var searchData=
   ['parents',['parents',['../classthrill_1_1api_1_1DIABase.html#a90b708ca304934aa9be03f692014b158',1,'thrill::api::DIABase']]],
   ['parse',['Parse',['../classthrill_1_1data_1_1StreamMultiplexerHeader.html#a91013c7966215ab22ad1eff3306ec5fb',1,'thrill::data::StreamMultiplexerHeader::Parse()'],['../classthrill_1_1data_1_1PartitionMultiplexerHeader.html#a44506d1ecf22d442907a48ada15bd5a1',1,'thrill::data::PartitionMultiplexerHeader::Parse()']]],
   ['parse_5ffileio',['parse_fileio',['../classthrill_1_1io_1_1DiskConfig.html#ad4acfe862929ebe86cede6b8472916f0',1,'thrill::io::DiskConfig']]],
-  ['parse_5fhexdump',['parse_hexdump',['../group__string.html#ga81809bc5e0b69034f39659303baa4bf9',1,'tlx']]],
+  ['parse_5fhexdump',['parse_hexdump',['../group__tlx__string.html#ga81809bc5e0b69034f39659303baa4bf9',1,'tlx']]],
   ['parse_5fline',['parse_line',['../classthrill_1_1io_1_1DiskConfig.html#ae1fbeefdb5edc779e7070229e6266e8a',1,'thrill::io::DiskConfig']]],
-  ['parse_5fsi_5fiec_5funits',['parse_si_iec_units',['../group__string.html#ga58be0557b1b38913b28d947c935aed42',1,'tlx::parse_si_iec_units(const char *str, uint64_t *out_size, char default_unit=0)'],['../group__string.html#ga42a656ed3586b515140cb71b312f0f9b',1,'tlx::parse_si_iec_units(const std::string &amp;str, uint64_t *out_size, char default_unit=0)']]],
+  ['parse_5fsi_5fiec_5funits',['parse_si_iec_units',['../group__tlx__string.html#ga58be0557b1b38913b28d947c935aed42',1,'tlx::parse_si_iec_units(const char *str, uint64_t *out_size, char default_unit=0)'],['../group__tlx__string.html#ga42a656ed3586b515140cb71b312f0f9b',1,'tlx::parse_si_iec_units(const std::string &amp;str, uint64_t *out_size, char default_unit=0)']]],
   ['partialtostring',['PartialToString',['../classthrill_1_1net_1_1Buffer.html#a5f9ac225edd01c84bdcac8c20689d002',1,'thrill::net::Buffer']]],
   ['partition',['Partition',['../classthrill_1_1common_1_1Range.html#aa7b490add3d38f80bf5770a4ae7f8837',1,'thrill::common::Range']]],
   ['partition_5ffiles',['partition_files',['../classthrill_1_1core_1_1ReduceTable.html#acd22eacceb03df690ed22ffbe97be62b',1,'thrill::core::ReduceTable']]],

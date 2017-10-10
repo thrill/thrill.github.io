@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('vmap__for__range_8hpp_source.html','')
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>tlx {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//! \addtogroup meta</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//! \addtogroup tlx_meta</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//! \{</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/******************************************************************************/</span></div>
@@ -177,14 +177,14 @@ $(document).ready(function(){initNavTree('vmap__for__range_8hpp_source.html','')
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">//! Vmap a generic functor (like a generic lambda) for the integers [0,Size).</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Size, <span class="keyword">typename</span> Functor&gt;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group__meta.html#ga4a1c233e7ab713b8f8f77f7149f2bc4b">   62</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__meta.html#ga4a1c233e7ab713b8f8f77f7149f2bc4b">vmap_for_range</a>(Functor&amp;&amp; f) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group__tlx__meta.html#ga4a1c233e7ab713b8f8f77f7149f2bc4b">   62</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__tlx__meta.html#ga4a1c233e7ab713b8f8f77f7149f2bc4b">vmap_for_range</a>(Functor&amp;&amp; f) {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classtlx_1_1detail_1_1VMapForRangeImpl.html#a3e21ec42b2f824873d59c3f71be2b48c">detail::VMapForRangeImpl&lt;0, Size, Functor&gt;::call</a>(</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        std::forward&lt;Functor&gt;(f));</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">//! Vmap a generic functor (like a generic lambda) for the integers [Begin,End).</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Begin, <span class="keywordtype">size_t</span> End, <span class="keyword">typename</span> Functor&gt;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group__meta.html#ga36807642146dd614b63d26ed6bba9c19">   69</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__meta.html#ga4a1c233e7ab713b8f8f77f7149f2bc4b">vmap_for_range</a>(Functor&amp;&amp; f) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group__tlx__meta.html#ga36807642146dd614b63d26ed6bba9c19">   69</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__tlx__meta.html#ga4a1c233e7ab713b8f8f77f7149f2bc4b">vmap_for_range</a>(Functor&amp;&amp; f) {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classtlx_1_1detail_1_1VMapForRangeImpl.html#a3e21ec42b2f824873d59c3f71be2b48c">detail::VMapForRangeImpl&lt;Begin, End - Begin, Functor&gt;::call</a>(</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        std::forward&lt;Functor&gt;(f));</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
@@ -199,9 +199,9 @@ $(document).ready(function(){initNavTree('vmap__for__range_8hpp_source.html','')
 <div class="ttc" id="static__index_8hpp_html"><div class="ttname"><a href="static__index_8hpp.html">static_index.hpp</a></div></div>
 <div class="ttc" id="structtlx_1_1StaticIndex_html"><div class="ttname"><a href="structtlx_1_1StaticIndex.html">tlx::StaticIndex</a></div><div class="ttdef"><b>Definition:</b> <a href="static__index_8hpp_source.html#l00024">static_index.hpp:24</a></div></div>
 <div class="ttc" id="classtlx_1_1detail_1_1VMapForRangeImpl_html"><div class="ttname"><a href="classtlx_1_1detail_1_1VMapForRangeImpl.html">tlx::detail::VMapForRangeImpl</a></div><div class="ttdoc">helper for vmap_for_range: general recursive case </div><div class="ttdef"><b>Definition:</b> <a href="vmap__for__range_8hpp_source.html#l00035">vmap_for_range.hpp:35</a></div></div>
-<div class="ttc" id="group__meta_html_ga4a1c233e7ab713b8f8f77f7149f2bc4b"><div class="ttname"><a href="group__meta.html#ga4a1c233e7ab713b8f8f77f7149f2bc4b">tlx::vmap_for_range</a></div><div class="ttdeci">auto vmap_for_range(Functor &amp;&amp;f)</div><div class="ttdoc">Vmap a generic functor (like a generic lambda) for the integers [0,Size). </div><div class="ttdef"><b>Definition:</b> <a href="vmap__for__range_8hpp_source.html#l00062">vmap_for_range.hpp:62</a></div></div>
 <div class="ttc" id="namespacegen__data_html_a573e66358ede67c6f901dfaf4722f75a"><div class="ttname"><a href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">gen_data.x</a></div><div class="ttdeci">list x</div><div class="ttdef"><b>Definition:</b> <a href="gen__data_8py_source.html#l00039">gen_data.py:39</a></div></div>
 <div class="ttc" id="classtlx_1_1detail_1_1VMapForRangeImpl_3_01Index_00_010_00_01Functor_01_4_html_a429e28bf4355ebc3f4405e915d356c32"><div class="ttname"><a href="classtlx_1_1detail_1_1VMapForRangeImpl_3_01Index_00_010_00_01Functor_01_4.html#a429e28bf4355ebc3f4405e915d356c32">tlx::detail::VMapForRangeImpl&lt; Index, 0, Functor &gt;::call</a></div><div class="ttdeci">static auto call(Functor &amp;&amp;)</div><div class="ttdef"><b>Definition:</b> <a href="vmap__for__range_8hpp_source.html#l00053">vmap_for_range.hpp:53</a></div></div>
+<div class="ttc" id="group__tlx__meta_html_ga4a1c233e7ab713b8f8f77f7149f2bc4b"><div class="ttname"><a href="group__tlx__meta.html#ga4a1c233e7ab713b8f8f77f7149f2bc4b">tlx::vmap_for_range</a></div><div class="ttdeci">auto vmap_for_range(Functor &amp;&amp;f)</div><div class="ttdoc">Vmap a generic functor (like a generic lambda) for the integers [0,Size). </div><div class="ttdef"><b>Definition:</b> <a href="vmap__for__range_8hpp_source.html#l00062">vmap_for_range.hpp:62</a></div></div>
 <div class="ttc" id="classtlx_1_1detail_1_1VMapForRangeImpl_html_a3e21ec42b2f824873d59c3f71be2b48c"><div class="ttname"><a href="classtlx_1_1detail_1_1VMapForRangeImpl.html#a3e21ec42b2f824873d59c3f71be2b48c">tlx::detail::VMapForRangeImpl::call</a></div><div class="ttdeci">static auto call(Functor &amp;&amp;f)</div><div class="ttdef"><b>Definition:</b> <a href="vmap__for__range_8hpp_source.html#l00038">vmap_for_range.hpp:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -209,7 +209,7 @@ $(document).ready(function(){initNavTree('vmap__for__range_8hpp_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_caacaa4f3b8d02b4020eb7fe043e6252.html">extlib</a></li><li class="navelem"><a class="el" href="dir_7a0d59963e57ff0db60447211f189ef0.html">tlx</a></li><li class="navelem"><a class="el" href="dir_4c5cb83148e98355e323096051cdb415.html">tlx</a></li><li class="navelem"><a class="el" href="dir_6ccd53008f403c6d71e170eabcc96351.html">meta</a></li><li class="navelem"><a class="el" href="vmap__for__range_8hpp.html">vmap_for_range.hpp</a></li>
-    <li class="footer">Generated on Tue Oct 10 2017 17:56:47 for Thrill by
+    <li class="footer">Generated on Tue Oct 10 2017 21:39:53 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -5,5 +5,6 @@ var searchData=
   ['data_20subsystem_20layer',['Data Subsystem Layer',['../group__data__layer.html',1,'']]],
   ['dia_20api_20operations',['DIA API Operations',['../group__dia__api.html',1,'']]],
   ['distributed_20operations_20_28dops_29',['Distributed Operations (DOps)',['../group__dia__dops.html',1,'']]],
-  ['disk_20allocation_20functors',['Disk Allocation Functors',['../group__io__layer__alloc.html',1,'']]]
+  ['disk_20allocation_20functors',['Disk Allocation Functors',['../group__io__layer__alloc.html',1,'']]],
+  ['data_20structures',['Data Structures',['../group__tlx__data__structures.html',1,'']]]
 ];

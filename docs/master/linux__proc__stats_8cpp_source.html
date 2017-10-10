@@ -388,7 +388,7 @@ $(document).ready(function(){initNavTree('linux__proc__stats_8cpp_source.html','
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> line;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">while</span> (std::getline(file_stat_, line)) {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group__string.html#gadc5cce7e8c7fd30078b9129a7ae1d74b">tlx::starts_with</a>(line, <span class="stringliteral">&quot;cpu  &quot;</span>)) {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group__tlx__string.html#gadc5cce7e8c7fd30078b9129a7ae1d74b">tlx::starts_with</a>(line, <span class="stringliteral">&quot;cpu  &quot;</span>)) {</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            CpuStat curr;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            <span class="keywordtype">int</span> ret = sscanf(</div>
@@ -445,7 +445,7 @@ $(document).ready(function(){initNavTree('linux__proc__stats_8cpp_source.html','
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            prev = curr;</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        }</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="group__string.html#gadc5cce7e8c7fd30078b9129a7ae1d74b">tlx::starts_with</a>(line, <span class="stringliteral">&quot;cpu&quot;</span>)) {</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="group__tlx__string.html#gadc5cce7e8c7fd30078b9129a7ae1d74b">tlx::starts_with</a>(line, <span class="stringliteral">&quot;cpu&quot;</span>)) {</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            <span class="keywordtype">unsigned</span> core_id;</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            CpuStat curr;</div>
@@ -636,7 +636,7 @@ $(document).ready(function(){initNavTree('linux__proc__stats_8cpp_source.html','
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        <span class="keywordflow">if</span> (colonpos == std::string::npos) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;</div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> if_name = line.substr(0, colonpos);</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        <a class="code" href="group__string.html#gaef21c8a44ad85b60cee80e66ae877b9a">tlx::trim</a>(&amp;if_name);</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        <a class="code" href="group__tlx__string.html#gaef21c8a44ad85b60cee80e66ae877b9a">tlx::trim</a>(&amp;if_name);</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        NetDevStat curr;</div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        <span class="keywordtype">int</span> ret = sscanf(line.data() + colonpos + 1,</div>
@@ -705,11 +705,11 @@ $(document).ready(function(){initNavTree('linux__proc__stats_8cpp_source.html','
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;</div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> line;</div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;    <span class="keywordflow">while</span> (std::getline(file_stat_, line)) {</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group__string.html#gadc5cce7e8c7fd30078b9129a7ae1d74b">tlx::starts_with</a>(line, <span class="stringliteral">&quot;read_bytes: &quot;</span>)) {</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="group__tlx__string.html#gadc5cce7e8c7fd30078b9129a7ae1d74b">tlx::starts_with</a>(line, <span class="stringliteral">&quot;read_bytes: &quot;</span>)) {</div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;            <span class="keywordtype">int</span> ret = sscanf(line.data() + 12, <span class="stringliteral">&quot;%llu&quot;</span>, &amp;curr.read_bytes);</div>
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;            <a class="code" href="die_8hpp.html#a334b021076c0dff0e3964c6819774ceb">die_unequal</a>(1, ret);</div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        }</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="group__string.html#gadc5cce7e8c7fd30078b9129a7ae1d74b">tlx::starts_with</a>(line, <span class="stringliteral">&quot;write_bytes: &quot;</span>)) {</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="group__tlx__string.html#gadc5cce7e8c7fd30078b9129a7ae1d74b">tlx::starts_with</a>(line, <span class="stringliteral">&quot;write_bytes: &quot;</span>)) {</div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;            <span class="keywordtype">int</span> ret = sscanf(line.data() + 13, <span class="stringliteral">&quot;%llu&quot;</span>, &amp;curr.write_bytes);</div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;            <a class="code" href="die_8hpp.html#a334b021076c0dff0e3964c6819774ceb">die_unequal</a>(1, ret);</div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        }</div>
@@ -985,7 +985,7 @@ $(document).ready(function(){initNavTree('linux__proc__stats_8cpp_source.html','
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="trim_8hpp_html"><div class="ttname"><a href="trim_8hpp.html">trim.hpp</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1ProfileThread_html"><div class="ttname"><a href="classthrill_1_1common_1_1ProfileThread.html">thrill::common::ProfileThread</a></div><div class="ttdef"><b>Definition:</b> <a href="profile__thread_8hpp_source.html#l00032">profile_thread.hpp:32</a></div></div>
-<div class="ttc" id="group__string_html_gadc5cce7e8c7fd30078b9129a7ae1d74b"><div class="ttname"><a href="group__string.html#gadc5cce7e8c7fd30078b9129a7ae1d74b">tlx::starts_with</a></div><div class="ttdeci">bool starts_with(const std::string &amp;str, const std::string &amp;match)</div><div class="ttdoc">Checks if the given match string is located at the start of this string. </div><div class="ttdef"><b>Definition:</b> <a href="starts__with_8cpp_source.html#l00019">starts_with.cpp:19</a></div></div>
+<div class="ttc" id="group__tlx__string_html_gaef21c8a44ad85b60cee80e66ae877b9a"><div class="ttname"><a href="group__tlx__string.html#gaef21c8a44ad85b60cee80e66ae877b9a">tlx::trim</a></div><div class="ttdeci">std::string &amp; trim(std::string *str, const char *drop)</div><div class="ttdoc">Trims the given string in-place on the left and right. </div><div class="ttdef"><b>Definition:</b> <a href="trim_8cpp_source.html#l00020">trim.cpp:20</a></div></div>
 <div class="ttc" id="profile__task_8hpp_html"><div class="ttname"><a href="profile__task_8hpp.html">profile_task.hpp</a></div></div>
 <div class="ttc" id="thrill_2common_2string_8hpp_html"><div class="ttname"><a href="thrill_2common_2string_8hpp.html">string.hpp</a></div></div>
 <div class="ttc" id="thrill_2common_2logger_8hpp_html"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html">logger.hpp</a></div></div>
@@ -998,10 +998,10 @@ $(document).ready(function(){initNavTree('linux__proc__stats_8cpp_source.html','
 <div class="ttc" id="namespacethrill_1_1common_html_aaff331133b54aad7df34d8e392036243"><div class="ttname"><a href="namespacethrill_1_1common.html#aaff331133b54aad7df34d8e392036243">thrill::common::StartLinuxProcStatsProfiler</a></div><div class="ttdeci">void StartLinuxProcStatsProfiler(ProfileThread &amp;, JsonLogger &amp;)</div><div class="ttdoc">launch profiler task </div><div class="ttdef"><b>Definition:</b> <a href="linux__proc__stats_8cpp_source.html#l00859">linux_proc_stats.cpp:859</a></div></div>
 <div class="ttc" id="namespacethrill_1_1mem_html_a5568fe0d00a794e5f063e9fe040bc07f"><div class="ttname"><a href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">thrill::mem::string</a></div><div class="ttdeci">std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt; string</div><div class="ttdoc">string with Manager tracking </div><div class="ttdef"><b>Definition:</b> <a href="allocator_8hpp_source.html#l00220">allocator.hpp:220</a></div></div>
 <div class="ttc" id="wavelet__tree2_8cpp_html_a6b72e54baf646b08b4b87f987f583dcb"><div class="ttname"><a href="wavelet__tree2_8cpp.html#a6b72e54baf646b08b4b87f987f583dcb">debug</a></div><div class="ttdeci">static constexpr bool debug</div><div class="ttdef"><b>Definition:</b> <a href="wavelet__tree2_8cpp_source.html#l00034">wavelet_tree2.cpp:34</a></div></div>
-<div class="ttc" id="group__string_html_gaef21c8a44ad85b60cee80e66ae877b9a"><div class="ttname"><a href="group__string.html#gaef21c8a44ad85b60cee80e66ae877b9a">tlx::trim</a></div><div class="ttdeci">std::string &amp; trim(std::string *str, const char *drop)</div><div class="ttdoc">Trims the given string in-place on the left and right. </div><div class="ttdef"><b>Definition:</b> <a href="trim_8cpp_source.html#l00020">trim.cpp:20</a></div></div>
 <div class="ttc" id="string__view_8hpp_html"><div class="ttname"><a href="string__view_8hpp.html">string_view.hpp</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1JsonLogger_html"><div class="ttname"><a href="classthrill_1_1common_1_1JsonLogger.html">thrill::common::JsonLogger</a></div><div class="ttdoc">JsonLogger is a receiver of JSON output objects for logging. </div><div class="ttdef"><b>Definition:</b> <a href="json__logger_8hpp_source.html#l00069">json_logger.hpp:69</a></div></div>
 <div class="ttc" id="json__logger_8hpp_html"><div class="ttname"><a href="json__logger_8hpp.html">json_logger.hpp</a></div></div>
+<div class="ttc" id="group__tlx__string_html_gadc5cce7e8c7fd30078b9129a7ae1d74b"><div class="ttname"><a href="group__tlx__string.html#gadc5cce7e8c7fd30078b9129a7ae1d74b">tlx::starts_with</a></div><div class="ttdeci">bool starts_with(const std::string &amp;str, const std::string &amp;match)</div><div class="ttdoc">Checks if the given match string is located at the start of this string. </div><div class="ttdef"><b>Definition:</b> <a href="starts__with_8cpp_source.html#l00019">starts_with.cpp:19</a></div></div>
 <div class="ttc" id="die_8hpp_html"><div class="ttname"><a href="die_8hpp.html">die.hpp</a></div></div>
 <div class="ttc" id="starts__with_8hpp_html"><div class="ttname"><a href="starts__with_8hpp.html">starts_with.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -1010,7 +1010,7 @@ $(document).ready(function(){initNavTree('linux__proc__stats_8cpp_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_19de9a7cb0ad0c6b03f8c7369b4f5139.html">common</a></li><li class="navelem"><a class="el" href="linux__proc__stats_8cpp.html">linux_proc_stats.cpp</a></li>
-    <li class="footer">Generated on Tue Oct 10 2017 17:56:48 for Thrill by
+    <li class="footer">Generated on Tue Oct 10 2017 21:39:53 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

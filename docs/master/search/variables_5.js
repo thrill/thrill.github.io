@@ -17,7 +17,7 @@ var searchData=
   ['first_5fblock_5f',['first_block_',['../classthrill_1_1data_1_1KeepFileBlockSource.html#a97e544147c2daf55847e65106d88e073',1,'thrill::data::KeepFileBlockSource']]],
   ['first_5fcall_5f',['first_call_',['../classthrill_1_1core_1_1GolombBitStreamWriter.html#ab880637c5a949c598e765244ccc84937',1,'thrill::core::GolombBitStreamWriter::first_call_()'],['../classthrill_1_1core_1_1GolombBitStreamReader.html#ab880637c5a949c598e765244ccc84937',1,'thrill::core::GolombBitStreamReader::first_call_()']]],
   ['first_5fflash',['first_flash',['../classthrill_1_1io_1_1Config.html#a0e03480ec4caf195c0751a9a709c354f',1,'thrill::io::Config']]],
-  ['first_5finsert_5f',['first_insert_',['../classtlx_1_1LoserTreeCopyBase.html#a9cb25c1f5af5b7e4b1f12623a71c41dd',1,'tlx::LoserTreeCopyBase']]],
+  ['first_5finsert_5f',['first_insert_',['../group__tlx__data__structures__loser__tree.html#ga9cb25c1f5af5b7e4b1f12623a71c41dd',1,'tlx::LoserTreeCopyBase']]],
   ['first_5fitem',['first_item',['../classthrill_1_1data_1_1MultiplexerHeader.html#acf93eef127581ab72f45add4d7975688',1,'thrill::data::MultiplexerHeader']]],
   ['first_5fitem_5f',['first_item_',['../classthrill_1_1data_1_1Block.html#a38c3909097ceee00f83ead8db69f4a04',1,'thrill::data::Block::first_item_()'],['../classthrill_1_1data_1_1KeepFileBlockSource.html#a38c3909097ceee00f83ead8db69f4a04',1,'thrill::data::KeepFileBlockSource::first_item_()']]],
   ['first_5foffset_5f',['first_offset_',['../classthrill_1_1data_1_1BlockWriter.html#ab37780d7837b5899eebe45b14bf2700e',1,'thrill::data::BlockWriter']]],
