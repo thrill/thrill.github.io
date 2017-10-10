@@ -1,9 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"classthrill_1_1net_1_1Group.html#aa4353a70aa1445bdddc43dbcdc3f4a20":[1,1,2,20,33],
-"classthrill_1_1net_1_1Group.html#aa8caaea724866aa046620b91be107988":[1,1,2,20,82],
-"classthrill_1_1net_1_1Group.html#aacb6d0e5e6d570cdc2b0da14c3921ff0":[1,1,2,20,63],
-"classthrill_1_1net_1_1Group.html#aad3556c6507e423b1a48d1cbb162d958":[1,1,2,20,99],
 "classthrill_1_1net_1_1Group.html#ab13ea386dfdb55ec3fd0a07896cf1781":[1,1,2,20,95],
 "classthrill_1_1net_1_1Group.html#ab2ccc095711907f6ffc74b5872403c9a":[1,1,2,20,60],
 "classthrill_1_1net_1_1Group.html#abad616bfb2786d54b58a08e432917581":[1,1,2,20,39],
@@ -249,5 +245,9 @@ var NAVTREEINDEX16 =
 "classthrill_1_1net_1_1tcp_1_1Group.html#acdbdbe4c2b6fd1fbe6ac2d899baecf99":[1,1,2,1,1,2],
 "classthrill_1_1net_1_1tcp_1_1IPv4Address.html":[1,1,2,1,2],
 "classthrill_1_1net_1_1tcp_1_1IPv4Address.html#a22d9097e59c6ff1575c8f96fc797bf1b":[1,1,2,1,2,4],
-"classthrill_1_1net_1_1tcp_1_1IPv4Address.html#a2ae8bd823f6d9682594178b4ddf9245b":[1,1,2,1,2,1]
+"classthrill_1_1net_1_1tcp_1_1IPv4Address.html#a2ae8bd823f6d9682594178b4ddf9245b":[1,1,2,1,2,1],
+"classthrill_1_1net_1_1tcp_1_1IPv4Address.html#a30ffc59a4683393670d5c497f300a80e":[1,1,2,1,2,5],
+"classthrill_1_1net_1_1tcp_1_1IPv4Address.html#a8c3f7200d84768417fa565c96e5dfcd6":[1,1,2,1,2,3],
+"classthrill_1_1net_1_1tcp_1_1IPv4Address.html#a912a52d7d11161f6811002d67c79f93b":[1,1,2,1,2,0],
+"classthrill_1_1net_1_1tcp_1_1IPv4Address.html#af0490c358dcccf550a64b73f8f0ba2dc":[1,1,2,1,2,2]
 };

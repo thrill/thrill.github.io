@@ -1,9 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"classthrill_1_1core_1_1DefaultReduceConfig.html#ab7720884640646dadf204801b9b8ff6b":[3,0,3,2,4,1],
-"classthrill_1_1core_1_1DefaultReduceConfig.html#acf027a5129f577575157181ac1007fbc":[3,0,3,2,4,6],
-"classthrill_1_1core_1_1DefaultReduceConfig.html#ad5cbd7d497b3933f17c69f5d71f6bec7":[3,0,3,2,4,8],
-"classthrill_1_1core_1_1DefaultReduceConfig.html#adfbde11ebaa1a20bcb45880be66d80af":[3,0,3,2,4,2],
 "classthrill_1_1core_1_1DefaultReduceConfigSelect.html":[3,0,3,2,5],
 "classthrill_1_1core_1_1DefaultReduceConfigSelect.html#acf027a5129f577575157181ac1007fbc":[3,0,3,2,5,0],
 "classthrill_1_1core_1_1DeltaStreamReader.html":[3,0,3,2,6],
@@ -249,5 +245,9 @@ var NAVTREEINDEX7 =
 "classthrill_1_1core_1_1ReduceOldProbingHashTable.html#af0b9a01be4be91b78045639dacbf62ae":[3,0,3,2,22,12],
 "classthrill_1_1core_1_1ReducePostPhaseEmitter.html":[3,0,3,2,23],
 "classthrill_1_1core_1_1ReducePostPhaseEmitter.html#a1eb412b828042cb457ebc97d4d7c8d41":[3,0,3,2,23,1],
-"classthrill_1_1core_1_1ReducePostPhaseEmitter.html#aafc0c2cb6fda031a6f4d6eb002110bbd":[3,0,3,2,23,0]
+"classthrill_1_1core_1_1ReducePostPhaseEmitter.html#aafc0c2cb6fda031a6f4d6eb002110bbd":[3,0,3,2,23,0],
+"classthrill_1_1core_1_1ReducePostPhaseEmitter.html#ac542472b062872744ab49551f4bdac21":[3,0,3,2,23,2],
+"classthrill_1_1core_1_1ReducePostPhaseEmitter.html#ace47485e4dbd6106a4a7b7854cff4e2b":[3,0,3,2,23,3],
+"classthrill_1_1core_1_1ReducePrePhase.html":[3,0,3,2,24],
+"classthrill_1_1core_1_1ReducePrePhaseEmitter.html":[3,0,3,2,27]
 };

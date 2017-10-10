@@ -1,9 +1,5 @@
 var NAVTREEINDEX32 =
 {
-"structtlx_1_1is__std__tuple.html":[1,3,8],
-"structtlx_1_1is__std__tuple_3_01std_1_1tuple_3_01Ts_8_8_8_4_01_4.html":[1,3,9],
-"structtlx_1_1is__std__vector.html":[1,3,10],
-"structtlx_1_1is__std__vector_3_01std_1_1vector_3_01T_01_4_01_4.html":[1,3,11],
 "structtlx_1_1make__index__sequence.html":[1,3,18],
 "style_guide.html":[0,3],
 "suffix__sorting_2UNFINISHED.html":[4,0,1,8,16],
@@ -105,6 +101,7 @@ var NAVTREEINDEX32 =
 "thrill_2common_2math_8hpp.html#a03740020dbf231c2a0e25b6f9d136c5b":[4,0,3,1,18,2],
 "thrill_2common_2math_8hpp.html#a4a71679aae588f0f9374d9926f4523f4":[4,0,3,1,18,1],
 "thrill_2common_2math_8hpp.html#a4e3b8d2e0783a45ae26296d6c2e52b4a":[4,0,3,1,18,3],
+"thrill_2common_2math_8hpp.html#a578ddd3969aff87884a23fd90cc0bab4":[4,0,3,1,18,6],
 "thrill_2common_2math_8hpp.html#a9ded99b4e984c22c881dcface67e6737":[4,0,3,1,18,4],
 "thrill_2common_2math_8hpp.html#adaf82fb9e3a858245cf0354aaf50b6da":[4,0,3,1,18,5],
 "thrill_2common_2math_8hpp_source.html":[4,0,3,1,18],
@@ -249,5 +246,8 @@ var NAVTREEINDEX32 =
 "uint__types_8hpp.html#aa8cefeaf73ed55f25567a5f582e0dc47":[4,0,3,1,39,5],
 "uint__types_8hpp.html#ab54c9c3cffe0f8c6912f042cbc132404":[4,0,3,1,39,3],
 "uint__types_8hpp_source.html":[4,0,3,1,39],
-"union_8hpp.html":[4,0,3,0,39]
+"union_8hpp.html":[4,0,3,0,39],
+"union_8hpp.html#a953a399aef85c8361ab0c0ed4d8e5ea6":[4,0,3,0,39,1],
+"union_8hpp.html#ga1ad6d6f5862636d832c0407ea54f9862":[4,0,3,0,39,2],
+"union_8hpp.html#ga1e2637cf64a85693667e15a974f445a3":[4,0,3,0,39,4]
 };

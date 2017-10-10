@@ -315,7 +315,7 @@ var group__net__layer =
       [ "busy_", "classthrill_1_1net_1_1DispatcherThread.html#adfcd78f9dff4691756c19c63ddb5051f", null ],
       [ "debug", "classthrill_1_1net_1_1DispatcherThread.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
       [ "dispatcher_", "classthrill_1_1net_1_1DispatcherThread.html#a2dcf27e703f51830f0127ee586783339", null ],
-      [ "jobqueue_", "classthrill_1_1net_1_1DispatcherThread.html#a50a18438c62c6fe45bb666a8884be52c", null ],
+      [ "jobqueue_", "classthrill_1_1net_1_1DispatcherThread.html#ae2a41cda156e8904c10af4f03dc12774", null ],
       [ "mem_manager_", "classthrill_1_1net_1_1DispatcherThread.html#af7d5d1c0f4721f2f1615e90ee0e8e074", null ],
       [ "name_", "classthrill_1_1net_1_1DispatcherThread.html#a1f9967fc0d566265d6e9162bb77959bd", null ],
       [ "terminate_", "classthrill_1_1net_1_1DispatcherThread.html#a5c7c161ce42f7ccc3184d9bec18fa969", null ],

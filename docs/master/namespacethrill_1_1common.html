@@ -215,10 +215,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized noop functor which returns a void.  <a href="structthrill_1_1common_1_1NoOperation_3_01void_01_4.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1OurConcurrentBoundedQueue.html">OurConcurrentBoundedQueue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a queue, similar to std::queue and tbb::concurrent_bounded_queue, except that it uses mutexes for synchronization.  <a href="classthrill_1_1common_1_1OurConcurrentBoundedQueue.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a synchronized queue, similar to std::queue and moodycamel's BlockingConcurrentQueue, except that it uses mutexes for synchronization.  <a href="classthrill_1_1common_1_1OurConcurrentBoundedQueue.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html">OurConcurrentQueue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a queue, similar to std::queue and tbb::concurrent_queue, except that it uses mutexes for synchronization.  <a href="classthrill_1_1common_1_1OurConcurrentQueue.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a synchronized queue, similar to std::queue and moodycamel's concurrent_queue, except that it uses mutexes for synchronization.  <a href="classthrill_1_1common_1_1OurConcurrentQueue.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ProfileTask.html">ProfileTask</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,12 +303,12 @@ Typedefs</h2></td></tr>
 <tr class="memitem:abe374ed5846e201b7d1b543626d0c0e1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#abe374ed5846e201b7d1b543626d0c0e1">Array</a> = Type[]</td></tr>
 <tr class="memdesc:abe374ed5846e201b7d1b543626d0c0e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template to make writing temporary arrays easy: Array&lt;int&gt;{ 1, 2, 3 }.  <a href="#abe374ed5846e201b7d1b543626d0c0e1">More...</a><br/></td></tr>
 <tr class="separator:abe374ed5846e201b7d1b543626d0c0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10374cf53d327fcf2ca319487ca56bae"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a10374cf53d327fcf2ca319487ca56bae"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a10374cf53d327fcf2ca319487ca56bae">ConcurrentBoundedQueue</a> = <a class="el" href="classthrill_1_1common_1_1OurConcurrentBoundedQueue.html">OurConcurrentBoundedQueue</a>&lt; <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &gt;</td></tr>
-<tr class="separator:a10374cf53d327fcf2ca319487ca56bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3036130ba042e85595aa12e63d69782e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Allocator &gt; </td></tr>
-<tr class="memitem:a3036130ba042e85595aa12e63d69782e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a3036130ba042e85595aa12e63d69782e">ConcurrentQueue</a> = <a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html">OurConcurrentQueue</a>&lt; <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>, Allocator &gt;</td></tr>
-<tr class="separator:a3036130ba042e85595aa12e63d69782e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072a0e9f497a07f024f03d35c9991a9f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a072a0e9f497a07f024f03d35c9991a9f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a072a0e9f497a07f024f03d35c9991a9f">ConcurrentBoundedQueue</a> = moodycamel::BlockingConcurrentQueue&lt; <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &gt;</td></tr>
+<tr class="separator:a072a0e9f497a07f024f03d35c9991a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac36e18da1b454272be0e6319da62d084"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac36e18da1b454272be0e6319da62d084"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#ac36e18da1b454272be0e6319da62d084">ConcurrentQueue</a> = moodycamel::ConcurrentQueue&lt; <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &gt;</td></tr>
+<tr class="separator:ac36e18da1b454272be0e6319da62d084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd1bdb8c074c4a6b9a1ccd618b6238bf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#acd1bdb8c074c4a6b9a1ccd618b6238bf">FakeStatsTimer</a> = <a class="el" href="classthrill_1_1common_1_1StatsTimerBase.html">StatsTimerBase</a>&lt; false &gt;</td></tr>
 <tr class="separator:acd1bdb8c074c4a6b9a1ccd618b6238bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7468c3022e87e889ac363a409d44d165"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a7468c3022e87e889ac363a409d44d165">FakeStatsTimerStart</a> = <a class="el" href="classthrill_1_1common_1_1StatsTimerBaseStarted.html">StatsTimerBaseStarted</a>&lt; false &gt;</td></tr>
@@ -375,6 +375,8 @@ Functions</h2></td></tr>
 <tr class="separator:a9ded99b4e984c22c881dcface67e6737"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaf82fb9e3a858245cf0354aaf50b6da"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classthrill_1_1common_1_1Range.html">Range</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#adaf82fb9e3a858245cf0354aaf50b6da">CalculateLocalRange</a> (size_t global_size, size_t p, size_t i)</td></tr>
 <tr class="separator:adaf82fb9e3a858245cf0354aaf50b6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a578ddd3969aff87884a23fd90cc0bab4"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a578ddd3969aff87884a23fd90cc0bab4">CalculatePartition</a> (size_t global_size, size_t p, size_t k)</td></tr>
+<tr class="separator:a578ddd3969aff87884a23fd90cc0bab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ebddc85074876484ebbb5b3a0198e0a"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a7ebddc85074876484ebbb5b3a0198e0a">crc32_slicing_by_8</a> (uint32_t crc, const void *data, size_t length)</td></tr>
 <tr class="separator:a7ebddc85074876484ebbb5b3a0198e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2744bf429da7b68993e59e9c65df7c72"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
@@ -677,31 +679,31 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a10374cf53d327fcf2ca319487ca56bae"></a>
+<a class="anchor" id="a072a0e9f497a07f024f03d35c9991a9f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacethrill_1_1common.html#a10374cf53d327fcf2ca319487ca56bae">ConcurrentBoundedQueue</a> =  <a class="el" href="classthrill_1_1common_1_1OurConcurrentBoundedQueue.html">OurConcurrentBoundedQueue</a>&lt;<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&gt;</td>
+          <td class="memname">using <a class="el" href="namespacethrill_1_1common.html#a072a0e9f497a07f024f03d35c9991a9f">ConcurrentBoundedQueue</a> =  moodycamel::BlockingConcurrentQueue&lt;<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="concurrent__bounded__queue_8hpp_source.html#l00172">172</a> of file <a class="el" href="concurrent__bounded__queue_8hpp_source.html">concurrent_bounded_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="concurrent__bounded__queue_8hpp_source.html#l00128">128</a> of file <a class="el" href="concurrent__bounded__queue_8hpp_source.html">concurrent_bounded_queue.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3036130ba042e85595aa12e63d69782e"></a>
+<a class="anchor" id="ac36e18da1b454272be0e6319da62d084"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespacethrill_1_1common.html#a3036130ba042e85595aa12e63d69782e">ConcurrentQueue</a> =  <a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html">OurConcurrentQueue</a>&lt;<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>, Allocator&gt;</td>
+          <td class="memname">using <a class="el" href="namespacethrill_1_1common.html#ac36e18da1b454272be0e6319da62d084">ConcurrentQueue</a> =  moodycamel::ConcurrentQueue&lt;<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00127">127</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00091">91</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -1083,9 +1085,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>peer processor in this round </dd></dl>
 
-<p>Definition at line <a class="el" href="thrill_2common_2math_8hpp_source.html#l00110">110</a> of file <a class="el" href="thrill_2common_2math_8hpp_source.html">math.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2common_2math_8hpp_source.html#l00118">118</a> of file <a class="el" href="thrill_2common_2math_8hpp_source.html">math.hpp</a>.</p>
 
-<p>References <a class="el" href="thrill_2common_2math_8hpp_source.html#l00097">CalcOneFactorSize()</a>.</p>
+<p>References <a class="el" href="thrill_2common_2math_8hpp_source.html#l00105">CalcOneFactorSize()</a>.</p>
 
 <p>Referenced by <a class="el" href="group_8hpp_source.html#l00092">Group::OneFactorPeer()</a>.</p>
 
@@ -1115,9 +1117,9 @@ Variables</h2></td></tr>
 
 <p>Number of rounds in Perfect Matching (1-Factor). </p>
 
-<p>Definition at line <a class="el" href="thrill_2common_2math_8hpp_source.html#l00097">97</a> of file <a class="el" href="thrill_2common_2math_8hpp_source.html">math.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2common_2math_8hpp_source.html#l00105">105</a> of file <a class="el" href="thrill_2common_2math_8hpp_source.html">math.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2common_2math_8hpp_source.html#l00110">CalcOneFactorPeer()</a>, and <a class="el" href="group_8hpp_source.html#l00086">Group::OneFactorSize()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2common_2math_8hpp_source.html#l00118">CalcOneFactorPeer()</a>, and <a class="el" href="group_8hpp_source.html#l00086">Group::OneFactorSize()</a>.</p>
 
 </div>
 </div>
@@ -1160,11 +1162,55 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>given a global range [0,global_size) and p PEs to split the range, calculate the [local_begin,local_end) index range assigned to the PE i. </p>
 
-<p>Definition at line <a class="el" href="thrill_2common_2math_8hpp_source.html#l00081">81</a> of file <a class="el" href="thrill_2common_2math_8hpp_source.html">math.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2common_2math_8hpp_source.html#l00088">88</a> of file <a class="el" href="thrill_2common_2math_8hpp_source.html">math.hpp</a>.</p>
 
-<p>References <a class="el" href="functional_8hpp_source.html#l00059">min()</a>.</p>
+<p>References <a class="el" href="thrill_2common_2math_8hpp_source.html#l00069">Range::Partition()</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00341">Context::CalculateLocalRange()</a>, <a class="el" href="context_8hpp_source.html#l00346">Context::CalculateLocalRangeOnHost()</a>, <a class="el" href="distribute_8hpp_source.html#l00054">DistributeNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="duplicate__detection_8hpp_source.html#l00074">DuplicateDetection::WriteEncodedHashes()</a>, and <a class="el" href="location__detection_8hpp_source.html#l00116">LocationDetection&lt; thrill::api::JoinNode::HashCount &gt;::WriteOccurenceCounts()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00341">Context::CalculateLocalRange()</a>, <a class="el" href="context_8hpp_source.html#l00346">Context::CalculateLocalRangeOnHost()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00093">CalculatePartition()</a>, <a class="el" href="distribute_8hpp_source.html#l00054">DistributeNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="duplicate__detection_8hpp_source.html#l00074">DuplicateDetection::WriteEncodedHashes()</a>, and <a class="el" href="location__detection_8hpp_source.html#l00116">LocationDetection&lt; thrill::api::JoinNode::HashCount &gt;::WriteOccurenceCounts()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a578ddd3969aff87884a23fd90cc0bab4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static size_t thrill::common::CalculatePartition </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>global_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="thrill_2common_2math_8hpp_source.html#l00093">93</a> of file <a class="el" href="thrill_2common_2math_8hpp_source.html">math.hpp</a>.</p>
+
+<p>References <a class="el" href="thrill_2common_2math_8hpp_source.html#l00088">CalculateLocalRange()</a>.</p>
 
 </div>
 </div>
@@ -1890,7 +1936,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="functional_8hpp_source.html#l00059">59</a> of file <a class="el" href="functional_8hpp_source.html">functional.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="aggregate_8hpp_source.html#l00046">Aggregate&lt; Type_ &gt;::Add()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00081">CalculateLocalRange()</a>, <a class="el" href="union_8hpp_source.html#l00269">UnionNode&lt; ValueType &gt;::consume_counter()</a>, <a class="el" href="zip_8hpp_source.html#l00260">ZipNode&lt; ValueType, ZipFunction, Pad, UnequalCheck, NoRebalance, kNumInputs &gt;::DoScatter()</a>, <a class="el" href="zip__window_8hpp_source.html#l00354">ZipWindowNode&lt; ValueType, ZipFunction_, Pad_, UnequalCheck, UseStdArray, kNumInputs_ &gt;::DoScatter()</a>, <a class="el" href="window_8hpp_source.html#l00165">OverlapWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::Execute()</a>, <a class="el" href="concat_8hpp_source.html#l00189">ConcatNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="window_8hpp_source.html#l00410">DisjointWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::Execute()</a>, <a class="el" href="reduce__probing__hash__table_8hpp_source.html#l00338">ReduceProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::GrowPartition()</a>, <a class="el" href="reduce__probing__hash__table_8hpp_source.html#l00110">ReduceProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::Initialize()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00046">Range::Invalid()</a>, <a class="el" href="uint__types_8hpp_source.html#l00294">numeric_limits&lt; thrill::common::UIntPair&lt; HighType &gt; &gt;::lowest()</a>, <a class="el" href="uint__types_8hpp_source.html#l00244">UIntPair&lt; High_ &gt;::min()</a>, <a class="el" href="uint__types_8hpp_source.html#l00286">numeric_limits&lt; thrill::common::UIntPair&lt; HighType &gt; &gt;::min()</a>, <a class="el" href="read__binary_8hpp_source.html#l00290">ReadBinaryNode&lt; ValueType &gt;::FileBlockSource::NextBlock()</a>, <a class="el" href="functional_8hpp_source.html#l00144">ComponentSum&lt; std::vector&lt; Type &gt;, Operation &gt;::operator()()</a>, <a class="el" href="aggregate_8hpp_source.html#l00099">Aggregate&lt; Type_ &gt;::operator+()</a>, <a class="el" href="aggregate_8hpp_source.html#l00111">Aggregate&lt; Type_ &gt;::operator+=()</a>, <a class="el" href="stochastic__gradient__descent__run_8cpp_source.html#l00032">OutputSVG()</a>, <a class="el" href="examples_2select_2select_8hpp_source.html#l00044">examples::select::PickPivots()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00530">FlowControlChannel::Predecessor()</a>, <a class="el" href="context_8hpp_source.html#l00354">Context::PrintCollectiveMeanStdev()</a>, <a class="el" href="read__binary_8hpp_source.html#l00076">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>, and <a class="el" href="simple__vector_8hpp_source.html#l00160">SimpleVector&lt; std::thread &gt;::resize()</a>.</p>
+<p>Referenced by <a class="el" href="aggregate_8hpp_source.html#l00046">Aggregate&lt; Type_ &gt;::Add()</a>, <a class="el" href="union_8hpp_source.html#l00269">UnionNode&lt; ValueType &gt;::consume_counter()</a>, <a class="el" href="zip_8hpp_source.html#l00260">ZipNode&lt; ValueType, ZipFunction, Pad, UnequalCheck, NoRebalance, kNumInputs &gt;::DoScatter()</a>, <a class="el" href="zip__window_8hpp_source.html#l00354">ZipWindowNode&lt; ValueType, ZipFunction_, Pad_, UnequalCheck, UseStdArray, kNumInputs_ &gt;::DoScatter()</a>, <a class="el" href="window_8hpp_source.html#l00165">OverlapWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::Execute()</a>, <a class="el" href="concat_8hpp_source.html#l00189">ConcatNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="window_8hpp_source.html#l00410">DisjointWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::Execute()</a>, <a class="el" href="reduce__probing__hash__table_8hpp_source.html#l00338">ReduceProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::GrowPartition()</a>, <a class="el" href="reduce__probing__hash__table_8hpp_source.html#l00110">ReduceProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::Initialize()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00046">Range::Invalid()</a>, <a class="el" href="uint__types_8hpp_source.html#l00294">numeric_limits&lt; thrill::common::UIntPair&lt; HighType &gt; &gt;::lowest()</a>, <a class="el" href="uint__types_8hpp_source.html#l00244">UIntPair&lt; High_ &gt;::min()</a>, <a class="el" href="uint__types_8hpp_source.html#l00286">numeric_limits&lt; thrill::common::UIntPair&lt; HighType &gt; &gt;::min()</a>, <a class="el" href="read__binary_8hpp_source.html#l00290">ReadBinaryNode&lt; ValueType &gt;::FileBlockSource::NextBlock()</a>, <a class="el" href="functional_8hpp_source.html#l00144">ComponentSum&lt; std::vector&lt; Type &gt;, Operation &gt;::operator()()</a>, <a class="el" href="aggregate_8hpp_source.html#l00099">Aggregate&lt; Type_ &gt;::operator+()</a>, <a class="el" href="aggregate_8hpp_source.html#l00111">Aggregate&lt; Type_ &gt;::operator+=()</a>, <a class="el" href="stochastic__gradient__descent__run_8cpp_source.html#l00032">OutputSVG()</a>, <a class="el" href="examples_2select_2select_8hpp_source.html#l00044">examples::select::PickPivots()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00530">FlowControlChannel::Predecessor()</a>, <a class="el" href="context_8hpp_source.html#l00354">Context::PrintCollectiveMeanStdev()</a>, <a class="el" href="read__binary_8hpp_source.html#l00076">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>, and <a class="el" href="simple__vector_8hpp_source.html#l00160">SimpleVector&lt; std::thread &gt;::resize()</a>.</p>
 
 </div>
 </div>
@@ -4436,7 +4482,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1common.html">common</a></li>
-    <li class="footer">Generated on Tue Oct 10 2017 16:05:59 for Thrill by
+    <li class="footer">Generated on Tue Oct 10 2017 17:05:47 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
