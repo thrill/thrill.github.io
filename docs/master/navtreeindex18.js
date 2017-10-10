@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"classtlx_1_1CmdlineParser.html#aa18f4b9d44ff5d27735d64404800275a":[3,0,4,2,7],
 "classtlx_1_1CmdlineParser.html#aa3043d75fbba1248c7d858a761e98ebe":[3,0,4,2,2],
 "classtlx_1_1CmdlineParser.html#aa5218cff8cc5f9ca440dee1bb499b6b3":[3,0,4,2,36],
 "classtlx_1_1CmdlineParser.html#aa7f8d1e0d8d54c8c52c9f6199b23573c":[3,0,4,2,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "classtlx_1_1LoserTreePointerUnguarded_3_01true_00_01ValueType_00_01Comparator_01_4.html#a662020d2414024ea935bf7fc67423d26":[3,0,4,36,3],
 "classtlx_1_1LoserTreePointerUnguarded_3_01true_00_01ValueType_00_01Comparator_01_4.html#ab5fcec817a4a7cca2287696c3d8151e6":[3,0,4,36,1],
 "classtlx_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html":[3,0,4,33],
-"classtlx_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html#a071fda465da2cd47c848c51e802635ed":[3,0,4,33,0],
-"classtlx_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html#a45e849c0b6c9d347cbedcbec2374c40b":[3,0,4,33,2]
+"classtlx_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html#a071fda465da2cd47c848c51e802635ed":[3,0,4,33,0]
 };

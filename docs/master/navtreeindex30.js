@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"split_8cpp.html#ga4997fcbeb1c6a97d23bce8ea590b3ce3":[4,0,2,0,0,3,37,10],
 "split_8cpp.html#ga4aa7e0fb9bd81e31214087d3d85367a3":[4,0,2,0,0,3,37,12],
 "split_8cpp.html#ga4fb56b145f00428be03f74257c61f1cc":[4,0,2,0,0,3,37,0],
 "split_8cpp.html#ga7a0a5d581ecd362eaae43bdee50b3896":[4,0,2,0,0,3,37,5],
@@ -140,8 +141,8 @@ var NAVTREEINDEX30 =
 "structexamples_1_1suffix__sorting_1_1IndexFlag.html#a8b3ab54ed3e81c69863d65e4e6c424a0":[3,0,0,6,3,1],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html":[3,0,0,6,4],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a0594e9f341a41ec7622edddb13e52dfb":[3,0,0,6,4,4],
-"structexamples_1_1suffix__sorting_1_1IndexRank.html#a4d77b3fb48833ee41178f27ba47560c8":[3,0,0,6,4,1],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a4d77b3fb48833ee41178f27ba47560c8":[3,0,0,6,4,2],
+"structexamples_1_1suffix__sorting_1_1IndexRank.html#a4d77b3fb48833ee41178f27ba47560c8":[3,0,0,6,4,1],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a5d5b22eb77c392277e53ecec6b85cf2d":[3,0,0,6,4,0],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a7875de9269063a44a5480b1c0c530a84":[3,0,0,6,4,3],
 "structexamples_1_1suffix__sorting_1_1IndexRankFlag.html":[3,0,0,6,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX30 =
 "structthrill_1_1common_1_1HashDataSwitch.html":[3,0,3,1,13],
 "structthrill_1_1common_1_1HashDataSwitch.html#aeff456312744f42e4934d800806ad6bc":[3,0,3,1,13,1],
 "structthrill_1_1common_1_1HashDataSwitch.html#afa5343e9b438fbd2207dfead9a8697f4":[3,0,3,1,13,0],
-"structthrill_1_1common_1_1HashDataSwitch_3_01std_1_1string_01_4.html":[3,0,3,1,14],
-"structthrill_1_1common_1_1HashDataSwitch_3_01std_1_1string_01_4.html#a96a19d72119f1ccfb880abd843f9a23a":[3,0,3,1,14,1]
+"structthrill_1_1common_1_1HashDataSwitch_3_01std_1_1string_01_4.html":[3,0,3,1,14]
 };

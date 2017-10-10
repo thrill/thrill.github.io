@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"classthrill_1_1mem_1_1FixedAllocator.html#acc49e799fff83ac0952614d5e36b3237":[3,0,3,5,5,12],
 "classthrill_1_1mem_1_1FixedAllocator.html#ace405568d0b2f3fad4990044252c7732":[3,0,3,5,5,3],
 "classthrill_1_1mem_1_1FixedAllocator.html#ad8acb4ffc2764058760aba90739a73c1":[3,0,3,5,5,17],
 "classthrill_1_1mem_1_1FixedAllocator.html#af0f70ef64d23e2379bacb63968e68b45":[3,0,3,5,5,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "classthrill_1_1net_1_1BufferReader.html#a03bfe94f8b7daa666c69bfcb5dd9c168":[1,1,2,11,16],
 "classthrill_1_1net_1_1BufferReader.html#a052660c8e81a900f5360a34ef7934920":[1,1,2,11,14],
 "classthrill_1_1net_1_1BufferReader.html#a055d87b78f69c9d039b7e12ead7aa6b6":[1,1,2,11,11],
-"classthrill_1_1net_1_1BufferReader.html#a24b722211a6596c0284359f7f1d1e3c4":[1,1,2,11,1],
-"classthrill_1_1net_1_1BufferReader.html#a2ef90b24a2f3db0cf4d34e31c2f6900a":[1,1,2,11,5]
+"classthrill_1_1net_1_1BufferReader.html#a24b722211a6596c0284359f7f1d1e3c4":[1,1,2,11,1]
 };

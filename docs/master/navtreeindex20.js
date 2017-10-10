@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"concurrent__queue_8hpp.html#a3036130ba042e85595aa12e63d69782e":[4,0,3,1,4,2],
 "concurrent__queue_8hpp.html#a49d75c267736693a8963d1cc80a4a12a":[4,0,3,1,4,1],
 "concurrent__queue_8hpp_source.html":[4,0,3,1,4],
 "config_8hpp.html":[4,0,3,1,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "dir_d28a4824dc47e487b107a5db32ef43c4.html":[4,0,1],
 "dir_d4e83805c7df9bb812106585527f7df7.html":[4,0,1,8],
 "dir_d7df49b8551b26abf00a79fbe49bfb8c.html":[4,0,3,6,0],
-"dir_e68e8157741866f444e17edd764ebbae.html":[4,0,0],
-"dir_f7b0de8c3d782e26ade9f6887f66b75e.html":[4,0,1,13]
+"dir_e68e8157741866f444e17edd764ebbae.html":[4,0,0]
 };
