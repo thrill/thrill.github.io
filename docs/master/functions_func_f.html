@@ -265,7 +265,7 @@ $(document).ready(function(){initNavTree('functions_func_f.html','');});
 <li>Flush()
 : <a class="el" href="classthrill_1_1core_1_1LocationDetection.html#aa576a3cac2f4dbf6de7a018f95739230">LocationDetection&lt; HashCount &gt;</a>
 , <a class="el" href="classthrill_1_1core_1_1ReduceByHashPostPhase.html#ac49a7c72e9041ad24bd789a3aa05b15b">ReduceByHashPostPhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;</a>
-, <a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a0e2644b2df3c228e8d71a55b60723f31">ReduceByIndexPostPhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_ &gt;</a>
+, <a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html#ac49a7c72e9041ad24bd789a3aa05b15b">ReduceByIndexPostPhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;</a>
 , <a class="el" href="classthrill_1_1core_1_1ReducePrePhaseEmitter.html#a3edd9c89ce0306bee991dc8900666003">ReducePrePhaseEmitter&lt; TableItem, VolatileKey &gt;</a>
 , <a class="el" href="classthrill_1_1data_1_1BlockWriter.html#a0e2644b2df3c228e8d71a55b60723f31">BlockWriter&lt; BlockSink &gt;</a>
 </li>
@@ -275,9 +275,6 @@ $(document).ready(function(){initNavTree('functions_func_f.html','');});
 , <a class="el" href="classthrill_1_1core_1_1ReducePrePhase_3_01TableItem_00_01Key_00_01Value_00_01KeyExtractor_00_01Rbb3cccc0d00b1797aabd08d3c850942f.html#abf1facf0039aa32e59c60d1e28145960">ReducePrePhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, ReduceConfig, IndexFunction, EqualToFunction, HashFunction, true &gt;</a>
 , <a class="el" href="classthrill_1_1core_1_1ReducePrePhase_3_01TableItem_00_01Key_00_01Value_00_01KeyExtractor_00_01R8f9089bf912627d049d4ca588d14a45c.html#abf1facf0039aa32e59c60d1e28145960">ReducePrePhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction, HashFunction, false &gt;</a>
 , <a class="el" href="classthrill_1_1core_1_1ReduceProbingHashTable.html#abf1facf0039aa32e59c60d1e28145960">ReduceProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;</a>
-</li>
-<li>FlushAndConsume()
-: <a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a0decb1342f31de0f2d02635d05f6f010">ReduceByIndexPostPhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_ &gt;</a>
 </li>
 <li>FlushBits()
 : <a class="el" href="classthrill_1_1core_1_1BitStreamWriter.html#a7c073cea2f1f10711ca0c3c8fa0ca919">BitStreamWriter&lt; BlockWriter &gt;</a>
@@ -293,6 +290,9 @@ $(document).ready(function(){initNavTree('functions_func_f.html','');});
 : <a class="el" href="classthrill_1_1core_1_1ReduceBucketHashTable.html#a2c1ccc03f5e72474f43c0c3bcee2cd66">ReduceBucketHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig, IndexFunction, KeyEqualFunction &gt;</a>
 , <a class="el" href="classthrill_1_1core_1_1ReduceOldProbingHashTable.html#a2c1ccc03f5e72474f43c0c3bcee2cd66">ReduceOldProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;</a>
 , <a class="el" href="classthrill_1_1core_1_1ReduceProbingHashTable.html#abe88e7c7866b224d45b3dc48b3a81023">ReduceProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;</a>
+</li>
+<li>FlushTableInto()
+: <a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html#aa185522c5ce4b0a7e1c2bdd4f2586319">ReduceByIndexPostPhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;</a>
 </li>
 <li>FlushVectorToFile()
 : <a class="el" href="classthrill_1_1api_1_1GroupByNode.html#a6b4bf40541e2c8488d0155533faa9350">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;</a>
@@ -334,10 +334,10 @@ $(document).ready(function(){initNavTree('functions_func_f.html','');});
 : <a class="el" href="classtlx_1_1FunctionChain.html#aca53db38c24e6b401b249d7596e7d677">FunctionChain&lt; Functors &gt;</a>
 </li>
 <li>FunctionStack()
-: <a class="el" href="classtlx_1_1FunctionStack.html#a96d244361dd64def8f02640c782f8c26">FunctionStack&lt; Input_, Functors &gt;</a>
+: <a class="el" href="classtlx_1_1FunctionStack.html#a02d3c4bcd25e82bea25394a4bf69e0d7">FunctionStack&lt; Input_, Functors &gt;</a>
 </li>
 <li>functor_caller()
-: <a class="el" href="classtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html#a3998aab84ff84dc56f415fc0c08afeaf">Delegate&lt; R(A...), Allocator &gt;</a>
+: <a class="el" href="classtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html#aab7e238270860f97f119cc36f9720f03">Delegate&lt; R(A...), Allocator &gt;</a>
 </li>
 <li>Future()
 : <a class="el" href="classthrill_1_1api_1_1Future.html#a1b37daea042de3126f386e8f157f3d83">Future&lt; ValueType &gt;</a>
@@ -349,7 +349,7 @@ $(document).ready(function(){initNavTree('functions_func_f.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Oct 10 2017 13:12:14 for Thrill by
+    <li class="footer">Generated on Tue Oct 10 2017 13:38:42 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

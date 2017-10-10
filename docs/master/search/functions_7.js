@@ -93,7 +93,6 @@ var searchData=
   ['groupbynode',['GroupByNode',['../classthrill_1_1api_1_1GroupByNode.html#a26198298fdffa0af860afe2ad582545f',1,'thrill::api::GroupByNode']]],
   ['grouptoindex',['GroupToIndex',['../group__dia__dops.html#gaf8f67e7b8ba7a85bd2391edf43da2a57',1,'thrill::api::DIA::GroupToIndex(const KeyExtractor &amp;key_extractor, const GroupByFunction &amp;groupby_function, const size_t size, const ValueOut &amp;neutral_element=ValueOut()) const '],['../classthrill_1_1api_1_1DIA.html#afaa47078cd8d80ec7375503573ee8a06',1,'thrill::api::DIA::GroupToIndex(const KeyExtractor &amp;key_extractor, const GroupFunction &amp;groupby_function, const size_t result_size, const ValueOut &amp;neutral_element) const ']]],
   ['grouptoindexnode',['GroupToIndexNode',['../classthrill_1_1api_1_1GroupToIndexNode.html#a38ae7b7ecf9620812999af692bbbf878',1,'thrill::api::GroupToIndexNode']]],
-  ['growandrehash',['GrowAndRehash',['../classthrill_1_1core_1_1ReduceProbingHashTable.html#afddc2661df92dfe5ee073e5217132a06',1,'thrill::core::ReduceProbingHashTable']]],
   ['growargvarray',['GrowArgvArray',['../classthrill_1_1vfs_1_1glob__local_1_1CSimpleGlobTempl.html#a23bcec00042ee47d1b1ebadfa9cb205e',1,'thrill::vfs::glob_local::CSimpleGlobTempl']]],
   ['growfile',['GrowFile',['../classthrill_1_1io_1_1DiskAllocator.html#ac8dd443ceda26673cbb4036c861ffdaa',1,'thrill::io::DiskAllocator']]],
   ['growpartition',['GrowPartition',['../classthrill_1_1core_1_1ReduceProbingHashTable.html#a004575962be93c714781bcbb4584559b',1,'thrill::core::ReduceProbingHashTable']]],

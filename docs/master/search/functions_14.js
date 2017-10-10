@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['table',['table',['../classthrill_1_1core_1_1ReduceByHashPostPhase.html#a75286120767dacf8496e096ce98312a6',1,'thrill::core::ReduceByHashPostPhase']]],
+  ['table',['table',['../classthrill_1_1core_1_1ReduceByHashPostPhase.html#a75286120767dacf8496e096ce98312a6',1,'thrill::core::ReduceByHashPostPhase::table()'],['../classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a75286120767dacf8496e096ce98312a6',1,'thrill::core::ReduceByIndexPostPhase::table()']]],
   ['tabulationhashing',['TabulationHashing',['../classthrill_1_1common_1_1TabulationHashing.html#a7bec2f5d3810b0b077cf438772d6439e',1,'thrill::common::TabulationHashing']]],
   ['tcp_5fconnection',['tcp_connection',['../classthrill_1_1net_1_1tcp_1_1Group.html#a19b69e9a162ca8afbea6aabbf5dbb885',1,'thrill::net::tcp::Group']]],
   ['temporarydirectory',['TemporaryDirectory',['../classthrill_1_1vfs_1_1TemporaryDirectory.html#a921e4c9a9cc3c2091d98eb86ab62182e',1,'thrill::vfs::TemporaryDirectory::TemporaryDirectory()'],['../classthrill_1_1vfs_1_1TemporaryDirectory.html#a588c7f0e691d52e4418ddf7675a69468',1,'thrill::vfs::TemporaryDirectory::TemporaryDirectory(const TemporaryDirectory &amp;)=delete']]],
-  ['terminate',['terminate',['../classtlx_1_1ThreadPool.html#a74a45d2648335936561898c390281a6a',1,'tlx::ThreadPool::terminate()'],['../classthrill_1_1net_1_1Dispatcher.html#a9b848654502024dde7e46ab002f2c9dd',1,'thrill::net::Dispatcher::Terminate()'],['../classthrill_1_1net_1_1DispatcherThread.html#a9b848654502024dde7e46ab002f2c9dd',1,'thrill::net::DispatcherThread::Terminate()']]],
+  ['terminate',['Terminate',['../classthrill_1_1net_1_1Dispatcher.html#a9b848654502024dde7e46ab002f2c9dd',1,'thrill::net::Dispatcher::Terminate()'],['../classthrill_1_1net_1_1DispatcherThread.html#a9b848654502024dde7e46ab002f2c9dd',1,'thrill::net::DispatcherThread::Terminate()'],['../classtlx_1_1ThreadPool.html#a74a45d2648335936561898c390281a6a',1,'tlx::ThreadPool::terminate()']]],
   ['testlogit',['TestLogit',['../logistic__regression_8cpp.html#ac1278ef2f31932f85702a3d9f6cad547',1,'logistic_regression.cpp']]],
   ['thread',['thread',['../classtlx_1_1ThreadPool.html#a4f985327d805ba29b03e347335d611d2',1,'tlx::ThreadPool']]],
   ['threadbarrierlocking',['ThreadBarrierLocking',['../classthrill_1_1common_1_1ThreadBarrierLocking.html#a6bb70eccf4831463c99c494d7b313778',1,'thrill::common::ThreadBarrierLocking']]],

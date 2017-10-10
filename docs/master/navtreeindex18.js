@@ -1,16 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"classtlx_1_1CmdlineParser.html#a9cf6c0ec961448423040cb6b5456c56c":[3,0,4,2,43],
-"classtlx_1_1CmdlineParser.html#aa18f4b9d44ff5d27735d64404800275a":[3,0,4,2,7],
-"classtlx_1_1CmdlineParser.html#aa3043d75fbba1248c7d858a761e98ebe":[3,0,4,2,2],
-"classtlx_1_1CmdlineParser.html#aa5218cff8cc5f9ca440dee1bb499b6b3":[3,0,4,2,36],
-"classtlx_1_1CmdlineParser.html#aa7f8d1e0d8d54c8c52c9f6199b23573c":[3,0,4,2,16],
-"classtlx_1_1CmdlineParser.html#aa86b2ab8c3ba834253f6f88b9f7c0193":[3,0,4,2,54],
-"classtlx_1_1CmdlineParser.html#ab465023bc8d9fc058e6f8c1882a9884a":[3,0,4,2,9],
-"classtlx_1_1CmdlineParser.html#ab4d8e677514c2722e5d814ec9c199229":[3,0,4,2,33],
-"classtlx_1_1CmdlineParser.html#ab7055aec32a55fbcd4247d8af9e176df":[3,0,4,2,8],
-"classtlx_1_1CmdlineParser.html#abfcec3067bcc5570ca16fe85e1bc752c":[3,0,4,2,26],
-"classtlx_1_1CmdlineParser.html#ac15a2a99164d2b8c9fe8496e7870952d":[3,0,4,2,31],
 "classtlx_1_1CmdlineParser.html#ac1c6132a057c5cba870ad8893770bf4b":[3,0,4,2,23],
 "classtlx_1_1CmdlineParser.html#acb9884eaef05f76f0609a3e849abf6da":[3,0,4,2,46],
 "classtlx_1_1CmdlineParser.html#ad004cbfd38d6569c65282cfbaf33cedc":[3,0,4,2,50],
@@ -249,5 +238,16 @@ var NAVTREEINDEX18 =
 "classtlx_1_1LoserTreePointerUnguarded_3_01true_00_01ValueType_00_01Comparator_01_4.html#a26d542444ceb6e79d9a1f002a4244db3":[3,0,4,36,2],
 "classtlx_1_1LoserTreePointerUnguarded_3_01true_00_01ValueType_00_01Comparator_01_4.html#a662020d2414024ea935bf7fc67423d26":[3,0,4,36,3],
 "classtlx_1_1LoserTreePointerUnguarded_3_01true_00_01ValueType_00_01Comparator_01_4.html#ab5fcec817a4a7cca2287696c3d8151e6":[3,0,4,36,1],
-"classtlx_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html":[3,0,4,33]
+"classtlx_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html":[3,0,4,33],
+"classtlx_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html#a071fda465da2cd47c848c51e802635ed":[3,0,4,33,0],
+"classtlx_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html#a45e849c0b6c9d347cbedcbec2374c40b":[3,0,4,33,2],
+"classtlx_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html#a662020d2414024ea935bf7fc67423d26":[3,0,4,33,3],
+"classtlx_1_1LoserTreePointer_3_01true_00_01ValueType_00_01Comparator_01_4.html#aada5162d8b9a9b7198193729d9cca18e":[3,0,4,33,1],
+"classtlx_1_1LoserTreeSwitch.html":[3,0,4,38],
+"classtlx_1_1LoserTreeSwitch.html#ad6f8a9e3078ec4056859079611e2ce2b":[3,0,4,38,0],
+"classtlx_1_1LruCacheMap.html":[3,0,4,39],
+"classtlx_1_1LruCacheMap.html#a053539fdd3306220459cb942bf95fac5":[3,0,4,39,12],
+"classtlx_1_1LruCacheMap.html#a107cc96d89ec81d940bf78c154c438e8":[3,0,4,39,14],
+"classtlx_1_1LruCacheMap.html#a1841a27fe085783ec68689c2aaeee4be":[3,0,4,39,15],
+"classtlx_1_1LruCacheMap.html#a23c2b72c6846b7f00ee6fdff05c7163f":[3,0,4,39,1]
 };

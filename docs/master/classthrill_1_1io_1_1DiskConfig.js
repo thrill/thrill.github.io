@@ -6,7 +6,6 @@ var classthrill_1_1io_1_1DiskConfig =
     [ "DiskConfig", "classthrill_1_1io_1_1DiskConfig.html#a759c87d78df900d59a05da7ad5736bb7", null ],
     [ "DiskConfig", "classthrill_1_1io_1_1DiskConfig.html#a04f781829a79556e98c6959de750343e", null ],
     [ "DiskConfig", "classthrill_1_1io_1_1DiskConfig.html#a57552981971ef2fdc170cc7a79f8fc64", null ],
-    [ "expand_path", "classthrill_1_1io_1_1DiskConfig.html#aafa8f4c53a9c21a840d3617047dbc581", null ],
     [ "fileio_string", "classthrill_1_1io_1_1DiskConfig.html#a9436dc8cd93c9abe01d40dac3ab4cb37", null ],
     [ "parse_fileio", "classthrill_1_1io_1_1DiskConfig.html#ad4acfe862929ebe86cede6b8472916f0", null ],
     [ "parse_line", "classthrill_1_1io_1_1DiskConfig.html#ae1fbeefdb5edc779e7070229e6266e8a", null ],
