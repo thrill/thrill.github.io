@@ -142,9 +142,9 @@ $(document).ready(function(){initNavTree('config__file_8cpp_source.html','');});
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;regex&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;regex&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#if THRILL_WINDOWS</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor">   #ifndef NOMINMAX</span></div>
@@ -611,7 +611,7 @@ $(document).ready(function(){initNavTree('config__file_8cpp_source.html','');});
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    std::stringstream ss;</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <span class="keywordflow">while</span> (std::regex_search(path, match, var_matcher)) {</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        ss  &lt;&lt; match.prefix().str();</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        ss &lt;&lt; match.prefix().str();</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        ss &lt;&lt; std::getenv(match[1].str().c_str());</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        path = match.suffix().str();</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    }</div>
@@ -683,7 +683,7 @@ $(document).ready(function(){initNavTree('config__file_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_c5add5f0a27348adc8388b1a95f76f2d.html">io</a></li><li class="navelem"><a class="el" href="config__file_8cpp.html">config_file.cpp</a></li>
-    <li class="footer">Generated on Tue Oct 10 2017 21:39:54 for Thrill by
+    <li class="footer">Generated on Sat Oct 14 2017 08:17:14 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

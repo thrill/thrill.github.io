@@ -124,14 +124,24 @@ $(document).ready(function(){initNavTree('classthrill_1_1common_1_1OurConcurrent
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T, typename Allocator = std::allocator&lt;T&gt;&gt;<br/>
+<div class="textblock"><h3>template&lt;typename T, typename Allocator&gt;<br/>
 class thrill::common::OurConcurrentQueue&lt; T, Allocator &gt;</h3>
 
-<p>This is a synchronized queue, similar to std::queue and moodycamel's concurrent_queue, except that it uses mutexes for synchronization. </p>
-<p>This implementation is for speed and interface testing against a lock-free queue. </p>
+<p>This is a queue, similar to std::queue and tbb::concurrent_queue, except that it uses mutexes for synchronization. </p>
+<p>This implementation is only here to be used if the Intel TBB is not available.</p>
+<p>Not all methods of tbb:concurrent_queue&lt;&gt; are available here, please add them if you need them. However, NEVER add any other methods that you might need.</p>
+<p>StyleGuide is violated, because signatures MUST match those in the TBB version. </p>
 
-<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00030">30</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00052">52</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
+</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for OurConcurrentQueue&lt; T, Allocator &gt;:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1common_1_1OurConcurrentQueue__inherit__graph.svg" width="275" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+
 <p><code>#include &lt;<a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -152,16 +162,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abff5e59bc6e653af46f19c10e68a8ebf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html#abff5e59bc6e653af46f19c10e68a8ebf">OurConcurrentQueue</a> (const Allocator &amp;alloc=Allocator())</td></tr>
 <tr class="memdesc:abff5e59bc6e653af46f19c10e68a8ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#abff5e59bc6e653af46f19c10e68a8ebf">More...</a><br/></td></tr>
 <tr class="separator:abff5e59bc6e653af46f19c10e68a8ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acda484de5254cc3ad40707f5d8c955ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html#acda484de5254cc3ad40707f5d8c955ff">enqueue</a> (const <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;source)</td></tr>
-<tr class="memdesc:acda484de5254cc3ad40707f5d8c955ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes a copy of source onto back of the queue.  <a href="#acda484de5254cc3ad40707f5d8c955ff">More...</a><br/></td></tr>
-<tr class="separator:acda484de5254cc3ad40707f5d8c955ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca177090b0023b6349753c255903cad8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html#aca177090b0023b6349753c255903cad8">enqueue</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;&amp;elem)</td></tr>
-<tr class="separator:aca177090b0023b6349753c255903cad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52b2d641485927365f14bb2573bdc2c7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html#a52b2d641485927365f14bb2573bdc2c7">size_approx</a> () const </td></tr>
-<tr class="memdesc:a52b2d641485927365f14bb2573bdc2c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns: approximate number of items in queue.  <a href="#a52b2d641485927365f14bb2573bdc2c7">More...</a><br/></td></tr>
-<tr class="separator:a52b2d641485927365f14bb2573bdc2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8982d60789eca1b851f1c414e053cea1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html#a8982d60789eca1b851f1c414e053cea1">try_dequeue</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;destination)</td></tr>
-<tr class="separator:a8982d60789eca1b851f1c414e053cea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bb3912a3ce86b15842e79d0b421204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html#ac8bb3912a3ce86b15842e79d0b421204">clear</a> ()</td></tr>
+<tr class="memdesc:ac8bb3912a3ce86b15842e79d0b421204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the queue.  <a href="#ac8bb3912a3ce86b15842e79d0b421204">More...</a><br/></td></tr>
+<tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb6454f47cdb28fc777e0c93a03247f6"><td class="memTemplParams" colspan="2">template&lt;typename... Arguments&gt; </td></tr>
+<tr class="memitem:adb6454f47cdb28fc777e0c93a03247f6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html#adb6454f47cdb28fc777e0c93a03247f6">emplace</a> (Arguments &amp;&amp;...args)</td></tr>
+<tr class="separator:adb6454f47cdb28fc777e0c93a03247f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e61de369e994009e36f344f99c15ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html#ac6e61de369e994009e36f344f99c15ad">empty</a> () const </td></tr>
+<tr class="memdesc:ac6e61de369e994009e36f344f99c15ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns: true if queue has no items; false otherwise.  <a href="#ac6e61de369e994009e36f344f99c15ad">More...</a><br/></td></tr>
+<tr class="separator:ac6e61de369e994009e36f344f99c15ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693e28f9288f70f29f78da724be62a29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html#a693e28f9288f70f29f78da724be62a29">push</a> (const <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;source)</td></tr>
+<tr class="memdesc:a693e28f9288f70f29f78da724be62a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes a copy of source onto back of the queue.  <a href="#a693e28f9288f70f29f78da724be62a29">More...</a><br/></td></tr>
+<tr class="separator:a693e28f9288f70f29f78da724be62a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe4a2ded61caeec658055e4a02b8de2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html#afe4a2ded61caeec658055e4a02b8de2a">push</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;&amp;elem)</td></tr>
+<tr class="separator:afe4a2ded61caeec658055e4a02b8de2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a5448ff3ea709a8ae57f6b80aa6677"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html#a73a5448ff3ea709a8ae57f6b80aa6677">try_pop</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;destination)</td></tr>
+<tr class="separator:a73a5448ff3ea709a8ae57f6b80aa6677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -183,7 +199,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00035">35</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00057">57</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -197,7 +213,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00037">37</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00059">59</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -211,7 +227,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00034">34</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00056">56</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -225,7 +241,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00036">36</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00058">58</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -239,7 +255,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00033">33</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00055">55</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -268,12 +284,12 @@ Private Attributes</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00048">48</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00070">70</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="acda484de5254cc3ad40707f5d8c955ff"></a>
+<a class="anchor" id="ac8bb3912a3ce86b15842e79d0b421204"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -281,7 +297,88 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void enqueue </td>
+          <td class="memname">void clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears the queue. </p>
+
+<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00113">113</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adb6454f47cdb28fc777e0c93a03247f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void emplace </td>
+          <td>(</td>
+          <td class="paramtype">Arguments &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pushes a new element into the queue. The element is constructed with given arguments. </p>
+
+<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00089">89</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6e61de369e994009e36f344f99c15ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns: true if queue has no items; false otherwise. </p>
+
+<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00095">95</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a693e28f9288f70f29f78da724be62a29"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void push </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;&#160;</td>
           <td class="paramname"><em>source</em></td><td>)</td>
@@ -297,13 +394,11 @@ Private Attributes</h2></td></tr>
 
 <p>Pushes a copy of source onto back of the queue. </p>
 
-<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00052">52</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
-
-<p>References <a class="el" href="concurrent__queue_8hpp_source.html#l00044">OurConcurrentQueue&lt; T, Allocator &gt;::mutex_</a>, and <a class="el" href="concurrent__queue_8hpp_source.html#l00041">OurConcurrentQueue&lt; T, Allocator &gt;::queue_</a>.</p>
+<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00074">74</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aca177090b0023b6349753c255903cad8"></a>
+<a class="anchor" id="afe4a2ded61caeec658055e4a02b8de2a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -311,7 +406,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void enqueue </td>
+          <td class="memname">void push </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;&amp;&#160;</td>
           <td class="paramname"><em>elem</em></td><td>)</td>
@@ -326,13 +421,11 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Pushes given element into the queue by utilizing element's move constructor </p>
 
-<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00059">59</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
-
-<p>References <a class="el" href="concurrent__queue_8hpp_source.html#l00044">OurConcurrentQueue&lt; T, Allocator &gt;::mutex_</a>, and <a class="el" href="concurrent__queue_8hpp_source.html#l00041">OurConcurrentQueue&lt; T, Allocator &gt;::queue_</a>.</p>
+<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00081">81</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a52b2d641485927365f14bb2573bdc2c7"></a>
+<a class="anchor" id="a73a5448ff3ea709a8ae57f6b80aa6677"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -340,36 +433,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t size_approx </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns: approximate number of items in queue. </p>
-
-<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00065">65</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
-
-<p>References <a class="el" href="concurrent__queue_8hpp_source.html#l00044">OurConcurrentQueue&lt; T, Allocator &gt;::mutex_</a>, and <a class="el" href="concurrent__queue_8hpp_source.html#l00041">OurConcurrentQueue&lt; T, Allocator &gt;::queue_</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8982d60789eca1b851f1c414e053cea1"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool try_dequeue </td>
+          <td class="memname">bool try_pop </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;&#160;</td>
           <td class="paramname"><em>destination</em></td><td>)</td>
@@ -384,9 +448,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>If value is available, pops it from the queue, assigns it to destination, and destroys the original value. Otherwise does nothing. </p>
 
-<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00072">72</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
-
-<p>References <a class="el" href="concurrent__queue_8hpp_source.html#l00044">OurConcurrentQueue&lt; T, Allocator &gt;::mutex_</a>, and <a class="el" href="concurrent__queue_8hpp_source.html#l00041">OurConcurrentQueue&lt; T, Allocator &gt;::queue_</a>.</p>
+<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00102">102</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -411,9 +473,9 @@ Private Attributes</h2></td></tr>
 
 <p>the mutex to lock before accessing the queue </p>
 
-<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00044">44</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00066">66</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="concurrent__queue_8hpp_source.html#l00052">OurConcurrentQueue&lt; T, Allocator &gt;::enqueue()</a>, <a class="el" href="concurrent__queue_8hpp_source.html#l00065">OurConcurrentQueue&lt; T, Allocator &gt;::size_approx()</a>, and <a class="el" href="concurrent__queue_8hpp_source.html#l00072">OurConcurrentQueue&lt; T, Allocator &gt;::try_dequeue()</a>.</p>
+<p>Referenced by <a class="el" href="concurrent__queue_8hpp_source.html#l00113">OurConcurrentQueue&lt; tlx::Delegate, mem::Allocator&lt; tlx::Delegate &gt; &gt;::clear()</a>, <a class="el" href="concurrent__queue_8hpp_source.html#l00089">OurConcurrentQueue&lt; tlx::Delegate, mem::Allocator&lt; tlx::Delegate &gt; &gt;::emplace()</a>, <a class="el" href="concurrent__queue_8hpp_source.html#l00095">OurConcurrentQueue&lt; tlx::Delegate, mem::Allocator&lt; tlx::Delegate &gt; &gt;::empty()</a>, <a class="el" href="concurrent__queue_8hpp_source.html#l00074">OurConcurrentQueue&lt; tlx::Delegate, mem::Allocator&lt; tlx::Delegate &gt; &gt;::push()</a>, and <a class="el" href="concurrent__queue_8hpp_source.html#l00102">OurConcurrentQueue&lt; tlx::Delegate, mem::Allocator&lt; tlx::Delegate &gt; &gt;::try_pop()</a>.</p>
 
 </div>
 </div>
@@ -437,9 +499,9 @@ Private Attributes</h2></td></tr>
 
 <p>the actual data queue </p>
 
-<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00041">41</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00063">63</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="concurrent__queue_8hpp_source.html#l00052">OurConcurrentQueue&lt; T, Allocator &gt;::enqueue()</a>, <a class="el" href="concurrent__queue_8hpp_source.html#l00065">OurConcurrentQueue&lt; T, Allocator &gt;::size_approx()</a>, and <a class="el" href="concurrent__queue_8hpp_source.html#l00072">OurConcurrentQueue&lt; T, Allocator &gt;::try_dequeue()</a>.</p>
+<p>Referenced by <a class="el" href="concurrent__queue_8hpp_source.html#l00113">OurConcurrentQueue&lt; tlx::Delegate, mem::Allocator&lt; tlx::Delegate &gt; &gt;::clear()</a>, <a class="el" href="concurrent__queue_8hpp_source.html#l00089">OurConcurrentQueue&lt; tlx::Delegate, mem::Allocator&lt; tlx::Delegate &gt; &gt;::emplace()</a>, <a class="el" href="concurrent__queue_8hpp_source.html#l00095">OurConcurrentQueue&lt; tlx::Delegate, mem::Allocator&lt; tlx::Delegate &gt; &gt;::empty()</a>, <a class="el" href="concurrent__queue_8hpp_source.html#l00074">OurConcurrentQueue&lt; tlx::Delegate, mem::Allocator&lt; tlx::Delegate &gt; &gt;::push()</a>, and <a class="el" href="concurrent__queue_8hpp_source.html#l00102">OurConcurrentQueue&lt; tlx::Delegate, mem::Allocator&lt; tlx::Delegate &gt; &gt;::try_pop()</a>.</p>
 
 </div>
 </div>
@@ -452,7 +514,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1common.html">common</a></li><li class="navelem"><a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html">OurConcurrentQueue</a></li>
-    <li class="footer">Generated on Tue Oct 10 2017 21:39:57 for Thrill by
+    <li class="footer">Generated on Sat Oct 14 2017 08:17:18 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -9,6 +9,7 @@ var searchData=
   ['g_5fndebug',['g_ndebug',['../namespacethrill_1_1common.html#ac1b80276bceae99e64e96a04b42e98c4',1,'thrill::common']]],
   ['g_5fprofile_5fthread',['g_profile_thread',['../namespacethrill_1_1common.html#a3c0b6fab81d6db698e8eb26fb324dee2',1,'thrill::common']]],
   ['g_5fself_5fverify',['g_self_verify',['../namespacethrill_1_1common.html#a98087874f85e7089b6b3a20a1821ddb9',1,'thrill::common']]],
+  ['gap_5f',['gap_',['../classthrill_1_1common_1_1ReservoirSamplingFast.html#ab8ca9afa9d9a2d502b0b8a0da644872e',1,'thrill::common::ReservoirSamplingFast::gap_()'],['../classthrill_1_1common_1_1ReservoirSamplingGrow.html#ab8ca9afa9d9a2d502b0b8a0da644872e',1,'thrill::common::ReservoirSamplingGrow::gap_()']]],
   ['generate_5ffunction_5f',['generate_function_',['../classthrill_1_1api_1_1GenerateNode.html#afaaffa774f4e24b3cbbe2fe7130c782e',1,'thrill::api::GenerateNode']]],
   ['generation_5f',['generation_',['../classthrill_1_1net_1_1FlowControlChannel.html#a8e3bd6ae47fe46ac3dac687172b2ed0e',1,'thrill::net::FlowControlChannel::generation_()'],['../classthrill_1_1net_1_1FlowControlChannelManager.html#a9e520fc2c9c3816fb25bdcbd83a54cb7',1,'thrill::net::FlowControlChannelManager::generation_()']]],
   ['generic',['generic',['../unionthrill_1_1net_1_1tcp_1_1SocketAddress_1_1SockAddrUnion.html#a126152d73a0e59fb15bd11a93c586d2d',1,'thrill::net::tcp::SocketAddress::SockAddrUnion']]],

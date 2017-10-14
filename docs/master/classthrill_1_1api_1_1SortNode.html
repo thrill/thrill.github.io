@@ -142,7 +142,7 @@ class thrill::api::SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;</
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00055">55</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00056">56</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -156,7 +156,7 @@ class thrill::api::SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;</
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1api_1_1SortNode__coll__graph.svg" width="2739" height="1130"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1api_1_1SortNode__coll__graph.svg" width="2966" height="954"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 
@@ -414,12 +414,13 @@ PreOp Phase</h2></td></tr>
 <tr class="memitem:a49097b7af150fb81915b0a03f8661bcd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classthrill_1_1api_1_1SortNode.html#a6d863ed697b7ace6cb18368152598247">SampleIndexPair</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode.html#a49097b7af150fb81915b0a03f8661bcd">samples_</a></td></tr>
 <tr class="memdesc:a49097b7af150fb81915b0a03f8661bcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample vector: pairs of (sample,local index)  <a href="#a49097b7af150fb81915b0a03f8661bcd">More...</a><br/></td></tr>
 <tr class="separator:a49097b7af150fb81915b0a03f8661bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae44f144f9d4a6ac67ad75ea0c9d6c0de"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode.html#ae44f144f9d4a6ac67ad75ea0c9d6c0de">sample_interval_</a> = 1</td></tr>
-<tr class="memdesc:ae44f144f9d4a6ac67ad75ea0c9d6c0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of items to process before the next sample was drawn.  <a href="#ae44f144f9d4a6ac67ad75ea0c9d6c0de">More...</a><br/></td></tr>
-<tr class="separator:ae44f144f9d4a6ac67ad75ea0c9d6c0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9fae34d3ffbf0d868ded27d7db35133"><td class="memItemLeft" align="right" valign="top">std::default_random_engine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode.html#aa9fae34d3ffbf0d868ded27d7db35133">rng_</a> { std::random_device { } () }</td></tr>
 <tr class="memdesc:aa9fae34d3ffbf0d868ded27d7db35133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random generator.  <a href="#aa9fae34d3ffbf0d868ded27d7db35133">More...</a><br/></td></tr>
 <tr class="separator:aa9fae34d3ffbf0d868ded27d7db35133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea7c1d6f9700aef83c1bc21f71639851"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html">common::ReservoirSamplingGrow</a><br class="typebreak"/>
+&lt; <a class="el" href="classthrill_1_1api_1_1SortNode.html#a6d863ed697b7ace6cb18368152598247">SampleIndexPair</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode.html#aea7c1d6f9700aef83c1bc21f71639851">res_sampler_</a></td></tr>
+<tr class="memdesc:aea7c1d6f9700aef83c1bc21f71639851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reservoir sampler.  <a href="#aea7c1d6f9700aef83c1bc21f71639851">More...</a><br/></td></tr>
+<tr class="separator:aea7c1d6f9700aef83c1bc21f71639851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea91265b5f735320de42ce48d9f7f678"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode.html#aea91265b5f735320de42ce48d9f7f678">wanted_sample_size</a> () const </td></tr>
 <tr class="memdesc:aea91265b5f735320de42ce48d9f7f678"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate currently desired number of samples  <a href="#aea91265b5f735320de42ce48d9f7f678">More...</a><br/></td></tr>
 <tr class="separator:aea91265b5f735320de42ce48d9f7f678"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -488,7 +489,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>RIAA class for running the timer. </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00068">68</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00069">69</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -510,7 +511,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00070">70</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00071">71</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -532,7 +533,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00062">62</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00063">63</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -556,7 +557,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Timer or FakeTimer. </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00066">66</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00067">67</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -601,7 +602,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor for a sort node. </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00079">79</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00080">80</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -631,9 +632,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classthrill_1_1api_1_1DIABase.html#a1b40a2658f30f8466f310ceea310afb5">DIABase</a>.</p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00290">290</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00276">276</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="sort_8hpp_source.html#l00338">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::files_</a>.</p>
+<p>References <a class="el" href="sort_8hpp_source.html#l00322">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::files_</a>.</p>
 
 </div>
 </div>
@@ -669,11 +670,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00441">441</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00425">425</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="sort_8hpp_source.html#l00296">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::compare_function_</a>.</p>
+<p>References <a class="el" href="sort_8hpp_source.html#l00282">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::compare_function_</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00451">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00435">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>.</p>
 
 </div>
 </div>
@@ -721,11 +722,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00358">358</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00342">342</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="sort_8hpp_source.html#l00436">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::LessSampleIndex()</a>, and <a class="el" href="context_8hpp_source.html#l00253">Context::num_workers()</a>.</p>
+<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="sort_8hpp_source.html#l00420">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::LessSampleIndex()</a>, and <a class="el" href="context_8hpp_source.html#l00253">Context::num_workers()</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00556">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00540">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -761,11 +762,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00436">436</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00420">420</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="sort_8hpp_source.html#l00296">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::compare_function_</a>.</p>
+<p>References <a class="el" href="sort_8hpp_source.html#l00282">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::compare_function_</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00358">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::FindAndSendSplitters()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00342">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::FindAndSendSplitters()</a>.</p>
 
 </div>
 </div>
@@ -790,9 +791,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00556">556</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00540">540</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="porting_8hpp_source.html#l00042">thrill::common::CreateThread()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00324">FlowControlChannel::ExPrefixSumTotal()</a>, <a class="el" href="sort_8hpp_source.html#l00358">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::FindAndSendSplitters()</a>, <a class="el" href="context_8cpp_source.html#l01044">Context::GetNewMixStream()</a>, <a class="el" href="mix__block__queue_8hpp_source.html#l00227">MixBlockQueueReader::HasNext()</a>, <a class="el" href="integer__log2_8cpp_source.html#l00052">tlx::integer_log2_ceil()</a>, <a class="el" href="sort_8hpp_source.html#l00312">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::local_items_</a>, <a class="el" href="sort_8hpp_source.html#l00340">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::local_out_size_</a>, <a class="el" href="context_8hpp_source.html#l00265">Context::local_worker_id()</a>, <a class="el" href="dia__base_8hpp_source.html#l00329">DIABase::logger_</a>, <a class="el" href="context_8hpp_source.html#l00245">Context::my_rank()</a>, <a class="el" href="context_8hpp_source.html#l00439">Context::net</a>, <a class="el" href="context_8hpp_source.html#l00253">Context::num_workers()</a>, <a class="el" href="sort_8hpp_source.html#l00685">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::ReceiveItems()</a>, <a class="el" href="sort_8hpp_source.html#l00315">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::samples_</a>, <a class="el" href="porting_8cpp_source.html#l00110">thrill::common::SetCpuAffinity()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00179">sLOG</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00251">tlx::swap()</a>, <a class="el" href="sort_8hpp_source.html#l00451">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>, and <a class="el" href="sort_8hpp_source.html#l00072">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::use_background_thread_</a>.</p>
+<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="porting_8hpp_source.html#l00042">thrill::common::CreateThread()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00324">FlowControlChannel::ExPrefixSumTotal()</a>, <a class="el" href="sort_8hpp_source.html#l00342">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::FindAndSendSplitters()</a>, <a class="el" href="context_8cpp_source.html#l01044">Context::GetNewMixStream()</a>, <a class="el" href="mix__block__queue_8hpp_source.html#l00227">MixBlockQueueReader::HasNext()</a>, <a class="el" href="integer__log2_8cpp_source.html#l00052">tlx::integer_log2_ceil()</a>, <a class="el" href="sort_8hpp_source.html#l00298">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::local_items_</a>, <a class="el" href="sort_8hpp_source.html#l00324">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::local_out_size_</a>, <a class="el" href="context_8hpp_source.html#l00265">Context::local_worker_id()</a>, <a class="el" href="dia__base_8hpp_source.html#l00329">DIABase::logger_</a>, <a class="el" href="context_8hpp_source.html#l00245">Context::my_rank()</a>, <a class="el" href="context_8hpp_source.html#l00439">Context::net</a>, <a class="el" href="context_8hpp_source.html#l00253">Context::num_workers()</a>, <a class="el" href="sort_8hpp_source.html#l00669">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::ReceiveItems()</a>, <a class="el" href="sort_8hpp_source.html#l00304">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::samples_</a>, <a class="el" href="porting_8cpp_source.html#l00110">thrill::common::SetCpuAffinity()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00179">sLOG</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00251">tlx::swap()</a>, <a class="el" href="sort_8hpp_source.html#l00435">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>, and <a class="el" href="sort_8hpp_source.html#l00073">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::use_background_thread_</a>.</p>
 
 </div>
 </div>
@@ -817,11 +818,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00190">190</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00176">176</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="byte__block_8cpp_source.html#l00024">thrill::data::default_block_size</a>, <a class="el" href="sort_8hpp_source.html#l00338">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::files_</a>, and <a class="el" href="dia__base_8hpp_source.html#l00314">DIABase::mem_limit_</a>.</p>
+<p>References <a class="el" href="byte__block_8cpp_source.html#l00024">thrill::data::default_block_size</a>, <a class="el" href="sort_8hpp_source.html#l00322">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::files_</a>, and <a class="el" href="dia__base_8hpp_source.html#l00314">DIABase::mem_limit_</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00206">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00192">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -851,9 +852,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classthrill_1_1api_1_1DIABase.html#a7b55875187fc15ca2640cb6b9266a624">DIABase</a>.</p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00206">206</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00192">192</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="sort_8hpp_source.html#l00296">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::compare_function_</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="sort_8hpp_source.html#l00338">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::files_</a>, <a class="el" href="context_8hpp_source.html#l00285">Context::GetFile()</a>, <a class="el" href="sort_8hpp_source.html#l00190">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MaxMergeDegreePrefetch()</a>, <a class="el" href="context_8hpp_source.html#l00354">Context::PrintCollectiveMeanStdev()</a>, <a class="el" href="dia__node_8hpp_source.html#l00156">DIANode&lt; ValueType &gt;::PushFile()</a>, <a class="el" href="dia__node_8hpp_source.html#l00147">DIANode&lt; ValueType &gt;::PushItem()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00183">sLOG1</a>, <a class="el" href="file_8hpp_source.html#l00508">thrill::data::StartPrefetch()</a>, and <a class="el" href="sort_8hpp_source.html#l00060">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::stats_enabled</a>.</p>
+<p>References <a class="el" href="sort_8hpp_source.html#l00282">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::compare_function_</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="sort_8hpp_source.html#l00322">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::files_</a>, <a class="el" href="context_8hpp_source.html#l00285">Context::GetFile()</a>, <a class="el" href="sort_8hpp_source.html#l00176">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MaxMergeDegreePrefetch()</a>, <a class="el" href="context_8hpp_source.html#l00354">Context::PrintCollectiveMeanStdev()</a>, <a class="el" href="dia__node_8hpp_source.html#l00156">DIANode&lt; ValueType &gt;::PushFile()</a>, <a class="el" href="dia__node_8hpp_source.html#l00147">DIANode&lt; ValueType &gt;::PushItem()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00183">sLOG1</a>, <a class="el" href="file_8hpp_source.html#l00508">thrill::data::StartPrefetch()</a>, and <a class="el" href="sort_8hpp_source.html#l00061">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::stats_enabled</a>.</p>
 
 </div>
 </div>
@@ -879,11 +880,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00685">685</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00669">669</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00170">LOG0</a>, <a class="el" href="dia__base_8hpp_source.html#l00314">DIABase::mem_limit_</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00160">thrill::mem::memory_exceeded</a>, <a class="el" href="context_8hpp_source.html#l00354">Context::PrintCollectiveMeanStdev()</a>, <a class="el" href="sort_8hpp_source.html#l00714">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::SortAndWriteToFile()</a>, and <a class="el" href="sort_8hpp_source.html#l00060">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::stats_enabled</a>.</p>
+<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00170">LOG0</a>, <a class="el" href="dia__base_8hpp_source.html#l00314">DIABase::mem_limit_</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00160">thrill::mem::memory_exceeded</a>, <a class="el" href="context_8hpp_source.html#l00354">Context::PrintCollectiveMeanStdev()</a>, <a class="el" href="sort_8hpp_source.html#l00698">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::SortAndWriteToFile()</a>, and <a class="el" href="sort_8hpp_source.html#l00061">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::stats_enabled</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00556">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00540">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -921,9 +922,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>round n down by k where k is a power of two. </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00447">447</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00431">431</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00451">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00435">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>.</p>
 
 </div>
 </div>
@@ -949,11 +950,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00714">714</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00698">698</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="block__pool_8cpp_source.html#l01107">BlockPool::AdviseFree()</a>, <a class="el" href="context_8hpp_source.html#l00326">Context::block_pool()</a>, <a class="el" href="sort_8hpp_source.html#l00296">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::compare_function_</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="context_8hpp_source.html#l00285">Context::GetFile()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOG</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00170">LOG0</a>, <a class="el" href="dia__base_8hpp_source.html#l00329">DIABase::logger_</a>, <a class="el" href="sort_8hpp_source.html#l00299">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::sort_algorithm_</a>, and <a class="el" href="sort_8hpp_source.html#l00354">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::timer_sort_</a>.</p>
+<p>References <a class="el" href="block__pool_8cpp_source.html#l01107">BlockPool::AdviseFree()</a>, <a class="el" href="context_8hpp_source.html#l00326">Context::block_pool()</a>, <a class="el" href="sort_8hpp_source.html#l00282">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::compare_function_</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="context_8hpp_source.html#l00285">Context::GetFile()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOG</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00170">LOG0</a>, <a class="el" href="dia__base_8hpp_source.html#l00329">DIABase::logger_</a>, <a class="el" href="sort_8hpp_source.html#l00285">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::sort_algorithm_</a>, and <a class="el" href="sort_8hpp_source.html#l00338">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::timer_sort_</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00685">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::ReceiveItems()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00669">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::ReceiveItems()</a>.</p>
 
 </div>
 </div>
@@ -1019,11 +1020,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00451">451</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00435">435</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="sort_8hpp_source.html#l00296">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::compare_function_</a>, <a class="el" href="sort_8hpp_source.html#l00441">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::EqualSampleGreaterIndex()</a>, <a class="el" href="file_8cpp_source.html#l00071">File::GetConsumeReader()</a>, <a class="el" href="sort_8hpp_source.html#l00312">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::local_items_</a>, <a class="el" href="block__reader_8hpp_source.html#l00089">BlockReader&lt; BlockSource &gt;::Next()</a>, <a class="el" href="sort_8hpp_source.html#l00447">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::RoundDown()</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00251">tlx::swap()</a>, and <a class="el" href="sort_8hpp_source.html#l00308">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::unsorted_file_</a>.</p>
+<p>References <a class="el" href="sort_8hpp_source.html#l00282">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::compare_function_</a>, <a class="el" href="sort_8hpp_source.html#l00425">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::EqualSampleGreaterIndex()</a>, <a class="el" href="file_8cpp_source.html#l00071">File::GetConsumeReader()</a>, <a class="el" href="sort_8hpp_source.html#l00298">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::local_items_</a>, <a class="el" href="block__reader_8hpp_source.html#l00089">BlockReader&lt; BlockSource &gt;::Next()</a>, <a class="el" href="sort_8hpp_source.html#l00431">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::RoundDown()</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00251">tlx::swap()</a>, and <a class="el" href="sort_8hpp_source.html#l00294">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::unsorted_file_</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00556">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00540">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -1050,9 +1051,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>calculate currently desired number of samples </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00325">325</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00312">312</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="functional_8hpp_source.html#l00065">thrill::common::max()</a>, and <a class="el" href="context_8hpp_source.html#l00253">Context::num_workers()</a>.</p>
+<p>References <a class="el" href="reservoir__sampling_8hpp_source.html#l00269">ReservoirSamplingGrow&lt; Type &gt;::calc_sample_size()</a>, and <a class="el" href="sort_8hpp_source.html#l00308">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::res_sampler_</a>.</p>
 
 </div>
 </div>
@@ -1077,9 +1078,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>The comparison function which is applied to two elements. </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00296">296</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00282">282</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00441">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::EqualSampleGreaterIndex()</a>, <a class="el" href="sort_8hpp_source.html#l00436">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::LessSampleIndex()</a>, <a class="el" href="sort_8hpp_source.html#l00206">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::PushData()</a>, <a class="el" href="sort_8hpp_source.html#l00714">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::SortAndWriteToFile()</a>, and <a class="el" href="sort_8hpp_source.html#l00451">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00425">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::EqualSampleGreaterIndex()</a>, <a class="el" href="sort_8hpp_source.html#l00420">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::LessSampleIndex()</a>, <a class="el" href="sort_8hpp_source.html#l00192">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::PushData()</a>, <a class="el" href="sort_8hpp_source.html#l00698">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::SortAndWriteToFile()</a>, and <a class="el" href="sort_8hpp_source.html#l00435">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>.</p>
 
 </div>
 </div>
@@ -1101,7 +1102,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00057">57</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00058">58</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -1125,7 +1126,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>epsilon </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00322">322</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00301">301</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -1149,9 +1150,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Local data files. </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00338">338</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00322">322</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00290">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::Dispose()</a>, <a class="el" href="sort_8hpp_source.html#l00190">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MaxMergeDegreePrefetch()</a>, and <a class="el" href="sort_8hpp_source.html#l00206">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00276">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::Dispose()</a>, <a class="el" href="sort_8hpp_source.html#l00176">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MaxMergeDegreePrefetch()</a>, and <a class="el" href="sort_8hpp_source.html#l00192">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -1175,9 +1176,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Number of items on this worker. </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00312">312</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00298">298</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00556">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>, and <a class="el" href="sort_8hpp_source.html#l00451">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00540">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>, and <a class="el" href="sort_8hpp_source.html#l00435">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>.</p>
 
 </div>
 </div>
@@ -1201,9 +1202,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Total number of local elements after communication. </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00340">340</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00324">324</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00556">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00540">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -1227,7 +1228,36 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Whether the parent stack is empty. </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00302">302</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00288">288</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aea7c1d6f9700aef83c1bc21f71639851"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html">common::ReservoirSamplingGrow</a>&lt;<a class="el" href="classthrill_1_1api_1_1SortNode.html#a6d863ed697b7ace6cb18368152598247">SampleIndexPair</a>&gt; res_sampler_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">        <a class="code" href="classthrill_1_1api_1_1SortNode.html#a49097b7af150fb81915b0a03f8661bcd">samples_</a>, <a class="code" href="classthrill_1_1api_1_1SortNode.html#aa9fae34d3ffbf0d868ded27d7db35133">rng_</a>, <a class="code" href="classthrill_1_1api_1_1SortNode.html#a8e0e981a35e1da5c4094430778c44d1e">desired_imbalance_</a></div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+<p>Reservoir sampler. </p>
+
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00308">308</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00312">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::wanted_sample_size()</a>.</p>
 
 </div>
 </div>
@@ -1251,31 +1281,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Random generator. </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00319">319</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae44f144f9d4a6ac67ad75ea0c9d6c0de"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t sample_interval_ = 1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Number of items to process before the next sample was drawn. </p>
-
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00317">317</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00306">306</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -1299,9 +1305,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sample vector: pairs of (sample,local index) </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00315">315</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00304">304</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00556">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00540">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -1325,9 +1331,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sort function class. </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00299">299</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00285">285</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00714">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::SortAndWriteToFile()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00698">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::SortAndWriteToFile()</a>.</p>
 
 </div>
 </div>
@@ -1351,9 +1357,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Set this variable to true to enable generation and output of stats. </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00060">60</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00061">61</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00206">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::PushData()</a>, and <a class="el" href="sort_8hpp_source.html#l00685">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::ReceiveItems()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00192">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::PushData()</a>, and <a class="el" href="sort_8hpp_source.html#l00669">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::ReceiveItems()</a>.</p>
 
 </div>
 </div>
@@ -1377,7 +1383,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>time spent in Execute </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00351">351</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00335">335</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -1401,7 +1407,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>time spent in PreOp (including preceding Node's computation) </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00348">348</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00332">332</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -1425,9 +1431,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>time spent in sort() </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00354">354</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00338">338</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00714">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::SortAndWriteToFile()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00698">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::SortAndWriteToFile()</a>.</p>
 
 </div>
 </div>
@@ -1451,9 +1457,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>All local unsorted items before communication. </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00308">308</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00294">294</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00451">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00435">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>.</p>
 
 </div>
 </div>
@@ -1477,7 +1483,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Writer for unsorted_file_. </p>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00310">310</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00296">296</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -1499,9 +1505,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00072">72</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00073">73</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00556">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="sort_8hpp_source.html#l00540">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -1514,7 +1520,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1api.html">api</a></li><li class="navelem"><a class="el" href="classthrill_1_1api_1_1SortNode.html">SortNode</a></li>
-    <li class="footer">Generated on Tue Oct 10 2017 21:39:57 for Thrill by
+    <li class="footer">Generated on Sat Oct 14 2017 08:17:18 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

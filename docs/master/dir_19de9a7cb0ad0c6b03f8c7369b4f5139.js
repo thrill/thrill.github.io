@@ -27,6 +27,7 @@ var dir_19de9a7cb0ad0c6b03f8c7369b4f5139 =
     [ "profile_thread.hpp", "profile__thread_8hpp.html", "profile__thread_8hpp" ],
     [ "qsort.hpp", "qsort_8hpp.html", "qsort_8hpp" ],
     [ "radix_sort.hpp", "radix__sort_8hpp.html", "radix__sort_8hpp" ],
+    [ "reservoir_sampling.hpp", "reservoir__sampling_8hpp.html", "reservoir__sampling_8hpp" ],
     [ "ring_buffer.hpp", "thrill_2common_2ring__buffer_8hpp.html", "thrill_2common_2ring__buffer_8hpp" ],
     [ "semaphore.hpp", "semaphore_8hpp.html", "semaphore_8hpp" ],
     [ "shared_state.hpp", "shared__state_8hpp.html", "shared__state_8hpp" ],
