@@ -311,9 +311,6 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab704830d28c7dc4ec7535cd6af0f4807"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1WriteBinaryNode.html#ab704830d28c7dc4ec7535cd6af0f4807">out_serial_</a> = 0</td></tr>
 <tr class="memdesc:ab704830d28c7dc4ec7535cd6af0f4807"><td class="mdescLeft">&#160;</td><td class="mdescRight">File serial number for this worker.  <a href="#ab704830d28c7dc4ec7535cd6af0f4807">More...</a><br/></td></tr>
 <tr class="separator:ab704830d28c7dc4ec7535cd6af0f4807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2754a32fdc56bca2dcf04f464054b0b4"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; SysFileSink &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1WriteBinaryNode.html#a2754a32fdc56bca2dcf04f464054b0b4">sink_</a></td></tr>
-<tr class="memdesc:a2754a32fdc56bca2dcf04f464054b0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">BlockSink which writes to an actual file.  <a href="#a2754a32fdc56bca2dcf04f464054b0b4">More...</a><br/></td></tr>
-<tr class="separator:a2754a32fdc56bca2dcf04f464054b0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef310b385ad0bd73d532f38d377785dd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1WriteBinaryNode.html#aef310b385ad0bd73d532f38d377785dd">stats_total_elements_</a> = 0</td></tr>
 <tr class="separator:aef310b385ad0bd73d532f38d377785dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeda02ee4780491a6c923962567285ec9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1WriteBinaryNode.html#aeda02ee4780491a6c923962567285ec9">stats_total_writes_</a> = 0</td></tr>
@@ -382,7 +379,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00157">157</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00156">156</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
 
 </div>
 </div>
@@ -453,9 +450,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Function to create sink_ and writer_ for next file. </p>
 
-<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00181">181</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00177">177</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
 
-<p>References <a class="el" href="write__binary_8hpp_source.html#l00169">WriteBinaryNode&lt; ValueType &gt;::block_size_</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="file__io_8cpp_source.html#l00070">thrill::vfs::FillFilePattern()</a>, <a class="el" href="context_8hpp_source.html#l00265">Context::local_worker_id()</a>, <a class="el" href="write__binary_8hpp_source.html#l00166">WriteBinaryNode&lt; ValueType &gt;::max_file_size_</a>, <a class="el" href="context_8hpp_source.html#l00245">Context::my_rank()</a>, <a class="el" href="write__binary_8hpp_source.html#l00163">WriteBinaryNode&lt; ValueType &gt;::out_serial_</a>, <a class="el" href="write__binary_8hpp_source.html#l00172">WriteBinaryNode&lt; ValueType &gt;::sink_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00179">sLOG</a>, <a class="el" href="write__binary_8hpp_source.html#l00177">WriteBinaryNode&lt; ValueType &gt;::stats_total_elements_</a>, <a class="el" href="write__binary_8hpp_source.html#l00178">WriteBinaryNode&lt; ValueType &gt;::stats_total_writes_</a>, and <a class="el" href="write__binary_8hpp_source.html#l00175">WriteBinaryNode&lt; ValueType &gt;::writer_</a>.</p>
+<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="file__io_8cpp_source.html#l00070">thrill::vfs::FillFilePattern()</a>, <a class="el" href="context_8hpp_source.html#l00265">Context::local_worker_id()</a>, <a class="el" href="write__binary_8hpp_source.html#l00165">WriteBinaryNode&lt; ValueType &gt;::max_file_size_</a>, <a class="el" href="context_8hpp_source.html#l00245">Context::my_rank()</a>, <a class="el" href="write__binary_8hpp_source.html#l00162">WriteBinaryNode&lt; ValueType &gt;::out_serial_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00179">sLOG</a>, <a class="el" href="write__binary_8hpp_source.html#l00173">WriteBinaryNode&lt; ValueType &gt;::stats_total_elements_</a>, <a class="el" href="write__binary_8hpp_source.html#l00174">WriteBinaryNode&lt; ValueType &gt;::stats_total_writes_</a>, and <a class="el" href="write__binary_8hpp_source.html#l00171">WriteBinaryNode&lt; ValueType &gt;::writer_</a>.</p>
 
 </div>
 </div>
@@ -472,9 +469,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Block size used by BlockWriter. </p>
 
-<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00169">169</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="write__binary_8hpp_source.html#l00181">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>.</p>
+<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00168">168</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
 
 </div>
 </div>
@@ -512,9 +507,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Maximum file size. </p>
 
-<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00166">166</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00165">165</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="write__binary_8hpp_source.html#l00181">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>.</p>
+<p>Referenced by <a class="el" href="write__binary_8hpp_source.html#l00177">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>.</p>
 
 </div>
 </div>
@@ -530,7 +525,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Base path of the output file. </p>
 
-<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00160">160</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00159">159</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
 
 </div>
 </div>
@@ -546,27 +541,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>File serial number for this worker. </p>
 
-<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00163">163</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00162">162</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="write__binary_8hpp_source.html#l00181">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2754a32fdc56bca2dcf04f464054b0b4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;SysFileSink&gt; sink_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>BlockSink which writes to an actual file. </p>
-
-<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00172">172</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="write__binary_8hpp_source.html#l00181">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>.</p>
+<p>Referenced by <a class="el" href="write__binary_8hpp_source.html#l00177">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>.</p>
 
 </div>
 </div>
@@ -580,9 +557,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00177">177</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00173">173</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="write__binary_8hpp_source.html#l00181">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>.</p>
+<p>Referenced by <a class="el" href="write__binary_8hpp_source.html#l00177">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>.</p>
 
 </div>
 </div>
@@ -596,9 +573,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00178">178</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00174">174</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="write__binary_8hpp_source.html#l00181">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>.</p>
+<p>Referenced by <a class="el" href="write__binary_8hpp_source.html#l00177">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>.</p>
 
 </div>
 </div>
@@ -614,9 +591,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>BlockWriter to sink. </p>
 
-<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00175">175</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="write__binary_8hpp_source.html#l00171">171</a> of file <a class="el" href="write__binary_8hpp_source.html">write_binary.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="write__binary_8hpp_source.html#l00181">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>.</p>
+<p>Referenced by <a class="el" href="write__binary_8hpp_source.html#l00177">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>.</p>
 
 </div>
 </div>
@@ -629,7 +606,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1api.html">api</a></li><li class="navelem"><a class="el" href="classthrill_1_1api_1_1WriteBinaryNode.html">WriteBinaryNode</a></li>
-    <li class="footer">Generated on Sat Oct 14 2017 08:17:18 for Thrill by
+    <li class="footer">Generated on Mon Oct 23 2017 22:11:38 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

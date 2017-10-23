@@ -280,7 +280,7 @@ $(document).ready(function(){initNavTree('functions_w.html','');});
 , <a class="el" href="classthrill_1_1data_1_1BlockPool.html#ab918f792039fb144dd12528701199562">BlockPool</a>
 , <a class="el" href="classthrill_1_1data_1_1BlockSink.html#ab918f792039fb144dd12528701199562">BlockSink</a>
 , <a class="el" href="classthrill_1_1data_1_1Multiplexer.html#ab918f792039fb144dd12528701199562">Multiplexer</a>
-, <a class="el" href="classthrill_1_1data_1_1Stream.html#ab918f792039fb144dd12528701199562">Stream</a>
+, <a class="el" href="classthrill_1_1data_1_1StreamData.html#ab918f792039fb144dd12528701199562">StreamData</a>
 </li>
 <li>workers_per_host_
 : <a class="el" href="classthrill_1_1api_1_1Context.html#a6730877f271a6d305ffb1ca69ee14b27">Context</a>
@@ -322,12 +322,10 @@ $(document).ready(function(){initNavTree('functions_w.html','');});
 <li>write_closed()
 : <a class="el" href="classthrill_1_1data_1_1BlockQueue.html#acd96ff70e772de9f023dc32d9f3964bb">BlockQueue</a>
 , <a class="el" href="classthrill_1_1data_1_1MixBlockQueue.html#acd96ff70e772de9f023dc32d9f3964bb">MixBlockQueue</a>
-, <a class="el" href="classthrill_1_1data_1_1MixBlockQueueSink.html#acd96ff70e772de9f023dc32d9f3964bb">MixBlockQueueSink</a>
 </li>
 <li>write_closed_
 : <a class="el" href="classthrill_1_1data_1_1BlockQueue.html#aa6d7cdea9046d4b809b22790707d78d5">BlockQueue</a>
 , <a class="el" href="classthrill_1_1data_1_1MixBlockQueue.html#af17f9b75fb3d37977e2a250bc815246d">MixBlockQueue</a>
-, <a class="el" href="classthrill_1_1data_1_1MixBlockQueueSink.html#aa6d7cdea9046d4b809b22790707d78d5">MixBlockQueueSink</a>
 </li>
 <li>write_finished()
 : <a class="el" href="classthrill_1_1io_1_1Stats.html#a47940f1c870975fcc707471eb5949164">Stats</a>
@@ -423,10 +421,12 @@ $(document).ready(function(){initNavTree('functions_w.html','');});
 </li>
 <li>Writer
 : <a class="el" href="classthrill_1_1api_1_1WriteBinaryNode.html#aaea85fe67e3a6dc4c2213e0a38e5d923">WriteBinaryNode&lt; ValueType &gt;</a>
-, <a class="el" href="classthrill_1_1data_1_1BlockQueue.html#ab0b45a23642f91075005b1874dba86fd">BlockQueue</a>
-, <a class="el" href="classthrill_1_1data_1_1DiscardSink.html#a2f8b9faf848556395543e9c0b9c226be">DiscardSink</a>
-, <a class="el" href="classthrill_1_1data_1_1File.html#af33c0e34e2d4cad19190b62078001bc9">File</a>
-, <a class="el" href="classthrill_1_1data_1_1Stream.html#a4edeafbc4e0f829a94914488937f0cf2">Stream</a>
+, <a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a71613aa0158c1a378e6e06913a4f685d">BlockQueue</a>
+, <a class="el" href="classthrill_1_1data_1_1CatStream.html#aad5eb46b6959f3401f973f4aca27d02d">CatStream</a>
+, <a class="el" href="classthrill_1_1data_1_1File.html#a2970881dc476126e9ffee280b42caea9">File</a>
+, <a class="el" href="classthrill_1_1data_1_1MixStream.html#a8e9c956d260fa0c6bbb669a07e12114d">MixStream</a>
+, <a class="el" href="classthrill_1_1data_1_1Stream.html#aa69ca4ad57a0d2a683361d219fd48c2e">Stream</a>
+, <a class="el" href="classthrill_1_1data_1_1StreamData.html#a08f9d7d340d452efab7eab158fcbfe64">StreamData</a>
 </li>
 <li>writer_
 : <a class="el" href="classthrill_1_1api_1_1BaseWindowNode.html#ade1c31d89c1a1059e34d33d03507fd9b">BaseWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;</a>
@@ -437,7 +437,7 @@ $(document).ready(function(){initNavTree('functions_w.html','');});
 , <a class="el" href="classthrill_1_1api_1_1WriteLinesOneNode.html#ade1c31d89c1a1059e34d33d03507fd9b">WriteLinesOneNode&lt; ValueType &gt;</a>
 , <a class="el" href="classthrill_1_1api_1_1ZipWithIndexNode.html#ade1c31d89c1a1059e34d33d03507fd9b">ZipWithIndexNode&lt; ValueType, ZipFunction &gt;</a>
 , <a class="el" href="classthrill_1_1core_1_1DeltaStreamWriter.html#a0f0fcb96c73d7feb05fd33a2b4c6d857">DeltaStreamWriter&lt; StreamWriter, Type, offset_ &gt;</a>
-, <a class="el" href="classthrill_1_1core_1_1ReducePrePhaseEmitter.html#aaebb68d97ed69a1d4ba8a377dd8aa274">ReducePrePhaseEmitter&lt; TableItem, VolatileKey &gt;</a>
+, <a class="el" href="classthrill_1_1core_1_1ReducePrePhaseEmitter.html#abc83d7d27e727d356faa9aa1c33bbf53">ReducePrePhaseEmitter&lt; TableItem, VolatileKey, BlockWriter &gt;</a>
 , <a class="el" href="classthrill_1_1data_1_1serialization__cereal_1_1ThrillOutputArchive.html#a57527f6312131797b596fbcc9a35a74d">ThrillOutputArchive&lt; Writer &gt;</a>
 </li>
 <li>writers_
@@ -461,7 +461,7 @@ $(document).ready(function(){initNavTree('functions_w.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 14 2017 08:17:21 for Thrill by
+    <li class="footer">Generated on Mon Oct 23 2017 22:11:40 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

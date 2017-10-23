@@ -2,7 +2,7 @@ var searchData=
 [
   ['file',['File',['../classthrill_1_1data_1_1File.html',1,'thrill::data']]],
   ['filebase',['FileBase',['../classthrill_1_1io_1_1FileBase.html',1,'thrill::io']]],
-  ['fileblocksource',['FileBlockSource',['../classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource.html',1,'thrill::api::ReadBinaryNode']]],
+  ['fileblocksink',['FileBlockSink',['../classthrill_1_1data_1_1FileBlockSink.html',1,'thrill::data']]],
   ['fileinfo',['FileInfo',['../structthrill_1_1api_1_1ReadBinaryNode_1_1FileInfo.html',1,'thrill::api::ReadBinaryNode']]],
   ['fileinfo',['FileInfo',['../structthrill_1_1vfs_1_1FileInfo.html',1,'thrill::vfs']]],
   ['filelist',['FileList',['../structthrill_1_1vfs_1_1FileList.html',1,'thrill::vfs']]],

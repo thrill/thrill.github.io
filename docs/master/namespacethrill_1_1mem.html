@@ -259,6 +259,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a096c42b5f2f459f11c5782e447d96af8"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1mem.html#a096c42b5f2f459f11c5782e447d96af8">malloc_tracker_peak</a> ()</td></tr>
 <tr class="memdesc:a096c42b5f2f459f11c5782e447d96af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">user function to return the peak allocation  <a href="#a096c42b5f2f459f11c5782e447d96af8">More...</a><br/></td></tr>
 <tr class="separator:a096c42b5f2f459f11c5782e447d96af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f1356f900dcb2dcebb55c3255acc51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1mem.html#a87f1356f900dcb2dcebb55c3255acc51">malloc_tracker_print_leaks</a> ()</td></tr>
+<tr class="memdesc:a87f1356f900dcb2dcebb55c3255acc51"><td class="mdescLeft">&#160;</td><td class="mdescRight">user function which prints new unfreed areas to stdout since the last call  <a href="#a87f1356f900dcb2dcebb55c3255acc51">More...</a><br/></td></tr>
+<tr class="separator:a87f1356f900dcb2dcebb55c3255acc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab2d6fb5cbfffb1c8474b5cd5d675467"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1mem.html#aab2d6fb5cbfffb1c8474b5cd5d675467">malloc_tracker_print_status</a> ()</td></tr>
 <tr class="memdesc:aab2d6fb5cbfffb1c8474b5cd5d675467"><td class="mdescLeft">&#160;</td><td class="mdescRight">user function which prints current and peak allocation to stderr  <a href="#aab2d6fb5cbfffb1c8474b5cd5d675467">More...</a><br/></td></tr>
 <tr class="separator:aab2d6fb5cbfffb1c8474b5cd5d675467"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -458,7 +461,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>CounterType is used for atomic counters, and get to retrieve their contents. Due to the thread-local cached statistics, the overall memory usage counter can actually go negative! </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00099">99</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00102">102</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
 </div>
 </div>
@@ -488,7 +491,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00079">79</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00082">82</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
 </div>
 </div>
@@ -520,7 +523,7 @@ Variables</h2></td></tr>
 
 <p>function pointer to the real procedures, loaded using dlsym() </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00078">78</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00081">81</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
 </div>
 </div>
@@ -534,7 +537,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00080">80</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00083">83</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
 </div>
 </div>
@@ -806,9 +809,9 @@ Variables</h2></td></tr>
 
 <p>bypass malloc tracker and access <a class="el" href="malloc__tracker_8cpp.html#aa436704814afb6abd70b0ec1332852b7" title="exported free symbol that overrides loading from libc ">free()</a> directly </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00489">489</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00492">492</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00157">base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00148">current_allocs</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00154">float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00833">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00142">PPREFIX</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00083">real_free</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00124">sync_sub_and_fetch()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00312">update_memprofile()</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00160">base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00151">current_allocs</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00157">float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00145">PPREFIX</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00086">real_free</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00127">sync_sub_and_fetch()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00315">update_memprofile()</a>.</p>
 
 <p>Referenced by <a class="el" href="pool_8cpp_source.html#l00272">Pool::deallocate()</a>, <a class="el" href="allocator_8hpp_source.html#l00097">Allocator&lt; char &gt;::deallocate()</a>, <a class="el" href="thrill_2mem_2allocator__base_8hpp_source.html#l00106">FixedAllocator&lt; Type, manager_ &gt;::deallocate()</a>, and <a class="el" href="pool_8cpp_source.html#l00147">Pool::IntDeallocateAll()</a>.</p>
 
@@ -838,9 +841,9 @@ Variables</h2></td></tr>
 
 <p>bypass malloc tracker and access <a class="el" href="malloc__tracker_8cpp.html#a465faf99e79df99ffbc1db0571879dfa" title="exported malloc symbol that overrides loading from libc ">malloc()</a> directly </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00448">448</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00451">451</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00157">base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00148">current_allocs</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00154">float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00808">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00142">PPREFIX</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00082">real_malloc</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00115">sync_add_and_fetch()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00147">total_allocs</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00150">total_bytes</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00312">update_memprofile()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00185">update_peak()</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00160">base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00151">current_allocs</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00157">float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00908">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00145">PPREFIX</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00085">real_malloc</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00118">sync_add_and_fetch()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00150">total_allocs</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00153">total_bytes</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00315">update_memprofile()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00188">update_peak()</a>.</p>
 
 <p>Referenced by <a class="el" href="allocator_8hpp_source.html#l00069">Allocator&lt; char &gt;::allocate()</a>, <a class="el" href="thrill_2mem_2allocator__base_8hpp_source.html#l00078">FixedAllocator&lt; Type, manager_ &gt;::allocate()</a>, and <a class="el" href="pool_8cpp_source.html#l00106">Pool::AllocateFreeArena()</a>.</p>
 
@@ -870,11 +873,11 @@ Variables</h2></td></tr>
 
 <p>decrement allocation to statistics </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00236">236</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00239">239</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00157">base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00148">current_allocs</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00154">float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00191">flush_memory_statistics()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00160">memory_exceeded</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00161">memory_limit_indication</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00124">sync_sub_and_fetch()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00181">tl_delay_threshold</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00180">tl_stats</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00312">update_memprofile()</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00160">base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00151">current_allocs</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00157">float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00194">flush_memory_statistics()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00163">memory_exceeded</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00164">memory_limit_indication</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00127">sync_sub_and_fetch()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00184">tl_delay_threshold</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00183">tl_stats</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00315">update_memprofile()</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00833">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00602">preinit_free()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00882">realloc()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00605">preinit_free()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00982">realloc()</a>.</p>
 
 </div>
 </div>
@@ -893,11 +896,11 @@ Variables</h2></td></tr>
 
 <p>method to flush thread-local memory statistics when memory_exceeded </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00191">191</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00194">194</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00157">base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00148">current_allocs</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00154">float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00160">memory_exceeded</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00161">memory_limit_indication</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00115">sync_add_and_fetch()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00180">tl_stats</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00147">total_allocs</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00150">total_bytes</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00312">update_memprofile()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00185">update_peak()</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00160">base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00151">current_allocs</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00157">float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00163">memory_exceeded</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00164">memory_limit_indication</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00118">sync_add_and_fetch()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00183">tl_stats</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00150">total_allocs</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00153">total_bytes</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00315">update_memprofile()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00188">update_peak()</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00236">dec_count()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00212">inc_count()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00239">dec_count()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00215">inc_count()</a>.</p>
 
 </div>
 </div>
@@ -949,7 +952,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00106">106</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00109">109</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
 </div>
 </div>
@@ -998,11 +1001,11 @@ Variables</h2></td></tr>
 
 <p>add allocation to statistics </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00212">212</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00215">215</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00157">base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00148">current_allocs</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00154">float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00191">flush_memory_statistics()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00160">memory_exceeded</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00161">memory_limit_indication</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00115">sync_add_and_fetch()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00181">tl_delay_threshold</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00180">tl_stats</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00147">total_allocs</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00150">total_bytes</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00312">update_memprofile()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00185">update_peak()</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00160">base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00151">current_allocs</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00157">float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00194">flush_memory_statistics()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00163">memory_exceeded</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00164">memory_limit_indication</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00118">sync_add_and_fetch()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00184">tl_delay_threshold</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00183">tl_stats</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00150">total_allocs</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00153">total_bytes</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00315">update_memprofile()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00188">update_peak()</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00808">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00538">preinit_malloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00882">realloc()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00908">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00541">preinit_malloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00982">realloc()</a>.</p>
 
 </div>
 </div>
@@ -1052,9 +1055,9 @@ Variables</h2></td></tr>
 <p>user function to return the currently allocated amount of memory </p>
 <p>returns the currently allocated amount of memory </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00255">255</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00258">258</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00154">float_curr</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00157">float_curr</a>.</p>
 
 </div>
 </div>
@@ -1074,9 +1077,30 @@ Variables</h2></td></tr>
 <p>user function to return the peak allocation </p>
 <p>returns the current peak memory allocation </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00260">260</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00263">263</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00151">peak_bytes</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00154">peak_bytes</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a87f1356f900dcb2dcebb55c3255acc51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void malloc_tracker_print_leaks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>user function which prints new unfreed areas to stdout since the last call </p>
+
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00700">700</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00145">PPREFIX</a>.</p>
 
 </div>
 </div>
@@ -1095,9 +1119,9 @@ Variables</h2></td></tr>
 
 <p>user function which prints current and peak allocation to stderr </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00275">275</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00278">278</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00157">base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00154">float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00151">peak_bytes</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00142">PPREFIX</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00160">base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00157">float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00154">peak_bytes</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00145">PPREFIX</a>.</p>
 
 <p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l00059">thrill::data::OurNewHandler()</a>, and <a class="el" href="dia__base_8cpp_source.html#l00380">DIABase::RunScope()</a>.</p>
 
@@ -1119,9 +1143,9 @@ Variables</h2></td></tr>
 <p>user function to reset the peak allocation to current </p>
 <p>resets the peak memory allocation to current </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00265">265</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00268">268</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00154">float_curr</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00151">peak_bytes</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00157">float_curr</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00154">peak_bytes</a>.</p>
 
 </div>
 </div>
@@ -1141,9 +1165,9 @@ Variables</h2></td></tr>
 <p>user function to return total number of allocations </p>
 <p>returns the total number of allocations </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00270">270</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00273">273</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00147">total_allocs</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00150">total_allocs</a>.</p>
 
 </div>
 </div>
@@ -1248,9 +1272,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>set the malloc tracking system to set memory_exceeded when this limit is exceed. it does not actually limit allocation! </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00280">280</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00283">283</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00161">memory_limit_indication</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00164">memory_limit_indication</a>.</p>
 
 <p>Referenced by <a class="el" href="context_8cpp_source.html#l00932">MemoryConfig::apply()</a>.</p>
 
@@ -1282,7 +1306,7 @@ Variables</h2></td></tr>
 
 <p>launch profiler task </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00371">371</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00374">374</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
 <p>References <a class="el" href="profile__thread_8hpp_source.html#l00049">ProfileThread::Add()</a>.</p>
 
@@ -1322,9 +1346,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00115">115</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00118">118</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00448">bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00191">flush_memory_statistics()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00212">inc_count()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00451">bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00194">flush_memory_statistics()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00215">inc_count()</a>.</p>
 
 </div>
 </div>
@@ -1360,9 +1384,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00124">124</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00127">127</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00489">bypass_free()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00236">dec_count()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00492">bypass_free()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00239">dec_count()</a>.</p>
 
 </div>
 </div>
@@ -1513,11 +1537,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00312">312</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00315">315</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00309">mp_base</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00288">mp_enable</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00309">mp_float</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00290">mp_next_bar</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00312">mp_base</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00291">mp_enable</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00312">mp_float</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00293">mp_next_bar</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00489">bypass_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00448">bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00236">dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00191">flush_memory_statistics()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00212">inc_count()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00492">bypass_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00451">bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00239">dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00194">flush_memory_statistics()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00215">inc_count()</a>.</p>
 
 </div>
 </div>
@@ -1545,11 +1569,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00185">185</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00188">188</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00157">base_curr</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00151">peak_bytes</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00160">base_curr</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00154">peak_bytes</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00448">bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00191">flush_memory_statistics()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00212">inc_count()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00451">bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00194">flush_memory_statistics()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00215">inc_count()</a>.</p>
 
 </div>
 </div>
@@ -1572,9 +1596,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00157">157</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00160">160</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00489">bypass_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00448">bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00236">dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00191">flush_memory_statistics()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00833">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00212">inc_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00808">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00275">malloc_tracker_print_status()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00882">realloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00185">update_peak()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00492">bypass_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00451">bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00239">dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00194">flush_memory_statistics()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00215">inc_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00908">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00278">malloc_tracker_print_status()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00982">realloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00188">update_peak()</a>.</p>
 
 </div>
 </div>
@@ -1596,9 +1620,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00148">148</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00151">151</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00489">bypass_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00448">bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00236">dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00191">flush_memory_statistics()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00212">inc_count()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00492">bypass_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00451">bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00239">dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00194">flush_memory_statistics()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00215">inc_count()</a>.</p>
 
 </div>
 </div>
@@ -1620,9 +1644,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00154">154</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00157">157</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00489">bypass_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00448">bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00236">dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00191">flush_memory_statistics()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00833">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00212">inc_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00808">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00255">malloc_tracker_current()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00275">malloc_tracker_print_status()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00265">malloc_tracker_reset_peak()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00882">realloc()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00492">bypass_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00451">bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00239">dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00194">flush_memory_statistics()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00215">inc_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00908">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00258">malloc_tracker_current()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00278">malloc_tracker_print_status()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00268">malloc_tracker_reset_peak()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00982">realloc()</a>.</p>
 
 </div>
 </div>
@@ -1660,9 +1684,9 @@ Variables</h2></td></tr>
 
 <p>align allocations to init_heap to this number by rounding up allocations </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00139">139</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00142">142</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00538">preinit_malloc()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00541">preinit_malloc()</a>.</p>
 
 </div>
 </div>
@@ -1684,9 +1708,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00134">134</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00137">137</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00833">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00538">preinit_malloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00882">realloc()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00541">preinit_malloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00982">realloc()</a>.</p>
 
 </div>
 </div>
@@ -1708,9 +1732,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00135">135</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00138">138</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00833">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00538">preinit_malloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00882">realloc()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00541">preinit_malloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00982">realloc()</a>.</p>
 
 </div>
 </div>
@@ -1734,7 +1758,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00062">62</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00833">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00808">malloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00882">realloc()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00908">malloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00982">realloc()</a>.</p>
 
 </div>
 </div>
@@ -1756,9 +1780,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00136">136</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00139">139</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00602">preinit_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00538">preinit_malloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00570">preinit_realloc()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00605">preinit_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00541">preinit_malloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00573">preinit_realloc()</a>.</p>
 
 </div>
 </div>
@@ -1784,7 +1808,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00063">63</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00833">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00808">malloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00882">realloc()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00908">malloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00982">realloc()</a>.</p>
 
 </div>
 </div>
@@ -1801,9 +1825,9 @@ Variables</h2></td></tr>
 <p>memory limit exceeded indicator </p>
 <p>boolean indication that the memory limit is exceeded </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00160">160</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00163">163</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00381">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::AddEqualKeysToVec()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00236">dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00191">flush_memory_statistics()</a>, <a class="el" href="reduce__probing__hash__table_8hpp_source.html#l00338">ReduceProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::GrowPartition()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00212">inc_count()</a>, <a class="el" href="reduce__old__probing__hash__table_8hpp_source.html#l00169">ReduceOldProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::Insert()</a>, <a class="el" href="reduce__bucket__hash__table_8hpp_source.html#l00257">ReduceBucketHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig, IndexFunction, KeyEqualFunction &gt;::Insert()</a>, <a class="el" href="inner__join_8hpp_source.html#l00590">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::JoinAllElements()</a>, <a class="el" href="group__to__index_8hpp_source.html#l00233">GroupToIndexNode&lt; ValueType, KeyExtractor, GroupFunction &gt;::MainOp()</a>, <a class="el" href="group__by__key_8hpp_source.html#l00341">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>, <a class="el" href="sort_8hpp_source.html#l00669">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::ReceiveItems()</a>, and <a class="el" href="reduce__probing__hash__table_8hpp_source.html#l00374">ReduceProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::SpillPartition()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00381">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::AddEqualKeysToVec()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00239">dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00194">flush_memory_statistics()</a>, <a class="el" href="reduce__probing__hash__table_8hpp_source.html#l00338">ReduceProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::GrowPartition()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00215">inc_count()</a>, <a class="el" href="reduce__old__probing__hash__table_8hpp_source.html#l00169">ReduceOldProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::Insert()</a>, <a class="el" href="reduce__bucket__hash__table_8hpp_source.html#l00257">ReduceBucketHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig, IndexFunction, KeyEqualFunction &gt;::Insert()</a>, <a class="el" href="inner__join_8hpp_source.html#l00590">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::JoinAllElements()</a>, <a class="el" href="group__to__index_8hpp_source.html#l00233">GroupToIndexNode&lt; ValueType, KeyExtractor, GroupFunction &gt;::MainOp()</a>, <a class="el" href="group__by__key_8hpp_source.html#l00341">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>, <a class="el" href="sort_8hpp_source.html#l00670">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::ReceiveItems()</a>, and <a class="el" href="reduce__probing__hash__table_8hpp_source.html#l00374">ReduceProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::SpillPartition()</a>.</p>
 
 </div>
 </div>
@@ -1817,9 +1841,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00161">161</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00164">164</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00236">dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00191">flush_memory_statistics()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00212">inc_count()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00280">set_memory_limit_indication()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00239">dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00194">flush_memory_statistics()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00215">inc_count()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00283">set_memory_limit_indication()</a>.</p>
 
 </div>
 </div>
@@ -1841,9 +1865,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00309">309</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00312">312</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00312">update_memprofile()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00315">update_memprofile()</a>.</p>
 
 </div>
 </div>
@@ -1865,9 +1889,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00288">288</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00291">291</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00312">update_memprofile()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00315">update_memprofile()</a>.</p>
 
 </div>
 </div>
@@ -1889,9 +1913,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00309">309</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00312">312</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00312">update_memprofile()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00315">update_memprofile()</a>.</p>
 
 </div>
 </div>
@@ -1913,9 +1937,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00290">290</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00293">293</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00312">update_memprofile()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00315">update_memprofile()</a>.</p>
 
 </div>
 </div>
@@ -1938,9 +1962,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>In the generic hook implementation, we add to each allocation additional data for bookkeeping. </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00075">75</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00078">78</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00833">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00808">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00602">preinit_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00538">preinit_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00570">preinit_realloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00882">realloc()</a>, <a class="el" href="zip_8hpp_source.html#l00588">thrill::api::Zip()</a>, and <a class="el" href="zip__window_8hpp_source.html#l00712">thrill::api::ZipWindow()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00908">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00605">preinit_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00541">preinit_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00573">preinit_realloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00982">realloc()</a>, <a class="el" href="zip_8hpp_source.html#l00588">thrill::api::Zip()</a>, and <a class="el" href="zip__window_8hpp_source.html#l00712">thrill::api::ZipWindow()</a>.</p>
 
 </div>
 </div>
@@ -1962,9 +1986,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00151">151</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00154">154</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00260">malloc_tracker_peak()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00275">malloc_tracker_print_status()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00265">malloc_tracker_reset_peak()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00185">update_peak()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00263">malloc_tracker_peak()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00278">malloc_tracker_print_status()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00268">malloc_tracker_reset_peak()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00188">update_peak()</a>.</p>
 
 </div>
 </div>
@@ -1986,9 +2010,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00083">83</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00086">86</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00489">bypass_free()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00833">free()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00492">bypass_free()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>.</p>
 
 </div>
 </div>
@@ -2010,9 +2034,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00082">82</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00085">85</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00448">bypass_malloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00808">malloc()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00451">bypass_malloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00908">malloc()</a>.</p>
 
 </div>
 </div>
@@ -2034,7 +2058,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00084">84</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00087">87</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
 </div>
 </div>
@@ -2058,9 +2082,9 @@ Variables</h2></td></tr>
 
 <p>a sentinel value prefixed to each allocation </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00087">87</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00090">90</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00833">free()</a>, <a class="el" href="reduce__old__probing__hash__table_8hpp_source.html#l00169">ReduceOldProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::Insert()</a>, <a class="el" href="reduce__probing__hash__table_8hpp_source.html#l00189">ReduceProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::Insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00544">LoserTreeCopyUnguardedBase&lt; ValueType, Comparator &gt;::LoserTreeCopyUnguardedBase()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00712">LoserTreePointerUnguardedBase&lt; ValueType, Comparator &gt;::LoserTreePointerUnguardedBase()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00808">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00602">preinit_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00538">preinit_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00570">preinit_realloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00882">realloc()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>, <a class="el" href="reduce__old__probing__hash__table_8hpp_source.html#l00169">ReduceOldProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::Insert()</a>, <a class="el" href="reduce__probing__hash__table_8hpp_source.html#l00189">ReduceProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::Insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00544">LoserTreeCopyUnguardedBase&lt; ValueType, Comparator &gt;::LoserTreeCopyUnguardedBase()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00712">LoserTreePointerUnguardedBase&lt; ValueType, Comparator &gt;::LoserTreePointerUnguardedBase()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00908">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00605">preinit_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00541">preinit_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00573">preinit_realloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00982">realloc()</a>.</p>
 
 </div>
 </div>
@@ -2082,9 +2106,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00181">181</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00184">184</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00236">dec_count()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00212">inc_count()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00239">dec_count()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00215">inc_count()</a>.</p>
 
 </div>
 </div>
@@ -2106,9 +2130,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00180">180</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00183">183</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00236">dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00191">flush_memory_statistics()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00212">inc_count()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00239">dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00194">flush_memory_statistics()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00215">inc_count()</a>.</p>
 
 </div>
 </div>
@@ -2130,9 +2154,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00147">147</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00150">150</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00448">bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00191">flush_memory_statistics()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00212">inc_count()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00270">malloc_tracker_total_allocs()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00451">bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00194">flush_memory_statistics()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00215">inc_count()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00273">malloc_tracker_total_allocs()</a>.</p>
 
 </div>
 </div>
@@ -2154,9 +2178,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00150">150</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00153">153</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00448">bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00191">flush_memory_statistics()</a>, <a class="el" href="block__manager_8cpp_source.html#l00101">BlockManager::get_total_bytes()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00212">inc_count()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00451">bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00194">flush_memory_statistics()</a>, <a class="el" href="block__manager_8cpp_source.html#l00101">BlockManager::get_total_bytes()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00215">inc_count()</a>.</p>
 
 </div>
 </div>
@@ -2166,7 +2190,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1mem.html">mem</a></li>
-    <li class="footer">Generated on Sat Oct 14 2017 08:17:19 for Thrill by
+    <li class="footer">Generated on Mon Oct 23 2017 22:11:39 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

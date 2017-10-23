@@ -48,7 +48,7 @@ var searchData=
   ['pre_5ffile1_5f',['pre_file1_',['../classthrill_1_1api_1_1JoinNode.html#a78a85fcd707773e69306f12fb39eeaa7',1,'thrill::api::JoinNode']]],
   ['pre_5ffile2_5f',['pre_file2_',['../classthrill_1_1api_1_1JoinNode.html#acdf98fb67cdeb64dade43b218bd4c9bc',1,'thrill::api::JoinNode']]],
   ['pre_5ffile_5f',['pre_file_',['../classthrill_1_1api_1_1GroupByNode.html#a27106a7b4fc25b08d93c0c2c4ff3be6f',1,'thrill::api::GroupByNode']]],
-  ['pre_5fphase_5f',['pre_phase_',['../classthrill_1_1api_1_1ReduceNode.html#ae61c4a75f6c11ad397a1c16cfadf439f',1,'thrill::api::ReduceNode::pre_phase_()'],['../classthrill_1_1api_1_1ReduceToIndexNode.html#ad11b99c466cc323d4af2032376bf4294',1,'thrill::api::ReduceToIndexNode::pre_phase_()']]],
+  ['pre_5fphase_5f',['pre_phase_',['../classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7',1,'thrill::api::ReduceNode::pre_phase_()'],['../classthrill_1_1api_1_1ReduceToIndexNode.html#ad887e021703f8145520e72234ce2d5e0',1,'thrill::api::ReduceToIndexNode::pre_phase_()']]],
   ['pre_5fwriter1_5f',['pre_writer1_',['../classthrill_1_1api_1_1JoinNode.html#a3b8a39fa7ef278b56e3cc75ac3b43dce',1,'thrill::api::JoinNode']]],
   ['pre_5fwriter2_5f',['pre_writer2_',['../classthrill_1_1api_1_1JoinNode.html#a45a47412e466d6b8348ce89e915cab7e',1,'thrill::api::JoinNode']]],
   ['pre_5fwriter_5f',['pre_writer_',['../classthrill_1_1api_1_1GroupByNode.html#a04fbda1eee3b19aa03f15657c6b9d683',1,'thrill::api::GroupByNode']]],
@@ -59,6 +59,6 @@ var searchData=
   ['profiler_5f',['profiler_',['../classthrill_1_1api_1_1HostContext.html#ac975eee51af1aac6a0743f3d1ccd560b',1,'thrill::api::HostContext::profiler_()'],['../classthrill_1_1common_1_1ProfileTaskRegistration.html#aa6bb4de5a7d362f8864f86d549816fab',1,'thrill::common::ProfileTaskRegistration::profiler_()']]],
   ['program_5fname_5f',['program_name_',['../classtlx_1_1CmdlineParser.html#a46ae7a27b899e9a86ad04807eb1ad34e',1,'tlx::CmdlineParser']]],
   ['ptr',['ptr',['../classthrill_1_1net_1_1FlowControlChannel_1_1LocalData.html#a220513c53af6187e4123b65a6f984e08',1,'thrill::net::FlowControlChannel::LocalData']]],
-  ['ptr_5f',['ptr_',['../classthrill_1_1io_1_1MemoryFile.html#aa5ec38c854291ed98296bd00efbf90ae',1,'thrill::io::MemoryFile::ptr_()'],['../classtlx_1_1CountingPtr.html#aa0957c00054156f1af9fce986cbfcb4f',1,'tlx::CountingPtr::ptr_()'],['../classtlx_1_1StackArena.html#aa5ec38c854291ed98296bd00efbf90ae',1,'tlx::StackArena::ptr_()']]],
+  ['ptr_5f',['ptr_',['../classthrill_1_1data_1_1CatStream.html#a35ebfabddecf9661a0f6c08f569f2698',1,'thrill::data::CatStream::ptr_()'],['../classthrill_1_1data_1_1MixStream.html#a83fd4bc1ba8102da6ca7a781fd153e55',1,'thrill::data::MixStream::ptr_()'],['../classthrill_1_1io_1_1MemoryFile.html#aa5ec38c854291ed98296bd00efbf90ae',1,'thrill::io::MemoryFile::ptr_()'],['../classtlx_1_1CountingPtr.html#aa0957c00054156f1af9fce986cbfcb4f',1,'tlx::CountingPtr::ptr_()'],['../classtlx_1_1StackArena.html#aa5ec38c854291ed98296bd00efbf90ae',1,'tlx::StackArena::ptr_()']]],
   ['pushed_5finputs',['pushed_inputs',['../structthrill_1_1api_1_1UnionNode_1_1UnionChild.html#aa4b42662c875af16068a75c59b306071',1,'thrill::api::UnionNode::UnionChild']]]
 ];

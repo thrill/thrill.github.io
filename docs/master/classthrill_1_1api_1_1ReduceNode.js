@@ -10,7 +10,7 @@ var classthrill_1_1api_1_1ReduceNode =
     [ "debug", "classthrill_1_1api_1_1ReduceNode.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
     [ "emitters_", "classthrill_1_1api_1_1ReduceNode.html#a18ff9277056d6ce5d80a1561569a2ff2", null ],
     [ "post_phase_", "classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390", null ],
-    [ "pre_phase_", "classthrill_1_1api_1_1ReduceNode.html#ae61c4a75f6c11ad397a1c16cfadf439f", null ],
+    [ "pre_phase_", "classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7", null ],
     [ "reduced_", "classthrill_1_1api_1_1ReduceNode.html#aec7a79b2ac83344b8470699cc128df00", null ],
     [ "thread_", "classthrill_1_1api_1_1ReduceNode.html#aeca1ca9969ec13ce72735b5f6d468ab1", null ],
     [ "use_mix_stream_", "classthrill_1_1api_1_1ReduceNode.html#ab2c4552c87902aff3cd748f9d39de5bb", null ],

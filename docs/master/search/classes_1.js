@@ -16,6 +16,7 @@ var searchData=
   ['blockpool',['BlockPool',['../classthrill_1_1data_1_1BlockPool.html',1,'thrill::data']]],
   ['blockpoolmemoryholder',['BlockPoolMemoryHolder',['../classthrill_1_1data_1_1BlockPoolMemoryHolder.html',1,'thrill::data']]],
   ['blockqueue',['BlockQueue',['../classthrill_1_1data_1_1BlockQueue.html',1,'thrill::data']]],
+  ['blockqueuesink',['BlockQueueSink',['../classthrill_1_1data_1_1BlockQueueSink.html',1,'thrill::data']]],
   ['blockreader',['BlockReader',['../classthrill_1_1data_1_1BlockReader.html',1,'thrill::data']]],
   ['blockreader_3c_20catblocksource_20_3e',['BlockReader&lt; CatBlockSource &gt;',['../classthrill_1_1data_1_1BlockReader.html',1,'thrill::data']]],
   ['blocksink',['BlockSink',['../classthrill_1_1data_1_1BlockSink.html',1,'thrill::data']]],

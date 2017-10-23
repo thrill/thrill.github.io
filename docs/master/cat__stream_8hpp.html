@@ -124,7 +124,6 @@ $(document).ready(function(){initNavTree('cat__stream_8hpp.html','');});
 <div class="textblock"><code>#include &lt;<a class="el" href="block__queue_8hpp_source.html">thrill/data/block_queue.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="cat__block__source_8hpp_source.html">thrill/data/cat_block_source.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="stream_8hpp_source.html">thrill/data/stream.hpp</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="stream__sink_8hpp_source.html">thrill/data/stream_sink.hpp</a>&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
 <code>#include &lt;vector&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -132,7 +131,7 @@ $(document).ready(function(){initNavTree('cat__stream_8hpp.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="cat__stream_8hpp__incl.svg" width="8014" height="1334"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="cat__stream_8hpp__incl.svg" width="7716" height="1424"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -149,7 +148,10 @@ $(document).ready(function(){initNavTree('cat__stream_8hpp.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1CatStream.html">CatStream</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classthrill_1_1data_1_1Stream.html" title="Base class for common structures for ConcatStream and MixedStream. ">Stream</a> is a virtual set of connections to all other worker instances, hence a "Stream" bundles them to a logical communication context.  <a href="classthrill_1_1data_1_1CatStream.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ownership handle onto a <a class="el" href="classthrill_1_1data_1_1CatStreamData.html" title="A Stream is a virtual set of connections to all other worker instances, hence a &quot;Stream&quot; bundles them...">CatStreamData</a>.  <a href="classthrill_1_1data_1_1CatStream.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1CatStreamData.html">CatStreamData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classthrill_1_1data_1_1Stream.html" title="Stream - base class for CatStream and MixStream. ">Stream</a> is a virtual set of connections to all other worker instances, hence a "Stream" bundles them to a logical communication context.  <a href="classthrill_1_1data_1_1CatStreamData.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -166,12 +168,14 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ga4c9227f65cc5fae907c969a9861025cc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga4c9227f65cc5fae907c969a9861025cc">CatStreamDataPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; CatStreamData &gt;</td></tr>
+<tr class="separator:ga4c9227f65cc5fae907c969a9861025cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5e26e99f6cf880f5376fe272cfc59dcf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">CatStreamPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; CatStream &gt;</td></tr>
 <tr class="separator:ga5e26e99f6cf880f5376fe272cfc59dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad468d9d6927f81737fcbcaec29a67b62"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#gad468d9d6927f81737fcbcaec29a67b62">CatStreamSet</a> = StreamSet&lt; CatStream &gt;</td></tr>
-<tr class="separator:gad468d9d6927f81737fcbcaec29a67b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3fcda4fc0d05fc4422028bbd351557e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga3fcda4fc0d05fc4422028bbd351557e2">CatStreamSetPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; CatStreamSet &gt;</td></tr>
-<tr class="separator:ga3fcda4fc0d05fc4422028bbd351557e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ad355ee447a27c0d7e476464f51ce39"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga8ad355ee447a27c0d7e476464f51ce39">CatStreamSet</a> = StreamSet&lt; CatStreamData &gt;</td></tr>
+<tr class="separator:ga8ad355ee447a27c0d7e476464f51ce39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5b829f7f762aebcaf37404f0290d4ac"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#gaa5b829f7f762aebcaf37404f0290d4ac">CatStreamSetPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; CatStreamSet &gt;</td></tr>
+<tr class="separator:gaa5b829f7f762aebcaf37404f0290d4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a820d4bf989eee0937ecdb9bd96233066"></a>
@@ -194,7 +198,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_c0e49fec6cb6c78dde854e77e0fc73d0.html">data</a></li><li class="navelem"><a class="el" href="cat__stream_8hpp.html">cat_stream.hpp</a></li>
-    <li class="footer">Generated on Sat Oct 14 2017 08:17:16 for Thrill by
+    <li class="footer">Generated on Mon Oct 23 2017 22:11:37 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

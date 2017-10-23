@@ -1,6 +1,6 @@
 var classthrill_1_1data_1_1BlockWriter =
 [
-    [ "BlockWriter", "classthrill_1_1data_1_1BlockWriter.html#a12abf9c09cea84edda3635b99f006904", null ],
+    [ "BlockWriter", "classthrill_1_1data_1_1BlockWriter.html#a55c193d10677d15e91994ee6a1640111", null ],
     [ "BlockWriter", "classthrill_1_1data_1_1BlockWriter.html#aafeb8363236d0c1f8e9b3150e00a3414", null ],
     [ "BlockWriter", "classthrill_1_1data_1_1BlockWriter.html#a0813f6138d9201318752c4c579f03218", null ],
     [ "BlockWriter", "classthrill_1_1data_1_1BlockWriter.html#a2d2779e6c05a8da4cc8648dfbe1aeecf", null ],
@@ -34,6 +34,6 @@ var classthrill_1_1data_1_1BlockWriter =
     [ "max_block_size_", "classthrill_1_1data_1_1BlockWriter.html#ac1670505e7ccf2ec5424e0df51dce74c", null ],
     [ "nitems_", "classthrill_1_1data_1_1BlockWriter.html#a1eca387e8909e4fdcb15f7c3ee3410f4", null ],
     [ "self_verify", "classthrill_1_1data_1_1BlockWriter.html#a51f3d93e980ccb92259a9ad807abf54b", null ],
-    [ "sink_", "classthrill_1_1data_1_1BlockWriter.html#a14bfd0c3c2bbef90e691b6f328f9ab0c", null ],
+    [ "sink_", "classthrill_1_1data_1_1BlockWriter.html#a0df48cb58f65de0b6e4ce3c6d974093e", null ],
     [ "sink_queue_", "classthrill_1_1data_1_1BlockWriter.html#ad47ef81960d0ec5b3e3e177715ec181e", null ]
 ];

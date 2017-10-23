@@ -1,6 +1,7 @@
 var classthrill_1_1data_1_1BlockSink =
 [
     [ "BlockSink", "classthrill_1_1data_1_1BlockSink.html#a9bb8ac7f27b07a4cf7c695f0bf51ac18", null ],
+    [ "BlockSink", "classthrill_1_1data_1_1BlockSink.html#ae3999655585068d5037ccf889c3ab81b", null ],
     [ "BlockSink", "classthrill_1_1data_1_1BlockSink.html#a21af8b8213fd814a4b52fac86d3a914e", null ],
     [ "BlockSink", "classthrill_1_1data_1_1BlockSink.html#ae0ebbacfa15eded0b104e46663eceeaa", null ],
     [ "~BlockSink", "classthrill_1_1data_1_1BlockSink.html#ac9ab050611cc0c6a40ee2098e573fc99", null ],

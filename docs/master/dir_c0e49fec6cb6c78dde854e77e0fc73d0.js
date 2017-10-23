@@ -30,6 +30,7 @@ var dir_c0e49fec6cb6c78dde854e77e0fc73d0 =
     [ "serialization_fwd.hpp", "serialization__fwd_8hpp.html", "serialization__fwd_8hpp" ],
     [ "stream.cpp", "stream_8cpp.html", null ],
     [ "stream.hpp", "stream_8hpp.html", "stream_8hpp" ],
+    [ "stream_data.hpp", "stream__data_8hpp.html", "stream__data_8hpp" ],
     [ "stream_sink.cpp", "stream__sink_8cpp.html", null ],
     [ "stream_sink.hpp", "stream__sink_8hpp.html", "stream__sink_8hpp" ]
 ];

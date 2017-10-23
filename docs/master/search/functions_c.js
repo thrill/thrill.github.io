@@ -35,7 +35,7 @@ var searchData=
   ['loop',['Loop',['../classthrill_1_1net_1_1Dispatcher.html#a3cc03ff338ebac1a1602f9069f137d5a',1,'thrill::net::Dispatcher']]],
   ['loop_5funtil_5fempty',['loop_until_empty',['../classtlx_1_1ThreadPool.html#a9a07bc90245a99944cfe79f9d282bc0d',1,'tlx::ThreadPool']]],
   ['loop_5funtil_5fterminate',['loop_until_terminate',['../classtlx_1_1ThreadPool.html#a0957729c2ffe0e4d65247fbd1880f3ad',1,'tlx::ThreadPool']]],
-  ['loopback_5fqueue',['loopback_queue',['../classthrill_1_1data_1_1CatStream.html#a7f8d0a8ed0772b09cae61fd8a5762cea',1,'thrill::data::CatStream::loopback_queue()'],['../classthrill_1_1data_1_1MixStream.html#a8011e4f70e14531f2a50324a9e97a02b',1,'thrill::data::MixStream::loopback_queue()']]],
+  ['loopback_5fqueue',['loopback_queue',['../classthrill_1_1data_1_1CatStreamData.html#a7f8d0a8ed0772b09cae61fd8a5762cea',1,'thrill::data::CatStreamData']]],
   ['losertreecopy',['LoserTreeCopy',['../group__tlx__data__structures__loser__tree.html#ga18800cc410d9884293c3af7cbda12496',1,'tlx::LoserTreeCopy::LoserTreeCopy()'],['../group__tlx__data__structures__loser__tree.html#ga18800cc410d9884293c3af7cbda12496',1,'tlx::LoserTreeCopy&lt; true, ValueType, Comparator &gt;::LoserTreeCopy()']]],
   ['losertreecopybase',['LoserTreeCopyBase',['../group__tlx__data__structures__loser__tree.html#ga05fc0c59707abe4501c0c9779e33fac3',1,'tlx::LoserTreeCopyBase']]],
   ['losertreecopyunguarded',['LoserTreeCopyUnguarded',['../group__tlx__data__structures__loser__tree.html#gadde4a29fceaf3fc5d3bf027c6c7c4651',1,'tlx::LoserTreeCopyUnguarded::LoserTreeCopyUnguarded()'],['../group__tlx__data__structures__loser__tree.html#ga9217936c23da221160951da2e74ea714',1,'tlx::LoserTreeCopyUnguarded&lt; true, ValueType, Comparator &gt;::LoserTreeCopyUnguarded()']]],

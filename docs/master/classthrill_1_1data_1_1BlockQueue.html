@@ -127,9 +127,9 @@ $(document).ready(function(){initNavTree('classthrill_1_1data_1_1BlockQueue.html
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a> is a thread-safe queue used to hand-over <a class="el" href="classthrill_1_1data_1_1Block.html" title="Block combines a reference to a read-only ByteBlock and book-keeping information. ...">Block</a> objects between threads. </p>
 <p>It is currently used by the <a class="el" href="classthrill_1_1data_1_1Multiplexer.html" title="Multiplexes virtual Connections on Dispatcher. ">Multiplexer</a> to queue received Blocks and deliver them (later) to their destination.</p>
-<p>The <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a> itself is also a <a class="el" href="classthrill_1_1data_1_1BlockSink.html" title="Pure virtual base class for all things that can receive Blocks from a BlockWriter. ">BlockSink</a> (so one can attach a <a class="el" href="classthrill_1_1data_1_1BlockWriter.html" title="BlockWriter contains a temporary Block object into which a) any serializable item can be stored or b)...">BlockWriter</a> to it). To read items from the queue, one needs to use a <a class="el" href="classthrill_1_1data_1_1BlockReader.html" title="BlockReader takes Block objects from BlockSource and allows reading of a) serializable Items or b) ar...">BlockReader</a> instantiated with a BlockQueueSource. Both are easily available via <a class="el" href="classthrill_1_1data_1_1BlockQueue.html#ad65bdc3118717fd17f0a3190bb73c407" title="Return a BlockWriter delivering to this BlockQueue. ">GetWriter()</a> and <a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a3225c13b001bd85d7fd94b17103063e7" title="return polymorphic BlockReader variant ">GetReader()</a>. Each block is available only <em>once</em> via the BlockQueueSource. </p>
+<p>The <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a> itself is also a <a class="el" href="classthrill_1_1data_1_1BlockSink.html" title="Pure virtual base class for all things that can receive Blocks from a BlockWriter. ">BlockSink</a> (so one can attach a <a class="el" href="classthrill_1_1data_1_1BlockWriter.html" title="BlockWriter contains a temporary Block object into which a) any serializable item can be stored or b)...">BlockWriter</a> to it). To read items from the queue, one needs to use a <a class="el" href="classthrill_1_1data_1_1BlockReader.html" title="BlockReader takes Block objects from BlockSource and allows reading of a) serializable Items or b) ar...">BlockReader</a> instantiated with a BlockQueueSource. Both are easily available via <a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a9d7eb22664df01f3751e3fa787add90f" title="Return a BlockWriter delivering to this BlockQueue. ">GetWriter()</a> and <a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a3225c13b001bd85d7fd94b17103063e7" title="return polymorphic BlockReader variant ">GetReader()</a>. Each block is available only <em>once</em> via the BlockQueueSource. </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00046">46</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00047">47</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for BlockQueue:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -157,8 +157,8 @@ Public Types</h2></td></tr>
 <tr class="separator:a7d765cf1578228934745a49ec446e67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac306eb24ea466acd3e0d87ea82f56916"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#ac306eb24ea466acd3e0d87ea82f56916">Reader</a> = <a class="el" href="group__data__layer.html#ga75466e8af722e6fd8ff9139ad6eeee40">DynBlockReader</a></td></tr>
 <tr class="separator:ac306eb24ea466acd3e0d87ea82f56916"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0b45a23642f91075005b1874dba86fd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#ab0b45a23642f91075005b1874dba86fd">Writer</a> = <a class="el" href="classthrill_1_1data_1_1BlockWriter.html">BlockWriter</a>&lt; <a class="el" href="classthrill_1_1data_1_1BlockQueue.html">BlockQueue</a> &gt;</td></tr>
-<tr class="separator:ab0b45a23642f91075005b1874dba86fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71613aa0158c1a378e6e06913a4f685d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a71613aa0158c1a378e6e06913a4f685d">Writer</a> = <a class="el" href="classthrill_1_1data_1_1BlockWriter.html">BlockWriter</a>&lt; <a class="el" href="classthrill_1_1data_1_1BlockQueueSink.html">BlockQueueSink</a> &gt;</td></tr>
+<tr class="separator:a71613aa0158c1a378e6e06913a4f685d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -197,9 +197,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3225c13b001bd85d7fd94b17103063e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#ac306eb24ea466acd3e0d87ea82f56916">Reader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a3225c13b001bd85d7fd94b17103063e7">GetReader</a> (bool consume, size_t <a class="el" href="classthrill_1_1data_1_1BlockSink.html#a7f675707d08d39fcffdbc735c801caf5">local_worker_id</a>)</td></tr>
 <tr class="memdesc:a3225c13b001bd85d7fd94b17103063e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">return polymorphic <a class="el" href="classthrill_1_1data_1_1BlockReader.html" title="BlockReader takes Block objects from BlockSource and allows reading of a) serializable Items or b) ar...">BlockReader</a> variant  <a href="#a3225c13b001bd85d7fd94b17103063e7">More...</a><br/></td></tr>
 <tr class="separator:a3225c13b001bd85d7fd94b17103063e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad65bdc3118717fd17f0a3190bb73c407"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#ab0b45a23642f91075005b1874dba86fd">Writer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#ad65bdc3118717fd17f0a3190bb73c407">GetWriter</a> (size_t block_size=<a class="el" href="group__data__layer.html#gaf7e35b7b12aa89f4b4566640a03c62fb">default_block_size</a>)</td></tr>
-<tr class="memdesc:ad65bdc3118717fd17f0a3190bb73c407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a <a class="el" href="classthrill_1_1data_1_1BlockWriter.html" title="BlockWriter contains a temporary Block object into which a) any serializable item can be stored or b)...">BlockWriter</a> delivering to this <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a>.  <a href="#ad65bdc3118717fd17f0a3190bb73c407">More...</a><br/></td></tr>
-<tr class="separator:ad65bdc3118717fd17f0a3190bb73c407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d7eb22664df01f3751e3fa787add90f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a71613aa0158c1a378e6e06913a4f685d">Writer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a9d7eb22664df01f3751e3fa787add90f">GetWriter</a> (size_t block_size=<a class="el" href="group__data__layer.html#gaf7e35b7b12aa89f4b4566640a03c62fb">default_block_size</a>)</td></tr>
+<tr class="memdesc:a9d7eb22664df01f3751e3fa787add90f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a <a class="el" href="classthrill_1_1data_1_1BlockWriter.html" title="BlockWriter contains a temporary Block object into which a) any serializable item can be stored or b)...">BlockWriter</a> delivering to this <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a>.  <a href="#a9d7eb22664df01f3751e3fa787add90f">More...</a><br/></td></tr>
+<tr class="separator:a9d7eb22664df01f3751e3fa787add90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ea56a9892d644a46ca797cbd52e764f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a2ea56a9892d644a46ca797cbd52e764f">item_counter</a> () const </td></tr>
 <tr class="memdesc:a2ea56a9892d644a46ca797cbd52e764f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns item_counter_.  <a href="#a2ea56a9892d644a46ca797cbd52e764f">More...</a><br/></td></tr>
 <tr class="separator:a2ea56a9892d644a46ca797cbd52e764f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,15 +219,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae02139854c3603813101fdd13ffc11e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5da44f96c188e2badab29a75172fa15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#ab5da44f96c188e2badab29a75172fa15">set_dia_id</a> (size_t dia_id)</td></tr>
 <tr class="separator:ab5da44f96c188e2badab29a75172fa15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f54b683053d4a7cafb675870f5a53ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a8f54b683053d4a7cafb675870f5a53ff">set_source</a> (void *<a class="el" href="classthrill_1_1data_1_1BlockQueue.html#ad776d6ae99eca8a83961f51f6881a3c7">source</a>)</td></tr>
-<tr class="memdesc:a8f54b683053d4a7cafb675870f5a53ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">set opaque source pointer  <a href="#a8f54b683053d4a7cafb675870f5a53ff">More...</a><br/></td></tr>
-<tr class="separator:a8f54b683053d4a7cafb675870f5a53ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b6b70701c46e22849f0f363861351cd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a0b6b70701c46e22849f0f363861351cd">size</a> ()</td></tr>
 <tr class="memdesc:a0b6b70701c46e22849f0f363861351cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of block in the queue. Use this ONLY for DEBUGGING!  <a href="#a0b6b70701c46e22849f0f363861351cd">More...</a><br/></td></tr>
 <tr class="separator:a0b6b70701c46e22849f0f363861351cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad776d6ae99eca8a83961f51f6881a3c7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#ad776d6ae99eca8a83961f51f6881a3c7">source</a> () const </td></tr>
-<tr class="memdesc:ad776d6ae99eca8a83961f51f6881a3c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns source_.  <a href="#ad776d6ae99eca8a83961f51f6881a3c7">More...</a><br/></td></tr>
-<tr class="separator:ad776d6ae99eca8a83961f51f6881a3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cf2eef3faf4a4e6a516238d836081d2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacethrill_1_1common.html#a3ae96f5fb98a50b44925f02b75cb05ff">common::StatsTimer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a7cf2eef3faf4a4e6a516238d836081d2">timespan</a> () const </td></tr>
 <tr class="memdesc:a7cf2eef3faf4a4e6a516238d836081d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns timespan_.  <a href="#a7cf2eef3faf4a4e6a516238d836081d2">More...</a><br/></td></tr>
 <tr class="separator:a7cf2eef3faf4a4e6a516238d836081d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,6 +232,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9bb8ac7f27b07a4cf7c695f0bf51ac18 inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockSink.html#a9bb8ac7f27b07a4cf7c695f0bf51ac18">BlockSink</a> (<a class="el" href="classthrill_1_1data_1_1BlockPool.html">BlockPool</a> &amp;<a class="el" href="classthrill_1_1data_1_1BlockSink.html#a4a8b0495a3b4e4818f29e66ce597ef6e">block_pool</a>, size_t <a class="el" href="classthrill_1_1data_1_1BlockSink.html#a7f675707d08d39fcffdbc735c801caf5">local_worker_id</a>)</td></tr>
 <tr class="memdesc:a9bb8ac7f27b07a4cf7c695f0bf51ac18 inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor with reference to <a class="el" href="classthrill_1_1data_1_1BlockPool.html" title="Pool to allocate, keep, swap out/in, and free all ByteBlocks on the host. ">BlockPool</a>  <a href="#a9bb8ac7f27b07a4cf7c695f0bf51ac18">More...</a><br/></td></tr>
 <tr class="separator:a9bb8ac7f27b07a4cf7c695f0bf51ac18 inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3999655585068d5037ccf889c3ab81b inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockSink.html#ae3999655585068d5037ccf889c3ab81b">BlockSink</a> (<a class="el" href="classthrill_1_1data_1_1BlockPool.html">BlockPool</a> *<a class="el" href="classthrill_1_1data_1_1BlockSink.html#a4a8b0495a3b4e4818f29e66ce597ef6e">block_pool</a>, size_t <a class="el" href="classthrill_1_1data_1_1BlockSink.html#a7f675707d08d39fcffdbc735c801caf5">local_worker_id</a>)</td></tr>
+<tr class="memdesc:ae3999655585068d5037ccf889c3ab81b inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor with reference to <a class="el" href="classthrill_1_1data_1_1BlockPool.html" title="Pool to allocate, keep, swap out/in, and free all ByteBlocks on the host. ">BlockPool</a>  <a href="#ae3999655585068d5037ccf889c3ab81b">More...</a><br/></td></tr>
+<tr class="separator:ae3999655585068d5037ccf889c3ab81b inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21af8b8213fd814a4b52fac86d3a914e inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockSink.html#a21af8b8213fd814a4b52fac86d3a914e">BlockSink</a> (const <a class="el" href="classthrill_1_1data_1_1BlockSink.html">BlockSink</a> &amp;)=default</td></tr>
 <tr class="memdesc:a21af8b8213fd814a4b52fac86d3a914e inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="mdescLeft">&#160;</td><td class="mdescRight">default copy-constructor  <a href="#a21af8b8213fd814a4b52fac86d3a914e">More...</a><br/></td></tr>
 <tr class="separator:a21af8b8213fd814a4b52fac86d3a914e inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,9 +305,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a6cb6f10c304ef67fe2b723884e7b057b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5670b832410a1e513dbccfc7bef8ece3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a5670b832410a1e513dbccfc7bef8ece3">read_closed_</a> = false</td></tr>
 <tr class="separator:a5670b832410a1e513dbccfc7bef8ece3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad29c40a8e7e0b1d8a8b7a5088c4d3039"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#ad29c40a8e7e0b1d8a8b7a5088c4d3039">source_</a> = nullptr</td></tr>
-<tr class="memdesc:ad29c40a8e7e0b1d8a8b7a5088c4d3039"><td class="mdescLeft">&#160;</td><td class="mdescRight">opaque pointer to the source (used by close_callback_ if needed).  <a href="#ad29c40a8e7e0b1d8a8b7a5088c4d3039">More...</a><br/></td></tr>
-<tr class="separator:ad29c40a8e7e0b1d8a8b7a5088c4d3039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f5b8e096afb06ebf3b666ae76ed9995"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacethrill_1_1common.html#a56c6dc17b2c26a47dca3e60575a290d7">common::StatsTimerStart</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a0f5b8e096afb06ebf3b666ae76ed9995">timespan_</a></td></tr>
 <tr class="memdesc:a0f5b8e096afb06ebf3b666ae76ed9995"><td class="mdescLeft">&#160;</td><td class="mdescRight">timespan of existance  <a href="#a0f5b8e096afb06ebf3b666ae76ed9995">More...</a><br/></td></tr>
 <tr class="separator:a0f5b8e096afb06ebf3b666ae76ed9995"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -335,7 +329,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00055">55</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00056">56</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -349,7 +343,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00053">53</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00054">54</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -363,21 +357,21 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00052">52</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00053">53</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab0b45a23642f91075005b1874dba86fd"></a>
+<a class="anchor" id="a71613aa0158c1a378e6e06913a4f685d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classthrill_1_1data_1_1BlockQueue.html#ab0b45a23642f91075005b1874dba86fd">Writer</a> =  <a class="el" href="classthrill_1_1data_1_1BlockWriter.html">BlockWriter</a>&lt;<a class="el" href="classthrill_1_1data_1_1BlockQueue.html">BlockQueue</a>&gt;</td>
+          <td class="memname">using <a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a71613aa0158c1a378e6e06913a4f685d">Writer</a> =  <a class="el" href="classthrill_1_1data_1_1BlockWriter.html">BlockWriter</a>&lt;<a class="el" href="classthrill_1_1data_1_1BlockQueueSink.html">BlockQueueSink</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00051">51</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00052">52</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -515,9 +509,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classthrill_1_1data_1_1BlockSink.html#a51d6650162c2d11a84243db1d394e947">BlockSink</a>.</p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00071">71</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00072">72</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00164">BlockQueue::block_counter_</a>, <a class="el" href="block__queue_8hpp_source.html#l00162">BlockQueue::byte_counter_</a>, <a class="el" href="block__queue_8hpp_source.html#l00160">BlockQueue::item_counter_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOG</a>, and <a class="el" href="block__queue_8hpp_source.html#l00151">BlockQueue::queue_</a>.</p>
+<p>References <a class="el" href="block__queue_8hpp_source.html#l00157">BlockQueue::block_counter_</a>, <a class="el" href="block__queue_8hpp_source.html#l00155">BlockQueue::byte_counter_</a>, <a class="el" href="block__queue_8hpp_source.html#l00153">BlockQueue::item_counter_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOG</a>, and <a class="el" href="block__queue_8hpp_source.html#l00144">BlockQueue::queue_</a>.</p>
+
+<p>Referenced by <a class="el" href="block__queue_8hpp_source.html#l00204">BlockQueueSink::AppendBlock()</a>.</p>
 
 </div>
 </div>
@@ -557,9 +553,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classthrill_1_1data_1_1BlockSink.html#a5080ee8714f4176658a6cd5f16039a5e">BlockSink</a>.</p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00078">78</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00079">79</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00164">BlockQueue::block_counter_</a>, <a class="el" href="block__queue_8hpp_source.html#l00162">BlockQueue::byte_counter_</a>, <a class="el" href="block__queue_8hpp_source.html#l00160">BlockQueue::item_counter_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOG</a>, and <a class="el" href="block__queue_8hpp_source.html#l00151">BlockQueue::queue_</a>.</p>
+<p>References <a class="el" href="block__queue_8hpp_source.html#l00157">BlockQueue::block_counter_</a>, <a class="el" href="block__queue_8hpp_source.html#l00155">BlockQueue::byte_counter_</a>, <a class="el" href="block__queue_8hpp_source.html#l00153">BlockQueue::item_counter_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOG</a>, and <a class="el" href="block__queue_8hpp_source.html#l00144">BlockQueue::queue_</a>.</p>
 
 </div>
 </div>
@@ -586,11 +582,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns block_counter_. </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00126">126</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00127">127</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00164">BlockQueue::block_counter_</a>.</p>
+<p>References <a class="el" href="block__queue_8hpp_source.html#l00157">BlockQueue::block_counter_</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>.</p>
+<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStreamData::CatStreamData()</a>.</p>
 
 </div>
 </div>
@@ -617,11 +613,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns byte_counter_. </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00124">124</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00125">125</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00162">BlockQueue::byte_counter_</a>.</p>
+<p>References <a class="el" href="block__queue_8hpp_source.html#l00155">BlockQueue::byte_counter_</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>.</p>
+<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStreamData::CatStreamData()</a>.</p>
 
 </div>
 </div>
@@ -652,7 +648,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00028">28</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
 
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00164">BlockQueue::block_counter_</a>, <a class="el" href="block__queue_8hpp_source.html#l00173">BlockQueue::close_callback_</a>, <a class="el" href="block__queue_8hpp_source.html#l00151">BlockQueue::queue_</a>, and <a class="el" href="block__queue_8hpp_source.html#l00153">BlockQueue::write_closed_</a>.</p>
+<p>References <a class="el" href="block__queue_8hpp_source.html#l00157">BlockQueue::block_counter_</a>, <a class="el" href="block__queue_8hpp_source.html#l00166">BlockQueue::close_callback_</a>, <a class="el" href="block__queue_8hpp_source.html#l00144">BlockQueue::queue_</a>, and <a class="el" href="block__queue_8hpp_source.html#l00146">BlockQueue::write_closed_</a>.</p>
+
+<p>Referenced by <a class="el" href="stream__sink_8cpp_source.html#l00187">StreamSink::Close()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00216">BlockQueueSink::Close()</a>.</p>
 
 </div>
 </div>
@@ -677,9 +675,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00113">113</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00114">114</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00151">BlockQueue::queue_</a>.</p>
+<p>References <a class="el" href="block__queue_8hpp_source.html#l00144">BlockQueue::queue_</a>.</p>
 
 </div>
 </div>
@@ -709,11 +707,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>return polymorphic BlockSource variant </p>
 
-<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00045">45</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00052">52</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
 
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00169">BlockQueue::file_</a>, <a class="el" href="block__sink_8hpp_source.html#l00094">BlockSink::local_worker_id()</a>, <a class="el" href="file_8hpp_source.html#l00181">File::num_items()</a>, <a class="el" href="block__queue_8hpp_source.html#l00157">BlockQueue::read_closed_</a>, and <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00179">sLOG</a>.</p>
+<p>References <a class="el" href="block__queue_8hpp_source.html#l00162">BlockQueue::file_</a>, <a class="el" href="block__sink_8hpp_source.html#l00099">BlockSink::local_worker_id()</a>, <a class="el" href="file_8hpp_source.html#l00178">File::num_items()</a>, <a class="el" href="block__queue_8hpp_source.html#l00150">BlockQueue::read_closed_</a>, and <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00179">sLOG</a>.</p>
 
-<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00078">BlockQueue::GetReader()</a>.</p>
+<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00085">BlockQueue::GetReader()</a>.</p>
 
 </div>
 </div>
@@ -733,9 +731,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>return <a class="el" href="classthrill_1_1data_1_1BlockReader.html" title="BlockReader takes Block objects from BlockSource and allows reading of a) serializable Items or b) ar...">BlockReader</a> specifically for a <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a> </p>
 
-<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00040">40</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00047">47</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
 
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00157">BlockQueue::read_closed_</a>.</p>
+<p>References <a class="el" href="block__queue_8hpp_source.html#l00150">BlockQueue::read_closed_</a>.</p>
 
 </div>
 </div>
@@ -765,37 +763,29 @@ Additional Inherited Members</h2></td></tr>
 
 <p>return polymorphic <a class="el" href="classthrill_1_1data_1_1BlockReader.html" title="BlockReader takes Block objects from BlockSource and allows reading of a) serializable Items or b) ar...">BlockReader</a> variant </p>
 
-<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00078">78</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00085">85</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
 
-<p>References <a class="el" href="block__queue_8cpp_source.html#l00045">BlockQueue::GetBlockSource()</a>.</p>
+<p>References <a class="el" href="block__queue_8cpp_source.html#l00052">BlockQueue::GetBlockSource()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad65bdc3118717fd17f0a3190bb73c407"></a>
+<a class="anchor" id="a9d7eb22664df01f3751e3fa787add90f"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#ab0b45a23642f91075005b1874dba86fd">Writer</a> GetWriter </td>
+          <td class="memname"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a71613aa0158c1a378e6e06913a4f685d">BlockQueue::Writer</a> GetWriter </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>block_size</em> = <code><a class="el" href="group__data__layer.html#gaf7e35b7b12aa89f4b4566640a03c62fb">default_block_size</a></code></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Return a <a class="el" href="classthrill_1_1data_1_1BlockWriter.html" title="BlockWriter contains a temporary Block object into which a) any serializable item can be stored or b)...">BlockWriter</a> delivering to this <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a>. </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00131">131</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00043">43</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
 
 </div>
 </div>
@@ -822,11 +812,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns item_counter_. </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00122">122</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00123">123</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00160">BlockQueue::item_counter_</a>.</p>
+<p>References <a class="el" href="block__queue_8hpp_source.html#l00153">BlockQueue::item_counter_</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>.</p>
+<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStreamData::CatStreamData()</a>.</p>
 
 </div>
 </div>
@@ -903,11 +893,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00091">91</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00092">92</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>References <a class="el" href="block_8hpp_source.html#l00074">Block::IsValid()</a>, <a class="el" href="block__queue_8hpp_source.html#l00151">BlockQueue::queue_</a>, and <a class="el" href="block__queue_8hpp_source.html#l00157">BlockQueue::read_closed_</a>.</p>
+<p>References <a class="el" href="block_8hpp_source.html#l00074">Block::IsValid()</a>, <a class="el" href="block__queue_8hpp_source.html#l00144">BlockQueue::queue_</a>, and <a class="el" href="block__queue_8hpp_source.html#l00150">BlockQueue::read_closed_</a>.</p>
 
-<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00093">ConsumeBlockQueueSource::NextBlock()</a>, and <a class="el" href="block__queue_8cpp_source.html#l00117">CacheBlockQueueSource::NextBlock()</a>.</p>
+<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00100">ConsumeBlockQueueSource::NextBlock()</a>, and <a class="el" href="block__queue_8cpp_source.html#l00124">CacheBlockQueueSource::NextBlock()</a>.</p>
 
 </div>
 </div>
@@ -934,11 +924,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>check if reader side has returned a closing sentinel block </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00116">116</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00117">117</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00157">BlockQueue::read_closed_</a>.</p>
+<p>References <a class="el" href="block__queue_8hpp_source.html#l00150">BlockQueue::read_closed_</a>.</p>
 
-<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00117">CacheBlockQueueSource::NextBlock()</a>, and <a class="el" href="block__queue_8cpp_source.html#l00132">CacheBlockQueueSource::~CacheBlockQueueSource()</a>.</p>
+<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00124">CacheBlockQueueSource::NextBlock()</a>, and <a class="el" href="block__queue_8cpp_source.html#l00139">CacheBlockQueueSource::~CacheBlockQueueSource()</a>.</p>
 
 </div>
 </div>
@@ -966,9 +956,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>set the close callback </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00106">106</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00107">107</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00173">BlockQueue::close_callback_</a>.</p>
+<p>References <a class="el" href="block__queue_8hpp_source.html#l00166">BlockQueue::close_callback_</a>.</p>
 
 </div>
 </div>
@@ -995,39 +985,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>change dia_id after construction (needed because it may be unknown at construction) </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00101">101</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00102">102</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00169">BlockQueue::file_</a>, and <a class="el" href="file_8hpp_source.html#l00253">File::set_dia_id()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8f54b683053d4a7cafb675870f5a53ff"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void set_source </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>source</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>set opaque source pointer </p>
-
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00148">148</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
-
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00145">BlockQueue::source()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00176">BlockQueue::source_</a>.</p>
+<p>References <a class="el" href="block__queue_8hpp_source.html#l00162">BlockQueue::file_</a>, and <a class="el" href="file_8hpp_source.html#l00250">File::set_dia_id()</a>.</p>
 
 </div>
 </div>
@@ -1054,40 +1014,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>return number of block in the queue. Use this ONLY for DEBUGGING! </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00119">119</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00120">120</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00151">BlockQueue::queue_</a>, and <a class="el" href="block__queue_8hpp_source.html#l00111">BlockQueue::write_closed()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad776d6ae99eca8a83961f51f6881a3c7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* source </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns source_. </p>
-
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00145">145</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
-
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00176">BlockQueue::source_</a>.</p>
-
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00148">BlockQueue::set_source()</a>.</p>
+<p>References <a class="el" href="block__queue_8hpp_source.html#l00144">BlockQueue::queue_</a>, and <a class="el" href="block__queue_8hpp_source.html#l00112">BlockQueue::write_closed()</a>.</p>
 
 </div>
 </div>
@@ -1114,11 +1043,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Returns timespan_. </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00128">128</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00129">129</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00166">BlockQueue::timespan_</a>.</p>
-
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>.</p>
+<p>References <a class="el" href="block__queue_8hpp_source.html#l00159">BlockQueue::timespan_</a>.</p>
 
 </div>
 </div>
@@ -1145,11 +1072,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>check if writer side <a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a29dc6798f18d73abd4ba8e4910f6831f" title="Close called by BlockWriter. ">Close()</a> was called. </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00111">111</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00112">112</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>References <a class="el" href="block__queue_8hpp_source.html#l00153">BlockQueue::write_closed_</a>.</p>
+<p>References <a class="el" href="block__queue_8hpp_source.html#l00146">BlockQueue::write_closed_</a>.</p>
 
-<p>Referenced by <a class="el" href="block__queue_8hpp_source.html#l00119">BlockQueue::size()</a>.</p>
+<p>Referenced by <a class="el" href="block__queue_8hpp_source.html#l00120">BlockQueue::size()</a>.</p>
 
 </div>
 </div>
@@ -1172,7 +1099,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00089">89</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00090">90</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -1196,9 +1123,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>number of blocks transfered by the Queue </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00164">164</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00157">157</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__queue_8hpp_source.html#l00071">BlockQueue::AppendBlock()</a>, <a class="el" href="block__queue_8hpp_source.html#l00126">BlockQueue::block_counter()</a>, and <a class="el" href="block__queue_8cpp_source.html#l00028">BlockQueue::Close()</a>.</p>
+<p>Referenced by <a class="el" href="block__queue_8hpp_source.html#l00072">BlockQueue::AppendBlock()</a>, <a class="el" href="block__queue_8hpp_source.html#l00127">BlockQueue::block_counter()</a>, and <a class="el" href="block__queue_8cpp_source.html#l00028">BlockQueue::Close()</a>.</p>
 
 </div>
 </div>
@@ -1222,9 +1149,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>number of bytes transfered by the Queue </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00162">162</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00155">155</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__queue_8hpp_source.html#l00071">BlockQueue::AppendBlock()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00124">BlockQueue::byte_counter()</a>.</p>
+<p>Referenced by <a class="el" href="block__queue_8hpp_source.html#l00072">BlockQueue::AppendBlock()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00125">BlockQueue::byte_counter()</a>.</p>
 
 </div>
 </div>
@@ -1247,9 +1174,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>callback to issue when the writer closes the Queue &ndash; for delivering stats </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00173">173</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00166">166</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00028">BlockQueue::Close()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00106">BlockQueue::set_close_callback()</a>.</p>
+<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00028">BlockQueue::Close()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00107">BlockQueue::set_close_callback()</a>.</p>
 
 </div>
 </div>
@@ -1271,7 +1198,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00049">49</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00050">50</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -1295,9 +1222,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p><a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> to cache blocks for implementing <a class="el" href="classthrill_1_1data_1_1CacheBlockQueueSource.html" title="A BlockSource to read Blocks from a BlockQueue using a BlockReader, and at the same time CACHE all it...">CacheBlockQueueSource</a>. </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00169">169</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00162">162</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00045">BlockQueue::GetBlockSource()</a>, <a class="el" href="block__queue_8cpp_source.html#l00117">CacheBlockQueueSource::NextBlock()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00101">BlockQueue::set_dia_id()</a>.</p>
+<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00052">BlockQueue::GetBlockSource()</a>, <a class="el" href="block__queue_8cpp_source.html#l00124">CacheBlockQueueSource::NextBlock()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00102">BlockQueue::set_dia_id()</a>.</p>
 
 </div>
 </div>
@@ -1321,9 +1248,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>number of items transfered by the Queue </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00160">160</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00153">153</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__queue_8hpp_source.html#l00071">BlockQueue::AppendBlock()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00122">BlockQueue::item_counter()</a>.</p>
+<p>Referenced by <a class="el" href="block__queue_8hpp_source.html#l00072">BlockQueue::AppendBlock()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00123">BlockQueue::item_counter()</a>.</p>
 
 </div>
 </div>
@@ -1345,9 +1272,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00151">151</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00144">144</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__queue_8hpp_source.html#l00071">BlockQueue::AppendBlock()</a>, <a class="el" href="block__queue_8cpp_source.html#l00028">BlockQueue::Close()</a>, <a class="el" href="block__queue_8hpp_source.html#l00113">BlockQueue::empty()</a>, <a class="el" href="block__queue_8hpp_source.html#l00091">BlockQueue::Pop()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00119">BlockQueue::size()</a>.</p>
+<p>Referenced by <a class="el" href="block__queue_8hpp_source.html#l00072">BlockQueue::AppendBlock()</a>, <a class="el" href="block__queue_8cpp_source.html#l00028">BlockQueue::Close()</a>, <a class="el" href="block__queue_8hpp_source.html#l00114">BlockQueue::empty()</a>, <a class="el" href="block__queue_8hpp_source.html#l00092">BlockQueue::Pop()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00120">BlockQueue::size()</a>.</p>
 
 </div>
 </div>
@@ -1370,35 +1297,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>whether <a class="el" href="classthrill_1_1data_1_1BlockQueue.html#a3d7c2b3607e6a0ca0eee7c15b042dbe3">Pop()</a> has returned a closing <a class="el" href="classthrill_1_1data_1_1Block.html" title="Block combines a reference to a read-only ByteBlock and book-keeping information. ...">Block</a>; hence, if we received the close message from the writer </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00157">157</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00150">150</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00045">BlockQueue::GetBlockSource()</a>, <a class="el" href="block__queue_8cpp_source.html#l00040">BlockQueue::GetConsumeReader()</a>, <a class="el" href="block__queue_8hpp_source.html#l00091">BlockQueue::Pop()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00116">BlockQueue::read_closed()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ad29c40a8e7e0b1d8a8b7a5088c4d3039"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* source_ = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>opaque pointer to the source (used by close_callback_ if needed). </p>
-
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00176">176</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="block__queue_8hpp_source.html#l00148">BlockQueue::set_source()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00145">BlockQueue::source()</a>.</p>
+<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00052">BlockQueue::GetBlockSource()</a>, <a class="el" href="block__queue_8cpp_source.html#l00047">BlockQueue::GetConsumeReader()</a>, <a class="el" href="block__queue_8hpp_source.html#l00092">BlockQueue::Pop()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00117">BlockQueue::read_closed()</a>.</p>
 
 </div>
 </div>
@@ -1422,9 +1323,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>timespan of existance </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00166">166</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00159">159</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__queue_8hpp_source.html#l00128">BlockQueue::timespan()</a>.</p>
+<p>Referenced by <a class="el" href="block__queue_8hpp_source.html#l00129">BlockQueue::timespan()</a>.</p>
 
 </div>
 </div>
@@ -1446,9 +1347,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00153">153</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00146">146</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00028">BlockQueue::Close()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00111">BlockQueue::write_closed()</a>.</p>
+<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00028">BlockQueue::Close()</a>, and <a class="el" href="block__queue_8hpp_source.html#l00112">BlockQueue::write_closed()</a>.</p>
 
 </div>
 </div>
@@ -1462,7 +1363,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html">BlockQueue</a></li>
-    <li class="footer">Generated on Sat Oct 14 2017 08:17:19 for Thrill by
+    <li class="footer">Generated on Mon Oct 23 2017 22:11:39 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

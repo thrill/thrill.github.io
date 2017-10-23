@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Thrill: ReducePrePhaseEmitter&lt; TableItem, VolatileKey &gt; Class Template Reference</title>
+<title>Thrill: ReducePrePhaseEmitter&lt; TableItem, VolatileKey, BlockWriter &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -120,12 +120,12 @@ $(document).ready(function(){initNavTree('classthrill_1_1core_1_1ReducePrePhaseE
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classthrill_1_1core_1_1ReducePrePhaseEmitter-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ReducePrePhaseEmitter&lt; TableItem, VolatileKey &gt; Class Template Reference</div>  </div>
+<div class="title">ReducePrePhaseEmitter&lt; TableItem, VolatileKey, BlockWriter &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename TableItem, bool VolatileKey&gt;<br/>
-class thrill::core::ReducePrePhaseEmitter&lt; TableItem, VolatileKey &gt;</h3>
+<div class="textblock"><h3>template&lt;typename TableItem, bool VolatileKey, typename BlockWriter&gt;<br/>
+class thrill::core::ReducePrePhaseEmitter&lt; TableItem, VolatileKey, BlockWriter &gt;</h3>
 
 <p>Emitter implementation to plug into a reduce hash table for collecting/flushing items while reducing. Items flushed in the pre-phase are transmitted via a network Channel. </p>
 
@@ -135,8 +135,8 @@ class thrill::core::ReducePrePhaseEmitter&lt; TableItem, VolatileKey &gt;</h3>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a52432d27c8586c68dedf2fddc994698b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReducePrePhaseEmitter.html#a52432d27c8586c68dedf2fddc994698b">ReducePrePhaseEmitter</a> (std::vector&lt; <a class="el" href="group__data__layer.html#gae7356058967e82c4fa0b97f39a9d8afc">data::DynBlockWriter</a> &gt; &amp;writer)</td></tr>
-<tr class="separator:a52432d27c8586c68dedf2fddc994698b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59900a38309014414639eba6c0b15e02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReducePrePhaseEmitter.html#a59900a38309014414639eba6c0b15e02">ReducePrePhaseEmitter</a> (std::vector&lt; BlockWriter &gt; &amp;writer)</td></tr>
+<tr class="separator:a59900a38309014414639eba6c0b15e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16320b0eb199b75a8dbbf9f7b5b016e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReducePrePhaseEmitter.html#a16320b0eb199b75a8dbbf9f7b5b016e4">CloseAll</a> ()</td></tr>
 <tr class="separator:a16320b0eb199b75a8dbbf9f7b5b016e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c0116f9320f99ee6b1faef359fd1505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReducePrePhaseEmitter.html#a6c0116f9320f99ee6b1faef359fd1505">Emit</a> (const size_t &amp;partition_id, const TableItem &amp;p)</td></tr>
@@ -149,10 +149,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ac41cdc850e23796448097f11d1364734"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReducePrePhaseEmitter.html#ac41cdc850e23796448097f11d1364734">stats_</a></td></tr>
 <tr class="memdesc:ac41cdc850e23796448097f11d1364734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emitter stats.  <a href="#ac41cdc850e23796448097f11d1364734">More...</a><br/></td></tr>
 <tr class="separator:ac41cdc850e23796448097f11d1364734"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaebb68d97ed69a1d4ba8a377dd8aa274"><td class="memItemLeft" align="right" valign="top">std::vector<br class="typebreak"/>
-&lt; <a class="el" href="group__data__layer.html#gae7356058967e82c4fa0b97f39a9d8afc">data::DynBlockWriter</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReducePrePhaseEmitter.html#aaebb68d97ed69a1d4ba8a377dd8aa274">writer_</a></td></tr>
-<tr class="memdesc:aaebb68d97ed69a1d4ba8a377dd8aa274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set of emitters, one per partition.  <a href="#aaebb68d97ed69a1d4ba8a377dd8aa274">More...</a><br/></td></tr>
-<tr class="separator:aaebb68d97ed69a1d4ba8a377dd8aa274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc83d7d27e727d356faa9aa1c33bbf53"><td class="memItemLeft" align="right" valign="top">std::vector&lt; BlockWriter &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReducePrePhaseEmitter.html#abc83d7d27e727d356faa9aa1c33bbf53">writer_</a></td></tr>
+<tr class="memdesc:abc83d7d27e727d356faa9aa1c33bbf53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set of emitters, one per partition.  <a href="#abc83d7d27e727d356faa9aa1c33bbf53">More...</a><br/></td></tr>
+<tr class="separator:abc83d7d27e727d356faa9aa1c33bbf53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -160,7 +159,7 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a6b72e54baf646b08b4b87f987f583dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a52432d27c8586c68dedf2fddc994698b"></a>
+<a class="anchor" id="a59900a38309014414639eba6c0b15e02"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -170,7 +169,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classthrill_1_1core_1_1ReducePrePhaseEmitter.html">ReducePrePhaseEmitter</a> </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="group__data__layer.html#gae7356058967e82c4fa0b97f39a9d8afc">data::DynBlockWriter</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; BlockWriter &gt; &amp;&#160;</td>
           <td class="paramname"><em>writer</em></td><td>)</td>
           <td></td>
         </tr>
@@ -210,7 +209,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="reduce__pre__phase_8hpp_source.html#l00068">68</a> of file <a class="el" href="reduce__pre__phase_8hpp_source.html">reduce_pre_phase.hpp</a>.</p>
 
-<p>References <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00179">sLOG</a>, <a class="el" href="reduce__pre__phase_8hpp_source.html#l00082">ReducePrePhaseEmitter&lt; TableItem, VolatileKey &gt;::stats_</a>, and <a class="el" href="reduce__pre__phase_8hpp_source.html#l00079">ReducePrePhaseEmitter&lt; TableItem, VolatileKey &gt;::writer_</a>.</p>
+<p>References <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00179">sLOG</a>, <a class="el" href="reduce__pre__phase_8hpp_source.html#l00082">ReducePrePhaseEmitter&lt; TableItem, VolatileKey, BlockWriter &gt;::stats_</a>, and <a class="el" href="reduce__pre__phase_8hpp_source.html#l00079">ReducePrePhaseEmitter&lt; TableItem, VolatileKey, BlockWriter &gt;::writer_</a>.</p>
 
 </div>
 </div>
@@ -249,7 +248,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="reduce__pre__phase_8hpp_source.html#l00057">57</a> of file <a class="el" href="reduce__pre__phase_8hpp_source.html">reduce_pre_phase.hpp</a>.</p>
 
-<p>References <a class="el" href="reduce__pre__phase_8hpp_source.html#l00082">ReducePrePhaseEmitter&lt; TableItem, VolatileKey &gt;::stats_</a>, and <a class="el" href="reduce__pre__phase_8hpp_source.html#l00079">ReducePrePhaseEmitter&lt; TableItem, VolatileKey &gt;::writer_</a>.</p>
+<p>References <a class="el" href="reduce__pre__phase_8hpp_source.html#l00082">ReducePrePhaseEmitter&lt; TableItem, VolatileKey, BlockWriter &gt;::stats_</a>, and <a class="el" href="reduce__pre__phase_8hpp_source.html#l00079">ReducePrePhaseEmitter&lt; TableItem, VolatileKey, BlockWriter &gt;::writer_</a>.</p>
 
 </div>
 </div>
@@ -277,7 +276,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="reduce__pre__phase_8hpp_source.html#l00063">63</a> of file <a class="el" href="reduce__pre__phase_8hpp_source.html">reduce_pre_phase.hpp</a>.</p>
 
-<p>References <a class="el" href="reduce__pre__phase_8hpp_source.html#l00079">ReducePrePhaseEmitter&lt; TableItem, VolatileKey &gt;::writer_</a>.</p>
+<p>References <a class="el" href="reduce__pre__phase_8hpp_source.html#l00079">ReducePrePhaseEmitter&lt; TableItem, VolatileKey, BlockWriter &gt;::writer_</a>.</p>
 
 </div>
 </div>
@@ -318,16 +317,16 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="reduce__pre__phase_8hpp_source.html#l00082">82</a> of file <a class="el" href="reduce__pre__phase_8hpp_source.html">reduce_pre_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__pre__phase_8hpp_source.html#l00068">ReducePrePhaseEmitter&lt; TableItem, VolatileKey &gt;::CloseAll()</a>, and <a class="el" href="reduce__pre__phase_8hpp_source.html#l00057">ReducePrePhaseEmitter&lt; TableItem, VolatileKey &gt;::Emit()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__pre__phase_8hpp_source.html#l00068">ReducePrePhaseEmitter&lt; TableItem, VolatileKey, BlockWriter &gt;::CloseAll()</a>, and <a class="el" href="reduce__pre__phase_8hpp_source.html#l00057">ReducePrePhaseEmitter&lt; TableItem, VolatileKey, BlockWriter &gt;::Emit()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aaebb68d97ed69a1d4ba8a377dd8aa274"></a>
+<a class="anchor" id="abc83d7d27e727d356faa9aa1c33bbf53"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="group__data__layer.html#gae7356058967e82c4fa0b97f39a9d8afc">data::DynBlockWriter</a>&gt;&amp; writer_</td>
+          <td class="memname">std::vector&lt;BlockWriter&gt;&amp; writer_</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -336,7 +335,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="reduce__pre__phase_8hpp_source.html#l00079">79</a> of file <a class="el" href="reduce__pre__phase_8hpp_source.html">reduce_pre_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__pre__phase_8hpp_source.html#l00068">ReducePrePhaseEmitter&lt; TableItem, VolatileKey &gt;::CloseAll()</a>, <a class="el" href="reduce__pre__phase_8hpp_source.html#l00057">ReducePrePhaseEmitter&lt; TableItem, VolatileKey &gt;::Emit()</a>, and <a class="el" href="reduce__pre__phase_8hpp_source.html#l00063">ReducePrePhaseEmitter&lt; TableItem, VolatileKey &gt;::Flush()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__pre__phase_8hpp_source.html#l00068">ReducePrePhaseEmitter&lt; TableItem, VolatileKey, BlockWriter &gt;::CloseAll()</a>, <a class="el" href="reduce__pre__phase_8hpp_source.html#l00057">ReducePrePhaseEmitter&lt; TableItem, VolatileKey, BlockWriter &gt;::Emit()</a>, and <a class="el" href="reduce__pre__phase_8hpp_source.html#l00063">ReducePrePhaseEmitter&lt; TableItem, VolatileKey, BlockWriter &gt;::Flush()</a>.</p>
 
 </div>
 </div>
@@ -349,7 +348,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1core.html">core</a></li><li class="navelem"><a class="el" href="classthrill_1_1core_1_1ReducePrePhaseEmitter.html">ReducePrePhaseEmitter</a></li>
-    <li class="footer">Generated on Sat Oct 14 2017 08:17:18 for Thrill by
+    <li class="footer">Generated on Mon Oct 23 2017 22:11:39 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

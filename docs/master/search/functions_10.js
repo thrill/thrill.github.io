@@ -19,7 +19,7 @@ var searchData=
   ['partition',['Partition',['../classthrill_1_1common_1_1Range.html#aa7b490add3d38f80bf5770a4ae7f8837',1,'thrill::common::Range']]],
   ['partition_5ffiles',['partition_files',['../classthrill_1_1core_1_1ReduceTable.html#acd22eacceb03df690ed22ffbe97be62b',1,'thrill::core::ReduceTable']]],
   ['partitionmultiplexerheader',['PartitionMultiplexerHeader',['../classthrill_1_1data_1_1PartitionMultiplexerHeader.html#aed0909a761ea6c96f38a5e5d9da086f0',1,'thrill::data::PartitionMultiplexerHeader::PartitionMultiplexerHeader()=default'],['../classthrill_1_1data_1_1PartitionMultiplexerHeader.html#a075fa14cb34a69510001d23975a4f999',1,'thrill::data::PartitionMultiplexerHeader::PartitionMultiplexerHeader(const PinnedBlock &amp;b)']]],
-  ['peer',['peer',['../classthrill_1_1data_1_1StreamSet.html#a93b7577070cb48cdb52104429267db33',1,'thrill::data::StreamSet::peer()'],['../classthrill_1_1net_1_1mpi_1_1Connection.html#ab85cd94150e5399f80bf966b8ce79436',1,'thrill::net::mpi::Connection::peer()']]],
+  ['peer',['peer',['../classthrill_1_1net_1_1mpi_1_1Connection.html#ab85cd94150e5399f80bf966b8ce79436',1,'thrill::net::mpi::Connection::peer()'],['../classthrill_1_1data_1_1StreamSet.html#ada5f33f66291fc3b19e098a984db5b8b',1,'thrill::data::StreamSet::Peer()']]],
   ['peer_5fid',['peer_id',['../classthrill_1_1net_1_1tcp_1_1Connection.html#a6ed3ce94cb965777e111ea756716bdcf',1,'thrill::net::tcp::Connection']]],
   ['peer_5fworker_5frank',['peer_worker_rank',['../classthrill_1_1data_1_1StreamSink.html#a62f1fb01dec488ad1724ff8b40c9cd7c',1,'thrill::data::StreamSink']]],
   ['percentiles',['Percentiles',['../percentiles_8cpp.html#af4c7af8f99de96f46dacb5ee25937594',1,'percentiles.cpp']]],

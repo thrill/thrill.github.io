@@ -1,8 +1,9 @@
 var classthrill_1_1api_1_1ReadBinaryNode =
 [
-    [ "FileBlockSource", "classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource.html", "classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource" ],
     [ "FileInfo", "structthrill_1_1api_1_1ReadBinaryNode_1_1FileInfo.html", "structthrill_1_1api_1_1ReadBinaryNode_1_1FileInfo" ],
+    [ "VfsFileBlockSource", "classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html", "classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource" ],
     [ "Super", "classthrill_1_1api_1_1ReadBinaryNode.html#abe585529c5360d22d9183c5ca113c909", null ],
+    [ "VfsFileBlockReader", "classthrill_1_1api_1_1ReadBinaryNode.html#a571f48dfa0b24876c136392f4b900c1f", null ],
     [ "ReadBinaryNode", "classthrill_1_1api_1_1ReadBinaryNode.html#afa1dd5b8ac2b347ae7e1fbfc1414f271", null ],
     [ "ReadBinaryNode", "classthrill_1_1api_1_1ReadBinaryNode.html#aed037695e4958654e59a1df6cc384a47", null ],
     [ "debug", "classthrill_1_1api_1_1ReadBinaryNode.html#a6b72e54baf646b08b4b87f987f583dcb", null ],

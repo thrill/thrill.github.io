@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['handle',['HANDLE',['../classthrill_1_1io_1_1WfsFileBase.html#a7df6150ad1bbae3df9ec5614813d79b5',1,'thrill::io::WfsFileBase']]],
+  ['handle',['HANDLE',['../classthrill_1_1io_1_1WfsFileBase.html#a7df6150ad1bbae3df9ec5614813d79b5',1,'thrill::io::WfsFileBase::HANDLE()'],['../classthrill_1_1data_1_1CatStreamData.html#ab815409809b92616e365b90838cbdbcc',1,'thrill::data::CatStreamData::Handle()'],['../classthrill_1_1data_1_1MixStreamData.html#aba0de9c0e3bd47ef10e222557b3066b4',1,'thrill::data::MixStreamData::Handle()']]],
   ['hash',['hash',['../namespacethrill_1_1common.html#a875f235e587df74925edc1a49b367311',1,'thrill::common']]],
   ['hash_5ftype',['hash_type',['../classthrill_1_1common_1_1TabulationHashing.html#a3d5afacdcad457f74aec9deda20e6d44',1,'thrill::common::TabulationHashing']]],
   ['hashcrc32',['HashCrc32',['../namespacethrill_1_1common.html#a1e4e2e1c93df0cf814e37cb0ebf08156',1,'thrill::common']]],

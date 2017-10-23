@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('classthrill_1_1data_1_1ConsumeFileBloc
 <p>The <a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html" title="A BlockSource to read and simultaneously consume Blocks from a File. ">ConsumeFileBlockSource</a> always returns the first block of the <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> and removes it, hence, consuming Blocks from the <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>.</p>
 <dl class="section attention"><dt>Attention</dt><dd>The reader consumes the <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>'s contents UNCONDITIONALLY, the <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> will always be emptied whether all items were read via the Reader or not. </dd></dl>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00347">347</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00401">401</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for ConsumeFileBlockSource:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -209,9 +209,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Start reading a <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>. Creates a source for the given file and set the number of blocks that should be prefetched. 0 means that no blocks are prefetched. </p>
 
-<p>Definition at line <a class="el" href="file_8cpp_source.html#l00174">174</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8cpp_source.html#l00177">177</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
 
-<p>References <a class="el" href="file_8hpp_source.html#l00381">ConsumeFileBlockSource::num_prefetch_</a>, and <a class="el" href="file_8cpp_source.html#l00188">ConsumeFileBlockSource::Prefetch()</a>.</p>
+<p>References <a class="el" href="file_8hpp_source.html#l00435">ConsumeFileBlockSource::num_prefetch_</a>, and <a class="el" href="file_8cpp_source.html#l00191">ConsumeFileBlockSource::Prefetch()</a>.</p>
 
 </div>
 </div>
@@ -257,7 +257,7 @@ Private Attributes</h2></td></tr>
 
 <p>move-constructor: default </p>
 
-<p>Definition at line <a class="el" href="file_8cpp_source.html#l00181">181</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8cpp_source.html#l00184">184</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
 
 </div>
 </div>
@@ -276,9 +276,9 @@ Private Attributes</h2></td></tr>
 
 <p>Consume unread blocks and reset <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> to zero items. </p>
 
-<p>Definition at line <a class="el" href="file_8cpp_source.html#l00228">228</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8cpp_source.html#l00231">231</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
 
-<p>References <a class="el" href="file_8cpp_source.html#l00052">File::Clear()</a>, and <a class="el" href="file_8hpp_source.html#l00375">ConsumeFileBlockSource::file_</a>.</p>
+<p>References <a class="el" href="file_8cpp_source.html#l00057">File::Clear()</a>, and <a class="el" href="file_8hpp_source.html#l00429">ConsumeFileBlockSource::file_</a>.</p>
 
 </div>
 </div>
@@ -298,9 +298,9 @@ Private Attributes</h2></td></tr>
 
 <p>Get the next block of file. </p>
 
-<p>Definition at line <a class="el" href="file_8cpp_source.html#l00203">203</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8cpp_source.html#l00206">206</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
 
-<p>References <a class="el" href="file_8hpp_source.html#l00263">File::blocks_</a>, <a class="el" href="file_8hpp_source.html#l00384">ConsumeFileBlockSource::fetching_blocks_</a>, <a class="el" href="file_8hpp_source.html#l00375">ConsumeFileBlockSource::file_</a>, <a class="el" href="file_8hpp_source.html#l00378">ConsumeFileBlockSource::local_worker_id_</a>, and <a class="el" href="file_8hpp_source.html#l00381">ConsumeFileBlockSource::num_prefetch_</a>.</p>
+<p>References <a class="el" href="file_8hpp_source.html#l00260">File::blocks_</a>, <a class="el" href="file_8hpp_source.html#l00438">ConsumeFileBlockSource::fetching_blocks_</a>, <a class="el" href="file_8hpp_source.html#l00429">ConsumeFileBlockSource::file_</a>, <a class="el" href="file_8hpp_source.html#l00432">ConsumeFileBlockSource::local_worker_id_</a>, and <a class="el" href="file_8hpp_source.html#l00435">ConsumeFileBlockSource::num_prefetch_</a>.</p>
 
 </div>
 </div>
@@ -346,11 +346,11 @@ Private Attributes</h2></td></tr>
 
 <p>Perform prefetch. </p>
 
-<p>Definition at line <a class="el" href="file_8cpp_source.html#l00188">188</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8cpp_source.html#l00191">191</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
 
-<p>References <a class="el" href="file_8hpp_source.html#l00263">File::blocks_</a>, <a class="el" href="file_8hpp_source.html#l00384">ConsumeFileBlockSource::fetching_blocks_</a>, <a class="el" href="file_8hpp_source.html#l00375">ConsumeFileBlockSource::file_</a>, <a class="el" href="file_8hpp_source.html#l00378">ConsumeFileBlockSource::local_worker_id_</a>, and <a class="el" href="file_8hpp_source.html#l00381">ConsumeFileBlockSource::num_prefetch_</a>.</p>
+<p>References <a class="el" href="file_8hpp_source.html#l00260">File::blocks_</a>, <a class="el" href="file_8hpp_source.html#l00438">ConsumeFileBlockSource::fetching_blocks_</a>, <a class="el" href="file_8hpp_source.html#l00429">ConsumeFileBlockSource::file_</a>, <a class="el" href="file_8hpp_source.html#l00432">ConsumeFileBlockSource::local_worker_id_</a>, and <a class="el" href="file_8hpp_source.html#l00435">ConsumeFileBlockSource::num_prefetch_</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00174">ConsumeFileBlockSource::ConsumeFileBlockSource()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00177">ConsumeFileBlockSource::ConsumeFileBlockSource()</a>.</p>
 
 </div>
 </div>
@@ -375,9 +375,9 @@ Private Attributes</h2></td></tr>
 
 <p>current prefetch operations </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00384">384</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00438">438</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00203">ConsumeFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00188">ConsumeFileBlockSource::Prefetch()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00206">ConsumeFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00191">ConsumeFileBlockSource::Prefetch()</a>.</p>
 
 </div>
 </div>
@@ -401,9 +401,9 @@ Private Attributes</h2></td></tr>
 
 <p>file to consume blocks from (ptr to make moving easier) </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00375">375</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00429">429</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00203">ConsumeFileBlockSource::NextBlock()</a>, <a class="el" href="file_8cpp_source.html#l00188">ConsumeFileBlockSource::Prefetch()</a>, and <a class="el" href="file_8cpp_source.html#l00228">ConsumeFileBlockSource::~ConsumeFileBlockSource()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00206">ConsumeFileBlockSource::NextBlock()</a>, <a class="el" href="file_8cpp_source.html#l00191">ConsumeFileBlockSource::Prefetch()</a>, and <a class="el" href="file_8cpp_source.html#l00231">ConsumeFileBlockSource::~ConsumeFileBlockSource()</a>.</p>
 
 </div>
 </div>
@@ -427,9 +427,9 @@ Private Attributes</h2></td></tr>
 
 <p>local worker id reading the <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00378">378</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00432">432</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00203">ConsumeFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00188">ConsumeFileBlockSource::Prefetch()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00206">ConsumeFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00191">ConsumeFileBlockSource::Prefetch()</a>.</p>
 
 </div>
 </div>
@@ -453,9 +453,9 @@ Private Attributes</h2></td></tr>
 
 <p>number of block prefetch operations </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00381">381</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00435">435</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00174">ConsumeFileBlockSource::ConsumeFileBlockSource()</a>, <a class="el" href="file_8cpp_source.html#l00203">ConsumeFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00188">ConsumeFileBlockSource::Prefetch()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00177">ConsumeFileBlockSource::ConsumeFileBlockSource()</a>, <a class="el" href="file_8cpp_source.html#l00206">ConsumeFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00191">ConsumeFileBlockSource::Prefetch()</a>.</p>
 
 </div>
 </div>
@@ -469,7 +469,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html">ConsumeFileBlockSource</a></li>
-    <li class="footer">Generated on Sat Oct 14 2017 08:17:19 for Thrill by
+    <li class="footer">Generated on Mon Oct 23 2017 22:11:39 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

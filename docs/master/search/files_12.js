@@ -43,6 +43,7 @@ var searchData=
   ['stochastic_5fgradient_5fdescent_5frun_2ecpp',['stochastic_gradient_descent_run.cpp',['../stochastic__gradient__descent__run_8cpp.html',1,'']]],
   ['stream_2ecpp',['stream.cpp',['../stream_8cpp.html',1,'']]],
   ['stream_2ehpp',['stream.hpp',['../stream_8hpp.html',1,'']]],
+  ['stream_5fdata_2ehpp',['stream_data.hpp',['../stream__data_8hpp.html',1,'']]],
   ['stream_5fsink_2ecpp',['stream_sink.cpp',['../stream__sink_8cpp.html',1,'']]],
   ['stream_5fsink_2ehpp',['stream_sink.hpp',['../stream__sink_8hpp.html',1,'']]],
   ['string_2ehpp',['string.hpp',['../extlib_2tlx_2tlx_2string_8hpp.html',1,'']]],

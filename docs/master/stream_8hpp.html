@@ -115,9 +115,7 @@ $(document).ready(function(){initNavTree('stream_8hpp.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">stream.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -128,6 +126,8 @@ $(document).ready(function(){initNavTree('stream_8hpp.html','');});
 <code>#include &lt;<a class="el" href="block__writer_8hpp_source.html">thrill/data/block_writer.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="file_8hpp_source.html">thrill/data/file.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="multiplexer_8hpp_source.html">thrill/data/multiplexer.hpp</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="stream__data_8hpp_source.html">thrill/data/stream_data.hpp</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="stream__sink_8hpp_source.html">thrill/data/stream_sink.hpp</a>&gt;</code><br/>
 <code>#include &lt;mutex&gt;</code><br/>
 <code>#include &lt;vector&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('stream_8hpp.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="stream_8hpp__incl.svg" width="8940" height="1243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="stream_8hpp__incl.svg" width="8127" height="1366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('stream_8hpp.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="stream_8hpp__dep__incl.svg" width="8719" height="1046"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="stream_8hpp__dep__incl.svg" width="8688" height="955"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -152,13 +152,7 @@ $(document).ready(function(){initNavTree('stream_8hpp.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html">Stream</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for common structures for ConcatStream and MixedStream.  <a href="classthrill_1_1data_1_1Stream.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamSet.html">StreamSet&lt; Stream &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple structure that holds a all stream instances for the workers on the local host for a given stream id.  <a href="classthrill_1_1data_1_1StreamSet.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamSetBase.html">StreamSetBase</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for <a class="el" href="classthrill_1_1data_1_1StreamSet.html" title="Simple structure that holds a all stream instances for the workers on the local host for a given stre...">StreamSet</a>.  <a href="classthrill_1_1data_1_1StreamSetBase.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classthrill_1_1data_1_1Stream.html" title="Stream - base class for CatStream and MixStream. ">Stream</a> - base class for <a class="el" href="classthrill_1_1data_1_1CatStream.html" title="Ownership handle onto a CatStreamData. ">CatStream</a> and <a class="el" href="classthrill_1_1data_1_1MixStream.html" title="Ownership handle onto a MixStream. ">MixStream</a>.  <a href="classthrill_1_1data_1_1Stream.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -172,22 +166,6 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a70fd10987860220f33b9642f1d5ed65d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stream_8hpp.html#a70fd10987860220f33b9642f1d5ed65d">THRILL_DATA_STREAM_HEADER</a></td></tr>
 <tr class="separator:a70fd10987860220f33b9642f1d5ed65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga03df594c744fac6cea6f4559bc7494d2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga03df594c744fac6cea6f4559bc7494d2">StreamId</a> = size_t</td></tr>
-<tr class="separator:ga03df594c744fac6cea6f4559bc7494d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac59d85cbcbfab63b84f5e598c17d94a8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#gac59d85cbcbfab63b84f5e598c17d94a8">StreamPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; Stream &gt;</td></tr>
-<tr class="separator:gac59d85cbcbfab63b84f5e598c17d94a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:gaddbdb24c59770f58b29329385d0cfe73"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#gaddbdb24c59770f58b29329385d0cfe73">MagicByte</a> : uint8_t { <a class="el" href="group__data__layer.html#ggaddbdb24c59770f58b29329385d0cfe73a4bbb8f967da6d1a610596d7257179c2b">Invalid</a>, 
-<a class="el" href="group__data__layer.html#ggaddbdb24c59770f58b29329385d0cfe73a68c027e3d04ee89b3173a67b8f6c171f">CatStreamBlock</a>, 
-<a class="el" href="group__data__layer.html#ggaddbdb24c59770f58b29329385d0cfe73a28e1b04815962d713685f101388523e3">MixStreamBlock</a>, 
-<a class="el" href="group__data__layer.html#ggaddbdb24c59770f58b29329385d0cfe73a8694783dbfb4d46beead8ae5143cadc7">PartitionBlock</a>
- }</td></tr>
-<tr class="separator:gaddbdb24c59770f58b29329385d0cfe73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a70fd10987860220f33b9642f1d5ed65d"></a>
@@ -210,7 +188,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_c0e49fec6cb6c78dde854e77e0fc73d0.html">data</a></li><li class="navelem"><a class="el" href="stream_8hpp.html">stream.hpp</a></li>
-    <li class="footer">Generated on Sat Oct 14 2017 08:17:16 for Thrill by
+    <li class="footer">Generated on Mon Oct 23 2017 22:11:37 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

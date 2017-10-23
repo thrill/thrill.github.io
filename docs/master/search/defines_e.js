@@ -119,6 +119,7 @@ var searchData=
   ['thrill_5fdata_5fserialization_5fcereal_5fheader',['THRILL_DATA_SERIALIZATION_CEREAL_HEADER',['../serialization__cereal_8hpp.html#aa1a5fde53828b1121d86434a3e6b0321',1,'serialization_cereal.hpp']]],
   ['thrill_5fdata_5fserialization_5ffwd_5fheader',['THRILL_DATA_SERIALIZATION_FWD_HEADER',['../serialization__fwd_8hpp.html#ab215f3876c2697590fc11f4eddec38b9',1,'serialization_fwd.hpp']]],
   ['thrill_5fdata_5fserialization_5fheader',['THRILL_DATA_SERIALIZATION_HEADER',['../serialization_8hpp.html#a3473f4ca2bc681218320b02d7a26062f',1,'serialization.hpp']]],
+  ['thrill_5fdata_5fstream_5fdata_5fheader',['THRILL_DATA_STREAM_DATA_HEADER',['../stream__data_8hpp.html#af6904cabf2d9985428552bddfe812cbc',1,'stream_data.hpp']]],
   ['thrill_5fdata_5fstream_5fheader',['THRILL_DATA_STREAM_HEADER',['../stream_8hpp.html#a70fd10987860220f33b9642f1d5ed65d',1,'stream.hpp']]],
   ['thrill_5fdata_5fstream_5fsink_5fheader',['THRILL_DATA_STREAM_SINK_HEADER',['../stream__sink_8hpp.html#ab3ea6a32735cd9aa691462351117b82d',1,'stream_sink.hpp']]],
   ['thrill_5fdefault_5falign',['THRILL_DEFAULT_ALIGN',['../aligned__allocator_8hpp.html#a971e250d339eb487f7abaddfb3eb9998',1,'aligned_allocator.hpp']]],

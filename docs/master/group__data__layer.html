@@ -146,6 +146,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueue.html">BlockQueue</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a> is a thread-safe queue used to hand-over <a class="el" href="classthrill_1_1data_1_1Block.html" title="Block combines a reference to a read-only ByteBlock and book-keeping information. ...">Block</a> objects between threads.  <a href="classthrill_1_1data_1_1BlockQueue.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockQueueSink.html">BlockQueueSink</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classthrill_1_1data_1_1BlockSink.html" title="Pure virtual base class for all things that can receive Blocks from a BlockWriter. ">BlockSink</a> which interfaces to a <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>.  <a href="classthrill_1_1data_1_1BlockQueueSink.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockReader.html">BlockReader&lt; BlockSource &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classthrill_1_1data_1_1BlockReader.html" title="BlockReader takes Block objects from BlockSource and allows reading of a) serializable Items or b) ar...">BlockReader</a> takes <a class="el" href="classthrill_1_1data_1_1Block.html" title="Block combines a reference to a read-only ByteBlock and book-keeping information. ...">Block</a> objects from BlockSource and allows reading of a) serializable Items or b) arbitray data from the <a class="el" href="classthrill_1_1data_1_1Block.html" title="Block combines a reference to a read-only ByteBlock and book-keeping information. ...">Block</a> sequence.  <a href="classthrill_1_1data_1_1BlockReader.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,7 +171,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classthrill_1_1data_1_1CatBlockSource.html" title="CatBlockSource is a BlockSource which concatenates all Blocks available from a vector of BlockSources...">CatBlockSource</a> is a BlockSource which concatenates all Blocks available from a vector of BlockSources.  <a href="classthrill_1_1data_1_1CatBlockSource.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1CatStream.html">CatStream</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classthrill_1_1data_1_1Stream.html" title="Base class for common structures for ConcatStream and MixedStream. ">Stream</a> is a virtual set of connections to all other worker instances, hence a "Stream" bundles them to a logical communication context.  <a href="classthrill_1_1data_1_1CatStream.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ownership handle onto a <a class="el" href="classthrill_1_1data_1_1CatStreamData.html" title="A Stream is a virtual set of connections to all other worker instances, hence a &quot;Stream&quot; bundles them...">CatStreamData</a>.  <a href="classthrill_1_1data_1_1CatStream.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1CatStreamData.html">CatStreamData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classthrill_1_1data_1_1Stream.html" title="Stream - base class for CatStream and MixStream. ">Stream</a> is a virtual set of connections to all other worker instances, hence a "Stream" bundles them to a logical communication context.  <a href="classthrill_1_1data_1_1CatStreamData.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ConsumeBlockQueueSource.html">ConsumeBlockQueueSource</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A BlockSource to read <a class="el" href="classthrill_1_1data_1_1Block.html" title="Block combines a reference to a read-only ByteBlock and book-keeping information. ...">Block</a> from a <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a> using a <a class="el" href="classthrill_1_1data_1_1BlockReader.html" title="BlockReader takes Block objects from BlockSource and allows reading of a) serializable Items or b) ar...">BlockReader</a>.  <a href="classthrill_1_1data_1_1ConsumeBlockQueueSource.html#details">More...</a><br/></td></tr>
@@ -191,6 +197,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1File.html">File</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> is an ordered sequence of <a class="el" href="classthrill_1_1data_1_1Block.html" title="Block combines a reference to a read-only ByteBlock and book-keeping information. ...">Block</a> objects for storing items.  <a href="classthrill_1_1data_1_1File.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1FileBlockSink.html">FileBlockSink</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classthrill_1_1data_1_1BlockSink.html" title="Pure virtual base class for all things that can receive Blocks from a BlockWriter. ">BlockSink</a> which interfaces to a <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>.  <a href="classthrill_1_1data_1_1FileBlockSink.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1FullException.html">FullException</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Exception is thrown by <a class="el" href="classthrill_1_1data_1_1BlockWriter.html" title="BlockWriter contains a temporary Block object into which a) any serializable item can be stored or b)...">BlockWriter</a> when the underlying sink does not allow allocation of a new block, which is needed to serialize the item.  <a href="classthrill_1_1data_1_1FullException.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,11 +212,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1MixBlockQueueReader.html">MixBlockQueueReader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reader to retrieve items in unordered sequence from a <a class="el" href="classthrill_1_1data_1_1MixBlockQueue.html" title="Implements reading an unordered sequence of items from multiple workers, which sends Blocks...">MixBlockQueue</a>.  <a href="classthrill_1_1data_1_1MixBlockQueueReader.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1MixBlockQueueSink.html">MixBlockQueueSink</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="classthrill_1_1data_1_1BlockSink.html" title="Pure virtual base class for all things that can receive Blocks from a BlockWriter. ">BlockSink</a> which forward Blocks to a mix queue with a fixed source worker tag.  <a href="classthrill_1_1data_1_1MixBlockQueueSink.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1MixStream.html">MixStream</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classthrill_1_1data_1_1Stream.html" title="Base class for common structures for ConcatStream and MixedStream. ">Stream</a> is a virtual set of connections to all other worker instances, hence a "Stream" bundles them to a logical communication context.  <a href="classthrill_1_1data_1_1MixStream.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ownership handle onto a <a class="el" href="classthrill_1_1data_1_1MixStream.html" title="Ownership handle onto a MixStream. ">MixStream</a>.  <a href="classthrill_1_1data_1_1MixStream.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1MixStreamData.html">MixStreamData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classthrill_1_1data_1_1Stream.html" title="Stream - base class for CatStream and MixStream. ">Stream</a> is a virtual set of connections to all other worker instances, hence a "Stream" bundles them to a logical communication context.  <a href="classthrill_1_1data_1_1MixStreamData.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Multiplexer.html">Multiplexer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplexes virtual Connections on Dispatcher.  <a href="classthrill_1_1data_1_1Multiplexer.html#details">More...</a><br/></td></tr>
@@ -243,7 +252,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01s42c784ecbd504c6802ce2ce0ffd1d579.html">Serialization&lt; Archive, T, typename std::enable_if&lt; std::is_pod&lt; T &gt;::value &amp;&amp;!std::is_pointer&lt; T &gt;::value &gt;::type &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html">Stream</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for common structures for ConcatStream and MixedStream.  <a href="classthrill_1_1data_1_1Stream.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classthrill_1_1data_1_1Stream.html" title="Stream - base class for CatStream and MixStream. ">Stream</a> - base class for <a class="el" href="classthrill_1_1data_1_1CatStream.html" title="Ownership handle onto a CatStreamData. ">CatStream</a> and <a class="el" href="classthrill_1_1data_1_1MixStream.html" title="Ownership handle onto a MixStream. ">MixStream</a>.  <a href="classthrill_1_1data_1_1Stream.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html">StreamData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for common structures for ConcatStream and MixedStream.  <a href="classthrill_1_1data_1_1StreamData.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamMultiplexerHeader.html">StreamMultiplexerHeader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classthrill_1_1data_1_1Block.html" title="Block combines a reference to a read-only ByteBlock and book-keeping information. ...">Block</a> header is sent before a sequence of blocks it indicates the number of elements and their boundaries.  <a href="classthrill_1_1data_1_1StreamMultiplexerHeader.html#details">More...</a><br/></td></tr>
@@ -255,7 +267,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for <a class="el" href="classthrill_1_1data_1_1StreamSet.html" title="Simple structure that holds a all stream instances for the workers on the local host for a given stre...">StreamSet</a>.  <a href="classthrill_1_1data_1_1StreamSetBase.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamSink.html">StreamSink</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classthrill_1_1data_1_1StreamSink.html" title="StreamSink is an BlockSink that sends data via a network socket to the Stream object on a different w...">StreamSink</a> is an <a class="el" href="classthrill_1_1data_1_1BlockSink.html" title="Pure virtual base class for all things that can receive Blocks from a BlockWriter. ">BlockSink</a> that sends data via a network socket to the <a class="el" href="classthrill_1_1data_1_1Stream.html" title="Base class for common structures for ConcatStream and MixedStream. ">Stream</a> object on a different worker.  <a href="classthrill_1_1data_1_1StreamSink.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classthrill_1_1data_1_1StreamSink.html" title="StreamSink is an BlockSink that sends data via a network socket to the StreamData object on a differe...">StreamSink</a> is an <a class="el" href="classthrill_1_1data_1_1BlockSink.html" title="Pure virtual base class for all things that can receive Blocks from a BlockWriter. ">BlockSink</a> that sends data via a network socket to the <a class="el" href="classthrill_1_1data_1_1StreamData.html" title="Base class for common structures for ConcatStream and MixedStream. ">StreamData</a> object on a different worker.  <a href="classthrill_1_1data_1_1StreamSink.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -265,32 +277,35 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga5df5518b488228d9937501d80f7b70e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8eb59a5f16aacf17b53f2fef06bff83f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga8eb59a5f16aacf17b53f2fef06bff83f">ByteBlockPtr</a> = ByteBlock::ByteBlockPtr</td></tr>
 <tr class="separator:ga8eb59a5f16aacf17b53f2fef06bff83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c9227f65cc5fae907c969a9861025cc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga4c9227f65cc5fae907c969a9861025cc">CatStreamDataPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; CatStreamData &gt;</td></tr>
+<tr class="separator:ga4c9227f65cc5fae907c969a9861025cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5e26e99f6cf880f5376fe272cfc59dcf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">CatStreamPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; CatStream &gt;</td></tr>
 <tr class="separator:ga5e26e99f6cf880f5376fe272cfc59dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad468d9d6927f81737fcbcaec29a67b62"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#gad468d9d6927f81737fcbcaec29a67b62">CatStreamSet</a> = StreamSet&lt; CatStream &gt;</td></tr>
-<tr class="separator:gad468d9d6927f81737fcbcaec29a67b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3fcda4fc0d05fc4422028bbd351557e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga3fcda4fc0d05fc4422028bbd351557e2">CatStreamSetPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; CatStreamSet &gt;</td></tr>
-<tr class="separator:ga3fcda4fc0d05fc4422028bbd351557e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ad355ee447a27c0d7e476464f51ce39"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga8ad355ee447a27c0d7e476464f51ce39">CatStreamSet</a> = StreamSet&lt; CatStreamData &gt;</td></tr>
+<tr class="separator:ga8ad355ee447a27c0d7e476464f51ce39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5b829f7f762aebcaf37404f0290d4ac"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#gaa5b829f7f762aebcaf37404f0290d4ac">CatStreamSetPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; CatStreamSet &gt;</td></tr>
+<tr class="separator:gaa5b829f7f762aebcaf37404f0290d4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3b9c91073d869f4983007bb1349be9a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#gaa3b9c91073d869f4983007bb1349be9a">DiscardWriter</a> = BlockWriter&lt; DiscardSink &gt;</td></tr>
+<tr class="separator:gaa3b9c91073d869f4983007bb1349be9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga75466e8af722e6fd8ff9139ad6eeee40"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga75466e8af722e6fd8ff9139ad6eeee40">DynBlockReader</a> = BlockReader&lt; DynBlockSource &gt;</td></tr>
 <tr class="memdesc:ga75466e8af722e6fd8ff9139ad6eeee40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiation of <a class="el" href="classthrill_1_1data_1_1BlockReader.html" title="BlockReader takes Block objects from BlockSource and allows reading of a) serializable Items or b) ar...">BlockReader</a> for reading from the polymorphic source.  <a href="#ga75466e8af722e6fd8ff9139ad6eeee40">More...</a><br/></td></tr>
 <tr class="separator:ga75466e8af722e6fd8ff9139ad6eeee40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae7356058967e82c4fa0b97f39a9d8afc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#gae7356058967e82c4fa0b97f39a9d8afc">DynBlockWriter</a> = BlockWriter&lt; data::BlockSink &gt;</td></tr>
-<tr class="memdesc:gae7356058967e82c4fa0b97f39a9d8afc"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias for <a class="el" href="classthrill_1_1data_1_1BlockWriter.html" title="BlockWriter contains a temporary Block object into which a) any serializable item can be stored or b)...">BlockWriter</a> which outputs to a generic <a class="el" href="classthrill_1_1data_1_1BlockSink.html" title="Pure virtual base class for all things that can receive Blocks from a BlockWriter. ">BlockSink</a>.  <a href="#gae7356058967e82c4fa0b97f39a9d8afc">More...</a><br/></td></tr>
-<tr class="separator:gae7356058967e82c4fa0b97f39a9d8afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabaaa4abd7671f0df32e251b9e891ce2f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#gabaaa4abd7671f0df32e251b9e891ce2f">FilePtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; File &gt;</td></tr>
 <tr class="separator:gabaaa4abd7671f0df32e251b9e891ce2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga042f8ee749943e6fd07700f5c798a151"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga042f8ee749943e6fd07700f5c798a151">MixStreamDataPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; MixStreamData &gt;</td></tr>
+<tr class="separator:ga042f8ee749943e6fd07700f5c798a151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga969da325e57eeefa9e0e2544086bee2d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga969da325e57eeefa9e0e2544086bee2d">MixStreamPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; MixStream &gt;</td></tr>
 <tr class="separator:ga969da325e57eeefa9e0e2544086bee2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0027bc9b57c2e4e8c1298ad22b63c960"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga0027bc9b57c2e4e8c1298ad22b63c960">MixStreamSet</a> = StreamSet&lt; MixStream &gt;</td></tr>
-<tr class="separator:ga0027bc9b57c2e4e8c1298ad22b63c960"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaea50deae76186c5642c23f2c926753b2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#gaea50deae76186c5642c23f2c926753b2">MixStreamSetPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; MixStreamSet &gt;</td></tr>
-<tr class="separator:gaea50deae76186c5642c23f2c926753b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab01fda8e58afc983521a6e46bfafe5bb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#gab01fda8e58afc983521a6e46bfafe5bb">MixStreamSet</a> = StreamSet&lt; MixStreamData &gt;</td></tr>
+<tr class="separator:gab01fda8e58afc983521a6e46bfafe5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a8228dcc71fc41227bd8c5427b0ac76"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga4a8228dcc71fc41227bd8c5427b0ac76">MixStreamSetPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; MixStreamSet &gt;</td></tr>
+<tr class="separator:ga4a8228dcc71fc41227bd8c5427b0ac76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4b9f085af7a96d5667c0754e791ac028"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga4b9f085af7a96d5667c0754e791ac028">PinRequestPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; PinRequest, mem::GPoolDeleter&lt; PinRequest &gt; &gt;</td></tr>
 <tr class="separator:ga4b9f085af7a96d5667c0754e791ac028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59a7ca7665c7a25f00547776bff944b9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga59a7ca7665c7a25f00547776bff944b9">StreamDataPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; StreamData &gt;</td></tr>
+<tr class="separator:ga59a7ca7665c7a25f00547776bff944b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga03df594c744fac6cea6f4559bc7494d2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga03df594c744fac6cea6f4559bc7494d2">StreamId</a> = size_t</td></tr>
 <tr class="separator:ga03df594c744fac6cea6f4559bc7494d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac59d85cbcbfab63b84f5e598c17d94a8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#gac59d85cbcbfab63b84f5e598c17d94a8">StreamPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; Stream &gt;</td></tr>
-<tr class="separator:gac59d85cbcbfab63b84f5e598c17d94a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -379,6 +394,20 @@ Writers and Readers</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga4c9227f65cc5fae907c969a9861025cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; CatStreamData &gt; CatStreamDataPtr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cat__stream_8hpp_source.html#l00139">139</a> of file <a class="el" href="cat__stream_8hpp_source.html">cat_stream.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga5e26e99f6cf880f5376fe272cfc59dcf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -389,35 +418,49 @@ Writers and Readers</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="cat__stream_8hpp_source.html#l00138">138</a> of file <a class="el" href="cat__stream_8hpp_source.html">cat_stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="cat__stream_8hpp_source.html#l00188">188</a> of file <a class="el" href="cat__stream_8hpp_source.html">cat_stream.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gad468d9d6927f81737fcbcaec29a67b62"></a>
+<a class="anchor" id="ga8ad355ee447a27c0d7e476464f51ce39"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef StreamSet&lt; CatStream &gt; CatStreamSet</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="cat__stream_8hpp_source.html#l00140">140</a> of file <a class="el" href="cat__stream_8hpp_source.html">cat_stream.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga3fcda4fc0d05fc4422028bbd351557e2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; CatStreamSet &gt; CatStreamSetPtr</td>
+          <td class="memname">typedef StreamSet&lt; CatStreamData &gt; CatStreamSet</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="cat__stream_8hpp_source.html#l00141">141</a> of file <a class="el" href="cat__stream_8hpp_source.html">cat_stream.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa5b829f7f762aebcaf37404f0290d4ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using CatStreamSetPtr =  <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt;CatStreamSet&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cat__stream_8hpp_source.html#l00142">142</a> of file <a class="el" href="cat__stream_8hpp_source.html">cat_stream.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa3b9c91073d869f4983007bb1349be9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using DiscardWriter =  BlockWriter&lt;DiscardSink&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="discard__sink_8hpp_source.html#l00061">61</a> of file <a class="el" href="discard__sink_8hpp_source.html">discard_sink.hpp</a>.</p>
 
 </div>
 </div>
@@ -437,22 +480,6 @@ Writers and Readers</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gae7356058967e82c4fa0b97f39a9d8afc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using DynBlockWriter =  BlockWriter&lt;data::BlockSink&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>alias for <a class="el" href="classthrill_1_1data_1_1BlockWriter.html" title="BlockWriter contains a temporary Block object into which a) any serializable item can be stored or b)...">BlockWriter</a> which outputs to a generic <a class="el" href="classthrill_1_1data_1_1BlockSink.html" title="Pure virtual base class for all things that can receive Blocks from a BlockWriter. ">BlockSink</a>. </p>
-
-<p>Definition at line <a class="el" href="block__writer_8hpp_source.html#l00448">448</a> of file <a class="el" href="block__writer_8hpp_source.html">block_writer.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="gabaaa4abd7671f0df32e251b9e891ce2f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -463,7 +490,21 @@ Writers and Readers</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00286">286</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00283">283</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga042f8ee749943e6fd07700f5c798a151"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; MixStreamData &gt; MixStreamDataPtr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mix__block__queue_8hpp_source.html#l00036">36</a> of file <a class="el" href="mix__block__queue_8hpp_source.html">mix_block_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -477,35 +518,35 @@ Writers and Readers</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mix__stream_8hpp_source.html#l00114">114</a> of file <a class="el" href="mix__stream_8hpp_source.html">mix_stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mix__stream_8hpp_source.html#l00153">153</a> of file <a class="el" href="mix__stream_8hpp_source.html">mix_stream.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ga0027bc9b57c2e4e8c1298ad22b63c960"></a>
+<a class="anchor" id="gab01fda8e58afc983521a6e46bfafe5bb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef StreamSet&lt; MixStream &gt; MixStreamSet</td>
+          <td class="memname">typedef StreamSet&lt; MixStreamData &gt; MixStreamSet</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mix__stream_8hpp_source.html#l00116">116</a> of file <a class="el" href="mix__stream_8hpp_source.html">mix_stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mix__stream_8hpp_source.html#l00111">111</a> of file <a class="el" href="mix__stream_8hpp_source.html">mix_stream.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gaea50deae76186c5642c23f2c926753b2"></a>
+<a class="anchor" id="ga4a8228dcc71fc41227bd8c5427b0ac76"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; MixStreamSet &gt; MixStreamSetPtr</td>
+          <td class="memname">using MixStreamSetPtr =  <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt;MixStreamSet&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mix__stream_8hpp_source.html#l00117">117</a> of file <a class="el" href="mix__stream_8hpp_source.html">mix_stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mix__stream_8hpp_source.html#l00112">112</a> of file <a class="el" href="mix__stream_8hpp_source.html">mix_stream.hpp</a>.</p>
 
 </div>
 </div>
@@ -523,6 +564,20 @@ Writers and Readers</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga59a7ca7665c7a25f00547776bff944b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; StreamData &gt; StreamDataPtr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00136">136</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga03df594c744fac6cea6f4559bc7494d2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -533,21 +588,7 @@ Writers and Readers</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00032">32</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gac59d85cbcbfab63b84f5e598c17d94a8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using StreamPtr =  <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt;Stream&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00200">200</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00032">32</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -580,7 +621,7 @@ Writers and Readers</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00034">34</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00034">34</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -627,7 +668,7 @@ Writers and Readers</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dyn__block__reader_8hpp_source.html#l00111">111</a> of file <a class="el" href="dyn__block__reader_8hpp_source.html">dyn_block_reader.hpp</a>.</p>
 
-<p>References <a class="el" href="counting__ptr_8hpp_source.html#l00244">tlx::make_counting()</a>, and <a class="el" href="gen__data_8py_source.html#l00030">gen_data::params</a>.</p>
+<p>References <a class="el" href="counting__ptr_8hpp_source.html#l00256">tlx::make_counting()</a>, and <a class="el" href="gen__data_8py_source.html#l00030">gen_data::params</a>.</p>
 
 </div>
 </div>
@@ -677,11 +718,11 @@ Writers and Readers</h2></td></tr>
 <p>The file has to be ordered according to the given compare function. The tie value can be used to make a decision in case of many successive equal elements. The tie is compared with the local rank of the element.</p>
 <p>WARNING: This method uses GetItemAt combined with a binary search and is therefore not efficient. The method should be reimplemented in near future. </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00457">457</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00511">511</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>References <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOG</a>, <a class="el" href="file_8hpp_source.html#l00181">File::num_items()</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
+<p>References <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOG</a>, <a class="el" href="file_8hpp_source.html#l00178">File::num_items()</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8hpp_source.html#l00237">File::GetIndexOf()</a>.</p>
+<p>Referenced by <a class="el" href="file_8hpp_source.html#l00234">File::GetIndexOf()</a>.</p>
 
 </div>
 </div>
@@ -700,7 +741,7 @@ Writers and Readers</h2></td></tr>
 </div><div class="memdoc">
 <p>Get item at the corresponding position. Do not use this method for reading multiple successive items. </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00451">451</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00505">505</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
 <p>References <a class="el" href="block__reader_8hpp_source.html#l00089">BlockReader&lt; BlockSource &gt;::Next()</a>.</p>
 
@@ -731,7 +772,7 @@ Writers and Readers</h2></td></tr>
 </div><div class="memdoc">
 <p>Seek in <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>: return a <a class="el" href="classthrill_1_1data_1_1Block.html" title="Block combines a reference to a read-only ByteBlock and book-keeping information. ...">Block</a> range containing items begin, end of given type. </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00499">499</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00553">553</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
 </div>
 </div>
@@ -761,9 +802,9 @@ Writers and Readers</h2></td></tr>
 
 <p>Get <a class="el" href="classthrill_1_1data_1_1BlockReader.html" title="BlockReader takes Block objects from BlockSource and allows reading of a) serializable Items or b) ar...">BlockReader</a> seeked to the corresponding item index. </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00390">390</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00444">444</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>References <a class="el" href="file_8hpp_source.html#l00263">File::blocks_</a>, <a class="el" href="block__reader_8hpp_source.html#l00069">BlockReader&lt; BlockSource &gt;::CopyBlock()</a>, <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, <a class="el" href="die_8hpp_source.html#l00042">die</a>, <a class="el" href="block__reader_8hpp_source.html#l00118">BlockReader&lt; BlockSource &gt;::HasNext()</a>, <a class="el" href="file_8hpp_source.html#l00282">File::KeepFileBlockSource</a>, <a class="el" href="block__sink_8hpp_source.html#l00103">BlockSink::local_worker_id_</a>, <a class="el" href="file_8hpp_source.html#l00268">File::num_items_sum_</a>, <a class="el" href="block__reader_8hpp_source.html#l00300">BlockReader&lt; BlockSource &gt;::Skip()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00179">sLOG</a>, and <a class="el" href="block__reader_8hpp_source.html#l00081">BlockReader&lt; BlockSource &gt;::typecode_verify()</a>.</p>
+<p>References <a class="el" href="file_8hpp_source.html#l00260">File::blocks_</a>, <a class="el" href="block__reader_8hpp_source.html#l00069">BlockReader&lt; BlockSource &gt;::CopyBlock()</a>, <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, <a class="el" href="die_8hpp_source.html#l00042">die</a>, <a class="el" href="block__reader_8hpp_source.html#l00118">BlockReader&lt; BlockSource &gt;::HasNext()</a>, <a class="el" href="file_8hpp_source.html#l00279">File::KeepFileBlockSource</a>, <a class="el" href="block__sink_8hpp_source.html#l00108">BlockSink::local_worker_id_</a>, <a class="el" href="file_8hpp_source.html#l00265">File::num_items_sum_</a>, <a class="el" href="block__reader_8hpp_source.html#l00300">BlockReader&lt; BlockSource &gt;::Skip()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00179">sLOG</a>, and <a class="el" href="block__reader_8hpp_source.html#l00081">BlockReader&lt; BlockSource &gt;::typecode_verify()</a>.</p>
 
 </div>
 </div>
@@ -793,7 +834,7 @@ Writers and Readers</h2></td></tr>
 
 <p>Take a vector of Readers and prefetch equally from them. </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00508">508</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00562">562</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00198">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MakePuller()</a>, <a class="el" href="inner__join_8hpp_source.html#l00540">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MergeFiles()</a>, and <a class="el" href="sort_8hpp_source.html#l00192">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::PushData()</a>.</p>
 
@@ -830,7 +871,7 @@ Writers and Readers</h2></td></tr>
 
 <p>Definition at line <a class="el" href="byte__block_8cpp_source.html#l00024">24</a> of file <a class="el" href="byte__block_8cpp_source.html">byte_block.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00074">MixStream::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00113">CatStream::GetWriters()</a>, <a class="el" href="sort_8hpp_source.html#l00176">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MaxMergeDegreePrefetch()</a>, <a class="el" href="group__by__key_8hpp_source.html#l00373">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::MaxMergeDegreePrefetch()</a>, <a class="el" href="inner__join_8hpp_source.html#l00518">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MaxMergeDegreePrefetch()</a>, <a class="el" href="read__binary_8hpp_source.html#l00076">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>, and <a class="el" href="context_8cpp_source.html#l00163">thrill::api::SetupBlockSize()</a>.</p>
+<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00042">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00078">CatStreamData::GetWriters()</a>, <a class="el" href="sort_8hpp_source.html#l00176">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MaxMergeDegreePrefetch()</a>, <a class="el" href="group__by__key_8hpp_source.html#l00373">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::MaxMergeDegreePrefetch()</a>, <a class="el" href="inner__join_8hpp_source.html#l00518">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MaxMergeDegreePrefetch()</a>, <a class="el" href="read__binary_8hpp_source.html#l00081">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>, and <a class="el" href="context_8cpp_source.html#l00163">thrill::api::SetupBlockSize()</a>.</p>
 
 </div>
 </div>
@@ -869,7 +910,7 @@ Writers and Readers</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 14 2017 08:17:17 for Thrill by
+    <li class="footer">Generated on Mon Oct 23 2017 22:11:37 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

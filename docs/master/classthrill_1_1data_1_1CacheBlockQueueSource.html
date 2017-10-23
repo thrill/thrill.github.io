@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('classthrill_1_1data_1_1CacheBlockQueue
 <div class="textblock"><p>A BlockSource to read Blocks from a <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a> using a <a class="el" href="classthrill_1_1data_1_1BlockReader.html" title="BlockReader takes Block objects from BlockSource and allows reading of a) serializable Items or b) ar...">BlockReader</a>, and at the same time CACHE all items received. </p>
 <p>All Blocks read from the <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a> are saved in the cache <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>. If the cache <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a> is initially already closed, then Blocks are read from the <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> instead. </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00214">214</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00261">261</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for CacheBlockQueueSource:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -211,7 +211,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Start reading from a <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a>. </p>
 
-<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00104">104</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00111">111</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
 
 </div>
 </div>
@@ -257,7 +257,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>move-constructor: default </p>
 
-<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00108">108</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00115">115</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
 
 </div>
 </div>
@@ -276,9 +276,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Consume remaining blocks and cache them in the <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>. </p>
 
-<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00132">132</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00139">139</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
 
-<p>References <a class="el" href="block_8hpp_source.html#l00223">PinnedBlock::IsValid()</a>, <a class="el" href="block__queue_8cpp_source.html#l00117">CacheBlockQueueSource::NextBlock()</a>, <a class="el" href="block__queue_8hpp_source.html#l00239">CacheBlockQueueSource::queue_</a>, and <a class="el" href="block__queue_8hpp_source.html#l00116">BlockQueue::read_closed()</a>.</p>
+<p>References <a class="el" href="block_8hpp_source.html#l00223">PinnedBlock::IsValid()</a>, <a class="el" href="block__queue_8cpp_source.html#l00124">CacheBlockQueueSource::NextBlock()</a>, <a class="el" href="block__queue_8hpp_source.html#l00286">CacheBlockQueueSource::queue_</a>, and <a class="el" href="block__queue_8hpp_source.html#l00117">BlockQueue::read_closed()</a>.</p>
 
 </div>
 </div>
@@ -298,11 +298,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>Return next block for <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a>, store into caching <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> and return it. </p>
 
-<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00117">117</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00124">124</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
 
-<p>References <a class="el" href="file_8hpp_source.html#l00086">File::AppendBlock()</a>, <a class="el" href="block__queue_8hpp_source.html#l00169">BlockQueue::file_</a>, <a class="el" href="block__queue_8hpp_source.html#l00242">CacheBlockQueueSource::local_worker_id_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOG</a>, <a class="el" href="classthrill_1_1data_1_1PinnedBlock.html#a804041c0cdb19aa9cdb70cb9bf24d69a">PinnedBlock::PinWait()</a>, <a class="el" href="block__queue_8hpp_source.html#l00091">BlockQueue::Pop()</a>, <a class="el" href="block__queue_8hpp_source.html#l00239">CacheBlockQueueSource::queue_</a>, and <a class="el" href="block__queue_8hpp_source.html#l00116">BlockQueue::read_closed()</a>.</p>
+<p>References <a class="el" href="file_8hpp_source.html#l00086">File::AppendBlock()</a>, <a class="el" href="block__queue_8hpp_source.html#l00162">BlockQueue::file_</a>, <a class="el" href="block__queue_8hpp_source.html#l00289">CacheBlockQueueSource::local_worker_id_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOG</a>, <a class="el" href="classthrill_1_1data_1_1PinnedBlock.html#a804041c0cdb19aa9cdb70cb9bf24d69a">PinnedBlock::PinWait()</a>, <a class="el" href="block__queue_8hpp_source.html#l00092">BlockQueue::Pop()</a>, <a class="el" href="block__queue_8hpp_source.html#l00286">CacheBlockQueueSource::queue_</a>, and <a class="el" href="block__queue_8hpp_source.html#l00117">BlockQueue::read_closed()</a>.</p>
 
-<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00132">CacheBlockQueueSource::~CacheBlockQueueSource()</a>.</p>
+<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00139">CacheBlockQueueSource::~CacheBlockQueueSource()</a>.</p>
 
 </div>
 </div>
@@ -346,7 +346,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00113">113</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8cpp_source.html#l00120">120</a> of file <a class="el" href="block__queue_8cpp_source.html">block_queue.cpp</a>.</p>
 
 </div>
 </div>
@@ -369,7 +369,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00216">216</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00263">263</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -393,9 +393,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>local worker id of the thread <em>reading</em> the <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a> </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00242">242</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00289">289</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00117">CacheBlockQueueSource::NextBlock()</a>.</p>
+<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00124">CacheBlockQueueSource::NextBlock()</a>.</p>
 
 </div>
 </div>
@@ -419,9 +419,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Reference to <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a>. </p>
 
-<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00239">239</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__queue_8hpp_source.html#l00286">286</a> of file <a class="el" href="block__queue_8hpp_source.html">block_queue.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00117">CacheBlockQueueSource::NextBlock()</a>, and <a class="el" href="block__queue_8cpp_source.html#l00132">CacheBlockQueueSource::~CacheBlockQueueSource()</a>.</p>
+<p>Referenced by <a class="el" href="block__queue_8cpp_source.html#l00124">CacheBlockQueueSource::NextBlock()</a>, and <a class="el" href="block__queue_8cpp_source.html#l00139">CacheBlockQueueSource::~CacheBlockQueueSource()</a>.</p>
 
 </div>
 </div>
@@ -435,7 +435,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1CacheBlockQueueSource.html">CacheBlockQueueSource</a></li>
-    <li class="footer">Generated on Sat Oct 14 2017 08:17:19 for Thrill by
+    <li class="footer">Generated on Mon Oct 23 2017 22:11:39 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

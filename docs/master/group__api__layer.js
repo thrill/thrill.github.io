@@ -286,24 +286,25 @@ var group__api__layer =
       [ "writer_", "classthrill_1_1api_1_1PrefixSumNode.html#ade1c31d89c1a1059e34d33d03507fd9b", null ]
     ] ],
     [ "ReadBinaryNode", "classthrill_1_1api_1_1ReadBinaryNode.html", [
-      [ "FileBlockSource", "classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource.html", [
-        [ "FileBlockSource", "classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource.html#a6ffd964f8dc57da4feeeced2d1b93b33", null ],
-        [ "NextBlock", "classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource.html#a8e1d6c5b7908e4f63a434c50863be662", null ],
-        [ "block_size", "classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource.html#ad2372f74095e1316bbeb542235fbd821", null ],
-        [ "context_", "classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource.html#ae8f38e2955f476fde7f144a0f76129bb", null ],
-        [ "done_", "classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource.html#aac774ec2d673bfab4851d001b6d01115", null ],
-        [ "is_compressed_", "classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource.html#ada116660c9d1ada0e6a4330af9eafd0f", null ],
-        [ "remain_size_", "classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource.html#aa7e10a1069be5c6122f4680d2d67d2a8", null ],
-        [ "stats_total_bytes_", "classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource.html#a3ff3e9852c29385a14f09f4dd0186f04", null ],
-        [ "stats_total_reads_", "classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource.html#ad1e498c92ecd53fc4d39dd245a46c140", null ],
-        [ "stream_", "classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource.html#a82a6226e719ae65ccdbc55008c7aeeab", null ]
-      ] ],
       [ "FileInfo", "structthrill_1_1api_1_1ReadBinaryNode_1_1FileInfo.html", [
         [ "is_compressed", "structthrill_1_1api_1_1ReadBinaryNode_1_1FileInfo.html#aa55c076a91d441d77eed92bb28672f5f", null ],
         [ "path", "structthrill_1_1api_1_1ReadBinaryNode_1_1FileInfo.html#a4d455efceee21e97d8e21ee40e9b4a20", null ],
         [ "range", "structthrill_1_1api_1_1ReadBinaryNode_1_1FileInfo.html#a83079d2db325efbfb5bcc3d70a1077a9", null ]
       ] ],
+      [ "VfsFileBlockSource", "classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html", [
+        [ "VfsFileBlockSource", "classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html#a8c28eb9ccc5da6f7093df9cc3eebd5f0", null ],
+        [ "NextBlock", "classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html#a8e1d6c5b7908e4f63a434c50863be662", null ],
+        [ "block_size", "classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html#ad2372f74095e1316bbeb542235fbd821", null ],
+        [ "context_", "classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html#ae8f38e2955f476fde7f144a0f76129bb", null ],
+        [ "done_", "classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html#aac774ec2d673bfab4851d001b6d01115", null ],
+        [ "is_compressed_", "classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html#ada116660c9d1ada0e6a4330af9eafd0f", null ],
+        [ "remain_size_", "classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html#aa7e10a1069be5c6122f4680d2d67d2a8", null ],
+        [ "stats_total_bytes_", "classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html#a3ff3e9852c29385a14f09f4dd0186f04", null ],
+        [ "stats_total_reads_", "classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html#ad1e498c92ecd53fc4d39dd245a46c140", null ],
+        [ "stream_", "classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html#a82a6226e719ae65ccdbc55008c7aeeab", null ]
+      ] ],
       [ "Super", "classthrill_1_1api_1_1ReadBinaryNode.html#abe585529c5360d22d9183c5ca113c909", null ],
+      [ "VfsFileBlockReader", "classthrill_1_1api_1_1ReadBinaryNode.html#a571f48dfa0b24876c136392f4b900c1f", null ],
       [ "ReadBinaryNode", "classthrill_1_1api_1_1ReadBinaryNode.html#afa1dd5b8ac2b347ae7e1fbfc1414f271", null ],
       [ "ReadBinaryNode", "classthrill_1_1api_1_1ReadBinaryNode.html#aed037695e4958654e59a1df6cc384a47", null ],
       [ "debug", "classthrill_1_1api_1_1ReadBinaryNode.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
@@ -383,7 +384,7 @@ var group__api__layer =
       [ "debug", "classthrill_1_1api_1_1ReduceNode.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
       [ "emitters_", "classthrill_1_1api_1_1ReduceNode.html#a18ff9277056d6ce5d80a1561569a2ff2", null ],
       [ "post_phase_", "classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390", null ],
-      [ "pre_phase_", "classthrill_1_1api_1_1ReduceNode.html#ae61c4a75f6c11ad397a1c16cfadf439f", null ],
+      [ "pre_phase_", "classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7", null ],
       [ "reduced_", "classthrill_1_1api_1_1ReduceNode.html#aec7a79b2ac83344b8470699cc128df00", null ],
       [ "thread_", "classthrill_1_1api_1_1ReduceNode.html#aeca1ca9969ec13ce72735b5f6d468ab1", null ],
       [ "use_mix_stream_", "classthrill_1_1api_1_1ReduceNode.html#ab2c4552c87902aff3cd748f9d39de5bb", null ],
@@ -403,7 +404,7 @@ var group__api__layer =
       [ "debug", "classthrill_1_1api_1_1ReduceToIndexNode.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
       [ "emitters_", "classthrill_1_1api_1_1ReduceToIndexNode.html#a18ff9277056d6ce5d80a1561569a2ff2", null ],
       [ "post_phase_", "classthrill_1_1api_1_1ReduceToIndexNode.html#a861bc07ca9bca70b463d39ef1de414ec", null ],
-      [ "pre_phase_", "classthrill_1_1api_1_1ReduceToIndexNode.html#ad11b99c466cc323d4af2032376bf4294", null ],
+      [ "pre_phase_", "classthrill_1_1api_1_1ReduceToIndexNode.html#ad887e021703f8145520e72234ce2d5e0", null ],
       [ "reduced_", "classthrill_1_1api_1_1ReduceToIndexNode.html#aec7a79b2ac83344b8470699cc128df00", null ],
       [ "result_size_", "classthrill_1_1api_1_1ReduceToIndexNode.html#ac27645f20e9c3ae01d416b693300915f", null ],
       [ "thread_", "classthrill_1_1api_1_1ReduceToIndexNode.html#aeca1ca9969ec13ce72735b5f6d468ab1", null ],
@@ -524,7 +525,6 @@ var group__api__layer =
       [ "max_file_size_", "classthrill_1_1api_1_1WriteBinaryNode.html#a84065b84ca1c2086719b636bb96af57d", null ],
       [ "out_pathbase_", "classthrill_1_1api_1_1WriteBinaryNode.html#aa42a96d7bbcb1076fc13e5f34dd91c82", null ],
       [ "out_serial_", "classthrill_1_1api_1_1WriteBinaryNode.html#ab704830d28c7dc4ec7535cd6af0f4807", null ],
-      [ "sink_", "classthrill_1_1api_1_1WriteBinaryNode.html#a2754a32fdc56bca2dcf04f464054b0b4", null ],
       [ "stats_total_elements_", "classthrill_1_1api_1_1WriteBinaryNode.html#aef310b385ad0bd73d532f38d377785dd", null ],
       [ "stats_total_writes_", "classthrill_1_1api_1_1WriteBinaryNode.html#aeda02ee4780491a6c923962567285ec9", null ],
       [ "writer_", "classthrill_1_1api_1_1WriteBinaryNode.html#aef9d443a35dcbeeb84ffc6735ff679ab", null ]

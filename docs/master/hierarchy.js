@@ -20,14 +20,18 @@ var hierarchy =
     [ "CountingPtr< ActionNode >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< ActionResultNode< ValueType > >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< CatStream >", "classtlx_1_1CountingPtr.html", null ],
+    [ "CountingPtr< CatStreamData >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< DIABase >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< DIANode< StackInput > >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< File >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< FileBase >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< MixStream >", "classtlx_1_1CountingPtr.html", null ],
+    [ "CountingPtr< MixStreamData >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< ReadStream >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< Request, RequestDeleter >", "classtlx_1_1CountingPtr.html", null ],
+    [ "CountingPtr< StreamData >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< thrill::data::DynBlockSourceInterface >", "classtlx_1_1CountingPtr.html", null ],
+    [ "CountingPtr< thrill::data::File >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< WriteStream >", "classtlx_1_1CountingPtr.html", null ],
     [ "Delegate< bool(), mem::GPoolAllocator< char > >", "classtlx_1_1Delegate.html", null ],
     [ "Delegate< void(BlockQueue &)>", "classtlx_1_1Delegate.html", null ],
@@ -92,11 +96,11 @@ var hierarchy =
     [ "ReduceByIndexPostPhase< TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig >", "classthrill_1_1core_1_1ReduceByIndexPostPhase.html", null ],
     [ "ReducePostPhaseEmitter< TableItem, ValueType, thrill::api::ReduceNode::Emitter, VolatileKey >", "classthrill_1_1core_1_1ReducePostPhaseEmitter.html", null ],
     [ "ReducePostPhaseEmitter< TableItem, ValueType, thrill::api::ReduceToIndexNode::Emitter, VolatileKey >", "classthrill_1_1core_1_1ReducePostPhaseEmitter.html", null ],
-    [ "ReducePrePhase< TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, ReduceConfig, IndexFunction, EqualToFunction, HashFunction, false >", "classthrill_1_1core_1_1ReducePrePhase.html", [
-      [ "ReducePrePhase< TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, ReduceConfig, IndexFunction, EqualToFunction, HashFunction, true >", "classthrill_1_1core_1_1ReducePrePhase_3_01TableItem_00_01Key_00_01Value_00_01KeyExtractor_00_01Rbb3cccc0d00b1797aabd08d3c850942f.html", null ]
+    [ "ReducePrePhase< TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig, IndexFunction, EqualToFunction, HashFunction, false >", "classthrill_1_1core_1_1ReducePrePhase.html", [
+      [ "ReducePrePhase< TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig, IndexFunction, EqualToFunction, HashFunction, true >", "classthrill_1_1core_1_1ReducePrePhase_3_01TableItem_00_01Key_00_01Value_00_01KeyExtractor_00_01R21d271c26c94d68a392fc2ad1836161c.html", null ]
     ] ],
-    [ "ReducePrePhase< TableItem, Key, ValueType, KeyExtractor, ReduceFunction, VolatileKey, ReduceConfig, core::ReduceByIndex< Key > >", "classthrill_1_1core_1_1ReducePrePhase.html", null ],
-    [ "ReducePrePhase< TableItem, Key, ValueType, KeyExtractor, ReduceFunction, VolatileKey, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction, KeyHashFunction, UseDuplicateDetection >", "classthrill_1_1core_1_1ReducePrePhase.html", null ],
+    [ "ReducePrePhase< TableItem, Key, ValueType, KeyExtractor, ReduceFunction, VolatileKey, data::Stream::Writer, ReduceConfig, core::ReduceByIndex< Key > >", "classthrill_1_1core_1_1ReducePrePhase.html", null ],
+    [ "ReducePrePhase< TableItem, Key, ValueType, KeyExtractor, ReduceFunction, VolatileKey, data::Stream::Writer, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction, KeyHashFunction, UseDuplicateDetection >", "classthrill_1_1core_1_1ReducePrePhase.html", null ],
     [ "ReduceTable< TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig, IndexFunction, KeyEqualFunction >", "classthrill_1_1core_1_1ReduceTable.html", [
       [ "ReduceBucketHashTable< TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig, IndexFunction, KeyEqualFunction >", "classthrill_1_1core_1_1ReduceBucketHashTable.html", null ]
     ] ],
@@ -207,8 +211,8 @@ var hierarchy =
     [ "MergeNode< ValueType, Comparator, kNumInputs >::Stats", "classthrill_1_1api_1_1MergeNode_1_1Stats.html", null ],
     [ "NoRebalanceTag", "structthrill_1_1api_1_1NoRebalanceTag.html", null ],
     [ "PadTag", "structthrill_1_1api_1_1PadTag.html", null ],
-    [ "ReadBinaryNode< ValueType >::FileBlockSource", "classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource.html", null ],
     [ "ReadBinaryNode< ValueType >::FileInfo", "structthrill_1_1api_1_1ReadBinaryNode_1_1FileInfo.html", null ],
+    [ "ReadBinaryNode< ValueType >::VfsFileBlockSource", "classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html", null ],
     [ "ReadLinesNode::InputLineIterator", "classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIterator.html", [
       [ "ReadLinesNode::InputLineIteratorCompressed", "classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIteratorCompressed.html", null ],
       [ "ReadLinesNode::InputLineIteratorUncompressed", "classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIteratorUncompressed.html", null ]
@@ -331,9 +335,9 @@ var hierarchy =
     [ "ReduceMakeTableItem< Value, TableItem, false >", "classthrill_1_1core_1_1ReduceMakeTableItem_3_01Value_00_01TableItem_00_01false_01_4.html", null ],
     [ "ReduceMakeTableItem< Value, TableItem, true >", "classthrill_1_1core_1_1ReduceMakeTableItem_3_01Value_00_01TableItem_00_01true_01_4.html", null ],
     [ "ReducePostPhaseEmitter< TableItem, Value, Emitter, VolatileKey >", "classthrill_1_1core_1_1ReducePostPhaseEmitter.html", null ],
-    [ "ReducePrePhase< TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction, HashFunction, UseDuplicateDetection >", "classthrill_1_1core_1_1ReducePrePhase.html", null ],
-    [ "ReducePrePhase< TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction, HashFunction, false >", "classthrill_1_1core_1_1ReducePrePhase_3_01TableItem_00_01Key_00_01Value_00_01KeyExtractor_00_01R8f9089bf912627d049d4ca588d14a45c.html", null ],
-    [ "ReducePrePhaseEmitter< TableItem, VolatileKey >", "classthrill_1_1core_1_1ReducePrePhaseEmitter.html", null ],
+    [ "ReducePrePhase< TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig_, IndexFunction, KeyEqualFunction, HashFunction, UseDuplicateDetection >", "classthrill_1_1core_1_1ReducePrePhase.html", null ],
+    [ "ReducePrePhase< TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig_, IndexFunction, KeyEqualFunction, HashFunction, false >", "classthrill_1_1core_1_1ReducePrePhase_3_01TableItem_00_01Key_00_01Value_00_01KeyExtractor_00_01R6998f81dc4b5ad1ea227fdf846bcd931.html", null ],
+    [ "ReducePrePhaseEmitter< TableItem, VolatileKey, BlockWriter >", "classthrill_1_1core_1_1ReducePrePhaseEmitter.html", null ],
     [ "ReduceTable< ValueType, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction >", "classthrill_1_1core_1_1ReduceTable.html", null ],
     [ "ReduceTableSelect< ImplSelect, ValueType, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig, IndexFunction, KeyEqualFunction >", "classthrill_1_1core_1_1ReduceTableSelect.html", null ],
     [ "ReduceTableSelect< ReduceTableImpl::BUCKET, TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig, IndexFunction, KeyEqualFunction >", "classthrill_1_1core_1_1ReduceTableSelect_3_01ReduceTableImpl_1_1BUCKET_00_01TableItem_00_01Key_0d2b450419cefd93a34e080bb2062a72c.html", null ],
@@ -346,10 +350,11 @@ var hierarchy =
     [ "BlockPoolMemoryHolder", "classthrill_1_1data_1_1BlockPoolMemoryHolder.html", null ],
     [ "BlockSink", "classthrill_1_1data_1_1BlockSink.html", [
       [ "BlockQueue", "classthrill_1_1data_1_1BlockQueue.html", null ],
+      [ "BlockQueueSink", "classthrill_1_1data_1_1BlockQueueSink.html", null ],
       [ "BoundedBlockSink", "classthrill_1_1data_1_1BoundedBlockSink.html", null ],
       [ "DiscardSink", "classthrill_1_1data_1_1DiscardSink.html", null ],
       [ "File", "classthrill_1_1data_1_1File.html", null ],
-      [ "MixBlockQueueSink", "classthrill_1_1data_1_1MixBlockQueueSink.html", null ],
+      [ "FileBlockSink", "classthrill_1_1data_1_1FileBlockSink.html", null ],
       [ "StreamSink", "classthrill_1_1data_1_1StreamSink.html", null ]
     ] ],
     [ "ByteBlock::Deleter", "classthrill_1_1data_1_1ByteBlock_1_1Deleter.html", null ],
@@ -503,6 +508,7 @@ var hierarchy =
       [ "PinnedByteBlockPtr", "classthrill_1_1data_1_1PinnedByteBlockPtr.html", null ]
     ] ],
     [ "CountingPtrDefaultDeleter", "classtlx_1_1CountingPtrDefaultDeleter.html", null ],
+    [ "CountingPtrNoOperationDeleter", "classtlx_1_1CountingPtrNoOperationDeleter.html", null ],
     [ "Delegate< T, Allocator >", "classtlx_1_1Delegate.html", null ],
     [ "Delegate< R(A...), Allocator >", "classtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html", null ],
     [ "CallForRangeImpl< Index, Size, Functor >", "classtlx_1_1detail_1_1CallForRangeImpl.html", null ],
@@ -614,6 +620,10 @@ var hierarchy =
       [ "Stream", "classthrill_1_1data_1_1Stream.html", [
         [ "CatStream", "classthrill_1_1data_1_1CatStream.html", null ],
         [ "MixStream", "classthrill_1_1data_1_1MixStream.html", null ]
+      ] ],
+      [ "StreamData", "classthrill_1_1data_1_1StreamData.html", [
+        [ "CatStreamData", "classthrill_1_1data_1_1CatStreamData.html", null ],
+        [ "MixStreamData", "classthrill_1_1data_1_1MixStreamData.html", null ]
       ] ],
       [ "StreamSetBase", "classthrill_1_1data_1_1StreamSetBase.html", [
         [ "StreamSet< Stream >", "classthrill_1_1data_1_1StreamSet.html", null ]

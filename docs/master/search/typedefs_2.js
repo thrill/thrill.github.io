@@ -2,12 +2,13 @@ var searchData=
 [
   ['callback',['Callback',['../classthrill_1_1api_1_1DIANode.html#aee28d6cdfe25b4ccb931314859d9551f',1,'thrill::api::DIANode::Callback()'],['../classthrill_1_1api_1_1UnionNode.html#a7dff7225471189a35cd341f0af88fd0b',1,'thrill::api::UnionNode::Callback()'],['../classthrill_1_1net_1_1mock_1_1Dispatcher.html#a0a32632611d98f14ad5e291fb0f69584',1,'thrill::net::mock::Dispatcher::Callback()'],['../classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a0a32632611d98f14ad5e291fb0f69584',1,'thrill::net::mpi::Dispatcher::Callback()'],['../classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a0a32632611d98f14ad5e291fb0f69584',1,'thrill::net::tcp::SelectDispatcher::Callback()']]],
   ['caller',['Caller',['../classtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html#aad49edca1b38508932c5d2c279e3b89d',1,'tlx::Delegate&lt; R(A...), Allocator &gt;']]],
-  ['catblockreader',['CatBlockReader',['../classthrill_1_1data_1_1CatStream.html#aabbeb95c95459ec4394e57f75c0ce807',1,'thrill::data::CatStream::CatBlockReader()'],['../classthrill_1_1data_1_1MixBlockQueueReader.html#aabbeb95c95459ec4394e57f75c0ce807',1,'thrill::data::MixBlockQueueReader::CatBlockReader()']]],
-  ['catblocksource',['CatBlockSource',['../classthrill_1_1data_1_1CatStream.html#afe093f55eed83772ecd8d1eb1d38f7d3',1,'thrill::data::CatStream::CatBlockSource()'],['../classthrill_1_1data_1_1MixBlockQueueReader.html#afe093f55eed83772ecd8d1eb1d38f7d3',1,'thrill::data::MixBlockQueueReader::CatBlockSource()']]],
-  ['catreader',['CatReader',['../classthrill_1_1data_1_1CatStream.html#acd1ea36c8dc2fa9c4b92b222fd58de3a',1,'thrill::data::CatStream']]],
+  ['catblockreader',['CatBlockReader',['../classthrill_1_1data_1_1CatStreamData.html#aabbeb95c95459ec4394e57f75c0ce807',1,'thrill::data::CatStreamData::CatBlockReader()'],['../classthrill_1_1data_1_1MixBlockQueueReader.html#aabbeb95c95459ec4394e57f75c0ce807',1,'thrill::data::MixBlockQueueReader::CatBlockReader()']]],
+  ['catblocksource',['CatBlockSource',['../classthrill_1_1data_1_1CatStreamData.html#afe093f55eed83772ecd8d1eb1d38f7d3',1,'thrill::data::CatStreamData::CatBlockSource()'],['../classthrill_1_1data_1_1MixBlockQueueReader.html#afe093f55eed83772ecd8d1eb1d38f7d3',1,'thrill::data::MixBlockQueueReader::CatBlockSource()']]],
+  ['catreader',['CatReader',['../classthrill_1_1data_1_1CatStreamData.html#acd1ea36c8dc2fa9c4b92b222fd58de3a',1,'thrill::data::CatStreamData::CatReader()'],['../classthrill_1_1data_1_1CatStream.html#a26a674e4b7f7a211492cb716c84feb01',1,'thrill::data::CatStream::CatReader()']]],
+  ['catstreamdataptr',['CatStreamDataPtr',['../group__data__layer.html#ga4c9227f65cc5fae907c969a9861025cc',1,'thrill::data']]],
   ['catstreamptr',['CatStreamPtr',['../group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf',1,'thrill::data']]],
-  ['catstreamset',['CatStreamSet',['../group__data__layer.html#gad468d9d6927f81737fcbcaec29a67b62',1,'thrill::data']]],
-  ['catstreamsetptr',['CatStreamSetPtr',['../group__data__layer.html#ga3fcda4fc0d05fc4422028bbd351557e2',1,'thrill::data']]],
+  ['catstreamset',['CatStreamSet',['../group__data__layer.html#ga8ad355ee447a27c0d7e476464f51ce39',1,'thrill::data']]],
+  ['catstreamsetptr',['CatStreamSetPtr',['../group__data__layer.html#gaa5b829f7f762aebcaf37404f0290d4ac',1,'thrill::data']]],
   ['closecallback',['CloseCallback',['../classthrill_1_1data_1_1BlockQueue.html#a08335ba0424d579b47e3fb4d0c144aa2',1,'thrill::data::BlockQueue']]],
   ['completionhandler',['CompletionHandler',['../group__io__layer__req.html#ga4d564039f520d56584770abb56692cb3',1,'thrill::io']]],
   ['concurrentboundedqueue',['ConcurrentBoundedQueue',['../namespacethrill_1_1common.html#a10374cf53d327fcf2ca319487ca56bae',1,'thrill::common']]],
@@ -21,6 +22,7 @@ var searchData=
   ['container',['Container',['../classthrill_1_1common_1_1BinaryHeap.html#a3291a0916f44ce38fad78e59701765b7',1,'thrill::common::BinaryHeap']]],
   ['countertype',['CounterType',['../classthrill_1_1api_1_1GroupByNode_1_1HashCount.html#a3393559cdbae8224177ec106f92a8000',1,'thrill::api::GroupByNode::HashCount::CounterType()'],['../classthrill_1_1api_1_1JoinNode_1_1HashCount.html#a3393559cdbae8224177ec106f92a8000',1,'thrill::api::JoinNode::HashCount::CounterType()'],['../classthrill_1_1core_1_1LocationDetection.html#ad8833970d4373e1e608215ba23f5b6d7',1,'thrill::core::LocationDetection::CounterType()'],['../namespacethrill_1_1mem.html#a491098e87935dc46c09983657f9d90dd',1,'thrill::mem::CounterType()']]],
   ['counting_5fptr',['counting_ptr',['../namespacetlx.html#a2c4e023d82bca2172da2f965e3b42b40',1,'tlx']]],
+  ['countingptrnodelete',['CountingPtrNoDelete',['../namespacetlx.html#a9d28f4e50fa9fc359c658b0911ce06b8',1,'tlx']]],
   ['csimplegloba',['CSimpleGlobA',['../namespacethrill_1_1vfs_1_1glob__local.html#a8387c68196b3e9e82345307f5841aa22',1,'thrill::vfs::glob_local']]],
   ['csimpleglobw',['CSimpleGlobW',['../namespacethrill_1_1vfs_1_1glob__local.html#aafb53057c10f120de3609ce7235fdab3',1,'thrill::vfs::glob_local']]]
 ];

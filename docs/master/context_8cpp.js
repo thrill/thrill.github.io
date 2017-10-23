@@ -2,8 +2,8 @@ var context_8cpp =
 [
     [ "TestGroup", "context_8cpp.html#a50786fa4870c019a7045a2c72d25e08f", null ],
     [ "ConstructLoopbackHostContexts", "context_8cpp.html#a879f5a32e17fada2ee41c22bffbdae18", null ],
-    [ "Context::GetNewStream< data::CatStream >", "context_8cpp.html#abd81a0be76257f1e6b53a9f2462e543d", null ],
-    [ "Context::GetNewStream< data::MixStream >", "context_8cpp.html#acda2983fcd6bfc661ccfeb0d105f6d9b", null ],
+    [ "Context::GetNewStream< data::CatStream >", "context_8cpp.html#a042a71ea270cc04937d5dc8ac3ed5ea1", null ],
+    [ "Context::GetNewStream< data::MixStream >", "context_8cpp.html#ae36855ce323c3e7d4a2c6ba07d062d96", null ],
     [ "Deinitialize", "context_8cpp.html#a3cdb312b55891229178c2837ef378533", null ],
     [ "DetectNetBackend", "context_8cpp.html#a5b6d358b47e88a3d2aeb67c9182f12d8", null ],
     [ "Initialize", "context_8cpp.html#ad12de406b81c6e1a4ffc32a12517e557", null ],

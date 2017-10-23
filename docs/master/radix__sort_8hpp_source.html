@@ -192,9 +192,9 @@ $(document).ready(function(){initNavTree('radix__sort_8hpp_source.html','');});
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        Char vc = std::move(char_cache[i]);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">while</span> ((j = --bkt_index[vc]) &gt; i)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacetlx.html#a5dee8d3837365def6ce2290d6e76bd55">std::swap</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="namespacetlx.html#a5dee8d3837365def6ce2290d6e76bd55">swap</a>(v, begin[j]);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="namespacetlx.html#a5dee8d3837365def6ce2290d6e76bd55">swap</a>(vc, char_cache[j]);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">std::swap</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">swap</a>(v, begin[j]);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">swap</a>(vc, char_cache[j]);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        begin[i] = std::move(v);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        i += bkt_size[vc];</div>
@@ -286,7 +286,7 @@ $(document).ready(function(){initNavTree('radix__sort_8hpp_source.html','');});
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="thrill_2common_2logger_8hpp_html"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html">logger.hpp</a></div></div>
 <div class="ttc" id="namespacethrill_1_1common_html_a13b9c9890284e090203e8473866f73e7"><div class="ttname"><a href="namespacethrill_1_1common.html#a13b9c9890284e090203e8473866f73e7">thrill::common::radix_sort_CI</a></div><div class="ttdeci">static void radix_sort_CI(Iterator begin, Iterator end, size_t K, const Comparator &amp;cmp, const SubSorter &amp;sub_sort, size_t depth, Char *char_cache)</div><div class="ttdoc">Internal helper method, use radix_sort_CI below. </div><div class="ttdef"><b>Definition:</b> <a href="radix__sort_8hpp_source.html#l00037">radix_sort.hpp:37</a></div></div>
-<div class="ttc" id="namespacetlx_html_a5dee8d3837365def6ce2290d6e76bd55"><div class="ttname"><a href="namespacetlx.html#a5dee8d3837365def6ce2290d6e76bd55">tlx::swap</a></div><div class="ttdeci">void swap(CountingPtr&lt; A &gt; &amp;a1, CountingPtr&lt; A &gt; &amp;a2) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="counting__ptr_8hpp_source.html#l00251">counting_ptr.hpp:251</a></div></div>
+<div class="ttc" id="namespacetlx_html_ade1320658af9846df1831480a96e7a38"><div class="ttname"><a href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">tlx::swap</a></div><div class="ttdeci">void swap(CountingPtr&lt; A, D &gt; &amp;a1, CountingPtr&lt; A, D &gt; &amp;a2) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="counting__ptr_8hpp_source.html#l00263">counting_ptr.hpp:263</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1RadixSort_html_a173252c88258bbdf36761265600f24ae"><div class="ttname"><a href="classthrill_1_1common_1_1RadixSort.html#a173252c88258bbdf36761265600f24ae">thrill::common::RadixSort::K_</a></div><div class="ttdeci">const size_t K_</div><div class="ttdef"><b>Definition:</b> <a href="radix__sort_8hpp_source.html#l00160">radix_sort.hpp:160</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1RadixSort_html_a60f0b0b782c6b44105b082c84a167d0b"><div class="ttname"><a href="classthrill_1_1common_1_1RadixSort.html#a60f0b0b782c6b44105b082c84a167d0b">thrill::common::RadixSort::operator()</a></div><div class="ttdeci">void operator()(Iterator begin, Iterator end, const CompareFunction &amp;cmp) const </div><div class="ttdef"><b>Definition:</b> <a href="radix__sort_8hpp_source.html#l00151">radix_sort.hpp:151</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1RadixSort_html_ab0fb8187701feff11de7c1bc1d918bf1"><div class="ttname"><a href="classthrill_1_1common_1_1RadixSort.html#ab0fb8187701feff11de7c1bc1d918bf1">thrill::common::RadixSort::RadixSort</a></div><div class="ttdeci">RadixSort(size_t K)</div><div class="ttdef"><b>Definition:</b> <a href="radix__sort_8hpp_source.html#l00149">radix_sort.hpp:149</a></div></div>
@@ -298,7 +298,7 @@ $(document).ready(function(){initNavTree('radix__sort_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_19de9a7cb0ad0c6b03f8c7369b4f5139.html">common</a></li><li class="navelem"><a class="el" href="radix__sort_8hpp.html">radix_sort.hpp</a></li>
-    <li class="footer">Generated on Sat Oct 14 2017 08:17:14 for Thrill by
+    <li class="footer">Generated on Mon Oct 23 2017 22:11:35 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

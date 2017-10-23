@@ -117,18 +117,15 @@ $(document).ready(function(){initNavTree('classthrill_1_1data_1_1Stream.html',''
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classthrill_1_1data_1_1Stream-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Stream Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__data__layer.html">Data Subsystem Layer</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base class for common structures for ConcatStream and MixedStream. </p>
-<p>This is also a virtual base class use by <a class="el" href="classthrill_1_1data_1_1Multiplexer.html" title="Multiplexes virtual Connections on Dispatcher. ">Multiplexer</a> to pass blocks to streams! Instead, it contains common items like stats. </p>
+<div class="textblock"><p><a class="el" href="classthrill_1_1data_1_1Stream.html" title="Stream - base class for CatStream and MixStream. ">Stream</a> - base class for <a class="el" href="classthrill_1_1data_1_1CatStream.html" title="Ownership handle onto a CatStreamData. ">CatStream</a> and <a class="el" href="classthrill_1_1data_1_1MixStream.html" title="Ownership handle onto a MixStream. ">MixStream</a>. </p>
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00043">43</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00037">37</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for Stream:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -142,7 +139,7 @@ $(document).ready(function(){initNavTree('classthrill_1_1data_1_1Stream.html',''
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1data_1_1Stream__coll__graph.svg" width="1334" height="323"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1data_1_1Stream__coll__graph.svg" width="139" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 
@@ -150,45 +147,86 @@ $(document).ready(function(){initNavTree('classthrill_1_1data_1_1Stream.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4edeafbc4e0f829a94914488937f0cf2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a4edeafbc4e0f829a94914488937f0cf2">Writer</a> = <a class="el" href="group__data__layer.html#gae7356058967e82c4fa0b97f39a9d8afc">DynBlockWriter</a></td></tr>
-<tr class="separator:a4edeafbc4e0f829a94914488937f0cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa69ca4ad57a0d2a683361d219fd48c2e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#aa69ca4ad57a0d2a683361d219fd48c2e">Writer</a> = <a class="el" href="classthrill_1_1data_1_1StreamData.html#a08f9d7d340d452efab7eab158fcbfe64">StreamData::Writer</a></td></tr>
+<tr class="separator:aa69ca4ad57a0d2a683361d219fd48c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a83fd6170d66ec685e08f7af2cf6fc569"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a83fd6170d66ec685e08f7af2cf6fc569">Stream</a> (<a class="el" href="classthrill_1_1data_1_1Multiplexer.html">Multiplexer</a> &amp;multiplexer, const <a class="el" href="group__data__layer.html#ga03df594c744fac6cea6f4559bc7494d2">StreamId</a> &amp;<a class="el" href="classthrill_1_1data_1_1Stream.html#a48d1f80794534f3f501f64386d6647e7">id</a>, size_t local_worker_id, size_t dia_id)</td></tr>
-<tr class="separator:a83fd6170d66ec685e08f7af2cf6fc569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22beda3d71a767ab4601c6e3eee69491"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a22beda3d71a767ab4601c6e3eee69491">~Stream</a> ()</td></tr>
 <tr class="separator:a22beda3d71a767ab4601c6e3eee69491"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacb6d0e5e6d570cdc2b0da14c3921ff0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#aacb6d0e5e6d570cdc2b0da14c3921ff0">Close</a> ()=0</td></tr>
-<tr class="memdesc:aacb6d0e5e6d570cdc2b0da14c3921ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">shuts the stream down.  <a href="#aacb6d0e5e6d570cdc2b0da14c3921ff0">More...</a><br/></td></tr>
-<tr class="separator:aacb6d0e5e6d570cdc2b0da14c3921ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13ef393e64458da714691f90545824e9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a13ef393e64458da714691f90545824e9">closed</a> () const =0</td></tr>
-<tr class="separator:a13ef393e64458da714691f90545824e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af466211c9c17acd9e25a3e6d09a31c4c"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classthrill_1_1data_1_1Stream.html#a4edeafbc4e0f829a94914488937f0cf2">Writer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#af466211c9c17acd9e25a3e6d09a31c4c">GetWriters</a> ()=0</td></tr>
+<tr class="memitem:a7f7a3199c392465d0767c6506c1af5b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a7f7a3199c392465d0767c6506c1af5b4">Close</a> ()</td></tr>
+<tr class="memdesc:a7f7a3199c392465d0767c6506c1af5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">shuts down the stream, waits for all closing blocks  <a href="#a7f7a3199c392465d0767c6506c1af5b4">More...</a><br/></td></tr>
+<tr class="separator:a7f7a3199c392465d0767c6506c1af5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c8b76212a97002b25cf3e88e8bf24d8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classthrill_1_1data_1_1StreamData.html">StreamData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8">data</a> ()=0</td></tr>
+<tr class="memdesc:a2c8b76212a97002b25cf3e88e8bf24d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return stream data reference.  <a href="#a2c8b76212a97002b25cf3e88e8bf24d8">More...</a><br/></td></tr>
+<tr class="separator:a2c8b76212a97002b25cf3e88e8bf24d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42c8d62a71c6e964fc5954fdc0ba7d48"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classthrill_1_1data_1_1StreamData.html">StreamData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a42c8d62a71c6e964fc5954fdc0ba7d48">data</a> () const =0</td></tr>
+<tr class="memdesc:a42c8d62a71c6e964fc5954fdc0ba7d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return stream data reference.  <a href="#a42c8d62a71c6e964fc5954fdc0ba7d48">More...</a><br/></td></tr>
+<tr class="separator:a42c8d62a71c6e964fc5954fdc0ba7d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af466211c9c17acd9e25a3e6d09a31c4c"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classthrill_1_1data_1_1Stream.html#aa69ca4ad57a0d2a683361d219fd48c2e">Writer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#af466211c9c17acd9e25a3e6d09a31c4c">GetWriters</a> ()=0</td></tr>
 <tr class="separator:af466211c9c17acd9e25a3e6d09a31c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48d1f80794534f3f501f64386d6647e7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group__data__layer.html#ga03df594c744fac6cea6f4559bc7494d2">StreamId</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a48d1f80794534f3f501f64386d6647e7">id</a> () const </td></tr>
-<tr class="separator:a48d1f80794534f3f501f64386d6647e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae75328939a4b19114b4f83b395d1d1e3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#ae75328939a4b19114b4f83b395d1d1e3">my_host_rank</a> () const </td></tr>
-<tr class="memdesc:ae75328939a4b19114b4f83b395d1d1e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns my_host_rank.  <a href="#ae75328939a4b19114b4f83b395d1d1e3">More...</a><br/></td></tr>
-<tr class="separator:ae75328939a4b19114b4f83b395d1d1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a2419998e8a85e72a5c65513bbba69c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a9a2419998e8a85e72a5c65513bbba69c">my_worker_rank</a> () const </td></tr>
-<tr class="memdesc:a9a2419998e8a85e72a5c65513bbba69c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns my_worker_rank_.  <a href="#a9a2419998e8a85e72a5c65513bbba69c">More...</a><br/></td></tr>
-<tr class="separator:a9a2419998e8a85e72a5c65513bbba69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5784440466718742744f97aa0eb09de"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#ad5784440466718742744f97aa0eb09de">num_hosts</a> () const </td></tr>
-<tr class="memdesc:ad5784440466718742744f97aa0eb09de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of hosts in system.  <a href="#ad5784440466718742744f97aa0eb09de">More...</a><br/></td></tr>
-<tr class="separator:ad5784440466718742744f97aa0eb09de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ecd6ddfee677b7d2c2fd7b332e90c90"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a5ecd6ddfee677b7d2c2fd7b332e90c90">num_workers</a> () const </td></tr>
-<tr class="memdesc:a5ecd6ddfee677b7d2c2fd7b332e90c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of workers in system.  <a href="#a5ecd6ddfee677b7d2c2fd7b332e90c90">More...</a><br/></td></tr>
-<tr class="separator:a5ecd6ddfee677b7d2c2fd7b332e90c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a060a2efa2142f5d6169ebc016692e88d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a060a2efa2142f5d6169ebc016692e88d">OnAllClosed</a> (const char *stream_type)</td></tr>
-<tr class="separator:a060a2efa2142f5d6169ebc016692e88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa188f62b85c2af5028cf55f7edba3c"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="group__data__layer.html#ga03df594c744fac6cea6f4559bc7494d2">StreamId</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a3fa188f62b85c2af5028cf55f7edba3c">id</a> () const =0</td></tr>
+<tr class="memdesc:a3fa188f62b85c2af5028cf55f7edba3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return stream id.  <a href="#a3fa188f62b85c2af5028cf55f7edba3c">More...</a><br/></td></tr>
+<tr class="separator:a3fa188f62b85c2af5028cf55f7edba3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b173d0ccadd2c20be68054fe610fd0c"><td class="memTemplParams" colspan="2">template&lt;typename ItemType &gt; </td></tr>
 <tr class="memitem:a0b173d0ccadd2c20be68054fe610fd0c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a0b173d0ccadd2c20be68054fe610fd0c">Scatter</a> (<a class="el" href="classthrill_1_1data_1_1File.html">File</a> &amp;source, const std::vector&lt; size_t &gt; &amp;offsets, bool consume=false)</td></tr>
 <tr class="memdesc:a0b173d0ccadd2c20be68054fe610fd0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scatters a <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> to many worker: elements from [offset[0],offset[1]) are sent to the first worker, elements from [offset[1], offset[2]) are sent to the second worker, ..., elements from [offset[my_rank - 1],offset[my_rank]) are copied locally, ..., elements from [offset[num_workers - 1], offset[num_workers]) are sent to the last worker.  <a href="#a0b173d0ccadd2c20be68054fe610fd0c">More...</a><br/></td></tr>
 <tr class="separator:a0b173d0ccadd2c20be68054fe610fd0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab918f792039fb144dd12528701199562"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#ab918f792039fb144dd12528701199562">workers_per_host</a> () const </td></tr>
-<tr class="memdesc:ab918f792039fb144dd12528701199562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns workers_per_host.  <a href="#ab918f792039fb144dd12528701199562">More...</a><br/></td></tr>
-<tr class="separator:ab918f792039fb144dd12528701199562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Statistics</div></td></tr>
+<tr class="memitem:aafba34f43045b121f2ceefe8fd667da7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#aafba34f43045b121f2ceefe8fd667da7">tx_items</a> () const </td></tr>
+<tr class="memdesc:aafba34f43045b121f2ceefe8fd667da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of items transmitted  <a href="#aafba34f43045b121f2ceefe8fd667da7">More...</a><br/></td></tr>
+<tr class="separator:aafba34f43045b121f2ceefe8fd667da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a155814533f57eb38293db5bf3933247c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a155814533f57eb38293db5bf3933247c">tx_bytes</a> () const </td></tr>
+<tr class="memdesc:a155814533f57eb38293db5bf3933247c"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of bytes transmitted  <a href="#a155814533f57eb38293db5bf3933247c">More...</a><br/></td></tr>
+<tr class="separator:a155814533f57eb38293db5bf3933247c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5bef94b5b2c2b0a29cac1f658c39fe"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a9c5bef94b5b2c2b0a29cac1f658c39fe">tx_blocks</a> () const </td></tr>
+<tr class="memdesc:a9c5bef94b5b2c2b0a29cac1f658c39fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of blocks transmitted  <a href="#a9c5bef94b5b2c2b0a29cac1f658c39fe">More...</a><br/></td></tr>
+<tr class="separator:a9c5bef94b5b2c2b0a29cac1f658c39fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e85dd34005a617e0b96c1271ac60ae6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a0e85dd34005a617e0b96c1271ac60ae6">rx_items</a> () const </td></tr>
+<tr class="memdesc:a0e85dd34005a617e0b96c1271ac60ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of items received  <a href="#a0e85dd34005a617e0b96c1271ac60ae6">More...</a><br/></td></tr>
+<tr class="separator:a0e85dd34005a617e0b96c1271ac60ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd43a40e015438622d3d540f0777773c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#abd43a40e015438622d3d540f0777773c">rx_bytes</a> () const </td></tr>
+<tr class="memdesc:abd43a40e015438622d3d540f0777773c"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of bytes received  <a href="#abd43a40e015438622d3d540f0777773c">More...</a><br/></td></tr>
+<tr class="separator:abd43a40e015438622d3d540f0777773c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab01828661e59e31fcb5efe99fa0fb0c9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#ab01828661e59e31fcb5efe99fa0fb0c9">rx_blocks</a> () const </td></tr>
+<tr class="memdesc:ab01828661e59e31fcb5efe99fa0fb0c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of blocks received  <a href="#ab01828661e59e31fcb5efe99fa0fb0c9">More...</a><br/></td></tr>
+<tr class="separator:ab01828661e59e31fcb5efe99fa0fb0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab426d0f9fa1bfac97627627041e1d616"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#ab426d0f9fa1bfac97627627041e1d616">tx_net_items</a> () const </td></tr>
+<tr class="memdesc:ab426d0f9fa1bfac97627627041e1d616"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of items transmitted via network excluding internal tx  <a href="#ab426d0f9fa1bfac97627627041e1d616">More...</a><br/></td></tr>
+<tr class="separator:ab426d0f9fa1bfac97627627041e1d616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac270a0f8f34469959233dfc9700e4f82"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#ac270a0f8f34469959233dfc9700e4f82">tx_net_bytes</a> () const </td></tr>
+<tr class="memdesc:ac270a0f8f34469959233dfc9700e4f82"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of bytes transmitted via network excluding internal tx  <a href="#ac270a0f8f34469959233dfc9700e4f82">More...</a><br/></td></tr>
+<tr class="separator:ac270a0f8f34469959233dfc9700e4f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628eff1283790dd8370e0417cfd2b559"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a628eff1283790dd8370e0417cfd2b559">tx_net_blocks</a> () const </td></tr>
+<tr class="memdesc:a628eff1283790dd8370e0417cfd2b559"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of blocks transmitted via network excluding internal tx  <a href="#a628eff1283790dd8370e0417cfd2b559">More...</a><br/></td></tr>
+<tr class="separator:a628eff1283790dd8370e0417cfd2b559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda489f4b5bd9e8e69be277d09f42c7c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#acda489f4b5bd9e8e69be277d09f42c7c">rx_net_items</a> () const </td></tr>
+<tr class="memdesc:acda489f4b5bd9e8e69be277d09f42c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of items received via network excluding internal tx  <a href="#acda489f4b5bd9e8e69be277d09f42c7c">More...</a><br/></td></tr>
+<tr class="separator:acda489f4b5bd9e8e69be277d09f42c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79823d9827a7dc9c970a52cb6e99186"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#ac79823d9827a7dc9c970a52cb6e99186">rx_net_bytes</a> () const </td></tr>
+<tr class="memdesc:ac79823d9827a7dc9c970a52cb6e99186"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of bytes received via network excluding internal tx  <a href="#ac79823d9827a7dc9c970a52cb6e99186">More...</a><br/></td></tr>
+<tr class="separator:ac79823d9827a7dc9c970a52cb6e99186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba4359513a71a9b7acb07a1d467699f7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#aba4359513a71a9b7acb07a1d467699f7">rx_net_blocks</a> () const </td></tr>
+<tr class="memdesc:aba4359513a71a9b7acb07a1d467699f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of blocks received via network excluding internal tx  <a href="#aba4359513a71a9b7acb07a1d467699f7">More...</a><br/></td></tr>
+<tr class="separator:aba4359513a71a9b7acb07a1d467699f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32cb7dddb9c3a8d284146bc494b7989b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a32cb7dddb9c3a8d284146bc494b7989b">tx_int_items</a> () const </td></tr>
+<tr class="memdesc:a32cb7dddb9c3a8d284146bc494b7989b"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of items transmitted via internal loopback queues  <a href="#a32cb7dddb9c3a8d284146bc494b7989b">More...</a><br/></td></tr>
+<tr class="separator:a32cb7dddb9c3a8d284146bc494b7989b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad56b0e62dbb44f92abad45db7cfcc5ff"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#ad56b0e62dbb44f92abad45db7cfcc5ff">tx_int_bytes</a> () const </td></tr>
+<tr class="memdesc:ad56b0e62dbb44f92abad45db7cfcc5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of bytes transmitted via internal loopback queues  <a href="#ad56b0e62dbb44f92abad45db7cfcc5ff">More...</a><br/></td></tr>
+<tr class="separator:ad56b0e62dbb44f92abad45db7cfcc5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cde5d16160f9099c5160ec4c2e3f065"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a4cde5d16160f9099c5160ec4c2e3f065">tx_int_blocks</a> () const </td></tr>
+<tr class="memdesc:a4cde5d16160f9099c5160ec4c2e3f065"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of blocks transmitted via internal loopback queues  <a href="#a4cde5d16160f9099c5160ec4c2e3f065">More...</a><br/></td></tr>
+<tr class="separator:a4cde5d16160f9099c5160ec4c2e3f065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3b14cd0e2a2fb3242c99d194d6afd3"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a2e3b14cd0e2a2fb3242c99d194d6afd3">rx_int_items</a> () const </td></tr>
+<tr class="memdesc:a2e3b14cd0e2a2fb3242c99d194d6afd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of items received via network internal loopback queues  <a href="#a2e3b14cd0e2a2fb3242c99d194d6afd3">More...</a><br/></td></tr>
+<tr class="separator:a2e3b14cd0e2a2fb3242c99d194d6afd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af01b111e4419c6e6408c4129a6c6d0b5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#af01b111e4419c6e6408c4129a6c6d0b5">rx_int_bytes</a> () const </td></tr>
+<tr class="memdesc:af01b111e4419c6e6408c4129a6c6d0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of bytes received via network internal loopback queues  <a href="#af01b111e4419c6e6408c4129a6c6d0b5">More...</a><br/></td></tr>
+<tr class="separator:af01b111e4419c6e6408c4129a6c6d0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c274e61cf7798b87934d4d5584b993"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#ae0c274e61cf7798b87934d4d5584b993">rx_int_blocks</a> () const </td></tr>
+<tr class="memdesc:ae0c274e61cf7798b87934d4d5584b993"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of blocks received via network internal loopback queues  <a href="#ae0c274e61cf7798b87934d4d5584b993">More...</a><br/></td></tr>
+<tr class="separator:ae0c274e61cf7798b87934d4d5584b993"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classtlx_1_1ReferenceCounter"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classtlx_1_1ReferenceCounter')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classtlx_1_1ReferenceCounter.html">ReferenceCounter</a></td></tr>
 <tr class="memitem:a4d1b69627f451d81664e76fa4f27ac8c inherit pub_methods_classtlx_1_1ReferenceCounter"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1ReferenceCounter.html#a4d1b69627f451d81664e76fa4f27ac8c">ReferenceCounter</a> () noexcept</td></tr>
 <tr class="memdesc:a4d1b69627f451d81664e76fa4f27ac8c inherit pub_methods_classtlx_1_1ReferenceCounter"><td class="mdescLeft">&#160;</td><td class="mdescRight">new objects have zero reference count  <a href="#a4d1b69627f451d81664e76fa4f27ac8c">More...</a><br/></td></tr>
@@ -213,119 +251,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a17f79efcc0f2e0d5cb9afcdee013e64c inherit pub_methods_classtlx_1_1ReferenceCounter"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1ReferenceCounter.html#a17f79efcc0f2e0d5cb9afcdee013e64c">unique</a> () const noexcept</td></tr>
 <tr class="memdesc:a17f79efcc0f2e0d5cb9afcdee013e64c inherit pub_methods_classtlx_1_1ReferenceCounter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if the <a class="el" href="classtlx_1_1ReferenceCounter.html" title="Provides reference counting abilities for use with CountingPtr. ">ReferenceCounter</a> is referenced by only one <a class="el" href="classtlx_1_1CountingPtr.html" title="High-performance smart pointer used as a wrapping reference counting pointer. ">CountingPtr</a>.  <a href="#a17f79efcc0f2e0d5cb9afcdee013e64c">More...</a><br/></td></tr>
 <tr class="separator:a17f79efcc0f2e0d5cb9afcdee013e64c inherit pub_methods_classtlx_1_1ReferenceCounter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a97f149ef53812344c832854f6db4d856"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a97f149ef53812344c832854f6db4d856">rx_int_blocks_</a> { 0 }</td></tr>
-<tr class="separator:a97f149ef53812344c832854f6db4d856"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a610b386e7f2340e25ffd6ba4321ea09b"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a610b386e7f2340e25ffd6ba4321ea09b">rx_int_bytes_</a> { 0 }</td></tr>
-<tr class="separator:a610b386e7f2340e25ffd6ba4321ea09b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a052f22d51e360120d893f0038b934a7d"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a052f22d51e360120d893f0038b934a7d">rx_int_items_</a> { 0 }</td></tr>
-<tr class="separator:a052f22d51e360120d893f0038b934a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9403f83edc0f5c52cb69303e6d7ae20d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacethrill_1_1common.html#a56c6dc17b2c26a47dca3e60575a290d7">common::StatsTimerStart</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a9403f83edc0f5c52cb69303e6d7ae20d">rx_lifetime_</a></td></tr>
-<tr class="separator:a9403f83edc0f5c52cb69303e6d7ae20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cf3d8c420028eeee6224e9b6ac8c498"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a0cf3d8c420028eeee6224e9b6ac8c498">rx_net_blocks_</a> = 0</td></tr>
-<tr class="separator:a0cf3d8c420028eeee6224e9b6ac8c498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefb1d4b606851217a7e2c8cfdc050246"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#aefb1d4b606851217a7e2c8cfdc050246">rx_net_bytes_</a> = 0</td></tr>
-<tr class="separator:aefb1d4b606851217a7e2c8cfdc050246"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d49c627972f36aac4d6f567e6774f2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#af1d49c627972f36aac4d6f567e6774f2">rx_net_items_</a> = 0</td></tr>
-<tr class="separator:af1d49c627972f36aac4d6f567e6774f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad790c9b451a3121c671fdfe98f0ca08a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacethrill_1_1common.html#a3cdae8b6f91ef83fb6e89fdca6e711f0">common::StatsTimerStopped</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#ad790c9b451a3121c671fdfe98f0ca08a">rx_timespan_</a></td></tr>
-<tr class="separator:ad790c9b451a3121c671fdfe98f0ca08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a651909fafd662aa9193bc7d95a165051"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a651909fafd662aa9193bc7d95a165051">tx_int_blocks_</a> { 0 }</td></tr>
-<tr class="separator:a651909fafd662aa9193bc7d95a165051"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a344f9c6321c7333551e1bd4199e0d4ef"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a344f9c6321c7333551e1bd4199e0d4ef">tx_int_bytes_</a> { 0 }</td></tr>
-<tr class="separator:a344f9c6321c7333551e1bd4199e0d4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a228f5a252cf1837042bba0df69a803be"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a228f5a252cf1837042bba0df69a803be">tx_int_items_</a> { 0 }</td></tr>
-<tr class="separator:a228f5a252cf1837042bba0df69a803be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c49f50b089be0600db695d04e3b9426"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacethrill_1_1common.html#a56c6dc17b2c26a47dca3e60575a290d7">common::StatsTimerStart</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a2c49f50b089be0600db695d04e3b9426">tx_lifetime_</a></td></tr>
-<tr class="memdesc:a2c49f50b089be0600db695d04e3b9426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timers from creation of stream until rx / tx direction is closed.  <a href="#a2c49f50b089be0600db695d04e3b9426">More...</a><br/></td></tr>
-<tr class="separator:a2c49f50b089be0600db695d04e3b9426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00c2274b000200a765804c47e17de168"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a00c2274b000200a765804c47e17de168">tx_net_blocks_</a> { 0 }</td></tr>
-<tr class="separator:a00c2274b000200a765804c47e17de168"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29ff2835c7c73a1c4affe843ed8c4006"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a29ff2835c7c73a1c4affe843ed8c4006">tx_net_bytes_</a> { 0 }</td></tr>
-<tr class="separator:a29ff2835c7c73a1c4affe843ed8c4006"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82804049042c378d7cb5d22b3037f22d"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a82804049042c378d7cb5d22b3037f22d">tx_net_items_</a> { 0 }</td></tr>
-<tr class="separator:a82804049042c378d7cb5d22b3037f22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a787c3fb00179b2dd461f6f8261927fd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacethrill_1_1common.html#a3cdae8b6f91ef83fb6e89fdca6e711f0">common::StatsTimerStopped</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a787c3fb00179b2dd461f6f8261927fd4">tx_timespan_</a></td></tr>
-<tr class="memdesc:a787c3fb00179b2dd461f6f8261927fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timers from first rx / tx package until rx / tx direction is closed.  <a href="#a787c3fb00179b2dd461f6f8261927fd4">More...</a><br/></td></tr>
-<tr class="separator:a787c3fb00179b2dd461f6f8261927fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a802518f1133d686c0444ff642dc65d88"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a802518f1133d686c0444ff642dc65d88">dia_id_</a></td></tr>
-<tr class="memdesc:a802518f1133d686c0444ff642dc65d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associated DIANode id.  <a href="#a802518f1133d686c0444ff642dc65d88">More...</a><br/></td></tr>
-<tr class="separator:a802518f1133d686c0444ff642dc65d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ac3ec26751fe8ed4578bcb7a2ae1117"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__data__layer.html#ga03df594c744fac6cea6f4559bc7494d2">StreamId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a7ac3ec26751fe8ed4578bcb7a2ae1117">id_</a></td></tr>
-<tr class="memdesc:a7ac3ec26751fe8ed4578bcb7a2ae1117"><td class="mdescLeft">&#160;</td><td class="mdescRight">our own stream id.  <a href="#a7ac3ec26751fe8ed4578bcb7a2ae1117">More...</a><br/></td></tr>
-<tr class="separator:a7ac3ec26751fe8ed4578bcb7a2ae1117"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14f406dd3db4af71f3634ff63cedac2e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a14f406dd3db4af71f3634ff63cedac2e">local_worker_id_</a></td></tr>
-<tr class="separator:a14f406dd3db4af71f3634ff63cedac2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7476140d0b9f77770419e69f53d0739"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1Multiplexer.html">Multiplexer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#ab7476140d0b9f77770419e69f53d0739">multiplexer_</a></td></tr>
-<tr class="memdesc:ab7476140d0b9f77770419e69f53d0739"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to multiplexer  <a href="#ab7476140d0b9f77770419e69f53d0739">More...</a><br/></td></tr>
-<tr class="separator:ab7476140d0b9f77770419e69f53d0739"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14462dd43d98b102fb217461e069f93c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a14462dd43d98b102fb217461e069f93c">remaining_closing_blocks_</a></td></tr>
-<tr class="separator:a14462dd43d98b102fb217461e069f93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30f814b85f665384c0e2c821fe92756a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1common_1_1Semaphore.html">common::Semaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a30f814b85f665384c0e2c821fe92756a">sem_closing_blocks_</a></td></tr>
-<tr class="memdesc:a30f814b85f665384c0e2c821fe92756a"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of received stream closing Blocks.  <a href="#a30f814b85f665384c0e2c821fe92756a">More...</a><br/></td></tr>
-<tr class="separator:a30f814b85f665384c0e2c821fe92756a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a4edeafbc4e0f829a94914488937f0cf2"></a>
+<a class="anchor" id="aa69ca4ad57a0d2a683361d219fd48c2e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classthrill_1_1data_1_1Stream.html#a4edeafbc4e0f829a94914488937f0cf2">Writer</a> =  <a class="el" href="group__data__layer.html#gae7356058967e82c4fa0b97f39a9d8afc">DynBlockWriter</a></td>
+          <td class="memname">using <a class="el" href="classthrill_1_1data_1_1Stream.html#aa69ca4ad57a0d2a683361d219fd48c2e">Writer</a> =  <a class="el" href="classthrill_1_1data_1_1StreamData.html#a08f9d7d340d452efab7eab158fcbfe64">StreamData::Writer</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00046">46</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00040">40</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a83fd6170d66ec685e08f7af2cf6fc569"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classthrill_1_1data_1_1Stream.html">Stream</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classthrill_1_1data_1_1Multiplexer.html">Multiplexer</a> &amp;&#160;</td>
-          <td class="paramname"><em>multiplexer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__data__layer.html#ga03df594c744fac6cea6f4559bc7494d2">StreamId</a> &amp;&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>local_worker_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>dia_id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00020">20</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a22beda3d71a767ab4601c6e3eee69491"></a>
 <div class="memitem">
 <div class="memproto">
@@ -342,15 +284,38 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00058">58</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aacb6d0e5e6d570cdc2b0da14c3921ff0"></a>
+<a class="anchor" id="a7f7a3199c392465d0767c6506c1af5b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>shuts down the stream, waits for all closing blocks </p>
+
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00061">61</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
+
+<p>References <a class="el" href="classthrill_1_1data_1_1StreamData.html#aacb6d0e5e6d570cdc2b0da14c3921ff0">StreamData::Close()</a>, and <a class="el" href="classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8">Stream::data()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c8b76212a97002b25cf3e88e8bf24d8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -358,7 +323,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Close </td>
+          <td class="memname">virtual <a class="el" href="classthrill_1_1data_1_1StreamData.html">StreamData</a>&amp; data </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -371,13 +336,15 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>shuts the stream down. </p>
+<p>Return stream data reference. </p>
 
-<p>Implemented in <a class="el" href="classthrill_1_1data_1_1CatStream.html#a29dc6798f18d73abd4ba8e4910f6831f">CatStream</a>, and <a class="el" href="classthrill_1_1data_1_1MixStream.html#a29dc6798f18d73abd4ba8e4910f6831f">MixStream</a>.</p>
+<p>Implemented in <a class="el" href="classthrill_1_1data_1_1CatStream.html#a84193643ae53dda56ded561dd3fda0cd">CatStream</a>, and <a class="el" href="classthrill_1_1data_1_1MixStream.html#a84193643ae53dda56ded561dd3fda0cd">MixStream</a>.</p>
+
+<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00061">Stream::Close()</a>, <a class="el" href="stream_8cpp_source.html#l00139">Stream::rx_int_blocks()</a>, <a class="el" href="stream_8cpp_source.html#l00135">Stream::rx_int_bytes()</a>, <a class="el" href="stream_8cpp_source.html#l00131">Stream::rx_int_items()</a>, <a class="el" href="stream_8cpp_source.html#l00113">Stream::rx_net_blocks()</a>, <a class="el" href="stream_8cpp_source.html#l00109">Stream::rx_net_bytes()</a>, <a class="el" href="stream_8cpp_source.html#l00105">Stream::rx_net_items()</a>, <a class="el" href="stream_8cpp_source.html#l00127">Stream::tx_int_blocks()</a>, <a class="el" href="stream_8cpp_source.html#l00123">Stream::tx_int_bytes()</a>, <a class="el" href="stream_8cpp_source.html#l00119">Stream::tx_int_items()</a>, <a class="el" href="stream_8cpp_source.html#l00101">Stream::tx_net_blocks()</a>, <a class="el" href="stream_8cpp_source.html#l00097">Stream::tx_net_bytes()</a>, and <a class="el" href="stream_8cpp_source.html#l00093">Stream::tx_net_items()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a13ef393e64458da714691f90545824e9"></a>
+<a class="anchor" id="a42c8d62a71c6e964fc5954fdc0ba7d48"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -385,7 +352,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool closed </td>
+          <td class="memname">virtual const <a class="el" href="classthrill_1_1data_1_1StreamData.html">StreamData</a>&amp; data </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -398,7 +365,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classthrill_1_1data_1_1CatStream.html#ada317847d415bde115082ec6ed451046">CatStream</a>, and <a class="el" href="classthrill_1_1data_1_1MixStream.html#ada317847d415bde115082ec6ed451046">MixStream</a>.</p>
+<p>Return stream data reference. </p>
+
+<p>Implemented in <a class="el" href="classthrill_1_1data_1_1CatStream.html#aa7925f2f2f4aa5767722b0a95eaaef06">CatStream</a>, and <a class="el" href="classthrill_1_1data_1_1MixStream.html#aa7925f2f2f4aa5767722b0a95eaaef06">MixStream</a>.</p>
 
 </div>
 </div>
@@ -410,7 +379,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::vector&lt;<a class="el" href="classthrill_1_1data_1_1Stream.html#a4edeafbc4e0f829a94914488937f0cf2">Writer</a>&gt; GetWriters </td>
+          <td class="memname">virtual std::vector&lt;<a class="el" href="classthrill_1_1data_1_1Stream.html#aa69ca4ad57a0d2a683361d219fd48c2e">Writer</a>&gt; GetWriters </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -424,13 +393,13 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Creates BlockWriters for each worker. <a class="el" href="classthrill_1_1data_1_1BlockWriter.html" title="BlockWriter contains a temporary Block object into which a) any serializable item can be stored or b)...">BlockWriter</a> can only be opened once, otherwise the block sequence is incorrectly interleaved! </p>
 
-<p>Implemented in <a class="el" href="classthrill_1_1data_1_1CatStream.html#a7995188bc278a110b0979c47c753d43a">CatStream</a>, and <a class="el" href="classthrill_1_1data_1_1MixStream.html#a3cca65835980a0653fdc0986d28ac23a">MixStream</a>.</p>
+<p>Implemented in <a class="el" href="classthrill_1_1data_1_1CatStream.html#a7995188bc278a110b0979c47c753d43a">CatStream</a>, and <a class="el" href="classthrill_1_1data_1_1MixStream.html#a69abdbcb3c512c4bf51525be4c059fb6">MixStream</a>.</p>
 
-<p>Referenced by <a class="el" href="stream_8hpp_source.html#l00097">Stream::Scatter()</a>.</p>
+<p>Referenced by <a class="el" href="stream_8hpp_source.html#l00077">Stream::Scatter()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a48d1f80794534f3f501f64386d6647e7"></a>
+<a class="anchor" id="a3fa188f62b85c2af5028cf55f7edba3c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -438,7 +407,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="group__data__layer.html#ga03df594c744fac6cea6f4559bc7494d2">StreamId</a>&amp; id </td>
+          <td class="memname">virtual const <a class="el" href="group__data__layer.html#ga03df594c744fac6cea6f4559bc7494d2">StreamId</a>&amp; id </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -446,162 +415,215 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00053">53</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>Return stream id. </p>
 
-<p>References <a class="el" href="stream_8hpp_source.html#l00179">Stream::id_</a>.</p>
-
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, and <a class="el" href="mix__stream_8cpp_source.html#l00026">MixStream::MixStream()</a>.</p>
+<p>Implemented in <a class="el" href="classthrill_1_1data_1_1CatStream.html#aeb2c6eb8568ab9d90469bbf5f4a3f14f">CatStream</a>, and <a class="el" href="classthrill_1_1data_1_1MixStream.html#aeb2c6eb8568ab9d90469bbf5f4a3f14f">MixStream</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae75328939a4b19114b4f83b395d1d1e3"></a>
+<a class="anchor" id="ab01828661e59e31fcb5efe99fa0fb0c9"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t my_host_rank </td>
+          <td class="memname">size_t rx_blocks </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Returns my_host_rank. </p>
+<p>return number of blocks received </p>
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00056">56</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00087">87</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
 
-<p>References <a class="el" href="stream_8hpp_source.html#l00187">Stream::multiplexer_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00090">Multiplexer::my_host_rank()</a>.</p>
-
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, <a class="el" href="mix__block__queue_8cpp_source.html#l00108">MixBlockQueueSink::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00074">MixStream::GetWriters()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00026">MixStream::MixStream()</a>, <a class="el" href="stream_8hpp_source.html#l00065">Stream::my_worker_rank()</a>, and <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>.</p>
+<p>References <a class="el" href="stream_8cpp_source.html#l00139">Stream::rx_int_blocks()</a>, and <a class="el" href="stream_8cpp_source.html#l00113">Stream::rx_net_blocks()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9a2419998e8a85e72a5c65513bbba69c"></a>
+<a class="anchor" id="abd43a40e015438622d3d540f0777773c"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t my_worker_rank </td>
+          <td class="memname">size_t rx_bytes </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Returns my_worker_rank_. </p>
+<p>return number of bytes received </p>
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00065">65</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00083">83</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
 
-<p>References <a class="el" href="stream_8hpp_source.html#l00181">Stream::local_worker_id_</a>, <a class="el" href="stream_8hpp_source.html#l00056">Stream::my_host_rank()</a>, and <a class="el" href="stream_8hpp_source.html#l00063">Stream::workers_per_host()</a>.</p>
-
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, <a class="el" href="mix__block__queue_8cpp_source.html#l00108">MixBlockQueueSink::Close()</a>, and <a class="el" href="mix__stream_8cpp_source.html#l00192">MixStream::OnCloseStream()</a>.</p>
+<p>References <a class="el" href="stream_8cpp_source.html#l00135">Stream::rx_int_bytes()</a>, and <a class="el" href="stream_8cpp_source.html#l00109">Stream::rx_net_bytes()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad5784440466718742744f97aa0eb09de"></a>
+<a class="anchor" id="ae0c274e61cf7798b87934d4d5584b993"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t num_hosts </td>
+          <td class="memname">size_t rx_int_blocks </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Number of hosts in system. </p>
+<p>return number of blocks received via network internal loopback queues </p>
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00058">58</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00139">139</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
 
-<p>References <a class="el" href="stream_8hpp_source.html#l00187">Stream::multiplexer_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00085">Multiplexer::num_hosts()</a>.</p>
+<p>References <a class="el" href="classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8">Stream::data()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00098">StreamData::rx_int_blocks_</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00130">MixStream::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00074">MixStream::GetWriters()</a>, and <a class="el" href="mix__stream_8cpp_source.html#l00026">MixStream::MixStream()</a>.</p>
+<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00087">Stream::rx_blocks()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5ecd6ddfee677b7d2c2fd7b332e90c90"></a>
+<a class="anchor" id="af01b111e4419c6e6408c4129a6c6d0b5"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t num_workers </td>
+          <td class="memname">size_t rx_int_bytes </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Number of workers in system. </p>
+<p>return number of bytes received via network internal loopback queues </p>
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00060">60</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00135">135</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
 
-<p>References <a class="el" href="stream_8hpp_source.html#l00187">Stream::multiplexer_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00095">Multiplexer::num_workers()</a>.</p>
+<p>References <a class="el" href="classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8">Stream::data()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00098">StreamData::rx_int_bytes_</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00074">MixStream::GetWriters()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00026">MixStream::MixStream()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00192">MixStream::OnCloseStream()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00176">MixStream::OnStreamBlock()</a>, and <a class="el" href="stream_8hpp_source.html#l00097">Stream::Scatter()</a>.</p>
+<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00083">Stream::rx_bytes()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a060a2efa2142f5d6169ebc016692e88d"></a>
+<a class="anchor" id="a2e3b14cd0e2a2fb3242c99d194d6afd3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void OnAllClosed </td>
+          <td class="memname">size_t rx_int_items </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>stream_type</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00031">31</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
+<p>return number of items received via network internal loopback queues </p>
 
-<p>References <a class="el" href="stream_8hpp_source.html#l00184">Stream::dia_id_</a>, <a class="el" href="stream_8hpp_source.html#l00179">Stream::id_</a>, <a class="el" href="stream_8hpp_source.html#l00181">Stream::local_worker_id_</a>, <a class="el" href="multiplexer_8cpp_source.html#l00210">Multiplexer::logger()</a>, <a class="el" href="stream_8hpp_source.html#l00187">Stream::multiplexer_</a>, <a class="el" href="stream_8hpp_source.html#l00056">Stream::my_host_rank()</a>, <a class="el" href="stream_8hpp_source.html#l00162">Stream::rx_int_blocks_</a>, <a class="el" href="stream_8hpp_source.html#l00162">Stream::rx_int_bytes_</a>, <a class="el" href="stream_8hpp_source.html#l00162">Stream::rx_int_items_</a>, <a class="el" href="stream_8hpp_source.html#l00152">Stream::rx_net_blocks_</a>, <a class="el" href="stream_8hpp_source.html#l00152">Stream::rx_net_bytes_</a>, <a class="el" href="stream_8hpp_source.html#l00152">Stream::rx_net_items_</a>, <a class="el" href="stream_8hpp_source.html#l00167">Stream::tx_int_blocks_</a>, <a class="el" href="stream_8hpp_source.html#l00167">Stream::tx_int_bytes_</a>, <a class="el" href="stream_8hpp_source.html#l00167">Stream::tx_int_items_</a>, <a class="el" href="stream_8hpp_source.html#l00157">Stream::tx_net_blocks_</a>, <a class="el" href="stream_8hpp_source.html#l00157">Stream::tx_net_bytes_</a>, <a class="el" href="stream_8hpp_source.html#l00157">Stream::tx_net_items_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00100">Multiplexer::workers_per_host()</a>.</p>
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00131">131</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00130">MixStream::Close()</a>.</p>
+<p>References <a class="el" href="classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8">Stream::data()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00098">StreamData::rx_int_items_</a>.</p>
+
+<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00079">Stream::rx_items()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e85dd34005a617e0b96c1271ac60ae6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t rx_items </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return number of items received </p>
+
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00079">79</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
+
+<p>References <a class="el" href="stream_8cpp_source.html#l00131">Stream::rx_int_items()</a>, and <a class="el" href="stream_8cpp_source.html#l00105">Stream::rx_net_items()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba4359513a71a9b7acb07a1d467699f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t rx_net_blocks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return number of blocks received via network excluding internal tx </p>
+
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00113">113</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
+
+<p>References <a class="el" href="classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8">Stream::data()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00088">StreamData::rx_net_blocks_</a>.</p>
+
+<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00087">Stream::rx_blocks()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac79823d9827a7dc9c970a52cb6e99186"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t rx_net_bytes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return number of bytes received via network excluding internal tx </p>
+
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00109">109</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
+
+<p>References <a class="el" href="classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8">Stream::data()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00088">StreamData::rx_net_bytes_</a>.</p>
+
+<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00083">Stream::rx_bytes()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acda489f4b5bd9e8e69be277d09f42c7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t rx_net_items </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return number of items received via network excluding internal tx </p>
+
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00105">105</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
+
+<p>References <a class="el" href="classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8">Stream::data()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00088">StreamData::rx_net_items_</a>.</p>
+
+<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00079">Stream::rx_items()</a>.</p>
 
 </div>
 </div>
@@ -648,458 +670,210 @@ Protected Attributes</h2></td></tr>
 <p>/param source <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> containing the data to be scattered.</p>
 <p>/param offsets - as described above. offsets.size must be equal to num_workers + 1 </p>
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00097">97</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00077">77</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
 
-<p>References <a class="el" href="file_8cpp_source.html#l00076">File::GetReader()</a>, <a class="el" href="classthrill_1_1data_1_1Stream.html#af466211c9c17acd9e25a3e6d09a31c4c">Stream::GetWriters()</a>, <a class="el" href="stream_8hpp_source.html#l00060">Stream::num_workers()</a>, and <a class="el" href="stream_8hpp_source.html#l00173">Stream::tx_timespan_</a>.</p>
+<p>References <a class="el" href="file_8cpp_source.html#l00078">File::GetReader()</a>, <a class="el" href="classthrill_1_1data_1_1Stream.html#af466211c9c17acd9e25a3e6d09a31c4c">Stream::GetWriters()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00118">BlockReader&lt; BlockSource &gt;::HasNext()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab918f792039fb144dd12528701199562"></a>
+<a class="anchor" id="a9c5bef94b5b2c2b0a29cac1f658c39fe"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t workers_per_host </td>
+          <td class="memname">size_t tx_blocks </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Returns workers_per_host. </p>
+<p>return number of blocks transmitted </p>
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00063">63</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00075">75</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
 
-<p>References <a class="el" href="stream_8hpp_source.html#l00187">Stream::multiplexer_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00100">Multiplexer::workers_per_host()</a>.</p>
-
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00130">MixStream::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00074">MixStream::GetWriters()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00210">MixStream::loopback_queue()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00026">MixStream::MixStream()</a>, and <a class="el" href="stream_8hpp_source.html#l00065">Stream::my_worker_rank()</a>.</p>
+<p>References <a class="el" href="stream_8cpp_source.html#l00127">Stream::tx_int_blocks()</a>, and <a class="el" href="stream_8cpp_source.html#l00101">Stream::tx_net_blocks()</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a802518f1133d686c0444ff642dc65d88"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t dia_id_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Associated DIANode id. </p>
-
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00184">184</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>, and <a class="el" href="mix__stream_8cpp_source.html#l00069">MixStream::set_dia_id()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7ac3ec26751fe8ed4578bcb7a2ae1117"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__data__layer.html#ga03df594c744fac6cea6f4559bc7494d2">StreamId</a> id_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>our own stream id. </p>
-
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00179">179</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00130">MixStream::Close()</a>, <a class="el" href="mix__block__queue_8cpp_source.html#l00108">MixBlockQueueSink::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00074">MixStream::GetWriters()</a>, <a class="el" href="stream_8hpp_source.html#l00053">Stream::id()</a>, <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00192">MixStream::OnCloseStream()</a>, and <a class="el" href="mix__stream_8cpp_source.html#l00176">MixStream::OnStreamBlock()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a14f406dd3db4af71f3634ff63cedac2e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t local_worker_id_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00181">181</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00130">MixStream::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00121">MixStream::GetMixReader()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00074">MixStream::GetWriters()</a>, <a class="el" href="stream_8hpp_source.html#l00065">Stream::my_worker_rank()</a>, and <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab7476140d0b9f77770419e69f53d0739"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classthrill_1_1data_1_1Multiplexer.html">Multiplexer</a>&amp; multiplexer_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>reference to multiplexer </p>
-
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00187">187</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="stream__sink_8cpp_source.html#l00066">StreamSink::AppendPinnedBlock()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, <a class="el" href="stream__sink_8cpp_source.html#l00123">StreamSink::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00130">MixStream::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00074">MixStream::GetWriters()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00026">MixStream::MixStream()</a>, <a class="el" href="stream_8hpp_source.html#l00056">Stream::my_host_rank()</a>, <a class="el" href="stream_8hpp_source.html#l00058">Stream::num_hosts()</a>, <a class="el" href="stream_8hpp_source.html#l00060">Stream::num_workers()</a>, <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>, and <a class="el" href="stream_8hpp_source.html#l00063">Stream::workers_per_host()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a14462dd43d98b102fb217461e069f93c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t remaining_closing_blocks_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>number of remaining expected stream closing operations. Required to know when to stop rx_lifetime </p>
-
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00191">191</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00192">MixStream::OnCloseStream()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a97f149ef53812344c832854f6db4d856"></a>
+<a class="anchor" id="a155814533f57eb38293db5bf3933247c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::atomic&lt;size_t&gt; rx_int_blocks_ { 0 }</td>
+          <td class="memname">size_t tx_bytes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00162">162</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>return number of bytes transmitted </p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, <a class="el" href="mix__block__queue_8cpp_source.html#l00108">MixBlockQueueSink::Close()</a>, and <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>.</p>
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00071">71</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
+
+<p>References <a class="el" href="stream_8cpp_source.html#l00123">Stream::tx_int_bytes()</a>, and <a class="el" href="stream_8cpp_source.html#l00097">Stream::tx_net_bytes()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a610b386e7f2340e25ffd6ba4321ea09b"></a>
+<a class="anchor" id="a4cde5d16160f9099c5160ec4c2e3f065"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::atomic&lt;size_t&gt; rx_int_bytes_ { 0 }</td>
+          <td class="memname">size_t tx_int_blocks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00162">162</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>return number of blocks transmitted via internal loopback queues </p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, <a class="el" href="mix__block__queue_8cpp_source.html#l00108">MixBlockQueueSink::Close()</a>, and <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>.</p>
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00127">127</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
+
+<p>References <a class="el" href="classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8">Stream::data()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00103">StreamData::tx_int_blocks_</a>.</p>
+
+<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00075">Stream::tx_blocks()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a052f22d51e360120d893f0038b934a7d"></a>
+<a class="anchor" id="ad56b0e62dbb44f92abad45db7cfcc5ff"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::atomic&lt;size_t&gt; rx_int_items_ { 0 }</td>
+          <td class="memname">size_t tx_int_bytes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>StatsCounter for incoming data transfer. Exclusively contains only loopback (internal) data transfer </p>
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00162">162</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>return number of bytes transmitted via internal loopback queues </p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, <a class="el" href="mix__block__queue_8cpp_source.html#l00108">MixBlockQueueSink::Close()</a>, and <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>.</p>
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00123">123</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
+
+<p>References <a class="el" href="classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8">Stream::data()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00103">StreamData::tx_int_bytes_</a>.</p>
+
+<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00071">Stream::tx_bytes()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9403f83edc0f5c52cb69303e6d7ae20d"></a>
+<a class="anchor" id="a32cb7dddb9c3a8d284146bc494b7989b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacethrill_1_1common.html#a56c6dc17b2c26a47dca3e60575a290d7">common::StatsTimerStart</a> rx_lifetime_</td>
+          <td class="memname">size_t tx_int_items </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00170">170</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>return number of items transmitted via internal loopback queues </p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00192">MixStream::OnCloseStream()</a>.</p>
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00119">119</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
+
+<p>References <a class="el" href="classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8">Stream::data()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00103">StreamData::tx_int_items_</a>.</p>
+
+<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00067">Stream::tx_items()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0cf3d8c420028eeee6224e9b6ac8c498"></a>
+<a class="anchor" id="aafba34f43045b121f2ceefe8fd667da7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t rx_net_blocks_ = 0</td>
+          <td class="memname">size_t tx_items </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00152">152</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>return number of items transmitted </p>
 
-<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00192">MixStream::OnCloseStream()</a>, and <a class="el" href="mix__stream_8cpp_source.html#l00176">MixStream::OnStreamBlock()</a>.</p>
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00067">67</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
+
+<p>References <a class="el" href="stream_8cpp_source.html#l00119">Stream::tx_int_items()</a>, and <a class="el" href="stream_8cpp_source.html#l00093">Stream::tx_net_items()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aefb1d4b606851217a7e2c8cfdc050246"></a>
+<a class="anchor" id="a628eff1283790dd8370e0417cfd2b559"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t rx_net_bytes_ = 0</td>
+          <td class="memname">size_t tx_net_blocks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00152">152</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>return number of blocks transmitted via network excluding internal tx </p>
 
-<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>, and <a class="el" href="mix__stream_8cpp_source.html#l00176">MixStream::OnStreamBlock()</a>.</p>
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00101">101</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
+
+<p>References <a class="el" href="classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8">Stream::data()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00093">StreamData::tx_net_blocks_</a>.</p>
+
+<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00075">Stream::tx_blocks()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af1d49c627972f36aac4d6f567e6774f2"></a>
+<a class="anchor" id="ac270a0f8f34469959233dfc9700e4f82"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t rx_net_items_ = 0</td>
+          <td class="memname">size_t tx_net_bytes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>StatsCounter for incoming data transfer. Does not include loopback data transfer </p>
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00152">152</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>return number of bytes transmitted via network excluding internal tx </p>
 
-<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>, and <a class="el" href="mix__stream_8cpp_source.html#l00176">MixStream::OnStreamBlock()</a>.</p>
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00097">97</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
+
+<p>References <a class="el" href="classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8">Stream::data()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00093">StreamData::tx_net_bytes_</a>.</p>
+
+<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00071">Stream::tx_bytes()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad790c9b451a3121c671fdfe98f0ca08a"></a>
+<a class="anchor" id="ab426d0f9fa1bfac97627627041e1d616"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacethrill_1_1common.html#a3cdae8b6f91ef83fb6e89fdca6e711f0">common::StatsTimerStopped</a> rx_timespan_</td>
+          <td class="memname">size_t tx_net_items </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00173">173</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>return number of items transmitted via network excluding internal tx </p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00121">MixStream::GetMixReader()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00192">MixStream::OnCloseStream()</a>, and <a class="el" href="mix__stream_8cpp_source.html#l00176">MixStream::OnStreamBlock()</a>.</p>
+<p>Definition at line <a class="el" href="stream_8cpp_source.html#l00093">93</a> of file <a class="el" href="stream_8cpp_source.html">stream.cpp</a>.</p>
 
-</div>
-</div>
-<a class="anchor" id="a30f814b85f665384c0e2c821fe92756a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classthrill_1_1common_1_1Semaphore.html">common::Semaphore</a> sem_closing_blocks_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>References <a class="el" href="classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8">Stream::data()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00093">StreamData::tx_net_items_</a>.</p>
 
-<p>number of received stream closing Blocks. </p>
-
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00194">194</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00130">MixStream::Close()</a>, and <a class="el" href="mix__stream_8cpp_source.html#l00192">MixStream::OnCloseStream()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a651909fafd662aa9193bc7d95a165051"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt;size_t&gt; tx_int_blocks_ { 0 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00167">167</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, <a class="el" href="mix__block__queue_8cpp_source.html#l00108">MixBlockQueueSink::Close()</a>, and <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a344f9c6321c7333551e1bd4199e0d4ef"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt;size_t&gt; tx_int_bytes_ { 0 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00167">167</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, <a class="el" href="mix__block__queue_8cpp_source.html#l00108">MixBlockQueueSink::Close()</a>, and <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a228f5a252cf1837042bba0df69a803be"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt;size_t&gt; tx_int_items_ { 0 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>StatsCounters for outgoing data transfer - shared by all sinks. Exclusively contains only loopback (internal) data transfer </p>
-
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00167">167</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00027">CatStream::CatStream()</a>, <a class="el" href="mix__block__queue_8cpp_source.html#l00108">MixBlockQueueSink::Close()</a>, and <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2c49f50b089be0600db695d04e3b9426"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacethrill_1_1common.html#a56c6dc17b2c26a47dca3e60575a290d7">common::StatsTimerStart</a> tx_lifetime_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Timers from creation of stream until rx / tx direction is closed. </p>
-
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00170">170</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00130">MixStream::Close()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a00c2274b000200a765804c47e17de168"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt;size_t&gt; tx_net_blocks_ { 0 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00157">157</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="stream__sink_8cpp_source.html#l00158">StreamSink::Finalize()</a>, and <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a29ff2835c7c73a1c4affe843ed8c4006"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt;size_t&gt; tx_net_bytes_ { 0 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00157">157</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="stream__sink_8cpp_source.html#l00158">StreamSink::Finalize()</a>, and <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a82804049042c378d7cb5d22b3037f22d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::atomic&lt;size_t&gt; tx_net_items_ { 0 }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>StatsCounters for outgoing data transfer - shared by all sinks. Does not include loopback data transfer </p>
-
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00157">157</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="stream__sink_8cpp_source.html#l00158">StreamSink::Finalize()</a>, and <a class="el" href="stream_8cpp_source.html#l00031">Stream::OnAllClosed()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a787c3fb00179b2dd461f6f8261927fd4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacethrill_1_1common.html#a3cdae8b6f91ef83fb6e89fdca6e711f0">common::StatsTimerStopped</a> tx_timespan_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Timers from first rx / tx package until rx / tx direction is closed. </p>
-
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00173">173</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00130">MixStream::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00074">MixStream::GetWriters()</a>, and <a class="el" href="stream_8hpp_source.html#l00097">Stream::Scatter()</a>.</p>
+<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00067">Stream::tx_items()</a>.</p>
 
 </div>
 </div>
@@ -1113,7 +887,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1Stream.html">Stream</a></li>
-    <li class="footer">Generated on Sat Oct 14 2017 08:17:19 for Thrill by
+    <li class="footer">Generated on Mon Oct 23 2017 22:11:39 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

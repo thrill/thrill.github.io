@@ -155,16 +155,18 @@ class thrill::api::ReadBinaryNode&lt; ValueType &gt;</h3>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1ReadBinaryNode_1_1FileBlockSource.html">FileBlockSource</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1api_1_1ReadBinaryNode_1_1FileInfo.html">FileInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure to store info on what to read from files  <a href="structthrill_1_1api_1_1ReadBinaryNode_1_1FileInfo.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html">VfsFileBlockSource</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:abe585529c5360d22d9183c5ca113c909"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1ReadBinaryNode.html#abe585529c5360d22d9183c5ca113c909">Super</a> = <a class="el" href="classthrill_1_1api_1_1SourceNode.html">SourceNode</a>&lt; ValueType &gt;</td></tr>
 <tr class="separator:abe585529c5360d22d9183c5ca113c909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a571f48dfa0b24876c136392f4b900c1f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1ReadBinaryNode.html#a571f48dfa0b24876c136392f4b900c1f">VfsFileBlockReader</a> = <a class="el" href="classthrill_1_1data_1_1BlockReader.html">data::BlockReader</a>&lt; <a class="el" href="classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html">VfsFileBlockSource</a> &gt;</td></tr>
+<tr class="separator:a571f48dfa0b24876c136392f4b900c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classthrill_1_1api_1_1SourceNode"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classthrill_1_1api_1_1SourceNode')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classthrill_1_1api_1_1SourceNode.html">SourceNode&lt; ValueType &gt;</a></td></tr>
 <tr class="memitem:a216d8e8f7318eb043670d4c0fd994689 inherit pub_types_classthrill_1_1api_1_1SourceNode"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SourceNode.html#a216d8e8f7318eb043670d4c0fd994689">Super</a> = <a class="el" href="classthrill_1_1api_1_1DIANode.html">DIANode</a>&lt; ValueType &gt;</td></tr>
 <tr class="separator:a216d8e8f7318eb043670d4c0fd994689 inherit pub_types_classthrill_1_1api_1_1SourceNode"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -404,7 +406,21 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00052">52</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00055">55</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a571f48dfa0b24876c136392f4b900c1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classthrill_1_1api_1_1ReadBinaryNode.html#a571f48dfa0b24876c136392f4b900c1f">VfsFileBlockReader</a> =  <a class="el" href="classthrill_1_1data_1_1BlockReader.html">data::BlockReader</a>&lt;<a class="el" href="classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html">VfsFileBlockSource</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00058">58</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
 
 </div>
 </div>
@@ -453,9 +469,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00076">76</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00081">81</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
 
-<p>References <a class="el" href="file_8hpp_source.html#l00086">File::AppendBlock()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00052">Range::begin</a>, <a class="el" href="context_8hpp_source.html#l00326">Context::block_pool()</a>, <a class="el" href="context_8hpp_source.html#l00341">Context::CalculateLocalRange()</a>, <a class="el" href="context_8hpp_source.html#l00346">Context::CalculateLocalRangeOnHost()</a>, <a class="el" href="file__io_8hpp_source.html#l00081">FileList::contains_compressed</a>, <a class="el" href="file__io_8hpp_source.html#l00084">FileList::contains_remote_uri</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="read__binary_8hpp_source.html#l00049">ReadBinaryNode&lt; ValueType &gt;::debug_no_extfile</a>, <a class="el" href="byte__block_8cpp_source.html#l00024">thrill::data::default_block_size</a>, <a class="el" href="die_8hpp_source.html#l00042">die</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00054">Range::end</a>, <a class="el" href="read__binary_8hpp_source.html#l00262">ReadBinaryNode&lt; ValueType &gt;::ext_file_</a>, <a class="el" href="namespacethrill_1_1vfs.html#ac7206d989022001555916ee86ef21cf5a0b27918290ff5323bea1e3b78a9cf04e">thrill::vfs::File</a>, <a class="el" href="read__binary_8hpp_source.html#l00060">ReadBinaryNode&lt; ValueType &gt;::fixed_size_</a>, <a class="el" href="file__io_8cpp_source.html#l00127">thrill::vfs::Glob()</a>, <a class="el" href="read__binary_8hpp_source.html#l00069">ReadBinaryNode&lt; ValueType &gt;::FileInfo::is_compressed</a>, <a class="el" href="read__binary_8hpp_source.html#l00056">ReadBinaryNode&lt; ValueType &gt;::is_fixed_size_</a>, <a class="el" href="join_8cpp_source.html#l00016">tlx::join()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOG</a>, <a class="el" href="block__pool_8cpp_source.html#l00514">BlockPool::MapExternalBlock()</a>, <a class="el" href="functional_8hpp_source.html#l00065">thrill::common::max()</a>, <a class="el" href="functional_8hpp_source.html#l00059">thrill::common::min()</a>, <a class="el" href="file__base_8hpp_source.html#l00091">FileBase::NO_LOCK</a>, <a class="el" href="read__binary_8hpp_source.html#l00073">ReadBinaryNode&lt; ValueType &gt;::no_size_limit_</a>, <a class="el" href="context_8hpp_source.html#l00253">Context::num_workers()</a>, <a class="el" href="read__binary_8hpp_source.html#l00065">ReadBinaryNode&lt; ValueType &gt;::FileInfo::path</a>, <a class="el" href="read__binary_8hpp_source.html#l00067">ReadBinaryNode&lt; ValueType &gt;::FileInfo::range</a>, <a class="el" href="file__base_8hpp_source.html#l00074">FileBase::RDONLY</a>, <a class="el" href="file__io_8hpp_source.html#l00091">FileList::size_ex_psum()</a>, <a class="el" href="file__io_8hpp_source.html#l00087">FileList::size_inc_psum()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00179">sLOG</a>, <a class="el" href="file__io_8hpp_source.html#l00078">FileList::total_size</a>, and <a class="el" href="read__binary_8hpp_source.html#l00261">ReadBinaryNode&lt; ValueType &gt;::use_ext_file_</a>.</p>
+<p>References <a class="el" href="file_8hpp_source.html#l00086">File::AppendBlock()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00052">Range::begin</a>, <a class="el" href="context_8hpp_source.html#l00326">Context::block_pool()</a>, <a class="el" href="context_8hpp_source.html#l00341">Context::CalculateLocalRange()</a>, <a class="el" href="context_8hpp_source.html#l00346">Context::CalculateLocalRangeOnHost()</a>, <a class="el" href="file__io_8hpp_source.html#l00081">FileList::contains_compressed</a>, <a class="el" href="file__io_8hpp_source.html#l00084">FileList::contains_remote_uri</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="read__binary_8hpp_source.html#l00049">ReadBinaryNode&lt; ValueType &gt;::debug_no_extfile</a>, <a class="el" href="byte__block_8cpp_source.html#l00024">thrill::data::default_block_size</a>, <a class="el" href="die_8hpp_source.html#l00042">die</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00054">Range::end</a>, <a class="el" href="read__binary_8hpp_source.html#l00267">ReadBinaryNode&lt; ValueType &gt;::ext_file_</a>, <a class="el" href="namespacethrill_1_1vfs.html#ac7206d989022001555916ee86ef21cf5a0b27918290ff5323bea1e3b78a9cf04e">thrill::vfs::File</a>, <a class="el" href="read__binary_8hpp_source.html#l00065">ReadBinaryNode&lt; ValueType &gt;::fixed_size_</a>, <a class="el" href="file__io_8cpp_source.html#l00127">thrill::vfs::Glob()</a>, <a class="el" href="read__binary_8hpp_source.html#l00074">ReadBinaryNode&lt; ValueType &gt;::FileInfo::is_compressed</a>, <a class="el" href="read__binary_8hpp_source.html#l00061">ReadBinaryNode&lt; ValueType &gt;::is_fixed_size_</a>, <a class="el" href="join_8cpp_source.html#l00016">tlx::join()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOG</a>, <a class="el" href="block__pool_8cpp_source.html#l00514">BlockPool::MapExternalBlock()</a>, <a class="el" href="functional_8hpp_source.html#l00065">thrill::common::max()</a>, <a class="el" href="functional_8hpp_source.html#l00059">thrill::common::min()</a>, <a class="el" href="file__base_8hpp_source.html#l00091">FileBase::NO_LOCK</a>, <a class="el" href="read__binary_8hpp_source.html#l00078">ReadBinaryNode&lt; ValueType &gt;::no_size_limit_</a>, <a class="el" href="context_8hpp_source.html#l00253">Context::num_workers()</a>, <a class="el" href="read__binary_8hpp_source.html#l00070">ReadBinaryNode&lt; ValueType &gt;::FileInfo::path</a>, <a class="el" href="read__binary_8hpp_source.html#l00072">ReadBinaryNode&lt; ValueType &gt;::FileInfo::range</a>, <a class="el" href="file__base_8hpp_source.html#l00074">FileBase::RDONLY</a>, <a class="el" href="file__io_8hpp_source.html#l00091">FileList::size_ex_psum()</a>, <a class="el" href="file__io_8hpp_source.html#l00087">FileList::size_inc_psum()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00179">sLOG</a>, <a class="el" href="file__io_8hpp_source.html#l00078">FileList::total_size</a>, and <a class="el" href="read__binary_8hpp_source.html#l00266">ReadBinaryNode&lt; ValueType &gt;::use_ext_file_</a>.</p>
 
 </div>
 </div>
@@ -503,7 +519,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00218">218</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00223">223</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
 
 </div>
 </div>
@@ -552,7 +568,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00049">49</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="read__binary_8hpp_source.html#l00076">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>.</p>
+<p>Referenced by <a class="el" href="read__binary_8hpp_source.html#l00081">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>.</p>
 
 </div>
 </div>
@@ -566,9 +582,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00262">262</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00267">267</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="read__binary_8hpp_source.html#l00076">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>.</p>
+<p>Referenced by <a class="el" href="read__binary_8hpp_source.html#l00081">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>.</p>
 
 </div>
 </div>
@@ -590,13 +606,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">        data::Serialization&lt;data::DynBlockWriter, ValueType&gt;::fixed_size</div>
+<div class="line">        data::Serialization&lt;VfsFileBlockReader, ValueType&gt;::fixed_size</div>
 </div><!-- fragment -->
 <p>fixed size of ValueType or zero. </p>
 
-<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00060">60</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00065">65</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="read__binary_8hpp_source.html#l00076">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>.</p>
+<p>Referenced by <a class="el" href="read__binary_8hpp_source.html#l00081">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>.</p>
 
 </div>
 </div>
@@ -618,13 +634,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">        data::Serialization&lt;data::DynBlockWriter, ValueType&gt;::is_fixed_size</div>
+<div class="line">        data::Serialization&lt;VfsFileBlockReader, ValueType&gt;::is_fixed_size</div>
 </div><!-- fragment -->
 <p>flag whether ValueType is fixed size </p>
 
-<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00056">56</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00061">61</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="read__binary_8hpp_source.html#l00076">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>.</p>
+<p>Referenced by <a class="el" href="read__binary_8hpp_source.html#l00081">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>.</p>
 
 </div>
 </div>
@@ -638,7 +654,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00221">221</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00226">226</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
 
 </div>
 </div>
@@ -664,9 +680,9 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 <p>sentinel to disable size limit </p>
 
-<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00073">73</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00078">78</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="read__binary_8hpp_source.html#l00076">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>.</p>
+<p>Referenced by <a class="el" href="read__binary_8hpp_source.html#l00081">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>.</p>
 
 </div>
 </div>
@@ -680,7 +696,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00220">220</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00225">225</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
 
 </div>
 </div>
@@ -694,7 +710,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00264">264</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00269">269</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
 
 </div>
 </div>
@@ -708,7 +724,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00265">265</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00270">270</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
 
 </div>
 </div>
@@ -724,9 +740,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>File containing Blocks mapped directly to a io fileimpl. </p>
 
-<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00261">261</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
+<p>Definition at line <a class="el" href="read__binary_8hpp_source.html#l00266">266</a> of file <a class="el" href="read__binary_8hpp_source.html">read_binary.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="read__binary_8hpp_source.html#l00076">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>.</p>
+<p>Referenced by <a class="el" href="read__binary_8hpp_source.html#l00081">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>.</p>
 
 </div>
 </div>
@@ -739,7 +755,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1api.html">api</a></li><li class="navelem"><a class="el" href="classthrill_1_1api_1_1ReadBinaryNode.html">ReadBinaryNode</a></li>
-    <li class="footer">Generated on Sat Oct 14 2017 08:17:18 for Thrill by
+    <li class="footer">Generated on Mon Oct 23 2017 22:11:38 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

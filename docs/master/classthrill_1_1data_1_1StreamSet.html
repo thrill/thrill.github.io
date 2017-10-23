@@ -151,8 +151,8 @@ class thrill::data::StreamSet&lt; Stream &gt;</h3>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac59d85cbcbfab63b84f5e598c17d94a8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamSet.html#ac59d85cbcbfab63b84f5e598c17d94a8">StreamPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; <a class="el" href="classthrill_1_1data_1_1Stream.html">Stream</a> &gt;</td></tr>
-<tr class="separator:ac59d85cbcbfab63b84f5e598c17d94a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66503cd7df0eb5b1e6b24df2a5198ed6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamSet.html#a66503cd7df0eb5b1e6b24df2a5198ed6">StreamDataPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; <a class="el" href="classthrill_1_1data_1_1StreamData.html">StreamData</a> &gt;</td></tr>
+<tr class="separator:a66503cd7df0eb5b1e6b24df2a5198ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -161,8 +161,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a29dc6798f18d73abd4ba8e4910f6831f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamSet.html#a29dc6798f18d73abd4ba8e4910f6831f">Close</a> () final</td></tr>
 <tr class="memdesc:a29dc6798f18d73abd4ba8e4910f6831f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close all streams in the set.  <a href="#a29dc6798f18d73abd4ba8e4910f6831f">More...</a><br/></td></tr>
 <tr class="separator:a29dc6798f18d73abd4ba8e4910f6831f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93b7577070cb48cdb52104429267db33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1StreamSet.html#ac59d85cbcbfab63b84f5e598c17d94a8">StreamPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamSet.html#a93b7577070cb48cdb52104429267db33">peer</a> (size_t local_worker_id)</td></tr>
-<tr class="separator:a93b7577070cb48cdb52104429267db33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5f33f66291fc3b19e098a984db5b8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1StreamSet.html#a66503cd7df0eb5b1e6b24df2a5198ed6">StreamDataPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamSet.html#ada5f33f66291fc3b19e098a984db5b8b">Peer</a> (size_t local_worker_id)</td></tr>
+<tr class="separator:ada5f33f66291fc3b19e098a984db5b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e0ad134788e0cae004f3522ee6dccaf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamSet.html#a1e0ad134788e0cae004f3522ee6dccaf">Release</a> (size_t local_worker_id)</td></tr>
+<tr class="separator:a1e0ad134788e0cae004f3522ee6dccaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classthrill_1_1data_1_1StreamSetBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classthrill_1_1data_1_1StreamSetBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classthrill_1_1data_1_1StreamSetBase.html">StreamSetBase</a></td></tr>
 <tr class="memitem:a8eb9d0c0753f17b0b47d332a7cdc2c91 inherit pub_methods_classthrill_1_1data_1_1StreamSetBase"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamSetBase.html#a8eb9d0c0753f17b0b47d332a7cdc2c91">~StreamSetBase</a> ()</td></tr>
 <tr class="separator:a8eb9d0c0753f17b0b47d332a7cdc2c91 inherit pub_methods_classthrill_1_1data_1_1StreamSetBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,22 +195,25 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a13a413ad83ca18a99312a51ff285e8a5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classthrill_1_1data_1_1StreamSet.html#ac59d85cbcbfab63b84f5e598c17d94a8">StreamPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamSet.html#a13a413ad83ca18a99312a51ff285e8a5">streams_</a></td></tr>
-<tr class="memdesc:a13a413ad83ca18a99312a51ff285e8a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">'owns' all streams belonging to one stream id for all local workers.  <a href="#a13a413ad83ca18a99312a51ff285e8a5">More...</a><br/></td></tr>
-<tr class="separator:a13a413ad83ca18a99312a51ff285e8a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c586e2aa9dad3bbb756df8623ff10bc"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamSet.html#a0c586e2aa9dad3bbb756df8623ff10bc">remaining_</a></td></tr>
+<tr class="memdesc:a0c586e2aa9dad3bbb756df8623ff10bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">countdown to destruction  <a href="#a0c586e2aa9dad3bbb756df8623ff10bc">More...</a><br/></td></tr>
+<tr class="separator:a0c586e2aa9dad3bbb756df8623ff10bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac441da195f00bf83658eca7a3326db"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classthrill_1_1data_1_1StreamSet.html#a66503cd7df0eb5b1e6b24df2a5198ed6">StreamDataPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamSet.html#a9ac441da195f00bf83658eca7a3326db">streams_</a></td></tr>
+<tr class="memdesc:a9ac441da195f00bf83658eca7a3326db"><td class="mdescLeft">&#160;</td><td class="mdescRight">'owns' all streams belonging to one stream id for all local workers.  <a href="#a9ac441da195f00bf83658eca7a3326db">More...</a><br/></td></tr>
+<tr class="separator:a9ac441da195f00bf83658eca7a3326db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="ac59d85cbcbfab63b84f5e598c17d94a8"></a>
+<a class="anchor" id="a66503cd7df0eb5b1e6b24df2a5198ed6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classthrill_1_1data_1_1StreamSet.html#ac59d85cbcbfab63b84f5e598c17d94a8">StreamPtr</a> =  <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt;<a class="el" href="classthrill_1_1data_1_1Stream.html">Stream</a>&gt;</td>
+          <td class="memname">using <a class="el" href="classthrill_1_1data_1_1StreamSet.html#a66503cd7df0eb5b1e6b24df2a5198ed6">StreamDataPtr</a> =  <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt;<a class="el" href="classthrill_1_1data_1_1StreamData.html">StreamData</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00222">222</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00158">158</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -258,9 +263,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Creates a <a class="el" href="classthrill_1_1data_1_1StreamSet.html" title="Simple structure that holds a all stream instances for the workers on the local host for a given stre...">StreamSet</a> with the given number of streams (num workers per host). </p>
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00226">226</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00162">162</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>References <a class="el" href="stream_8hpp_source.html#l00247">StreamSet&lt; Stream &gt;::streams_</a>.</p>
+<p>References <a class="el" href="stream__data_8hpp_source.html#l00199">StreamSet&lt; Stream &gt;::remaining_</a>, and <a class="el" href="stream__data_8hpp_source.html#l00197">StreamSet&lt; Stream &gt;::streams_</a>.</p>
 
 </div>
 </div>
@@ -290,13 +295,13 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classthrill_1_1data_1_1StreamSetBase.html#aacb6d0e5e6d570cdc2b0da14c3921ff0">StreamSetBase</a>.</p>
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00240">240</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00190">190</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>References <a class="el" href="stream_8hpp_source.html#l00247">StreamSet&lt; Stream &gt;::streams_</a>.</p>
+<p>References <a class="el" href="stream__data_8hpp_source.html#l00197">StreamSet&lt; Stream &gt;::streams_</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a93b7577070cb48cdb52104429267db33"></a>
+<a class="anchor" id="ada5f33f66291fc3b19e098a984db5b8b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -304,7 +309,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classthrill_1_1data_1_1StreamSet.html#ac59d85cbcbfab63b84f5e598c17d94a8">StreamPtr</a> peer </td>
+          <td class="memname"><a class="el" href="classthrill_1_1data_1_1StreamSet.html#a66503cd7df0eb5b1e6b24df2a5198ed6">StreamDataPtr</a> Peer </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>local_worker_id</em></td><td>)</td>
@@ -319,14 +324,13 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the stream that will be consumed by the worker with the given local id </p>
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00235">235</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00173">173</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>References <a class="el" href="stream_8hpp_source.html#l00247">StreamSet&lt; Stream &gt;::streams_</a>.</p>
+<p>References <a class="el" href="stream__data_8hpp_source.html#l00197">StreamSet&lt; Stream &gt;::streams_</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a13a413ad83ca18a99312a51ff285e8a5"></a>
+<a class="anchor" id="a1e0ad134788e0cae004f3522ee6dccaf"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -334,7 +338,63 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classthrill_1_1data_1_1StreamSet.html#ac59d85cbcbfab63b84f5e598c17d94a8">StreamPtr</a>&gt; streams_</td>
+          <td class="memname">bool Release </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>local_worker_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Release local_worker_id, returns true when all individual streams are done. </p>
+
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00180">180</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+
+<p>References <a class="el" href="stream__data_8hpp_source.html#l00199">StreamSet&lt; Stream &gt;::remaining_</a>, and <a class="el" href="stream__data_8hpp_source.html#l00197">StreamSet&lt; Stream &gt;::streams_</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a0c586e2aa9dad3bbb756df8623ff10bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t remaining_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>countdown to destruction </p>
+
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00199">199</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="stream__data_8hpp_source.html#l00180">StreamSet&lt; Stream &gt;::Release()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00162">StreamSet&lt; Stream &gt;::StreamSet()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ac441da195f00bf83658eca7a3326db"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classthrill_1_1data_1_1StreamSet.html#a66503cd7df0eb5b1e6b24df2a5198ed6">StreamDataPtr</a>&gt; streams_</td>
         </tr>
       </table>
   </td>
@@ -346,15 +406,15 @@ Private Attributes</h2></td></tr>
 
 <p>'owns' all streams belonging to one stream id for all local workers. </p>
 
-<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00247">247</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00197">197</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="stream_8hpp_source.html#l00240">StreamSet&lt; Stream &gt;::Close()</a>, <a class="el" href="stream_8hpp_source.html#l00235">StreamSet&lt; Stream &gt;::peer()</a>, and <a class="el" href="stream_8hpp_source.html#l00226">StreamSet&lt; Stream &gt;::StreamSet()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8hpp_source.html#l00190">StreamSet&lt; Stream &gt;::Close()</a>, <a class="el" href="stream__data_8hpp_source.html#l00173">StreamSet&lt; Stream &gt;::Peer()</a>, <a class="el" href="stream__data_8hpp_source.html#l00180">StreamSet&lt; Stream &gt;::Release()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00162">StreamSet&lt; Stream &gt;::StreamSet()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>thrill/data/<a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a></li>
-<li>thrill/data/<a class="el" href="stream_8hpp_source.html">stream.hpp</a></li>
+<li>thrill/data/<a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -362,7 +422,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1StreamSet.html">StreamSet</a></li>
-    <li class="footer">Generated on Sat Oct 14 2017 08:17:19 for Thrill by
+    <li class="footer">Generated on Mon Oct 23 2017 22:11:39 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,10 +1,9 @@
 var classthrill_1_1data_1_1File =
 [
     [ "ConsumeReader", "classthrill_1_1data_1_1File.html#aa3ae8da94e2498c40c6dd50caf1c138f", null ],
-    [ "DynWriter", "classthrill_1_1data_1_1File.html#a3b4596082a3723049d15b27521d7bb3f", null ],
     [ "KeepReader", "classthrill_1_1data_1_1File.html#a05aa70cf2e99e2ddf105d1f003c31f6b", null ],
     [ "Reader", "classthrill_1_1data_1_1File.html#ac306eb24ea466acd3e0d87ea82f56916", null ],
-    [ "Writer", "classthrill_1_1data_1_1File.html#af33c0e34e2d4cad19190b62078001bc9", null ],
+    [ "Writer", "classthrill_1_1data_1_1File.html#a2970881dc476126e9ffee280b42caea9", null ],
     [ "File", "classthrill_1_1data_1_1File.html#a859fdc9f459a84339fae9a625582cf57", null ],
     [ "File", "classthrill_1_1data_1_1File.html#abd1c5a31cb274f43514117f7414f1a30", null ],
     [ "File", "classthrill_1_1data_1_1File.html#ae5360a4465655451a91193f96477e52b", null ],
@@ -20,7 +19,6 @@ var classthrill_1_1data_1_1File =
     [ "Copy", "classthrill_1_1data_1_1File.html#a8dd51c22e8f7c0f9e59df186cc9a8e4d", null ],
     [ "empty", "classthrill_1_1data_1_1File.html#ac6e61de369e994009e36f344f99c15ad", null ],
     [ "GetConsumeReader", "classthrill_1_1data_1_1File.html#a36a94e4df2f255aeb8a26bb4c7b5df8c", null ],
-    [ "GetDynWriter", "classthrill_1_1data_1_1File.html#a651ec31196a6fbe2bdbfd9d2b391f941", null ],
     [ "GetIndexOf", "group__data__layer.html#ga55199b2c24c7c92c5abe3e6b83a00c9a", null ],
     [ "GetIndexOf", "classthrill_1_1data_1_1File.html#aea6ae468fe718529bea05362f6e0de66", null ],
     [ "GetItemAt", "group__data__layer.html#ga08970da5784e083e5d1049d578c66515", null ],

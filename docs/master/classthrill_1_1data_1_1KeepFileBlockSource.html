@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('classthrill_1_1data_1_1KeepFileBlockSo
 <div class="textblock"><p>A BlockSource to read Blocks from a <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>. </p>
 <p>The <a class="el" href="classthrill_1_1data_1_1KeepFileBlockSource.html" title="A BlockSource to read Blocks from a File. ">KeepFileBlockSource</a> mainly contains an index to the current block, which is incremented when the <a class="el" href="classthrill_1_1data_1_1KeepFileBlockSource.html#a968d65e397adaf3d7488ffec0b649d53">NextBlock()</a> must be delivered. </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00293">293</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00347">347</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for KeepFileBlockSource:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -232,7 +232,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Start reading a <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>. </p>
 
-<p>Definition at line <a class="el" href="file_8cpp_source.html#l00104">104</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8cpp_source.html#l00107">107</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
 
 </div>
 </div>
@@ -251,9 +251,9 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Advance to next block of file, delivers current_ and end_ for <a class="el" href="classthrill_1_1data_1_1BlockReader.html" title="BlockReader takes Block objects from BlockSource and allows reading of a) serializable Items or b) ar...">BlockReader</a> </p>
 
-<p>Definition at line <a class="el" href="file_8cpp_source.html#l00130">130</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8cpp_source.html#l00133">133</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
 
-<p>References <a class="el" href="file_8hpp_source.html#l00333">KeepFileBlockSource::current_block_</a>, <a class="el" href="file_8hpp_source.html#l00327">KeepFileBlockSource::fetching_blocks_</a>, <a class="el" href="file_8hpp_source.html#l00318">KeepFileBlockSource::file_</a>, <a class="el" href="file_8hpp_source.html#l00321">KeepFileBlockSource::local_worker_id_</a>, <a class="el" href="file_8cpp_source.html#l00158">KeepFileBlockSource::NextUnpinnedBlock()</a>, <a class="el" href="file_8hpp_source.html#l00178">File::num_blocks()</a>, <a class="el" href="file_8hpp_source.html#l00324">KeepFileBlockSource::num_prefetch_</a>, and <a class="el" href="block_8cpp_source.html#l00035">Block::PinWait()</a>.</p>
+<p>References <a class="el" href="file_8hpp_source.html#l00387">KeepFileBlockSource::current_block_</a>, <a class="el" href="file_8hpp_source.html#l00381">KeepFileBlockSource::fetching_blocks_</a>, <a class="el" href="file_8hpp_source.html#l00372">KeepFileBlockSource::file_</a>, <a class="el" href="file_8hpp_source.html#l00375">KeepFileBlockSource::local_worker_id_</a>, <a class="el" href="file_8cpp_source.html#l00161">KeepFileBlockSource::NextUnpinnedBlock()</a>, <a class="el" href="file_8hpp_source.html#l00175">File::num_blocks()</a>, <a class="el" href="file_8hpp_source.html#l00378">KeepFileBlockSource::num_prefetch_</a>, and <a class="el" href="block_8cpp_source.html#l00035">Block::PinWait()</a>.</p>
 
 </div>
 </div>
@@ -280,11 +280,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>Determine current unpinned <a class="el" href="classthrill_1_1data_1_1Block.html" title="Block combines a reference to a read-only ByteBlock and book-keeping information. ...">Block</a> to deliver via <a class="el" href="classthrill_1_1data_1_1KeepFileBlockSource.html#a968d65e397adaf3d7488ffec0b649d53">NextBlock()</a> </p>
 
-<p>Definition at line <a class="el" href="file_8cpp_source.html#l00158">158</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8cpp_source.html#l00161">161</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
 
-<p>References <a class="el" href="file_8hpp_source.html#l00192">File::block()</a>, <a class="el" href="file_8hpp_source.html#l00333">KeepFileBlockSource::current_block_</a>, <a class="el" href="file_8hpp_source.html#l00318">KeepFileBlockSource::file_</a>, <a class="el" href="file_8hpp_source.html#l00330">KeepFileBlockSource::first_block_</a>, <a class="el" href="file_8hpp_source.html#l00336">KeepFileBlockSource::first_item_</a>, <a class="el" href="file_8hpp_source.html#l00315">KeepFileBlockSource::keep_first_item</a>, and <a class="el" href="block_8hpp_source.html#l00094">Block::set_begin()</a>.</p>
+<p>References <a class="el" href="file_8hpp_source.html#l00189">File::block()</a>, <a class="el" href="file_8hpp_source.html#l00387">KeepFileBlockSource::current_block_</a>, <a class="el" href="file_8hpp_source.html#l00372">KeepFileBlockSource::file_</a>, <a class="el" href="file_8hpp_source.html#l00384">KeepFileBlockSource::first_block_</a>, <a class="el" href="file_8hpp_source.html#l00390">KeepFileBlockSource::first_item_</a>, <a class="el" href="file_8hpp_source.html#l00369">KeepFileBlockSource::keep_first_item</a>, and <a class="el" href="block_8hpp_source.html#l00094">Block::set_begin()</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00130">KeepFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00113">KeepFileBlockSource::Prefetch()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00133">KeepFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00116">KeepFileBlockSource::Prefetch()</a>.</p>
 
 </div>
 </div>
@@ -304,9 +304,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Perform prefetch. </p>
 
-<p>Definition at line <a class="el" href="file_8cpp_source.html#l00113">113</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8cpp_source.html#l00116">116</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
 
-<p>References <a class="el" href="file_8hpp_source.html#l00333">KeepFileBlockSource::current_block_</a>, <a class="el" href="file_8hpp_source.html#l00327">KeepFileBlockSource::fetching_blocks_</a>, <a class="el" href="file_8hpp_source.html#l00318">KeepFileBlockSource::file_</a>, <a class="el" href="file_8hpp_source.html#l00321">KeepFileBlockSource::local_worker_id_</a>, <a class="el" href="file_8cpp_source.html#l00158">KeepFileBlockSource::NextUnpinnedBlock()</a>, <a class="el" href="file_8hpp_source.html#l00178">File::num_blocks()</a>, and <a class="el" href="file_8hpp_source.html#l00324">KeepFileBlockSource::num_prefetch_</a>.</p>
+<p>References <a class="el" href="file_8hpp_source.html#l00387">KeepFileBlockSource::current_block_</a>, <a class="el" href="file_8hpp_source.html#l00381">KeepFileBlockSource::fetching_blocks_</a>, <a class="el" href="file_8hpp_source.html#l00372">KeepFileBlockSource::file_</a>, <a class="el" href="file_8hpp_source.html#l00375">KeepFileBlockSource::local_worker_id_</a>, <a class="el" href="file_8cpp_source.html#l00161">KeepFileBlockSource::NextUnpinnedBlock()</a>, <a class="el" href="file_8hpp_source.html#l00175">File::num_blocks()</a>, and <a class="el" href="file_8hpp_source.html#l00378">KeepFileBlockSource::num_prefetch_</a>.</p>
 
 </div>
 </div>
@@ -331,9 +331,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>index of current block. </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00333">333</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00387">387</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00130">KeepFileBlockSource::NextBlock()</a>, <a class="el" href="file_8cpp_source.html#l00158">KeepFileBlockSource::NextUnpinnedBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00113">KeepFileBlockSource::Prefetch()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00133">KeepFileBlockSource::NextBlock()</a>, <a class="el" href="file_8cpp_source.html#l00161">KeepFileBlockSource::NextUnpinnedBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00116">KeepFileBlockSource::Prefetch()</a>.</p>
 
 </div>
 </div>
@@ -357,9 +357,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>current prefetch operations </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00327">327</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00381">381</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00130">KeepFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00113">KeepFileBlockSource::Prefetch()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00133">KeepFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00116">KeepFileBlockSource::Prefetch()</a>.</p>
 
 </div>
 </div>
@@ -383,9 +383,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>file to read blocks from </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00318">318</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00372">372</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00130">KeepFileBlockSource::NextBlock()</a>, <a class="el" href="file_8cpp_source.html#l00158">KeepFileBlockSource::NextUnpinnedBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00113">KeepFileBlockSource::Prefetch()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00133">KeepFileBlockSource::NextBlock()</a>, <a class="el" href="file_8cpp_source.html#l00161">KeepFileBlockSource::NextUnpinnedBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00116">KeepFileBlockSource::Prefetch()</a>.</p>
 
 </div>
 </div>
@@ -409,9 +409,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>number of the first block </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00330">330</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00384">384</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00158">KeepFileBlockSource::NextUnpinnedBlock()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00161">KeepFileBlockSource::NextUnpinnedBlock()</a>.</p>
 
 </div>
 </div>
@@ -435,9 +435,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>offset of first item in first block read </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00336">336</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00390">390</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00158">KeepFileBlockSource::NextUnpinnedBlock()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00161">KeepFileBlockSource::NextUnpinnedBlock()</a>.</p>
 
 </div>
 </div>
@@ -461,9 +461,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>sentinel value for not changing the first_item item </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00315">315</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00369">369</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00158">KeepFileBlockSource::NextUnpinnedBlock()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00161">KeepFileBlockSource::NextUnpinnedBlock()</a>.</p>
 
 </div>
 </div>
@@ -487,9 +487,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>local worker id reading the <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00321">321</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00375">375</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00130">KeepFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00113">KeepFileBlockSource::Prefetch()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00133">KeepFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00116">KeepFileBlockSource::Prefetch()</a>.</p>
 
 </div>
 </div>
@@ -513,9 +513,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>number of block prefetch operations </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00324">324</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00378">378</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00130">KeepFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00113">KeepFileBlockSource::Prefetch()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00133">KeepFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00116">KeepFileBlockSource::Prefetch()</a>.</p>
 
 </div>
 </div>
@@ -529,7 +529,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1KeepFileBlockSource.html">KeepFileBlockSource</a></li>
-    <li class="footer">Generated on Sat Oct 14 2017 08:17:19 for Thrill by
+    <li class="footer">Generated on Mon Oct 23 2017 22:11:39 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
