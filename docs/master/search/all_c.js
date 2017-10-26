@@ -30,7 +30,7 @@ var searchData=
   ['keyp',['keyp',['../group__tlx__data__structures__loser__tree.html#ga4fbd05437c51b2d9e9aefae936093bf5',1,'tlx::LoserTreePointerBase::Loser::keyp()'],['../group__tlx__data__structures__loser__tree.html#ga4fbd05437c51b2d9e9aefae936093bf5',1,'tlx::LoserTreePointerUnguardedBase::Loser::keyp()']]],
   ['keyvaluepair',['KeyValuePair',['../classthrill_1_1core_1_1ReducePrePhase_3_01TableItem_00_01Key_00_01Value_00_01KeyExtractor_00_01R21d271c26c94d68a392fc2ad1836161c.html#a38b098264344ea9596c9ce1df41e7199',1,'thrill::core::ReducePrePhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig, IndexFunction, EqualToFunction, HashFunction, true &gt;::KeyValuePair()'],['../classtlx_1_1LruCacheMap.html#a3f99800022cfebd038a6ce06a1f99942',1,'tlx::LruCacheMap::KeyValuePair()']]],
   ['kgroupcount',['kGroupCount',['../classthrill_1_1net_1_1Manager.html#a618b4b6aa3f6d97020571c41ff0c31d8',1,'thrill::net::Manager']]],
-  ['kmeans',['KMeans',['../namespaceexamples_1_1k__means.html#a555e2afaf5b6ae7dd0487138d228d002',1,'examples::k_means']]],
+  ['kmeans',['KMeans',['../namespaceexamples_1_1k__means.html#a5cbd3da1e31b50fffb883f6eb9f03ef7',1,'examples::k_means']]],
   ['k_2dmeans_20tutorial',['K-Means Tutorial',['../kmeans_tutorial.html',1,'index']]],
   ['kmeansmodel',['KMeansModel',['../classexamples_1_1k__means_1_1KMeansModel.html#a8dd215675c501bdaa7429e64ec4a1a73',1,'examples::k_means::KMeansModel']]],
   ['kmeansmodel',['KMeansModel',['../classexamples_1_1k__means_1_1KMeansModel.html',1,'examples::k_means']]],

@@ -7,5 +7,6 @@ var k_means_8hpp =
     [ "Point", "k-means_8hpp.html#a02993ce2639dd142c90b522ca051044a", null ],
     [ "PointClusterId", "k-means_8hpp.html#adf5d527c89798d5984297ee3b01f3885", null ],
     [ "VPoint", "k-means_8hpp.html#a647782c82608555fc27ba5fca68ce64d", null ],
-    [ "KMeans", "k-means_8hpp.html#a555e2afaf5b6ae7dd0487138d228d002", null ]
+    [ "BisecKMeans", "k-means_8hpp.html#a2147577bddfb4c7d370b65386e7aeb49", null ],
+    [ "KMeans", "k-means_8hpp.html#a5cbd3da1e31b50fffb883f6eb9f03ef7", null ]
 ];

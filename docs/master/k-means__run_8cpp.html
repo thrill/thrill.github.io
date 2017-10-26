@@ -156,12 +156,12 @@ Functions</h2></td></tr>
 <tr class="memitem:addc1c142f189cdbb8c05be1b14de832f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="k-means__run_8cpp.html#addc1c142f189cdbb8c05be1b14de832f">OutputSVG</a> (const std::string &amp;svg_path, double svg_scale, const DIA&lt; Point&lt; 2 &gt; &gt; &amp;point_dia, const <a class="el" href="classexamples_1_1k__means_1_1KMeansModel.html">KMeansModel</a>&lt; Point&lt; 2 &gt; &gt; &amp;model)</td></tr>
 <tr class="memdesc:addc1c142f189cdbb8c05be1b14de832f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output the points and centroids as a 2-D SVG drawing.  <a href="#addc1c142f189cdbb8c05be1b14de832f">More...</a><br/></td></tr>
 <tr class="separator:addc1c142f189cdbb8c05be1b14de832f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cc2ac4b4fd986fc04e2f7e14976e6fb"><td class="memTemplParams" colspan="2">template&lt;typename Point &gt; </td></tr>
-<tr class="memitem:a5cc2ac4b4fd986fc04e2f7e14976e6fb"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="k-means__run_8cpp.html#a5cc2ac4b4fd986fc04e2f7e14976e6fb">RunKMeansFile</a> (thrill::Context &amp;ctx, size_t dimensions, size_t num_clusters, size_t iterations, const std::string &amp;svg_path, double svg_scale, const std::vector&lt; std::string &gt; &amp;input_paths)</td></tr>
-<tr class="separator:a5cc2ac4b4fd986fc04e2f7e14976e6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39a37ca9204a36a6eba429639a8502a2"><td class="memTemplParams" colspan="2">template&lt;typename Point &gt; </td></tr>
-<tr class="memitem:a39a37ca9204a36a6eba429639a8502a2"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="k-means__run_8cpp.html#a39a37ca9204a36a6eba429639a8502a2">RunKMeansGenerated</a> (thrill::Context &amp;ctx, size_t dimensions, size_t num_clusters, size_t iterations, const std::string &amp;svg_path, double svg_scale, const std::vector&lt; std::string &gt; &amp;input_paths)</td></tr>
-<tr class="separator:a39a37ca9204a36a6eba429639a8502a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8380b75b0589bf4bd9d76f3446e8800c"><td class="memTemplParams" colspan="2">template&lt;typename Point &gt; </td></tr>
+<tr class="memitem:a8380b75b0589bf4bd9d76f3446e8800c"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="k-means__run_8cpp.html#a8380b75b0589bf4bd9d76f3446e8800c">RunKMeansFile</a> (thrill::Context &amp;ctx, bool bisecting, size_t dimensions, size_t num_clusters, size_t iterations, double eps, const std::string &amp;svg_path, double svg_scale, const std::vector&lt; std::string &gt; &amp;input_paths)</td></tr>
+<tr class="separator:a8380b75b0589bf4bd9d76f3446e8800c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1bf2d93ccdf585ffaf85e57d500fee"><td class="memTemplParams" colspan="2">template&lt;typename Point &gt; </td></tr>
+<tr class="memitem:abb1bf2d93ccdf585ffaf85e57d500fee"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="k-means__run_8cpp.html#abb1bf2d93ccdf585ffaf85e57d500fee">RunKMeansGenerated</a> (thrill::Context &amp;ctx, bool bisecting, size_t dimensions, size_t num_clusters, size_t iterations, double eps, const std::string &amp;svg_path, double svg_scale, const std::vector&lt; std::string &gt; &amp;input_paths)</td></tr>
+<tr class="separator:abb1bf2d93ccdf585ffaf85e57d500fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a0ddf1224851353fc92bfbff6f499fa97"></a>
@@ -188,7 +188,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="k-means__run_8cpp_source.html#l00179">179</a> of file <a class="el" href="k-means__run_8cpp_source.html">k-means_run.cpp</a>.</p>
+<p>Definition at line <a class="el" href="k-means__run_8cpp_source.html#l00183">183</a> of file <a class="el" href="k-means__run_8cpp_source.html">k-means_run.cpp</a>.</p>
 
 <p>References <a class="el" href="cmdline__parser_8cpp_source.html#l00472">CmdlineParser::add_bool()</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l00524">CmdlineParser::add_double()</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l00649">CmdlineParser::add_param_size_t()</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l00687">CmdlineParser::add_param_stringlist()</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l00508">CmdlineParser::add_size_t()</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l00548">CmdlineParser::add_string()</a>, <a class="el" href="die_8hpp_source.html#l00042">die</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l00999">CmdlineParser::print_result()</a>, <a class="el" href="cmdline__parser_8cpp_source.html#l00853">CmdlineParser::process()</a>, and <a class="el" href="context_8cpp_source.html#l00801">thrill::api::Run()</a>.</p>
 
@@ -264,7 +264,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="unused_8hpp_source.html#l00020">tlx::unused()</a>.</p>
 
-<p>Referenced by <a class="el" href="k-means__run_8cpp_source.html#l00142">RunKMeansFile()</a>, and <a class="el" href="k-means__run_8cpp_source.html#l00108">RunKMeansGenerated()</a>.</p>
+<p>Referenced by <a class="el" href="k-means__run_8cpp_source.html#l00144">RunKMeansFile()</a>, and <a class="el" href="k-means__run_8cpp_source.html#l00108">RunKMeansGenerated()</a>.</p>
 
 </div>
 </div>
@@ -312,7 +312,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5cc2ac4b4fd986fc04e2f7e14976e6fb"></a>
+<a class="anchor" id="a8380b75b0589bf4bd9d76f3446e8800c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -324,6 +324,12 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">thrill::Context &amp;&#160;</td>
           <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bisecting</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -342,6 +348,12 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>iterations</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -374,13 +386,13 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="k-means__run_8cpp_source.html#l00142">142</a> of file <a class="el" href="k-means__run_8cpp_source.html">k-means_run.cpp</a>.</p>
+<p>Definition at line <a class="el" href="k-means__run_8cpp_source.html#l00144">144</a> of file <a class="el" href="k-means__run_8cpp_source.html">k-means_run.cpp</a>.</p>
 
-<p>References <a class="el" href="die_8hpp_source.html#l00042">die</a>, <a class="el" href="k-means_8hpp_source.html#l00175">examples::k_means::KMeans()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00171">LOG1</a>, <a class="el" href="vector_8hpp_source.html#l00039">Vector&lt; D, double &gt;::Make()</a>, <a class="el" href="k-means__run_8cpp_source.html#l00048">OutputSVG()</a>, and <a class="el" href="read__lines_8hpp_source.html#l00452">thrill::api::ReadLines()</a>.</p>
+<p>References <a class="el" href="k-means_8hpp_source.html#l00258">examples::k_means::BisecKMeans()</a>, <a class="el" href="die_8hpp_source.html#l00042">die</a>, <a class="el" href="k-means_8hpp_source.html#l00175">examples::k_means::KMeans()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00171">LOG1</a>, <a class="el" href="vector_8hpp_source.html#l00039">Vector&lt; D, double &gt;::Make()</a>, <a class="el" href="k-means__run_8cpp_source.html#l00048">OutputSVG()</a>, and <a class="el" href="read__lines_8hpp_source.html#l00452">thrill::api::ReadLines()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a39a37ca9204a36a6eba429639a8502a2"></a>
+<a class="anchor" id="abb1bf2d93ccdf585ffaf85e57d500fee"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -392,6 +404,12 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">thrill::Context &amp;&#160;</td>
           <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bisecting</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -410,6 +428,12 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>iterations</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -444,7 +468,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="k-means__run_8cpp_source.html#l00108">108</a> of file <a class="el" href="k-means__run_8cpp_source.html">k-means_run.cpp</a>.</p>
 
-<p>References <a class="el" href="die_8hpp_source.html#l00042">die</a>, <a class="el" href="generate_8hpp_source.html#l00085">thrill::api::Generate()</a>, <a class="el" href="k-means_8hpp_source.html#l00175">examples::k_means::KMeans()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00171">LOG1</a>, <a class="el" href="k-means__run_8cpp_source.html#l00048">OutputSVG()</a>, and <a class="el" href="vector_8hpp_source.html#l00053">Vector&lt; D, double &gt;::Random()</a>.</p>
+<p>References <a class="el" href="k-means_8hpp_source.html#l00258">examples::k_means::BisecKMeans()</a>, <a class="el" href="die_8hpp_source.html#l00042">die</a>, <a class="el" href="generate_8hpp_source.html#l00085">thrill::api::Generate()</a>, <a class="el" href="k-means_8hpp_source.html#l00175">examples::k_means::KMeans()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00171">LOG1</a>, <a class="el" href="k-means__run_8cpp_source.html#l00048">OutputSVG()</a>, and <a class="el" href="vector_8hpp_source.html#l00053">Vector&lt; D, double &gt;::Random()</a>.</p>
 
 </div>
 </div>
@@ -454,7 +478,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_681e72180800ab841db57404088a671f.html">k-means</a></li><li class="navelem"><a class="el" href="k-means__run_8cpp.html">k-means_run.cpp</a></li>
-    <li class="footer">Generated on Mon Oct 23 2017 22:11:36 for Thrill by
+    <li class="footer">Generated on Thu Oct 26 2017 18:55:49 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
