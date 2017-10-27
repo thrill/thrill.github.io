@@ -309,7 +309,7 @@ $(document).ready(function(){initNavTree('k-means_8hpp_source.html','');});
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="comment">// calculate the closest centroid for each point</span></div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keyword">auto</span> closest = points.Keep().Map(</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            [local_centroids](<span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1Vector.html">Point</a>&amp; p) {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            [&amp;local_centroids](<span class="keyword">const</span> <a class="code" href="classthrill_1_1common_1_1Vector.html">Point</a>&amp; p) {</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                assert(local_centroids.size());</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                <span class="keywordtype">double</span> min_dist = p.<a class="code" href="classthrill_1_1common_1_1Vector.html#a1d1e43ec5542692f8a159e452a11d494">DistanceSquare</a>(local_centroids[0]);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                <span class="keywordtype">size_t</span> closest_id = 0;</div>
@@ -500,7 +500,7 @@ $(document).ready(function(){initNavTree('k-means_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_681e72180800ab841db57404088a671f.html">k-means</a></li><li class="navelem"><a class="el" href="k-means_8hpp.html">k-means.hpp</a></li>
-    <li class="footer">Generated on Thu Oct 26 2017 21:37:32 for Thrill by
+    <li class="footer">Generated on Fri Oct 27 2017 09:23:30 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
