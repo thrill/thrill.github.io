@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"classthrill_1_1core_1_1BitStreamReader.html#a0af835662e679b285fa4951b917e666da3b7772627960c0c740304ccb3ac7ec1c":[3,0,3,2,1,2],
 "classthrill_1_1core_1_1BitStreamReader.html#a153c45ae4c9fd4e41be2401e98efbfc0":[3,0,3,2,1,3],
 "classthrill_1_1core_1_1BitStreamReader.html#a532f6357f4e00269d11c5175e483ee20":[3,0,3,2,1,12],
 "classthrill_1_1core_1_1BitStreamReader.html#a58e22b2f1833627c95699bac29583518":[3,0,3,2,1,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a482087525002717d16d52ad9c4eec61e":[3,0,3,2,18,12],
 "classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a5409d7e02e51788f78aa79335031b79e":[3,0,3,2,18,20],
 "classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a6b72e54baf646b08b4b87f987f583dcb":[3,0,3,2,18,18],
-"classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a6e2d745cdb7a7b983f861ed6a9a541a7":[3,0,3,2,18,5],
-"classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a802518f1133d686c0444ff642dc65d88":[3,0,3,2,18,19]
+"classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a6e2d745cdb7a7b983f861ed6a9a541a7":[3,0,3,2,18,5]
 };

@@ -129,7 +129,49 @@ $(document).ready(function(){initNavTree('classtlx_1_1CmdlineParser.html','');})
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Command line parser which automatically fills variables and prints nice usage messages. </p>
 <p>This is a straightforward command line parser in C++, which will recognize short options -s, long options &ndash;long and parameters, both required and optional. It will automatically parse integers and <b>byte sizes</b> with SI/IEC suffixes (e.g. 1 GiB). It also works with lists of strings, e.g. multiple filenames.</p>
-<div class="fragment"></div><!-- fragment --><p> When running the program above without arguments, it will print: </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="cmdline__parser_8hpp.html">tlx/cmdline_parser.hpp</a>&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> <a class="code" href="bfs_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]) {</div>
+<div class="line">    <a class="code" href="classtlx_1_1CmdlineParser.html">tlx::CmdlineParser</a> cp;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// add description and author</span></div>
+<div class="line">    cp.<a class="code" href="classtlx_1_1CmdlineParser.html#a9b582ca26190005482986c1ac7f8609f">set_description</a>(<span class="stringliteral">&quot;This may some day be a useful program, which solves &quot;</span></div>
+<div class="line">                       <span class="stringliteral">&quot;many serious problems of the real world and achives &quot;</span></div>
+<div class="line">                       <span class="stringliteral">&quot;global peace.&quot;</span>);</div>
+<div class="line">    cp.<a class="code" href="classtlx_1_1CmdlineParser.html#a1f0e0ccea403fbb478df8e170e276133">set_author</a>(<span class="stringliteral">&quot;Timo Bingmann &lt;tb@panthema.net&gt;&quot;</span>);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// add an unsigned integer option --rounds &lt;N&gt;</span></div>
+<div class="line">    <span class="keywordtype">unsigned</span> rounds = 0;</div>
+<div class="line">    cp.<a class="code" href="classtlx_1_1CmdlineParser.html#a274dcbdd6593fc918ac16c959e9aca65">add_unsigned</a>(<span class="charliteral">&#39;r&#39;</span>, <span class="stringliteral">&quot;rounds&quot;</span>, <span class="stringliteral">&quot;N&quot;</span>, rounds,</div>
+<div class="line">                    <span class="stringliteral">&quot;Run N rounds of the experiment.&quot;</span>);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// add a byte size argument which the user can enter like &#39;1gi&#39;</span></div>
+<div class="line">    uint64_t a_size = 0;</div>
+<div class="line">    cp.<a class="code" href="classtlx_1_1CmdlineParser.html#a7908445a2e6f7e97321baf8dee53978d">add_bytes</a>(<span class="charliteral">&#39;s&#39;</span>, <span class="stringliteral">&quot;size&quot;</span>, a_size,</div>
+<div class="line">                 <span class="stringliteral">&quot;Number of bytes to process.&quot;</span>);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// add a required parameter</span></div>
+<div class="line">    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> a_filename;</div>
+<div class="line">    cp.<a class="code" href="classtlx_1_1CmdlineParser.html#ab4d8e677514c2722e5d814ec9c199229">add_param_string</a>(<span class="stringliteral">&quot;filename&quot;</span>, a_filename,</div>
+<div class="line">                        <span class="stringliteral">&quot;A filename to process&quot;</span>);</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// process command line</span></div>
+<div class="line">    <span class="keywordflow">if</span> (!cp.<a class="code" href="classtlx_1_1CmdlineParser.html#afedddf45a2632737e231a1252c60812f">process</a>(argc, argv))</div>
+<div class="line">        <span class="keywordflow">return</span> -1; <span class="comment">// some error occurred and help was always written to user.</span></div>
+<div class="line"></div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Command line parsed okay.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// output for debugging</span></div>
+<div class="line">    cp.<a class="code" href="classtlx_1_1CmdlineParser.html#a94bd05e82551d28e54f294c3392a294f">print_result</a>();</div>
+<div class="line"></div>
+<div class="line">    <span class="comment">// do something useful</span></div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> When running the program above without arguments, it will print: </p>
 <pre class="fragment">$ ./tlx_cmdline_parser_example
 Missing required argument for parameter 'filename'
 
@@ -1306,7 +1348,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="cmdline__parser_8cpp_source.html#l00398">CmdlineParser::calc_param_max()</a>, and <a class="el" href="cmdline__parser_8hpp_source.html#l00100">CmdlineParser::param_list_</a>.</p>
 
-<p>Referenced by <a class="el" href="rl__bwt_8cpp_source.html#l00082">main()</a>.</p>
+<p>Referenced by <a class="el" href="rl__bwt_8cpp_source.html#l00085">main()</a>.</p>
 
 </div>
 </div>
@@ -3063,7 +3105,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacetlx.html">tlx</a></li><li class="navelem"><a class="el" href="classtlx_1_1CmdlineParser.html">CmdlineParser</a></li>
-    <li class="footer">Generated on Fri Oct 27 2017 09:23:37 for Thrill by
+    <li class="footer">Generated on Thu Nov 23 2017 21:32:35 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

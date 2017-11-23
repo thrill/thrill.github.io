@@ -1,6 +1,8 @@
 var malloc__tracker_8hpp =
 [
     [ "THRILL_MEM_MALLOC_TRACKER_HEADER", "malloc__tracker_8hpp.html#a596541ff0e55ccbbf7d46a11840b5508", null ],
+    [ "bypass_aligned_alloc", "malloc__tracker_8hpp.html#a8b143f6968b9afb1361073cebc3fc492", null ],
+    [ "bypass_aligned_free", "malloc__tracker_8hpp.html#a7d2d9dbe72ada9d899e0474dfa46d733", null ],
     [ "bypass_free", "malloc__tracker_8hpp.html#ad733173609d4c53a3d85cb45a16dcb7f", null ],
     [ "bypass_malloc", "malloc__tracker_8hpp.html#afa5be7588bab7e38c46c3aa1aaa8cfa3", null ],
     [ "flush_memory_statistics", "malloc__tracker_8hpp.html#a63ade589ab6ef94c6870ca2cde7cca7e", null ],

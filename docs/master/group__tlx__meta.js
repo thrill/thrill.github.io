@@ -37,25 +37,25 @@ var group__tlx__meta =
     [ "is_std_vector", "structtlx_1_1is__std__vector.html", null ],
     [ "is_std_vector< std::vector< T > >", "structtlx_1_1is__std__vector_3_01std_1_1vector_3_01T_01_4_01_4.html", null ],
     [ "Log2", "classtlx_1_1Log2.html", [
-      [ "floor", "classtlx_1_1Log2.html#a39fca1837c5ce7715cbf571669660c13aa2cd0f2689920d3196cebb39ef6f9afb", null ],
-      [ "ceil", "classtlx_1_1Log2.html#a39fca1837c5ce7715cbf571669660c13a767a00e87322d8125073a77598ee1f97", null ]
+      [ "floor", "classtlx_1_1Log2.html#a94798fdadfbf49a7c658ace669a1d310aa2cd0f2689920d3196cebb39ef6f9afb", null ],
+      [ "ceil", "classtlx_1_1Log2.html#a94798fdadfbf49a7c658ace669a1d310a767a00e87322d8125073a77598ee1f97", null ]
     ] ],
     [ "Log2< 0 >", "classtlx_1_1Log2_3_010_01_4.html", [
-      [ "floor", "classtlx_1_1Log2_3_010_01_4.html#a94798fdadfbf49a7c658ace669a1d310aa2cd0f2689920d3196cebb39ef6f9afb", null ],
-      [ "ceil", "classtlx_1_1Log2_3_010_01_4.html#a94798fdadfbf49a7c658ace669a1d310a767a00e87322d8125073a77598ee1f97", null ]
+      [ "floor", "classtlx_1_1Log2_3_010_01_4.html#a7ff5f2dff38e7639981794c43dc9167baa2cd0f2689920d3196cebb39ef6f9afb", null ],
+      [ "ceil", "classtlx_1_1Log2_3_010_01_4.html#a7ff5f2dff38e7639981794c43dc9167ba767a00e87322d8125073a77598ee1f97", null ]
     ] ],
     [ "Log2< 1 >", "classtlx_1_1Log2_3_011_01_4.html", [
-      [ "floor", "classtlx_1_1Log2_3_011_01_4.html#aaf8fd5f0e57d456151c951e0f3715fc4aa2cd0f2689920d3196cebb39ef6f9afb", null ],
-      [ "ceil", "classtlx_1_1Log2_3_011_01_4.html#aaf8fd5f0e57d456151c951e0f3715fc4a767a00e87322d8125073a77598ee1f97", null ]
+      [ "floor", "classtlx_1_1Log2_3_011_01_4.html#ae4d5251432e1a9e6803c0240cc492e18aa2cd0f2689920d3196cebb39ef6f9afb", null ],
+      [ "ceil", "classtlx_1_1Log2_3_011_01_4.html#ae4d5251432e1a9e6803c0240cc492e18a767a00e87322d8125073a77598ee1f97", null ]
     ] ],
     [ "Log2Floor", "classtlx_1_1Log2Floor.html", [
-      [ "value", "classtlx_1_1Log2Floor.html#af9bdc3014f3d54c426b6d2df10de4960a97de9ab6885342a574053b8f64a563a9", null ]
+      [ "value", "classtlx_1_1Log2Floor.html#aae05225933a42f81e7c4a9fb286596f9a97de9ab6885342a574053b8f64a563a9", null ]
     ] ],
     [ "Log2Floor< 0 >", "classtlx_1_1Log2Floor_3_010_01_4.html", [
-      [ "value", "classtlx_1_1Log2Floor_3_010_01_4.html#aae05225933a42f81e7c4a9fb286596f9a97de9ab6885342a574053b8f64a563a9", null ]
+      [ "value", "classtlx_1_1Log2Floor_3_010_01_4.html#aaf8fd5f0e57d456151c951e0f3715fc4a97de9ab6885342a574053b8f64a563a9", null ]
     ] ],
     [ "Log2Floor< 1 >", "classtlx_1_1Log2Floor_3_011_01_4.html", [
-      [ "value", "classtlx_1_1Log2Floor_3_011_01_4.html#adb49720dc49f7d4e4cf9adbf2948e409a97de9ab6885342a574053b8f64a563a9", null ]
+      [ "value", "classtlx_1_1Log2Floor_3_011_01_4.html#a39fca1837c5ce7715cbf571669660c13a97de9ab6885342a574053b8f64a563a9", null ]
     ] ],
     [ "make_index_sequence", "structtlx_1_1make__index__sequence.html", null ],
     [ "StaticIndex", "structtlx_1_1StaticIndex.html", [

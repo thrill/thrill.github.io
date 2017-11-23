@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('malloc__tracker_8cpp.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="malloc__tracker_8cpp__incl.svg" width="4132" height="608"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="malloc__tracker_8cpp__incl.svg" width="4576" height="608"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -181,6 +181,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:adc10e902b308011a8fa9c115646f1acc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1mem.html#adc10e902b308011a8fa9c115646f1acc">aligned_alloc_type</a> = void *(*)(size_t, size_t)</td></tr>
+<tr class="separator:adc10e902b308011a8fa9c115646f1acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a491098e87935dc46c09983657f9d90dd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1mem.html#a491098e87935dc46c09983657f9d90dd">CounterType</a> = ssize_t</td></tr>
 <tr class="separator:a491098e87935dc46c09983657f9d90dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a8190adaf4d6934ca319a7d3f763a80"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1mem.html#a3a8190adaf4d6934ca319a7d3f763a80">free_type</a> = void(*)(void *)</td></tr>
@@ -193,6 +195,12 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a8b143f6968b9afb1361073cebc3fc492"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1mem.html#a8b143f6968b9afb1361073cebc3fc492">bypass_aligned_alloc</a> (size_t alignment, size_t size) noexcept</td></tr>
+<tr class="memdesc:a8b143f6968b9afb1361073cebc3fc492"><td class="mdescLeft">&#160;</td><td class="mdescRight">bypass malloc tracker and access <a class="el" href="namespacethrill_1_1mem.html#ad8d234778b7fc3140c59d033553f3d81">aligned_alloc()</a> directly  <a href="#a8b143f6968b9afb1361073cebc3fc492">More...</a><br/></td></tr>
+<tr class="separator:a8b143f6968b9afb1361073cebc3fc492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2d9dbe72ada9d899e0474dfa46d733"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1mem.html#a7d2d9dbe72ada9d899e0474dfa46d733">bypass_aligned_free</a> (void *ptr, size_t size) noexcept</td></tr>
+<tr class="memdesc:a7d2d9dbe72ada9d899e0474dfa46d733"><td class="mdescLeft">&#160;</td><td class="mdescRight">bypass malloc tracker and access <a class="el" href="namespacethrill_1_1mem.html#ad8d234778b7fc3140c59d033553f3d81">aligned_alloc()</a> directly  <a href="#a7d2d9dbe72ada9d899e0474dfa46d733">More...</a><br/></td></tr>
+<tr class="separator:a7d2d9dbe72ada9d899e0474dfa46d733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad733173609d4c53a3d85cb45a16dcb7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1mem.html#ad733173609d4c53a3d85cb45a16dcb7f">bypass_free</a> (void *ptr, size_t size) noexcept</td></tr>
 <tr class="memdesc:ad733173609d4c53a3d85cb45a16dcb7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">bypass malloc tracker and access <a class="el" href="malloc__tracker_8cpp.html#aa436704814afb6abd70b0ec1332852b7" title="exported free symbol that overrides loading from libc ">free()</a> directly  <a href="#ad733173609d4c53a3d85cb45a16dcb7f">More...</a><br/></td></tr>
 <tr class="separator:ad733173609d4c53a3d85cb45a16dcb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,6 +306,8 @@ Variables</h2></td></tr>
 <tr class="separator:a831aebf83f716aa3c203011c4e54c793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2377a6b82477a7e16291b0ed03d77c10"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacethrill_1_1mem.html#a491098e87935dc46c09983657f9d90dd">CounterType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1mem.html#a2377a6b82477a7e16291b0ed03d77c10">peak_bytes</a> { 0 }</td></tr>
 <tr class="separator:a2377a6b82477a7e16291b0ed03d77c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9c5578c3a77e67dcf4bd82e7e5868e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacethrill_1_1mem.html#adc10e902b308011a8fa9c115646f1acc">aligned_alloc_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1mem.html#a1b9c5578c3a77e67dcf4bd82e7e5868e">real_aligned_alloc</a> = nullptr</td></tr>
+<tr class="separator:a1b9c5578c3a77e67dcf4bd82e7e5868e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8766254c71c5a69aee1a959119f70144"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacethrill_1_1mem.html#a3a8190adaf4d6934ca319a7d3f763a80">free_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1mem.html#a8766254c71c5a69aee1a959119f70144">real_free</a> = nullptr</td></tr>
 <tr class="separator:a8766254c71c5a69aee1a959119f70144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77c7ac8dc42f36d2c7667399b42ddc83"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacethrill_1_1mem.html#ac9fc199ea6e601f343b23f8fb727b826">malloc_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1mem.html#a77c7ac8dc42f36d2c7667399b42ddc83">real_malloc</a> = nullptr</td></tr>
@@ -369,7 +379,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00106">106</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00108">108</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
 </div>
 </div>
@@ -383,7 +393,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00177">177</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00179">179</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
 </div>
 </div>
@@ -399,9 +409,9 @@ Variables</h2></td></tr>
 
 <p>a simple memory heap for allocations prior to dlsym loading </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00136">136</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00138">138</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00541">preinit_malloc()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00643">preinit_malloc()</a>.</p>
 
 </div>
 </div>
@@ -445,9 +455,9 @@ Variables</h2></td></tr>
 
 <p>output </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00145">145</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00147">147</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00492">thrill::mem::bypass_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00451">thrill::mem::bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00908">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00700">thrill::mem::malloc_tracker_print_leaks()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00278">thrill::mem::malloc_tracker_print_status()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00605">preinit_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00541">preinit_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00573">preinit_realloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00982">realloc()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00535">thrill::mem::bypass_aligned_alloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00589">thrill::mem::bypass_aligned_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00494">thrill::mem::bypass_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00454">thrill::mem::bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l01035">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l01010">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00802">thrill::mem::malloc_tracker_print_leaks()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00280">thrill::mem::malloc_tracker_print_status()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00707">preinit_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00643">preinit_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00675">preinit_realloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l01084">realloc()</a>.</p>
 
 </div>
 </div>
@@ -461,7 +471,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00092">92</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00094">94</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
 </div>
 </div>
@@ -491,9 +501,9 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>exported <a class="el" href="malloc__tracker_8cpp.html#a1a1bfffd91c7f4cd8ed5d7186207582e">calloc()</a> symbol that overrides loading from libc, implemented using our malloc </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00971">971</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l01073">1073</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00908">malloc()</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l01010">malloc()</a>.</p>
 
 </div>
 </div>
@@ -514,11 +524,11 @@ Variables</h2></td></tr>
 <p>exported free symbol that overrides loading from libc </p>
 <p>free(nullptr) is no operation </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00933">933</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l01035">1035</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00160">thrill::mem::base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00239">thrill::mem::dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00157">thrill::mem::float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00137">thrill::mem::init_heap</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00138">thrill::mem::init_heap_use</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00062">thrill::mem::log_operations</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00063">thrill::mem::log_operations_threshold</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00078">thrill::mem::padding</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00145">PPREFIX</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00605">preinit_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00086">thrill::mem::real_free</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00090">thrill::mem::sentinel</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00162">thrill::mem::base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00241">thrill::mem::dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00159">thrill::mem::float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00139">thrill::mem::init_heap</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00140">thrill::mem::init_heap_use</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00062">thrill::mem::log_operations</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00063">thrill::mem::log_operations_threshold</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00078">thrill::mem::padding</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00147">PPREFIX</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00707">preinit_free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00087">thrill::mem::real_free</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00092">thrill::mem::sentinel</a>.</p>
 
-<p>Referenced by <a class="el" href="aligned__allocator_8hpp_source.html#l00133">AlignedAllocator&lt; Type, BaseAllocator, Alignment &gt;::allocate_bytes()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00492">thrill::mem::bypass_free()</a>, <a class="el" href="stack__allocator_8hpp_source.html#l00072">StackArena&lt; Size &gt;::deallocate()</a>, <a class="el" href="pool_8cpp_source.html#l00272">Pool::deallocate()</a>, <a class="el" href="buffer__builder_8hpp_source.html#l00132">BufferBuilder::Deallocate()</a>, <a class="el" href="memory__file_8cpp_source.html#l00067">MemoryFile::discard()</a>, <a class="el" href="buffer_8hpp_source.html#l00097">Buffer::operator=()</a>, <a class="el" href="buffer__builder_8hpp_source.html#l00111">BufferBuilder::operator=()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00573">preinit_realloc()</a>, <a class="el" href="pool_8cpp_source.html#l00364">Pool::print()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00982">realloc()</a>, <a class="el" href="buffer_8hpp_source.html#l00114">Buffer::~Buffer()</a>, <a class="el" href="simple__glob_8hpp_source.html#l00684">CSimpleGlobTempl&lt; SOCHAR &gt;::~CSimpleGlobTempl()</a>, and <a class="el" href="memory__file_8cpp_source.html#l00046">MemoryFile::~MemoryFile()</a>.</p>
+<p>Referenced by <a class="el" href="aligned__allocator_8hpp_source.html#l00133">AlignedAllocator&lt; Type, BaseAllocator, Alignment &gt;::allocate_bytes()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00494">thrill::mem::bypass_free()</a>, <a class="el" href="stack__allocator_8hpp_source.html#l00072">StackArena&lt; Size &gt;::deallocate()</a>, <a class="el" href="buffer__builder_8hpp_source.html#l00132">BufferBuilder::Deallocate()</a>, <a class="el" href="memory__file_8cpp_source.html#l00067">MemoryFile::discard()</a>, <a class="el" href="buffer_8hpp_source.html#l00097">Buffer::operator=()</a>, <a class="el" href="buffer__builder_8hpp_source.html#l00111">BufferBuilder::operator=()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00675">preinit_realloc()</a>, <a class="el" href="pool_8cpp_source.html#l00867">Pool::print()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l01084">realloc()</a>, <a class="el" href="buffer_8hpp_source.html#l00114">Buffer::~Buffer()</a>, <a class="el" href="simple__glob_8hpp_source.html#l00684">CSimpleGlobTempl&lt; SOCHAR &gt;::~CSimpleGlobTempl()</a>, and <a class="el" href="memory__file_8cpp_source.html#l00046">MemoryFile::~MemoryFile()</a>.</p>
 
 </div>
 </div>
@@ -540,11 +550,11 @@ Variables</h2></td></tr>
 <p>call real malloc procedure in libc</p>
 <p>prepend allocation size and check sentinel </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00908">908</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l01010">1010</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00160">thrill::mem::base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00157">thrill::mem::float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00215">thrill::mem::inc_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00062">thrill::mem::log_operations</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00063">thrill::mem::log_operations_threshold</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00078">thrill::mem::padding</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00145">PPREFIX</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00541">preinit_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00085">thrill::mem::real_malloc</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00090">thrill::mem::sentinel</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00162">thrill::mem::base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00159">thrill::mem::float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00217">thrill::mem::inc_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00062">thrill::mem::log_operations</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00063">thrill::mem::log_operations_threshold</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00078">thrill::mem::padding</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00147">PPREFIX</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00643">preinit_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00086">thrill::mem::real_malloc</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00092">thrill::mem::sentinel</a>.</p>
 
-<p>Referenced by <a class="el" href="stack__allocator_8hpp_source.html#l00056">StackArena&lt; Size &gt;::allocate()</a>, <a class="el" href="pool_8cpp_source.html#l00165">Pool::allocate()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00451">thrill::mem::bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00971">calloc()</a>, <a class="el" href="memory__file_8cpp_source.html#l00067">MemoryFile::discard()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00573">preinit_realloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00982">realloc()</a>, and <a class="el" href="buffer_8hpp_source.html#l00192">Buffer::Resize()</a>.</p>
+<p>Referenced by <a class="el" href="stack__allocator_8hpp_source.html#l00056">StackArena&lt; Size &gt;::allocate()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00454">thrill::mem::bypass_malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l01073">calloc()</a>, <a class="el" href="memory__file_8cpp_source.html#l00067">MemoryFile::discard()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00675">preinit_realloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l01084">realloc()</a>, and <a class="el" href="buffer_8hpp_source.html#l00192">Buffer::Resize()</a>.</p>
 
 </div>
 </div>
@@ -570,11 +580,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00605">605</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00707">707</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00239">thrill::mem::dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00139">thrill::mem::log_operations_init_heap</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00078">thrill::mem::padding</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00145">PPREFIX</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00090">thrill::mem::sentinel</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00241">thrill::mem::dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00141">thrill::mem::log_operations_init_heap</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00078">thrill::mem::padding</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00147">PPREFIX</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00092">thrill::mem::sentinel</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l01035">free()</a>.</p>
 
 </div>
 </div>
@@ -601,11 +611,11 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>prepend allocation size and check sentinel </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00541">541</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00643">643</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00215">thrill::mem::inc_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00142">thrill::mem::init_alignment</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00137">thrill::mem::init_heap</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00136">INIT_HEAP_SIZE</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00138">thrill::mem::init_heap_use</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00139">thrill::mem::log_operations_init_heap</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00078">thrill::mem::padding</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00145">PPREFIX</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00090">thrill::mem::sentinel</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00217">thrill::mem::inc_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00144">thrill::mem::init_alignment</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00139">thrill::mem::init_heap</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00138">INIT_HEAP_SIZE</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00140">thrill::mem::init_heap_use</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00141">thrill::mem::log_operations_init_heap</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00078">thrill::mem::padding</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00147">PPREFIX</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00092">thrill::mem::sentinel</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00908">malloc()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l01010">malloc()</a>.</p>
 
 </div>
 </div>
@@ -643,11 +653,11 @@ Variables</h2></td></tr>
 <p>keep old area</p>
 <p>allocate new area and copy data </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00573">573</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00675">675</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00139">thrill::mem::log_operations_init_heap</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00908">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00078">thrill::mem::padding</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00145">PPREFIX</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00090">thrill::mem::sentinel</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l01035">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00141">thrill::mem::log_operations_init_heap</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l01010">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00078">thrill::mem::padding</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00147">PPREFIX</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00092">thrill::mem::sentinel</a>.</p>
 
-<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00982">realloc()</a>.</p>
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l01084">realloc()</a>.</p>
 
 </div>
 </div>
@@ -679,9 +689,9 @@ Variables</h2></td></tr>
 <p>special case size == 0 -&gt; <a class="el" href="malloc__tracker_8cpp.html#aa436704814afb6abd70b0ec1332852b7" title="exported free symbol that overrides loading from libc ">free()</a></p>
 <p>special case ptr == 0 -&gt; <a class="el" href="malloc__tracker_8cpp.html#a465faf99e79df99ffbc1db0571879dfa" title="exported malloc symbol that overrides loading from libc ">malloc()</a> </p>
 
-<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l00982">982</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
+<p>Definition at line <a class="el" href="malloc__tracker_8cpp_source.html#l01084">1084</a> of file <a class="el" href="malloc__tracker_8cpp_source.html">malloc_tracker.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00160">thrill::mem::base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00239">thrill::mem::dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00157">thrill::mem::float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00215">thrill::mem::inc_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00137">thrill::mem::init_heap</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00138">thrill::mem::init_heap_use</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00062">thrill::mem::log_operations</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00063">thrill::mem::log_operations_threshold</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00908">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00078">thrill::mem::padding</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00145">PPREFIX</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00573">preinit_realloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00090">thrill::mem::sentinel</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00162">thrill::mem::base_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00241">thrill::mem::dec_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00159">thrill::mem::float_curr</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l01035">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00217">thrill::mem::inc_count()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00139">thrill::mem::init_heap</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00140">thrill::mem::init_heap_use</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00062">thrill::mem::log_operations</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00063">thrill::mem::log_operations_threshold</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l01010">malloc()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00078">thrill::mem::padding</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00147">PPREFIX</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00675">preinit_realloc()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00092">thrill::mem::sentinel</a>.</p>
 
 <p>Referenced by <a class="el" href="aligned__allocator_8hpp_source.html#l00133">AlignedAllocator&lt; Type, BaseAllocator, Alignment &gt;::allocate_bytes()</a>, <a class="el" href="simple__glob_8hpp_source.html#l00897">CSimpleGlobTempl&lt; SOCHAR &gt;::GrowArgvArray()</a>, <a class="el" href="simple__glob_8hpp_source.html#l00917">CSimpleGlobTempl&lt; SOCHAR &gt;::GrowStringBuffer()</a>, <a class="el" href="buffer__builder_8hpp_source.html#l00186">BufferBuilder::Reserve()</a>, <a class="el" href="buffer_8hpp_source.html#l00192">Buffer::Resize()</a>, and <a class="el" href="memory__file_8cpp_source.html#l00059">MemoryFile::set_size()</a>.</p>
 
@@ -693,7 +703,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_96505d4a0489fe0acf3ba18761348e23.html">mem</a></li><li class="navelem"><a class="el" href="malloc__tracker_8cpp.html">malloc_tracker.cpp</a></li>
-    <li class="footer">Generated on Fri Oct 27 2017 09:23:34 for Thrill by
+    <li class="footer">Generated on Thu Nov 23 2017 21:32:32 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

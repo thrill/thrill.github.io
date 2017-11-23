@@ -49,6 +49,7 @@ var searchData=
   ['mem_5fmanager',['mem_manager',['../classthrill_1_1api_1_1HostContext.html#a140117ebf6f0d19c52948868ce94cd9a',1,'thrill::api::HostContext::mem_manager()'],['../classthrill_1_1api_1_1Context.html#a140117ebf6f0d19c52948868ce94cd9a',1,'thrill::api::Context::mem_manager()'],['../classthrill_1_1api_1_1DIABase.html#a140117ebf6f0d19c52948868ce94cd9a',1,'thrill::api::DIABase::mem_manager()']]],
   ['memoryfile',['MemoryFile',['../classthrill_1_1io_1_1MemoryFile.html#a1fbc860102344bc9e36789c522ff9001',1,'thrill::io::MemoryFile']]],
   ['merge',['Merge',['../group__dia__dops.html#gae772b581a45cd14c0ef31b4ac2ea3b7f',1,'thrill::api::DIA::Merge()'],['../group__dia__dops.html#gad35c16791b8d75ea6b6d741b952d7579',1,'thrill::api::Merge()']]],
+  ['merged_5fmeans',['merged_means',['../classthrill_1_1common_1_1Aggregate.html#a636bd0c2a2e1a245907b39b2c34a043f',1,'thrill::common::Aggregate']]],
   ['merged_5fvariance',['merged_variance',['../classthrill_1_1common_1_1Aggregate.html#ae7e6bb078e70e186db383b171d3eada0',1,'thrill::common::Aggregate']]],
   ['mergedense',['mergeDense',['../classthrill_1_1core_1_1HyperLogLogRegisters.html#a49ace48d3ceba1ed52572ce48e6770c1',1,'thrill::core::HyperLogLogRegisters']]],
   ['mergefiles',['MergeFiles',['../classthrill_1_1api_1_1JoinNode.html#af4bb3a98ca523658c95643111e0fb983',1,'thrill::api::JoinNode']]],

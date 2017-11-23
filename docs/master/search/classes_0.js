@@ -27,7 +27,6 @@ var searchData=
   ['allreducenode',['AllReduceNode',['../classthrill_1_1api_1_1AllReduceNode.html',1,'thrill::api']]],
   ['arraytag',['ArrayTag',['../structthrill_1_1api_1_1ArrayTag.html',1,'thrill::api']]],
   ['arraytag',['ArrayTag',['../structthrill_1_1common_1_1JsonLine_1_1ArrayTag.html',1,'thrill::common::JsonLine']]],
-  ['asyncreadbuffer',['AsyncReadBuffer',['../classthrill_1_1net_1_1Dispatcher_1_1AsyncReadBuffer.html',1,'thrill::net::Dispatcher']]],
   ['asyncreadbuffer',['AsyncReadBuffer',['../classthrill_1_1net_1_1AsyncReadBuffer.html',1,'thrill::net']]],
   ['asyncreadbyteblock',['AsyncReadByteBlock',['../classthrill_1_1net_1_1AsyncReadByteBlock.html',1,'thrill::net']]],
   ['asyncreadmemory',['AsyncReadMemory',['../classthrill_1_1net_1_1AsyncReadMemory.html',1,'thrill::net']]],

@@ -4,6 +4,7 @@ var block__pool_8cpp =
     [ "WritingMap", "block__pool_8cpp.html#a84fa74f8acdf008fd2c6ec55860b7264", null ],
     [ "operator<<", "block__pool_8cpp.html#a25b243ac7925b05888f932575a477129", null ],
     [ "OurNewHandler", "block__pool_8cpp.html#a238f114b8424b5477f7b03dfb53335ea", null ],
+    [ "debug_alloc", "block__pool_8cpp.html#acf92cb0afffb638d6245198f86b72645", null ],
     [ "debug_blc", "block__pool_8cpp.html#a28ee9a7e885fc09811578317417cd1e0", null ],
     [ "debug_em", "block__pool_8cpp.html#ab5f0b735ce4df5e43595c1bc3bcef340", null ],
     [ "debug_mem", "block__pool_8cpp.html#a00418aecea25fd5ece3a6d77bcd2a310", null ],

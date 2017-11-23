@@ -445,6 +445,9 @@ var hierarchy =
     [ "FixedAllocator< void, manager_ >::rebind< U >", "structthrill_1_1mem_1_1FixedAllocator_3_01void_00_01manager___01_4_1_1rebind.html", null ],
     [ "FixedPoolAllocator< Type, pool_ >::rebind< U >", "structthrill_1_1mem_1_1FixedPoolAllocator_1_1rebind.html", null ],
     [ "GPoolDeleter< T >", "classthrill_1_1mem_1_1GPoolDeleter.html", null ],
+    [ "LogStreamTuplePrinter< Tuple, N >", "structthrill_1_1mem_1_1LogStreamTuplePrinter.html", null ],
+    [ "LogStreamTuplePrinter< Tuple, 0 >", "structthrill_1_1mem_1_1LogStreamTuplePrinter_3_01Tuple_00_010_01_4.html", null ],
+    [ "LogStreamTuplePrinter< Tuple, 1 >", "structthrill_1_1mem_1_1LogStreamTuplePrinter_3_01Tuple_00_011_01_4.html", null ],
     [ "Manager", "classthrill_1_1mem_1_1Manager.html", null ],
     [ "Pool", "classthrill_1_1mem_1_1Pool.html", null ],
     [ "PoolAllocator< Type >::rebind< U >", "structthrill_1_1mem_1_1PoolAllocator_1_1rebind.html", null ],
@@ -468,7 +471,6 @@ var hierarchy =
       [ "Dispatcher", "classthrill_1_1net_1_1mpi_1_1Dispatcher.html", null ],
       [ "SelectDispatcher", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html", null ]
     ] ],
-    [ "Dispatcher::AsyncReadBuffer", "classthrill_1_1net_1_1Dispatcher_1_1AsyncReadBuffer.html", null ],
     [ "Dispatcher::Timer", "structthrill_1_1net_1_1Dispatcher_1_1Timer.html", null ],
     [ "DispatcherThread", "classthrill_1_1net_1_1DispatcherThread.html", null ],
     [ "FlowControlChannel", "classthrill_1_1net_1_1FlowControlChannel.html", null ],

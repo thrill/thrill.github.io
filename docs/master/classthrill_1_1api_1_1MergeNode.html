@@ -355,9 +355,6 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:ab8a1d21b50d474aa464140a4dc42e03e"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1MergeNode.html#ab8a1d21b50d474aa464140a4dc42e03e">VecVecToStr</a> (const std::vector&lt; <a class="el" href="classthrill_1_1api_1_1MergeNode.html#a26f31d2221fd5964db63cd3d9e450594">ArrayNumInputsSizeT</a> &gt; &amp;data)</td></tr>
-<tr class="memdesc:ab8a1d21b50d474aa464140a4dc42e03e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging helper to print vectors of arrays of size_t.  <a href="#ab8a1d21b50d474aa464140a4dc42e03e">More...</a><br/></td></tr>
-<tr class="separator:ab8a1d21b50d474aa464140a4dc42e03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06a0d88316d639685a052b7eafc6b212"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1MergeNode.html#a06a0d88316d639685a052b7eafc6b212">VToStr</a> (const std::vector&lt; <a class="el" href="structthrill_1_1api_1_1MergeNode_1_1Pivot.html">Pivot</a> &gt; &amp;data)</td></tr>
 <tr class="memdesc:a06a0d88316d639685a052b7eafc6b212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging helper to print vectors of vectors of pivots.  <a href="#a06a0d88316d639685a052b7eafc6b212">More...</a><br/></td></tr>
 <tr class="separator:a06a0d88316d639685a052b7eafc6b212"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -484,7 +481,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00255">255</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00242">242</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
 </div>
 </div>
@@ -610,7 +607,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="merge_8hpp_source.html#l00157">157</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
-<p>References <a class="el" href="merge_8hpp_source.html#l00482">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>.</p>
+<p>References <a class="el" href="merge_8hpp_source.html#l00469">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -667,11 +664,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Calculates the global ranks of the given pivots. </p>
 <p>Additionally returns the local ranks so we can use them in the next step. </p>
 
-<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00394">394</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00381">381</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
-<p>References <a class="el" href="flow__control__channel_8hpp_source.html#l00485">FlowControlChannel::AllReduce()</a>, <a class="el" href="merge_8hpp_source.html#l00276">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::comm_timer_</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="merge_8hpp_source.html#l00265">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::file_op_timer_</a>, <a class="el" href="context_8hpp_source.html#l00439">Context::net</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
+<p>References <a class="el" href="flow__control__channel_8hpp_source.html#l00485">FlowControlChannel::AllReduce()</a>, <a class="el" href="merge_8hpp_source.html#l00263">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::comm_timer_</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="merge_8hpp_source.html#l00252">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::file_op_timer_</a>, <a class="el" href="context_8hpp_source.html#l00439">Context::net</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
-<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00482">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00469">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -698,9 +695,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Receives elements from other workers and re-balance them, so each worker has the same amount after merging. </p>
 
-<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00482">482</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00469">469</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
-<p>References <a class="el" href="abs__diff_8hpp_source.html#l00024">tlx::abs_diff()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00485">FlowControlChannel::AllReduce()</a>, <a class="el" href="merge_8hpp_source.html#l00269">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::balancing_timer_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00392">FlowControlChannel::Broadcast()</a>, <a class="el" href="merge_8hpp_source.html#l00276">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::comm_timer_</a>, <a class="el" href="merge_8hpp_source.html#l00192">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::comparator_</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="merge_8hpp_source.html#l00078">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::debug</a>, <a class="el" href="die_8hpp_source.html#l00042">die</a>, <a class="el" href="merge_8hpp_source.html#l00394">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::GetGlobalRanks()</a>, <a class="el" href="context_8cpp_source.html#l01036">Context::GetNewCatStream()</a>, <a class="el" href="merge_8hpp_source.html#l00283">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::iterations_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOG</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00170">LOG0</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00171">LOG1</a>, <a class="el" href="context_8hpp_source.html#l00245">Context::my_rank()</a>, <a class="el" href="context_8hpp_source.html#l00439">Context::net</a>, <a class="el" href="context_8hpp_source.html#l00253">Context::num_workers()</a>, <a class="el" href="merge_8hpp_source.html#l00272">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::pivot_selection_timer_</a>, <a class="el" href="merge_8hpp_source.html#l00279">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::scatter_timer_</a>, <a class="el" href="merge_8hpp_source.html#l00274">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::search_step_timer_</a>, <a class="el" href="merge_8hpp_source.html#l00446">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::SearchStep()</a>, <a class="el" href="merge_8hpp_source.html#l00342">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::SelectPivots()</a>, <a class="el" href="merge_8hpp_source.html#l00079">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::self_verify</a>, <a class="el" href="thrill_2common_2string_8hpp_source.html#l00179">thrill::common::VecToStr()</a>, <a class="el" href="merge_8hpp_source.html#l00222">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::VecVecToStr()</a>, and <a class="el" href="merge_8hpp_source.html#l00234">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::VToStr()</a>.</p>
+<p>References <a class="el" href="abs__diff_8hpp_source.html#l00024">tlx::abs_diff()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00485">FlowControlChannel::AllReduce()</a>, <a class="el" href="merge_8hpp_source.html#l00256">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::balancing_timer_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00392">FlowControlChannel::Broadcast()</a>, <a class="el" href="merge_8hpp_source.html#l00263">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::comm_timer_</a>, <a class="el" href="merge_8hpp_source.html#l00192">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::comparator_</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="merge_8hpp_source.html#l00078">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::debug</a>, <a class="el" href="die_8hpp_source.html#l00042">die</a>, <a class="el" href="merge_8hpp_source.html#l00381">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::GetGlobalRanks()</a>, <a class="el" href="context_8cpp_source.html#l01089">Context::GetNewCatStream()</a>, <a class="el" href="merge_8hpp_source.html#l00270">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::iterations_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00175">LOG0</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00176">LOG1</a>, <a class="el" href="context_8hpp_source.html#l00245">Context::my_rank()</a>, <a class="el" href="context_8hpp_source.html#l00439">Context::net</a>, <a class="el" href="context_8hpp_source.html#l00253">Context::num_workers()</a>, <a class="el" href="merge_8hpp_source.html#l00259">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::pivot_selection_timer_</a>, <a class="el" href="merge_8hpp_source.html#l00266">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::scatter_timer_</a>, <a class="el" href="merge_8hpp_source.html#l00261">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::search_step_timer_</a>, <a class="el" href="merge_8hpp_source.html#l00433">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::SearchStep()</a>, <a class="el" href="merge_8hpp_source.html#l00329">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::SelectPivots()</a>, <a class="el" href="merge_8hpp_source.html#l00079">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::self_verify</a>, and <a class="el" href="merge_8hpp_source.html#l00221">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::VToStr()</a>.</p>
 
 <p>Referenced by <a class="el" href="merge_8hpp_source.html#l00157">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Execute()</a>.</p>
 
@@ -776,7 +773,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="merge_8hpp_source.html#l00161">161</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
-<p>References <a class="el" href="merge_8hpp_source.html#l00192">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::comparator_</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="merge_8hpp_source.html#l00078">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::debug</a>, <a class="el" href="merge_8hpp_source.html#l00267">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::merge_timer_</a>, <a class="el" href="merge_8hpp_source.html#l00292">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::Print()</a>, <a class="el" href="dia__node_8hpp_source.html#l00147">DIANode&lt; ValueType &gt;::PushItem()</a>, <a class="el" href="merge_8hpp_source.html#l00281">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::result_size_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00179">sLOG</a>, <a class="el" href="merge_8hpp_source.html#l00327">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::stats_</a>, and <a class="el" href="merge_8hpp_source.html#l00207">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::streams_</a>.</p>
+<p>References <a class="el" href="merge_8hpp_source.html#l00192">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::comparator_</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="merge_8hpp_source.html#l00078">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::debug</a>, <a class="el" href="merge_8hpp_source.html#l00254">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::merge_timer_</a>, <a class="el" href="merge_8hpp_source.html#l00279">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::Print()</a>, <a class="el" href="dia__node_8hpp_source.html#l00147">DIANode&lt; ValueType &gt;::PushItem()</a>, <a class="el" href="merge_8hpp_source.html#l00268">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::result_size_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00184">sLOG</a>, <a class="el" href="merge_8hpp_source.html#l00314">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::stats_</a>, and <a class="el" href="merge_8hpp_source.html#l00207">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::streams_</a>.</p>
 
 </div>
 </div>
@@ -842,11 +839,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00446">446</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00433">433</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
 <p>References <a class="el" href="merge_8hpp_source.html#l00078">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::debug</a>, and <a class="el" href="die_8hpp_source.html#l00052">die_unless</a>.</p>
 
-<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00482">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00469">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -898,11 +895,11 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00342">342</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00329">329</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
-<p>References <a class="el" href="flow__control__channel_8hpp_source.html#l00485">FlowControlChannel::AllReduce()</a>, <a class="el" href="merge_8hpp_source.html#l00276">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::comm_timer_</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="merge_8hpp_source.html#l00265">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::file_op_timer_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOG</a>, <a class="el" href="context_8hpp_source.html#l00439">Context::net</a>, <a class="el" href="merge_8hpp_source.html#l00198">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::rng_</a>, and <a class="el" href="merge_8hpp_source.html#l00234">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::VToStr()</a>.</p>
+<p>References <a class="el" href="flow__control__channel_8hpp_source.html#l00485">FlowControlChannel::AllReduce()</a>, <a class="el" href="merge_8hpp_source.html#l00263">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::comm_timer_</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="merge_8hpp_source.html#l00252">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::file_op_timer_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="context_8hpp_source.html#l00439">Context::net</a>, <a class="el" href="merge_8hpp_source.html#l00198">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::rng_</a>, and <a class="el" href="merge_8hpp_source.html#l00221">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::VToStr()</a>.</p>
 
-<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00482">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00469">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -934,39 +931,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="merge_8hpp_source.html#l00153">153</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
-<p>References <a class="el" href="block__writer_8hpp_source.html#l00121">BlockWriter&lt; BlockSink &gt;::Close()</a>, <a class="el" href="dia__base_8hpp_source.html#l00213">DIABase::id()</a>, and <a class="el" href="merge_8hpp_source.html#l00204">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::writers_</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab8a1d21b50d474aa464140a4dc42e03e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static std::string VecVecToStr </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classthrill_1_1api_1_1MergeNode.html#a26f31d2221fd5964db63cd3d9e450594">ArrayNumInputsSizeT</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Logging helper to print vectors of arrays of size_t. </p>
-
-<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00222">222</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
-
-<p>References <a class="el" href="thrill_2common_2string_8hpp_source.html#l00179">thrill::common::VecToStr()</a>.</p>
-
-<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00482">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>.</p>
+<p>References <a class="el" href="block__writer_8hpp_source.html#l00120">BlockWriter&lt; BlockSink &gt;::Close()</a>, <a class="el" href="dia__base_8hpp_source.html#l00213">DIABase::id()</a>, and <a class="el" href="merge_8hpp_source.html#l00204">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::writers_</a>.</p>
 
 </div>
 </div>
@@ -994,9 +959,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Logging helper to print vectors of vectors of pivots. </p>
 
-<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00234">234</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00221">221</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00482">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>, and <a class="el" href="merge_8hpp_source.html#l00342">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::SelectPivots()</a>.</p>
+<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00469">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>, and <a class="el" href="merge_8hpp_source.html#l00329">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::SelectPivots()</a>.</p>
 
 </div>
 </div>
@@ -1023,7 +988,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="merge_8hpp_source.html#l00192">192</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00482">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>, and <a class="el" href="merge_8hpp_source.html#l00161">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00469">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>, and <a class="el" href="merge_8hpp_source.html#l00161">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -1047,7 +1012,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="merge_8hpp_source.html#l00078">78</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00482">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>, <a class="el" href="merge_8hpp_source.html#l00161">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::PushData()</a>, and <a class="el" href="merge_8hpp_source.html#l00446">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::SearchStep()</a>.</p>
+<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00469">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>, <a class="el" href="merge_8hpp_source.html#l00161">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::PushData()</a>, and <a class="el" href="merge_8hpp_source.html#l00433">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::SearchStep()</a>.</p>
 
 </div>
 </div>
@@ -1149,7 +1114,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="merge_8hpp_source.html#l00198">198</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00342">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::SelectPivots()</a>.</p>
+<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00329">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::SelectPivots()</a>.</p>
 
 </div>
 </div>
@@ -1173,7 +1138,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="merge_8hpp_source.html#l00079">79</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00482">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00469">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -1197,7 +1162,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Instance of merge statistics. </p>
 
-<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00327">327</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00314">314</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="merge_8hpp_source.html#l00161">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::PushData()</a>.</p>
 
@@ -1225,7 +1190,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="merge_8hpp_source.html#l00082">82</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00292">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::Print()</a>.</p>
+<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00279">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::Print()</a>.</p>
 
 </div>
 </div>
@@ -1290,7 +1255,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1api.html">api</a></li><li class="navelem"><a class="el" href="classthrill_1_1api_1_1MergeNode.html">MergeNode</a></li>
-    <li class="footer">Generated on Fri Oct 27 2017 09:23:35 for Thrill by
+    <li class="footer">Generated on Thu Nov 23 2017 21:32:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

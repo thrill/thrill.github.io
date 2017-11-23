@@ -9,6 +9,7 @@ var classthrill_1_1common_1_1Aggregate =
     [ "Count", "classthrill_1_1common_1_1Aggregate.html#a36bf15f1ed34c66314bad5943527bf48", null ],
     [ "Max", "classthrill_1_1common_1_1Aggregate.html#a9be9270be00b397bf2bd8bb5a7511cec", null ],
     [ "Mean", "classthrill_1_1common_1_1Aggregate.html#a1a0c4559bb1ee733040116588e356cd0", null ],
+    [ "merged_means", "classthrill_1_1common_1_1Aggregate.html#a636bd0c2a2e1a245907b39b2c34a043f", null ],
     [ "merged_variance", "classthrill_1_1common_1_1Aggregate.html#ae7e6bb078e70e186db383b171d3eada0", null ],
     [ "Min", "classthrill_1_1common_1_1Aggregate.html#a7e90680ae1322a24caf16c4b6af6990c", null ],
     [ "operator+", "classthrill_1_1common_1_1Aggregate.html#ab1e48aa0991d569ae9f119d843c5b074", null ],

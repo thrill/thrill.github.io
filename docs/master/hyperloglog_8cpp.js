@@ -1,6 +1,5 @@
 var hyperloglog_8cpp =
 [
-    [ "MAKE_INSTANTIATIONS", "hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d", null ],
     [ "alpha", "hyperloglog_8cpp.html#a192f4e22f0ddccfc3aa44cf683c7fdd1", null ],
     [ "alpha< 4 >", "hyperloglog_8cpp.html#ab19744fdf76214a4ddfe1386df08b369", null ],
     [ "alpha< 5 >", "hyperloglog_8cpp.html#a1fd95c7b3ac118ace982e2e166c6d25e", null ],

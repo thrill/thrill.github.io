@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classthrill_1_1common_1_1SpacingLogger.html#ae7e5cfa398be6efafb1cf9718fb52fb5":[3,0,3,1,45,2],
 "classthrill_1_1common_1_1SplayzTree.html":[3,0,3,1,46],
 "classthrill_1_1common_1_1SplayzTree.html#a0eea8a17e55a35a137fd9628d5dc98d8":[3,0,3,1,46,8],
 "classthrill_1_1common_1_1SplayzTree.html#a55de340ce0775f1dbb713d35aa3fa6f4":[3,0,3,1,46,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classthrill_1_1common_1_1maximum.html#a8c1349a8d88cd7171419a0cac117f87e":[3,0,3,1,27,0],
 "classthrill_1_1common_1_1minimum.html":[3,0,3,1,28],
 "classthrill_1_1common_1_1minimum.html#a8c1349a8d88cd7171419a0cac117f87e":[3,0,3,1,28,0],
-"classthrill_1_1core_1_1BitStreamReader.html":[3,0,3,2,1],
-"classthrill_1_1core_1_1BitStreamReader.html#a0af835662e679b285fa4951b917e666da3b7772627960c0c740304ccb3ac7ec1c":[3,0,3,2,1,2]
+"classthrill_1_1core_1_1BitStreamReader.html":[3,0,3,2,1]
 };

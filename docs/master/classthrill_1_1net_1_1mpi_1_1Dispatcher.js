@@ -4,6 +4,7 @@ var classthrill_1_1net_1_1mpi_1_1Dispatcher =
     [ "Watch", "structthrill_1_1net_1_1mpi_1_1Dispatcher_1_1Watch.html", "structthrill_1_1net_1_1mpi_1_1Dispatcher_1_1Watch" ],
     [ "Callback", "classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a0a32632611d98f14ad5e291fb0f69584", null ],
     [ "Dispatcher", "classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a52e0c03118c14e0cff05ea64718bb3f0", null ],
+    [ "~Dispatcher", "classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aebde02bf4fd9df0eb3505a5f69e66899", null ],
     [ "AddRead", "classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a655a24f4e821b9d08598fd3016223c03", null ],
     [ "AddWrite", "classthrill_1_1net_1_1mpi_1_1Dispatcher.html#ae5af2523e8dec0b54785b7c3984e7028", null ],
     [ "AsyncRead", "classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a58ac2aec611e94d932493d832f9ab328", null ],

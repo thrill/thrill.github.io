@@ -11,5 +11,6 @@ var integer__log2_8hpp =
     [ "integer_log2_floor", "integer__log2_8hpp.html#ga87a2457261b3eb2c6b0f8af2a058bf18", null ],
     [ "integer_log2_floor", "integer__log2_8hpp.html#ga4c3ab78b29d4ec0f8e9282cc0828e206", null ],
     [ "integer_log2_floor", "integer__log2_8hpp.html#gab51c66cfcb5cacb134fc03cc76729988", null ],
-    [ "integer_log2_floor", "integer__log2_8hpp.html#gaf78c1a129c9a05c883d267e2639a045b", null ]
+    [ "integer_log2_floor", "integer__log2_8hpp.html#gaf78c1a129c9a05c883d267e2639a045b", null ],
+    [ "integer_log2_floor_template", "integer__log2_8hpp.html#ga819e2d0d244166deaf699dbd962dfc4c", null ]
 ];

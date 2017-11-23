@@ -8,7 +8,6 @@ var classthrill_1_1data_1_1StreamSink =
     [ "StreamSink", "classthrill_1_1data_1_1StreamSink.html#aa4077f93f636528019396241527e7af9", null ],
     [ "AppendBlock", "classthrill_1_1data_1_1StreamSink.html#a92a299332034578140b68fdb2e514319", null ],
     [ "AppendBlock", "classthrill_1_1data_1_1StreamSink.html#adb3bc75738400119ead33dcbd0dd9c5a", null ],
-    [ "AppendPinnedBlock", "classthrill_1_1data_1_1StreamSink.html#afe0a3ee2980baf1aea3bfb18c360f84d", null ],
     [ "AppendPinnedBlock", "classthrill_1_1data_1_1StreamSink.html#aa6e13076adab81acb027d682dede8a8b", null ],
     [ "Close", "classthrill_1_1data_1_1StreamSink.html#a29dc6798f18d73abd4ba8e4910f6831f", null ],
     [ "closed", "classthrill_1_1data_1_1StreamSink.html#a24c88f59fb7d18a293dbc5e6cbebd744", null ],

@@ -254,7 +254,6 @@ var group__api__layer =
       [ "SearchStep", "classthrill_1_1api_1_1MergeNode.html#a4f0fab7ed852e58c14b4a4c208691b09", null ],
       [ "SelectPivots", "classthrill_1_1api_1_1MergeNode.html#a357c8fb0100513ab183d0448259e302a", null ],
       [ "StopPreOp", "classthrill_1_1api_1_1MergeNode.html#a5787adfa1c4f30078758e95711880149", null ],
-      [ "VecVecToStr", "classthrill_1_1api_1_1MergeNode.html#ab8a1d21b50d474aa464140a4dc42e03e", null ],
       [ "VToStr", "classthrill_1_1api_1_1MergeNode.html#a06a0d88316d639685a052b7eafc6b212", null ],
       [ "comparator_", "classthrill_1_1api_1_1MergeNode.html#a763dfe5e2905a6a208258f34a8c5c5a2", null ],
       [ "debug", "classthrill_1_1api_1_1MergeNode.html#a6b72e54baf646b08b4b87f987f583dcb", null ],

@@ -32,7 +32,6 @@ var searchData=
   ['fragment_5fcomparator_5fparams',['fragment_comparator_params',['../namespaceexamples_1_1suffix__sorting_1_1dc3__local.html#aab602a20e100fc78373e3371c99d8ba3',1,'examples::suffix_sorting::dc3_local::fragment_comparator_params()'],['../namespaceexamples_1_1suffix__sorting_1_1dc7__local.html#a267bffb25e4b39041126f35e3d470847',1,'examples::suffix_sorting::dc7_local::fragment_comparator_params()']]],
   ['free',['free',['../classthrill_1_1core_1_1ReduceBucketHashTable_1_1BucketBlockPool.html#a9aa2dd72612e1b987faa378c5920e01b',1,'thrill::core::ReduceBucketHashTable::BucketBlockPool']]],
   ['free_5f',['free_',['../classthrill_1_1mem_1_1Pool.html#aba52083c86490337cae303fbc132604d',1,'thrill::mem::Pool']]],
-  ['free_5farena_5f',['free_arena_',['../classthrill_1_1mem_1_1Pool.html#aaa1af30c8f5284b3d7b900122c739f61',1,'thrill::mem::Pool']]],
   ['free_5fbytes_5f',['free_bytes_',['../classthrill_1_1io_1_1DiskAllocator.html#adcc17f8d19d04327cada55b95c75c60a',1,'thrill::io::DiskAllocator']]],
   ['full_5frange_5f',['full_range_',['../classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a25cd064dcbd208434b195de52432f20b',1,'thrill::core::ReduceByIndexPostPhase']]]
 ];

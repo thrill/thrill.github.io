@@ -1,5 +1,11 @@
 var searchData=
 [
+  ['_7easyncreadbuffer',['~AsyncReadBuffer',['../classthrill_1_1net_1_1AsyncReadBuffer.html#a71060442a1fd1ddc6e719c99bdd48885',1,'thrill::net::AsyncReadBuffer']]],
+  ['_7easyncreadbyteblock',['~AsyncReadByteBlock',['../classthrill_1_1net_1_1AsyncReadByteBlock.html#adc772057f0a6c44262e36e18251cf97a',1,'thrill::net::AsyncReadByteBlock']]],
+  ['_7easyncreadmemory',['~AsyncReadMemory',['../classthrill_1_1net_1_1AsyncReadMemory.html#a5c6a194df4556f8eb210a6e50bc3597e',1,'thrill::net::AsyncReadMemory']]],
+  ['_7easyncwriteblock',['~AsyncWriteBlock',['../classthrill_1_1net_1_1AsyncWriteBlock.html#adeed88636a2a5565db2bd549635e16df',1,'thrill::net::AsyncWriteBlock']]],
+  ['_7easyncwritebuffer',['~AsyncWriteBuffer',['../classthrill_1_1net_1_1AsyncWriteBuffer.html#a1edd7ca6c18963c88ae3a5ae805223a8',1,'thrill::net::AsyncWriteBuffer']]],
+  ['_7easyncwritememory',['~AsyncWriteMemory',['../classthrill_1_1net_1_1AsyncWriteMemory.html#a74a5242be38f8f63bf140ba67e6e2abd',1,'thrill::net::AsyncWriteMemory']]],
   ['_7ebitstreamwriter',['~BitStreamWriter',['../classthrill_1_1core_1_1BitStreamWriter.html#a8c6f8594852c46a174368a13ac1b512a',1,'thrill::core::BitStreamWriter']]],
   ['_7eblockmanager',['~BlockManager',['../classthrill_1_1io_1_1BlockManager.html#a96ca56575dbc894ae12b9cc82fdf6083',1,'thrill::io::BlockManager']]],
   ['_7eblockpool',['~BlockPool',['../classthrill_1_1data_1_1BlockPool.html#af8b68706dd43d1936add4d5b091b904c',1,'thrill::data::BlockPool']]],
@@ -22,7 +28,7 @@ var searchData=
   ['_7ediabase',['~DIABase',['../classthrill_1_1api_1_1DIABase.html#abb374ae1f932cd97102210d4ca57c8ba',1,'thrill::api::DIABase']]],
   ['_7ediskallocator',['~DiskAllocator',['../classthrill_1_1io_1_1DiskAllocator.html#a4248a725e1aaca295a5d371359acee9b',1,'thrill::io::DiskAllocator']]],
   ['_7ediskqueues',['~DiskQueues',['../classthrill_1_1io_1_1DiskQueues.html#a06fa41ac5c0e67cead75dfb93e9f672e',1,'thrill::io::DiskQueues']]],
-  ['_7edispatcher',['~Dispatcher',['../classthrill_1_1net_1_1Dispatcher.html#aedc4fe5f1377075b487f162672ff5772',1,'thrill::net::Dispatcher']]],
+  ['_7edispatcher',['~Dispatcher',['../classthrill_1_1net_1_1Dispatcher.html#aedc4fe5f1377075b487f162672ff5772',1,'thrill::net::Dispatcher::~Dispatcher()'],['../classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aebde02bf4fd9df0eb3505a5f69e66899',1,'thrill::net::mpi::Dispatcher::~Dispatcher()']]],
   ['_7edispatcherthread',['~DispatcherThread',['../classthrill_1_1net_1_1DispatcherThread.html#a8531f0b1620c942201af92c6192b114c',1,'thrill::net::DispatcherThread']]],
   ['_7edynblocksourceinterface',['~DynBlockSourceInterface',['../classthrill_1_1data_1_1DynBlockSourceInterface.html#a767487e1aa0f294971b25f4708d59692',1,'thrill::data::DynBlockSourceInterface']]],
   ['_7efile',['~File',['../classthrill_1_1data_1_1File.html#a241d694b0e799c0579a023e76cd97f18',1,'thrill::data::File']]],

@@ -451,11 +451,11 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 <tr class="separator:gae02411d0f825324e4da3e2ed1456c09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga39b75bf62b9532370f1aaaceb76a725d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp &gt; </td></tr>
 <tr class="memitem:ga39b75bf62b9532370f1aaaceb76a725d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga39b75bf62b9532370f1aaaceb76a725d">SendReceiveReduce</a> (size_t peer, const <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op)</td></tr>
-<tr class="memdesc:ga39b75bf62b9532370f1aaaceb76a725d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends and Receives a serializable type from the given peer and returns the value after reduction.  <a href="group__net__layer.html#ga39b75bf62b9532370f1aaaceb76a725d">More...</a><br/></td></tr>
+<tr class="memdesc:ga39b75bf62b9532370f1aaaceb76a725d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method for <a class="el" href="group__net__layer.html#ga6331da9c2000bb2e7f1a21ca55c3af72" title="Reduce a value from all workers to all workers. ">AllReduce()</a>.  <a href="group__net__layer.html#ga39b75bf62b9532370f1aaaceb76a725d">More...</a><br/></td></tr>
 <tr class="separator:ga39b75bf62b9532370f1aaaceb76a725d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae884a2065a3eabdb30820ec77a7c13f4"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp &gt; </td></tr>
 <tr class="memitem:gae884a2065a3eabdb30820ec77a7c13f4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gae884a2065a3eabdb30820ec77a7c13f4">AllReduceEliminationProcess</a> (size_t host_id, size_t group_size, size_t remaining_hosts, size_t send_to, <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op)</td></tr>
-<tr class="memdesc:gae884a2065a3eabdb30820ec77a7c13f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">used for the recursive implementation of the elimination protocol  <a href="group__net__layer.html#gae884a2065a3eabdb30820ec77a7c13f4">More...</a><br/></td></tr>
+<tr class="memdesc:gae884a2065a3eabdb30820ec77a7c13f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method for <a class="el" href="group__net__layer.html#ga6331da9c2000bb2e7f1a21ca55c3af72" title="Reduce a value from all workers to all workers. ">AllReduce()</a>.  <a href="group__net__layer.html#gae884a2065a3eabdb30820ec77a7c13f4">More...</a><br/></td></tr>
 <tr class="separator:gae884a2065a3eabdb30820ec77a7c13f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -597,7 +597,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00376">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00378">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -629,7 +629,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00424">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00426">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -661,7 +661,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00472">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00474">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -693,7 +693,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00400">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00402">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -725,7 +725,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00448">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00450">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -757,7 +757,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00496">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00498">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -789,7 +789,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00372">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00374">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -821,7 +821,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00420">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00422">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -853,7 +853,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00468">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00470">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -885,7 +885,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00396">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00398">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -917,7 +917,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00444">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00446">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -949,7 +949,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00492">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00494">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -981,7 +981,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00368">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00370">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -1013,7 +1013,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00416">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00418">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -1045,7 +1045,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00464">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00466">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -1077,7 +1077,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00392">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00394">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -1109,7 +1109,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00440">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00442">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -1141,7 +1141,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00486">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00488">Group::AllReduce()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00490">Group::AllReduce()</a>.</p>
 
 </div>
 </div>
@@ -1183,7 +1183,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00231">Group::BroadcastSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00364">Group::Broadcast()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00366">Group::Broadcast()</a>.</p>
 
 </div>
 </div>
@@ -1225,7 +1225,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00231">Group::BroadcastSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00412">Group::Broadcast()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00414">Group::Broadcast()</a>.</p>
 
 </div>
 </div>
@@ -1267,7 +1267,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00231">Group::BroadcastSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00460">Group::Broadcast()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00462">Group::Broadcast()</a>.</p>
 
 </div>
 </div>
@@ -1309,7 +1309,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00231">Group::BroadcastSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00388">Group::Broadcast()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00390">Group::Broadcast()</a>.</p>
 
 </div>
 </div>
@@ -1351,7 +1351,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00231">Group::BroadcastSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00436">Group::Broadcast()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00438">Group::Broadcast()</a>.</p>
 
 </div>
 </div>
@@ -1393,7 +1393,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00231">Group::BroadcastSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00484">Group::Broadcast()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00486">Group::Broadcast()</a>.</p>
 
 </div>
 </div>
@@ -1422,7 +1422,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classthrill_1_1net_1_1mpi_1_1Group.html#a29dc6798f18d73abd4ba8e4910f6831f">Group</a>, <a class="el" href="classthrill_1_1net_1_1mock_1_1Group.html#a29dc6798f18d73abd4ba8e4910f6831f">Group</a>, and <a class="el" href="classthrill_1_1net_1_1tcp_1_1Group.html#a7f7a3199c392465d0767c6506c1af5b4">Group</a>.</p>
 
-<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00160">Multiplexer::~Multiplexer()</a>.</p>
+<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00159">Multiplexer::~Multiplexer()</a>.</p>
 
 </div>
 </div>
@@ -1511,7 +1511,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00360">Group::ExPrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00362">Group::ExPrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1543,7 +1543,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00408">Group::ExPrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00410">Group::ExPrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1575,7 +1575,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00456">Group::ExPrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00458">Group::ExPrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1607,7 +1607,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00384">Group::ExPrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00386">Group::ExPrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1639,7 +1639,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00432">Group::ExPrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00434">Group::ExPrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1671,7 +1671,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00480">Group::ExPrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00482">Group::ExPrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1700,7 +1700,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group_8hpp_source.html#l00069">69</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
-<p>References <a class="el" href="group_8hpp_source.html#l00216">Group::my_rank_</a>.</p>
+<p>References <a class="el" href="group_8hpp_source.html#l00218">Group::my_rank_</a>.</p>
 
 <p>Referenced by <a class="el" href="collective_8hpp_source.html#l00317">Group::AllReduceAtRoot()</a>, <a class="el" href="collective_8hpp_source.html#l00394">Group::AllReduceElimination()</a>, <a class="el" href="collective_8hpp_source.html#l00414">Group::AllReduceEliminationProcess()</a>, <a class="el" href="collective_8hpp_source.html#l00349">Group::AllReduceHypercube()</a>, <a class="el" href="collective_8hpp_source.html#l00197">Group::BroadcastBinomialTree()</a>, <a class="el" href="collective_8hpp_source.html#l00173">Group::BroadcastTrivial()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00124">Multiplexer::Multiplexer()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00093">Multiplexer::my_host_rank()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00195">FlowControlChannel::my_rank()</a>, <a class="el" href="group_8hpp_source.html#l00092">Group::OneFactorPeer()</a>, <a class="el" href="collective_8hpp_source.html#l00050">Group::PrefixSumDoubling()</a>, <a class="el" href="collective_8hpp_source.html#l00106">Group::PrefixSumHypercube()</a>, <a class="el" href="collective_8hpp_source.html#l00266">Group::Reduce()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00438">FlowControlChannel::Reduce()</a>, <a class="el" href="group_8cpp_source.html#l00080">Manager::RunTask()</a>, <a class="el" href="collective_8hpp_source.html#l00400">Group::SendReceiveReduce()</a>, and <a class="el" href="group_8cpp_source.html#l00063">Manager::Traffic()</a>.</p>
 
@@ -1873,7 +1873,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00356">Group::PrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00358">Group::PrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1905,7 +1905,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00404">Group::PrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00406">Group::PrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1937,7 +1937,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00452">Group::PrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00454">Group::PrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -1969,7 +1969,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00380">Group::PrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00382">Group::PrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -2001,7 +2001,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00428">Group::PrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00430">Group::PrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -2033,7 +2033,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>References <a class="el" href="collective_8hpp_source.html#l00147">Group::PrefixSumSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="group_8hpp_source.html#l00476">Group::PrefixSum()</a>.</p>
+<p>Referenced by <a class="el" href="group_8hpp_source.html#l00478">Group::PrefixSum()</a>.</p>
 
 </div>
 </div>
@@ -2156,7 +2156,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>our rank in the network group </p>
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00216">216</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00218">218</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="tcp_2group_8hpp_source.html#l00132">Group::Close()</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="mock_2group_8cpp_source.html#l00186">Group::Send()</a>, and <a class="el" href="tcp_2group_8hpp_source.html#l00085">Group::tcp_connection()</a>.</p>
 
@@ -2173,7 +2173,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net.html">net</a></li><li class="navelem"><a class="el" href="classthrill_1_1net_1_1Group.html">Group</a></li>
-    <li class="footer">Generated on Fri Oct 27 2017 09:23:36 for Thrill by
+    <li class="footer">Generated on Thu Nov 23 2017 21:32:35 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

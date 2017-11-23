@@ -7,6 +7,7 @@ var searchData=
   ['cached_5fwrite_5fops',['cached_write_ops',['../classthrill_1_1io_1_1Stats.html#a4081df6629e47f313b84b3d13c585ea3',1,'thrill::io::Stats::cached_write_ops()'],['../classthrill_1_1io_1_1StatsData.html#a4081df6629e47f313b84b3d13c585ea3',1,'thrill::io::StatsData::cached_write_ops()']]],
   ['cached_5fwrite_5fvolume',['cached_write_volume',['../classthrill_1_1io_1_1Stats.html#aa680d0078591c0774228228081ea3ae5',1,'thrill::io::Stats::cached_write_volume()'],['../classthrill_1_1io_1_1StatsData.html#aa680d0078591c0774228228081ea3ae5',1,'thrill::io::StatsData::cached_write_volume()']]],
   ['cachenode',['CacheNode',['../classthrill_1_1api_1_1CacheNode.html#add5ef6afac8ef48c2dd0217dfeb25779',1,'thrill::api::CacheNode']]],
+  ['calc_5fbin_5ffor_5fsize',['calc_bin_for_size',['../namespacethrill_1_1mem.html#ae2e5e0e10a2aa35ec26b71a91e80237c',1,'thrill::mem']]],
   ['calc_5fnext_5fgap',['calc_next_gap',['../classthrill_1_1common_1_1ReservoirSamplingFast.html#a36e9b114cd99244356721de926795597',1,'thrill::common::ReservoirSamplingFast::calc_next_gap()'],['../classthrill_1_1common_1_1ReservoirSamplingGrow.html#a36e9b114cd99244356721de926795597',1,'thrill::common::ReservoirSamplingGrow::calc_next_gap()']]],
   ['calc_5fnorm',['calc_norm',['../namespaceexamples_1_1logistic__regression.html#aae76d37994b3ff16b08a8ac4975c3e61',1,'examples::logistic_regression']]],
   ['calc_5foption_5fmax',['calc_option_max',['../classtlx_1_1CmdlineParser.html#afb7b09ebd95902c6491bfb85ad92eedc',1,'tlx::CmdlineParser']]],

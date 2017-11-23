@@ -1,5 +1,9 @@
 var searchData=
 [
+  ['object_5f128_5f',['object_128_',['../classthrill_1_1mem_1_1Pool.html#a3f87ac6364123b553224f81f211cc5d0',1,'thrill::mem::Pool']]],
+  ['object_5f256_5f',['object_256_',['../classthrill_1_1mem_1_1Pool.html#a50a9050c47b3e765d30bd67b0ac3f319',1,'thrill::mem::Pool']]],
+  ['object_5f32_5f',['object_32_',['../classthrill_1_1mem_1_1Pool.html#a7cfda5a95e1602033bee2f8414ac5287',1,'thrill::mem::Pool']]],
+  ['object_5f64_5f',['object_64_',['../classthrill_1_1mem_1_1Pool.html#aef4bd0825884a6343028b35fb374a192',1,'thrill::mem::Pool']]],
   ['object_5fptr_5f',['object_ptr_',['../classtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html#a6357a4ada4f766aa5268fb52ecf26515',1,'tlx::Delegate&lt; R(A...), Allocator &gt;']]],
   ['occurences_5f',['occurences_',['../classthrill_1_1common_1_1TimedCounter.html#a49f75f29575ddd4a0573b1586bc794e1',1,'thrill::common::TimedCounter']]],
   ['offset',['offset',['../classthrill_1_1io_1_1BID.html#ae25fb5067bd6b3b1b319efc61685a98f',1,'thrill::io::BID::offset()'],['../classthrill_1_1io_1_1BID_3_010_01_4.html#ae25fb5067bd6b3b1b319efc61685a98f',1,'thrill::io::BID&lt; 0 &gt;::offset()']]],

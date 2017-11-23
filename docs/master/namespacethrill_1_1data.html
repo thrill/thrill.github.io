@@ -354,6 +354,9 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:acf92cb0afffb638d6245198f86b72645"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1data.html#acf92cb0afffb638d6245198f86b72645">debug_alloc</a> = false</td></tr>
+<tr class="memdesc:acf92cb0afffb638d6245198f86b72645"><td class="mdescLeft">&#160;</td><td class="mdescRight">debug block memory alloc and dealloc  <a href="#acf92cb0afffb638d6245198f86b72645">More...</a><br/></td></tr>
+<tr class="separator:acf92cb0afffb638d6245198f86b72645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28ee9a7e885fc09811578317417cd1e0"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1data.html#a28ee9a7e885fc09811578317417cd1e0">debug_blc</a> = false</td></tr>
 <tr class="memdesc:a28ee9a7e885fc09811578317417cd1e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">debug block life cycle output: create, destroy  <a href="#a28ee9a7e885fc09811578317417cd1e0">More...</a><br/></td></tr>
 <tr class="separator:a28ee9a7e885fc09811578317417cd1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -375,7 +378,7 @@ Variables</h2></td></tr>
 <tr class="separator:a5282394cb9fba7922c928f0179356ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d4ed1085382b103761dabf1e8460777"><td class="memItemLeft" align="right" valign="top">static std::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1data.html#a5d4ed1085382b103761dabf1e8460777">s_new_mutex</a></td></tr>
 <tr class="separator:a5d4ed1085382b103761dabf1e8460777"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9355b062ce0e3489f840275c5b1502cf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga9355b062ce0e3489f840275c5b1502cf">start_block_size</a> = 2 * 1024 * 1024</td></tr>
+<tr class="memitem:ga9355b062ce0e3489f840275c5b1502cf"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga9355b062ce0e3489f840275c5b1502cf">start_block_size</a> = 4 * 1024</td></tr>
 <tr class="memdesc:ga9355b062ce0e3489f840275c5b1502cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">starting size of blocks in <a class="el" href="classthrill_1_1data_1_1BlockWriter.html" title="BlockWriter contains a temporary Block object into which a) any serializable item can be stored or b)...">BlockWriter</a>.  <a href="group__data__layer.html#ga9355b062ce0e3489f840275c5b1502cf">More...</a><br/></td></tr>
 <tr class="separator:ga9355b062ce0e3489f840275c5b1502cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9a2c120e8740bb9113ba1d410be51213"><td class="memItemLeft" align="right" valign="top">class <br class="typebreak"/>
@@ -395,7 +398,7 @@ Variables</h2></td></tr>
 
 <p>type of set of ByteBlocks currently begin read from EM. </p>
 
-<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00231">231</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00240">240</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
 
 </div>
 </div>
@@ -411,7 +414,7 @@ Variables</h2></td></tr>
 
 <p>type of set of ByteBlocks currently begin written to EM. </p>
 
-<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00224">224</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00233">233</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
 
 </div>
 </div>
@@ -502,7 +505,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="byte__block_8cpp_source.html#l00076">76</a> of file <a class="el" href="byte__block_8cpp_source.html">byte_block.cpp</a>.</p>
 
-<p>References <a class="el" href="byte__block_8hpp_source.html#l00116">ByteBlock::block_pool_</a>, <a class="el" href="byte__block_8hpp_source.html#l00131">ByteBlock::ext_file_</a>, <a class="el" href="byte__block_8hpp_source.html#l00113">ByteBlock::size_</a>, and <a class="el" href="byte__block_8hpp_source.html#l00123">ByteBlock::total_pins_</a>.</p>
+<p>References <a class="el" href="byte__block_8hpp_source.html#l00116">ByteBlock::block_pool_</a>, <a class="el" href="byte__block_8hpp_source.html#l00110">ByteBlock::data_</a>, <a class="el" href="byte__block_8hpp_source.html#l00131">ByteBlock::ext_file_</a>, <a class="el" href="byte__block_8hpp_source.html#l00113">ByteBlock::size_</a>, and <a class="el" href="byte__block_8hpp_source.html#l00123">ByteBlock::total_pins_</a>.</p>
 
 </div>
 </div>
@@ -560,7 +563,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00207">207</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00216">216</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
 
 <p>References <a class="el" href="join_8cpp_source.html#l00016">tlx::join()</a>.</p>
 
@@ -587,15 +590,41 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00059">59</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00063">63</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
 
-<p>References <a class="el" href="block__pool_8cpp_source.html#l00055">in_new_handler</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00171">LOG1</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00278">thrill::mem::malloc_tracker_print_status()</a>, <a class="el" href="block__pool_8cpp_source.html#l00053">s_blockpools</a>, and <a class="el" href="block__pool_8cpp_source.html#l00052">s_new_mutex</a>.</p>
+<p>References <a class="el" href="block__pool_8cpp_source.html#l00059">in_new_handler</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00176">LOG1</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00280">thrill::mem::malloc_tracker_print_status()</a>, <a class="el" href="block__pool_8cpp_source.html#l00057">s_blockpools</a>, and <a class="el" href="block__pool_8cpp_source.html#l00056">s_new_mutex</a>.</p>
 
-<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l00364">BlockPool::BlockPool()</a>.</p>
+<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l00376">BlockPool::BlockPool()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="acf92cb0afffb638d6245198f86b72645"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool debug_alloc = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>debug block memory alloc and dealloc </p>
+
+<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00042">42</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l00484">BlockPool::AllocateByteBlock()</a>, <a class="el" href="block__pool_8cpp_source.html#l00915">BlockPool::DestroyBlock()</a>, <a class="el" href="block__pool_8cpp_source.html#l00707">BlockPool::OnReadComplete()</a>, and <a class="el" href="block__pool_8cpp_source.html#l01257">BlockPool::OnWriteComplete()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a28ee9a7e885fc09811578317417cd1e0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -616,9 +645,9 @@ Variables</h2></td></tr>
 
 <p>debug block life cycle output: create, destroy </p>
 
-<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00038">38</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00039">39</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l00472">BlockPool::AllocateByteBlock()</a>, <a class="el" href="block__pool_8cpp_source.html#l00898">BlockPool::DestroyBlock()</a>, and <a class="el" href="block__pool_8cpp_source.html#l00514">BlockPool::MapExternalBlock()</a>.</p>
+<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l00484">BlockPool::AllocateByteBlock()</a>, <a class="el" href="block__pool_8cpp_source.html#l00915">BlockPool::DestroyBlock()</a>, and <a class="el" href="block__pool_8cpp_source.html#l00528">BlockPool::MapExternalBlock()</a>.</p>
 
 </div>
 </div>
@@ -642,9 +671,9 @@ Variables</h2></td></tr>
 
 <p>debug block eviction: evict, write complete, read complete </p>
 
-<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00047">47</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00051">51</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l00693">BlockPool::OnReadComplete()</a>, <a class="el" href="block__pool_8cpp_source.html#l01223">BlockPool::OnWriteComplete()</a>, <a class="el" href="block__pool_8cpp_source.html#l00534">BlockPool::PinBlock()</a>, and <a class="el" href="block__pool_8cpp_source.html#l00392">BlockPool::~BlockPool()</a>.</p>
+<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l00707">BlockPool::OnReadComplete()</a>, <a class="el" href="block__pool_8cpp_source.html#l01257">BlockPool::OnWriteComplete()</a>, <a class="el" href="block__pool_8cpp_source.html#l00548">BlockPool::PinBlock()</a>, and <a class="el" href="block__pool_8cpp_source.html#l00404">BlockPool::~BlockPool()</a>.</p>
 
 </div>
 </div>
@@ -668,9 +697,9 @@ Variables</h2></td></tr>
 
 <p>debug memory requests </p>
 
-<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00044">44</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00048">48</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l01107">BlockPool::AdviseFree()</a>.</p>
+<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l01130">BlockPool::AdviseFree()</a>.</p>
 
 </div>
 </div>
@@ -694,9 +723,9 @@ Variables</h2></td></tr>
 
 <p>debug block pinning: </p>
 
-<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00041">41</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00045">45</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l00777">BlockPool::DecBlockPinCount()</a>, <a class="el" href="block__pool_8cpp_source.html#l00762">BlockPool::IntIncBlockPinCount()</a>, <a class="el" href="block__pool_8cpp_source.html#l00534">BlockPool::PinBlock()</a>, and <a class="el" href="block__pool_8cpp_source.html#l00392">BlockPool::~BlockPool()</a>.</p>
+<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l00794">BlockPool::DecBlockPinCount()</a>, <a class="el" href="block__pool_8cpp_source.html#l00779">BlockPool::IntIncBlockPinCount()</a>, <a class="el" href="block__pool_8cpp_source.html#l00548">BlockPool::PinBlock()</a>, and <a class="el" href="block__pool_8cpp_source.html#l00404">BlockPool::~BlockPool()</a>.</p>
 
 </div>
 </div>
@@ -721,9 +750,9 @@ Variables</h2></td></tr>
 <div class="line">    <span class="keyword">false</span></div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00055">55</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00059">59</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l00059">OurNewHandler()</a>.</p>
+<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l00063">OurNewHandler()</a>.</p>
 
 </div>
 </div>
@@ -745,9 +774,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00053">53</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00057">57</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l00364">BlockPool::BlockPool()</a>, <a class="el" href="block__pool_8cpp_source.html#l00059">OurNewHandler()</a>, and <a class="el" href="block__pool_8cpp_source.html#l00392">BlockPool::~BlockPool()</a>.</p>
+<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l00376">BlockPool::BlockPool()</a>, <a class="el" href="block__pool_8cpp_source.html#l00063">OurNewHandler()</a>, and <a class="el" href="block__pool_8cpp_source.html#l00404">BlockPool::~BlockPool()</a>.</p>
 
 </div>
 </div>
@@ -769,9 +798,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00052">52</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00056">56</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l00364">BlockPool::BlockPool()</a>, <a class="el" href="block__pool_8cpp_source.html#l00059">OurNewHandler()</a>, and <a class="el" href="block__pool_8cpp_source.html#l00392">BlockPool::~BlockPool()</a>.</p>
+<p>Referenced by <a class="el" href="block__pool_8cpp_source.html#l00376">BlockPool::BlockPool()</a>, <a class="el" href="block__pool_8cpp_source.html#l00063">OurNewHandler()</a>, and <a class="el" href="block__pool_8cpp_source.html#l00404">BlockPool::~BlockPool()</a>.</p>
 
 </div>
 </div>
@@ -781,7 +810,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li>
-    <li class="footer">Generated on Fri Oct 27 2017 09:23:35 for Thrill by
+    <li class="footer">Generated on Thu Nov 23 2017 21:32:34 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

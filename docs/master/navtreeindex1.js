@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"classexamples_1_1k__means_1_1KMeansModel.html#a1ed0d7487b54586d5a24eb39afed2c78":[3,0,0,1,2,9],
 "classexamples_1_1k__means_1_1KMeansModel.html#a25852fda6086826370f2230b22549c0f":[3,0,0,1,2,7],
 "classexamples_1_1k__means_1_1KMeansModel.html#a3cd87c5f4c5de3e5de00f535842fe848":[3,0,0,1,2,13],
 "classexamples_1_1k__means_1_1KMeansModel.html#a593ca3f12178bbaac05a5aed038ed6bc":[3,0,0,1,2,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "classthrill_1_1api_1_1DIABase.html#a8ae5c30554877de438b321d0e39f32e3":[3,0,3,0,19,29],
 "classthrill_1_1api_1_1DIABase.html#a8af3438c25f3c578c122af83e21074ec":[3,0,3,0,19,43],
 "classthrill_1_1api_1_1DIABase.html#a8e4f34bd0ecbb1a4a5a585eb9e5ed87e":[3,0,3,0,19,27],
-"classthrill_1_1api_1_1DIABase.html#a90b708ca304934aa9be03f692014b158":[3,0,3,0,19,22],
-"classthrill_1_1api_1_1DIABase.html#a9475db85feebac30473a169894558f46":[3,0,3,0,19,7]
+"classthrill_1_1api_1_1DIABase.html#a90b708ca304934aa9be03f692014b158":[3,0,3,0,19,22]
 };

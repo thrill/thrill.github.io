@@ -1092,11 +1092,11 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00689">689</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00676">676</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
 <p>References <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
 
-<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00733">DIA&lt; ValueType_, Stack_ &gt;::Merge()</a>.</p>
+<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00720">DIA&lt; ValueType_, Stack_ &gt;::Merge()</a>.</p>
 
 </div>
 </div>
@@ -1135,9 +1135,9 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00733">733</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00720">720</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
-<p>References <a class="el" href="merge_8hpp_source.html#l00689">thrill::api::Merge()</a>.</p>
+<p>References <a class="el" href="merge_8hpp_source.html#l00676">thrill::api::Merge()</a>.</p>
 
 </div>
 </div>
@@ -1448,7 +1448,7 @@ Distributed Operations (DOps)</h2></td></tr>
 <p>In contrast to ReduceBy, the reduce_function is allowed to change the key (Example: Integers with modulo function as key_extractor). Creates overhead as both key and value have to be sent in shuffle step. Since ReduceByKey is a DOp, it creates a new <a class="el" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill. ">DIANode</a>. The <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> returned by Reduce links to this newly created <a class="el" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill. ">DIANode</a>. The stack_ of the returned <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> consists of the PostOp of Reduce, as a reduced element can directly be chained to the following LOps.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">volatile_key_tag</td><td>tag</td></tr>
+    <tr><td class="paramname">volatile_key_flag</td><td>tag</td></tr>
     <tr><td class="paramname">key_extractor</td><td>Key extractor function, which maps each element to a key of possibly different type.</td></tr>
   </table>
   </dd>
@@ -1528,7 +1528,7 @@ Distributed Operations (DOps)</h2></td></tr>
 <p>In contrast to ReduceBy, the reduce_function is allowed to change the key (Example: Integers with modulo function as key_extractor). Creates overhead as both key and value have to be sent in shuffle step. Since ReduceByKey is a DOp, it creates a new <a class="el" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill. ">DIANode</a>. The <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> returned by Reduce links to this newly created <a class="el" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill. ">DIANode</a>. The stack_ of the returned <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> consists of the PostOp of Reduce, as a reduced element can directly be chained to the following LOps.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">volatile_key_tag</td><td>tag</td></tr>
+    <tr><td class="paramname">duplicate_detection_flag</td><td>tag</td></tr>
     <tr><td class="paramname">key_extractor</td><td>Key extractor function, which maps each element to a key of possibly different type.</td></tr>
   </table>
   </dd>
@@ -3096,7 +3096,7 @@ Distributed Operations (DOps)</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 27 2017 09:23:34 for Thrill by
+    <li class="footer">Generated on Thu Nov 23 2017 21:32:32 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

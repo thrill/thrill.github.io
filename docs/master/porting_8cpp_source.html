@@ -226,7 +226,7 @@ $(document).ready(function(){initNavTree('porting_8cpp_source.html','');});
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="namespacethrill_1_1common.html#ab87e8304d4351372d5c8ffbe2228bbbf">  110</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#ab87e8304d4351372d5c8ffbe2228bbbf">SetCpuAffinity</a>(std::thread&amp; thread, <span class="keywordtype">size_t</span> cpu_id) {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#if __linux__</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#if __linux__ &amp;&amp; !THRILL_ON_TRAVIS</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor"></span>    cpu_set_t cpuset;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    CPU_ZERO(&amp;cpuset);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    CPU_SET(cpu_id % std::thread::hardware_concurrency(), &amp;cpuset);</div>
@@ -243,7 +243,7 @@ $(document).ready(function(){initNavTree('porting_8cpp_source.html','');});
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
 <div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="namespacethrill_1_1common.html#a8c4b31c5d3502e4fc4c456f1d86ff560">  127</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#ab87e8304d4351372d5c8ffbe2228bbbf">SetCpuAffinity</a>(<span class="keywordtype">size_t</span> cpu_id) {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#if __linux__</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#if __linux__ &amp;&amp; !THRILL_ON_TRAVIS</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor"></span>    cpu_set_t cpuset;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    CPU_ZERO(&amp;cpuset);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    CPU_SET(cpu_id % std::thread::hardware_concurrency(), &amp;cpuset);</div>
@@ -274,7 +274,7 @@ $(document).ready(function(){initNavTree('porting_8cpp_source.html','');});
 <div class="ttc" id="system__exception_8hpp_html"><div class="ttname"><a href="system__exception_8hpp.html">system_exception.hpp</a></div></div>
 <div class="ttc" id="namespacethrill_1_1common_html_a198a2f0adfbc4f1e904cc6154aec7793"><div class="ttname"><a href="namespacethrill_1_1common.html#a198a2f0adfbc4f1e904cc6154aec7793">thrill::common::LogCmdlineParams</a></div><div class="ttdeci">void LogCmdlineParams(JsonLogger &amp;logger)</div><div class="ttdef"><b>Definition:</b> <a href="porting_8cpp_source.html#l00067">porting.cpp:67</a></div></div>
 <div class="ttc" id="porting_8hpp_html"><div class="ttname"><a href="porting_8hpp.html">porting.hpp</a></div></div>
-<div class="ttc" id="thrill_2common_2logger_8hpp_html_a278e17dff6f1eff15d52f0bc57b65915"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a></div><div class="ttdeci">#define LOG1</div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2logger_8hpp_source.html#l00171">logger.hpp:171</a></div></div>
+<div class="ttc" id="thrill_2common_2logger_8hpp_html_a278e17dff6f1eff15d52f0bc57b65915"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a></div><div class="ttdeci">#define LOG1</div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2logger_8hpp_source.html#l00176">logger.hpp:176</a></div></div>
 <div class="ttc" id="defines_8hpp_html"><div class="ttname"><a href="defines_8hpp.html">defines.hpp</a></div></div>
 <div class="ttc" id="thrill_2common_2string_8hpp_html"><div class="ttname"><a href="thrill_2common_2string_8hpp.html">string.hpp</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1ErrnoException_html"><div class="ttname"><a href="classthrill_1_1common_1_1ErrnoException.html">thrill::common::ErrnoException</a></div><div class="ttdoc">An Exception which is thrown on system errors and contains errno information. </div><div class="ttdef"><b>Definition:</b> <a href="system__exception_8hpp_source.html#l00036">system_exception.hpp:36</a></div></div>
@@ -297,7 +297,7 @@ $(document).ready(function(){initNavTree('porting_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_19de9a7cb0ad0c6b03f8c7369b4f5139.html">common</a></li><li class="navelem"><a class="el" href="porting_8cpp.html">porting.cpp</a></li>
-    <li class="footer">Generated on Fri Oct 27 2017 09:23:31 for Thrill by
+    <li class="footer">Generated on Thu Nov 23 2017 21:32:30 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

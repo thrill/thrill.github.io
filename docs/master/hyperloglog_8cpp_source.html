@@ -2045,36 +2045,40 @@ $(document).ready(function(){initNavTree('hyperloglog_8cpp_source.html','');});
 <div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;    <span class="keywordflow">return</span> out;</div>
 <div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160;}</div>
 <div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;</div>
-<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;<span class="comment">// make serialization instantiations</span></div>
-<div class="line"><a name="l01931"></a><span class="lineno"><a class="line" href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d"> 1931</a></span>&#160;<span class="preprocessor">#define MAKE_INSTANTIATIONS(X)                                              \</span></div>
-<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;<span class="preprocessor">    template void Serialization&lt;                                            \</span></div>
-<div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;<span class="preprocessor">        net::BufferBuilder, core::HyperLogLogRegisters&lt;X&gt; &gt;                 \</span></div>
-<div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;<span class="preprocessor">    ::Serialize(const core::HyperLogLogRegisters&lt;X&gt;&amp;, net::BufferBuilder&amp;); \</span></div>
-<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;<span class="preprocessor">                                                                            \</span></div>
-<div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;<span class="preprocessor">    template core::HyperLogLogRegisters&lt;X&gt;                                  \</span></div>
-<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;<span class="preprocessor">    Serialization&lt;net::BufferReader, core::HyperLogLogRegisters&lt;X&gt; &gt;        \</span></div>
-<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;<span class="preprocessor">    ::Deserialize(net::BufferReader&amp;);</span></div>
-<div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;<a class="code" href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d">MAKE_INSTANTIATIONS</a>(4)</div>
-<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;<a class="code" href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d">MAKE_INSTANTIATIONS</a>(5)</div>
-<div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;<a class="code" href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d">MAKE_INSTANTIATIONS</a>(6)</div>
-<div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;<a class="code" href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d">MAKE_INSTANTIATIONS</a>(7)</div>
-<div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;<a class="code" href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d">MAKE_INSTANTIATIONS</a>(8)</div>
-<div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;<a class="code" href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d">MAKE_INSTANTIATIONS</a>(9)</div>
-<div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;<a class="code" href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d">MAKE_INSTANTIATIONS</a>(10)</div>
-<div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;<a class="code" href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d">MAKE_INSTANTIATIONS</a>(11)</div>
-<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;<a class="code" href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d">MAKE_INSTANTIATIONS</a>(12)</div>
-<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;<a class="code" href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d">MAKE_INSTANTIATIONS</a>(13)</div>
-<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;<a class="code" href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d">MAKE_INSTANTIATIONS</a>(14)</div>
-<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;<a class="code" href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d">MAKE_INSTANTIATIONS</a>(15)</div>
-<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;<a class="code" href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d">MAKE_INSTANTIATIONS</a>(16)</div>
-<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;<a class="code" href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d">MAKE_INSTANTIATIONS</a>(17)</div>
-<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;<a class="code" href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d">MAKE_INSTANTIATIONS</a>(18)</div>
-<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;</div>
-<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;} <span class="comment">// namespace data</span></div>
-<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;} <span class="comment">// namespace thrill</span></div>
-<div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;</div>
-<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;<span class="preprocessor">#ifndef THRILL_DOXYGEN_IGNORE</span></div>
+<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;<span class="comment">// make serialization instantiations</span></div>
+<div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;<span class="preprocessor">#define MAKE_INSTANTIATIONS(X)                                              \</span></div>
+<div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;<span class="preprocessor">    template void Serialization&lt;                                            \</span></div>
+<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;<span class="preprocessor">        net::BufferBuilder, core::HyperLogLogRegisters&lt;X&gt; &gt;                 \</span></div>
+<div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;<span class="preprocessor">    ::Serialize(const core::HyperLogLogRegisters&lt;X&gt;&amp;, net::BufferBuilder&amp;); \</span></div>
+<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;<span class="preprocessor">                                                                            \</span></div>
+<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;<span class="preprocessor">    template core::HyperLogLogRegisters&lt;X&gt;                                  \</span></div>
+<div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;<span class="preprocessor">    Serialization&lt;net::BufferReader, core::HyperLogLogRegisters&lt;X&gt; &gt;        \</span></div>
+<div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;<span class="preprocessor">    ::Deserialize(net::BufferReader&amp;);</span></div>
+<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;MAKE_INSTANTIATIONS(4)</div>
+<div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;MAKE_INSTANTIATIONS(5)</div>
+<div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;MAKE_INSTANTIATIONS(6)</div>
+<div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;MAKE_INSTANTIATIONS(7)</div>
+<div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;MAKE_INSTANTIATIONS(8)</div>
+<div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;MAKE_INSTANTIATIONS(9)</div>
+<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;MAKE_INSTANTIATIONS(10)</div>
+<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;MAKE_INSTANTIATIONS(11)</div>
+<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;MAKE_INSTANTIATIONS(12)</div>
+<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;MAKE_INSTANTIATIONS(13)</div>
+<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;MAKE_INSTANTIATIONS(14)</div>
+<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;MAKE_INSTANTIATIONS(15)</div>
+<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;MAKE_INSTANTIATIONS(16)</div>
+<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;MAKE_INSTANTIATIONS(17)</div>
+<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;MAKE_INSTANTIATIONS(18)</div>
+<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;</div>
+<div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;<span class="preprocessor">#endif  // THRILL_DOXYGEN_IGNORE</span></div>
+<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01960"></a><span class="lineno"> 1960</span>&#160;} <span class="comment">// namespace data</span></div>
+<div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160;} <span class="comment">// namespace thrill</span></div>
+<div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;</div>
+<div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_ade74a5e09947ef7364b113f46ace3e1d"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#ade74a5e09947ef7364b113f46ace3e1d">thrill::core::hyperloglog::decodeHash&lt; 25, 4 &gt;</a></div><div class="ttdeci">template std::pair&lt; size_t, uint8_t &gt; decodeHash&lt; 25, 4 &gt;(HyperLogLogSparseRegister)</div></div>
 <div class="ttc" id="namespacethrill_1_1core_html_a92c320671695dbd069c644defc991d38"><div class="ttname"><a href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38">thrill::core::HyperLogLogRegisterFormat</a></div><div class="ttdeci">HyperLogLogRegisterFormat</div><div class="ttdef"><b>Definition:</b> <a href="core_2hyperloglog_8hpp_source.html#l00031">hyperloglog.hpp:31</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a52a4224681e3f05e8758b300a6fd38d6"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a52a4224681e3f05e8758b300a6fd38d6">thrill::core::hyperloglog::decodeHash</a></div><div class="ttdeci">std::pair&lt; size_t, uint8_t &gt; decodeHash(HyperLogLogSparseRegister reg)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01482">hyperloglog.cpp:1482</a></div></div>
@@ -2119,7 +2123,6 @@ $(document).ready(function(){initNavTree('hyperloglog_8cpp_source.html','');});
 <div class="ttc" id="namespacethrill_1_1common_html_a968ccb04e8aa577c69add6e3a1924e01"><div class="ttname"><a href="namespacethrill_1_1common.html#a968ccb04e8aa577c69add6e3a1924e01">thrill::common::operator==</a></div><div class="ttdeci">static bool operator==(const std::string &amp;a, const StringView &amp;b) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="string__view_8hpp_source.html#l00138">string_view.hpp:138</a></div></div>
 <div class="ttc" id="namespacegen__data_html_a573e66358ede67c6f901dfaf4722f75a"><div class="ttname"><a href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">gen_data.x</a></div><div class="ttdeci">list x</div><div class="ttdef"><b>Definition:</b> <a href="gen__data_8py_source.html#l00039">gen_data.py:39</a></div></div>
 <div class="ttc" id="namespacegen__data_html_ac4f474c82e82cbb89ca7c36dd52be0ed"><div class="ttname"><a href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">gen_data.value</a></div><div class="ttdeci">int value</div><div class="ttdef"><b>Definition:</b> <a href="gen__data_8py_source.html#l00041">gen_data.py:41</a></div></div>
-<div class="ttc" id="hyperloglog_8cpp_html_a2f52bd7044b8067845181aff1feef69d"><div class="ttname"><a href="hyperloglog_8cpp.html#a2f52bd7044b8067845181aff1feef69d">MAKE_INSTANTIATIONS</a></div><div class="ttdeci">#define MAKE_INSTANTIATIONS(X)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01931">hyperloglog.cpp:1931</a></div></div>
 <div class="ttc" id="serialization_8hpp_html"><div class="ttname"><a href="serialization_8hpp.html">serialization.hpp</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a35a3af447d64c0561bfe1e243bee1fd2"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a35a3af447d64c0561bfe1e243bee1fd2">thrill::core::hyperloglog::knearestNeighbor</a></div><div class="ttdeci">static double knearestNeighbor(int k, int index, double estimate, const double *bias, const double *estimateData, size_t estimateDataLength)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l00061">hyperloglog.cpp:61</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_ac3cd5384fdcda3aeb54b98b3f203c400"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#ac3cd5384fdcda3aeb54b98b3f203c400">thrill::core::hyperloglog::threshold</a></div><div class="ttdeci">static double threshold()</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l00036">hyperloglog.cpp:36</a></div></div>
@@ -2157,7 +2160,7 @@ $(document).ready(function(){initNavTree('hyperloglog_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_bf197d76390958e69efa59db59e29814.html">core</a></li><li class="navelem"><a class="el" href="hyperloglog_8cpp.html">hyperloglog.cpp</a></li>
-    <li class="footer">Generated on Fri Oct 27 2017 09:23:31 for Thrill by
+    <li class="footer">Generated on Thu Nov 23 2017 21:32:30 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

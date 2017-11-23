@@ -3,6 +3,9 @@ var thrill_2common_2logger_8hpp =
     [ "Logger", "classthrill_1_1common_1_1Logger.html", "classthrill_1_1common_1_1Logger" ],
     [ "LoggerVoidify", "classthrill_1_1common_1_1LoggerVoidify.html", "classthrill_1_1common_1_1LoggerVoidify" ],
     [ "SpacingLogger", "classthrill_1_1common_1_1SpacingLogger.html", "classthrill_1_1common_1_1SpacingLogger" ],
+    [ "LogStreamTuplePrinter", "structthrill_1_1mem_1_1LogStreamTuplePrinter.html", "structthrill_1_1mem_1_1LogStreamTuplePrinter" ],
+    [ "LogStreamTuplePrinter< Tuple, 0 >", "structthrill_1_1mem_1_1LogStreamTuplePrinter_3_01Tuple_00_010_01_4.html", "structthrill_1_1mem_1_1LogStreamTuplePrinter_3_01Tuple_00_010_01_4" ],
+    [ "LogStreamTuplePrinter< Tuple, 1 >", "structthrill_1_1mem_1_1LogStreamTuplePrinter_3_01Tuple_00_011_01_4.html", "structthrill_1_1mem_1_1LogStreamTuplePrinter_3_01Tuple_00_011_01_4" ],
     [ "LOG", "thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19", null ],
     [ "LOG0", "thrill_2common_2logger_8hpp.html#aa92cc370e6906ac3887db96a0a628ce8", null ],
     [ "LOG1", "thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915", null ],
@@ -12,6 +15,11 @@ var thrill_2common_2logger_8hpp =
     [ "sLOG1", "thrill_2common_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb", null ],
     [ "sLOGC", "thrill_2common_2logger_8hpp.html#a1ebd9a4bec506b6bf89af113a8f03ca1", null ],
     [ "THRILL_COMMON_LOGGER_HEADER", "thrill_2common_2logger_8hpp.html#af52fcde0b45472c7e17af86a1e97d3f0", null ],
+    [ "log_stream", "thrill_2common_2logger_8hpp.html#ade9bb6ae3044d0aec2f92ff2230c19de", null ],
     [ "GetNameForThisThread", "thrill_2common_2logger_8hpp.html#afaa7ab47f4021e25c60d9eb2190cec37", null ],
-    [ "NameThisThread", "thrill_2common_2logger_8hpp.html#ab1d831921356502c8840f73c2e4aaf9c", null ]
+    [ "NameThisThread", "thrill_2common_2logger_8hpp.html#ab1d831921356502c8840f73c2e4aaf9c", null ],
+    [ "operator<<", "thrill_2common_2logger_8hpp.html#a1d9045ee730c6bfdce7bee1e4eae7188", null ],
+    [ "operator<<", "thrill_2common_2logger_8hpp.html#ace9fea49c0e3ace33911d5554f160359", null ],
+    [ "operator<<", "thrill_2common_2logger_8hpp.html#ae1a75b08383378a36dd88ec9cecd5b95", null ],
+    [ "operator<<", "thrill_2common_2logger_8hpp.html#a85e5653898ddf72de0233e16be26afe8", null ]
 ];

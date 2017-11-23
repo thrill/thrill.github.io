@@ -29,6 +29,7 @@ var group__tlx__math =
     [ "integer_log2_floor", "group__tlx__math.html#ga4c3ab78b29d4ec0f8e9282cc0828e206", null ],
     [ "integer_log2_floor", "group__tlx__math.html#gab51c66cfcb5cacb134fc03cc76729988", null ],
     [ "integer_log2_floor", "group__tlx__math.html#gaf78c1a129c9a05c883d267e2639a045b", null ],
+    [ "integer_log2_floor_template", "group__tlx__math.html#ga819e2d0d244166deaf699dbd962dfc4c", null ],
     [ "is_power_of_two", "group__tlx__math.html#gaea4dbc101569da260c218aad97698847", null ],
     [ "is_power_of_two", "group__tlx__math.html#ga8aeeed5b11812ed9fc4e12c093f887ee", null ],
     [ "is_power_of_two", "group__tlx__math.html#ga5cef6cc9dc38f1ba57d4759906369852", null ],

@@ -2,6 +2,7 @@ var searchData=
 [
   ['actionnodeptr',['ActionNodePtr',['../classthrill_1_1api_1_1Future_3_01void_01_4.html#a773172e12f1b66e2678cd17561034d0d',1,'thrill::api::Future&lt; void &gt;']]],
   ['actionresultnodeptr',['ActionResultNodePtr',['../classthrill_1_1api_1_1Future.html#ae4bfcb91eb15a150f51caf97d36f0872',1,'thrill::api::Future']]],
+  ['aligned_5falloc_5ftype',['aligned_alloc_type',['../namespacethrill_1_1mem.html#adc10e902b308011a8fa9c115646f1acc',1,'thrill::mem']]],
   ['alloc_5ftraits',['alloc_traits',['../classtlx_1_1RingBuffer.html#afa4e55910e087a8c2393c8e09eb78b4f',1,'tlx::RingBuffer']]],
   ['allocator_5ftype',['allocator_type',['../classtlx_1_1RingBuffer.html#a1b9340a5b56dce81fa182aee8c64e363',1,'tlx::RingBuffer']]],
   ['arg',['arg',['../structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4.html#aced84dbc7cea844c3328d7e26d73a67f',1,'thrill::common::FunctionTraits&lt; ReturnType(ClassType::*)(Args...) const  &gt;::arg()'],['../structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4.html#aced84dbc7cea844c3328d7e26d73a67f',1,'thrill::common::FunctionTraits&lt; ReturnType(*)(Args...)&gt;::arg()']]],

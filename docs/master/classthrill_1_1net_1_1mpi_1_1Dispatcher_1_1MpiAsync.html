@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('classthrill_1_1net_1_1mpi_1_1Dispatche
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the big answer to what happens when an MPI async request is signaled as complete: it unifies all possible async requests, including the reference counts they hold on the appropriate buffers, and dispatches the correct callbacks when done. </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00238">238</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00241">241</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for Dispatcher::MpiAsync:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -174,9 +174,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:accd869df33bf97e69e428574a24aa02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68e3cd2f8abdab6a754c2b901159f635"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#a68e3cd2f8abdab6a754c2b901159f635">~MpiAsync</a> ()</td></tr>
 <tr class="separator:a68e3cd2f8abdab6a754c2b901159f635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ccbdeb5350ba8528eab7e4cc49fc68b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#a5ccbdeb5350ba8528eab7e4cc49fc68b">operator()</a> ()</td></tr>
-<tr class="memdesc:a5ccbdeb5350ba8528eab7e4cc49fc68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatch done message to correct callback.  <a href="#a5ccbdeb5350ba8528eab7e4cc49fc68b">More...</a><br/></td></tr>
-<tr class="separator:a5ccbdeb5350ba8528eab7e4cc49fc68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d48ea2bd11e5163c3b9ef441a07906"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#aa8d48ea2bd11e5163c3b9ef441a07906">DoCallback</a> ()</td></tr>
+<tr class="memdesc:aa8d48ea2bd11e5163c3b9ef441a07906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatch done message to correct callback.  <a href="#aa8d48ea2bd11e5163c3b9ef441a07906">More...</a><br/></td></tr>
+<tr class="separator:aa8d48ea2bd11e5163c3b9ef441a07906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf4d31c9000d041f4594d6f165e100b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#aaf4d31c9000d041f4594d6f165e100b1">DoCallback</a> (size_t size_check)</td></tr>
+<tr class="memdesc:aaf4d31c9000d041f4594d6f165e100b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatch done message to correct callback.  <a href="#aaf4d31c9000d041f4594d6f165e100b1">More...</a><br/></td></tr>
+<tr class="separator:aaf4d31c9000d041f4594d6f165e100b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa79fefdda468e6e09e3ffd668271339a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#aa79fefdda468e6e09e3ffd668271339a">operator=</a> (<a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a> &amp;&amp;ma) noexcept</td></tr>
 <tr class="memdesc:aa79fefdda468e6e09e3ffd668271339a"><td class="mdescLeft">&#160;</td><td class="mdescRight">move-assignment  <a href="#aa79fefdda468e6e09e3ffd668271339a">More...</a><br/></td></tr>
 <tr class="separator:aa79fefdda468e6e09e3ffd668271339a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,8 +192,8 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a74ee54a70be885ee6104674536e6f7d3"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:a4d35956f8c0c854436694e684630ef45"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="classthrill_1_1net_1_1Dispatcher_1_1AsyncReadBuffer.html">AsyncReadBuffer</a>&#160;&#160;&#160;<a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#a4d35956f8c0c854436694e684630ef45">read_buffer_</a></td></tr>
+<tr class="memitem:a8891dd8023379847a51793053f061121"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a4d35956f8c0c854436694e684630ef45"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="classthrill_1_1net_1_1AsyncReadBuffer.html">AsyncReadBuffer</a>&#160;&#160;&#160;<a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#a4d35956f8c0c854436694e684630ef45">read_buffer_</a></td></tr>
 <tr class="separator:a4d35956f8c0c854436694e684630ef45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88e434b129d461f1358fbd2a488c9fa8"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="classthrill_1_1net_1_1AsyncReadByteBlock.html">AsyncReadByteBlock</a>&#160;&#160;&#160;<a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#a88e434b129d461f1358fbd2a488c9fa8">read_byte_block_</a></td></tr>
 <tr class="separator:a88e434b129d461f1358fbd2a488c9fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,8 +201,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1c4be7f6c519f90a07a2605237552cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7414b4e5b77a58673d7fe827ae1c448"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="classthrill_1_1net_1_1AsyncWriteBuffer.html">AsyncWriteBuffer</a>&#160;&#160;&#160;<a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#ac7414b4e5b77a58673d7fe827ae1c448">write_buffer_</a></td></tr>
 <tr class="separator:ac7414b4e5b77a58673d7fe827ae1c448"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74ee54a70be885ee6104674536e6f7d3"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a74ee54a70be885ee6104674536e6f7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8891dd8023379847a51793053f061121"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a8891dd8023379847a51793053f061121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae96b07c06ceff094f476fd92cbe89e10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#ae96b07c06ceff094f476fd92cbe89e10">type_</a></td></tr>
 <tr class="memdesc:ae96b07c06ceff094f476fd92cbe89e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of this async  <a href="#ae96b07c06ceff094f476fd92cbe89e10">More...</a><br/></td></tr>
 <tr class="separator:ae96b07c06ceff094f476fd92cbe89e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,7 +230,7 @@ Private Attributes</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00241">241</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00244">244</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
 </div>
 </div>
@@ -255,7 +258,7 @@ Private Attributes</h2></td></tr>
 
 <p>default constructor for resize </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00248">248</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00251">251</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
 </div>
 </div>
@@ -299,7 +302,7 @@ Private Attributes</h2></td></tr>
 
 <p>Construct AsyncWrite with <a class="el" href="classthrill_1_1net_1_1Buffer.html" title="Simple buffer of characters without initialization or growing functionality. ">Buffer</a>. </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00251">251</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00254">254</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
 </div>
 </div>
@@ -343,7 +346,7 @@ Private Attributes</h2></td></tr>
 
 <p>Construct AsyncRead with <a class="el" href="classthrill_1_1net_1_1Buffer.html" title="Simple buffer of characters without initialization or growing functionality. ">Buffer</a>. </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00258">258</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00261">261</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
 </div>
 </div>
@@ -387,7 +390,7 @@ Private Attributes</h2></td></tr>
 
 <p>Construct AsyncWrite with Block. </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00264">264</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00267">267</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
 </div>
 </div>
@@ -437,7 +440,7 @@ Private Attributes</h2></td></tr>
 
 <p>Construct AsyncRead with ByteBuffer. </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00271">271</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00274">274</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
 </div>
 </div>
@@ -490,9 +493,9 @@ Private Attributes</h2></td></tr>
 
 <p>move-constructor: move item </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00283">283</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00286">286</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00342">Dispatcher::MpiAsync::Acquire()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00242">Dispatcher::MpiAsync::NONE</a>.</p>
+<p>References <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00357">Dispatcher::MpiAsync::Acquire()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00245">Dispatcher::MpiAsync::NONE</a>.</p>
 
 </div>
 </div>
@@ -517,11 +520,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00304">304</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00307">307</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00243">Dispatcher::MpiAsync::READ_BUFFER</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00336">Dispatcher::MpiAsync::read_buffer_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00244">Dispatcher::MpiAsync::READ_BYTE_BLOCK</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00338">Dispatcher::MpiAsync::read_byte_block_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00330">Dispatcher::MpiAsync::type_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00244">Dispatcher::MpiAsync::WRITE_BLOCK</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00337">Dispatcher::MpiAsync::write_block_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00243">Dispatcher::MpiAsync::WRITE_BUFFER</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00335">Dispatcher::MpiAsync::write_buffer_</a>.</p>
+<p>References <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00246">Dispatcher::MpiAsync::READ_BUFFER</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00351">Dispatcher::MpiAsync::read_buffer_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00247">Dispatcher::MpiAsync::READ_BYTE_BLOCK</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00353">Dispatcher::MpiAsync::read_byte_block_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00345">Dispatcher::MpiAsync::type_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00247">Dispatcher::MpiAsync::WRITE_BLOCK</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00352">Dispatcher::MpiAsync::write_block_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00246">Dispatcher::MpiAsync::WRITE_BUFFER</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00350">Dispatcher::MpiAsync::write_buffer_</a>, <a class="el" href="dispatcher_8hpp_source.html#l00283">AsyncReadBuffer::~AsyncReadBuffer()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00480">AsyncReadByteBlock::~AsyncReadByteBlock()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00590">AsyncWriteBlock::~AsyncWriteBlock()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00387">AsyncWriteBuffer::~AsyncWriteBuffer()</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00290">Dispatcher::MpiAsync::operator=()</a>.</p>
+<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00293">Dispatcher::MpiAsync::operator=()</a>.</p>
 
 </div>
 </div>
@@ -550,15 +553,15 @@ Private Attributes</h2></td></tr>
 
 <p>assign myself the other object's content </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00342">342</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00357">357</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00243">Dispatcher::MpiAsync::READ_BUFFER</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00336">Dispatcher::MpiAsync::read_buffer_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00244">Dispatcher::MpiAsync::READ_BYTE_BLOCK</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00338">Dispatcher::MpiAsync::read_byte_block_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00330">Dispatcher::MpiAsync::type_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00244">Dispatcher::MpiAsync::WRITE_BLOCK</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00337">Dispatcher::MpiAsync::write_block_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00243">Dispatcher::MpiAsync::WRITE_BUFFER</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00335">Dispatcher::MpiAsync::write_buffer_</a>.</p>
+<p>References <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00246">Dispatcher::MpiAsync::READ_BUFFER</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00351">Dispatcher::MpiAsync::read_buffer_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00247">Dispatcher::MpiAsync::READ_BYTE_BLOCK</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00353">Dispatcher::MpiAsync::read_byte_block_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00345">Dispatcher::MpiAsync::type_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00247">Dispatcher::MpiAsync::WRITE_BLOCK</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00352">Dispatcher::MpiAsync::write_block_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00246">Dispatcher::MpiAsync::WRITE_BUFFER</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00350">Dispatcher::MpiAsync::write_buffer_</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00283">Dispatcher::MpiAsync::MpiAsync()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00290">Dispatcher::MpiAsync::operator=()</a>.</p>
+<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00286">Dispatcher::MpiAsync::MpiAsync()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00293">Dispatcher::MpiAsync::operator=()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5ccbdeb5350ba8528eab7e4cc49fc68b"></a>
+<a class="anchor" id="aa8d48ea2bd11e5163c3b9ef441a07906"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -566,7 +569,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void operator() </td>
+          <td class="memname">void DoCallback </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -581,9 +584,39 @@ Private Attributes</h2></td></tr>
 
 <p>Dispatch done message to correct callback. </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00317">317</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00320">320</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="dispatcher_8hpp_source.html#l00345">AsyncWriteBuffer::DoCallback()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00425">AsyncReadByteBlock::DoCallback()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00505">AsyncWriteBlock::DoCallback()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00864">Dispatcher::AsyncReadBuffer::DoCallback()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00243">Dispatcher::MpiAsync::READ_BUFFER</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00336">Dispatcher::MpiAsync::read_buffer_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00244">Dispatcher::MpiAsync::READ_BYTE_BLOCK</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00338">Dispatcher::MpiAsync::read_byte_block_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00330">Dispatcher::MpiAsync::type_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00244">Dispatcher::MpiAsync::WRITE_BLOCK</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00337">Dispatcher::MpiAsync::write_block_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00243">Dispatcher::MpiAsync::WRITE_BUFFER</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00335">Dispatcher::MpiAsync::write_buffer_</a>.</p>
+<p>References <a class="el" href="dispatcher_8hpp_source.html#l00326">AsyncReadBuffer::DoCallback()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00425">AsyncWriteBuffer::DoCallback()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00525">AsyncReadByteBlock::DoCallback()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00629">AsyncWriteBlock::DoCallback()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00246">Dispatcher::MpiAsync::READ_BUFFER</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00351">Dispatcher::MpiAsync::read_buffer_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00247">Dispatcher::MpiAsync::READ_BYTE_BLOCK</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00353">Dispatcher::MpiAsync::read_byte_block_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00345">Dispatcher::MpiAsync::type_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00247">Dispatcher::MpiAsync::WRITE_BLOCK</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00352">Dispatcher::MpiAsync::write_block_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00246">Dispatcher::MpiAsync::WRITE_BUFFER</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00350">Dispatcher::MpiAsync::write_buffer_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf4d31c9000d041f4594d6f165e100b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DoCallback </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size_check</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dispatch done message to correct callback. </p>
+
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00332">332</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+
+<p>References <a class="el" href="dispatcher_8hpp_source.html#l00326">AsyncReadBuffer::DoCallback()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00425">AsyncWriteBuffer::DoCallback()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00525">AsyncReadByteBlock::DoCallback()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00629">AsyncWriteBlock::DoCallback()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00246">Dispatcher::MpiAsync::READ_BUFFER</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00351">Dispatcher::MpiAsync::read_buffer_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00247">Dispatcher::MpiAsync::READ_BYTE_BLOCK</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00353">Dispatcher::MpiAsync::read_byte_block_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00345">Dispatcher::MpiAsync::type_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00247">Dispatcher::MpiAsync::WRITE_BLOCK</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00352">Dispatcher::MpiAsync::write_block_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00246">Dispatcher::MpiAsync::WRITE_BUFFER</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00350">Dispatcher::MpiAsync::write_buffer_</a>.</p>
 
 </div>
 </div>
@@ -611,14 +644,14 @@ Private Attributes</h2></td></tr>
 
 <p>move-assignment </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00290">290</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00293">293</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00342">Dispatcher::MpiAsync::Acquire()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00242">Dispatcher::MpiAsync::NONE</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00330">Dispatcher::MpiAsync::type_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00304">Dispatcher::MpiAsync::~MpiAsync()</a>.</p>
+<p>References <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00357">Dispatcher::MpiAsync::Acquire()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00245">Dispatcher::MpiAsync::NONE</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00345">Dispatcher::MpiAsync::type_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00307">Dispatcher::MpiAsync::~MpiAsync()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a74ee54a70be885ee6104674536e6f7d3"></a>
+<a class="anchor" id="a8891dd8023379847a51793053f061121"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -636,14 +669,14 @@ Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classthrill_1_1net_1_1Dispatcher_1_1AsyncReadBuffer.html">AsyncReadBuffer</a> read_buffer_</td>
+          <td class="memname"><a class="el" href="classthrill_1_1net_1_1AsyncReadBuffer.html">AsyncReadBuffer</a> read_buffer_</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00336">336</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00351">351</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00342">Dispatcher::MpiAsync::Acquire()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00317">Dispatcher::MpiAsync::operator()()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00304">Dispatcher::MpiAsync::~MpiAsync()</a>.</p>
+<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00357">Dispatcher::MpiAsync::Acquire()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00320">Dispatcher::MpiAsync::DoCallback()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00307">Dispatcher::MpiAsync::~MpiAsync()</a>.</p>
 
 </div>
 </div>
@@ -657,9 +690,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00338">338</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00353">353</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00342">Dispatcher::MpiAsync::Acquire()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00317">Dispatcher::MpiAsync::operator()()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00304">Dispatcher::MpiAsync::~MpiAsync()</a>.</p>
+<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00357">Dispatcher::MpiAsync::Acquire()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00320">Dispatcher::MpiAsync::DoCallback()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00307">Dispatcher::MpiAsync::~MpiAsync()</a>.</p>
 
 </div>
 </div>
@@ -683,9 +716,9 @@ Private Attributes</h2></td></tr>
 
 <p>type of this async </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00330">330</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00345">345</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00342">Dispatcher::MpiAsync::Acquire()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00317">Dispatcher::MpiAsync::operator()()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00290">Dispatcher::MpiAsync::operator=()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00304">Dispatcher::MpiAsync::~MpiAsync()</a>.</p>
+<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00357">Dispatcher::MpiAsync::Acquire()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00320">Dispatcher::MpiAsync::DoCallback()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00293">Dispatcher::MpiAsync::operator=()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00307">Dispatcher::MpiAsync::~MpiAsync()</a>.</p>
 
 </div>
 </div>
@@ -699,9 +732,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00337">337</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00352">352</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00342">Dispatcher::MpiAsync::Acquire()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00317">Dispatcher::MpiAsync::operator()()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00304">Dispatcher::MpiAsync::~MpiAsync()</a>.</p>
+<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00357">Dispatcher::MpiAsync::Acquire()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00320">Dispatcher::MpiAsync::DoCallback()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00307">Dispatcher::MpiAsync::~MpiAsync()</a>.</p>
 
 </div>
 </div>
@@ -715,9 +748,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00335">335</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00350">350</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00342">Dispatcher::MpiAsync::Acquire()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00317">Dispatcher::MpiAsync::operator()()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00304">Dispatcher::MpiAsync::~MpiAsync()</a>.</p>
+<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00357">Dispatcher::MpiAsync::Acquire()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00320">Dispatcher::MpiAsync::DoCallback()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00307">Dispatcher::MpiAsync::~MpiAsync()</a>.</p>
 
 </div>
 </div>
@@ -730,7 +763,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net.html">net</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net_1_1mpi.html">mpi</a></li><li class="navelem"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html">Dispatcher</a></li><li class="navelem"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a></li>
-    <li class="footer">Generated on Fri Oct 27 2017 09:23:36 for Thrill by
+    <li class="footer">Generated on Thu Nov 23 2017 21:32:35 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

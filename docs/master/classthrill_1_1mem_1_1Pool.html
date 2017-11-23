@@ -135,9 +135,10 @@ $(document).ready(function(){initNavTree('classthrill_1_1mem_1_1Pool.html','');}
 <li>head_slot = sentinel Slot containing .size as the free slots, and .next to the first free slot.</li>
 <li>each free Slot contains .size and .next. Size is the amount of free slots in a free area. Next is the integer offset of the following free slot (information) or the end of the Arena.</li>
 </ul>
-<p>During allocation the next fitting free slot is searched for. During deallocation multiple free areas may be consolidated. </p>
+<p>During allocation the next fitting free slot is searched for. During deallocation multiple free areas may be consolidated.</p>
+<p>For faster allocation, Arenas are categorized into many bins. Bin k always contains all Arenas with log_2(k) to log_2(k+1)-1 free space in them. On allocation and deallocation, the Arenas are moved between bins. </p>
 
-<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00070">70</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00074">74</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="pool_8hpp_source.html">pool.hpp</a>&gt;</code></p>
 <table class="memberdecls">
@@ -173,15 +174,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1224d08882845d337216ea38ad907c1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1mem_1_1Pool.html">Pool</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#a1224d08882845d337216ea38ad907c1b">operator=</a> (const <a class="el" href="classthrill_1_1mem_1_1Pool.html">Pool</a> &amp;)=delete</td></tr>
 <tr class="memdesc:a1224d08882845d337216ea38ad907c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-copyable: delete assignment operator  <a href="#a1224d08882845d337216ea38ad907c1b">More...</a><br/></td></tr>
 <tr class="separator:a1224d08882845d337216ea38ad907c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a388f572c62279f839ee138a9afbdeeb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#a388f572c62279f839ee138a9afbdeeb5">print</a> ()</td></tr>
-<tr class="memdesc:a388f572c62279f839ee138a9afbdeeb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print out structure of the arenas.  <a href="#a388f572c62279f839ee138a9afbdeeb5">More...</a><br/></td></tr>
-<tr class="separator:a388f572c62279f839ee138a9afbdeeb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88c1bcfaf09495ce9c648105fb9c211"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#ab88c1bcfaf09495ce9c648105fb9c211">print</a> (bool <a class="el" href="classthrill_1_1mem_1_1Pool.html#a6b72e54baf646b08b4b87f987f583dcb">debug</a>=true)</td></tr>
+<tr class="memdesc:ab88c1bcfaf09495ce9c648105fb9c211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print out structure of the arenas.  <a href="#ab88c1bcfaf09495ce9c648105fb9c211">More...</a><br/></td></tr>
+<tr class="separator:ab88c1bcfaf09495ce9c648105fb9c211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac676934fc421223c716e2f86901b8ac1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#ac676934fc421223c716e2f86901b8ac1">self_verify</a> ()</td></tr>
+<tr class="memdesc:ac676934fc421223c716e2f86901b8ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print out structure of the arenas.  <a href="#ac676934fc421223c716e2f86901b8ac1">More...</a><br/></td></tr>
+<tr class="separator:ac676934fc421223c716e2f86901b8ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a85e2f47ae8114e808909930ea1123929"><td class="memItemLeft" align="right" valign="top">Arena *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#a85e2f47ae8114e808909930ea1123929">AllocateFreeArena</a> (size_t arena_size, bool die_on_failure=true)</td></tr>
 <tr class="memdesc:a85e2f47ae8114e808909930ea1123929"><td class="mdescLeft">&#160;</td><td class="mdescRight">allocate a new Arena blob  <a href="#a85e2f47ae8114e808909930ea1123929">More...</a><br/></td></tr>
 <tr class="separator:a85e2f47ae8114e808909930ea1123929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab152449d4fa9f1fa854130388188fa61"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#ab152449d4fa9f1fa854130388188fa61">ArenaFindFree</a> (Arena *curr_arena, size_t bin, size_t n, size_t bytes)</td></tr>
+<tr class="memdesc:ab152449d4fa9f1fa854130388188fa61"><td class="mdescLeft">&#160;</td><td class="mdescRight">find free area inside an Arena  <a href="#ab152449d4fa9f1fa854130388188fa61">More...</a><br/></td></tr>
+<tr class="separator:ab152449d4fa9f1fa854130388188fa61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0dbea07d6dc485d60ecb6f4ca1dc10b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#aa0dbea07d6dc485d60ecb6f4ca1dc10b">bytes_per_arena</a> (size_t arena_size)</td></tr>
 <tr class="memdesc:aa0dbea07d6dc485d60ecb6f4ca1dc10b"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate maximum bytes fitting into an Arena with given size.  <a href="#aa0dbea07d6dc485d60ecb6f4ca1dc10b">More...</a><br/></td></tr>
 <tr class="separator:aa0dbea07d6dc485d60ecb6f4ca1dc10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,23 +202,28 @@ Private Attributes</h2></td></tr>
 *, size_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#aa4a019beb07c56090182e2283103a36f">allocs_</a></td></tr>
 <tr class="memdesc:aa4a019beb07c56090182e2283103a36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">array of allocations for checking  <a href="#aa4a019beb07c56090182e2283103a36f">More...</a><br/></td></tr>
 <tr class="separator:aa4a019beb07c56090182e2283103a36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b9bab4aa961a47e1df5515347f9c7a8"><td class="memItemLeft" align="right" valign="top">Arena *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#a3b9bab4aa961a47e1df5515347f9c7a8">arena_bin_</a> [<a class="el" href="classthrill_1_1mem_1_1Pool.html#a361fbb833013bdfeef33fe624ac717f7">num_bins</a>+1]</td></tr>
+<tr class="separator:a3b9bab4aa961a47e1df5515347f9c7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9a1a443dbf81226fdb781b07b2f3beb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#af9a1a443dbf81226fdb781b07b2f3beb">default_arena_size_</a></td></tr>
 <tr class="memdesc:af9a1a443dbf81226fdb781b07b2f3beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of default Arena allocation  <a href="#af9a1a443dbf81226fdb781b07b2f3beb">More...</a><br/></td></tr>
 <tr class="separator:af9a1a443dbf81226fdb781b07b2f3beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba52083c86490337cae303fbc132604d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#aba52083c86490337cae303fbc132604d">free_</a> = 0</td></tr>
-<tr class="memdesc:aba52083c86490337cae303fbc132604d"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of free slots in the arenas  <a href="#aba52083c86490337cae303fbc132604d">More...</a><br/></td></tr>
+<tr class="memdesc:aba52083c86490337cae303fbc132604d"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of free slots in all arenas  <a href="#aba52083c86490337cae303fbc132604d">More...</a><br/></td></tr>
 <tr class="separator:aba52083c86490337cae303fbc132604d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa1af30c8f5284b3d7b900122c739f61"><td class="memItemLeft" align="right" valign="top">Arena *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#aaa1af30c8f5284b3d7b900122c739f61">free_arena_</a> = nullptr</td></tr>
-<tr class="memdesc:aaa1af30c8f5284b3d7b900122c739f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to first arena, arenas are in allocation order  <a href="#aaa1af30c8f5284b3d7b900122c739f61">More...</a><br/></td></tr>
-<tr class="separator:aaa1af30c8f5284b3d7b900122c739f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74f373e8d0a98bdf2887cd54dce6453d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#a74f373e8d0a98bdf2887cd54dce6453d">min_free_</a> = 1024 * 1024 / 8</td></tr>
 <tr class="memdesc:a74f373e8d0a98bdf2887cd54dce6453d"><td class="mdescLeft">&#160;</td><td class="mdescRight">minimum amount of spare memory to keep in the <a class="el" href="classthrill_1_1mem_1_1Pool.html" title="A simple memory allocation manager. ">Pool</a>.  <a href="#a74f373e8d0a98bdf2887cd54dce6453d">More...</a><br/></td></tr>
 <tr class="separator:a74f373e8d0a98bdf2887cd54dce6453d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a281b5ec791338d4378e22ef44a51b4a1"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#a281b5ec791338d4378e22ef44a51b4a1">mutex_</a></td></tr>
 <tr class="separator:a281b5ec791338d4378e22ef44a51b4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f96cff04ddf5a82827218eb420297c5"><td class="memItemLeft" align="right" valign="top">Arena *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#a9f96cff04ddf5a82827218eb420297c5">root_arena_</a> = nullptr</td></tr>
-<tr class="memdesc:a9f96cff04ddf5a82827218eb420297c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to root arena in splay tree  <a href="#a9f96cff04ddf5a82827218eb420297c5">More...</a><br/></td></tr>
-<tr class="separator:a9f96cff04ddf5a82827218eb420297c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f87ac6364123b553224f81f211cc5d0"><td class="memItemLeft" align="right" valign="top">ObjectPool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#a3f87ac6364123b553224f81f211cc5d0">object_128_</a></td></tr>
+<tr class="separator:a3f87ac6364123b553224f81f211cc5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50a9050c47b3e765d30bd67b0ac3f319"><td class="memItemLeft" align="right" valign="top">ObjectPool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#a50a9050c47b3e765d30bd67b0ac3f319">object_256_</a></td></tr>
+<tr class="separator:a50a9050c47b3e765d30bd67b0ac3f319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfda5a95e1602033bee2f8414ac5287"><td class="memItemLeft" align="right" valign="top">ObjectPool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#a7cfda5a95e1602033bee2f8414ac5287">object_32_</a></td></tr>
+<tr class="memdesc:a7cfda5a95e1602033bee2f8414ac5287"><td class="mdescLeft">&#160;</td><td class="mdescRight">object areas for small fixed size items  <a href="#a7cfda5a95e1602033bee2f8414ac5287">More...</a><br/></td></tr>
+<tr class="separator:a7cfda5a95e1602033bee2f8414ac5287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef4bd0825884a6343028b35fb374a192"><td class="memItemLeft" align="right" valign="top">ObjectPool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#aef4bd0825884a6343028b35fb374a192">object_64_</a></td></tr>
+<tr class="separator:aef4bd0825884a6343028b35fb374a192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f31775800bbb46b35b5791def1f3acc"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#a5f31775800bbb46b35b5791def1f3acc">size_</a> = 0</td></tr>
 <tr class="memdesc:a5f31775800bbb46b35b5791def1f3acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">overall number of used slots  <a href="#a5f31775800bbb46b35b5791def1f3acc">More...</a><br/></td></tr>
 <tr class="separator:a5f31775800bbb46b35b5791def1f3acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,6 +239,9 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:aeb172ffbaa7237e5200c305a3288f423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b739176a908464d4cb2c28f34143a56"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#a5b739176a908464d4cb2c28f34143a56">debug_verify</a> = false</td></tr>
 <tr class="separator:a5b739176a908464d4cb2c28f34143a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361fbb833013bdfeef33fe624ac717f7"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1mem_1_1Pool.html#a361fbb833013bdfeef33fe624ac717f7">num_bins</a> = 14 - 3 + 1</td></tr>
+<tr class="memdesc:a361fbb833013bdfeef33fe624ac717f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of bins  <a href="#a361fbb833013bdfeef33fe624ac717f7">More...</a><br/></td></tr>
+<tr class="separator:a361fbb833013bdfeef33fe624ac717f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a76ba65891286992f414b16e5135e63e8"></a>
@@ -253,7 +268,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>construct with base allocator </p>
 
-<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00067">67</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00408">408</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
 
 </div>
 </div>
@@ -306,9 +321,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>dtor </p>
 
-<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00078">78</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
-
-<p>References <a class="el" href="pool_8hpp_source.html#l00153">Pool::allocs_</a>, <a class="el" href="pool_8cpp_source.html#l00147">Pool::IntDeallocateAll()</a>, <a class="el" href="pool_8hpp_source.html#l00130">Pool::mutex_</a>, and <a class="el" href="pool_8hpp_source.html#l00144">Pool::size_</a>.</p>
+<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00427">427</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
 
 </div>
 </div>
@@ -329,11 +342,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>allocate a continuous segment of n bytes in the arenas </p>
 
-<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00165">165</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00624">624</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
 
-<p>References <a class="el" href="pool_8cpp_source.html#l00106">Pool::AllocateFreeArena()</a>, <a class="el" href="pool_8hpp_source.html#l00153">Pool::allocs_</a>, <a class="el" href="pool_8cpp_source.html#l00161">Pool::bytes_per_arena()</a>, <a class="el" href="pool_8hpp_source.html#l00072">Pool::debug</a>, <a class="el" href="pool_8hpp_source.html#l00075">Pool::debug_check_pairing</a>, <a class="el" href="pool_8hpp_source.html#l00147">Pool::default_arena_size_</a>, <a class="el" href="pool_8hpp_source.html#l00142">Pool::free_</a>, <a class="el" href="pool_8hpp_source.html#l00137">Pool::free_arena_</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00908">malloc()</a>, <a class="el" href="pool_8hpp_source.html#l00150">Pool::min_free_</a>, <a class="el" href="pool_8hpp_source.html#l00130">Pool::mutex_</a>, <a class="el" href="pool_8cpp_source.html#l00364">Pool::print()</a>, and <a class="el" href="pool_8hpp_source.html#l00144">Pool::size_</a>.</p>
+<p>References <a class="el" href="pool_8cpp_source.html#l00390">thrill::mem::calc_bin_for_size()</a>, <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, and <a class="el" href="die_8hpp_source.html#l00042">die</a>.</p>
 
-<p>Referenced by <a class="el" href="pool_8hpp_source.html#l00100">Pool::make()</a>.</p>
+<p>Referenced by <a class="el" href="pool_8hpp_source.html#l00104">Pool::make()</a>.</p>
 
 </div>
 </div>
@@ -371,11 +384,61 @@ Static Private Attributes</h2></td></tr>
 
 <p>allocate a new Arena blob </p>
 
-<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00106">106</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00537">537</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00451">thrill::mem::bypass_malloc()</a>, <a class="el" href="pool_8hpp_source.html#l00072">Pool::debug</a>, <a class="el" href="pool_8hpp_source.html#l00142">Pool::free_</a>, <a class="el" href="pool_8hpp_source.html#l00137">Pool::free_arena_</a>, <a class="el" href="pool_8hpp_source.html#l00139">Pool::root_arena_</a>, <a class="el" href="pool_8hpp_source.html#l00144">Pool::size_</a>, <a class="el" href="splay__tree_8hpp_source.html#l00109">thrill::common::splay()</a>, and <a class="el" href="splay__tree_8hpp_source.html#l00168">thrill::common::splay_insert()</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00535">thrill::mem::bypass_aligned_alloc()</a>, <a class="el" href="pool_8cpp_source.html#l00390">thrill::mem::calc_bin_for_size()</a>, <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, <a class="el" href="die_8hpp_source.html#l00099">die_unequal</a>, and <a class="el" href="die_8hpp_source.html#l00052">die_unless</a>.</p>
 
-<p>Referenced by <a class="el" href="pool_8cpp_source.html#l00165">Pool::allocate()</a>.</p>
+</div>
+</div>
+<a class="anchor" id="ab152449d4fa9f1fa854130388188fa61"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * ArenaFindFree </td>
+          <td>(</td>
+          <td class="paramtype">Arena *&#160;</td>
+          <td class="paramname"><em>curr_arena</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>find free area inside an Arena </p>
+
+<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00449">449</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
+
+<p>References <a class="el" href="pool_8cpp_source.html#l00398">thrill::mem::bin_lower_bound()</a>, <a class="el" href="pool_8cpp_source.html#l00390">thrill::mem::calc_bin_for_size()</a>, <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, and <a class="el" href="likely_8hpp_source.html#l00021">TLX_UNLIKELY</a>.</p>
 
 </div>
 </div>
@@ -403,9 +466,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>calculate maximum bytes fitting into an Arena with given size. </p>
 
-<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00161">161</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
-
-<p>Referenced by <a class="el" href="pool_8cpp_source.html#l00165">Pool::allocate()</a>.</p>
+<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00620">620</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
 
 </div>
 </div>
@@ -434,11 +495,11 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Deallocate a continuous segment of n bytes in the arenas, the size n <em>MUST</em> match the allocation. </p>
 
-<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00272">272</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00700">700</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
 
-<p>References <a class="el" href="pool_8hpp_source.html#l00153">Pool::allocs_</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00492">thrill::mem::bypass_free()</a>, <a class="el" href="pool_8hpp_source.html#l00072">Pool::debug</a>, <a class="el" href="pool_8hpp_source.html#l00075">Pool::debug_check_pairing</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>, <a class="el" href="pool_8hpp_source.html#l00142">Pool::free_</a>, <a class="el" href="pool_8hpp_source.html#l00137">Pool::free_arena_</a>, <a class="el" href="pool_8hpp_source.html#l00150">Pool::min_free_</a>, <a class="el" href="pool_8hpp_source.html#l00130">Pool::mutex_</a>, <a class="el" href="pool_8cpp_source.html#l00364">Pool::print()</a>, <a class="el" href="pool_8hpp_source.html#l00139">Pool::root_arena_</a>, <a class="el" href="pool_8hpp_source.html#l00144">Pool::size_</a>, <a class="el" href="splay__tree_8hpp_source.html#l00109">thrill::common::splay()</a>, and <a class="el" href="splay__tree_8hpp_source.html#l00214">thrill::common::splay_erase_top()</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00589">thrill::mem::bypass_aligned_free()</a>, <a class="el" href="pool_8cpp_source.html#l00390">thrill::mem::calc_bin_for_size()</a>, <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, and <a class="el" href="die_8hpp_source.html#l00052">die_unless</a>.</p>
 
-<p>Referenced by <a class="el" href="pool_8hpp_source.html#l00108">Pool::destroy()</a>.</p>
+<p>Referenced by <a class="el" href="pool_8hpp_source.html#l00112">Pool::destroy()</a>.</p>
 
 </div>
 </div>
@@ -457,9 +518,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>deallocate all Arenas </p>
 
-<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00142">142</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
-
-<p>References <a class="el" href="pool_8cpp_source.html#l00147">Pool::IntDeallocateAll()</a>, and <a class="el" href="pool_8hpp_source.html#l00130">Pool::mutex_</a>.</p>
+<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00599">599</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
 
 </div>
 </div>
@@ -487,11 +546,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>Destroy and deallocate a single item of given Type. </p>
 
-<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00108">108</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00112">112</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
 
-<p>References <a class="el" href="pool_8cpp_source.html#l00272">Pool::deallocate()</a>.</p>
+<p>References <a class="el" href="pool_8cpp_source.html#l00700">Pool::deallocate()</a>.</p>
 
-<p>Referenced by <a class="el" href="byte__block_8cpp_source.html#l00042">ByteBlock::Deleter::operator()()</a>, <a class="el" href="request_8cpp_source.html#l00098">RequestDeleter::operator()()</a>, and <a class="el" href="pool_8hpp_source.html#l00316">GPoolDeleter&lt; T &gt;::operator()()</a>.</p>
+<p>Referenced by <a class="el" href="byte__block_8cpp_source.html#l00042">ByteBlock::Deleter::operator()()</a>, <a class="el" href="request_8cpp_source.html#l00098">RequestDeleter::operator()()</a>, and <a class="el" href="pool_8hpp_source.html#l00338">GPoolDeleter&lt; T &gt;::operator()()</a>.</p>
 
 </div>
 </div>
@@ -518,11 +577,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>deallocate all Arenas </p>
 
-<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00147">147</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00604">604</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
 
-<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00492">thrill::mem::bypass_free()</a>, <a class="el" href="pool_8hpp_source.html#l00137">Pool::free_arena_</a>, and <a class="el" href="pool_8hpp_source.html#l00150">Pool::min_free_</a>.</p>
-
-<p>Referenced by <a class="el" href="pool_8cpp_source.html#l00142">Pool::DeallocateAll()</a>, and <a class="el" href="pool_8cpp_source.html#l00078">Pool::~Pool()</a>.</p>
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l00589">thrill::mem::bypass_aligned_free()</a>.</p>
 
 </div>
 </div>
@@ -549,11 +606,11 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Allocate and construct a single item of given Type using memory from the <a class="el" href="classthrill_1_1mem_1_1Pool.html" title="A simple memory allocation manager. ">Pool</a>. </p>
 
-<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00100">100</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00104">104</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
 
-<p>References <a class="el" href="pool_8cpp_source.html#l00165">Pool::allocate()</a>.</p>
+<p>References <a class="el" href="pool_8cpp_source.html#l00624">Pool::allocate()</a>.</p>
 
-<p>Referenced by <a class="el" href="pool_8hpp_source.html#l00327">thrill::mem::safe_make_unique()</a>.</p>
+<p>Referenced by <a class="el" href="pool_8hpp_source.html#l00349">thrill::mem::safe_make_unique()</a>.</p>
 
 </div>
 </div>
@@ -580,7 +637,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>maximum size possible to allocate </p>
 
-<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00157">157</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00616">616</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
 
 <p>References <a class="el" href="functional_8hpp_source.html#l00065">thrill::common::max()</a>.</p>
 
@@ -612,12 +669,34 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a388f572c62279f839ee138a9afbdeeb5"></a>
+<a class="anchor" id="ab88c1bcfaf09495ce9c648105fb9c211"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void print </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>debug</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print out structure of the arenas. </p>
+
+<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00867">867</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
+
+<p>References <a class="el" href="pool_8cpp_source.html#l00390">thrill::mem::calc_bin_for_size()</a>, <a class="el" href="die_8hpp_source.html#l00099">die_unequal</a>, <a class="el" href="die_8hpp_source.html#l00052">die_unless</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l01035">free()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac676934fc421223c716e2f86901b8ac1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void self_verify </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -627,11 +706,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Print out structure of the arenas. </p>
 
-<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00364">364</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
-
-<p>References <a class="el" href="pool_8hpp_source.html#l00072">Pool::debug</a>, <a class="el" href="pool_8hpp_source.html#l00073">Pool::debug_verify</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00933">free()</a>, <a class="el" href="pool_8hpp_source.html#l00142">Pool::free_</a>, <a class="el" href="pool_8hpp_source.html#l00137">Pool::free_arena_</a>, and <a class="el" href="pool_8hpp_source.html#l00144">Pool::size_</a>.</p>
-
-<p>Referenced by <a class="el" href="pool_8cpp_source.html#l00165">Pool::allocate()</a>, and <a class="el" href="pool_8cpp_source.html#l00272">Pool::deallocate()</a>.</p>
+<p>Definition at line <a class="el" href="pool_8cpp_source.html#l00931">931</a> of file <a class="el" href="pool_8cpp_source.html">pool.cpp</a>.</p>
 
 </div>
 </div>
@@ -656,9 +731,30 @@ Static Private Attributes</h2></td></tr>
 
 <p>array of allocations for checking </p>
 
-<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00153">153</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00172">172</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="pool_8cpp_source.html#l00165">Pool::allocate()</a>, <a class="el" href="pool_8cpp_source.html#l00272">Pool::deallocate()</a>, and <a class="el" href="pool_8cpp_source.html#l00078">Pool::~Pool()</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a3b9bab4aa961a47e1df5515347f9c7a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Arena* arena_bin_[<a class="el" href="classthrill_1_1mem_1_1Pool.html#a361fbb833013bdfeef33fe624ac717f7">num_bins</a>+1]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>pointer to first arena in each bin, arenas are in allocation order, the last bin is for overflow allocations. </p>
+
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00152">152</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -680,7 +776,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00076">76</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00080">80</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -702,9 +798,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00072">72</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="pool_8cpp_source.html#l00165">Pool::allocate()</a>, <a class="el" href="pool_8cpp_source.html#l00106">Pool::AllocateFreeArena()</a>, <a class="el" href="pool_8cpp_source.html#l00272">Pool::deallocate()</a>, and <a class="el" href="pool_8cpp_source.html#l00364">Pool::print()</a>.</p>
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00076">76</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -728,9 +822,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>debug flag to check pairing of <a class="el" href="classthrill_1_1mem_1_1Pool.html#af6a8eaa51f47fc87f8bbaf3f6c128dbf" title="allocate a continuous segment of n bytes in the arenas ">allocate()</a>/deallocate() client calls </p>
 
-<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00075">75</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="pool_8cpp_source.html#l00165">Pool::allocate()</a>, and <a class="el" href="pool_8cpp_source.html#l00272">Pool::deallocate()</a>.</p>
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00079">79</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -752,9 +844,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00073">73</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="pool_8cpp_source.html#l00364">Pool::print()</a>.</p>
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00077">77</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -778,9 +868,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>size of default Arena allocation </p>
 
-<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00147">147</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="pool_8cpp_source.html#l00165">Pool::allocate()</a>.</p>
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00160">160</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -802,37 +890,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>number of free slots in the arenas </p>
+<p>number of free slots in all arenas </p>
 
-<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00142">142</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="pool_8cpp_source.html#l00165">Pool::allocate()</a>, <a class="el" href="pool_8cpp_source.html#l00106">Pool::AllocateFreeArena()</a>, <a class="el" href="pool_8cpp_source.html#l00272">Pool::deallocate()</a>, and <a class="el" href="pool_8cpp_source.html#l00364">Pool::print()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aaa1af30c8f5284b3d7b900122c739f61"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Arena* free_arena_ = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>pointer to first arena, arenas are in allocation order </p>
-
-<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00137">137</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="pool_8cpp_source.html#l00165">Pool::allocate()</a>, <a class="el" href="pool_8cpp_source.html#l00106">Pool::AllocateFreeArena()</a>, <a class="el" href="pool_8cpp_source.html#l00272">Pool::deallocate()</a>, <a class="el" href="pool_8cpp_source.html#l00147">Pool::IntDeallocateAll()</a>, and <a class="el" href="pool_8cpp_source.html#l00364">Pool::print()</a>.</p>
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00155">155</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -856,9 +916,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>minimum amount of spare memory to keep in the <a class="el" href="classthrill_1_1mem_1_1Pool.html" title="A simple memory allocation manager. ">Pool</a>. </p>
 
-<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00150">150</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="pool_8cpp_source.html#l00165">Pool::allocate()</a>, <a class="el" href="pool_8cpp_source.html#l00272">Pool::deallocate()</a>, and <a class="el" href="pool_8cpp_source.html#l00147">Pool::IntDeallocateAll()</a>.</p>
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00163">163</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -881,13 +939,11 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>mutex to protect data structures (remove this if you use it in another context than Thrill). </p>
 
-<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00130">130</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="pool_8cpp_source.html#l00165">Pool::allocate()</a>, <a class="el" href="pool_8cpp_source.html#l00272">Pool::deallocate()</a>, <a class="el" href="pool_8cpp_source.html#l00142">Pool::DeallocateAll()</a>, and <a class="el" href="pool_8cpp_source.html#l00078">Pool::~Pool()</a>.</p>
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00140">140</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a9f96cff04ddf5a82827218eb420297c5"></a>
+<a class="anchor" id="a361fbb833013bdfeef33fe624ac717f7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -895,7 +951,31 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Arena* root_arena_ = nullptr</td>
+          <td class="memname">const size_t num_bins = 14 - 3 + 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>number of bins </p>
+
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00148">148</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3f87ac6364123b553224f81f211cc5d0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectPool* object_128_</td>
         </tr>
       </table>
   </td>
@@ -905,11 +985,75 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>pointer to root arena in splay tree </p>
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00168">168</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
 
-<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00139">139</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a50a9050c47b3e765d30bd67b0ac3f319"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectPool* object_256_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="pool_8cpp_source.html#l00106">Pool::AllocateFreeArena()</a>, and <a class="el" href="pool_8cpp_source.html#l00272">Pool::deallocate()</a>.</p>
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00169">169</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7cfda5a95e1602033bee2f8414ac5287"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectPool* object_32_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>object areas for small fixed size items </p>
+
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00166">166</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef4bd0825884a6343028b35fb374a192"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectPool* object_64_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00167">167</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -933,9 +1077,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>overall number of used slots </p>
 
-<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00144">144</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="pool_8cpp_source.html#l00165">Pool::allocate()</a>, <a class="el" href="pool_8cpp_source.html#l00106">Pool::AllocateFreeArena()</a>, <a class="el" href="pool_8cpp_source.html#l00272">Pool::deallocate()</a>, <a class="el" href="pool_8cpp_source.html#l00364">Pool::print()</a>, and <a class="el" href="pool_8cpp_source.html#l00078">Pool::~Pool()</a>.</p>
+<p>Definition at line <a class="el" href="pool_8hpp_source.html#l00157">157</a> of file <a class="el" href="pool_8hpp_source.html">pool.hpp</a>.</p>
 
 </div>
 </div>
@@ -949,7 +1091,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1mem.html">mem</a></li><li class="navelem"><a class="el" href="classthrill_1_1mem_1_1Pool.html">Pool</a></li>
-    <li class="footer">Generated on Fri Oct 27 2017 09:23:36 for Thrill by
+    <li class="footer">Generated on Thu Nov 23 2017 21:32:34 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

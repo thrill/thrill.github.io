@@ -29,6 +29,7 @@ var searchData=
   ['non_5fduplicates_5f',['non_duplicates_',['../classthrill_1_1core_1_1ReducePrePhase_3_01TableItem_00_01Key_00_01Value_00_01KeyExtractor_00_01R21d271c26c94d68a392fc2ad1836161c.html#a196d59783703ff1fed99298c4051746e',1,'thrill::core::ReducePrePhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig, IndexFunction, EqualToFunction, HashFunction, true &gt;']]],
   ['norebalancetag',['NoRebalanceTag',['../namespacethrill_1_1api.html#a17bbdade091d6f4b60f8e1682f5b6409',1,'thrill::api']]],
   ['novolatilekeytag',['NoVolatileKeyTag',['../namespacethrill_1_1api.html#a87c9961a35015a78ebd4c3396e000dd2',1,'thrill::api']]],
+  ['num_5fbins',['num_bins',['../classthrill_1_1mem_1_1Pool.html#a361fbb833013bdfeef33fe624ac717f7',1,'thrill::mem::Pool']]],
   ['num_5fblocks_5f',['num_blocks_',['../classthrill_1_1core_1_1ReduceBucketHashTable.html#ac3199746466b9fdd0437b6021f8a5d7e',1,'thrill::core::ReduceBucketHashTable']]],
   ['num_5fbuckets_5f',['num_buckets_',['../classthrill_1_1core_1_1ReduceTable.html#abff6cab86ab6aef08ca3e3c91af15d1d',1,'thrill::core::ReduceTable']]],
   ['num_5fbuckets_5fper_5fpartition',['num_buckets_per_partition',['../structthrill_1_1core_1_1ReduceByIndex_1_1Result.html#a463b51092bc81348bd8a3eee7d7f6275',1,'thrill::core::ReduceByIndex::Result']]],

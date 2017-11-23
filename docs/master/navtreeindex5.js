@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"classthrill_1_1common_1_1ItemWriterToolsBase.html#af8f75c377ede5d41228004bdf9d6f4c9":[3,0,3,1,17,4],
 "classthrill_1_1common_1_1JsonBeginObj.html":[3,0,3,1,18],
 "classthrill_1_1common_1_1JsonBeginObj.html#a02a4e296a17c7b920c8a3c16492bfd96":[3,0,3,1,18,0],
 "classthrill_1_1common_1_1JsonBeginObj.html#a6dca7628931e11a50914bf5580ffa473":[3,0,3,1,18,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "classthrill_1_1common_1_1SpacingLogger.html#a1986190d5042b6b1e00e65fd7c5562e2":[3,0,3,1,45,0],
 "classthrill_1_1common_1_1SpacingLogger.html#a89ba91797848ae8ab602fe2268e416da":[3,0,3,1,45,4],
 "classthrill_1_1common_1_1SpacingLogger.html#aa184fabd856fc0190c1f552fcc3f4143":[3,0,3,1,45,3],
-"classthrill_1_1common_1_1SpacingLogger.html#aaf88b9bbbc60505197177b6cee8b90cf":[3,0,3,1,45,1],
-"classthrill_1_1common_1_1SpacingLogger.html#ae7e5cfa398be6efafb1cf9718fb52fb5":[3,0,3,1,45,2]
+"classthrill_1_1common_1_1SpacingLogger.html#aaf88b9bbbc60505197177b6cee8b90cf":[3,0,3,1,45,1]
 };

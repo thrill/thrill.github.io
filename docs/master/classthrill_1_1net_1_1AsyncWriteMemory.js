@@ -1,10 +1,15 @@
 var classthrill_1_1net_1_1AsyncWriteMemory =
 [
     [ "AsyncWriteMemory", "classthrill_1_1net_1_1AsyncWriteMemory.html#ad5bd5c8b6ec307d6c50e828585cb4fb7", null ],
+    [ "AsyncWriteMemory", "classthrill_1_1net_1_1AsyncWriteMemory.html#a35d5e52bb8f0df47f7de4bceb2431413", null ],
+    [ "AsyncWriteMemory", "classthrill_1_1net_1_1AsyncWriteMemory.html#a958eecc3087b48ba1c9bdab4f496a359", null ],
+    [ "~AsyncWriteMemory", "classthrill_1_1net_1_1AsyncWriteMemory.html#a74a5242be38f8f63bf140ba67e6e2abd", null ],
     [ "data", "classthrill_1_1net_1_1AsyncWriteMemory.html#a40fe50b14bf164129156972247acb8e4", null ],
     [ "DoCallback", "classthrill_1_1net_1_1AsyncWriteMemory.html#aa8d48ea2bd11e5163c3b9ef441a07906", null ],
     [ "IsDone", "classthrill_1_1net_1_1AsyncWriteMemory.html#a77bd2623550e0216b4469003c29181d5", null ],
     [ "operator()", "classthrill_1_1net_1_1AsyncWriteMemory.html#a3b26dbefa24299087ee65df579ed4314", null ],
+    [ "operator=", "classthrill_1_1net_1_1AsyncWriteMemory.html#a39e912b85d2dac7c5168049a694be0da", null ],
+    [ "operator=", "classthrill_1_1net_1_1AsyncWriteMemory.html#a11a229d5a3eee16a13d655a586fbee75", null ],
     [ "size", "classthrill_1_1net_1_1AsyncWriteMemory.html#aac782da1f912bceb5d8ad00c8dc892ac", null ],
     [ "callback_", "classthrill_1_1net_1_1AsyncWriteMemory.html#a402885bd3b95ec9f32828ea07b010c56", null ],
     [ "conn_", "classthrill_1_1net_1_1AsyncWriteMemory.html#a4ed42115af7a01fde7d23e9209c89f23", null ],

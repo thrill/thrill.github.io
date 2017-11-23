@@ -8,7 +8,6 @@ var classthrill_1_1data_1_1BlockSink =
     [ "AllocateByteBlock", "classthrill_1_1data_1_1BlockSink.html#a013ffd4efe66c5afa88905f42b07ee89", null ],
     [ "AppendBlock", "classthrill_1_1data_1_1BlockSink.html#a51d6650162c2d11a84243db1d394e947", null ],
     [ "AppendBlock", "classthrill_1_1data_1_1BlockSink.html#a5080ee8714f4176658a6cd5f16039a5e", null ],
-    [ "AppendPinnedBlock", "classthrill_1_1data_1_1BlockSink.html#a038360e70ff49a3333aae1f4dc686123", null ],
     [ "AppendPinnedBlock", "classthrill_1_1data_1_1BlockSink.html#a9524d616e33d2c9a20cad0851a6ccedd", null ],
     [ "block_pool", "classthrill_1_1data_1_1BlockSink.html#a4a8b0495a3b4e4818f29e66ce597ef6e", null ],
     [ "Close", "classthrill_1_1data_1_1BlockSink.html#aacb6d0e5e6d570cdc2b0da14c3921ff0", null ],

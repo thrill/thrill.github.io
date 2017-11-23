@@ -1,6 +1,5 @@
 var classthrill_1_1net_1_1Dispatcher =
 [
-    [ "AsyncReadBuffer", "classthrill_1_1net_1_1Dispatcher_1_1AsyncReadBuffer.html", "classthrill_1_1net_1_1Dispatcher_1_1AsyncReadBuffer" ],
     [ "Timer", "structthrill_1_1net_1_1Dispatcher_1_1Timer.html", "structthrill_1_1net_1_1Dispatcher_1_1Timer" ],
     [ "milliseconds", "classthrill_1_1net_1_1Dispatcher.html#af1d82aa1c1d9d39fe9d5fdc869fe9202", null ],
     [ "steady_clock", "classthrill_1_1net_1_1Dispatcher.html#a1f0d560bf5f855b906dbc8b402d5b3be", null ],
