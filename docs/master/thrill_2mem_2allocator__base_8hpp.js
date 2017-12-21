@@ -16,5 +16,7 @@ var thrill_2mem_2allocator__base_8hpp =
     [ "to_string", "thrill_2mem_2allocator__base_8hpp.html#a941e3041f233e1fc3f20d1ed9abedb96", null ],
     [ "to_string", "thrill_2mem_2allocator__base_8hpp.html#a1c0ec876049ef298e87dc600a78199cf", null ],
     [ "to_string", "thrill_2mem_2allocator__base_8hpp.html#aa978016df4356a6bc6e565df9b8c31cf", null ],
+    [ "to_string", "thrill_2mem_2allocator__base_8hpp.html#a3438d3ed2b108a90a239222e9831b216", null ],
+    [ "to_string", "thrill_2mem_2allocator__base_8hpp.html#a85afe8715b31a126442bf46f068e3877", null ],
     [ "g_bypass_manager", "thrill_2mem_2allocator__base_8hpp.html#a2c2fd4b42d2bc614209a3b48febdaf2d", null ]
 ];

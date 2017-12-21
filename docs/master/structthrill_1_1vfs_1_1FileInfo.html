@@ -137,6 +137,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acfe87f4e1a7046ee607d4aa9ca01cfbd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1vfs_1_1FileInfo.html#acfe87f4e1a7046ee607d4aa9ca01cfbd">IsRemoteUri</a> () const </td></tr>
 <tr class="memdesc:acfe87f4e1a7046ee607d4aa9ca01cfbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">if the file is at remote uri  <a href="#acfe87f4e1a7046ee607d4aa9ca01cfbd">More...</a><br/></td></tr>
 <tr class="separator:acfe87f4e1a7046ee607d4aa9ca01cfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a78dec0386caa0989d7670a4cd4c0c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1vfs_1_1FileInfo.html#a2a78dec0386caa0989d7670a4cd4c0c0">operator&lt;</a> (const <a class="el" href="structthrill_1_1vfs_1_1FileInfo.html">FileInfo</a> &amp;b) const </td></tr>
+<tr class="memdesc:a2a78dec0386caa0989d7670a4cd4c0c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">compare <a class="el" href="structthrill_1_1vfs_1_1FileInfo.html" title="General information of vfs file. ">FileInfo</a> by path  <a href="#a2a78dec0386caa0989d7670a4cd4c0c0">More...</a><br/></td></tr>
+<tr class="separator:a2a78dec0386caa0989d7670a4cd4c0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d6ea769ef670622b4be98223e81bb13"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1vfs_1_1FileInfo.html#a4d6ea769ef670622b4be98223e81bb13">size_inc_psum</a> () const </td></tr>
 <tr class="memdesc:a4d6ea769ef670622b4be98223e81bb13"><td class="mdescLeft">&#160;</td><td class="mdescRight">inclusive prefix sum of file sizes.  <a href="#a4d6ea769ef670622b4be98223e81bb13">More...</a><br/></td></tr>
 <tr class="separator:a4d6ea769ef670622b4be98223e81bb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,6 +218,36 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a2a78dec0386caa0989d7670a4cd4c0c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structthrill_1_1vfs_1_1FileInfo.html">FileInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>compare <a class="el" href="structthrill_1_1vfs_1_1FileInfo.html" title="General information of vfs file. ">FileInfo</a> by path </p>
+
+<p>Definition at line <a class="el" href="file__io_8hpp_source.html#l00075">75</a> of file <a class="el" href="file__io_8hpp_source.html">file_io.hpp</a>.</p>
+
+<p>References <a class="el" href="file__io_8hpp_source.html#l00061">FileInfo::path</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a4d6ea769ef670622b4be98223e81bb13"></a>
 <div class="memitem">
 <div class="memproto">
@@ -259,7 +292,7 @@ Public Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="file__io_8hpp_source.html#l00061">61</a> of file <a class="el" href="file__io_8hpp_source.html">file_io.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="sys__file_8cpp_source.html#l00054">thrill::vfs::SysGlob()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8hpp_source.html#l00075">FileInfo::operator&lt;()</a>, <a class="el" href="sys__file_8cpp_source.html#l00143">thrill::vfs::SysGlob()</a>, and <a class="el" href="sys__file_8cpp_source.html#l00054">thrill::vfs::SysGlobWalkRecursive()</a>.</p>
 
 </div>
 </div>
@@ -277,7 +310,7 @@ Public Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="file__io_8hpp_source.html#l00063">63</a> of file <a class="el" href="file__io_8hpp_source.html">file_io.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8hpp_source.html#l00068">FileInfo::size_inc_psum()</a>, and <a class="el" href="sys__file_8cpp_source.html#l00054">thrill::vfs::SysGlob()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8hpp_source.html#l00068">FileInfo::size_inc_psum()</a>, <a class="el" href="sys__file_8cpp_source.html#l00143">thrill::vfs::SysGlob()</a>, and <a class="el" href="sys__file_8cpp_source.html#l00054">thrill::vfs::SysGlobWalkRecursive()</a>.</p>
 
 </div>
 </div>
@@ -313,7 +346,7 @@ Public Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="file__io_8hpp_source.html#l00059">59</a> of file <a class="el" href="file__io_8hpp_source.html">file_io.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="sys__file_8cpp_source.html#l00054">thrill::vfs::SysGlob()</a>.</p>
+<p>Referenced by <a class="el" href="sys__file_8cpp_source.html#l00143">thrill::vfs::SysGlob()</a>, and <a class="el" href="sys__file_8cpp_source.html#l00054">thrill::vfs::SysGlobWalkRecursive()</a>.</p>
 
 </div>
 </div>
@@ -326,7 +359,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1vfs.html">vfs</a></li><li class="navelem"><a class="el" href="structthrill_1_1vfs_1_1FileInfo.html">FileInfo</a></li>
-    <li class="footer">Generated on Thu Nov 23 2017 21:32:35 for Thrill by
+    <li class="footer">Generated on Thu Dec 21 2017 17:33:29 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

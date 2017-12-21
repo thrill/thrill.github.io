@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('classthrill_1_1net_1_1AsyncWriteBlock.
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00565">565</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00377">377</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for AsyncWriteBlock:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -149,6 +149,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4d1bc925473b39c9100cfc7ddcab1ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeed88636a2a5565db2bd549635e16df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1AsyncWriteBlock.html#adeed88636a2a5565db2bd549635e16df">~AsyncWriteBlock</a> ()</td></tr>
 <tr class="separator:adeed88636a2a5565db2bd549635e16df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef80dec6298fc217923a30b63e4103e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1AsyncWriteBlock.html#acef80dec6298fc217923a30b63e4103e">connection</a> () const </td></tr>
+<tr class="memdesc:acef80dec6298fc217923a30b63e4103e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns conn_.  <a href="#acef80dec6298fc217923a30b63e4103e">More...</a><br/></td></tr>
+<tr class="separator:acef80dec6298fc217923a30b63e4103e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40fe50b14bf164129156972247acb8e4"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1AsyncWriteBlock.html#a40fe50b14bf164129156972247acb8e4">data</a> () const </td></tr>
 <tr class="memdesc:a40fe50b14bf164129156972247acb8e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">underlying buffer pointer  <a href="#a40fe50b14bf164129156972247acb8e4">More...</a><br/></td></tr>
 <tr class="separator:a40fe50b14bf164129156972247acb8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,9 +228,9 @@ Private Attributes</h2></td></tr>
 
 <p>Construct block writer with callback. </p>
 
-<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00569">569</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00381">381</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="dispatcher_8hpp_source.html#l00647">AsyncWriteBlock::block_</a>, <a class="el" href="dispatcher_8hpp_source.html#l00067">thrill::net::debug_async</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOGC</a>, and <a class="el" href="block_8hpp_source.html#l00245">PinnedBlock::size()</a>.</p>
+<p>References <a class="el" href="dispatcher_8hpp_source.html#l00461">AsyncWriteBlock::block_</a>, <a class="el" href="dispatcher_8hpp_source.html#l00062">thrill::net::debug_async</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOGC</a>, and <a class="el" href="block_8hpp_source.html#l00245">PinnedBlock::size()</a>.</p>
 
 </div>
 </div>
@@ -304,15 +307,46 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00590">590</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00401">401</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="dispatcher_8hpp_source.html#l00647">AsyncWriteBlock::block_</a>, <a class="el" href="dispatcher_8hpp_source.html#l00067">thrill::net::debug_async</a>, and <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOGC</a>.</p>
+<p>References <a class="el" href="dispatcher_8hpp_source.html#l00461">AsyncWriteBlock::block_</a>, <a class="el" href="dispatcher_8hpp_source.html#l00062">thrill::net::debug_async</a>, and <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00167">LOGC</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00307">Dispatcher::MpiAsync::~MpiAsync()</a>.</p>
+<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00326">Dispatcher::MpiAsync::~MpiAsync()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="acef80dec6298fc217923a30b63e4103e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a>* connection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns conn_. </p>
+
+<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00448">448</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+
+<p>References <a class="el" href="dispatcher_8hpp_source.html#l00458">AsyncWriteBlock::conn_</a>.</p>
+
+<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00361">Dispatcher::MpiAsync::connection()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00190">Dispatcher::PerformAsync()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a40fe50b14bf164129156972247acb8e4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -336,9 +370,11 @@ Private Attributes</h2></td></tr>
 
 <p>underlying buffer pointer </p>
 
-<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00637">637</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00451">451</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="dispatcher_8hpp_source.html#l00647">AsyncWriteBlock::block_</a>, and <a class="el" href="block_8hpp_source.html#l00259">PinnedBlock::data_begin()</a>.</p>
+<p>References <a class="el" href="dispatcher_8hpp_source.html#l00461">AsyncWriteBlock::block_</a>, and <a class="el" href="block_8hpp_source.html#l00259">PinnedBlock::data_begin()</a>.</p>
+
+<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00190">Dispatcher::PerformAsync()</a>.</p>
 
 </div>
 </div>
@@ -363,11 +399,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00629">629</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00440">440</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="dispatcher_8hpp_source.html#l00653">AsyncWriteBlock::callback_</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00644">AsyncWriteBlock::conn_</a>.</p>
+<p>References <a class="el" href="dispatcher_8hpp_source.html#l00467">AsyncWriteBlock::callback_</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00458">AsyncWriteBlock::conn_</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00320">Dispatcher::MpiAsync::DoCallback()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00597">AsyncWriteBlock::operator()()</a>.</p>
+<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00341">Dispatcher::MpiAsync::DoCallback()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00408">AsyncWriteBlock::operator()()</a>.</p>
 
 </div>
 </div>
@@ -392,9 +428,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00627">627</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00438">438</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="dispatcher_8hpp_source.html#l00647">AsyncWriteBlock::block_</a>, <a class="el" href="block_8hpp_source.html#l00245">PinnedBlock::size()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00650">AsyncWriteBlock::written_size_</a>.</p>
+<p>References <a class="el" href="dispatcher_8hpp_source.html#l00461">AsyncWriteBlock::block_</a>, <a class="el" href="block_8hpp_source.html#l00245">PinnedBlock::size()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00464">AsyncWriteBlock::written_size_</a>.</p>
 
 </div>
 </div>
@@ -421,9 +457,9 @@ Private Attributes</h2></td></tr>
 
 <p>Should be called when the socket is writable. </p>
 
-<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00597">597</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00408">408</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="dispatcher_8hpp_source.html#l00647">AsyncWriteBlock::block_</a>, <a class="el" href="dispatcher_8hpp_source.html#l00644">AsyncWriteBlock::conn_</a>, <a class="el" href="block_8hpp_source.html#l00259">PinnedBlock::data_begin()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00629">AsyncWriteBlock::DoCallback()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00176">LOG1</a>, <a class="el" href="classthrill_1_1net_1_1Connection.html#a9d9ecbc353cdec70d333e5050c0c1d4d">Connection::SendOne()</a>, <a class="el" href="block_8hpp_source.html#l00245">PinnedBlock::size()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00650">AsyncWriteBlock::written_size_</a>.</p>
+<p>References <a class="el" href="dispatcher_8hpp_source.html#l00461">AsyncWriteBlock::block_</a>, <a class="el" href="dispatcher_8hpp_source.html#l00458">AsyncWriteBlock::conn_</a>, <a class="el" href="block_8hpp_source.html#l00259">PinnedBlock::data_begin()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00440">AsyncWriteBlock::DoCallback()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00176">LOG1</a>, <a class="el" href="classthrill_1_1net_1_1Connection.html#a9d9ecbc353cdec70d333e5050c0c1d4d">Connection::SendOne()</a>, <a class="el" href="block_8hpp_source.html#l00245">PinnedBlock::size()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00464">AsyncWriteBlock::written_size_</a>.</p>
 
 </div>
 </div>
@@ -502,9 +538,11 @@ Private Attributes</h2></td></tr>
 
 <p>underlying buffer size </p>
 
-<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00640">640</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00454">454</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="dispatcher_8hpp_source.html#l00647">AsyncWriteBlock::block_</a>, and <a class="el" href="block_8hpp_source.html#l00245">PinnedBlock::size()</a>.</p>
+<p>References <a class="el" href="dispatcher_8hpp_source.html#l00461">AsyncWriteBlock::block_</a>, and <a class="el" href="block_8hpp_source.html#l00245">PinnedBlock::size()</a>.</p>
+
+<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00190">Dispatcher::PerformAsync()</a>.</p>
 
 </div>
 </div>
@@ -529,9 +567,9 @@ Private Attributes</h2></td></tr>
 
 <p>Send block (holds a pin on the underlying ByteBlock) </p>
 
-<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00647">647</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00461">461</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00569">AsyncWriteBlock::AsyncWriteBlock()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00637">AsyncWriteBlock::data()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00627">AsyncWriteBlock::IsDone()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00597">AsyncWriteBlock::operator()()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00640">AsyncWriteBlock::size()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00590">AsyncWriteBlock::~AsyncWriteBlock()</a>.</p>
+<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00381">AsyncWriteBlock::AsyncWriteBlock()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00451">AsyncWriteBlock::data()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00438">AsyncWriteBlock::IsDone()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00408">AsyncWriteBlock::operator()()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00454">AsyncWriteBlock::size()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00401">AsyncWriteBlock::~AsyncWriteBlock()</a>.</p>
 
 </div>
 </div>
@@ -555,9 +593,9 @@ Private Attributes</h2></td></tr>
 
 <p>functional object to call once data is complete </p>
 
-<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00653">653</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00467">467</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00629">AsyncWriteBlock::DoCallback()</a>.</p>
+<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00440">AsyncWriteBlock::DoCallback()</a>.</p>
 
 </div>
 </div>
@@ -581,9 +619,9 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="classthrill_1_1net_1_1Connection.html" title="A Connection represents a link to another peer in a network group. ">Connection</a> reference. </p>
 
-<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00644">644</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00458">458</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00629">AsyncWriteBlock::DoCallback()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00597">AsyncWriteBlock::operator()()</a>.</p>
+<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00448">AsyncWriteBlock::connection()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00440">AsyncWriteBlock::DoCallback()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00408">AsyncWriteBlock::operator()()</a>.</p>
 
 </div>
 </div>
@@ -607,9 +645,9 @@ Private Attributes</h2></td></tr>
 
 <p>total size currently written </p>
 
-<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00650">650</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8hpp_source.html#l00464">464</a> of file <a class="el" href="dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00627">AsyncWriteBlock::IsDone()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00597">AsyncWriteBlock::operator()()</a>.</p>
+<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00438">AsyncWriteBlock::IsDone()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00408">AsyncWriteBlock::operator()()</a>.</p>
 
 </div>
 </div>
@@ -622,7 +660,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net.html">net</a></li><li class="navelem"><a class="el" href="classthrill_1_1net_1_1AsyncWriteBlock.html">AsyncWriteBlock</a></li>
-    <li class="footer">Generated on Thu Nov 23 2017 21:32:34 for Thrill by
+    <li class="footer">Generated on Thu Dec 21 2017 17:33:29 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

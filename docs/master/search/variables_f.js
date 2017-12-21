@@ -56,6 +56,8 @@ var searchData=
   ['prev_5frx_5fbytes_5f',['prev_rx_bytes_',['../classthrill_1_1net_1_1Connection.html#a8d9343cf64d90942f33ff2d537e84f32',1,'thrill::net::Connection']]],
   ['prev_5ftx_5fbytes_5f',['prev_tx_bytes_',['../classthrill_1_1net_1_1Connection.html#a3e7d95c83f7aa336c291822006b0dc73',1,'thrill::net::Connection']]],
   ['priority_5fop_5f',['priority_op_',['../classthrill_1_1io_1_1LinuxaioQueue.html#a7346ead5fee378ce1f79b316e4169624',1,'thrill::io::LinuxaioQueue::priority_op_()'],['../classthrill_1_1io_1_1RequestQueueImpl1Q.html#a7346ead5fee378ce1f79b316e4169624',1,'thrill::io::RequestQueueImpl1Q::priority_op_()'],['../classthrill_1_1io_1_1RequestQueueImplQwQr.html#a7346ead5fee378ce1f79b316e4169624',1,'thrill::io::RequestQueueImplQwQr::priority_op_()']]],
+  ['profile_5fbypass_5foperations',['profile_bypass_operations',['../namespacethrill_1_1mem.html#a288723799b8d09408a26465e68f0a3e1',1,'thrill::mem']]],
+  ['profile_5foperations',['profile_operations',['../namespacethrill_1_1mem.html#a1fe120b33aef6494426a9e5e89ee509a',1,'thrill::mem']]],
   ['profiler_5f',['profiler_',['../classthrill_1_1api_1_1HostContext.html#ac975eee51af1aac6a0743f3d1ccd560b',1,'thrill::api::HostContext::profiler_()'],['../classthrill_1_1common_1_1ProfileTaskRegistration.html#aa6bb4de5a7d362f8864f86d549816fab',1,'thrill::common::ProfileTaskRegistration::profiler_()']]],
   ['program_5fname_5f',['program_name_',['../classtlx_1_1CmdlineParser.html#a46ae7a27b899e9a86ad04807eb1ad34e',1,'tlx::CmdlineParser']]],
   ['ptr',['ptr',['../classthrill_1_1net_1_1FlowControlChannel_1_1LocalData.html#a220513c53af6187e4123b65a6f984e08',1,'thrill::net::FlowControlChannel::LocalData']]],

@@ -10,7 +10,7 @@ var classthrill_1_1net_1_1Manager =
     [ "num_hosts", "classthrill_1_1net_1_1Manager.html#ad5784440466718742744f97aa0eb09de", null ],
     [ "operator=", "classthrill_1_1net_1_1Manager.html#a8f2c853467d107ad199820ee2437a6cd", null ],
     [ "RunTask", "classthrill_1_1net_1_1Manager.html#a7e1de1a9e54c69a44dfebcd84bd7fd55", null ],
-    [ "Traffic", "classthrill_1_1net_1_1Manager.html#aad0f2785cb9072d14336442c28f26f28", null ],
+    [ "Traffic", "classthrill_1_1net_1_1Manager.html#a61f867ea86dd890564293f8da4804d95", null ],
     [ "debug", "classthrill_1_1net_1_1Manager.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
     [ "groups_", "classthrill_1_1net_1_1Manager.html#ae9aa249443fb1daabfa854fae4e6e11e", null ],
     [ "kGroupCount", "classthrill_1_1net_1_1Manager.html#a618b4b6aa3f6d97020571c41ff0c31d8", null ],

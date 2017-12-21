@@ -289,6 +289,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_classthrill_1_1net_1_1Connection"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classthrill_1_1net_1_1Connection')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a></td></tr>
 <tr class="memitem:aacce03b15aa572b42cd58c8d63765b16 inherit pub_attribs_classthrill_1_1net_1_1Connection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Connection.html#aacce03b15aa572b42cd58c8d63765b16">is_loopback_</a> = false</td></tr>
 <tr class="separator:aacce03b15aa572b42cd58c8d63765b16 inherit pub_attribs_classthrill_1_1net_1_1Connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26847a99f640df8210b3d9fc825a35dc inherit pub_attribs_classthrill_1_1net_1_1Connection"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Connection.html#a26847a99f640df8210b3d9fc825a35dc">tx_seq_</a> { 0 }</td></tr>
+<tr class="memdesc:a26847a99f640df8210b3d9fc825a35dc inherit pub_attribs_classthrill_1_1net_1_1Connection"><td class="mdescLeft">&#160;</td><td class="mdescRight">send sequence  <a href="#a26847a99f640df8210b3d9fc825a35dc">More...</a><br/></td></tr>
+<tr class="separator:a26847a99f640df8210b3d9fc825a35dc inherit pub_attribs_classthrill_1_1net_1_1Connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8812c745d1e706e5761fe3b3ac07159 inherit pub_attribs_classthrill_1_1net_1_1Connection"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Connection.html#af8812c745d1e706e5761fe3b3ac07159">rx_seq_</a> { 0 }</td></tr>
+<tr class="memdesc:af8812c745d1e706e5761fe3b3ac07159 inherit pub_attribs_classthrill_1_1net_1_1Connection"><td class="mdescLeft">&#160;</td><td class="mdescRight">receive sequence  <a href="#af8812c745d1e706e5761fe3b3ac07159">More...</a><br/></td></tr>
+<tr class="separator:af8812c745d1e706e5761fe3b3ac07159 inherit pub_attribs_classthrill_1_1net_1_1Connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a597a259166090cf9a92740c4b7b423ec inherit pub_attribs_classthrill_1_1net_1_1Connection"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Connection.html#a597a259166090cf9a92740c4b7b423ec">tx_bytes_</a> { 0 }</td></tr>
 <tr class="memdesc:a597a259166090cf9a92740c4b7b423ec inherit pub_attribs_classthrill_1_1net_1_1Connection"><td class="mdescLeft">&#160;</td><td class="mdescRight">sent bytes  <a href="#a597a259166090cf9a92740c4b7b423ec">More...</a><br/></td></tr>
 <tr class="separator:a597a259166090cf9a92740c4b7b423ec inherit pub_attribs_classthrill_1_1net_1_1Connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -446,7 +452,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mock_2group_8cpp_source.html#l00088">88</a> of file <a class="el" href="mock_2group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="mock_2group_8hpp_source.html#l00102">Connection::d_</a>, <a class="el" href="connection_8hpp_source.html#l00470">Connection::rx_bytes_</a>, and <a class="el" href="buffer_8hpp_source.html#l00141">Buffer::size()</a>.</p>
+<p>References <a class="el" href="mock_2group_8hpp_source.html#l00102">Connection::d_</a>, <a class="el" href="connection_8hpp_source.html#l00481">Connection::rx_bytes_</a>, and <a class="el" href="buffer_8hpp_source.html#l00141">Buffer::size()</a>.</p>
 
 <p>Referenced by <a class="el" href="mock_2group_8cpp_source.html#l00101">Connection::SyncRecv()</a>.</p>
 
@@ -678,7 +684,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mock_2group_8cpp_source.html#l00076">76</a> of file <a class="el" href="mock_2group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="mock_2group_8hpp_source.html#l00093">Connection::group_</a>, <a class="el" href="mock_2group_8hpp_source.html#l00096">Connection::peer_</a>, <a class="el" href="mock_2group_8cpp_source.html#l00186">Group::Send()</a>, and <a class="el" href="connection_8hpp_source.html#l00467">Connection::tx_bytes_</a>.</p>
+<p>References <a class="el" href="mock_2group_8hpp_source.html#l00093">Connection::group_</a>, <a class="el" href="mock_2group_8hpp_source.html#l00096">Connection::peer_</a>, <a class="el" href="mock_2group_8cpp_source.html#l00185">Group::Send()</a>, and <a class="el" href="connection_8hpp_source.html#l00478">Connection::tx_bytes_</a>.</p>
 
 <p>Referenced by <a class="el" href="mock_2group_8cpp_source.html#l00083">Connection::SendOne()</a>, <a class="el" href="mock_2group_8cpp_source.html#l00119">Connection::SyncRecvSend()</a>, and <a class="el" href="mock_2group_8cpp_source.html#l00113">Connection::SyncSendRecv()</a>.</p>
 
@@ -857,7 +863,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net.html">net</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net_1_1mock.html">mock</a></li><li class="navelem"><a class="el" href="classthrill_1_1net_1_1mock_1_1Connection.html">Connection</a></li>
-    <li class="footer">Generated on Thu Nov 23 2017 21:32:35 for Thrill by
+    <li class="footer">Generated on Thu Dec 21 2017 17:33:29 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -5,6 +5,7 @@ var classthrill_1_1net_1_1AsyncReadByteBlock =
     [ "AsyncReadByteBlock", "classthrill_1_1net_1_1AsyncReadByteBlock.html#a75e634a9077a0ca14859a02d1a69bbd9", null ],
     [ "~AsyncReadByteBlock", "classthrill_1_1net_1_1AsyncReadByteBlock.html#adc772057f0a6c44262e36e18251cf97a", null ],
     [ "byte_block", "classthrill_1_1net_1_1AsyncReadByteBlock.html#afd482646f5f46915238f3ca1c8601b70", null ],
+    [ "connection", "classthrill_1_1net_1_1AsyncReadByteBlock.html#acef80dec6298fc217923a30b63e4103e", null ],
     [ "data", "classthrill_1_1net_1_1AsyncReadByteBlock.html#a6a731c70d12750586b67c6cde637b650", null ],
     [ "data", "classthrill_1_1net_1_1AsyncReadByteBlock.html#a40fe50b14bf164129156972247acb8e4", null ],
     [ "DoCallback", "classthrill_1_1net_1_1AsyncReadByteBlock.html#aa8d48ea2bd11e5163c3b9ef441a07906", null ],

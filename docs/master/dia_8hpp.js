@@ -8,6 +8,7 @@ var dia_8hpp =
     [ "LocationDetectionFlag", "structthrill_1_1api_1_1LocationDetectionFlag.html", "structthrill_1_1api_1_1LocationDetectionFlag" ],
     [ "NoRebalanceTag", "structthrill_1_1api_1_1NoRebalanceTag.html", "structthrill_1_1api_1_1NoRebalanceTag" ],
     [ "PadTag", "structthrill_1_1api_1_1PadTag.html", "structthrill_1_1api_1_1PadTag" ],
+    [ "SkipPreReducePhaseTag", "structthrill_1_1api_1_1SkipPreReducePhaseTag.html", "structthrill_1_1api_1_1SkipPreReducePhaseTag" ],
     [ "THRILL_API_DIA_HEADER", "dia_8hpp.html#ae353673fea8308beddda3bd2137f4720", null ],
     [ "CutTag", "dia_8hpp.html#a25b6d4eddebb741b5cefd125b7375938", null ],
     [ "DisjointTag", "dia_8hpp.html#a8c6fb4ee8132900d4c585e1af22eb849", null ],
@@ -19,5 +20,6 @@ var dia_8hpp =
     [ "NoRebalanceTag", "dia_8hpp.html#a17bbdade091d6f4b60f8e1682f5b6409", null ],
     [ "NoVolatileKeyTag", "dia_8hpp.html#a87c9961a35015a78ebd4c3396e000dd2", null ],
     [ "PadTag", "dia_8hpp.html#a5535b292ba4b2277576b8857f9c36c1d", null ],
+    [ "SkipPreReducePhaseTag", "dia_8hpp.html#a0ce4ba687d9b4f850d264645613635c9", null ],
     [ "VolatileKeyTag", "dia_8hpp.html#a373d7a591766e54c1f88264fefb9bd0a", null ]
 ];

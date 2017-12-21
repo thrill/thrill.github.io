@@ -1,11 +1,12 @@
 var classthrill_1_1data_1_1Stream =
 [
     [ "Writer", "classthrill_1_1data_1_1Stream.html#aa69ca4ad57a0d2a683361d219fd48c2e", null ],
+    [ "Writers", "classthrill_1_1data_1_1Stream.html#a1b3c2de3fe1721454fe96a17e0795e6e", null ],
     [ "~Stream", "classthrill_1_1data_1_1Stream.html#a22beda3d71a767ab4601c6e3eee69491", null ],
     [ "Close", "classthrill_1_1data_1_1Stream.html#a7f7a3199c392465d0767c6506c1af5b4", null ],
     [ "data", "classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8", null ],
     [ "data", "classthrill_1_1data_1_1Stream.html#a42c8d62a71c6e964fc5954fdc0ba7d48", null ],
-    [ "GetWriters", "classthrill_1_1data_1_1Stream.html#af466211c9c17acd9e25a3e6d09a31c4c", null ],
+    [ "GetWriters", "classthrill_1_1data_1_1Stream.html#a1ed868156fd0366a5e480c9a8cea495b", null ],
     [ "id", "classthrill_1_1data_1_1Stream.html#a3fa188f62b85c2af5028cf55f7edba3c", null ],
     [ "rx_blocks", "classthrill_1_1data_1_1Stream.html#ab01828661e59e31fcb5efe99fa0fb0c9", null ],
     [ "rx_bytes", "classthrill_1_1data_1_1Stream.html#abd43a40e015438622d3d540f0777773c", null ],

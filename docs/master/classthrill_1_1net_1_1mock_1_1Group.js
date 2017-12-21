@@ -1,10 +1,11 @@
 var classthrill_1_1net_1_1mock_1_1Group =
 [
+    [ "Dispatcher", "classthrill_1_1net_1_1mock_1_1Group.html#a9b813f6703d2b8bba5959aa3dc424a5e", null ],
     [ "Group", "classthrill_1_1net_1_1mock_1_1Group.html#a2af06a00f3eb3257849043ddc05a39ff", null ],
     [ "~Group", "classthrill_1_1net_1_1mock_1_1Group.html#aa2a755272411c0d861f46f30970f5ca5", null ],
     [ "Close", "classthrill_1_1net_1_1mock_1_1Group.html#a29dc6798f18d73abd4ba8e4910f6831f", null ],
     [ "connection", "classthrill_1_1net_1_1mock_1_1Group.html#a11981ae99902ce37f82b627a877beb07", null ],
-    [ "ConstructDispatcher", "classthrill_1_1net_1_1mock_1_1Group.html#a54775df0490e235736312e5aaca1e07d", null ],
+    [ "ConstructDispatcher", "classthrill_1_1net_1_1mock_1_1Group.html#a50f0a172ba03ed6d27247d301e39853b", null ],
     [ "ConstructLoopbackMesh", "classthrill_1_1net_1_1mock_1_1Group.html#a66dffeac590766145b45e25b5d908540", null ],
     [ "MaybeHexdump", "classthrill_1_1net_1_1mock_1_1Group.html#a6c531b85c63e426dab6c34d36dbef647", null ],
     [ "num_hosts", "classthrill_1_1net_1_1mock_1_1Group.html#a0feec208eeb70870e8ace6f308a03405", null ],

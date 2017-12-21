@@ -177,7 +177,6 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 </li>
 <li>name_
 : <a class="el" href="classthrill_1_1mem_1_1Manager.html#a7dac8366c11fbcad2f49d85fe8fc4fbe">Manager</a>
-, <a class="el" href="classthrill_1_1net_1_1DispatcherThread.html#a1f9967fc0d566265d6e9162bb77959bd">DispatcherThread</a>
 </li>
 <li>nbids
 : <a class="el" href="classthrill_1_1io_1_1mng__local_1_1BlockWithBids.html#ac36f475ca5b446f4fde4c9b90bec77c8a6d16d29491237e327d06b1053ebbf822">BlockWithBids&lt; Type, Size, RawSize, NBids &gt;</a>
@@ -227,7 +226,7 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 : <a class="el" href="classthrill_1_1io_1_1BlockManager.html#a01e30de38daaadd3aeddf8467f82a512">BlockManager</a>
 </li>
 <li>new_blocks()
-: <a class="el" href="classthrill_1_1io_1_1BlockManager.html#a7b6d0c0bb076be6b62c6aa9c7b83416a">BlockManager</a>
+: <a class="el" href="classthrill_1_1io_1_1BlockManager.html#a87687f708a040057e6e288d8852ce555">BlockManager</a>
 </li>
 <li>new_blocks_int()
 : <a class="el" href="classthrill_1_1io_1_1BlockManager.html#a162853ab07adea41dcb8bdf44eadff77">BlockManager</a>
@@ -313,7 +312,7 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 , <a class="el" href="classthrill_1_1api_1_1GroupToIndexNode_1_1ValueComparator.html#a512853f3d22400549bc3cc4593820158">GroupToIndexNode&lt; ValueType, KeyExtractor, GroupFunction &gt;::ValueComparator</a>
 , <a class="el" href="classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIterator.html#aea1ec429239b002735e835368b4bc093">ReadLinesNode::InputLineIterator</a>
 , <a class="el" href="classthrill_1_1api_1_1ReduceNode_1_1Emitter.html#aa3760879777c65ddad63803b9dd75584">ReduceNode&lt; ValueType, KeyExtractor, ReduceFunction, ReduceConfig, KeyHashFunction, KeyEqualFunction, VolatileKey, UseDuplicateDetection &gt;::Emitter</a>
-, <a class="el" href="classthrill_1_1api_1_1ReduceToIndexNode_1_1Emitter.html#a68183e7eef6fac7b5229a470c20aafb3">ReduceToIndexNode&lt; ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey &gt;::Emitter</a>
+, <a class="el" href="classthrill_1_1api_1_1ReduceToIndexNode_1_1Emitter.html#a68183e7eef6fac7b5229a470c20aafb3">ReduceToIndexNode&lt; ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey, SkipPreReducePhase &gt;::Emitter</a>
 , <a class="el" href="classthrill_1_1api_1_1ZipNode_1_1RegisterParent.html#a520ac41d66b4b960db2961586183d05b">ZipNode&lt; ValueType, ZipFunction, Pad, UnequalCheck, NoRebalance, kNumInputs &gt;::RegisterParent</a>
 , <a class="el" href="classthrill_1_1api_1_1ZipWindowNode_1_1RegisterParent.html#ac7a9a4043a02232668cc9eff457df4cc">ZipWindowNode&lt; ValueType, ZipFunction_, Pad_, UnequalCheck, UseStdArray, kNumInputs_ &gt;::RegisterParent</a>
 </li>
@@ -427,6 +426,12 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 <li>num_iterations
 : <a class="el" href="classexamples_1_1stochastic__gradient__descent_1_1StochasticGradientDescent.html#a22fec0af810a755e77ecbb7179c193d4">StochasticGradientDescent&lt; Vector &gt;</a>
 </li>
+<li>num_parallel_async()
+: <a class="el" href="classthrill_1_1net_1_1Group.html#a15bc0be5d7afa81386cf12b4f0110ae6">Group</a>
+</li>
+<li>num_parallel_async_
+: <a class="el" href="classthrill_1_1data_1_1Multiplexer.html#a3ac7b25d37c4b24a9ab3884100751a1e">Multiplexer</a>
+</li>
 <li>num_partitions()
 : <a class="el" href="classthrill_1_1core_1_1ReduceTable.html#a376994c77e0d09def009c7039fd91c26">ReduceTable&lt; ValueType, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;</a>
 </li>
@@ -442,6 +447,9 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 </li>
 <li>num_queue_
 : <a class="el" href="classthrill_1_1data_1_1StreamSink.html#a214e195a78f3ab67c6150dae2b5bcf86">StreamSink</a>
+</li>
+<li>num_subranges_
+: <a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a6e0702390c0e60fb7d4df787dbb4ab9e">ReduceByIndexPostPhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_ &gt;</a>
 </li>
 <li>num_waiting_requests_
 : <a class="el" href="classthrill_1_1io_1_1LinuxaioQueue.html#a8b340f21259801604d3cc16478c3dd40">LinuxaioQueue</a>
@@ -464,7 +472,7 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 23 2017 21:32:35 for Thrill by
+    <li class="footer">Generated on Thu Dec 21 2017 17:33:29 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

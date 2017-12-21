@@ -1,6 +1,7 @@
 var classthrill_1_1api_1_1HostContext =
 [
-    [ "HostContext", "classthrill_1_1api_1_1HostContext.html#a371515e8fecc9d04ea6276e6a706b9dc", null ],
+    [ "HostContext", "classthrill_1_1api_1_1HostContext.html#af73a24758084970c63ac8d3a825dc351", null ],
+    [ "~HostContext", "classthrill_1_1api_1_1HostContext.html#ab5656755b83c3c927a677a53ba8d7512", null ],
     [ "block_pool", "classthrill_1_1api_1_1HostContext.html#a7944c8bd8ba41cafda9c7a4524638fb4", null ],
     [ "ConstructLoopback", "classthrill_1_1api_1_1HostContext.html#acb0324d9d0a27383dc197428ffc0385e", null ],
     [ "data_multiplexer", "classthrill_1_1api_1_1HostContext.html#a40f11df4d4c1f749b4bb4747177fd66d", null ],
@@ -17,6 +18,7 @@ var classthrill_1_1api_1_1HostContext =
     [ "block_pool_", "classthrill_1_1api_1_1HostContext.html#afd0119bad835a7c715c45b90de7f6cf4", null ],
     [ "block_pool_profiler_", "classthrill_1_1api_1_1HostContext.html#a6925669620738f2b4247dab96b597dfa", null ],
     [ "data_multiplexer_", "classthrill_1_1api_1_1HostContext.html#ae819566061266e5ae094e579aa91ee62", null ],
+    [ "dispatcher_", "classthrill_1_1api_1_1HostContext.html#aa3765bfd83a5ea27a5ad208cf52b093d", null ],
     [ "flow_manager_", "classthrill_1_1api_1_1HostContext.html#ac94160d19a1ef0dc56b0817f8337ddfd", null ],
     [ "local_host_id_", "classthrill_1_1api_1_1HostContext.html#ac26d33171c077fc21d9262b3a41e67e2", null ],
     [ "logger_", "classthrill_1_1api_1_1HostContext.html#ab4798880ffa46b961fa9f584bd13bb83", null ],

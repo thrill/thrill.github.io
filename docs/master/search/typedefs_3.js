@@ -11,6 +11,7 @@ var searchData=
   ['discardwriter',['DiscardWriter',['../group__data__layer.html#gaa3b9c91073d869f4983007bb1349be9a',1,'thrill::data']]],
   ['disk_5flist_5ftype',['disk_list_type',['../classthrill_1_1io_1_1Config.html#a887ea0cfc9b829452f8f0f43d6b95826',1,'thrill::io::Config']]],
   ['diskid',['DiskId',['../classthrill_1_1io_1_1DiskQueues.html#a37a6c32ca6441ec0c437ea506657c6a9',1,'thrill::io::DiskQueues']]],
+  ['dispatcher',['Dispatcher',['../classthrill_1_1net_1_1mock_1_1Group.html#a9b813f6703d2b8bba5959aa3dc424a5e',1,'thrill::net::mock::Group::Dispatcher()'],['../classthrill_1_1net_1_1tcp_1_1Group.html#a41324b4fbf1e6d99e79a6f786cfb0b87',1,'thrill::net::tcp::Group::Dispatcher()']]],
   ['dist_5ftype',['dist_type',['../classthrill_1_1common_1_1ZipfDistribution.html#a01b9320acb1cb63df03c4720dcfd9318',1,'thrill::common::ZipfDistribution']]],
   ['duration',['duration',['../classthrill_1_1common_1_1StatsTimerBase_3_01true_01_4.html#a701fbfcc51d1d70118344545239b2d22',1,'thrill::common::StatsTimerBase&lt; true &gt;::duration()'],['../classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html#a701fbfcc51d1d70118344545239b2d22',1,'thrill::common::StatsTimerBase&lt; false &gt;::duration()']]],
   ['dynblockreader',['DynBlockReader',['../group__data__layer.html#ga75466e8af722e6fd8ff9139ad6eeee40',1,'thrill::data']]]

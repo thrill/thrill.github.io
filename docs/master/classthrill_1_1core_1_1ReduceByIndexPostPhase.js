@@ -28,7 +28,10 @@ var classthrill_1_1core_1_1ReduceByIndexPostPhase =
     [ "neutral_element_", "classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a91be445ab49ca5c8c916d4e90ad6cd22", null ],
     [ "neutral_element_index_occupied_", "classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a3fb82cff6eda99af4abca22aa5ed36e3", null ],
     [ "neutral_element_key_", "classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a0c86da57ee7f8d7bec3fdd1c4f2f5352", null ],
+    [ "num_subranges_", "classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a6e0702390c0e60fb7d4df787dbb4ab9e", null ],
     [ "range_", "classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a2cdb1d67404fabe886b59fb9f95e196e", null ],
     [ "reduce_function_", "classthrill_1_1core_1_1ReduceByIndexPostPhase.html#ad27a239234aa7970527538a2815e0870", null ],
-    [ "subrange_files_", "classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a449eba0e435a57c78041c88578e689e4", null ]
+    [ "subrange_files_", "classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a3f317e44c57d560437d444fa346124ce", null ],
+    [ "subrange_writers_", "classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a39e9fbff0b74b88dddedc04e3c726a49", null ],
+    [ "subranges_", "classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a9ce85a153ba5632a2b2add60708a3eca", null ]
 ];

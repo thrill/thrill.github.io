@@ -12,7 +12,7 @@ var classthrill_1_1api_1_1GroupByNode =
     [ "MaxMergeDegreePrefetch", "classthrill_1_1api_1_1GroupByNode.html#a13e975cf61f01e2a7e48c869a6d08430", null ],
     [ "RunUserFunc", "classthrill_1_1api_1_1GroupByNode.html#aabb20485e20d5ba2653efb6c715f6851", null ],
     [ "debug", "classthrill_1_1api_1_1GroupByNode.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
-    [ "emitter_", "classthrill_1_1api_1_1GroupByNode.html#a166df4002e88d4cf93744f1b408b4251", null ],
+    [ "emitters_", "classthrill_1_1api_1_1GroupByNode.html#a49eb758df3b1ef61cf885dedd0f24e63", null ],
     [ "files_", "classthrill_1_1api_1_1GroupByNode.html#a9b3c8efe8d3b517ddd6a9e6313006ddb", null ],
     [ "groupby_function_", "classthrill_1_1api_1_1GroupByNode.html#a3c4a397a664b5db13f262f2566c0eb2b", null ],
     [ "hash_function_", "classthrill_1_1api_1_1GroupByNode.html#a780d4cab3fd12084bf78519f1c96c642", null ],

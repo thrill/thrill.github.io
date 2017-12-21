@@ -1,6 +1,6 @@
 var classthrill_1_1net_1_1mpi_1_1Group =
 [
-    [ "Group", "classthrill_1_1net_1_1mpi_1_1Group.html#a2c316a06af528b992001b3816021bc86", null ],
+    [ "Group", "classthrill_1_1net_1_1mpi_1_1Group.html#a847900fcb5891a5f062a648981798da6", null ],
     [ "AllReduceMaximumInt", "classthrill_1_1net_1_1mpi_1_1Group.html#a0a1eb02b8fb222e05ed3aaf28bd1f0c2", null ],
     [ "AllReduceMaximumLong", "classthrill_1_1net_1_1mpi_1_1Group.html#a0a80e71ec3ea337baed4379b8ee1e214", null ],
     [ "AllReduceMaximumLongLong", "classthrill_1_1net_1_1mpi_1_1Group.html#a9decb8681ca5520c7e67706078e26f2d", null ],
@@ -28,7 +28,8 @@ var classthrill_1_1net_1_1mpi_1_1Group =
     [ "BroadcastUnsignedLongLong", "classthrill_1_1net_1_1mpi_1_1Group.html#af80b32c40794594f80ca839f5fc053a6", null ],
     [ "Close", "classthrill_1_1net_1_1mpi_1_1Group.html#a29dc6798f18d73abd4ba8e4910f6831f", null ],
     [ "connection", "classthrill_1_1net_1_1mpi_1_1Group.html#a18d879317c4d0bba5b8705dfc1370a7f", null ],
-    [ "ConstructDispatcher", "classthrill_1_1net_1_1mpi_1_1Group.html#a54775df0490e235736312e5aaca1e07d", null ],
+    [ "ConstructDispatcher", "classthrill_1_1net_1_1mpi_1_1Group.html#a50f0a172ba03ed6d27247d301e39853b", null ],
+    [ "dispatcher", "classthrill_1_1net_1_1mpi_1_1Group.html#aef269cc639a219965aa77fbfc91d54bc", null ],
     [ "ExPrefixSumPlusInt", "classthrill_1_1net_1_1mpi_1_1Group.html#a5fa087b4c3bc53fa9d592b23932e4a47", null ],
     [ "ExPrefixSumPlusLong", "classthrill_1_1net_1_1mpi_1_1Group.html#ac80c32d859755b70976f1f1ae2589997", null ],
     [ "ExPrefixSumPlusLongLong", "classthrill_1_1net_1_1mpi_1_1Group.html#ae5f8ed113a60808af7c62271d82f9c80", null ],
@@ -37,13 +38,16 @@ var classthrill_1_1net_1_1mpi_1_1Group =
     [ "ExPrefixSumPlusUnsignedLongLong", "classthrill_1_1net_1_1mpi_1_1Group.html#af09c19af4d12516921a9d1c9535199e9", null ],
     [ "group_tag", "classthrill_1_1net_1_1mpi_1_1Group.html#af49b394cf8ccd4ad2aac5f5e07c1b844", null ],
     [ "num_hosts", "classthrill_1_1net_1_1mpi_1_1Group.html#a0feec208eeb70870e8ace6f308a03405", null ],
+    [ "num_parallel_async", "classthrill_1_1net_1_1mpi_1_1Group.html#a9eae6dc3e79f17971c748fee2d65995a", null ],
     [ "PrefixSumPlusInt", "classthrill_1_1net_1_1mpi_1_1Group.html#a5d152e608e120410c7d860ef70d64b96", null ],
     [ "PrefixSumPlusLong", "classthrill_1_1net_1_1mpi_1_1Group.html#a568196016a8f7e046a5599f15ea856b2", null ],
     [ "PrefixSumPlusLongLong", "classthrill_1_1net_1_1mpi_1_1Group.html#a2c1531a926389d8214d07daa80bb312b", null ],
     [ "PrefixSumPlusUnsignedInt", "classthrill_1_1net_1_1mpi_1_1Group.html#ad598caf4e5445519325f15c95e70c8df", null ],
     [ "PrefixSumPlusUnsignedLong", "classthrill_1_1net_1_1mpi_1_1Group.html#af3a864e8b4a9e4b2fe64cf4e8d274da9", null ],
     [ "PrefixSumPlusUnsignedLongLong", "classthrill_1_1net_1_1mpi_1_1Group.html#a60f3f50987d22c5715238b1e6290d653", null ],
+    [ "WaitForRequest", "classthrill_1_1net_1_1mpi_1_1Group.html#a77a47c22eb47d588d12a5fe73be65dd5", null ],
     [ "conns_", "classthrill_1_1net_1_1mpi_1_1Group.html#ad861b5587da3f7f93785f6974578f670", null ],
     [ "debug", "classthrill_1_1net_1_1mpi_1_1Group.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
+    [ "dispatcher_", "classthrill_1_1net_1_1mpi_1_1Group.html#a3d58d206edc34cec9c0a6d4258f5a601", null ],
     [ "group_tag_", "classthrill_1_1net_1_1mpi_1_1Group.html#a2b76f992d7f29f794aff47b8289480d0", null ]
 ];

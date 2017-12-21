@@ -17,15 +17,16 @@ var classthrill_1_1data_1_1CatStreamData =
     [ "GetCatReader", "classthrill_1_1data_1_1CatStreamData.html#a4ab66658428c48228687ead90d7b38cf", null ],
     [ "GetReader", "classthrill_1_1data_1_1CatStreamData.html#a111689eb1f0cdf9bbed53648b4bdbf61", null ],
     [ "GetReaders", "classthrill_1_1data_1_1CatStreamData.html#a774b4c5c4aeea2785df7cbc32aacca83", null ],
-    [ "GetWriters", "classthrill_1_1data_1_1CatStreamData.html#a5b22e0b1e260ff4f944e2fd31ba122d1", null ],
+    [ "GetWriters", "classthrill_1_1data_1_1CatStreamData.html#ae5a88aa39228911d94aab2ba33f41900", null ],
     [ "loopback_queue", "classthrill_1_1data_1_1CatStreamData.html#a7f8d0a8ed0772b09cae61fd8a5762cea", null ],
-    [ "OnCloseStream", "classthrill_1_1data_1_1CatStreamData.html#a288f148ffe68fbd16aae36b368eb6f15", null ],
-    [ "OnStreamBlock", "classthrill_1_1data_1_1CatStreamData.html#a42a0fff5474425f1219f0fda1977cb32", null ],
+    [ "OnStreamBlock", "classthrill_1_1data_1_1CatStreamData.html#a3c310149e32ff3cb3a3de4d6c458e17f", null ],
+    [ "OnStreamBlockOrdered", "classthrill_1_1data_1_1CatStreamData.html#a9fa1ec56a9ca51542ac02d6438b3cc58", null ],
     [ "operator=", "classthrill_1_1data_1_1CatStreamData.html#a1c41888323ae53c3ca2bb36c08200014", null ],
     [ "set_dia_id", "classthrill_1_1data_1_1CatStreamData.html#ab5da44f96c188e2badab29a75172fa15", null ],
     [ "Multiplexer", "classthrill_1_1data_1_1CatStreamData.html#a003ef159b7259479c2b087912970e4c4", null ],
     [ "debug", "classthrill_1_1data_1_1CatStreamData.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
     [ "debug_data", "classthrill_1_1data_1_1CatStreamData.html#acb602939933ff243713d9736beba5525", null ],
     [ "is_closed_", "classthrill_1_1data_1_1CatStreamData.html#a8d6f38b922dc7b0e2d1b2f9148de2951", null ],
-    [ "queues_", "classthrill_1_1data_1_1CatStreamData.html#a21706cc63ab026aa72dc4b68a8d73332", null ]
+    [ "queues_", "classthrill_1_1data_1_1CatStreamData.html#a21706cc63ab026aa72dc4b68a8d73332", null ],
+    [ "seq_", "classthrill_1_1data_1_1CatStreamData.html#a995af7bf36292551390cece566f7c3d4", null ]
 ];

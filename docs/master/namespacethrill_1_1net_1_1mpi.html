@@ -114,6 +114,7 @@ $(document).ready(function(){initNavTree('namespacethrill_1_1net_1_1mpi.html',''
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -123,6 +124,8 @@ $(document).ready(function(){initNavTree('namespacethrill_1_1net_1_1mpi.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1AsyncRequest.html">AsyncRequest</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Connection.html">Connection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual MPI connection class.  <a href="classthrill_1_1net_1_1mpi_1_1Connection.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,11 +138,17 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A net group backed by virtual MPI connection.  <a href="classthrill_1_1net_1_1mpi_1_1Group.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga769838a4869b196a982532f4f9c152f8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__mpi.html#ga769838a4869b196a982532f4f9c152f8">AsyncRequestCallback</a> = <a class="el" href="namespacetlx.html#afacc9643f535d390fd0ead73790a6d56">tlx::delegate</a>&lt; void(MPI_Status &amp;), <a class="el" href="namespacethrill_1_1mem.html#aa2925ec9abfffe80dd5c80874b085f1a">mem::GPoolAllocator</a>&lt; char &gt; &gt;</td></tr>
+<tr class="memdesc:ga769838a4869b196a982532f4f9c152f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature of async MPI request callbacks.  <a href="group__net__mpi.html#ga769838a4869b196a982532f4f9c152f8">More...</a><br/></td></tr>
+<tr class="separator:ga769838a4869b196a982532f4f9c152f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga56c6c63c92c20a84dd043d1ea35e5be8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__mpi.html#ga56c6c63c92c20a84dd043d1ea35e5be8">Construct</a> (size_t group_size, std::unique_ptr&lt; <a class="el" href="classthrill_1_1net_1_1mpi_1_1Group.html">Group</a> &gt; *groups, size_t group_count)</td></tr>
-<tr class="memdesc:ga56c6c63c92c20a84dd043d1ea35e5be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <a class="el" href="classthrill_1_1net_1_1mpi_1_1Group.html" title="A net group backed by virtual MPI connection. ">Group</a> which connects to peers using MPI.  <a href="group__net__mpi.html#ga56c6c63c92c20a84dd043d1ea35e5be8">More...</a><br/></td></tr>
-<tr class="separator:ga56c6c63c92c20a84dd043d1ea35e5be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga005cca5db2fb3a4a8d2a8bb9a588868d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__mpi.html#ga005cca5db2fb3a4a8d2a8bb9a588868d">Construct</a> (size_t group_size, <a class="el" href="classthrill_1_1net_1_1DispatcherThread.html">DispatcherThread</a> &amp;dispatcher, std::unique_ptr&lt; <a class="el" href="classthrill_1_1net_1_1mpi_1_1Group.html">Group</a> &gt; *groups, size_t group_count)</td></tr>
+<tr class="memdesc:ga005cca5db2fb3a4a8d2a8bb9a588868d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <a class="el" href="classthrill_1_1net_1_1mpi_1_1Group.html" title="A net group backed by virtual MPI connection. ">Group</a> which connects to peers using MPI.  <a href="group__net__mpi.html#ga005cca5db2fb3a4a8d2a8bb9a588868d">More...</a><br/></td></tr>
+<tr class="separator:ga005cca5db2fb3a4a8d2a8bb9a588868d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81f8e99562b24b8d10faca8d52cfb646"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1net_1_1mpi.html#a81f8e99562b24b8d10faca8d52cfb646">Deinitialize</a> ()</td></tr>
 <tr class="memdesc:a81f8e99562b24b8d10faca8d52cfb646"><td class="mdescLeft">&#160;</td><td class="mdescRight">atexit() method to deinitialize the MPI library.  <a href="#a81f8e99562b24b8d10faca8d52cfb646">More...</a><br/></td></tr>
 <tr class="separator:a81f8e99562b24b8d10faca8d52cfb646"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,6 +167,9 @@ Variables</h2></td></tr>
 <tr class="memitem:abf45c484c585bd82d2d892c29de4a0be"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1net_1_1mpi.html#abf45c484c585bd82d2d892c29de4a0be">g_mutex</a></td></tr>
 <tr class="memdesc:abf45c484c585bd82d2d892c29de4a0be"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Grand MPI Library Invocation Mutex (The GMLIM)  <a href="#abf45c484c585bd82d2d892c29de4a0be">More...</a><br/></td></tr>
 <tr class="separator:abf45c484c585bd82d2d892c29de4a0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ffd873561dd925ba1dbb2944a49bc7"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1net_1_1mpi.html#a27ffd873561dd925ba1dbb2944a49bc7">g_simultaneous</a> = 32</td></tr>
+<tr class="memdesc:a27ffd873561dd925ba1dbb2944a49bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of simultaneous transfers  <a href="#a27ffd873561dd925ba1dbb2944a49bc7">More...</a><br/></td></tr>
+<tr class="separator:a27ffd873561dd925ba1dbb2944a49bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a81f8e99562b24b8d10faca8d52cfb646"></a>
@@ -183,11 +195,11 @@ Variables</h2></td></tr>
 
 <p>atexit() method to deinitialize the MPI library. </p>
 
-<p>Definition at line <a class="el" href="mpi_2group_8cpp_source.html#l00345">345</a> of file <a class="el" href="mpi_2group_8cpp_source.html">group.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2group_8cpp_source.html#l00627">627</a> of file <a class="el" href="mpi_2group_8cpp_source.html">group.cpp</a>.</p>
 
 <p>References <a class="el" href="mpi_2group_8cpp_source.html#l00026">g_mutex</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2group_8cpp_source.html#l00352">Initialize()</a>.</p>
+<p>Referenced by <a class="el" href="mpi_2group_8cpp_source.html#l00634">Initialize()</a>.</p>
 
 </div>
 </div>
@@ -214,11 +226,11 @@ Variables</h2></td></tr>
 
 <p>run MPI_Init() if not already done (can be called multiple times). </p>
 
-<p>Definition at line <a class="el" href="mpi_2group_8cpp_source.html#l00352">352</a> of file <a class="el" href="mpi_2group_8cpp_source.html">group.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2group_8cpp_source.html#l00634">634</a> of file <a class="el" href="mpi_2group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="mpi_2group_8cpp_source.html#l00345">Deinitialize()</a>.</p>
+<p>References <a class="el" href="mpi_2group_8cpp_source.html#l00627">Deinitialize()</a>, and <a class="el" href="die_8hpp_source.html#l00042">die</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2group_8cpp_source.html#l00383">Construct()</a>, <a class="el" href="mock_2group_8cpp_source.html#l00128">Group::Group()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00422">MpiRank()</a>, and <a class="el" href="mpi_2group_8cpp_source.html#l00409">NumMpiProcesses()</a>.</p>
+<p>Referenced by <a class="el" href="mpi_2group_8cpp_source.html#l00668">Construct()</a>, <a class="el" href="mock_2group_8cpp_source.html#l00128">Group::Group()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00707">MpiRank()</a>, and <a class="el" href="mpi_2group_8cpp_source.html#l00694">NumMpiProcesses()</a>.</p>
 
 </div>
 </div>
@@ -237,7 +249,33 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mpi_2group_8cpp_source.html#l00026">26</a> of file <a class="el" href="mpi_2group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2group_8cpp_source.html#l00210">Group::AllReduceMaximumInt()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00260">Group::AllReduceMaximumLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00310">Group::AllReduceMaximumLongLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00235">Group::AllReduceMaximumUnsignedInt()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00285">Group::AllReduceMaximumUnsignedLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00335">Group::AllReduceMaximumUnsignedLongLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00206">Group::AllReduceMinimumInt()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00256">Group::AllReduceMinimumLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00306">Group::AllReduceMinimumLongLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00231">Group::AllReduceMinimumUnsignedInt()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00281">Group::AllReduceMinimumUnsignedLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00331">Group::AllReduceMinimumUnsignedLongLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00202">Group::AllReducePlusInt()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00252">Group::AllReducePlusLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00302">Group::AllReducePlusLongLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00227">Group::AllReducePlusUnsignedInt()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00277">Group::AllReducePlusUnsignedLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00327">Group::AllReducePlusUnsignedLongLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00140">Group::Barrier()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00198">Group::BroadcastInt()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00248">Group::BroadcastLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00298">Group::BroadcastLongLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00223">Group::BroadcastUnsignedInt()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00273">Group::BroadcastUnsignedLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00323">Group::BroadcastUnsignedLongLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00383">Construct()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00345">Deinitialize()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00081">Dispatcher::DispatchOne()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00193">Group::ExPrefixSumPlusInt()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00243">Group::ExPrefixSumPlusLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00293">Group::ExPrefixSumPlusLongLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00218">Group::ExPrefixSumPlusUnsignedInt()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00268">Group::ExPrefixSumPlusUnsignedLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00318">Group::ExPrefixSumPlusUnsignedLongLong()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00062">Dispatcher::IRecv()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00043">Dispatcher::ISend()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00422">MpiRank()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00409">NumMpiProcesses()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00189">Group::PrefixSumPlusInt()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00239">Group::PrefixSumPlusLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00289">Group::PrefixSumPlusLongLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00214">Group::PrefixSumPlusUnsignedInt()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00264">Group::PrefixSumPlusUnsignedLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00314">Group::PrefixSumPlusUnsignedLongLong()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00062">Connection::SyncRecv()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00041">Connection::SyncSend()</a>, and <a class="el" href="mpi_2group_8cpp_source.html#l00090">Connection::SyncSendRecv()</a>.</p>
+<p>Referenced by <a class="el" href="mpi_2group_8cpp_source.html#l00190">Group::Barrier()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00668">Construct()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00627">Deinitialize()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00265">Dispatcher::DispatchOne()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00083">Dispatcher::IRecv()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00061">Dispatcher::ISend()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00707">MpiRank()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00694">NumMpiProcesses()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00214">Group::WaitForRequest()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00044">Dispatcher::~Dispatcher()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a27ffd873561dd925ba1dbb2944a49bc7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t g_simultaneous = 32</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>number of simultaneous transfers </p>
+
+<p>Definition at line <a class="el" href="dispatcher_8cpp_source.html#l00027">27</a> of file <a class="el" href="dispatcher_8cpp_source.html">dispatcher.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00174">Dispatcher::PumpRecvQueue()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00158">Dispatcher::PumpSendQueue()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00137">Dispatcher::QueueAsyncRecv()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00117">Dispatcher::QueueAsyncSend()</a>.</p>
 
 </div>
 </div>
@@ -247,7 +285,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net.html">net</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net_1_1mpi.html">mpi</a></li>
-    <li class="footer">Generated on Thu Nov 23 2017 21:32:35 for Thrill by
+    <li class="footer">Generated on Thu Dec 21 2017 17:33:29 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

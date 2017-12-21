@@ -24,7 +24,7 @@ var searchData=
   ['hexdump_5ftype',['hexdump_type',['../group__tlx__string.html#gae2a485134f5e618b846abb630d44ec6f',1,'tlx']]],
   ['high_5fmax',['high_max',['../classthrill_1_1common_1_1UIntPair.html#a9a14a425763fe0cbeeafb27ba1dd6944',1,'thrill::common::UIntPair']]],
   ['host_5frank',['host_rank',['../classthrill_1_1api_1_1HostContext.html#a41568191e0932671a5b14744fd690d87',1,'thrill::api::HostContext::host_rank()'],['../classthrill_1_1api_1_1Context.html#a41568191e0932671a5b14744fd690d87',1,'thrill::api::Context::host_rank()']]],
-  ['hostcontext',['HostContext',['../classthrill_1_1api_1_1HostContext.html#a371515e8fecc9d04ea6276e6a706b9dc',1,'thrill::api::HostContext']]],
+  ['hostcontext',['HostContext',['../classthrill_1_1api_1_1HostContext.html#af73a24758084970c63ac8d3a825dc351',1,'thrill::api::HostContext']]],
   ['hyperloglog',['HyperLogLog',['../group__dia__actions.html#ga8c181321b75884a8b8994e1c6c9d2e13',1,'thrill::api::DIA']]],
   ['hyperloglognode',['HyperLogLogNode',['../classthrill_1_1api_1_1HyperLogLogNode.html#ab291e490d49d49d227275cfeb3fb14ba',1,'thrill::api::HyperLogLogNode']]],
   ['hyperloglogregisters',['HyperLogLogRegisters',['../classthrill_1_1core_1_1HyperLogLogRegisters.html#a97f1e57a2e27a595c7dae37a7bd64da5',1,'thrill::core::HyperLogLogRegisters']]]

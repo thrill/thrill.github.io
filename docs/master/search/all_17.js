@@ -16,7 +16,7 @@ var searchData=
   ['valuetype_5f',['ValueType_',['../classthrill_1_1api_1_1WriteLinesNode.html#a1c70e2804fbf24bf36cdb75e2117ba51',1,'thrill::api::WriteLinesNode']]],
   ['vec_5f',['vec_',['../classthrill_1_1core_1_1ToVectorEmitter.html#a3b88b609ead41693c60ba9a0631ed04e',1,'thrill::core::ToVectorEmitter']]],
   ['vector',['Vector',['../classthrill_1_1common_1_1Vector.html',1,'thrill::common']]],
-  ['vector',['vector',['../namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7',1,'thrill::mem::vector()'],['../namespaceexamples_1_1stochastic__gradient__descent.html#a56e86bc38c33a35923620cb3ef54fa24',1,'examples::stochastic_gradient_descent::Vector()']]],
+  ['vector',['Vector',['../namespaceexamples_1_1stochastic__gradient__descent.html#a56e86bc38c33a35923620cb3ef54fa24',1,'examples::stochastic_gradient_descent::Vector()'],['../namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7',1,'thrill::mem::vector()']]],
   ['vector_2ehpp',['vector.hpp',['../vector_8hpp.html',1,'']]],
   ['vector_3c_20d_2c_20double_20_3e',['Vector&lt; D, double &gt;',['../classthrill_1_1common_1_1Vector.html',1,'thrill::common']]],
   ['vector_5fplain',['vector_plain',['../structthrill_1_1api_1_1ZipWindowTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4.html#ae94a4cb3f0ac9d7e741b4b127f659f2f',1,'thrill::api::ZipWindowTraits&lt; ReturnType(ClassType::*)(Args...) const  &gt;::vector_plain()'],['../structthrill_1_1api_1_1ZipWindowTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4.html#ae94a4cb3f0ac9d7e741b4b127f659f2f',1,'thrill::api::ZipWindowTraits&lt; ReturnType(*)(Args...)&gt;::vector_plain()']]],

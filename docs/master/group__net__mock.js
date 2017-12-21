@@ -20,7 +20,8 @@ var group__net__mock =
     ] ],
     [ "Dispatcher", "classthrill_1_1net_1_1mock_1_1Dispatcher.html", [
       [ "Callback", "classthrill_1_1net_1_1mock_1_1Dispatcher.html#a0a32632611d98f14ad5e291fb0f69584", null ],
-      [ "Dispatcher", "classthrill_1_1net_1_1mock_1_1Dispatcher.html#af14040cd48d39518575517bc69861234", null ],
+      [ "Dispatcher", "classthrill_1_1net_1_1mock_1_1Dispatcher.html#acddb2e4657b4fd3c2a45c48f69490cc9", null ],
+      [ "~Dispatcher", "classthrill_1_1net_1_1mock_1_1Dispatcher.html#aebde02bf4fd9df0eb3505a5f69e66899", null ],
       [ "AddRead", "classthrill_1_1net_1_1mock_1_1Dispatcher.html#ae81ce3a8dbdc629220bc31b25fa7b2b0", null ],
       [ "AddWrite", "classthrill_1_1net_1_1mock_1_1Dispatcher.html#a43592d91d89478e336e62a00114ed0ff", null ],
       [ "Cancel", "classthrill_1_1net_1_1mock_1_1Dispatcher.html#a6c7ed920d52314814a4c9827cfd49391", null ],
@@ -32,11 +33,12 @@ var group__net__mock =
       [ "debug", "classthrill_1_1net_1_1mock_1_1Dispatcher.html#a6b72e54baf646b08b4b87f987f583dcb", null ]
     ] ],
     [ "Group", "classthrill_1_1net_1_1mock_1_1Group.html", [
+      [ "Dispatcher", "classthrill_1_1net_1_1mock_1_1Group.html#a9b813f6703d2b8bba5959aa3dc424a5e", null ],
       [ "Group", "classthrill_1_1net_1_1mock_1_1Group.html#a2af06a00f3eb3257849043ddc05a39ff", null ],
       [ "~Group", "classthrill_1_1net_1_1mock_1_1Group.html#aa2a755272411c0d861f46f30970f5ca5", null ],
       [ "Close", "classthrill_1_1net_1_1mock_1_1Group.html#a29dc6798f18d73abd4ba8e4910f6831f", null ],
       [ "connection", "classthrill_1_1net_1_1mock_1_1Group.html#a11981ae99902ce37f82b627a877beb07", null ],
-      [ "ConstructDispatcher", "classthrill_1_1net_1_1mock_1_1Group.html#a54775df0490e235736312e5aaca1e07d", null ],
+      [ "ConstructDispatcher", "classthrill_1_1net_1_1mock_1_1Group.html#a50f0a172ba03ed6d27247d301e39853b", null ],
       [ "ConstructLoopbackMesh", "classthrill_1_1net_1_1mock_1_1Group.html#a66dffeac590766145b45e25b5d908540", null ],
       [ "MaybeHexdump", "classthrill_1_1net_1_1mock_1_1Group.html#a6c531b85c63e426dab6c34d36dbef647", null ],
       [ "num_hosts", "classthrill_1_1net_1_1mock_1_1Group.html#a0feec208eeb70870e8ace6f308a03405", null ],

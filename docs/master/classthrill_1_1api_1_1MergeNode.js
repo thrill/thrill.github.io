@@ -22,7 +22,6 @@ var classthrill_1_1api_1_1MergeNode =
     [ "files_", "classthrill_1_1api_1_1MergeNode.html#a26b0ce6e7ce54aa90d28d9ee35432059", null ],
     [ "parent_stack_empty_", "classthrill_1_1api_1_1MergeNode.html#a5306ba1419f06ad7a7a43fe56b7b8151", null ],
     [ "prefix_size_", "classthrill_1_1api_1_1MergeNode.html#ac92702cb28428b5df9ad080a92a2da98", null ],
-    [ "rng_", "classthrill_1_1api_1_1MergeNode.html#aa9fae34d3ffbf0d868ded27d7db35133", null ],
     [ "self_verify", "classthrill_1_1api_1_1MergeNode.html#a51f3d93e980ccb92259a9ad807abf54b", null ],
     [ "stats_", "classthrill_1_1api_1_1MergeNode.html#ac7576c732f88f7f4b4dfad6cda92272b", null ],
     [ "stats_enabled", "classthrill_1_1api_1_1MergeNode.html#a9fab430f144b995b17f436543d6e9662", null ],

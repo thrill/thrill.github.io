@@ -7,6 +7,8 @@ var dir_4c5cb83148e98355e323096051cdb415 =
     [ "allocator_base.hpp", "extlib_2tlx_2tlx_2allocator__base_8hpp.html", [
       [ "AllocatorBase", "classtlx_1_1AllocatorBase.html", "classtlx_1_1AllocatorBase" ]
     ] ],
+    [ "backtrace.cpp", "backtrace_8cpp.html", "backtrace_8cpp" ],
+    [ "backtrace.hpp", "backtrace_8hpp.html", "backtrace_8hpp" ],
     [ "cmdline_parser.cpp", "cmdline__parser_8cpp.html", null ],
     [ "cmdline_parser.hpp", "cmdline__parser_8hpp.html", [
       [ "CmdlineParser", "classtlx_1_1CmdlineParser.html", "classtlx_1_1CmdlineParser" ]

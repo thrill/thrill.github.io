@@ -5,6 +5,7 @@ var classthrill_1_1net_1_1AsyncReadBuffer =
     [ "AsyncReadBuffer", "classthrill_1_1net_1_1AsyncReadBuffer.html#ac4da7495eb29487ab6fc3b2abfb01d3f", null ],
     [ "~AsyncReadBuffer", "classthrill_1_1net_1_1AsyncReadBuffer.html#a71060442a1fd1ddc6e719c99bdd48885", null ],
     [ "buffer", "classthrill_1_1net_1_1AsyncReadBuffer.html#a6e4d32cef58578c6471ad6c3dd0db7d3", null ],
+    [ "connection", "classthrill_1_1net_1_1AsyncReadBuffer.html#acef80dec6298fc217923a30b63e4103e", null ],
     [ "data", "classthrill_1_1net_1_1AsyncReadBuffer.html#a6a731c70d12750586b67c6cde637b650", null ],
     [ "data", "classthrill_1_1net_1_1AsyncReadBuffer.html#a40fe50b14bf164129156972247acb8e4", null ],
     [ "DoCallback", "classthrill_1_1net_1_1AsyncReadBuffer.html#aa8d48ea2bd11e5163c3b9ef441a07906", null ],

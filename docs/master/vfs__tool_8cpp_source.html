@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('vfs__tool_8cpp_source.html','');});
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    clp.<a class="code" href="classtlx_1_1CmdlineParser.html#a9b582ca26190005482986c1ac7f8609f">set_description</a>(<span class="stringliteral">&quot;Simple VFS tool for Thrill&quot;</span>);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> op;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    clp.<a class="code" href="classtlx_1_1CmdlineParser.html#ab4d8e677514c2722e5d814ec9c199229">add_param_string</a>(<span class="stringliteral">&quot;op&quot;</span>, op, <span class="stringliteral">&quot;operation: glob|read|write&quot;</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    clp.<a class="code" href="classtlx_1_1CmdlineParser.html#ab4d8e677514c2722e5d814ec9c199229">add_param_string</a>(<span class="stringliteral">&quot;op&quot;</span>, op, <span class="stringliteral">&quot;operation: glob | glob_files | read | write&quot;</span>);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::vector&lt;std::string&gt; paths;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    clp.<a class="code" href="classtlx_1_1CmdlineParser.html#a1ff64cfe0fa2f734b08a72098fdb0c94">add_param_stringlist</a>(<span class="stringliteral">&quot;paths&quot;</span>, paths, <span class="stringliteral">&quot;file path(s)&quot;</span>);</div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('vfs__tool_8cpp_source.html','');});
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="structthrill_1_1vfs_1_1FileList.html">vfs::FileList</a> fl = <a class="code" href="namespacethrill_1_1vfs.html#a450b58546a2e963ca683ca36df31fd06">vfs::Glob</a>(paths);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span> (fl.size() == 0)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;No files returned in glob.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;No entries returned in glob.&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="structthrill_1_1vfs_1_1FileInfo.html">vfs::FileInfo</a>&amp; fi : fl) {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            std::cout &lt;&lt; fi.path</div>
@@ -170,44 +170,64 @@ $(document).ready(function(){initNavTree('vfs__tool_8cpp_source.html','');});
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                      &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op == <span class="stringliteral">&quot;read&quot;</span>)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op == <span class="stringliteral">&quot;glob_files&quot;</span>)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="structthrill_1_1vfs_1_1FileList.html">vfs::FileList</a> fl = <a class="code" href="namespacethrill_1_1vfs.html#a450b58546a2e963ca683ca36df31fd06">vfs::Glob</a>(paths);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="structthrill_1_1vfs_1_1FileList.html">vfs::FileList</a> fl = <a class="code" href="namespacethrill_1_1vfs.html#a450b58546a2e963ca683ca36df31fd06">vfs::Glob</a>(paths, <a class="code" href="namespacethrill_1_1vfs.html#ac7206d989022001555916ee86ef21cf5a0b27918290ff5323bea1e3b78a9cf04e">vfs::GlobType::File</a>);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="structthrill_1_1vfs_1_1FileInfo.html">vfs::FileInfo</a>&amp; fi : fl) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="classtlx_1_1CountingPtr.html">vfs::ReadStreamPtr</a> rs = <a class="code" href="namespacethrill_1_1vfs.html#aac8eb89402fe5b04fc6dca45ef789784">vfs::OpenReadStream</a>(fi.path);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span> (fl.size() == 0)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;No files returned in glob.&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">char</span> buffer[1024 * 1024];</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            ssize_t rb = 0;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">while</span> ((rb = rs-&gt;read(buffer, <span class="keyword">sizeof</span>(buffer))) &gt; 0) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                std::cout.write(buffer, rb);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op == <span class="stringliteral">&quot;write&quot;</span>)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(paths.size() == 1);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="classtlx_1_1CountingPtr.html">vfs::WriteStreamPtr</a> ws = <a class="code" href="namespacethrill_1_1vfs.html#a0a8b2856ab92a59f0685870efb47b92c">vfs::OpenWriteStream</a>(paths[0]);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">char</span> buffer[1024 * 1024];</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">while</span> (std::cin.read(buffer, <span class="keyword">sizeof</span>(buffer)), std::cin.gcount()) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            ws-&gt;write(buffer, std::cin.gcount());</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="namespacethrill_1_1vfs.html#a2d9c1bf7a5066c4b60256c45dad79c0b">vfs::Deinitialize</a>();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="structthrill_1_1vfs_1_1FileInfo.html">vfs::FileInfo</a>&amp; fi : fl) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            std::cout &lt;&lt; fi.path</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                      &lt;&lt; <span class="stringliteral">&quot; type &quot;</span> &lt;&lt; fi.type</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                      &lt;&lt; <span class="stringliteral">&quot; size &quot;</span> &lt;&lt; fi.size</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                      &lt;&lt; <span class="stringliteral">&quot; size_ex_psum &quot;</span> &lt;&lt; fi.size_ex_psum</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                      &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op == <span class="stringliteral">&quot;read&quot;</span>)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="structthrill_1_1vfs_1_1FileList.html">vfs::FileList</a> fl = <a class="code" href="namespacethrill_1_1vfs.html#a450b58546a2e963ca683ca36df31fd06">vfs::Glob</a>(paths, <a class="code" href="namespacethrill_1_1vfs.html#ac7206d989022001555916ee86ef21cf5a0b27918290ff5323bea1e3b78a9cf04e">vfs::GlobType::File</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code" href="structthrill_1_1vfs_1_1FileInfo.html">vfs::FileInfo</a>&amp; fi : fl) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <a class="code" href="classtlx_1_1CountingPtr.html">vfs::ReadStreamPtr</a> rs = <a class="code" href="namespacethrill_1_1vfs.html#aac8eb89402fe5b04fc6dca45ef789784">vfs::OpenReadStream</a>(fi.path);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordtype">char</span> buffer[64 * 1024];</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            ssize_t rb = 0;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">while</span> ((rb = rs-&gt;read(buffer, <span class="keyword">sizeof</span>(buffer))) &gt; 0) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                std::cout.write(buffer, rb);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (op == <span class="stringliteral">&quot;write&quot;</span>)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(paths.size() == 1);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="classtlx_1_1CountingPtr.html">vfs::WriteStreamPtr</a> ws = <a class="code" href="namespacethrill_1_1vfs.html#a0a8b2856ab92a59f0685870efb47b92c">vfs::OpenWriteStream</a>(paths[0]);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">char</span> buffer[64 * 1024];</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">while</span> (std::cin.read(buffer, <span class="keyword">sizeof</span>(buffer)), std::cin.gcount()) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            ws-&gt;write(buffer, std::cin.gcount());</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Unknown operation \&quot;&quot;</span> &lt;&lt; op &lt;&lt; <span class="stringliteral">&quot;\&quot;.&quot;</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="namespacethrill_1_1vfs.html#a2d9c1bf7a5066c4b60256c45dad79c0b">vfs::Deinitialize</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="vfs__tool_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="vfs__tool_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="vfs__tool_8cpp_source.html#l00022">vfs_tool.cpp:22</a></div></div>
 <div class="ttc" id="namespacethrill_1_1vfs_html_a450b58546a2e963ca683ca36df31fd06"><div class="ttname"><a href="namespacethrill_1_1vfs.html#a450b58546a2e963ca683ca36df31fd06">thrill::vfs::Glob</a></div><div class="ttdeci">FileList Glob(const std::vector&lt; std::string &gt; &amp;globlist, const GlobType &amp;gtype)</div><div class="ttdoc">Reads a glob path list and deliver a file list, sizes, and prefixsums (in bytes) for all matching fil...</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00127">file_io.cpp:127</a></div></div>
 <div class="ttc" id="cmdline__parser_8hpp_html"><div class="ttname"><a href="cmdline__parser_8hpp.html">cmdline_parser.hpp</a></div></div>
 <div class="ttc" id="die_8hpp_html_a63798a2675296e09260478493bf3829b"><div class="ttname"><a href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a></div><div class="ttdeci">#define die_unless(X)</div><div class="ttdef"><b>Definition:</b> <a href="die_8hpp_source.html#l00052">die.hpp:52</a></div></div>
 <div class="ttc" id="classtlx_1_1CmdlineParser_html_a9b582ca26190005482986c1ac7f8609f"><div class="ttname"><a href="classtlx_1_1CmdlineParser.html#a9b582ca26190005482986c1ac7f8609f">tlx::CmdlineParser::set_description</a></div><div class="ttdeci">void set_description(const std::string &amp;description)</div><div class="ttdoc">Set description of program, text will be wrapped. </div><div class="ttdef"><b>Definition:</b> <a href="cmdline__parser_8cpp_source.html#l00458">cmdline_parser.cpp:458</a></div></div>
 <div class="ttc" id="namespacethrill_1_1vfs_html_a98b1050f09da390896f964fb7a892391"><div class="ttname"><a href="namespacethrill_1_1vfs.html#a98b1050f09da390896f964fb7a892391">thrill::vfs::Initialize</a></div><div class="ttdeci">void Initialize()</div><div class="ttdoc">Initialize VFS layer. </div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00034">file_io.cpp:34</a></div></div>
+<div class="ttc" id="thrill_2common_2logger_8hpp_html_a278e17dff6f1eff15d52f0bc57b65915"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a></div><div class="ttdeci">#define LOG1</div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2logger_8hpp_source.html#l00176">logger.hpp:176</a></div></div>
 <div class="ttc" id="namespacethrill_1_1vfs_html_aac8eb89402fe5b04fc6dca45ef789784"><div class="ttname"><a href="namespacethrill_1_1vfs.html#aac8eb89402fe5b04fc6dca45ef789784">thrill::vfs::OpenReadStream</a></div><div class="ttdeci">ReadStreamPtr OpenReadStream(const std::string &amp;path, const common::Range &amp;range)</div><div class="ttdoc">Construct reader for given path uri. </div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00179">file_io.cpp:179</a></div></div>
 <div class="ttc" id="file__io_8hpp_html"><div class="ttname"><a href="file__io_8hpp.html">file_io.hpp</a></div></div>
 <div class="ttc" id="thrill_2common_2logger_8hpp_html"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html">logger.hpp</a></div></div>
@@ -218,7 +238,8 @@ $(document).ready(function(){initNavTree('vfs__tool_8cpp_source.html','');});
 <div class="ttc" id="classtlx_1_1CmdlineParser_html_ab4d8e677514c2722e5d814ec9c199229"><div class="ttname"><a href="classtlx_1_1CmdlineParser.html#ab4d8e677514c2722e5d814ec9c199229">tlx::CmdlineParser::add_param_string</a></div><div class="ttdeci">void add_param_string(const std::string &amp;name, std::string &amp;dest, const std::string &amp;desc)</div><div class="ttdoc">add string parameter [name] with description and store to dest </div><div class="ttdef"><b>Definition:</b> <a href="cmdline__parser_8cpp_source.html#l00681">cmdline_parser.cpp:681</a></div></div>
 <div class="ttc" id="classtlx_1_1CountingPtr_html"><div class="ttname"><a href="classtlx_1_1CountingPtr.html">tlx::CountingPtr&lt; ReadStream &gt;</a></div></div>
 <div class="ttc" id="classtlx_1_1CmdlineParser_html_a1ff64cfe0fa2f734b08a72098fdb0c94"><div class="ttname"><a href="classtlx_1_1CmdlineParser.html#a1ff64cfe0fa2f734b08a72098fdb0c94">tlx::CmdlineParser::add_param_stringlist</a></div><div class="ttdeci">void add_param_stringlist(const std::string &amp;name, std::vector&lt; std::string &gt; &amp;dest, const std::string &amp;desc)</div><div class="ttdef"><b>Definition:</b> <a href="cmdline__parser_8cpp_source.html#l00687">cmdline_parser.cpp:687</a></div></div>
-<div class="ttc" id="structthrill_1_1vfs_1_1FileList_html"><div class="ttname"><a href="structthrill_1_1vfs_1_1FileList.html">thrill::vfs::FileList</a></div><div class="ttdoc">List of file info and additional overall info. </div><div class="ttdef"><b>Definition:</b> <a href="file__io_8hpp_source.html#l00076">file_io.hpp:76</a></div></div>
+<div class="ttc" id="structthrill_1_1vfs_1_1FileList_html"><div class="ttname"><a href="structthrill_1_1vfs_1_1FileList.html">thrill::vfs::FileList</a></div><div class="ttdoc">List of file info and additional overall info. </div><div class="ttdef"><b>Definition:</b> <a href="file__io_8hpp_source.html#l00079">file_io.hpp:79</a></div></div>
+<div class="ttc" id="namespacethrill_1_1vfs_html_ac7206d989022001555916ee86ef21cf5a0b27918290ff5323bea1e3b78a9cf04e"><div class="ttname"><a href="namespacethrill_1_1vfs.html#ac7206d989022001555916ee86ef21cf5a0b27918290ff5323bea1e3b78a9cf04e">thrill::vfs::GlobType::File</a></div></div>
 <div class="ttc" id="die_8hpp_html"><div class="ttname"><a href="die_8hpp.html">die.hpp</a></div></div>
 <div class="ttc" id="namespacethrill_1_1vfs_html_a0a8b2856ab92a59f0685870efb47b92c"><div class="ttname"><a href="namespacethrill_1_1vfs.html#a0a8b2856ab92a59f0685870efb47b92c">thrill::vfs::OpenWriteStream</a></div><div class="ttdeci">WriteStreamPtr OpenWriteStream(const std::string &amp;path)</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00210">file_io.cpp:210</a></div></div>
 <div class="ttc" id="classtlx_1_1CmdlineParser_html_afedddf45a2632737e231a1252c60812f"><div class="ttname"><a href="classtlx_1_1CmdlineParser.html#afedddf45a2632737e231a1252c60812f">tlx::CmdlineParser::process</a></div><div class="ttdeci">bool process(int argc, const char *const *argv, std::ostream &amp;os)</div><div class="ttdef"><b>Definition:</b> <a href="cmdline__parser_8cpp_source.html#l00853">cmdline_parser.cpp:853</a></div></div>
@@ -228,7 +249,7 @@ $(document).ready(function(){initNavTree('vfs__tool_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_f7b0de8c3d782e26ade9f6887f66b75e.html">vfs_tool</a></li><li class="navelem"><a class="el" href="vfs__tool_8cpp.html">vfs_tool.cpp</a></li>
-    <li class="footer">Generated on Thu Nov 23 2017 21:32:30 for Thrill by
+    <li class="footer">Generated on Thu Dec 21 2017 17:33:24 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

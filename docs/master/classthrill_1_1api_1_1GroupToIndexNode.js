@@ -10,7 +10,7 @@ var classthrill_1_1api_1_1GroupToIndexNode =
     [ "MainOp", "classthrill_1_1api_1_1GroupToIndexNode.html#a50bbe9134ad3a335b52a0ca1ad4f54ab", null ],
     [ "RunUserFunc", "classthrill_1_1api_1_1GroupToIndexNode.html#aabb20485e20d5ba2653efb6c715f6851", null ],
     [ "debug", "classthrill_1_1api_1_1GroupToIndexNode.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
-    [ "emitter_", "classthrill_1_1api_1_1GroupToIndexNode.html#a95ebce64c91834de1bde0bc50c4775c2", null ],
+    [ "emitters_", "classthrill_1_1api_1_1GroupToIndexNode.html#a49eb758df3b1ef61cf885dedd0f24e63", null ],
     [ "files_", "classthrill_1_1api_1_1GroupToIndexNode.html#a8bb9d507163ac6bc0f856fbf84ac01e6", null ],
     [ "groupby_function_", "classthrill_1_1api_1_1GroupToIndexNode.html#a3c4a397a664b5db13f262f2566c0eb2b", null ],
     [ "key_range_", "classthrill_1_1api_1_1GroupToIndexNode.html#a2269e212af1b4af2a74300747465703c", null ],

@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('classthrill_1_1net_1_1mpi_1_1Dispatche
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00037">37</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00079">79</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for Dispatcher:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -165,28 +165,30 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a52e0c03118c14e0cff05ea64718bb3f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a52e0c03118c14e0cff05ea64718bb3f0">Dispatcher</a> (<a class="el" href="classthrill_1_1mem_1_1Manager.html">mem::Manager</a> &amp;mem_manager, int group_tag, size_t group_size)</td></tr>
-<tr class="memdesc:a52e0c03118c14e0cff05ea64718bb3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor  <a href="#a52e0c03118c14e0cff05ea64718bb3f0">More...</a><br/></td></tr>
-<tr class="separator:a52e0c03118c14e0cff05ea64718bb3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a322cb3438a0f172c12208b798632bf26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a322cb3438a0f172c12208b798632bf26">Dispatcher</a> (size_t group_size)</td></tr>
+<tr class="memdesc:a322cb3438a0f172c12208b798632bf26"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor  <a href="#a322cb3438a0f172c12208b798632bf26">More...</a><br/></td></tr>
+<tr class="separator:a322cb3438a0f172c12208b798632bf26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebde02bf4fd9df0eb3505a5f69e66899"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aebde02bf4fd9df0eb3505a5f69e66899">~Dispatcher</a> ()</td></tr>
 <tr class="memdesc:aebde02bf4fd9df0eb3505a5f69e66899"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructor  <a href="#aebde02bf4fd9df0eb3505a5f69e66899">More...</a><br/></td></tr>
 <tr class="separator:aebde02bf4fd9df0eb3505a5f69e66899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaacb744c85c2cac89275c5d6fa60bcaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aaacb744c85c2cac89275c5d6fa60bcaa">AddAsyncRequest</a> (const MPI_Request &amp;req, const <a class="el" href="group__net__mpi.html#ga769838a4869b196a982532f4f9c152f8">AsyncRequestCallback</a> &amp;callback)</td></tr>
+<tr class="separator:aaacb744c85c2cac89275c5d6fa60bcaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a655a24f4e821b9d08598fd3016223c03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a655a24f4e821b9d08598fd3016223c03">AddRead</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;c, const <a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a0a32632611d98f14ad5e291fb0f69584">Callback</a> &amp;read_cb) final</td></tr>
 <tr class="memdesc:a655a24f4e821b9d08598fd3016223c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a buffered read callback and a default exception callback.  <a href="#a655a24f4e821b9d08598fd3016223c03">More...</a><br/></td></tr>
 <tr class="separator:a655a24f4e821b9d08598fd3016223c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5af2523e8dec0b54785b7c3984e7028"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#ae5af2523e8dec0b54785b7c3984e7028">AddWrite</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;, const <a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a0a32632611d98f14ad5e291fb0f69584">Callback</a> &amp;) final</td></tr>
 <tr class="memdesc:ae5af2523e8dec0b54785b7c3984e7028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a buffered write callback and a default exception callback.  <a href="#ae5af2523e8dec0b54785b7c3984e7028">More...</a><br/></td></tr>
 <tr class="separator:ae5af2523e8dec0b54785b7c3984e7028"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58ac2aec611e94d932493d832f9ab328"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a58ac2aec611e94d932493d832f9ab328">AsyncRead</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;c, size_t size, const <a class="el" href="group__net__layer.html#gae630be4bcb9ca8ce29c37c7c201ec131">AsyncReadBufferCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#gae630be4bcb9ca8ce29c37c7c201ec131">AsyncReadBufferCallback</a>()) final</td></tr>
-<tr class="memdesc:a58ac2aec611e94d932493d832f9ab328"><td class="mdescLeft">&#160;</td><td class="mdescRight">asynchronously read n bytes and deliver them to the callback  <a href="#a58ac2aec611e94d932493d832f9ab328">More...</a><br/></td></tr>
-<tr class="separator:a58ac2aec611e94d932493d832f9ab328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76b830620470a64654ab87b31c5a9d11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a76b830620470a64654ab87b31c5a9d11">AsyncRead</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;c, size_t size, <a class="el" href="classthrill_1_1data_1_1PinnedByteBlockPtr.html">data::PinnedByteBlockPtr</a> &amp;&amp;block, const <a class="el" href="group__net__layer.html#gad2343b2eb0250c6531e377a7c50d30c1">AsyncReadByteBlockCallback</a> &amp;done_cb) final</td></tr>
-<tr class="memdesc:a76b830620470a64654ab87b31c5a9d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">asynchronously read the full ByteBlock and deliver it to the callback  <a href="#a76b830620470a64654ab87b31c5a9d11">More...</a><br/></td></tr>
-<tr class="separator:a76b830620470a64654ab87b31c5a9d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f39d646d1bb2ac0d7ad6b59fb13c076"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a2f39d646d1bb2ac0d7ad6b59fb13c076">AsyncWrite</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;c, <a class="el" href="classthrill_1_1net_1_1Buffer.html">Buffer</a> &amp;&amp;buffer, const <a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a>()) final</td></tr>
-<tr class="separator:a2f39d646d1bb2ac0d7ad6b59fb13c076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89c1d8a1c4c80733c40f27b86e154bbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a89c1d8a1c4c80733c40f27b86e154bbf">AsyncWrite</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;c, <a class="el" href="classthrill_1_1data_1_1PinnedBlock.html">data::PinnedBlock</a> &amp;&amp;block, const <a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a>()) final</td></tr>
-<tr class="separator:a89c1d8a1c4c80733c40f27b86e154bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f89e372e5845a5a88c0da6bff517f7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a8f89e372e5845a5a88c0da6bff517f7c">AsyncRead</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;c, uint32_t seq, size_t size, const <a class="el" href="group__net__layer.html#gae630be4bcb9ca8ce29c37c7c201ec131">AsyncReadBufferCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#gae630be4bcb9ca8ce29c37c7c201ec131">AsyncReadBufferCallback</a>()) final</td></tr>
+<tr class="memdesc:a8f89e372e5845a5a88c0da6bff517f7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">asynchronously read n bytes and deliver them to the callback  <a href="#a8f89e372e5845a5a88c0da6bff517f7c">More...</a><br/></td></tr>
+<tr class="separator:a8f89e372e5845a5a88c0da6bff517f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa63df258e07a5f81576daef8ffb19c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#affa63df258e07a5f81576daef8ffb19c">AsyncRead</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;c, uint32_t seq, size_t size, <a class="el" href="classthrill_1_1data_1_1PinnedByteBlockPtr.html">data::PinnedByteBlockPtr</a> &amp;&amp;block, const <a class="el" href="group__net__layer.html#gad2343b2eb0250c6531e377a7c50d30c1">AsyncReadByteBlockCallback</a> &amp;done_cb) final</td></tr>
+<tr class="memdesc:affa63df258e07a5f81576daef8ffb19c"><td class="mdescLeft">&#160;</td><td class="mdescRight">asynchronously read the full ByteBlock and deliver it to the callback  <a href="#affa63df258e07a5f81576daef8ffb19c">More...</a><br/></td></tr>
+<tr class="separator:affa63df258e07a5f81576daef8ffb19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e7934c28bb3f06f965c970fe2f6fdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#ac2e7934c28bb3f06f965c970fe2f6fdd">AsyncWrite</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;c, uint32_t seq, <a class="el" href="classthrill_1_1net_1_1Buffer.html">Buffer</a> &amp;&amp;buffer, const <a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a>()) final</td></tr>
+<tr class="separator:ac2e7934c28bb3f06f965c970fe2f6fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8832b85301947baca192a7b6a59942b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#ae8832b85301947baca192a7b6a59942b">AsyncWrite</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;c, uint32_t seq, <a class="el" href="classthrill_1_1data_1_1PinnedBlock.html">data::PinnedBlock</a> &amp;&amp;block, const <a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a>()) final</td></tr>
+<tr class="separator:ae8832b85301947baca192a7b6a59942b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a204837e57cbeab91e50e35d7ec4eaa00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a204837e57cbeab91e50e35d7ec4eaa00">Cancel</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;c) final</td></tr>
 <tr class="memdesc:a204837e57cbeab91e50e35d7ec4eaa00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel all callbacks on a given peer.  <a href="#a204837e57cbeab91e50e35d7ec4eaa00">More...</a><br/></td></tr>
 <tr class="separator:a204837e57cbeab91e50e35d7ec4eaa00"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,17 +198,32 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a377d38c6b9cc307e471eb76f6e47a1a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a377d38c6b9cc307e471eb76f6e47a1a4">Interrupt</a> () final</td></tr>
 <tr class="memdesc:a377d38c6b9cc307e471eb76f6e47a1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt does nothing.  <a href="#a377d38c6b9cc307e471eb76f6e47a1a4">More...</a><br/></td></tr>
 <tr class="separator:a377d38c6b9cc307e471eb76f6e47a1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a814c2a32d8cbbc42558030e908aad4a6"><td class="memItemLeft" align="right" valign="top">MPI_Request&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a814c2a32d8cbbc42558030e908aad4a6">IRecv</a> (<a class="el" href="classthrill_1_1net_1_1mpi_1_1Connection.html">Connection</a> &amp;c, void *data, size_t size)</td></tr>
-<tr class="separator:a814c2a32d8cbbc42558030e908aad4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9761c6835111b1f6ddd90c24f935dc5"><td class="memItemLeft" align="right" valign="top">MPI_Request&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#af9761c6835111b1f6ddd90c24f935dc5">ISend</a> (<a class="el" href="classthrill_1_1net_1_1mpi_1_1Connection.html">Connection</a> &amp;c, const void *data, size_t size)</td></tr>
-<tr class="separator:af9761c6835111b1f6ddd90c24f935dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c29104f216df109818f8254c0b11ec"><td class="memItemLeft" align="right" valign="top">MPI_Request&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#ad2c29104f216df109818f8254c0b11ec">IRecv</a> (<a class="el" href="classthrill_1_1net_1_1mpi_1_1Connection.html">Connection</a> &amp;c, uint32_t seq, void *data, size_t size)</td></tr>
+<tr class="separator:ad2c29104f216df109818f8254c0b11ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee2cbcdaea572418c8ad5d54094e3af0"><td class="memItemLeft" align="right" valign="top">MPI_Request&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aee2cbcdaea572418c8ad5d54094e3af0">ISend</a> (<a class="el" href="classthrill_1_1net_1_1mpi_1_1Connection.html">Connection</a> &amp;c, uint32_t seq, const void *data, size_t size)</td></tr>
+<tr class="separator:aee2cbcdaea572418c8ad5d54094e3af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa30df76599abe553fef6a82a135dc807"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aa30df76599abe553fef6a82a135dc807">PerformAsync</a> (<a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a> &amp;&amp;a)</td></tr>
+<tr class="memdesc:aa30df76599abe553fef6a82a135dc807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issue the encapsulated request to the MPI layer.  <a href="#aa30df76599abe553fef6a82a135dc807">More...</a><br/></td></tr>
+<tr class="separator:aa30df76599abe553fef6a82a135dc807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadb33b88831753f1bdf2ff9830a39e39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aadb33b88831753f1bdf2ff9830a39e39">PumpRecvQueue</a> (int peer)</td></tr>
+<tr class="memdesc:aadb33b88831753f1bdf2ff9830a39e39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check recv queue and perform waiting requests.  <a href="#aadb33b88831753f1bdf2ff9830a39e39">More...</a><br/></td></tr>
+<tr class="separator:aadb33b88831753f1bdf2ff9830a39e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82cd326a685e68a6ec4dda9890c7db89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a82cd326a685e68a6ec4dda9890c7db89">PumpSendQueue</a> (int peer)</td></tr>
+<tr class="memdesc:a82cd326a685e68a6ec4dda9890c7db89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check send queue and perform waiting requests.  <a href="#a82cd326a685e68a6ec4dda9890c7db89">More...</a><br/></td></tr>
+<tr class="separator:a82cd326a685e68a6ec4dda9890c7db89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a572e2b53466889b6dd78583420ce19ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a572e2b53466889b6dd78583420ce19ce">QueueAsyncRecv</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;c, <a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a> &amp;&amp;a)</td></tr>
+<tr class="memdesc:a572e2b53466889b6dd78583420ce19ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue and run the encapsulated result.  <a href="#a572e2b53466889b6dd78583420ce19ce">More...</a><br/></td></tr>
+<tr class="separator:a572e2b53466889b6dd78583420ce19ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c503bb3f70bbed279198fee345f001"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a86c503bb3f70bbed279198fee345f001">QueueAsyncSend</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;c, <a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a> &amp;&amp;a)</td></tr>
+<tr class="memdesc:a86c503bb3f70bbed279198fee345f001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enqueue and run the encapsulated result.  <a href="#a86c503bb3f70bbed279198fee345f001">More...</a><br/></td></tr>
+<tr class="separator:a86c503bb3f70bbed279198fee345f001"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93d7f8ccf71dab931a60118f6ccb536c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a93d7f8ccf71dab931a60118f6ccb536c">SetExcept</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;c, const <a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a0a32632611d98f14ad5e291fb0f69584">Callback</a> &amp;except_cb)</td></tr>
 <tr class="memdesc:a93d7f8ccf71dab931a60118f6ccb536c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a buffered write callback and a default exception callback.  <a href="#a93d7f8ccf71dab931a60118f6ccb536c">More...</a><br/></td></tr>
 <tr class="separator:a93d7f8ccf71dab931a60118f6ccb536c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classthrill_1_1net_1_1Dispatcher"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classthrill_1_1net_1_1Dispatcher')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classthrill_1_1net_1_1Dispatcher.html">Dispatcher</a></td></tr>
-<tr class="memitem:af14040cd48d39518575517bc69861234 inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#af14040cd48d39518575517bc69861234">Dispatcher</a> (<a class="el" href="classthrill_1_1mem_1_1Manager.html">mem::Manager</a> &amp;mem_manager)</td></tr>
-<tr class="memdesc:af14040cd48d39518575517bc69861234 inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor  <a href="#af14040cd48d39518575517bc69861234">More...</a><br/></td></tr>
-<tr class="separator:af14040cd48d39518575517bc69861234 inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba623c0d1e0f257f6bd791af2c63f19 inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#afba623c0d1e0f257f6bd791af2c63f19">Dispatcher</a> ()=default</td></tr>
+<tr class="memdesc:afba623c0d1e0f257f6bd791af2c63f19 inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor  <a href="#afba623c0d1e0f257f6bd791af2c63f19">More...</a><br/></td></tr>
+<tr class="separator:afba623c0d1e0f257f6bd791af2c63f19 inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac96467554ed21c9898c3b0232006d05a inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#ac96467554ed21c9898c3b0232006d05a">Dispatcher</a> (const <a class="el" href="classthrill_1_1net_1_1Dispatcher.html">Dispatcher</a> &amp;)=delete</td></tr>
 <tr class="memdesc:ac96467554ed21c9898c3b0232006d05a inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-copyable: delete copy-constructor  <a href="#ac96467554ed21c9898c3b0232006d05a">More...</a><br/></td></tr>
 <tr class="separator:ac96467554ed21c9898c3b0232006d05a inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,10 +233,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a546500057260f33a40f41c8af033d063 inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a546500057260f33a40f41c8af033d063">AddTimer</a> (const std::chrono::milliseconds &amp;timeout, const <a class="el" href="group__net__layer.html#ga1fa68e048e9a6416596a5122fb10bd3f">TimerCallback</a> &amp;cb)</td></tr>
 <tr class="memdesc:a546500057260f33a40f41c8af033d063 inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a relative timeout callback.  <a href="#a546500057260f33a40f41c8af033d063">More...</a><br/></td></tr>
 <tr class="separator:a546500057260f33a40f41c8af033d063 inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a853b595ec344509a5da31edd1e6f64fa inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a853b595ec344509a5da31edd1e6f64fa">AsyncWriteCopy</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, const void *buffer, size_t size, const <a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a>())</td></tr>
-<tr class="separator:a853b595ec344509a5da31edd1e6f64fa inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecd3f1a184219a9df11c74f6473a4a6c inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#aecd3f1a184219a9df11c74f6473a4a6c">AsyncWriteCopy</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, const std::string &amp;str, const <a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a>())</td></tr>
-<tr class="separator:aecd3f1a184219a9df11c74f6473a4a6c inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a760dfceaf9635899ff2037ce9464b116 inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a760dfceaf9635899ff2037ce9464b116">AsyncWriteCopy</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, uint32_t seq, const void *buffer, size_t size, const <a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a>())</td></tr>
+<tr class="separator:a760dfceaf9635899ff2037ce9464b116 inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eaf5bdfbbe5796e3f2c47da2002dcd3 inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a0eaf5bdfbbe5796e3f2c47da2002dcd3">AsyncWriteCopy</a> (<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, uint32_t seq, const std::string &amp;str, const <a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> &amp;done_cb=<a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a>())</td></tr>
+<tr class="separator:a0eaf5bdfbbe5796e3f2c47da2002dcd3 inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6a1f4b031a0fdda685d8423fb0c0d92 inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#aa6a1f4b031a0fdda685d8423fb0c0d92">Dispatch</a> ()</td></tr>
 <tr class="memdesc:aa6a1f4b031a0fdda685d8423fb0c0d92 inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatch one or more events.  <a href="#aa6a1f4b031a0fdda685d8423fb0c0d92">More...</a><br/></td></tr>
 <tr class="separator:aa6a1f4b031a0fdda685d8423fb0c0d92 inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,7 +246,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9b848654502024dde7e46ab002f2c9dd inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a9b848654502024dde7e46ab002f2c9dd">Terminate</a> ()</td></tr>
 <tr class="separator:a9b848654502024dde7e46ab002f2c9dd inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a025efc05301eb3c4b93525b9fa190e8b inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a025efc05301eb3c4b93525b9fa190e8b">HasAsyncWrites</a> () const </td></tr>
-<tr class="memdesc:a025efc05301eb3c4b93525b9fa190e8b inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether there are still <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a095c9e3816693a104fc36a4702305aea">AsyncWrite()</a>s in the queue.  <a href="#a025efc05301eb3c4b93525b9fa190e8b">More...</a><br/></td></tr>
+<tr class="memdesc:a025efc05301eb3c4b93525b9fa190e8b inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether there are still <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a2aef826a6f26f39c4064ae851378073c">AsyncWrite()</a>s in the queue.  <a href="#a025efc05301eb3c4b93525b9fa190e8b">More...</a><br/></td></tr>
 <tr class="separator:a025efc05301eb3c4b93525b9fa190e8b inherit pub_methods_classthrill_1_1net_1_1Dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
@@ -240,20 +257,34 @@ Static Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a2b76f992d7f29f794aff47b8289480d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a2b76f992d7f29f794aff47b8289480d0">group_tag_</a></td></tr>
-<tr class="memdesc:a2b76f992d7f29f794aff47b8289480d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">group_tag attached to this <a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html">Dispatcher</a>  <a href="#a2b76f992d7f29f794aff47b8289480d0">More...</a><br/></td></tr>
-<tr class="separator:a2b76f992d7f29f794aff47b8289480d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2205ba5969b1f4055c877325efb40ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7">mem::vector</a>&lt; <a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#af2205ba5969b1f4055c877325efb40ea">mpi_async_</a></td></tr>
-<tr class="separator:af2205ba5969b1f4055c877325efb40ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c15b5b334978f3a2741a761c09af4cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7">mem::vector</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a4c15b5b334978f3a2741a761c09af4cb">mpi_async_out_</a></td></tr>
-<tr class="memdesc:a4c15b5b334978f3a2741a761c09af4cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">array of output integer of finished requests for MPI_Testsome().  <a href="#a4c15b5b334978f3a2741a761c09af4cb">More...</a><br/></td></tr>
-<tr class="separator:a4c15b5b334978f3a2741a761c09af4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24de91f85dfc34cc6a94726bb0e1443a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7">mem::vector</a>&lt; MPI_Request &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a24de91f85dfc34cc6a94726bb0e1443a">mpi_async_requests_</a></td></tr>
-<tr class="memdesc:a24de91f85dfc34cc6a94726bb0e1443a"><td class="mdescLeft">&#160;</td><td class="mdescRight">array of current async MPI_Request for MPI_Testsome().  <a href="#a24de91f85dfc34cc6a94726bb0e1443a">More...</a><br/></td></tr>
-<tr class="separator:a24de91f85dfc34cc6a94726bb0e1443a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae25584fb8f8ab5b7c8677a03345288ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7">mem::vector</a>&lt; <a class="el" href="structthrill_1_1net_1_1mpi_1_1Dispatcher_1_1Watch.html">Watch</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#ae25584fb8f8ab5b7c8677a03345288ba">watch_</a> { <a class="el" href="classthrill_1_1mem_1_1Allocator.html">mem::Allocator</a>&lt;<a class="el" href="structthrill_1_1net_1_1mpi_1_1Dispatcher_1_1Watch.html">Watch</a>&gt;(<a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a26b42ae038782cb0c21f39178b2b200f">mem_manager_</a>) }</td></tr>
-<tr class="memdesc:ae25584fb8f8ab5b7c8677a03345288ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback watch vector  <a href="#ae25584fb8f8ab5b7c8677a03345288ba">More...</a><br/></td></tr>
-<tr class="separator:ae25584fb8f8ab5b7c8677a03345288ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0be9beb694ba495f90ae3dacd3cbdd2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aa0be9beb694ba495f90ae3dacd3cbdd2">mpi_async_</a></td></tr>
+<tr class="separator:aa0be9beb694ba495f90ae3dacd3cbdd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23ce8a8c0f657b3079e924515315a7f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aa23ce8a8c0f657b3079e924515315a7f">mpi_async_out_</a></td></tr>
+<tr class="memdesc:aa23ce8a8c0f657b3079e924515315a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">array of output integer of finished requests for MPI_Testsome().  <a href="#aa23ce8a8c0f657b3079e924515315a7f">More...</a><br/></td></tr>
+<tr class="separator:aa23ce8a8c0f657b3079e924515315a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be0cf7552f4f4ba46ba9e190ada3f12"><td class="memItemLeft" align="right" valign="top">std::vector&lt; MPI_Request &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a0be0cf7552f4f4ba46ba9e190ada3f12">mpi_async_requests_</a></td></tr>
+<tr class="memdesc:a0be0cf7552f4f4ba46ba9e190ada3f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">array of current async MPI_Request for MPI_Testsome().  <a href="#a0be0cf7552f4f4ba46ba9e190ada3f12">More...</a><br/></td></tr>
+<tr class="separator:a0be0cf7552f4f4ba46ba9e190ada3f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b3bc9bcffac9071aa17695ca370403"><td class="memItemLeft" align="right" valign="top">std::vector&lt; MPI_Status &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a61b3bc9bcffac9071aa17695ca370403">mpi_status_out_</a></td></tr>
+<tr class="memdesc:a61b3bc9bcffac9071aa17695ca370403"><td class="mdescLeft">&#160;</td><td class="mdescRight">array of output MPI_Status of finished requests for MPI_Testsome().  <a href="#a61b3bc9bcffac9071aa17695ca370403">More...</a><br/></td></tr>
+<tr class="separator:a61b3bc9bcffac9071aa17695ca370403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591aab2c1d7a60c8837efe7db3433799"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a591aab2c1d7a60c8837efe7db3433799">recv_active_</a></td></tr>
+<tr class="memdesc:a591aab2c1d7a60c8837efe7db3433799"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of active requests  <a href="#a591aab2c1d7a60c8837efe7db3433799">More...</a><br/></td></tr>
+<tr class="separator:a591aab2c1d7a60c8837efe7db3433799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1fe837c943b6ec3aa8d104efebf3c3f"><td class="memItemLeft" align="right" valign="top">std::deque&lt; std::deque<br class="typebreak"/>
+&lt; <a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#ae1fe837c943b6ec3aa8d104efebf3c3f">recv_queue_</a></td></tr>
+<tr class="memdesc:ae1fe837c943b6ec3aa8d104efebf3c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">queue of delayed requests for each peer  <a href="#ae1fe837c943b6ec3aa8d104efebf3c3f">More...</a><br/></td></tr>
+<tr class="separator:ae1fe837c943b6ec3aa8d104efebf3c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eeacce8d221b5f9881630d00b25835a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a8eeacce8d221b5f9881630d00b25835a">send_active_</a></td></tr>
+<tr class="memdesc:a8eeacce8d221b5f9881630d00b25835a"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of active requests  <a href="#a8eeacce8d221b5f9881630d00b25835a">More...</a><br/></td></tr>
+<tr class="separator:a8eeacce8d221b5f9881630d00b25835a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640392b5d7b951639736557d72d44c14"><td class="memItemLeft" align="right" valign="top">std::deque&lt; std::deque<br class="typebreak"/>
+&lt; <a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a640392b5d7b951639736557d72d44c14">send_queue_</a></td></tr>
+<tr class="memdesc:a640392b5d7b951639736557d72d44c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">queue of delayed requests for each peer  <a href="#a640392b5d7b951639736557d72d44c14">More...</a><br/></td></tr>
+<tr class="separator:a640392b5d7b951639736557d72d44c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e1a458535a0d2187a320f0f1ec9d57"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structthrill_1_1net_1_1mpi_1_1Dispatcher_1_1Watch.html">Watch</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a70e1a458535a0d2187a320f0f1ec9d57">watch_</a></td></tr>
+<tr class="memdesc:a70e1a458535a0d2187a320f0f1ec9d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback watch vector  <a href="#a70e1a458535a0d2187a320f0f1ec9d57">More...</a><br/></td></tr>
+<tr class="separator:a70e1a458535a0d2187a320f0f1ec9d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9757576c65c27b50601af29eed6217f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html#ae9757576c65c27b50601af29eed6217f">watch_active_</a> { 0 }</td></tr>
 <tr class="memdesc:ae9757576c65c27b50601af29eed6217f"><td class="mdescLeft">&#160;</td><td class="mdescRight">counter of active watches  <a href="#ae9757576c65c27b50601af29eed6217f">More...</a><br/></td></tr>
 <tr class="separator:ae9757576c65c27b50601af29eed6217f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,9 +325,6 @@ Additional Inherited Members</h2></td></tr>
 &lt; <a class="el" href="classthrill_1_1net_1_1AsyncWriteBlock.html">AsyncWriteBlock</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a3d3f59c423810c2cc9cbecb9137c69ad">async_write_block_</a></td></tr>
 <tr class="memdesc:a3d3f59c423810c2cc9cbecb9137c69ad inherit pro_attribs_classthrill_1_1net_1_1Dispatcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">deque of asynchronous writers  <a href="#a3d3f59c423810c2cc9cbecb9137c69ad">More...</a><br/></td></tr>
 <tr class="separator:a3d3f59c423810c2cc9cbecb9137c69ad inherit pro_attribs_classthrill_1_1net_1_1Dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26b42ae038782cb0c21f39178b2b200f inherit pro_attribs_classthrill_1_1net_1_1Dispatcher"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1mem_1_1Manager.html">mem::Manager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a26b42ae038782cb0c21f39178b2b200f">mem_manager_</a></td></tr>
-<tr class="memdesc:a26b42ae038782cb0c21f39178b2b200f inherit pro_attribs_classthrill_1_1net_1_1Dispatcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">superior memory manager  <a href="#a26b42ae038782cb0c21f39178b2b200f">More...</a><br/></td></tr>
-<tr class="separator:a26b42ae038782cb0c21f39178b2b200f inherit pro_attribs_classthrill_1_1net_1_1Dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c7c161ce42f7ccc3184d9bec18fa969 inherit pro_attribs_classthrill_1_1net_1_1Dispatcher"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a5c7c161ce42f7ccc3184d9bec18fa969">terminate_</a> { false }</td></tr>
 <tr class="memdesc:a5c7c161ce42f7ccc3184d9bec18fa969 inherit pro_attribs_classthrill_1_1net_1_1Dispatcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if dispatcher needs to stop  <a href="#a5c7c161ce42f7ccc3184d9bec18fa969">More...</a><br/></td></tr>
 <tr class="separator:a5c7c161ce42f7ccc3184d9bec18fa969 inherit pro_attribs_classthrill_1_1net_1_1Dispatcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -316,54 +344,30 @@ Additional Inherited Members</h2></td></tr>
 
 <p>type for file descriptor readiness callbacks </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00043">43</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00087">87</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a52e0c03118c14e0cff05ea64718bb3f0"></a>
+<a class="anchor" id="a322cb3438a0f172c12208b798632bf26"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html">Dispatcher</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classthrill_1_1mem_1_1Manager.html">mem::Manager</a> &amp;&#160;</td>
-          <td class="paramname"><em>mem_manager</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>group_tag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>group_size</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>group_size</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>constructor </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00046">46</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8cpp_source.html#l00032">32</a> of file <a class="el" href="dispatcher_8cpp_source.html">dispatcher.cpp</a>.</p>
 
-<p>References <a class="el" href="dispatcher_8hpp_source.html#l00915">Dispatcher::mem_manager_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00223">Dispatcher::watch_</a>.</p>
+<p>References <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00437">Dispatcher::recv_active_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00431">Dispatcher::recv_queue_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00434">Dispatcher::send_active_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00428">Dispatcher::send_queue_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00236">Dispatcher::watch_</a>.</p>
 
 </div>
 </div>
@@ -392,13 +396,45 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#aedc4fe5f1377075b487f162672ff5772">Dispatcher</a>.</p>
 
-<p>Definition at line <a class="el" href="dispatcher_8cpp_source.html#l00029">29</a> of file <a class="el" href="dispatcher_8cpp_source.html">dispatcher.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8cpp_source.html#l00044">44</a> of file <a class="el" href="dispatcher_8cpp_source.html">dispatcher.cpp</a>.</p>
 
-<p>References <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00176">LOG1</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00376">Dispatcher::mpi_async_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00381">Dispatcher::mpi_async_requests_</a>.</p>
+<p>References <a class="el" href="mpi_2group_8cpp_source.html#l00026">thrill::net::mpi::g_mutex</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00176">LOG1</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00415">Dispatcher::mpi_async_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00418">Dispatcher::mpi_async_requests_</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aaacb744c85c2cac89275c5d6fa60bcaa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AddAsyncRequest </td>
+          <td>(</td>
+          <td class="paramtype">const MPI_Request &amp;&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__net__mpi.html#ga769838a4869b196a982532f4f9c152f8">AsyncRequestCallback</a> &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="dispatcher_8cpp_source.html#l00105">105</a> of file <a class="el" href="dispatcher_8cpp_source.html">dispatcher.cpp</a>.</p>
+
+<p>References <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00415">Dispatcher::mpi_async_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00421">Dispatcher::mpi_async_out_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00418">Dispatcher::mpi_async_requests_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00424">Dispatcher::mpi_status_out_</a>.</p>
+
+<p>Referenced by <a class="el" href="mpi_2group_8cpp_source.html#l00190">Group::Barrier()</a>, and <a class="el" href="mpi_2group_8cpp_source.html#l00214">Group::WaitForRequest()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a655a24f4e821b9d08598fd3016223c03"></a>
 <div class="memitem">
 <div class="memproto">
@@ -435,9 +471,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a99f1e0312db37812afcceb605745d88b">Dispatcher</a>.</p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00059">59</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00096">96</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="mpi_2group_8hpp_source.html#l00081">Connection::peer()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00223">Dispatcher::watch_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00226">Dispatcher::watch_active_</a>.</p>
+<p>References <a class="el" href="mpi_2group_8hpp_source.html#l00079">Connection::peer()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00236">Dispatcher::watch_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00239">Dispatcher::watch_active_</a>.</p>
 
 </div>
 </div>
@@ -477,11 +513,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#aac5adaf99f608f55bbec8deff08ea886">Dispatcher</a>.</p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00070">70</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00107">107</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a58ac2aec611e94d932493d832f9ab328"></a>
+<a class="anchor" id="a8f89e372e5845a5a88c0da6bff517f7c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -493,6 +529,12 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;&#160;</td>
           <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -521,15 +563,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>asynchronously read n bytes and deliver them to the callback </p>
 
-<p>Reimplemented from <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a070b0e5180eb0c205f63b6322446f9f1">Dispatcher</a>.</p>
+<p>Reimplemented from <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#adc275fddadaa9712a879469830953e78">Dispatcher</a>.</p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00152">152</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00175">175</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="buffer_8hpp_source.html#l00134">Buffer::data()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00062">Dispatcher::IRecv()</a>, <a class="el" href="classthrill_1_1net_1_1Connection.html#aedec2959336b77211e97d8d072b33f88">Connection::IsValid()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00376">Dispatcher::mpi_async_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00386">Dispatcher::mpi_async_out_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00381">Dispatcher::mpi_async_requests_</a>, and <a class="el" href="buffer_8hpp_source.html#l00141">Buffer::size()</a>.</p>
+<p>References <a class="el" href="classthrill_1_1net_1_1Connection.html#aedec2959336b77211e97d8d072b33f88">Connection::IsValid()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00137">Dispatcher::QueueAsyncRecv()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a76b830620470a64654ab87b31c5a9d11"></a>
+<a class="anchor" id="affa63df258e07a5f81576daef8ffb19c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -541,6 +583,12 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;&#160;</td>
           <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -575,15 +623,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>asynchronously read the full ByteBlock and deliver it to the callback </p>
 
-<p>Reimplemented from <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a074fd8f6d8b0525dfe6265730095d8f0">Dispatcher</a>.</p>
+<p>Reimplemented from <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#ab7ab08b163db1bd22912a82e6bda2cad">Dispatcher</a>.</p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00176">176</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00188">188</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="dispatcher_8cpp_source.html#l00062">Dispatcher::IRecv()</a>, <a class="el" href="classthrill_1_1net_1_1Connection.html#aedec2959336b77211e97d8d072b33f88">Connection::IsValid()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00376">Dispatcher::mpi_async_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00386">Dispatcher::mpi_async_out_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00381">Dispatcher::mpi_async_requests_</a>.</p>
+<p>References <a class="el" href="classthrill_1_1net_1_1Connection.html#aedec2959336b77211e97d8d072b33f88">Connection::IsValid()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00137">Dispatcher::QueueAsyncRecv()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2f39d646d1bb2ac0d7ad6b59fb13c076"></a>
+<a class="anchor" id="ac2e7934c28bb3f06f965c970fe2f6fdd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -595,6 +643,12 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;&#160;</td>
           <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -622,15 +676,15 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>asynchronously write buffer and callback when delivered. The buffer is MOVED into the async writer. </p>
 
-<p>Reimplemented from <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a095c9e3816693a104fc36a4702305aea">Dispatcher</a>.</p>
+<p>Reimplemented from <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a2aef826a6f26f39c4064ae851378073c">Dispatcher</a>.</p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00106">106</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00149">149</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="dispatcher_8cpp_source.html#l00043">Dispatcher::ISend()</a>, <a class="el" href="classthrill_1_1net_1_1Connection.html#aedec2959336b77211e97d8d072b33f88">Connection::IsValid()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00376">Dispatcher::mpi_async_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00386">Dispatcher::mpi_async_out_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00381">Dispatcher::mpi_async_requests_</a>.</p>
+<p>References <a class="el" href="classthrill_1_1net_1_1Connection.html#aedec2959336b77211e97d8d072b33f88">Connection::IsValid()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00117">Dispatcher::QueueAsyncSend()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a89c1d8a1c4c80733c40f27b86e154bbf"></a>
+<a class="anchor" id="ae8832b85301947baca192a7b6a59942b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -642,6 +696,12 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;&#160;</td>
           <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -669,11 +729,11 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>asynchronously write buffer and callback when delivered. The buffer is MOVED into the async writer. </p>
 
-<p>Reimplemented from <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#aa9c817a04039b6ec09c4aa55818ff0c8">Dispatcher</a>.</p>
+<p>Reimplemented from <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#ae95ae890a42ba02ed66175f0b6e73796">Dispatcher</a>.</p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00128">128</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00162">162</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="dispatcher_8cpp_source.html#l00043">Dispatcher::ISend()</a>, <a class="el" href="classthrill_1_1net_1_1Connection.html#aedec2959336b77211e97d8d072b33f88">Connection::IsValid()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00376">Dispatcher::mpi_async_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00386">Dispatcher::mpi_async_out_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00381">Dispatcher::mpi_async_requests_</a>.</p>
+<p>References <a class="el" href="classthrill_1_1net_1_1Connection.html#aedec2959336b77211e97d8d072b33f88">Connection::IsValid()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00117">Dispatcher::QueueAsyncSend()</a>.</p>
 
 </div>
 </div>
@@ -703,9 +763,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a6dfc5bdbc6082a2eeeee09fa0a25f489">Dispatcher</a>.</p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00087">87</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00124">124</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00212">Dispatcher::Watch::active</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00216">Dispatcher::Watch::except_cb</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="mpi_2group_8hpp_source.html#l00081">Connection::peer()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00214">Dispatcher::Watch::read_cb</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00223">Dispatcher::watch_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00226">Dispatcher::watch_active_</a>.</p>
+<p>References <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00227">Dispatcher::Watch::active</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00232">Dispatcher::Watch::except_cb</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="mpi_2group_8hpp_source.html#l00079">Connection::peer()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00230">Dispatcher::Watch::read_cb</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00236">Dispatcher::watch_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00239">Dispatcher::watch_active_</a>.</p>
 
 </div>
 </div>
@@ -732,7 +792,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Default exception handler. </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00229">229</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00242">242</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
 </div>
 </div>
@@ -762,9 +822,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a2c1985d161f7c8be981e6a92423d9a99">Dispatcher</a>.</p>
 
-<p>Definition at line <a class="el" href="dispatcher_8cpp_source.html#l00081">81</a> of file <a class="el" href="dispatcher_8cpp_source.html">dispatcher.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8cpp_source.html#l00265">265</a> of file <a class="el" href="dispatcher_8cpp_source.html">dispatcher.cpp</a>.</p>
 
-<p>References <a class="el" href="die_8hpp_source.html#l00052">die_unless</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00026">thrill::net::mpi::g_mutex</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00207">Dispatcher::group_tag_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00176">LOG1</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00376">Dispatcher::mpi_async_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00386">Dispatcher::mpi_async_out_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00381">Dispatcher::mpi_async_requests_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00184">sLOG</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00223">Dispatcher::watch_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00226">Dispatcher::watch_active_</a>.</p>
+<p>References <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00361">Dispatcher::MpiAsync::connection()</a>, <a class="el" href="die_8hpp_source.html#l00052">die_unless</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00026">thrill::net::mpi::g_mutex</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00415">Dispatcher::mpi_async_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00421">Dispatcher::mpi_async_out_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00418">Dispatcher::mpi_async_requests_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00424">Dispatcher::mpi_status_out_</a>, <a class="el" href="mpi_2group_8hpp_source.html#l00079">Connection::peer()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00174">Dispatcher::PumpRecvQueue()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00158">Dispatcher::PumpSendQueue()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00260">Dispatcher::MpiAsync::READ_BUFFER</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00261">Dispatcher::MpiAsync::READ_BYTE_BLOCK</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00437">Dispatcher::recv_active_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00434">Dispatcher::send_active_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00184">sLOG</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00187">sLOG0</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00377">Dispatcher::MpiAsync::type_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00236">Dispatcher::watch_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00239">Dispatcher::watch_active_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00261">Dispatcher::MpiAsync::WRITE_BLOCK</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00260">Dispatcher::MpiAsync::WRITE_BUFFER</a>.</p>
 
 </div>
 </div>
@@ -793,11 +853,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a143569e4253c02f69f3afe9fd48b919a">Dispatcher</a>.</p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00203">203</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00221">221</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a814c2a32d8cbbc42558030e908aad4a6"></a>
+<a class="anchor" id="ad2c29104f216df109818f8254c0b11ec"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -806,6 +866,12 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Connection.html">Connection</a> &amp;&#160;</td>
           <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>seq</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -827,15 +893,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dispatcher_8cpp_source.html#l00062">62</a> of file <a class="el" href="dispatcher_8cpp_source.html">dispatcher.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8cpp_source.html#l00083">83</a> of file <a class="el" href="dispatcher_8cpp_source.html">dispatcher.cpp</a>.</p>
 
-<p>References <a class="el" href="mpi_2group_8cpp_source.html#l00026">thrill::net::mpi::g_mutex</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00207">Dispatcher::group_tag_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="mpi_2group_8hpp_source.html#l00081">Connection::peer()</a>, and <a class="el" href="connection_8hpp_source.html#l00470">Connection::rx_bytes_</a>.</p>
+<p>References <a class="el" href="mpi_2group_8cpp_source.html#l00026">thrill::net::mpi::g_mutex</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="mpi_2group_8hpp_source.html#l00079">Connection::peer()</a>, and <a class="el" href="connection_8hpp_source.html#l00481">Connection::rx_bytes_</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00152">Dispatcher::AsyncRead()</a>.</p>
+<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00190">Dispatcher::PerformAsync()</a>, and <a class="el" href="mpi_2group_8cpp_source.html#l00086">Connection::SyncRecv()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af9761c6835111b1f6ddd90c24f935dc5"></a>
+<a class="anchor" id="aee2cbcdaea572418c8ad5d54094e3af0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -844,6 +910,12 @@ Additional Inherited Members</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Connection.html">Connection</a> &amp;&#160;</td>
           <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>seq</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -865,11 +937,151 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="dispatcher_8cpp_source.html#l00043">43</a> of file <a class="el" href="dispatcher_8cpp_source.html">dispatcher.cpp</a>.</p>
+<p>Definition at line <a class="el" href="dispatcher_8cpp_source.html#l00061">61</a> of file <a class="el" href="dispatcher_8cpp_source.html">dispatcher.cpp</a>.</p>
 
-<p>References <a class="el" href="mpi_2group_8cpp_source.html#l00026">thrill::net::mpi::g_mutex</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00207">Dispatcher::group_tag_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="mpi_2group_8hpp_source.html#l00081">Connection::peer()</a>, and <a class="el" href="connection_8hpp_source.html#l00467">Connection::tx_bytes_</a>.</p>
+<p>References <a class="el" href="mpi_2group_8cpp_source.html#l00026">thrill::net::mpi::g_mutex</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="mpi_2group_8hpp_source.html#l00079">Connection::peer()</a>, and <a class="el" href="connection_8hpp_source.html#l00478">Connection::tx_bytes_</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00106">Dispatcher::AsyncWrite()</a>.</p>
+<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00190">Dispatcher::PerformAsync()</a>, <a class="el" href="mpi_2group_8cpp_source.html#l00057">Connection::SyncSend()</a>, and <a class="el" href="mpi_2group_8cpp_source.html#l00125">Connection::SyncSendRecv()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa30df76599abe553fef6a82a135dc807"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PerformAsync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Issue the encapsulated request to the MPI layer. </p>
+
+<p>Definition at line <a class="el" href="dispatcher_8cpp_source.html#l00190">190</a> of file <a class="el" href="dispatcher_8cpp_source.html">dispatcher.cpp</a>.</p>
+
+<p>References <a class="el" href="dispatcher_8hpp_source.html#l00143">AsyncReadBuffer::connection()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00239">AsyncWriteBuffer::connection()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00347">AsyncReadByteBlock::connection()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00448">AsyncWriteBlock::connection()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00146">AsyncReadBuffer::data()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00242">AsyncWriteBuffer::data()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00350">AsyncReadByteBlock::data()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00451">AsyncWriteBlock::data()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00083">Dispatcher::IRecv()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00061">Dispatcher::ISend()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00415">Dispatcher::mpi_async_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00421">Dispatcher::mpi_async_out_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00418">Dispatcher::mpi_async_requests_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00424">Dispatcher::mpi_status_out_</a>, <a class="el" href="mpi_2group_8hpp_source.html#l00079">Connection::peer()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00260">Dispatcher::MpiAsync::READ_BUFFER</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00261">Dispatcher::MpiAsync::READ_BYTE_BLOCK</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00437">Dispatcher::recv_active_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00434">Dispatcher::send_active_</a>, <a class="el" href="dispatcher_8hpp_source.html#l00152">AsyncReadBuffer::size()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00245">AsyncWriteBuffer::size()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00356">AsyncReadByteBlock::size()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00454">AsyncWriteBlock::size()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00261">Dispatcher::MpiAsync::WRITE_BLOCK</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00260">Dispatcher::MpiAsync::WRITE_BUFFER</a>.</p>
+
+<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00174">Dispatcher::PumpRecvQueue()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00158">Dispatcher::PumpSendQueue()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00137">Dispatcher::QueueAsyncRecv()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00117">Dispatcher::QueueAsyncSend()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aadb33b88831753f1bdf2ff9830a39e39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PumpRecvQueue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>peer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check recv queue and perform waiting requests. </p>
+
+<p>Definition at line <a class="el" href="dispatcher_8cpp_source.html#l00174">174</a> of file <a class="el" href="dispatcher_8cpp_source.html">dispatcher.cpp</a>.</p>
+
+<p>References <a class="el" href="dispatcher_8cpp_source.html#l00027">thrill::net::mpi::g_simultaneous</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="dispatcher_8cpp_source.html#l00190">Dispatcher::PerformAsync()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00437">Dispatcher::recv_active_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00431">Dispatcher::recv_queue_</a>, and <a class="el" href="unused_8hpp_source.html#l00020">tlx::unused()</a>.</p>
+
+<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00265">Dispatcher::DispatchOne()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a82cd326a685e68a6ec4dda9890c7db89"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PumpSendQueue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>peer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check send queue and perform waiting requests. </p>
+
+<p>Definition at line <a class="el" href="dispatcher_8cpp_source.html#l00158">158</a> of file <a class="el" href="dispatcher_8cpp_source.html">dispatcher.cpp</a>.</p>
+
+<p>References <a class="el" href="dispatcher_8cpp_source.html#l00027">thrill::net::mpi::g_simultaneous</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="dispatcher_8cpp_source.html#l00190">Dispatcher::PerformAsync()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00434">Dispatcher::send_active_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00428">Dispatcher::send_queue_</a>, and <a class="el" href="unused_8hpp_source.html#l00020">tlx::unused()</a>.</p>
+
+<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00265">Dispatcher::DispatchOne()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a572e2b53466889b6dd78583420ce19ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QueueAsyncRecv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enqueue and run the encapsulated result. </p>
+
+<p>Definition at line <a class="el" href="dispatcher_8cpp_source.html#l00137">137</a> of file <a class="el" href="dispatcher_8cpp_source.html">dispatcher.cpp</a>.</p>
+
+<p>References <a class="el" href="dispatcher_8cpp_source.html#l00027">thrill::net::mpi::g_simultaneous</a>, <a class="el" href="mpi_2group_8hpp_source.html#l00079">Connection::peer()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00190">Dispatcher::PerformAsync()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00437">Dispatcher::recv_active_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00431">Dispatcher::recv_queue_</a>, and <a class="el" href="unused_8hpp_source.html#l00020">tlx::unused()</a>.</p>
+
+<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00175">Dispatcher::AsyncRead()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a86c503bb3f70bbed279198fee345f001"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QueueAsyncSend </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classthrill_1_1net_1_1Connection.html">net::Connection</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enqueue and run the encapsulated result. </p>
+
+<p>Definition at line <a class="el" href="dispatcher_8cpp_source.html#l00117">117</a> of file <a class="el" href="dispatcher_8cpp_source.html">dispatcher.cpp</a>.</p>
+
+<p>References <a class="el" href="dispatcher_8cpp_source.html#l00027">thrill::net::mpi::g_simultaneous</a>, <a class="el" href="mpi_2group_8hpp_source.html#l00079">Connection::peer()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00190">Dispatcher::PerformAsync()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00434">Dispatcher::send_active_</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00428">Dispatcher::send_queue_</a>, and <a class="el" href="unused_8hpp_source.html#l00020">tlx::unused()</a>.</p>
+
+<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00149">Dispatcher::AsyncWrite()</a>.</p>
 
 </div>
 </div>
@@ -907,9 +1119,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Register a buffered write callback and a default exception callback. </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00076">76</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00113">113</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>References <a class="el" href="mpi_2group_8hpp_source.html#l00081">Connection::peer()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00223">Dispatcher::watch_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00226">Dispatcher::watch_active_</a>.</p>
+<p>References <a class="el" href="mpi_2group_8hpp_source.html#l00079">Connection::peer()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00236">Dispatcher::watch_</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00239">Dispatcher::watch_active_</a>.</p>
 
 </div>
 </div>
@@ -932,11 +1144,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00039">39</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00081">81</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2b76f992d7f29f794aff47b8289480d0"></a>
+<a class="anchor" id="aa0be9beb694ba495f90ae3dacd3cbdd2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -944,7 +1156,32 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int group_tag_</td>
+          <td class="memname">std::vector&lt;<a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a>&gt; mpi_async_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>array of asynchronous writers and readers (these have to align with mpi_async_requests_) </p>
+
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00415">415</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00105">Dispatcher::AddAsyncRequest()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00265">Dispatcher::DispatchOne()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00190">Dispatcher::PerformAsync()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00044">Dispatcher::~Dispatcher()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa23ce8a8c0f657b3079e924515315a7f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; mpi_async_out_</td>
         </tr>
       </table>
   </td>
@@ -954,72 +1191,15 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>group_tag attached to this <a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html">Dispatcher</a> </p>
-
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00207">207</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00081">Dispatcher::DispatchOne()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00062">Dispatcher::IRecv()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00043">Dispatcher::ISend()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af2205ba5969b1f4055c877325efb40ea"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7">mem::vector</a>&lt;<a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a>&gt; mpi_async_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">        mem::Allocator&lt;MpiAsync&gt;(<a class="code" href="classthrill_1_1net_1_1Dispatcher.html#a26b42ae038782cb0c21f39178b2b200f">mem_manager_</a>)</div>
-<div class="line">    }</div>
-</div><!-- fragment --><p>array of asynchronous writers and readers (these have to align with mpi_async_requests_) </p>
-
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00376">376</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00152">Dispatcher::AsyncRead()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00106">Dispatcher::AsyncWrite()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00081">Dispatcher::DispatchOne()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00029">Dispatcher::~Dispatcher()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a4c15b5b334978f3a2741a761c09af4cb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7">mem::vector</a>&lt;int&gt; mpi_async_out_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">        mem::Allocator&lt;int&gt;(<a class="code" href="classthrill_1_1net_1_1Dispatcher.html#a26b42ae038782cb0c21f39178b2b200f">mem_manager_</a>)</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
 <p>array of output integer of finished requests for MPI_Testsome(). </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00386">386</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00421">421</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00152">Dispatcher::AsyncRead()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00106">Dispatcher::AsyncWrite()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00081">Dispatcher::DispatchOne()</a>.</p>
+<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00105">Dispatcher::AddAsyncRequest()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00265">Dispatcher::DispatchOne()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00190">Dispatcher::PerformAsync()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a24de91f85dfc34cc6a94726bb0e1443a"></a>
+<a class="anchor" id="a0be0cf7552f4f4ba46ba9e190ada3f12"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1027,7 +1207,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7">mem::vector</a>&lt;MPI_Request&gt; mpi_async_requests_</td>
+          <td class="memname">std::vector&lt;MPI_Request&gt; mpi_async_requests_</td>
         </tr>
       </table>
   </td>
@@ -1036,19 +1216,16 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">        mem::Allocator&lt;MPI_Request&gt;(<a class="code" href="classthrill_1_1net_1_1Dispatcher.html#a26b42ae038782cb0c21f39178b2b200f">mem_manager_</a>)</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
+
 <p>array of current async MPI_Request for MPI_Testsome(). </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00381">381</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00418">418</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00152">Dispatcher::AsyncRead()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00106">Dispatcher::AsyncWrite()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00081">Dispatcher::DispatchOne()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00029">Dispatcher::~Dispatcher()</a>.</p>
+<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00105">Dispatcher::AddAsyncRequest()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00265">Dispatcher::DispatchOne()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00190">Dispatcher::PerformAsync()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00044">Dispatcher::~Dispatcher()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae25584fb8f8ab5b7c8677a03345288ba"></a>
+<a class="anchor" id="a61b3bc9bcffac9071aa17695ca370403"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1056,7 +1233,137 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7">mem::vector</a>&lt;<a class="el" href="structthrill_1_1net_1_1mpi_1_1Dispatcher_1_1Watch.html">Watch</a>&gt; watch_ { <a class="el" href="classthrill_1_1mem_1_1Allocator.html">mem::Allocator</a>&lt;<a class="el" href="structthrill_1_1net_1_1mpi_1_1Dispatcher_1_1Watch.html">Watch</a>&gt;(<a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a26b42ae038782cb0c21f39178b2b200f">mem_manager_</a>) }</td>
+          <td class="memname">std::vector&lt;MPI_Status&gt; mpi_status_out_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>array of output MPI_Status of finished requests for MPI_Testsome(). </p>
+
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00424">424</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00105">Dispatcher::AddAsyncRequest()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00265">Dispatcher::DispatchOne()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00190">Dispatcher::PerformAsync()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a591aab2c1d7a60c8837efe7db3433799"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;size_t&gt; recv_active_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>number of active requests </p>
+
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00437">437</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00032">Dispatcher::Dispatcher()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00265">Dispatcher::DispatchOne()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00190">Dispatcher::PerformAsync()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00174">Dispatcher::PumpRecvQueue()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00137">Dispatcher::QueueAsyncRecv()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae1fe837c943b6ec3aa8d104efebf3c3f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::deque&lt;std::deque&lt;<a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a>&gt; &gt; recv_queue_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>queue of delayed requests for each peer </p>
+
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00431">431</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00032">Dispatcher::Dispatcher()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00174">Dispatcher::PumpRecvQueue()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00137">Dispatcher::QueueAsyncRecv()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8eeacce8d221b5f9881630d00b25835a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;size_t&gt; send_active_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>number of active requests </p>
+
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00434">434</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00032">Dispatcher::Dispatcher()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00265">Dispatcher::DispatchOne()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00190">Dispatcher::PerformAsync()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00158">Dispatcher::PumpSendQueue()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00117">Dispatcher::QueueAsyncSend()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a640392b5d7b951639736557d72d44c14"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::deque&lt;std::deque&lt;<a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html">MpiAsync</a>&gt; &gt; send_queue_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>queue of delayed requests for each peer </p>
+
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00428">428</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="dispatcher_8cpp_source.html#l00032">Dispatcher::Dispatcher()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00158">Dispatcher::PumpSendQueue()</a>, and <a class="el" href="dispatcher_8cpp_source.html#l00117">Dispatcher::QueueAsyncSend()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a70e1a458535a0d2187a320f0f1ec9d57"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structthrill_1_1net_1_1mpi_1_1Dispatcher_1_1Watch.html">Watch</a>&gt; watch_</td>
         </tr>
       </table>
   </td>
@@ -1068,9 +1375,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>callback watch vector </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00223">223</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00236">236</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00059">Dispatcher::AddRead()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00087">Dispatcher::Cancel()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00046">Dispatcher::Dispatcher()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00081">Dispatcher::DispatchOne()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00076">Dispatcher::SetExcept()</a>.</p>
+<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00096">Dispatcher::AddRead()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00124">Dispatcher::Cancel()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00032">Dispatcher::Dispatcher()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00265">Dispatcher::DispatchOne()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00113">Dispatcher::SetExcept()</a>.</p>
 
 </div>
 </div>
@@ -1094,9 +1401,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>counter of active watches </p>
 
-<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00226">226</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00239">239</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00059">Dispatcher::AddRead()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00087">Dispatcher::Cancel()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00081">Dispatcher::DispatchOne()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00076">Dispatcher::SetExcept()</a>.</p>
+<p>Referenced by <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00096">Dispatcher::AddRead()</a>, <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00124">Dispatcher::Cancel()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00265">Dispatcher::DispatchOne()</a>, and <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00113">Dispatcher::SetExcept()</a>.</p>
 
 </div>
 </div>
@@ -1110,7 +1417,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net.html">net</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net_1_1mpi.html">mpi</a></li><li class="navelem"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Dispatcher.html">Dispatcher</a></li>
-    <li class="footer">Generated on Thu Nov 23 2017 21:32:35 for Thrill by
+    <li class="footer">Generated on Thu Dec 21 2017 17:33:29 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

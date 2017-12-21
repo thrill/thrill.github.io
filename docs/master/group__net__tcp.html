@@ -175,11 +175,11 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gadf82af5b60886257f643df0a78421c32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__tcp.html#gadf82af5b60886257f643df0a78421c32">Construct</a> (size_t my_rank, const std::vector&lt; std::string &gt; &amp;endpoints, std::unique_ptr&lt; Group &gt; *groups, size_t group_count)</td></tr>
-<tr class="separator:gadf82af5b60886257f643df0a78421c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac3e533f8f0a0ffc5889ff725287ba12d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr<br class="typebreak"/>
-&lt; net::Group &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__tcp.html#gac3e533f8f0a0ffc5889ff725287ba12d">Construct</a> (size_t my_rank, const std::vector&lt; std::string &gt; &amp;endpoints, size_t group_count)</td></tr>
-<tr class="separator:gac3e533f8f0a0ffc5889ff725287ba12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe3e5df67abb484631c2cc356ffe1846"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__tcp.html#gafe3e5df67abb484631c2cc356ffe1846">Construct</a> (SelectDispatcher &amp;dispatcher, size_t my_rank, const std::vector&lt; std::string &gt; &amp;endpoints, std::unique_ptr&lt; Group &gt; *groups, size_t group_count)</td></tr>
+<tr class="separator:gafe3e5df67abb484631c2cc356ffe1846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd94b781ecd065ef03ccb9c75a2f34f5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr<br class="typebreak"/>
+&lt; net::Group &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__tcp.html#gadd94b781ecd065ef03ccb9c75a2f34f5">Construct</a> (SelectDispatcher &amp;dispatcher, size_t my_rank, const std::vector&lt; std::string &gt; &amp;endpoints, size_t group_count)</td></tr>
+<tr class="separator:gadd94b781ecd065ef03ccb9c75a2f34f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -233,13 +233,19 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gadf82af5b60886257f643df0a78421c32"></a>
+<a class="anchor" id="gafe3e5df67abb484631c2cc356ffe1846"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void Construct </td>
           <td>(</td>
+          <td class="paramtype">SelectDispatcher &amp;&#160;</td>
+          <td class="paramname"><em>dispatcher</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>my_rank</em>, </td>
         </tr>
@@ -270,19 +276,25 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Connect to peers via endpoints using TCP sockets. Construct a group_count <a class="el" href="classthrill_1_1net_1_1tcp_1_1Group.html" title="Collection of NetConnections to workers, allows point-to-point client communication and simple collec...">tcp::Group</a> objects at once. Within each <a class="el" href="classthrill_1_1net_1_1tcp_1_1Group.html" title="Collection of NetConnections to workers, allows point-to-point client communication and simple collec...">Group</a> this host has my_rank. </p>
 
-<p>Definition at line <a class="el" href="construct_8cpp_source.html#l00539">539</a> of file <a class="el" href="construct_8cpp_source.html">construct.cpp</a>.</p>
+<p>Definition at line <a class="el" href="construct_8cpp_source.html#l00543">543</a> of file <a class="el" href="construct_8cpp_source.html">construct.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="tcp_2group_8cpp_source.html#l00064">Group::ConstructLocalRealTCPMesh()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gac3e533f8f0a0ffc5889ff725287ba12d"></a>
+<a class="anchor" id="gadd94b781ecd065ef03ccb9c75a2f34f5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">std::vector&lt; std::unique_ptr&lt; net::Group &gt; &gt; Construct </td>
           <td>(</td>
+          <td class="paramtype">SelectDispatcher &amp;&#160;</td>
+          <td class="paramname"><em>dispatcher</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>my_rank</em>, </td>
         </tr>
@@ -307,9 +319,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Connect to peers via endpoints using TCP sockets. Construct a group_count <a class="el" href="classthrill_1_1net_1_1Group.html" title="A network Group is a collection of enumerated communication links, which provides point-to-point comm...">net::Group</a> objects at once. Within each <a class="el" href="classthrill_1_1net_1_1tcp_1_1Group.html" title="Collection of NetConnections to workers, allows point-to-point client communication and simple collec...">Group</a> this host has my_rank. </p>
 
-<p>Definition at line <a class="el" href="construct_8cpp_source.html#l00548">548</a> of file <a class="el" href="construct_8cpp_source.html">construct.cpp</a>.</p>
+<p>Definition at line <a class="el" href="construct_8cpp_source.html#l00553">553</a> of file <a class="el" href="construct_8cpp_source.html">construct.cpp</a>.</p>
 
-<p>References <a class="el" href="context_8cpp_source.html#l00258">thrill::api::Initialize()</a>.</p>
+<p>References <a class="el" href="context_8cpp_source.html#l00272">thrill::api::Initialize()</a>.</p>
 
 </div>
 </div>
@@ -318,7 +330,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 23 2017 21:32:32 for Thrill by
+    <li class="footer">Generated on Thu Dec 21 2017 17:33:27 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

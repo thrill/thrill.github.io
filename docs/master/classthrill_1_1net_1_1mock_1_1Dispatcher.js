@@ -1,7 +1,8 @@
 var classthrill_1_1net_1_1mock_1_1Dispatcher =
 [
     [ "Callback", "classthrill_1_1net_1_1mock_1_1Dispatcher.html#a0a32632611d98f14ad5e291fb0f69584", null ],
-    [ "Dispatcher", "classthrill_1_1net_1_1mock_1_1Dispatcher.html#af14040cd48d39518575517bc69861234", null ],
+    [ "Dispatcher", "classthrill_1_1net_1_1mock_1_1Dispatcher.html#acddb2e4657b4fd3c2a45c48f69490cc9", null ],
+    [ "~Dispatcher", "classthrill_1_1net_1_1mock_1_1Dispatcher.html#aebde02bf4fd9df0eb3505a5f69e66899", null ],
     [ "AddRead", "classthrill_1_1net_1_1mock_1_1Dispatcher.html#ae81ce3a8dbdc629220bc31b25fa7b2b0", null ],
     [ "AddWrite", "classthrill_1_1net_1_1mock_1_1Dispatcher.html#a43592d91d89478e336e62a00114ed0ff", null ],
     [ "Cancel", "classthrill_1_1net_1_1mock_1_1Dispatcher.html#a6c7ed920d52314814a4c9827cfd49391", null ],

@@ -248,8 +248,12 @@ Distributed Operations (DOps)</h2></td></tr>
 <tr class="separator:gabc59492dd0253c9aa2d5964d3477bde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac16cdb4737df4e291089d8ba5cfad6c3"><td class="memTemplParams" colspan="2">template&lt;bool VolatileKeyValue, typename KeyExtractor , typename ReduceFunction , typename ReduceConfig  = class DefaultReduceToIndexConfig&gt; </td></tr>
 <tr class="memitem:gac16cdb4737df4e291089d8ba5cfad6c3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__dia__dops.html#gac16cdb4737df4e291089d8ba5cfad6c3">ReduceToIndex</a> (const VolatileKeyFlag&lt; VolatileKeyValue &gt; &amp;, const KeyExtractor &amp;key_extractor, const ReduceFunction &amp;reduce_function, size_t size, const ValueType &amp;neutral_element=ValueType(), const ReduceConfig &amp;reduce_config=ReduceConfig()) const </td></tr>
-<tr class="memdesc:gac16cdb4737df4e291089d8ba5cfad6c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReduceToIndexByKey is a DOp, which groups elements of the <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> with the key_extractor returning an unsigned integers and reduces each key-bucket to a single element using the associative reduce_function.  <a href="#gac16cdb4737df4e291089d8ba5cfad6c3">More...</a><br/></td></tr>
+<tr class="memdesc:gac16cdb4737df4e291089d8ba5cfad6c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReduceToIndex is a DOp, which groups elements of the <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> with the key_extractor returning an unsigned integers and reduces each key-bucket to a single element using the associative reduce_function.  <a href="#gac16cdb4737df4e291089d8ba5cfad6c3">More...</a><br/></td></tr>
 <tr class="separator:gac16cdb4737df4e291089d8ba5cfad6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6b6ac9018486a7998799de3914a6dca"><td class="memTemplParams" colspan="2">template&lt;typename KeyExtractor , typename ReduceFunction , typename ReduceConfig  = class DefaultReduceToIndexConfig&gt; </td></tr>
+<tr class="memitem:gaf6b6ac9018486a7998799de3914a6dca"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__dia__dops.html#gaf6b6ac9018486a7998799de3914a6dca">ReduceToIndex</a> (const struct SkipPreReducePhaseTag &amp;, const KeyExtractor &amp;key_extractor, const ReduceFunction &amp;reduce_function, size_t size, const ValueType &amp;neutral_element=ValueType(), const ReduceConfig &amp;reduce_config=ReduceConfig()) const </td></tr>
+<tr class="memdesc:gaf6b6ac9018486a7998799de3914a6dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReduceToIndex is a DOp, which groups elements of the <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> with the key_extractor returning an unsigned integers and reduces each key-bucket to a single element using the associative reduce_function.  <a href="#gaf6b6ac9018486a7998799de3914a6dca">More...</a><br/></td></tr>
+<tr class="separator:gaf6b6ac9018486a7998799de3914a6dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaada7421986d91977c873cbe15ce2d5e1"><td class="memTemplParams" colspan="2">template&lt;typename ValueOut , typename KeyExtractor , typename GroupByFunction &gt; </td></tr>
 <tr class="memitem:gaada7421986d91977c873cbe15ce2d5e1"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__dia__dops.html#gaada7421986d91977c873cbe15ce2d5e1">GroupByKey</a> (const KeyExtractor &amp;key_extractor, const GroupByFunction &amp;groupby_function) const </td></tr>
 <tr class="memdesc:gaada7421986d91977c873cbe15ce2d5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">GroupByKey is a DOp, which groups elements of the <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> by its key.  <a href="#gaada7421986d91977c873cbe15ce2d5e1">More...</a><br/></td></tr>
@@ -541,7 +545,7 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="window_8hpp_source.html#l00270">270</a> of file <a class="el" href="window_8hpp_source.html">window.hpp</a>.</p>
+<p>Definition at line <a class="el" href="window_8hpp_source.html#l00272">272</a> of file <a class="el" href="window_8hpp_source.html">window.hpp</a>.</p>
 
 </div>
 </div>
@@ -586,7 +590,7 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="window_8hpp_source.html#l00250">250</a> of file <a class="el" href="window_8hpp_source.html">window.hpp</a>.</p>
+<p>Definition at line <a class="el" href="window_8hpp_source.html#l00252">252</a> of file <a class="el" href="window_8hpp_source.html">window.hpp</a>.</p>
 
 </div>
 </div>
@@ -630,7 +634,7 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="window_8hpp_source.html#l00505">505</a> of file <a class="el" href="window_8hpp_source.html">window.hpp</a>.</p>
+<p>Definition at line <a class="el" href="window_8hpp_source.html#l00508">508</a> of file <a class="el" href="window_8hpp_source.html">window.hpp</a>.</p>
 
 </div>
 </div>
@@ -1040,7 +1044,7 @@ Distributed Operations (DOps)</h2></td></tr>
 
 <p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00827">827</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>References <a class="el" href="inner__join_8hpp_source.html#l00731">thrill::api::InnerJoin()</a>, and <a class="el" href="dia_8hpp_source.html#l00114">thrill::api::LocationDetectionTag</a>.</p>
+<p>References <a class="el" href="inner__join_8hpp_source.html#l00731">thrill::api::InnerJoin()</a>, and <a class="el" href="dia_8hpp_source.html#l00122">thrill::api::LocationDetectionTag</a>.</p>
 
 </div>
 </div>
@@ -1092,11 +1096,11 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00676">676</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00673">673</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
 <p>References <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
 
-<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00720">DIA&lt; ValueType_, Stack_ &gt;::Merge()</a>.</p>
+<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00717">DIA&lt; ValueType_, Stack_ &gt;::Merge()</a>.</p>
 
 </div>
 </div>
@@ -1135,9 +1139,9 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00720">720</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="merge_8hpp_source.html#l00717">717</a> of file <a class="el" href="merge_8hpp_source.html">merge.hpp</a>.</p>
 
-<p>References <a class="el" href="merge_8hpp_source.html#l00676">thrill::api::Merge()</a>.</p>
+<p>References <a class="el" href="merge_8hpp_source.html#l00673">thrill::api::Merge()</a>.</p>
 
 </div>
 </div>
@@ -1175,7 +1179,7 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="prefixsum_8hpp_source.html#l00131">131</a> of file <a class="el" href="prefixsum_8hpp_source.html">prefixsum.hpp</a>.</p>
+<p>Definition at line <a class="el" href="prefixsum_8hpp_source.html#l00132">132</a> of file <a class="el" href="prefixsum_8hpp_source.html">prefixsum.hpp</a>.</p>
 
 <p>References <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
@@ -1254,9 +1258,9 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00238">238</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00244">244</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00104">thrill::api::NoDuplicateDetectionTag</a>, and <a class="el" href="dia_8hpp_source.html#l00051">thrill::api::NoVolatileKeyTag</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00112">thrill::api::NoDuplicateDetectionTag</a>, and <a class="el" href="dia_8hpp_source.html#l00051">thrill::api::NoVolatileKeyTag</a>.</p>
 
 </div>
 </div>
@@ -1320,9 +1324,9 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00253">253</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00259">259</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00104">thrill::api::NoDuplicateDetectionTag</a>, and <a class="el" href="dia_8hpp_source.html#l00051">thrill::api::NoVolatileKeyTag</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00112">thrill::api::NoDuplicateDetectionTag</a>, and <a class="el" href="dia_8hpp_source.html#l00051">thrill::api::NoVolatileKeyTag</a>.</p>
 
 </div>
 </div>
@@ -1469,9 +1473,9 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00270">270</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00276">276</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00104">thrill::api::NoDuplicateDetectionTag</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00112">thrill::api::NoDuplicateDetectionTag</a>.</p>
 
 </div>
 </div>
@@ -1549,7 +1553,7 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00288">288</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00294">294</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
 
 <p>References <a class="el" href="dia_8hpp_source.html#l00051">thrill::api::NoVolatileKeyTag</a>.</p>
 
@@ -1634,7 +1638,7 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00307">307</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00313">313</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
 
 <p>References <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
@@ -1680,7 +1684,7 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00365">365</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00371">371</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
 
 </div>
 </div>
@@ -1731,7 +1735,7 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00377">377</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00383">383</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
 
 </div>
 </div>
@@ -1789,9 +1793,9 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00390">390</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00396">396</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00104">thrill::api::NoDuplicateDetectionTag</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00112">thrill::api::NoDuplicateDetectionTag</a>.</p>
 
 </div>
 </div>
@@ -1855,7 +1859,7 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00405">405</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__key_8hpp_source.html#l00411">411</a> of file <a class="el" href="reduce__by__key_8hpp_source.html">reduce_by_key.hpp</a>.</p>
 
 <p>References <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
@@ -1928,7 +1932,7 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00243">243</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00259">259</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
 
 <p>References <a class="el" href="dia_8hpp_source.html#l00051">thrill::api::NoVolatileKeyTag</a>.</p>
 
@@ -1982,9 +1986,9 @@ Distributed Operations (DOps)</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>ReduceToIndexByKey is a DOp, which groups elements of the <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> with the key_extractor returning an unsigned integers and reduces each key-bucket to a single element using the associative reduce_function. </p>
-<p>In contrast to ReduceByKey, ReduceToIndexByKey returns a <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> in a defined order, which has the reduced element with key i in position i. The reduce_function defines how two elements can be reduced to a single element of equal type.</p>
-<p>ReduceToIndexByKey is the equivalent to ReduceByKey, as the reduce_function is allowed to change the key. Since ReduceToIndexByKey is a DOp, it creates a new <a class="el" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill. ">DIANode</a>. The <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> returned by ReduceToIndex links to this newly created <a class="el" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill. ">DIANode</a>. The stack_ of the returned <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> consists of the PostOp of ReduceToIndex, as a reduced element can directly be chained to the following LOps.</p>
+<p>ReduceToIndex is a DOp, which groups elements of the <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> with the key_extractor returning an unsigned integers and reduces each key-bucket to a single element using the associative reduce_function. </p>
+<p>In contrast to ReduceByKey, ReduceToIndex returns a <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> in a defined order, which has the reduced element with key i in position i. The reduce_function defines how two elements can be reduced to a single element of equal type.</p>
+<p>ReduceToIndex is the equivalent to ReduceByKey, as the reduce_function is allowed to change the key. Since ReduceToIndex is a DOp, it creates a new <a class="el" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill. ">DIANode</a>. The <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> returned by ReduceToIndex links to this newly created <a class="el" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill. ">DIANode</a>. The stack_ of the returned <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> consists of the PostOp of ReduceToIndex, as a reduced element can directly be chained to the following LOps.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key_extractor</td><td>Key extractor function, which maps each element to a key of possibly different type.</td></tr>
@@ -2007,7 +2011,86 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00258">258</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00274">274</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
+
+<p>References <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf6b6ac9018486a7998799de3914a6dca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto ReduceToIndex </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structthrill_1_1api_1_1SkipPreReducePhaseTag.html">SkipPreReducePhaseTag</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const KeyExtractor &amp;&#160;</td>
+          <td class="paramname"><em>key_extractor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ReduceFunction &amp;&#160;</td>
+          <td class="paramname"><em>reduce_function</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a> &amp;&#160;</td>
+          <td class="paramname"><em>neutral_element</em> = <code><a class="el" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ReduceConfig &amp;&#160;</td>
+          <td class="paramname"><em>reduce_config</em> = <code>ReduceConfig()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ReduceToIndex is a DOp, which groups elements of the <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> with the key_extractor returning an unsigned integers and reduces each key-bucket to a single element using the associative reduce_function. </p>
+<p>In contrast to ReduceByKey, ReduceToIndex returns a <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> in a defined order, which has the reduced element with key i in position i. The reduce_function defines how two elements can be reduced to a single element of equal type.</p>
+<p>ReduceToIndex is the equivalent to ReduceByKey, as the reduce_function is allowed to change the key. Since ReduceToIndex is a DOp, it creates a new <a class="el" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill. ">DIANode</a>. The <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> returned by ReduceToIndex links to this newly created <a class="el" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill. ">DIANode</a>. The stack_ of the returned <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> consists of the PostOp of ReduceToIndex, as a reduced element can directly be chained to the following LOps.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key_extractor</td><td>Key extractor function, which maps each element to a key of possibly different type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ReduceFunction</td><td>Type of the reduce_function. This is a function reducing two elements of L's result type to a single element of equal type.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reduce_function</td><td>Reduce function, which defines how the key buckets are reduced to a single element. This function is applied associative but not necessarily commutative.</td></tr>
+    <tr><td class="paramname">size</td><td>Resulting <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> size. Consequently, the key_extractor function but always return &lt; size for any element in the input <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a>.</td></tr>
+    <tr><td class="paramname">neutral_element</td><td>Item value with which to start the reduction in each array cell.</td></tr>
+    <tr><td class="paramname">reduce_config</td><td>Reduce configuration. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00332">332</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
 
 <p>References <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
@@ -2041,7 +2124,7 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00757">757</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00755">755</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
 <p>References <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
@@ -2122,7 +2205,7 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="window_8hpp_source.html#l00285">285</a> of file <a class="el" href="window_8hpp_source.html">window.hpp</a>.</p>
+<p>Definition at line <a class="el" href="window_8hpp_source.html#l00287">287</a> of file <a class="el" href="window_8hpp_source.html">window.hpp</a>.</p>
 
 <p>References <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
@@ -2169,7 +2252,7 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="window_8hpp_source.html#l00332">332</a> of file <a class="el" href="window_8hpp_source.html">window.hpp</a>.</p>
+<p>Definition at line <a class="el" href="window_8hpp_source.html#l00334">334</a> of file <a class="el" href="window_8hpp_source.html">window.hpp</a>.</p>
 
 <p>References <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
@@ -2215,7 +2298,7 @@ Distributed Operations (DOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="window_8hpp_source.html#l00524">524</a> of file <a class="el" href="window_8hpp_source.html">window.hpp</a>.</p>
+<p>Definition at line <a class="el" href="window_8hpp_source.html#l00527">527</a> of file <a class="el" href="window_8hpp_source.html">window.hpp</a>.</p>
 
 <p>References <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
@@ -2271,7 +2354,7 @@ Distributed Operations (DOps)</h2></td></tr>
 
 <p>Definition at line <a class="el" href="zip_8hpp_source.html#l00424">424</a> of file <a class="el" href="zip_8hpp_source.html">zip.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00170">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00178">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
 
 <p>Referenced by <a class="el" href="bfs_8cpp_source.html#l00084">BFSNextLevel()</a>, <a class="el" href="check__sa_8hpp_source.html#l00028">examples::suffix_sorting::CheckSA()</a>, <a class="el" href="construct__bwt_8hpp_source.html#l00028">examples::suffix_sorting::ConstructBWT()</a>, and <a class="el" href="zip_8hpp_source.html#l00676">DIA&lt; ValueType_, Stack_ &gt;::Zip()</a>.</p>
 
@@ -2333,7 +2416,7 @@ Distributed Operations (DOps)</h2></td></tr>
 
 <p>Definition at line <a class="el" href="zip_8hpp_source.html#l00477">477</a> of file <a class="el" href="zip_8hpp_source.html">zip.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00170">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00178">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
 
 </div>
 </div>
@@ -2393,7 +2476,7 @@ Distributed Operations (DOps)</h2></td></tr>
 
 <p>Definition at line <a class="el" href="zip_8hpp_source.html#l00531">531</a> of file <a class="el" href="zip_8hpp_source.html">zip.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00170">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00178">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
 
 </div>
 </div>
@@ -2460,7 +2543,7 @@ Distributed Operations (DOps)</h2></td></tr>
 
 <p>Definition at line <a class="el" href="zip_8hpp_source.html#l00588">588</a> of file <a class="el" href="zip_8hpp_source.html">zip.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00170">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00078">thrill::mem::padding</a>, <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00178">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00085">thrill::mem::padding</a>, <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
 
 </div>
 </div>
@@ -2520,7 +2603,7 @@ Distributed Operations (DOps)</h2></td></tr>
 
 <p>Definition at line <a class="el" href="zip_8hpp_source.html#l00642">642</a> of file <a class="el" href="zip_8hpp_source.html">zip.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00170">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00178">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
 
 </div>
 </div>
@@ -2772,9 +2855,9 @@ Distributed Operations (DOps)</h2></td></tr>
 
 <p>Definition at line <a class="el" href="zip__window_8hpp_source.html#l00619">619</a> of file <a class="el" href="zip__window_8hpp_source.html">zip_window.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00170">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00178">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
 
-<p>Referenced by <a class="el" href="dc3_8cpp_source.html#l00303">examples::suffix_sorting::DC3Recursive()</a>, <a class="el" href="dc7_8cpp_source.html#l00453">examples::suffix_sorting::DC7Recursive()</a>, and <a class="el" href="zip__window_8hpp_source.html#l00758">thrill::api::ZipWindow()</a>.</p>
+<p>Referenced by <a class="el" href="dc3_8cpp_source.html#l00282">examples::suffix_sorting::DC3Recursive()</a>, <a class="el" href="dc7_8cpp_source.html#l00411">examples::suffix_sorting::DC7Recursive()</a>, and <a class="el" href="zip__window_8hpp_source.html#l00758">thrill::api::ZipWindow()</a>.</p>
 
 </div>
 </div>
@@ -2826,7 +2909,7 @@ Distributed Operations (DOps)</h2></td></tr>
 
 <p>Definition at line <a class="el" href="zip__window_8hpp_source.html#l00665">665</a> of file <a class="el" href="zip__window_8hpp_source.html">zip_window.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00170">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00178">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
 
 </div>
 </div>
@@ -2884,7 +2967,7 @@ Distributed Operations (DOps)</h2></td></tr>
 
 <p>Definition at line <a class="el" href="zip__window_8hpp_source.html#l00712">712</a> of file <a class="el" href="zip__window_8hpp_source.html">zip_window.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00170">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00078">thrill::mem::padding</a>, <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00178">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00085">thrill::mem::padding</a>, <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
 
 </div>
 </div>
@@ -3000,7 +3083,7 @@ Distributed Operations (DOps)</h2></td></tr>
 
 <p>Definition at line <a class="el" href="zip__window_8hpp_source.html#l00787">787</a> of file <a class="el" href="zip__window_8hpp_source.html">zip_window.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00170">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00078">thrill::mem::padding</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00178">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00085">thrill::mem::padding</a>, and <a class="el" href="vexpand_8hpp_source.html#l00024">tlx::vexpand()</a>.</p>
 
 </div>
 </div>
@@ -3096,7 +3179,7 @@ Distributed Operations (DOps)</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 23 2017 21:32:32 for Thrill by
+    <li class="footer">Generated on Thu Dec 21 2017 17:33:27 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

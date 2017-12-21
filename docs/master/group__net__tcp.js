@@ -36,6 +36,7 @@ var group__net__tcp =
       [ "state_", "classthrill_1_1net_1_1tcp_1_1Connection.html#a6b722f18ec4b203557797e0262d5b7e3", null ]
     ] ],
     [ "Group", "classthrill_1_1net_1_1tcp_1_1Group.html", [
+      [ "Dispatcher", "classthrill_1_1net_1_1tcp_1_1Group.html#a41324b4fbf1e6d99e79a6f786cfb0b87", null ],
       [ "Group", "classthrill_1_1net_1_1tcp_1_1Group.html#a2af06a00f3eb3257849043ddc05a39ff", null ],
       [ "Group", "classthrill_1_1net_1_1tcp_1_1Group.html#a356c5b456ed9bf1c05e9851f335cbcc1", null ],
       [ "Group", "classthrill_1_1net_1_1tcp_1_1Group.html#acdbdbe4c2b6fd1fbe6ac2d899baecf99", null ],
@@ -43,7 +44,7 @@ var group__net__tcp =
       [ "AssignConnection", "classthrill_1_1net_1_1tcp_1_1Group.html#a609b8ef8efb9192424f4c9483f274b4a", null ],
       [ "Close", "classthrill_1_1net_1_1tcp_1_1Group.html#a7f7a3199c392465d0767c6506c1af5b4", null ],
       [ "connection", "classthrill_1_1net_1_1tcp_1_1Group.html#a88758e2fbe63a0928848bb6d19529805", null ],
-      [ "ConstructDispatcher", "classthrill_1_1net_1_1tcp_1_1Group.html#ac0948319c92c379faf7cfed7de721dfc", null ],
+      [ "ConstructDispatcher", "classthrill_1_1net_1_1tcp_1_1Group.html#a7a2d0a26c1fdaecd086136f8e5ed55ad", null ],
       [ "ConstructLocalRealTCPMesh", "classthrill_1_1net_1_1tcp_1_1Group.html#acaecf4e37c7f72f5e21e2bf56b3491b0", null ],
       [ "ConstructLoopbackMesh", "classthrill_1_1net_1_1tcp_1_1Group.html#a66dffeac590766145b45e25b5d908540", null ],
       [ "num_hosts", "classthrill_1_1net_1_1tcp_1_1Group.html#a0feec208eeb70870e8ace6f308a03405", null ],
@@ -90,14 +91,15 @@ var group__net__tcp =
     ] ],
     [ "SelectDispatcher", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html", [
       [ "Watch", "structthrill_1_1net_1_1tcp_1_1SelectDispatcher_1_1Watch.html", [
-        [ "Watch", "structthrill_1_1net_1_1tcp_1_1SelectDispatcher_1_1Watch.html#a6c27d7440676f53b131370f15b73a08c", null ],
         [ "active", "structthrill_1_1net_1_1tcp_1_1SelectDispatcher_1_1Watch.html#a03c996f9fcf0e10baeb3e700be0c409a", null ],
         [ "except_cb", "structthrill_1_1net_1_1tcp_1_1SelectDispatcher_1_1Watch.html#acb5b88a6f065a050107c600e8fe837e9", null ],
-        [ "read_cb", "structthrill_1_1net_1_1tcp_1_1SelectDispatcher_1_1Watch.html#a3d658153cbee7e3614345c0ea8e9b5ab", null ],
-        [ "write_cb", "structthrill_1_1net_1_1tcp_1_1SelectDispatcher_1_1Watch.html#ad57b80125b3435fe75ebd85537f03475", null ]
+        [ "read_cb", "structthrill_1_1net_1_1tcp_1_1SelectDispatcher_1_1Watch.html#af7a29a4e87f668a8362ff20900dec098", null ],
+        [ "write_cb", "structthrill_1_1net_1_1tcp_1_1SelectDispatcher_1_1Watch.html#aa06eb411cb49078f569b974e4fe23567", null ]
       ] ],
       [ "Callback", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a0a32632611d98f14ad5e291fb0f69584", null ],
-      [ "SelectDispatcher", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a54a2d2d754e19e05d852e95e1ca5a2cc", null ],
+      [ "SelectDispatcher", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#ae23acb80e1e5bbae9807dbe709af2b99", null ],
+      [ "SelectDispatcher", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a33de738e7e56a6f89487fd9d11c03f2b", null ],
+      [ "SelectDispatcher", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a0e8b01b7988ed59ecf96984ad3f0939c", null ],
       [ "~SelectDispatcher", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a4e44d958c56ad0d9ffeae12a85211918", null ],
       [ "AddRead", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a90211b6c31b43bceec284d2831abdb74", null ],
       [ "AddRead", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a655a24f4e821b9d08598fd3016223c03", null ],
@@ -107,6 +109,8 @@ var group__net__tcp =
       [ "DefaultExceptionCallback", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a2354a372bea7d108b7a56673c569d209", null ],
       [ "DispatchOne", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a2b6fc1d4feb0d89bcc3080f507e0fd4f", null ],
       [ "Interrupt", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a377d38c6b9cc307e471eb76f6e47a1a4", null ],
+      [ "operator=", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a7bc5659f379e903bff20a5e5c29fbb77", null ],
+      [ "operator=", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a424ddabef37ebf9f08ffcf08a903b0de", null ],
       [ "SelfPipeCallback", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a91aa47d1aebd5de469e6f1b9f3d25524", null ],
       [ "SetExcept", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a93d7f8ccf71dab931a60118f6ccb536c", null ],
       [ "debug", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
@@ -114,7 +118,7 @@ var group__net__tcp =
       [ "self_pipe_", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a9ce6f99486145fdeda95fe307f6c23fb", null ],
       [ "self_pipe_buffer_", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a4e38255e64775dcea6c994639af29cd6", null ],
       [ "self_verify_", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#aea22ad377284c6c9830497905ddc68e0", null ],
-      [ "watch_", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#ae25584fb8f8ab5b7c8677a03345288ba", null ]
+      [ "watch_", "classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a70e1a458535a0d2187a320f0f1ec9d57", null ]
     ] ],
     [ "Socket", "classthrill_1_1net_1_1tcp_1_1Socket.html", [
       [ "Socket", "classthrill_1_1net_1_1tcp_1_1Socket.html#ae04c05c269b9b99aaae308d541b37c82", null ],
@@ -202,6 +206,6 @@ var group__net__tcp =
       [ "Connected", "group__net__tcp.html#ggaf905f830af92a188bfa734cbd78f7211ad253364cc2926eb617b0833335fe4467", null ],
       [ "Disconnected", "group__net__tcp.html#ggaf905f830af92a188bfa734cbd78f7211a84ab0fbbb76a8c897feb1cd806d56443", null ]
     ] ],
-    [ "Construct", "group__net__tcp.html#gadf82af5b60886257f643df0a78421c32", null ],
-    [ "Construct", "group__net__tcp.html#gac3e533f8f0a0ffc5889ff725287ba12d", null ]
+    [ "Construct", "group__net__tcp.html#gafe3e5df67abb484631c2cc356ffe1846", null ],
+    [ "Construct", "group__net__tcp.html#gadd94b781ecd065ef03ccb9c75a2f34f5", null ]
 ];

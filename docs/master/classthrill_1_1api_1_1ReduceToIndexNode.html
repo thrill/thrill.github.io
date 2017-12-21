@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Thrill: ReduceToIndexNode&lt; ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey &gt; Class Template Reference</title>
+<title>Thrill: ReduceToIndexNode&lt; ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey, SkipPreReducePhase &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -122,12 +122,12 @@ $(document).ready(function(){initNavTree('classthrill_1_1api_1_1ReduceToIndexNod
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classthrill_1_1api_1_1ReduceToIndexNode-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ReduceToIndexNode&lt; ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__api__layer.html">DIA API Layer</a></div></div>  </div>
+<div class="title">ReduceToIndexNode&lt; ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey, SkipPreReducePhase &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__api__layer.html">DIA API Layer</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename ValueType, typename KeyExtractor, typename ReduceFunction, typename ReduceConfig, bool VolatileKey&gt;<br/>
-class thrill::api::ReduceToIndexNode&lt; ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey &gt;</h3>
+<div class="textblock"><h3>template&lt;typename ValueType, typename KeyExtractor, typename ReduceFunction, typename ReduceConfig, bool VolatileKey, bool SkipPreReducePhase&gt;<br/>
+class thrill::api::ReduceToIndexNode&lt; ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey, SkipPreReducePhase &gt;</h3>
 
 <p>A <a class="el" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill. ">DIANode</a> which performs a ReduceToIndex operation. </p>
 <p>ReduceToIndex groups the elements in a <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> by their key and reduces every key bucket to a single element each. The <a class="el" href="classthrill_1_1api_1_1ReduceToIndexNode.html" title="A DIANode which performs a ReduceToIndex operation. ">ReduceToIndexNode</a> stores the key_extractor and the reduce_function UDFs. The chainable LOps ahead of the Reduce operation are stored in the Stack. The <a class="el" href="classthrill_1_1api_1_1ReduceToIndexNode.html" title="A DIANode which performs a ReduceToIndex operation. ">ReduceToIndexNode</a> has the type ValueType, which is the result type of the reduce_function. The key type is an unsigned integer and the output <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> will have element with key K at index K.</p>
@@ -144,19 +144,19 @@ class thrill::api::ReduceToIndexNode&lt; ValueType, KeyExtractor, ReduceFunction
 
 <p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00059">59</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ReduceToIndexNode&lt; ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey &gt;:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ReduceToIndexNode&lt; ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey, SkipPreReducePhase &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1api_1_1ReduceToIndexNode__inherit__graph.svg" width="227" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1api_1_1ReduceToIndexNode__inherit__graph.svg" width="251" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for ReduceToIndexNode&lt; ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey &gt;:</div>
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for ReduceToIndexNode&lt; ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey, SkipPreReducePhase &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1api_1_1ReduceToIndexNode__coll__graph.svg" width="4542" height="1116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1api_1_1ReduceToIndexNode__coll__graph.svg" width="4515" height="1116"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 
@@ -324,8 +324,8 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a8d115b456cc5f148d35663f6061cf30d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1ReduceToIndexNode.html#a8d115b456cc5f148d35663f6061cf30d">cat_stream_</a></td></tr>
 <tr class="separator:a8d115b456cc5f148d35663f6061cf30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18ff9277056d6ce5d80a1561569a2ff2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classthrill_1_1data_1_1Stream.html#aa69ca4ad57a0d2a683361d219fd48c2e">data::Stream::Writer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1ReduceToIndexNode.html#a18ff9277056d6ce5d80a1561569a2ff2">emitters_</a></td></tr>
-<tr class="separator:a18ff9277056d6ce5d80a1561569a2ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a499945058364ff571459f01b66daefc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1Stream.html#a1b3c2de3fe1721454fe96a17e0795e6e">data::Stream::Writers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1ReduceToIndexNode.html#a499945058364ff571459f01b66daefc7">emitters_</a></td></tr>
+<tr class="separator:a499945058364ff571459f01b66daefc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a861bc07ca9bca70b463d39ef1de414ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html">core::ReduceByIndexPostPhase</a><br class="typebreak"/>
 &lt; <a class="el" href="classthrill_1_1api_1_1ReduceToIndexNode.html#a204dee530e24efc047ecb3caef72bf3b">TableItem</a>, <a class="el" href="classthrill_1_1api_1_1ReduceToIndexNode.html#a17e6ef244d4d03395a813cf2a45a9648">Key</a>, ValueType, <br class="typebreak"/>
 KeyExtractor, ReduceFunction, <br class="typebreak"/>
@@ -583,17 +583,17 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a18ff9277056d6ce5d80a1561569a2ff2"></a>
+<a class="anchor" id="a499945058364ff571459f01b66daefc7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classthrill_1_1data_1_1Stream.html#aa69ca4ad57a0d2a683361d219fd48c2e">data::Stream::Writer</a>&gt; emitters_</td>
+          <td class="memname"><a class="el" href="classthrill_1_1data_1_1Stream.html#a1b3c2de3fe1721454fe96a17e0795e6e">data::Stream::Writers</a> emitters_</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00222">222</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00238">238</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
 
 </div>
 </div>
@@ -607,7 +607,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00236">236</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00252">252</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
 
 </div>
 </div>
@@ -621,7 +621,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00232">232</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00248">248</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
 
 </div>
 </div>
@@ -635,7 +635,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00238">238</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00254">254</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
 
 </div>
 </div>
@@ -649,7 +649,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00224">224</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00240">240</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
 
 </div>
 </div>
@@ -665,7 +665,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>handle to additional thread for post phase </p>
 
-<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00227">227</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__to__index_8hpp_source.html#l00243">243</a> of file <a class="el" href="reduce__to__index_8hpp_source.html">reduce_to_index.hpp</a>.</p>
 
 </div>
 </div>
@@ -722,7 +722,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1api.html">api</a></li><li class="navelem"><a class="el" href="classthrill_1_1api_1_1ReduceToIndexNode.html">ReduceToIndexNode</a></li>
-    <li class="footer">Generated on Thu Nov 23 2017 21:32:33 for Thrill by
+    <li class="footer">Generated on Thu Dec 21 2017 17:33:27 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

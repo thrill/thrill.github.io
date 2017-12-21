@@ -69,6 +69,7 @@ var classthrill_1_1api_1_1DIA =
     [ "ReducePair", "group__dia__dops.html#ga0c2fd8eb498c64eeb3acad27398d4770", null ],
     [ "ReduceToIndex", "group__dia__dops.html#gabc59492dd0253c9aa2d5964d3477bde3", null ],
     [ "ReduceToIndex", "group__dia__dops.html#gac16cdb4737df4e291089d8ba5cfad6c3", null ],
+    [ "ReduceToIndex", "group__dia__dops.html#gaf6b6ac9018486a7998799de3914a6dca", null ],
     [ "Sample", "group__dia__actions.html#gad919e503e3bba7032d8451392cf6b807", null ],
     [ "Size", "group__dia__actions.html#gab3bace7b51e6e7d78048999bc2189e27", null ],
     [ "SizeFuture", "group__dia__actions.html#gaf78c7ddfa0c902dcfa2057acf189687b", null ],

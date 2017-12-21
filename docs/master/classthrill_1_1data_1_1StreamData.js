@@ -1,11 +1,12 @@
 var classthrill_1_1data_1_1StreamData =
 [
+    [ "Writers", "classthrill_1_1data_1_1StreamData_1_1Writers.html", "classthrill_1_1data_1_1StreamData_1_1Writers" ],
     [ "Writer", "classthrill_1_1data_1_1StreamData.html#a08f9d7d340d452efab7eab158fcbfe64", null ],
     [ "StreamData", "classthrill_1_1data_1_1StreamData.html#a21671988c20d9fb7d7f85e836a83542f", null ],
     [ "~StreamData", "classthrill_1_1data_1_1StreamData.html#a4c2a576a02e1fb5b421d073b74a9184f", null ],
     [ "Close", "classthrill_1_1data_1_1StreamData.html#aacb6d0e5e6d570cdc2b0da14c3921ff0", null ],
     [ "closed", "classthrill_1_1data_1_1StreamData.html#a13ef393e64458da714691f90545824e9", null ],
-    [ "GetWriters", "classthrill_1_1data_1_1StreamData.html#af466211c9c17acd9e25a3e6d09a31c4c", null ],
+    [ "GetWriters", "classthrill_1_1data_1_1StreamData.html#a1ed868156fd0366a5e480c9a8cea495b", null ],
     [ "id", "classthrill_1_1data_1_1StreamData.html#a48d1f80794534f3f501f64386d6647e7", null ],
     [ "my_host_rank", "classthrill_1_1data_1_1StreamData.html#ae75328939a4b19114b4f83b395d1d1e3", null ],
     [ "my_worker_rank", "classthrill_1_1data_1_1StreamData.html#a9a2419998e8a85e72a5c65513bbba69c", null ],

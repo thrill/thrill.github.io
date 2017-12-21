@@ -894,6 +894,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2d0ada76ddce7fc09d770fa512780839"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__string.html#ga2d0ada76ddce7fc09d770fa512780839">word_wrap</a> (const std::string &amp;str, unsigned int wrap=80)</td></tr>
 <tr class="memdesc:ga2d0ada76ddce7fc09d770fa512780839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to wrap a string to 80 columns without split words.  <a href="group__tlx__string.html#ga2d0ada76ddce7fc09d770fa512780839">More...</a><br/></td></tr>
 <tr class="separator:ga2d0ada76ddce7fc09d770fa512780839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Stack Backtrace Printing</div></td></tr>
+<tr class="memitem:a5e964500195bf49264036402214d61ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html#a5e964500195bf49264036402214d61ed">print_raw_backtrace</a> (FILE *out, unsigned int max_frames, const char *fmt,...) <a class="el" href="attribute__format__printf_8hpp.html#a246a72d6938b4e4a40f11571a676b472">TLX_ATTRIBUTE_FORMAT_PRINTF</a>(3</td></tr>
+<tr class="memdesc:a5e964500195bf49264036402214d61ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a plain hex stack backtrace of the called function to FILE* out, prefixed with the given printf formatted output.  <a href="#a5e964500195bf49264036402214d61ed">More...</a><br/></td></tr>
+<tr class="separator:a5e964500195bf49264036402214d61ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d2bac4967f005d9dd31c0c300eef091"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html#a1d2bac4967f005d9dd31c0c300eef091">print_raw_backtrace</a> (FILE *out=stderr, unsigned int max_frames=63)</td></tr>
+<tr class="memdesc:a1d2bac4967f005d9dd31c0c300eef091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a plain hex stack backtrace of the called function to FILE* out.  <a href="#a1d2bac4967f005d9dd31c0c300eef091">More...</a><br/></td></tr>
+<tr class="separator:a1d2bac4967f005d9dd31c0c300eef091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adad32b2f09919dea0ffb70cecfa4ee70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html#adad32b2f09919dea0ffb70cecfa4ee70">print_cxx_backtrace</a> (FILE *out=stderr, unsigned int max_frames=63)</td></tr>
+<tr class="memdesc:adad32b2f09919dea0ffb70cecfa4ee70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a demangled stack backtrace of the caller function to FILE* out.  <a href="#adad32b2f09919dea0ffb70cecfa4ee70">More...</a><br/></td></tr>
+<tr class="separator:adad32b2f09919dea0ffb70cecfa4ee70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Base64 Encoding and Decoding</div></td></tr>
 <tr class="memitem:ga691477f59c8496eec65e994ce3f6e6e5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__string.html#ga691477f59c8496eec65e994ce3f6e6e5">base64_encode</a> (const void *data, size_t size, size_t line_break=0)</td></tr>
 <tr class="memdesc:ga691477f59c8496eec65e994ce3f6e6e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the given binary data into base64 representation as described in RFC 2045 or RFC 3548.  <a href="group__tlx__string.html#ga691477f59c8496eec65e994ce3f6e6e5">More...</a><br/></td></tr>
@@ -1556,6 +1566,117 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="adad32b2f09919dea0ffb70cecfa4ee70"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void void print_cxx_backtrace </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>out</em> = <code>stderr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>max_frames</em> = <code>63</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print a demangled stack backtrace of the caller function to FILE* out. </p>
+<dl class="section warning"><dt>Warning</dt><dd>The binary has to be compiled with <code>-rdynamic</code> for meaningful output. </dd></dl>
+
+<p>Definition at line <a class="el" href="backtrace_8cpp_source.html#l00067">67</a> of file <a class="el" href="backtrace_8cpp_source.html">backtrace.cpp</a>.</p>
+
+<p>References <a class="el" href="malloc__tracker_8cpp_source.html#l01038">free()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l01013">malloc()</a>, and <a class="el" href="unused_8hpp_source.html#l00020">unused()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e964500195bf49264036402214d61ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_raw_backtrace </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>max_frames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print a plain hex stack backtrace of the called function to FILE* out, prefixed with the given printf formatted output. </p>
+
+<p>Definition at line <a class="el" href="backtrace_8cpp_source.html#l00028">28</a> of file <a class="el" href="backtrace_8cpp_source.html">backtrace.cpp</a>.</p>
+
+<p>References <a class="el" href="unused_8hpp_source.html#l00020">unused()</a>.</p>
+
+<p>Referenced by <a class="el" href="malloc__tracker_8cpp_source.html#l00461">thrill::mem::bypass_malloc()</a>, and <a class="el" href="backtrace_8cpp_source.html#l00063">print_raw_backtrace()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d2bac4967f005d9dd31c0c300eef091"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void print_raw_backtrace </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>max_frames</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print a plain hex stack backtrace of the called function to FILE* out. </p>
+
+<p>Definition at line <a class="el" href="backtrace_8cpp_source.html#l00063">63</a> of file <a class="el" href="backtrace_8cpp_source.html">backtrace.cpp</a>.</p>
+
+<p>References <a class="el" href="backtrace_8cpp_source.html#l00028">print_raw_backtrace()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a165140a3f756701491e3958c9858ea2c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1831,7 +1952,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="counting__ptr_8hpp_source.html#l00263">263</a> of file <a class="el" href="counting__ptr_8hpp_source.html">counting_ptr.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00381">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::AddEqualKeysToVec()</a>, <a class="el" href="file_8cpp_source.html#l00057">File::Clear()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00192">LoserTreeCopy&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00259">LoserTreeCopy&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00421">LoserTreePointer&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00481">LoserTreePointer&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00611">LoserTreeCopyUnguarded&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00652">LoserTreeCopyUnguarded&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00780">LoserTreePointerUnguarded&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00818">LoserTreePointerUnguarded&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="concat__to__dia_8hpp_source.html#l00052">ConcatToDIANode&lt; ValueType &gt;::Dispose()</a>, <a class="el" href="equal__to__dia_8hpp_source.html#l00054">EqualToDIANode&lt; ValueType &gt;::Dispose()</a>, <a class="el" href="distribute_8hpp_source.html#l00082">DistributeNode&lt; ValueType &gt;::Dispose()</a>, <a class="el" href="reduce__table_8hpp_source.html#l00150">ReduceTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::Dispose()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00197">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Dispose()</a>, <a class="el" href="reduce__old__probing__hash__table_8hpp_source.html#l00253">ReduceOldProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::Dispose()</a>, <a class="el" href="reduce__bucket__hash__table_8hpp_source.html#l00334">ReduceBucketHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig, IndexFunction, KeyEqualFunction &gt;::Dispose()</a>, <a class="el" href="location__detection_8hpp_source.html#l00358">LocationDetection&lt; thrill::api::JoinNode::HashCount &gt;::Dispose()</a>, <a class="el" href="binary__heap_8hpp_source.html#l00079">BinaryHeap&lt; Timer &gt;::erase()</a>, <a class="el" href="location__detection_8hpp_source.html#l00192">LocationDetection&lt; thrill::api::JoinNode::HashCount &gt;::Flush()</a>, <a class="el" href="qsort_8hpp_source.html#l00113">thrill::common::qsort_local::InsertionSort()</a>, <a class="el" href="group__to__index_8hpp_source.html#l00233">GroupToIndexNode&lt; ValueType, KeyExtractor, GroupFunction &gt;::MainOp()</a>, <a class="el" href="group__by__key_8hpp_source.html#l00341">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>, <a class="el" href="sort_8hpp_source.html#l00541">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>, <a class="el" href="binary__heap_8hpp_source.html#l00173">BinaryHeap&lt; Timer &gt;::pop_heap()</a>, <a class="el" href="qsort_8hpp_source.html#l00244">thrill::common::qsort_three_pivots()</a>, <a class="el" href="qsort_8hpp_source.html#l00186">thrill::common::qsort_two_pivots_yaroslavskiy()</a>, <a class="el" href="radix__sort_8hpp_source.html#l00037">thrill::common::radix_sort_CI()</a>, <a class="el" href="qsort_8hpp_source.html#l00051">thrill::common::qsort_local::sort3()</a>, <a class="el" href="qsort_8hpp_source.html#l00076">thrill::common::qsort_local::sort4()</a>, <a class="el" href="qsort_8hpp_source.html#l00093">thrill::common::qsort_local::sort5()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00065">Range::Swap()</a>, <a class="el" href="simple__vector_8hpp_source.html#l00104">SimpleVector&lt; std::thread &gt;::swap()</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00242">CountingPtr&lt; FileBase &gt;::swap()</a>, <a class="el" href="delegate_8hpp_source.html#l00266">Delegate&lt; R(A...), Allocator &gt;::swap()</a>, and <a class="el" href="sort_8hpp_source.html#l00435">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00381">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::AddEqualKeysToVec()</a>, <a class="el" href="file_8cpp_source.html#l00057">File::Clear()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00192">LoserTreeCopy&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00259">LoserTreeCopy&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00421">LoserTreePointer&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00481">LoserTreePointer&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00611">LoserTreeCopyUnguarded&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00652">LoserTreeCopyUnguarded&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00780">LoserTreePointerUnguarded&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00818">LoserTreePointerUnguarded&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="concat__to__dia_8hpp_source.html#l00052">ConcatToDIANode&lt; ValueType &gt;::Dispose()</a>, <a class="el" href="equal__to__dia_8hpp_source.html#l00054">EqualToDIANode&lt; ValueType &gt;::Dispose()</a>, <a class="el" href="distribute_8hpp_source.html#l00082">DistributeNode&lt; ValueType &gt;::Dispose()</a>, <a class="el" href="reduce__table_8hpp_source.html#l00150">ReduceTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::Dispose()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00249">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Dispose()</a>, <a class="el" href="reduce__old__probing__hash__table_8hpp_source.html#l00251">ReduceOldProbingHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig_, IndexFunction, KeyEqualFunction &gt;::Dispose()</a>, <a class="el" href="reduce__bucket__hash__table_8hpp_source.html#l00332">ReduceBucketHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig, IndexFunction, KeyEqualFunction &gt;::Dispose()</a>, <a class="el" href="location__detection_8hpp_source.html#l00357">LocationDetection&lt; thrill::api::JoinNode::HashCount &gt;::Dispose()</a>, <a class="el" href="binary__heap_8hpp_source.html#l00079">BinaryHeap&lt; Timer &gt;::erase()</a>, <a class="el" href="location__detection_8hpp_source.html#l00191">LocationDetection&lt; thrill::api::JoinNode::HashCount &gt;::Flush()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00265">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::FlushAndConsume()</a>, <a class="el" href="qsort_8hpp_source.html#l00113">thrill::common::qsort_local::InsertionSort()</a>, <a class="el" href="group__to__index_8hpp_source.html#l00232">GroupToIndexNode&lt; ValueType, KeyExtractor, GroupFunction &gt;::MainOp()</a>, <a class="el" href="group__by__key_8hpp_source.html#l00341">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>, <a class="el" href="sort_8hpp_source.html#l00540">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>, <a class="el" href="binary__heap_8hpp_source.html#l00173">BinaryHeap&lt; Timer &gt;::pop_heap()</a>, <a class="el" href="qsort_8hpp_source.html#l00244">thrill::common::qsort_three_pivots()</a>, <a class="el" href="qsort_8hpp_source.html#l00186">thrill::common::qsort_two_pivots_yaroslavskiy()</a>, <a class="el" href="radix__sort_8hpp_source.html#l00037">thrill::common::radix_sort_CI()</a>, <a class="el" href="qsort_8hpp_source.html#l00051">thrill::common::qsort_local::sort3()</a>, <a class="el" href="qsort_8hpp_source.html#l00076">thrill::common::qsort_local::sort4()</a>, <a class="el" href="qsort_8hpp_source.html#l00093">thrill::common::qsort_local::sort5()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00070">Range::Swap()</a>, <a class="el" href="simple__vector_8hpp_source.html#l00104">SimpleVector&lt; std::thread &gt;::swap()</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00242">CountingPtr&lt; FileBase &gt;::swap()</a>, <a class="el" href="delegate_8hpp_source.html#l00266">Delegate&lt; R(A...), Allocator &gt;::swap()</a>, and <a class="el" href="sort_8hpp_source.html#l00437">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>.</p>
 
 </div>
 </div>
@@ -1851,7 +1972,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="unused_8hpp_source.html#l00020">20</a> of file <a class="el" href="unused_8hpp_source.html">unused.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="loser__tree_8hpp_source.html#l00421">LoserTreePointer&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00481">LoserTreePointer&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00611">LoserTreeCopyUnguarded&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00652">LoserTreeCopyUnguarded&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00780">LoserTreePointerUnguarded&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00818">LoserTreePointerUnguarded&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="memory__file_8cpp_source.html#l00067">MemoryFile::discard()</a>, <a class="el" href="file__base_8hpp_source.html#l00152">FileBase::discard()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00102">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00356">LoserTreePointerBase&lt; ValueType, Comparator &gt;::insert_start()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00561">LoserTreeCopyUnguardedBase&lt; ValueType, Comparator &gt;::insert_start()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00731">LoserTreePointerUnguardedBase&lt; ValueType, Comparator &gt;::insert_start()</a>, <a class="el" href="porting_8cpp_source.html#l00067">thrill::common::LogCmdlineParams()</a>, <a class="el" href="k-means__run_8cpp_source.html#l00048">OutputSVG()</a>, <a class="el" href="porting_8cpp_source.html#l00041">thrill::common::PortSetCloseOnExec()</a>, <a class="el" href="iostats_8cpp_source.html#l00099">Stats::read_started()</a>, <a class="el" href="reduce__pre__phase_8hpp_source.html#l00130">ReducePrePhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig_, IndexFunction, KeyEqualFunction, HashFunction, false &gt;::ReducePrePhase()</a>, <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00038">RequestQueueImpl1Q::RequestQueueImpl1Q()</a>, <a class="el" href="request__queue__impl__qw__qr_8cpp_source.html#l00037">RequestQueueImplQwQr::RequestQueueImplQwQr()</a>, <a class="el" href="iostats_8hpp_source.html#l00205">Stats::ScopedWaitTimer::ScopedWaitTimer()</a>, <a class="el" href="porting_8cpp_source.html#l00110">thrill::common::SetCpuAffinity()</a>, <a class="el" href="request__queue_8hpp_source.html#l00049">RequestQueue::SetPriorityOp()</a>, <a class="el" href="request__queue__impl__1q_8hpp_source.html#l00057">RequestQueueImpl1Q::SetPriorityOp()</a>, <a class="el" href="request__queue__impl__qw__qr_8hpp_source.html#l00064">RequestQueueImplQwQr::SetPriorityOp()</a>, and <a class="el" href="iostats_8cpp_source.html#l00031">Stats::write_started()</a>.</p>
+<p>Referenced by <a class="el" href="loser__tree_8hpp_source.html#l00421">LoserTreePointer&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00481">LoserTreePointer&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00611">LoserTreeCopyUnguarded&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00652">LoserTreeCopyUnguarded&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00780">LoserTreePointerUnguarded&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00818">LoserTreePointerUnguarded&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="memory__file_8cpp_source.html#l00067">MemoryFile::discard()</a>, <a class="el" href="file__base_8hpp_source.html#l00152">FileBase::discard()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00356">LoserTreePointerBase&lt; ValueType, Comparator &gt;::insert_start()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00561">LoserTreeCopyUnguardedBase&lt; ValueType, Comparator &gt;::insert_start()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00731">LoserTreePointerUnguardedBase&lt; ValueType, Comparator &gt;::insert_start()</a>, <a class="el" href="porting_8cpp_source.html#l00067">thrill::common::LogCmdlineParams()</a>, <a class="el" href="k-means__run_8cpp_source.html#l00048">OutputSVG()</a>, <a class="el" href="porting_8cpp_source.html#l00041">thrill::common::PortSetCloseOnExec()</a>, <a class="el" href="backtrace_8cpp_source.html#l00067">print_cxx_backtrace()</a>, <a class="el" href="backtrace_8cpp_source.html#l00028">print_raw_backtrace()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00174">Dispatcher::PumpRecvQueue()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00158">Dispatcher::PumpSendQueue()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00137">Dispatcher::QueueAsyncRecv()</a>, <a class="el" href="dispatcher_8cpp_source.html#l00117">Dispatcher::QueueAsyncSend()</a>, <a class="el" href="iostats_8cpp_source.html#l00099">Stats::read_started()</a>, <a class="el" href="reduce__pre__phase_8hpp_source.html#l00130">ReducePrePhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig_, IndexFunction, KeyEqualFunction, HashFunction, false &gt;::ReducePrePhase()</a>, <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00038">RequestQueueImpl1Q::RequestQueueImpl1Q()</a>, <a class="el" href="request__queue__impl__qw__qr_8cpp_source.html#l00037">RequestQueueImplQwQr::RequestQueueImplQwQr()</a>, <a class="el" href="iostats_8hpp_source.html#l00205">Stats::ScopedWaitTimer::ScopedWaitTimer()</a>, <a class="el" href="porting_8cpp_source.html#l00110">thrill::common::SetCpuAffinity()</a>, <a class="el" href="request__queue_8hpp_source.html#l00049">RequestQueue::SetPriorityOp()</a>, <a class="el" href="request__queue__impl__1q_8hpp_source.html#l00057">RequestQueueImpl1Q::SetPriorityOp()</a>, <a class="el" href="request__queue__impl__qw__qr_8hpp_source.html#l00064">RequestQueueImplQwQr::SetPriorityOp()</a>, and <a class="el" href="iostats_8cpp_source.html#l00031">Stats::write_started()</a>.</p>
 
 </div>
 </div>
@@ -1888,7 +2009,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacetlx.html">tlx</a></li>
-    <li class="footer">Generated on Thu Nov 23 2017 21:32:35 for Thrill by
+    <li class="footer">Generated on Thu Dec 21 2017 17:33:29 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -126,13 +126,13 @@ $(document).ready(function(){initNavTree('classthrill_1_1api_1_1Context.html',''
 <div class="textblock"><p>The <a class="el" href="classthrill_1_1api_1_1Context.html" title="The Context of a job is a unique instance per worker which holds references to all underlying parts o...">Context</a> of a job is a unique instance per worker which holds references to all underlying parts of Thrill. </p>
 <p>The context is able to give references to the <a class="el" href="classthrill_1_1data_1_1Multiplexer.html">stream multiplexer</a>, the <a class="el" href="classthrill_1_1net_1_1Group.html">net</a>group" \ref common::Stats "stats" and \ref common::StatsGraph "stats graph". Threads share the stream multiplexer and the net group via the context object. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00210">210</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00218">218</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for Context:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1api_1_1Context__coll__graph.svg" width="1779" height="1024"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1api_1_1Context__coll__graph.svg" width="1728" height="899"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 
@@ -197,6 +197,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Shared Objects</div></td></tr>
+<tr class="memitem:aa9fae34d3ffbf0d868ded27d7db35133"><td class="memItemLeft" align="right" valign="top">std::default_random_engine&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1Context.html#aa9fae34d3ffbf0d868ded27d7db35133">rng_</a></td></tr>
+<tr class="memdesc:aa9fae34d3ffbf0d868ded27d7db35133"><td class="mdescLeft">&#160;</td><td class="mdescRight">a random generator  <a href="#aa9fae34d3ffbf0d868ded27d7db35133">More...</a><br/></td></tr>
+<tr class="separator:aa9fae34d3ffbf0d868ded27d7db35133"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Network Subsystem</div></td></tr>
 <tr class="memitem:aea6bd2f5fe241819865a3713c71b6158"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1net_1_1FlowControlChannel.html">net::FlowControlChannel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1Context.html#aea6bd2f5fe241819865a3713c71b6158">net</a></td></tr>
 <tr class="separator:aea6bd2f5fe241819865a3713c71b6158"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,9 +282,6 @@ System Information</h2></td></tr>
 <a class="anchor" id="a536dc0f9ac429b25cbbe0270e1a3c803"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classthrill_1_1api_1_1Context.html">Context</a> </td>
@@ -300,16 +301,9 @@ System Information</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00213">213</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
-
-<p>References <a class="el" href="context_8hpp_source.html#l00240">Context::workers_per_host()</a>.</p>
+<p>Definition at line <a class="el" href="context_8cpp_source.html#l01114">1114</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
 
 </div>
 </div>
@@ -337,11 +331,11 @@ System Information</h2></td></tr>
 
 <p>the block manager keeps all data blocks moving through the system. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00326">326</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00321">321</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00421">Context::block_pool_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00416">Context::block_pool_</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8cpp_source.html#l01155">Context::Launch()</a>, <a class="el" href="read__binary_8hpp_source.html#l00295">ReadBinaryNode&lt; ValueType &gt;::VfsFileBlockSource::NextBlock()</a>, <a class="el" href="read__binary_8hpp_source.html#l00081">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>, <a class="el" href="inner__join_8hpp_source.html#l00670">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::SortAndWriteToFile()</a>, and <a class="el" href="sort_8hpp_source.html#l00699">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::SortAndWriteToFile()</a>.</p>
+<p>Referenced by <a class="el" href="context_8cpp_source.html#l01210">Context::Launch()</a>, <a class="el" href="read__binary_8hpp_source.html#l00295">ReadBinaryNode&lt; ValueType &gt;::VfsFileBlockSource::NextBlock()</a>, <a class="el" href="read__binary_8hpp_source.html#l00081">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00670">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::SortAndWriteToFile()</a>.</p>
 
 </div>
 </div>
@@ -368,9 +362,9 @@ System Information</h2></td></tr>
 </div><div class="memdoc">
 <p>given a global range [0,global_size) and p PEs to split the range, calculate the [local_begin,local_end) index range assigned to the PE i. Takes the information from the <a class="el" href="classthrill_1_1api_1_1Context.html" title="The Context of a job is a unique instance per worker which holds references to all underlying parts o...">Context</a>. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00341">341</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00336">336</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="thrill_2common_2math_8hpp_source.html#l00088">thrill::common::CalculateLocalRange()</a>, <a class="el" href="context_8hpp_source.html#l00245">Context::my_rank()</a>, and <a class="el" href="context_8hpp_source.html#l00253">Context::num_workers()</a>.</p>
+<p>References <a class="el" href="thrill_2common_2math_8hpp_source.html#l00109">thrill::common::CalculateLocalRange()</a>, <a class="el" href="context_8hpp_source.html#l00240">Context::my_rank()</a>, and <a class="el" href="context_8hpp_source.html#l00248">Context::num_workers()</a>.</p>
 
 <p>Referenced by <a class="el" href="read__lines_8hpp_source.html#l00300">ReadLinesNode::InputLineIteratorCompressed::InputLineIteratorCompressed()</a>, <a class="el" href="read__lines_8hpp_source.html#l00175">ReadLinesNode::InputLineIteratorUncompressed::InputLineIteratorUncompressed()</a>, <a class="el" href="equal__to__dia_8hpp_source.html#l00046">EqualToDIANode&lt; ValueType &gt;::PushData()</a>, <a class="el" href="generate_8hpp_source.html#l00055">GenerateNode&lt; ValueType, GenerateFunction &gt;::PushData()</a>, and <a class="el" href="read__binary_8hpp_source.html#l00081">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>.</p>
 
@@ -398,9 +392,9 @@ System Information</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00346">346</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00341">341</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="thrill_2common_2math_8hpp_source.html#l00088">thrill::common::CalculateLocalRange()</a>, <a class="el" href="context_8hpp_source.html#l00265">Context::local_worker_id()</a>, and <a class="el" href="context_8hpp_source.html#l00240">Context::workers_per_host()</a>.</p>
+<p>References <a class="el" href="thrill_2common_2math_8hpp_source.html#l00109">thrill::common::CalculateLocalRange()</a>, <a class="el" href="context_8hpp_source.html#l00260">Context::local_worker_id()</a>, and <a class="el" href="context_8hpp_source.html#l00235">Context::workers_per_host()</a>.</p>
 
 <p>Referenced by <a class="el" href="read__lines_8hpp_source.html#l00300">ReadLinesNode::InputLineIteratorCompressed::InputLineIteratorCompressed()</a>, <a class="el" href="read__lines_8hpp_source.html#l00175">ReadLinesNode::InputLineIteratorUncompressed::InputLineIteratorUncompressed()</a>, and <a class="el" href="read__binary_8hpp_source.html#l00081">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>.</p>
 
@@ -429,11 +423,11 @@ System Information</h2></td></tr>
 
 <p>return value of consume flag. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00380">380</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00375">375</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00427">Context::consume_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00422">Context::consume_</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00390">Context::enable_consume()</a>, <a class="el" href="dia_8hpp_source.html#l00285">DIA&lt; ValueType_, Stack_ &gt;::Keep()</a>, and <a class="el" href="dia__node_8hpp_source.html#l00123">DIANode&lt; StackInput &gt;::RunPushData()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00385">Context::enable_consume()</a>, <a class="el" href="dia_8hpp_source.html#l00293">DIA&lt; ValueType_, Stack_ &gt;::Keep()</a>, and <a class="el" href="dia__node_8hpp_source.html#l00123">DIANode&lt; StackInput &gt;::RunPushData()</a>.</p>
 
 </div>
 </div>
@@ -462,11 +456,11 @@ System Information</h2></td></tr>
 <p>Sets consume-mode flag such that <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> contents may be consumed during PushData(). </p>
 <p>When in consume mode the <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> contents is destroyed online when it is transmitted to the next operation. This enables reusing the space of the consume operations. This enabled processing more data with less space. However, by default this mode is DISABLED, because it requires deliberate insertion of .Keep() calls. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00390">390</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00385">385</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00380">Context::consume()</a>, and <a class="el" href="context_8hpp_source.html#l00427">Context::consume_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00375">Context::consume()</a>, and <a class="el" href="context_8hpp_source.html#l00422">Context::consume_</a>.</p>
 
-<p>Referenced by <a class="el" href="tpch__run_8cpp_source.html#l00167">JoinTPCH4()</a>, <a class="el" href="logistic__regression_8cpp_source.html#l00145">main()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00069">RunHashWordCount()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00132">RunHashWordCountGenerated()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00122">RunJoinPageRankEdgePerLine()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00049">RunPageRankEdgePerLine()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00200">RunPageRankGenerated()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00255">RunPageRankJoinGenerated()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00036">RunWordCount()</a>, and <a class="el" href="word__count__run_8cpp_source.html#l00106">RunWordCountGenerated()</a>.</p>
+<p>Referenced by <a class="el" href="tpch__run_8cpp_source.html#l00167">JoinTPCH4()</a>, <a class="el" href="logistic__regression_8cpp_source.html#l00145">main()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00068">RunHashWordCount()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00130">RunHashWordCountGenerated()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00122">RunJoinPageRankEdgePerLine()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00049">RunPageRankEdgePerLine()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00199">RunPageRankGenerated()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00254">RunPageRankJoinGenerated()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00036">RunWordCount()</a>, and <a class="el" href="word__count__run_8cpp_source.html#l00104">RunWordCountGenerated()</a>.</p>
 
 </div>
 </div>
@@ -494,11 +488,11 @@ System Information</h2></td></tr>
 
 <p>Returns a new File object containing a sequence of local Blocks. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00285">285</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00280">280</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00421">Context::block_pool_</a>, and <a class="el" href="context_8hpp_source.html#l00400">Context::local_worker_id_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00416">Context::block_pool_</a>, and <a class="el" href="context_8hpp_source.html#l00395">Context::local_worker_id_</a>.</p>
 
-<p>Referenced by <a class="el" href="group__to__index_8hpp_source.html#l00217">GroupToIndexNode&lt; ValueType, KeyExtractor, GroupFunction &gt;::FlushVectorToFile()</a>, <a class="el" href="group__by__key_8hpp_source.html#l00327">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::FlushVectorToFile()</a>, <a class="el" href="context_8cpp_source.html#l01076">Context::GetFile()</a>, <a class="el" href="inner__join_8hpp_source.html#l00540">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MergeFiles()</a>, <a class="el" href="sort_8hpp_source.html#l00192">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::PushData()</a>, <a class="el" href="inner__join_8hpp_source.html#l00670">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::SortAndWriteToFile()</a>, and <a class="el" href="sort_8hpp_source.html#l00699">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::SortAndWriteToFile()</a>.</p>
+<p>Referenced by <a class="el" href="group__to__index_8hpp_source.html#l00216">GroupToIndexNode&lt; ValueType, KeyExtractor, GroupFunction &gt;::FlushVectorToFile()</a>, <a class="el" href="group__by__key_8hpp_source.html#l00327">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::FlushVectorToFile()</a>, <a class="el" href="context_8cpp_source.html#l01131">Context::GetFile()</a>, <a class="el" href="inner__join_8hpp_source.html#l00540">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MergeFiles()</a>, <a class="el" href="sort_8hpp_source.html#l00192">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::PushData()</a>, <a class="el" href="inner__join_8hpp_source.html#l00670">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::SortAndWriteToFile()</a>, and <a class="el" href="sort_8hpp_source.html#l00697">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::SortAndWriteToFile()</a>.</p>
 
 </div>
 </div>
@@ -518,9 +512,9 @@ System Information</h2></td></tr>
 
 <p>Returns a new File object containing a sequence of local Blocks. </p>
 
-<p>Definition at line <a class="el" href="context_8cpp_source.html#l01076">1076</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8cpp_source.html#l01131">1131</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00285">Context::GetFile()</a>, and <a class="el" href="dia__base_8hpp_source.html#l00213">DIABase::id()</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00280">Context::GetFile()</a>, and <a class="el" href="dia__base_8hpp_source.html#l00213">DIABase::id()</a>.</p>
 
 </div>
 </div>
@@ -539,11 +533,11 @@ System Information</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a new File, wrapped in a CountingPtr, containing a sequence of local Blocks. </p>
 
-<p>Definition at line <a class="el" href="context_8cpp_source.html#l01080">1080</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8cpp_source.html#l01135">1135</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00421">Context::block_pool_</a>, and <a class="el" href="context_8hpp_source.html#l00400">Context::local_worker_id_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00416">Context::block_pool_</a>, and <a class="el" href="context_8hpp_source.html#l00395">Context::local_worker_id_</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00381">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::AddEqualKeysToVec()</a>, and <a class="el" href="context_8cpp_source.html#l01085">Context::GetFilePtr()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00381">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::AddEqualKeysToVec()</a>, and <a class="el" href="context_8cpp_source.html#l01140">Context::GetFilePtr()</a>.</p>
 
 </div>
 </div>
@@ -562,9 +556,9 @@ System Information</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a new File, wrapped in a CountingPtr, containing a sequence of local Blocks. </p>
 
-<p>Definition at line <a class="el" href="context_8cpp_source.html#l01085">1085</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8cpp_source.html#l01140">1140</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
 
-<p>References <a class="el" href="context_8cpp_source.html#l01080">Context::GetFilePtr()</a>, and <a class="el" href="dia__base_8hpp_source.html#l00213">DIABase::id()</a>.</p>
+<p>References <a class="el" href="context_8cpp_source.html#l01135">Context::GetFilePtr()</a>, and <a class="el" href="dia__base_8hpp_source.html#l00213">DIABase::id()</a>.</p>
 
 </div>
 </div>
@@ -583,11 +577,11 @@ System Information</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a reference to a new CatStream. This method alters the state of the context and must be called on all Workers to ensure correct communication coordination. </p>
 
-<p>Definition at line <a class="el" href="context_8cpp_source.html#l01089">1089</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8cpp_source.html#l01144">1144</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
 
-<p>References <a class="el" href="multiplexer_8cpp_source.html#l00177">Multiplexer::GetNewCatStream()</a>, <a class="el" href="context_8hpp_source.html#l00400">Context::local_worker_id_</a>, and <a class="el" href="context_8hpp_source.html#l00424">Context::multiplexer_</a>.</p>
+<p>References <a class="el" href="multiplexer_8cpp_source.html#l00189">Multiplexer::GetNewCatStream()</a>, <a class="el" href="context_8hpp_source.html#l00395">Context::local_worker_id_</a>, and <a class="el" href="context_8hpp_source.html#l00419">Context::multiplexer_</a>.</p>
 
-<p>Referenced by <a class="el" href="zip_8hpp_source.html#l00260">ZipNode&lt; ValueType, ZipFunction, Pad, UnequalCheck, NoRebalance, kNumInputs &gt;::DoScatter()</a>, <a class="el" href="zip__window_8hpp_source.html#l00354">ZipWindowNode&lt; ValueType, ZipFunction_, Pad_, UnequalCheck, UseStdArray, kNumInputs_ &gt;::DoScatter()</a>, <a class="el" href="concat_8hpp_source.html#l00189">ConcatNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="context_8cpp_source.html#l01093">Context::GetNewCatStream()</a>, and <a class="el" href="merge_8hpp_source.html#l00469">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="zip_8hpp_source.html#l00260">ZipNode&lt; ValueType, ZipFunction, Pad, UnequalCheck, NoRebalance, kNumInputs &gt;::DoScatter()</a>, <a class="el" href="zip__window_8hpp_source.html#l00354">ZipWindowNode&lt; ValueType, ZipFunction_, Pad_, UnequalCheck, UseStdArray, kNumInputs_ &gt;::DoScatter()</a>, <a class="el" href="concat_8hpp_source.html#l00189">ConcatNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="context_8cpp_source.html#l01148">Context::GetNewCatStream()</a>, and <a class="el" href="merge_8hpp_source.html#l00466">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -606,9 +600,9 @@ System Information</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a reference to a new CatStream. This method alters the state of the context and must be called on all Workers to ensure correct communication coordination. </p>
 
-<p>Definition at line <a class="el" href="context_8cpp_source.html#l01093">1093</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8cpp_source.html#l01148">1148</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
 
-<p>References <a class="el" href="context_8cpp_source.html#l01089">Context::GetNewCatStream()</a>, and <a class="el" href="dia__base_8hpp_source.html#l00213">DIABase::id()</a>.</p>
+<p>References <a class="el" href="context_8cpp_source.html#l01144">Context::GetNewCatStream()</a>, and <a class="el" href="dia__base_8hpp_source.html#l00213">DIABase::id()</a>.</p>
 
 </div>
 </div>
@@ -627,11 +621,11 @@ System Information</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a reference to a new MixStream. This method alters the state of the context and must be called on all Workers to ensure correct communication coordination. </p>
 
-<p>Definition at line <a class="el" href="context_8cpp_source.html#l01097">1097</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8cpp_source.html#l01152">1152</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
 
-<p>References <a class="el" href="multiplexer_8cpp_source.html#l00208">Multiplexer::GetNewMixStream()</a>, <a class="el" href="context_8hpp_source.html#l00400">Context::local_worker_id_</a>, and <a class="el" href="context_8hpp_source.html#l00424">Context::multiplexer_</a>.</p>
+<p>References <a class="el" href="multiplexer_8cpp_source.html#l00220">Multiplexer::GetNewMixStream()</a>, <a class="el" href="context_8hpp_source.html#l00395">Context::local_worker_id_</a>, and <a class="el" href="context_8hpp_source.html#l00419">Context::multiplexer_</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8cpp_source.html#l01101">Context::GetNewMixStream()</a>, and <a class="el" href="sort_8hpp_source.html#l00541">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="context_8cpp_source.html#l01156">Context::GetNewMixStream()</a>, and <a class="el" href="sort_8hpp_source.html#l00540">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -650,9 +644,9 @@ System Information</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a reference to a new MixStream. This method alters the state of the context and must be called on all Workers to ensure correct communication coordination. </p>
 
-<p>Definition at line <a class="el" href="context_8cpp_source.html#l01101">1101</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8cpp_source.html#l01156">1156</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
 
-<p>References <a class="el" href="context_8cpp_source.html#l01097">Context::GetNewMixStream()</a>, and <a class="el" href="dia__base_8hpp_source.html#l00213">DIABase::id()</a>.</p>
+<p>References <a class="el" href="context_8cpp_source.html#l01152">Context::GetNewMixStream()</a>, and <a class="el" href="dia__base_8hpp_source.html#l00213">DIABase::id()</a>.</p>
 
 </div>
 </div>
@@ -695,11 +689,11 @@ System Information</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns id of this host in the cluser A host is a machine in the cluster that hosts multiple workers </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00259">259</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00254">254</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="net_2manager_8hpp_source.html#l00050">Manager::my_host_rank()</a>, and <a class="el" href="context_8hpp_source.html#l00415">Context::net_manager_</a>.</p>
+<p>References <a class="el" href="net_2manager_8hpp_source.html#l00063">Manager::my_host_rank()</a>, and <a class="el" href="context_8hpp_source.html#l00410">Context::net_manager_</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00245">Context::my_rank()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00240">Context::my_rank()</a>.</p>
 
 </div>
 </div>
@@ -719,11 +713,11 @@ System Information</h2></td></tr>
 
 <p>method used to launch a job's main procedure. it wraps it in log output. </p>
 
-<p>Definition at line <a class="el" href="context_8cpp_source.html#l01155">1155</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8cpp_source.html#l01210">1210</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
 
-<p>References <a class="el" href="abs__diff_8hpp_source.html#l00024">tlx::abs_diff()</a>, <a class="el" href="context_8hpp_source.html#l00326">Context::block_pool()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00141">Multiplexer::Close()</a>, <a class="el" href="format__si__iec__units_8cpp_source.html#l00038">tlx::format_iec_units()</a>, <a class="el" href="singleton_8hpp_source.html#l00050">Singleton&lt; BlockManager &gt;::GetInstance()</a>, <a class="el" href="singleton_8hpp_source.html#l00050">Singleton&lt; Stats &gt;::GetInstance()</a>, <a class="el" href="context_8hpp_source.html#l00397">Context::local_host_id_</a>, <a class="el" href="context_8hpp_source.html#l00400">Context::local_worker_id_</a>, <a class="el" href="flow__control__channel_8cpp_source.html#l00064">FlowControlChannel::LocalBarrier()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00175">LOG0</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00176">LOG1</a>, <a class="el" href="context_8hpp_source.html#l00455">Context::logger_</a>, <a class="el" href="block__pool_8cpp_source.html#l00872">BlockPool::max_total_bytes()</a>, <a class="el" href="context_8hpp_source.html#l00331">Context::mem_config()</a>, <a class="el" href="context_8hpp_source.html#l00424">Context::multiplexer_</a>, <a class="el" href="context_8hpp_source.html#l00245">Context::my_rank()</a>, <a class="el" href="context_8hpp_source.html#l00439">Context::net</a>, <a class="el" href="context_8hpp_source.html#l00415">Context::net_manager_</a>, <a class="el" href="iostats_8hpp_source.html#l00407">StatsData::read_volume()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00438">FlowControlChannel::Reduce()</a>, <a class="el" href="group_8cpp_source.html#l00063">Manager::Traffic()</a>, and <a class="el" href="iostats_8hpp_source.html#l00411">StatsData::write_volume()</a>.</p>
+<p>References <a class="el" href="abs__diff_8hpp_source.html#l00024">tlx::abs_diff()</a>, <a class="el" href="context_8hpp_source.html#l00321">Context::block_pool()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00156">Multiplexer::Close()</a>, <a class="el" href="format__si__iec__units_8cpp_source.html#l00038">tlx::format_iec_units()</a>, <a class="el" href="singleton_8hpp_source.html#l00050">Singleton&lt; Stats &gt;::GetInstance()</a>, <a class="el" href="singleton_8hpp_source.html#l00050">Singleton&lt; Instance, destroy_on_exit &gt;::GetInstance()</a>, <a class="el" href="context_8hpp_source.html#l00392">Context::local_host_id_</a>, <a class="el" href="context_8hpp_source.html#l00395">Context::local_worker_id_</a>, <a class="el" href="flow__control__channel_8cpp_source.html#l00074">FlowControlChannel::LocalBarrier()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00175">LOG0</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00176">LOG1</a>, <a class="el" href="context_8hpp_source.html#l00459">Context::logger_</a>, <a class="el" href="block__pool_8cpp_source.html#l00872">BlockPool::max_total_bytes()</a>, <a class="el" href="context_8hpp_source.html#l00326">Context::mem_config()</a>, <a class="el" href="context_8hpp_source.html#l00419">Context::multiplexer_</a>, <a class="el" href="context_8hpp_source.html#l00240">Context::my_rank()</a>, <a class="el" href="context_8hpp_source.html#l00443">Context::net</a>, <a class="el" href="context_8hpp_source.html#l00410">Context::net_manager_</a>, <a class="el" href="iostats_8hpp_source.html#l00407">StatsData::read_volume()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00466">FlowControlChannel::Reduce()</a>, <a class="el" href="net_2manager_8hpp_source.html#l00037">Traffic::rx</a>, <a class="el" href="group_8cpp_source.html#l00067">Manager::Traffic()</a>, <a class="el" href="net_2manager_8hpp_source.html#l00035">Traffic::tx</a>, and <a class="el" href="iostats_8hpp_source.html#l00411">StatsData::write_volume()</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8cpp_source.html#l00122">thrill::api::RunLoopbackThreads()</a>.</p>
+<p>Referenced by <a class="el" href="context_8cpp_source.html#l00134">thrill::api::RunLoopbackThreads()</a>.</p>
 
 </div>
 </div>
@@ -750,9 +744,9 @@ System Information</h2></td></tr>
 
 <p>id among all <em>local</em> hosts (in test program runs) </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00270">270</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00265">265</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00397">Context::local_host_id_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00392">Context::local_host_id_</a>.</p>
 
 </div>
 </div>
@@ -778,11 +772,11 @@ System Information</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the local id ot this worker on the host A worker is <em>locally</em> identified by this id </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00265">265</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00260">260</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00400">Context::local_worker_id_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00395">Context::local_worker_id_</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00346">Context::CalculateLocalRangeOnHost()</a>, <a class="el" href="sort_8hpp_source.html#l00541">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>, <a class="el" href="context_8hpp_source.html#l00245">Context::my_rank()</a>, <a class="el" href="read__binary_8hpp_source.html#l00295">ReadBinaryNode&lt; ValueType &gt;::VfsFileBlockSource::NextBlock()</a>, and <a class="el" href="write__binary_8hpp_source.html#l00173">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00341">Context::CalculateLocalRangeOnHost()</a>, <a class="el" href="sort_8hpp_source.html#l00540">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>, <a class="el" href="context_8hpp_source.html#l00240">Context::my_rank()</a>, <a class="el" href="read__binary_8hpp_source.html#l00295">ReadBinaryNode&lt; ValueType &gt;::VfsFileBlockSource::NextBlock()</a>, and <a class="el" href="write__binary_8hpp_source.html#l00173">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>.</p>
 
 </div>
 </div>
@@ -809,11 +803,11 @@ System Information</h2></td></tr>
 
 <p>host-global memory config </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00331">331</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00326">326</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00409">Context::mem_config_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00404">Context::mem_config_</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8cpp_source.html#l01155">Context::Launch()</a>.</p>
+<p>Referenced by <a class="el" href="context_8cpp_source.html#l01210">Context::Launch()</a>.</p>
 
 </div>
 </div>
@@ -840,9 +834,9 @@ System Information</h2></td></tr>
 
 <p>memory limit of this worker <a class="el" href="classthrill_1_1api_1_1Context.html" title="The Context of a job is a unique instance per worker which holds references to all underlying parts o...">Context</a> for local data structures </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00250">250</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00245">245</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00406">Context::mem_limit_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00401">Context::mem_limit_</a>.</p>
 
 </div>
 </div>
@@ -869,9 +863,9 @@ System Information</h2></td></tr>
 
 <p>returns the host-global memory manager </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00334">334</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00329">329</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00412">Context::mem_manager_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00407">Context::mem_manager_</a>.</p>
 
 <p>Referenced by <a class="el" href="dia__base_8hpp_source.html#l00278">DIABase::mem_manager()</a>.</p>
 
@@ -900,11 +894,11 @@ System Information</h2></td></tr>
 
 <p>Global rank of this worker among all other workers in the system. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00245">245</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00240">240</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00259">Context::host_rank()</a>, <a class="el" href="context_8hpp_source.html#l00265">Context::local_worker_id()</a>, and <a class="el" href="context_8hpp_source.html#l00240">Context::workers_per_host()</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00254">Context::host_rank()</a>, <a class="el" href="context_8hpp_source.html#l00260">Context::local_worker_id()</a>, and <a class="el" href="context_8hpp_source.html#l00235">Context::workers_per_host()</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00341">Context::CalculateLocalRange()</a>, <a class="el" href="triangles__run_8cpp_source.html#l00060">CountTrianglesGenerated()</a>, <a class="el" href="distribute_8hpp_source.html#l00054">DistributeNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="concat_8hpp_source.html#l00189">ConcatNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="dia__base_8cpp_source.html#l00301">thrill::api::FindStages()</a>, <a class="el" href="tpch__run_8cpp_source.html#l00167">JoinTPCH4()</a>, <a class="el" href="context_8cpp_source.html#l01155">Context::Launch()</a>, <a class="el" href="merge_8hpp_source.html#l00469">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>, <a class="el" href="sort_8hpp_source.html#l00541">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>, <a class="el" href="write__binary_8hpp_source.html#l00173">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00069">Parallel()</a>, <a class="el" href="percentiles_8cpp_source.html#l00031">Percentiles()</a>, <a class="el" href="examples_2select_2select_8hpp_source.html#l00044">examples::select::PickPivots()</a>, <a class="el" href="merge_8hpp_source.html#l00279">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::Print()</a>, <a class="el" href="context_8hpp_source.html#l00354">Context::PrintCollectiveMeanStdev()</a>, <a class="el" href="window_8hpp_source.html#l00192">OverlapWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::PushData()</a>, <a class="el" href="window_8hpp_source.html#l00446">DisjointWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::PushData()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00069">RunHashWordCount()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00122">RunJoinPageRankEdgePerLine()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00049">RunPageRankEdgePerLine()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00200">RunPageRankGenerated()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00255">RunPageRankJoinGenerated()</a>, <a class="el" href="dia__base_8cpp_source.html#l00380">DIABase::RunScope()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00036">RunWordCount()</a>, and <a class="el" href="examples_2select_2select_8hpp_source.html#l00091">examples::select::Select()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00336">Context::CalculateLocalRange()</a>, <a class="el" href="triangles__run_8cpp_source.html#l00060">CountTrianglesGenerated()</a>, <a class="el" href="distribute_8hpp_source.html#l00054">DistributeNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="concat_8hpp_source.html#l00189">ConcatNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="dia__base_8cpp_source.html#l00301">thrill::api::FindStages()</a>, <a class="el" href="tpch__run_8cpp_source.html#l00167">JoinTPCH4()</a>, <a class="el" href="context_8cpp_source.html#l01210">Context::Launch()</a>, <a class="el" href="terasort_8cpp_source.html#l00120">main()</a>, <a class="el" href="merge_8hpp_source.html#l00466">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>, <a class="el" href="sort_8hpp_source.html#l00540">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>, <a class="el" href="write__binary_8hpp_source.html#l00173">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00069">Parallel()</a>, <a class="el" href="percentiles_8cpp_source.html#l00031">Percentiles()</a>, <a class="el" href="examples_2select_2select_8hpp_source.html#l00044">examples::select::PickPivots()</a>, <a class="el" href="merge_8hpp_source.html#l00276">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::Print()</a>, <a class="el" href="context_8hpp_source.html#l00349">Context::PrintCollectiveMeanStdev()</a>, <a class="el" href="window_8hpp_source.html#l00192">OverlapWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::PushData()</a>, <a class="el" href="window_8hpp_source.html#l00448">DisjointWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::PushData()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00068">RunHashWordCount()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00122">RunJoinPageRankEdgePerLine()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00049">RunPageRankEdgePerLine()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00199">RunPageRankGenerated()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00254">RunPageRankJoinGenerated()</a>, <a class="el" href="dia__base_8cpp_source.html#l00380">DIABase::RunScope()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00036">RunWordCount()</a>, and <a class="el" href="examples_2select_2select_8hpp_source.html#l00091">examples::select::Select()</a>.</p>
 
 </div>
 </div>
@@ -929,11 +923,11 @@ System Information</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00336">336</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00331">331</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00415">Context::net_manager_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00410">Context::net_manager_</a>.</p>
 
-<p>Referenced by <a class="el" href="triangles__run_8cpp_source.html#l00060">CountTrianglesGenerated()</a>, <a class="el" href="tpch__run_8cpp_source.html#l00167">JoinTPCH4()</a>, <a class="el" href="percentiles_8cpp_source.html#l00031">Percentiles()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00069">RunHashWordCount()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00122">RunJoinPageRankEdgePerLine()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00255">RunPageRankJoinGenerated()</a>, and <a class="el" href="word__count__run_8cpp_source.html#l00036">RunWordCount()</a>.</p>
+<p>Referenced by <a class="el" href="triangles__run_8cpp_source.html#l00060">CountTrianglesGenerated()</a>, <a class="el" href="tpch__run_8cpp_source.html#l00167">JoinTPCH4()</a>, <a class="el" href="terasort_8cpp_source.html#l00120">main()</a>, <a class="el" href="percentiles_8cpp_source.html#l00031">Percentiles()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00068">RunHashWordCount()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00122">RunJoinPageRankEdgePerLine()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00254">RunPageRankJoinGenerated()</a>, and <a class="el" href="word__count__run_8cpp_source.html#l00036">RunWordCount()</a>.</p>
 
 </div>
 </div>
@@ -960,11 +954,11 @@ System Information</h2></td></tr>
 
 <p>Returns next_dia_id_ to generate <a class="el" href="classthrill_1_1api_1_1DIA.html#a84522bbbefdf5e778c78ed771032ba4b" title="DIA serial id for logging, matches DIANode::id_ for DOps. ">DIA::id_</a> serial. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00393">393</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00388">388</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00430">Context::last_dia_id_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00425">Context::last_dia_id_</a>.</p>
 
-<p>Referenced by <a class="el" href="dia_8hpp_source.html#l00378">DIA&lt; ValueType_, Stack_ &gt;::Filter()</a>, <a class="el" href="dia_8hpp_source.html#l00429">DIA&lt; ValueType_, Stack_ &gt;::FlatMap()</a>, <a class="el" href="dia_8hpp_source.html#l00333">DIA&lt; ValueType_, Stack_ &gt;::Map()</a>, and <a class="el" href="dia_8hpp_source.html#l01740">DIA&lt; ValueType_, Stack_ &gt;::next_dia_id()</a>.</p>
+<p>Referenced by <a class="el" href="dia_8hpp_source.html#l00386">DIA&lt; ValueType_, Stack_ &gt;::Filter()</a>, <a class="el" href="dia_8hpp_source.html#l00437">DIA&lt; ValueType_, Stack_ &gt;::FlatMap()</a>, <a class="el" href="dia_8hpp_source.html#l00341">DIA&lt; ValueType_, Stack_ &gt;::Map()</a>, and <a class="el" href="dia_8hpp_source.html#l01795">DIA&lt; ValueType_, Stack_ &gt;::next_dia_id()</a>.</p>
 
 </div>
 </div>
@@ -991,11 +985,11 @@ System Information</h2></td></tr>
 
 <p>Returns the total number of hosts. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00235">235</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00230">230</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00415">Context::net_manager_</a>, and <a class="el" href="net_2manager_8hpp_source.html#l00054">Manager::num_hosts()</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00410">Context::net_manager_</a>, and <a class="el" href="net_2manager_8hpp_source.html#l00067">Manager::num_hosts()</a>.</p>
 
-<p>Referenced by <a class="el" href="triangles__run_8cpp_source.html#l00060">CountTrianglesGenerated()</a>, <a class="el" href="tpch__run_8cpp_source.html#l00167">JoinTPCH4()</a>, <a class="el" href="context_8hpp_source.html#l00253">Context::num_workers()</a>, <a class="el" href="percentiles_8cpp_source.html#l00031">Percentiles()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00069">RunHashWordCount()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00122">RunJoinPageRankEdgePerLine()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00200">RunPageRankGenerated()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00255">RunPageRankJoinGenerated()</a>, and <a class="el" href="word__count__run_8cpp_source.html#l00036">RunWordCount()</a>.</p>
+<p>Referenced by <a class="el" href="triangles__run_8cpp_source.html#l00060">CountTrianglesGenerated()</a>, <a class="el" href="tpch__run_8cpp_source.html#l00167">JoinTPCH4()</a>, <a class="el" href="terasort_8cpp_source.html#l00120">main()</a>, <a class="el" href="context_8hpp_source.html#l00248">Context::num_workers()</a>, <a class="el" href="percentiles_8cpp_source.html#l00031">Percentiles()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00068">RunHashWordCount()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00122">RunJoinPageRankEdgePerLine()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00199">RunPageRankGenerated()</a>, <a class="el" href="page__rank__run_8cpp_source.html#l00254">RunPageRankJoinGenerated()</a>, and <a class="el" href="word__count__run_8cpp_source.html#l00036">RunWordCount()</a>.</p>
 
 </div>
 </div>
@@ -1022,11 +1016,11 @@ System Information</h2></td></tr>
 
 <p>Global number of workers in the system. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00253">253</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00248">248</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00235">Context::num_hosts()</a>, and <a class="el" href="context_8hpp_source.html#l00240">Context::workers_per_host()</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00230">Context::num_hosts()</a>, and <a class="el" href="context_8hpp_source.html#l00235">Context::workers_per_host()</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00341">Context::CalculateLocalRange()</a>, <a class="el" href="zip_8hpp_source.html#l00260">ZipNode&lt; ValueType, ZipFunction, Pad, UnequalCheck, NoRebalance, kNumInputs &gt;::DoScatter()</a>, <a class="el" href="zip__window_8hpp_source.html#l00354">ZipWindowNode&lt; ValueType, ZipFunction_, Pad_, UnequalCheck, UseStdArray, kNumInputs_ &gt;::DoScatter()</a>, <a class="el" href="concat_8hpp_source.html#l00189">ConcatNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="sort_8hpp_source.html#l00342">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::FindAndSendSplitters()</a>, <a class="el" href="sleep_8cpp_source.html#l00022">main()</a>, <a class="el" href="merge_8hpp_source.html#l00469">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>, <a class="el" href="sort_8hpp_source.html#l00541">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00069">Parallel()</a>, <a class="el" href="examples_2select_2select_8hpp_source.html#l00044">examples::select::PickPivots()</a>, <a class="el" href="inner__join_8hpp_source.html#l00321">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp1()</a>, <a class="el" href="inner__join_8hpp_source.html#l00332">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp2()</a>, <a class="el" href="merge_8hpp_source.html#l00279">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::Print()</a>, <a class="el" href="window_8hpp_source.html#l00192">OverlapWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::PushData()</a>, <a class="el" href="window_8hpp_source.html#l00446">DisjointWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::PushData()</a>, and <a class="el" href="read__binary_8hpp_source.html#l00081">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00336">Context::CalculateLocalRange()</a>, <a class="el" href="zip_8hpp_source.html#l00260">ZipNode&lt; ValueType, ZipFunction, Pad, UnequalCheck, NoRebalance, kNumInputs &gt;::DoScatter()</a>, <a class="el" href="zip__window_8hpp_source.html#l00354">ZipWindowNode&lt; ValueType, ZipFunction_, Pad_, UnequalCheck, UseStdArray, kNumInputs_ &gt;::DoScatter()</a>, <a class="el" href="concat_8hpp_source.html#l00189">ConcatNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="sort_8hpp_source.html#l00340">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::FindAndSendSplitters()</a>, <a class="el" href="sleep_8cpp_source.html#l00022">main()</a>, <a class="el" href="merge_8hpp_source.html#l00466">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>, <a class="el" href="sort_8hpp_source.html#l00540">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>, <a class="el" href="random__text__writer_8cpp_source.html#l00069">Parallel()</a>, <a class="el" href="examples_2select_2select_8hpp_source.html#l00044">examples::select::PickPivots()</a>, <a class="el" href="inner__join_8hpp_source.html#l00321">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp1()</a>, <a class="el" href="inner__join_8hpp_source.html#l00332">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp2()</a>, <a class="el" href="merge_8hpp_source.html#l00276">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::Print()</a>, <a class="el" href="window_8hpp_source.html#l00192">OverlapWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::PushData()</a>, <a class="el" href="window_8hpp_source.html#l00448">DisjointWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::PushData()</a>, and <a class="el" href="read__binary_8hpp_source.html#l00081">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>.</p>
 
 </div>
 </div>
@@ -1063,11 +1057,11 @@ System Information</h2></td></tr>
 </div><div class="memdoc">
 <p>Perform collectives and print min, max, mean, stdev, and all local values. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00354">354</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00349">349</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00176">LOG1</a>, <a class="el" href="functional_8hpp_source.html#l00065">thrill::common::max()</a>, <a class="el" href="functional_8hpp_source.html#l00059">thrill::common::min()</a>, <a class="el" href="context_8hpp_source.html#l00245">Context::my_rank()</a>, <a class="el" href="context_8hpp_source.html#l00439">Context::net</a>, and <a class="el" href="flow__control__channel_8hpp_source.html#l00438">FlowControlChannel::Reduce()</a>.</p>
+<p>References <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00176">LOG1</a>, <a class="el" href="functional_8hpp_source.html#l00065">thrill::common::max()</a>, <a class="el" href="functional_8hpp_source.html#l00059">thrill::common::min()</a>, <a class="el" href="context_8hpp_source.html#l00240">Context::my_rank()</a>, <a class="el" href="context_8hpp_source.html#l00443">Context::net</a>, and <a class="el" href="flow__control__channel_8hpp_source.html#l00466">FlowControlChannel::Reduce()</a>.</p>
 
-<p>Referenced by <a class="el" href="zip_8hpp_source.html#l00294">ZipNode&lt; ValueType, ZipFunction, Pad, UnequalCheck, NoRebalance, kNumInputs &gt;::MainOp()</a>, <a class="el" href="zip__window_8hpp_source.html#l00391">ZipWindowNode&lt; ValueType, ZipFunction_, Pad_, UnequalCheck, UseStdArray, kNumInputs_ &gt;::MainOp()</a>, <a class="el" href="sort_8hpp_source.html#l00192">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::PushData()</a>, and <a class="el" href="sort_8hpp_source.html#l00670">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::ReceiveItems()</a>.</p>
+<p>Referenced by <a class="el" href="zip_8hpp_source.html#l00294">ZipNode&lt; ValueType, ZipFunction, Pad, UnequalCheck, NoRebalance, kNumInputs &gt;::MainOp()</a>, <a class="el" href="zip__window_8hpp_source.html#l00391">ZipWindowNode&lt; ValueType, ZipFunction_, Pad_, UnequalCheck, UseStdArray, kNumInputs_ &gt;::MainOp()</a>, <a class="el" href="sort_8hpp_source.html#l00192">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::PushData()</a>, and <a class="el" href="sort_8hpp_source.html#l00668">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::ReceiveItems()</a>.</p>
 
 </div>
 </div>
@@ -1094,11 +1088,11 @@ System Information</h2></td></tr>
 
 <p>Returns the number of workers that is hosted on each host. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00240">240</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00235">235</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00403">Context::workers_per_host_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00398">Context::workers_per_host_</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00346">Context::CalculateLocalRangeOnHost()</a>, <a class="el" href="context_8hpp_source.html#l00213">Context::Context()</a>, <a class="el" href="context_8hpp_source.html#l00245">Context::my_rank()</a>, and <a class="el" href="context_8hpp_source.html#l00253">Context::num_workers()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00341">Context::CalculateLocalRangeOnHost()</a>, <a class="el" href="context_8hpp_source.html#l00240">Context::my_rank()</a>, and <a class="el" href="context_8hpp_source.html#l00248">Context::num_workers()</a>.</p>
 
 </div>
 </div>
@@ -1137,7 +1131,7 @@ System Information</h2></td></tr>
 
 <p>Outputs the context as [host id]:[local worker id] to an std::ostream. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00274">274</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00269">269</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
 </div>
 </div>
@@ -1154,7 +1148,7 @@ System Information</h2></td></tr>
 
 <p>base logger exclusive for this worker </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00450">450</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00454">454</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
 </div>
 </div>
@@ -1178,9 +1172,9 @@ System Information</h2></td></tr>
 
 <p>data block pool </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00421">421</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00416">416</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00326">Context::block_pool()</a>, <a class="el" href="context_8hpp_source.html#l00285">Context::GetFile()</a>, and <a class="el" href="context_8cpp_source.html#l01080">Context::GetFilePtr()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00321">Context::block_pool()</a>, <a class="el" href="context_8hpp_source.html#l00280">Context::GetFile()</a>, and <a class="el" href="context_8cpp_source.html#l01135">Context::GetFilePtr()</a>.</p>
 
 </div>
 </div>
@@ -1204,9 +1198,9 @@ System Information</h2></td></tr>
 
 <p>flag to set which enables selective consumption of <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> contents! </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00427">427</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00422">422</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00380">Context::consume()</a>, and <a class="el" href="context_8hpp_source.html#l00390">Context::enable_consume()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00375">Context::consume()</a>, and <a class="el" href="context_8hpp_source.html#l00385">Context::enable_consume()</a>.</p>
 
 </div>
 </div>
@@ -1230,7 +1224,7 @@ System Information</h2></td></tr>
 
 <p><a class="el" href="classthrill_1_1net_1_1FlowControlChannelManager.html">net::FlowControlChannelManager</a> instance that is shared among workers </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00418">418</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00413">413</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
 </div>
 </div>
@@ -1254,9 +1248,9 @@ System Information</h2></td></tr>
 
 <p>the number of valid <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> ids. 0 is reserved for invalid. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00430">430</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00425">425</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00393">Context::next_dia_id()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00388">Context::next_dia_id()</a>.</p>
 
 </div>
 </div>
@@ -1280,9 +1274,9 @@ System Information</h2></td></tr>
 
 <p>id among all <em>local</em> hosts (in test program runs) </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00397">397</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00392">392</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8cpp_source.html#l01155">Context::Launch()</a>, and <a class="el" href="context_8hpp_source.html#l00270">Context::local_host_id()</a>.</p>
+<p>Referenced by <a class="el" href="context_8cpp_source.html#l01210">Context::Launch()</a>, and <a class="el" href="context_8hpp_source.html#l00265">Context::local_host_id()</a>.</p>
 
 </div>
 </div>
@@ -1306,9 +1300,9 @@ System Information</h2></td></tr>
 
 <p>number of this host context, 0..p-1, within this host </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00400">400</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00395">395</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00285">Context::GetFile()</a>, <a class="el" href="context_8cpp_source.html#l01080">Context::GetFilePtr()</a>, <a class="el" href="context_8cpp_source.html#l01089">Context::GetNewCatStream()</a>, <a class="el" href="context_8cpp_source.html#l01097">Context::GetNewMixStream()</a>, <a class="el" href="context_8cpp_source.html#l01155">Context::Launch()</a>, and <a class="el" href="context_8hpp_source.html#l00265">Context::local_worker_id()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00280">Context::GetFile()</a>, <a class="el" href="context_8cpp_source.html#l01135">Context::GetFilePtr()</a>, <a class="el" href="context_8cpp_source.html#l01144">Context::GetNewCatStream()</a>, <a class="el" href="context_8cpp_source.html#l01152">Context::GetNewMixStream()</a>, <a class="el" href="context_8cpp_source.html#l01210">Context::Launch()</a>, and <a class="el" href="context_8hpp_source.html#l00260">Context::local_worker_id()</a>.</p>
 
 </div>
 </div>
@@ -1326,9 +1320,9 @@ System Information</h2></td></tr>
 <div class="line">    }</div>
 </div><!-- fragment --><p>public member which delivers key:value pairs as JSON log lines. this logger is local to this <a class="el" href="classthrill_1_1api_1_1Context.html" title="The Context of a job is a unique instance per worker which holds references to all underlying parts o...">Context</a> which is exclusive for one worker thread. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00455">455</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00459">459</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="dia_8hpp_source.html#l00378">DIA&lt; ValueType_, Stack_ &gt;::Filter()</a>, <a class="el" href="dia_8hpp_source.html#l00429">DIA&lt; ValueType_, Stack_ &gt;::FlatMap()</a>, <a class="el" href="context_8cpp_source.html#l01155">Context::Launch()</a>, and <a class="el" href="dia_8hpp_source.html#l00333">DIA&lt; ValueType_, Stack_ &gt;::Map()</a>.</p>
+<p>Referenced by <a class="el" href="dia_8hpp_source.html#l00386">DIA&lt; ValueType_, Stack_ &gt;::Filter()</a>, <a class="el" href="dia_8hpp_source.html#l00437">DIA&lt; ValueType_, Stack_ &gt;::FlatMap()</a>, <a class="el" href="context_8cpp_source.html#l01210">Context::Launch()</a>, and <a class="el" href="dia_8hpp_source.html#l00341">DIA&lt; ValueType_, Stack_ &gt;::Map()</a>.</p>
 
 </div>
 </div>
@@ -1352,9 +1346,9 @@ System Information</h2></td></tr>
 
 <p>memory configuration in <a class="el" href="classthrill_1_1api_1_1HostContext.html" title="The HostContext contains all data structures shared among workers on the same host. ">HostContext</a> </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00409">409</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00404">404</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00331">Context::mem_config()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00326">Context::mem_config()</a>.</p>
 
 </div>
 </div>
@@ -1378,9 +1372,9 @@ System Information</h2></td></tr>
 
 <p>memory limit of this worker <a class="el" href="classthrill_1_1api_1_1Context.html" title="The Context of a job is a unique instance per worker which holds references to all underlying parts o...">Context</a> for local data structures </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00406">406</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00401">401</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00250">Context::mem_limit()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00245">Context::mem_limit()</a>.</p>
 
 </div>
 </div>
@@ -1404,9 +1398,9 @@ System Information</h2></td></tr>
 
 <p>host-global memory manager </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00412">412</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00407">407</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00334">Context::mem_manager()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00329">Context::mem_manager()</a>.</p>
 
 </div>
 </div>
@@ -1430,9 +1424,9 @@ System Information</h2></td></tr>
 
 <p><a class="el" href="classthrill_1_1data_1_1Multiplexer.html" title="Multiplexes virtual Connections on Dispatcher. ">data::Multiplexer</a> instance that is shared among workers </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00424">424</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00419">419</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8cpp_source.html#l01089">Context::GetNewCatStream()</a>, <a class="el" href="context_8cpp_source.html#l01097">Context::GetNewMixStream()</a>, and <a class="el" href="context_8cpp_source.html#l01155">Context::Launch()</a>.</p>
+<p>Referenced by <a class="el" href="context_8cpp_source.html#l01144">Context::GetNewCatStream()</a>, <a class="el" href="context_8cpp_source.html#l01152">Context::GetNewMixStream()</a>, and <a class="el" href="context_8cpp_source.html#l01210">Context::Launch()</a>.</p>
 
 </div>
 </div>
@@ -1450,9 +1444,9 @@ System Information</h2></td></tr>
 <div class="line">    }</div>
 </div><!-- fragment --><p>public member which exposes all network primitives from FlowControlChannel for DOp implementations. Use it as <code>context_.net.Method()</code>. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00439">439</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00443">443</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="triangles__run_8cpp_source.html#l00060">CountTrianglesGenerated()</a>, <a class="el" href="window_8hpp_source.html#l00165">OverlapWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::Execute()</a>, <a class="el" href="concat_8hpp_source.html#l00189">ConcatNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="window_8hpp_source.html#l00410">DisjointWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::Execute()</a>, <a class="el" href="merge_8hpp_source.html#l00381">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::GetGlobalRanks()</a>, <a class="el" href="tpch__run_8cpp_source.html#l00167">JoinTPCH4()</a>, <a class="el" href="context_8cpp_source.html#l01155">Context::Launch()</a>, <a class="el" href="zip_8hpp_source.html#l00294">ZipNode&lt; ValueType, ZipFunction, Pad, UnequalCheck, NoRebalance, kNumInputs &gt;::MainOp()</a>, <a class="el" href="zip__window_8hpp_source.html#l00391">ZipWindowNode&lt; ValueType, ZipFunction_, Pad_, UnequalCheck, UseStdArray, kNumInputs_ &gt;::MainOp()</a>, <a class="el" href="merge_8hpp_source.html#l00469">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>, <a class="el" href="sort_8hpp_source.html#l00541">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>, <a class="el" href="percentiles_8cpp_source.html#l00031">Percentiles()</a>, <a class="el" href="examples_2select_2select_8hpp_source.html#l00044">examples::select::PickPivots()</a>, <a class="el" href="merge_8hpp_source.html#l00279">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::Print()</a>, <a class="el" href="context_8hpp_source.html#l00354">Context::PrintCollectiveMeanStdev()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00069">RunHashWordCount()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00036">RunWordCount()</a>, <a class="el" href="examples_2select_2select_8hpp_source.html#l00091">examples::select::Select()</a>, and <a class="el" href="merge_8hpp_source.html#l00329">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::SelectPivots()</a>.</p>
+<p>Referenced by <a class="el" href="triangles__run_8cpp_source.html#l00060">CountTrianglesGenerated()</a>, <a class="el" href="window_8hpp_source.html#l00165">OverlapWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::Execute()</a>, <a class="el" href="concat_8hpp_source.html#l00189">ConcatNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="window_8hpp_source.html#l00412">DisjointWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::Execute()</a>, <a class="el" href="merge_8hpp_source.html#l00378">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::GetGlobalRanks()</a>, <a class="el" href="tpch__run_8cpp_source.html#l00167">JoinTPCH4()</a>, <a class="el" href="context_8cpp_source.html#l01210">Context::Launch()</a>, <a class="el" href="terasort_8cpp_source.html#l00120">main()</a>, <a class="el" href="zip_8hpp_source.html#l00294">ZipNode&lt; ValueType, ZipFunction, Pad, UnequalCheck, NoRebalance, kNumInputs &gt;::MainOp()</a>, <a class="el" href="zip__window_8hpp_source.html#l00391">ZipWindowNode&lt; ValueType, ZipFunction_, Pad_, UnequalCheck, UseStdArray, kNumInputs_ &gt;::MainOp()</a>, <a class="el" href="merge_8hpp_source.html#l00466">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>, <a class="el" href="sort_8hpp_source.html#l00540">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>, <a class="el" href="percentiles_8cpp_source.html#l00031">Percentiles()</a>, <a class="el" href="examples_2select_2select_8hpp_source.html#l00044">examples::select::PickPivots()</a>, <a class="el" href="merge_8hpp_source.html#l00276">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::Print()</a>, <a class="el" href="context_8hpp_source.html#l00349">Context::PrintCollectiveMeanStdev()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00068">RunHashWordCount()</a>, <a class="el" href="word__count__run_8cpp_source.html#l00036">RunWordCount()</a>, <a class="el" href="examples_2select_2select_8hpp_source.html#l00091">examples::select::Select()</a>, and <a class="el" href="merge_8hpp_source.html#l00326">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::SelectPivots()</a>.</p>
 
 </div>
 </div>
@@ -1476,9 +1470,27 @@ System Information</h2></td></tr>
 
 <p><a class="el" href="classthrill_1_1net_1_1Manager.html" title="Initializes communication channels, manages communication channels and handles errors. ">net::Manager</a> instance that is shared among workers </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00415">415</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00410">410</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00259">Context::host_rank()</a>, <a class="el" href="context_8cpp_source.html#l01155">Context::Launch()</a>, <a class="el" href="context_8hpp_source.html#l00336">Context::net_manager()</a>, and <a class="el" href="context_8hpp_source.html#l00235">Context::num_hosts()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00254">Context::host_rank()</a>, <a class="el" href="context_8cpp_source.html#l01210">Context::Launch()</a>, <a class="el" href="context_8hpp_source.html#l00331">Context::net_manager()</a>, and <a class="el" href="context_8hpp_source.html#l00230">Context::num_hosts()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa9fae34d3ffbf0d868ded27d7db35133"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::default_random_engine rng_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>a random generator </p>
+
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00432">432</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="merge_8hpp_source.html#l00326">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::SelectPivots()</a>.</p>
 
 </div>
 </div>
@@ -1502,9 +1514,9 @@ System Information</h2></td></tr>
 
 <p>number of workers hosted per host </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00403">403</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00398">398</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00240">Context::workers_per_host()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00235">Context::workers_per_host()</a>.</p>
 
 </div>
 </div>
@@ -1518,7 +1530,7 @@ System Information</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1api.html">api</a></li><li class="navelem"><a class="el" href="classthrill_1_1api_1_1Context.html">Context</a></li>
-    <li class="footer">Generated on Thu Nov 23 2017 21:32:33 for Thrill by
+    <li class="footer">Generated on Thu Dec 21 2017 17:33:27 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -108,6 +108,8 @@ $(document).ready(function(){initNavTree('group__net__mpi.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">MPI Network API<div class="ingroups"><a class="el" href="group__net__layer.html">Network Subsystem Layer</a></div></div>  </div>
@@ -125,6 +127,8 @@ $(document).ready(function(){initNavTree('group__net__mpi.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1AsyncRequest.html">AsyncRequest</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1mpi_1_1Connection.html">Connection</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual MPI connection class.  <a href="classthrill_1_1net_1_1mpi_1_1Connection.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,11 +141,22 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A net group backed by virtual MPI connection.  <a href="classthrill_1_1net_1_1mpi_1_1Group.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gac3d50cb8460852b69b5f21d4474e1509"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__mpi.html#gac3d50cb8460852b69b5f21d4474e1509">THRILL_NET_MPI_QUEUES</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:gac3d50cb8460852b69b5f21d4474e1509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga769838a4869b196a982532f4f9c152f8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__mpi.html#ga769838a4869b196a982532f4f9c152f8">AsyncRequestCallback</a> = <a class="el" href="namespacetlx.html#afacc9643f535d390fd0ead73790a6d56">tlx::delegate</a>&lt; void(MPI_Status &amp;), mem::GPoolAllocator&lt; char &gt; &gt;</td></tr>
+<tr class="memdesc:ga769838a4869b196a982532f4f9c152f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature of async MPI request callbacks.  <a href="#ga769838a4869b196a982532f4f9c152f8">More...</a><br/></td></tr>
+<tr class="separator:ga769838a4869b196a982532f4f9c152f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga56c6c63c92c20a84dd043d1ea35e5be8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__mpi.html#ga56c6c63c92c20a84dd043d1ea35e5be8">Construct</a> (size_t group_size, std::unique_ptr&lt; Group &gt; *groups, size_t group_count)</td></tr>
-<tr class="memdesc:ga56c6c63c92c20a84dd043d1ea35e5be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <a class="el" href="classthrill_1_1net_1_1mpi_1_1Group.html" title="A net group backed by virtual MPI connection. ">Group</a> which connects to peers using MPI.  <a href="#ga56c6c63c92c20a84dd043d1ea35e5be8">More...</a><br/></td></tr>
-<tr class="separator:ga56c6c63c92c20a84dd043d1ea35e5be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga005cca5db2fb3a4a8d2a8bb9a588868d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__mpi.html#ga005cca5db2fb3a4a8d2a8bb9a588868d">Construct</a> (size_t group_size, DispatcherThread &amp;dispatcher, std::unique_ptr&lt; Group &gt; *groups, size_t group_count)</td></tr>
+<tr class="memdesc:ga005cca5db2fb3a4a8d2a8bb9a588868d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <a class="el" href="classthrill_1_1net_1_1mpi_1_1Group.html" title="A net group backed by virtual MPI connection. ">Group</a> which connects to peers using MPI.  <a href="#ga005cca5db2fb3a4a8d2a8bb9a588868d">More...</a><br/></td></tr>
+<tr class="separator:ga005cca5db2fb3a4a8d2a8bb9a588868d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabaf52e63cd94b66bef1e0e41319bc15f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__mpi.html#gabaf52e63cd94b66bef1e0e41319bc15f">MpiRank</a> ()</td></tr>
 <tr class="memdesc:gabaf52e63cd94b66bef1e0e41319bc15f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the rank of this process in the MPI COMM WORLD.  <a href="#gabaf52e63cd94b66bef1e0e41319bc15f">More...</a><br/></td></tr>
 <tr class="separator:gabaf52e63cd94b66bef1e0e41319bc15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,8 +165,40 @@ Functions</h2></td></tr>
 <tr class="separator:gab1d52a1e9b5e0bf549b49bcc040c8558"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="gac3d50cb8460852b69b5f21d4474e1509"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define THRILL_NET_MPI_QUEUES&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00037">37</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="ga769838a4869b196a982532f4f9c152f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using AsyncRequestCallback =  <a class="el" href="namespacetlx.html#afacc9643f535d390fd0ead73790a6d56">tlx::delegate</a>&lt; void(MPI_Status&amp;), mem::GPoolAllocator&lt;char&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Signature of async MPI request callbacks. </p>
+
+<p>Definition at line <a class="el" href="mpi_2dispatcher_8hpp_source.html#l00041">41</a> of file <a class="el" href="mpi_2dispatcher_8hpp_source.html">dispatcher.hpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga56c6c63c92c20a84dd043d1ea35e5be8"></a>
+<a class="anchor" id="ga005cca5db2fb3a4a8d2a8bb9a588868d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -160,6 +207,12 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>group_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DispatcherThread &amp;&#160;</td>
+          <td class="paramname"><em>dispatcher</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -187,9 +240,9 @@ Functions</h2></td></tr>
 <p>As the MPI environment already defines the connections, no hosts or parameters can be given. Constructs group_count <a class="el" href="classthrill_1_1net_1_1mpi_1_1Group.html" title="A net group backed by virtual MPI connection. ">mpi::Group</a> objects at once. Within each <a class="el" href="classthrill_1_1net_1_1mpi_1_1Group.html" title="A net group backed by virtual MPI connection. ">Group</a> this host has its MPI rank.</p>
 <p>To enable tests with smaller group sizes, the Construct method takes group_size and returns a <a class="el" href="classthrill_1_1net_1_1mpi_1_1Group.html" title="A net group backed by virtual MPI connection. ">Group</a> with <em>less</em> hosts than actual MPI processes! Obviously, group_size must be less-or-equal to the number of processes started with mpirun -np. </p>
 
-<p>Definition at line <a class="el" href="mpi_2group_8cpp_source.html#l00383">383</a> of file <a class="el" href="mpi_2group_8cpp_source.html">group.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2group_8cpp_source.html#l00668">668</a> of file <a class="el" href="mpi_2group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="mpi_2group_8cpp_source.html#l00026">thrill::net::mpi::g_mutex</a>, and <a class="el" href="mpi_2group_8cpp_source.html#l00352">thrill::net::mpi::Initialize()</a>.</p>
+<p>References <a class="el" href="mpi_2group_8cpp_source.html#l00026">thrill::net::mpi::g_mutex</a>, and <a class="el" href="mpi_2group_8cpp_source.html#l00634">thrill::net::mpi::Initialize()</a>.</p>
 
 </div>
 </div>
@@ -208,9 +261,9 @@ Functions</h2></td></tr>
 
 <p>Return the rank of this process in the MPI COMM WORLD. </p>
 
-<p>Definition at line <a class="el" href="mpi_2group_8cpp_source.html#l00422">422</a> of file <a class="el" href="mpi_2group_8cpp_source.html">group.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2group_8cpp_source.html#l00707">707</a> of file <a class="el" href="mpi_2group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="mpi_2group_8cpp_source.html#l00026">thrill::net::mpi::g_mutex</a>, and <a class="el" href="mpi_2group_8cpp_source.html#l00352">thrill::net::mpi::Initialize()</a>.</p>
+<p>References <a class="el" href="mpi_2group_8cpp_source.html#l00026">thrill::net::mpi::g_mutex</a>, and <a class="el" href="mpi_2group_8cpp_source.html#l00634">thrill::net::mpi::Initialize()</a>.</p>
 
 </div>
 </div>
@@ -230,9 +283,9 @@ Functions</h2></td></tr>
 <p>Return the number of MPI processes. </p>
 <p>This is the maximum group size. </p>
 
-<p>Definition at line <a class="el" href="mpi_2group_8cpp_source.html#l00409">409</a> of file <a class="el" href="mpi_2group_8cpp_source.html">group.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mpi_2group_8cpp_source.html#l00694">694</a> of file <a class="el" href="mpi_2group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="mpi_2group_8cpp_source.html#l00026">thrill::net::mpi::g_mutex</a>, and <a class="el" href="mpi_2group_8cpp_source.html#l00352">thrill::net::mpi::Initialize()</a>.</p>
+<p>References <a class="el" href="mpi_2group_8cpp_source.html#l00026">thrill::net::mpi::g_mutex</a>, and <a class="el" href="mpi_2group_8cpp_source.html#l00634">thrill::net::mpi::Initialize()</a>.</p>
 
 </div>
 </div>
@@ -241,7 +294,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 23 2017 21:32:32 for Thrill by
+    <li class="footer">Generated on Thu Dec 21 2017 17:33:27 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

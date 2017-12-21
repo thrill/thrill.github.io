@@ -138,13 +138,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1AsyncReadByteBlock.html">AsyncReadByteBlock</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1AsyncReadMemory.html">AsyncReadMemory</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1AsyncWriteBlock.html">AsyncWriteBlock</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1AsyncWriteBuffer.html">AsyncWriteBuffer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1AsyncWriteMemory.html">AsyncWriteMemory</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Buffer.html">Buffer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple buffer of characters without initialization or growing functionality.  <a href="classthrill_1_1net_1_1Buffer.html#details">More...</a><br/></td></tr>
@@ -184,12 +180,17 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Manager.html">Manager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes communication channels, manages communication channels and handles errors.  <a href="classthrill_1_1net_1_1Manager.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1net_1_1Traffic.html">Traffic</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga34ceb21e2ae70c580b58ed72632c18a8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga34ceb21e2ae70c580b58ed72632c18a8">AsyncCallback</a> = <a class="el" href="namespacetlx.html#afacc9643f535d390fd0ead73790a6d56">tlx::delegate</a>&lt; bool(), <a class="el" href="namespacethrill_1_1mem.html#aa2925ec9abfffe80dd5c80874b085f1a">mem::GPoolAllocator</a>&lt; char &gt; &gt;</td></tr>
 <tr class="memdesc:ga34ceb21e2ae70c580b58ed72632c18a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature of async connection readability/writability callbacks.  <a href="group__net__layer.html#ga34ceb21e2ae70c580b58ed72632c18a8">More...</a><br/></td></tr>
 <tr class="separator:ga34ceb21e2ae70c580b58ed72632c18a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25f0921be63a1fc8b0565bb20685efcd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga25f0921be63a1fc8b0565bb20685efcd">AsyncDispatcherThreadCallback</a> = <a class="el" href="namespacetlx.html#afacc9643f535d390fd0ead73790a6d56">tlx::delegate</a>&lt; void(class <a class="el" href="classthrill_1_1net_1_1Dispatcher.html">Dispatcher</a> &amp;), <a class="el" href="namespacethrill_1_1mem.html#aa2925ec9abfffe80dd5c80874b085f1a">mem::GPoolAllocator</a>&lt; char &gt; &gt;</td></tr>
+<tr class="memdesc:ga25f0921be63a1fc8b0565bb20685efcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature of generic dispatcher callback.  <a href="group__net__layer.html#ga25f0921be63a1fc8b0565bb20685efcd">More...</a><br/></td></tr>
+<tr class="separator:ga25f0921be63a1fc8b0565bb20685efcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae630be4bcb9ca8ce29c37c7c201ec131"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gae630be4bcb9ca8ce29c37c7c201ec131">AsyncReadBufferCallback</a> = <a class="el" href="namespacetlx.html#afacc9643f535d390fd0ead73790a6d56">tlx::delegate</a>&lt; void(<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, <a class="el" href="classthrill_1_1net_1_1Buffer.html">Buffer</a> &amp;&amp;buffer), <a class="el" href="namespacethrill_1_1mem.html#aa2925ec9abfffe80dd5c80874b085f1a">mem::GPoolAllocator</a>&lt; char &gt; &gt;</td></tr>
 <tr class="memdesc:gae630be4bcb9ca8ce29c37c7c201ec131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature of async read <a class="el" href="classthrill_1_1net_1_1Buffer.html" title="Simple buffer of characters without initialization or growing functionality. ">Buffer</a> callbacks.  <a href="group__net__layer.html#gae630be4bcb9ca8ce29c37c7c201ec131">More...</a><br/></td></tr>
 <tr class="separator:gae630be4bcb9ca8ce29c37c7c201ec131"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,9 +200,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga6dd6a130c9178669f504958ce7592366"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga6dd6a130c9178669f504958ce7592366">AsyncReadCallback</a> = <a class="el" href="namespacetlx.html#afacc9643f535d390fd0ead73790a6d56">tlx::delegate</a>&lt; void(<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, <a class="el" href="classthrill_1_1net_1_1Buffer.html">Buffer</a> &amp;&amp;buffer), <a class="el" href="namespacethrill_1_1mem.html#aa2925ec9abfffe80dd5c80874b085f1a">mem::GPoolAllocator</a>&lt; char &gt; &gt;</td></tr>
 <tr class="memdesc:ga6dd6a130c9178669f504958ce7592366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature of async read callbacks.  <a href="group__net__layer.html#ga6dd6a130c9178669f504958ce7592366">More...</a><br/></td></tr>
 <tr class="separator:ga6dd6a130c9178669f504958ce7592366"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6670c96cd1d4044d1f029e0318aae9e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gac6670c96cd1d4044d1f029e0318aae9e">AsyncReadMemoryCallback</a> = <a class="el" href="namespacetlx.html#afacc9643f535d390fd0ead73790a6d56">tlx::delegate</a>&lt; void(<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c, uint8_t *data, size_t size), <a class="el" href="namespacethrill_1_1mem.html#aa2925ec9abfffe80dd5c80874b085f1a">mem::GPoolAllocator</a>&lt; char &gt; &gt;</td></tr>
-<tr class="memdesc:gac6670c96cd1d4044d1f029e0318aae9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature of async read direct memory callbacks.  <a href="group__net__layer.html#gac6670c96cd1d4044d1f029e0318aae9e">More...</a><br/></td></tr>
-<tr class="separator:gac6670c96cd1d4044d1f029e0318aae9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga767fca464ce388207ffb957066cc3a8f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">AsyncWriteCallback</a> = <a class="el" href="namespacetlx.html#afacc9643f535d390fd0ead73790a6d56">tlx::delegate</a>&lt; void(<a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;), <a class="el" href="namespacethrill_1_1mem.html#aa2925ec9abfffe80dd5c80874b085f1a">mem::GPoolAllocator</a>&lt; char &gt; &gt;</td></tr>
 <tr class="memdesc:ga767fca464ce388207ffb957066cc3a8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature of async write callbacks.  <a href="group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f">More...</a><br/></td></tr>
 <tr class="separator:ga767fca464ce388207ffb957066cc3a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,6 +215,8 @@ Functions</h2></td></tr>
 <tr class="memitem:gab83feafa91bdc204ea3cc223f3265e56"><td class="memTemplParams" colspan="2">template&lt;typename Group , typename GroupCalled &gt; </td></tr>
 <tr class="memitem:gab83feafa91bdc204ea3cc223f3265e56"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gab83feafa91bdc204ea3cc223f3265e56">ExecuteGroupThreads</a> (const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classthrill_1_1net_1_1Group.html">Group</a> &gt; &gt; &amp;groups, const std::function&lt; void(GroupCalled *)&gt; &amp;thread_function)</td></tr>
 <tr class="separator:gab83feafa91bdc204ea3cc223f3265e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ecf6dc452a749069f7db66d14d49c64"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1net.html#a8ecf6dc452a749069f7db66d14d49c64">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="structthrill_1_1net_1_1Traffic.html">Traffic</a> &amp;t)</td></tr>
+<tr class="separator:a8ecf6dc452a749069f7db66d14d49c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga141386b28ad85343e9e49d5097fc3bcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga141386b28ad85343e9e49d5097fc3bcd">RunLoopbackGroupTest</a> (size_t num_hosts, const std::function&lt; void(<a class="el" href="classthrill_1_1net_1_1Group.html">Group</a> *)&gt; &amp;thread_function)</td></tr>
 <tr class="separator:ga141386b28ad85343e9e49d5097fc3bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -225,13 +225,44 @@ Variables</h2></td></tr>
 <tr class="memitem:gad8bbe33bed567a4adccf544198aedf91"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gad8bbe33bed567a4adccf544198aedf91">debug_async</a> = false</td></tr>
 <tr class="separator:gad8bbe33bed567a4adccf544198aedf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a8ecf6dc452a749069f7db66d14d49c64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; thrill::net::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Traffic &amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="group_8cpp_source.html#l00043">43</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
+
+<p>References <a class="el" href="net_2manager_8hpp_source.html#l00039">Traffic::total()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net.html">net</a></li>
-    <li class="footer">Generated on Thu Nov 23 2017 21:32:34 for Thrill by
+    <li class="footer">Generated on Thu Dec 21 2017 17:33:29 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

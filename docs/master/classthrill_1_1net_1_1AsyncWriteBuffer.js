@@ -4,6 +4,7 @@ var classthrill_1_1net_1_1AsyncWriteBuffer =
     [ "AsyncWriteBuffer", "classthrill_1_1net_1_1AsyncWriteBuffer.html#af4106618defcefcfcd1be8f99c008fd8", null ],
     [ "AsyncWriteBuffer", "classthrill_1_1net_1_1AsyncWriteBuffer.html#a29342a634615596fe5fd3a4ef1cd5587", null ],
     [ "~AsyncWriteBuffer", "classthrill_1_1net_1_1AsyncWriteBuffer.html#a1edd7ca6c18963c88ae3a5ae805223a8", null ],
+    [ "connection", "classthrill_1_1net_1_1AsyncWriteBuffer.html#acef80dec6298fc217923a30b63e4103e", null ],
     [ "data", "classthrill_1_1net_1_1AsyncWriteBuffer.html#a40fe50b14bf164129156972247acb8e4", null ],
     [ "DoCallback", "classthrill_1_1net_1_1AsyncWriteBuffer.html#aa8d48ea2bd11e5163c3b9ef441a07906", null ],
     [ "IsDone", "classthrill_1_1net_1_1AsyncWriteBuffer.html#a77bd2623550e0216b4469003c29181d5", null ],

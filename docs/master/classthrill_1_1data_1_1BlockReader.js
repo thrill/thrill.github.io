@@ -8,7 +8,7 @@ var classthrill_1_1data_1_1BlockReader =
     [ "CopyBlock", "classthrill_1_1data_1_1BlockReader.html#a2744bf82223ddbfcea6e9bd82570ac23", null ],
     [ "GetByte", "classthrill_1_1data_1_1BlockReader.html#aa707e9b0442b5b0e22c402394d5eaad1", null ],
     [ "GetItemBatch", "classthrill_1_1data_1_1BlockReader.html#a27581d97f872c1b776ee21e5ac24f64d", null ],
-    [ "GetRaw", "classthrill_1_1data_1_1BlockReader.html#a584725102547b76380bf324032dab87e", null ],
+    [ "GetRaw", "classthrill_1_1data_1_1BlockReader.html#a2d726fe6f8c215d5601c8e40173c8a47", null ],
     [ "HasNext", "classthrill_1_1data_1_1BlockReader.html#aec475639ee4bb45df40e1ce269a35a0c", null ],
     [ "Next", "classthrill_1_1data_1_1BlockReader.html#a702ea54d622e0077caae37848a1d8bd9", null ],
     [ "NextBlock", "classthrill_1_1data_1_1BlockReader.html#a91e9a1fa7664c8284a28e0ee6acb6e24", null ],

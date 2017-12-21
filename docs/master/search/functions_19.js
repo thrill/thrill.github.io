@@ -2,10 +2,9 @@ var searchData=
 [
   ['_7easyncreadbuffer',['~AsyncReadBuffer',['../classthrill_1_1net_1_1AsyncReadBuffer.html#a71060442a1fd1ddc6e719c99bdd48885',1,'thrill::net::AsyncReadBuffer']]],
   ['_7easyncreadbyteblock',['~AsyncReadByteBlock',['../classthrill_1_1net_1_1AsyncReadByteBlock.html#adc772057f0a6c44262e36e18251cf97a',1,'thrill::net::AsyncReadByteBlock']]],
-  ['_7easyncreadmemory',['~AsyncReadMemory',['../classthrill_1_1net_1_1AsyncReadMemory.html#a5c6a194df4556f8eb210a6e50bc3597e',1,'thrill::net::AsyncReadMemory']]],
+  ['_7easyncrequest',['~AsyncRequest',['../classthrill_1_1net_1_1mpi_1_1AsyncRequest.html#a911057a5e055060a5e2e07df8af5c1e2',1,'thrill::net::mpi::AsyncRequest']]],
   ['_7easyncwriteblock',['~AsyncWriteBlock',['../classthrill_1_1net_1_1AsyncWriteBlock.html#adeed88636a2a5565db2bd549635e16df',1,'thrill::net::AsyncWriteBlock']]],
   ['_7easyncwritebuffer',['~AsyncWriteBuffer',['../classthrill_1_1net_1_1AsyncWriteBuffer.html#a1edd7ca6c18963c88ae3a5ae805223a8',1,'thrill::net::AsyncWriteBuffer']]],
-  ['_7easyncwritememory',['~AsyncWriteMemory',['../classthrill_1_1net_1_1AsyncWriteMemory.html#a74a5242be38f8f63bf140ba67e6e2abd',1,'thrill::net::AsyncWriteMemory']]],
   ['_7ebitstreamwriter',['~BitStreamWriter',['../classthrill_1_1core_1_1BitStreamWriter.html#a8c6f8594852c46a174368a13ac1b512a',1,'thrill::core::BitStreamWriter']]],
   ['_7eblockmanager',['~BlockManager',['../classthrill_1_1io_1_1BlockManager.html#a96ca56575dbc894ae12b9cc82fdf6083',1,'thrill::io::BlockManager']]],
   ['_7eblockpool',['~BlockPool',['../classthrill_1_1data_1_1BlockPool.html#af8b68706dd43d1936add4d5b091b904c',1,'thrill::data::BlockPool']]],
@@ -28,7 +27,7 @@ var searchData=
   ['_7ediabase',['~DIABase',['../classthrill_1_1api_1_1DIABase.html#abb374ae1f932cd97102210d4ca57c8ba',1,'thrill::api::DIABase']]],
   ['_7ediskallocator',['~DiskAllocator',['../classthrill_1_1io_1_1DiskAllocator.html#a4248a725e1aaca295a5d371359acee9b',1,'thrill::io::DiskAllocator']]],
   ['_7ediskqueues',['~DiskQueues',['../classthrill_1_1io_1_1DiskQueues.html#a06fa41ac5c0e67cead75dfb93e9f672e',1,'thrill::io::DiskQueues']]],
-  ['_7edispatcher',['~Dispatcher',['../classthrill_1_1net_1_1Dispatcher.html#aedc4fe5f1377075b487f162672ff5772',1,'thrill::net::Dispatcher::~Dispatcher()'],['../classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aebde02bf4fd9df0eb3505a5f69e66899',1,'thrill::net::mpi::Dispatcher::~Dispatcher()']]],
+  ['_7edispatcher',['~Dispatcher',['../classthrill_1_1net_1_1Dispatcher.html#aedc4fe5f1377075b487f162672ff5772',1,'thrill::net::Dispatcher::~Dispatcher()'],['../classthrill_1_1net_1_1mock_1_1Dispatcher.html#aebde02bf4fd9df0eb3505a5f69e66899',1,'thrill::net::mock::Dispatcher::~Dispatcher()'],['../classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aebde02bf4fd9df0eb3505a5f69e66899',1,'thrill::net::mpi::Dispatcher::~Dispatcher()']]],
   ['_7edispatcherthread',['~DispatcherThread',['../classthrill_1_1net_1_1DispatcherThread.html#a8531f0b1620c942201af92c6192b114c',1,'thrill::net::DispatcherThread']]],
   ['_7edynblocksourceinterface',['~DynBlockSourceInterface',['../classthrill_1_1data_1_1DynBlockSourceInterface.html#a767487e1aa0f294971b25f4708d59692',1,'thrill::data::DynBlockSourceInterface']]],
   ['_7efile',['~File',['../classthrill_1_1data_1_1File.html#a241d694b0e799c0579a023e76cd97f18',1,'thrill::data::File']]],
@@ -37,6 +36,7 @@ var searchData=
   ['_7eflowcontrolchannel',['~FlowControlChannel',['../classthrill_1_1net_1_1FlowControlChannel.html#af48e77363ec6c8a97f95d0ba4d875d66',1,'thrill::net::FlowControlChannel']]],
   ['_7egolombbitstreamwriter',['~GolombBitStreamWriter',['../classthrill_1_1core_1_1GolombBitStreamWriter.html#a3a0dc2b45cdf782491f215e9a42260c7',1,'thrill::core::GolombBitStreamWriter']]],
   ['_7egroup',['~Group',['../classthrill_1_1net_1_1Group.html#af01fe963b4d079001758b734085e6c8a',1,'thrill::net::Group::~Group()'],['../classthrill_1_1net_1_1mock_1_1Group.html#aa2a755272411c0d861f46f30970f5ca5',1,'thrill::net::mock::Group::~Group()'],['../classthrill_1_1net_1_1tcp_1_1Group.html#aa2a755272411c0d861f46f30970f5ca5',1,'thrill::net::tcp::Group::~Group()']]],
+  ['_7ehostcontext',['~HostContext',['../classthrill_1_1api_1_1HostContext.html#ab5656755b83c3c927a677a53ba8d7512',1,'thrill::api::HostContext']]],
   ['_7einputlineiterator',['~InputLineIterator',['../classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIterator.html#a46e486507f02ca79800992c36ff37da2',1,'thrill::api::ReadLinesNode::InputLineIterator']]],
   ['_7ejsonline',['~JsonLine',['../classthrill_1_1common_1_1JsonLine.html#a53d7df7783a093d4f45249f425e07449',1,'thrill::common::JsonLine']]],
   ['_7elinuxaioqueue',['~LinuxaioQueue',['../classthrill_1_1io_1_1LinuxaioQueue.html#aea34d1e3e27b21470e4cb6ed4298c1da',1,'thrill::io::LinuxaioQueue']]],
@@ -82,5 +82,6 @@ var searchData=
   ['_7ethreadpool',['~ThreadPool',['../classtlx_1_1ThreadPool.html#ad41a30b11a0c9d8566ca1a53b4cf43f6',1,'tlx::ThreadPool']]],
   ['_7eufsfilebase',['~UfsFileBase',['../classthrill_1_1io_1_1UfsFileBase.html#a0007ade918171d8d9d4e84f8748a655b',1,'thrill::io::UfsFileBase']]],
   ['_7ewfsfilebase',['~WfsFileBase',['../classthrill_1_1io_1_1WfsFileBase.html#a1c5feb4e9872cf3e9d73e06aa09957ff',1,'thrill::io::WfsFileBase']]],
+  ['_7ewriters',['~Writers',['../classthrill_1_1data_1_1StreamData_1_1Writers.html#ad158be93253a23a9f1f7c851d88b5164',1,'thrill::data::StreamData::Writers']]],
   ['_7ewritestream',['~WriteStream',['../classthrill_1_1vfs_1_1WriteStream.html#ac0eea188f953495e6def783d1f9b6f7d',1,'thrill::vfs::WriteStream']]]
 ];

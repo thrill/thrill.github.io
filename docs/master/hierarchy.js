@@ -38,8 +38,8 @@ var hierarchy =
     [ "Delegate< void(Connection &), mem::GPoolAllocator< char > >", "classtlx_1_1Delegate.html", null ],
     [ "Delegate< void(Connection &c, Buffer &&buffer), mem::GPoolAllocator< char > >", "classtlx_1_1Delegate.html", null ],
     [ "Delegate< void(Connection &c, data::PinnedByteBlockPtr &&bytes), mem::GPoolAllocator< char > >", "classtlx_1_1Delegate.html", null ],
-    [ "Delegate< void(Connection &c, uint8_t *data, size_t size), mem::GPoolAllocator< char > >", "classtlx_1_1Delegate.html", null ],
     [ "Delegate< void(const ValueType &)>", "classtlx_1_1Delegate.html", null ],
+    [ "Delegate< void(MPI_Status &), mem::GPoolAllocator< char > >", "classtlx_1_1Delegate.html", null ],
     [ "Delegate< void(Request *, bool)>", "classtlx_1_1Delegate.html", null ],
     [ "type", null, [
       [ "make_index_sequence< Size >", "structtlx_1_1make__index__sequence.html", null ]
@@ -91,7 +91,7 @@ var hierarchy =
     [ "OurConcurrentBoundedQueue< thrill::data::Block >", "classthrill_1_1common_1_1OurConcurrentBoundedQueue.html", null ],
     [ "OurConcurrentBoundedQueue< thrill::data::MixBlockQueue::SrcBlockPair >", "classthrill_1_1common_1_1OurConcurrentBoundedQueue.html", null ],
     [ "OurConcurrentBoundedQueue< thrill::net::mock::Connection * >", "classthrill_1_1common_1_1OurConcurrentBoundedQueue.html", null ],
-    [ "OurConcurrentQueue< tlx::Delegate, mem::Allocator< tlx::Delegate > >", "classthrill_1_1common_1_1OurConcurrentQueue.html", null ],
+    [ "OurConcurrentQueue< tlx::Delegate, mem::GPoolAllocator< tlx::Delegate > >", "classthrill_1_1common_1_1OurConcurrentQueue.html", null ],
     [ "ReduceByHashPostPhase< TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceNode::Emitter, VolatileKey, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction >", "classthrill_1_1core_1_1ReduceByHashPostPhase.html", null ],
     [ "ReduceByIndexPostPhase< TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig >", "classthrill_1_1core_1_1ReduceByIndexPostPhase.html", null ],
     [ "ReducePostPhaseEmitter< TableItem, ValueType, thrill::api::ReduceNode::Emitter, VolatileKey >", "classthrill_1_1core_1_1ReducePostPhaseEmitter.html", null ],
@@ -123,9 +123,7 @@ var hierarchy =
     [ "SimpleVector< tlx::LoserTreeCopyUnguardedBase::Loser >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< tlx::LoserTreePointerBase::Loser >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< tlx::LoserTreePointerUnguardedBase::Loser >", "classtlx_1_1SimpleVector.html", null ],
-    [ "Singleton< BlockManager >", "classthrill_1_1common_1_1Singleton.html", [
-      [ "BlockManager", "classthrill_1_1io_1_1BlockManager.html", null ]
-    ] ],
+    [ "Singleton< BlockManager >", "classthrill_1_1common_1_1Singleton.html", null ],
     [ "Singleton< Config >", "classthrill_1_1common_1_1Singleton.html", [
       [ "Config", "classthrill_1_1io_1_1Config.html", null ]
     ] ],
@@ -180,6 +178,7 @@ var hierarchy =
       [ "is_std_vector< std::vector< T > >", "structtlx_1_1is__std__vector_3_01std_1_1vector_3_01T_01_4_01_4.html", null ]
     ] ],
     [ "vector< T >", null, [
+      [ "StreamData::Writers", "classthrill_1_1data_1_1StreamData_1_1Writers.html", null ],
       [ "FileList", "structthrill_1_1vfs_1_1FileList.html", null ]
     ] ],
     [ "ArrayTag", "structthrill_1_1api_1_1ArrayTag.html", null ],
@@ -218,7 +217,8 @@ var hierarchy =
       [ "ReadLinesNode::InputLineIteratorUncompressed", "classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIteratorUncompressed.html", null ]
     ] ],
     [ "ReduceNode< ValueType, KeyExtractor, ReduceFunction, ReduceConfig, KeyHashFunction, KeyEqualFunction, VolatileKey, UseDuplicateDetection >::Emitter", "classthrill_1_1api_1_1ReduceNode_1_1Emitter.html", null ],
-    [ "ReduceToIndexNode< ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey >::Emitter", "classthrill_1_1api_1_1ReduceToIndexNode_1_1Emitter.html", null ],
+    [ "ReduceToIndexNode< ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey, SkipPreReducePhase >::Emitter", "classthrill_1_1api_1_1ReduceToIndexNode_1_1Emitter.html", null ],
+    [ "SkipPreReducePhaseTag", "structthrill_1_1api_1_1SkipPreReducePhaseTag.html", null ],
     [ "SortNode< ValueType, CompareFunction, SortAlgorithm >::TreeBuilder", "classthrill_1_1api_1_1SortNode_1_1TreeBuilder.html", null ],
     [ "UnionNode< ValueType >::UnionChild", "structthrill_1_1api_1_1UnionNode_1_1UnionChild.html", null ],
     [ "VolatileKeyFlag< Value >", "structthrill_1_1api_1_1VolatileKeyFlag.html", null ],
@@ -277,6 +277,7 @@ var hierarchy =
     [ "Semaphore", "classthrill_1_1common_1_1Semaphore.html", null ],
     [ "SharedState< ValueType >", "classthrill_1_1common_1_1SharedState.html", null ],
     [ "Singleton< Instance, destroy_on_exit >", "classthrill_1_1common_1_1Singleton.html", [
+      [ "BlockManager", "classthrill_1_1io_1_1BlockManager.html", null ],
       [ "DiskQueues", "classthrill_1_1io_1_1DiskQueues.html", null ]
     ] ],
     [ "SpacingLogger", "classthrill_1_1common_1_1SpacingLogger.html", null ],
@@ -453,10 +454,8 @@ var hierarchy =
     [ "PoolAllocator< Type >::rebind< U >", "structthrill_1_1mem_1_1PoolAllocator_1_1rebind.html", null ],
     [ "AsyncReadBuffer", "classthrill_1_1net_1_1AsyncReadBuffer.html", null ],
     [ "AsyncReadByteBlock", "classthrill_1_1net_1_1AsyncReadByteBlock.html", null ],
-    [ "AsyncReadMemory", "classthrill_1_1net_1_1AsyncReadMemory.html", null ],
     [ "AsyncWriteBlock", "classthrill_1_1net_1_1AsyncWriteBlock.html", null ],
     [ "AsyncWriteBuffer", "classthrill_1_1net_1_1AsyncWriteBuffer.html", null ],
-    [ "AsyncWriteMemory", "classthrill_1_1net_1_1AsyncWriteMemory.html", null ],
     [ "Buffer", "classthrill_1_1net_1_1Buffer.html", null ],
     [ "BufferRef", "classthrill_1_1net_1_1BufferRef.html", [
       [ "BufferReader", "classthrill_1_1net_1_1BufferReader.html", null ]
@@ -481,6 +480,7 @@ var hierarchy =
       [ "Group", "classthrill_1_1net_1_1mpi_1_1Group.html", null ],
       [ "Group", "classthrill_1_1net_1_1tcp_1_1Group.html", null ]
     ] ],
+    [ "AsyncRequest", "classthrill_1_1net_1_1mpi_1_1AsyncRequest.html", null ],
     [ "Dispatcher::MpiAsync", "classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html", null ],
     [ "Dispatcher::Watch", "structthrill_1_1net_1_1mpi_1_1Dispatcher_1_1Watch.html", null ],
     [ "Select", "classthrill_1_1net_1_1tcp_1_1Select.html", null ],
@@ -491,6 +491,7 @@ var hierarchy =
       [ "IPv6Address", "classthrill_1_1net_1_1tcp_1_1IPv6Address.html", null ]
     ] ],
     [ "SocketAddress::SockAddrUnion", "unionthrill_1_1net_1_1tcp_1_1SocketAddress_1_1SockAddrUnion.html", null ],
+    [ "Traffic", "structthrill_1_1net_1_1Traffic.html", null ],
     [ "FileInfo", "structthrill_1_1vfs_1_1FileInfo.html", null ],
     [ "SimpleGlobBase< SOCHAR >", "classthrill_1_1vfs_1_1glob__local_1_1SimpleGlobBase.html", [
       [ "CSimpleGlobTempl< SOCHAR >", "classthrill_1_1vfs_1_1glob__local_1_1CSimpleGlobTempl.html", null ]
@@ -596,7 +597,7 @@ var hierarchy =
             [ "PrefixSumNode< ValueType, SumFunction >", "classthrill_1_1api_1_1PrefixSumNode.html", null ],
             [ "RebalanceNode< ValueType >", "classthrill_1_1api_1_1RebalanceNode.html", null ],
             [ "ReduceNode< ValueType, KeyExtractor, ReduceFunction, ReduceConfig, KeyHashFunction, KeyEqualFunction, VolatileKey, UseDuplicateDetection >", "classthrill_1_1api_1_1ReduceNode.html", null ],
-            [ "ReduceToIndexNode< ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey >", "classthrill_1_1api_1_1ReduceToIndexNode.html", null ],
+            [ "ReduceToIndexNode< ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey, SkipPreReducePhase >", "classthrill_1_1api_1_1ReduceToIndexNode.html", null ],
             [ "SampleNode< ValueType >", "classthrill_1_1api_1_1SampleNode.html", null ],
             [ "SortNode< ValueType, CompareFunction, SortAlgorithm >", "classthrill_1_1api_1_1SortNode.html", null ],
             [ "ZipNode< ValueType, ZipFunction, Pad, UnequalCheck, NoRebalance, kNumInputs >", "classthrill_1_1api_1_1ZipNode.html", null ],

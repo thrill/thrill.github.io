@@ -7,5 +7,6 @@ var searchData=
   ['writebinarynode',['WriteBinaryNode',['../classthrill_1_1api_1_1WriteBinaryNode.html',1,'thrill::api']]],
   ['writelinesnode',['WriteLinesNode',['../classthrill_1_1api_1_1WriteLinesNode.html',1,'thrill::api']]],
   ['writelinesonenode',['WriteLinesOneNode',['../classthrill_1_1api_1_1WriteLinesOneNode.html',1,'thrill::api']]],
+  ['writers',['Writers',['../classthrill_1_1data_1_1StreamData_1_1Writers.html',1,'thrill::data::StreamData']]],
   ['writestream',['WriteStream',['../classthrill_1_1vfs_1_1WriteStream.html',1,'thrill::vfs']]]
 ];

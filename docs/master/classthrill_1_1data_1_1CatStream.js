@@ -10,7 +10,7 @@ var classthrill_1_1data_1_1CatStream =
     [ "GetCatReader", "classthrill_1_1data_1_1CatStream.html#a5855fa287a08d09ed221353f12310ade", null ],
     [ "GetReader", "classthrill_1_1data_1_1CatStream.html#a727c2b1948be017a60d650e286ce0394", null ],
     [ "GetReaders", "classthrill_1_1data_1_1CatStream.html#a0fed94b0417ccfdf57aafb4536e19506", null ],
-    [ "GetWriters", "classthrill_1_1data_1_1CatStream.html#a7995188bc278a110b0979c47c753d43a", null ],
+    [ "GetWriters", "classthrill_1_1data_1_1CatStream.html#a42df271784732c202f7ad3e7f9426bfb", null ],
     [ "id", "classthrill_1_1data_1_1CatStream.html#aeb2c6eb8568ab9d90469bbf5f4a3f14f", null ],
     [ "ptr_", "classthrill_1_1data_1_1CatStream.html#a35ebfabddecf9661a0f6c08f569f2698", null ]
 ];

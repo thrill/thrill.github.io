@@ -2,7 +2,7 @@ var searchData=
 [
   ['n',['N',['../namespacegen__data.html#a7722c8ecbb62d99aee7ce68b1752f337',1,'gen_data']]],
   ['n_5f',['N_',['../classthrill_1_1common_1_1ZipfDistribution.html#ad6747cc0d034da6dca59c002e7088c97',1,'thrill::common::ZipfDistribution']]],
-  ['name_5f',['name_',['../classthrill_1_1mem_1_1Manager.html#a7dac8366c11fbcad2f49d85fe8fc4fbe',1,'thrill::mem::Manager::name_()'],['../classthrill_1_1net_1_1DispatcherThread.html#a1f9967fc0d566265d6e9162bb77959bd',1,'thrill::net::DispatcherThread::name_()']]],
+  ['name_5f',['name_',['../classthrill_1_1mem_1_1Manager.html#a7dac8366c11fbcad2f49d85fe8fc4fbe',1,'thrill::mem::Manager']]],
   ['ndisks_5f',['ndisks_',['../classthrill_1_1io_1_1BlockManager.html#a4c5b3cfb808162e372a2109d085fcd94',1,'thrill::io::BlockManager']]],
   ['need_5falignment_5f',['need_alignment_',['../classthrill_1_1io_1_1FileBase.html#a24f05930681d0e35014298e3bf4349e3',1,'thrill::io::FileBase']]],
   ['net',['net',['../classthrill_1_1api_1_1Context.html#aea6bd2f5fe241819865a3713c71b6158',1,'thrill::api::Context']]],
@@ -42,10 +42,12 @@ var searchData=
   ['num_5fitems_5f',['num_items_',['../classthrill_1_1core_1_1ReduceTable.html#a4a31cc8d9e12a21f498f792c6816b8f0',1,'thrill::core::ReduceTable::num_items_()'],['../classthrill_1_1data_1_1Block.html#a4a31cc8d9e12a21f498f792c6816b8f0',1,'thrill::data::Block::num_items_()'],['../classthrill_1_1data_1_1BlockReader.html#a4a31cc8d9e12a21f498f792c6816b8f0',1,'thrill::data::BlockReader::num_items_()']]],
   ['num_5fitems_5fsum_5f',['num_items_sum_',['../classthrill_1_1data_1_1File.html#ac232fa10f1ad05b5ca66f84faeb7893c',1,'thrill::data::File']]],
   ['num_5fiterations',['num_iterations',['../classexamples_1_1stochastic__gradient__descent_1_1StochasticGradientDescent.html#a22fec0af810a755e77ecbb7179c193d4',1,'examples::stochastic_gradient_descent::StochasticGradientDescent']]],
+  ['num_5fparallel_5fasync_5f',['num_parallel_async_',['../classthrill_1_1data_1_1Multiplexer.html#a3ac7b25d37c4b24a9ab3884100751a1e',1,'thrill::data::Multiplexer']]],
   ['num_5fpartitions_5f',['num_partitions_',['../classthrill_1_1core_1_1ReduceTable.html#aa76370128579c21dea9f3bd09697d798',1,'thrill::core::ReduceTable']]],
   ['num_5fposted_5frequests_5f',['num_posted_requests_',['../classthrill_1_1io_1_1LinuxaioQueue.html#a7e0c0ef59e9c49ac6fcf317be0b0d44b',1,'thrill::io::LinuxaioQueue']]],
   ['num_5fprefetch_5f',['num_prefetch_',['../classthrill_1_1data_1_1KeepFileBlockSource.html#acfdbf3c3d957ff686390d5b29263efc8',1,'thrill::data::KeepFileBlockSource::num_prefetch_()'],['../classthrill_1_1data_1_1ConsumeFileBlockSource.html#acfdbf3c3d957ff686390d5b29263efc8',1,'thrill::data::ConsumeFileBlockSource::num_prefetch_()']]],
   ['num_5fqueue_5f',['num_queue_',['../classthrill_1_1data_1_1StreamSink.html#a214e195a78f3ab67c6150dae2b5bcf86',1,'thrill::data::StreamSink']]],
+  ['num_5fsubranges_5f',['num_subranges_',['../classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a6e0702390c0e60fb7d4df787dbb4ab9e',1,'thrill::core::ReduceByIndexPostPhase']]],
   ['num_5fwaiting_5frequests_5f',['num_waiting_requests_',['../classthrill_1_1io_1_1LinuxaioQueue.html#a8b340f21259801604d3cc16478c3dd40',1,'thrill::io::LinuxaioQueue']]],
   ['num_5fworkers_5f',['num_workers_',['../classthrill_1_1data_1_1MixBlockQueue.html#a5babbe933617d7dd0cbb4e3c3d600cfd',1,'thrill::data::MixBlockQueue']]],
   ['nvar_5f',['nvar_',['../classthrill_1_1common_1_1Aggregate.html#ad0a5355aca9c3db644144f06d6598705',1,'thrill::common::Aggregate']]]

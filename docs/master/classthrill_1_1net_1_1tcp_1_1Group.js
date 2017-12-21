@@ -1,5 +1,6 @@
 var classthrill_1_1net_1_1tcp_1_1Group =
 [
+    [ "Dispatcher", "classthrill_1_1net_1_1tcp_1_1Group.html#a41324b4fbf1e6d99e79a6f786cfb0b87", null ],
     [ "Group", "classthrill_1_1net_1_1tcp_1_1Group.html#a2af06a00f3eb3257849043ddc05a39ff", null ],
     [ "Group", "classthrill_1_1net_1_1tcp_1_1Group.html#a356c5b456ed9bf1c05e9851f335cbcc1", null ],
     [ "Group", "classthrill_1_1net_1_1tcp_1_1Group.html#acdbdbe4c2b6fd1fbe6ac2d899baecf99", null ],
@@ -7,7 +8,7 @@ var classthrill_1_1net_1_1tcp_1_1Group =
     [ "AssignConnection", "classthrill_1_1net_1_1tcp_1_1Group.html#a609b8ef8efb9192424f4c9483f274b4a", null ],
     [ "Close", "classthrill_1_1net_1_1tcp_1_1Group.html#a7f7a3199c392465d0767c6506c1af5b4", null ],
     [ "connection", "classthrill_1_1net_1_1tcp_1_1Group.html#a88758e2fbe63a0928848bb6d19529805", null ],
-    [ "ConstructDispatcher", "classthrill_1_1net_1_1tcp_1_1Group.html#ac0948319c92c379faf7cfed7de721dfc", null ],
+    [ "ConstructDispatcher", "classthrill_1_1net_1_1tcp_1_1Group.html#a7a2d0a26c1fdaecd086136f8e5ed55ad", null ],
     [ "ConstructLocalRealTCPMesh", "classthrill_1_1net_1_1tcp_1_1Group.html#acaecf4e37c7f72f5e21e2bf56b3491b0", null ],
     [ "ConstructLoopbackMesh", "classthrill_1_1net_1_1tcp_1_1Group.html#a66dffeac590766145b45e25b5d908540", null ],
     [ "num_hosts", "classthrill_1_1net_1_1tcp_1_1Group.html#a0feec208eeb70870e8ace6f308a03405", null ],

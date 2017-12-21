@@ -7,6 +7,7 @@ var searchData=
   ['read_5fbuffer',['READ_BUFFER',['../classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#a1d1cfd8ffb84e947f82999c682b666a7a3832fef9dabb5d04ae82603bc5a5f5cd',1,'thrill::net::mpi::Dispatcher::MpiAsync']]],
   ['read_5fbyte_5fblock',['READ_BYTE_BLOCK',['../classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#a1d1cfd8ffb84e947f82999c682b666a7a98ea85db29830b79308147dce3ed8baf',1,'thrill::net::mpi::Dispatcher::MpiAsync']]],
   ['ready2die',['READY2DIE',['../classthrill_1_1io_1_1Request.html#a5d74787dedbc4e11c1ab15bf487e61f8a933990ff21a25c1c7797a443de4312e2',1,'thrill::io::Request']]],
+  ['request',['REQUEST',['../classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#a1d1cfd8ffb84e947f82999c682b666a7abaf6b8e08edf0e9d2eb38551fed1fb39',1,'thrill::net::mpi::Dispatcher::MpiAsync']]],
   ['require_5fdirect',['REQUIRE_DIRECT',['../classthrill_1_1io_1_1FileBase.html#a3a70f8b621474c9885f80fe709e2dca2a023bd6f83dd317b9553228b72c0ebf54',1,'thrill::io::FileBase']]],
   ['running',['RUNNING',['../classthrill_1_1io_1_1RequestQueueImplWorker.html#ab3804a8a4369184ad46dadf8e54957b6a1061be6c3fb88d32829cba6f6b2be304',1,'thrill::io::RequestQueueImplWorker']]]
 ];

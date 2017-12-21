@@ -44,5 +44,6 @@ var classthrill_1_1api_1_1Context =
     [ "multiplexer_", "classthrill_1_1api_1_1Context.html#a34b539018525e2fc206c550d7e72cc54", null ],
     [ "net", "classthrill_1_1api_1_1Context.html#aea6bd2f5fe241819865a3713c71b6158", null ],
     [ "net_manager_", "classthrill_1_1api_1_1Context.html#a8391b18a63fde36a288e22243afa054d", null ],
+    [ "rng_", "classthrill_1_1api_1_1Context.html#aa9fae34d3ffbf0d868ded27d7db35133", null ],
     [ "workers_per_host_", "classthrill_1_1api_1_1Context.html#a6730877f271a6d305ffb1ca69ee14b27", null ]
 ];

@@ -16,6 +16,7 @@ var classthrill_1_1data_1_1ByteBlock =
     [ "has_ext_file", "classthrill_1_1data_1_1ByteBlock.html#a3f8c15f91cb48453150e3d6724b81fd3", null ],
     [ "in_memory", "classthrill_1_1data_1_1ByteBlock.html#a842ed1e3afaf981f7215d596cf65f9a0", null ],
     [ "IncPinCount", "classthrill_1_1data_1_1ByteBlock.html#aa8d15e1f5f29b1285e750fa6e3c4f889", null ],
+    [ "is_deleted", "classthrill_1_1data_1_1ByteBlock.html#a57330e87f92cc72a7ccc4408e9d096a4", null ],
     [ "OnWriteComplete", "classthrill_1_1data_1_1ByteBlock.html#a2b290c6fe8ffe77c2f13946e8be2ae8f", null ],
     [ "pin_count", "classthrill_1_1data_1_1ByteBlock.html#a1d3b34c761e80e943f34028970edf349", null ],
     [ "pin_count_str", "classthrill_1_1data_1_1ByteBlock.html#ab46ed3d1d6185e2f690a69671d14bc6d", null ],

@@ -32,6 +32,7 @@ var classthrill_1_1net_1_1FlowControlChannel =
     [ "count_predecessor_", "classthrill_1_1net_1_1FlowControlChannel.html#ab7a51480f7057007959c606cb7e379e1", null ],
     [ "count_prefixsum_", "classthrill_1_1net_1_1FlowControlChannel.html#a65455927c0de6ee0ef241d7dc6c8ba43", null ],
     [ "count_reduce_", "classthrill_1_1net_1_1FlowControlChannel.html#a9eca0f062ceaa41768164407305dfa2d", null ],
+    [ "debug", "classthrill_1_1net_1_1FlowControlChannel.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
     [ "enable_stats", "classthrill_1_1net_1_1FlowControlChannel.html#a424227f316f3ebacb9b777b32724e14a", null ],
     [ "generation_", "classthrill_1_1net_1_1FlowControlChannel.html#a8e3bd6ae47fe46ac3dac687172b2ed0e", null ],
     [ "group_", "classthrill_1_1net_1_1FlowControlChannel.html#a4aaf0495d34f4921a5759faf85ff9a13", null ],

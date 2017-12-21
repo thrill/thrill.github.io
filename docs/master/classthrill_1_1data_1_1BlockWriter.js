@@ -20,7 +20,7 @@ var classthrill_1_1data_1_1BlockWriter =
     [ "Put", "classthrill_1_1data_1_1BlockWriter.html#ad886b996667ffc717fffad9330045c20", null ],
     [ "PutByte", "classthrill_1_1data_1_1BlockWriter.html#ac858c616ef4a15ba945c19048b40cd49", null ],
     [ "PutNoSelfVerify", "classthrill_1_1data_1_1BlockWriter.html#a1543b1c2d0198d5dff5c6a3d8c923ddc", null ],
-    [ "PutRaw", "classthrill_1_1data_1_1BlockWriter.html#a2eaade193cdc3ee94ad85a9ddd6a0f93", null ],
+    [ "PutRaw", "classthrill_1_1data_1_1BlockWriter.html#afc13a320e9e14ceab236c56e0d6270eb", null ],
     [ "PutSafe", "classthrill_1_1data_1_1BlockWriter.html#a3f27fd459ba848c3b74ee533eff94152", null ],
     [ "PutUnsafe", "classthrill_1_1data_1_1BlockWriter.html#a5675fc4b08bc48f1e5f5e9e35831c675", null ],
     [ "block_size_", "classthrill_1_1data_1_1BlockWriter.html#a9444f84cb3ece249a0cb4552f1bea018", null ],

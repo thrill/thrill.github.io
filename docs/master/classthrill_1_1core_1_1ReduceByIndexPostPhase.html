@@ -178,7 +178,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad10e0336ffe1b51e077cd5f747066e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a482087525002717d16d52ad9c4eec61e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a482087525002717d16d52ad9c4eec61e">PushData</a> (bool consume=false, <a class="el" href="classthrill_1_1data_1_1File.html#a2970881dc476126e9ffee280b42caea9">data::File::Writer</a> *pwriter=nullptr)</td></tr>
 <tr class="separator:a482087525002717d16d52ad9c4eec61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Accessors</div></td></tr>
 <tr class="memitem:a1d6020a8fd3e0ba3f0f0eb1fb74e3dd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a1d6020a8fd3e0ba3f0f0eb1fb74e3dd6">SetRange</a> (const <a class="el" href="classthrill_1_1common_1_1Range.html">common::Range</a> &amp;range)</td></tr>
 <tr class="memdesc:a1d6020a8fd3e0ba3f0f0eb1fb74e3dd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the range of indexes to be handled by this index table.  <a href="#a1d6020a8fd3e0ba3f0f0eb1fb74e3dd6">More...</a><br/></td></tr>
 <tr class="separator:a1d6020a8fd3e0ba3f0f0eb1fb74e3dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,16 +230,23 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a0c86da57ee7f8d7bec3fdd1c4f2f5352"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a0c86da57ee7f8d7bec3fdd1c4f2f5352">neutral_element_key_</a> = 0</td></tr>
 <tr class="memdesc:a0c86da57ee7f8d7bec3fdd1c4f2f5352"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index where the neutral element would go if acutally inserted.  <a href="#a0c86da57ee7f8d7bec3fdd1c4f2f5352">More...</a><br/></td></tr>
 <tr class="separator:a0c86da57ee7f8d7bec3fdd1c4f2f5352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e0702390c0e60fb7d4df787dbb4ab9e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a6e0702390c0e60fb7d4df787dbb4ab9e">num_subranges_</a></td></tr>
+<tr class="memdesc:a6e0702390c0e60fb7d4df787dbb4ab9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of subranges  <a href="#a6e0702390c0e60fb7d4df787dbb4ab9e">More...</a><br/></td></tr>
+<tr class="separator:a6e0702390c0e60fb7d4df787dbb4ab9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cdb1d67404fabe886b59fb9f95e196e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1common_1_1Range.html">common::Range</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a2cdb1d67404fabe886b59fb9f95e196e">range_</a></td></tr>
 <tr class="separator:a2cdb1d67404fabe886b59fb9f95e196e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad27a239234aa7970527538a2815e0870"><td class="memItemLeft" align="right" valign="top">ReduceFunction&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html#ad27a239234aa7970527538a2815e0870">reduce_function_</a></td></tr>
 <tr class="memdesc:ad27a239234aa7970527538a2815e0870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduce function for reducing two values.  <a href="#ad27a239234aa7970527538a2815e0870">More...</a><br/></td></tr>
 <tr class="separator:ad27a239234aa7970527538a2815e0870"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a449eba0e435a57c78041c88578e689e4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::tuple<br class="typebreak"/>
-&lt; <a class="el" href="classthrill_1_1common_1_1Range.html">common::Range</a>, <a class="el" href="classthrill_1_1data_1_1File.html">data::File</a>, <br class="typebreak"/>
-<a class="el" href="classthrill_1_1data_1_1File.html#a2970881dc476126e9ffee280b42caea9">data::File::Writer</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a449eba0e435a57c78041c88578e689e4">subrange_files_</a></td></tr>
-<tr class="memdesc:a449eba0e435a57c78041c88578e689e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store for items in nonactive subranges.  <a href="#a449eba0e435a57c78041c88578e689e4">More...</a><br/></td></tr>
-<tr class="separator:a449eba0e435a57c78041c88578e689e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f317e44c57d560437d444fa346124ce"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="group__data__layer.html#gabaaa4abd7671f0df32e251b9e891ce2f">data::FilePtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a3f317e44c57d560437d444fa346124ce">subrange_files_</a></td></tr>
+<tr class="memdesc:a3f317e44c57d560437d444fa346124ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subranges external Files.  <a href="#a3f317e44c57d560437d444fa346124ce">More...</a><br/></td></tr>
+<tr class="separator:a3f317e44c57d560437d444fa346124ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e9fbff0b74b88dddedc04e3c726a49"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classthrill_1_1data_1_1File.html#a2970881dc476126e9ffee280b42caea9">data::File::Writer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a39e9fbff0b74b88dddedc04e3c726a49">subrange_writers_</a></td></tr>
+<tr class="memdesc:a39e9fbff0b74b88dddedc04e3c726a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subranges external File Writers.  <a href="#a39e9fbff0b74b88dddedc04e3c726a49">More...</a><br/></td></tr>
+<tr class="separator:a39e9fbff0b74b88dddedc04e3c726a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce85a153ba5632a2b2add60708a3eca"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classthrill_1_1common_1_1Range.html">common::Range</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a9ce85a153ba5632a2b2add60708a3eca">subranges_</a></td></tr>
+<tr class="memdesc:a9ce85a153ba5632a2b2add60708a3eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subranges.  <a href="#a9ce85a153ba5632a2b2add60708a3eca">More...</a><br/></td></tr>
+<tr class="separator:a9ce85a153ba5632a2b2add60708a3eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -408,7 +414,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00197">197</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00249">249</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
 </div>
 </div>
@@ -433,9 +439,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00215">215</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00258">258</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00145">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00188">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -461,9 +467,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00222">222</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00265">265</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00145">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00188">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -489,7 +495,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00072">72</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00078">78</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
 </div>
 </div>
@@ -515,7 +521,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00102">102</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00135">135</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
 </div>
 </div>
@@ -541,9 +547,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00231">231</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00275">275</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00072">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00102">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00078">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00135">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>.</p>
 
 </div>
 </div>
@@ -605,9 +611,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00145">145</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00188">188</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00145">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00188">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -643,9 +649,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00235">235</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00279">279</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00102">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00135">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>.</p>
 
 </div>
 </div>
@@ -673,7 +679,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Sets the range of indexes to be handled by this index table. </p>
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00207">207</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00073">73</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
 </div>
 </div>
@@ -698,9 +704,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>File for storing data in-case we need multiple re-reduce levels. </p>
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00285">285</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00338">338</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00145">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00188">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -724,9 +730,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Stored reduce config to initialize the subtable. </p>
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00252">252</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00296">296</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00145">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00188">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -750,9 +756,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Context. </p>
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00240">240</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00284">284</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00072">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00145">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00078">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00188">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -798,9 +804,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Associated DIA id. </p>
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00243">243</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00287">287</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00072">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00145">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00078">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00188">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -824,9 +830,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Emitters used to parameterize hash table for output to next DIA node. </p>
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00255">255</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00299">299</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00215">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Flush()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00222">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::FlushAndConsume()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00145">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00258">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Flush()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00265">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::FlushAndConsume()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00188">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -849,9 +855,9 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Full range of indexes actually managed in this instance - including subranges </p>
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00275">275</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00319">319</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00072">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00102">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00207">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::SetRange()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00078">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00135">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00073">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::SetRange()</a>.</p>
 
 </div>
 </div>
@@ -872,11 +878,11 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Store for items in range of this workers. Stored in reverse order so we can consume while emitting. </p>
+<p>Store for items in range of this worker. Stored in reverse order so we can consume while emitting. </p>
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00279">279</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00323">323</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00197">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Dispose()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00215">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Flush()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00222">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::FlushAndConsume()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00072">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00102">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00249">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Dispose()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00258">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Flush()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00265">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::FlushAndConsume()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00078">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00135">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>.</p>
 
 </div>
 </div>
@@ -900,9 +906,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Key extractor function for extracting a key from a value. </p>
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00246">246</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00290">290</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00072">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00231">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::key()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00145">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00078">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00275">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::key()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00188">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -926,9 +932,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Size of the table in bytes. </p>
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00261">261</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00305">305</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00072">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00145">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00078">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00188">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -952,9 +958,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>neutral element to fill holes in output </p>
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00258">258</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00302">302</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00072">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00145">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00078">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00188">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -978,9 +984,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Is there an actual element at the index of the neutral element? </p>
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00267">267</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00311">311</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00222">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::FlushAndConsume()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00102">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00265">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::FlushAndConsume()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00135">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>.</p>
 
 </div>
 </div>
@@ -1004,9 +1010,35 @@ Static Private Attributes</h2></td></tr>
 
 <p>The index where the neutral element would go if acutally inserted. </p>
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00264">264</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00308">308</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00072">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00102">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00078">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00135">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e0702390c0e60fb7d4df787dbb4ab9e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t num_subranges_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>number of subranges </p>
+
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00326">326</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00078">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00135">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>.</p>
 
 </div>
 </div>
@@ -1029,9 +1061,9 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Range of indexes actually managed in this instance - not including subranges </p>
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00271">271</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00315">315</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00072">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00102">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00207">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::SetRange()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00078">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00135">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00073">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::SetRange()</a>.</p>
 
 </div>
 </div>
@@ -1055,13 +1087,13 @@ Static Private Attributes</h2></td></tr>
 
 <p>Reduce function for reducing two values. </p>
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00249">249</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00293">293</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00145">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00235">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::reduce()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00188">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00279">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::reduce()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a449eba0e435a57c78041c88578e689e4"></a>
+<a class="anchor" id="a3f317e44c57d560437d444fa346124ce"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1069,7 +1101,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::tuple&lt;<a class="el" href="classthrill_1_1common_1_1Range.html">common::Range</a>, <a class="el" href="classthrill_1_1data_1_1File.html">data::File</a>, <a class="el" href="classthrill_1_1data_1_1File.html#a2970881dc476126e9ffee280b42caea9">data::File::Writer</a>&gt; &gt; subrange_files_</td>
+          <td class="memname">std::vector&lt;<a class="el" href="group__data__layer.html#gabaaa4abd7671f0df32e251b9e891ce2f">data::FilePtr</a>&gt; subrange_files_</td>
         </tr>
       </table>
   </td>
@@ -1079,11 +1111,63 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Store for items in nonactive subranges. </p>
+<p>Subranges external Files. </p>
 
-<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00282">282</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00332">332</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00197">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Dispose()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00072">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00102">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00145">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00249">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Dispose()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00078">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00188">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a39e9fbff0b74b88dddedc04e3c726a49"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classthrill_1_1data_1_1File.html#a2970881dc476126e9ffee280b42caea9">data::File::Writer</a>&gt; subrange_writers_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subranges external File Writers. </p>
+
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00335">335</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00249">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Dispose()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00078">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00135">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00188">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ce85a153ba5632a2b2add60708a3eca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classthrill_1_1common_1_1Range.html">common::Range</a>&gt; subranges_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Subranges. </p>
+
+<p>Definition at line <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00329">329</a> of file <a class="el" href="reduce__by__index__post__phase_8hpp_source.html">reduce_by_index_post_phase.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00249">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Dispose()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00078">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Initialize()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00135">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::Insert()</a>, and <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00188">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -1096,7 +1180,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1core.html">core</a></li><li class="navelem"><a class="el" href="classthrill_1_1core_1_1ReduceByIndexPostPhase.html">ReduceByIndexPostPhase</a></li>
-    <li class="footer">Generated on Thu Nov 23 2017 21:32:34 for Thrill by
+    <li class="footer">Generated on Thu Dec 21 2017 17:33:28 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

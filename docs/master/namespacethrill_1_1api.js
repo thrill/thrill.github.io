@@ -54,6 +54,7 @@ var namespacethrill_1_1api =
     [ "ReduceToIndexNode", "classthrill_1_1api_1_1ReduceToIndexNode.html", "classthrill_1_1api_1_1ReduceToIndexNode" ],
     [ "SampleNode", "classthrill_1_1api_1_1SampleNode.html", "classthrill_1_1api_1_1SampleNode" ],
     [ "SizeNode", "classthrill_1_1api_1_1SizeNode.html", "classthrill_1_1api_1_1SizeNode" ],
+    [ "SkipPreReducePhaseTag", "structthrill_1_1api_1_1SkipPreReducePhaseTag.html", "structthrill_1_1api_1_1SkipPreReducePhaseTag" ],
     [ "SortNode", "classthrill_1_1api_1_1SortNode.html", "classthrill_1_1api_1_1SortNode" ],
     [ "SourceNode", "classthrill_1_1api_1_1SourceNode.html", "classthrill_1_1api_1_1SourceNode" ],
     [ "UnionNode", "classthrill_1_1api_1_1UnionNode.html", "classthrill_1_1api_1_1UnionNode" ],

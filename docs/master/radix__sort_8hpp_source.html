@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('radix__sort_8hpp_source.html','');});
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    Char* cc = char_cache;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">for</span> (Iterator it = begin; it != end; ++it, ++cc) {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        *cc = it-&gt;at_radix(depth);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        assert(*cc &lt; K);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        assert(static_cast&lt;size_t&gt;(*cc) &lt; K);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// count character occurrences</span></div>
@@ -298,7 +298,7 @@ $(document).ready(function(){initNavTree('radix__sort_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_19de9a7cb0ad0c6b03f8c7369b4f5139.html">common</a></li><li class="navelem"><a class="el" href="radix__sort_8hpp.html">radix_sort.hpp</a></li>
-    <li class="footer">Generated on Thu Nov 23 2017 21:32:30 for Thrill by
+    <li class="footer">Generated on Thu Dec 21 2017 17:33:24 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

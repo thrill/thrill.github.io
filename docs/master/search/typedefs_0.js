@@ -14,9 +14,10 @@ var searchData=
   ['arraynuminputssizet',['ArrayNumInputsSizeT',['../classthrill_1_1api_1_1MergeNode.html#a26f31d2221fd5964db63cd3d9e450594',1,'thrill::api::MergeNode']]],
   ['arraytype',['ArrayType',['../classthrill_1_1common_1_1ComponentSum_3_01std_1_1array_3_01Type_00_01N_01_4_00_01Operation_01_4.html#aa679f7fb08816330e12ad1e9c917d17f',1,'thrill::common::ComponentSum&lt; std::array&lt; Type, N &gt;, Operation &gt;']]],
   ['asynccallback',['AsyncCallback',['../group__net__layer.html#ga34ceb21e2ae70c580b58ed72632c18a8',1,'thrill::net']]],
+  ['asyncdispatcherthreadcallback',['AsyncDispatcherThreadCallback',['../group__net__layer.html#ga25f0921be63a1fc8b0565bb20685efcd',1,'thrill::net']]],
   ['asyncreadbuffercallback',['AsyncReadBufferCallback',['../group__net__layer.html#gae630be4bcb9ca8ce29c37c7c201ec131',1,'thrill::net']]],
   ['asyncreadbyteblockcallback',['AsyncReadByteBlockCallback',['../group__net__layer.html#gad2343b2eb0250c6531e377a7c50d30c1',1,'thrill::net']]],
   ['asyncreadcallback',['AsyncReadCallback',['../group__net__layer.html#ga6dd6a130c9178669f504958ce7592366',1,'thrill::net']]],
-  ['asyncreadmemorycallback',['AsyncReadMemoryCallback',['../group__net__layer.html#gac6670c96cd1d4044d1f029e0318aae9e',1,'thrill::net']]],
+  ['asyncrequestcallback',['AsyncRequestCallback',['../group__net__mpi.html#ga769838a4869b196a982532f4f9c152f8',1,'thrill::net::mpi']]],
   ['asyncwritecallback',['AsyncWriteCallback',['../group__net__layer.html#ga767fca464ce388207ffb957066cc3a8f',1,'thrill::net']]]
 ];
