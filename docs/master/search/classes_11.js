@@ -1,6 +1,7 @@
 var searchData=
 [
   ['samplenode',['SampleNode',['../classthrill_1_1api_1_1SampleNode.html',1,'thrill::api']]],
+  ['sampling',['Sampling',['../classthrill_1_1common_1_1Sampling.html',1,'thrill::common']]],
   ['scopedreadtimer',['ScopedReadTimer',['../classthrill_1_1io_1_1Stats_1_1ScopedReadTimer.html',1,'thrill::io::Stats']]],
   ['scopedreadwritetimer',['ScopedReadWriteTimer',['../classthrill_1_1io_1_1Stats_1_1ScopedReadWriteTimer.html',1,'thrill::io::Stats']]],
   ['scopedwaittimer',['ScopedWaitTimer',['../classthrill_1_1io_1_1Stats_1_1ScopedWaitTimer.html',1,'thrill::io::Stats']]],
@@ -45,8 +46,8 @@ var searchData=
   ['sortnode',['SortNode',['../classthrill_1_1api_1_1SortNode.html',1,'thrill::api']]],
   ['sourcenode',['SourceNode',['../classthrill_1_1api_1_1SourceNode.html',1,'thrill::api']]],
   ['sourcenode_3c_20std_3a_3astring_20_3e',['SourceNode&lt; std::string &gt;',['../classthrill_1_1api_1_1SourceNode.html',1,'thrill::api']]],
-  ['spacinglogger',['SpacingLogger',['../classtlx_1_1SpacingLogger.html',1,'tlx']]],
   ['spacinglogger',['SpacingLogger',['../classthrill_1_1common_1_1SpacingLogger.html',1,'thrill::common']]],
+  ['spacinglogger',['SpacingLogger',['../classtlx_1_1SpacingLogger.html',1,'tlx']]],
   ['splayztree',['SplayzTree',['../classthrill_1_1common_1_1SplayzTree.html',1,'thrill::common']]],
   ['srcblockpair',['SrcBlockPair',['../structthrill_1_1data_1_1MixBlockQueue_1_1SrcBlockPair.html',1,'thrill::data::MixBlockQueue']]],
   ['stackallocator',['StackAllocator',['../classtlx_1_1StackAllocator.html',1,'tlx']]],

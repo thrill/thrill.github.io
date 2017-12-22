@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Thrill: ReservoirSampling&lt; Type &gt; Class Template Reference</title>
+<title>Thrill: ReservoirSampling&lt; Type, RNG &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -119,25 +119,25 @@ $(document).ready(function(){initNavTree('classthrill_1_1common_1_1ReservoirSamp
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classthrill_1_1common_1_1ReservoirSampling-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ReservoirSampling&lt; Type &gt; Class Template Reference</div>  </div>
+<div class="title">ReservoirSampling&lt; Type, RNG &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename Type&gt;<br/>
-class thrill::common::ReservoirSampling&lt; Type &gt;</h3>
+<div class="textblock"><h3>template&lt;typename Type, typename RNG = std::default_random_engine&gt;<br/>
+class thrill::common::ReservoirSampling&lt; Type, RNG &gt;</h3>
 
 <p>Implementation of reservoir sampling using Vitter's Algorithm R. </p>
 <p>The reservoir size is fixed, new items replace old ones such that all items in the stream are sampled with the same uniform probability. </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00030">30</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00031">31</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac6ae522d34e665be4a8489a16ad76f63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSampling.html#ac6ae522d34e665be4a8489a16ad76f63">ReservoirSampling</a> (size_t <a class="el" href="classthrill_1_1common_1_1ReservoirSampling.html#aac782da1f912bceb5d8ad00c8dc892ac">size</a>, std::vector&lt; Type &gt; &amp;<a class="el" href="classthrill_1_1common_1_1ReservoirSampling.html#a35e83b77174bc9895cbc88cab7a7f706">samples</a>, std::default_random_engine &amp;rng)</td></tr>
-<tr class="memdesc:ac6ae522d34e665be4a8489a16ad76f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize reservoir sampler  <a href="#ac6ae522d34e665be4a8489a16ad76f63">More...</a><br/></td></tr>
-<tr class="separator:ac6ae522d34e665be4a8489a16ad76f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538e6e8d2baeaa3b00dc4cecaa6ad0dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSampling.html#a538e6e8d2baeaa3b00dc4cecaa6ad0dd">ReservoirSampling</a> (size_t <a class="el" href="classthrill_1_1common_1_1ReservoirSampling.html#aac782da1f912bceb5d8ad00c8dc892ac">size</a>, std::vector&lt; Type &gt; &amp;<a class="el" href="classthrill_1_1common_1_1ReservoirSampling.html#a35e83b77174bc9895cbc88cab7a7f706">samples</a>, RNG &amp;rng)</td></tr>
+<tr class="memdesc:a538e6e8d2baeaa3b00dc4cecaa6ad0dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize reservoir sampler  <a href="#a538e6e8d2baeaa3b00dc4cecaa6ad0dd">More...</a><br/></td></tr>
+<tr class="separator:a538e6e8d2baeaa3b00dc4cecaa6ad0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5f1310100120dfab09b7ff82c3460f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSampling.html#ad5f1310100120dfab09b7ff82c3460f8">add</a> (const Type &amp;item)</td></tr>
 <tr class="memdesc:ad5f1310100120dfab09b7ff82c3460f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">visit item, maybe add it to the sample.  <a href="#ad5f1310100120dfab09b7ff82c3460f8">More...</a><br/></td></tr>
 <tr class="separator:ad5f1310100120dfab09b7ff82c3460f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,18 +156,18 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a6b06728795e8f208c0755874665b3a51"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSampling.html#a6b06728795e8f208c0755874665b3a51">count_</a> = 0</td></tr>
 <tr class="memdesc:a6b06728795e8f208c0755874665b3a51"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of items seen  <a href="#a6b06728795e8f208c0755874665b3a51">More...</a><br/></td></tr>
 <tr class="separator:a6b06728795e8f208c0755874665b3a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa3210bc46cfad23b98aa3743b80024b"><td class="memItemLeft" align="right" valign="top">std::default_random_engine &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSampling.html#afa3210bc46cfad23b98aa3743b80024b">rng_</a></td></tr>
-<tr class="memdesc:afa3210bc46cfad23b98aa3743b80024b"><td class="mdescLeft">&#160;</td><td class="mdescRight">source of randomness  <a href="#afa3210bc46cfad23b98aa3743b80024b">More...</a><br/></td></tr>
-<tr class="separator:afa3210bc46cfad23b98aa3743b80024b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4abc96f7ce71415a54f3f2c453e0a39"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSampling.html#ae4abc96f7ce71415a54f3f2c453e0a39">samples_</a></td></tr>
-<tr class="memdesc:ae4abc96f7ce71415a54f3f2c453e0a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">reservoir  <a href="#ae4abc96f7ce71415a54f3f2c453e0a39">More...</a><br/></td></tr>
-<tr class="separator:ae4abc96f7ce71415a54f3f2c453e0a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8e9980843e054033da2c94c2931c5e"><td class="memItemLeft" align="right" valign="top">RNG &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSampling.html#acc8e9980843e054033da2c94c2931c5e">rng_</a></td></tr>
+<tr class="memdesc:acc8e9980843e054033da2c94c2931c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">source of randomness  <a href="#acc8e9980843e054033da2c94c2931c5e">More...</a><br/></td></tr>
+<tr class="separator:acc8e9980843e054033da2c94c2931c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff52e2dd0033a4a098aa37da3cb3c957"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Type &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSampling.html#aff52e2dd0033a4a098aa37da3cb3c957">samples_</a></td></tr>
+<tr class="memdesc:aff52e2dd0033a4a098aa37da3cb3c957"><td class="mdescLeft">&#160;</td><td class="mdescRight">reservoir  <a href="#aff52e2dd0033a4a098aa37da3cb3c957">More...</a><br/></td></tr>
+<tr class="separator:aff52e2dd0033a4a098aa37da3cb3c957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f31775800bbb46b35b5791def1f3acc"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSampling.html#a5f31775800bbb46b35b5791def1f3acc">size_</a></td></tr>
 <tr class="memdesc:a5f31775800bbb46b35b5791def1f3acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of reservoir  <a href="#a5f31775800bbb46b35b5791def1f3acc">More...</a><br/></td></tr>
 <tr class="separator:a5f31775800bbb46b35b5791def1f3acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac6ae522d34e665be4a8489a16ad76f63"></a>
+<a class="anchor" id="a538e6e8d2baeaa3b00dc4cecaa6ad0dd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -189,7 +189,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::default_random_engine &amp;&#160;</td>
+          <td class="paramtype">RNG &amp;&#160;</td>
           <td class="paramname"><em>rng</em>&#160;</td>
         </tr>
         <tr>
@@ -207,9 +207,9 @@ Private Attributes</h2></td></tr>
 
 <p>initialize reservoir sampler </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00034">34</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00035">35</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>References <a class="el" href="reservoir__sampling_8hpp_source.html#l00070">ReservoirSampling&lt; Type &gt;::samples_</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00066">ReservoirSampling&lt; Type &gt;::size_</a>.</p>
+<p>References <a class="el" href="reservoir__sampling_8hpp_source.html#l00071">ReservoirSampling&lt; Type, RNG &gt;::samples_</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00067">ReservoirSampling&lt; Type, RNG &gt;::size_</a>.</p>
 
 </div>
 </div>
@@ -238,9 +238,9 @@ Private Attributes</h2></td></tr>
 
 <p>visit item, maybe add it to the sample. </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00041">41</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00042">42</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>References <a class="el" href="reservoir__sampling_8hpp_source.html#l00068">ReservoirSampling&lt; Type &gt;::count_</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00072">ReservoirSampling&lt; Type &gt;::rng_</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00070">ReservoirSampling&lt; Type &gt;::samples_</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00066">ReservoirSampling&lt; Type &gt;::size_</a>, and <a class="el" href="gen__data_8py_source.html#l00039">gen_data::x</a>.</p>
+<p>References <a class="el" href="reservoir__sampling_8hpp_source.html#l00069">ReservoirSampling&lt; Type, RNG &gt;::count_</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00073">ReservoirSampling&lt; Type, RNG &gt;::rng_</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00071">ReservoirSampling&lt; Type, RNG &gt;::samples_</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00067">ReservoirSampling&lt; Type, RNG &gt;::size_</a>, and <a class="el" href="gen__data_8py_source.html#l00039">gen_data::x</a>.</p>
 
 </div>
 </div>
@@ -267,9 +267,9 @@ Private Attributes</h2></td></tr>
 
 <p>number of items seen </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00059">59</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00060">60</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>References <a class="el" href="reservoir__sampling_8hpp_source.html#l00068">ReservoirSampling&lt; Type &gt;::count_</a>.</p>
+<p>References <a class="el" href="reservoir__sampling_8hpp_source.html#l00069">ReservoirSampling&lt; Type, RNG &gt;::count_</a>.</p>
 
 </div>
 </div>
@@ -296,9 +296,9 @@ Private Attributes</h2></td></tr>
 
 <p>access to samples </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00062">62</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00063">63</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>References <a class="el" href="reservoir__sampling_8hpp_source.html#l00070">ReservoirSampling&lt; Type &gt;::samples_</a>.</p>
+<p>References <a class="el" href="reservoir__sampling_8hpp_source.html#l00071">ReservoirSampling&lt; Type, RNG &gt;::samples_</a>.</p>
 
 </div>
 </div>
@@ -325,9 +325,9 @@ Private Attributes</h2></td></tr>
 
 <p>size of reservoir </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00056">56</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00057">57</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>References <a class="el" href="reservoir__sampling_8hpp_source.html#l00066">ReservoirSampling&lt; Type &gt;::size_</a>.</p>
+<p>References <a class="el" href="reservoir__sampling_8hpp_source.html#l00067">ReservoirSampling&lt; Type, RNG &gt;::size_</a>.</p>
 
 </div>
 </div>
@@ -352,13 +352,13 @@ Private Attributes</h2></td></tr>
 
 <p>number of items seen </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00068">68</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00069">69</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00041">ReservoirSampling&lt; Type &gt;::add()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00059">ReservoirSampling&lt; Type &gt;::count()</a>.</p>
+<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00042">ReservoirSampling&lt; Type, RNG &gt;::add()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00060">ReservoirSampling&lt; Type, RNG &gt;::count()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afa3210bc46cfad23b98aa3743b80024b"></a>
+<a class="anchor" id="acc8e9980843e054033da2c94c2931c5e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -366,7 +366,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::default_random_engine&amp; rng_</td>
+          <td class="memname">RNG&amp; rng_</td>
         </tr>
       </table>
   </td>
@@ -378,13 +378,13 @@ Private Attributes</h2></td></tr>
 
 <p>source of randomness </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00072">72</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00073">73</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00041">ReservoirSampling&lt; Type &gt;::add()</a>.</p>
+<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00042">ReservoirSampling&lt; Type, RNG &gt;::add()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ae4abc96f7ce71415a54f3f2c453e0a39"></a>
+<a class="anchor" id="aff52e2dd0033a4a098aa37da3cb3c957"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -392,7 +392,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;Type&gt; samples_</td>
+          <td class="memname">std::vector&lt;Type&gt;&amp; samples_</td>
         </tr>
       </table>
   </td>
@@ -404,9 +404,9 @@ Private Attributes</h2></td></tr>
 
 <p>reservoir </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00070">70</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00071">71</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00041">ReservoirSampling&lt; Type &gt;::add()</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00034">ReservoirSampling&lt; Type &gt;::ReservoirSampling()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00062">ReservoirSampling&lt; Type &gt;::samples()</a>.</p>
+<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00042">ReservoirSampling&lt; Type, RNG &gt;::add()</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00035">ReservoirSampling&lt; Type, RNG &gt;::ReservoirSampling()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00063">ReservoirSampling&lt; Type, RNG &gt;::samples()</a>.</p>
 
 </div>
 </div>
@@ -430,9 +430,9 @@ Private Attributes</h2></td></tr>
 
 <p>size of reservoir </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00066">66</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00067">67</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00041">ReservoirSampling&lt; Type &gt;::add()</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00034">ReservoirSampling&lt; Type &gt;::ReservoirSampling()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00056">ReservoirSampling&lt; Type &gt;::size()</a>.</p>
+<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00042">ReservoirSampling&lt; Type, RNG &gt;::add()</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00035">ReservoirSampling&lt; Type, RNG &gt;::ReservoirSampling()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00057">ReservoirSampling&lt; Type, RNG &gt;::size()</a>.</p>
 
 </div>
 </div>
@@ -445,7 +445,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1common.html">common</a></li><li class="navelem"><a class="el" href="classthrill_1_1common_1_1ReservoirSampling.html">ReservoirSampling</a></li>
-    <li class="footer">Generated on Thu Dec 21 2017 17:33:28 for Thrill by
+    <li class="footer">Generated on Fri Dec 22 2017 14:15:40 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

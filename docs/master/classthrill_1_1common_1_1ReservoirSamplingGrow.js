@@ -1,6 +1,6 @@
 var classthrill_1_1common_1_1ReservoirSamplingGrow =
 [
-    [ "ReservoirSamplingGrow", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#a2a9274608e3f1878af01d3d1b68d1a86", null ],
+    [ "ReservoirSamplingGrow", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#a87c1d269a8de6ca69d7d1ad3d3e1eb1d", null ],
     [ "add", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#ad5f1310100120dfab09b7ff82c3460f8", null ],
     [ "calc_next_gap", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#a36e9b114cd99244356721de926795597", null ],
     [ "calc_sample_size", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#a2000032e027274fe1658be49ec98fc51", null ],
@@ -14,7 +14,7 @@ var classthrill_1_1common_1_1ReservoirSamplingGrow =
     [ "debug", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
     [ "desired_imbalance_", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#acf8d35fee6167f79c7217f4e8297110f", null ],
     [ "gap_", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#ab8ca9afa9d9a2d502b0b8a0da644872e", null ],
-    [ "rng_", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#afa3210bc46cfad23b98aa3743b80024b", null ],
+    [ "rng_", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#acc8e9980843e054033da2c94c2931c5e", null ],
     [ "samples_", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#aff52e2dd0033a4a098aa37da3cb3c957", null ],
     [ "size_", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#a5f31775800bbb46b35b5791def1f3acc", null ],
     [ "steps_to_resize", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#a8acc71da85d7ab98b1507ba75526383f", null ]

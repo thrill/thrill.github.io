@@ -3,6 +3,7 @@ var searchData=
   ['s3_5ffile_2ecpp',['s3_file.cpp',['../s3__file_8cpp.html',1,'']]],
   ['s3_5ffile_2ehpp',['s3_file.hpp',['../s3__file_8hpp.html',1,'']]],
   ['sample_2ehpp',['sample.hpp',['../sample_8hpp.html',1,'']]],
+  ['sampling_2ehpp',['sampling.hpp',['../sampling_8hpp.html',1,'']]],
   ['select_2ehpp',['select.hpp',['../thrill_2net_2tcp_2select_8hpp.html',1,'']]],
   ['select_2ehpp',['select.hpp',['../examples_2select_2select_8hpp.html',1,'']]],
   ['select_5fdispatcher_2ecpp',['select_dispatcher.cpp',['../select__dispatcher_8cpp.html',1,'']]],

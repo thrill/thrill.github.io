@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Thrill: ReservoirSamplingGrow&lt; Type &gt; Class Template Reference</title>
+<title>Thrill: ReservoirSamplingGrow&lt; Type, RNG &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -121,19 +121,19 @@ $(document).ready(function(){initNavTree('classthrill_1_1common_1_1ReservoirSamp
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classthrill_1_1common_1_1ReservoirSamplingGrow-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ReservoirSamplingGrow&lt; Type &gt; Class Template Reference</div>  </div>
+<div class="title">ReservoirSamplingGrow&lt; Type, RNG &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename Type&gt;<br/>
-class thrill::common::ReservoirSamplingGrow&lt; Type &gt;</h3>
+<div class="textblock"><h3>template&lt;typename Type, typename RNG = std::default_random_engine&gt;<br/>
+class thrill::common::ReservoirSamplingGrow&lt; Type, RNG &gt;</h3>
 
 <p>Implementation of a fast approximation of adaptive reservoir sampling using <a href="http://erikerlandson.github.io/blog/2015/11/20/very-fast-reservoir-sampling/">http://erikerlandson.github.io/blog/2015/11/20/very-fast-reservoir-sampling/</a> The reservoir size grows logarithmically with the number given to the sampler, new items replace old ones such that all items in the stream are sampled with the same approximately uniform probability. </p>
 <p>Growing of the reservoir is implemented trivially by selecting any current item to expand the array. This works well enough if growing steps become rarer for larger streams. </p>
 
 <p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00173">173</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ReservoirSamplingGrow&lt; Type &gt;:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ReservoirSamplingGrow&lt; Type, RNG &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
@@ -145,9 +145,9 @@ class thrill::common::ReservoirSamplingGrow&lt; Type &gt;</h3>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2a9274608e3f1878af01d3d1b68d1a86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html#a2a9274608e3f1878af01d3d1b68d1a86">ReservoirSamplingGrow</a> (std::vector&lt; Type &gt; &amp;<a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html#a35e83b77174bc9895cbc88cab7a7f706">samples</a>, std::default_random_engine &amp;rng, double <a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html#ae53184f3ec7d3522a3f36f681bc5e26c">desired_imbalance</a>=0.05)</td></tr>
-<tr class="memdesc:a2a9274608e3f1878af01d3d1b68d1a86"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize reservoir sampler  <a href="#a2a9274608e3f1878af01d3d1b68d1a86">More...</a><br/></td></tr>
-<tr class="separator:a2a9274608e3f1878af01d3d1b68d1a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87c1d269a8de6ca69d7d1ad3d3e1eb1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html#a87c1d269a8de6ca69d7d1ad3d3e1eb1d">ReservoirSamplingGrow</a> (std::vector&lt; Type &gt; &amp;<a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html#a35e83b77174bc9895cbc88cab7a7f706">samples</a>, RNG &amp;rng, double <a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html#ae53184f3ec7d3522a3f36f681bc5e26c">desired_imbalance</a>=0.05)</td></tr>
+<tr class="memdesc:a87c1d269a8de6ca69d7d1ad3d3e1eb1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize reservoir sampler  <a href="#a87c1d269a8de6ca69d7d1ad3d3e1eb1d">More...</a><br/></td></tr>
+<tr class="separator:a87c1d269a8de6ca69d7d1ad3d3e1eb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5f1310100120dfab09b7ff82c3460f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html#ad5f1310100120dfab09b7ff82c3460f8">add</a> (const Type &amp;item)</td></tr>
 <tr class="memdesc:ad5f1310100120dfab09b7ff82c3460f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">visit item, maybe add it to the sample.  <a href="#ad5f1310100120dfab09b7ff82c3460f8">More...</a><br/></td></tr>
 <tr class="separator:ad5f1310100120dfab09b7ff82c3460f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,9 +188,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ab8ca9afa9d9a2d502b0b8a0da644872e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html#ab8ca9afa9d9a2d502b0b8a0da644872e">gap_</a> = 0</td></tr>
 <tr class="memdesc:ab8ca9afa9d9a2d502b0b8a0da644872e"><td class="mdescLeft">&#160;</td><td class="mdescRight">items to skip until next sample (used in gap algorithm)  <a href="#ab8ca9afa9d9a2d502b0b8a0da644872e">More...</a><br/></td></tr>
 <tr class="separator:ab8ca9afa9d9a2d502b0b8a0da644872e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa3210bc46cfad23b98aa3743b80024b"><td class="memItemLeft" align="right" valign="top">std::default_random_engine &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html#afa3210bc46cfad23b98aa3743b80024b">rng_</a></td></tr>
-<tr class="memdesc:afa3210bc46cfad23b98aa3743b80024b"><td class="mdescLeft">&#160;</td><td class="mdescRight">source of randomness  <a href="#afa3210bc46cfad23b98aa3743b80024b">More...</a><br/></td></tr>
-<tr class="separator:afa3210bc46cfad23b98aa3743b80024b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8e9980843e054033da2c94c2931c5e"><td class="memItemLeft" align="right" valign="top">RNG &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html#acc8e9980843e054033da2c94c2931c5e">rng_</a></td></tr>
+<tr class="memdesc:acc8e9980843e054033da2c94c2931c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">source of randomness  <a href="#acc8e9980843e054033da2c94c2931c5e">More...</a><br/></td></tr>
+<tr class="separator:acc8e9980843e054033da2c94c2931c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff52e2dd0033a4a098aa37da3cb3c957"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Type &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html#aff52e2dd0033a4a098aa37da3cb3c957">samples_</a></td></tr>
 <tr class="memdesc:aff52e2dd0033a4a098aa37da3cb3c957"><td class="mdescLeft">&#160;</td><td class="mdescRight">reservoir  <a href="#aff52e2dd0033a4a098aa37da3cb3c957">More...</a><br/></td></tr>
 <tr class="separator:aff52e2dd0033a4a098aa37da3cb3c957"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,7 +207,7 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a6b72e54baf646b08b4b87f987f583dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2a9274608e3f1878af01d3d1b68d1a86"></a>
+<a class="anchor" id="a87c1d269a8de6ca69d7d1ad3d3e1eb1d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -223,7 +223,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::default_random_engine &amp;&#160;</td>
+          <td class="paramtype">RNG &amp;&#160;</td>
           <td class="paramname"><em>rng</em>, </td>
         </tr>
         <tr>
@@ -606,7 +606,7 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afa3210bc46cfad23b98aa3743b80024b"></a>
+<a class="anchor" id="acc8e9980843e054033da2c94c2931c5e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -614,7 +614,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::default_random_engine&amp; rng_</td>
+          <td class="memname">RNG&amp; rng_</td>
         </tr>
       </table>
   </td>
@@ -719,7 +719,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1common.html">common</a></li><li class="navelem"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html">ReservoirSamplingGrow</a></li>
-    <li class="footer">Generated on Thu Dec 21 2017 17:33:28 for Thrill by
+    <li class="footer">Generated on Fri Dec 22 2017 14:15:40 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

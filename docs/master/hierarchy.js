@@ -65,6 +65,7 @@ var hierarchy =
     [ "HashWordHasher", "structexamples_1_1word__count_1_1HashWordHasher.html", null ],
     [ "FillerStruct< FillSize >", "classthrill_1_1io_1_1mng__local_1_1FillerStruct.html", null ],
     [ "GradientResult< thrill::common::Vector >", "structexamples_1_1stochastic__gradient__descent_1_1GradientResult.html", null ],
+    [ "hypergeometric_distribution<>", "classthrill_1_1common_1_1hypergeometric__distribution.html", null ],
     [ "ItemReaderToolsBase< BlockReader< BlockSource > >", "classthrill_1_1common_1_1ItemReaderToolsBase.html", [
       [ "BlockReader< BlockSource >", "classthrill_1_1data_1_1BlockReader.html", null ]
     ] ],
@@ -114,6 +115,7 @@ var hierarchy =
     [ "ReduceTableSelect< ReduceConfig::table_impl_, TableItem, Key, ValueType, KeyExtractor, ReduceFunction, PhaseEmitter, VolatileKey, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction >", "classthrill_1_1core_1_1ReduceTableSelect.html", null ],
     [ "ReduceTableSelect< ReduceConfig::table_impl_, thrill::api::GroupByNode::HashCount, typename thrill::api::GroupByNode::HashCount::HashType, thrill::api::GroupByNode::HashCount, ExtractHash, std::plus< thrill::api::GroupByNode::HashCount >, Emitter, false, ReduceConfig >", "classthrill_1_1core_1_1ReduceTableSelect.html", null ],
     [ "ReduceTableSelect< ReduceConfig::table_impl_, thrill::api::JoinNode::HashCount, typename thrill::api::JoinNode::HashCount::HashType, thrill::api::JoinNode::HashCount, ExtractHash, std::plus< thrill::api::JoinNode::HashCount >, Emitter, false, ReduceConfig >", "classthrill_1_1core_1_1ReduceTableSelect.html", null ],
+    [ "ReservoirSamplingFast< ValueType, decltype(rng_)>", "classthrill_1_1common_1_1ReservoirSamplingFast.html", null ],
     [ "ReservoirSamplingGrow< SampleIndexPair >", "classthrill_1_1common_1_1ReservoirSamplingGrow.html", null ],
     [ "RingBuffer< Input >", "classtlx_1_1RingBuffer.html", null ],
     [ "SharedState< State >", "classthrill_1_1common_1_1SharedState.html", null ],
@@ -243,6 +245,7 @@ var hierarchy =
     [ "HashCrc32Fallback< ValueType >", "structthrill_1_1common_1_1HashCrc32Fallback.html", null ],
     [ "HashDataSwitch< T >", "structthrill_1_1common_1_1HashDataSwitch.html", null ],
     [ "HashDataSwitch< std::string >", "structthrill_1_1common_1_1HashDataSwitch_3_01std_1_1string_01_4.html", null ],
+    [ "hypergeometric_distribution< int_t, fp_t >", "classthrill_1_1common_1_1hypergeometric__distribution.html", null ],
     [ "Identity", "structthrill_1_1common_1_1Identity.html", null ],
     [ "ItemReaderToolsBase< Reader >", "classthrill_1_1common_1_1ItemReaderToolsBase.html", null ],
     [ "ItemWriterToolsBase< Writer >", "classthrill_1_1common_1_1ItemWriterToolsBase.html", null ],
@@ -270,10 +273,11 @@ var hierarchy =
     [ "ProfileThread::Timer", "structthrill_1_1common_1_1ProfileThread_1_1Timer.html", null ],
     [ "RadixSort< Type, MaxDepth >", "classthrill_1_1common_1_1RadixSort.html", null ],
     [ "Range", "classthrill_1_1common_1_1Range.html", null ],
-    [ "ReservoirSampling< Type >", "classthrill_1_1common_1_1ReservoirSampling.html", null ],
-    [ "ReservoirSamplingFast< Type >", "classthrill_1_1common_1_1ReservoirSamplingFast.html", null ],
-    [ "ReservoirSamplingGrow< Type >", "classthrill_1_1common_1_1ReservoirSamplingGrow.html", null ],
+    [ "ReservoirSampling< Type, RNG >", "classthrill_1_1common_1_1ReservoirSampling.html", null ],
+    [ "ReservoirSamplingFast< Type, RNG >", "classthrill_1_1common_1_1ReservoirSamplingFast.html", null ],
+    [ "ReservoirSamplingGrow< Type, RNG >", "classthrill_1_1common_1_1ReservoirSamplingGrow.html", null ],
     [ "RunTimer< Timer >", "classthrill_1_1common_1_1RunTimer.html", null ],
+    [ "Sampling< RNG >", "classthrill_1_1common_1_1Sampling.html", null ],
     [ "Semaphore", "classthrill_1_1common_1_1Semaphore.html", null ],
     [ "SharedState< ValueType >", "classthrill_1_1common_1_1SharedState.html", null ],
     [ "Singleton< Instance, destroy_on_exit >", "classthrill_1_1common_1_1Singleton.html", [
