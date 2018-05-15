@@ -406,7 +406,7 @@ $(document).ready(function(){initNavTree('connection_8hpp_source.html','');});
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        }</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="comment">// receive PODs directly into memory.</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Connection.html#ad7ed843a065f0a59d4e4933c58cef09a">SyncSendRecv</a>(value, n*<span class="keyword">sizeof</span>(<a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>), out_value, n*<span class="keyword">sizeof</span>(<a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>));</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Connection.html#ad7ed843a065f0a59d4e4933c58cef09a">SyncSendRecv</a>(value, n * <span class="keyword">sizeof</span>(<a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>), out_value, n * <span class="keyword">sizeof</span>(<a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>));</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    }</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
@@ -446,11 +446,11 @@ $(document).ready(function(){initNavTree('connection_8hpp_source.html','');});
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        }</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="comment">// fixed_size items can be sent/recv without size header</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <a class="code" href="classthrill_1_1net_1_1BufferBuilder.html">BufferBuilder</a> sendb(n*<a class="code" href="structthrill_1_1data_1_1Serialization.html">data::Serialization&lt;BufferBuilder, T&gt;::fixed_size</a>);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <a class="code" href="classthrill_1_1net_1_1BufferBuilder.html">BufferBuilder</a> sendb(n * <a class="code" href="structthrill_1_1data_1_1Serialization.html">data::Serialization&lt;BufferBuilder, T&gt;::fixed_size</a>);</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i) {</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            <a class="code" href="structthrill_1_1data_1_1Serialization.html">data::Serialization&lt;BufferBuilder, T&gt;::Serialize</a>(value[i], sendb);</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        }</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Buffer.html">Buffer</a> recvb(n*data::Serialization&lt;BufferBuilder, T&gt;::fixed_size);</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Buffer.html">Buffer</a> recvb(n * data::Serialization&lt;BufferBuilder, T&gt;::fixed_size);</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Connection.html#ad7ed843a065f0a59d4e4933c58cef09a">SyncSendRecv</a>(sendb.<a class="code" href="classthrill_1_1net_1_1BufferBuilder.html#a8d8653198ffec14cb0163bd7222e37a2">data</a>(), sendb.<a class="code" href="classthrill_1_1net_1_1BufferBuilder.html#aac782da1f912bceb5d8ad00c8dc892ac">size</a>(),</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                     recvb.<a class="code" href="classthrill_1_1net_1_1Buffer.html#a0b4fb6c261ed5f5792806334824d8bc8">data</a>(), recvb.<a class="code" href="classthrill_1_1net_1_1Buffer.html#a0801762a3fe36fe32dca5f16e515478d">size</a>());</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <a class="code" href="classthrill_1_1net_1_1BufferReader.html">BufferReader</a> br(recvb);</div>
@@ -584,7 +584,7 @@ $(document).ready(function(){initNavTree('connection_8hpp_source.html','');});
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            <a class="code" href="classthrill_1_1net_1_1Connection.html#abbd71682c470a8e0233d4cecc93df4b0">SyncSend</a>(&amp;hash_code, <span class="keyword">sizeof</span>(hash_code));</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        }</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        <span class="comment">// send PODs directly from memory.</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Connection.html#abbd71682c470a8e0233d4cecc93df4b0">SyncSend</a>(value, n*<span class="keyword">sizeof</span>(<a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>));</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Connection.html#abbd71682c470a8e0233d4cecc93df4b0">SyncSend</a>(value, n * <span class="keyword">sizeof</span>(<a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>));</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    }</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="comment">    //! Send an array of serializable non-POD fixed-length items T. if sending fails, a</span></div>
@@ -602,7 +602,7 @@ $(document).ready(function(){initNavTree('connection_8hpp_source.html','');});
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        <span class="comment">// fixed_size items can be sent without size header</span></div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        <span class="keyword">static</span> constexpr <span class="keywordtype">size_t</span> fixed_size</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;            = <a class="code" href="structthrill_1_1data_1_1Serialization.html">data::Serialization&lt;BufferBuilder, T&gt;::fixed_size</a>;</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <a class="code" href="classthrill_1_1net_1_1BufferBuilder.html">BufferBuilder</a> bb(n*fixed_size);</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <a class="code" href="classthrill_1_1net_1_1BufferBuilder.html">BufferBuilder</a> bb(n* fixed_size);</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i) {</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            <a class="code" href="structthrill_1_1data_1_1Serialization.html">data::Serialization&lt;BufferBuilder, T&gt;::Serialize</a>(value[i], bb);</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        }</div>
@@ -651,7 +651,7 @@ $(document).ready(function(){initNavTree('connection_8hpp_source.html','');});
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;            }</div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        }</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        <span class="comment">// receive PODs directly into memory.</span></div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Connection.html#a525e18aa2b838d5bc9c9f5cecd2456c7">SyncRecv</a>(out_value, n*<span class="keyword">sizeof</span>(<a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>));</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Connection.html#a525e18aa2b838d5bc9c9f5cecd2456c7">SyncRecv</a>(out_value, n * <span class="keyword">sizeof</span>(<a class="code" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>));</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    }</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;<span class="comment">    //! Receive an array of serializable non-POD fixed-length items T.</span></div>
@@ -671,7 +671,7 @@ $(document).ready(function(){initNavTree('connection_8hpp_source.html','');});
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;            }</div>
 <div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;        }</div>
 <div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;        <span class="comment">// fixed_size items can be received without size header</span></div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Buffer.html">Buffer</a> b(n*<a class="code" href="structthrill_1_1data_1_1Serialization.html">data::Serialization&lt;BufferBuilder, T&gt;::fixed_size</a>);</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Buffer.html">Buffer</a> b(n * <a class="code" href="structthrill_1_1data_1_1Serialization.html">data::Serialization&lt;BufferBuilder, T&gt;::fixed_size</a>);</div>
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        <a class="code" href="classthrill_1_1net_1_1Connection.html#a525e18aa2b838d5bc9c9f5cecd2456c7">SyncRecv</a>(b.<a class="code" href="classthrill_1_1net_1_1Buffer.html#a0b4fb6c261ed5f5792806334824d8bc8">data</a>(), b.<a class="code" href="classthrill_1_1net_1_1Buffer.html#a0801762a3fe36fe32dca5f16e515478d">size</a>());</div>
 <div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;        <a class="code" href="classthrill_1_1net_1_1BufferReader.html">BufferReader</a> br(b);</div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i) {</div>
@@ -819,7 +819,7 @@ $(document).ready(function(){initNavTree('connection_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1498198843d04809400c3646bfa82d14.html">net</a></li><li class="navelem"><a class="el" href="connection_8hpp.html">connection.hpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 13:40:56 for Thrill by
+    <li class="footer">Generated on Tue May 15 2018 14:20:17 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
