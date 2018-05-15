@@ -11,6 +11,6 @@ var classthrill_1_1common_1_1JsonLogger =
     [ "JsonLinePutSwitch", "classthrill_1_1common_1_1JsonLogger.html#a2f538ea23eb2528d3409e7969ebdb02c", null ],
     [ "common_", "classthrill_1_1common_1_1JsonLogger.html#a04dcad3a200be202a3ef0d87d3b0cf17", null ],
     [ "mutex_", "classthrill_1_1common_1_1JsonLogger.html#a281b5ec791338d4378e22ef44a51b4a1", null ],
-    [ "os_", "classthrill_1_1common_1_1JsonLogger.html#ac8f2ed44013260403ac039f5ecf73a56", null ],
+    [ "os_", "classthrill_1_1common_1_1JsonLogger.html#af3e2ff16a050867067545823b4aeec02", null ],
     [ "super_", "classthrill_1_1common_1_1JsonLogger.html#aec116ece334cf05d16528b8f6b78e2c1", null ]
 ];

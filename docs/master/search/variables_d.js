@@ -45,8 +45,6 @@ var searchData=
   ['num_5fparallel_5fasync_5f',['num_parallel_async_',['../classthrill_1_1data_1_1Multiplexer.html#a3ac7b25d37c4b24a9ab3884100751a1e',1,'thrill::data::Multiplexer']]],
   ['num_5fpartitions_5f',['num_partitions_',['../classthrill_1_1core_1_1ReduceTable.html#aa76370128579c21dea9f3bd09697d798',1,'thrill::core::ReduceTable']]],
   ['num_5fposted_5frequests_5f',['num_posted_requests_',['../classthrill_1_1io_1_1LinuxaioQueue.html#a7e0c0ef59e9c49ac6fcf317be0b0d44b',1,'thrill::io::LinuxaioQueue']]],
-  ['num_5fprefetch_5f',['num_prefetch_',['../classthrill_1_1data_1_1KeepFileBlockSource.html#acfdbf3c3d957ff686390d5b29263efc8',1,'thrill::data::KeepFileBlockSource::num_prefetch_()'],['../classthrill_1_1data_1_1ConsumeFileBlockSource.html#acfdbf3c3d957ff686390d5b29263efc8',1,'thrill::data::ConsumeFileBlockSource::num_prefetch_()']]],
-  ['num_5fqueue_5f',['num_queue_',['../classthrill_1_1data_1_1StreamSink.html#a214e195a78f3ab67c6150dae2b5bcf86',1,'thrill::data::StreamSink']]],
   ['num_5fsubranges_5f',['num_subranges_',['../classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a6e0702390c0e60fb7d4df787dbb4ab9e',1,'thrill::core::ReduceByIndexPostPhase']]],
   ['num_5fwaiting_5frequests_5f',['num_waiting_requests_',['../classthrill_1_1io_1_1LinuxaioQueue.html#a8b340f21259801604d3cc16478c3dd40',1,'thrill::io::LinuxaioQueue']]],
   ['num_5fworkers_5f',['num_workers_',['../classthrill_1_1data_1_1MixBlockQueue.html#a5babbe933617d7dd0cbb4e3c3d600cfd',1,'thrill::data::MixBlockQueue']]],

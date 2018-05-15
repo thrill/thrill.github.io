@@ -1,8 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"classthrill_1_1data_1_1StreamSink.html#ae751efacc761db14be5631a6049678c2":[1,1,1,49,31],
-"classthrill_1_1data_1_1StreamSink.html#af1f97adfaf66eeb2e51ed7450aabe5d2":[1,1,1,49,4],
-"classthrill_1_1data_1_1StreamSink.html#afa8720abaf6972d6dac22a8cd1a67225":[1,1,1,49,12],
 "classthrill_1_1data_1_1StreamSink.html#afb2b91acc8a5e9aa1a295c8da42f8067":[1,1,1,49,20],
 "classthrill_1_1data_1_1serialization__cereal_1_1ThrillInputArchive.html":[3,0,3,3,1,0],
 "classthrill_1_1data_1_1serialization__cereal_1_1ThrillInputArchive.html#a2ec3044d0f5127655a8d5742f6167ce9":[3,0,3,3,1,0,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX12 =
 "classthrill_1_1io_1_1LinuxaioRequest.html#ad001881d3586f138b977bdf370bccb98":[1,1,3,2,4,1],
 "classthrill_1_1io_1_1LinuxaioRequest.html#ae44c37040c840fe26263b365cbe4ccb3":[1,1,3,2,4,7],
 "classthrill_1_1io_1_1MemoryFile.html":[1,1,3,1,3],
-"classthrill_1_1io_1_1MemoryFile.html#a1fbc860102344bc9e36789c522ff9001":[1,1,3,1,3,0]
+"classthrill_1_1io_1_1MemoryFile.html#a1fbc860102344bc9e36789c522ff9001":[1,1,3,1,3,0],
+"classthrill_1_1io_1_1MemoryFile.html#a281b5ec791338d4378e22ef44a51b4a1":[1,1,3,1,3,8],
+"classthrill_1_1io_1_1MemoryFile.html#a2a2c0a10e9efdc05ec7770afa95f444e":[1,1,3,1,3,2],
+"classthrill_1_1io_1_1MemoryFile.html#a52cbc778bee172892c53e442067d3cdc":[1,1,3,1,3,1]
 };

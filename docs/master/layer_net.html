@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('layer_net.html','');});
 <ul>
 <li>a <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">num_hosts()</a> and <a class="el" href="classthrill_1_1net_1_1Group.html#ae75328939a4b19114b4f83b395d1d1e3">my_host_rank()</a> function to describe the size of the group.</li>
 <li>a point-to-point <a class="el" href="classthrill_1_1net_1_1Connection.html" title="A Connection represents a link to another peer in a network group. ">Connection</a> class with a rich set of Send, Receive methods to transfer serializable items to another peer in the group: <a class="el" href="classthrill_1_1net_1_1Connection.html#a3cf6aa5139d0f66235fc9b4f0ad8f4bd">Send&lt;T&gt;</a> and <a class="el" href="classthrill_1_1net_1_1Connection.html#aaa725633d364f4c3c189a0fc69122860">Receive&lt;T&gt;</a>. For more low-level packet-based communication there are further methods available.</li>
-<li>collective operations for any <b>serializable</b> datatypes: <a class="el" href="group__net__layer.html#ga782448b5832878bb098ea8641abe7d42">PrefixSum</a>.</li>
+<li>collective operations for any <b>serializable</b> datatypes: <a class="el" href="group__net__layer.html#ga752e0a2f9a7100c07c210cf433160102">PrefixSum</a>.</li>
 </ul>
 <p>If any operation on a <a class="el" href="classthrill_1_1net_1_1Connection.html" title="A Connection represents a link to another peer in a network group. ">Connection</a> fails, then an <a class="el" href="classthrill_1_1net_1_1Exception.html" title="A Exception is thrown by Connection on all errors instead of returning error codes. ">Exception</a> is thrown.</p>
 <p>For testing purposes <a class="el" href="classthrill_1_1net_1_1Group.html" title="A network Group is a collection of enumerated communication links, which provides point-to-point comm...">Group</a> provides the function <a class="el" href="group__net__layer.html#gab83feafa91bdc204ea3cc223f3265e56">ExecuteGroupThreads</a> which creates a mock <a class="el" href="classthrill_1_1net_1_1Group.html" title="A network Group is a collection of enumerated communication links, which provides point-to-point comm...">Group</a> of k partners. The partners are connected via internal sockets (real kernel level sockets), and for each partner a std::thread is spawned. The thread executes a test function which gets a <a class="el" href="classthrill_1_1net_1_1Group.html" title="A network Group is a collection of enumerated communication links, which provides point-to-point comm...">Group</a> object that can communicate with the other partners. This is ideal for testing network protocols. See the test-net-group.cpp for more examples.</p>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('layer_net.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Thrill Documentation Overview</a></li><li class="navelem"><a class="el" href="layer.html">Thrill Layer Architecture</a></li>
-    <li class="footer">Generated on Tue Dec 26 2017 13:47:50 for Thrill by
+    <li class="footer">Generated on Tue May 15 2018 13:08:28 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -2,7 +2,7 @@ var classthrill_1_1data_1_1MixStreamData =
 [
     [ "Handle", "classthrill_1_1data_1_1MixStreamData.html#aba0de9c0e3bd47ef10e222557b3066b4", null ],
     [ "MixReader", "classthrill_1_1data_1_1MixStreamData.html#ae67ff0487b99c345b044275f8184aebd", null ],
-    [ "MixStreamData", "classthrill_1_1data_1_1MixStreamData.html#a6cb9d6ed3e0063f498531496af4e1d5f", null ],
+    [ "MixStreamData", "classthrill_1_1data_1_1MixStreamData.html#ab0afd2e368d9ceb1b90660bad1f96089", null ],
     [ "MixStreamData", "classthrill_1_1data_1_1MixStreamData.html#a7812898dd632c8e18679121699fc5395", null ],
     [ "MixStreamData", "classthrill_1_1data_1_1MixStreamData.html#a138c267e6813d07bf164d653f176dca5", null ],
     [ "~MixStreamData", "classthrill_1_1data_1_1MixStreamData.html#a502e1d3a784c2cd0901a9ea86f6e7777", null ],

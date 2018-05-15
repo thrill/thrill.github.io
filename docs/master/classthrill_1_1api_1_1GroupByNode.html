@@ -169,8 +169,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a50bbe9134ad3a335b52a0ca1ad4f54ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1GroupByNode.html#a50bbe9134ad3a335b52a0ca1ad4f54ab">MainOp</a> ()</td></tr>
 <tr class="memdesc:a50bbe9134ad3a335b52a0ca1ad4f54ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive elements from other workers.  <a href="#a50bbe9134ad3a335b52a0ca1ad4f54ab">More...</a><br/></td></tr>
 <tr class="separator:a50bbe9134ad3a335b52a0ca1ad4f54ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13e975cf61f01e2a7e48c869a6d08430"><td class="memItemLeft" align="right" valign="top">std::pair&lt; size_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1GroupByNode.html#a13e975cf61f01e2a7e48c869a6d08430">MaxMergeDegreePrefetch</a> ()</td></tr>
-<tr class="separator:a13e975cf61f01e2a7e48c869a6d08430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabb20485e20d5ba2653efb6c715f6851"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1GroupByNode.html#aabb20485e20d5ba2653efb6c715f6851">RunUserFunc</a> (<a class="el" href="classthrill_1_1data_1_1File.html">data::File</a> &amp;f, bool consume)</td></tr>
 <tr class="separator:aabb20485e20d5ba2653efb6c715f6851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classthrill_1_1api_1_1DOpNode"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classthrill_1_1api_1_1DOpNode')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classthrill_1_1api_1_1DOpNode.html">DOpNode&lt; ValueType &gt;</a></td></tr>
@@ -569,11 +567,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sort and store elements in a file. </p>
 
-<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00327">327</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00333">333</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
 
-<p>References <a class="el" href="block__writer_8hpp_source.html#l00121">BlockWriter&lt; BlockSink &gt;::Close()</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="group__by__key_8hpp_source.html#l00299">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::files_</a>, <a class="el" href="context_8hpp_source.html#l00280">Context::GetFile()</a>, <a class="el" href="block__writer_8hpp_source.html#l00202">BlockWriter&lt; BlockSink &gt;::Put()</a>, and <a class="el" href="group__by__key_8hpp_source.html#l00301">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::totalsize_</a>.</p>
+<p>References <a class="el" href="block__writer_8hpp_source.html#l00121">BlockWriter&lt; BlockSink &gt;::Close()</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="group__by__key_8hpp_source.html#l00305">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::files_</a>, <a class="el" href="context_8hpp_source.html#l00280">Context::GetFile()</a>, <a class="el" href="block__writer_8hpp_source.html#l00202">BlockWriter&lt; BlockSink &gt;::Put()</a>, and <a class="el" href="group__by__key_8hpp_source.html#l00307">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::totalsize_</a>.</p>
 
-<p>Referenced by <a class="el" href="group__by__key_8hpp_source.html#l00341">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="group__by__key_8hpp_source.html#l00347">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -600,37 +598,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Receive elements from other workers. </p>
 
-<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00341">341</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00347">347</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
 
-<p>References <a class="el" href="group__by__key_8hpp_source.html#l00299">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::files_</a>, <a class="el" href="group__by__key_8hpp_source.html#l00327">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::FlushVectorToFile()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00172">thrill::mem::memory_exceeded</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00235">CountingPtr&lt; Type, Deleter &gt;::reset()</a>, <a class="el" href="group__by__key_8hpp_source.html#l00296">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::stream_</a>, and <a class="el" href="counting__ptr_8hpp_source.html#l00263">tlx::swap()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a13e975cf61f01e2a7e48c869a6d08430"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::pair&lt;size_t, size_t&gt; MaxMergeDegreePrefetch </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>calculate maximum merging degree from available memory and the number of files. additionally calculate the prefetch size of each File. </p>
-
-<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00373">373</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
-
-<p>References <a class="el" href="byte__block_8cpp_source.html#l00024">thrill::data::default_block_size</a>, <a class="el" href="group__by__key_8hpp_source.html#l00299">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::files_</a>, and <a class="el" href="dia__base_8hpp_source.html#l00314">DIABase::mem_limit_</a>.</p>
+<p>References <a class="el" href="group__by__key_8hpp_source.html#l00305">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::files_</a>, <a class="el" href="group__by__key_8hpp_source.html#l00333">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::FlushVectorToFile()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00172">thrill::mem::memory_exceeded</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00235">CountingPtr&lt; Type, Deleter &gt;::reset()</a>, <a class="el" href="group__by__key_8hpp_source.html#l00302">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::stream_</a>, and <a class="el" href="counting__ptr_8hpp_source.html#l00263">tlx::swap()</a>.</p>
 
 </div>
 </div>
@@ -666,7 +636,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00307">307</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00313">313</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
 
 <p>References <a class="el" href="file_8cpp_source.html#l00078">File::GetReader()</a>, <a class="el" href="group__by__key_8hpp_source.html#l00123">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::groupby_function_</a>, and <a class="el" href="dia__node_8hpp_source.html#l00147">DIANode&lt; ValueType &gt;::PushItem()</a>.</p>
 
@@ -705,7 +675,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00297">297</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00303">303</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
 
 </div>
 </div>
@@ -719,9 +689,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00299">299</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00305">305</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="group__by__key_8hpp_source.html#l00327">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::FlushVectorToFile()</a>, <a class="el" href="group__by__key_8hpp_source.html#l00341">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>, and <a class="el" href="group__by__key_8hpp_source.html#l00373">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::MaxMergeDegreePrefetch()</a>.</p>
+<p>Referenced by <a class="el" href="group__by__key_8hpp_source.html#l00333">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::FlushVectorToFile()</a>, and <a class="el" href="group__by__key_8hpp_source.html#l00347">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -737,7 +707,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00123">123</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="group__by__key_8hpp_source.html#l00307">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::RunUserFunc()</a>.</p>
+<p>Referenced by <a class="el" href="group__by__key_8hpp_source.html#l00313">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::RunUserFunc()</a>.</p>
 
 </div>
 </div>
@@ -751,7 +721,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00292">292</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00298">298</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
 
 </div>
 </div>
@@ -765,7 +735,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00294">294</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00300">300</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
 
 </div>
 </div>
@@ -781,7 +751,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>location detection and associated files </p>
 
-<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00304">304</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00310">310</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
 
 </div>
 </div>
@@ -795,7 +765,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00305">305</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00311">311</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
 
 </div>
 </div>
@@ -809,7 +779,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00300">300</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00306">306</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
 
 </div>
 </div>
@@ -823,9 +793,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00296">296</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00302">302</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="group__by__key_8hpp_source.html#l00341">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="group__by__key_8hpp_source.html#l00347">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -839,9 +809,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00301">301</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00307">307</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="group__by__key_8hpp_source.html#l00327">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::FlushVectorToFile()</a>.</p>
+<p>Referenced by <a class="el" href="group__by__key_8hpp_source.html#l00333">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::FlushVectorToFile()</a>.</p>
 
 </div>
 </div>
@@ -855,7 +825,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1api.html">api</a></li><li class="navelem"><a class="el" href="classthrill_1_1api_1_1GroupByNode.html">GroupByNode</a></li>
-    <li class="footer">Generated on Tue Dec 26 2017 13:47:51 for Thrill by
+    <li class="footer">Generated on Tue May 15 2018 13:08:28 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -13,7 +13,7 @@ var searchData=
   ['k_5f',['k_',['../group__tlx__data__structures__loser__tree.html#gaf6695151c0a339749b609b9fb0503480',1,'tlx::LoserTreeCopyBase::k_()'],['../group__tlx__data__structures__loser__tree.html#gaf6695151c0a339749b609b9fb0503480',1,'tlx::LoserTreePointerBase::k_()'],['../group__tlx__data__structures__loser__tree.html#ga5dd0613cf9174c2621a10433acc705a1',1,'tlx::LoserTreeCopyUnguardedBase::k_()'],['../group__tlx__data__structures__loser__tree.html#ga5dd0613cf9174c2621a10433acc705a1',1,'tlx::LoserTreePointerUnguardedBase::k_()'],['../classthrill_1_1common_1_1RadixSort.html#a173252c88258bbdf36761265600f24ae',1,'thrill::common::RadixSort::K_()']]],
   ['keep',['Keep',['../classthrill_1_1api_1_1DIA.html#abe53b76f00a59b79305508dedfd849ec',1,'thrill::api::DIA']]],
   ['keep_5ffirst_5fitem',['keep_first_item',['../classthrill_1_1data_1_1KeepFileBlockSource.html#a4ac264ba2e70142b26430b29d004a736',1,'thrill::data::KeepFileBlockSource']]],
-  ['keepfileblocksource',['KeepFileBlockSource',['../classthrill_1_1data_1_1KeepFileBlockSource.html#a8b7dcb5a7b2fd989c474dac52e3b4793',1,'thrill::data::KeepFileBlockSource']]],
+  ['keepfileblocksource',['KeepFileBlockSource',['../classthrill_1_1data_1_1KeepFileBlockSource.html#a17cd6c2f53e981d3a033fb9170efc9c3',1,'thrill::data::KeepFileBlockSource']]],
   ['keepfileblocksource',['KeepFileBlockSource',['../classthrill_1_1data_1_1KeepFileBlockSource.html',1,'thrill::data']]],
   ['keepforever',['KeepForever',['../classthrill_1_1api_1_1DIA.html#a373d55d48acf20802d2ac9b6bca83376',1,'thrill::api::DIA']]],
   ['keepreader',['KeepReader',['../classthrill_1_1data_1_1File.html#a05aa70cf2e99e2ddf105d1f003c31f6b',1,'thrill::data::File']]],

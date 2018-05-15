@@ -1,5 +1,8 @@
 var NAVTREEINDEX32 =
 {
+"structexamples_1_1stochastic__gradient__descent_1_1GradientResult.html#af1bc3875f801cb81d66f3076f3094267":[3,0,0,5,1,1],
+"structexamples_1_1stochastic__gradient__descent_1_1SumResult.html":[3,0,0,5,4],
+"structexamples_1_1stochastic__gradient__descent_1_1SumResult.html#a47e90a7a9e14361ffb6033cfa1e18393":[3,0,0,5,4,1],
 "structexamples_1_1stochastic__gradient__descent_1_1SumResult.html#aec7e5e5a6f5eedaef0e8c376bedf5cf7":[3,0,0,5,4,2],
 "structexamples_1_1stochastic__gradient__descent_1_1SumResult.html#af1bc3875f801cb81d66f3076f3094267":[3,0,0,5,4,0],
 "structexamples_1_1suffix__sorting_1_1IndexChar.html":[3,0,0,6,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX32 =
 "structthrill_1_1io_1_1FullyRandom.html#a3c330340f97d896973fe93429da1325a":[1,1,3,0,1,3],
 "structthrill_1_1io_1_1FullyRandom.html#aa494a7f13801563a7f1f2fcca2e71c18":[1,1,3,0,1,0],
 "structthrill_1_1io_1_1FullyRandom.html#aa6be32e0d1b4bd24f8745d1d3267b295":[1,1,3,0,1,2],
-"structthrill_1_1io_1_1FullyRandom.html#aa9fae34d3ffbf0d868ded27d7db35133":[1,1,3,0,1,4],
-"structthrill_1_1io_1_1FullyRandom.html#af0889df178f7d100dfc5f9a9998a800d":[1,1,3,0,1,1],
-"structthrill_1_1io_1_1OffsetAllocator.html":[1,1,3,0,2],
-"structthrill_1_1io_1_1OffsetAllocator.html#a254720b70a08e5d508bc5f36f13406aa":[1,1,3,0,2,3]
+"structthrill_1_1io_1_1FullyRandom.html#aa9fae34d3ffbf0d868ded27d7db35133":[1,1,3,0,1,4]
 };

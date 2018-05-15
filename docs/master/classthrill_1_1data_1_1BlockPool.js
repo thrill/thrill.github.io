@@ -17,6 +17,7 @@ var classthrill_1_1data_1_1BlockPool =
     [ "logger", "classthrill_1_1data_1_1BlockPool.html#ae34d8ffa837be823690600d6a05e9ef5", null ],
     [ "MapExternalBlock", "classthrill_1_1data_1_1BlockPool.html#abaa707b0b4ecc336191488812b7b1530", null ],
     [ "max_total_bytes", "classthrill_1_1data_1_1BlockPool.html#a18cb9f2c8857872390a0097ce169546a", null ],
+    [ "MaxMergeDegreePrefetch", "classthrill_1_1data_1_1BlockPool.html#ad5110b7cc7d01fb7c26d3a0bbd3c3865", null ],
     [ "next_file_id", "classthrill_1_1data_1_1BlockPool.html#a83d0f028182e215a5f430b68449f4ac3", null ],
     [ "OnReadComplete", "classthrill_1_1data_1_1BlockPool.html#af042bba96cccc6d8dc48c39e4e736efc", null ],
     [ "OnWriteComplete", "classthrill_1_1data_1_1BlockPool.html#a62a302633f3bb90c7ede3fa27c4577df", null ],

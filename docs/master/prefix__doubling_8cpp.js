@@ -9,6 +9,7 @@ var prefix__doubling_8cpp =
       [ "UNIQUE", "prefix__doubling_8cpp.html#a0a4f3a9529720d35be02b55b8f7444d0a88e3e8040c7cd11b9faffdf34372fa2a", null ],
       [ "FULLY_DISCARDED", "prefix__doubling_8cpp.html#a0a4f3a9529720d35be02b55b8f7444d0abb9c7abe9d4a342794d5e465889500f2", null ]
     ] ],
+    [ "operator<<", "prefix__doubling_8cpp.html#adf92b94809275b5e93002873f6a2a2d2", null ],
     [ "PrefixDoublingDiscarding", "prefix__doubling_8cpp.html#a77a61f0730b6dc675ab63497cb9e8a0f", null ],
     [ "PrefixDoublingDiscarding< common::uint40 >", "prefix__doubling_8cpp.html#a3d0406baea2cee0ff995b867be2b9c3a", null ],
     [ "PrefixDoublingDiscarding< uint32_t >", "prefix__doubling_8cpp.html#adc30b809f74f502e5a2e184f97557617", null ],

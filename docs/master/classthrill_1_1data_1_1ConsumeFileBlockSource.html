@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('classthrill_1_1data_1_1ConsumeFileBloc
 <p>The <a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html" title="A BlockSource to read and simultaneously consume Blocks from a File. ">ConsumeFileBlockSource</a> always returns the first block of the <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> and removes it, hence, consuming Blocks from the <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>.</p>
 <dl class="section attention"><dt>Attention</dt><dd>The reader consumes the <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>'s contents UNCONDITIONALLY, the <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> will always be emptied whether all items were read via the Reader or not. </dd></dl>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00401">401</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00406">406</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for ConsumeFileBlockSource:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -141,8 +141,8 @@ $(document).ready(function(){initNavTree('classthrill_1_1data_1_1ConsumeFileBloc
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac1554cff10485f385772329898b1eeee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html#ac1554cff10485f385772329898b1eeee">ConsumeFileBlockSource</a> (<a class="el" href="classthrill_1_1data_1_1File.html">File</a> *file, size_t local_worker_id, size_t num_prefetch=<a class="el" href="classthrill_1_1data_1_1File.html#afbf6cd3dfaf227d9d3354af50af5fa5e">File::default_prefetch</a>)</td></tr>
-<tr class="separator:ac1554cff10485f385772329898b1eeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ac4e7ade00a517ac4c2473e4fd14b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html#ad5ac4e7ade00a517ac4c2473e4fd14b4">ConsumeFileBlockSource</a> (<a class="el" href="classthrill_1_1data_1_1File.html">File</a> *file, size_t local_worker_id, size_t prefetch_size=<a class="el" href="classthrill_1_1data_1_1File.html#a72cb20a6a53a269d507c18272e1bf941">File::default_prefetch_size_</a>)</td></tr>
+<tr class="separator:ad5ac4e7ade00a517ac4c2473e4fd14b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae34ecc6478183daed410b0d654a5afda"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html#ae34ecc6478183daed410b0d654a5afda">ConsumeFileBlockSource</a> (const <a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html">ConsumeFileBlockSource</a> &amp;)=delete</td></tr>
 <tr class="memdesc:ae34ecc6478183daed410b0d654a5afda"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-copyable: delete copy-constructor  <a href="#ae34ecc6478183daed410b0d654a5afda">More...</a><br/></td></tr>
 <tr class="separator:ae34ecc6478183daed410b0d654a5afda"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,27 +158,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9d46258ffcf32a3519dc9e2e86d4c698"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html">ConsumeFileBlockSource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html#a9d46258ffcf32a3519dc9e2e86d4c698">operator=</a> (const <a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html">ConsumeFileBlockSource</a> &amp;)=delete</td></tr>
 <tr class="memdesc:a9d46258ffcf32a3519dc9e2e86d4c698"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-copyable: delete assignment operator  <a href="#a9d46258ffcf32a3519dc9e2e86d4c698">More...</a><br/></td></tr>
 <tr class="separator:a9d46258ffcf32a3519dc9e2e86d4c698"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99d0f70c40280c19c912fad4b0174277"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html#a99d0f70c40280c19c912fad4b0174277">Prefetch</a> (size_t prefetch)</td></tr>
-<tr class="memdesc:a99d0f70c40280c19c912fad4b0174277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform prefetch.  <a href="#a99d0f70c40280c19c912fad4b0174277">More...</a><br/></td></tr>
-<tr class="separator:a99d0f70c40280c19c912fad4b0174277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4082fc2aa1495426361a522c8f05494b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html#a4082fc2aa1495426361a522c8f05494b">Prefetch</a> (size_t prefetch_size)</td></tr>
+<tr class="memdesc:a4082fc2aa1495426361a522c8f05494b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform prefetch.  <a href="#a4082fc2aa1495426361a522c8f05494b">More...</a><br/></td></tr>
+<tr class="separator:a4082fc2aa1495426361a522c8f05494b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:afc2c73d4b69a12f6e96083d8c65c7bbd"><td class="memItemLeft" align="right" valign="top">std::deque&lt; <a class="el" href="group__data__layer.html#ga4b9f085af7a96d5667c0754e791ac028">PinRequestPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html#afc2c73d4b69a12f6e96083d8c65c7bbd">fetching_blocks_</a></td></tr>
 <tr class="memdesc:afc2c73d4b69a12f6e96083d8c65c7bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">current prefetch operations  <a href="#afc2c73d4b69a12f6e96083d8c65c7bbd">More...</a><br/></td></tr>
 <tr class="separator:afc2c73d4b69a12f6e96083d8c65c7bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6665fcc305ab0258b06d4cf4088764b0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html#a6665fcc305ab0258b06d4cf4088764b0">fetching_bytes_</a></td></tr>
+<tr class="memdesc:a6665fcc305ab0258b06d4cf4088764b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">current number of bytes in prefetch  <a href="#a6665fcc305ab0258b06d4cf4088764b0">More...</a><br/></td></tr>
+<tr class="separator:a6665fcc305ab0258b06d4cf4088764b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab967309ad33ba6c857200e0761a7ec6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1File.html">File</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html#ab967309ad33ba6c857200e0761a7ec6c">file_</a></td></tr>
 <tr class="memdesc:ab967309ad33ba6c857200e0761a7ec6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">file to consume blocks from (ptr to make moving easier)  <a href="#ab967309ad33ba6c857200e0761a7ec6c">More...</a><br/></td></tr>
 <tr class="separator:ab967309ad33ba6c857200e0761a7ec6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14f406dd3db4af71f3634ff63cedac2e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html#a14f406dd3db4af71f3634ff63cedac2e">local_worker_id_</a></td></tr>
 <tr class="memdesc:a14f406dd3db4af71f3634ff63cedac2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">local worker id reading the <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>  <a href="#a14f406dd3db4af71f3634ff63cedac2e">More...</a><br/></td></tr>
 <tr class="separator:a14f406dd3db4af71f3634ff63cedac2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfdbf3c3d957ff686390d5b29263efc8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html#acfdbf3c3d957ff686390d5b29263efc8">num_prefetch_</a></td></tr>
-<tr class="memdesc:acfdbf3c3d957ff686390d5b29263efc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of block prefetch operations  <a href="#acfdbf3c3d957ff686390d5b29263efc8">More...</a><br/></td></tr>
-<tr class="separator:acfdbf3c3d957ff686390d5b29263efc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0c230ead33991cf266d861f063fc6d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html#aef0c230ead33991cf266d861f063fc6d">prefetch_size_</a></td></tr>
+<tr class="memdesc:aef0c230ead33991cf266d861f063fc6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of bytes of prefetch for reader  <a href="#aef0c230ead33991cf266d861f063fc6d">More...</a><br/></td></tr>
+<tr class="separator:aef0c230ead33991cf266d861f063fc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac1554cff10485f385772329898b1eeee"></a>
+<a class="anchor" id="ad5ac4e7ade00a517ac4c2473e4fd14b4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -198,7 +201,7 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>num_prefetch</em> = <code><a class="el" href="classthrill_1_1data_1_1File.html#afbf6cd3dfaf227d9d3354af50af5fa5e">File::default_prefetch</a></code>&#160;</td>
+          <td class="paramname"><em>prefetch_size</em> = <code><a class="el" href="classthrill_1_1data_1_1File.html#a72cb20a6a53a269d507c18272e1bf941">File::default_prefetch_size_</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -209,9 +212,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Start reading a <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>. Creates a source for the given file and set the number of blocks that should be prefetched. 0 means that no blocks are prefetched. </p>
 
-<p>Definition at line <a class="el" href="file_8cpp_source.html#l00177">177</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8cpp_source.html#l00181">181</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
 
-<p>References <a class="el" href="file_8hpp_source.html#l00435">ConsumeFileBlockSource::num_prefetch_</a>, and <a class="el" href="file_8cpp_source.html#l00191">ConsumeFileBlockSource::Prefetch()</a>.</p>
+<p>References <a class="el" href="file_8cpp_source.html#l00197">ConsumeFileBlockSource::Prefetch()</a>, and <a class="el" href="file_8hpp_source.html#l00440">ConsumeFileBlockSource::prefetch_size_</a>.</p>
 
 </div>
 </div>
@@ -257,7 +260,7 @@ Private Attributes</h2></td></tr>
 
 <p>move-constructor: default </p>
 
-<p>Definition at line <a class="el" href="file_8cpp_source.html#l00184">184</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8cpp_source.html#l00189">189</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
 
 </div>
 </div>
@@ -276,9 +279,9 @@ Private Attributes</h2></td></tr>
 
 <p>Consume unread blocks and reset <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> to zero items. </p>
 
-<p>Definition at line <a class="el" href="file_8cpp_source.html#l00231">231</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8cpp_source.html#l00241">241</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
 
-<p>References <a class="el" href="file_8cpp_source.html#l00057">File::Clear()</a>, and <a class="el" href="file_8hpp_source.html#l00429">ConsumeFileBlockSource::file_</a>.</p>
+<p>References <a class="el" href="file_8cpp_source.html#l00057">File::Clear()</a>, and <a class="el" href="file_8hpp_source.html#l00434">ConsumeFileBlockSource::file_</a>.</p>
 
 </div>
 </div>
@@ -298,9 +301,9 @@ Private Attributes</h2></td></tr>
 
 <p>Get the next block of file. </p>
 
-<p>Definition at line <a class="el" href="file_8cpp_source.html#l00206">206</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8cpp_source.html#l00214">214</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
 
-<p>References <a class="el" href="file_8hpp_source.html#l00260">File::blocks_</a>, <a class="el" href="file_8hpp_source.html#l00438">ConsumeFileBlockSource::fetching_blocks_</a>, <a class="el" href="file_8hpp_source.html#l00429">ConsumeFileBlockSource::file_</a>, <a class="el" href="file_8hpp_source.html#l00432">ConsumeFileBlockSource::local_worker_id_</a>, and <a class="el" href="file_8hpp_source.html#l00435">ConsumeFileBlockSource::num_prefetch_</a>.</p>
+<p>References <a class="el" href="file_8hpp_source.html#l00262">File::blocks_</a>, <a class="el" href="file_8hpp_source.html#l00443">ConsumeFileBlockSource::fetching_blocks_</a>, <a class="el" href="file_8hpp_source.html#l00446">ConsumeFileBlockSource::fetching_bytes_</a>, <a class="el" href="file_8hpp_source.html#l00434">ConsumeFileBlockSource::file_</a>, <a class="el" href="file_8hpp_source.html#l00437">ConsumeFileBlockSource::local_worker_id_</a>, <a class="el" href="block_8cpp_source.html#l00039">Block::Pin()</a>, <a class="el" href="file_8hpp_source.html#l00440">ConsumeFileBlockSource::prefetch_size_</a>, <a class="el" href="block_8hpp_source.html#l00100">Block::size()</a>, and <a class="el" href="block_8hpp_source.html#l00245">PinnedBlock::size()</a>.</p>
 
 </div>
 </div>
@@ -330,7 +333,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a99d0f70c40280c19c912fad4b0174277"></a>
+<a class="anchor" id="a4082fc2aa1495426361a522c8f05494b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -338,7 +341,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">void Prefetch </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>prefetch</em></td><td>)</td>
+          <td class="paramname"><em>prefetch_size</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -346,11 +349,11 @@ Private Attributes</h2></td></tr>
 
 <p>Perform prefetch. </p>
 
-<p>Definition at line <a class="el" href="file_8cpp_source.html#l00191">191</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8cpp_source.html#l00197">197</a> of file <a class="el" href="file_8cpp_source.html">file.cpp</a>.</p>
 
-<p>References <a class="el" href="file_8hpp_source.html#l00260">File::blocks_</a>, <a class="el" href="file_8hpp_source.html#l00438">ConsumeFileBlockSource::fetching_blocks_</a>, <a class="el" href="file_8hpp_source.html#l00429">ConsumeFileBlockSource::file_</a>, <a class="el" href="file_8hpp_source.html#l00432">ConsumeFileBlockSource::local_worker_id_</a>, and <a class="el" href="file_8hpp_source.html#l00435">ConsumeFileBlockSource::num_prefetch_</a>.</p>
+<p>References <a class="el" href="file_8hpp_source.html#l00262">File::blocks_</a>, <a class="el" href="file_8hpp_source.html#l00443">ConsumeFileBlockSource::fetching_blocks_</a>, <a class="el" href="file_8hpp_source.html#l00446">ConsumeFileBlockSource::fetching_bytes_</a>, <a class="el" href="file_8hpp_source.html#l00434">ConsumeFileBlockSource::file_</a>, <a class="el" href="file_8hpp_source.html#l00437">ConsumeFileBlockSource::local_worker_id_</a>, <a class="el" href="block_8cpp_source.html#l00039">Block::Pin()</a>, <a class="el" href="file_8hpp_source.html#l00440">ConsumeFileBlockSource::prefetch_size_</a>, and <a class="el" href="block_8hpp_source.html#l00100">Block::size()</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00177">ConsumeFileBlockSource::ConsumeFileBlockSource()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00181">ConsumeFileBlockSource::ConsumeFileBlockSource()</a>.</p>
 
 </div>
 </div>
@@ -375,9 +378,35 @@ Private Attributes</h2></td></tr>
 
 <p>current prefetch operations </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00438">438</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00443">443</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00206">ConsumeFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00191">ConsumeFileBlockSource::Prefetch()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00214">ConsumeFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00197">ConsumeFileBlockSource::Prefetch()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6665fcc305ab0258b06d4cf4088764b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t fetching_bytes_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>current number of bytes in prefetch </p>
+
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00446">446</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00214">ConsumeFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00197">ConsumeFileBlockSource::Prefetch()</a>.</p>
 
 </div>
 </div>
@@ -401,9 +430,9 @@ Private Attributes</h2></td></tr>
 
 <p>file to consume blocks from (ptr to make moving easier) </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00429">429</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00434">434</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00206">ConsumeFileBlockSource::NextBlock()</a>, <a class="el" href="file_8cpp_source.html#l00191">ConsumeFileBlockSource::Prefetch()</a>, and <a class="el" href="file_8cpp_source.html#l00231">ConsumeFileBlockSource::~ConsumeFileBlockSource()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00214">ConsumeFileBlockSource::NextBlock()</a>, <a class="el" href="file_8cpp_source.html#l00197">ConsumeFileBlockSource::Prefetch()</a>, and <a class="el" href="file_8cpp_source.html#l00241">ConsumeFileBlockSource::~ConsumeFileBlockSource()</a>.</p>
 
 </div>
 </div>
@@ -427,13 +456,13 @@ Private Attributes</h2></td></tr>
 
 <p>local worker id reading the <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00432">432</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00437">437</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00206">ConsumeFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00191">ConsumeFileBlockSource::Prefetch()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00214">ConsumeFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00197">ConsumeFileBlockSource::Prefetch()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="acfdbf3c3d957ff686390d5b29263efc8"></a>
+<a class="anchor" id="aef0c230ead33991cf266d861f063fc6d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -441,7 +470,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t num_prefetch_</td>
+          <td class="memname">size_t prefetch_size_</td>
         </tr>
       </table>
   </td>
@@ -451,11 +480,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>number of block prefetch operations </p>
+<p>number of bytes of prefetch for reader </p>
 
-<p>Definition at line <a class="el" href="file_8hpp_source.html#l00435">435</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="file_8hpp_source.html#l00440">440</a> of file <a class="el" href="file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file_8cpp_source.html#l00177">ConsumeFileBlockSource::ConsumeFileBlockSource()</a>, <a class="el" href="file_8cpp_source.html#l00206">ConsumeFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00191">ConsumeFileBlockSource::Prefetch()</a>.</p>
+<p>Referenced by <a class="el" href="file_8cpp_source.html#l00181">ConsumeFileBlockSource::ConsumeFileBlockSource()</a>, <a class="el" href="file_8cpp_source.html#l00214">ConsumeFileBlockSource::NextBlock()</a>, and <a class="el" href="file_8cpp_source.html#l00197">ConsumeFileBlockSource::Prefetch()</a>.</p>
 
 </div>
 </div>
@@ -469,7 +498,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1ConsumeFileBlockSource.html">ConsumeFileBlockSource</a></li>
-    <li class="footer">Generated on Tue Dec 26 2017 13:47:52 for Thrill by
+    <li class="footer">Generated on Tue May 15 2018 13:08:29 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

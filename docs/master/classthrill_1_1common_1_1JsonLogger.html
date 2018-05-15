@@ -143,7 +143,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af0b68d6281041d627baab035160e032a"><td class="mdescLeft">&#160;</td><td class="mdescRight">open <a class="el" href="classthrill_1_1common_1_1JsonLogger.html" title="JsonLogger is a receiver of JSON output objects for logging. ">JsonLogger</a> with ofstream uninitialized to discard log output.  <a href="#af0b68d6281041d627baab035160e032a">More...</a><br/></td></tr>
 <tr class="separator:af0b68d6281041d627baab035160e032a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a231e2f7226ed47e3416c59f519e5d528"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1JsonLogger.html#a231e2f7226ed47e3416c59f519e5d528">JsonLogger</a> (const std::string &amp;path)</td></tr>
-<tr class="memdesc:a231e2f7226ed47e3416c59f519e5d528"><td class="mdescLeft">&#160;</td><td class="mdescRight">open <a class="el" href="classthrill_1_1common_1_1JsonLogger.html" title="JsonLogger is a receiver of JSON output objects for logging. ">JsonLogger</a> with ofstream  <a href="#a231e2f7226ed47e3416c59f519e5d528">More...</a><br/></td></tr>
+<tr class="memdesc:a231e2f7226ed47e3416c59f519e5d528"><td class="mdescLeft">&#160;</td><td class="mdescRight">open <a class="el" href="classthrill_1_1common_1_1JsonLogger.html" title="JsonLogger is a receiver of JSON output objects for logging. ">JsonLogger</a> with ofstream. if path is empty, output goes to stdout  <a href="#a231e2f7226ed47e3416c59f519e5d528">More...</a><br/></td></tr>
 <tr class="separator:a231e2f7226ed47e3416c59f519e5d528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c0a92de6256c83c7510902f868285d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1JsonLogger.html#a7c0a92de6256c83c7510902f868285d1">JsonLogger</a> (<a class="el" href="classthrill_1_1common_1_1JsonLogger.html">JsonLogger</a> *super)</td></tr>
 <tr class="memdesc:a7c0a92de6256c83c7510902f868285d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">open <a class="el" href="classthrill_1_1common_1_1JsonLogger.html" title="JsonLogger is a receiver of JSON output objects for logging. ">JsonLogger</a> with a super logger  <a href="#a7c0a92de6256c83c7510902f868285d1">More...</a><br/></td></tr>
@@ -169,9 +169,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a281b5ec791338d4378e22ef44a51b4a1"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1JsonLogger.html#a281b5ec791338d4378e22ef44a51b4a1">mutex_</a></td></tr>
 <tr class="memdesc:a281b5ec791338d4378e22ef44a51b4a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">mutex to lock logger output  <a href="#a281b5ec791338d4378e22ef44a51b4a1">More...</a><br/></td></tr>
 <tr class="separator:a281b5ec791338d4378e22ef44a51b4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8f2ed44013260403ac039f5ecf73a56"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1JsonLogger.html#ac8f2ed44013260403ac039f5ecf73a56">os_</a></td></tr>
-<tr class="memdesc:ac8f2ed44013260403ac039f5ecf73a56"><td class="mdescLeft">&#160;</td><td class="mdescRight">direct output stream for top loggers  <a href="#ac8f2ed44013260403ac039f5ecf73a56">More...</a><br/></td></tr>
-<tr class="separator:ac8f2ed44013260403ac039f5ecf73a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e2ff16a050867067545823b4aeec02"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; std::ostream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1JsonLogger.html#af3e2ff16a050867067545823b4aeec02">os_</a></td></tr>
+<tr class="memdesc:af3e2ff16a050867067545823b4aeec02"><td class="mdescLeft">&#160;</td><td class="mdescRight">direct output stream for top loggers  <a href="#af3e2ff16a050867067545823b4aeec02">More...</a><br/></td></tr>
+<tr class="separator:af3e2ff16a050867067545823b4aeec02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec116ece334cf05d16528b8f6b78e2c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1common_1_1JsonLogger.html">JsonLogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1JsonLogger.html#aec116ece334cf05d16528b8f6b78e2c1">super_</a> = nullptr</td></tr>
 <tr class="memdesc:aec116ece334cf05d16528b8f6b78e2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">output to superior <a class="el" href="classthrill_1_1common_1_1JsonLogger.html" title="JsonLogger is a receiver of JSON output objects for logging. ">JsonLogger</a>  <a href="#aec116ece334cf05d16528b8f6b78e2c1">More...</a><br/></td></tr>
 <tr class="separator:aec116ece334cf05d16528b8f6b78e2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,9 +224,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>open <a class="el" href="classthrill_1_1common_1_1JsonLogger.html" title="JsonLogger is a receiver of JSON output objects for logging. ">JsonLogger</a> with ofstream </p>
+<p>open <a class="el" href="classthrill_1_1common_1_1JsonLogger.html" title="JsonLogger is a receiver of JSON output objects for logging. ">JsonLogger</a> with ofstream. if path is empty, output goes to stdout </p>
 
-<p>Definition at line <a class="el" href="json__logger_8cpp_source.html#l00031">31</a> of file <a class="el" href="json__logger_8cpp_source.html">json_logger.cpp</a>.</p>
+<p>Definition at line <a class="el" href="json__logger_8cpp_source.html#l00033">33</a> of file <a class="el" href="json__logger_8cpp_source.html">json_logger.cpp</a>.</p>
 
 <p>References <a class="el" href="die_8hpp_source.html#l00042">die</a>, and <a class="el" href="json__logger_8hpp_source.html#l00100">JsonLogger::os_</a>.</p>
 
@@ -256,7 +256,7 @@ Public Attributes</h2></td></tr>
 
 <p>open <a class="el" href="classthrill_1_1common_1_1JsonLogger.html" title="JsonLogger is a receiver of JSON output objects for logging. ">JsonLogger</a> with a super logger </p>
 
-<p>Definition at line <a class="el" href="json__logger_8cpp_source.html#l00041">41</a> of file <a class="el" href="json__logger_8cpp_source.html">json_logger.cpp</a>.</p>
+<p>Definition at line <a class="el" href="json__logger_8cpp_source.html#l00054">54</a> of file <a class="el" href="json__logger_8cpp_source.html">json_logger.cpp</a>.</p>
 
 </div>
 </div>
@@ -315,11 +315,11 @@ Public Attributes</h2></td></tr>
 
 <p>create new <a class="el" href="classthrill_1_1common_1_1JsonLine.html" title="JsonLine is an object used to aggregate a set of key:value pairs for output into a JSON log...">JsonLine</a> instance which will be written to this logger. </p>
 
-<p>Definition at line <a class="el" href="json__logger_8cpp_source.html#l00044">44</a> of file <a class="el" href="json__logger_8cpp_source.html">json_logger.cpp</a>.</p>
+<p>Definition at line <a class="el" href="json__logger_8cpp_source.html#l00057">57</a> of file <a class="el" href="json__logger_8cpp_source.html">json_logger.cpp</a>.</p>
 
-<p>References <a class="el" href="json__logger_8hpp_source.html#l00106">JsonLogger::common_</a>, <a class="el" href="json__logger_8cpp_source.html#l00044">JsonLogger::line()</a>, <a class="el" href="json__logger_8hpp_source.html#l00100">JsonLogger::os_</a>, <a class="el" href="json__logger_8hpp_source.html#l00043">JsonVerbatim::str_</a>, and <a class="el" href="json__logger_8hpp_source.html#l00097">JsonLogger::super_</a>.</p>
+<p>References <a class="el" href="json__logger_8hpp_source.html#l00106">JsonLogger::common_</a>, <a class="el" href="json__logger_8hpp_source.html#l00109">JsonLogger::JsonLine</a>, <a class="el" href="json__logger_8cpp_source.html#l00057">JsonLogger::line()</a>, <a class="el" href="json__logger_8hpp_source.html#l00100">JsonLogger::os_</a>, <a class="el" href="json__logger_8hpp_source.html#l00043">JsonVerbatim::str_</a>, and <a class="el" href="json__logger_8hpp_source.html#l00097">JsonLogger::super_</a>.</p>
 
-<p>Referenced by <a class="el" href="json__logger_8cpp_source.html#l00044">JsonLogger::line()</a>, <a class="el" href="json__logger_8hpp_source.html#l00431">JsonLogger::operator&lt;&lt;()</a>, and <a class="el" href="group_8cpp_source.html#l00084">Manager::RunTask()</a>.</p>
+<p>Referenced by <a class="el" href="json__logger_8cpp_source.html#l00057">JsonLogger::line()</a>, <a class="el" href="json__logger_8hpp_source.html#l00431">JsonLogger::operator&lt;&lt;()</a>, and <a class="el" href="group_8cpp_source.html#l00084">Manager::RunTask()</a>.</p>
 
 </div>
 </div>
@@ -347,7 +347,7 @@ Public Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="json__logger_8hpp_source.html#l00431">431</a> of file <a class="el" href="json__logger_8hpp_source.html">json_logger.hpp</a>.</p>
 
-<p>References <a class="el" href="json__logger_8cpp_source.html#l00044">JsonLogger::line()</a>.</p>
+<p>References <a class="el" href="json__logger_8cpp_source.html#l00057">JsonLogger::line()</a>.</p>
 
 </div>
 </div>
@@ -383,7 +383,7 @@ Public Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="json__logger_8hpp_source.html#l00106">106</a> of file <a class="el" href="json__logger_8hpp_source.html">json_logger.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="json__logger_8hpp_source.html#l00416">JsonLogger::JsonLogger()</a>, and <a class="el" href="json__logger_8cpp_source.html#l00044">JsonLogger::line()</a>.</p>
+<p>Referenced by <a class="el" href="json__logger_8hpp_source.html#l00416">JsonLogger::JsonLogger()</a>, and <a class="el" href="json__logger_8cpp_source.html#l00057">JsonLogger::line()</a>.</p>
 
 </div>
 </div>
@@ -405,12 +405,12 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac8f2ed44013260403ac039f5ecf73a56"></a>
+<a class="anchor" id="af3e2ff16a050867067545823b4aeec02"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::ofstream os_</td>
+          <td class="memname">std::unique_ptr&lt;std::ostream&gt; os_</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -419,7 +419,7 @@ Public Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="json__logger_8hpp_source.html#l00100">100</a> of file <a class="el" href="json__logger_8hpp_source.html">json_logger.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="json__logger_8cpp_source.html#l00031">JsonLogger::JsonLogger()</a>, and <a class="el" href="json__logger_8cpp_source.html#l00044">JsonLogger::line()</a>.</p>
+<p>Referenced by <a class="el" href="json__logger_8cpp_source.html#l00033">JsonLogger::JsonLogger()</a>, and <a class="el" href="json__logger_8cpp_source.html#l00057">JsonLogger::line()</a>.</p>
 
 </div>
 </div>
@@ -437,7 +437,7 @@ Public Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="json__logger_8hpp_source.html#l00097">97</a> of file <a class="el" href="json__logger_8hpp_source.html">json_logger.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="json__logger_8cpp_source.html#l00044">JsonLogger::line()</a>.</p>
+<p>Referenced by <a class="el" href="json__logger_8cpp_source.html#l00057">JsonLogger::line()</a>.</p>
 
 </div>
 </div>
@@ -451,7 +451,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1common.html">common</a></li><li class="navelem"><a class="el" href="classthrill_1_1common_1_1JsonLogger.html">JsonLogger</a></li>
-    <li class="footer">Generated on Tue Dec 26 2017 13:47:52 for Thrill by
+    <li class="footer">Generated on Tue May 15 2018 13:08:29 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

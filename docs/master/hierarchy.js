@@ -598,7 +598,7 @@ var hierarchy =
             [ "GroupToIndexNode< ValueType, KeyExtractor, GroupFunction >", "classthrill_1_1api_1_1GroupToIndexNode.html", null ],
             [ "JoinNode< ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection >", "classthrill_1_1api_1_1JoinNode.html", null ],
             [ "MergeNode< ValueType, Comparator, kNumInputs >", "classthrill_1_1api_1_1MergeNode.html", null ],
-            [ "PrefixSumNode< ValueType, SumFunction >", "classthrill_1_1api_1_1PrefixSumNode.html", null ],
+            [ "PrefixSumNode< ValueType, SumFunction, Inclusive >", "classthrill_1_1api_1_1PrefixSumNode.html", null ],
             [ "RebalanceNode< ValueType >", "classthrill_1_1api_1_1RebalanceNode.html", null ],
             [ "ReduceNode< ValueType, KeyExtractor, ReduceFunction, ReduceConfig, KeyHashFunction, KeyEqualFunction, VolatileKey, UseDuplicateDetection >", "classthrill_1_1api_1_1ReduceNode.html", null ],
             [ "ReduceToIndexNode< ValueType, KeyExtractor, ReduceFunction, ReduceConfig, VolatileKey, SkipPreReducePhase >", "classthrill_1_1api_1_1ReduceToIndexNode.html", null ],

@@ -156,8 +156,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aca3a73a8696a9e225648edfe23ddd4b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamSet.html#aca3a73a8696a9e225648edfe23ddd4b1">StreamSet</a> (<a class="el" href="classthrill_1_1data_1_1Multiplexer.html">Multiplexer</a> &amp;multiplexer, <a class="el" href="group__data__layer.html#ga03df594c744fac6cea6f4559bc7494d2">StreamId</a> id, size_t workers_per_host, size_t dia_id)</td></tr>
-<tr class="separator:aca3a73a8696a9e225648edfe23ddd4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979f2840acaa43e416166903e17bc88f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamSet.html#a979f2840acaa43e416166903e17bc88f">StreamSet</a> (<a class="el" href="classthrill_1_1data_1_1Multiplexer.html">Multiplexer</a> &amp;multiplexer, size_t send_size_limit, <a class="el" href="group__data__layer.html#ga03df594c744fac6cea6f4559bc7494d2">StreamId</a> id, size_t workers_per_host, size_t dia_id)</td></tr>
+<tr class="separator:a979f2840acaa43e416166903e17bc88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29dc6798f18d73abd4ba8e4910f6831f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamSet.html#a29dc6798f18d73abd4ba8e4910f6831f">Close</a> () final</td></tr>
 <tr class="memdesc:a29dc6798f18d73abd4ba8e4910f6831f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close all streams in the set.  <a href="#a29dc6798f18d73abd4ba8e4910f6831f">More...</a><br/></td></tr>
 <tr class="separator:a29dc6798f18d73abd4ba8e4910f6831f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,12 +213,12 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00189">189</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00193">193</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aca3a73a8696a9e225648edfe23ddd4b1"></a>
+<a class="anchor" id="a979f2840acaa43e416166903e17bc88f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -230,6 +230,12 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classthrill_1_1data_1_1Multiplexer.html">Multiplexer</a> &amp;&#160;</td>
           <td class="paramname"><em>multiplexer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>send_size_limit</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -263,9 +269,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Creates a <a class="el" href="classthrill_1_1data_1_1StreamSet.html" title="Simple structure that holds a all stream instances for the workers on the local host for a given stre...">StreamSet</a> with the given number of streams (num workers per host). </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00193">193</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00197">197</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>References <a class="el" href="stream__data_8hpp_source.html#l00230">StreamSet&lt; Stream &gt;::remaining_</a>, and <a class="el" href="stream__data_8hpp_source.html#l00228">StreamSet&lt; Stream &gt;::streams_</a>.</p>
+<p>References <a class="el" href="stream__data_8hpp_source.html#l00235">StreamSet&lt; Stream &gt;::remaining_</a>, and <a class="el" href="stream__data_8hpp_source.html#l00233">StreamSet&lt; Stream &gt;::streams_</a>.</p>
 
 </div>
 </div>
@@ -295,9 +301,9 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classthrill_1_1data_1_1StreamSetBase.html#aacb6d0e5e6d570cdc2b0da14c3921ff0">StreamSetBase</a>.</p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00221">221</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00226">226</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>References <a class="el" href="stream__data_8hpp_source.html#l00228">StreamSet&lt; Stream &gt;::streams_</a>.</p>
+<p>References <a class="el" href="stream__data_8hpp_source.html#l00233">StreamSet&lt; Stream &gt;::streams_</a>.</p>
 
 </div>
 </div>
@@ -324,9 +330,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the stream that will be consumed by the worker with the given local id </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00204">204</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00209">209</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>References <a class="el" href="stream__data_8hpp_source.html#l00228">StreamSet&lt; Stream &gt;::streams_</a>.</p>
+<p>References <a class="el" href="stream__data_8hpp_source.html#l00233">StreamSet&lt; Stream &gt;::streams_</a>.</p>
 
 </div>
 </div>
@@ -353,9 +359,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Release local_worker_id, returns true when all individual streams are done. </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00211">211</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00216">216</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>References <a class="el" href="stream__data_8hpp_source.html#l00230">StreamSet&lt; Stream &gt;::remaining_</a>, and <a class="el" href="stream__data_8hpp_source.html#l00228">StreamSet&lt; Stream &gt;::streams_</a>.</p>
+<p>References <a class="el" href="stream__data_8hpp_source.html#l00235">StreamSet&lt; Stream &gt;::remaining_</a>, and <a class="el" href="stream__data_8hpp_source.html#l00233">StreamSet&lt; Stream &gt;::streams_</a>.</p>
 
 </div>
 </div>
@@ -380,9 +386,9 @@ Private Attributes</h2></td></tr>
 
 <p>countdown to destruction </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00230">230</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00235">235</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__data_8hpp_source.html#l00211">StreamSet&lt; Stream &gt;::Release()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00193">StreamSet&lt; Stream &gt;::StreamSet()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8hpp_source.html#l00216">StreamSet&lt; Stream &gt;::Release()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00197">StreamSet&lt; Stream &gt;::StreamSet()</a>.</p>
 
 </div>
 </div>
@@ -406,9 +412,9 @@ Private Attributes</h2></td></tr>
 
 <p>'owns' all streams belonging to one stream id for all local workers. </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00228">228</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00233">233</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__data_8hpp_source.html#l00221">StreamSet&lt; Stream &gt;::Close()</a>, <a class="el" href="stream__data_8hpp_source.html#l00204">StreamSet&lt; Stream &gt;::Peer()</a>, <a class="el" href="stream__data_8hpp_source.html#l00211">StreamSet&lt; Stream &gt;::Release()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00193">StreamSet&lt; Stream &gt;::StreamSet()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8hpp_source.html#l00226">StreamSet&lt; Stream &gt;::Close()</a>, <a class="el" href="stream__data_8hpp_source.html#l00209">StreamSet&lt; Stream &gt;::Peer()</a>, <a class="el" href="stream__data_8hpp_source.html#l00216">StreamSet&lt; Stream &gt;::Release()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00197">StreamSet&lt; Stream &gt;::StreamSet()</a>.</p>
 
 </div>
 </div>
@@ -422,7 +428,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1StreamSet.html">StreamSet</a></li>
-    <li class="footer">Generated on Tue Dec 26 2017 13:47:53 for Thrill by
+    <li class="footer">Generated on Tue May 15 2018 13:08:30 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

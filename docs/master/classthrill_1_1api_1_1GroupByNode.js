@@ -9,7 +9,6 @@ var classthrill_1_1api_1_1GroupByNode =
     [ "GroupByNode", "classthrill_1_1api_1_1GroupByNode.html#a26198298fdffa0af860afe2ad582545f", null ],
     [ "FlushVectorToFile", "classthrill_1_1api_1_1GroupByNode.html#a6b4bf40541e2c8488d0155533faa9350", null ],
     [ "MainOp", "classthrill_1_1api_1_1GroupByNode.html#a50bbe9134ad3a335b52a0ca1ad4f54ab", null ],
-    [ "MaxMergeDegreePrefetch", "classthrill_1_1api_1_1GroupByNode.html#a13e975cf61f01e2a7e48c869a6d08430", null ],
     [ "RunUserFunc", "classthrill_1_1api_1_1GroupByNode.html#aabb20485e20d5ba2653efb6c715f6851", null ],
     [ "debug", "classthrill_1_1api_1_1GroupByNode.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
     [ "emitters_", "classthrill_1_1api_1_1GroupByNode.html#a49eb758df3b1ef61cf885dedd0f24e63", null ],

@@ -14,7 +14,6 @@ var classthrill_1_1api_1_1JoinNode =
     [ "JoinCapacity", "classthrill_1_1api_1_1JoinNode.html#acbc936d1bbd2262b78894e0dc8b9f2d8", null ],
     [ "MainOp", "classthrill_1_1api_1_1JoinNode.html#a50bbe9134ad3a335b52a0ca1ad4f54ab", null ],
     [ "MakePuller", "classthrill_1_1api_1_1JoinNode.html#a3c8b0f8db72fe958759db87528b70a0c", null ],
-    [ "MaxMergeDegreePrefetch", "classthrill_1_1api_1_1JoinNode.html#acc0abc3695a4729d13b5aec44c8c83bc", null ],
     [ "MergeFiles", "classthrill_1_1api_1_1JoinNode.html#af4bb3a98ca523658c95643111e0fb983", null ],
     [ "PreOp1", "classthrill_1_1api_1_1JoinNode.html#aa746d2e0c8eb101359a0aad78e4b9d5c", null ],
     [ "PreOp2", "classthrill_1_1api_1_1JoinNode.html#a194a3dcbae2d093ea53f361a94cd6ca4", null ],

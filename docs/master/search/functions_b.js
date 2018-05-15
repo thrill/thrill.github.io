@@ -1,7 +1,7 @@
 var searchData=
 [
   ['keep',['Keep',['../classthrill_1_1api_1_1DIA.html#abe53b76f00a59b79305508dedfd849ec',1,'thrill::api::DIA']]],
-  ['keepfileblocksource',['KeepFileBlockSource',['../classthrill_1_1data_1_1KeepFileBlockSource.html#a8b7dcb5a7b2fd989c474dac52e3b4793',1,'thrill::data::KeepFileBlockSource']]],
+  ['keepfileblocksource',['KeepFileBlockSource',['../classthrill_1_1data_1_1KeepFileBlockSource.html#a17cd6c2f53e981d3a033fb9170efc9c3',1,'thrill::data::KeepFileBlockSource']]],
   ['keepforever',['KeepForever',['../classthrill_1_1api_1_1DIA.html#a373d55d48acf20802d2ac9b6bca83376',1,'thrill::api::DIA']]],
   ['key',['key',['../classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a9175e77c920b294cea5e9f0111a13880',1,'thrill::core::ReduceByIndexPostPhase::key()'],['../classthrill_1_1core_1_1ReduceTable.html#a025606df0b62597a9e616a97b71d91f4',1,'thrill::core::ReduceTable::key()']]],
   ['key_5fequal_5ffunction',['key_equal_function',['../classthrill_1_1core_1_1ReduceTable.html#ada0677de10082a2c0cef93c2eaf088bb',1,'thrill::core::ReduceTable']]],

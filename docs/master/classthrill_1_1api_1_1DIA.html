@@ -438,8 +438,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:gae772b581a45cd14c0ef31b4ac2ea3b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga16e1e32046563a78aab6d13804cef3bc"><td class="memTemplParams" colspan="2">template&lt;typename SumFunction  = std::plus&lt;ValueType&gt;&gt; </td></tr>
 <tr class="memitem:ga16e1e32046563a78aab6d13804cef3bc"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__dia__dops.html#ga16e1e32046563a78aab6d13804cef3bc">PrefixSum</a> (const SumFunction &amp;sum_function=SumFunction(), const <a class="el" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a> &amp;initial_element=<a class="el" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>()) const </td></tr>
-<tr class="memdesc:ga16e1e32046563a78aab6d13804cef3bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrefixSum is a DOp, which computes the prefix sum of all elements.  <a href="group__dia__dops.html#ga16e1e32046563a78aab6d13804cef3bc">More...</a><br/></td></tr>
+<tr class="memdesc:ga16e1e32046563a78aab6d13804cef3bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">PrefixSum is a DOp, which computes the (inclusive) prefix sum of all elements.  <a href="group__dia__dops.html#ga16e1e32046563a78aab6d13804cef3bc">More...</a><br/></td></tr>
 <tr class="separator:ga16e1e32046563a78aab6d13804cef3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b080a7545e8235fffc737171ab79986"><td class="memTemplParams" colspan="2">template&lt;typename SumFunction  = std::plus&lt;ValueType&gt;&gt; </td></tr>
+<tr class="memitem:ga8b080a7545e8235fffc737171ab79986"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__dia__dops.html#ga8b080a7545e8235fffc737171ab79986">ExPrefixSum</a> (const SumFunction &amp;sum_function=SumFunction(), const <a class="el" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a> &amp;initial_element=<a class="el" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>()) const </td></tr>
+<tr class="memdesc:ga8b080a7545e8235fffc737171ab79986"><td class="mdescLeft">&#160;</td><td class="mdescRight">ExPrefixSum is a DOp, which computes the exclusive prefix sum of all elements.  <a href="group__dia__dops.html#ga8b080a7545e8235fffc737171ab79986">More...</a><br/></td></tr>
+<tr class="separator:ga8b080a7545e8235fffc737171ab79986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaecf7738614c339f5c2af6e26e104e7ed"><td class="memTemplParams" colspan="2">template&lt;typename WindowFunction &gt; </td></tr>
 <tr class="memitem:gaecf7738614c339f5c2af6e26e104e7ed"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__dia__dops.html#gaecf7738614c339f5c2af6e26e104e7ed">Window</a> (size_t window_size, const WindowFunction &amp;window_function=WindowFunction()) const </td></tr>
 <tr class="memdesc:gaecf7738614c339f5c2af6e26e104e7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window is a DOp, which applies a window function to every k consecutive items in a <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a>.  <a href="group__dia__dops.html#gaecf7738614c339f5c2af6e26e104e7ed">More...</a><br/></td></tr>
@@ -821,7 +825,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>.</p>
 
-<p>Referenced by <a class="el" href="zip_8hpp_source.html#l00424">thrill::api::Zip()</a>, and <a class="el" href="zip__window_8hpp_source.html#l00619">thrill::api::ZipWindow()</a>.</p>
+<p>Referenced by <a class="el" href="zip_8hpp_source.html#l00423">thrill::api::Zip()</a>, and <a class="el" href="zip__window_8hpp_source.html#l00622">thrill::api::ZipWindow()</a>.</p>
 
 </div>
 </div>
@@ -850,9 +854,9 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dia_8hpp_source.html#l00269">269</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
-<p>References <a class="el" href="dia__base_8hpp_source.html#l00208">DIABase::context()</a>, <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, and <a class="el" href="dia_8hpp_source.html#l01782">DIA&lt; ValueType_, Stack_ &gt;::node_</a>.</p>
+<p>References <a class="el" href="dia__base_8hpp_source.html#l00208">DIABase::context()</a>, <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, and <a class="el" href="dia_8hpp_source.html#l01798">DIA&lt; ValueType_, Stack_ &gt;::node_</a>.</p>
 
-<p>Referenced by <a class="el" href="dia_8hpp_source.html#l00386">DIA&lt; ValueType_, Stack_ &gt;::Filter()</a>, <a class="el" href="dia_8hpp_source.html#l00437">DIA&lt; ValueType_, Stack_ &gt;::FlatMap()</a>, <a class="el" href="dia_8hpp_source.html#l00341">DIA&lt; ValueType_, Stack_ &gt;::Map()</a>, and <a class="el" href="dia_8hpp_source.html#l01795">DIA&lt; ValueType_, Stack_ &gt;::next_dia_id()</a>.</p>
+<p>Referenced by <a class="el" href="dia_8hpp_source.html#l00386">DIA&lt; ValueType_, Stack_ &gt;::Filter()</a>, <a class="el" href="dia_8hpp_source.html#l00437">DIA&lt; ValueType_, Stack_ &gt;::FlatMap()</a>, <a class="el" href="dia_8hpp_source.html#l00341">DIA&lt; ValueType_, Stack_ &gt;::Map()</a>, and <a class="el" href="dia_8hpp_source.html#l01811">DIA&lt; ValueType_, Stack_ &gt;::next_dia_id()</a>.</p>
 
 </div>
 </div>
@@ -881,7 +885,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dia_8hpp_source.html#l00275">275</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
-<p>References <a class="el" href="dia__base_8hpp_source.html#l00208">DIABase::context()</a>, <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, and <a class="el" href="dia_8hpp_source.html#l01782">DIA&lt; ValueType_, Stack_ &gt;::node_</a>.</p>
+<p>References <a class="el" href="dia__base_8hpp_source.html#l00208">DIABase::context()</a>, <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, and <a class="el" href="dia_8hpp_source.html#l01798">DIA&lt; ValueType_, Stack_ &gt;::node_</a>.</p>
 
 </div>
 </div>
@@ -911,7 +915,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dia_8hpp_source.html#l00318">318</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, <a class="el" href="dia_8hpp_source.html#l01782">DIA&lt; ValueType_, Stack_ &gt;::node_</a>, and <a class="el" href="dia__base_8cpp_source.html#l00380">DIABase::RunScope()</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, <a class="el" href="dia_8hpp_source.html#l01798">DIA&lt; ValueType_, Stack_ &gt;::node_</a>, and <a class="el" href="dia__base_8cpp_source.html#l00380">DIABase::RunScope()</a>.</p>
 
 </div>
 </div>
@@ -951,7 +955,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00395">395</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00383">383</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
 
 <p>References <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
@@ -987,7 +991,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00421">421</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00409">409</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
 
 <p>References <a class="el" href="dia_8hpp_source.html#l00125">thrill::api::NoLocationDetectionTag</a>.</p>
 
@@ -1017,7 +1021,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00432">432</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group__by__key_8hpp_source.html#l00420">420</a> of file <a class="el" href="group__by__key_8hpp_source.html">group_by_key.hpp</a>.</p>
 
 <p>References <a class="el" href="dia_8hpp_source.html#l00125">thrill::api::NoLocationDetectionTag</a>.</p>
 
@@ -1090,7 +1094,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dia_8hpp_source.html#l00281">281</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l01789">DIA&lt; ValueType_, Stack_ &gt;::id_</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l01805">DIA&lt; ValueType_, Stack_ &gt;::id_</a>.</p>
 
 </div>
 </div>
@@ -1119,9 +1123,9 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dia_8hpp_source.html#l00175">175</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
-<p>References <a class="el" href="counting__ptr_8hpp_source.html#l00194">CountingPtr&lt; Type, Deleter &gt;::get()</a>, and <a class="el" href="dia_8hpp_source.html#l01782">DIA&lt; ValueType_, Stack_ &gt;::node_</a>.</p>
+<p>References <a class="el" href="counting__ptr_8hpp_source.html#l00194">CountingPtr&lt; Type, Deleter &gt;::get()</a>, and <a class="el" href="dia_8hpp_source.html#l01798">DIA&lt; ValueType_, Stack_ &gt;::node_</a>.</p>
 
-<p>Referenced by <a class="el" href="dia_8hpp_source.html#l00178">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="dia_8hpp_source.html#l00269">DIA&lt; ValueType_, Stack_ &gt;::context()</a>, <a class="el" href="dia_8hpp_source.html#l00275">DIA&lt; ValueType_, Stack_ &gt;::ctx()</a>, <a class="el" href="dia_8hpp_source.html#l00318">DIA&lt; ValueType_, Stack_ &gt;::Execute()</a>, <a class="el" href="dia_8hpp_source.html#l00386">DIA&lt; ValueType_, Stack_ &gt;::Filter()</a>, <a class="el" href="dia_8hpp_source.html#l00437">DIA&lt; ValueType_, Stack_ &gt;::FlatMap()</a>, <a class="el" href="dia_8hpp_source.html#l00293">DIA&lt; ValueType_, Stack_ &gt;::Keep()</a>, <a class="el" href="dia_8hpp_source.html#l00308">DIA&lt; ValueType_, Stack_ &gt;::KeepForever()</a>, <a class="el" href="collapse_8hpp_source.html#l00137">CollapseSwitch&lt; ValueType, Stack &gt;::MakeCollapse()</a>, <a class="el" href="dia_8hpp_source.html#l00341">DIA&lt; ValueType_, Stack_ &gt;::Map()</a>, <a class="el" href="dia_8hpp_source.html#l00251">DIA&lt; ValueType_, Stack_ &gt;::node()</a>, <a class="el" href="dia_8hpp_source.html#l00257">DIA&lt; ValueType_, Stack_ &gt;::node_refcount()</a>, and <a class="el" href="dia_8hpp_source.html#l00263">DIA&lt; ValueType_, Stack_ &gt;::stack()</a>.</p>
+<p>Referenced by <a class="el" href="dia_8hpp_source.html#l00178">DIA&lt; ValueType_, Stack_ &gt;::AssertValid()</a>, <a class="el" href="dia_8hpp_source.html#l00269">DIA&lt; ValueType_, Stack_ &gt;::context()</a>, <a class="el" href="dia_8hpp_source.html#l00275">DIA&lt; ValueType_, Stack_ &gt;::ctx()</a>, <a class="el" href="dia_8hpp_source.html#l00318">DIA&lt; ValueType_, Stack_ &gt;::Execute()</a>, <a class="el" href="dia_8hpp_source.html#l00386">DIA&lt; ValueType_, Stack_ &gt;::Filter()</a>, <a class="el" href="dia_8hpp_source.html#l00437">DIA&lt; ValueType_, Stack_ &gt;::FlatMap()</a>, <a class="el" href="dia_8hpp_source.html#l00293">DIA&lt; ValueType_, Stack_ &gt;::Keep()</a>, <a class="el" href="dia_8hpp_source.html#l00308">DIA&lt; ValueType_, Stack_ &gt;::KeepForever()</a>, <a class="el" href="collapse_8hpp_source.html#l00139">CollapseSwitch&lt; ValueType, Stack &gt;::MakeCollapse()</a>, <a class="el" href="dia_8hpp_source.html#l00341">DIA&lt; ValueType_, Stack_ &gt;::Map()</a>, <a class="el" href="dia_8hpp_source.html#l00251">DIA&lt; ValueType_, Stack_ &gt;::node()</a>, <a class="el" href="dia_8hpp_source.html#l00257">DIA&lt; ValueType_, Stack_ &gt;::node_refcount()</a>, and <a class="el" href="dia_8hpp_source.html#l00263">DIA&lt; ValueType_, Stack_ &gt;::stack()</a>.</p>
 
 </div>
 </div>
@@ -1152,7 +1156,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dia_8hpp_source.html#l00293">293</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00375">Context::consume()</a>, <a class="el" href="dia__base_8hpp_source.html#l00226">DIABase::consume_counter()</a>, <a class="el" href="dia__base_8hpp_source.html#l00208">DIABase::context()</a>, <a class="el" href="die_8hpp_source.html#l00042">die</a>, <a class="el" href="dia__base_8hpp_source.html#l00230">DIABase::IncConsumeCounter()</a>, <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, and <a class="el" href="dia_8hpp_source.html#l01782">DIA&lt; ValueType_, Stack_ &gt;::node_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00375">Context::consume()</a>, <a class="el" href="dia__base_8hpp_source.html#l00226">DIABase::consume_counter()</a>, <a class="el" href="dia__base_8hpp_source.html#l00208">DIABase::context()</a>, <a class="el" href="die_8hpp_source.html#l00042">die</a>, <a class="el" href="dia__base_8hpp_source.html#l00230">DIABase::IncConsumeCounter()</a>, <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, and <a class="el" href="dia_8hpp_source.html#l01798">DIA&lt; ValueType_, Stack_ &gt;::node_</a>.</p>
 
 </div>
 </div>
@@ -1182,7 +1186,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dia_8hpp_source.html#l00308">308</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, <a class="el" href="dia__base_8hpp_source.html#l00324">DIABase::kNeverConsume</a>, <a class="el" href="dia_8hpp_source.html#l01782">DIA&lt; ValueType_, Stack_ &gt;::node_</a>, and <a class="el" href="dia__base_8hpp_source.html#l00248">DIABase::SetConsumeCounter()</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, <a class="el" href="dia__base_8hpp_source.html#l00324">DIABase::kNeverConsume</a>, <a class="el" href="dia_8hpp_source.html#l01798">DIA&lt; ValueType_, Stack_ &gt;::node_</a>, and <a class="el" href="dia__base_8hpp_source.html#l00248">DIABase::SetConsumeCounter()</a>.</p>
 
 </div>
 </div>
@@ -1211,7 +1215,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dia_8hpp_source.html#l00284">284</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l01792">DIA&lt; ValueType_, Stack_ &gt;::label_</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l01808">DIA&lt; ValueType_, Stack_ &gt;::label_</a>.</p>
 
 </div>
 </div>
@@ -1238,7 +1242,7 @@ Private Attributes</h2></td></tr>
 
 <p>deliver next <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> serial id </p>
 
-<p>Definition at line <a class="el" href="dia_8hpp_source.html#l01795">1795</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dia_8hpp_source.html#l01811">1811</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
 <p>References <a class="el" href="dia_8hpp_source.html#l00269">DIA&lt; ValueType_, Stack_ &gt;::context()</a>, and <a class="el" href="context_8hpp_source.html#l00388">Context::next_dia_id()</a>.</p>
 
@@ -1269,7 +1273,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dia_8hpp_source.html#l00251">251</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, and <a class="el" href="dia_8hpp_source.html#l01782">DIA&lt; ValueType_, Stack_ &gt;::node_</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, and <a class="el" href="dia_8hpp_source.html#l01798">DIA&lt; ValueType_, Stack_ &gt;::node_</a>.</p>
 
 </div>
 </div>
@@ -1298,7 +1302,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dia_8hpp_source.html#l00257">257</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, <a class="el" href="dia_8hpp_source.html#l01782">DIA&lt; ValueType_, Stack_ &gt;::node_</a>, and <a class="el" href="counting__ptr_8hpp_source.html#l00327">ReferenceCounter::reference_count()</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, <a class="el" href="dia_8hpp_source.html#l01798">DIA&lt; ValueType_, Stack_ &gt;::node_</a>, and <a class="el" href="counting__ptr_8hpp_source.html#l00327">ReferenceCounter::reference_count()</a>.</p>
 
 </div>
 </div>
@@ -1326,7 +1330,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00786">786</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sort_8hpp_source.html#l00771">771</a> of file <a class="el" href="sort_8hpp_source.html">sort.hpp</a>.</p>
 
 <p>References <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
@@ -1357,7 +1361,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dia_8hpp_source.html#l00263">263</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
-<p>References <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, and <a class="el" href="dia_8hpp_source.html#l01786">DIA&lt; ValueType_, Stack_ &gt;::stack_</a>.</p>
+<p>References <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, and <a class="el" href="dia_8hpp_source.html#l01802">DIA&lt; ValueType_, Stack_ &gt;::stack_</a>.</p>
 
 </div>
 </div>
@@ -1382,7 +1386,7 @@ Private Attributes</h2></td></tr>
 
 <p><a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> serial id for logging, matches <a class="el" href="classthrill_1_1api_1_1DIABase.html#a10e9312214ee2edeebf45614c92fd304" title="DIA serial id. ">DIANode::id_</a> for DOps. </p>
 
-<p>Definition at line <a class="el" href="dia_8hpp_source.html#l01789">1789</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dia_8hpp_source.html#l01805">1805</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="dia_8hpp_source.html#l00386">DIA&lt; ValueType_, Stack_ &gt;::Filter()</a>, <a class="el" href="dia_8hpp_source.html#l00437">DIA&lt; ValueType_, Stack_ &gt;::FlatMap()</a>, <a class="el" href="dia_8hpp_source.html#l00281">DIA&lt; ValueType_, Stack_ &gt;::id()</a>, and <a class="el" href="dia_8hpp_source.html#l00341">DIA&lt; ValueType_, Stack_ &gt;::Map()</a>.</p>
 
@@ -1408,7 +1412,7 @@ Private Attributes</h2></td></tr>
 
 <p>static <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> (LOp or DOp) node label string, may match <a class="el" href="classthrill_1_1api_1_1DIABase.html#a8af3438c25f3c578c122af83e21074ec" title="DOp node static label. ">DIANode::label_</a>. </p>
 
-<p>Definition at line <a class="el" href="dia_8hpp_source.html#l01792">1792</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dia_8hpp_source.html#l01808">1808</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="dia_8hpp_source.html#l00284">DIA&lt; ValueType_, Stack_ &gt;::label()</a>.</p>
 
@@ -1433,7 +1437,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>The <a class="el" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill. ">DIANode</a> which <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> points to. The node represents the latest DOp or Action performed previously. </p>
 
-<p>Definition at line <a class="el" href="dia_8hpp_source.html#l01782">1782</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dia_8hpp_source.html#l01798">1798</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="dia_8hpp_source.html#l00269">DIA&lt; ValueType_, Stack_ &gt;::context()</a>, <a class="el" href="dia_8hpp_source.html#l00275">DIA&lt; ValueType_, Stack_ &gt;::ctx()</a>, <a class="el" href="dia_8hpp_source.html#l00318">DIA&lt; ValueType_, Stack_ &gt;::Execute()</a>, <a class="el" href="dia_8hpp_source.html#l00386">DIA&lt; ValueType_, Stack_ &gt;::Filter()</a>, <a class="el" href="dia_8hpp_source.html#l00437">DIA&lt; ValueType_, Stack_ &gt;::FlatMap()</a>, <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, <a class="el" href="dia_8hpp_source.html#l00293">DIA&lt; ValueType_, Stack_ &gt;::Keep()</a>, <a class="el" href="dia_8hpp_source.html#l00308">DIA&lt; ValueType_, Stack_ &gt;::KeepForever()</a>, <a class="el" href="dia_8hpp_source.html#l00341">DIA&lt; ValueType_, Stack_ &gt;::Map()</a>, <a class="el" href="dia_8hpp_source.html#l00251">DIA&lt; ValueType_, Stack_ &gt;::node()</a>, and <a class="el" href="dia_8hpp_source.html#l00257">DIA&lt; ValueType_, Stack_ &gt;::node_refcount()</a>.</p>
 
@@ -1458,7 +1462,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>The local function chain, which stores the chained lambda function from the last <a class="el" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill. ">DIANode</a> to this <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a>. </p>
 
-<p>Definition at line <a class="el" href="dia_8hpp_source.html#l01786">1786</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dia_8hpp_source.html#l01802">1802</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="dia_8hpp_source.html#l00386">DIA&lt; ValueType_, Stack_ &gt;::Filter()</a>, <a class="el" href="dia_8hpp_source.html#l00437">DIA&lt; ValueType_, Stack_ &gt;::FlatMap()</a>, <a class="el" href="dia_8hpp_source.html#l00341">DIA&lt; ValueType_, Stack_ &gt;::Map()</a>, and <a class="el" href="dia_8hpp_source.html#l00263">DIA&lt; ValueType_, Stack_ &gt;::stack()</a>.</p>
 
@@ -1526,7 +1530,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1api.html">api</a></li><li class="navelem"><a class="el" href="classthrill_1_1api_1_1DIA.html">DIA</a></li>
-    <li class="footer">Generated on Tue Dec 26 2017 13:47:51 for Thrill by
+    <li class="footer">Generated on Tue May 15 2018 13:08:28 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

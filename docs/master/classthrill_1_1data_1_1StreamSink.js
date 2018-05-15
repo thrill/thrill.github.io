@@ -27,10 +27,8 @@ var classthrill_1_1data_1_1StreamSink =
     [ "id_", "classthrill_1_1data_1_1StreamSink.html#a7ac3ec26751fe8ed4578bcb7a2ae1117", null ],
     [ "item_counter_", "classthrill_1_1data_1_1StreamSink.html#ae13f411828e2e9cdd02cc4df5d7bd3ff", null ],
     [ "magic_", "classthrill_1_1data_1_1StreamSink.html#ac9dc20c608b22877fff7689a84be0126", null ],
-    [ "num_queue_", "classthrill_1_1data_1_1StreamSink.html#a214e195a78f3ab67c6150dae2b5bcf86", null ],
     [ "peer_local_worker_", "classthrill_1_1data_1_1StreamSink.html#ab8a313d4323c69bd3fb08154ed8dd666", null ],
     [ "peer_rank_", "classthrill_1_1data_1_1StreamSink.html#ae587d32c2562d08f3912097c207a7c6c", null ],
-    [ "sem_", "classthrill_1_1data_1_1StreamSink.html#a37337d334c184e97a667d3b9d1ad4eb7", null ],
     [ "stream_", "classthrill_1_1data_1_1StreamSink.html#ae751efacc761db14be5631a6049678c2", null ],
     [ "target_mix_stream_", "classthrill_1_1data_1_1StreamSink.html#a2d55f127bad270629cbf8ef4161558b9", null ],
     [ "timespan_", "classthrill_1_1data_1_1StreamSink.html#a0f5b8e096afb06ebf3b666ae76ed9995", null ]

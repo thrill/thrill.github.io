@@ -305,7 +305,7 @@ $(document).ready(function(){initNavTree('qsort_8hpp_source.html','');});
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keyword">using</span> value_type = <span class="keyword">typename</span> std::iterator_traits&lt;Iterator&gt;::value_type;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keyword">using</span> <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">std::swap</a>;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">if</span> (lo + 32 &gt; hi)</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">if</span> (hi - lo &lt; 32)</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">return</span> qsort_local::InsertionSort&lt;Compare&gt;(lo, hi, cmp);</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">size_t</span> n = hi - lo;</div>
@@ -473,7 +473,7 @@ $(document).ready(function(){initNavTree('qsort_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_19de9a7cb0ad0c6b03f8c7369b4f5139.html">common</a></li><li class="navelem"><a class="el" href="qsort_8hpp.html">qsort.hpp</a></li>
-    <li class="footer">Generated on Tue Dec 26 2017 13:47:48 for Thrill by
+    <li class="footer">Generated on Tue May 15 2018 13:08:25 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

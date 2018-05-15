@@ -259,6 +259,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a3ac7b25d37c4b24a9ab3884100751a1e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Multiplexer.html#a3ac7b25d37c4b24a9ab3884100751a1e">num_parallel_async_</a></td></tr>
 <tr class="memdesc:a3ac7b25d37c4b24a9ab3884100751a1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of parallel recv requests  <a href="#a3ac7b25d37c4b24a9ab3884100751a1e">More...</a><br/></td></tr>
 <tr class="separator:a3ac7b25d37c4b24a9ab3884100751a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567fbf4e3e70a0a722382985bc8c94da"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Multiplexer.html#a567fbf4e3e70a0a722382985bc8c94da">send_size_limit_</a></td></tr>
+<tr class="memdesc:a567fbf4e3e70a0a722382985bc8c94da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculated send queue size limit for <a class="el" href="classthrill_1_1data_1_1StreamData.html" title="Base class for common structures for ConcatStream and MixedStream. ">StreamData</a> semaphores.  <a href="#a567fbf4e3e70a0a722382985bc8c94da">More...</a><br/></td></tr>
+<tr class="separator:a567fbf4e3e70a0a722382985bc8c94da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6730877f271a6d305ffb1ca69ee14b27"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Multiplexer.html#a6730877f271a6d305ffb1ca69ee14b27">workers_per_host_</a></td></tr>
 <tr class="memdesc:a6730877f271a6d305ffb1ca69ee14b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of workers per host.  <a href="#a6730877f271a6d305ffb1ca69ee14b27">More...</a><br/></td></tr>
 <tr class="separator:a6730877f271a6d305ffb1ca69ee14b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -287,7 +290,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="multiplexer_8hpp_source.html#l00205">205</a> of file <a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8hpp_source.html#l00208">208</a> of file <a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a>.</p>
 
 </div>
 </div>
@@ -336,7 +339,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00128">128</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>References <a class="el" href="multiplexer_8cpp_source.html#l00274">Multiplexer::AsyncReadMultiplexerHeader()</a>, <a class="el" href="classthrill_1_1net_1_1Group.html#a6752d8d0b3cd2d27170254b51203e0b4">Group::connection()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00155">Multiplexer::group_</a>, <a class="el" href="functional_8hpp_source.html#l00065">thrill::common::max()</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">Group::num_hosts()</a>, <a class="el" href="group_8cpp_source.html#l00158">Group::num_parallel_async()</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00167">Multiplexer::num_parallel_async_</a>.</p>
+<p>References <a class="el" href="multiplexer_8cpp_source.html#l00282">Multiplexer::AsyncReadMultiplexerHeader()</a>, <a class="el" href="classthrill_1_1net_1_1Group.html#a6752d8d0b3cd2d27170254b51203e0b4">Group::connection()</a>, <a class="el" href="byte__block_8cpp_source.html#l00025">thrill::data::default_block_size</a>, <a class="el" href="multiplexer_8hpp_source.html#l00155">Multiplexer::group_</a>, <a class="el" href="block__pool_8cpp_source.html#l00878">BlockPool::hard_ram_limit()</a>, <a class="el" href="functional_8hpp_source.html#l00065">thrill::common::max()</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">Group::num_hosts()</a>, <a class="el" href="group_8cpp_source.html#l00158">Group::num_parallel_async()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00167">Multiplexer::num_parallel_async_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00170">Multiplexer::send_size_limit_</a>.</p>
 
 </div>
 </div>
@@ -381,9 +384,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Closes all client connections. </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00171">171</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00177">177</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>References <a class="el" href="classthrill_1_1net_1_1Group.html#aacb6d0e5e6d570cdc2b0da14c3921ff0">Group::Close()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00156">Multiplexer::Close()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00164">Multiplexer::closed_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00155">Multiplexer::group_</a>.</p>
+<p>References <a class="el" href="classthrill_1_1net_1_1Group.html#aacb6d0e5e6d570cdc2b0da14c3921ff0">Group::Close()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00162">Multiplexer::Close()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00164">Multiplexer::closed_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00155">Multiplexer::group_</a>.</p>
 
 </div>
 </div>
@@ -404,9 +407,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Allocate the next stream. </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00178">178</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00184">184</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>References <a class="el" href="multiplexer_8hpp_source.html#l00188">Multiplexer::d_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00161">Multiplexer::mutex_</a>.</p>
+<p>References <a class="el" href="multiplexer_8hpp_source.html#l00191">Multiplexer::d_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00161">Multiplexer::mutex_</a>.</p>
 
 </div>
 </div>
@@ -426,9 +429,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Allocate the next stream. </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00209">209</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00216">216</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>References <a class="el" href="multiplexer_8hpp_source.html#l00188">Multiplexer::d_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00161">Multiplexer::mutex_</a>.</p>
+<p>References <a class="el" href="multiplexer_8hpp_source.html#l00191">Multiplexer::d_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00161">Multiplexer::mutex_</a>.</p>
 
 </div>
 </div>
@@ -465,9 +468,9 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>expects the next <a class="el" href="classthrill_1_1data_1_1MultiplexerHeader.html">MultiplexerHeader</a> from a socket and passes to OnMultiplexerHeader </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00274">274</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00282">282</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>References <a class="el" href="dispatcher__thread_8cpp_source.html#l00081">DispatcherThread::AsyncRead()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00188">Multiplexer::d_</a>, <a class="el" href="multiplexer_8hpp_source.html#l00152">Multiplexer::dispatcher_</a>, <a class="el" href="multiplexer_8hpp_source.html#l00167">Multiplexer::num_parallel_async_</a>, <a class="el" href="multiplexer_8cpp_source.html#l00288">Multiplexer::OnMultiplexerHeader()</a>, <a class="el" href="connection_8hpp_source.html#l00470">Connection::rx_seq_</a>, and <a class="el" href="multiplexer__header_8hpp_source.html#l00066">MultiplexerHeader::total_size</a>.</p>
+<p>References <a class="el" href="dispatcher__thread_8cpp_source.html#l00081">DispatcherThread::AsyncRead()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00191">Multiplexer::d_</a>, <a class="el" href="multiplexer_8hpp_source.html#l00152">Multiplexer::dispatcher_</a>, <a class="el" href="multiplexer_8hpp_source.html#l00167">Multiplexer::num_parallel_async_</a>, <a class="el" href="multiplexer_8cpp_source.html#l00296">Multiplexer::OnMultiplexerHeader()</a>, <a class="el" href="connection_8hpp_source.html#l00470">Connection::rx_seq_</a>, and <a class="el" href="multiplexer__header_8hpp_source.html#l00066">MultiplexerHeader::total_size</a>.</p>
 
 <p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00128">Multiplexer::Multiplexer()</a>.</p>
 
@@ -535,9 +538,9 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Pointer to queue that is used for communication between two workers on the same host. </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00441">441</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00449">449</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00082">CatStreamData::GetWriters()</a>.</p>
+<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>.</p>
 
 </div>
 </div>
@@ -556,11 +559,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>Closes all client connections. </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00156">156</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00162">162</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>References <a class="el" href="multiplexer_8hpp_source.html#l00164">Multiplexer::closed_</a>, <a class="el" href="multiplexer_8hpp_source.html#l00188">Multiplexer::d_</a>, <a class="el" href="die_8hpp_source.html#l00052">die_unless</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00176">LOG1</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00161">Multiplexer::mutex_</a>.</p>
+<p>References <a class="el" href="multiplexer_8hpp_source.html#l00164">Multiplexer::closed_</a>, <a class="el" href="multiplexer_8hpp_source.html#l00191">Multiplexer::d_</a>, <a class="el" href="die_8hpp_source.html#l00052">die_unless</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00176">LOG1</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00161">Multiplexer::mutex_</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8cpp_source.html#l01210">Context::Launch()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00171">Multiplexer::~Multiplexer()</a>.</p>
+<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00177">Multiplexer::~Multiplexer()</a>.</p>
 
 </div>
 </div>
@@ -590,11 +593,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>Request next stream. </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00189">189</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00195">195</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>References <a class="el" href="multiplexer_8hpp_source.html#l00188">Multiplexer::d_</a>, <a class="el" href="multiplexer_8cpp_source.html#l00197">Multiplexer::IntGetOrCreateCatStreamData()</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00161">Multiplexer::mutex_</a>.</p>
+<p>References <a class="el" href="multiplexer_8hpp_source.html#l00191">Multiplexer::d_</a>, <a class="el" href="multiplexer_8cpp_source.html#l00203">Multiplexer::IntGetOrCreateCatStreamData()</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00161">Multiplexer::mutex_</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8cpp_source.html#l01144">Context::GetNewCatStream()</a>.</p>
+<p>Referenced by <a class="el" href="context_8cpp_source.html#l01135">Context::GetNewCatStream()</a>.</p>
 
 </div>
 </div>
@@ -624,11 +627,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>Request next stream. </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00220">220</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00227">227</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>References <a class="el" href="multiplexer_8hpp_source.html#l00188">Multiplexer::d_</a>, <a class="el" href="multiplexer_8cpp_source.html#l00228">Multiplexer::IntGetOrCreateMixStreamData()</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00161">Multiplexer::mutex_</a>.</p>
+<p>References <a class="el" href="multiplexer_8hpp_source.html#l00191">Multiplexer::d_</a>, <a class="el" href="multiplexer_8cpp_source.html#l00235">Multiplexer::IntGetOrCreateMixStreamData()</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00161">Multiplexer::mutex_</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8cpp_source.html#l01152">Context::GetNewMixStream()</a>.</p>
+<p>Referenced by <a class="el" href="context_8cpp_source.html#l01143">Context::GetNewMixStream()</a>.</p>
 
 </div>
 </div>
@@ -664,11 +667,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>Get stream with given id, if it does not exist, create it. </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00183">183</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00189">189</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>References <a class="el" href="multiplexer_8cpp_source.html#l00197">Multiplexer::IntGetOrCreateCatStreamData()</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00161">Multiplexer::mutex_</a>.</p>
+<p>References <a class="el" href="multiplexer_8cpp_source.html#l00203">Multiplexer::IntGetOrCreateCatStreamData()</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00161">Multiplexer::mutex_</a>.</p>
 
-<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00288">Multiplexer::OnMultiplexerHeader()</a>.</p>
+<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00296">Multiplexer::OnMultiplexerHeader()</a>.</p>
 
 </div>
 </div>
@@ -704,9 +707,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>Get stream with given id, if it does not exist, create it. </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00214">214</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00221">221</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>References <a class="el" href="multiplexer_8cpp_source.html#l00228">Multiplexer::IntGetOrCreateMixStreamData()</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00161">Multiplexer::mutex_</a>.</p>
+<p>References <a class="el" href="multiplexer_8cpp_source.html#l00235">Multiplexer::IntGetOrCreateMixStreamData()</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00161">Multiplexer::mutex_</a>.</p>
 
 </div>
 </div>
@@ -748,11 +751,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00197">197</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00203">203</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>References <a class="el" href="multiplexer_8hpp_source.html#l00188">Multiplexer::d_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00158">Multiplexer::workers_per_host_</a>.</p>
+<p>References <a class="el" href="multiplexer_8hpp_source.html#l00191">Multiplexer::d_</a>, <a class="el" href="multiplexer_8hpp_source.html#l00170">Multiplexer::send_size_limit_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00158">Multiplexer::workers_per_host_</a>.</p>
 
-<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00189">Multiplexer::GetNewCatStream()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00183">Multiplexer::GetOrCreateCatStreamData()</a>.</p>
+<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00195">Multiplexer::GetNewCatStream()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00189">Multiplexer::GetOrCreateCatStreamData()</a>.</p>
 
 </div>
 </div>
@@ -794,11 +797,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00228">228</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00235">235</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>References <a class="el" href="multiplexer_8hpp_source.html#l00188">Multiplexer::d_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00158">Multiplexer::workers_per_host_</a>.</p>
+<p>References <a class="el" href="multiplexer_8hpp_source.html#l00191">Multiplexer::d_</a>, <a class="el" href="multiplexer_8hpp_source.html#l00170">Multiplexer::send_size_limit_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00158">Multiplexer::workers_per_host_</a>.</p>
 
-<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00220">Multiplexer::GetNewMixStream()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00214">Multiplexer::GetOrCreateMixStreamData()</a>.</p>
+<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00227">Multiplexer::GetNewMixStream()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00221">Multiplexer::GetOrCreateMixStreamData()</a>.</p>
 
 </div>
 </div>
@@ -836,11 +839,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>release pointer onto a <a class="el" href="classthrill_1_1data_1_1CatStreamData.html" title="A Stream is a virtual set of connections to all other worker instances, hence a &quot;Stream&quot; bundles them...">CatStreamData</a> object </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00240">240</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00248">248</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>References <a class="el" href="multiplexer_8hpp_source.html#l00188">Multiplexer::d_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, and <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00184">sLOG</a>.</p>
+<p>References <a class="el" href="multiplexer_8hpp_source.html#l00191">Multiplexer::d_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, and <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00184">sLOG</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00184">CatStreamData::Close()</a>.</p>
+<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00187">CatStreamData::Close()</a>.</p>
 
 </div>
 </div>
@@ -878,11 +881,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>release pointer onto a <a class="el" href="classthrill_1_1data_1_1MixStream.html" title="Ownership handle onto a MixStream. ">MixStream</a> object </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00254">254</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00262">262</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>References <a class="el" href="multiplexer_8hpp_source.html#l00188">Multiplexer::d_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, and <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00184">sLOG</a>.</p>
+<p>References <a class="el" href="multiplexer_8hpp_source.html#l00191">Multiplexer::d_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, and <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00184">sLOG</a>.</p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00115">MixStreamData::Close()</a>.</p>
+<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00118">MixStreamData::Close()</a>.</p>
 
 </div>
 </div>
@@ -901,11 +904,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>Get the JsonLogger from the <a class="el" href="classthrill_1_1data_1_1BlockPool.html" title="Pool to allocate, keep, swap out/in, and free all ByteBlocks on the host. ">BlockPool</a>. </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00268">268</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00276">276</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
 <p>References <a class="el" href="multiplexer_8hpp_source.html#l00148">Multiplexer::block_pool_</a>, and <a class="el" href="block__pool_8hpp_source.html#l00083">BlockPool::logger()</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, and <a class="el" href="stream_8cpp_source.html#l00030">StreamData::OnAllClosed()</a>.</p>
+<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, and <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>.</p>
 
 </div>
 </div>
@@ -941,9 +944,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00448">448</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00456">456</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00045">MixStreamData::GetWriters()</a>.</p>
+<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>.</p>
 
 </div>
 </div>
@@ -1036,7 +1039,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="multiplexer_8hpp_source.html#l00088">Multiplexer::num_hosts()</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00158">Multiplexer::workers_per_host_</a>.</p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00045">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00082">CatStreamData::GetWriters()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00094">StreamData::num_workers()</a>.</p>
+<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00094">StreamData::num_workers()</a>.</p>
 
 </div>
 </div>
@@ -1092,11 +1095,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>Receives and dispatches a <a class="el" href="classthrill_1_1data_1_1Block.html" title="Block combines a reference to a read-only ByteBlock and book-keeping information. ...">Block</a> to a <a class="el" href="classthrill_1_1data_1_1CatStreamData.html" title="A Stream is a virtual set of connections to all other worker instances, hence a &quot;Stream&quot; bundles them...">CatStreamData</a>. </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00391">391</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00399">399</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
 <p>References <a class="el" href="die_8hpp_source.html#l00052">die_unless</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00045">MultiplexerHeader::first_item</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00049">MultiplexerHeader::is_last_block</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00043">MultiplexerHeader::num_items</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00086">StreamMultiplexerHeader::sender_worker</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00088">StreamMultiplexerHeader::seq</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00042">MultiplexerHeader::size</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00184">sLOG</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00083">StreamMultiplexerHeader::stream_id</a>, and <a class="el" href="multiplexer__header_8hpp_source.html#l00047">MultiplexerHeader::typecode_verify</a>.</p>
 
-<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00288">Multiplexer::OnMultiplexerHeader()</a>.</p>
+<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00296">Multiplexer::OnMultiplexerHeader()</a>.</p>
 
 </div>
 </div>
@@ -1152,7 +1155,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Receives and dispatches a <a class="el" href="classthrill_1_1data_1_1Block.html" title="Block combines a reference to a read-only ByteBlock and book-keeping information. ...">Block</a> to a <a class="el" href="classthrill_1_1data_1_1MixStream.html" title="Ownership handle onto a MixStream. ">MixStream</a>. </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00416">416</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00424">424</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
 <p>References <a class="el" href="die_8hpp_source.html#l00052">die_unless</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00045">MultiplexerHeader::first_item</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00049">MultiplexerHeader::is_last_block</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00043">MultiplexerHeader::num_items</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00086">StreamMultiplexerHeader::sender_worker</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00088">StreamMultiplexerHeader::seq</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00042">MultiplexerHeader::size</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00184">sLOG</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00083">StreamMultiplexerHeader::stream_id</a>, and <a class="el" href="multiplexer__header_8hpp_source.html#l00047">MultiplexerHeader::typecode_verify</a>.</p>
 
@@ -1203,11 +1206,11 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>parses <a class="el" href="classthrill_1_1data_1_1MultiplexerHeader.html">MultiplexerHeader</a> and decides whether to receive <a class="el" href="classthrill_1_1data_1_1Block.html" title="Block combines a reference to a read-only ByteBlock and book-keeping information. ...">Block</a> or close <a class="el" href="classthrill_1_1data_1_1Stream.html" title="Stream - base class for CatStream and MixStream. ">Stream</a> </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00288">288</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8cpp_source.html#l00296">296</a> of file <a class="el" href="multiplexer_8cpp_source.html">multiplexer.cpp</a>.</p>
 
-<p>References <a class="el" href="block__pool_8cpp_source.html#l00484">BlockPool::AllocateByteBlock()</a>, <a class="el" href="dispatcher__thread_8cpp_source.html#l00081">DispatcherThread::AsyncRead()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00148">Multiplexer::block_pool_</a>, <a class="el" href="group__data__layer.html#ggaddbdb24c59770f58b29329385d0cfe73a68c027e3d04ee89b3173a67b8f6c171f">thrill::data::CatStreamBlock</a>, <a class="el" href="multiplexer_8hpp_source.html#l00188">Multiplexer::d_</a>, <a class="el" href="die_8hpp_source.html#l00052">die_unless</a>, <a class="el" href="multiplexer_8hpp_source.html#l00152">Multiplexer::dispatcher_</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00045">MultiplexerHeader::first_item</a>, <a class="el" href="multiplexer_8cpp_source.html#l00183">Multiplexer::GetOrCreateCatStreamData()</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00108">StreamMultiplexerHeader::IsEnd()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00041">MultiplexerHeader::magic</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00043">MultiplexerHeader::num_items</a>, <a class="el" href="multiplexer_8cpp_source.html#l00391">Multiplexer::OnCatStreamBlock()</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00103">StreamMultiplexerHeader::Parse()</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00084">StreamMultiplexerHeader::receiver_local_worker</a>, <a class="el" href="round__to__power__of__two_8cpp_source.html#l00029">tlx::round_up_to_power_of_two()</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00086">StreamMultiplexerHeader::sender_worker</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00088">StreamMultiplexerHeader::seq</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00042">MultiplexerHeader::size</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00184">sLOG</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00083">StreamMultiplexerHeader::stream_id</a>, <a class="el" href="aligned__allocator_8hpp_source.html#l00027">THRILL_DEFAULT_ALIGN</a>, and <a class="el" href="multiplexer__header_8hpp_source.html#l00047">MultiplexerHeader::typecode_verify</a>.</p>
+<p>References <a class="el" href="block__pool_8cpp_source.html#l00484">BlockPool::AllocateByteBlock()</a>, <a class="el" href="dispatcher__thread_8cpp_source.html#l00081">DispatcherThread::AsyncRead()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00148">Multiplexer::block_pool_</a>, <a class="el" href="group__data__layer.html#ggaddbdb24c59770f58b29329385d0cfe73a68c027e3d04ee89b3173a67b8f6c171f">thrill::data::CatStreamBlock</a>, <a class="el" href="multiplexer_8hpp_source.html#l00191">Multiplexer::d_</a>, <a class="el" href="die_8hpp_source.html#l00052">die_unless</a>, <a class="el" href="multiplexer_8hpp_source.html#l00152">Multiplexer::dispatcher_</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00045">MultiplexerHeader::first_item</a>, <a class="el" href="multiplexer_8cpp_source.html#l00189">Multiplexer::GetOrCreateCatStreamData()</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00108">StreamMultiplexerHeader::IsEnd()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00041">MultiplexerHeader::magic</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00043">MultiplexerHeader::num_items</a>, <a class="el" href="multiplexer_8cpp_source.html#l00399">Multiplexer::OnCatStreamBlock()</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00103">StreamMultiplexerHeader::Parse()</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00084">StreamMultiplexerHeader::receiver_local_worker</a>, <a class="el" href="round__to__power__of__two_8cpp_source.html#l00029">tlx::round_up_to_power_of_two()</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00086">StreamMultiplexerHeader::sender_worker</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00088">StreamMultiplexerHeader::seq</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00042">MultiplexerHeader::size</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00184">sLOG</a>, <a class="el" href="multiplexer__header_8hpp_source.html#l00083">StreamMultiplexerHeader::stream_id</a>, <a class="el" href="aligned__allocator_8hpp_source.html#l00027">THRILL_DEFAULT_ALIGN</a>, and <a class="el" href="multiplexer__header_8hpp_source.html#l00047">MultiplexerHeader::typecode_verify</a>.</p>
 
-<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00274">Multiplexer::AsyncReadMultiplexerHeader()</a>.</p>
+<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00282">Multiplexer::AsyncReadMultiplexerHeader()</a>.</p>
 
 </div>
 </div>
@@ -1264,7 +1267,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="multiplexer_8hpp_source.html#l00158">Multiplexer::workers_per_host_</a>.</p>
 
-<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00030">StreamData::OnAllClosed()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00097">StreamData::workers_per_host()</a>.</p>
+<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>, <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00097">StreamData::workers_per_host()</a>.</p>
 
 </div>
 </div>
@@ -1289,9 +1292,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>number of active Cat/MixStreams </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8hpp_source.html#l00170">170</a> of file <a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8hpp_source.html#l00173">173</a> of file <a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00115">MixStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00184">CatStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00045">MixStreamData::GetWriters()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00082">CatStreamData::GetWriters()</a>.</p>
+<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00118">MixStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00187">CatStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>.</p>
 
 </div>
 </div>
@@ -1317,7 +1320,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="multiplexer_8hpp_source.html#l00148">148</a> of file <a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="multiplexer_8hpp_source.html#l00108">Multiplexer::block_pool()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00045">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00082">CatStreamData::GetWriters()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00268">Multiplexer::logger()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00288">Multiplexer::OnMultiplexerHeader()</a>.</p>
+<p>Referenced by <a class="el" href="multiplexer_8hpp_source.html#l00108">Multiplexer::block_pool()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00276">Multiplexer::logger()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00296">Multiplexer::OnMultiplexerHeader()</a>.</p>
 
 </div>
 </div>
@@ -1343,7 +1346,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="multiplexer_8hpp_source.html#l00164">164</a> of file <a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00156">Multiplexer::Close()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00171">Multiplexer::~Multiplexer()</a>.</p>
+<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00162">Multiplexer::Close()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00177">Multiplexer::~Multiplexer()</a>.</p>
 
 </div>
 </div>
@@ -1367,9 +1370,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>pimpl data structure </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8hpp_source.html#l00188">188</a> of file <a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8hpp_source.html#l00191">191</a> of file <a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00178">Multiplexer::AllocateCatStreamId()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00209">Multiplexer::AllocateMixStreamId()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00274">Multiplexer::AsyncReadMultiplexerHeader()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00156">Multiplexer::Close()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00189">Multiplexer::GetNewCatStream()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00220">Multiplexer::GetNewMixStream()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00197">Multiplexer::IntGetOrCreateCatStreamData()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00228">Multiplexer::IntGetOrCreateMixStreamData()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00240">Multiplexer::IntReleaseCatStream()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00254">Multiplexer::IntReleaseMixStream()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00288">Multiplexer::OnMultiplexerHeader()</a>.</p>
+<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00184">Multiplexer::AllocateCatStreamId()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00216">Multiplexer::AllocateMixStreamId()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00282">Multiplexer::AsyncReadMultiplexerHeader()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00162">Multiplexer::Close()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00195">Multiplexer::GetNewCatStream()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00227">Multiplexer::GetNewMixStream()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00203">Multiplexer::IntGetOrCreateCatStreamData()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00235">Multiplexer::IntGetOrCreateMixStreamData()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00248">Multiplexer::IntReleaseCatStream()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00262">Multiplexer::IntReleaseMixStream()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00296">Multiplexer::OnMultiplexerHeader()</a>.</p>
 
 </div>
 </div>
@@ -1416,7 +1419,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="multiplexer_8hpp_source.html#l00152">152</a> of file <a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00274">Multiplexer::AsyncReadMultiplexerHeader()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00288">Multiplexer::OnMultiplexerHeader()</a>.</p>
+<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00282">Multiplexer::AsyncReadMultiplexerHeader()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00296">Multiplexer::OnMultiplexerHeader()</a>.</p>
 
 </div>
 </div>
@@ -1440,7 +1443,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="multiplexer_8hpp_source.html#l00155">155</a> of file <a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00045">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00082">CatStreamData::GetWriters()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00128">Multiplexer::Multiplexer()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00093">Multiplexer::my_host_rank()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00088">Multiplexer::num_hosts()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00171">Multiplexer::~Multiplexer()</a>.</p>
+<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00128">Multiplexer::Multiplexer()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00093">Multiplexer::my_host_rank()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00088">Multiplexer::num_hosts()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00177">Multiplexer::~Multiplexer()</a>.</p>
 
 </div>
 </div>
@@ -1464,9 +1467,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>maximu number of active Cat/MixStreams </p>
 
-<p>Definition at line <a class="el" href="multiplexer_8hpp_source.html#l00173">173</a> of file <a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="multiplexer_8hpp_source.html#l00176">176</a> of file <a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00045">MixStreamData::GetWriters()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00082">CatStreamData::GetWriters()</a>.</p>
+<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>.</p>
 
 </div>
 </div>
@@ -1516,7 +1519,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="multiplexer_8hpp_source.html#l00161">161</a> of file <a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00178">Multiplexer::AllocateCatStreamId()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00209">Multiplexer::AllocateMixStreamId()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00115">MixStreamData::Close()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00156">Multiplexer::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00184">CatStreamData::Close()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00189">Multiplexer::GetNewCatStream()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00220">Multiplexer::GetNewMixStream()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00183">Multiplexer::GetOrCreateCatStreamData()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00214">Multiplexer::GetOrCreateMixStreamData()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00045">MixStreamData::GetWriters()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00082">CatStreamData::GetWriters()</a>.</p>
+<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00184">Multiplexer::AllocateCatStreamId()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00216">Multiplexer::AllocateMixStreamId()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00118">MixStreamData::Close()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00162">Multiplexer::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00187">CatStreamData::Close()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00195">Multiplexer::GetNewCatStream()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00227">Multiplexer::GetNewMixStream()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00189">Multiplexer::GetOrCreateCatStreamData()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00221">Multiplexer::GetOrCreateMixStreamData()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>.</p>
 
 </div>
 </div>
@@ -1542,7 +1545,33 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="multiplexer_8hpp_source.html#l00167">167</a> of file <a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00274">Multiplexer::AsyncReadMultiplexerHeader()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00128">Multiplexer::Multiplexer()</a>.</p>
+<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00282">Multiplexer::AsyncReadMultiplexerHeader()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00128">Multiplexer::Multiplexer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a567fbf4e3e70a0a722382985bc8c94da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t send_size_limit_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculated send queue size limit for <a class="el" href="classthrill_1_1data_1_1StreamData.html" title="Base class for common structures for ConcatStream and MixedStream. ">StreamData</a> semaphores. </p>
+
+<p>Definition at line <a class="el" href="multiplexer_8hpp_source.html#l00170">170</a> of file <a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00203">Multiplexer::IntGetOrCreateCatStreamData()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00235">Multiplexer::IntGetOrCreateMixStreamData()</a>, and <a class="el" href="multiplexer_8cpp_source.html#l00128">Multiplexer::Multiplexer()</a>.</p>
 
 </div>
 </div>
@@ -1568,7 +1597,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="multiplexer_8hpp_source.html#l00158">158</a> of file <a class="el" href="multiplexer_8hpp_source.html">multiplexer.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00197">Multiplexer::IntGetOrCreateCatStreamData()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00228">Multiplexer::IntGetOrCreateMixStreamData()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00098">Multiplexer::num_workers()</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00103">Multiplexer::workers_per_host()</a>.</p>
+<p>Referenced by <a class="el" href="multiplexer_8cpp_source.html#l00203">Multiplexer::IntGetOrCreateCatStreamData()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00235">Multiplexer::IntGetOrCreateMixStreamData()</a>, <a class="el" href="multiplexer_8hpp_source.html#l00098">Multiplexer::num_workers()</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00103">Multiplexer::workers_per_host()</a>.</p>
 
 </div>
 </div>
@@ -1582,7 +1611,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1Multiplexer.html">Multiplexer</a></li>
-    <li class="footer">Generated on Tue Dec 26 2017 13:47:52 for Thrill by
+    <li class="footer">Generated on Tue May 15 2018 13:08:29 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

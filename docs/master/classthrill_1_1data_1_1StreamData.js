@@ -2,7 +2,7 @@ var classthrill_1_1data_1_1StreamData =
 [
     [ "Writers", "classthrill_1_1data_1_1StreamData_1_1Writers.html", "classthrill_1_1data_1_1StreamData_1_1Writers" ],
     [ "Writer", "classthrill_1_1data_1_1StreamData.html#a08f9d7d340d452efab7eab158fcbfe64", null ],
-    [ "StreamData", "classthrill_1_1data_1_1StreamData.html#a21671988c20d9fb7d7f85e836a83542f", null ],
+    [ "StreamData", "classthrill_1_1data_1_1StreamData.html#a7d6edda4e94e25143bce4eedc363fc82", null ],
     [ "~StreamData", "classthrill_1_1data_1_1StreamData.html#a4c2a576a02e1fb5b421d073b74a9184f", null ],
     [ "Close", "classthrill_1_1data_1_1StreamData.html#aacb6d0e5e6d570cdc2b0da14c3921ff0", null ],
     [ "closed", "classthrill_1_1data_1_1StreamData.html#a13ef393e64458da714691f90545824e9", null ],
@@ -29,6 +29,7 @@ var classthrill_1_1data_1_1StreamData =
     [ "rx_net_items_", "classthrill_1_1data_1_1StreamData.html#a04bb11ac9a782a852f31fc409d5f5318", null ],
     [ "rx_timespan_", "classthrill_1_1data_1_1StreamData.html#ad790c9b451a3121c671fdfe98f0ca08a", null ],
     [ "sem_closing_blocks_", "classthrill_1_1data_1_1StreamData.html#a30f814b85f665384c0e2c821fe92756a", null ],
+    [ "sem_queue_", "classthrill_1_1data_1_1StreamData.html#a500bb11613132e914c38ffa1713cdd6a", null ],
     [ "tx_int_blocks_", "classthrill_1_1data_1_1StreamData.html#a651909fafd662aa9193bc7d95a165051", null ],
     [ "tx_int_bytes_", "classthrill_1_1data_1_1StreamData.html#a344f9c6321c7333551e1bd4199e0d4ef", null ],
     [ "tx_int_items_", "classthrill_1_1data_1_1StreamData.html#a228f5a252cf1837042bba0df69a803be", null ],

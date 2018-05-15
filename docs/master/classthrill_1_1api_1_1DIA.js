@@ -23,6 +23,7 @@ var classthrill_1_1api_1_1DIA =
     [ "context", "classthrill_1_1api_1_1DIA.html#a30939aa1412ef0bc6eab21ac2ffbf6d1", null ],
     [ "ctx", "classthrill_1_1api_1_1DIA.html#aaebb097af339676d4faf1415e1184872", null ],
     [ "Execute", "classthrill_1_1api_1_1DIA.html#aaa10a8f7e1ae62e7fd01b4120642cc07", null ],
+    [ "ExPrefixSum", "group__dia__dops.html#ga8b080a7545e8235fffc737171ab79986", null ],
     [ "Filter", "group__dia__lops.html#ga3311a295c7295895860192e1699620d9", null ],
     [ "FlatMap", "group__dia__lops.html#ga69857a1a89bc161dc35ac9b925ad2a61", null ],
     [ "FlatWindow", "group__dia__dops.html#ga59be1d911a3bb9d61b7b1d8e8558d626", null ],

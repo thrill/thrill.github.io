@@ -25,7 +25,7 @@ var searchData=
   ['default_5fblock_5fsize',['default_block_size',['../group__data__layer.html#gaf7e35b7b12aa89f4b4566640a03c62fb',1,'thrill::data']]],
   ['default_5fdevice_5fid',['DEFAULT_DEVICE_ID',['../classthrill_1_1io_1_1FileBase.html#adcb34e60a0fb74a47ec25fa3ee5399f2',1,'thrill::io::FileBase']]],
   ['default_5flinuxaio_5fqueue',['DEFAULT_LINUXAIO_QUEUE',['../classthrill_1_1io_1_1FileBase.html#a6e4f6096f1c9c0faf963218ee3ee61c3',1,'thrill::io::FileBase']]],
-  ['default_5fprefetch',['default_prefetch',['../classthrill_1_1data_1_1File.html#afbf6cd3dfaf227d9d3354af50af5fa5e',1,'thrill::data::File']]],
+  ['default_5fprefetch_5fsize_5f',['default_prefetch_size_',['../classthrill_1_1data_1_1File.html#a72cb20a6a53a269d507c18272e1bf941',1,'thrill::data::File']]],
   ['default_5fqueue',['DEFAULT_QUEUE',['../classthrill_1_1io_1_1FileBase.html#a617f76262339ddecb81b2094ddbe7834',1,'thrill::io::FileBase']]],
   ['delete_5fon_5fexit',['delete_on_exit',['../classthrill_1_1io_1_1DiskConfig.html#a5b64baa9e95e050973a434db3c6330ca',1,'thrill::io::DiskConfig']]],
   ['delta',['delta',['../namespaceexamples_1_1select.html#a9eb248cd425bb908c67fa311945029cc',1,'examples::select']]],

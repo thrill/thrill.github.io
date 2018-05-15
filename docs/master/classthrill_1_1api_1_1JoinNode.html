@@ -348,8 +348,6 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a50bbe9134ad3a335b52a0ca1ad4f54ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1JoinNode.html#a50bbe9134ad3a335b52a0ca1ad4f54ab">MainOp</a> ()</td></tr>
 <tr class="memdesc:a50bbe9134ad3a335b52a0ca1ad4f54ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive elements from other workers, create pre-sorted files.  <a href="#a50bbe9134ad3a335b52a0ca1ad4f54ab">More...</a><br/></td></tr>
 <tr class="separator:a50bbe9134ad3a335b52a0ca1ad4f54ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc0abc3695a4729d13b5aec44c8c83bc"><td class="memItemLeft" align="right" valign="top">std::pair&lt; size_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1JoinNode.html#acc0abc3695a4729d13b5aec44c8c83bc">MaxMergeDegreePrefetch</a> (std::deque&lt; <a class="el" href="classthrill_1_1data_1_1File.html">data::File</a> &gt; &amp;files)</td></tr>
-<tr class="separator:acc0abc3695a4729d13b5aec44c8c83bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4bb3a98ca523658c95643111e0fb983"><td class="memTemplParams" colspan="2">template&lt;typename ItemType , typename CompareFunction &gt; </td></tr>
 <tr class="memitem:af4bb3a98ca523658c95643111e0fb983"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1JoinNode.html#af4bb3a98ca523658c95643111e0fb983">MergeFiles</a> (std::deque&lt; <a class="el" href="classthrill_1_1data_1_1File.html">data::File</a> &gt; &amp;files, CompareFunction compare_function)</td></tr>
 <tr class="memdesc:af4bb3a98ca523658c95643111e0fb983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merge files when there are too many for the merge tree to handle.  <a href="#af4bb3a98ca523658c95643111e0fb983">More...</a><br/></td></tr>
@@ -682,11 +680,11 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pair of bools, first bool indicates whether the merge tree is emptied, second bool indicates whether external memory was needed (always true, when this method was called). </dd></dl>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00436">436</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00437">437</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
 <p>References <a class="el" href="block__writer_8hpp_source.html#l00202">BlockWriter&lt; BlockSink &gt;::Put()</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00381">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::AddEqualKeysToVec()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00382">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::AddEqualKeysToVec()</a>.</p>
 
 </div>
 </div>
@@ -747,11 +745,11 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Pair of bools, first bool indicates whether the merge tree is emptied, second bool indicates whether external memory was needed. </dd></dl>
 <p>vec is very large when this happens swap with empty vector to free the memory </p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00381">381</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00382">382</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>References <a class="el" href="inner__join_8hpp_source.html#l00436">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::AddEqualKeysToFile()</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="context_8cpp_source.html#l01135">Context::GetFilePtr()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00172">thrill::mem::memory_exceeded</a>, <a class="el" href="block__writer_8hpp_source.html#l00202">BlockWriter&lt; BlockSink &gt;::Put()</a>, and <a class="el" href="counting__ptr_8hpp_source.html#l00263">tlx::swap()</a>.</p>
+<p>References <a class="el" href="inner__join_8hpp_source.html#l00437">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::AddEqualKeysToFile()</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="context_8cpp_source.html#l01126">Context::GetFilePtr()</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00172">thrill::mem::memory_exceeded</a>, <a class="el" href="block__writer_8hpp_source.html#l00202">BlockWriter&lt; BlockSink &gt;::Put()</a>, and <a class="el" href="counting__ptr_8hpp_source.html#l00263">tlx::swap()</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00214">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00215">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -780,9 +778,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classthrill_1_1api_1_1DIABase.html#a1b40a2658f30f8466f310ceea310afb5">DIABase</a>.</p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00290">290</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00291">291</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>References <a class="el" href="inner__join_8hpp_source.html#l00297">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::files1_</a>, and <a class="el" href="inner__join_8hpp_source.html#l00298">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::files2_</a>.</p>
+<p>References <a class="el" href="inner__join_8hpp_source.html#l00298">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::files1_</a>, and <a class="el" href="inner__join_8hpp_source.html#l00299">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::files2_</a>.</p>
 
 </div>
 </div>
@@ -811,7 +809,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classthrill_1_1api_1_1DIABase.html#a4d9faa461a2979ae001062f9bf199cb3">DIABase</a>.</p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00484">484</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00485">485</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
 <p>References <a class="el" href="dia__base_8hpp_source.html#l00060">DIAMemUse::Max()</a>.</p>
 
@@ -866,11 +864,11 @@ Additional Inherited Members</h2></td></tr>
 <p>file 2 needs to be read multiple times</p>
 <p>non-consuming reader, need to clear now </p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00590">590</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00571">571</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>References <a class="el" href="block__reader_8hpp_source.html#l00118">BlockReader&lt; BlockSource &gt;::HasNext()</a>, <a class="el" href="inner__join_8hpp_source.html#l00582">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::join_file1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00583">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::join_file2_</a>, <a class="el" href="inner__join_8hpp_source.html#l00303">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::join_function_</a>, <a class="el" href="inner__join_8hpp_source.html#l00301">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::key_extractor1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00302">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::key_extractor2_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00176">LOG1</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00172">thrill::mem::memory_exceeded</a>, and <a class="el" href="dia__node_8hpp_source.html#l00147">DIANode&lt; ValueType &gt;::PushItem()</a>.</p>
+<p>References <a class="el" href="block__reader_8hpp_source.html#l00118">BlockReader&lt; BlockSource &gt;::HasNext()</a>, <a class="el" href="inner__join_8hpp_source.html#l00563">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::join_file1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00564">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::join_file2_</a>, <a class="el" href="inner__join_8hpp_source.html#l00304">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::join_function_</a>, <a class="el" href="inner__join_8hpp_source.html#l00302">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::key_extractor1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00303">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::key_extractor2_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00176">LOG1</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00172">thrill::mem::memory_exceeded</a>, and <a class="el" href="dia__node_8hpp_source.html#l00147">DIANode&lt; ValueType &gt;::PushItem()</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00214">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00215">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -895,7 +893,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00361">361</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00362">362</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
 <p>References <a class="el" href="dia__base_8hpp_source.html#l00314">DIABase::mem_limit_</a>.</p>
 
@@ -924,9 +922,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Receive elements from other workers, create pre-sorted files. </p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00344">344</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00345">345</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>References <a class="el" href="inner__join_8hpp_source.html#l00297">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::files1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00298">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::files2_</a>, <a class="el" href="inner__join_8hpp_source.html#l00307">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::hash_stream1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00309">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::hash_stream2_</a>, <a class="el" href="inner__join_8hpp_source.html#l00301">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::key_extractor1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00302">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::key_extractor2_</a>, and <a class="el" href="dia__base_8hpp_source.html#l00314">DIABase::mem_limit_</a>.</p>
+<p>References <a class="el" href="inner__join_8hpp_source.html#l00298">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::files1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00299">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::files2_</a>, <a class="el" href="inner__join_8hpp_source.html#l00308">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::hash_stream1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00310">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::hash_stream2_</a>, <a class="el" href="inner__join_8hpp_source.html#l00302">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::key_extractor1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00303">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::key_extractor2_</a>, and <a class="el" href="dia__base_8hpp_source.html#l00314">DIABase::mem_limit_</a>.</p>
 
 </div>
 </div>
@@ -976,38 +974,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00198">198</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>References <a class="el" href="inner__join_8hpp_source.html#l00518">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MaxMergeDegreePrefetch()</a>, and <a class="el" href="file_8hpp_source.html#l00562">thrill::data::StartPrefetch()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acc0abc3695a4729d13b5aec44c8c83bc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::pair&lt;size_t, size_t&gt; MaxMergeDegreePrefetch </td>
-          <td>(</td>
-          <td class="paramtype">std::deque&lt; <a class="el" href="classthrill_1_1data_1_1File.html">data::File</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>files</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>calculate maximum merging degree from available memory and the number of files. additionally calculate the prefetch size of each File. </p>
-
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00518">518</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
-
-<p>References <a class="el" href="byte__block_8cpp_source.html#l00024">thrill::data::default_block_size</a>, and <a class="el" href="dia__base_8hpp_source.html#l00314">DIABase::mem_limit_</a>.</p>
-
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00198">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MakePuller()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00540">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MergeFiles()</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00321">Context::block_pool()</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="block__pool_8cpp_source.html#l00703">BlockPool::MaxMergeDegreePrefetch()</a>, and <a class="el" href="file_8hpp_source.html#l00570">thrill::data::StartPrefetch()</a>.</p>
 
 </div>
 </div>
@@ -1045,9 +1012,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Merge files when there are too many for the merge tree to handle. </p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00540">540</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00521">521</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="context_8hpp_source.html#l00280">Context::GetFile()</a>, <a class="el" href="inner__join_8hpp_source.html#l00518">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MaxMergeDegreePrefetch()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00188">sLOG1</a>, and <a class="el" href="file_8hpp_source.html#l00562">thrill::data::StartPrefetch()</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00321">Context::block_pool()</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="context_8hpp_source.html#l00280">Context::GetFile()</a>, <a class="el" href="block__pool_8cpp_source.html#l00703">BlockPool::MaxMergeDegreePrefetch()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00188">sLOG1</a>, and <a class="el" href="file_8hpp_source.html#l00570">thrill::data::StartPrefetch()</a>.</p>
 
 </div>
 </div>
@@ -1073,9 +1040,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00321">321</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00322">322</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="inner__join_8hpp_source.html#l00084">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::HashCount::hash</a>, <a class="el" href="inner__join_8hpp_source.html#l00304">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::hash_function_</a>, <a class="el" href="inner__join_8hpp_source.html#l00308">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::hash_writers1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00301">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::key_extractor1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00318">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::location_detection_</a>, <a class="el" href="context_8hpp_source.html#l00248">Context::num_workers()</a>, <a class="el" href="inner__join_8hpp_source.html#l00314">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::pre_writer1_</a>, and <a class="el" href="block__writer_8hpp_source.html#l00202">BlockWriter&lt; BlockSink &gt;::Put()</a>.</p>
+<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="inner__join_8hpp_source.html#l00084">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::HashCount::hash</a>, <a class="el" href="inner__join_8hpp_source.html#l00305">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::hash_function_</a>, <a class="el" href="inner__join_8hpp_source.html#l00309">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::hash_writers1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00302">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::key_extractor1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00319">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::location_detection_</a>, <a class="el" href="context_8hpp_source.html#l00248">Context::num_workers()</a>, <a class="el" href="inner__join_8hpp_source.html#l00315">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::pre_writer1_</a>, and <a class="el" href="block__writer_8hpp_source.html#l00202">BlockWriter&lt; BlockSink &gt;::Put()</a>.</p>
 
 </div>
 </div>
@@ -1101,9 +1068,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00332">332</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00333">333</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="inner__join_8hpp_source.html#l00084">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::HashCount::hash</a>, <a class="el" href="inner__join_8hpp_source.html#l00304">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::hash_function_</a>, <a class="el" href="inner__join_8hpp_source.html#l00310">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::hash_writers2_</a>, <a class="el" href="inner__join_8hpp_source.html#l00302">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::key_extractor2_</a>, <a class="el" href="inner__join_8hpp_source.html#l00318">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::location_detection_</a>, <a class="el" href="context_8hpp_source.html#l00248">Context::num_workers()</a>, <a class="el" href="inner__join_8hpp_source.html#l00316">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::pre_writer2_</a>, and <a class="el" href="block__writer_8hpp_source.html#l00202">BlockWriter&lt; BlockSink &gt;::Put()</a>.</p>
+<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="inner__join_8hpp_source.html#l00084">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::HashCount::hash</a>, <a class="el" href="inner__join_8hpp_source.html#l00305">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::hash_function_</a>, <a class="el" href="inner__join_8hpp_source.html#l00311">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::hash_writers2_</a>, <a class="el" href="inner__join_8hpp_source.html#l00303">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::key_extractor2_</a>, <a class="el" href="inner__join_8hpp_source.html#l00319">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::location_detection_</a>, <a class="el" href="context_8hpp_source.html#l00248">Context::num_workers()</a>, <a class="el" href="inner__join_8hpp_source.html#l00317">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::pre_writer2_</a>, and <a class="el" href="block__writer_8hpp_source.html#l00202">BlockWriter&lt; BlockSink &gt;::Put()</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1099,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classthrill_1_1api_1_1DIABase.html#ade76983c318547469ec16985fad93352">DIABase</a>.</p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00452">452</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00453">453</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
 <p>References <a class="el" href="dia__base_8hpp_source.html#l00060">DIAMemUse::Max()</a>.</p>
 
@@ -1167,9 +1134,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classthrill_1_1api_1_1DIABase.html#a7b55875187fc15ca2640cb6b9266a624">DIABase</a>.</p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00214">214</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00215">215</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>References <a class="el" href="inner__join_8hpp_source.html#l00381">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::AddEqualKeysToVec()</a>, <a class="el" href="inner__join_8hpp_source.html#l00297">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::files1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00298">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::files2_</a>, <a class="el" href="inner__join_8hpp_source.html#l00582">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::join_file1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00583">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::join_file2_</a>, <a class="el" href="inner__join_8hpp_source.html#l00590">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::JoinAllElements()</a>, <a class="el" href="inner__join_8hpp_source.html#l00301">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::key_extractor1_</a>, and <a class="el" href="inner__join_8hpp_source.html#l00302">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::key_extractor2_</a>.</p>
+<p>References <a class="el" href="inner__join_8hpp_source.html#l00382">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::AddEqualKeysToVec()</a>, <a class="el" href="inner__join_8hpp_source.html#l00298">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::files1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00299">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::files2_</a>, <a class="el" href="inner__join_8hpp_source.html#l00563">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::join_file1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00564">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::join_file2_</a>, <a class="el" href="inner__join_8hpp_source.html#l00571">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::JoinAllElements()</a>, <a class="el" href="inner__join_8hpp_source.html#l00302">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::key_extractor1_</a>, and <a class="el" href="inner__join_8hpp_source.html#l00303">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::key_extractor2_</a>.</p>
 
 </div>
 </div>
@@ -1198,7 +1165,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classthrill_1_1api_1_1DIABase.html#a5f1ad74bf30b2edaa8f0469ec3802f1f">DIABase</a>.</p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00488">488</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00489">489</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
 <p>References <a class="el" href="dia__base_8hpp_source.html#l00060">DIAMemUse::Max()</a>.</p>
 
@@ -1250,9 +1217,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Recieve all elements from a stream and write them to files sorted by key. </p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00496">496</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00497">497</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>References <a class="el" href="mix__block__queue_8hpp_source.html#l00182">MixBlockQueueReader::HasNext()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00670">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::SortAndWriteToFile()</a>.</p>
+<p>References <a class="el" href="mix__block__queue_8hpp_source.html#l00182">MixBlockQueueReader::HasNext()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00651">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::SortAndWriteToFile()</a>.</p>
 
 </div>
 </div>
@@ -1296,11 +1263,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sorts all elements in a vector and writes them to a file. </p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00670">670</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00651">651</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>References <a class="el" href="block__pool_8cpp_source.html#l01146">BlockPool::AdviseFree()</a>, <a class="el" href="context_8hpp_source.html#l00321">Context::block_pool()</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, and <a class="el" href="context_8hpp_source.html#l00280">Context::GetFile()</a>.</p>
+<p>References <a class="el" href="block__pool_8cpp_source.html#l01162">BlockPool::AdviseFree()</a>, <a class="el" href="context_8hpp_source.html#l00321">Context::block_pool()</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, and <a class="el" href="context_8hpp_source.html#l00280">Context::GetFile()</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00496">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::ReceiveItems()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00497">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::ReceiveItems()</a>.</p>
 
 </div>
 </div>
@@ -1330,9 +1297,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classthrill_1_1api_1_1DIABase.html#a4b3ddda1418ebf0574a00f8ebf341265">DIABase</a>.</p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00456">456</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00457">457</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>References <a class="el" href="file_8cpp_source.html#l00063">File::GetWriter()</a>, <a class="el" href="dia__base_8hpp_source.html#l00213">DIABase::id()</a>, <a class="el" href="inner__join_8hpp_source.html#l00318">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::location_detection_</a>, <a class="el" href="inner__join_8hpp_source.html#l00319">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::location_detection_initialized_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="dia__base_8hpp_source.html#l00314">DIABase::mem_limit_</a>, <a class="el" href="dia__base_8hpp_source.html#l00258">DIABase::parent_ids()</a>, <a class="el" href="inner__join_8hpp_source.html#l00313">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::pre_file1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00315">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::pre_file2_</a>, <a class="el" href="inner__join_8hpp_source.html#l00314">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::pre_writer1_</a>, and <a class="el" href="inner__join_8hpp_source.html#l00316">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::pre_writer2_</a>.</p>
+<p>References <a class="el" href="file_8cpp_source.html#l00063">File::GetWriter()</a>, <a class="el" href="dia__base_8hpp_source.html#l00213">DIABase::id()</a>, <a class="el" href="inner__join_8hpp_source.html#l00319">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::location_detection_</a>, <a class="el" href="inner__join_8hpp_source.html#l00320">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::location_detection_initialized_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="dia__base_8hpp_source.html#l00314">DIABase::mem_limit_</a>, <a class="el" href="dia__base_8hpp_source.html#l00258">DIABase::parent_ids()</a>, <a class="el" href="inner__join_8hpp_source.html#l00314">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::pre_file1_</a>, <a class="el" href="inner__join_8hpp_source.html#l00316">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::pre_file2_</a>, <a class="el" href="inner__join_8hpp_source.html#l00315">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::pre_writer1_</a>, and <a class="el" href="inner__join_8hpp_source.html#l00317">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::pre_writer2_</a>.</p>
 
 </div>
 </div>
@@ -1362,9 +1329,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classthrill_1_1api_1_1DIABase.html#ae1434a566c104eefe027936856588f33">DIABase</a>.</p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00473">473</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00474">474</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>References <a class="el" href="block__writer_8hpp_source.html#l00121">BlockWriter&lt; BlockSink &gt;::Close()</a>, <a class="el" href="dia__base_8hpp_source.html#l00213">DIABase::id()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="inner__join_8hpp_source.html#l00314">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::pre_writer1_</a>, and <a class="el" href="inner__join_8hpp_source.html#l00316">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::pre_writer2_</a>.</p>
+<p>References <a class="el" href="block__writer_8hpp_source.html#l00121">BlockWriter&lt; BlockSink &gt;::Close()</a>, <a class="el" href="dia__base_8hpp_source.html#l00213">DIABase::id()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="inner__join_8hpp_source.html#l00315">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::pre_writer1_</a>, and <a class="el" href="inner__join_8hpp_source.html#l00317">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::pre_writer2_</a>.</p>
 
 </div>
 </div>
@@ -1411,9 +1378,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>files for sorted datasets </p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00297">297</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00298">298</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00290">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::Dispose()</a>, <a class="el" href="inner__join_8hpp_source.html#l00344">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00214">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00291">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::Dispose()</a>, <a class="el" href="inner__join_8hpp_source.html#l00345">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00215">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -1435,9 +1402,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00298">298</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00299">299</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00290">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::Dispose()</a>, <a class="el" href="inner__join_8hpp_source.html#l00344">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00214">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00291">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::Dispose()</a>, <a class="el" href="inner__join_8hpp_source.html#l00345">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00215">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -1459,9 +1426,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00304">304</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00305">305</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00321">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp1()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00332">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp2()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00322">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp1()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00333">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp2()</a>.</p>
 
 </div>
 </div>
@@ -1485,9 +1452,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>data streams for inter-worker communication of <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> elements </p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00307">307</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00308">308</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00344">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00345">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -1509,9 +1476,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00309">309</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00310">310</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00344">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00345">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -1533,9 +1500,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00308">308</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00309">309</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00321">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp1()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00322">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp1()</a>.</p>
 
 </div>
 </div>
@@ -1557,9 +1524,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00310">310</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00311">311</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00332">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp2()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00333">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp2()</a>.</p>
 
 </div>
 </div>
@@ -1581,9 +1548,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00582">582</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00563">563</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00590">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::JoinAllElements()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00214">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00571">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::JoinAllElements()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00215">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -1605,9 +1572,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00583">583</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00564">564</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00590">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::JoinAllElements()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00214">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00571">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::JoinAllElements()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00215">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -1629,9 +1596,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00303">303</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00304">304</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00590">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::JoinAllElements()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00571">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::JoinAllElements()</a>.</p>
 
 </div>
 </div>
@@ -1655,9 +1622,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>user-defined functions </p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00301">301</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00302">302</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00590">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::JoinAllElements()</a>, <a class="el" href="inner__join_8hpp_source.html#l00344">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>, <a class="el" href="inner__join_8hpp_source.html#l00321">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp1()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00214">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00571">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::JoinAllElements()</a>, <a class="el" href="inner__join_8hpp_source.html#l00345">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>, <a class="el" href="inner__join_8hpp_source.html#l00322">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp1()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00215">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -1679,9 +1646,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00302">302</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00303">303</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00590">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::JoinAllElements()</a>, <a class="el" href="inner__join_8hpp_source.html#l00344">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>, <a class="el" href="inner__join_8hpp_source.html#l00332">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp2()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00214">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PushData()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00571">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::JoinAllElements()</a>, <a class="el" href="inner__join_8hpp_source.html#l00345">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::MainOp()</a>, <a class="el" href="inner__join_8hpp_source.html#l00333">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp2()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00215">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PushData()</a>.</p>
 
 </div>
 </div>
@@ -1703,9 +1670,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00318">318</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00319">319</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00321">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp1()</a>, <a class="el" href="inner__join_8hpp_source.html#l00332">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp2()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00456">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::StartPreOp()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00322">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp1()</a>, <a class="el" href="inner__join_8hpp_source.html#l00333">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp2()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00457">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::StartPreOp()</a>.</p>
 
 </div>
 </div>
@@ -1727,9 +1694,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00319">319</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00320">320</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00456">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::StartPreOp()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00457">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::StartPreOp()</a>.</p>
 
 </div>
 </div>
@@ -1753,9 +1720,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>location detection and associated files </p>
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00313">313</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00314">314</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00456">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::StartPreOp()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00457">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::StartPreOp()</a>.</p>
 
 </div>
 </div>
@@ -1777,9 +1744,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00315">315</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00316">316</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00456">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::StartPreOp()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00457">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::StartPreOp()</a>.</p>
 
 </div>
 </div>
@@ -1801,9 +1768,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00314">314</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00315">315</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00321">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp1()</a>, <a class="el" href="inner__join_8hpp_source.html#l00456">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::StartPreOp()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00473">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::StopPreOp()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00322">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp1()</a>, <a class="el" href="inner__join_8hpp_source.html#l00457">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::StartPreOp()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00474">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::StopPreOp()</a>.</p>
 
 </div>
 </div>
@@ -1825,9 +1792,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00316">316</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
+<p>Definition at line <a class="el" href="inner__join_8hpp_source.html#l00317">317</a> of file <a class="el" href="inner__join_8hpp_source.html">inner_join.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00332">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp2()</a>, <a class="el" href="inner__join_8hpp_source.html#l00456">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::StartPreOp()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00473">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::StopPreOp()</a>.</p>
+<p>Referenced by <a class="el" href="inner__join_8hpp_source.html#l00333">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::PreOp2()</a>, <a class="el" href="inner__join_8hpp_source.html#l00457">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::StartPreOp()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00474">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::StopPreOp()</a>.</p>
 
 </div>
 </div>
@@ -1840,7 +1807,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1api.html">api</a></li><li class="navelem"><a class="el" href="classthrill_1_1api_1_1JoinNode.html">JoinNode</a></li>
-    <li class="footer">Generated on Tue Dec 26 2017 13:47:51 for Thrill by
+    <li class="footer">Generated on Tue May 15 2018 13:08:28 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
