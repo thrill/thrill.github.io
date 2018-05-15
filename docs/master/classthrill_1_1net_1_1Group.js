@@ -4,6 +4,8 @@ var classthrill_1_1net_1_1Group =
     [ "Group", "classthrill_1_1net_1_1Group.html#a356c5b456ed9bf1c05e9851f335cbcc1", null ],
     [ "Group", "classthrill_1_1net_1_1Group.html#acdbdbe4c2b6fd1fbe6ac2d899baecf99", null ],
     [ "~Group", "classthrill_1_1net_1_1Group.html#af01fe963b4d079001758b734085e6c8a", null ],
+    [ "AllGatherBruck", "group__net__layer.html#gadb3d699026baf1b06d80d5c5f205367f", null ],
+    [ "AllGatherRecursiveDoublingPowerOfTwo", "group__net__layer.html#ga6c7021d71c8e93209d170fb46b9a4886", null ],
     [ "AllReduce", "group__net__layer.html#ga6331da9c2000bb2e7f1a21ca55c3af72", null ],
     [ "AllReduce", "group__net__layer.html#ga62112b0e41cb954995e8c12cda3f9364", null ],
     [ "AllReduce", "group__net__layer.html#gae1848c7eb8858c5d908e31adb2eeafcb", null ],

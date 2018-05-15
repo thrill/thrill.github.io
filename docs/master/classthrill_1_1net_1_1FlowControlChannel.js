@@ -7,6 +7,7 @@ var classthrill_1_1net_1_1FlowControlChannel =
     [ "FlowControlChannel", "classthrill_1_1net_1_1FlowControlChannel.html#a662060fbd9c9055af353b308d948313f", null ],
     [ "FlowControlChannel", "classthrill_1_1net_1_1FlowControlChannel.html#ad3669c1f8699b878e06e9c0537a1f550", null ],
     [ "~FlowControlChannel", "classthrill_1_1net_1_1FlowControlChannel.html#af48e77363ec6c8a97f95d0ba4d875d66", null ],
+    [ "AllGather", "classthrill_1_1net_1_1FlowControlChannel.html#a00bda403c7625f2d37a0deed8ebf6f69", null ],
     [ "AllReduce", "group__net__layer.html#gac3aee749e82c42410595c44eed93fa5d", null ],
     [ "Barrier", "classthrill_1_1net_1_1FlowControlChannel.html#a26211ac2574d35b91a21a30580a39a50", null ],
     [ "Broadcast", "group__net__layer.html#gab19e498b9d9ea7ec1e7dbd39c193835b", null ],

@@ -1,5 +1,16 @@
 var NAVTREEINDEX31 =
 {
+"serialization_8hpp.html#ga0b2104d36418070caaf9f237b0acb306":[4,0,3,3,25,6],
+"serialization_8hpp_source.html":[4,0,3,3,25],
+"serialization__cereal_8hpp.html":[4,0,3,3,26],
+"serialization__cereal_8hpp.html#a057e3eab4a9a53b19226769b0bf9d885":[4,0,3,3,26,5],
+"serialization__cereal_8hpp.html#a192263dcf13aa4d69df7044a44244a1a":[4,0,3,3,26,3],
+"serialization__cereal_8hpp.html#a2ef7526a18034002607fb6bc526e1194":[4,0,3,3,26,9],
+"serialization__cereal_8hpp.html#a2f4dadbd093b264aa91fa0c699485f30":[4,0,3,3,26,7],
+"serialization__cereal_8hpp.html#a326c346d40fd2dadadbcf8bd620b5e18":[4,0,3,3,26,10],
+"serialization__cereal_8hpp.html#a659079314493c0a528477d661544e79f":[4,0,3,3,26,4],
+"serialization__cereal_8hpp.html#aa1a5fde53828b1121d86434a3e6b0321":[4,0,3,3,26,2],
+"serialization__cereal_8hpp.html#ad2e22ccd55b8f38ce377a1b74be6b527":[4,0,3,3,26,8],
 "serialization__cereal_8hpp.html#aed00ca1daa0eb4ee4385f3c762e208bf":[4,0,3,3,26,6],
 "serialization__cereal_8hpp_source.html":[4,0,3,3,26],
 "serialization__fwd_8hpp.html":[4,0,3,3,27],
@@ -238,16 +249,5 @@ var NAVTREEINDEX31 =
 "structexamples_1_1page__rank_1_1PagePageLink.html#a5e217b4bf61d841696cf7326ef96831e":[3,0,0,3,0,0],
 "structexamples_1_1page__rank_1_1PagePageLink.html#ae31aabbe445f1babf22d52e8c8b2a7ae":[3,0,0,3,0,2],
 "structexamples_1_1page__rank_1_1PagePageLink.html#ae5635a2fdcd2d3c932e8682fe5f3b464":[3,0,0,3,0,1],
-"structexamples_1_1page__rank_1_1PageRankPair.html":[3,0,0,3,1],
-"structexamples_1_1page__rank_1_1PageRankPair.html#a0882652f2514e5b107399ebe33f36688":[3,0,0,3,1,1],
-"structexamples_1_1page__rank_1_1PageRankPair.html#a420e59726263f526ac83effecba02401":[3,0,0,3,1,2],
-"structexamples_1_1page__rank_1_1PageRankPair.html#a6f8de43bb9178720720f91cd0628fd0e":[3,0,0,3,1,0],
-"structexamples_1_1stochastic__gradient__descent_1_1DataPoint.html":[3,0,0,5,0],
-"structexamples_1_1stochastic__gradient__descent_1_1DataPoint.html#a33235bd834a7436b577915b5bd959a94":[3,0,0,5,0,2],
-"structexamples_1_1stochastic__gradient__descent_1_1DataPoint.html#a9b13c5d58328551b7614b052ee5a11f4":[3,0,0,5,0,1],
-"structexamples_1_1stochastic__gradient__descent_1_1DataPoint.html#af1bc3875f801cb81d66f3076f3094267":[3,0,0,5,0,0],
-"structexamples_1_1stochastic__gradient__descent_1_1GradientResult.html":[3,0,0,5,1],
-"structexamples_1_1stochastic__gradient__descent_1_1GradientResult.html#a2da256b74c049d8736ff4bf8d0343495":[3,0,0,5,1,3],
-"structexamples_1_1stochastic__gradient__descent_1_1GradientResult.html#a968cec49c06f32d24c5035cc51a3afad":[3,0,0,5,1,2],
-"structexamples_1_1stochastic__gradient__descent_1_1GradientResult.html#aaf9f0c54bba19f4881df779c9ca6078f":[3,0,0,5,1,0]
+"structexamples_1_1page__rank_1_1PageRankPair.html":[3,0,0,3,1]
 };

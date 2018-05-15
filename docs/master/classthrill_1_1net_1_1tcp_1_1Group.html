@@ -346,6 +346,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:gae7d43ddc63095a29b23cc436d5d41cb9 inherit pub_methods_classthrill_1_1net_1_1Group"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gae7d43ddc63095a29b23cc436d5d41cb9">BroadcastBinomialTree</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, size_t origin=0)</td></tr>
 <tr class="memdesc:gae7d43ddc63095a29b23cc436d5d41cb9 inherit pub_methods_classthrill_1_1net_1_1Group"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts the value of the worker with index "origin" to all the others.  <a href="group__net__layer.html#gae7d43ddc63095a29b23cc436d5d41cb9">More...</a><br/></td></tr>
 <tr class="separator:gae7d43ddc63095a29b23cc436d5d41cb9 inherit pub_methods_classthrill_1_1net_1_1Group"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c7021d71c8e93209d170fb46b9a4886 inherit pub_methods_classthrill_1_1net_1_1Group"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga6c7021d71c8e93209d170fb46b9a4886 inherit pub_methods_classthrill_1_1net_1_1Group"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga6c7021d71c8e93209d170fb46b9a4886">AllGatherRecursiveDoublingPowerOfTwo</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> *values, size_t n)</td></tr>
+<tr class="separator:ga6c7021d71c8e93209d170fb46b9a4886 inherit pub_methods_classthrill_1_1net_1_1Group"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb3d699026baf1b06d80d5c5f205367f inherit pub_methods_classthrill_1_1net_1_1Group"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gadb3d699026baf1b06d80d5c5f205367f inherit pub_methods_classthrill_1_1net_1_1Group"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gadb3d699026baf1b06d80d5c5f205367f">AllGatherBruck</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> *values, size_t n)</td></tr>
+<tr class="separator:gadb3d699026baf1b06d80d5c5f205367f inherit pub_methods_classthrill_1_1net_1_1Group"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga694fa1adf7b657071cf893bc3b10de34 inherit pub_methods_classthrill_1_1net_1_1Group"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
 <tr class="memitem:ga694fa1adf7b657071cf893bc3b10de34 inherit pub_methods_classthrill_1_1net_1_1Group"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga694fa1adf7b657071cf893bc3b10de34">AllReduceSelect</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp())</td></tr>
 <tr class="memdesc:ga694fa1adf7b657071cf893bc3b10de34 inherit pub_methods_classthrill_1_1net_1_1Group"><td class="mdescLeft">&#160;</td><td class="mdescRight">select allreduce implementation (often due to total number of processors)  <a href="group__net__layer.html#ga694fa1adf7b657071cf893bc3b10de34">More...</a><br/></td></tr>
@@ -708,7 +714,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="tcp_2group_8hpp_source.html#l00135">135</a> of file <a class="el" href="tcp_2group_8hpp_source.html">group.hpp</a>.</p>
 
-<p>References <a class="el" href="tcp_2group_8hpp_source.html#l00156">Group::connections_</a>, and <a class="el" href="group_8hpp_source.html#l00224">Group::my_rank_</a>.</p>
+<p>References <a class="el" href="tcp_2group_8hpp_source.html#l00156">Group::connections_</a>, and <a class="el" href="group_8hpp_source.html#l00232">Group::my_rank_</a>.</p>
 
 <p>Referenced by <a class="el" href="tcp_2group_8hpp_source.html#l00148">Group::~Group()</a>.</p>
 
@@ -948,7 +954,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="tcp_2group_8hpp_source.html#l00087">87</a> of file <a class="el" href="tcp_2group_8hpp_source.html">group.hpp</a>.</p>
 
-<p>References <a class="el" href="tcp_2group_8hpp_source.html#l00156">Group::connections_</a>, <a class="el" href="group_8hpp_source.html#l00224">Group::my_rank_</a>, and <a class="el" href="thrill_2mem_2allocator__base_8hpp_source.html#l00190">thrill::mem::to_string()</a>.</p>
+<p>References <a class="el" href="tcp_2group_8hpp_source.html#l00156">Group::connections_</a>, <a class="el" href="group_8hpp_source.html#l00232">Group::my_rank_</a>, and <a class="el" href="thrill_2mem_2allocator__base_8hpp_source.html#l00190">thrill::mem::to_string()</a>.</p>
 
 <p>Referenced by <a class="el" href="tcp_2group_8hpp_source.html#l00100">Group::connection()</a>.</p>
 
@@ -1013,7 +1019,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net.html">net</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net_1_1tcp.html">tcp</a></li><li class="navelem"><a class="el" href="classthrill_1_1net_1_1tcp_1_1Group.html">Group</a></li>
-    <li class="footer">Generated on Tue May 15 2018 13:08:30 for Thrill by
+    <li class="footer">Generated on Tue May 15 2018 13:41:00 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

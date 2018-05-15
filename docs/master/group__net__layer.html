@@ -279,13 +279,13 @@ Functions</h2></td></tr>
 <tr class="memitem:ga880b567c2f08513e56c109cff7961169"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:ga880b567c2f08513e56c109cff7961169"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga880b567c2f08513e56c109cff7961169">Broadcast</a> (unsigned int &amp;value, size_t origin)</td></tr>
 <tr class="separator:ga880b567c2f08513e56c109cff7961169"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5333bcb763f818a0e34101cb47cbc8ad"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr class="memitem:ga5333bcb763f818a0e34101cb47cbc8ad"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga5333bcb763f818a0e34101cb47cbc8ad">Broadcast</a> (long &amp;value, size_t origin)</td></tr>
-<tr class="separator:ga5333bcb763f818a0e34101cb47cbc8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab19e498b9d9ea7ec1e7dbd39c193835b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:gab19e498b9d9ea7ec1e7dbd39c193835b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> <a class="el" href="attribute__warn__unused__result_8hpp.html#a63cf693d8f8087ab1d8b5057b3fa0015">TLX_ATTRIBUTE_WARN_UNUSED_RESULT</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gab19e498b9d9ea7ec1e7dbd39c193835b">Broadcast</a> (const <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, size_t origin=0)</td></tr>
 <tr class="memdesc:gab19e498b9d9ea7ec1e7dbd39c193835b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts a value of a serializable type T from the master (the worker with id 0) to all other workers.  <a href="#gab19e498b9d9ea7ec1e7dbd39c193835b">More...</a><br/></td></tr>
 <tr class="separator:gab19e498b9d9ea7ec1e7dbd39c193835b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5333bcb763f818a0e34101cb47cbc8ad"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:ga5333bcb763f818a0e34101cb47cbc8ad"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga5333bcb763f818a0e34101cb47cbc8ad">Broadcast</a> (long &amp;value, size_t origin)</td></tr>
+<tr class="separator:ga5333bcb763f818a0e34101cb47cbc8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae7961df6bbd391553528e0358eba574c"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:gae7961df6bbd391553528e0358eba574c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gae7961df6bbd391553528e0358eba574c">Broadcast</a> (unsigned long &amp;value, size_t origin)</td></tr>
 <tr class="separator:gae7961df6bbd391553528e0358eba574c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -401,6 +401,12 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 <tr class="memitem:gae799f1ae6032f08b8ce2d886e38aec67"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gae799f1ae6032f08b8ce2d886e38aec67">BroadcastSelect</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, size_t origin=0)</td></tr>
 <tr class="memdesc:gae799f1ae6032f08b8ce2d886e38aec67"><td class="mdescLeft">&#160;</td><td class="mdescRight">select broadcast implementation (often due to total number of processors)  <a href="#gae799f1ae6032f08b8ce2d886e38aec67">More...</a><br/></td></tr>
 <tr class="separator:gae799f1ae6032f08b8ce2d886e38aec67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c7021d71c8e93209d170fb46b9a4886"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ga6c7021d71c8e93209d170fb46b9a4886"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga6c7021d71c8e93209d170fb46b9a4886">AllGatherRecursiveDoublingPowerOfTwo</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> *values, size_t n)</td></tr>
+<tr class="separator:ga6c7021d71c8e93209d170fb46b9a4886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb3d699026baf1b06d80d5c5f205367f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gadb3d699026baf1b06d80d5c5f205367f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gadb3d699026baf1b06d80d5c5f205367f">AllGatherBruck</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> *values, size_t n)</td></tr>
+<tr class="separator:gadb3d699026baf1b06d80d5c5f205367f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac0c4e82c8a6eacf69922d4125b7b434b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename BinarySumOp  = std::plus&lt;T&gt;&gt; </td></tr>
 <tr class="memitem:gac0c4e82c8a6eacf69922d4125b7b434b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gac0c4e82c8a6eacf69922d4125b7b434b">AllReduceSimple</a> (<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &amp;value, BinarySumOp sum_op=BinarySumOp())</td></tr>
 <tr class="memdesc:gac0c4e82c8a6eacf69922d4125b7b434b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform an All-Reduce on the workers.  <a href="#gac0c4e82c8a6eacf69922d4125b7b434b">More...</a><br/></td></tr>
@@ -540,7 +546,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>unique pointer to a <a class="el" href="classthrill_1_1net_1_1Group.html" title="A network Group is a collection of enumerated communication links, which provides point-to-point comm...">Group</a>. </p>
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00285">285</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00293">293</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 </div>
 </div>
@@ -561,6 +567,70 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gadb3d699026baf1b06d80d5c5f205367f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AllGatherBruck </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00278">278</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+
+<p>References <a class="el" href="classthrill_1_1net_1_1Group.html#a6752d8d0b3cd2d27170254b51203e0b4">Group::connection()</a>, <a class="el" href="functional_8hpp_source.html#l00059">thrill::common::min()</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">Group::num_hosts()</a>, <a class="el" href="connection_8hpp_source.html#l00524">Connection::ReceiveN()</a>, and <a class="el" href="connection_8hpp_source.html#l00462">Connection::SendN()</a>.</p>
+
+<p>Referenced by <a class="el" href="flow__control__channel_8hpp_source.html#l00477">FlowControlChannel::AllGather()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga6c7021d71c8e93209d170fb46b9a4886"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AllGatherRecursiveDoublingPowerOfTwo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> *&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00259">259</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+
+<p>References <a class="el" href="classthrill_1_1net_1_1Group.html#a6752d8d0b3cd2d27170254b51203e0b4">Group::connection()</a>, <a class="el" href="integer__log2_8cpp_source.html#l00043">tlx::integer_log2_ceil()</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">Group::num_hosts()</a>, and <a class="el" href="connection_8hpp_source.html#l00277">Connection::SendReceive()</a>.</p>
+
+<p>Referenced by <a class="el" href="flow__control__channel_8hpp_source.html#l00477">FlowControlChannel::AllGather()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga6331da9c2000bb2e7f1a21ca55c3af72"></a>
 <div class="memitem">
 <div class="memproto">
@@ -596,11 +666,11 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00509">509</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00568">568</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00492">Group::AllReduceSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00551">Group::AllReduceSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="flow__control__channel_8hpp_source.html#l00535">FlowControlChannel::AllReduce()</a>, and <a class="el" href="flow__control__channel_8cpp_source.html#l00050">FlowControlChannel::Barrier()</a>.</p>
+<p>Referenced by <a class="el" href="flow__control__channel_8hpp_source.html#l00600">FlowControlChannel::AllReduce()</a>, and <a class="el" href="flow__control__channel_8cpp_source.html#l00050">FlowControlChannel::Barrier()</a>.</p>
 
 </div>
 </div>
@@ -636,7 +706,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00375">375</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00383">383</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00202">Group::AllReducePlusInt()</a>.</p>
 
@@ -674,7 +744,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00379">379</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00387">387</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00205">Group::AllReduceMinimumInt()</a>.</p>
 
@@ -712,7 +782,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00383">383</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00391">391</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00208">Group::AllReduceMaximumInt()</a>.</p>
 
@@ -750,7 +820,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00399">399</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00407">407</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00220">Group::AllReducePlusUnsignedInt()</a>.</p>
 
@@ -788,7 +858,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00403">403</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00411">411</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00223">Group::AllReduceMinimumUnsignedInt()</a>.</p>
 
@@ -826,7 +896,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00407">407</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00415">415</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00226">Group::AllReduceMaximumUnsignedInt()</a>.</p>
 
@@ -864,7 +934,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00423">423</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00431">431</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00238">Group::AllReducePlusLong()</a>.</p>
 
@@ -902,7 +972,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00427">427</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00435">435</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00241">Group::AllReduceMinimumLong()</a>.</p>
 
@@ -940,7 +1010,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00431">431</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00439">439</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00244">Group::AllReduceMaximumLong()</a>.</p>
 
@@ -978,7 +1048,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00447">447</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00455">455</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00256">Group::AllReducePlusUnsignedLong()</a>.</p>
 
@@ -1016,7 +1086,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00451">451</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00459">459</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00259">Group::AllReduceMinimumUnsignedLong()</a>.</p>
 
@@ -1054,7 +1124,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00455">455</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00463">463</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00262">Group::AllReduceMaximumUnsignedLong()</a>.</p>
 
@@ -1092,7 +1162,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00471">471</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00479">479</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00274">Group::AllReducePlusLongLong()</a>.</p>
 
@@ -1130,7 +1200,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00475">475</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00483">483</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00277">Group::AllReduceMinimumLongLong()</a>.</p>
 
@@ -1168,7 +1238,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00479">479</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00487">487</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00280">Group::AllReduceMaximumLongLong()</a>.</p>
 
@@ -1206,7 +1276,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00495">495</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00503">503</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00292">Group::AllReducePlusUnsignedLongLong()</a>.</p>
 
@@ -1244,7 +1314,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00499">499</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00507">507</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00295">Group::AllReduceMinimumUnsignedLongLong()</a>.</p>
 
@@ -1282,7 +1352,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00503">503</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00511">511</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00298">Group::AllReduceMaximumUnsignedLongLong()</a>.</p>
 
@@ -1331,9 +1401,9 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The result of the reduce operation. </dd></dl>
 
-<p>Definition at line <a class="el" href="flow__control__channel_8hpp_source.html#l00535">535</a> of file <a class="el" href="flow__control__channel_8hpp_source.html">flow_control_channel.hpp</a>.</p>
+<p>Definition at line <a class="el" href="flow__control__channel_8hpp_source.html#l00600">600</a> of file <a class="el" href="flow__control__channel_8hpp_source.html">flow_control_channel.hpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00509">Group::AllReduce()</a>, <a class="el" href="thread__barrier_8hpp_source.html#l00121">ThreadBarrierSpinning::Await()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00094">FlowControlChannel::barrier_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00088">FlowControlChannel::count_allreduce_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00051">FlowControlChannel::debug</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00052">FlowControlChannel::enable_stats</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00159">FlowControlChannel::GetNextStep()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00055">FlowControlChannel::group_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00164">FlowControlChannel::SetLocalShared()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00067">FlowControlChannel::thread_count_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00078">FlowControlChannel::timer_allreduce_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00082">FlowControlChannel::timer_communication_</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00568">Group::AllReduce()</a>, <a class="el" href="thread__barrier_8hpp_source.html#l00121">ThreadBarrierSpinning::Await()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00094">FlowControlChannel::barrier_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00088">FlowControlChannel::count_allreduce_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00051">FlowControlChannel::debug</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00052">FlowControlChannel::enable_stats</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00159">FlowControlChannel::GetNextStep()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00055">FlowControlChannel::group_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00164">FlowControlChannel::SetLocalShared()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00067">FlowControlChannel::thread_count_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00078">FlowControlChannel::timer_allreduce_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00082">FlowControlChannel::timer_communication_</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
 <p>Referenced by <a class="el" href="concat_8hpp_source.html#l00189">ConcatNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="merge_8hpp_source.html#l00378">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::GetGlobalRanks()</a>, <a class="el" href="merge_8hpp_source.html#l00466">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>, <a class="el" href="merge_8hpp_source.html#l00276">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::Stats::Print()</a>, and <a class="el" href="merge_8hpp_source.html#l00326">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::SelectPivots()</a>.</p>
 
@@ -1373,7 +1443,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00323">323</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00382">382</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">Group::num_hosts()</a>, <a class="el" href="group_8hpp_source.html#l00123">Group::ReceiveFrom()</a>, and <a class="el" href="group_8hpp_source.html#l00112">Group::SendTo()</a>.</p>
 
@@ -1414,11 +1484,11 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00400">400</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00459">459</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00420">Group::AllReduceEliminationProcess()</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, and <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">Group::num_hosts()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00479">Group::AllReduceEliminationProcess()</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, and <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">Group::num_hosts()</a>.</p>
 
-<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00492">Group::AllReduceSelect()</a>.</p>
+<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00551">Group::AllReduceSelect()</a>.</p>
 
 </div>
 </div>
@@ -1481,11 +1551,11 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 <p>Helper method for <a class="el" href="group__net__layer.html#ga6331da9c2000bb2e7f1a21ca55c3af72" title="Reduce a value from all workers to all workers. ">AllReduce()</a>. </p>
 <p>used for the recursive implementation of the elimination protocol </p>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00420">420</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00479">479</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
-<p>References <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="group_8hpp_source.html#l00123">Group::ReceiveFrom()</a>, <a class="el" href="collective_8hpp_source.html#l00406">Group::SendReceiveReduce()</a>, and <a class="el" href="group_8hpp_source.html#l00112">Group::SendTo()</a>.</p>
+<p>References <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="group_8hpp_source.html#l00123">Group::ReceiveFrom()</a>, <a class="el" href="collective_8hpp_source.html#l00465">Group::SendReceiveReduce()</a>, and <a class="el" href="group_8hpp_source.html#l00112">Group::SendTo()</a>.</p>
 
-<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00400">Group::AllReduceElimination()</a>.</p>
+<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00459">Group::AllReduceElimination()</a>.</p>
 
 </div>
 </div>
@@ -1524,9 +1594,9 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00355">355</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00414">414</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
-<p>References <a class="el" href="classthrill_1_1net_1_1Group.html#a6752d8d0b3cd2d27170254b51203e0b4">Group::connection()</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">Group::num_hosts()</a>, <a class="el" href="connection_8hpp_source.html#l00295">Connection::ReceiveSend()</a>, and <a class="el" href="connection_8hpp_source.html#l00277">Connection::SendReceive()</a>.</p>
+<p>References <a class="el" href="classthrill_1_1net_1_1Group.html#a6752d8d0b3cd2d27170254b51203e0b4">Group::connection()</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">Group::num_hosts()</a>, <a class="el" href="connection_8hpp_source.html#l00296">Connection::ReceiveSend()</a>, and <a class="el" href="connection_8hpp_source.html#l00277">Connection::SendReceive()</a>.</p>
 
 </div>
 </div>
@@ -1556,11 +1626,11 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 
 <p>select allreduce implementation (often due to total number of processors) </p>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00492">492</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00551">551</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00400">Group::AllReduceElimination()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00459">Group::AllReduceElimination()</a>.</p>
 
-<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00509">Group::AllReduce()</a>, <a class="el" href="group_8cpp_source.html#l00208">Group::AllReduceMaximumInt()</a>, <a class="el" href="group_8cpp_source.html#l00244">Group::AllReduceMaximumLong()</a>, <a class="el" href="group_8cpp_source.html#l00280">Group::AllReduceMaximumLongLong()</a>, <a class="el" href="group_8cpp_source.html#l00226">Group::AllReduceMaximumUnsignedInt()</a>, <a class="el" href="group_8cpp_source.html#l00262">Group::AllReduceMaximumUnsignedLong()</a>, <a class="el" href="group_8cpp_source.html#l00298">Group::AllReduceMaximumUnsignedLongLong()</a>, <a class="el" href="group_8cpp_source.html#l00205">Group::AllReduceMinimumInt()</a>, <a class="el" href="group_8cpp_source.html#l00241">Group::AllReduceMinimumLong()</a>, <a class="el" href="group_8cpp_source.html#l00277">Group::AllReduceMinimumLongLong()</a>, <a class="el" href="group_8cpp_source.html#l00223">Group::AllReduceMinimumUnsignedInt()</a>, <a class="el" href="group_8cpp_source.html#l00259">Group::AllReduceMinimumUnsignedLong()</a>, <a class="el" href="group_8cpp_source.html#l00295">Group::AllReduceMinimumUnsignedLongLong()</a>, <a class="el" href="group_8cpp_source.html#l00202">Group::AllReducePlusInt()</a>, <a class="el" href="group_8cpp_source.html#l00238">Group::AllReducePlusLong()</a>, <a class="el" href="group_8cpp_source.html#l00274">Group::AllReducePlusLongLong()</a>, <a class="el" href="group_8cpp_source.html#l00220">Group::AllReducePlusUnsignedInt()</a>, <a class="el" href="group_8cpp_source.html#l00256">Group::AllReducePlusUnsignedLong()</a>, and <a class="el" href="group_8cpp_source.html#l00292">Group::AllReducePlusUnsignedLongLong()</a>.</p>
+<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00568">Group::AllReduce()</a>, <a class="el" href="group_8cpp_source.html#l00208">Group::AllReduceMaximumInt()</a>, <a class="el" href="group_8cpp_source.html#l00244">Group::AllReduceMaximumLong()</a>, <a class="el" href="group_8cpp_source.html#l00280">Group::AllReduceMaximumLongLong()</a>, <a class="el" href="group_8cpp_source.html#l00226">Group::AllReduceMaximumUnsignedInt()</a>, <a class="el" href="group_8cpp_source.html#l00262">Group::AllReduceMaximumUnsignedLong()</a>, <a class="el" href="group_8cpp_source.html#l00298">Group::AllReduceMaximumUnsignedLongLong()</a>, <a class="el" href="group_8cpp_source.html#l00205">Group::AllReduceMinimumInt()</a>, <a class="el" href="group_8cpp_source.html#l00241">Group::AllReduceMinimumLong()</a>, <a class="el" href="group_8cpp_source.html#l00277">Group::AllReduceMinimumLongLong()</a>, <a class="el" href="group_8cpp_source.html#l00223">Group::AllReduceMinimumUnsignedInt()</a>, <a class="el" href="group_8cpp_source.html#l00259">Group::AllReduceMinimumUnsignedLong()</a>, <a class="el" href="group_8cpp_source.html#l00295">Group::AllReduceMinimumUnsignedLongLong()</a>, <a class="el" href="group_8cpp_source.html#l00202">Group::AllReducePlusInt()</a>, <a class="el" href="group_8cpp_source.html#l00238">Group::AllReducePlusLong()</a>, <a class="el" href="group_8cpp_source.html#l00274">Group::AllReducePlusLongLong()</a>, <a class="el" href="group_8cpp_source.html#l00220">Group::AllReducePlusUnsignedInt()</a>, <a class="el" href="group_8cpp_source.html#l00256">Group::AllReducePlusUnsignedLong()</a>, and <a class="el" href="group_8cpp_source.html#l00292">Group::AllReducePlusUnsignedLongLong()</a>.</p>
 
 </div>
 </div>
@@ -1598,9 +1668,9 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00309">309</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00368">368</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00250">Group::Broadcast()</a>, and <a class="el" href="collective_8hpp_source.html#l00272">Group::Reduce()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00251">Group::Broadcast()</a>, and <a class="el" href="collective_8hpp_source.html#l00331">Group::Reduce()</a>.</p>
 
 </div>
 </div>
@@ -1639,11 +1709,11 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00250">250</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00251">251</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00237">Group::BroadcastSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00238">Group::BroadcastSelect()</a>.</p>
 
-<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00309">Group::AllReduceSimple()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00424">FlowControlChannel::Broadcast()</a>, and <a class="el" href="flow__control__channel_8hpp_source.html#l00351">FlowControlChannel::ExPrefixSumTotal()</a>.</p>
+<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00368">Group::AllReduceSimple()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00424">FlowControlChannel::Broadcast()</a>, and <a class="el" href="flow__control__channel_8hpp_source.html#l00351">FlowControlChannel::ExPrefixSumTotal()</a>.</p>
 
 </div>
 </div>
@@ -1679,7 +1749,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00371">371</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00379">379</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00199">Group::BroadcastInt()</a>.</p>
 
@@ -1717,47 +1787,9 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00395">395</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00403">403</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00217">Group::BroadcastUnsignedInt()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga5333bcb763f818a0e34101cb47cbc8ad"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Broadcast </td>
-          <td>(</td>
-          <td class="paramtype">long &amp;&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>origin</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00419">419</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
-
-<p>References <a class="el" href="group_8cpp_source.html#l00235">Group::BroadcastLong()</a>.</p>
 
 </div>
 </div>
@@ -1806,9 +1838,47 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 
 <p>Definition at line <a class="el" href="flow__control__channel_8hpp_source.html#l00424">424</a> of file <a class="el" href="flow__control__channel_8hpp_source.html">flow_control_channel.hpp</a>.</p>
 
-<p>References <a class="el" href="thread__barrier_8hpp_source.html#l00121">ThreadBarrierSpinning::Await()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00094">FlowControlChannel::barrier_</a>, <a class="el" href="collective_8hpp_source.html#l00250">Group::Broadcast()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00086">FlowControlChannel::count_broadcast_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00051">FlowControlChannel::debug</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00052">FlowControlChannel::enable_stats</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00159">FlowControlChannel::GetNextStep()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00055">FlowControlChannel::group_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00064">FlowControlChannel::local_id_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00164">FlowControlChannel::SetLocalShared()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00067">FlowControlChannel::thread_count_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00076">FlowControlChannel::timer_broadcast_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00082">FlowControlChannel::timer_communication_</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
+<p>References <a class="el" href="thread__barrier_8hpp_source.html#l00121">ThreadBarrierSpinning::Await()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00094">FlowControlChannel::barrier_</a>, <a class="el" href="collective_8hpp_source.html#l00251">Group::Broadcast()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00086">FlowControlChannel::count_broadcast_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00051">FlowControlChannel::debug</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00052">FlowControlChannel::enable_stats</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00159">FlowControlChannel::GetNextStep()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00055">FlowControlChannel::group_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00064">FlowControlChannel::local_id_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00164">FlowControlChannel::SetLocalShared()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00067">FlowControlChannel::thread_count_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00076">FlowControlChannel::timer_broadcast_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00082">FlowControlChannel::timer_communication_</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
 <p>Referenced by <a class="el" href="merge_8hpp_source.html#l00466">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;::MainOp()</a>, <a class="el" href="examples_2select_2select_8hpp_source.html#l00044">examples::select::PickPivots()</a>, and <a class="el" href="examples_2select_2select_8hpp_source.html#l00091">examples::select::Select()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5333bcb763f818a0e34101cb47cbc8ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Broadcast </td>
+          <td>(</td>
+          <td class="paramtype">long &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>origin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00427">427</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+
+<p>References <a class="el" href="group_8cpp_source.html#l00235">Group::BroadcastLong()</a>.</p>
 
 </div>
 </div>
@@ -1844,7 +1914,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00443">443</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00451">451</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00253">Group::BroadcastUnsignedLong()</a>.</p>
 
@@ -1882,7 +1952,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00467">467</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00475">475</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00271">Group::BroadcastLongLong()</a>.</p>
 
@@ -1920,7 +1990,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00491">491</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00499">499</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00289">Group::BroadcastUnsignedLongLong()</a>.</p>
 
@@ -1960,11 +2030,11 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00203">203</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00204">204</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
 <p>References <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, <a class="el" href="ffs_8hpp_source.html#l00079">tlx::ffs()</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">Group::num_hosts()</a>, <a class="el" href="group_8hpp_source.html#l00123">Group::ReceiveFrom()</a>, <a class="el" href="round__to__power__of__two_8cpp_source.html#l00029">tlx::round_up_to_power_of_two()</a>, <a class="el" href="group_8hpp_source.html#l00112">Group::SendTo()</a>, and <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00184">sLOG</a>.</p>
 
-<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00237">Group::BroadcastSelect()</a>.</p>
+<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00238">Group::BroadcastSelect()</a>.</p>
 
 </div>
 </div>
@@ -1994,11 +2064,11 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 
 <p>select broadcast implementation (often due to total number of processors) </p>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00237">237</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00238">238</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00203">Group::BroadcastBinomialTree()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00204">Group::BroadcastBinomialTree()</a>.</p>
 
-<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00250">Group::Broadcast()</a>, <a class="el" href="group_8cpp_source.html#l00199">Group::BroadcastInt()</a>, <a class="el" href="group_8cpp_source.html#l00235">Group::BroadcastLong()</a>, <a class="el" href="group_8cpp_source.html#l00271">Group::BroadcastLongLong()</a>, <a class="el" href="group_8cpp_source.html#l00217">Group::BroadcastUnsignedInt()</a>, <a class="el" href="group_8cpp_source.html#l00253">Group::BroadcastUnsignedLong()</a>, and <a class="el" href="group_8cpp_source.html#l00289">Group::BroadcastUnsignedLongLong()</a>.</p>
+<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00251">Group::Broadcast()</a>, <a class="el" href="group_8cpp_source.html#l00199">Group::BroadcastInt()</a>, <a class="el" href="group_8cpp_source.html#l00235">Group::BroadcastLong()</a>, <a class="el" href="group_8cpp_source.html#l00271">Group::BroadcastLongLong()</a>, <a class="el" href="group_8cpp_source.html#l00217">Group::BroadcastUnsignedInt()</a>, <a class="el" href="group_8cpp_source.html#l00253">Group::BroadcastUnsignedLong()</a>, and <a class="el" href="group_8cpp_source.html#l00289">Group::BroadcastUnsignedLongLong()</a>.</p>
 
 </div>
 </div>
@@ -2036,7 +2106,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00179">179</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00180">180</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">Group::num_hosts()</a>, <a class="el" href="group_8hpp_source.html#l00123">Group::ReceiveFrom()</a>, and <a class="el" href="group_8hpp_source.html#l00112">Group::SendTo()</a>.</p>
 
@@ -2067,7 +2137,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </div><div class="memdoc">
 <p>Construct a mock <a class="el" href="classthrill_1_1net_1_1Group.html" title="A network Group is a collection of enumerated communication links, which provides point-to-point comm...">Group</a> using a complete graph of local stream sockets for testing, and starts a thread for each client, which gets passed the <a class="el" href="classthrill_1_1net_1_1Group.html" title="A network Group is a collection of enumerated communication links, which provides point-to-point comm...">Group</a> object. This is ideal for testing network communication protocols. </p>
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00291">291</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00299">299</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="group_8cpp_source.html#l00027">thrill::net::RunLoopbackGroupTest()</a>.</p>
 
@@ -2105,9 +2175,9 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 
 <p>Calculate exclusive prefix sum. </p>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00163">163</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00164">164</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00152">Group::PrefixSumSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00153">Group::PrefixSumSelect()</a>.</p>
 
 <p>Referenced by <a class="el" href="flow__control__channel_8hpp_source.html#l00351">FlowControlChannel::ExPrefixSumTotal()</a>, and <a class="el" href="flow__control__channel_8hpp_source.html#l00236">FlowControlChannel::PrefixSumBase()</a>.</p>
 
@@ -2151,7 +2221,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00367">367</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00375">375</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00196">Group::ExPrefixSumPlusInt()</a>.</p>
 
@@ -2195,7 +2265,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00391">391</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00399">399</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00214">Group::ExPrefixSumPlusUnsignedInt()</a>.</p>
 
@@ -2239,7 +2309,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00415">415</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00423">423</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00232">Group::ExPrefixSumPlusLong()</a>.</p>
 
@@ -2283,7 +2353,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00439">439</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00447">447</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00250">Group::ExPrefixSumPlusUnsignedLong()</a>.</p>
 
@@ -2327,7 +2397,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00463">463</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00471">471</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00268">Group::ExPrefixSumPlusLongLong()</a>.</p>
 
@@ -2371,7 +2441,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00487">487</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00495">495</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00286">Group::ExPrefixSumPlusUnsignedLongLong()</a>.</p>
 
@@ -2430,7 +2500,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 
 <p>Definition at line <a class="el" href="flow__control__channel_8hpp_source.html#l00351">351</a> of file <a class="el" href="flow__control__channel_8hpp_source.html">flow_control_channel.hpp</a>.</p>
 
-<p>References <a class="el" href="thread__barrier_8hpp_source.html#l00121">ThreadBarrierSpinning::Await()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00094">FlowControlChannel::barrier_</a>, <a class="el" href="collective_8hpp_source.html#l00250">Group::Broadcast()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00085">FlowControlChannel::count_prefixsum_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00051">FlowControlChannel::debug</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00052">FlowControlChannel::enable_stats</a>, <a class="el" href="collective_8hpp_source.html#l00163">Group::ExPrefixSum()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00159">FlowControlChannel::GetNextStep()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00055">FlowControlChannel::group_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00058">FlowControlChannel::host_rank_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00061">FlowControlChannel::num_hosts_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00164">FlowControlChannel::SetLocalShared()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00067">FlowControlChannel::thread_count_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00082">FlowControlChannel::timer_communication_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00075">FlowControlChannel::timer_prefixsum_</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
+<p>References <a class="el" href="thread__barrier_8hpp_source.html#l00121">ThreadBarrierSpinning::Await()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00094">FlowControlChannel::barrier_</a>, <a class="el" href="collective_8hpp_source.html#l00251">Group::Broadcast()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00085">FlowControlChannel::count_prefixsum_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00051">FlowControlChannel::debug</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00052">FlowControlChannel::enable_stats</a>, <a class="el" href="collective_8hpp_source.html#l00164">Group::ExPrefixSum()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00159">FlowControlChannel::GetNextStep()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00055">FlowControlChannel::group_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00058">FlowControlChannel::host_rank_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00061">FlowControlChannel::num_hosts_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00164">FlowControlChannel::SetLocalShared()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00067">FlowControlChannel::thread_count_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00082">FlowControlChannel::timer_communication_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00075">FlowControlChannel::timer_prefixsum_</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
 <p>Referenced by <a class="el" href="zip_8hpp_source.html#l00294">ZipNode&lt; ValueType, ZipFunction, Pad, UnequalCheck, NoRebalance, kNumInputs &gt;::MainOp()</a>, <a class="el" href="zip__window_8hpp_source.html#l00395">ZipWindowNode&lt; ValueType, ZipFunction_, Pad_, UnequalCheck, UseStdArray, kNumInputs_ &gt;::MainOp()</a>, and <a class="el" href="sort_8hpp_source.html#l00525">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
 
@@ -2468,9 +2538,9 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 
 <p>Calculate inclusive prefix sum. </p>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00158">158</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00159">159</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00152">Group::PrefixSumSelect()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00153">Group::PrefixSumSelect()</a>.</p>
 
 </div>
 </div>
@@ -2512,7 +2582,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00363">363</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00371">371</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00193">Group::PrefixSumPlusInt()</a>.</p>
 
@@ -2556,7 +2626,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00387">387</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00395">395</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00211">Group::PrefixSumPlusUnsignedInt()</a>.</p>
 
@@ -2600,7 +2670,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00411">411</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00419">419</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00229">Group::PrefixSumPlusLong()</a>.</p>
 
@@ -2644,7 +2714,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00435">435</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00443">443</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00247">Group::PrefixSumPlusUnsignedLong()</a>.</p>
 
@@ -2688,7 +2758,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00459">459</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00467">467</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00265">Group::PrefixSumPlusLongLong()</a>.</p>
 
@@ -2732,7 +2802,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="group_8hpp_source.html#l00483">483</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
+<p>Definition at line <a class="el" href="group_8hpp_source.html#l00491">491</a> of file <a class="el" href="group_8hpp_source.html">group.hpp</a>.</p>
 
 <p>References <a class="el" href="group_8cpp_source.html#l00283">Group::PrefixSumPlusUnsignedLongLong()</a>.</p>
 
@@ -2797,7 +2867,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 
 <p>Definition at line <a class="el" href="flow__control__channel_8hpp_source.html#l00236">236</a> of file <a class="el" href="flow__control__channel_8hpp_source.html">flow_control_channel.hpp</a>.</p>
 
-<p>References <a class="el" href="thread__barrier_8hpp_source.html#l00121">ThreadBarrierSpinning::Await()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00094">FlowControlChannel::barrier_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00085">FlowControlChannel::count_prefixsum_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00051">FlowControlChannel::debug</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00052">FlowControlChannel::enable_stats</a>, <a class="el" href="collective_8hpp_source.html#l00163">Group::ExPrefixSum()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00159">FlowControlChannel::GetNextStep()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00055">FlowControlChannel::group_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00164">FlowControlChannel::SetLocalShared()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00067">FlowControlChannel::thread_count_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00082">FlowControlChannel::timer_communication_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00075">FlowControlChannel::timer_prefixsum_</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
+<p>References <a class="el" href="thread__barrier_8hpp_source.html#l00121">ThreadBarrierSpinning::Await()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00094">FlowControlChannel::barrier_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00085">FlowControlChannel::count_prefixsum_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00051">FlowControlChannel::debug</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00052">FlowControlChannel::enable_stats</a>, <a class="el" href="collective_8hpp_source.html#l00164">Group::ExPrefixSum()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00159">FlowControlChannel::GetNextStep()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00055">FlowControlChannel::group_</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00172">LOG</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00164">FlowControlChannel::SetLocalShared()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00067">FlowControlChannel::thread_count_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00082">FlowControlChannel::timer_communication_</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00075">FlowControlChannel::timer_prefixsum_</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
 <p>Referenced by <a class="el" href="flow__control__channel_8hpp_source.html#l00329">FlowControlChannel::ExPrefixSum()</a>, and <a class="el" href="flow__control__channel_8hpp_source.html#l00308">FlowControlChannel::PrefixSum()</a>.</p>
 
@@ -2850,11 +2920,11 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00050">50</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00051">51</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
 <p>References <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">Group::num_hosts()</a>, <a class="el" href="group_8hpp_source.html#l00123">Group::ReceiveFrom()</a>, <a class="el" href="group_8hpp_source.html#l00112">Group::SendTo()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00184">sLOG</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
-<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00152">Group::PrefixSumSelect()</a>.</p>
+<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00153">Group::PrefixSumSelect()</a>.</p>
 
 </div>
 </div>
@@ -2893,7 +2963,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00111">111</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00112">112</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
 <p>References <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">Group::num_hosts()</a>, <a class="el" href="group_8hpp_source.html#l00123">Group::ReceiveFrom()</a>, <a class="el" href="group_8hpp_source.html#l00112">Group::SendTo()</a>, <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00184">sLOG</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
@@ -2937,11 +3007,11 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 
 <p>select prefixsum implementation (often due to total number of processors) </p>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00152">152</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00153">153</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
-<p>References <a class="el" href="collective_8hpp_source.html#l00050">Group::PrefixSumDoubling()</a>.</p>
+<p>References <a class="el" href="collective_8hpp_source.html#l00051">Group::PrefixSumDoubling()</a>.</p>
 
-<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00163">Group::ExPrefixSum()</a>, <a class="el" href="group_8cpp_source.html#l00196">Group::ExPrefixSumPlusInt()</a>, <a class="el" href="group_8cpp_source.html#l00232">Group::ExPrefixSumPlusLong()</a>, <a class="el" href="group_8cpp_source.html#l00268">Group::ExPrefixSumPlusLongLong()</a>, <a class="el" href="group_8cpp_source.html#l00214">Group::ExPrefixSumPlusUnsignedInt()</a>, <a class="el" href="group_8cpp_source.html#l00250">Group::ExPrefixSumPlusUnsignedLong()</a>, <a class="el" href="group_8cpp_source.html#l00286">Group::ExPrefixSumPlusUnsignedLongLong()</a>, <a class="el" href="collective_8hpp_source.html#l00158">Group::PrefixSum()</a>, <a class="el" href="group_8cpp_source.html#l00193">Group::PrefixSumPlusInt()</a>, <a class="el" href="group_8cpp_source.html#l00229">Group::PrefixSumPlusLong()</a>, <a class="el" href="group_8cpp_source.html#l00265">Group::PrefixSumPlusLongLong()</a>, <a class="el" href="group_8cpp_source.html#l00211">Group::PrefixSumPlusUnsignedInt()</a>, <a class="el" href="group_8cpp_source.html#l00247">Group::PrefixSumPlusUnsignedLong()</a>, and <a class="el" href="group_8cpp_source.html#l00283">Group::PrefixSumPlusUnsignedLongLong()</a>.</p>
+<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00164">Group::ExPrefixSum()</a>, <a class="el" href="group_8cpp_source.html#l00196">Group::ExPrefixSumPlusInt()</a>, <a class="el" href="group_8cpp_source.html#l00232">Group::ExPrefixSumPlusLong()</a>, <a class="el" href="group_8cpp_source.html#l00268">Group::ExPrefixSumPlusLongLong()</a>, <a class="el" href="group_8cpp_source.html#l00214">Group::ExPrefixSumPlusUnsignedInt()</a>, <a class="el" href="group_8cpp_source.html#l00250">Group::ExPrefixSumPlusUnsignedLong()</a>, <a class="el" href="group_8cpp_source.html#l00286">Group::ExPrefixSumPlusUnsignedLongLong()</a>, <a class="el" href="collective_8hpp_source.html#l00159">Group::PrefixSum()</a>, <a class="el" href="group_8cpp_source.html#l00193">Group::PrefixSumPlusInt()</a>, <a class="el" href="group_8cpp_source.html#l00229">Group::PrefixSumPlusLong()</a>, <a class="el" href="group_8cpp_source.html#l00265">Group::PrefixSumPlusLongLong()</a>, <a class="el" href="group_8cpp_source.html#l00211">Group::PrefixSumPlusUnsignedInt()</a>, <a class="el" href="group_8cpp_source.html#l00247">Group::PrefixSumPlusUnsignedLong()</a>, and <a class="el" href="group_8cpp_source.html#l00283">Group::PrefixSumPlusUnsignedLongLong()</a>.</p>
 
 </div>
 </div>
@@ -2987,11 +3057,11 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00272">272</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00331">331</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
 <p>References <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">Group::num_hosts()</a>, <a class="el" href="group_8hpp_source.html#l00123">Group::ReceiveFrom()</a>, <a class="el" href="group_8hpp_source.html#l00112">Group::SendTo()</a>, and <a class="el" href="thrill_2common_2logger_8hpp_source.html#l00184">sLOG</a>.</p>
 
-<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00309">Group::AllReduceSimple()</a>, and <a class="el" href="flow__control__channel_8hpp_source.html#l00479">FlowControlChannel::Reduce()</a>.</p>
+<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00368">Group::AllReduceSimple()</a>, and <a class="el" href="flow__control__channel_8hpp_source.html#l00544">FlowControlChannel::Reduce()</a>.</p>
 
 </div>
 </div>
@@ -3022,7 +3092,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 
 <p>Definition at line <a class="el" href="group_8cpp_source.html#l00027">27</a> of file <a class="el" href="group_8cpp_source.html">group.cpp</a>.</p>
 
-<p>References <a class="el" href="tcp_2group_8cpp_source.html#l00036">Group::ConstructLoopbackMesh()</a>, and <a class="el" href="group_8hpp_source.html#l00291">thrill::net::ExecuteGroupThreads()</a>.</p>
+<p>References <a class="el" href="tcp_2group_8cpp_source.html#l00036">Group::ConstructLoopbackMesh()</a>, and <a class="el" href="group_8hpp_source.html#l00299">thrill::net::ExecuteGroupThreads()</a>.</p>
 
 </div>
 </div>
@@ -3075,11 +3145,11 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00406">406</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
+<p>Definition at line <a class="el" href="collective_8hpp_source.html#l00465">465</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
-<p>References <a class="el" href="classthrill_1_1net_1_1Group.html#a6752d8d0b3cd2d27170254b51203e0b4">Group::connection()</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="connection_8hpp_source.html#l00295">Connection::ReceiveSend()</a>, and <a class="el" href="connection_8hpp_source.html#l00277">Connection::SendReceive()</a>.</p>
+<p>References <a class="el" href="classthrill_1_1net_1_1Group.html#a6752d8d0b3cd2d27170254b51203e0b4">Group::connection()</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="connection_8hpp_source.html#l00296">Connection::ReceiveSend()</a>, and <a class="el" href="connection_8hpp_source.html#l00277">Connection::SendReceive()</a>.</p>
 
-<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00420">Group::AllReduceEliminationProcess()</a>.</p>
+<p>Referenced by <a class="el" href="collective_8hpp_source.html#l00479">Group::AllReduceEliminationProcess()</a>.</p>
 
 </div>
 </div>
@@ -3113,7 +3183,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 15 2018 13:08:28 for Thrill by
+    <li class="footer">Generated on Tue May 15 2018 13:40:58 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,5 +1,16 @@
 var NAVTREEINDEX34 =
 {
+"thrill_2common_2math_8hpp_source.html":[4,0,3,1,19],
+"thrill_2common_2ring__buffer_8hpp.html":[4,0,3,1,29],
+"thrill_2common_2ring__buffer_8hpp.html#a7257714934d02f6e535768589e507ce9":[4,0,3,1,29,1],
+"thrill_2common_2ring__buffer_8hpp.html#aa04d4c97b2a7f3c1f753449c56fea934":[4,0,3,1,29,0],
+"thrill_2common_2ring__buffer_8hpp_source.html":[4,0,3,1,29],
+"thrill_2common_2string_8hpp.html":[4,0,3,1,37],
+"thrill_2common_2string_8hpp.html#a094d23796d3143cb2a6b542689392cc4":[4,0,3,1,37,13],
+"thrill_2common_2string_8hpp.html#a0e26c3b7e4aea0cd7d604286770fa5e2":[4,0,3,1,37,11],
+"thrill_2common_2string_8hpp.html#a18a2c76df2f962df3fcaf14db3f46902":[4,0,3,1,37,3],
+"thrill_2common_2string_8hpp.html#a19dadeee63f8e024ef3438a09c03cc1c":[4,0,3,1,37,17],
+"thrill_2common_2string_8hpp.html#a3fc7ac46967d0010b05b574abd487fd4":[4,0,3,1,37,7],
 "thrill_2common_2string_8hpp.html#a4dcfa0783f3e01b7ccd182711f77cc0c":[4,0,3,1,37,16],
 "thrill_2common_2string_8hpp.html#a5f921572e7148b383411a63733947be2":[4,0,3,1,37,15],
 "thrill_2common_2string_8hpp.html#a788b712ded38a656f1af199de36bd337":[4,0,3,1,37,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX34 =
 "word__wrap_8hpp_source.html":[4,0,2,0,0,3,52],
 "write__binary_8hpp.html":[4,0,3,0,41],
 "write__binary_8hpp.html#a01b7e397abfb33c3dc4ab6cf69032916":[4,0,3,0,41,0],
-"write__binary_8hpp_source.html":[4,0,3,0,41],
-"write__lines_8hpp.html":[4,0,3,0,42],
-"write__lines_8hpp.html#ad2c264a9b1cb2fa2e11650deb3ff59ff":[4,0,3,0,42,0],
-"write__lines_8hpp_source.html":[4,0,3,0,42],
-"write__lines__one_8hpp.html":[4,0,3,0,43],
-"write__lines__one_8hpp.html#a079b1af750f8866b829a9ac6f82ee7eb":[4,0,3,0,43,0],
-"write__lines__one_8hpp_source.html":[4,0,3,0,43],
-"zip_8hpp.html":[4,0,3,0,44],
-"zip_8hpp.html#a86e371cfcd5dfdb4ffa618fec2232832":[4,0,3,0,44,2],
-"zip_8hpp.html#ga4048d9e5045a242ef9a8e46b4b2376cc":[4,0,3,0,44,3],
-"zip_8hpp.html#ga8bb02112179b73fff8e6713d52a3497e":[4,0,3,0,44,6],
-"zip_8hpp.html#gac456b9a4cb7bb3f162c50a88a793e15e":[4,0,3,0,44,4]
+"write__binary_8hpp_source.html":[4,0,3,0,41]
 };

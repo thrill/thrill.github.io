@@ -1,5 +1,16 @@
 var NAVTREEINDEX33 =
 {
+"structthrill_1_1data_1_1detail_1_1TupleSerialization_3_01Archive_00_010_00_01Args_8_8_8_4.html#aa59ac0fcd44b9c87dee7a6fb4281e02d":[3,0,3,3,0,4,2],
+"structthrill_1_1io_1_1BasicAllocationStrategy.html":[1,1,3,0,0],
+"structthrill_1_1io_1_1BasicAllocationStrategy.html#aa22f2780fd87d742f7c83675891de147":[1,1,3,0,0,3],
+"structthrill_1_1io_1_1BasicAllocationStrategy.html#aa6be32e0d1b4bd24f8745d1d3267b295":[1,1,3,0,0,2],
+"structthrill_1_1io_1_1BasicAllocationStrategy.html#aa85753def495dc057b3df9cf4267dcc1":[1,1,3,0,0,0],
+"structthrill_1_1io_1_1BasicAllocationStrategy.html#aecea8a830dcf059d765f382d36443ec2":[1,1,3,0,0,1],
+"structthrill_1_1io_1_1FullyRandom.html":[1,1,3,0,1],
+"structthrill_1_1io_1_1FullyRandom.html#a3c330340f97d896973fe93429da1325a":[1,1,3,0,1,3],
+"structthrill_1_1io_1_1FullyRandom.html#aa494a7f13801563a7f1f2fcca2e71c18":[1,1,3,0,1,0],
+"structthrill_1_1io_1_1FullyRandom.html#aa6be32e0d1b4bd24f8745d1d3267b295":[1,1,3,0,1,2],
+"structthrill_1_1io_1_1FullyRandom.html#aa9fae34d3ffbf0d868ded27d7db35133":[1,1,3,0,1,4],
 "structthrill_1_1io_1_1FullyRandom.html#af0889df178f7d100dfc5f9a9998a800d":[1,1,3,0,1,1],
 "structthrill_1_1io_1_1OffsetAllocator.html":[1,1,3,0,2],
 "structthrill_1_1io_1_1OffsetAllocator.html#a254720b70a08e5d508bc5f36f13406aa":[1,1,3,0,2,3],
@@ -238,16 +249,5 @@ var NAVTREEINDEX33 =
 "thrill_2common_2math_8hpp.html#a4e3b8d2e0783a45ae26296d6c2e52b4a":[4,0,3,1,19,3],
 "thrill_2common_2math_8hpp.html#a578ddd3969aff87884a23fd90cc0bab4":[4,0,3,1,19,6],
 "thrill_2common_2math_8hpp.html#a9ded99b4e984c22c881dcface67e6737":[4,0,3,1,19,4],
-"thrill_2common_2math_8hpp.html#adaf82fb9e3a858245cf0354aaf50b6da":[4,0,3,1,19,5],
-"thrill_2common_2math_8hpp_source.html":[4,0,3,1,19],
-"thrill_2common_2ring__buffer_8hpp.html":[4,0,3,1,29],
-"thrill_2common_2ring__buffer_8hpp.html#a7257714934d02f6e535768589e507ce9":[4,0,3,1,29,1],
-"thrill_2common_2ring__buffer_8hpp.html#aa04d4c97b2a7f3c1f753449c56fea934":[4,0,3,1,29,0],
-"thrill_2common_2ring__buffer_8hpp_source.html":[4,0,3,1,29],
-"thrill_2common_2string_8hpp.html":[4,0,3,1,37],
-"thrill_2common_2string_8hpp.html#a094d23796d3143cb2a6b542689392cc4":[4,0,3,1,37,13],
-"thrill_2common_2string_8hpp.html#a0e26c3b7e4aea0cd7d604286770fa5e2":[4,0,3,1,37,11],
-"thrill_2common_2string_8hpp.html#a18a2c76df2f962df3fcaf14db3f46902":[4,0,3,1,37,3],
-"thrill_2common_2string_8hpp.html#a19dadeee63f8e024ef3438a09c03cc1c":[4,0,3,1,37,17],
-"thrill_2common_2string_8hpp.html#a3fc7ac46967d0010b05b574abd487fd4":[4,0,3,1,37,7]
+"thrill_2common_2math_8hpp.html#adaf82fb9e3a858245cf0354aaf50b6da":[4,0,3,1,19,5]
 };

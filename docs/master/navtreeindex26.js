@@ -1,5 +1,16 @@
 var NAVTREEINDEX26 =
 {
+"group__tlx__math.html#gab4bb5d2b01bb4f7abee2de54f1dca2f9":[1,1,4,1,33],
+"group__tlx__math.html#gab51c66cfcb5cacb134fc03cc76729988":[1,1,4,1,27],
+"group__tlx__math.html#gabba29a3381e0f408d02fdcfcf902d231":[1,1,4,1,37],
+"group__tlx__math.html#gac4552e08e9a23d0e81ee4f8ee59120cf":[1,1,4,1,39],
+"group__tlx__math.html#gad221e96917e629c78fde55e8a365691f":[1,1,4,1,46],
+"group__tlx__math.html#gad8fd16e4ccb887bed3fa8563ca38a61d":[1,1,4,1,10],
+"group__tlx__math.html#gad963f1305c675db55d4a68c48907ea50":[1,1,4,1,3],
+"group__tlx__math.html#gadca678eeb1a4b5fef4dfd53c71f5f0e6":[1,1,4,1,18],
+"group__tlx__math.html#gae02589b516d44d66e4a9513d3f8f064f":[1,1,4,1,22],
+"group__tlx__math.html#gae0cbdb957bd7c626f6602d1461143357":[1,1,4,1,15],
+"group__tlx__math.html#gae254dcf57628545d17e5b70148c63c47":[1,1,4,1,35],
 "group__tlx__math.html#gae906418b06ec57db053663d0437545ca":[1,1,4,1,20],
 "group__tlx__math.html#gaea4dbc101569da260c218aad97698847":[1,1,4,1,30],
 "group__tlx__math.html#gaeab5bbc00713a95adc413ee5ddd0cb65":[1,1,4,1,23],
@@ -238,16 +249,5 @@ var NAVTREEINDEX26 =
 "hexdump_8hpp_source.html":[4,0,2,0,0,3,23],
 "hierarchy.html":[3,2],
 "hypergeometric__distribution_8hpp.html":[4,0,3,1,11],
-"hypergeometric__distribution_8hpp.html#a579d423436cf5af3a7ea1188125a35cb":[4,0,3,1,11,1],
-"hypergeometric__distribution_8hpp.html#aec569b63932a5ac14668779afd2e0b62":[4,0,3,1,11,2],
-"hypergeometric__distribution_8hpp_source.html":[4,0,3,1,11],
-"hyperloglog_8cpp.html":[4,0,3,2,5],
-"hyperloglog_8cpp.html#a03f5c79da787cf7d2642b737c9a0c28d":[4,0,3,2,5,39],
-"hyperloglog_8cpp.html#a16cfe4231ae67b4e007a069a3e4239f1":[4,0,3,2,5,17],
-"hyperloglog_8cpp.html#a192f4e22f0ddccfc3aa44cf683c7fdd1":[4,0,3,2,5,0],
-"hyperloglog_8cpp.html#a1fd95c7b3ac118ace982e2e166c6d25e":[4,0,3,2,5,2],
-"hyperloglog_8cpp.html#a20b70b8b211da456f083de5a76cfb91e":[4,0,3,2,5,26],
-"hyperloglog_8cpp.html#a21d3a6dd2df1a02d197a95802587b588":[4,0,3,2,5,36],
-"hyperloglog_8cpp.html#a2b9cb0db51a466cb7782bc66d4a00578":[4,0,3,2,5,9],
-"hyperloglog_8cpp.html#a35a3af447d64c0561bfe1e243bee1fd2":[4,0,3,2,5,32]
+"hypergeometric__distribution_8hpp.html#a579d423436cf5af3a7ea1188125a35cb":[4,0,3,1,11,1]
 };
