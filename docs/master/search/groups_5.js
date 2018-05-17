@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['mock_20network_20api',['Mock Network API',['../group__net__mock.html',1,'']]],
-  ['mpi_20network_20api',['MPI Network API',['../group__net__mpi.html',1,'']]],
-  ['math_20functions',['Math Functions',['../group__tlx__math.html',1,'']]],
-  ['meta_2dtemplate_20programming',['Meta-Template Programming',['../group__tlx__meta.html',1,'']]]
+  ['local_20operations_20_28lops_29',['Local Operations (LOps)',['../group__dia__lops.html',1,'']]],
+  ['loser_20trees',['Loser Trees',['../group__tlx__data__structures__loser__tree.html',1,'']]]
 ];

@@ -1,5 +1,6 @@
 var classtlx_1_1StackArena =
 [
+    [ "AlignmentHelper", "uniontlx_1_1StackArena_1_1AlignmentHelper.html", "uniontlx_1_1StackArena_1_1AlignmentHelper" ],
     [ "StackArena", "classtlx_1_1StackArena.html#a2c8cd7313715f9bbacd3469bdacf9d75", null ],
     [ "~StackArena", "classtlx_1_1StackArena.html#a2448420b8acff6024bf3e2fcf59faac8", null ],
     [ "StackArena", "classtlx_1_1StackArena.html#a7d95de0f46d270203bbc8a9990d7c112", null ],
@@ -12,5 +13,6 @@ var classtlx_1_1StackArena =
     [ "used", "classtlx_1_1StackArena.html#ab7ee045430da1e4ada9c2a7075b7f807", null ],
     [ "alignment", "classtlx_1_1StackArena.html#ac15e6b5f88a94c672b70f8a914798517", null ],
     [ "buf_", "classtlx_1_1StackArena.html#ac4d3870b55243740c555f8ee1823973a", null ],
+    [ "dummy_for_alignment_", "classtlx_1_1StackArena.html#a7b5aee095580b69494418f5592fca380", null ],
     [ "ptr_", "classtlx_1_1StackArena.html#aa5ec38c854291ed98296bd00efbf90ae", null ]
 ];

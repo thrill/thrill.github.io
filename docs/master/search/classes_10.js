@@ -1,6 +1,11 @@
 var searchData=
 [
   ['radixsort',['RadixSort',['../classthrill_1_1common_1_1RadixSort.html',1,'thrill::common']]],
+  ['radixstep_5fce0',['RadixStep_CE0',['../structtlx_1_1sort__strings__detail_1_1RadixStep__CE0.html',1,'tlx::sort_strings_detail']]],
+  ['radixstep_5fce2',['RadixStep_CE2',['../structtlx_1_1sort__strings__detail_1_1RadixStep__CE2.html',1,'tlx::sort_strings_detail']]],
+  ['radixstep_5fce3',['RadixStep_CE3',['../structtlx_1_1sort__strings__detail_1_1RadixStep__CE3.html',1,'tlx::sort_strings_detail']]],
+  ['radixstep_5fci2',['RadixStep_CI2',['../structtlx_1_1sort__strings__detail_1_1RadixStep__CI2.html',1,'tlx::sort_strings_detail']]],
+  ['radixstep_5fci3',['RadixStep_CI3',['../structtlx_1_1sort__strings__detail_1_1RadixStep__CI3.html',1,'tlx::sort_strings_detail']]],
   ['randomcyclic',['RandomCyclic',['../structthrill_1_1io_1_1RandomCyclic.html',1,'thrill::io']]],
   ['range',['Range',['../classthrill_1_1common_1_1Range.html',1,'thrill::common']]],
   ['rcdisk',['RCDisk',['../structthrill_1_1io_1_1RCDisk.html',1,'thrill::io']]],
@@ -10,6 +15,7 @@ var searchData=
   ['readlinesnode',['ReadLinesNode',['../classthrill_1_1api_1_1ReadLinesNode.html',1,'thrill::api']]],
   ['readstream',['ReadStream',['../classthrill_1_1vfs_1_1ReadStream.html',1,'thrill::vfs']]],
   ['rebalancenode',['RebalanceNode',['../classthrill_1_1api_1_1RebalanceNode.html',1,'thrill::api']]],
+  ['rebind',['rebind',['../structthrill_1_1mem_1_1PoolAllocator_1_1rebind.html',1,'thrill::mem::PoolAllocator']]],
   ['rebind',['rebind',['../structthrill_1_1mem_1_1Allocator_1_1rebind.html',1,'thrill::mem::Allocator']]],
   ['rebind',['rebind',['../structthrill_1_1mem_1_1Allocator_3_01void_01_4_1_1rebind.html',1,'thrill::mem::Allocator&lt; void &gt;']]],
   ['rebind',['rebind',['../structthrill_1_1mem_1_1FixedAllocator_1_1rebind.html',1,'thrill::mem::FixedAllocator']]],
@@ -17,7 +23,6 @@ var searchData=
   ['rebind',['rebind',['../structthrill_1_1mem_1_1FixedPoolAllocator_1_1rebind.html',1,'thrill::mem::FixedPoolAllocator']]],
   ['rebind',['rebind',['../structthrill_1_1mem_1_1AlignedAllocator_1_1rebind.html',1,'thrill::mem::AlignedAllocator']]],
   ['rebind',['rebind',['../structtlx_1_1StackAllocator_1_1rebind.html',1,'tlx::StackAllocator']]],
-  ['rebind',['rebind',['../structthrill_1_1mem_1_1PoolAllocator_1_1rebind.html',1,'thrill::mem::PoolAllocator']]],
   ['reducebuckethashtable',['ReduceBucketHashTable',['../classthrill_1_1core_1_1ReduceBucketHashTable.html',1,'thrill::core']]],
   ['reducebyhash',['ReduceByHash',['../classthrill_1_1core_1_1ReduceByHash.html',1,'thrill::core']]],
   ['reducebyhashpostphase',['ReduceByHashPostPhase',['../classthrill_1_1core_1_1ReduceByHashPostPhase.html',1,'thrill::core']]],
@@ -72,6 +77,8 @@ var searchData=
   ['reservoirsamplinggrow_3c_20sampleindexpair_20_3e',['ReservoirSamplingGrow&lt; SampleIndexPair &gt;',['../classthrill_1_1common_1_1ReservoirSamplingGrow.html',1,'thrill::common']]],
   ['result',['Result',['../structthrill_1_1core_1_1ReduceByIndex_1_1Result.html',1,'thrill::core::ReduceByIndex']]],
   ['result',['Result',['../structthrill_1_1core_1_1ReduceByHash_1_1Result.html',1,'thrill::core::ReduceByHash']]],
+  ['result_5ft',['result_t',['../structtlx_1_1btree_1_1result__t.html',1,'tlx::btree']]],
+  ['reverse_5fiterator',['reverse_iterator',['../classtlx_1_1btree_1_1reverse__iterator.html',1,'tlx::btree']]],
   ['ringbuffer',['RingBuffer',['../classtlx_1_1RingBuffer.html',1,'tlx']]],
   ['ringbuffer_3c_20input_20_3e',['RingBuffer&lt; Input &gt;',['../classtlx_1_1RingBuffer.html',1,'tlx']]],
   ['runtimer',['RunTimer',['../classthrill_1_1common_1_1RunTimer.html',1,'thrill::common']]]

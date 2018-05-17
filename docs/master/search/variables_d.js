@@ -12,6 +12,8 @@ var searchData=
   ['neutral_5felement_5findex_5foccupied_5f',['neutral_element_index_occupied_',['../classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a3fb82cff6eda99af4abca22aa5ed36e3',1,'thrill::core::ReduceByIndexPostPhase']]],
   ['neutral_5felement_5fkey_5f',['neutral_element_key_',['../classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a0c86da57ee7f8d7bec3fdd1c4f2f5352',1,'thrill::core::ReduceByIndexPostPhase']]],
   ['next',['next',['../structthrill_1_1core_1_1ReduceBucketHashTable_1_1BucketBlock.html#a2d8451008fdf8c0f0a06034bbd41ea7e',1,'thrill::core::ReduceBucketHashTable::BucketBlock']]],
+  ['next_5f',['next_',['../classtlx_1_1LoggerCollectOutput.html#a9dff1530ea1100398de9ab0977600092',1,'tlx::LoggerCollectOutput']]],
+  ['next_5fleaf',['next_leaf',['../structtlx_1_1btree_1_1leaf__node.html#a62f91e800a300a413c9fcab8d397e357',1,'tlx::btree::leaf_node']]],
   ['next_5ftimeout',['next_timeout',['../structthrill_1_1common_1_1ProfileThread_1_1Timer.html#af985b311c6b8154c43c6aef509964d00',1,'thrill::common::ProfileThread::Timer::next_timeout()'],['../structthrill_1_1net_1_1Dispatcher_1_1Timer.html#af985b311c6b8154c43c6aef509964d00',1,'thrill::net::Dispatcher::Timer::next_timeout()']]],
   ['nitems_5f',['nitems_',['../classthrill_1_1data_1_1BlockWriter.html#a1eca387e8909e4fdcb15f7c3ee3410f4',1,'thrill::data::BlockWriter']]],
   ['no_5fallocator',['NO_ALLOCATOR',['../classthrill_1_1io_1_1FileBase.html#a34d141ebe4b350f7b40b06f32cc0de20',1,'thrill::io::FileBase']]],

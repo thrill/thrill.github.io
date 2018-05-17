@@ -19,7 +19,7 @@ var classthrill_1_1data_1_1Block =
     [ "set_end", "classthrill_1_1data_1_1Block.html#a917878fcc3abe1d37c6d837e098a9788", null ],
     [ "size", "classthrill_1_1data_1_1Block.html#aac782da1f912bceb5d8ad00c8dc892ac", null ],
     [ "typecode_verify", "classthrill_1_1data_1_1Block.html#addb1adbf6a2120603e19f98290aac33e", null ],
-    [ "operator<<", "classthrill_1_1data_1_1Block.html#ad7d89193fd20aa231a64f0ebd359eebe", null ],
+    [ "operator<<", "classthrill_1_1data_1_1Block.html#a0fa39edbee66ca9e659bb6e553929d45", null ],
     [ "begin_", "classthrill_1_1data_1_1Block.html#a511cccf8f8c63a8dfc40421062144bc1", null ],
     [ "byte_block_", "classthrill_1_1data_1_1Block.html#aea5a46255c1f0291bce944361bb06b7e", null ],
     [ "debug", "classthrill_1_1data_1_1Block.html#a6b72e54baf646b08b4b87f987f583dcb", null ],

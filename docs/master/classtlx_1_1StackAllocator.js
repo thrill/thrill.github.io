@@ -17,7 +17,7 @@ var classtlx_1_1StackAllocator =
     [ "allocate", "classtlx_1_1StackAllocator.html#a44449cd76836f6ef924298c24b14ae6d", null ],
     [ "deallocate", "classtlx_1_1StackAllocator.html#a84b3ef693d673693210a1d9dfbcc8661", null ],
     [ "operator!=", "classtlx_1_1StackAllocator.html#acae3687e9850d92981301977a372d4f3", null ],
-    [ "operator=", "classtlx_1_1StackAllocator.html#aca1da84526da3cc7e66978da876f4ee5", null ],
+    [ "operator=", "classtlx_1_1StackAllocator.html#a4691b7ca5b23392656cedac1971d1292", null ],
     [ "operator=", "classtlx_1_1StackAllocator.html#af592ffea26ea05a1b276af0398a71d94", null ],
     [ "operator==", "classtlx_1_1StackAllocator.html#a7744426b651e292ae740d353fd7f8e3d", null ],
     [ "StackAllocator", "classtlx_1_1StackAllocator.html#a3135ad9d83db302cce8b0ea1a24acb7f", null ],

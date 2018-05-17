@@ -1,6 +1,7 @@
 var searchData=
 [
   ['node',['Node',['../structthrill_1_1common_1_1SplayzTree_1_1Node.html',1,'thrill::common::SplayzTree']]],
+  ['node',['node',['../structtlx_1_1btree_1_1node.html',1,'tlx::btree']]],
   ['nodecompare',['NodeCompare',['../structthrill_1_1common_1_1SplayzTree_1_1NodeCompare.html',1,'thrill::common::SplayzTree']]],
   ['nodeparentpair',['NodeParentPair',['../structexamples_1_1bfs_1_1NodeParentPair.html',1,'examples::bfs']]],
   ['nooperation',['NoOperation',['../structthrill_1_1common_1_1NoOperation.html',1,'thrill::common']]],

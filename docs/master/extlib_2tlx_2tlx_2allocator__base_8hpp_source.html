@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('extlib_2tlx_2tlx_2allocator__base_8hpp
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="namespacetlx.html">   18</a></span>&#160;<span class="keyword">namespace </span>tlx {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>tlx {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classtlx_1_1AllocatorBase.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classtlx_1_1AllocatorBase.html">AllocatorBase</a></div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('extlib_2tlx_2tlx_2allocator__base_8hpp
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">    //! Constructs an element object on the location pointed by p.</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classtlx_1_1AllocatorBase.html#acddcb4eb6202d3d41f2afcc9933e1777">   55</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classtlx_1_1AllocatorBase.html#acddcb4eb6202d3d41f2afcc9933e1777">construct</a>(<a class="code" href="classtlx_1_1AllocatorBase.html#a1e67311e1f4ae3600af384f0a7e6addc">pointer</a> p, <a class="code" href="classtlx_1_1AllocatorBase.html#a9292c3e34b31f09cb6cd0b42b511fa7a">const_reference</a> <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        ::new ((<span class="keywordtype">void</span>*)p)<a class="code" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>(value); <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        ::new (static_cast&lt;void*&gt;(p))<a class="code" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>(value); <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#if defined(_MSC_VER)</span></div>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('extlib_2tlx_2tlx_2allocator__base_8hpp
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">    //! Constructs an element object on the location pointed by p.</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"></span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> SubType, <span class="keyword">typename</span>... Args&gt;</div>
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classtlx_1_1AllocatorBase.html#a37b3525a584d58f9b0bf8cfa8bc52cca">   74</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classtlx_1_1AllocatorBase.html#a37b3525a584d58f9b0bf8cfa8bc52cca">construct</a>(SubType* p, Args&amp;&amp; ... args) {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        ::new ((<span class="keywordtype">void</span>*)p)SubType(std::forward&lt;Args&gt;(args) ...); <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        ::new (static_cast&lt;void*&gt;(p))SubType(std::forward&lt;Args&gt;(args) ...); <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">    //! Destroys in-place the object pointed by p.</span></div>
@@ -231,8 +231,8 @@ $(document).ready(function(){initNavTree('extlib_2tlx_2tlx_2allocator__base_8hpp
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_caacaa4f3b8d02b4020eb7fe043e6252.html">extlib</a></li><li class="navelem"><a class="el" href="dir_7a0d59963e57ff0db60447211f189ef0.html">tlx</a></li><li class="navelem"><a class="el" href="dir_4c5cb83148e98355e323096051cdb415.html">tlx</a></li><li class="navelem"><a class="el" href="extlib_2tlx_2tlx_2allocator__base_8hpp.html">allocator_base.hpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:21 for Thrill by
+    <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="extlib_2tlx_2tlx_2allocator__base_8hpp.html">allocator_base.hpp</a></li>
+    <li class="footer">Generated on Thu May 17 2018 13:49:20 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

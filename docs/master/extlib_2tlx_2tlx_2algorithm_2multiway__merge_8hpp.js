@@ -1,0 +1,35 @@
+var extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp =
+[
+    [ "guarded_iterator", "classtlx_1_1multiway__merge__detail_1_1guarded__iterator.html", "classtlx_1_1multiway__merge__detail_1_1guarded__iterator" ],
+    [ "unguarded_iterator", "classtlx_1_1multiway__merge__detail_1_1unguarded__iterator.html", "classtlx_1_1multiway__merge__detail_1_1unguarded__iterator" ],
+    [ "TLX_DECISION", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#a02b4aab00fbdc785c7fdcaa29fa51a94", null ],
+    [ "TLX_MERGE3CASE", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#aa409c9d4294e037134a0c1f3937f9519", null ],
+    [ "TLX_MERGE4CASE", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#a7c16456e6331c298e313b1300bbcb69b", null ],
+    [ "TLX_POS", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#aaed922dd2b60924d07d50c0251159ad7", null ],
+    [ "TLX_STOPS", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#a58dd81b56a49d64efae2b543746d0dce", null ],
+    [ "MultiwayMergeAlgorithm", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#ga98e900a348b28aa3709eb5e6d897ffbb", [
+      [ "MWMA_LOSER_TREE", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#gga98e900a348b28aa3709eb5e6d897ffbbac1488a90ba6e18d5f936e51cbc5625e1", null ],
+      [ "MWMA_LOSER_TREE_COMBINED", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#gga98e900a348b28aa3709eb5e6d897ffbbadd051fbbe4e1346d6357c82d56add811", null ],
+      [ "MWMA_LOSER_TREE_SENTINEL", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#gga98e900a348b28aa3709eb5e6d897ffbba8f020d718b11548f7d45b3d56fb37981", null ],
+      [ "MWMA_BUBBLE", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#gga98e900a348b28aa3709eb5e6d897ffbba097e6877921551867e9681ff56411d10", null ],
+      [ "MWMA_ALGORITHM_LAST", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#gga98e900a348b28aa3709eb5e6d897ffbba9fbb6366507fb2f30a433c51366719b6", null ],
+      [ "MWMA_ALGORITHM_DEFAULT", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#gga98e900a348b28aa3709eb5e6d897ffbba332bba921707cc62f6a682b8ac2c9013", null ]
+    ] ],
+    [ "iterpair_size", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#a70480d1927745d5df741d4c3769b0984", null ],
+    [ "multiway_merge", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#gabfbaa27bf2f95ce5806e19e6fc4980e9", null ],
+    [ "multiway_merge_3_combined", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#aaff827b17c6f6e245bf4846365218281", null ],
+    [ "multiway_merge_3_variant", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#a4451d5f80b29379841cd9f71a6555bef", null ],
+    [ "multiway_merge_4_combined", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#a40997397b0960891f2f2bc184fa57d30", null ],
+    [ "multiway_merge_4_variant", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#afa9020a7e19d98939c71e62b3ddb15be", null ],
+    [ "multiway_merge_base", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#ga1d2560e55c9bda04200cc2dfceda4d94", null ],
+    [ "multiway_merge_bubble", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#a68f54f7e9837e3b441ff74bd71988c69", null ],
+    [ "multiway_merge_loser_tree", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#a615669ffb893288c8cd7c96f4e9daf4a", null ],
+    [ "multiway_merge_loser_tree_combined", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#aa737acfd009dc9e1b2ee871604b958e1", null ],
+    [ "multiway_merge_loser_tree_sentinel", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#a9b355735b0cbd64192c3b5ae99e5e2f0", null ],
+    [ "multiway_merge_loser_tree_unguarded", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#a0cc773edba05492a99fd64fb599b1fb1", null ],
+    [ "multiway_merge_sentinels", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#ga36d2d7a6f5b247579d7e863c82323ed6", null ],
+    [ "prepare_unguarded", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#afb95429cb221e9299384dc9c0fb8c734", null ],
+    [ "prepare_unguarded_sentinel", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#a87340e2f544b97dab4f5638bbdca0646", null ],
+    [ "stable_multiway_merge", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#gab5a6467af7f10ab6f206eb3f9b3e0e4e", null ],
+    [ "stable_multiway_merge_sentinels", "extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#gac2db163874c1c8e389c2736a72decb5f", null ]
+];

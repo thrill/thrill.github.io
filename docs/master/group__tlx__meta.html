@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('group__tlx__meta.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacetlx_1_1detail"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx_1_1detail.html">tlx::detail</a></td></tr>
+<tr class="memitem:namespacetlx_1_1meta__detail"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx_1_1meta__detail.html">tlx::meta_detail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -221,6 +221,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9a8854506459ec185c2bcbdd6fe6428b"><td class="memTemplParams" colspan="2">template&lt;typename Functor , typename... Args&gt; </td></tr>
 <tr class="memitem:ga9a8854506459ec185c2bcbdd6fe6428b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__meta.html#ga9a8854506459ec185c2bcbdd6fe6428b">call_foreach_with_index</a> (Functor &amp;&amp;f, Args &amp;&amp;...args)</td></tr>
 <tr class="separator:ga9a8854506459ec185c2bcbdd6fe6428b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga618fa4f3ed4af06a48274926ecd95252"><td class="memTemplParams" colspan="2">template&lt;typename Reduce , typename Initial , typename... Args&gt; </td></tr>
+<tr class="memitem:ga618fa4f3ed4af06a48274926ecd95252"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__meta.html#ga618fa4f3ed4af06a48274926ecd95252">fold_left</a> (Reduce &amp;&amp;r, Initial &amp;&amp;init, Args &amp;&amp;...args)</td></tr>
+<tr class="separator:ga618fa4f3ed4af06a48274926ecd95252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81c817d6c9ae0e06f4806fad21d583b8"><td class="memTemplParams" colspan="2">template&lt;typename Reduce , typename Initial , typename Tuple &gt; </td></tr>
+<tr class="memitem:ga81c817d6c9ae0e06f4806fad21d583b8"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__meta.html#ga81c817d6c9ae0e06f4806fad21d583b8">fold_left_tuple</a> (Reduce &amp;&amp;r, Initial &amp;&amp;init, Tuple &amp;&amp;t)</td></tr>
+<tr class="separator:ga81c817d6c9ae0e06f4806fad21d583b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6619c87c7a112a16cbeed0ecdd3a07c"><td class="memTemplParams" colspan="2">template&lt;typename Reduce , typename Initial , typename... Args&gt; </td></tr>
+<tr class="memitem:gac6619c87c7a112a16cbeed0ecdd3a07c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__meta.html#gac6619c87c7a112a16cbeed0ecdd3a07c">fold_right</a> (Reduce &amp;&amp;r, Initial &amp;&amp;init, Args &amp;&amp;...args)</td></tr>
+<tr class="separator:gac6619c87c7a112a16cbeed0ecdd3a07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e169ed1c415649bc1cd112cf59f56f4"><td class="memTemplParams" colspan="2">template&lt;typename Reduce , typename Initial , typename Tuple &gt; </td></tr>
+<tr class="memitem:ga4e169ed1c415649bc1cd112cf59f56f4"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__meta.html#ga4e169ed1c415649bc1cd112cf59f56f4">fold_right_tuple</a> (Reduce &amp;&amp;r, Initial &amp;&amp;init, Tuple &amp;&amp;t)</td></tr>
+<tr class="separator:ga4e169ed1c415649bc1cd112cf59f56f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab2afc1ff7d0b9ea7a6583d0573e36ef7"><td class="memTemplParams" colspan="2">template&lt;typename Functor &gt; </td></tr>
 <tr class="memitem:gab2afc1ff7d0b9ea7a6583d0573e36ef7"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__meta.html#gab2afc1ff7d0b9ea7a6583d0573e36ef7">make_function_chain</a> (const Functor &amp;functor)</td></tr>
 <tr class="memdesc:gab2afc1ff7d0b9ea7a6583d0573e36ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor chain maker. Can also be called with a lambda function.  <a href="#gab2afc1ff7d0b9ea7a6583d0573e36ef7">More...</a><br/></td></tr>
@@ -246,12 +258,18 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf379571cbffcf0273d0203ef53bca2b8"><td class="memTemplParams" colspan="2">template&lt;typename Functor , typename... Args&gt; </td></tr>
 <tr class="memitem:gaf379571cbffcf0273d0203ef53bca2b8"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__meta.html#gaf379571cbffcf0273d0203ef53bca2b8">vmap_foreach</a> (Functor &amp;&amp;f, Args &amp;&amp;...args)</td></tr>
 <tr class="separator:gaf379571cbffcf0273d0203ef53bca2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d427a6295fdc8b9b037794a785e9926"><td class="memTemplParams" colspan="2">template&lt;typename Functor , typename Tuple &gt; </td></tr>
+<tr class="memitem:ga3d427a6295fdc8b9b037794a785e9926"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__meta.html#ga3d427a6295fdc8b9b037794a785e9926">vmap_foreach_tuple</a> (Functor &amp;&amp;f, Tuple &amp;&amp;t)</td></tr>
+<tr class="separator:ga3d427a6295fdc8b9b037794a785e9926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac60978f8100125dbfddf607bdf0cf412"><td class="memTemplParams" colspan="2">template&lt;typename Functor , typename Tuple &gt; </td></tr>
+<tr class="memitem:gac60978f8100125dbfddf607bdf0cf412"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__meta.html#gac60978f8100125dbfddf607bdf0cf412">vmap_foreach_tuple_with_index</a> (Functor &amp;&amp;f, Tuple &amp;&amp;t)</td></tr>
+<tr class="separator:gac60978f8100125dbfddf607bdf0cf412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1a5c01183e4cc91ffbec284e8bd9437e"><td class="memTemplParams" colspan="2">template&lt;typename Functor , typename... Args&gt; </td></tr>
 <tr class="memitem:ga1a5c01183e4cc91ffbec284e8bd9437e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__meta.html#ga1a5c01183e4cc91ffbec284e8bd9437e">vmap_foreach_with_index</a> (Functor &amp;&amp;f, Args &amp;&amp;...args)</td></tr>
 <tr class="separator:ga1a5c01183e4cc91ffbec284e8bd9437e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>tools for easier meta-template programming </p>
+<p>Tools for easier meta-template programming </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ga57d4934d6831a219db7ed2003093fde9"></a>
 <div class="memitem">
@@ -482,9 +500,9 @@ Functions</h2></td></tr>
 
 <p>Call the functor f with the contents of t as arguments. </p>
 
-<p>Definition at line <a class="el" href="apply__tuple_8hpp_source.html#l00039">39</a> of file <a class="el" href="apply__tuple_8hpp_source.html">apply_tuple.hpp</a>.</p>
+<p>Definition at line <a class="el" href="apply__tuple_8hpp_source.html#l00040">40</a> of file <a class="el" href="apply__tuple_8hpp_source.html">apply_tuple.hpp</a>.</p>
 
-<p>References <a class="el" href="apply__tuple_8hpp_source.html#l00030">tlx::detail::apply_tuple_impl()</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
+<p>References <a class="el" href="apply__tuple_8hpp_source.html#l00031">tlx::meta_detail::apply_tuple_impl()</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
 </div>
 </div>
@@ -559,9 +577,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="call__foreach_8hpp_source.html#l00047">47</a> of file <a class="el" href="call__foreach_8hpp_source.html">call_foreach.hpp</a>.</p>
 
-<p>References <a class="el" href="call__foreach_8hpp_source.html#l00029">tlx::detail::call_foreach_impl()</a>.</p>
+<p>References <a class="el" href="call__foreach_8hpp_source.html#l00029">tlx::meta_detail::call_foreach_impl()</a>.</p>
 
-<p>Referenced by <a class="el" href="call__foreach__tuple_8hpp_source.html#l00034">tlx::detail::call_foreach_tuple_impl()</a>, and <a class="el" href="json__logger_8hpp_source.html#l00416">JsonLogger::JsonLogger()</a>.</p>
+<p>Referenced by <a class="el" href="call__foreach__tuple_8hpp_source.html#l00034">tlx::meta_detail::call_foreach_tuple_impl()</a>, and <a class="el" href="json__logger_8hpp_source.html#l00416">JsonLogger::JsonLogger()</a>.</p>
 
 </div>
 </div>
@@ -592,7 +610,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="call__foreach__tuple_8hpp_source.html#l00045">45</a> of file <a class="el" href="call__foreach__tuple_8hpp_source.html">call_foreach_tuple.hpp</a>.</p>
 
-<p>References <a class="el" href="call__foreach__tuple_8hpp_source.html#l00034">tlx::detail::call_foreach_tuple_impl()</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
+<p>References <a class="el" href="call__foreach__tuple_8hpp_source.html#l00034">tlx::meta_detail::call_foreach_tuple_impl()</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
 </div>
 </div>
@@ -623,7 +641,9 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="call__foreach__tuple__with__index_8hpp_source.html#l00045">45</a> of file <a class="el" href="call__foreach__tuple__with__index_8hpp_source.html">call_foreach_tuple_with_index.hpp</a>.</p>
 
-<p>References <a class="el" href="call__foreach__tuple__with__index_8hpp_source.html#l00034">tlx::detail::call_foreach_tuple_with_index_impl()</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
+<p>References <a class="el" href="call__foreach__tuple__with__index_8hpp_source.html#l00034">tlx::meta_detail::call_foreach_tuple_with_index_impl()</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
+
+<p>Referenced by <a class="el" href="tuple_8hpp_source.html#l00037">LoggerFormatter&lt; std::tuple&lt; Args...&gt; &gt;::print()</a>.</p>
 
 </div>
 </div>
@@ -654,7 +674,159 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="call__foreach__with__index_8hpp_source.html#l00050">50</a> of file <a class="el" href="call__foreach__with__index_8hpp_source.html">call_foreach_with_index.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="call__foreach__tuple__with__index_8hpp_source.html#l00034">tlx::detail::call_foreach_tuple_with_index_impl()</a>.</p>
+<p>Referenced by <a class="el" href="call__foreach__tuple__with__index_8hpp_source.html#l00034">tlx::meta_detail::call_foreach_tuple_with_index_impl()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga618fa4f3ed4af06a48274926ecd95252"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto tlx::fold_left </td>
+          <td>(</td>
+          <td class="paramtype">Reduce &amp;&amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Initial &amp;&amp;&#160;</td>
+          <td class="paramname"><em>init</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Implements <a class="el" href="group__tlx__meta.html#ga618fa4f3ed4af06a48274926ecd95252">fold_left()</a> &ndash; ((a * b) * c) &ndash; with a binary Reduce operation and initial value. </p>
+
+<p>Definition at line <a class="el" href="fold__left_8hpp_source.html#l00051">51</a> of file <a class="el" href="fold__left_8hpp_source.html">fold_left.hpp</a>.</p>
+
+<p>References <a class="el" href="fold__left_8hpp_source.html#l00030">tlx::meta_detail::fold_left_impl()</a>.</p>
+
+<p>Referenced by <a class="el" href="fold__left__tuple_8hpp_source.html#l00031">tlx::meta_detail::fold_left_tuple_impl()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga81c817d6c9ae0e06f4806fad21d583b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto tlx::fold_left_tuple </td>
+          <td>(</td>
+          <td class="paramtype">Reduce &amp;&amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Initial &amp;&amp;&#160;</td>
+          <td class="paramname"><em>init</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Tuple &amp;&amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Implements <a class="el" href="group__tlx__meta.html#ga618fa4f3ed4af06a48274926ecd95252">fold_left()</a> &ndash; ((a * b) * c) &ndash; with a binary Reduce operation and initial value on a tuple. </p>
+
+<p>Definition at line <a class="el" href="fold__left__tuple_8hpp_source.html#l00043">43</a> of file <a class="el" href="fold__left__tuple_8hpp_source.html">fold_left_tuple.hpp</a>.</p>
+
+<p>References <a class="el" href="fold__left__tuple_8hpp_source.html#l00031">tlx::meta_detail::fold_left_tuple_impl()</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac6619c87c7a112a16cbeed0ecdd3a07c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto tlx::fold_right </td>
+          <td>(</td>
+          <td class="paramtype">Reduce &amp;&amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Initial &amp;&amp;&#160;</td>
+          <td class="paramname"><em>init</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Implements <a class="el" href="group__tlx__meta.html#gac6619c87c7a112a16cbeed0ecdd3a07c">fold_right()</a> &ndash; (a * (b * c)) &ndash; with a binary Reduce operation and initial value. </p>
+
+<p>Definition at line <a class="el" href="fold__right_8hpp_source.html#l00050">50</a> of file <a class="el" href="fold__right_8hpp_source.html">fold_right.hpp</a>.</p>
+
+<p>References <a class="el" href="fold__right_8hpp_source.html#l00030">tlx::meta_detail::fold_right_impl()</a>.</p>
+
+<p>Referenced by <a class="el" href="fold__right__tuple_8hpp_source.html#l00031">tlx::meta_detail::fold_right_tuple_impl()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4e169ed1c415649bc1cd112cf59f56f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto tlx::fold_right_tuple </td>
+          <td>(</td>
+          <td class="paramtype">Reduce &amp;&amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Initial &amp;&amp;&#160;</td>
+          <td class="paramname"><em>init</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Tuple &amp;&amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Implements <a class="el" href="group__tlx__meta.html#gac6619c87c7a112a16cbeed0ecdd3a07c">fold_right()</a> &ndash; (a * (b * c)) &ndash; with a binary Reduce operation and initial value on a tuple. </p>
+
+<p>Definition at line <a class="el" href="fold__right__tuple_8hpp_source.html#l00042">42</a> of file <a class="el" href="fold__right__tuple_8hpp_source.html">fold_right_tuple.hpp</a>.</p>
+
+<p>References <a class="el" href="fold__right__tuple_8hpp_source.html#l00031">tlx::meta_detail::fold_right_tuple_impl()</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
 </div>
 </div>
@@ -832,7 +1004,71 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="vmap__foreach_8hpp_source.html#l00051">51</a> of file <a class="el" href="vmap__foreach_8hpp_source.html">vmap_foreach.hpp</a>.</p>
 
-<p>References <a class="el" href="vmap__foreach_8hpp_source.html#l00031">tlx::detail::vmap_foreach_impl()</a>.</p>
+<p>References <a class="el" href="vmap__foreach_8hpp_source.html#l00031">tlx::meta_detail::vmap_foreach_impl()</a>.</p>
+
+<p>Referenced by <a class="el" href="vmap__foreach__tuple_8hpp_source.html#l00032">tlx::meta_detail::vmap_foreach_tuple_impl()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3d427a6295fdc8b9b037794a785e9926"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto tlx::vmap_foreach_tuple </td>
+          <td>(</td>
+          <td class="paramtype">Functor &amp;&amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Tuple &amp;&amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Call a generic functor (like a generic lambda) for each variadic template argument and collect the result in a std::tuple&lt;&gt;. </p>
+
+<p>Definition at line <a class="el" href="vmap__foreach__tuple_8hpp_source.html#l00043">43</a> of file <a class="el" href="vmap__foreach__tuple_8hpp_source.html">vmap_foreach_tuple.hpp</a>.</p>
+
+<p>References <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vmap__foreach__tuple_8hpp_source.html#l00032">tlx::meta_detail::vmap_foreach_tuple_impl()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac60978f8100125dbfddf607bdf0cf412"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto tlx::vmap_foreach_tuple_with_index </td>
+          <td>(</td>
+          <td class="paramtype">Functor &amp;&amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Tuple &amp;&amp;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Call a generic functor (like a generic lambda) for each variadic template argument and collect the result in a std::tuple&lt;&gt;. </p>
+
+<p>Definition at line <a class="el" href="vmap__foreach__tuple__with__index_8hpp_source.html#l00045">45</a> of file <a class="el" href="vmap__foreach__tuple__with__index_8hpp_source.html">vmap_foreach_tuple_with_index.hpp</a>.</p>
+
+<p>References <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>, and <a class="el" href="vmap__foreach__tuple__with__index_8hpp_source.html#l00034">tlx::meta_detail::vmap_foreach_tuple_with_index_impl()</a>.</p>
 
 </div>
 </div>
@@ -863,6 +1099,8 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="vmap__foreach__with__index_8hpp_source.html#l00056">56</a> of file <a class="el" href="vmap__foreach__with__index_8hpp_source.html">vmap_foreach_with_index.hpp</a>.</p>
 
+<p>Referenced by <a class="el" href="vmap__foreach__tuple__with__index_8hpp_source.html#l00034">tlx::meta_detail::vmap_foreach_tuple_with_index_impl()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -870,7 +1108,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 15 2018 15:01:24 for Thrill by
+    <li class="footer">Generated on Thu May 17 2018 13:49:23 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

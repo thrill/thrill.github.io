@@ -19,6 +19,6 @@ var classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4 =
     [ "StartEventually", "classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html#ae167f0b40ee506593866024bcafe691b", null ],
     [ "Stop", "classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html#a04c837880b294cef81466e27f001fbb4", null ],
     [ "StopEventually", "classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html#aa70b0fb993c3fa1a5210e03903622f85", null ],
-    [ "operator<<", "classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html#a6b5365f6d1191b04946d9430a13b2e4c", null ],
+    [ "operator<<", "classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html#a4f07e352a47563897a0d6081292d1998", null ],
     [ "Put", "classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html#a09bdd7804004432a3fb90d69e24eb64c", null ]
 ];

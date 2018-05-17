@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['thrill_20layers',['Thrill Layers',['../group__layers.html',1,'']]],
-  ['tcp_20socket_20api',['TCP Socket API',['../group__net__tcp.html',1,'']]],
-  ['tlx_20_2d_20c_2b_2b_20extensions_20and_20utilities',['tlx - C++ Extensions and Utilities',['../group__tlx.html',1,'']]]
+  ['source_20nodes',['Source Nodes',['../group__dia__sources.html',1,'']]],
+  ['sorting_20algorithms',['Sorting Algorithms',['../group__tlx__sort.html',1,'']]],
+  ['string_20algorithms',['String Algorithms',['../group__tlx__string.html',1,'']]]
 ];

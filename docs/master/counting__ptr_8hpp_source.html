@@ -167,9 +167,9 @@ $(document).ready(function(){initNavTree('counting__ptr_8hpp_source.html','');})
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> * data object determines that it&#39;s internal count is zero, then it must destroy</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> * itself.</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> * Accompanying the CountingPtr is a class ReferenceCounter, from which reference</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * counted classes may be derive from. The class ReferenceCounter implement all</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * methods required for reference counting.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> * Accompanying the CountingPtr is a class ReferenceCounter, from which</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * reference counted classes may be derive from. The class ReferenceCounter</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * implement all methods required for reference counting.</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> * The whole method is more similar to boost&#39;s instrusive_ptr, but also yields</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> * something resembling std::shared_ptr. However, compared to std::shared_ptr,</span></div>
@@ -448,12 +448,57 @@ $(document).ready(function(){initNavTree('counting__ptr_8hpp_source.html','');})
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="comment">//! make alias due to CountingPtr&#39;s similarity with std::shared_ptr&lt;T&gt;</span></div>
 <div class="line"><a name="l00332"></a><span class="lineno"><a class="line" href="namespacetlx.html#a4a89ad01492580f7cf07d93a99539cf5">  332</a></span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="classtlx_1_1ReferenceCounter.html">reference_counter</a> = <a class="code" href="classtlx_1_1ReferenceCounter.html">ReferenceCounter</a>;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;} <span class="comment">// namespace tlx</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">#endif // !TLX_COUNTING_PTR_HEADER</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment">/** \page tlx_counting_ptr CountingPtr – an intrusive reference counting pointer</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment">\brief \ref CountingPtr is an implementation of &lt;b&gt;intrusive reference counting&lt;/b&gt;.</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment">This is similar, but not identical to boost or C++ TR1&#39;s \c</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">shared_ptr. Intrusive reference counting requires the counted class to contain</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">the counter, which is not required by &lt;tt&gt;std::shared_ptr&lt;/tt&gt;.</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment">Intrusive counting is often faster due to fewer cache faults. Furthermore, \ref</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="comment">CountingPtr is a &lt;b&gt;single pointer&lt;/b&gt;, whereas &lt;tt&gt;std::shared_ptr&lt;/tt&gt;</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="comment">actually contains (at least) two pointers. \ref CountingPtr also creates a lot</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="comment">less debug info due to reduced complexity.</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="comment">\ref CountingPtr is accompanied by \ref ReferenceCounter, which contains the</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment">actual reference counter (a single integer). A reference counted object must</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment">derive from \ref ReferenceCounter :</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment">\code</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment">struct Something : public tlx::ReferenceCounter</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="comment">{</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="comment">};</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment">\endcode</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">Code that now wishes to use pointers referencing this object, will typedef an</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">\ref CountingPtr, which is used to increment and decrement the included</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">reference counter automatically.</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment">\code</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment">using SomethingPtr = tlx::CountingPtr&lt;Something&gt;;</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">{</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment">    // create new instance of something</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment">    SomethingPtr p1 = new something;</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment">    {</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">        // create a new reference to the same instance (no deep copy!)</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment">        SomethingPtr p2 = p1;</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment">        // this block end will decrement the reference count, but not delete the object</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">    // this block end will delete the object</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment">\endcode</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment">The \ref CountingPtr can generally be used like a usual pointer or \c</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">std::shared_ptr (see the docs for more).</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;} <span class="comment">// namespace tlx</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor">#endif // !TLX_COUNTING_PTR_HEADER</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="classtlx_1_1CountingPtr_html_a28653b45bfba9a4135bc0c5903a45c4e"><div class="ttname"><a href="classtlx_1_1CountingPtr.html#a28653b45bfba9a4135bc0c5903a45c4e">tlx::CountingPtr::unify</a></div><div class="ttdeci">void unify()</div><div class="ttdoc">make and refer a copy if the original object was shared. </div><div class="ttdef"><b>Definition:</b> <a href="counting__ptr_8hpp_source.html#l00229">counting_ptr.hpp:229</a></div></div>
 <div class="ttc" id="namespacetlx_html_ae38d352a065543cf324f52a58bd2b026"><div class="ttname"><a href="namespacetlx.html#ae38d352a065543cf324f52a58bd2b026">tlx::make_counting</a></div><div class="ttdeci">CountingPtr&lt; Type &gt; make_counting(Args &amp;&amp;...args)</div><div class="ttdoc">method analogous to std::make_shared and std::make_unique. </div><div class="ttdef"><b>Definition:</b> <a href="counting__ptr_8hpp_source.html#l00256">counting_ptr.hpp:256</a></div></div>
 <div class="ttc" id="classtlx_1_1CountingPtr_html_aa6c398e0330d2e6ddd23650cbfbcdf67"><div class="ttname"><a href="classtlx_1_1CountingPtr.html#aa6c398e0330d2e6ddd23650cbfbcdf67">tlx::CountingPtr&lt; FileBase &gt;::element_type</a></div><div class="ttdeci">FileBase element_type</div><div class="ttdoc">contained type. </div><div class="ttdef"><b>Definition:</b> <a href="counting__ptr_8hpp_source.html#l00069">counting_ptr.hpp:69</a></div></div>
@@ -501,8 +546,8 @@ $(document).ready(function(){initNavTree('counting__ptr_8hpp_source.html','');})
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_caacaa4f3b8d02b4020eb7fe043e6252.html">extlib</a></li><li class="navelem"><a class="el" href="dir_7a0d59963e57ff0db60447211f189ef0.html">tlx</a></li><li class="navelem"><a class="el" href="dir_4c5cb83148e98355e323096051cdb415.html">tlx</a></li><li class="navelem"><a class="el" href="counting__ptr_8hpp.html">counting_ptr.hpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:19 for Thrill by
+    <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="counting__ptr_8hpp.html">counting_ptr.hpp</a></li>
+    <li class="footer">Generated on Thu May 17 2018 13:49:18 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

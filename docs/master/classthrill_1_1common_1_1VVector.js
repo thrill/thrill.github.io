@@ -19,6 +19,6 @@ var classthrill_1_1common_1_1VVector =
     [ "Random", "classthrill_1_1common_1_1VVector.html#a43314146ffcea62c13acfffce6400cf9", null ],
     [ "serialize", "classthrill_1_1common_1_1VVector.html#a471354d71ba97866fe5dabb75f1a016b", null ],
     [ "size", "classthrill_1_1common_1_1VVector.html#aac782da1f912bceb5d8ad00c8dc892ac", null ],
-    [ "operator<<", "classthrill_1_1common_1_1VVector.html#a4c79e250912aaa20bfc22640719fd83a", null ],
+    [ "operator<<", "classthrill_1_1common_1_1VVector.html#a066d8130046a8232069697a0744d8e04", null ],
     [ "x", "classthrill_1_1common_1_1VVector.html#a4aa30a16ac83de7d0d87ea366fc98ef9", null ]
 ];

@@ -190,8 +190,8 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceNode.html#a17e6ef244d4d03395a813cf2a45a9648">   72</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a17e6ef244d4d03395a813cf2a45a9648">Key</a> = <span class="keyword">typename</span> common::FunctionTraits&lt;KeyExtractor&gt;::result_type;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a204dee530e24efc047ecb3caef72bf3b">TableItem</a> =</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;              <span class="keyword">typename</span> std::conditional&lt;</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceNode.html#a204dee530e24efc047ecb3caef72bf3b">   76</a></span>&#160;                  VolatileKey, std::pair&lt;Key, ValueType&gt;, ValueType&gt;::type;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">typename</span> std::conditional&lt;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceNode.html#a204dee530e24efc047ecb3caef72bf3b">   76</a></span>&#160;            VolatileKey, std::pair&lt;Key, ValueType&gt;, ValueType&gt;::type;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceNode.html#a25c4ed0613d19b7f957f1fd5dd58872f">   78</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1core_1_1ReduceByHash.html">HashIndexFunction</a> = <a class="code" href="classthrill_1_1core_1_1ReduceByHash.html">core::ReduceByHash&lt;Key, KeyHashFunction&gt;</a>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
@@ -439,7 +439,7 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    assert(IsValid());</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keyword">using</span> DOpResult</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;              = <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::result_type;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        = <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::result_type;</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    static_assert(</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        std::is_convertible&lt;</div>
@@ -469,9 +469,9 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="stringliteral">&quot;KeyExtractor has the wrong input type&quot;</span>);</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html">ReduceNode</a> = <a class="code" href="classthrill_1_1api_1_1ReduceNode.html">api::ReduceNode</a>&lt;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;              DOpResult, KeyExtractor, ReduceFunction, ReduceConfig,</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;              KeyHashFunction, KeyEqualFunction,</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;              VolatileKeyValue, DuplicateDetectionValue&gt;;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        DOpResult, KeyExtractor, ReduceFunction, ReduceConfig,</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        KeyHashFunction, KeyEqualFunction,</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        VolatileKeyValue, DuplicateDetectionValue&gt;;</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ReduceNode&gt;(</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        *<span class="keyword">this</span>, <span class="stringliteral">&quot;ReduceByKey&quot;</span>,</div>
@@ -535,7 +535,7 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    assert(IsValid());</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="keyword">using</span> DOpResult</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;              = <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::result_type;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        = <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::result_type;</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    static_assert(<a class="code" href="structtlx_1_1is__std__pair.html">tlx::is_std_pair&lt;ValueType&gt;::value</a>,</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;                  <span class="stringliteral">&quot;ValueType is not a pair&quot;</span>);</div>
@@ -568,10 +568,10 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        };</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html">ReduceNode</a> = <a class="code" href="classthrill_1_1api_1_1ReduceNode.html">api::ReduceNode</a>&lt;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;              <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>,</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;              decltype(key_extractor), decltype(reduce_pair_function),</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;              ReduceConfig, KeyHashFunction, KeyEqualFunction,</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;              <span class="comment">/* VolatileKey */</span> <span class="keyword">false</span>, DuplicateDetectionValue&gt;;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>,</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        decltype(key_extractor), decltype(reduce_pair_function),</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        ReduceConfig, KeyHashFunction, KeyEqualFunction,</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="comment">/* VolatileKey */</span> <span class="keyword">false</span>, DuplicateDetectionValue&gt;;</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ReduceNode&gt;(</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        *<span class="keyword">this</span>, <span class="stringliteral">&quot;ReducePair&quot;</span>,</div>
@@ -655,8 +655,8 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1f06a9dab790f88a2b6eb40fd2f445f5.html">api</a></li><li class="navelem"><a class="el" href="reduce__by__key_8hpp.html">reduce_by_key.hpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:20 for Thrill by
+    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="reduce__by__key_8hpp.html">reduce_by_key.hpp</a></li>
+    <li class="footer">Generated on Thu May 17 2018 13:49:19 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

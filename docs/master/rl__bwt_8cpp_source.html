@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('rl__bwt_8cpp_source.html','');});
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="print_8hpp.html">thrill/api/print.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="read__binary_8hpp.html">thrill/api/read_binary.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="size_8hpp.html">thrill/api/size.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="sort_8hpp.html">thrill/api/sort.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2api_2sort_8hpp.html">thrill/api/sort.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="window_8hpp.html">thrill/api/window.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="write__binary_8hpp.html">thrill/api/write_binary.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="zip_8hpp.html">thrill/api/zip.hpp</a>&gt;</span></div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('rl__bwt_8cpp_source.html','');});
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    IndexType index;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    CharType  c;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="namespacethrill_1_1api.html#ae8473cbd67ac02098251c03a8218ae49">operator &lt;&lt; </a>(</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">friend</span> std ::ostream&amp; <a class="code" href="namespacethrill_1_1api.html#ae8473cbd67ac02098251c03a8218ae49">operator &lt;&lt; </a>(</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        std::ostream&amp; os, <span class="keyword">const</span> IndexChar&amp; ri) {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <span class="charliteral">&#39;(&#39;</span> &lt;&lt; ri.index &lt;&lt; <span class="charliteral">&#39;|&#39;</span> &lt;&lt; ri.c &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
@@ -248,6 +248,7 @@ $(document).ready(function(){initNavTree('rl__bwt_8cpp_source.html','');});
 <div class="ttc" id="thrill_2common_2logger_8hpp_html_aea27f4824707b7aa21c0bcb69cd53ffb"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a></div><div class="ttdeci">#define sLOG1</div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2logger_8hpp_source.html#l00188">logger.hpp:188</a></div></div>
 <div class="ttc" id="write__binary_8hpp_html"><div class="ttname"><a href="write__binary_8hpp.html">write_binary.hpp</a></div></div>
 <div class="ttc" id="group__dia__sources_html_gafb02c857c8b58cc3409e54eca0a76589"><div class="ttname"><a href="group__dia__sources.html#gafb02c857c8b58cc3409e54eca0a76589">thrill::api::EqualToDIA</a></div><div class="ttdeci">auto EqualToDIA(Context &amp;ctx, const std::vector&lt; ValueType &gt; &amp;in_vector)</div><div class="ttdoc">EqualToDIA is a Source-DOp, which takes a vector of data EQUAL on all workers, and returns the data i...</div><div class="ttdef"><b>Definition:</b> <a href="equal__to__dia_8hpp_source.html#l00077">equal_to_dia.hpp:77</a></div></div>
+<div class="ttc" id="thrill_2api_2sort_8hpp_html"><div class="ttname"><a href="thrill_2api_2sort_8hpp.html">sort.hpp</a></div></div>
 <div class="ttc" id="namespacethrill_1_1api_html_ab78331325e7577a5ba26b90cd40c92eb"><div class="ttname"><a href="namespacethrill_1_1api.html#ab78331325e7577a5ba26b90cd40c92eb">thrill::api::Run</a></div><div class="ttdeci">int Run(const std::function&lt; void(Context &amp;)&gt; &amp;job_startpoint)</div><div class="ttdoc">Runs the given job startpoint with a Context instance. </div><div class="ttdef"><b>Definition:</b> <a href="context_8cpp_source.html#l00878">context.cpp:878</a></div></div>
 <div class="ttc" id="thrill_2common_2logger_8hpp_html"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html">logger.hpp</a></div></div>
 <div class="ttc" id="classtlx_1_1CmdlineParser_html_ac1c6132a057c5cba870ad8893770bf4b"><div class="ttname"><a href="classtlx_1_1CmdlineParser.html#ac1c6132a057c5cba870ad8893770bf4b">tlx::CmdlineParser::add_opt_param_string</a></div><div class="ttdeci">void add_opt_param_string(const std::string &amp;name, std::string &amp;dest, const std::string &amp;desc)</div><div class="ttdoc">add optional string parameter [name] with description and store to dest </div><div class="ttdef"><b>Definition:</b> <a href="cmdline__parser_8cpp_source.html#l00748">cmdline_parser.cpp:748</a></div></div>
@@ -256,7 +257,6 @@ $(document).ready(function(){initNavTree('rl__bwt_8cpp_source.html','');});
 <div class="ttc" id="dia_8hpp_html"><div class="ttname"><a href="dia_8hpp.html">dia.hpp</a></div></div>
 <div class="ttc" id="equal__to__dia_8hpp_html"><div class="ttname"><a href="equal__to__dia_8hpp.html">equal_to_dia.hpp</a></div></div>
 <div class="ttc" id="read__binary_8hpp_html"><div class="ttname"><a href="read__binary_8hpp.html">read_binary.hpp</a></div></div>
-<div class="ttc" id="sort_8hpp_html"><div class="ttname"><a href="sort_8hpp.html">sort.hpp</a></div></div>
 <div class="ttc" id="rl__bwt_8cpp_html_a079af80509bfcc93d5377b4b1ae7c2f0"><div class="ttname"><a href="rl__bwt_8cpp.html#a079af80509bfcc93d5377b4b1ae7c2f0">TLX_ATTRIBUTE_PACKED</a></div><div class="ttdeci">struct IndexChar TLX_ATTRIBUTE_PACKED</div></div>
 <div class="ttc" id="namespacethrill_1_1mem_html_a5568fe0d00a794e5f063e9fe040bc07f"><div class="ttname"><a href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">thrill::mem::string</a></div><div class="ttdeci">std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt; string</div><div class="ttdoc">string with Manager tracking </div><div class="ttdef"><b>Definition:</b> <a href="allocator_8hpp_source.html#l00220">allocator.hpp:220</a></div></div>
 <div class="ttc" id="thrill_2common_2ring__buffer_8hpp_html"><div class="ttname"><a href="thrill_2common_2ring__buffer_8hpp.html">ring_buffer.hpp</a></div></div>
@@ -272,8 +272,8 @@ $(document).ready(function(){initNavTree('rl__bwt_8cpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_d4e83805c7df9bb812106585527f7df7.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="rl__bwt_8cpp.html">rl_bwt.cpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:19 for Thrill by
+    <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_0b8cd80b43220fb0eacec85b2381def2.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="rl__bwt_8cpp.html">rl_bwt.cpp</a></li>
+    <li class="footer">Generated on Thu May 17 2018 13:49:17 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -219,7 +219,7 @@ $(document).ready(function(){initNavTree('serialization_8hpp_source.html','');})
 <div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="structthrill_1_1data_1_1detail_1_1TupleSerialization.html#ab7ca963d517a29f81100e1edce6bde34">  101</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">size_t</span> <a class="code" href="structthrill_1_1data_1_1detail_1_1TupleSerialization.html#ab7ca963d517a29f81100e1edce6bde34">Index</a> = <span class="keyword">sizeof</span> ... (Args) - RevIndex;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// type of k-th element</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">using</span> <a class="code" href="structthrill_1_1data_1_1detail_1_1TupleSerialization.html#a57e935af996350e1c5164662ad7d7329">ThisElemType</a> =</div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="structthrill_1_1data_1_1detail_1_1TupleSerialization.html#a57e935af996350e1c5164662ad7d7329">  104</a></span>&#160;              <span class="keyword">typename</span> std::tuple_element&lt;<a class="code" href="structthrill_1_1data_1_1detail_1_1TupleSerialization.html#ab7ca963d517a29f81100e1edce6bde34">Index</a>, std::tuple&lt;Args...&gt; &gt;::type;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="structthrill_1_1data_1_1detail_1_1TupleSerialization.html#a57e935af996350e1c5164662ad7d7329">  104</a></span>&#160;        <span class="keyword">typename</span> std::tuple_element&lt;<a class="code" href="structthrill_1_1data_1_1detail_1_1TupleSerialization.html#ab7ca963d517a29f81100e1edce6bde34">Index</a>, std::tuple&lt;Args...&gt; &gt;::type;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="structthrill_1_1data_1_1detail_1_1TupleSerialization.html#a6e81ae5b0bf62285532c430bbbb02d85">  106</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span>             <a class="code" href="structthrill_1_1data_1_1detail_1_1TupleSerialization.html#a6e81ae5b0bf62285532c430bbbb02d85">Serialize</a>(<span class="keyword">const</span> std::tuple&lt;Args...&gt;&amp; <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a>, Archive&amp; ar) {</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="comment">// serialize k-th element</span></div>
@@ -409,8 +409,8 @@ $(document).ready(function(){initNavTree('serialization_8hpp_source.html','');})
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_c0e49fec6cb6c78dde854e77e0fc73d0.html">data</a></li><li class="navelem"><a class="el" href="serialization_8hpp.html">serialization.hpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:21 for Thrill by
+    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1b62fa212cebae5dc6aa23a01bf7093d.html">data</a></li><li class="navelem"><a class="el" href="serialization_8hpp.html">serialization.hpp</a></li>
+    <li class="footer">Generated on Thu May 17 2018 13:49:20 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

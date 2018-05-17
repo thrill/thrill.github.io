@@ -204,9 +204,9 @@ $(document).ready(function(){initNavTree('zip_8hpp_source.html','');});
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Index&gt;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ZipNode.html#a0a07829e230f6bae11b6b59b1bb4ec8f">ZipArgN</a> =</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ZipNode.html#a0a07829e230f6bae11b6b59b1bb4ec8f">   89</a></span>&#160;              <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::template arg_plain&lt;Index&gt;;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ZipNode.html#a0a07829e230f6bae11b6b59b1bb4ec8f">   89</a></span>&#160;        <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::template arg_plain&lt;Index&gt;;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ZipNode.html#aedd81fb1db3619911c8c3d4e23555d5e">ZipArgsTuple</a> =</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ZipNode.html#aedd81fb1db3619911c8c3d4e23555d5e">   91</a></span>&#160;              <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::args_tuple_plain;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ZipNode.html#aedd81fb1db3619911c8c3d4e23555d5e">   91</a></span>&#160;        <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::args_tuple_plain;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">    /*!</span></div>
@@ -552,15 +552,15 @@ $(document).ready(function(){initNavTree('zip_8hpp_source.html','');});
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        <span class="stringliteral">&quot;ZipFunction has the wrong input type in DIA 0&quot;</span>);</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keyword">using</span> ZipResult</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;              = <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::result_type;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        = <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::result_type;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ZipNode.html#aedd81fb1db3619911c8c3d4e23555d5e">ZipArgsTuple</a> =</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;              <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::args_tuple_plain;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::args_tuple_plain;</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ZipNode.html">ZipNode</a> = <a class="code" href="classthrill_1_1api_1_1ZipNode.html">api::ZipNode</a>&lt;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;              ZipResult, ZipFunction,</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;              <span class="comment">/* Pad */</span> <span class="keyword">false</span>, <span class="comment">/* UnequalCheck */</span> <span class="keyword">true</span>, <span class="comment">/* NoRebalance */</span> <span class="keyword">false</span>,</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;              1 + <span class="keyword">sizeof</span> ... (DIAs)&gt;;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        ZipResult, ZipFunction,</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <span class="comment">/* Pad */</span> <span class="keyword">false</span>, <span class="comment">/* UnequalCheck */</span> <span class="keyword">true</span>, <span class="comment">/* NoRebalance */</span> <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        1 + <span class="keyword">sizeof</span> ... (DIAs)&gt;;</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ZipNode&gt;(</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        zip_function, <a class="code" href="classthrill_1_1api_1_1ZipNode.html#aedd81fb1db3619911c8c3d4e23555d5e">ZipArgsTuple</a>(), first_dia, dias...);</div>
@@ -606,15 +606,15 @@ $(document).ready(function(){initNavTree('zip_8hpp_source.html','');});
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        <span class="stringliteral">&quot;ZipFunction has the wrong input type in DIA 0&quot;</span>);</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;    <span class="keyword">using</span> ZipResult</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;              = <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::result_type;</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        = <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::result_type;</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ZipNode.html#aedd81fb1db3619911c8c3d4e23555d5e">ZipArgsTuple</a> =</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;              <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::args_tuple_plain;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::args_tuple_plain;</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ZipNode.html">ZipNode</a> = <a class="code" href="classthrill_1_1api_1_1ZipNode.html">api::ZipNode</a>&lt;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;              ZipResult, ZipFunction,</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;              <span class="comment">/* Pad */</span> <span class="keyword">false</span>, <span class="comment">/* UnequalCheck */</span> <span class="keyword">false</span>, <span class="comment">/* NoRebalance */</span> <span class="keyword">false</span>,</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;              1 + <span class="keyword">sizeof</span> ... (DIAs)&gt;;</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        ZipResult, ZipFunction,</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        <span class="comment">/* Pad */</span> <span class="keyword">false</span>, <span class="comment">/* UnequalCheck */</span> <span class="keyword">false</span>, <span class="comment">/* NoRebalance */</span> <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        1 + <span class="keyword">sizeof</span> ... (DIAs)&gt;;</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ZipNode&gt;(</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        zip_function, <a class="code" href="classthrill_1_1api_1_1ZipNode.html#aedd81fb1db3619911c8c3d4e23555d5e">ZipArgsTuple</a>(), first_dia, dias...);</div>
@@ -660,15 +660,15 @@ $(document).ready(function(){initNavTree('zip_8hpp_source.html','');});
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;        <span class="stringliteral">&quot;ZipFunction has the wrong input type in DIA 0&quot;</span>);</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    <span class="keyword">using</span> ZipResult =</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;              <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::result_type;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::result_type;</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ZipNode.html#aedd81fb1db3619911c8c3d4e23555d5e">ZipArgsTuple</a> =</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;              <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::args_tuple_plain;</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::args_tuple_plain;</div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;</div>
 <div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ZipNode.html">ZipNode</a> = <a class="code" href="classthrill_1_1api_1_1ZipNode.html">api::ZipNode</a>&lt;</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;              ZipResult, ZipFunction,</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;              <span class="comment">/* Pad */</span> <span class="keyword">true</span>, <span class="comment">/* UnequalCheck */</span> <span class="keyword">false</span>, <span class="comment">/* NoRebalance */</span> <span class="keyword">false</span>,</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;              1 + <span class="keyword">sizeof</span> ... (DIAs)&gt;;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        ZipResult, ZipFunction,</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        <span class="comment">/* Pad */</span> <span class="keyword">true</span>, <span class="comment">/* UnequalCheck */</span> <span class="keyword">false</span>, <span class="comment">/* NoRebalance */</span> <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        1 + <span class="keyword">sizeof</span> ... (DIAs)&gt;;</div>
 <div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;</div>
 <div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ZipNode&gt;(</div>
 <div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        zip_function, <a class="code" href="classthrill_1_1api_1_1ZipNode.html#aedd81fb1db3619911c8c3d4e23555d5e">ZipArgsTuple</a>(), first_dia, dias...);</div>
@@ -719,12 +719,12 @@ $(document).ready(function(){initNavTree('zip_8hpp_source.html','');});
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        <span class="stringliteral">&quot;ZipFunction has the wrong input type in DIA 0&quot;</span>);</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;</div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    <span class="keyword">using</span> ZipResult =</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;              <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::result_type;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;        <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::result_type;</div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;</div>
 <div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ZipNode.html">ZipNode</a> = <a class="code" href="classthrill_1_1api_1_1ZipNode.html">api::ZipNode</a>&lt;</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;              ZipResult, ZipFunction,</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;              <span class="comment">/* Pad */</span> <span class="keyword">true</span>, <span class="comment">/* UnequalCheck */</span> <span class="keyword">false</span>, <span class="comment">/* NoRebalance */</span> <span class="keyword">false</span>,</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;              1 + <span class="keyword">sizeof</span> ... (DIAs)&gt;;</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        ZipResult, ZipFunction,</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;        <span class="comment">/* Pad */</span> <span class="keyword">true</span>, <span class="comment">/* UnequalCheck */</span> <span class="keyword">false</span>, <span class="comment">/* NoRebalance */</span> <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        1 + <span class="keyword">sizeof</span> ... (DIAs)&gt;;</div>
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ZipNode&gt;(</div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;        zip_function, <a class="code" href="namespacethrill_1_1mem.html#a831aebf83f716aa3c203011c4e54c793">padding</a>, first_dia, dias...);</div>
@@ -772,15 +772,15 @@ $(document).ready(function(){initNavTree('zip_8hpp_source.html','');});
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        <span class="stringliteral">&quot;ZipFunction has the wrong input type in DIA 0&quot;</span>);</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;</div>
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    <span class="keyword">using</span> ZipResult =</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;              <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::result_type;</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;        <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::result_type;</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;</div>
 <div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ZipNode.html#aedd81fb1db3619911c8c3d4e23555d5e">ZipArgsTuple</a> =</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;              <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::args_tuple_plain;</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;        <span class="keyword">typename</span> common::FunctionTraits&lt;ZipFunction&gt;::args_tuple_plain;</div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;</div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ZipNode.html">ZipNode</a> = <a class="code" href="classthrill_1_1api_1_1ZipNode.html">api::ZipNode</a>&lt;</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;              ZipResult, ZipFunction,</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;              <span class="comment">/* Pad */</span> <span class="keyword">false</span>, <span class="comment">/* UnequalCheck */</span> <span class="keyword">false</span>, <span class="comment">/* NoRebalance */</span> <span class="keyword">true</span>,</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;              1 + <span class="keyword">sizeof</span> ... (DIAs)&gt;;</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;        ZipResult, ZipFunction,</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;        <span class="comment">/* Pad */</span> <span class="keyword">false</span>, <span class="comment">/* UnequalCheck */</span> <span class="keyword">false</span>, <span class="comment">/* NoRebalance */</span> <span class="keyword">true</span>,</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        1 + <span class="keyword">sizeof</span> ... (DIAs)&gt;;</div>
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ZipNode&gt;(</div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;        zip_function, <a class="code" href="classthrill_1_1api_1_1ZipNode.html#aedd81fb1db3619911c8c3d4e23555d5e">ZipArgsTuple</a>(), first_dia, dias...);</div>
@@ -854,7 +854,7 @@ $(document).ready(function(){initNavTree('zip_8hpp_source.html','');});
 <div class="ttc" id="classthrill_1_1data_1_1BlockWriter_html"><div class="ttname"><a href="classthrill_1_1data_1_1BlockWriter.html">thrill::data::BlockWriter</a></div><div class="ttdoc">BlockWriter contains a temporary Block object into which a) any serializable item can be stored or b)...</div><div class="ttdef"><b>Definition:</b> <a href="block__writer_8hpp_source.html#l00053">block_writer.hpp:53</a></div></div>
 <div class="ttc" id="namespacethrill_1_1common_html_a53d23ccb06a539a86608ab7906313a2a"><div class="ttname"><a href="namespacethrill_1_1common.html#a53d23ccb06a539a86608ab7906313a2a">thrill::common::g_debug_push_file</a></div><div class="ttdeci">static constexpr bool g_debug_push_file</div><div class="ttdef"><b>Definition:</b> <a href="config_8hpp_source.html#l00044">config.hpp:44</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1ZipNode_1_1ReaderNext_html_a8f6a08a83bac4e8c5ace87476ee0cc40"><div class="ttname"><a href="classthrill_1_1api_1_1ZipNode_1_1ReaderNext.html#a8f6a08a83bac4e8c5ace87476ee0cc40">thrill::api::ZipNode::ReaderNext::operator()</a></div><div class="ttdeci">auto operator()(const Index &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="zip_8hpp_source.html#l00380">zip.hpp:380</a></div></div>
-<div class="ttc" id="die_8hpp_html_ab6acaec854169756098dfd26138a1a0e"><div class="ttname"><a href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e">die</a></div><div class="ttdeci">#define die(msg)</div><div class="ttdoc">Instead of abort(), throw the output the message via an exception. </div><div class="ttdef"><b>Definition:</b> <a href="die_8hpp_source.html#l00042">die.hpp:42</a></div></div>
+<div class="ttc" id="die_8hpp_html_ab6acaec854169756098dfd26138a1a0e"><div class="ttname"><a href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e">die</a></div><div class="ttdeci">#define die(msg)</div><div class="ttdoc">Instead of std::terminate(), throw the output the message via an exception. </div><div class="ttdef"><b>Definition:</b> <a href="die_8hpp_source.html#l00043">die.hpp:43</a></div></div>
 <div class="ttc" id="call__for__range_8hpp_html"><div class="ttname"><a href="call__for__range_8hpp.html">call_for_range.hpp</a></div></div>
 <div class="ttc" id="apply__tuple_8hpp_html"><div class="ttname"><a href="apply__tuple_8hpp.html">apply_tuple.hpp</a></div></div>
 <div class="ttc" id="dia_8hpp_html"><div class="ttname"><a href="dia_8hpp.html">dia.hpp</a></div></div>
@@ -874,7 +874,7 @@ $(document).ready(function(){initNavTree('zip_8hpp_source.html','');});
 <div class="ttc" id="namespacethrill_1_1common_html_a4dcfa0783f3e01b7ccd182711f77cc0c"><div class="ttname"><a href="namespacethrill_1_1common.html#a4dcfa0783f3e01b7ccd182711f77cc0c">thrill::common::VecToStr</a></div><div class="ttdeci">static std::string VecToStr(const std::array&lt; T, N &gt; &amp;data)</div><div class="ttdoc">Logging helper to print arrays as [a1,a2,a3,...]. </div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2string_8hpp_source.html#l00179">string.hpp:179</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIABase_html_ad1759538446397b32733b1f0747cda56"><div class="ttname"><a href="classthrill_1_1api_1_1DIABase.html#ad1759538446397b32733b1f0747cda56">thrill::api::DIABase::Execute</a></div><div class="ttdeci">virtual void Execute()=0</div><div class="ttdoc">Virtual execution method. Triggers actual computation in sub-classes. </div></div>
 <div class="ttc" id="namespacegen__data_html_ac4f474c82e82cbb89ca7c36dd52be0ed"><div class="ttname"><a href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">gen_data.value</a></div><div class="ttdeci">int value</div><div class="ttdef"><b>Definition:</b> <a href="gen__data_8py_source.html#l00041">gen_data.py:41</a></div></div>
-<div class="ttc" id="group__tlx__meta_html_ga697505eebc05040893022611ce8866c1"><div class="ttname"><a href="group__tlx__meta.html#ga697505eebc05040893022611ce8866c1">tlx::apply_tuple</a></div><div class="ttdeci">auto apply_tuple(Functor &amp;&amp;f, Tuple &amp;&amp;t)</div><div class="ttdoc">Call the functor f with the contents of t as arguments. </div><div class="ttdef"><b>Definition:</b> <a href="apply__tuple_8hpp_source.html#l00039">apply_tuple.hpp:39</a></div></div>
+<div class="ttc" id="group__tlx__meta_html_ga697505eebc05040893022611ce8866c1"><div class="ttname"><a href="group__tlx__meta.html#ga697505eebc05040893022611ce8866c1">tlx::apply_tuple</a></div><div class="ttdeci">auto apply_tuple(Functor &amp;&amp;f, Tuple &amp;&amp;t)</div><div class="ttdoc">Call the functor f with the contents of t as arguments. </div><div class="ttdef"><b>Definition:</b> <a href="apply__tuple_8hpp_source.html#l00040">apply_tuple.hpp:40</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1ZipNode_html_a8bb9d507163ac6bc0f856fbf84ac01e6"><div class="ttname"><a href="classthrill_1_1api_1_1ZipNode.html#a8bb9d507163ac6bc0f856fbf84ac01e6">thrill::api::ZipNode::files_</a></div><div class="ttdeci">std::vector&lt; data::File &gt; files_</div><div class="ttdoc">Files for intermediate storage. </div><div class="ttdef"><b>Definition:</b> <a href="zip_8hpp_source.html#l00205">zip.hpp:205</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1ZipNode_1_1ReaderNext_html_a3551d22502a58cdc93b15d14f3fb87c2"><div class="ttname"><a href="classthrill_1_1api_1_1ZipNode_1_1ReaderNext.html#a3551d22502a58cdc93b15d14f3fb87c2">thrill::api::ZipNode::ReaderNext::HasNext</a></div><div class="ttdeci">bool HasNext()</div><div class="ttdoc">helper for PushData() which checks all inputs </div><div class="ttdef"><b>Definition:</b> <a href="zip_8hpp_source.html#l00364">zip.hpp:364</a></div></div>
 <div class="ttc" id="structthrill_1_1api_1_1CutTag_html"><div class="ttname"><a href="structthrill_1_1api_1_1CutTag.html">thrill::api::CutTag</a></div><div class="ttdoc">tag structure for Zip() </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00070">dia.hpp:70</a></div></div>
@@ -912,8 +912,8 @@ $(document).ready(function(){initNavTree('zip_8hpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1f06a9dab790f88a2b6eb40fd2f445f5.html">api</a></li><li class="navelem"><a class="el" href="zip_8hpp.html">zip.hpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:20 for Thrill by
+    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="zip_8hpp.html">zip.hpp</a></li>
+    <li class="footer">Generated on Thu May 17 2018 13:49:19 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

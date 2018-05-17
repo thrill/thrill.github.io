@@ -146,18 +146,18 @@ $(document).ready(function(){initNavTree('vmap__foreach__with__index_8hpp_source
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// Called with func(StaticIndex&lt;&gt; index, Argument arg).</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>detail {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>meta_detail {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//! helper for vmap_foreach_with_index: base case</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Index, <span class="keyword">typename</span> Functor, <span class="keyword">typename</span> Arg&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespacetlx_1_1detail.html#a094c6917a6bf518524d034482a8c3844">   35</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacetlx_1_1detail.html#a094c6917a6bf518524d034482a8c3844">vmap_foreach_with_index_impl</a>(Functor&amp;&amp; f, Arg&amp;&amp; arg) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespacetlx_1_1meta__detail.html#a8a8f507ca8adcecf7fadfb53c74f7e44">   35</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacetlx_1_1meta__detail.html#a8a8f507ca8adcecf7fadfb53c74f7e44">vmap_foreach_with_index_impl</a>(Functor&amp;&amp; f, Arg&amp;&amp; arg) {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> std::make_tuple(</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        std::forward&lt;Functor&gt;(f)(<a class="code" href="structtlx_1_1StaticIndex.html">StaticIndex&lt;Index&gt;</a>(), std::forward&lt;Arg&gt;(arg)));</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//! helper for vmap_foreach_with_index: general recursive case</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> Index, <span class="keyword">typename</span> Functor, <span class="keyword">typename</span> Arg, <span class="keyword">typename</span>... MoreArgs&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="namespacetlx_1_1detail.html#a13da0c94f35887959453afd3bb1d248e">   42</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacetlx_1_1detail.html#a094c6917a6bf518524d034482a8c3844">vmap_foreach_with_index_impl</a>(Functor&amp;&amp; f, Arg&amp;&amp; arg, MoreArgs&amp;&amp; ... rest) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="namespacetlx_1_1meta__detail.html#a22ef5c628a16afb94e6849b36096843c">   42</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacetlx_1_1meta__detail.html#a8a8f507ca8adcecf7fadfb53c74f7e44">vmap_foreach_with_index_impl</a>(Functor&amp;&amp; f, Arg&amp;&amp; arg, MoreArgs&amp;&amp; ... rest) {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">auto</span> <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a> =</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        std::forward&lt;Functor&gt;(f)(<a class="code" href="structtlx_1_1StaticIndex.html">StaticIndex&lt;Index&gt;</a>(), std::forward&lt;Arg&gt;(arg));</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> std::tuple_cat(</div>
@@ -166,13 +166,13 @@ $(document).ready(function(){initNavTree('vmap__foreach__with__index_8hpp_source
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            std::forward&lt;Functor&gt;(f), std::forward&lt;MoreArgs&gt;(rest) ...));</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namespace detail</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namespace meta_detail</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">//! Call a generic functor (like a generic lambda) for each variadic template</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//! argument together with its zero-based index.</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Functor, <span class="keyword">typename</span>... Args&gt;</div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group__tlx__meta.html#ga1a5c01183e4cc91ffbec284e8bd9437e">   56</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__tlx__meta.html#ga1a5c01183e4cc91ffbec284e8bd9437e">vmap_foreach_with_index</a>(Functor&amp;&amp; f, Args&amp;&amp; ... args) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> detail::vmap_foreach_with_index_impl&lt;0&gt;(</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> meta_detail::vmap_foreach_with_index_impl&lt;0&gt;(</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        std::forward&lt;Functor&gt;(f), std::forward&lt;Args&gt;(args) ...);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span></div>
@@ -183,18 +183,18 @@ $(document).ready(function(){initNavTree('vmap__foreach__with__index_8hpp_source
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif // !TLX_META_VMAP_FOREACH_WITH_INDEX_HEADER</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="ttc" id="namespacetlx_1_1detail_html_a094c6917a6bf518524d034482a8c3844"><div class="ttname"><a href="namespacetlx_1_1detail.html#a094c6917a6bf518524d034482a8c3844">tlx::detail::vmap_foreach_with_index_impl</a></div><div class="ttdeci">auto vmap_foreach_with_index_impl(Functor &amp;&amp;f, Arg &amp;&amp;arg)</div><div class="ttdoc">helper for vmap_foreach_with_index: base case </div><div class="ttdef"><b>Definition:</b> <a href="vmap__foreach__with__index_8hpp_source.html#l00035">vmap_foreach_with_index.hpp:35</a></div></div>
 <div class="ttc" id="static__index_8hpp_html"><div class="ttname"><a href="static__index_8hpp.html">static_index.hpp</a></div></div>
 <div class="ttc" id="structtlx_1_1StaticIndex_html"><div class="ttname"><a href="structtlx_1_1StaticIndex.html">tlx::StaticIndex</a></div><div class="ttdef"><b>Definition:</b> <a href="static__index_8hpp_source.html#l00024">static_index.hpp:24</a></div></div>
 <div class="ttc" id="namespacegen__data_html_a573e66358ede67c6f901dfaf4722f75a"><div class="ttname"><a href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">gen_data.x</a></div><div class="ttdeci">list x</div><div class="ttdef"><b>Definition:</b> <a href="gen__data_8py_source.html#l00039">gen_data.py:39</a></div></div>
+<div class="ttc" id="namespacetlx_1_1meta__detail_html_a8a8f507ca8adcecf7fadfb53c74f7e44"><div class="ttname"><a href="namespacetlx_1_1meta__detail.html#a8a8f507ca8adcecf7fadfb53c74f7e44">tlx::meta_detail::vmap_foreach_with_index_impl</a></div><div class="ttdeci">auto vmap_foreach_with_index_impl(Functor &amp;&amp;f, Arg &amp;&amp;arg)</div><div class="ttdoc">helper for vmap_foreach_with_index: base case </div><div class="ttdef"><b>Definition:</b> <a href="vmap__foreach__with__index_8hpp_source.html#l00035">vmap_foreach_with_index.hpp:35</a></div></div>
 <div class="ttc" id="group__tlx__meta_html_ga1a5c01183e4cc91ffbec284e8bd9437e"><div class="ttname"><a href="group__tlx__meta.html#ga1a5c01183e4cc91ffbec284e8bd9437e">tlx::vmap_foreach_with_index</a></div><div class="ttdeci">auto vmap_foreach_with_index(Functor &amp;&amp;f, Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition:</b> <a href="vmap__foreach__with__index_8hpp_source.html#l00056">vmap_foreach_with_index.hpp:56</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_caacaa4f3b8d02b4020eb7fe043e6252.html">extlib</a></li><li class="navelem"><a class="el" href="dir_7a0d59963e57ff0db60447211f189ef0.html">tlx</a></li><li class="navelem"><a class="el" href="dir_4c5cb83148e98355e323096051cdb415.html">tlx</a></li><li class="navelem"><a class="el" href="dir_6ccd53008f403c6d71e170eabcc96351.html">meta</a></li><li class="navelem"><a class="el" href="vmap__foreach__with__index_8hpp.html">vmap_foreach_with_index.hpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:19 for Thrill by
+    <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="dir_4814f784539800233c7d19239736dd47.html">meta</a></li><li class="navelem"><a class="el" href="vmap__foreach__with__index_8hpp.html">vmap_foreach_with_index.hpp</a></li>
+    <li class="footer">Generated on Thu May 17 2018 13:49:18 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('meta_8hpp_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TLX_META_HEADER</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//! \defgroup tlx_meta Meta-Template Programming</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//! tools for easier meta-template programming</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//! Tools for easier meta-template programming</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/*[[[perl</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">print &quot;#include &lt;$_&gt;\n&quot; foreach sort glob(&quot;tlx/meta/&quot;.&quot;*.hpp&quot;);</span></div>
@@ -141,29 +141,38 @@ $(document).ready(function(){initNavTree('meta_8hpp_source.html','');});
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="call__foreach__tuple_8hpp.html">tlx/meta/call_foreach_tuple.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="call__foreach__tuple__with__index_8hpp.html">tlx/meta/call_foreach_tuple_with_index.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="call__foreach__with__index_8hpp.html">tlx/meta/call_foreach_with_index.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="function__chain_8hpp.html">tlx/meta/function_chain.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="function__stack_8hpp.html">tlx/meta/function_stack.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="has__member_8hpp.html">tlx/meta/has_member.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="has__method_8hpp.html">tlx/meta/has_method.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="index__sequence_8hpp.html">tlx/meta/index_sequence.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__std__array_8hpp.html">tlx/meta/is_std_array.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__std__pair_8hpp.html">tlx/meta/is_std_pair.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__std__tuple_8hpp.html">tlx/meta/is_std_tuple.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__std__vector_8hpp.html">tlx/meta/is_std_vector.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="log2_8hpp.html">tlx/meta/log2.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="static__index_8hpp.html">tlx/meta/static_index.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vexpand_8hpp.html">tlx/meta/vexpand.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vmap__for__range_8hpp.html">tlx/meta/vmap_for_range.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vmap__foreach_8hpp.html">tlx/meta/vmap_foreach.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vmap__foreach__with__index_8hpp.html">tlx/meta/vmap_foreach_with_index.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// [[[end]]]</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif // !TLX_META_HEADER</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="fold__left_8hpp.html">tlx/meta/fold_left.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="fold__left__tuple_8hpp.html">tlx/meta/fold_left_tuple.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="fold__right_8hpp.html">tlx/meta/fold_right.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="fold__right__tuple_8hpp.html">tlx/meta/fold_right_tuple.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="function__chain_8hpp.html">tlx/meta/function_chain.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="function__stack_8hpp.html">tlx/meta/function_stack.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="has__member_8hpp.html">tlx/meta/has_member.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="has__method_8hpp.html">tlx/meta/has_method.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="index__sequence_8hpp.html">tlx/meta/index_sequence.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__std__array_8hpp.html">tlx/meta/is_std_array.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__std__pair_8hpp.html">tlx/meta/is_std_pair.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__std__tuple_8hpp.html">tlx/meta/is_std_tuple.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="is__std__vector_8hpp.html">tlx/meta/is_std_vector.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="log2_8hpp.html">tlx/meta/log2.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="static__index_8hpp.html">tlx/meta/static_index.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vexpand_8hpp.html">tlx/meta/vexpand.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vmap__for__range_8hpp.html">tlx/meta/vmap_for_range.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vmap__foreach_8hpp.html">tlx/meta/vmap_foreach.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vmap__foreach__tuple_8hpp.html">tlx/meta/vmap_foreach_tuple.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vmap__foreach__tuple__with__index_8hpp.html">tlx/meta/vmap_foreach_tuple_with_index.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="vmap__foreach__with__index_8hpp.html">tlx/meta/vmap_foreach_with_index.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">// [[[end]]]</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif // !TLX_META_HEADER</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="is__std__tuple_8hpp_html"><div class="ttname"><a href="is__std__tuple_8hpp.html">is_std_tuple.hpp</a></div></div>
+<div class="ttc" id="vmap__foreach__tuple_8hpp_html"><div class="ttname"><a href="vmap__foreach__tuple_8hpp.html">vmap_foreach_tuple.hpp</a></div></div>
+<div class="ttc" id="fold__left__tuple_8hpp_html"><div class="ttname"><a href="fold__left__tuple_8hpp.html">fold_left_tuple.hpp</a></div></div>
 <div class="ttc" id="vmap__foreach__with__index_8hpp_html"><div class="ttname"><a href="vmap__foreach__with__index_8hpp.html">vmap_foreach_with_index.hpp</a></div></div>
 <div class="ttc" id="vexpand_8hpp_html"><div class="ttname"><a href="vexpand_8hpp.html">vexpand.hpp</a></div></div>
+<div class="ttc" id="vmap__foreach__tuple__with__index_8hpp_html"><div class="ttname"><a href="vmap__foreach__tuple__with__index_8hpp.html">vmap_foreach_tuple_with_index.hpp</a></div></div>
 <div class="ttc" id="vmap__for__range_8hpp_html"><div class="ttname"><a href="vmap__for__range_8hpp.html">vmap_for_range.hpp</a></div></div>
 <div class="ttc" id="is__std__array_8hpp_html"><div class="ttname"><a href="is__std__array_8hpp.html">is_std_array.hpp</a></div></div>
 <div class="ttc" id="log2_8hpp_html"><div class="ttname"><a href="log2_8hpp.html">log2.hpp</a></div></div>
@@ -174,6 +183,7 @@ $(document).ready(function(){initNavTree('meta_8hpp_source.html','');});
 <div class="ttc" id="has__method_8hpp_html"><div class="ttname"><a href="has__method_8hpp.html">has_method.hpp</a></div></div>
 <div class="ttc" id="static__index_8hpp_html"><div class="ttname"><a href="static__index_8hpp.html">static_index.hpp</a></div></div>
 <div class="ttc" id="function__stack_8hpp_html"><div class="ttname"><a href="function__stack_8hpp.html">function_stack.hpp</a></div></div>
+<div class="ttc" id="fold__right__tuple_8hpp_html"><div class="ttname"><a href="fold__right__tuple_8hpp.html">fold_right_tuple.hpp</a></div></div>
 <div class="ttc" id="index__sequence_8hpp_html"><div class="ttname"><a href="index__sequence_8hpp.html">index_sequence.hpp</a></div></div>
 <div class="ttc" id="is__std__pair_8hpp_html"><div class="ttname"><a href="is__std__pair_8hpp.html">is_std_pair.hpp</a></div></div>
 <div class="ttc" id="call__foreach__tuple__with__index_8hpp_html"><div class="ttname"><a href="call__foreach__tuple__with__index_8hpp.html">call_foreach_tuple_with_index.hpp</a></div></div>
@@ -181,14 +191,16 @@ $(document).ready(function(){initNavTree('meta_8hpp_source.html','');});
 <div class="ttc" id="vmap__foreach_8hpp_html"><div class="ttname"><a href="vmap__foreach_8hpp.html">vmap_foreach.hpp</a></div></div>
 <div class="ttc" id="call__foreach_8hpp_html"><div class="ttname"><a href="call__foreach_8hpp.html">call_foreach.hpp</a></div></div>
 <div class="ttc" id="call__foreach__tuple_8hpp_html"><div class="ttname"><a href="call__foreach__tuple_8hpp.html">call_foreach_tuple.hpp</a></div></div>
+<div class="ttc" id="fold__right_8hpp_html"><div class="ttname"><a href="fold__right_8hpp.html">fold_right.hpp</a></div></div>
+<div class="ttc" id="fold__left_8hpp_html"><div class="ttname"><a href="fold__left_8hpp.html">fold_left.hpp</a></div></div>
 <div class="ttc" id="function__chain_8hpp_html"><div class="ttname"><a href="function__chain_8hpp.html">function_chain.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_caacaa4f3b8d02b4020eb7fe043e6252.html">extlib</a></li><li class="navelem"><a class="el" href="dir_7a0d59963e57ff0db60447211f189ef0.html">tlx</a></li><li class="navelem"><a class="el" href="dir_4c5cb83148e98355e323096051cdb415.html">tlx</a></li><li class="navelem"><a class="el" href="meta_8hpp.html">meta.hpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:19 for Thrill by
+    <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="meta_8hpp.html">meta.hpp</a></li>
+    <li class="footer">Generated on Thu May 17 2018 13:49:18 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -249,7 +249,7 @@ $(document).ready(function(){initNavTree('sampling_8hpp_source.html','');});
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <span class="keywordtype">size_t</span> hash_elem = <a class="code" href="classthrill_1_1common_1_1Sampling.html#ad99c49c10bb82a8168189f3c88f36a81">hash_table</a>[index];</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                <span class="comment">// Table lookup</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="likely_8hpp.html#a2c4b5b038e88004e67c779cf9afcecc7">TLX_LIKELY</a>(hash_elem == dummy)) <span class="keywordflow">break</span>;  <span class="comment">// done</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group__tlx__define.html#ga2c4b5b038e88004e67c779cf9afcecc7">TLX_LIKELY</a>(hash_elem == dummy)) <span class="keywordflow">break</span>;  <span class="comment">// done</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (hash_elem == variate) <span class="keywordflow">continue</span>;    <span class="comment">// already sampled</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;increment:</div>
@@ -286,7 +286,6 @@ $(document).ready(function(){initNavTree('sampling_8hpp_source.html','');});
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#endif // !THRILL_COMMON_SAMPLING_HEADER</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="ttc" id="likely_8hpp_html_a2c4b5b038e88004e67c779cf9afcecc7"><div class="ttname"><a href="likely_8hpp.html#a2c4b5b038e88004e67c779cf9afcecc7">TLX_LIKELY</a></div><div class="ttdeci">#define TLX_LIKELY(c)</div><div class="ttdef"><b>Definition:</b> <a href="likely_8hpp_source.html#l00020">likely.hpp:20</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1Sampling_html_ad99c49c10bb82a8168189f3c88f36a81"><div class="ttname"><a href="classthrill_1_1common_1_1Sampling.html#ad99c49c10bb82a8168189f3c88f36a81">thrill::common::Sampling::hash_table</a></div><div class="ttdeci">std::vector&lt; size_t &gt; hash_table</div><div class="ttdef"><b>Definition:</b> <a href="sampling_8hpp_source.html#l00162">sampling.hpp:162</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1Sampling_html_af8e5778ebe9182177ccf6c5ff42c8b8b"><div class="ttname"><a href="classthrill_1_1common_1_1Sampling.html#af8e5778ebe9182177ccf6c5ff42c8b8b">thrill::common::Sampling::operator()</a></div><div class="ttdeci">void operator()(Iterator begin, Iterator end, size_t size, std::vector&lt; Type &gt; &amp;samples)</div><div class="ttdef"><b>Definition:</b> <a href="sampling_8hpp_source.html#l00042">sampling.hpp:42</a></div></div>
 <div class="ttc" id="define_8hpp_html"><div class="ttname"><a href="define_8hpp.html">define.hpp</a></div></div>
@@ -297,6 +296,7 @@ $(document).ready(function(){initNavTree('sampling_8hpp_source.html','');});
 <div class="ttc" id="thrill_2common_2logger_8hpp_html"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html">logger.hpp</a></div></div>
 <div class="ttc" id="extlib_2tlx_2tlx_2math_8hpp_html"><div class="ttname"><a href="extlib_2tlx_2tlx_2math_8hpp.html">math.hpp</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1Sampling_html"><div class="ttname"><a href="classthrill_1_1common_1_1Sampling.html">thrill::common::Sampling</a></div><div class="ttdef"><b>Definition:</b> <a href="sampling_8hpp_source.html#l00033">sampling.hpp:33</a></div></div>
+<div class="ttc" id="group__tlx__define_html_ga2c4b5b038e88004e67c779cf9afcecc7"><div class="ttname"><a href="group__tlx__define.html#ga2c4b5b038e88004e67c779cf9afcecc7">TLX_LIKELY</a></div><div class="ttdeci">#define TLX_LIKELY(c)</div><div class="ttdef"><b>Definition:</b> <a href="likely_8hpp_source.html#l00023">likely.hpp:23</a></div></div>
 <div class="ttc" id="thrill_2common_2logger_8hpp_html_a7d888e928a1068cc90c57560ad5d669a"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a">sLOG</a></div><div class="ttdeci">#define sLOG</div><div class="ttdoc">Default logging method: output if the local debug variable is true. </div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2logger_8hpp_source.html#l00184">logger.hpp:184</a></div></div>
 <div class="ttc" id="hypergeometric__distribution_8hpp_html"><div class="ttname"><a href="hypergeometric__distribution_8hpp.html">hypergeometric_distribution.hpp</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1Sampling_html_a026fc5f626be382ba80e4478bb40b178"><div class="ttname"><a href="classthrill_1_1common_1_1Sampling.html#a026fc5f626be382ba80e4478bb40b178">thrill::common::Sampling::hyp_</a></div><div class="ttdeci">common::hypergeometric hyp_</div><div class="ttdef"><b>Definition:</b> <a href="sampling_8hpp_source.html#l00161">sampling.hpp:161</a></div></div>
@@ -310,8 +310,8 @@ $(document).ready(function(){initNavTree('sampling_8hpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_19de9a7cb0ad0c6b03f8c7369b4f5139.html">common</a></li><li class="navelem"><a class="el" href="sampling_8hpp.html">sampling.hpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:20 for Thrill by
+    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="sampling_8hpp.html">sampling.hpp</a></li>
+    <li class="footer">Generated on Thu May 17 2018 13:49:19 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

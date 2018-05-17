@@ -24,7 +24,7 @@ var classthrill_1_1data_1_1ByteBlock =
     [ "Block", "classthrill_1_1data_1_1ByteBlock.html#ac2af81cbc457d21a00f09f5e7e5c4ddf", null ],
     [ "BlockPool", "classthrill_1_1data_1_1ByteBlock.html#a9f3b06b6b6edaf1e1bf2d91aa5ef20c5", null ],
     [ "mem::Pool", "classthrill_1_1data_1_1ByteBlock.html#afa65be12e7fc52b47b138d5bc5f8ef49", null ],
-    [ "operator<<", "classthrill_1_1data_1_1ByteBlock.html#af480aa248eb366476448947497b5e53a", null ],
+    [ "operator<<", "classthrill_1_1data_1_1ByteBlock.html#a0cb6394b9805254f4134f053c4bbd5f8", null ],
     [ "PinnedBlock", "classthrill_1_1data_1_1ByteBlock.html#a97cb650d59b8d5534341e76f295c1c44", null ],
     [ "block_pool_", "classthrill_1_1data_1_1ByteBlock.html#a54736b86d2326a25b8c090182e777cde", null ],
     [ "data_", "classthrill_1_1data_1_1ByteBlock.html#ae9b0f64178dcb6dc73d13898b52e94da", null ],

@@ -162,8 +162,8 @@ $(document).ready(function(){initNavTree('function__traits_8hpp_source.html','')
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">    //! the tuple of arguments: with remove_cv and remove_reference applied.</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span>    <span class="keyword">using</span> <a class="code" href="structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4.html#affc9c250dbfdff07716f7c635efef02f">args_tuple_plain</a> = std::tuple&lt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;              <span class="keyword">typename</span> std::remove_cv&lt;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4.html#affc9c250dbfdff07716f7c635efef02f">   48</a></span>&#160;                  <span class="keyword">typename</span> std::remove_reference&lt;Args&gt;::type&gt;::type...&gt;;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">typename</span> std::remove_cv&lt;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4.html#affc9c250dbfdff07716f7c635efef02f">   48</a></span>&#160;            <span class="keyword">typename</span> std::remove_reference&lt;Args&gt;::type&gt;::type...&gt;;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">    //! the i-th argument is equivalent to the i-th tuple element of a tuple</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">    //! composed of those arguments.</span></div>
@@ -174,8 +174,8 @@ $(document).ready(function(){initNavTree('function__traits_8hpp_source.html','')
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">    //! remove_reference.</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span>    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> i&gt;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">using</span> <a class="code" href="structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4.html#aa9acdcbe10aea75f4e90d292abb7f9f6">arg_plain</a> =</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;              <span class="keyword">typename</span> std::remove_cv&lt;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4.html#aa9acdcbe10aea75f4e90d292abb7f9f6">   60</a></span>&#160;                  <span class="keyword">typename</span> std::remove_reference&lt;arg&lt;i&gt; &gt;::type&gt;::type;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">typename</span> std::remove_cv&lt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4.html#aa9acdcbe10aea75f4e90d292abb7f9f6">   60</a></span>&#160;            <span class="keyword">typename</span> std::remove_reference&lt;arg&lt;i&gt; &gt;::type&gt;::type;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">//! specialize for pointers to mutable member function</span></div>
@@ -200,8 +200,8 @@ $(document).ready(function(){initNavTree('function__traits_8hpp_source.html','')
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">    //! the tuple of arguments: with remove_cv and remove_reference applied.</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"></span>    <span class="keyword">using</span> <a class="code" href="structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4.html#affc9c250dbfdff07716f7c635efef02f">args_tuple_plain</a> = std::tuple&lt;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;              <span class="keyword">typename</span> std::remove_cv&lt;</div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4.html#affc9c250dbfdff07716f7c635efef02f">   86</a></span>&#160;                  <span class="keyword">typename</span> std::remove_reference&lt;Args&gt;::type&gt;::type...&gt;;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">typename</span> std::remove_cv&lt;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4.html#affc9c250dbfdff07716f7c635efef02f">   86</a></span>&#160;            <span class="keyword">typename</span> std::remove_reference&lt;Args&gt;::type&gt;::type...&gt;;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">    //! the i-th argument is equivalent to the i-th tuple element of a tuple</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">    //! composed of those arguments.</span></div>
@@ -212,8 +212,8 @@ $(document).ready(function(){initNavTree('function__traits_8hpp_source.html','')
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">    //! remove_reference.</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"></span>    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> i&gt;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">using</span> <a class="code" href="structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4.html#aa9acdcbe10aea75f4e90d292abb7f9f6">arg_plain</a> =</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;              <span class="keyword">typename</span> std::remove_cv&lt;</div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4.html#aa9acdcbe10aea75f4e90d292abb7f9f6">   98</a></span>&#160;                  <span class="keyword">typename</span> std::remove_reference&lt;arg&lt;i&gt; &gt;::type&gt;::type;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keyword">typename</span> std::remove_cv&lt;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4.html#aa9acdcbe10aea75f4e90d292abb7f9f6">   98</a></span>&#160;            <span class="keyword">typename</span> std::remove_reference&lt;arg&lt;i&gt; &gt;::type&gt;::type;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;} <span class="comment">// namespace common</span></div>
@@ -239,8 +239,8 @@ $(document).ready(function(){initNavTree('function__traits_8hpp_source.html','')
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_19de9a7cb0ad0c6b03f8c7369b4f5139.html">common</a></li><li class="navelem"><a class="el" href="function__traits_8hpp.html">function_traits.hpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:20 for Thrill by
+    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="function__traits_8hpp.html">function_traits.hpp</a></li>
+    <li class="footer">Generated on Thu May 17 2018 13:49:19 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

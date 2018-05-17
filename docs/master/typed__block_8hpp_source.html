@@ -288,7 +288,7 @@ $(document).ready(function(){initNavTree('typed__block_8hpp_source.html','');});
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">//! Contains per block information for \c TypedBlock , not intended for direct use.</span></div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type, <span class="keywordtype">size_t</span> RawSize, <span class="keywordtype">size_t</span> NB<span class="keywordtype">id</span>s, <span class="keyword">typename</span> MetaInfoType = <span class="keywordtype">void</span>&gt;</div>
 <div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="classthrill_1_1io_1_1mng__local_1_1BlockWithInfo.html">  172</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthrill_1_1io_1_1mng__local_1_1BlockWithInfo.html">BlockWithInfo</a></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classthrill_1_1io_1_1mng__local_1_1BlockWithBids.html">BlockWithBids</a>&lt;Type, ((RawSize - sizeof(BID&lt;RawSize&gt;)* NBids - sizeof(MetaInfoType)) / sizeof(Type)), RawSize, NBids&gt;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classthrill_1_1io_1_1mng__local_1_1BlockWithBids.html">BlockWithBids</a>&lt;Type, ((RawSize - sizeof(BID&lt;RawSize&gt;) * NBids - sizeof(MetaInfoType)) / sizeof(Type)), RawSize, NBids&gt;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;{</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">    //! Type of per block information element.</span></div>
@@ -304,7 +304,7 @@ $(document).ready(function(){initNavTree('typed__block_8hpp_source.html','');});
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type, <span class="keywordtype">size_t</span> RawSize, <span class="keywordtype">size_t</span> NB<span class="keywordtype">id</span>s&gt;</div>
 <div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="classthrill_1_1io_1_1mng__local_1_1BlockWithInfo_3_01Type_00_01RawSize_00_01NBids_00_01void_01_4.html">  188</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthrill_1_1io_1_1mng__local_1_1BlockWithInfo.html">BlockWithInfo</a>&lt;<a class="code" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>, RawSize, NBids, void&gt;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classthrill_1_1io_1_1mng__local_1_1BlockWithBids.html">BlockWithBids</a>&lt;Type, ((RawSize - sizeof(BID&lt;RawSize&gt;)* NBids) / sizeof(Type)), RawSize, NBids&gt;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classthrill_1_1io_1_1mng__local_1_1BlockWithBids.html">BlockWithBids</a>&lt;Type, ((RawSize - sizeof(BID&lt;RawSize&gt;) * NBids) / sizeof(Type)), RawSize, NBids&gt;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;{</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="classthrill_1_1io_1_1mng__local_1_1BlockWithInfo_3_01Type_00_01RawSize_00_01NBids_00_01void_01_4.html#ae5beb4ba0158a1ff42323526d7c193d7">  192</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1io_1_1mng__local_1_1BlockWithInfo_3_01Type_00_01RawSize_00_01NBids_00_01void_01_4.html#ae5beb4ba0158a1ff42323526d7c193d7">info_type</a> = void;</div>
@@ -366,7 +366,7 @@ $(document).ready(function(){initNavTree('typed__block_8hpp_source.html','');});
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;          mng_local::BlockWithInfo&lt;Type, RawSize, NRef, MetaInfoType&gt;, RawSize&gt;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;{</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1io_1_1mng__local_1_1ExpandStruct.html">Base</a> = <a class="code" href="classthrill_1_1io_1_1mng__local_1_1ExpandStruct.html">mng_local::ExpandStruct</a>&lt;</div>
-<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="classthrill_1_1io_1_1TypedBlock.html#a4c986d14e11a4d793c95642342746b7c">  251</a></span>&#160;              <a class="code" href="classthrill_1_1io_1_1mng__local_1_1BlockWithInfo.html">mng_local::BlockWithInfo&lt;Type, RawSize, NRef, MetaInfoType&gt;</a>, RawSize&gt;;</div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="classthrill_1_1io_1_1TypedBlock.html#a4c986d14e11a4d793c95642342746b7c">  251</a></span>&#160;        <a class="code" href="classthrill_1_1io_1_1mng__local_1_1BlockWithInfo.html">mng_local::BlockWithInfo&lt;Type, RawSize, NRef, MetaInfoType&gt;</a>, RawSize&gt;;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
 <div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="classthrill_1_1io_1_1TypedBlock.html#a6b72e54baf646b08b4b87f987f583dcb">  253</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="classthrill_1_1io_1_1TypedBlock.html#a6b72e54baf646b08b4b87f987f583dcb">debug</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
@@ -556,8 +556,8 @@ $(document).ready(function(){initNavTree('typed__block_8hpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_c5add5f0a27348adc8388b1a95f76f2d.html">io</a></li><li class="navelem"><a class="el" href="typed__block_8hpp.html">typed_block.hpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:21 for Thrill by
+    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_b3d161c3d1247f1befe1ba5893f47ab8.html">io</a></li><li class="navelem"><a class="el" href="typed__block_8hpp.html">typed_block.hpp</a></li>
+    <li class="footer">Generated on Thu May 17 2018 13:49:20 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

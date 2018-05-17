@@ -185,8 +185,8 @@ $(document).ready(function(){initNavTree('reduce__to__index_8hpp_source.html',''
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceToIndexNode.html#a17e6ef244d4d03395a813cf2a45a9648">   67</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ReduceToIndexNode.html#a17e6ef244d4d03395a813cf2a45a9648">Key</a> = <span class="keyword">typename</span> common::FunctionTraits&lt;KeyExtractor&gt;::result_type;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ReduceToIndexNode.html#a204dee530e24efc047ecb3caef72bf3b">TableItem</a> =</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;              <span class="keyword">typename</span> std::conditional&lt;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceToIndexNode.html#a204dee530e24efc047ecb3caef72bf3b">   71</a></span>&#160;                  VolatileKey, std::pair&lt;Key, ValueType&gt;, ValueType&gt;::type;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">typename</span> std::conditional&lt;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceToIndexNode.html#a204dee530e24efc047ecb3caef72bf3b">   71</a></span>&#160;            VolatileKey, std::pair&lt;Key, ValueType&gt;, ValueType&gt;::type;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    static_assert(<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">std::is_same&lt;Key, size_t&gt;::value</a>,</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                  <span class="stringliteral">&quot;Key must be an unsigned integer&quot;</span>);</div>
@@ -400,7 +400,7 @@ $(document).ready(function(){initNavTree('reduce__to__index_8hpp_source.html',''
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    assert(IsValid());</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keyword">using</span> DOpResult</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;              = <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::result_type;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        = <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::result_type;</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    static_assert(</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        std::is_convertible&lt;</div>
@@ -436,8 +436,8 @@ $(document).ready(function(){initNavTree('reduce__to__index_8hpp_source.html',''
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="stringliteral">&quot;The key has to be an unsigned long int (aka. size_t).&quot;</span>);</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html">ReduceNode</a> = <a class="code" href="classthrill_1_1api_1_1ReduceToIndexNode.html">ReduceToIndexNode</a>&lt;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;              DOpResult, KeyExtractor, ReduceFunction, ReduceConfig,</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;              VolatileKeyValue, <span class="comment">/* SkipPreReducePhase */</span> <span class="keyword">false</span>&gt;;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        DOpResult, KeyExtractor, ReduceFunction, ReduceConfig,</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        VolatileKeyValue, <span class="comment">/* SkipPreReducePhase */</span> <span class="keyword">false</span>&gt;;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ReduceNode&gt;(</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        *<span class="keyword">this</span>, <span class="stringliteral">&quot;ReduceToIndex&quot;</span>, key_extractor, reduce_function,</div>
@@ -458,7 +458,7 @@ $(document).ready(function(){initNavTree('reduce__to__index_8hpp_source.html',''
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    assert(IsValid());</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keyword">using</span> DOpResult</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;              = <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::result_type;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        = <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::result_type;</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    static_assert(</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        std::is_convertible&lt;</div>
@@ -494,8 +494,8 @@ $(document).ready(function(){initNavTree('reduce__to__index_8hpp_source.html',''
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="stringliteral">&quot;The key has to be an unsigned long int (aka. size_t).&quot;</span>);</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html">ReduceNode</a> = <a class="code" href="classthrill_1_1api_1_1ReduceToIndexNode.html">ReduceToIndexNode</a>&lt;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;              DOpResult, KeyExtractor, ReduceFunction, ReduceConfig,</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;              <span class="comment">/* VolatileKey */</span> <span class="keyword">false</span>, <span class="comment">/* SkipPreReducePhase */</span> <span class="keyword">true</span>&gt;;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        DOpResult, KeyExtractor, ReduceFunction, ReduceConfig,</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="comment">/* VolatileKey */</span> <span class="keyword">false</span>, <span class="comment">/* SkipPreReducePhase */</span> <span class="keyword">true</span>&gt;;</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ReduceNode&gt;(</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        *<span class="keyword">this</span>, <span class="stringliteral">&quot;ReduceToIndex&quot;</span>, key_extractor, reduce_function,</div>
@@ -578,8 +578,8 @@ $(document).ready(function(){initNavTree('reduce__to__index_8hpp_source.html',''
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1f06a9dab790f88a2b6eb40fd2f445f5.html">api</a></li><li class="navelem"><a class="el" href="reduce__to__index_8hpp.html">reduce_to_index.hpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:20 for Thrill by
+    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="reduce__to__index_8hpp.html">reduce_to_index.hpp</a></li>
+    <li class="footer">Generated on Thu May 17 2018 13:49:19 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,5 +1,6 @@
 var group__tlx__data__structures =
 [
+    [ "B+ Trees", "group__tlx__data__structures__btree.html", "group__tlx__data__structures__btree" ],
     [ "Loser Trees", "group__tlx__data__structures__loser__tree.html", "group__tlx__data__structures__loser__tree" ],
     [ "LruCacheMap", "classtlx_1_1LruCacheMap.html", [
       [ "KeyValuePair", "classtlx_1_1LruCacheMap.html#a3f99800022cfebd038a6ce06a1f99942", null ],

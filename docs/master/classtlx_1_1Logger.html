@@ -116,7 +116,6 @@ $(document).ready(function(){initNavTree('classtlx_1_1Logger.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classtlx_1_1Logger-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -153,12 +152,15 @@ $(document).ready(function(){initNavTree('classtlx_1_1Logger.html','');});
 </div><!-- fragment --><p>There are two variation of <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> and <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a">sLOG</a> : append 0 or 1 for temporarily disabled or enabled debug lines. These macros are then <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#aa92cc370e6906ac3887db96a0a628ce8">LOG0</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#af14c6f708bfe284dacf04d7866461a32">sLOG0</a>, and <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a>. The suffix overrides the debug variable's setting.</p>
 <p>After a module works as intended, one can just set <code>debug = false</code>, and all debug output will disappear and be optimized out. </p>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00072">72</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00078">78</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
 </div>
 <p><code>#include &lt;<a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a4fac0c9f6ee2dce6abd726264b9195f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1Logger.html#a4fac0c9f6ee2dce6abd726264b9195f7">Logger</a> ()</td></tr>
+<tr class="memdesc:a4fac0c9f6ee2dce6abd726264b9195f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">construction: add prefix if desired  <a href="#a4fac0c9f6ee2dce6abd726264b9195f7">More...</a><br/></td></tr>
+<tr class="separator:a4fac0c9f6ee2dce6abd726264b9195f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d77f27eb95c246d555904aaf08018eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1Logger.html#a0d77f27eb95c246d555904aaf08018eb">~Logger</a> ()</td></tr>
 <tr class="memdesc:a0d77f27eb95c246d555904aaf08018eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructor: output a newline  <a href="#a0d77f27eb95c246d555904aaf08018eb">More...</a><br/></td></tr>
 <tr class="separator:a0d77f27eb95c246d555904aaf08018eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,15 +169,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad732ba3bbc0ae57a0a7ff7270c3085ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">output any type, including io manipulators  <a href="#ad732ba3bbc0ae57a0a7ff7270c3085ee">More...</a><br/></td></tr>
 <tr class="separator:ad732ba3bbc0ae57a0a7ff7270c3085ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a489f35e4efa6853993bfb5da29f8b7e6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1Logger.html#a489f35e4efa6853993bfb5da29f8b7e6">Output</a> (const char *str)</td></tr>
-<tr class="memdesc:a489f35e4efa6853993bfb5da29f8b7e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">mutex synchronized output to std::cout  <a href="#a489f35e4efa6853993bfb5da29f8b7e6">More...</a><br/></td></tr>
-<tr class="separator:a489f35e4efa6853993bfb5da29f8b7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb1ff5725f260bdab5b89ba943b7376c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1Logger.html#abb1ff5725f260bdab5b89ba943b7376c">Output</a> (const std::string &amp;str)</td></tr>
-<tr class="memdesc:abb1ff5725f260bdab5b89ba943b7376c"><td class="mdescLeft">&#160;</td><td class="mdescRight">mutex synchronized output to std::cout  <a href="#abb1ff5725f260bdab5b89ba943b7376c">More...</a><br/></td></tr>
-<tr class="separator:abb1ff5725f260bdab5b89ba943b7376c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:acbe8bc75214c441a925eb2ab98ff869d"><td class="memItemLeft" align="right" valign="top">std::ostringstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1Logger.html#acbe8bc75214c441a925eb2ab98ff869d">oss_</a></td></tr>
@@ -183,6 +176,27 @@ Private Attributes</h2></td></tr>
 <tr class="separator:acbe8bc75214c441a925eb2ab98ff869d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a4fac0c9f6ee2dce6abd726264b9195f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classtlx_1_1Logger.html">Logger</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>construction: add prefix if desired </p>
+
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html#l00063">63</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html">logger.cpp</a>.</p>
+
+<p>References <a class="el" href="classtlx_1_1LoggerPrefixHook.html#a7449b7ccb09984863f69e82dbf8b0964">LoggerPrefixHook::add_log_prefix()</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00082">Logger::oss_</a>, and <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html#l00053">tlx::s_logger_prefix_hook</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0d77f27eb95c246d555904aaf08018eb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -198,9 +212,9 @@ Private Attributes</h2></td></tr>
 
 <p>destructor: output a newline </p>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html#l00040">40</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html">logger.cpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html#l00069">69</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html">logger.cpp</a>.</p>
 
-<p>References <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00076">Logger::oss_</a>, and <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html#l00026">Logger::Output()</a>.</p>
+<p>References <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00082">Logger::oss_</a>.</p>
 
 </div>
 </div>
@@ -229,71 +243,9 @@ Private Attributes</h2></td></tr>
 
 <p>output any type, including io manipulators </p>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00086">86</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00090">90</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
 
-<p>References <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00076">Logger::oss_</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a489f35e4efa6853993bfb5da29f8b7e6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Output </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>mutex synchronized output to std::cout </p>
-
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html#l00026">26</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html">logger.cpp</a>.</p>
-
-<p>References <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html#l00024">tlx::s_logger_mutex</a>.</p>
-
-<p>Referenced by <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html#l00040">Logger::~Logger()</a>, and <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html#l00045">SpacingLogger::~SpacingLogger()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abb1ff5725f260bdab5b89ba943b7376c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Output </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>str</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>mutex synchronized output to std::cout </p>
-
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html#l00033">33</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html">logger.cpp</a>.</p>
-
-<p>References <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html#l00024">tlx::s_logger_mutex</a>.</p>
+<p>References <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00082">Logger::oss_</a>.</p>
 
 </div>
 </div>
@@ -318,9 +270,9 @@ Private Attributes</h2></td></tr>
 
 <p>collector stream </p>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00076">76</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00082">82</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00086">Logger::operator&lt;&lt;()</a>, and <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html#l00040">Logger::~Logger()</a>.</p>
+<p>Referenced by <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html#l00063">Logger::Logger()</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00090">Logger::operator&lt;&lt;()</a>, and <a class="el" href="extlib_2tlx_2tlx_2logger_8cpp_source.html#l00069">Logger::~Logger()</a>.</p>
 
 </div>
 </div>
@@ -334,7 +286,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacetlx.html">tlx</a></li><li class="navelem"><a class="el" href="classtlx_1_1Logger.html">Logger</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:41 for Thrill by
+    <li class="footer">Generated on Thu May 17 2018 13:49:26 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

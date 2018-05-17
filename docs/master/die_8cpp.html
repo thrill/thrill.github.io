@@ -114,12 +114,14 @@ $(document).ready(function(){initNavTree('die_8cpp.html','');});
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">die.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="die_8hpp_source.html">tlx/die.hpp</a>&gt;</code><br/>
+<code>#include &lt;atomic&gt;</code><br/>
 <code>#include &lt;iostream&gt;</code><br/>
 <code>#include &lt;sstream&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -127,7 +129,7 @@ $(document).ready(function(){initNavTree('die_8cpp.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="die_8cpp__incl.svg" width="318" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="die_8cpp__incl.svg" width="358" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -141,22 +143,29 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a1a4f198a88970a7cb1f5d8d3a0555b79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html#a1a4f198a88970a7cb1f5d8d3a0555b79">die_with_message</a> (const std::string &amp;msg)</td></tr>
-<tr class="memdesc:a1a4f198a88970a7cb1f5d8d3a0555b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">die with message - either throw an exception or die via abort()  <a href="#a1a4f198a88970a7cb1f5d8d3a0555b79">More...</a><br/></td></tr>
+<tr class="memdesc:a1a4f198a88970a7cb1f5d8d3a0555b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">die with message - either throw an exception or die via std::terminate()  <a href="#a1a4f198a88970a7cb1f5d8d3a0555b79">More...</a><br/></td></tr>
 <tr class="separator:a1a4f198a88970a7cb1f5d8d3a0555b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1972bdbc5b9ff146cf88d18ec9a12d64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html#a1972bdbc5b9ff146cf88d18ec9a12d64">die_with_message</a> (const char *msg, const char *file, size_t line)</td></tr>
-<tr class="memdesc:a1972bdbc5b9ff146cf88d18ec9a12d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">die with message - either throw an exception or die via abort()  <a href="#a1972bdbc5b9ff146cf88d18ec9a12d64">More...</a><br/></td></tr>
+<tr class="memdesc:a1972bdbc5b9ff146cf88d18ec9a12d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">die with message - either throw an exception or die via std::terminate()  <a href="#a1972bdbc5b9ff146cf88d18ec9a12d64">More...</a><br/></td></tr>
 <tr class="separator:a1972bdbc5b9ff146cf88d18ec9a12d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf7bff2d67e5ed89bd9dc6bea904e1c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html#acf7bff2d67e5ed89bd9dc6bea904e1c1">die_with_message</a> (const std::string &amp;msg, const char *file, size_t line)</td></tr>
-<tr class="memdesc:acf7bff2d67e5ed89bd9dc6bea904e1c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">die with message - either throw an exception or die via abort()  <a href="#acf7bff2d67e5ed89bd9dc6bea904e1c1">More...</a><br/></td></tr>
+<tr class="memdesc:acf7bff2d67e5ed89bd9dc6bea904e1c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">die with message - either throw an exception or die via std::terminate()  <a href="#acf7bff2d67e5ed89bd9dc6bea904e1c1">More...</a><br/></td></tr>
 <tr class="separator:acf7bff2d67e5ed89bd9dc6bea904e1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17989dc1fbbf1047c8f238aaafe7092"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html#aa17989dc1fbbf1047c8f238aaafe7092">set_die_with_exception</a> (bool b)</td></tr>
+<tr class="separator:aa17989dc1fbbf1047c8f238aaafe7092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a60940290b9c3ca9e978cd30dca38d8c8"><td class="memItemLeft" align="right" valign="top">static std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html#a60940290b9c3ca9e978cd30dca38d8c8">s_die_with_exception</a></td></tr>
+<tr class="separator:a60940290b9c3ca9e978cd30dca38d8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_caacaa4f3b8d02b4020eb7fe043e6252.html">extlib</a></li><li class="navelem"><a class="el" href="dir_7a0d59963e57ff0db60447211f189ef0.html">tlx</a></li><li class="navelem"><a class="el" href="dir_4c5cb83148e98355e323096051cdb415.html">tlx</a></li><li class="navelem"><a class="el" href="die_8cpp.html">die.cpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:22 for Thrill by
+    <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="die_8cpp.html">die.cpp</a></li>
+    <li class="footer">Generated on Thu May 17 2018 13:49:21 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

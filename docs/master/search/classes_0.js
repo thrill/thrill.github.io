@@ -15,6 +15,7 @@ var searchData=
   ['alignedallocator',['AlignedAllocator',['../classthrill_1_1mem_1_1AlignedAllocator.html',1,'thrill::mem']]],
   ['alignedallocator_3c_20byte_2c_20mem_3a_3aallocator_3c_20char_20_3e_20_3e',['AlignedAllocator&lt; Byte, mem::Allocator&lt; char &gt; &gt;',['../classthrill_1_1mem_1_1AlignedAllocator.html',1,'thrill::mem']]],
   ['alignedallocatorsettings',['AlignedAllocatorSettings',['../structthrill_1_1mem_1_1AlignedAllocatorSettings.html',1,'thrill::mem']]],
+  ['alignmenthelper',['AlignmentHelper',['../uniontlx_1_1StackArena_1_1AlignmentHelper.html',1,'tlx::StackArena']]],
   ['allgathernode',['AllGatherNode',['../classthrill_1_1api_1_1AllGatherNode.html',1,'thrill::api']]],
   ['allocator',['Allocator',['../classthrill_1_1mem_1_1Allocator.html',1,'thrill::mem']]],
   ['allocator_3c_20char_20_3e',['Allocator&lt; char &gt;',['../classthrill_1_1mem_1_1Allocator.html',1,'thrill::mem']]],

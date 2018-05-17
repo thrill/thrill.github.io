@@ -32,7 +32,7 @@ var classthrill_1_1net_1_1Buffer =
     [ "size", "classthrill_1_1net_1_1Buffer.html#a0801762a3fe36fe32dca5f16e515478d", null ],
     [ "ToString", "classthrill_1_1net_1_1Buffer.html#a946e9412867b046958667b21a1236eca", null ],
     [ "Zero", "classthrill_1_1net_1_1Buffer.html#abcae23803b7517cce5047494dfcdd2c8", null ],
-    [ "operator<<", "classthrill_1_1net_1_1Buffer.html#a9e523142e8abde7f08b8eccd10030afc", null ],
+    [ "operator<<", "classthrill_1_1net_1_1Buffer.html#abfa0f539fd2790aef0d8cb568a48d9f6", null ],
     [ "swap", "classthrill_1_1net_1_1Buffer.html#a1bf6beb91e98a04f0538f1b68264f7d8", null ],
     [ "data_", "classthrill_1_1net_1_1Buffer.html#a0c47801601a9aa271a075cec74adf98b", null ],
     [ "size_", "classthrill_1_1net_1_1Buffer.html#a4f3592f75c4916a9a92255c165bd65d2", null ]

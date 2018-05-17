@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('group__by__key_8hpp_source.html','');}
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1GroupByNode.html#a17e6ef244d4d03395a813cf2a45a9648">   53</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1GroupByNode.html#a17e6ef244d4d03395a813cf2a45a9648">Key</a> = <span class="keyword">typename</span> common::FunctionTraits&lt;KeyExtractor&gt;::result_type;</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1GroupByNode.html#a9e721b57080f8913af8816aadc2d1d66">   54</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1GroupByNode.html#a9e721b57080f8913af8816aadc2d1d66">ValueOut</a> = ValueType;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1GroupByNode.html#a5527bd9686744bfa6586d94e58ef1852">ValueIn</a> =</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1GroupByNode.html#a5527bd9686744bfa6586d94e58ef1852">   56</a></span>&#160;              <span class="keyword">typename</span> common::FunctionTraits&lt;KeyExtractor&gt;::template arg_plain&lt;0&gt;;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1GroupByNode.html#a5527bd9686744bfa6586d94e58ef1852">   56</a></span>&#160;        <span class="keyword">typename</span> common::FunctionTraits&lt;KeyExtractor&gt;::template arg_plain&lt;0&gt;;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structthrill_1_1api_1_1GroupByNode_1_1ValueComparator.html">   58</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structthrill_1_1api_1_1GroupByNode_1_1ValueComparator.html">ValueComparator</a> {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">public</span>:</div>
@@ -512,8 +512,8 @@ $(document).ready(function(){initNavTree('group__by__key_8hpp_source.html','');}
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="stringliteral">&quot;KeyExtractor has the wrong input type&quot;</span>);</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1GroupByNode.html">GroupByNode</a> = <a class="code" href="classthrill_1_1api_1_1GroupByNode.html">api::GroupByNode</a>&lt;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;              ValueOut, KeyExtractor, GroupFunction, HashFunction,</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;              LocationDetectionValue&gt;;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        ValueOut, KeyExtractor, GroupFunction, HashFunction,</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        LocationDetectionValue&gt;;</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;GroupByNode&gt;(</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        *<span class="keyword">this</span>, key_extractor, groupby_function, hash_function);</div>
@@ -645,8 +645,8 @@ $(document).ready(function(){initNavTree('group__by__key_8hpp_source.html','');}
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5fdb396fad1e5f0fc72d07871826fecf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1f06a9dab790f88a2b6eb40fd2f445f5.html">api</a></li><li class="navelem"><a class="el" href="group__by__key_8hpp.html">group_by_key.hpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:19 for Thrill by
+    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="group__by__key_8hpp.html">group_by_key.hpp</a></li>
+    <li class="footer">Generated on Thu May 17 2018 13:49:18 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

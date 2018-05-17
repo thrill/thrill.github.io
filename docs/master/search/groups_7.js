@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['source_20nodes',['Source Nodes',['../group__dia__sources.html',1,'']]],
-  ['string_20algorithms',['String Algorithms',['../group__tlx__string.html',1,'']]]
+  ['network_20subsystem_20layer',['Network Subsystem Layer',['../group__net__layer.html',1,'']]]
 ];

@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('backtrace_8hpp_source.html','');});
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacetlx.html#a5e964500195bf49264036402214d61ed">print_raw_backtrace</a>(FILE* out, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> max_frames,</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">char</span>* fmt, ...)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="attribute__format__printf_8hpp.html#a246a72d6938b4e4a40f11571a676b472">TLX_ATTRIBUTE_FORMAT_PRINTF</a>(3, 4);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="group__tlx__define.html#ga246a72d6938b4e4a40f11571a676b472">TLX_ATTRIBUTE_FORMAT_PRINTF</a>(3, 4);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/*!</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * Print a demangled stack backtrace of the caller function to FILE* out.</span></div>
@@ -159,24 +159,31 @@ $(document).ready(function(){initNavTree('backtrace_8hpp_source.html','');});
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacetlx.html#adad32b2f09919dea0ffb70cecfa4ee70">print_cxx_backtrace</a>(FILE* out = stderr, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> max_frames = 63);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//! \}</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <span class="comment">// namespace tlx</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // !TLX_BACKTRACE_HEADER</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="ttc" id="attribute__format__printf_8hpp_html_a246a72d6938b4e4a40f11571a676b472"><div class="ttname"><a href="attribute__format__printf_8hpp.html#a246a72d6938b4e4a40f11571a676b472">TLX_ATTRIBUTE_FORMAT_PRINTF</a></div><div class="ttdeci">#define TLX_ATTRIBUTE_FORMAT_PRINTF(X, Y)</div><div class="ttdef"><b>Definition:</b> <a href="attribute__format__printf_8hpp_source.html#l00023">attribute_format_printf.hpp:23</a></div></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/*!</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> * Install SIGSEGV signal handler and output backtrace on segmentation fault.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> * Compile with `-rdynamic` for more useful output.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacetlx.html#a393c17d312eb726b7e5631ecef50abee">enable_segv_backtrace</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">//! \}</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <span class="comment">// namespace tlx</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif // !TLX_BACKTRACE_HEADER</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="attribute__format__printf_8hpp_html"><div class="ttname"><a href="attribute__format__printf_8hpp.html">attribute_format_printf.hpp</a></div></div>
-<div class="ttc" id="namespacetlx_html_adad32b2f09919dea0ffb70cecfa4ee70"><div class="ttname"><a href="namespacetlx.html#adad32b2f09919dea0ffb70cecfa4ee70">tlx::print_cxx_backtrace</a></div><div class="ttdeci">void print_cxx_backtrace(FILE *out, unsigned int max_frames)</div><div class="ttdoc">Print a demangled stack backtrace of the caller function to FILE* out. </div><div class="ttdef"><b>Definition:</b> <a href="backtrace_8cpp_source.html#l00067">backtrace.cpp:67</a></div></div>
-<div class="ttc" id="namespacetlx_html_a5e964500195bf49264036402214d61ed"><div class="ttname"><a href="namespacetlx.html#a5e964500195bf49264036402214d61ed">tlx::print_raw_backtrace</a></div><div class="ttdeci">void print_raw_backtrace(FILE *out, unsigned int max_frames, const char *fmt,...)</div><div class="ttdoc">Print a plain hex stack backtrace of the called function to FILE* out, prefixed with the given printf...</div><div class="ttdef"><b>Definition:</b> <a href="backtrace_8cpp_source.html#l00028">backtrace.cpp:28</a></div></div>
+<div class="ttc" id="group__tlx__define_html_ga246a72d6938b4e4a40f11571a676b472"><div class="ttname"><a href="group__tlx__define.html#ga246a72d6938b4e4a40f11571a676b472">TLX_ATTRIBUTE_FORMAT_PRINTF</a></div><div class="ttdeci">#define TLX_ATTRIBUTE_FORMAT_PRINTF(X, Y)</div><div class="ttdef"><b>Definition:</b> <a href="attribute__format__printf_8hpp_source.html#l00026">attribute_format_printf.hpp:26</a></div></div>
+<div class="ttc" id="namespacetlx_html_adad32b2f09919dea0ffb70cecfa4ee70"><div class="ttname"><a href="namespacetlx.html#adad32b2f09919dea0ffb70cecfa4ee70">tlx::print_cxx_backtrace</a></div><div class="ttdeci">void print_cxx_backtrace(FILE *out, unsigned int max_frames)</div><div class="ttdoc">Print a demangled stack backtrace of the caller function to FILE* out. </div><div class="ttdef"><b>Definition:</b> <a href="backtrace_8cpp_source.html#l00073">backtrace.cpp:73</a></div></div>
+<div class="ttc" id="namespacetlx_html_a5e964500195bf49264036402214d61ed"><div class="ttname"><a href="namespacetlx.html#a5e964500195bf49264036402214d61ed">tlx::print_raw_backtrace</a></div><div class="ttdeci">void print_raw_backtrace(FILE *out, unsigned int max_frames, const char *fmt,...)</div><div class="ttdoc">Print a plain hex stack backtrace of the called function to FILE* out, prefixed with the given printf...</div><div class="ttdef"><b>Definition:</b> <a href="backtrace_8cpp_source.html#l00030">backtrace.cpp:30</a></div></div>
+<div class="ttc" id="namespacetlx_html_a393c17d312eb726b7e5631ecef50abee"><div class="ttname"><a href="namespacetlx.html#a393c17d312eb726b7e5631ecef50abee">tlx::enable_segv_backtrace</a></div><div class="ttdeci">void enable_segv_backtrace()</div><div class="ttdoc">Install SIGSEGV signal handler and output backtrace on segmentation fault. </div><div class="ttdef"><b>Definition:</b> <a href="backtrace_8cpp_source.html#l00178">backtrace.cpp:178</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_caacaa4f3b8d02b4020eb7fe043e6252.html">extlib</a></li><li class="navelem"><a class="el" href="dir_7a0d59963e57ff0db60447211f189ef0.html">tlx</a></li><li class="navelem"><a class="el" href="dir_4c5cb83148e98355e323096051cdb415.html">tlx</a></li><li class="navelem"><a class="el" href="backtrace_8hpp.html">backtrace.hpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:19 for Thrill by
+    <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="backtrace_8hpp.html">backtrace.hpp</a></li>
+    <li class="footer">Generated on Thu May 17 2018 13:49:17 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

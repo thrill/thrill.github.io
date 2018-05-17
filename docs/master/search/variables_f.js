@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['p',['p',['../structexamples_1_1k__means_1_1CentroidAccumulated.html#ae273773add45375b65c8555736acb60f',1,'examples::k_means::CentroidAccumulated']]],
+  ['p',['p',['../structexamples_1_1k__means_1_1CentroidAccumulated.html#ae273773add45375b65c8555736acb60f',1,'examples::k_means::CentroidAccumulated::p()'],['../uniontlx_1_1StackArena_1_1AlignmentHelper.html#a117104b82864d3b23ec174af6d392709',1,'tlx::StackArena::AlignmentHelper::p()']]],
   ['p_5f',['p_',['../classthrill_1_1api_1_1BernoulliSampleNode.html#a9f4c61dd54e0b8bfcc953161dddb5f75',1,'thrill::api::BernoulliSampleNode']]],
   ['pad',['Pad',['../classthrill_1_1api_1_1ZipWindowNode.html#a3256e4170da4e239c3bfc6f2fbaeaaa4',1,'thrill::api::ZipWindowNode::Pad()'],['../classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01false_01_4.html#a00d9554e9a6fcca7138fc5f825f04ea6',1,'thrill::api::ZipWindowReader&lt; ZipWindowNode, false &gt;::Pad()'],['../classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01true_01_4.html#a00d9554e9a6fcca7138fc5f825f04ea6',1,'thrill::api::ZipWindowReader&lt; ZipWindowNode, true &gt;::Pad()']]],
   ['padding',['padding',['../namespacethrill_1_1mem.html#a831aebf83f716aa3c203011c4e54c793',1,'thrill::mem']]],
@@ -36,9 +36,11 @@ var searchData=
   ['peers_5f',['peers_',['../classthrill_1_1net_1_1mock_1_1Group.html#aaa9116dd88c8fee3f07ae81705d45e17',1,'thrill::net::mock::Group']]],
   ['period',['period',['../structthrill_1_1common_1_1ProfileThread_1_1Timer.html#a1b967204a86e940e21e9d4fdfecb19c1',1,'thrill::common::ProfileThread::Timer']]],
   ['perm_5f',['perm_',['../structthrill_1_1io_1_1RandomCyclic.html#a76220efcc0ed158f54043563f52ed6ae',1,'thrill::io::RandomCyclic']]],
+  ['pf',['pf',['../uniontlx_1_1StackArena_1_1AlignmentHelper.html#a6158b086cef0c520608268694dd4b996',1,'tlx::StackArena::AlignmentHelper']]],
   ['pin_5fcount_5f',['pin_count_',['../classthrill_1_1data_1_1ByteBlock.html#a7d198983e6a73b28c669d94d5c54a1d5',1,'thrill::data::ByteBlock']]],
   ['pivot_5fselection_5ftimer_5f',['pivot_selection_timer_',['../classthrill_1_1api_1_1MergeNode_1_1Stats.html#a9f2143245a686f1027274f07fed11814',1,'thrill::api::MergeNode::Stats']]],
   ['pool_5f',['pool_',['../classthrill_1_1mem_1_1PoolAllocator.html#afdb7b9c0f6ec08214f201b5b4b3ffdc8',1,'thrill::mem::PoolAllocator']]],
+  ['pos',['pos',['../structtlx_1_1sort__strings__detail_1_1RadixStep__CE0.html#a5438a597ee291f523ae04a9fe355924f',1,'tlx::sort_strings_detail::RadixStep_CE0::pos()'],['../structtlx_1_1sort__strings__detail_1_1RadixStep__CE2.html#a5438a597ee291f523ae04a9fe355924f',1,'tlx::sort_strings_detail::RadixStep_CE2::pos()'],['../structtlx_1_1sort__strings__detail_1_1RadixStep__CE3.html#a5438a597ee291f523ae04a9fe355924f',1,'tlx::sort_strings_detail::RadixStep_CE3::pos()'],['../structtlx_1_1sort__strings__detail_1_1RadixStep__CI2.html#a2e2d12bd1d5cf482d51c59638b13ac35',1,'tlx::sort_strings_detail::RadixStep_CI2::pos()'],['../structtlx_1_1sort__strings__detail_1_1RadixStep__CI3.html#a2e2d12bd1d5cf482d51c59638b13ac35',1,'tlx::sort_strings_detail::RadixStep_CI3::pos()']]],
   ['pos_5f',['pos_',['../classthrill_1_1core_1_1BitStreamWriter.html#aaaa4a0c86e6c6c408de0933efd604522',1,'thrill::core::BitStreamWriter::pos_()'],['../classthrill_1_1core_1_1BitStreamReader.html#aaaa4a0c86e6c6c408de0933efd604522',1,'thrill::core::BitStreamReader::pos_()'],['../classthrill_1_1net_1_1AsyncReadByteBlock.html#aaaa4a0c86e6c6c408de0933efd604522',1,'thrill::net::AsyncReadByteBlock::pos_()']]],
   ['post_5fphase_5f',['post_phase_',['../classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390',1,'thrill::api::ReduceNode::post_phase_()'],['../classthrill_1_1api_1_1ReduceToIndexNode.html#a861bc07ca9bca70b463d39ef1de414ec',1,'thrill::api::ReduceToIndexNode::post_phase_()']]],
   ['post_5fthread_5f',['post_thread_',['../classthrill_1_1io_1_1LinuxaioQueue.html#a0005eb4aec397c40173032c39c05c61d',1,'thrill::io::LinuxaioQueue']]],
@@ -54,6 +56,7 @@ var searchData=
   ['pre_5fwriter_5f',['pre_writer_',['../classthrill_1_1api_1_1GroupByNode.html#a04fbda1eee3b19aa03f15657c6b9d683',1,'thrill::api::GroupByNode']]],
   ['prefetch_5fsize_5f',['prefetch_size_',['../classthrill_1_1data_1_1KeepFileBlockSource.html#aef0c230ead33991cf266d861f063fc6d',1,'thrill::data::KeepFileBlockSource::prefetch_size_()'],['../classthrill_1_1data_1_1ConsumeFileBlockSource.html#aef0c230ead33991cf266d861f063fc6d',1,'thrill::data::ConsumeFileBlockSource::prefetch_size_()']]],
   ['prefix_5fsize_5f',['prefix_size_',['../classthrill_1_1api_1_1MergeNode.html#ac92702cb28428b5df9ad080a92a2da98',1,'thrill::api::MergeNode']]],
+  ['prev_5fleaf',['prev_leaf',['../structtlx_1_1btree_1_1leaf__node.html#a695a0547385af04cd83175626255b4ba',1,'tlx::btree::leaf_node']]],
   ['prev_5frx_5fbytes_5f',['prev_rx_bytes_',['../classthrill_1_1net_1_1Connection.html#a8d9343cf64d90942f33ff2d537e84f32',1,'thrill::net::Connection']]],
   ['prev_5ftx_5fbytes_5f',['prev_tx_bytes_',['../classthrill_1_1net_1_1Connection.html#a3e7d95c83f7aa336c291822006b0dc73',1,'thrill::net::Connection']]],
   ['priority_5fop_5f',['priority_op_',['../classthrill_1_1io_1_1LinuxaioQueue.html#a7346ead5fee378ce1f79b316e4169624',1,'thrill::io::LinuxaioQueue::priority_op_()'],['../classthrill_1_1io_1_1RequestQueueImpl1Q.html#a7346ead5fee378ce1f79b316e4169624',1,'thrill::io::RequestQueueImpl1Q::priority_op_()'],['../classthrill_1_1io_1_1RequestQueueImplQwQr.html#a7346ead5fee378ce1f79b316e4169624',1,'thrill::io::RequestQueueImplQwQr::priority_op_()']]],
@@ -61,6 +64,7 @@ var searchData=
   ['profile_5foperations',['profile_operations',['../namespacethrill_1_1mem.html#a1fe120b33aef6494426a9e5e89ee509a',1,'thrill::mem']]],
   ['profiler_5f',['profiler_',['../classthrill_1_1api_1_1HostContext.html#ac975eee51af1aac6a0743f3d1ccd560b',1,'thrill::api::HostContext::profiler_()'],['../classthrill_1_1common_1_1ProfileTaskRegistration.html#aa6bb4de5a7d362f8864f86d549816fab',1,'thrill::common::ProfileTaskRegistration::profiler_()']]],
   ['program_5fname_5f',['program_name_',['../classtlx_1_1CmdlineParser.html#a46ae7a27b899e9a86ad04807eb1ad34e',1,'tlx::CmdlineParser']]],
+  ['ps',['ps',['../uniontlx_1_1StackArena_1_1AlignmentHelper.html#af08f04d47c314c45938909a89c6507d1',1,'tlx::StackArena::AlignmentHelper']]],
   ['ptr',['ptr',['../classthrill_1_1net_1_1FlowControlChannel_1_1LocalData.html#a220513c53af6187e4123b65a6f984e08',1,'thrill::net::FlowControlChannel::LocalData']]],
   ['ptr_5f',['ptr_',['../classthrill_1_1data_1_1CatStream.html#a35ebfabddecf9661a0f6c08f569f2698',1,'thrill::data::CatStream::ptr_()'],['../classthrill_1_1data_1_1MixStream.html#a83fd4bc1ba8102da6ca7a781fd153e55',1,'thrill::data::MixStream::ptr_()'],['../classthrill_1_1io_1_1MemoryFile.html#aa5ec38c854291ed98296bd00efbf90ae',1,'thrill::io::MemoryFile::ptr_()'],['../classtlx_1_1CountingPtr.html#aa0957c00054156f1af9fce986cbfcb4f',1,'tlx::CountingPtr::ptr_()'],['../classtlx_1_1StackArena.html#aa5ec38c854291ed98296bd00efbf90ae',1,'tlx::StackArena::ptr_()']]],
   ['pushed_5finputs',['pushed_inputs',['../structthrill_1_1api_1_1UnionNode_1_1UnionChild.html#aa4b42662c875af16068a75c59b306071',1,'thrill::api::UnionNode::UnionChild']]]

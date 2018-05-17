@@ -38,7 +38,7 @@ var classthrill_1_1api_1_1DIABase =
     [ "StartPreOp", "classthrill_1_1api_1_1DIABase.html#a4b3ddda1418ebf0574a00f8ebf341265", null ],
     [ "state", "classthrill_1_1api_1_1DIABase.html#ab51a60a59bad0bb22556b3e1d15472b4", null ],
     [ "StopPreOp", "classthrill_1_1api_1_1DIABase.html#ae1434a566c104eefe027936856588f33", null ],
-    [ "operator<<", "classthrill_1_1api_1_1DIABase.html#a5a49f59672ab11e107cf47c97d10919a", null ],
+    [ "operator<<", "classthrill_1_1api_1_1DIABase.html#a870d0796448f78877dcbad0d39fb4637", null ],
     [ "consume_counter_", "classthrill_1_1api_1_1DIABase.html#aa6c04f5d0d2322e7fafad9735be8f21b", null ],
     [ "context_", "classthrill_1_1api_1_1DIABase.html#ae8f38e2955f476fde7f144a0f76129bb", null ],
     [ "id_", "classthrill_1_1api_1_1DIABase.html#a10e9312214ee2edeebf45614c92fd304", null ],

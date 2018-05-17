@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['local_20operations_20_28lops_29',['Local Operations (LOps)',['../group__dia__lops.html',1,'']]],
-  ['loser_20trees',['Loser Trees',['../group__tlx__data__structures__loser__tree.html',1,'']]]
+  ['internals',['Internals',['../group__io__layer__internals.html',1,'']]],
+  ['i_2fo_20requests_20and_20queues',['I/O Requests and Queues',['../group__io__layer__req.html',1,'']]]
 ];

@@ -115,19 +115,22 @@ $(document).ready(function(){initNavTree('extlib_2tlx_2tlx_2logger_8hpp.html',''
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">logger.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;sstream&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;utility&gt;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for logger.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="extlib_2tlx_2tlx_2logger_8hpp__incl.svg" width="164" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="extlib_2tlx_2tlx_2logger_8hpp__incl.svg" width="320" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -135,7 +138,7 @@ $(document).ready(function(){initNavTree('extlib_2tlx_2tlx_2logger_8hpp.html',''
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="extlib_2tlx_2tlx_2logger_8hpp__dep__incl.svg" width="163" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="extlib_2tlx_2tlx_2logger_8hpp__dep__incl.svg" width="1428" height="491"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -145,6 +148,24 @@ $(document).ready(function(){initNavTree('extlib_2tlx_2tlx_2logger_8hpp.html',''
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1Logger.html">Logger</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LOG and sLOG for development and debugging.  <a href="classtlx_1_1Logger.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1LoggerCollectOutput.html">LoggerCollectOutput</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to hook logger output in the local thread.  <a href="classtlx_1_1LoggerCollectOutput.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1LoggerFormatter.html">LoggerFormatter&lt; AnyType, Enable &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">template class for formatting. contains a print() method.  <a href="classtlx_1_1LoggerFormatter.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1LoggerFormatter_3_01AnyType_01_4.html">LoggerFormatter&lt; AnyType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1LoggerFormatter_3_01std_1_1pair_3_01A_00_01B_01_4_01_4.html">LoggerFormatter&lt; std::pair&lt; A, B &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1LoggerFormatter_3_01std_1_1vector_3_01T_00_01A_01_4_01_4.html">LoggerFormatter&lt; std::vector&lt; T, A &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1LoggerOutputHook.html">LoggerOutputHook</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract class to implement output hooks for logging.  <a href="classtlx_1_1LoggerOutputHook.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1LoggerPrefixHook.html">LoggerPrefixHook</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract class to implement prefix output hooks for logging.  <a href="classtlx_1_1LoggerPrefixHook.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1LoggerVoidify.html">LoggerVoidify</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,6 +202,13 @@ Macros</h2></td></tr>
 <tr class="memitem:a1ebd9a4bec506b6bf89af113a8f03ca1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html#a1ebd9a4bec506b6bf89af113a8f03ca1">sLOGC</a>(cond)&#160;&#160;&#160;!(cond) ? (void)0 : ::<a class="el" href="classtlx_1_1LoggerVoidify.html">tlx::LoggerVoidify</a>() &amp; ::<a class="el" href="classtlx_1_1SpacingLogger.html">tlx::SpacingLogger</a>()</td></tr>
 <tr class="memdesc:a1ebd9a4bec506b6bf89af113a8f03ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly specify the condition for logging.  <a href="#a1ebd9a4bec506b6bf89af113a8f03ca1">More...</a><br/></td></tr>
 <tr class="separator:a1ebd9a4bec506b6bf89af113a8f03ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a369d24d80d405a29502266c3c3742b42"><td class="memItemLeft" align="right" valign="top">LoggerOutputHook *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html#a369d24d80d405a29502266c3c3742b42">set_logger_output_hook</a> (LoggerOutputHook *hook)</td></tr>
+<tr class="separator:a369d24d80d405a29502266c3c3742b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f6fd6485b3c32e7706d585634e012d0"><td class="memItemLeft" align="right" valign="top">LoggerPrefixHook *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html#a6f6fd6485b3c32e7706d585634e012d0">set_logger_prefix_hook</a> (LoggerPrefixHook *hook)</td></tr>
+<tr class="separator:a6f6fd6485b3c32e7706d585634e012d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a159ca84d25a5487d8e81e4438725df19"></a>
@@ -195,7 +223,7 @@ Macros</h2></td></tr>
 
 <p>Default logging method: output if the local debug variable is true. </p>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00136">136</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00141">141</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
 
 </div>
 </div>
@@ -211,7 +239,7 @@ Macros</h2></td></tr>
 
 <p>Override default output: never or always output log. </p>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00139">139</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00144">144</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
 
 </div>
 </div>
@@ -225,7 +253,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00140">140</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00145">145</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
 
 </div>
 </div>
@@ -245,7 +273,7 @@ Macros</h2></td></tr>
 
 <p>Explicitly specify the condition for logging. </p>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00132">132</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00137">137</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
 
 </div>
 </div>
@@ -261,7 +289,7 @@ Macros</h2></td></tr>
 
 <p>Default logging method: output if the local debug variable is true. </p>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00147">147</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00152">152</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
 
 </div>
 </div>
@@ -277,7 +305,7 @@ Macros</h2></td></tr>
 
 <p>Override default output: never or always output log. </p>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00150">150</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00155">155</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
 
 </div>
 </div>
@@ -291,7 +319,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00151">151</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00156">156</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
 
 </div>
 </div>
@@ -311,7 +339,7 @@ Macros</h2></td></tr>
 
 <p>Explicitly specify the condition for logging. </p>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00143">143</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00148">148</a> of file <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html">logger.hpp</a>.</p>
 
 </div>
 </div>
@@ -320,8 +348,8 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_caacaa4f3b8d02b4020eb7fe043e6252.html">extlib</a></li><li class="navelem"><a class="el" href="dir_7a0d59963e57ff0db60447211f189ef0.html">tlx</a></li><li class="navelem"><a class="el" href="dir_4c5cb83148e98355e323096051cdb415.html">tlx</a></li><li class="navelem"><a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html">logger.hpp</a></li>
-    <li class="footer">Generated on Tue May 15 2018 15:01:23 for Thrill by
+    <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="extlib_2tlx_2tlx_2logger_8hpp.html">logger.hpp</a></li>
+    <li class="footer">Generated on Thu May 17 2018 13:49:21 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

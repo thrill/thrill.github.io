@@ -4,6 +4,7 @@ var searchData=
   ['g_5fcache_5fline_5fsize',['g_cache_line_size',['../namespacethrill_1_1common.html#ac48fdc75de32330260ef49af192b9e4b',1,'thrill::common']]],
   ['g_5fdebug_5fmode',['g_debug_mode',['../namespacethrill_1_1common.html#af05dbb730a1e826a0bd61c26d6f884d6',1,'thrill::common']]],
   ['g_5fdebug_5fpush_5ffile',['g_debug_push_file',['../namespacethrill_1_1common.html#a53d23ccb06a539a86608ab7906313a2a',1,'thrill::common']]],
+  ['g_5finssort_5fthreshold',['g_inssort_threshold',['../namespacetlx_1_1sort__strings__detail.html#a2099458e3664e6692f5878bee6ee23d4',1,'tlx::sort_strings_detail']]],
   ['g_5flogger_5fmem_5fmanager',['g_logger_mem_manager',['../namespacethrill_1_1common.html#a2075aef7fe73244b7f28be10896be22f',1,'thrill::common']]],
   ['g_5fmutex',['g_mutex',['../namespacethrill_1_1net_1_1mpi.html#abf45c484c585bd82d2d892c29de4a0be',1,'thrill::net::mpi']]],
   ['g_5fndebug',['g_ndebug',['../namespacethrill_1_1common.html#ac1b80276bceae99e64e96a04b42e98c4',1,'thrill::common']]],

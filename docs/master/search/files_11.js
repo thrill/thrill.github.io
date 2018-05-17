@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['radix_5fsort_2ehpp',['radix_sort.hpp',['../radix__sort_8hpp.html',1,'']]],
+  ['radix_5fsort_2ehpp',['radix_sort.hpp',['../thrill_2common_2radix__sort_8hpp.html',1,'']]],
+  ['radix_5fsort_2ehpp',['radix_sort.hpp',['../extlib_2tlx_2tlx_2sort_2strings_2radix__sort_8hpp.html',1,'']]],
   ['random_5ftext_5fwriter_2ecpp',['random_text_writer.cpp',['../random__text__writer_8cpp.html',1,'']]],
   ['random_5ftext_5fwriter_2ehpp',['random_text_writer.hpp',['../random__text__writer_8hpp.html',1,'']]],
   ['read_5fbinary_2ehpp',['read_binary.hpp',['../read__binary_8hpp.html',1,'']]],
@@ -32,6 +33,8 @@ var searchData=
   ['ring_5fbuffer_2ehpp',['ring_buffer.hpp',['../thrill_2common_2ring__buffer_8hpp.html',1,'']]],
   ['ring_5fbuffer_2ehpp',['ring_buffer.hpp',['../extlib_2tlx_2tlx_2ring__buffer_8hpp.html',1,'']]],
   ['rl_5fbwt_2ecpp',['rl_bwt.cpp',['../rl__bwt_8cpp.html',1,'']]],
+  ['rol_2ehpp',['rol.hpp',['../rol_8hpp.html',1,'']]],
+  ['ror_2ehpp',['ror.hpp',['../ror_8hpp.html',1,'']]],
   ['round_5fto_5fpower_5fof_5ftwo_2ecpp',['round_to_power_of_two.cpp',['../round__to__power__of__two_8cpp.html',1,'']]],
   ['round_5fto_5fpower_5fof_5ftwo_2ehpp',['round_to_power_of_two.hpp',['../round__to__power__of__two_8hpp.html',1,'']]]
 ];
