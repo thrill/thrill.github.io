@@ -38,7 +38,7 @@ var classthrill_1_1data_1_1Multiplexer =
     [ "debug", "classthrill_1_1data_1_1Multiplexer.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
     [ "dispatcher_", "classthrill_1_1data_1_1Multiplexer.html#a4d680fb648978d6544fe20263de6aa65", null ],
     [ "group_", "classthrill_1_1data_1_1Multiplexer.html#a86d94155fbd8ae6923ad303f5fc14bf8", null ],
-    [ "max_active_streams_", "classthrill_1_1data_1_1Multiplexer.html#ae8da09807fb6e3caf191ee1d90cfaeec", null ],
+    [ "max_active_streams_", "classthrill_1_1data_1_1Multiplexer.html#a7833efc2ba7a0296badc78ae9d0fabf6", null ],
     [ "mem_manager_", "classthrill_1_1data_1_1Multiplexer.html#a26b42ae038782cb0c21f39178b2b200f", null ],
     [ "mutex_", "classthrill_1_1data_1_1Multiplexer.html#a281b5ec791338d4378e22ef44a51b4a1", null ],
     [ "num_parallel_async_", "classthrill_1_1data_1_1Multiplexer.html#a3ac7b25d37c4b24a9ab3884100751a1e", null ],

@@ -236,8 +236,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a04bb11ac9a782a852f31fc409d5f5318"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad790c9b451a3121c671fdfe98f0ca08a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacethrill_1_1common.html#a3cdae8b6f91ef83fb6e89fdca6e711f0">common::StatsTimerStopped</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#ad790c9b451a3121c671fdfe98f0ca08a">rx_timespan_</a></td></tr>
 <tr class="separator:ad790c9b451a3121c671fdfe98f0ca08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a500bb11613132e914c38ffa1713cdd6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1common_1_1Semaphore.html">common::Semaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a500bb11613132e914c38ffa1713cdd6a">sem_queue_</a></td></tr>
-<tr class="separator:a500bb11613132e914c38ffa1713cdd6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a697c66dbf61e62e97cc252575717efa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1Semaphore.html">tlx::Semaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a697c66dbf61e62e97cc252575717efa3">sem_queue_</a></td></tr>
+<tr class="separator:a697c66dbf61e62e97cc252575717efa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a651909fafd662aa9193bc7d95a165051"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a651909fafd662aa9193bc7d95a165051">tx_int_blocks_</a> { 0 }</td></tr>
 <tr class="separator:a651909fafd662aa9193bc7d95a165051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a344f9c6321c7333551e1bd4199e0d4ef"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a344f9c6321c7333551e1bd4199e0d4ef">tx_int_bytes_</a> { 0 }</td></tr>
@@ -270,11 +270,11 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ab7476140d0b9f77770419e69f53d0739"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1Multiplexer.html">Multiplexer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#ab7476140d0b9f77770419e69f53d0739">multiplexer_</a></td></tr>
 <tr class="memdesc:ab7476140d0b9f77770419e69f53d0739"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to multiplexer  <a href="#ab7476140d0b9f77770419e69f53d0739">More...</a><br/></td></tr>
 <tr class="separator:ab7476140d0b9f77770419e69f53d0739"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14462dd43d98b102fb217461e069f93c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a14462dd43d98b102fb217461e069f93c">remaining_closing_blocks_</a></td></tr>
-<tr class="separator:a14462dd43d98b102fb217461e069f93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30f814b85f665384c0e2c821fe92756a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1common_1_1Semaphore.html">common::Semaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a30f814b85f665384c0e2c821fe92756a">sem_closing_blocks_</a></td></tr>
-<tr class="memdesc:a30f814b85f665384c0e2c821fe92756a"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of received stream closing Blocks.  <a href="#a30f814b85f665384c0e2c821fe92756a">More...</a><br/></td></tr>
-<tr class="separator:a30f814b85f665384c0e2c821fe92756a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf28a85d06f08e9f7e660c536f69d1c"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a7bf28a85d06f08e9f7e660c536f69d1c">remaining_closing_blocks_</a></td></tr>
+<tr class="separator:a7bf28a85d06f08e9f7e660c536f69d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e4785e5e919e89f53e5a5edbbb58f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1Semaphore.html">tlx::Semaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a63e4785e5e919e89f53e5a5edbbb58f7">sem_closing_blocks_</a></td></tr>
+<tr class="memdesc:a63e4785e5e919e89f53e5a5edbbb58f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of received stream closing Blocks.  <a href="#a63e4785e5e919e89f53e5a5edbbb58f7">More...</a><br/></td></tr>
+<tr class="separator:a63e4785e5e919e89f53e5a5edbbb58f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a08f9d7d340d452efab7eab158fcbfe64"></a>
@@ -753,7 +753,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a14462dd43d98b102fb217461e069f93c"></a>
+<a class="anchor" id="a7bf28a85d06f08e9f7e660c536f69d1c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -761,7 +761,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t remaining_closing_blocks_</td>
+          <td class="memname">std::atomic&lt;size_t&gt; remaining_closing_blocks_</td>
         </tr>
       </table>
   </td>
@@ -908,7 +908,7 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a30f814b85f665384c0e2c821fe92756a"></a>
+<a class="anchor" id="a63e4785e5e919e89f53e5a5edbbb58f7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -916,7 +916,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classthrill_1_1common_1_1Semaphore.html">common::Semaphore</a> sem_closing_blocks_</td>
+          <td class="memname"><a class="el" href="classtlx_1_1Semaphore.html">tlx::Semaphore</a> sem_closing_blocks_</td>
         </tr>
       </table>
   </td>
@@ -934,12 +934,12 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a500bb11613132e914c38ffa1713cdd6a"></a>
+<a class="anchor" id="a697c66dbf61e62e97cc252575717efa3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classthrill_1_1common_1_1Semaphore.html">common::Semaphore</a> sem_queue_</td>
+          <td class="memname"><a class="el" href="classtlx_1_1Semaphore.html">tlx::Semaphore</a> sem_queue_</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1093,7 +1093,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1StreamData.html">StreamData</a></li>
-    <li class="footer">Generated on Thu May 17 2018 13:49:25 for Thrill by
+    <li class="footer">Generated on Mon May 28 2018 16:12:17 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

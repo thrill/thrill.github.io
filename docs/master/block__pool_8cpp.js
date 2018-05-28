@@ -1,7 +1,7 @@
 var block__pool_8cpp =
 [
     [ "ReadingMap", "block__pool_8cpp.html#ad887a784727b61be20dad5f45c91df8d", null ],
-    [ "WritingMap", "block__pool_8cpp.html#a84fa74f8acdf008fd2c6ec55860b7264", null ],
+    [ "WritingMap", "block__pool_8cpp.html#a78c0fe14b3f08e8d3856e8dfec111c11", null ],
     [ "operator<<", "block__pool_8cpp.html#a25b243ac7925b05888f932575a477129", null ],
     [ "OurNewHandler", "block__pool_8cpp.html#a238f114b8424b5477f7b03dfb53335ea", null ],
     [ "debug_alloc", "block__pool_8cpp.html#acf92cb0afffb638d6245198f86b72645", null ],

@@ -129,15 +129,7 @@ class thrill::common::SharedState&lt; ValueType &gt;</h3>
 
 
 <p>Definition at line <a class="el" href="shared__state_8hpp_source.html#l00027">27</a> of file <a class="el" href="shared__state_8hpp_source.html">shared_state.hpp</a>.</p>
-</div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for SharedState&lt; ValueType &gt;:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1common_1_1SharedState__inherit__graph.svg" width="374" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
-
 <p><code>#include &lt;<a class="el" href="shared__state_8hpp_source.html">shared_state.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -274,6 +266,8 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="shared__state_8hpp_source.html#l00063">63</a> of file <a class="el" href="shared__state_8hpp_source.html">shared_state.hpp</a>.</p>
 
+<p>References <a class="el" href="shared__state_8hpp_source.html#l00032">SharedState&lt; ValueType &gt;::mutex_</a>, and <a class="el" href="shared__state_8hpp_source.html#l00038">SharedState&lt; ValueType &gt;::state_</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ac199105976c0e609bf8fcfd1dd19f132"></a>
@@ -326,7 +320,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="shared__state_8hpp_source.html#l00050">50</a> of file <a class="el" href="shared__state_8hpp_source.html">shared_state.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="request_8cpp_source.html#l00129">Request::cancel()</a>, <a class="el" href="request_8cpp_source.html#l00155">Request::completed()</a>, <a class="el" href="linuxaio__queue_8cpp_source.html#l00251">LinuxaioQueue::PostAsync()</a>, <a class="el" href="request__queue__impl__worker_8cpp_source.html#l00034">RequestQueueImplWorker::StartThread()</a>, <a class="el" href="request__queue__impl__worker_8cpp_source.html#l00042">RequestQueueImplWorker::StopThread()</a>, <a class="el" href="linuxaio__queue_8cpp_source.html#l00266">LinuxaioQueue::WaitAsync()</a>, <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00099">RequestQueueImpl1Q::worker()</a>, and <a class="el" href="request__queue__impl__qw__qr_8cpp_source.html#l00130">RequestQueueImplQwQr::worker()</a>.</p>
+<p>References <a class="el" href="shared__state_8hpp_source.html#l00035">SharedState&lt; ValueType &gt;::cv_</a>, <a class="el" href="shared__state_8hpp_source.html#l00032">SharedState&lt; ValueType &gt;::mutex_</a>, and <a class="el" href="shared__state_8hpp_source.html#l00038">SharedState&lt; ValueType &gt;::state_</a>.</p>
 
 </div>
 </div>
@@ -354,7 +348,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="shared__state_8hpp_source.html#l00057">57</a> of file <a class="el" href="shared__state_8hpp_source.html">shared_state.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="request_8cpp_source.html#l00117">Request::wait()</a>.</p>
+<p>References <a class="el" href="shared__state_8hpp_source.html#l00035">SharedState&lt; ValueType &gt;::cv_</a>, <a class="el" href="shared__state_8hpp_source.html#l00032">SharedState&lt; ValueType &gt;::mutex_</a>, and <a class="el" href="shared__state_8hpp_source.html#l00038">SharedState&lt; ValueType &gt;::state_</a>.</p>
 
 </div>
 </div>
@@ -381,7 +375,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="shared__state_8hpp_source.html#l00035">35</a> of file <a class="el" href="shared__state_8hpp_source.html">shared_state.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="shared__state_8hpp_source.html#l00050">SharedState&lt; State &gt;::set_to()</a>, and <a class="el" href="shared__state_8hpp_source.html#l00057">SharedState&lt; State &gt;::wait_for()</a>.</p>
+<p>Referenced by <a class="el" href="shared__state_8hpp_source.html#l00050">SharedState&lt; ValueType &gt;::set_to()</a>, and <a class="el" href="shared__state_8hpp_source.html#l00057">SharedState&lt; ValueType &gt;::wait_for()</a>.</p>
 
 </div>
 </div>
@@ -407,7 +401,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="shared__state_8hpp_source.html#l00032">32</a> of file <a class="el" href="shared__state_8hpp_source.html">shared_state.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="shared__state_8hpp_source.html#l00063">SharedState&lt; State &gt;::operator()()</a>, <a class="el" href="shared__state_8hpp_source.html#l00050">SharedState&lt; State &gt;::set_to()</a>, and <a class="el" href="shared__state_8hpp_source.html#l00057">SharedState&lt; State &gt;::wait_for()</a>.</p>
+<p>Referenced by <a class="el" href="shared__state_8hpp_source.html#l00063">SharedState&lt; ValueType &gt;::operator()()</a>, <a class="el" href="shared__state_8hpp_source.html#l00050">SharedState&lt; ValueType &gt;::set_to()</a>, and <a class="el" href="shared__state_8hpp_source.html#l00057">SharedState&lt; ValueType &gt;::wait_for()</a>.</p>
 
 </div>
 </div>
@@ -433,7 +427,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="shared__state_8hpp_source.html#l00038">38</a> of file <a class="el" href="shared__state_8hpp_source.html">shared_state.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="shared__state_8hpp_source.html#l00063">SharedState&lt; State &gt;::operator()()</a>, <a class="el" href="shared__state_8hpp_source.html#l00050">SharedState&lt; State &gt;::set_to()</a>, and <a class="el" href="shared__state_8hpp_source.html#l00057">SharedState&lt; State &gt;::wait_for()</a>.</p>
+<p>Referenced by <a class="el" href="shared__state_8hpp_source.html#l00063">SharedState&lt; ValueType &gt;::operator()()</a>, <a class="el" href="shared__state_8hpp_source.html#l00050">SharedState&lt; ValueType &gt;::set_to()</a>, and <a class="el" href="shared__state_8hpp_source.html#l00057">SharedState&lt; ValueType &gt;::wait_for()</a>.</p>
 
 </div>
 </div>
@@ -446,7 +440,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1common.html">common</a></li><li class="navelem"><a class="el" href="classthrill_1_1common_1_1SharedState.html">SharedState</a></li>
-    <li class="footer">Generated on Thu May 17 2018 13:49:24 for Thrill by
+    <li class="footer">Generated on Mon May 28 2018 16:12:16 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

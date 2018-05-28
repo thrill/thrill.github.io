@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['offsetallocator',['OffsetAllocator',['../structthrill_1_1io_1_1OffsetAllocator.html',1,'thrill::io']]],
   ['ourconcurrentboundedqueue',['OurConcurrentBoundedQueue',['../classthrill_1_1common_1_1OurConcurrentBoundedQueue.html',1,'thrill::common']]],
   ['ourconcurrentboundedqueue_3c_20thrill_3a_3adata_3a_3ablock_20_3e',['OurConcurrentBoundedQueue&lt; thrill::data::Block &gt;',['../classthrill_1_1common_1_1OurConcurrentBoundedQueue.html',1,'thrill::common']]],
   ['ourconcurrentboundedqueue_3c_20thrill_3a_3adata_3a_3amixblockqueue_3a_3asrcblockpair_20_3e',['OurConcurrentBoundedQueue&lt; thrill::data::MixBlockQueue::SrcBlockPair &gt;',['../classthrill_1_1common_1_1OurConcurrentBoundedQueue.html',1,'thrill::common']]],

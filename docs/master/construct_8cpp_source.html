@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        this-&gt;my_rank_ = my_rank_;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a>(my_rank_ &lt; endpoints.size());</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; starting: &quot;</span> &lt;&lt; endpoints[my_rank_];</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; starting: &quot;</span> &lt;&lt; endpoints[my_rank_];</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; group_count_; i++) {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            groups_[i] = std::make_unique&lt;Group&gt;(my_rank_, endpoints.size());</div>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            listener_ = Connection(std::move(listen_socket));</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; listening: &quot;</span> &lt;&lt; endpoints[my_rank_];</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; listening: &quot;</span> &lt;&lt; endpoints[my_rank_];</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="comment">// Initiate connections to all hosts with higher id.</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">for</span> (uint32_t g = 0; g &lt; group_count_; g++) {</div>
@@ -219,7 +219,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">// Dispatch until everything is connected.</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">while</span> (!IsInitializationFinished())</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; dispatching.&quot;</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; dispatching.&quot;</span>;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            dispatcher_.Dispatch();</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
@@ -228,13 +228,13 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="comment">// All connected, Dispose listener.</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        listener_.Close();</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; done&quot;</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; done&quot;</span>;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; group_count_; j++) {</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="comment">// output list of file descriptors connected to partners</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i != address_list.size(); ++i) {</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keywordflow">if</span> (i == my_rank_) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Group &quot;</span> &lt;&lt; j</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Group &quot;</span> &lt;&lt; j</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot; link &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; = fd &quot;</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                    &lt;&lt; groups_[j]-&gt;tcp_connection(i).GetSocket().fd();</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            }</div>
@@ -362,7 +362,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        tcp.set_state(<a class="code" href="group__net__tcp.html#ggaf905f830af92a188bfa734cbd78f7211a6ea90df6fe966852496b4846da497fb0">ConnectionState::Connecting</a>);</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">if</span> (res == 0) {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Early connect success. This should not happen.&quot;</span>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Early connect success. This should not happen.&quot;</span>;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            <span class="comment">// connect() already successful? this should not be.</span></div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            OnConnected(tcp, address);</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
@@ -373,7 +373,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                                 });</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        }</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (errno == ECONNREFUSED) {</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Early connect refused.&quot;</span>;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Early connect refused.&quot;</span>;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            <span class="comment">// connect() already refused connection?</span></div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            OnConnected(tcp, address, errno);</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        }</div>
@@ -474,7 +474,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keywordtype">int</span> err = _err ? _err : tcp.GetSocket().GetError();</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keywordflow">if</span> (tcp.state() != <a class="code" href="group__net__tcp.html#ggaf905f830af92a188bfa734cbd78f7211a6ea90df6fe966852496b4846da497fb0">ConnectionState::Connecting</a>) {</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; my_rank_</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; my_rank_</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                &lt;&lt; <span class="stringliteral">&quot; expected connection state &quot;</span> &lt;&lt; <a class="code" href="group__net__tcp.html#ggaf905f830af92a188bfa734cbd78f7211a6ea90df6fe966852496b4846da497fb0">ConnectionState::Connecting</a></div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                &lt;&lt; <span class="stringliteral">&quot; but got &quot;</span> &lt;&lt; tcp.state();</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            <a class="code" href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e">die</a>(<span class="stringliteral">&quot;FAULTY STATE DETECTED&quot;</span>);</div>
@@ -487,7 +487,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            <span class="keywordtype">size_t</span> next_timeout = NextConnectTimeout(</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                tcp.group_id(), tcp.peer_id(), address);</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Connect to &quot;</span> &lt;&lt; address.ToStringHostPort()</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Connect to &quot;</span> &lt;&lt; address.ToStringHostPort()</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                &lt;&lt; <span class="stringliteral">&quot; fd=&quot;</span> &lt;&lt; tcp.GetSocket().fd()</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                &lt;&lt; <span class="stringliteral">&quot; timed out or refused with error &quot;</span> &lt;&lt; err &lt;&lt; <span class="stringliteral">&quot;.&quot;</span></div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                &lt;&lt; <span class="stringliteral">&quot; Attempting reconnect in &quot;</span> &lt;&lt; next_timeout &lt;&lt; <span class="stringliteral">&quot;msec&quot;</span>;</div>
@@ -516,7 +516,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        tcp.set_state(<a class="code" href="group__net__tcp.html#ggaf905f830af92a188bfa734cbd78f7211a8d525480c01faa34f8e3061a39fcb011">ConnectionState::TransportConnected</a>);</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;OnConnected() &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; connected&quot;</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;OnConnected() &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; connected&quot;</span></div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            &lt;&lt; <span class="stringliteral">&quot; fd=&quot;</span> &lt;&lt; tcp.GetSocket().fd()</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            &lt;&lt; <span class="stringliteral">&quot; to=&quot;</span> &lt;&lt; tcp.GetSocket().GetPeerAddress()</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            &lt;&lt; <span class="stringliteral">&quot; err=&quot;</span> &lt;&lt; err</div>
@@ -530,7 +530,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;            AsyncWriteCallback::make&lt;</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                Construction, &amp;Construction::OnHelloSent&gt;(<span class="keyword">this</span>));</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; sent active hello to &quot;</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; sent active hello to &quot;</span></div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;            &lt;&lt; <span class="stringliteral">&quot;client &quot;</span> &lt;&lt; tcp.peer_id() &lt;&lt; <span class="stringliteral">&quot; group id &quot;</span> &lt;&lt; tcp.group_id();</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        dispatcher_.AsyncRead(</div>
@@ -563,10 +563,10 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        <span class="comment">// We already know those values since we connected actively. So, check</span></div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        <span class="comment">// for any errors.</span></div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="keywordflow">if</span> (tcp.peer_id() != msg-&gt;id) {</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;FAULTY ID DETECTED&quot;</span>;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;FAULTY ID DETECTED&quot;</span>;</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        }</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;client &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; expected signature from client &quot;</span></div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;client &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; expected signature from client &quot;</span></div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;            &lt;&lt; tcp.peer_id() &lt;&lt; <span class="stringliteral">&quot; and  got signature &quot;</span></div>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;            &lt;&lt; <span class="stringliteral">&quot;from client &quot;</span> &lt;&lt; msg-&gt;id;</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;</div>
@@ -594,7 +594,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        <span class="keyword">const</span> WelcomeMsg* msg_in = <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>WelcomeMsg*<span class="keyword">&gt;</span>(buffer.data());</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <a class="code" href="die_8hpp.html#a334b021076c0dff0e3964c6819774ceb">die_unequal</a>(msg_in-&gt;thrill_sign, uint64_t(thrill_sign));</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;client &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; got signature from client&quot;</span></div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;client &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; got signature from client&quot;</span></div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;            &lt;&lt; <span class="stringliteral">&quot; group &quot;</span> &lt;&lt; msg_in-&gt;group_id</div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;            &lt;&lt; <span class="stringliteral">&quot; id &quot;</span> &lt;&lt; msg_in-&gt;id;</div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;</div>
@@ -621,7 +621,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;            AsyncWriteCallback::make&lt;</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                Construction, &amp;Construction::OnHelloSent&gt;(<span class="keyword">this</span>));</div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; my_rank_</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; my_rank_</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;            &lt;&lt; <span class="stringliteral">&quot; sent passive hello to client &quot;</span> &lt;&lt; msg_in-&gt;id;</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    }</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;<span class="comment"></span></div>
@@ -641,7 +641,7 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;</div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        tcp.set_state(<a class="code" href="group__net__tcp.html#ggaf905f830af92a188bfa734cbd78f7211a8d525480c01faa34f8e3061a39fcb011">ConnectionState::TransportConnected</a>);</div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;OnIncomingConnection() &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; accepted connection&quot;</span></div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;OnIncomingConnection() &quot;</span> &lt;&lt; my_rank_ &lt;&lt; <span class="stringliteral">&quot; accepted connection&quot;</span></div>
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;            &lt;&lt; <span class="stringliteral">&quot; fd=&quot;</span> &lt;&lt; connections_.back().GetSocket().fd()</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;            &lt;&lt; <span class="stringliteral">&quot; from=&quot;</span> &lt;&lt; connections_.back().GetPeerAddress();</div>
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;</div>
@@ -703,17 +703,17 @@ $(document).ready(function(){initNavTree('construct_8cpp_source.html','');});
 <div class="ttc" id="group__net__tcp_html_gafe3e5df67abb484631c2cc356ffe1846"><div class="ttname"><a href="group__net__tcp.html#gafe3e5df67abb484631c2cc356ffe1846">thrill::net::tcp::Construct</a></div><div class="ttdeci">void Construct(SelectDispatcher &amp;dispatcher, size_t my_rank, const std::vector&lt; std::string &gt; &amp;endpoints, std::unique_ptr&lt; Group &gt; *groups, size_t group_count)</div><div class="ttdef"><b>Definition:</b> <a href="construct_8cpp_source.html#l00543">construct.cpp:543</a></div></div>
 <div class="ttc" id="construct_8hpp_html"><div class="ttname"><a href="construct_8hpp.html">construct.hpp</a></div></div>
 <div class="ttc" id="group__net__tcp_html_ggaf905f830af92a188bfa734cbd78f7211a38c07f2d1e08abf0b30d8fd9b917188e"><div class="ttname"><a href="group__net__tcp.html#ggaf905f830af92a188bfa734cbd78f7211a38c07f2d1e08abf0b30d8fd9b917188e">thrill::net::tcp::HelloSent</a></div><div class="ttdef"><b>Definition:</b> <a href="tcp_2connection_8hpp_source.html#l00037">connection.hpp:37</a></div></div>
-<div class="ttc" id="namespacethrill_1_1api_html_ad12de406b81c6e1a4ffc32a12517e557"><div class="ttname"><a href="namespacethrill_1_1api.html#ad12de406b81c6e1a4ffc32a12517e557">thrill::api::Initialize</a></div><div class="ttdeci">static bool Initialize()</div><div class="ttdef"><b>Definition:</b> <a href="context_8cpp_source.html#l00272">context.cpp:272</a></div></div>
+<div class="ttc" id="namespacethrill_1_1api_html_ad12de406b81c6e1a4ffc32a12517e557"><div class="ttname"><a href="namespacethrill_1_1api.html#ad12de406b81c6e1a4ffc32a12517e557">thrill::api::Initialize</a></div><div class="ttdeci">static bool Initialize()</div><div class="ttdef"><b>Definition:</b> <a href="context_8cpp_source.html#l00273">context.cpp:273</a></div></div>
 <div class="ttc" id="die_8hpp_html"><div class="ttname"><a href="die_8hpp.html">die.hpp</a></div></div>
+<div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html_a159ca84d25a5487d8e81e4438725df19"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a></div><div class="ttdeci">#define LOG</div><div class="ttdoc">Default logging method: output if the local debug variable is true. </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00141">logger.hpp:141</a></div></div>
 <div class="ttc" id="group__net__tcp_html_ggaf905f830af92a188bfa734cbd78f7211a8d525480c01faa34f8e3061a39fcb011"><div class="ttname"><a href="group__net__tcp.html#ggaf905f830af92a188bfa734cbd78f7211a8d525480c01faa34f8e3061a39fcb011">thrill::net::tcp::TransportConnected</a></div><div class="ttdef"><b>Definition:</b> <a href="tcp_2connection_8hpp_source.html#l00036">connection.hpp:36</a></div></div>
-<div class="ttc" id="thrill_2common_2logger_8hpp_html_a159ca84d25a5487d8e81e4438725df19"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a></div><div class="ttdeci">#define LOG</div><div class="ttdoc">Default logging method: output if the local debug variable is true. </div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2logger_8hpp_source.html#l00172">logger.hpp:172</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_877fdf1e6de6dbbd26be6a4f8db0e6bf.html">net</a></li><li class="navelem"><a class="el" href="dir_6932eba81436afd0bb7e09bea6fff5b7.html">tcp</a></li><li class="navelem"><a class="el" href="construct_8cpp.html">construct.cpp</a></li>
-    <li class="footer">Generated on Thu May 17 2018 13:49:20 for Thrill by
+    <li class="footer">Generated on Mon May 28 2018 16:12:14 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

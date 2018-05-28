@@ -145,129 +145,130 @@ $(document).ready(function(){initNavTree('multikey__quicksort_8hpp_source.html',
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>tlx {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>sort_strings_detail {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> StringSet&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespacetlx_1_1sort__strings__detail.html#a21be236ba84e1f61521ffe333e1f35cf">   35</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacetlx_1_1sort__strings__detail.html#a21be236ba84e1f61521ffe333e1f35cf">vec_swap</a>(</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">typename</span> StringSet::Iterator a, <span class="keyword">typename</span> StringSet::Iterator b, <span class="keywordtype">size_t</span> n) {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">while</span> (n-- &gt; 0)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">std::swap</a>(*a++, *b++);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> StringSet&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="namespacetlx_1_1sort__strings__detail.html#a845bc4c1ce60f7593d847e16e95c34c5">   42</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">typename</span> StringSet::Iterator <a class="code" href="namespacetlx_1_1sort__strings__detail.html#a845bc4c1ce60f7593d847e16e95c34c5">med3func</a>(</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> StringSet&amp; ss,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">typename</span> StringSet::Iterator a, <span class="keyword">typename</span> StringSet::Iterator b,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">typename</span> StringSet::Iterator c, <span class="keywordtype">size_t</span> depth) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">typename</span> StringSet::Char va = ss.get_char(*a, depth);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">typename</span> StringSet::Char vb = ss.get_char(*b, depth);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">if</span> (va == vb)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> a;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">typename</span> StringSet::Char vc = ss.get_char(*c, depth);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> (vc == va || vc == vb)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> c;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> va &lt; vb</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;           ? (vb &lt; vc ? b : (va &lt; vc ? c : a))</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;           : (vb &gt; vc ? b : (va &lt; vc ? a : c));</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">/*!</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> * Generic multikey quicksort for strings. Based on multikey quicksort, a quick</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> * sort algorithm for arrays of character strings by Bentley and Sedgewick. This</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> * method requires up to O(maxlcp) memory due to the recursion stack and it runs</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> * in expected time O(D + n log n) and worst-case time O(D + n^2).</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * J. Bentley and R. Sedgewick. Fast algorithms for sorting and searching</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> * strings. In Proceedings of 8th Annual ACM-SIAM Symposium on Discrete</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> * Algorithms, 1997.</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> StringSet&gt;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="namespacetlx_1_1sort__strings__detail.html#ad0cd093ac3afda49e9ce1c4c119bb7a9">   69</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacetlx_1_1sort__strings__detail.html#ad0cd093ac3afda49e9ce1c4c119bb7a9">multikey_quicksort</a>(</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> StringSet&amp; ss, <span class="keywordtype">size_t</span> depth, <span class="keywordtype">size_t</span> memory) {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> StringSet::Iterator Iterator;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">const</span> Iterator a = ss.begin();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">size_t</span> n = ss.size();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// try to estimate the amount of memory in a stack frame</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> memory_use =</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        2 * <span class="keyword">sizeof</span>(size_t) + <span class="keyword">sizeof</span>(StringSet) + 5 * <span class="keyword">sizeof</span>(Iterator);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> (n &lt; 32 || (memory != 0 &amp;&amp; memory &lt; memory_use + 1)) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacetlx_1_1sort__strings__detail.html#a67e6e553c0da73c40d179757906530a2">insertion_sort</a>(ss, depth, memory);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    ptrdiff_t r;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    Iterator pa, pb, pc, pd, pn;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        Iterator pl = a;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        Iterator pm = a + (n / 2);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        pn = a + (n - 1);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">if</span> (n &gt; 30) {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="comment">// on big arrays: pseudomedian of 9</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordtype">size_t</span> d = (n / 8);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            pl = <a class="code" href="namespacetlx_1_1sort__strings__detail.html#a845bc4c1ce60f7593d847e16e95c34c5">med3func</a>(ss, pl, pl + d, pl + 2 * d, depth);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            pm = <a class="code" href="namespacetlx_1_1sort__strings__detail.html#a845bc4c1ce60f7593d847e16e95c34c5">med3func</a>(ss, pm - d, pm, pm + d, depth);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            pn = <a class="code" href="namespacetlx_1_1sort__strings__detail.html#a845bc4c1ce60f7593d847e16e95c34c5">med3func</a>(ss, pn - 2 * d, pn - d, pn, depth);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        pm = <a class="code" href="namespacetlx_1_1sort__strings__detail.html#a845bc4c1ce60f7593d847e16e95c34c5">med3func</a>(ss, pl, pm, pn, depth);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">std::swap</a>(*a, *pm);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">int</span> pivot = ss.get_char(*a, depth);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        pa = pb = a + 1;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        pc = pd = a + n - 1;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">for</span> ( ; ; ) {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">while</span> (pb &lt;= pc &amp;&amp; (r = static_cast&lt;int&gt;(ss.get_char(*pb, depth)) - pivot) &lt;= 0) {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">if</span> (r == 0) <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">std::swap</a>(*pa++, *pb);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                pb++;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">while</span> (pb &lt;= pc &amp;&amp; (r = static_cast&lt;int&gt;(ss.get_char(*pc, depth)) - pivot) &gt;= 0) {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keywordflow">if</span> (r == 0) <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">std::swap</a>(*pc, *pd--);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                pc--;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">if</span> (pb &gt; pc) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">std::swap</a>(*pb++, *pc--);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        pn = a + n;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        r = <a class="code" href="namespacethrill_1_1common.html#af06fbf706bdaafea92ddc5c8351e7177">std::min</a>(pa - a, pb - pa);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        vec_swap&lt;StringSet&gt;(a, pb - r, r);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        r = <a class="code" href="namespacethrill_1_1common.html#af06fbf706bdaafea92ddc5c8351e7177">std::min</a>(pd - pc, pn - pd - 1);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        vec_swap&lt;StringSet&gt;(pb, pn - r, r);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span> ((r = pb - pa) &gt; 1)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="namespacetlx_1_1sort__strings__detail.html#ad0cd093ac3afda49e9ce1c4c119bb7a9">multikey_quicksort</a>(ss.sub(a, a + r), depth, memory - memory_use);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">if</span> (ss.get_char(*(a + r), depth) != 0)</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="namespacetlx_1_1sort__strings__detail.html#ad0cd093ac3afda49e9ce1c4c119bb7a9">multikey_quicksort</a>(ss.sub(a + r, a + r + (pa - a) + (pn - pd - 1)),</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                           depth + 1, memory - memory_use);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span> ((r = pd - pc) &gt; 1)</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <a class="code" href="namespacetlx_1_1sort__strings__detail.html#ad0cd093ac3afda49e9ce1c4c119bb7a9">multikey_quicksort</a>(ss.sub(a + n - r, a + n),</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                           depth, memory - memory_use);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;} <span class="comment">// namespace sort_strings_detail</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;} <span class="comment">// namespace tlx</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif // !TLX_SORT_STRINGS_MULTIKEY_QUICKSORT_HEADER</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="ttc" id="namespacetlx_1_1sort__strings__detail_html_a21be236ba84e1f61521ffe333e1f35cf"><div class="ttname"><a href="namespacetlx_1_1sort__strings__detail.html#a21be236ba84e1f61521ffe333e1f35cf">tlx::sort_strings_detail::vec_swap</a></div><div class="ttdeci">static void vec_swap(typename StringSet::Iterator a, typename StringSet::Iterator b, size_t n)</div><div class="ttdef"><b>Definition:</b> <a href="multikey__quicksort_8hpp_source.html#l00035">multikey_quicksort.hpp:35</a></div></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>tlx {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>sort_strings_detail {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> StringSet&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespacetlx_1_1sort__strings__detail.html#a21be236ba84e1f61521ffe333e1f35cf">   36</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacetlx_1_1sort__strings__detail.html#a21be236ba84e1f61521ffe333e1f35cf">vec_swap</a>(</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">typename</span> StringSet::Iterator a, <span class="keyword">typename</span> StringSet::Iterator b, <span class="keywordtype">size_t</span> n) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">while</span> (n-- &gt; 0)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">std::swap</a>(*a++, *b++);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> StringSet&gt;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespacetlx_1_1sort__strings__detail.html#a845bc4c1ce60f7593d847e16e95c34c5">   43</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">typename</span> StringSet::Iterator <a class="code" href="namespacetlx_1_1sort__strings__detail.html#a845bc4c1ce60f7593d847e16e95c34c5">med3func</a>(</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> StringSet&amp; ss,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">typename</span> StringSet::Iterator a, <span class="keyword">typename</span> StringSet::Iterator b,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">typename</span> StringSet::Iterator c, <span class="keywordtype">size_t</span> depth) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">typename</span> StringSet::Char va = ss.get_char(*a, depth);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">typename</span> StringSet::Char vb = ss.get_char(*b, depth);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (va == vb)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> a;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">typename</span> StringSet::Char vc = ss.get_char(*c, depth);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (vc == va || vc == vb)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> c;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> va &lt; vb</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;           ? (vb &lt; vc ? b : (va &lt; vc ? c : a))</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;           : (vb &gt; vc ? b : (va &lt; vc ? a : c));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">/*!</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> * Generic multikey quicksort for strings. Based on multikey quicksort, a quick</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> * sort algorithm for arrays of character strings by Bentley and Sedgewick. This</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> * method requires up to O(maxlcp) memory due to the recursion stack and it runs</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> * in expected time O(D + n log n) and worst-case time O(D + n^2).</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> * J. Bentley and R. Sedgewick. Fast algorithms for sorting and searching</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> * strings. In Proceedings of 8th Annual ACM-SIAM Symposium on Discrete</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * Algorithms, 1997.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> StringSet&gt;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="namespacetlx_1_1sort__strings__detail.html#ad0cd093ac3afda49e9ce1c4c119bb7a9">   70</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacetlx_1_1sort__strings__detail.html#ad0cd093ac3afda49e9ce1c4c119bb7a9">multikey_quicksort</a>(</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">const</span> StringSet&amp; ss, <span class="keywordtype">size_t</span> depth, <span class="keywordtype">size_t</span> memory) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> StringSet::Iterator Iterator;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">const</span> Iterator a = ss.begin();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">size_t</span> n = ss.size();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// try to estimate the amount of memory in a stack frame</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> memory_use =</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        2 * <span class="keyword">sizeof</span>(size_t) + <span class="keyword">sizeof</span>(StringSet) + 5 * <span class="keyword">sizeof</span>(Iterator);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">if</span> (n &lt; 32 || (memory != 0 &amp;&amp; memory &lt; memory_use + 1)) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacetlx_1_1sort__strings__detail.html#a67e6e553c0da73c40d179757906530a2">insertion_sort</a>(ss, depth, memory);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    ptrdiff_t r;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    Iterator pa, pb, pc, pd, pn;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        Iterator pl = a;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        Iterator pm = a + (n / 2);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        pn = a + (n - 1);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">if</span> (n &gt; 30) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="comment">// on big arrays: pseudomedian of 9</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordtype">size_t</span> d = (n / 8);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            pl = <a class="code" href="namespacetlx_1_1sort__strings__detail.html#a845bc4c1ce60f7593d847e16e95c34c5">med3func</a>(ss, pl, pl + d, pl + 2 * d, depth);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            pm = <a class="code" href="namespacetlx_1_1sort__strings__detail.html#a845bc4c1ce60f7593d847e16e95c34c5">med3func</a>(ss, pm - d, pm, pm + d, depth);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            pn = <a class="code" href="namespacetlx_1_1sort__strings__detail.html#a845bc4c1ce60f7593d847e16e95c34c5">med3func</a>(ss, pn - 2 * d, pn - d, pn, depth);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        pm = <a class="code" href="namespacetlx_1_1sort__strings__detail.html#a845bc4c1ce60f7593d847e16e95c34c5">med3func</a>(ss, pl, pm, pn, depth);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">std::swap</a>(*a, *pm);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">int</span> pivot = ss.get_char(*a, depth);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        pa = pb = a + 1;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        pc = pd = a + n - 1;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">for</span> ( ; ; ) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">while</span> (pb &lt;= pc &amp;&amp; (r = static_cast&lt;int&gt;(ss.get_char(*pb, depth)) - pivot) &lt;= 0) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                <span class="keywordflow">if</span> (r == 0) <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">std::swap</a>(*pa++, *pb);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                pb++;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">while</span> (pb &lt;= pc &amp;&amp; (r = static_cast&lt;int&gt;(ss.get_char(*pc, depth)) - pivot) &gt;= 0) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keywordflow">if</span> (r == 0) <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">std::swap</a>(*pc, *pd--);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                pc--;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">if</span> (pb &gt; pc) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">std::swap</a>(*pb++, *pc--);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        pn = a + n;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        r = <a class="code" href="namespacethrill_1_1common.html#af06fbf706bdaafea92ddc5c8351e7177">std::min</a>(pa - a, pb - pa);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        vec_swap&lt;StringSet&gt;(a, pb - r, r);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        r = <a class="code" href="namespacethrill_1_1common.html#af06fbf706bdaafea92ddc5c8351e7177">std::min</a>(pd - pc, pn - pd - 1);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        vec_swap&lt;StringSet&gt;(pb, pn - r, r);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span> ((r = pb - pa) &gt; 1)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="namespacetlx_1_1sort__strings__detail.html#ad0cd093ac3afda49e9ce1c4c119bb7a9">multikey_quicksort</a>(ss.sub(a, a + r), depth, memory - memory_use);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span> (ss.get_char(*(a + r), depth) != 0)</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="namespacetlx_1_1sort__strings__detail.html#ad0cd093ac3afda49e9ce1c4c119bb7a9">multikey_quicksort</a>(ss.sub(a + r, a + r + (pa - a) + (pn - pd - 1)),</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                           depth + 1, memory - memory_use);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">if</span> ((r = pd - pc) &gt; 1)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <a class="code" href="namespacetlx_1_1sort__strings__detail.html#ad0cd093ac3afda49e9ce1c4c119bb7a9">multikey_quicksort</a>(ss.sub(a + n - r, a + n),</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                           depth, memory - memory_use);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;} <span class="comment">// namespace sort_strings_detail</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;} <span class="comment">// namespace tlx</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif // !TLX_SORT_STRINGS_MULTIKEY_QUICKSORT_HEADER</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="ttc" id="namespacetlx_1_1sort__strings__detail_html_a21be236ba84e1f61521ffe333e1f35cf"><div class="ttname"><a href="namespacetlx_1_1sort__strings__detail.html#a21be236ba84e1f61521ffe333e1f35cf">tlx::sort_strings_detail::vec_swap</a></div><div class="ttdeci">static void vec_swap(typename StringSet::Iterator a, typename StringSet::Iterator b, size_t n)</div><div class="ttdef"><b>Definition:</b> <a href="multikey__quicksort_8hpp_source.html#l00036">multikey_quicksort.hpp:36</a></div></div>
 <div class="ttc" id="namespacetlx_1_1sort__strings__detail_html_a67e6e553c0da73c40d179757906530a2"><div class="ttname"><a href="namespacetlx_1_1sort__strings__detail.html#a67e6e553c0da73c40d179757906530a2">tlx::sort_strings_detail::insertion_sort</a></div><div class="ttdeci">static void insertion_sort(const StringSet &amp;ss, size_t depth, size_t)</div><div class="ttdef"><b>Definition:</b> <a href="insertion__sort_8hpp_source.html#l00028">insertion_sort.hpp:28</a></div></div>
 <div class="ttc" id="namespacetlx_html_ade1320658af9846df1831480a96e7a38"><div class="ttname"><a href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">tlx::swap</a></div><div class="ttdeci">void swap(CountingPtr&lt; A, D &gt; &amp;a1, CountingPtr&lt; A, D &gt; &amp;a2) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="counting__ptr_8hpp_source.html#l00263">counting_ptr.hpp:263</a></div></div>
 <div class="ttc" id="insertion__sort_8hpp_html"><div class="ttname"><a href="insertion__sort_8hpp.html">insertion_sort.hpp</a></div></div>
-<div class="ttc" id="namespacetlx_1_1sort__strings__detail_html_ad0cd093ac3afda49e9ce1c4c119bb7a9"><div class="ttname"><a href="namespacetlx_1_1sort__strings__detail.html#ad0cd093ac3afda49e9ce1c4c119bb7a9">tlx::sort_strings_detail::multikey_quicksort</a></div><div class="ttdeci">static void multikey_quicksort(const StringSet &amp;ss, size_t depth, size_t memory)</div><div class="ttdoc">Generic multikey quicksort for strings. </div><div class="ttdef"><b>Definition:</b> <a href="multikey__quicksort_8hpp_source.html#l00069">multikey_quicksort.hpp:69</a></div></div>
+<div class="ttc" id="namespacetlx_1_1sort__strings__detail_html_ad0cd093ac3afda49e9ce1c4c119bb7a9"><div class="ttname"><a href="namespacetlx_1_1sort__strings__detail.html#ad0cd093ac3afda49e9ce1c4c119bb7a9">tlx::sort_strings_detail::multikey_quicksort</a></div><div class="ttdeci">static void multikey_quicksort(const StringSet &amp;ss, size_t depth, size_t memory)</div><div class="ttdoc">Generic multikey quicksort for strings. </div><div class="ttdef"><b>Definition:</b> <a href="multikey__quicksort_8hpp_source.html#l00070">multikey_quicksort.hpp:70</a></div></div>
 <div class="ttc" id="namespacethrill_1_1common_html_af06fbf706bdaafea92ddc5c8351e7177"><div class="ttname"><a href="namespacethrill_1_1common.html#af06fbf706bdaafea92ddc5c8351e7177">thrill::common::min</a></div><div class="ttdeci">static constexpr const T &amp; min(const T &amp;a, const T &amp;b)</div><div class="ttdoc">template for constexpr min, because std::min is not good enough. </div><div class="ttdef"><b>Definition:</b> <a href="functional_8hpp_source.html#l00059">functional.hpp:59</a></div></div>
-<div class="ttc" id="namespacetlx_1_1sort__strings__detail_html_a845bc4c1ce60f7593d847e16e95c34c5"><div class="ttname"><a href="namespacetlx_1_1sort__strings__detail.html#a845bc4c1ce60f7593d847e16e95c34c5">tlx::sort_strings_detail::med3func</a></div><div class="ttdeci">static StringSet::Iterator med3func(const StringSet &amp;ss, typename StringSet::Iterator a, typename StringSet::Iterator b, typename StringSet::Iterator c, size_t depth)</div><div class="ttdef"><b>Definition:</b> <a href="multikey__quicksort_8hpp_source.html#l00042">multikey_quicksort.hpp:42</a></div></div>
+<div class="ttc" id="namespacetlx_1_1sort__strings__detail_html_a845bc4c1ce60f7593d847e16e95c34c5"><div class="ttname"><a href="namespacetlx_1_1sort__strings__detail.html#a845bc4c1ce60f7593d847e16e95c34c5">tlx::sort_strings_detail::med3func</a></div><div class="ttdeci">static StringSet::Iterator med3func(const StringSet &amp;ss, typename StringSet::Iterator a, typename StringSet::Iterator b, typename StringSet::Iterator c, size_t depth)</div><div class="ttdef"><b>Definition:</b> <a href="multikey__quicksort_8hpp_source.html#l00043">multikey_quicksort.hpp:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="dir_12608fa34d4defb0bdb04f2e95c7c699.html">sort</a></li><li class="navelem"><a class="el" href="dir_6ca6acbfebcb640ace7fde1d044f50f0.html">strings</a></li><li class="navelem"><a class="el" href="multikey__quicksort_8hpp.html">multikey_quicksort.hpp</a></li>
-    <li class="footer">Generated on Thu May 17 2018 13:49:18 for Thrill by
+    <li class="footer">Generated on Mon May 28 2018 16:12:12 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

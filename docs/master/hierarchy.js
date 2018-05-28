@@ -26,11 +26,9 @@ var hierarchy =
     [ "CountingPtr< DIABase >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< DIANode< StackInput > >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< File >", "classtlx_1_1CountingPtr.html", null ],
-    [ "CountingPtr< FileBase >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< MixStream >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< MixStreamData >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< ReadStream >", "classtlx_1_1CountingPtr.html", null ],
-    [ "CountingPtr< Request, RequestDeleter >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< StreamData >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< thrill::data::DynBlockSourceInterface >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< thrill::data::File >", "classtlx_1_1CountingPtr.html", null ],
@@ -42,7 +40,6 @@ var hierarchy =
     [ "Delegate< void(Connection &c, data::PinnedByteBlockPtr &&bytes), mem::GPoolAllocator< char > >", "classtlx_1_1Delegate.html", null ],
     [ "Delegate< void(const ValueType &)>", "classtlx_1_1Delegate.html", null ],
     [ "Delegate< void(MPI_Status &), mem::GPoolAllocator< char > >", "classtlx_1_1Delegate.html", null ],
-    [ "Delegate< void(Request *, bool)>", "classtlx_1_1Delegate.html", null ],
     [ "BfsNode", "classexamples_1_1bfs_1_1BfsNode.html", null ],
     [ "NodeParentPair", "structexamples_1_1bfs_1_1NodeParentPair.html", null ],
     [ "TreeInfo", "structexamples_1_1bfs_1_1TreeInfo.html", null ],
@@ -62,7 +59,6 @@ var hierarchy =
     [ "IndexRank< Index >", "structexamples_1_1suffix__sorting_1_1IndexRank.html", null ],
     [ "IndexRankFlag< Index >", "structexamples_1_1suffix__sorting_1_1IndexRankFlag.html", null ],
     [ "HashWordHasher", "structexamples_1_1word__count_1_1HashWordHasher.html", null ],
-    [ "FillerStruct< FillSize >", "classthrill_1_1io_1_1mng__local_1_1FillerStruct.html", null ],
     [ "GradientResult< thrill::common::Vector >", "structexamples_1_1stochastic__gradient__descent_1_1GradientResult.html", null ],
     [ "hypergeometric_distribution<>", "classthrill_1_1common_1_1hypergeometric__distribution.html", null ],
     [ "ItemReaderToolsBase< BlockReader< BlockSource > >", "classthrill_1_1common_1_1ItemReaderToolsBase.html", [
@@ -120,23 +116,11 @@ var hierarchy =
     [ "ReservoirSamplingFast< ValueType, decltype(rng_)>", "classthrill_1_1common_1_1ReservoirSamplingFast.html", null ],
     [ "ReservoirSamplingGrow< SampleIndexPair >", "classthrill_1_1common_1_1ReservoirSamplingGrow.html", null ],
     [ "RingBuffer< Input >", "classtlx_1_1RingBuffer.html", null ],
-    [ "SharedState< State >", "classthrill_1_1common_1_1SharedState.html", null ],
-    [ "SharedState< ThreadState >", "classthrill_1_1common_1_1SharedState.html", null ],
     [ "SimpleVector< std::thread >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< tlx::LoserTreeCopyBase::Loser >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< tlx::LoserTreeCopyUnguardedBase::Loser >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< tlx::LoserTreePointerBase::Loser >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< tlx::LoserTreePointerUnguardedBase::Loser >", "classtlx_1_1SimpleVector.html", null ],
-    [ "Singleton< BlockManager >", "classthrill_1_1common_1_1Singleton.html", null ],
-    [ "Singleton< Config >", "classthrill_1_1common_1_1Singleton.html", [
-      [ "Config", "classthrill_1_1io_1_1Config.html", null ]
-    ] ],
-    [ "Singleton< DiskQueues >", "classthrill_1_1common_1_1Singleton.html", [
-      [ "DiskQueues", "classthrill_1_1io_1_1DiskQueues.html", null ]
-    ] ],
-    [ "Singleton< Stats >", "classthrill_1_1common_1_1Singleton.html", [
-      [ "Stats", "classthrill_1_1io_1_1Stats.html", null ]
-    ] ],
     [ "atomic", null, [
       [ "AtomicMovable< bool >", "classthrill_1_1common_1_1AtomicMovable.html", null ],
       [ "AtomicMovable< size_t >", "classthrill_1_1common_1_1AtomicMovable.html", null ],
@@ -149,7 +133,6 @@ var hierarchy =
       [ "maximum< T >", "classthrill_1_1common_1_1maximum.html", null ],
       [ "minimum< T >", "classthrill_1_1common_1_1minimum.html", null ],
       [ "VectorConcat< Type >", "classthrill_1_1common_1_1VectorConcat.html", null ],
-      [ "RequestQueueImplWorker::FileOffsetMatch", "structthrill_1_1io_1_1RequestQueueImplWorker_1_1FileOffsetMatch.html", null ],
       [ "lexicographic< T1, T2, Comparator >", "classtlx_1_1multisequence__partition__detail_1_1lexicographic.html", null ],
       [ "lexicographic_rev< T1, T2, Comparator >", "classtlx_1_1multisequence__partition__detail_1_1lexicographic__rev.html", null ],
       [ "lexicographic< T1, T2, Comparator >", "classtlx_1_1multisequence__selection__detail_1_1lexicographic.html", null ],
@@ -160,14 +143,12 @@ var hierarchy =
         [ "SystemException", "classthrill_1_1common_1_1SystemException.html", [
           [ "ErrnoException", "classthrill_1_1common_1_1ErrnoException.html", null ]
         ] ],
-        [ "BadExternalAlloc", "classthrill_1_1io_1_1BadExternalAlloc.html", null ],
         [ "Exception", "classthrill_1_1net_1_1Exception.html", [
           [ "Exception", "classthrill_1_1net_1_1mpi_1_1Exception.html", null ]
         ] ],
         [ "DieException", "classtlx_1_1DieException.html", null ]
       ] ],
-      [ "FullException", "classthrill_1_1data_1_1FullException.html", null ],
-      [ "IoError", "classthrill_1_1io_1_1IoError.html", null ]
+      [ "FullException", "classthrill_1_1data_1_1FullException.html", null ]
     ] ],
     [ "false_type", null, [
       [ "Delegate< R(A...), Allocator >::IsConstMemberPair< typename >", "structtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4_1_1IsConstMemberPair.html", null ],
@@ -279,8 +260,6 @@ var hierarchy =
     [ "JsonLinePutSwitch< Type >", "structthrill_1_1common_1_1JsonLinePutSwitch.html", null ],
     [ "JsonLogger", "classthrill_1_1common_1_1JsonLogger.html", null ],
     [ "JsonVerbatim", "classthrill_1_1common_1_1JsonVerbatim.html", null ],
-    [ "Logger", "classthrill_1_1common_1_1Logger.html", null ],
-    [ "LoggerVoidify", "classthrill_1_1common_1_1LoggerVoidify.html", null ],
     [ "Matrix< Type >", "classthrill_1_1common_1_1Matrix.html", null ],
     [ "NoOperation< ReturnType >", "structthrill_1_1common_1_1NoOperation.html", null ],
     [ "NoOperation< void >", "structthrill_1_1common_1_1NoOperation_3_01void_01_4.html", null ],
@@ -300,12 +279,8 @@ var hierarchy =
     [ "ReservoirSamplingGrow< Type, RNG >", "classthrill_1_1common_1_1ReservoirSamplingGrow.html", null ],
     [ "RunTimer< Timer >", "classthrill_1_1common_1_1RunTimer.html", null ],
     [ "Sampling< RNG >", "classthrill_1_1common_1_1Sampling.html", null ],
-    [ "Semaphore", "classthrill_1_1common_1_1Semaphore.html", null ],
     [ "SharedState< ValueType >", "classthrill_1_1common_1_1SharedState.html", null ],
-    [ "Singleton< Instance, destroy_on_exit >", "classthrill_1_1common_1_1Singleton.html", [
-      [ "BlockManager", "classthrill_1_1io_1_1BlockManager.html", null ]
-    ] ],
-    [ "SpacingLogger", "classthrill_1_1common_1_1SpacingLogger.html", null ],
+    [ "Singleton< Instance, destroy_on_exit >", "classthrill_1_1common_1_1Singleton.html", null ],
     [ "SplayzTree< Key >", "classthrill_1_1common_1_1SplayzTree.html", null ],
     [ "SplayzTree< Key >::Node", "structthrill_1_1common_1_1SplayzTree_1_1Node.html", null ],
     [ "SplayzTree< Key >::NodeCompare", "structthrill_1_1common_1_1SplayzTree_1_1NodeCompare.html", null ],
@@ -413,53 +388,6 @@ var hierarchy =
     [ "Serialization< Archive, T, typename std::enable_if< cereal::traits::is_input_serializable< T, Archive >::value &&!std::is_pod< T >::value &&!std::is_same< T, std::string >::value &&!tlx::is_std_pair< T >::value &&!tlx::is_std_array< T >::value &&!tlx::is_std_vector< T >::value &&!tlx::is_std_tuple< T >::value >::type >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01ce5d6e20fe42ba95a9a6db50ee3d26580.html", null ],
     [ "Serialization< Archive, T, typename std::enable_if< has_member_thrill_is_fixed_size< T >::value >::type >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01hd08c951b6c13e047834610b1a9aacbeb.html", null ],
     [ "Serialization< Archive, T, typename std::enable_if< std::is_pod< T >::value &&!std::is_pointer< T >::value >::type >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01s42c784ecbd504c6802ce2ce0ffd1d579.html", null ],
-    [ "BasicAllocationStrategy", "structthrill_1_1io_1_1BasicAllocationStrategy.html", null ],
-    [ "BID< Size >", "classthrill_1_1io_1_1BID.html", null ],
-    [ "BID< 0 >", "classthrill_1_1io_1_1BID_3_010_01_4.html", null ],
-    [ "DiskAllocator", "classthrill_1_1io_1_1DiskAllocator.html", null ],
-    [ "DiskConfig", "classthrill_1_1io_1_1DiskConfig.html", null ],
-    [ "ElementBlock< Type, Size >", "classthrill_1_1io_1_1mng__local_1_1ElementBlock.html", [
-      [ "BlockWithBids< Type,((RawSize-sizeof(BID< RawSize >)*NBids)/sizeof(Type)), RawSize, NBids >", "classthrill_1_1io_1_1mng__local_1_1BlockWithBids.html", [
-        [ "BlockWithInfo< Type, RawSize, NBids, void >", "classthrill_1_1io_1_1mng__local_1_1BlockWithInfo_3_01Type_00_01RawSize_00_01NBids_00_01void_01_4.html", null ]
-      ] ],
-      [ "BlockWithBids< Type,((RawSize-sizeof(BID< RawSize >)*NBids-sizeof(MetaInfoType))/sizeof(Type)), RawSize, NBids >", "classthrill_1_1io_1_1mng__local_1_1BlockWithBids.html", [
-        [ "BlockWithInfo< Type, RawSize, NRef, MetaInfoType >", "classthrill_1_1io_1_1mng__local_1_1BlockWithInfo.html", [
-          [ "AddFiller< mng_local::BlockWithInfo< Type, RawSize, NRef, MetaInfoType >, RawSize-sizeof(mng_local::BlockWithInfo< Type, RawSize, NRef, MetaInfoType >)>", "classthrill_1_1io_1_1mng__local_1_1AddFiller.html", [
-            [ "ExpandStruct< mng_local::BlockWithInfo< Type, RawSize, NRef, MetaInfoType >, RawSize >", "classthrill_1_1io_1_1mng__local_1_1ExpandStruct.html", [
-              [ "TypedBlock< RawSize, Type, NRef, MetaInfoType >", "classthrill_1_1io_1_1TypedBlock.html", null ]
-            ] ]
-          ] ]
-        ] ],
-        [ "BlockWithInfo< Type, RawSize, NBids, MetaInfoType >", "classthrill_1_1io_1_1mng__local_1_1BlockWithInfo.html", null ]
-      ] ],
-      [ "BlockWithBids< Type, Size, RawSize, NBids >", "classthrill_1_1io_1_1mng__local_1_1BlockWithBids.html", null ],
-      [ "BlockWithBids< Type, Size, RawSize, 0 >", "classthrill_1_1io_1_1mng__local_1_1BlockWithBids_3_01Type_00_01Size_00_01RawSize_00_010_01_4.html", null ]
-    ] ],
-    [ "FillerStruct< Bytes >", "classthrill_1_1io_1_1mng__local_1_1FillerStruct.html", null ],
-    [ "FillerStruct< 0 >", "classthrill_1_1io_1_1mng__local_1_1FillerStruct_3_010_01_4.html", null ],
-    [ "OffsetAllocator< BaseAllocator >", "structthrill_1_1io_1_1OffsetAllocator.html", null ],
-    [ "RequestDeleter", "classthrill_1_1io_1_1RequestDeleter.html", null ],
-    [ "RequestQueue", "classthrill_1_1io_1_1RequestQueue.html", [
-      [ "RequestQueueImplWorker", "classthrill_1_1io_1_1RequestQueueImplWorker.html", [
-        [ "LinuxaioQueue", "classthrill_1_1io_1_1LinuxaioQueue.html", null ],
-        [ "RequestQueueImpl1Q", "classthrill_1_1io_1_1RequestQueueImpl1Q.html", null ],
-        [ "RequestQueueImplQwQr", "classthrill_1_1io_1_1RequestQueueImplQwQr.html", null ]
-      ] ]
-    ] ],
-    [ "SingleDisk", "structthrill_1_1io_1_1SingleDisk.html", null ],
-    [ "Stats::ScopedReadTimer", "classthrill_1_1io_1_1Stats_1_1ScopedReadTimer.html", null ],
-    [ "Stats::ScopedReadWriteTimer", "classthrill_1_1io_1_1Stats_1_1ScopedReadWriteTimer.html", null ],
-    [ "Stats::ScopedWaitTimer", "classthrill_1_1io_1_1Stats_1_1ScopedWaitTimer.html", null ],
-    [ "Stats::ScopedWriteTimer", "classthrill_1_1io_1_1Stats_1_1ScopedWriteTimer.html", null ],
-    [ "StatsData", "classthrill_1_1io_1_1StatsData.html", null ],
-    [ "Striping", "structthrill_1_1io_1_1Striping.html", [
-      [ "FullyRandom", "structthrill_1_1io_1_1FullyRandom.html", null ],
-      [ "RandomCyclic", "structthrill_1_1io_1_1RandomCyclic.html", [
-        [ "RCDisk", "structthrill_1_1io_1_1RCDisk.html", null ],
-        [ "RCFlash", "structthrill_1_1io_1_1RCFlash.html", null ]
-      ] ],
-      [ "SimpleRandom", "structthrill_1_1io_1_1SimpleRandom.html", null ]
-    ] ],
     [ "AlignedAllocator< Type, BaseAllocator, Alignment >::rebind< U >", "structthrill_1_1mem_1_1AlignedAllocator_1_1rebind.html", null ],
     [ "AlignedAllocatorSettings< MustBeInt >", "structthrill_1_1mem_1_1AlignedAllocatorSettings.html", null ],
     [ "Allocator< Type >::rebind< U >", "structthrill_1_1mem_1_1Allocator_1_1rebind.html", null ],
@@ -471,9 +399,6 @@ var hierarchy =
     [ "FixedAllocator< void, manager_ >::rebind< U >", "structthrill_1_1mem_1_1FixedAllocator_3_01void_00_01manager___01_4_1_1rebind.html", null ],
     [ "FixedPoolAllocator< Type, pool_ >::rebind< U >", "structthrill_1_1mem_1_1FixedPoolAllocator_1_1rebind.html", null ],
     [ "GPoolDeleter< T >", "classthrill_1_1mem_1_1GPoolDeleter.html", null ],
-    [ "LogStreamTuplePrinter< Tuple, N >", "structthrill_1_1mem_1_1LogStreamTuplePrinter.html", null ],
-    [ "LogStreamTuplePrinter< Tuple, 0 >", "structthrill_1_1mem_1_1LogStreamTuplePrinter_3_01Tuple_00_010_01_4.html", null ],
-    [ "LogStreamTuplePrinter< Tuple, 1 >", "structthrill_1_1mem_1_1LogStreamTuplePrinter_3_01Tuple_00_011_01_4.html", null ],
     [ "Manager", "classthrill_1_1mem_1_1Manager.html", null ],
     [ "Pool", "classthrill_1_1mem_1_1Pool.html", null ],
     [ "PoolAllocator< Type >::rebind< U >", "structthrill_1_1mem_1_1PoolAllocator_1_1rebind.html", null ],
@@ -701,27 +626,6 @@ var hierarchy =
       [ "StreamSetBase", "classthrill_1_1data_1_1StreamSetBase.html", [
         [ "StreamSet< Stream >", "classthrill_1_1data_1_1StreamSet.html", null ]
       ] ],
-      [ "FileBase", "classthrill_1_1io_1_1FileBase.html", [
-        [ "DiskQueuedFile", "classthrill_1_1io_1_1DiskQueuedFile.html", [
-          [ "LinuxaioFile", "classthrill_1_1io_1_1LinuxaioFile.html", null ],
-          [ "MemoryFile", "classthrill_1_1io_1_1MemoryFile.html", null ],
-          [ "MmapFile", "classthrill_1_1io_1_1MmapFile.html", null ],
-          [ "SyscallFile", "classthrill_1_1io_1_1SyscallFile.html", null ],
-          [ "WincallFile", "classthrill_1_1io_1_1WincallFile.html", null ]
-        ] ],
-        [ "UfsFileBase", "classthrill_1_1io_1_1UfsFileBase.html", [
-          [ "LinuxaioFile", "classthrill_1_1io_1_1LinuxaioFile.html", null ],
-          [ "MmapFile", "classthrill_1_1io_1_1MmapFile.html", null ],
-          [ "SyscallFile", "classthrill_1_1io_1_1SyscallFile.html", null ]
-        ] ],
-        [ "WfsFileBase", "classthrill_1_1io_1_1WfsFileBase.html", [
-          [ "WincallFile", "classthrill_1_1io_1_1WincallFile.html", null ]
-        ] ]
-      ] ],
-      [ "Request", "classthrill_1_1io_1_1Request.html", [
-        [ "LinuxaioRequest", "classthrill_1_1io_1_1LinuxaioRequest.html", null ],
-        [ "ServingRequest", "classthrill_1_1io_1_1ServingRequest.html", null ]
-      ] ],
       [ "ReadStream", "classthrill_1_1vfs_1_1ReadStream.html", null ],
       [ "WriteStream", "classthrill_1_1vfs_1_1WriteStream.html", null ]
     ] ],
@@ -758,14 +662,5 @@ var hierarchy =
     [ "ThreadPool", "classtlx_1_1ThreadPool.html", null ],
     [ "ToVectorEmitter< thrill::api::GroupByNode::HashCount >", "classthrill_1_1core_1_1ToVectorEmitter.html", null ],
     [ "ToVectorEmitter< thrill::api::JoinNode::HashCount >", "classthrill_1_1core_1_1ToVectorEmitter.html", null ],
-    [ "Type", null, [
-      [ "AddFiller< Type, RawSize-sizeof(Type)>", "classthrill_1_1io_1_1mng__local_1_1AddFiller.html", [
-        [ "ExpandStruct< Type, RawSize >", "classthrill_1_1io_1_1mng__local_1_1ExpandStruct.html", null ]
-      ] ]
-    ] ],
-    [ "Vector< D, double >", "classthrill_1_1common_1_1Vector.html", null ],
-    [ "BaseType", null, [
-      [ "AddFiller< BaseType, FillSize >", "classthrill_1_1io_1_1mng__local_1_1AddFiller.html", null ],
-      [ "AddFiller< BaseType, 0 >", "classthrill_1_1io_1_1mng__local_1_1AddFiller_3_01BaseType_00_010_01_4.html", null ]
-    ] ]
+    [ "Vector< D, double >", "classthrill_1_1common_1_1Vector.html", null ]
 ];

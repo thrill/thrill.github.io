@@ -11,14 +11,14 @@ var indexSectionsWithContent =
   1: "abcdefghijklmnoprstuvwz",
   2: "egt",
   3: "1abcdefghijklmnpqrstuvwz",
-  4: "_abcdefghijklmnopqrstuvwz~",
+  4: "abcdefghijklmnopqrstuvwz~",
   5: "abcdefghijklmnopqrstuvwxz",
-  6: "abcdefghijklmnopqrstuvwz",
-  7: "acdfghmoprstw",
+  6: "abcdefghijklmnoprstuvwz",
+  7: "acdfghmrst",
   8: "abcdefhimnoprstuvw",
   9: "ops",
-  10: "_abcdhilmnopstu",
-  11: "abdfilmnst",
+  10: "_abcdhilmopstu",
+  11: "abcdhlmnst",
   12: "bcdefgkmnrstuw"
 };
 

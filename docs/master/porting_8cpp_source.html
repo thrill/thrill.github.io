@@ -233,7 +233,7 @@ $(document).ready(function(){initNavTree('porting_8cpp_source.html','');});
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">int</span> rc = pthread_setaffinity_np(</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        thread.native_handle(), <span class="keyword">sizeof</span>(cpu_set_t), &amp;cpuset);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span> (rc != 0) {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Error calling pthread_setaffinity_np(): &quot;</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Error calling pthread_setaffinity_np(): &quot;</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;             &lt;&lt; rc &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; strerror(errno);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#else</span></div>
@@ -249,7 +249,7 @@ $(document).ready(function(){initNavTree('porting_8cpp_source.html','');});
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    CPU_SET(cpu_id % std::thread::hardware_concurrency(), &amp;cpuset);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">int</span> rc = pthread_setaffinity_np(pthread_self(), <span class="keyword">sizeof</span>(cpu_set_t), &amp;cpuset);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">if</span> (rc != 0) {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Error calling pthread_setaffinity_np(): &quot;</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Error calling pthread_setaffinity_np(): &quot;</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;             &lt;&lt; rc &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; strerror(errno);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#else</span></div>
@@ -274,7 +274,7 @@ $(document).ready(function(){initNavTree('porting_8cpp_source.html','');});
 <div class="ttc" id="system__exception_8hpp_html"><div class="ttname"><a href="system__exception_8hpp.html">system_exception.hpp</a></div></div>
 <div class="ttc" id="namespacethrill_1_1common_html_a198a2f0adfbc4f1e904cc6154aec7793"><div class="ttname"><a href="namespacethrill_1_1common.html#a198a2f0adfbc4f1e904cc6154aec7793">thrill::common::LogCmdlineParams</a></div><div class="ttdeci">void LogCmdlineParams(JsonLogger &amp;logger)</div><div class="ttdef"><b>Definition:</b> <a href="porting_8cpp_source.html#l00067">porting.cpp:67</a></div></div>
 <div class="ttc" id="porting_8hpp_html"><div class="ttname"><a href="porting_8hpp.html">porting.hpp</a></div></div>
-<div class="ttc" id="thrill_2common_2logger_8hpp_html_a278e17dff6f1eff15d52f0bc57b65915"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a></div><div class="ttdeci">#define LOG1</div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2logger_8hpp_source.html#l00176">logger.hpp:176</a></div></div>
+<div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html_a278e17dff6f1eff15d52f0bc57b65915"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a></div><div class="ttdeci">#define LOG1</div><div class="ttdef"><b>Definition:</b> <a href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00145">logger.hpp:145</a></div></div>
 <div class="ttc" id="defines_8hpp_html"><div class="ttname"><a href="defines_8hpp.html">defines.hpp</a></div></div>
 <div class="ttc" id="thrill_2common_2string_8hpp_html"><div class="ttname"><a href="thrill_2common_2string_8hpp.html">string.hpp</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1ErrnoException_html"><div class="ttname"><a href="classthrill_1_1common_1_1ErrnoException.html">thrill::common::ErrnoException</a></div><div class="ttdoc">An Exception which is thrown on system errors and contains errno information. </div><div class="ttdef"><b>Definition:</b> <a href="system__exception_8hpp_source.html#l00036">system_exception.hpp:36</a></div></div>
@@ -297,7 +297,7 @@ $(document).ready(function(){initNavTree('porting_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="porting_8cpp.html">porting.cpp</a></li>
-    <li class="footer">Generated on Thu May 17 2018 13:49:19 for Thrill by
+    <li class="footer">Generated on Mon May 28 2018 16:12:13 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -29,11 +29,19 @@ var group__tlx__algorithm =
     [ "multiway_merge", "group__tlx__algorithm.html#gabfbaa27bf2f95ce5806e19e6fc4980e9", null ],
     [ "multiway_merge_base", "group__tlx__algorithm.html#ga1d2560e55c9bda04200cc2dfceda4d94", null ],
     [ "multiway_merge_exact_splitting", "group__tlx__algorithm.html#ga6211397a04bfb4f213fceb2ae79f3ba1", null ],
-    [ "multiway_merge_sampling_splitting", "group__tlx__algorithm.html#ga741ea27fd808fe2bac3f2a596e020a33", null ],
+    [ "multiway_merge_sampling_splitting", "group__tlx__algorithm.html#gacc54aa6bde4767b7ccf503674494494b", null ],
     [ "multiway_merge_sentinels", "group__tlx__algorithm.html#ga36d2d7a6f5b247579d7e863c82323ed6", null ],
     [ "parallel_multiway_merge", "group__tlx__algorithm.html#gac3580dd876ff80d088499292a12d2fbe", null ],
     [ "parallel_multiway_merge_base", "group__tlx__algorithm.html#ga267435a66c9b4a25471ea4233318e3cb", null ],
+    [ "parallel_multiway_merge_sentinels", "group__tlx__algorithm.html#gaf080f97856fc44ecf724cb8693a0e62e", null ],
+    [ "random_bipartition_shuffle", "group__tlx__algorithm.html#ga635866c58aa0826d8c8ea7097f913935", null ],
     [ "stable_multiway_merge", "group__tlx__algorithm.html#gab5a6467af7f10ab6f206eb3f9b3e0e4e", null ],
     [ "stable_multiway_merge_sentinels", "group__tlx__algorithm.html#gac2db163874c1c8e389c2736a72decb5f", null ],
-    [ "stable_parallel_multiway_merge", "group__tlx__algorithm.html#gae6f27252c44641af08a7297588ab1e6b", null ]
+    [ "stable_parallel_multiway_merge", "group__tlx__algorithm.html#gae6f27252c44641af08a7297588ab1e6b", null ],
+    [ "stable_parallel_multiway_merge_sentinels", "group__tlx__algorithm.html#gae1bcd8deadd96750e476982b2d572fcf", null ],
+    [ "parallel_multiway_merge_force_parallel", "group__tlx__algorithm.html#ga8345e9f64e776708ff06090e0480f9ae", null ],
+    [ "parallel_multiway_merge_force_sequential", "group__tlx__algorithm.html#gaee58bcd5ecf83c8fde2fdfcb4645a91c", null ],
+    [ "parallel_multiway_merge_minimal_k", "group__tlx__algorithm.html#ga3fec55f066eef8bab8e18da604f978f0", null ],
+    [ "parallel_multiway_merge_minimal_n", "group__tlx__algorithm.html#ga13c75c629afda60aa74bfc46239c977c", null ],
+    [ "parallel_multiway_merge_oversampling", "group__tlx__algorithm.html#ga0a0a9b421b4afc71557597aa03874b4d", null ]
 ];

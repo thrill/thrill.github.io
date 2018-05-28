@@ -21,6 +21,5 @@ var searchData=
   ['tupledeserializer_3c_20archive_2c_200_2c_20std_3a_3atuple_3c_3e_20_3e',['TupleDeserializer&lt; Archive, 0, std::tuple&lt;&gt; &gt;',['../structthrill_1_1data_1_1detail_1_1TupleDeserializer_3_01Archive_00_010_00_01std_1_1tuple_3_4_01_4.html',1,'thrill::data::detail']]],
   ['tupledeserializer_3c_20archive_2c_20revindex_2c_20std_3a_3atuple_3c_20t_2c_20args_2e_2e_2e_3e_20_3e',['TupleDeserializer&lt; Archive, RevIndex, std::tuple&lt; T, Args...&gt; &gt;',['../structthrill_1_1data_1_1detail_1_1TupleDeserializer_3_01Archive_00_01RevIndex_00_01std_1_1tuple_3_01T_00_01Args_8_8_8_4_01_4.html',1,'thrill::data::detail']]],
   ['tupleserialization',['TupleSerialization',['../structthrill_1_1data_1_1detail_1_1TupleSerialization.html',1,'thrill::data::detail']]],
-  ['tupleserialization_3c_20archive_2c_200_2c_20args_2e_2e_2e_3e',['TupleSerialization&lt; Archive, 0, Args...&gt;',['../structthrill_1_1data_1_1detail_1_1TupleSerialization_3_01Archive_00_010_00_01Args_8_8_8_4.html',1,'thrill::data::detail']]],
-  ['typedblock',['TypedBlock',['../classthrill_1_1io_1_1TypedBlock.html',1,'thrill::io']]]
+  ['tupleserialization_3c_20archive_2c_200_2c_20args_2e_2e_2e_3e',['TupleSerialization&lt; Archive, 0, Args...&gt;',['../structthrill_1_1data_1_1detail_1_1TupleSerialization_3_01Archive_00_010_00_01Args_8_8_8_4.html',1,'thrill::data::detail']]]
 ];

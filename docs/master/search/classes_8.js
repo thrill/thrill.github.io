@@ -10,7 +10,6 @@ var searchData=
   ['inputlineiterator',['InputLineIterator',['../classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIterator.html',1,'thrill::api::ReadLinesNode']]],
   ['inputlineiteratorcompressed',['InputLineIteratorCompressed',['../classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIteratorCompressed.html',1,'thrill::api::ReadLinesNode']]],
   ['inputlineiteratoruncompressed',['InputLineIteratorUncompressed',['../classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIteratorUncompressed.html',1,'thrill::api::ReadLinesNode']]],
-  ['ioerror',['IoError',['../classthrill_1_1io_1_1IoError.html',1,'thrill::io']]],
   ['ipv4address',['IPv4Address',['../classthrill_1_1net_1_1tcp_1_1IPv4Address.html',1,'thrill::net::tcp']]],
   ['ipv6address',['IPv6Address',['../classthrill_1_1net_1_1tcp_1_1IPv6Address.html',1,'thrill::net::tcp']]],
   ['is_5fstd_5farray',['is_std_array',['../structtlx_1_1is__std__array.html',1,'tlx']]],

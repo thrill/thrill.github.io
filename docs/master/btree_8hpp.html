@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Thrill: extlib/tlx/tlx/btree.hpp File Reference</title>
+<title>Thrill: extlib/tlx/tlx/container/btree.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -128,12 +128,13 @@ $(document).ready(function(){initNavTree('btree_8hpp.html','');});
 <code>#include &lt;istream&gt;</code><br/>
 <code>#include &lt;memory&gt;</code><br/>
 <code>#include &lt;ostream&gt;</code><br/>
+<code>#include &lt;utility&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for btree.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="btree_8hpp__incl.svg" width="879" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="btree_8hpp__incl.svg" width="956" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -141,7 +142,7 @@ $(document).ready(function(){initNavTree('btree_8hpp.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="btree_8hpp__dep__incl.svg" width="574" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="btree_8hpp__dep__incl.svg" width="720" height="219"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -185,16 +186,16 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gaf7a068d4e246b8f8e74bfc33f205596b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__data__structures__btree.html#gaf7a068d4e246b8f8e74bfc33f205596b">TLX_BTREE_ASSERT</a>(x)&#160;&#160;&#160;do { } while (0)</td></tr>
-<tr class="memdesc:gaf7a068d4e246b8f8e74bfc33f205596b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assertion only if TLX_BTREE_DEBUG is defined. This is not used in verify().  <a href="group__tlx__data__structures__btree.html#gaf7a068d4e246b8f8e74bfc33f205596b">More...</a><br/></td></tr>
+<tr class="memitem:gaf7a068d4e246b8f8e74bfc33f205596b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__container__btree.html#gaf7a068d4e246b8f8e74bfc33f205596b">TLX_BTREE_ASSERT</a>(x)&#160;&#160;&#160;do { } while (0)</td></tr>
+<tr class="memdesc:gaf7a068d4e246b8f8e74bfc33f205596b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assertion only if TLX_BTREE_DEBUG is defined. This is not used in verify().  <a href="group__tlx__container__btree.html#gaf7a068d4e246b8f8e74bfc33f205596b">More...</a><br/></td></tr>
 <tr class="separator:gaf7a068d4e246b8f8e74bfc33f205596b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga615c99c9c9168777ab650dcdc9331947"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__data__structures__btree.html#ga615c99c9c9168777ab650dcdc9331947">TLX_BTREE_FRIENDS</a>&#160;&#160;&#160;friend class btree_friend</td></tr>
+<tr class="memitem:ga615c99c9c9168777ab650dcdc9331947"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__container__btree.html#ga615c99c9c9168777ab650dcdc9331947">TLX_BTREE_FRIENDS</a>&#160;&#160;&#160;friend class btree_friend</td></tr>
 <tr class="separator:ga615c99c9c9168777ab650dcdc9331947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga069fbcbc52ca1f7cbe681ff86d1e0e73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__data__structures__btree.html#ga069fbcbc52ca1f7cbe681ff86d1e0e73">TLX_BTREE_MAX</a>(a, b)&#160;&#160;&#160;((a) &lt; (b) ? (b) : (a))</td></tr>
-<tr class="memdesc:ga069fbcbc52ca1f7cbe681ff86d1e0e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum of a and b. Used in some compile-time formulas.  <a href="group__tlx__data__structures__btree.html#ga069fbcbc52ca1f7cbe681ff86d1e0e73">More...</a><br/></td></tr>
+<tr class="memitem:ga069fbcbc52ca1f7cbe681ff86d1e0e73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__container__btree.html#ga069fbcbc52ca1f7cbe681ff86d1e0e73">TLX_BTREE_MAX</a>(a, b)&#160;&#160;&#160;((a) &lt; (b) ? (b) : (a))</td></tr>
+<tr class="memdesc:ga069fbcbc52ca1f7cbe681ff86d1e0e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum of a and b. Used in some compile-time formulas.  <a href="group__tlx__container__btree.html#ga069fbcbc52ca1f7cbe681ff86d1e0e73">More...</a><br/></td></tr>
 <tr class="separator:ga069fbcbc52ca1f7cbe681ff86d1e0e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabe5546ec024823fdb200cf2e6e9b624c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__data__structures__btree.html#gabe5546ec024823fdb200cf2e6e9b624c">TLX_BTREE_PRINT</a>(x)&#160;&#160;&#160;do { } while (0)</td></tr>
-<tr class="memdesc:gabe5546ec024823fdb200cf2e6e9b624c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print out debug information to std::cout if TLX_BTREE_DEBUG is defined.  <a href="group__tlx__data__structures__btree.html#gabe5546ec024823fdb200cf2e6e9b624c">More...</a><br/></td></tr>
+<tr class="memitem:gabe5546ec024823fdb200cf2e6e9b624c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__container__btree.html#gabe5546ec024823fdb200cf2e6e9b624c">TLX_BTREE_PRINT</a>(x)&#160;&#160;&#160;do { } while (0)</td></tr>
+<tr class="memdesc:gabe5546ec024823fdb200cf2e6e9b624c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print out debug information to std::cout if TLX_BTREE_DEBUG is defined.  <a href="group__tlx__container__btree.html#gabe5546ec024823fdb200cf2e6e9b624c">More...</a><br/></td></tr>
 <tr class="separator:gabe5546ec024823fdb200cf2e6e9b624c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -202,8 +203,8 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="btree_8hpp.html">btree.hpp</a></li>
-    <li class="footer">Generated on Thu May 17 2018 13:49:21 for Thrill by
+    <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="dir_32b7cef035cecd0b10cd51669c590a1c.html">container</a></li><li class="navelem"><a class="el" href="btree_8hpp.html">btree.hpp</a></li>
+    <li class="footer">Generated on Mon May 28 2018 16:12:14 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

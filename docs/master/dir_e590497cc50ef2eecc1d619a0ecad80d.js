@@ -31,7 +31,6 @@ var dir_e590497cc50ef2eecc1d619a0ecad80d =
     [ "reservoir_sampling.hpp", "reservoir__sampling_8hpp.html", "reservoir__sampling_8hpp" ],
     [ "ring_buffer.hpp", "thrill_2common_2ring__buffer_8hpp.html", "thrill_2common_2ring__buffer_8hpp" ],
     [ "sampling.hpp", "sampling_8hpp.html", "sampling_8hpp" ],
-    [ "semaphore.hpp", "thrill_2common_2semaphore_8hpp.html", "thrill_2common_2semaphore_8hpp" ],
     [ "shared_state.hpp", "shared__state_8hpp.html", "shared__state_8hpp" ],
     [ "singleton.hpp", "singleton_8hpp.html", "singleton_8hpp" ],
     [ "splay_tree.hpp", "splay__tree_8hpp.html", "splay__tree_8hpp" ],

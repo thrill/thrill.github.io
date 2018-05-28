@@ -341,7 +341,7 @@ $(document).ready(function(){initNavTree('prefix__doubling_8cpp_source.html','')
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        iteration = <a class="code" href="group__tlx__math.html#gaeab5bbc00713a95adc413ee5ddd0cb65">tlx::integer_log2_floor</a>(k_fitting);</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">if</span> (input_dia.ctx().my_rank() == 0) {</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Packing:&quot;</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Packing:&quot;</span></div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot; alphabet_size=&quot;</span> &lt;&lt; alphabet_size - 1</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot; input_bit_size=&quot;</span> &lt;&lt; input_bit_size</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot; k_fitting=&quot;</span> &lt;&lt; k_fitting</div>
@@ -439,7 +439,7 @@ $(document).ready(function(){initNavTree('prefix__doubling_8cpp_source.html','')
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keyword">const</span> InputDIA&amp; input_dia, <span class="keywordtype">size_t</span> input_size, <span class="keywordtype">bool</span> packed) {</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">if</span> (input_dia.ctx().my_rank() == 0)</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Running PrefixDoublingSorting&quot;</span>;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Running PrefixDoublingSorting&quot;</span>;</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keyword">using</span> <a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html">IndexRank</a> = <a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html">suffix_sorting::IndexRank&lt;Index&gt;</a>;</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keyword">using</span> IndexRankRank = suffix_sorting::IndexRankRank&lt;Index&gt;;</div>
@@ -470,7 +470,7 @@ $(document).ready(function(){initNavTree('prefix__doubling_8cpp_source.html','')
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keywordflow">if</span> (number_duplicates.get() == 0) {</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordflow">if</span> (input_dia.context().my_rank() == 0)</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;Finished before doubling in loop&quot;</span>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;Finished before doubling in loop&quot;</span>;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="comment">// suffix array already known, as character pairs are unique</span></div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keyword">auto</span> sa =</div>
@@ -507,7 +507,7 @@ $(document).ready(function(){initNavTree('prefix__doubling_8cpp_source.html','')
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="keywordtype">size_t</span> next_index = size_t(1) &lt;&lt; iteration++;</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">if</span> (input_dia.context().my_rank() == 0) {</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;next_index&quot;</span> &lt;&lt; next_index;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;next_index&quot;</span> &lt;&lt; next_index;</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        }</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <span class="keyword">auto</span> triple =</div>
@@ -568,12 +568,12 @@ $(document).ready(function(){initNavTree('prefix__doubling_8cpp_source.html','')
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                       });</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        <span class="keywordflow">if</span> (input_dia.context().my_rank() == 0) {</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;iteration&quot;</span> &lt;&lt; iteration - 1</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;iteration&quot;</span> &lt;&lt; iteration - 1</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;duplicates&quot;</span> &lt;&lt; number_duplicates.get();</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        }</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keywordflow">if</span> (number_duplicates.get() &gt; last_number_duplicates) {</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;number_duplicates&quot;</span> &lt;&lt; number_duplicates.get()</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;number_duplicates&quot;</span> &lt;&lt; number_duplicates.get()</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;last_number_duplicates&quot;</span> &lt;&lt; last_number_duplicates;</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;            <span class="keyword">auto</span> sa =</div>
@@ -607,7 +607,7 @@ $(document).ready(function(){initNavTree('prefix__doubling_8cpp_source.html','')
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    <span class="keyword">const</span> InputDIA&amp; input_dia, <span class="keywordtype">size_t</span> input_size, <span class="keywordtype">bool</span> packed) {</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <span class="keywordflow">if</span> (input_dia.ctx().my_rank() == 0)</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Running PrefixDoublingWindow&quot;</span>;</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Running PrefixDoublingWindow&quot;</span>;</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    <span class="keyword">using</span> <a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html">IndexRank</a> = <a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html">suffix_sorting::IndexRank&lt;Index&gt;</a>;</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    <span class="keyword">using</span> IndexRankRank = suffix_sorting::IndexRankRank&lt;Index&gt;;</div>
@@ -634,7 +634,7 @@ $(document).ready(function(){initNavTree('prefix__doubling_8cpp_source.html','')
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    <span class="comment">// before we compute the correct new rank.</span></div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    <span class="keywordflow">if</span> (number_duplicates.get() == 0) {</div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        <span class="keywordflow">if</span> (input_dia.context().my_rank() == 0)</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;Finished before doubling in loop.&quot;</span>;</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;Finished before doubling in loop.&quot;</span>;</div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;</div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        <span class="keyword">auto</span> sa =</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;            names</div>
@@ -706,7 +706,7 @@ $(document).ready(function(){initNavTree('prefix__doubling_8cpp_source.html','')
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;                       });</div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;</div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        <span class="keywordflow">if</span> (input_dia.context().my_rank() == 0) {</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;iteration&quot;</span> &lt;&lt; iteration</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;iteration&quot;</span> &lt;&lt; iteration</div>
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;shift_by&quot;</span> &lt;&lt; shift_by</div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;duplicates&quot;</span> &lt;&lt; number_duplicates.get();</div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;        }</div>
@@ -731,7 +731,7 @@ $(document).ready(function(){initNavTree('prefix__doubling_8cpp_source.html','')
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;    <span class="keyword">const</span> InputDIA&amp; input_dia, <span class="keywordtype">size_t</span> input_size, <span class="keywordtype">bool</span> packed) {</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;</div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    <span class="keywordflow">if</span> (input_dia.ctx().my_rank() == 0)</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <a class="code" href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Running PrefixDoublingDiscarding&quot;</span>;</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Running PrefixDoublingDiscarding&quot;</span>;</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;</div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <span class="keyword">using</span> <a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html">IndexRank</a> = <a class="code" href="structexamples_1_1suffix__sorting_1_1IndexRank.html">suffix_sorting::IndexRank&lt;Index&gt;</a>;</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    <span class="keyword">using</span> IndexRankStatus = suffix_sorting::IndexRankStatus&lt;Index&gt;;</div>
@@ -879,7 +879,7 @@ $(document).ready(function(){initNavTree('prefix__doubling_8cpp_source.html','')
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        <span class="keywordtype">size_t</span> duplicates = undiscarded.Keep().Size();</div>
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;</div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;        <span class="keywordflow">if</span> (input_dia.context().my_rank() == 0) {</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;            <a class="code" href="thrill_2common_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;iteration&quot;</span> &lt;&lt; iteration - 1</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a> &lt;&lt; <span class="stringliteral">&quot;iteration&quot;</span> &lt;&lt; iteration - 1</div>
 <div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;duplicates&quot;</span> &lt;&lt; duplicates;</div>
 <div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;        }</div>
 <div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;</div>
@@ -1016,9 +1016,8 @@ $(document).ready(function(){initNavTree('prefix__doubling_8cpp_source.html','')
 <div class="ttc" id="collapse_8hpp_html"><div class="ttname"><a href="collapse_8hpp.html">collapse.hpp</a></div></div>
 <div class="ttc" id="namespaceexamples_1_1suffix__sorting_html_adc30b809f74f502e5a2e184f97557617"><div class="ttname"><a href="namespaceexamples_1_1suffix__sorting.html#adc30b809f74f502e5a2e184f97557617">examples::suffix_sorting::PrefixDoublingDiscarding&lt; uint32_t &gt;</a></div><div class="ttdeci">template DIA&lt; uint32_t &gt; PrefixDoublingDiscarding&lt; uint32_t &gt;(const DIA&lt; uint8_t &gt; &amp;input_dia, size_t input_size, bool packed)</div></div>
 <div class="ttc" id="size_8hpp_html"><div class="ttname"><a href="size_8hpp.html">size.hpp</a></div></div>
-<div class="ttc" id="thrill_2common_2logger_8hpp_html_aea27f4824707b7aa21c0bcb69cd53ffb"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a></div><div class="ttdeci">#define sLOG1</div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2logger_8hpp_source.html#l00188">logger.hpp:188</a></div></div>
 <div class="ttc" id="namespaceexamples_1_1suffix__sorting_html_ad08fee43c636c407091eb7d73eb8b772"><div class="ttname"><a href="namespaceexamples_1_1suffix__sorting.html#ad08fee43c636c407091eb7d73eb8b772">examples::suffix_sorting::PrefixDoublingSorting&lt; uint32_t &gt;</a></div><div class="ttdeci">template DIA&lt; uint32_t &gt; PrefixDoublingSorting&lt; uint32_t &gt;(const DIA&lt; uint8_t &gt; &amp;input_dia, size_t input_size, bool packed)</div></div>
-<div class="ttc" id="thrill_2common_2logger_8hpp_html_a278e17dff6f1eff15d52f0bc57b65915"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a></div><div class="ttdeci">#define LOG1</div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2logger_8hpp_source.html#l00176">logger.hpp:176</a></div></div>
+<div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html_a278e17dff6f1eff15d52f0bc57b65915"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a></div><div class="ttdeci">#define LOG1</div><div class="ttdef"><b>Definition:</b> <a href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00145">logger.hpp:145</a></div></div>
 <div class="ttc" id="thrill_2api_2sort_8hpp_html"><div class="ttname"><a href="thrill_2api_2sort_8hpp.html">sort.hpp</a></div></div>
 <div class="ttc" id="group__dia__lops_html_ga1ad6d6f5862636d832c0407ea54f9862"><div class="ttname"><a href="group__dia__lops.html#ga1ad6d6f5862636d832c0407ea54f9862">thrill::api::Union</a></div><div class="ttdeci">auto Union(const FirstDIA &amp;first_dia, const DIAs &amp;...dias)</div><div class="ttdoc">Union is a LOp, which creates the union of all items from any number of DIAs as a single DIA...</div><div class="ttdef"><b>Definition:</b> <a href="union_8hpp_source.html#l00320">union.hpp:320</a></div></div>
 <div class="ttc" id="namespaceexamples_1_1suffix__sorting_html_a0a4f3a9529720d35be02b55b8f7444d0"><div class="ttname"><a href="namespaceexamples_1_1suffix__sorting.html#a0a4f3a9529720d35be02b55b8f7444d0">examples::suffix_sorting::Status</a></div><div class="ttdeci">Status</div><div class="ttdef"><b>Definition:</b> <a href="prefix__doubling_8cpp_source.html#l00130">prefix_doubling.cpp:130</a></div></div>
@@ -1029,6 +1028,7 @@ $(document).ready(function(){initNavTree('prefix__doubling_8cpp_source.html','')
 <div class="ttc" id="namespaceexamples_1_1suffix__sorting_html_a7fd6003f1cef4b37f0ac4aa3f221196c"><div class="ttname"><a href="namespaceexamples_1_1suffix__sorting.html#a7fd6003f1cef4b37f0ac4aa3f221196c">examples::suffix_sorting::PrefixDoublingWindow&lt; uint64_t &gt;</a></div><div class="ttdeci">template DIA&lt; uint64_t &gt; PrefixDoublingWindow&lt; uint64_t &gt;(const DIA&lt; uint8_t &gt; &amp;input_dia, size_t input_size, bool packed)</div></div>
 <div class="ttc" id="dia_8hpp_html"><div class="ttname"><a href="dia_8hpp.html">dia.hpp</a></div></div>
 <div class="ttc" id="structexamples_1_1suffix__sorting_1_1IndexRank_html_a7875de9269063a44a5480b1c0c530a84"><div class="ttname"><a href="structexamples_1_1suffix__sorting_1_1IndexRank.html#a7875de9269063a44a5480b1c0c530a84">examples::suffix_sorting::IndexRank::index</a></div><div class="ttdeci">Index index</div><div class="ttdef"><b>Definition:</b> <a href="construct__lcp_8hpp_source.html#l00037">construct_lcp.hpp:37</a></div></div>
+<div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html_aea27f4824707b7aa21c0bcb69cd53ffb"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb">sLOG1</a></div><div class="ttdeci">#define sLOG1</div><div class="ttdef"><b>Definition:</b> <a href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00156">logger.hpp:156</a></div></div>
 <div class="ttc" id="namespaceexamples_1_1suffix__sorting_html_ae375c2096e02f7124895ebeff98f5346"><div class="ttname"><a href="namespaceexamples_1_1suffix__sorting.html#ae375c2096e02f7124895ebeff98f5346">examples::suffix_sorting::PrefixDoublingWindow&lt; uint32_t &gt;</a></div><div class="ttdeci">template DIA&lt; uint32_t &gt; PrefixDoublingWindow&lt; uint32_t &gt;(const DIA&lt; uint8_t &gt; &amp;input_dia, size_t input_size, bool packed)</div></div>
 <div class="ttc" id="prefixsum_8hpp_html"><div class="ttname"><a href="prefixsum_8hpp.html">prefixsum.hpp</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1ComponentSum_html"><div class="ttname"><a href="classthrill_1_1common_1_1ComponentSum.html">thrill::common::ComponentSum</a></div><div class="ttdoc">template for computing the component-wise sum of std::array or std::vector. </div><div class="ttdef"><b>Definition:</b> <a href="functional_8hpp_source.html#l00114">functional.hpp:114</a></div></div>
@@ -1058,7 +1058,7 @@ $(document).ready(function(){initNavTree('prefix__doubling_8cpp_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_0b8cd80b43220fb0eacec85b2381def2.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="prefix__doubling_8cpp.html">prefix_doubling.cpp</a></li>
-    <li class="footer">Generated on Thu May 17 2018 13:49:17 for Thrill by
+    <li class="footer">Generated on Mon May 28 2018 16:12:12 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

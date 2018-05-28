@@ -8,15 +8,15 @@ var searchData=
   ['equal_5fto_5fdia_2ehpp',['equal_to_dia.hpp',['../equal__to__dia_8hpp.html',1,'']]],
   ['erase_5fall_2ecpp',['erase_all.cpp',['../erase__all_8cpp.html',1,'']]],
   ['erase_5fall_2ehpp',['erase_all.hpp',['../erase__all_8hpp.html',1,'']]],
-  ['error_5fhandling_2ehpp',['error_handling.hpp',['../error__handling_8hpp.html',1,'']]],
   ['escape_5fhtml_2ecpp',['escape_html.cpp',['../escape__html_8cpp.html',1,'']]],
   ['escape_5fhtml_2ehpp',['escape_html.hpp',['../escape__html_8hpp.html',1,'']]],
   ['escape_5furi_2ecpp',['escape_uri.cpp',['../escape__uri_8cpp.html',1,'']]],
   ['escape_5furi_2ehpp',['escape_uri.hpp',['../escape__uri_8hpp.html',1,'']]],
   ['exception_2ehpp',['exception.hpp',['../exception_8hpp.html',1,'']]],
-  ['exceptions_2ehpp',['exceptions.hpp',['../exceptions_8hpp.html',1,'']]],
   ['exclusive_5fscan_2ehpp',['exclusive_scan.hpp',['../exclusive__scan_8hpp.html',1,'']]],
   ['exec_2dprofile_2ehtml',['exec-profile.html',['../exec-profile_8html.html',1,'']]],
+  ['expand_5fenvironment_5fvariables_2ecpp',['expand_environment_variables.cpp',['../expand__environment__variables_8cpp.html',1,'']]],
+  ['expand_5fenvironment_5fvariables_2ehpp',['expand_environment_variables.hpp',['../expand__environment__variables_8hpp.html',1,'']]],
   ['extract_5fbetween_2ecpp',['extract_between.cpp',['../extract__between_8cpp.html',1,'']]],
   ['extract_5fbetween_2ehpp',['extract_between.hpp',['../extract__between_8hpp.html',1,'']]]
 ];

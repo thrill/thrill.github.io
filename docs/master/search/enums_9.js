@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['readorwritetype',['ReadOrWriteType',['../classthrill_1_1io_1_1Request.html#abb5a44a0a0ddd3dfe60c82290d68e88b',1,'thrill::io::Request']]],
-  ['reducetableimpl',['ReduceTableImpl',['../namespacethrill_1_1core.html#a5f9afb39874a5fb033a484d4e359b274',1,'thrill::core']]],
-  ['result_5fflags_5ft',['result_flags_t',['../classtlx_1_1btree.html#a3a617d72a0b84dcbdf111d1fe19ec0b5',1,'tlx::btree']]]
+  ['type',['Type',['../classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#a1d1cfd8ffb84e947f82999c682b666a7',1,'thrill::net::mpi::Dispatcher::MpiAsync::Type()'],['../namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7',1,'thrill::vfs::Type()']]]
 ];

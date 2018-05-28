@@ -18,6 +18,8 @@ var dir_e504eb2edb57c81d5553bb9938943c32 =
     [ "escape_html.hpp", "escape__html_8hpp.html", "escape__html_8hpp" ],
     [ "escape_uri.cpp", "escape__uri_8cpp.html", "escape__uri_8cpp" ],
     [ "escape_uri.hpp", "escape__uri_8hpp.html", "escape__uri_8hpp" ],
+    [ "expand_environment_variables.cpp", "expand__environment__variables_8cpp.html", "expand__environment__variables_8cpp" ],
+    [ "expand_environment_variables.hpp", "expand__environment__variables_8hpp.html", "expand__environment__variables_8hpp" ],
     [ "extract_between.cpp", "extract__between_8cpp.html", "extract__between_8cpp" ],
     [ "extract_between.hpp", "extract__between_8hpp.html", "extract__between_8hpp" ],
     [ "format_si_iec_units.cpp", "format__si__iec__units_8cpp.html", "format__si__iec__units_8cpp" ],

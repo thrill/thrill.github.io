@@ -1,11 +1,13 @@
 var dir_e51d8ef7db00def9423335c81d827c83 =
 [
     [ "algorithm", "dir_2fae90830e417302713857ba7587d5fe.html", "dir_2fae90830e417302713857ba7587d5fe" ],
+    [ "container", "dir_32b7cef035cecd0b10cd51669c590a1c.html", "dir_32b7cef035cecd0b10cd51669c590a1c" ],
     [ "define", "dir_e39924738c5f6e7fad16b75e656b31fd.html", "dir_e39924738c5f6e7fad16b75e656b31fd" ],
     [ "digest", "dir_dc0f747e9b43a8e1ffa975169334da74.html", "dir_dc0f747e9b43a8e1ffa975169334da74" ],
     [ "logger", "dir_148f96dd94ba8884dfd27fc4f96ca2fe.html", "dir_148f96dd94ba8884dfd27fc4f96ca2fe" ],
     [ "math", "dir_12e1f04250d59a3988b9061d7bd0c3d8.html", "dir_12e1f04250d59a3988b9061d7bd0c3d8" ],
     [ "meta", "dir_4814f784539800233c7d19239736dd47.html", "dir_4814f784539800233c7d19239736dd47" ],
+    [ "port", "dir_4c83d783caccde53be038d3a8668c6c5.html", "dir_4c83d783caccde53be038d3a8668c6c5" ],
     [ "sort", "dir_12608fa34d4defb0bdb04f2e95c7c699.html", "dir_12608fa34d4defb0bdb04f2e95c7c699" ],
     [ "string", "dir_e504eb2edb57c81d5553bb9938943c32.html", "dir_e504eb2edb57c81d5553bb9938943c32" ],
     [ "algorithm.hpp", "algorithm_8hpp.html", null ],
@@ -14,23 +16,11 @@ var dir_e51d8ef7db00def9423335c81d827c83 =
     ] ],
     [ "backtrace.cpp", "backtrace_8cpp.html", "backtrace_8cpp" ],
     [ "backtrace.hpp", "backtrace_8hpp.html", "backtrace_8hpp" ],
-    [ "btree.hpp", "btree_8hpp.html", "btree_8hpp" ],
-    [ "btree_map.hpp", "btree__map_8hpp.html", [
-      [ "key_of_value", "structtlx_1_1btree__map_1_1key__of__value.html", "structtlx_1_1btree__map_1_1key__of__value" ]
-    ] ],
-    [ "btree_multimap.hpp", "btree__multimap_8hpp.html", [
-      [ "key_of_value", "structtlx_1_1btree__multimap_1_1key__of__value.html", "structtlx_1_1btree__multimap_1_1key__of__value" ]
-    ] ],
-    [ "btree_multiset.hpp", "btree__multiset_8hpp.html", [
-      [ "key_of_value", "structtlx_1_1btree__multiset_1_1key__of__value.html", "structtlx_1_1btree__multiset_1_1key__of__value" ]
-    ] ],
-    [ "btree_set.hpp", "btree__set_8hpp.html", [
-      [ "key_of_value", "structtlx_1_1btree__set_1_1key__of__value.html", "structtlx_1_1btree__set_1_1key__of__value" ]
-    ] ],
     [ "cmdline_parser.cpp", "cmdline__parser_8cpp.html", null ],
     [ "cmdline_parser.hpp", "cmdline__parser_8hpp.html", [
       [ "CmdlineParser", "classtlx_1_1CmdlineParser.html", "classtlx_1_1CmdlineParser" ]
     ] ],
+    [ "container.hpp", "container_8hpp.html", null ],
     [ "counting_ptr.hpp", "counting__ptr_8hpp.html", "counting__ptr_8hpp" ],
     [ "define.hpp", "define_8hpp.html", null ],
     [ "delegate.hpp", "delegate_8hpp.html", "delegate_8hpp" ],
@@ -39,17 +29,11 @@ var dir_e51d8ef7db00def9423335c81d827c83 =
     [ "digest.hpp", "digest_8hpp.html", null ],
     [ "logger.cpp", "extlib_2tlx_2tlx_2logger_8cpp.html", "extlib_2tlx_2tlx_2logger_8cpp" ],
     [ "logger.hpp", "extlib_2tlx_2tlx_2logger_8hpp.html", "extlib_2tlx_2tlx_2logger_8hpp" ],
-    [ "loser_tree.hpp", "loser__tree_8hpp.html", [
-      [ "Loser", "structtlx_1_1LoserTreeCopyUnguardedBase_1_1Loser.html", "structtlx_1_1LoserTreeCopyUnguardedBase_1_1Loser" ],
-      [ "Loser", "structtlx_1_1LoserTreePointerBase_1_1Loser.html", "structtlx_1_1LoserTreePointerBase_1_1Loser" ],
-      [ "Loser", "structtlx_1_1LoserTreePointerUnguardedBase_1_1Loser.html", "structtlx_1_1LoserTreePointerUnguardedBase_1_1Loser" ]
-    ] ],
-    [ "lru_cache.hpp", "lru__cache_8hpp.html", null ],
     [ "math.hpp", "extlib_2tlx_2tlx_2math_8hpp.html", null ],
     [ "meta.hpp", "meta_8hpp.html", null ],
-    [ "ring_buffer.hpp", "extlib_2tlx_2tlx_2ring__buffer_8hpp.html", null ],
-    [ "semaphore.hpp", "extlib_2tlx_2tlx_2semaphore_8hpp.html", "extlib_2tlx_2tlx_2semaphore_8hpp" ],
-    [ "simple_vector.hpp", "simple__vector_8hpp.html", "simple__vector_8hpp" ],
+    [ "port.hpp", "port_8hpp.html", null ],
+    [ "semaphore.hpp", "semaphore_8hpp.html", "semaphore_8hpp" ],
+    [ "simple_vector.hpp", "simple__vector_8hpp.html", null ],
     [ "siphash.hpp", "siphash_8hpp.html", "siphash_8hpp" ],
     [ "sort.hpp", "extlib_2tlx_2tlx_2sort_8hpp.html", null ],
     [ "stack_allocator.hpp", "stack__allocator_8hpp.html", [

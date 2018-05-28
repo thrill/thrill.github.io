@@ -130,6 +130,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a58b375f7e5d2e26e774eb81c48d6272d"><td class="memTemplParams" colspan="2">template&lt;typename DiffType , typename DiffTypeOutputIterator &gt; </td></tr>
+<tr class="memitem:a58b375f7e5d2e26e774eb81c48d6272d"><td class="memTemplItemLeft" align="right" valign="top">DiffTypeOutputIterator&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetlx_1_1multiway__merge__detail.html#a58b375f7e5d2e26e774eb81c48d6272d">equally_split</a> (DiffType n, size_t p, DiffTypeOutputIterator s)</td></tr>
+<tr class="memdesc:a58b375f7e5d2e26e774eb81c48d6272d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split a sequence into parts of almost equal size.  <a href="#a58b375f7e5d2e26e774eb81c48d6272d">More...</a><br/></td></tr>
+<tr class="separator:a58b375f7e5d2e26e774eb81c48d6272d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70480d1927745d5df741d4c3769b0984"><td class="memTemplParams" colspan="2">template&lt;typename RandomAccessIteratorPair &gt; </td></tr>
 <tr class="memitem:a70480d1927745d5df741d4c3769b0984"><td class="memTemplItemLeft" align="right" valign="top">std::iterator_traits&lt; typename <br class="typebreak"/>
 RandomAccessIteratorPair::first_type &gt;<br class="typebreak"/>
@@ -186,6 +190,56 @@ std::iterator_traits<br class="typebreak"/>
 <tr class="separator:a87340e2f544b97dab4f5638bbdca0646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a58b375f7e5d2e26e774eb81c48d6272d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DiffTypeOutputIterator tlx::multiway_merge_detail::equally_split </td>
+          <td>(</td>
+          <td class="paramtype">DiffType&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DiffTypeOutputIterator&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Split a sequence into parts of almost equal size. </p>
+<p>The resulting sequence s of length p+1 contains the splitting positions when splitting the range [0,n) into parts of almost equal size (plus minus 1). The first entry is 0, the last one n. There may result empty parts.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Number of elements </td></tr>
+    <tr><td class="paramname">p</td><td>Number of parts </td></tr>
+    <tr><td class="paramname">s</td><td>Splitters </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>End of splitter sequence, i. e. <code>s+p+1</code> </dd></dl>
+
+<p>Definition at line <a class="el" href="multiway__merge__splitting_8hpp_source.html#l00057">57</a> of file <a class="el" href="multiway__merge__splitting_8hpp_source.html">multiway_merge_splitting.hpp</a>.</p>
+
+<p>References <a class="el" href="split_8cpp_source.html#l00020">tlx::split()</a>.</p>
+
+<p>Referenced by <a class="el" href="multiway__merge__splitting_8hpp_source.html#l00188">tlx::multiway_merge_exact_splitting()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a70480d1927745d5df741d4c3769b0984"></a>
 <div class="memitem">
 <div class="memproto">
@@ -202,9 +256,9 @@ std::iterator_traits<br class="typebreak"/>
 
 <p>Size of a sequence described by a pair of iterators. </p>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00041">41</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00044">44</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00450">multiway_merge_3_combined()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00652">multiway_merge_4_combined()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00725">multiway_merge_bubble()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00912">multiway_merge_loser_tree()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01070">multiway_merge_loser_tree_combined()</a>, and <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00998">multiway_merge_loser_tree_unguarded()</a>.</p>
+<p>Referenced by <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00453">multiway_merge_3_combined()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00655">multiway_merge_4_combined()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00728">multiway_merge_bubble()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00915">multiway_merge_loser_tree()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01073">multiway_merge_loser_tree_combined()</a>, and <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01001">multiway_merge_loser_tree_unguarded()</a>.</p>
 
 </div>
 </div>
@@ -250,11 +304,11 @@ std::iterator_traits<br class="typebreak"/>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00450">450</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00453">453</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
 
-<p>References <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00041">iterpair_size()</a>, <a class="el" href="merge__advance_8hpp_source.html#l00158">tlx::merge_advance()</a>, and <a class="el" href="functional_8hpp_source.html#l00059">thrill::common::min()</a>.</p>
+<p>References <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00044">iterpair_size()</a>, <a class="el" href="merge__advance_8hpp_source.html#l00158">tlx::merge_advance()</a>, and <a class="el" href="functional_8hpp_source.html#l00059">thrill::common::min()</a>.</p>
 
-<p>Referenced by <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01195">tlx::multiway_merge_base()</a>.</p>
+<p>Referenced by <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01198">tlx::multiway_merge_base()</a>.</p>
 
 </div>
 </div>
@@ -317,7 +371,7 @@ std::iterator_traits<br class="typebreak"/>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>End iterator of output sequence. </dd></dl>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00371">371</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00374">374</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
 
 <p>References <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#aa409c9d4294e037134a0c1f3937f9519">TLX_MERGE3CASE</a>, and <a class="el" href="unused_8hpp_source.html#l00020">tlx::unused()</a>.</p>
 
@@ -365,11 +419,11 @@ std::iterator_traits<br class="typebreak"/>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00652">652</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00655">655</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
 
-<p>References <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00041">iterpair_size()</a>, and <a class="el" href="functional_8hpp_source.html#l00059">thrill::common::min()</a>.</p>
+<p>References <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00044">iterpair_size()</a>, and <a class="el" href="functional_8hpp_source.html#l00059">thrill::common::min()</a>.</p>
 
-<p>Referenced by <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01195">tlx::multiway_merge_base()</a>.</p>
+<p>Referenced by <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01198">tlx::multiway_merge_base()</a>.</p>
 
 </div>
 </div>
@@ -432,7 +486,7 @@ std::iterator_traits<br class="typebreak"/>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>End iterator of output sequence. </dd></dl>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00545">545</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00548">548</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
 
 <p>References <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#a02b4aab00fbdc785c7fdcaa29fa51a94">TLX_DECISION</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#a7c16456e6331c298e313b1300bbcb69b">TLX_MERGE4CASE</a>, and <a class="el" href="unused_8hpp_source.html#l00020">tlx::unused()</a>.</p>
 
@@ -500,9 +554,9 @@ std::iterator_traits<br class="typebreak"/>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>End iterator of output sequence. </dd></dl>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00725">725</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00728">728</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
 
-<p>References <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00041">iterpair_size()</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00263">tlx::swap()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#aaed922dd2b60924d07d50c0251159ad7">TLX_POS</a>, and <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#a58dd81b56a49d64efae2b543746d0dce">TLX_STOPS</a>.</p>
+<p>References <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00044">iterpair_size()</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00263">tlx::swap()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#aaed922dd2b60924d07d50c0251159ad7">TLX_POS</a>, and <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#a58dd81b56a49d64efae2b543746d0dce">TLX_STOPS</a>.</p>
 
 </div>
 </div>
@@ -568,11 +622,11 @@ std::iterator_traits<br class="typebreak"/>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>End iterator of output sequence. </dd></dl>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00912">912</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00915">915</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
 
-<p>References <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00041">iterpair_size()</a>, <a class="el" href="likely_8hpp_source.html#l00024">TLX_UNLIKELY</a>, and <a class="el" href="gen__data_8py_source.html#l00039">gen_data::x</a>.</p>
+<p>References <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00044">iterpair_size()</a>, <a class="el" href="likely_8hpp_source.html#l00024">TLX_UNLIKELY</a>, and <a class="el" href="gen__data_8py_source.html#l00039">gen_data::x</a>.</p>
 
-<p>Referenced by <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01195">tlx::multiway_merge_base()</a>, and <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01070">multiway_merge_loser_tree_combined()</a>.</p>
+<p>Referenced by <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01198">tlx::multiway_merge_base()</a>, and <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01073">multiway_merge_loser_tree_combined()</a>.</p>
 
 </div>
 </div>
@@ -618,9 +672,9 @@ std::iterator_traits<br class="typebreak"/>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01070">1070</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01073">1073</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
 
-<p>References <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00041">iterpair_size()</a>, <a class="el" href="functional_8hpp_source.html#l00059">thrill::common::min()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00912">multiway_merge_loser_tree()</a>, and <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00998">multiway_merge_loser_tree_unguarded()</a>.</p>
+<p>References <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00044">iterpair_size()</a>, <a class="el" href="functional_8hpp_source.html#l00059">thrill::common::min()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00915">multiway_merge_loser_tree()</a>, and <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01001">multiway_merge_loser_tree_unguarded()</a>.</p>
 
 </div>
 </div>
@@ -666,9 +720,9 @@ std::iterator_traits<br class="typebreak"/>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01122">1122</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01125">1125</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
 
-<p>References <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00998">multiway_merge_loser_tree_unguarded()</a>.</p>
+<p>References <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01001">multiway_merge_loser_tree_unguarded()</a>.</p>
 
 </div>
 </div>
@@ -735,11 +789,11 @@ std::iterator_traits<br class="typebreak"/>
 <dl class="section return"><dt>Returns</dt><dd>End iterator of output sequence. </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>No input will run out of elements during the merge. </dd></dl>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00998">998</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01001">1001</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
 
-<p>References <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00041">iterpair_size()</a>, and <a class="el" href="functional_8hpp_source.html#l00059">thrill::common::min()</a>.</p>
+<p>References <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00044">iterpair_size()</a>, and <a class="el" href="functional_8hpp_source.html#l00059">thrill::common::min()</a>.</p>
 
-<p>Referenced by <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01070">multiway_merge_loser_tree_combined()</a>, and <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01122">multiway_merge_loser_tree_sentinel()</a>.</p>
+<p>Referenced by <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01073">multiway_merge_loser_tree_combined()</a>, and <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01125">multiway_merge_loser_tree_sentinel()</a>.</p>
 
 </div>
 </div>
@@ -797,7 +851,7 @@ std::iterator_traits<br class="typebreak"/>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>(seqs_end - seqs_begin &gt; 0) </dd></dl>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00229">229</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00232">232</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
 
 <p>References <a class="el" href="functional_8hpp_source.html#l00059">thrill::common::min()</a>, and <a class="el" href="split_8cpp_source.html#l00020">tlx::split()</a>.</p>
 
@@ -843,7 +897,7 @@ std::iterator_traits<br class="typebreak"/>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00307">307</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
+<p>Definition at line <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00310">310</a> of file <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html">multiway_merge.hpp</a>.</p>
 
 <p>References <a class="el" href="split_8cpp_source.html#l00020">tlx::split()</a>.</p>
 
@@ -855,7 +909,7 @@ std::iterator_traits<br class="typebreak"/>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacetlx.html">tlx</a></li><li class="navelem"><a class="el" href="namespacetlx_1_1multiway__merge__detail.html">multiway_merge_detail</a></li>
-    <li class="footer">Generated on Thu May 17 2018 13:49:26 for Thrill by
+    <li class="footer">Generated on Mon May 28 2018 16:12:18 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Thrill: extlib/tlx/tlx/lru_cache.hpp Source File</title>
+<title>Thrill: extlib/tlx/tlx/container/lru_cache.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('lru__cache_8hpp_source.html','');});
 </div><!--header-->
 <div class="contents">
 <a href="lru__cache_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*******************************************************************************</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * tlx/lru_cache.hpp</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * tlx/container/lru_cache.hpp</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * An expected O(1) LRU cache which contains a set of key -&gt; value associations.</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Loosely based on https://github.com/lamerman/cpp-lru-cache by Alexander</span></div>
@@ -130,8 +130,8 @@ $(document).ready(function(){initNavTree('lru__cache_8hpp_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * All rights reserved. Published under the Boost Software License, Version 1.0</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef TLX_LRU_CACHE_HEADER</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TLX_LRU_CACHE_HEADER</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef TLX_CONTAINER_LRU_CACHE_HEADER</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TLX_CONTAINER_LRU_CACHE_HEADER</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('lru__cache_8hpp_source.html','');});
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>tlx {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//! \addtogroup tlx_data_structures</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//! \addtogroup tlx_container</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//! \{</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span><span class="comment"></span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/*!</span></div>
@@ -417,7 +417,7 @@ $(document).ready(function(){initNavTree('lru__cache_8hpp_source.html','');});
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;} <span class="comment">// namespace tlx</span></div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">#endif // !TLX_LRU_CACHE_HEADER</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">#endif // !TLX_CONTAINER_LRU_CACHE_HEADER</span></div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="classtlx_1_1LruCacheMap_html_a23c2b72c6846b7f00ee6fdff05c7163f"><div class="ttname"><a href="classtlx_1_1LruCacheMap.html#a23c2b72c6846b7f00ee6fdff05c7163f">tlx::LruCacheMap::List</a></div><div class="ttdeci">typename std::list&lt; KeyValuePair, Alloc &gt; List</div><div class="ttdef"><b>Definition:</b> <a href="lru__cache_8hpp_source.html#l00169">lru_cache.hpp:169</a></div></div>
@@ -461,8 +461,8 @@ $(document).ready(function(){initNavTree('lru__cache_8hpp_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="lru__cache_8hpp.html">lru_cache.hpp</a></li>
-    <li class="footer">Generated on Thu May 17 2018 13:49:18 for Thrill by
+    <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="dir_32b7cef035cecd0b10cd51669c590a1c.html">container</a></li><li class="navelem"><a class="el" href="lru__cache_8hpp.html">lru_cache.hpp</a></li>
+    <li class="footer">Generated on Mon May 28 2018 16:12:12 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
