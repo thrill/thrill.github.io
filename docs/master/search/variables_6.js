@@ -15,6 +15,7 @@ var searchData=
   ['generate_5ffunction_5f',['generate_function_',['../classthrill_1_1api_1_1GenerateNode.html#afaaffa774f4e24b3cbbe2fe7130c782e',1,'thrill::api::GenerateNode']]],
   ['generation_5f',['generation_',['../classthrill_1_1net_1_1FlowControlChannel.html#a8e3bd6ae47fe46ac3dac687172b2ed0e',1,'thrill::net::FlowControlChannel::generation_()'],['../classthrill_1_1net_1_1FlowControlChannelManager.html#a9e520fc2c9c3816fb25bdcbd83a54cb7',1,'thrill::net::FlowControlChannelManager::generation_()']]],
   ['generic',['generic',['../unionthrill_1_1net_1_1tcp_1_1SocketAddress_1_1SockAddrUnion.html#a126152d73a0e59fb15bd11a93c586d2d',1,'thrill::net::tcp::SocketAddress::SockAddrUnion']]],
+  ['giver',['giver',['../structfoxxll_1_1block__scheduler__algorithm__offline__lru__prefetching_1_1scheduled__block__meta.html#a9fc1c7f1c0231097318bbe0dce75bbeb',1,'foxxll::block_scheduler_algorithm_offline_lru_prefetching::scheduled_block_meta']]],
   ['glob_5f',['glob_',['../classthrill_1_1vfs_1_1glob__local_1_1SimpleGlobBase.html#a8f2f43ef9f5426e539d8d7095eb61794',1,'thrill::vfs::glob_local::SimpleGlobBase']]],
   ['global_5findex',['global_index',['../structthrill_1_1core_1_1ReduceByIndex_1_1Result.html#ad22e755757be8901f8c07a6b4d589ad2',1,'thrill::core::ReduceByIndex::Result']]],
   ['global_5fsize_5f',['global_size_',['../classthrill_1_1api_1_1SizeNode.html#a5d7023782b6b1ed5672cbe0846989ffa',1,'thrill::api::SizeNode']]],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['globtype',['GlobType',['../namespacethrill_1_1vfs.html#ac7206d989022001555916ee86ef21cf5',1,'thrill::vfs']]]
+  ['flags',['Flags',['../classthrill_1_1net_1_1Connection.html#a43dbb7800a95ac41f4c2f5a7de9357af',1,'thrill::net::Connection']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['local_20operations_20_28lops_29',['Local Operations (LOps)',['../group__dia__lops.html',1,'']]],
-  ['loser_20trees',['Loser Trees',['../group__tlx__container__loser__tree.html',1,'']]]
+  ['helpers_20for_20portable_20code',['Helpers for Portable Code',['../group__tlx__port.html',1,'']]]
 ];

@@ -1,14 +1,23 @@
 var searchData=
 [
+  ['acc_5fios_5f',['acc_ios_',['../classfoxxll_1_1stats.html#a7079f225e75c28695c56f9d940c93aa2',1,'foxxll::stats']]],
+  ['acc_5freads_5f',['acc_reads_',['../classfoxxll_1_1file__stats.html#a27291589edce30400289cdba51353d37',1,'foxxll::file_stats::acc_reads_()'],['../classfoxxll_1_1stats.html#a27291589edce30400289cdba51353d37',1,'foxxll::stats::acc_reads_()']]],
+  ['acc_5fwait_5fread_5f',['acc_wait_read_',['../classfoxxll_1_1stats.html#aa9716c5acb628fd541166ff51b2cd1b7',1,'foxxll::stats']]],
+  ['acc_5fwait_5fwrite_5f',['acc_wait_write_',['../classfoxxll_1_1stats.html#a178241432f8aa38e610025bcbb4dc4ec',1,'foxxll::stats']]],
+  ['acc_5fwaits_5f',['acc_waits_',['../classfoxxll_1_1stats.html#a5de916b6d788eb035e51e5f4cd7b4c15',1,'foxxll::stats']]],
+  ['acc_5fwrites_5f',['acc_writes_',['../classfoxxll_1_1file__stats.html#a3e064287271684c663e4ed09fd3f4fc9',1,'foxxll::file_stats::acc_writes_()'],['../classfoxxll_1_1stats.html#a3e064287271684c663e4ed09fd3f4fc9',1,'foxxll::stats::acc_writes_()']]],
+  ['accumulated',['accumulated',['../classfoxxll_1_1timer.html#a394de0732b4948fd8a1008cd73c36198',1,'foxxll::timer']]],
   ['accumulated_5f',['accumulated_',['../classthrill_1_1common_1_1StatsTimerBase_3_01true_01_4.html#ae702defbfe75dffb31e3d66209bba2d4',1,'thrill::common::StatsTimerBase&lt; true &gt;']]],
   ['active',['active',['../structthrill_1_1net_1_1mpi_1_1Dispatcher_1_1Watch.html#a03c996f9fcf0e10baeb3e700be0c409a',1,'thrill::net::mpi::Dispatcher::Watch::active()'],['../structthrill_1_1net_1_1tcp_1_1SelectDispatcher_1_1Watch.html#a03c996f9fcf0e10baeb3e700be0c409a',1,'thrill::net::tcp::SelectDispatcher::Watch::active()']]],
   ['active_5f',['active_',['../classtlx_1_1sort__strings__detail_1_1StringShadowPtr.html#ab9a515a3917cb14bebdab27b2a5405eb',1,'tlx::sort_strings_detail::StringShadowPtr']]],
   ['active_5fstreams_5f',['active_streams_',['../classthrill_1_1data_1_1Multiplexer.html#aa582c2d4ceb437aa79597dc6c4cb2dc7',1,'thrill::data::Multiplexer']]],
+  ['algo',['algo',['../classfoxxll_1_1block__scheduler.html#ae1c5ef769f4a577b2b55d639f56469c0',1,'foxxll::block_scheduler']]],
   ['alignment',['alignment',['../classtlx_1_1StackArena.html#ac15e6b5f88a94c672b70f8a914798517',1,'tlx::StackArena']]],
   ['alloc_5f',['alloc_',['../classtlx_1_1RingBuffer.html#af8ef2a35aadec4f191c273973f1304a6',1,'tlx::RingBuffer']]],
   ['alloc_5fcount_5f',['alloc_count_',['../classthrill_1_1mem_1_1Manager.html#a99161f88874799c8d9d3417b7a906254',1,'thrill::mem::Manager']]],
   ['allocate_5fcan_5ffail_5f',['allocate_can_fail_',['../classthrill_1_1data_1_1BlockQueue.html#a8a52a84f0a2aa480b76baeb8a219ef68',1,'thrill::data::BlockQueue::allocate_can_fail_()'],['../classthrill_1_1data_1_1BlockSink.html#a8a52a84f0a2aa480b76baeb8a219ef68',1,'thrill::data::BlockSink::allocate_can_fail_()'],['../classthrill_1_1data_1_1BoundedBlockSink.html#a8a52a84f0a2aa480b76baeb8a219ef68',1,'thrill::data::BoundedBlockSink::allocate_can_fail_()'],['../classthrill_1_1data_1_1DiscardSink.html#a8a52a84f0a2aa480b76baeb8a219ef68',1,'thrill::data::DiscardSink::allocate_can_fail_()'],['../classthrill_1_1data_1_1File.html#a8a52a84f0a2aa480b76baeb8a219ef68',1,'thrill::data::File::allocate_can_fail_()'],['../classthrill_1_1data_1_1StreamSink.html#a8a52a84f0a2aa480b76baeb8a219ef68',1,'thrill::data::StreamSink::allocate_can_fail_()']]],
   ['allocator_5f',['allocator_',['../classthrill_1_1mem_1_1Deleter.html#ad0129c5ec20aa2cddbd07fd0a8aafab3',1,'thrill::mem::Deleter::allocator_()'],['../classtlx_1_1btree.html#a8746da7b8170695c17d760f1a43bd4fe',1,'tlx::btree::allocator_()']]],
+  ['allocator_5fid_5f',['allocator_id_',['../classfoxxll_1_1disk__queued__file.html#aae31ee387cb6d148ccdb3edf6588feb9',1,'foxxll::disk_queued_file']]],
   ['allocs_5f',['allocs_',['../classthrill_1_1mem_1_1Pool.html#aa4a019beb07c56090182e2283103a36f',1,'thrill::mem::Pool']]],
   ['allow_5fduplicates',['allow_duplicates',['../classtlx_1_1btree.html#a4a380c8745ff0a1c814742821e85403e',1,'tlx::btree::allow_duplicates()'],['../classtlx_1_1btree__map.html#a4a380c8745ff0a1c814742821e85403e',1,'tlx::btree_map::allow_duplicates()'],['../classtlx_1_1btree__multimap.html#a4a380c8745ff0a1c814742821e85403e',1,'tlx::btree_multimap::allow_duplicates()'],['../classtlx_1_1btree__multiset.html#a4a380c8745ff0a1c814742821e85403e',1,'tlx::btree_multiset::allow_duplicates()'],['../classtlx_1_1btree__set.html#a4a380c8745ff0a1c814742821e85403e',1,'tlx::btree_set::allow_duplicates()']]],
   ['arena_5f',['arena_',['../classtlx_1_1StackAllocator.html#ac73fe7e3bf0646d33e39f1653d0a6484',1,'tlx::StackAllocator']]],
@@ -22,6 +31,9 @@ var searchData=
   ['async_5fwrite_5f',['async_write_',['../classthrill_1_1net_1_1Dispatcher.html#a533866be70cee74439128c6b8f479fe4',1,'thrill::net::Dispatcher']]],
   ['async_5fwrite_5fblock_5f',['async_write_block_',['../classthrill_1_1net_1_1Dispatcher.html#a3d3f59c423810c2cc9cbecb9137c69ad',1,'thrill::net::Dispatcher']]],
   ['author_5f',['author_',['../classtlx_1_1CmdlineParser.html#a90d2a2533b2434302f3be98438f9f470',1,'tlx::CmdlineParser']]],
+  ['autogrow',['autogrow',['../classfoxxll_1_1disk__config.html#a311f10c0a6afeb99eee3b405542b0e32',1,'foxxll::disk_config']]],
+  ['autogrow_5f',['autogrow_',['../classfoxxll_1_1disk__block__allocator.html#ad48781fc27074d0e0ec88598cdf6ba31',1,'foxxll::disk_block_allocator']]],
   ['available_5f',['available_',['../classthrill_1_1data_1_1BoundedBlockSink.html#a692ef009500e2c85254ef6239a2b8406',1,'thrill::data::BoundedBlockSink::available_()'],['../classthrill_1_1data_1_1MixBlockQueueReader.html#a692ef009500e2c85254ef6239a2b8406',1,'thrill::data::MixBlockQueueReader::available_()']]],
-  ['available_5fat_5f',['available_at_',['../classthrill_1_1data_1_1MixBlockQueueReader.html#a371a08b32070854b5af0579059ee0a22',1,'thrill::data::MixBlockQueueReader']]]
+  ['available_5fat_5f',['available_at_',['../classthrill_1_1data_1_1MixBlockQueueReader.html#a371a08b32070854b5af0579059ee0a22',1,'thrill::data::MixBlockQueueReader']]],
+  ['average',['average',['../structfoxxll_1_1stats__data_1_1summary.html#a2e50537b138c27e2e30e8d3a568fbee0',1,'foxxll::stats_data::summary']]]
 ];

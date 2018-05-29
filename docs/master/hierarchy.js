@@ -1,5 +1,7 @@
 var hierarchy =
 [
+    [ "addressable_fifo_queue< swappable_block_identifier_type >", "classfoxxll_1_1addressable__fifo__queue.html", null ],
+    [ "addressable_priority_queue< swappable_block_identifier_type, foxxll::block_scheduler_algorithm_offline_lfd::priority >", "classfoxxll_1_1addressable__priority__queue.html", null ],
     [ "AllocatorBase< Byte >", "classtlx_1_1AllocatorBase.html", [
       [ "AlignedAllocator< Byte, mem::Allocator< char > >", "classthrill_1_1mem_1_1AlignedAllocator.html", null ]
     ] ],
@@ -9,9 +11,11 @@ var hierarchy =
     [ "AllocatorBase< T >", "classtlx_1_1AllocatorBase.html", [
       [ "Allocator< T >", "classthrill_1_1mem_1_1Allocator.html", null ]
     ] ],
+    [ "BID< raw_size >", "classfoxxll_1_1BID.html", null ],
     [ "BinaryHeap< Timer >", "classthrill_1_1common_1_1BinaryHeap.html", null ],
     [ "btree< key_type, value_type, key_of_value, key_compare, traits, false, allocator_type >", "classtlx_1_1btree.html", null ],
     [ "btree< key_type, value_type, key_of_value, key_compare, traits, true, allocator_type >", "classtlx_1_1btree.html", null ],
+    [ "buffered_writer< block_type >", "classfoxxll_1_1buffered__writer.html", null ],
     [ "CentroidAccumulated< Vector< D, double > >", "structexamples_1_1k__means_1_1CentroidAccumulated.html", null ],
     [ "InputArchive", null, [
       [ "ThrillInputArchive< Reader >", "classthrill_1_1data_1_1serialization__cereal_1_1ThrillInputArchive.html", null ]
@@ -21,14 +25,17 @@ var hierarchy =
     ] ],
     [ "CountingPtr< ActionNode >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< ActionResultNode< ValueType > >", "classtlx_1_1CountingPtr.html", null ],
+    [ "CountingPtr< base_file_type >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< CatStream >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< CatStreamData >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< DIABase >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< DIANode< StackInput > >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< File >", "classtlx_1_1CountingPtr.html", null ],
+    [ "CountingPtr< file >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< MixStream >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< MixStreamData >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< ReadStream >", "classtlx_1_1CountingPtr.html", null ],
+    [ "CountingPtr< request >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< StreamData >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< thrill::data::DynBlockSourceInterface >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< thrill::data::File >", "classtlx_1_1CountingPtr.html", null ],
@@ -40,6 +47,24 @@ var hierarchy =
     [ "Delegate< void(Connection &c, data::PinnedByteBlockPtr &&bytes), mem::GPoolAllocator< char > >", "classtlx_1_1Delegate.html", null ],
     [ "Delegate< void(const ValueType &)>", "classtlx_1_1Delegate.html", null ],
     [ "Delegate< void(MPI_Status &), mem::GPoolAllocator< char > >", "classtlx_1_1Delegate.html", null ],
+    [ "Delegate< void(request *r, bool success)>", "classtlx_1_1Delegate.html", null ],
+    [ "element_block< Type, Size >", "classfoxxll_1_1mng__local_1_1element__block.html", [
+      [ "block_w_bids< Type,((RawSize-sizeof(BID< RawSize >)*NBids)/sizeof(Type)), RawSize, NBids >", "classfoxxll_1_1mng__local_1_1block__w__bids.html", [
+        [ "block_w_info< Type, RawSize, NBids, void >", "classfoxxll_1_1mng__local_1_1block__w__info_3_01Type_00_01RawSize_00_01NBids_00_01void_01_4.html", null ]
+      ] ],
+      [ "block_w_bids< Type,((RawSize-sizeof(BID< RawSize >)*NBids-sizeof(MetaInfoType))/sizeof(Type)), RawSize, NBids >", "classfoxxll_1_1mng__local_1_1block__w__bids.html", [
+        [ "block_w_info< Type, RawSize, NRef, MetaInfoType >", "classfoxxll_1_1mng__local_1_1block__w__info.html", [
+          [ "add_filler< mng_local::block_w_info< Type, RawSize, NRef, MetaInfoType >, RawSize-sizeof(mng_local::block_w_info< Type, RawSize, NRef, MetaInfoType >)>", "classfoxxll_1_1mng__local_1_1add__filler.html", [
+            [ "expand_struct< mng_local::block_w_info< Type, RawSize, NRef, MetaInfoType >, RawSize >", "classfoxxll_1_1mng__local_1_1expand__struct.html", [
+              [ "typed_block< RawSize, Type, NRef, MetaInfoType >", "classfoxxll_1_1typed__block.html", null ]
+            ] ]
+          ] ]
+        ] ],
+        [ "block_w_info< Type, RawSize, NBids, MetaInfoType >", "classfoxxll_1_1mng__local_1_1block__w__info.html", null ]
+      ] ],
+      [ "block_w_bids< Type, Size, RawSize, NBids >", "classfoxxll_1_1mng__local_1_1block__w__bids.html", null ],
+      [ "block_w_bids< Type, Size, RawSize, 0 >", "classfoxxll_1_1mng__local_1_1block__w__bids_3_01Type_00_01Size_00_01RawSize_00_010_01_4.html", null ]
+    ] ],
     [ "BfsNode", "classexamples_1_1bfs_1_1BfsNode.html", null ],
     [ "NodeParentPair", "structexamples_1_1bfs_1_1NodeParentPair.html", null ],
     [ "TreeInfo", "structexamples_1_1bfs_1_1TreeInfo.html", null ],
@@ -59,6 +84,108 @@ var hierarchy =
     [ "IndexRank< Index >", "structexamples_1_1suffix__sorting_1_1IndexRank.html", null ],
     [ "IndexRankFlag< Index >", "structexamples_1_1suffix__sorting_1_1IndexRankFlag.html", null ],
     [ "HashWordHasher", "structexamples_1_1word__count_1_1HashWordHasher.html", null ],
+    [ "filler_struct< FillSize >", "classfoxxll_1_1mng__local_1_1filler__struct.html", null ],
+    [ "addressable_fifo_queue< KeyType >", "classfoxxll_1_1addressable__fifo__queue.html", null ],
+    [ "addressable_priority_queue< KeyType, PriorityType, Cmp >", "classfoxxll_1_1addressable__priority__queue.html", null ],
+    [ "addressable_priority_queue< KeyType, PriorityType, Cmp >::cmp", "structfoxxll_1_1addressable__priority__queue_1_1cmp.html", null ],
+    [ "aligned_alloc_settings< MustBeInt >", "structfoxxll_1_1aligned__alloc__settings.html", null ],
+    [ "basic_allocation_strategy", "structfoxxll_1_1basic__allocation__strategy.html", null ],
+    [ "BID< Size >", "classfoxxll_1_1BID.html", null ],
+    [ "BID< 0 >", "classfoxxll_1_1BID_3_010_01_4.html", null ],
+    [ "block_prefetcher< BlockType, BidIteratorType >", "classfoxxll_1_1block__prefetcher.html", null ],
+    [ "block_scheduler< SwappableBlockType >", "classfoxxll_1_1block__scheduler.html", null ],
+    [ "block_scheduler< SwappableBlockType >::prediction_sequence_element", "structfoxxll_1_1block__scheduler_1_1prediction__sequence__element.html", null ],
+    [ "block_scheduler_algorithm< SwappableBlockType >", "classfoxxll_1_1block__scheduler__algorithm.html", [
+      [ "block_scheduler_algorithm_offline_lfd< SwappableBlockType >", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html", null ],
+      [ "block_scheduler_algorithm_offline_lru_prefetching< SwappableBlockType >", "classfoxxll_1_1block__scheduler__algorithm__offline__lru__prefetching.html", null ],
+      [ "block_scheduler_algorithm_online_lru< SwappableBlockType >", "classfoxxll_1_1block__scheduler__algorithm__online__lru.html", null ],
+      [ "block_scheduler_algorithm_simulation< SwappableBlockType >", "classfoxxll_1_1block__scheduler__algorithm__simulation.html", null ]
+    ] ],
+    [ "block_scheduler_algorithm_offline_lfd< SwappableBlockType >::priority", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd_1_1priority.html", null ],
+    [ "block_scheduler_algorithm_offline_lru_prefetching< SwappableBlockType >::read_after_write", "structfoxxll_1_1block__scheduler__algorithm__offline__lru__prefetching_1_1read__after__write.html", null ],
+    [ "block_scheduler_algorithm_offline_lru_prefetching< SwappableBlockType >::scheduled_block_meta", "structfoxxll_1_1block__scheduler__algorithm__offline__lru__prefetching_1_1scheduled__block__meta.html", null ],
+    [ "block_scheduler_algorithm_offline_lru_prefetching< SwappableBlockType >::write_read_request", "structfoxxll_1_1block__scheduler__algorithm__offline__lru__prefetching_1_1write__read__request.html", null ],
+    [ "buf_istream< BlockType, BidIteratorType >", "classfoxxll_1_1buf__istream.html", null ],
+    [ "buf_istream_reverse< BlockType, BidIteratorType >", "classfoxxll_1_1buf__istream__reverse.html", null ],
+    [ "buf_ostream< BlockType, BidIteratorType >", "classfoxxll_1_1buf__ostream.html", null ],
+    [ "buffered_writer< BlockType >", "classfoxxll_1_1buffered__writer.html", null ],
+    [ "buffered_writer< BlockType >::batch_entry", "structfoxxll_1_1buffered__writer_1_1batch__entry.html", null ],
+    [ "buffered_writer< BlockType >::batch_entry_cmp", "structfoxxll_1_1buffered__writer_1_1batch__entry__cmp.html", null ],
+    [ "CASE< Tag, Type_, Next_ >", "structfoxxll_1_1CASE.html", null ],
+    [ "disk_block_allocator", "classfoxxll_1_1disk__block__allocator.html", null ],
+    [ "disk_config", "classfoxxll_1_1disk__config.html", null ],
+    [ "fake_timer", "classfoxxll_1_1fake__timer.html", null ],
+    [ "file_stats", "classfoxxll_1_1file__stats.html", null ],
+    [ "file_stats::scoped_read_timer", "classfoxxll_1_1file__stats_1_1scoped__read__timer.html", null ],
+    [ "file_stats::scoped_read_write_timer", "classfoxxll_1_1file__stats_1_1scoped__read__write__timer.html", null ],
+    [ "file_stats::scoped_write_timer", "classfoxxll_1_1file__stats_1_1scoped__write__timer.html", null ],
+    [ "file_stats_data", "classfoxxll_1_1file__stats__data.html", null ],
+    [ "interleaved_alloc_traits< scheme >", "structfoxxll_1_1interleaved__alloc__traits.html", null ],
+    [ "interleaved_alloc_traits< fully_random >", "structfoxxll_1_1interleaved__alloc__traits_3_01fully__random_01_4.html", null ],
+    [ "interleaved_alloc_traits< random_cyclic >", "structfoxxll_1_1interleaved__alloc__traits_3_01random__cyclic_01_4.html", null ],
+    [ "interleaved_alloc_traits< random_cyclic_disk >", "structfoxxll_1_1interleaved__alloc__traits_3_01random__cyclic__disk_01_4.html", null ],
+    [ "interleaved_alloc_traits< random_cyclic_flash >", "structfoxxll_1_1interleaved__alloc__traits_3_01random__cyclic__flash_01_4.html", null ],
+    [ "interleaved_alloc_traits< simple_random >", "structfoxxll_1_1interleaved__alloc__traits_3_01simple__random_01_4.html", null ],
+    [ "interleaved_alloc_traits< single_disk >", "structfoxxll_1_1interleaved__alloc__traits_3_01single__disk_01_4.html", null ],
+    [ "interleaved_alloc_traits< striping >", "structfoxxll_1_1interleaved__alloc__traits_3_01striping_01_4.html", null ],
+    [ "interleaved_striping", "structfoxxll_1_1interleaved__striping.html", [
+      [ "first_disk_only", "structfoxxll_1_1first__disk__only.html", null ],
+      [ "interleaved_fully_random", "structfoxxll_1_1interleaved__fully__random.html", null ],
+      [ "interleaved_random_cyclic", "structfoxxll_1_1interleaved__random__cyclic.html", null ],
+      [ "interleaved_simple_random", "structfoxxll_1_1interleaved__simple__random.html", null ]
+    ] ],
+    [ "element_block< Type, kSize >", "classfoxxll_1_1mng__local_1_1element__block.html", null ],
+    [ "filler_struct< Bytes >", "classfoxxll_1_1mng__local_1_1filler__struct.html", null ],
+    [ "filler_struct< 0 >", "classfoxxll_1_1mng__local_1_1filler__struct_3_010_01_4.html", null ],
+    [ "new_alloc< Type >", "classfoxxll_1_1new__alloc.html", null ],
+    [ "new_alloc< Type >::rebind< Rebind >", "structfoxxll_1_1new__alloc_1_1rebind.html", null ],
+    [ "new_alloc_rebind< Type, Rebind >", "structfoxxll_1_1new__alloc__rebind.html", null ],
+    [ "new_alloc_rebind< Type, Type >", "structfoxxll_1_1new__alloc__rebind_3_01Type_00_01Type_01_4.html", null ],
+    [ "NilCase", "structfoxxll_1_1NilCase.html", null ],
+    [ "offset_allocator< BaseAllocator >", "structfoxxll_1_1offset__allocator.html", null ],
+    [ "onoff_switch", "classfoxxll_1_1onoff__switch.html", null ],
+    [ "prefetch_pool< BlockType >", "classfoxxll_1_1prefetch__pool.html", null ],
+    [ "prefetch_pool< BlockType >::bid_hash", "structfoxxll_1_1prefetch__pool_1_1bid__hash.html", null ],
+    [ "read_write_pool< BlockType >", "classfoxxll_1_1read__write__pool.html", null ],
+    [ "request_interface", "classfoxxll_1_1request__interface.html", [
+      [ "request", "classfoxxll_1_1request.html", [
+        [ "request_with_waiters", "classfoxxll_1_1request__with__waiters.html", [
+          [ "request_with_state", "classfoxxll_1_1request__with__state.html", [
+            [ "serving_request", "classfoxxll_1_1serving__request.html", null ]
+          ] ]
+        ] ]
+      ] ]
+    ] ],
+    [ "request_queue", "classfoxxll_1_1request__queue.html", [
+      [ "request_queue_impl_worker", "classfoxxll_1_1request__queue__impl__worker.html", [
+        [ "request_queue_impl_1q", "classfoxxll_1_1request__queue__impl__1q.html", null ],
+        [ "request_queue_impl_qwqr", "classfoxxll_1_1request__queue__impl__qwqr.html", null ]
+      ] ]
+    ] ],
+    [ "scoped_print_iostats", "classfoxxll_1_1scoped__print__iostats.html", null ],
+    [ "scoped_print_timer", "classfoxxll_1_1scoped__print__timer.html", null ],
+    [ "set_switch_handler", "classfoxxll_1_1set__switch__handler.html", null ],
+    [ "shared_state< ValueType >", "classfoxxll_1_1shared__state.html", null ],
+    [ "single_disk", "structfoxxll_1_1single__disk.html", null ],
+    [ "singleton< INSTANCE, destroy_on_exit >", "classfoxxll_1_1singleton.html", null ],
+    [ "stats::scoped_wait_timer", "classfoxxll_1_1stats_1_1scoped__wait__timer.html", null ],
+    [ "stats_data", "classfoxxll_1_1stats__data.html", null ],
+    [ "stats_data::summary< T >", "structfoxxll_1_1stats__data_1_1summary.html", null ],
+    [ "striping", "structfoxxll_1_1striping.html", [
+      [ "fully_random", "structfoxxll_1_1fully__random.html", null ],
+      [ "random_cyclic", "structfoxxll_1_1random__cyclic.html", [
+        [ "random_cyclic_disk", "structfoxxll_1_1random__cyclic__disk.html", null ],
+        [ "random_cyclic_flash", "structfoxxll_1_1random__cyclic__flash.html", null ]
+      ] ],
+      [ "simple_random", "structfoxxll_1_1simple__random.html", null ]
+    ] ],
+    [ "swappable_block< ValueType, BlockSize >", "classfoxxll_1_1swappable__block.html", null ],
+    [ "SWITCH< Tag, Case >", "classfoxxll_1_1SWITCH.html", null ],
+    [ "SWITCH< Tag, NilCase >", "classfoxxll_1_1SWITCH_3_01Tag_00_01NilCase_01_4.html", null ],
+    [ "timer", "classfoxxll_1_1timer.html", null ],
+    [ "uint_pair< HighType >", "classfoxxll_1_1uint__pair.html", null ],
+    [ "write_pool< BlockType >", "classfoxxll_1_1write__pool.html", null ],
+    [ "write_pool< BlockType >::busy_entry", "structfoxxll_1_1write__pool_1_1busy__entry.html", null ],
     [ "GradientResult< thrill::common::Vector >", "structexamples_1_1stochastic__gradient__descent_1_1GradientResult.html", null ],
     [ "hypergeometric_distribution<>", "classthrill_1_1common_1_1hypergeometric__distribution.html", null ],
     [ "ItemReaderToolsBase< BlockReader< BlockSource > >", "classthrill_1_1common_1_1ItemReaderToolsBase.html", [
@@ -116,11 +243,28 @@ var hierarchy =
     [ "ReservoirSamplingFast< ValueType, decltype(rng_)>", "classthrill_1_1common_1_1ReservoirSamplingFast.html", null ],
     [ "ReservoirSamplingGrow< SampleIndexPair >", "classthrill_1_1common_1_1ReservoirSamplingGrow.html", null ],
     [ "RingBuffer< Input >", "classtlx_1_1RingBuffer.html", null ],
+    [ "shared_state< request_state >", "classfoxxll_1_1shared__state.html", null ],
+    [ "shared_state< thread_state >", "classfoxxll_1_1shared__state.html", null ],
+    [ "SimpleVector< block_type::raw_size >", "classtlx_1_1SimpleVector.html", null ],
+    [ "SimpleVector< foxxll::disk_block_allocator * >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< std::thread >", "classtlx_1_1SimpleVector.html", null ],
+    [ "SimpleVector< tlx::CountingPtr >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< tlx::LoserTreeCopyBase::Loser >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< tlx::LoserTreeCopyUnguardedBase::Loser >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< tlx::LoserTreePointerBase::Loser >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< tlx::LoserTreePointerUnguardedBase::Loser >", "classtlx_1_1SimpleVector.html", null ],
+    [ "singleton< block_manager >", "classfoxxll_1_1singleton.html", [
+      [ "block_manager", "classfoxxll_1_1block__manager.html", null ]
+    ] ],
+    [ "singleton< config >", "classfoxxll_1_1singleton.html", [
+      [ "config", "classfoxxll_1_1config.html", null ]
+    ] ],
+    [ "singleton< disk_queues >", "classfoxxll_1_1singleton.html", [
+      [ "disk_queues", "classfoxxll_1_1disk__queues.html", null ]
+    ] ],
+    [ "singleton< stats >", "classfoxxll_1_1singleton.html", [
+      [ "stats", "classfoxxll_1_1stats.html", null ]
+    ] ],
     [ "atomic", null, [
       [ "AtomicMovable< bool >", "classthrill_1_1common_1_1AtomicMovable.html", null ],
       [ "AtomicMovable< size_t >", "classthrill_1_1common_1_1AtomicMovable.html", null ],
@@ -139,7 +283,14 @@ var hierarchy =
       [ "lexicographic_rev< T1, T2, Comparator >", "classtlx_1_1multisequence__selection__detail_1_1lexicographic__rev.html", null ]
     ] ],
     [ "exception", null, [
+      [ "ios_base::failure", null, [
+        [ "io_error", "classfoxxll_1_1io__error.html", null ]
+      ] ],
       [ "runtime_error", null, [
+        [ "bad_ext_alloc", "classfoxxll_1_1bad__ext__alloc.html", null ],
+        [ "bad_parameter", "classfoxxll_1_1bad__parameter.html", null ],
+        [ "resource_error", "classfoxxll_1_1resource__error.html", null ],
+        [ "unreachable", "classfoxxll_1_1unreachable.html", null ],
         [ "SystemException", "classthrill_1_1common_1_1SystemException.html", [
           [ "ErrnoException", "classthrill_1_1common_1_1ErrnoException.html", null ]
         ] ],
@@ -160,6 +311,7 @@ var hierarchy =
     ] ],
     [ "hash< Edge >", "structstd_1_1hash_3_01Edge_01_4.html", null ],
     [ "hash< thrill::common::StringView >", "structstd_1_1hash_3_01thrill_1_1common_1_1StringView_01_4.html", null ],
+    [ "numeric_limits< foxxll::uint_pair< HighType > >", "classstd_1_1numeric__limits_3_01foxxll_1_1uint__pair_3_01HighType_01_4_01_4.html", null ],
     [ "numeric_limits< thrill::common::UIntPair< HighType > >", "classstd_1_1numeric__limits_3_01thrill_1_1common_1_1UIntPair_3_01HighType_01_4_01_4.html", null ],
     [ "true_type", null, [
       [ "Delegate< R(A...), Allocator >::IsConstMemberPair< ConstMemberPair< C > >", "structtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4_1_1IsConstMemberPair_3_01ConstMemberPair_3_01C_01_4_01_4.html", null ],
@@ -550,6 +702,17 @@ var hierarchy =
     [ "guarded_iterator< RandomAccessIterator, Comparator >", "classtlx_1_1multiway__merge__detail_1_1guarded__iterator.html", null ],
     [ "unguarded_iterator< RandomAccessIterator, Comparator >", "classtlx_1_1multiway__merge__detail_1_1unguarded__iterator.html", null ],
     [ "ReferenceCounter", "classtlx_1_1ReferenceCounter.html", [
+      [ "file", "classfoxxll_1_1file.html", [
+        [ "disk_queued_file", "classfoxxll_1_1disk__queued__file.html", [
+          [ "fileperblock_file< base_file_type >", "classfoxxll_1_1fileperblock__file.html", null ],
+          [ "memory_file", "classfoxxll_1_1memory__file.html", null ],
+          [ "syscall_file", "classfoxxll_1_1syscall__file.html", null ]
+        ] ],
+        [ "ufs_file_base", "classfoxxll_1_1ufs__file__base.html", [
+          [ "syscall_file", "classfoxxll_1_1syscall__file.html", null ]
+        ] ]
+      ] ],
+      [ "request", "classfoxxll_1_1request.html", null ],
       [ "DIABase", "classthrill_1_1api_1_1DIABase.html", [
         [ "DIANode< StackInput >", "classthrill_1_1api_1_1DIANode.html", null ],
         [ "DIANode< std::string >", "classthrill_1_1api_1_1DIANode.html", [
@@ -662,5 +825,14 @@ var hierarchy =
     [ "ThreadPool", "classtlx_1_1ThreadPool.html", null ],
     [ "ToVectorEmitter< thrill::api::GroupByNode::HashCount >", "classthrill_1_1core_1_1ToVectorEmitter.html", null ],
     [ "ToVectorEmitter< thrill::api::JoinNode::HashCount >", "classthrill_1_1core_1_1ToVectorEmitter.html", null ],
-    [ "Vector< D, double >", "classthrill_1_1common_1_1Vector.html", null ]
+    [ "Vector< D, double >", "classthrill_1_1common_1_1Vector.html", null ],
+    [ "BaseType", null, [
+      [ "add_filler< BaseType, FillSize >", "classfoxxll_1_1mng__local_1_1add__filler.html", null ],
+      [ "add_filler< BaseType, 0 >", "classfoxxll_1_1mng__local_1_1add__filler_3_01BaseType_00_010_01_4.html", null ]
+    ] ],
+    [ "Type", null, [
+      [ "add_filler< Type, RawSize-sizeof(Type)>", "classfoxxll_1_1mng__local_1_1add__filler.html", [
+        [ "expand_struct< Type, RawSize >", "classfoxxll_1_1mng__local_1_1expand__struct.html", null ]
+      ] ]
+    ] ]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['handle',['Handle',['../classthrill_1_1data_1_1CatStreamData.html#ab815409809b92616e365b90838cbdbcc',1,'thrill::data::CatStreamData::Handle()'],['../classthrill_1_1data_1_1MixStreamData.html#aba0de9c0e3bd47ef10e222557b3066b4',1,'thrill::data::MixStreamData::Handle()']]],
+  ['handle',['Handle',['../classthrill_1_1data_1_1CatStreamData.html#ab815409809b92616e365b90838cbdbcc',1,'thrill::data::CatStreamData::Handle()'],['../classthrill_1_1data_1_1MixStreamData.html#aba0de9c0e3bd47ef10e222557b3066b4',1,'thrill::data::MixStreamData::Handle()'],['../classfoxxll_1_1addressable__fifo__queue.html#ae3b018a342f17054a568b1bf4194b8bf',1,'foxxll::addressable_fifo_queue::handle()'],['../classfoxxll_1_1addressable__priority__queue.html#ae3b018a342f17054a568b1bf4194b8bf',1,'foxxll::addressable_priority_queue::handle()']]],
   ['hash',['hash',['../namespacethrill_1_1common.html#a875f235e587df74925edc1a49b367311',1,'thrill::common']]],
   ['hash_5ftype',['hash_type',['../classthrill_1_1common_1_1TabulationHashing.html#a3d5afacdcad457f74aec9deda20e6d44',1,'thrill::common::TabulationHashing']]],
   ['hashcrc32',['HashCrc32',['../namespacethrill_1_1common.html#a1e4e2e1c93df0cf814e37cb0ebf08156',1,'thrill::common']]],
@@ -10,6 +10,7 @@ var searchData=
   ['hashword',['HashWord',['../namespaceexamples_1_1word__count.html#a16b2f1df2cb26c877d2398e5464024bc',1,'examples::word_count']]],
   ['hashwordcount',['HashWordCount',['../namespaceexamples_1_1word__count.html#a24dc4223f440ea566ab9c0625d60f3d3',1,'examples::word_count']]],
   ['high',['High',['../classthrill_1_1common_1_1UIntPair.html#af0729ff165fafb544b27566632b29c0c',1,'thrill::common::UIntPair']]],
+  ['high_5ftype',['high_type',['../classfoxxll_1_1uint__pair.html#aeb610e7a6cfa13390f2c30bf6f08df79',1,'foxxll::uint_pair::high_type()'],['../extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#aeb610e7a6cfa13390f2c30bf6f08df79',1,'high_type():&#160;uint_types.hpp']]],
   ['hypergeometric',['hypergeometric',['../namespacethrill_1_1common.html#aec569b63932a5ac14668779afd2e0b62',1,'thrill::common']]],
   ['hyperloglogsparseregister',['HyperLogLogSparseRegister',['../namespacethrill_1_1core.html#aa8ed33c9275a5f50d8a4c14923ff8f3b',1,'thrill::core']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['network_20subsystem_20layer',['Network Subsystem Layer',['../group__net__layer.html',1,'']]]
+  ['local_20operations_20_28lops_29',['Local Operations (LOps)',['../group__dia__lops.html',1,'']]],
+  ['loser_20trees',['Loser Trees',['../group__tlx__container__loser__tree.html',1,'']]]
 ];

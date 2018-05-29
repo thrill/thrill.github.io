@@ -1,0 +1,26 @@
+var classfoxxll_1_1block__scheduler__algorithm__offline__lfd =
+[
+    [ "priority", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd_1_1priority.html", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd_1_1priority" ],
+    [ "block_scheduler_algorithm_type", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a675df27d19769e4b60dfabc96b79eeeb", null ],
+    [ "block_scheduler_type", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a0ed73a45e2896891370d5a70c561ab00", null ],
+    [ "external_block_type", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#aa5a94a6d64d5725b62eb819d17e4dd7c", null ],
+    [ "internal_block_type", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a70d43ad5ff2ebd2b31e07c11acebea6d", null ],
+    [ "prediction_sequence_type", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a43d41a2a9b34a24be4a3aafbef70ce4b", null ],
+    [ "swappable_block_identifier_type", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#ab9ef6144ab3367763dc240670089caaf", null ],
+    [ "time_type", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a83cc5f4d32dc5f09d2175f08b894f81c", null ],
+    [ "block_scheduler_algorithm_offline_lfd", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a17d37cd54b63b0da9146a26e4016f035", null ],
+    [ "block_scheduler_algorithm_offline_lfd", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#ab7d1a90992d794f9fbf40702a9bbd854", null ],
+    [ "~block_scheduler_algorithm_offline_lfd", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#ac8423b5b78579ecad55371fa316983d0", null ],
+    [ "acquire", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a4d8b532b6b724662c42a11cdffea7f29", null ],
+    [ "deinitialize", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a7419981094c4612a67cc078bcbc4077f", null ],
+    [ "evictable_blocks_empty", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a32dc9b3527851ddd829cfaaa39e0143d", null ],
+    [ "evictable_blocks_pop", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a27d14986f36efdaf3505bd6042afba32", null ],
+    [ "extract_external_block", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#ab2dc08430407a59cda4a6877dcc8f44c", null ],
+    [ "get_free_internal_block", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#acf4bd200a169310547077055491e8942", null ],
+    [ "init", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a4719d5677109cec64cbe170faf4f52bb", null ],
+    [ "initialize", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a14a511effba94b721f06f4a340ab6c83", null ],
+    [ "release", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a28a986969a28aeae876c069f858236e0", null ],
+    [ "return_free_internal_block", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a1c91d53ce1a74156a6b2089d5880b43d", null ],
+    [ "evictable_blocks", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a935040e3c02848dbaa7eafd712dfc0e3", null ],
+    [ "next_use", "classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a816b153313237f7748d2e0f396f5e88d", null ]
+];

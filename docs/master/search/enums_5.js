@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hyperloglogregisterformat',['HyperLogLogRegisterFormat',['../namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38',1,'thrill::core']]]
+  ['globtype',['GlobType',['../namespacethrill_1_1vfs.html#ac7206d989022001555916ee86ef21cf5',1,'thrill::vfs']]]
 ];

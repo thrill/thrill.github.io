@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['mock_20network_20api',['Mock Network API',['../group__net__mock.html',1,'']]],
-  ['mpi_20network_20api',['MPI Network API',['../group__net__mpi.html',1,'']]],
-  ['message_20digests',['Message Digests',['../group__tlx__digest.html',1,'']]],
-  ['math_20functions',['Math Functions',['../group__tlx__math.html',1,'']]],
-  ['meta_2dtemplate_20programming',['Meta-Template Programming',['../group__tlx__meta.html',1,'']]]
+  ['i_2fo_20primitives_20layer',['I/O Primitives Layer',['../group__foxxll__iolayer.html',1,'']]],
+  ['internals',['Internals',['../group__foxxll__mnglayer__internals.html',1,'']]],
+  ['i_2fo_20requests_20and_20queues',['I/O Requests and Queues',['../group__foxxll__reqlayer.html',1,'']]]
 ];

@@ -1,16 +1,13 @@
 var searchData=
 [
-  ['wavelet_5ftree_2ecpp',['wavelet_tree.cpp',['../wavelet__tree_8cpp.html',1,'']]],
-  ['wavelet_5ftree2_2ecpp',['wavelet_tree2.cpp',['../wavelet__tree2_8cpp.html',1,'']]],
-  ['wavelet_5ftree3_2ecpp',['wavelet_tree3.cpp',['../wavelet__tree3_8cpp.html',1,'']]],
-  ['window_2ehpp',['window.hpp',['../window_8hpp.html',1,'']]],
-  ['word_5fcount_2ehpp',['word_count.hpp',['../word__count_8hpp.html',1,'']]],
-  ['word_5fcount_5frun_2ecpp',['word_count_run.cpp',['../word__count__run_8cpp.html',1,'']]],
-  ['word_5fcount_5fsequential_2ecpp',['word_count_sequential.cpp',['../word__count__sequential_8cpp.html',1,'']]],
-  ['word_5fcount_5fsimple_2ecpp',['word_count_simple.cpp',['../word__count__simple_8cpp.html',1,'']]],
-  ['word_5fwrap_2ecpp',['word_wrap.cpp',['../word__wrap_8cpp.html',1,'']]],
-  ['word_5fwrap_2ehpp',['word_wrap.hpp',['../word__wrap_8hpp.html',1,'']]],
-  ['write_5fbinary_2ehpp',['write_binary.hpp',['../write__binary_8hpp.html',1,'']]],
-  ['write_5flines_2ehpp',['write_lines.hpp',['../write__lines_8hpp.html',1,'']]],
-  ['write_5flines_5fone_2ehpp',['write_lines_one.hpp',['../write__lines__one_8hpp.html',1,'']]]
+  ['vector_2ehpp',['vector.hpp',['../vector_8hpp.html',1,'']]],
+  ['version_2ecpp',['version.cpp',['../version_8cpp.html',1,'']]],
+  ['version_2ehpp',['version.hpp',['../version_8hpp.html',1,'']]],
+  ['vexpand_2ehpp',['vexpand.hpp',['../vexpand_8hpp.html',1,'']]],
+  ['vfs_5ftool_2ecpp',['vfs_tool.cpp',['../vfs__tool_8cpp.html',1,'']]],
+  ['vmap_5ffor_5frange_2ehpp',['vmap_for_range.hpp',['../vmap__for__range_8hpp.html',1,'']]],
+  ['vmap_5fforeach_2ehpp',['vmap_foreach.hpp',['../vmap__foreach_8hpp.html',1,'']]],
+  ['vmap_5fforeach_5ftuple_2ehpp',['vmap_foreach_tuple.hpp',['../vmap__foreach__tuple_8hpp.html',1,'']]],
+  ['vmap_5fforeach_5ftuple_5fwith_5findex_2ehpp',['vmap_foreach_tuple_with_index.hpp',['../vmap__foreach__tuple__with__index_8hpp.html',1,'']]],
+  ['vmap_5fforeach_5fwith_5findex_2ehpp',['vmap_foreach_with_index.hpp',['../vmap__foreach__with__index_8hpp.html',1,'']]]
 ];

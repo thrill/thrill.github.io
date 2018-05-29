@@ -1,4 +1,31 @@
 var searchData=
 [
-  ['have_5fthread_5flocal',['HAVE_THREAD_LOCAL',['../malloc__tracker_8cpp.html#a0927b2e85ea1ea0af6aa807d8a3180c5',1,'malloc_tracker.cpp']]]
+  ['foxxll_5fcheck_5ffor_5fpending_5frequests_5fon_5fsubmission',['FOXXLL_CHECK_FOR_PENDING_REQUESTS_ON_SUBMISSION',['../request__queue__impl__1q_8cpp.html#ac4b40f74c8ed0aa5bfc7d5f40dc2d0da',1,'FOXXLL_CHECK_FOR_PENDING_REQUESTS_ON_SUBMISSION():&#160;request_queue_impl_1q.cpp'],['../request__queue__impl__qwqr_8cpp.html#ac4b40f74c8ed0aa5bfc7d5f40dc2d0da',1,'FOXXLL_CHECK_FOR_PENDING_REQUESTS_ON_SUBMISSION():&#160;request_queue_impl_qwqr.cpp']]],
+  ['foxxll_5fconfig_5fheader',['FOXXLL_CONFIG_HEADER',['../config_8hpp_8in.html#a467053c4ed4ffb2205561c55f506e0e3',1,'config.hpp.in']]],
+  ['foxxll_5fdirect_5fio_5foff',['FOXXLL_DIRECT_IO_OFF',['../config_8hpp_8in.html#a56ba34282ed242ccecafb8885a86d106',1,'config.hpp.in']]],
+  ['foxxll_5fhave_5flinuxaio_5ffile',['FOXXLL_HAVE_LINUXAIO_FILE',['../config_8hpp_8in.html#a4ae5bc208d9ae6f000afc1f3f9078928',1,'config.hpp.in']]],
+  ['foxxll_5fhave_5fmmap_5ffile',['FOXXLL_HAVE_MMAP_FILE',['../config_8hpp_8in.html#a5a4ed5b0692630039aab85799069e997',1,'config.hpp.in']]],
+  ['foxxll_5fhave_5fwincall_5ffile',['FOXXLL_HAVE_WINCALL_FILE',['../wincall__file_8hpp.html#a75b968c57f197978705b928918e75e2a',1,'wincall_file.hpp']]],
+  ['foxxll_5fmsvc',['FOXXLL_MSVC',['../config_8hpp_8in.html#aef4d169d356415673565e921e9595679',1,'config.hpp.in']]],
+  ['foxxll_5fpretty_5ffunction_5fname',['FOXXLL_PRETTY_FUNCTION_NAME',['../error__handling_8hpp.html#a287c618cec3b7e0413ef12cbca5f28ba',1,'error_handling.hpp']]],
+  ['foxxll_5fthrow',['FOXXLL_THROW',['../error__handling_8hpp.html#a2a44f7fbc6c68ce827cd7d2229a81999',1,'error_handling.hpp']]],
+  ['foxxll_5fthrow2',['FOXXLL_THROW2',['../error__handling_8hpp.html#a0b8c850a653de7197c95aa8ae151eaa3',1,'error_handling.hpp']]],
+  ['foxxll_5fthrow_5ferrno',['FOXXLL_THROW_ERRNO',['../error__handling_8hpp.html#a5be7fab12a838b4a0b26334b3c72b1cd',1,'error_handling.hpp']]],
+  ['foxxll_5fthrow_5ferrno2',['FOXXLL_THROW_ERRNO2',['../error__handling_8hpp.html#aebfd421b99aba8b02b59ab50d66f810b',1,'error_handling.hpp']]],
+  ['foxxll_5fthrow_5ferrno_5fif',['FOXXLL_THROW_ERRNO_IF',['../error__handling_8hpp.html#a372b5f0cddd80e617ce0d06cde970a0e',1,'error_handling.hpp']]],
+  ['foxxll_5fthrow_5ferrno_5fne_5f0',['FOXXLL_THROW_ERRNO_NE_0',['../error__handling_8hpp.html#ae69123467a3bb7c68777a89cf7bacff0',1,'error_handling.hpp']]],
+  ['foxxll_5fthrow_5fif',['FOXXLL_THROW_IF',['../error__handling_8hpp.html#aa977aa1666de3dbc1cca87dccabd17d2',1,'error_handling.hpp']]],
+  ['foxxll_5fthrow_5finvalid_5fargument',['FOXXLL_THROW_INVALID_ARGUMENT',['../error__handling_8hpp.html#a016896942f1bd88bfdfb5b66e74cad20',1,'error_handling.hpp']]],
+  ['foxxll_5fthrow_5funreachable',['FOXXLL_THROW_UNREACHABLE',['../error__handling_8hpp.html#a08d3ac0d02b18bcad00a6c290fbdce33',1,'error_handling.hpp']]],
+  ['foxxll_5fverbose_5fwpool',['FOXXLL_VERBOSE_WPOOL',['../write__pool_8hpp.html#ae2b3866eaac9d5607d4e5862bee0e077',1,'write_pool.hpp']]],
+  ['foxxll_5fversion_5fgit_5frefspec',['FOXXLL_VERSION_GIT_REFSPEC',['../config_8hpp_8in.html#ad56235f02f13aa08b74df08444a28db6',1,'config.hpp.in']]],
+  ['foxxll_5fversion_5fgit_5fsha1',['FOXXLL_VERSION_GIT_SHA1',['../config_8hpp_8in.html#a6b30dd47ad69504fc016e41314817ef3',1,'config.hpp.in']]],
+  ['foxxll_5fversion_5finteger',['FOXXLL_VERSION_INTEGER',['../version_8hpp.html#a5026d9c973458b7ba83bebf3de890683',1,'version.hpp']]],
+  ['foxxll_5fversion_5fmajor',['FOXXLL_VERSION_MAJOR',['../config_8hpp_8in.html#ac10641b54e69e1aa4b85902970a3955a',1,'config.hpp.in']]],
+  ['foxxll_5fversion_5fminor',['FOXXLL_VERSION_MINOR',['../config_8hpp_8in.html#ae955937a2ef4b9dec276611ba200f063',1,'config.hpp.in']]],
+  ['foxxll_5fversion_5fpatch',['FOXXLL_VERSION_PATCH',['../config_8hpp_8in.html#a3ce2b4983156091c350d2d603a687dea',1,'config.hpp.in']]],
+  ['foxxll_5fversion_5fphase',['FOXXLL_VERSION_PHASE',['../config_8hpp_8in.html#a354eb7b772ca4e5f1eef6b034e0603fc',1,'config.hpp.in']]],
+  ['foxxll_5fversion_5fstring',['FOXXLL_VERSION_STRING',['../config_8hpp_8in.html#ac66c8f98c980a85a800660b5eee98d47',1,'config.hpp.in']]],
+  ['foxxll_5fwindows',['FOXXLL_WINDOWS',['../config_8hpp_8in.html#afce1187bda57cc1e3289fd473f618409',1,'config.hpp.in']]],
+  ['foxxll_5fwith_5fvalgrind',['FOXXLL_WITH_VALGRIND',['../config_8hpp_8in.html#a514d1c2224b778ac894c4e9dc6587808',1,'config.hpp.in']]]
 ];

@@ -262,7 +262,7 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                     <span class="keyword">const</span> S3BucketContext* bucket_context,</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                     <span class="keyword">const</span> <span class="keywordtype">char</span>* prefix, <span class="keyword">const</span> <span class="keywordtype">char</span>* marker = <span class="keyword">nullptr</span>,</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                     <span class="keyword">const</span> <span class="keywordtype">char</span>* delimiter = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                     <span class="keywordtype">int</span> maxkeys = <a class="code" href="namespacethrill_1_1common.html#ac55d70406741c4f4be46fbb8f4dfd832">std::numeric_limits&lt;int&gt;::max</a>()) {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                     <span class="keywordtype">int</span> maxkeys = <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::numeric_limits&lt;int&gt;::max</a>()) {</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        path_prefix_ = path_prefix;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
@@ -468,7 +468,7 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        output_end_ = output_ + size;</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="comment">// copy data from reception buffer</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="keywordtype">size_t</span> wb = <a class="code" href="namespacethrill_1_1common.html#af06fbf706bdaafea92ddc5c8351e7177">std::min</a>(size, buffer_.size());</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        <span class="keywordtype">size_t</span> wb = <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a969c1286bbe8eeb8811dac7a462d4a78">std::min</a>(size, buffer_.size());</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        std::copy(buffer_.begin(), buffer_.begin() + wb, output_);</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        output_ += wb;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        buffer_.erase(buffer_.begin(), buffer_.begin() + wb);</div>
@@ -555,7 +555,7 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="comment"></span>    S3Status GetObjectDataCallback(<span class="keywordtype">int</span> bufferSize, <span class="keyword">const</span> <span class="keywordtype">char</span>* buffer) {</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        <span class="comment">// copy as much data into output_ as fits</span></div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keywordtype">size_t</span> wb = <a class="code" href="namespacethrill_1_1common.html#af06fbf706bdaafea92ddc5c8351e7177">std::min</a>(</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keywordtype">size_t</span> wb = <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a969c1286bbe8eeb8811dac7a462d4a78">std::min</a>(</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            output_end_ - output_, static_cast&lt;intptr_t&gt;(bufferSize));</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        std::copy(buffer, buffer + wb, output_);</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        output_ += wb;</div>
@@ -638,7 +638,7 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        {</div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            <span class="comment">// copy data to buffer</span></div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;            <span class="keywordtype">size_t</span> buffer_pos = buffer_.size();</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;            <span class="keywordtype">size_t</span> wb = <a class="code" href="namespacethrill_1_1common.html#af06fbf706bdaafea92ddc5c8351e7177">std::min</a>(size, buffer_max_ - buffer_pos);</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;            <span class="keywordtype">size_t</span> wb = <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a969c1286bbe8eeb8811dac7a462d4a78">std::min</a>(size, buffer_max_ - buffer_pos);</div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;            buffer_.resize(buffer_pos + wb);</div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;            std::copy(data, data + wb, buffer_.data() + buffer_pos);</div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;            data += wb;</div>
@@ -817,7 +817,7 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;    }</div>
 <div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;</div>
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    <span class="keywordtype">int</span> PutObjectDataCallback(<span class="keywordtype">int</span> bufferSize, <span class="keywordtype">char</span>* buffer) {</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;        <span class="keywordtype">size_t</span> wb = <a class="code" href="namespacethrill_1_1common.html#af06fbf706bdaafea92ddc5c8351e7177">std::min</a>(</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;        <span class="keywordtype">size_t</span> wb = <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a969c1286bbe8eeb8811dac7a462d4a78">std::min</a>(</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;            static_cast&lt;intptr_t&gt;(bufferSize), upload_end_ - upload_);</div>
 <div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;        std::copy(upload_, upload_ + wb, buffer);</div>
 <div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;        upload_ += wb;</div>
@@ -872,6 +872,7 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;} <span class="comment">// namespace thrill</span></div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;</div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="ttc" id="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_html_a0cfacbbf6e846521326f5de5ba3ecd05"><div class="ttname"><a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">max</a></div><div class="ttdeci">static uint_pair max()</div><div class="ttdoc">return an uint_pair instance containing the largest value possible </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_source.html#l00226">uint_types.hpp:226</a></div></div>
 <div class="ttc" id="s3__file_8hpp_html"><div class="ttname"><a href="s3__file_8hpp.html">s3_file.hpp</a></div></div>
 <div class="ttc" id="die_8hpp_html_a63798a2675296e09260478493bf3829b"><div class="ttname"><a href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a></div><div class="ttdeci">#define die_unless(X)</div><div class="ttdef"><b>Definition:</b> <a href="die_8hpp_source.html#l00064">die.hpp:64</a></div></div>
 <div class="ttc" id="namespacethrill_1_1vfs_html_a2b0d718704d03d646c5c5126b4c75326"><div class="ttname"><a href="namespacethrill_1_1vfs.html#a2b0d718704d03d646c5c5126b4c75326">thrill::vfs::WriteStreamPtr</a></div><div class="ttdeci">tlx::CountingPtr&lt; WriteStream &gt; WriteStreamPtr</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8hpp_source.html#l00146">file_io.hpp:146</a></div></div>
@@ -894,21 +895,20 @@ $(document).ready(function(){initNavTree('s3__file_8cpp_source.html','');});
 <div class="ttc" id="namespacethrill_1_1vfs_html_abfb124f0662491881956497794ea30d9"><div class="ttname"><a href="namespacethrill_1_1vfs.html#abfb124f0662491881956497794ea30d9">thrill::vfs::S3OpenWriteStream</a></div><div class="ttdeci">WriteStreamPtr S3OpenWriteStream(const std::string &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="s3__file_8cpp_source.html#l00747">s3_file.cpp:747</a></div></div>
 <div class="ttc" id="namespacethrill_1_1vfs_html_aff643deb279f4c4d057ae694c571d8a5"><div class="ttname"><a href="namespacethrill_1_1vfs.html#aff643deb279f4c4d057ae694c571d8a5">thrill::vfs::S3Initialize</a></div><div class="ttdeci">void S3Initialize()</div><div class="ttdef"><b>Definition:</b> <a href="s3__file_8cpp_source.html#l00731">s3_file.cpp:731</a></div></div>
 <div class="ttc" id="namespacethrill_1_1vfs_html_a0f28a2b7a33f4cb305900fb9121f6da5"><div class="ttname"><a href="namespacethrill_1_1vfs.html#a0f28a2b7a33f4cb305900fb9121f6da5">thrill::vfs::ReadStreamPtr</a></div><div class="ttdeci">tlx::CountingPtr&lt; ReadStream &gt; ReadStreamPtr</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8hpp_source.html#l00145">file_io.hpp:145</a></div></div>
+<div class="ttc" id="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_html_a969c1286bbe8eeb8811dac7a462d4a78"><div class="ttname"><a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a969c1286bbe8eeb8811dac7a462d4a78">min</a></div><div class="ttdeci">static uint_pair min()</div><div class="ttdoc">return an uint_pair instance containing the smallest value possible </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_source.html#l00217">uint_types.hpp:217</a></div></div>
 <div class="ttc" id="structthrill_1_1vfs_1_1FileList_html"><div class="ttname"><a href="structthrill_1_1vfs_1_1FileList.html">thrill::vfs::FileList</a></div><div class="ttdoc">List of file info and additional overall info. </div><div class="ttdef"><b>Definition:</b> <a href="file__io_8hpp_source.html#l00079">file_io.hpp:79</a></div></div>
 <div class="ttc" id="namespacethrill_1_1vfs_html_ac7206d989022001555916ee86ef21cf5a0b27918290ff5323bea1e3b78a9cf04e"><div class="ttname"><a href="namespacethrill_1_1vfs.html#ac7206d989022001555916ee86ef21cf5a0b27918290ff5323bea1e3b78a9cf04e">thrill::vfs::GlobType::File</a></div></div>
 <div class="ttc" id="group__tlx__string_html_gadc5cce7e8c7fd30078b9129a7ae1d74b"><div class="ttname"><a href="group__tlx__string.html#gadc5cce7e8c7fd30078b9129a7ae1d74b">tlx::starts_with</a></div><div class="ttdeci">bool starts_with(const std::string &amp;str, const std::string &amp;match)</div><div class="ttdoc">Checks if the given match string is located at the start of this string. </div><div class="ttdef"><b>Definition:</b> <a href="starts__with_8cpp_source.html#l00019">starts_with.cpp:19</a></div></div>
-<div class="ttc" id="namespacethrill_1_1common_html_af06fbf706bdaafea92ddc5c8351e7177"><div class="ttname"><a href="namespacethrill_1_1common.html#af06fbf706bdaafea92ddc5c8351e7177">thrill::common::min</a></div><div class="ttdeci">static constexpr const T &amp; min(const T &amp;a, const T &amp;b)</div><div class="ttdoc">template for constexpr min, because std::min is not good enough. </div><div class="ttdef"><b>Definition:</b> <a href="functional_8hpp_source.html#l00059">functional.hpp:59</a></div></div>
 <div class="ttc" id="die_8hpp_html"><div class="ttname"><a href="die_8hpp.html">die.hpp</a></div></div>
 <div class="ttc" id="starts__with_8hpp_html"><div class="ttname"><a href="starts__with_8hpp.html">starts_with.hpp</a></div></div>
 <div class="ttc" id="namespacethrill_1_1vfs_html_a1d1cfd8ffb84e947f82999c682b666a7a0b27918290ff5323bea1e3b78a9cf04e"><div class="ttname"><a href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7a0b27918290ff5323bea1e3b78a9cf04e">thrill::vfs::Type::File</a></div></div>
-<div class="ttc" id="namespacethrill_1_1common_html_ac55d70406741c4f4be46fbb8f4dfd832"><div class="ttname"><a href="namespacethrill_1_1common.html#ac55d70406741c4f4be46fbb8f4dfd832">thrill::common::max</a></div><div class="ttdeci">static constexpr const T &amp; max(const T &amp;a, const T &amp;b)</div><div class="ttdoc">template for constexpr max, because std::max is not good enough. </div><div class="ttdef"><b>Definition:</b> <a href="functional_8hpp_source.html#l00065">functional.hpp:65</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_0b7691f3a099eb00850528ebd98dd2b2.html">vfs</a></li><li class="navelem"><a class="el" href="s3__file_8cpp.html">s3_file.cpp</a></li>
-    <li class="footer">Generated on Mon May 28 2018 16:12:14 for Thrill by
+    <li class="footer">Generated on Tue May 29 2018 12:45:41 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

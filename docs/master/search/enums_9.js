@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type',['Type',['../classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#a1d1cfd8ffb84e947f82999c682b666a7',1,'thrill::net::mpi::Dispatcher::MpiAsync::Type()'],['../namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7',1,'thrill::vfs::Type()']]]
+  ['priority_5fop',['priority_op',['../classfoxxll_1_1request__queue.html#a0b8cd1337d6209f410ee3a5664b531c0',1,'foxxll::request_queue']]]
 ];

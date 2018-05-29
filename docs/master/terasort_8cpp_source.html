@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('terasort_8cpp_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    uint8_t key[10];</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    uint8_t <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>[90];</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> operator &lt; (<span class="keyword">const</span> Record&amp; b)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#adbe00c091ebf5a14e00337c9ab07180e">operator &lt; </a>(<span class="keyword">const</span> Record&amp; b)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> std::lexicographical_compare(key, key + 10, b.key, b.key + 10);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">friend</span> std ::ostream&amp; <a class="code" href="namespacethrill_1_1api.html#ae8473cbd67ac02098251c03a8218ae49">operator &lt;&lt; </a>(std::ostream&amp; os, <span class="keyword">const</span> Record&amp; c) {</div>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('terasort_8cpp_source.html','');});
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// this sorted by _signed_ characters, which is the same as what some</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// Java/Scala TeraSorts do.</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> operator &lt; (<span class="keyword">const</span> RecordSigned&amp; b)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#adbe00c091ebf5a14e00337c9ab07180e">operator &lt; </a>(<span class="keyword">const</span> RecordSigned&amp; b)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> std::lexicographical_compare(key, key + 10, b.key, b.key + 10);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">friend</span> std ::ostream&amp; <a class="code" href="namespacethrill_1_1api.html#ae8473cbd67ac02098251c03a8218ae49">operator &lt;&lt; </a>(std::ostream&amp; os, <span class="keyword">const</span> RecordSigned&amp; c) {</div>
@@ -338,6 +338,7 @@ $(document).ready(function(){initNavTree('terasort_8cpp_source.html','');});
 <div class="ttc" id="size_8hpp_html"><div class="ttname"><a href="size_8hpp.html">size.hpp</a></div></div>
 <div class="ttc" id="die_8hpp_html_a63798a2675296e09260478493bf3829b"><div class="ttname"><a href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless</a></div><div class="ttdeci">#define die_unless(X)</div><div class="ttdef"><b>Definition:</b> <a href="die_8hpp_source.html#l00064">die.hpp:64</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1Context_html_aa19a1fcaa55994b754d544e4587be4ff"><div class="ttname"><a href="classthrill_1_1api_1_1Context.html#aa19a1fcaa55994b754d544e4587be4ff">thrill::api::Context::my_rank</a></div><div class="ttdeci">size_t my_rank() const </div><div class="ttdoc">Global rank of this worker among all other workers in the system. </div><div class="ttdef"><b>Definition:</b> <a href="context_8hpp_source.html#l00240">context.hpp:240</a></div></div>
+<div class="ttc" id="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_html_adbe00c091ebf5a14e00337c9ab07180e"><div class="ttname"><a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#adbe00c091ebf5a14e00337c9ab07180e">operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const uint_pair &amp;b) const </div><div class="ttdoc">less-than comparison operator </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_source.html#l00187">uint_types.hpp:187</a></div></div>
 <div class="ttc" id="write__binary_8hpp_html"><div class="ttname"><a href="write__binary_8hpp.html">write_binary.hpp</a></div></div>
 <div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html_a278e17dff6f1eff15d52f0bc57b65915"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a></div><div class="ttdeci">#define LOG1</div><div class="ttdef"><b>Definition:</b> <a href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00145">logger.hpp:145</a></div></div>
 <div class="ttc" id="thrill_2api_2sort_8hpp_html"><div class="ttname"><a href="thrill_2api_2sort_8hpp.html">sort.hpp</a></div></div>
@@ -374,7 +375,7 @@ $(document).ready(function(){initNavTree('terasort_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_d8b26c95b1f7b12d43099dd9552a78bc.html">terasort</a></li><li class="navelem"><a class="el" href="terasort_8cpp.html">terasort.cpp</a></li>
-    <li class="footer">Generated on Mon May 28 2018 16:12:12 for Thrill by
+    <li class="footer">Generated on Tue May 29 2018 12:45:38 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

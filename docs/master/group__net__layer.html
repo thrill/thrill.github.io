@@ -197,7 +197,7 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga766f3d9b59250913c0630dc36769693f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__layer.html#ga766f3d9b59250913c0630dc36769693f">AsyncReadBufferCallback</a> = <a class="el" href="namespacetlx.html#afacc9643f535d390fd0ead73790a6d56">tlx::delegate</a>&lt; void(Connection &amp;c, Buffer &amp;&amp;buffer), mem::GPoolAllocator&lt; char &gt; &gt;</td></tr>
 <tr class="memdesc:ga766f3d9b59250913c0630dc36769693f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature of async read <a class="el" href="classthrill_1_1net_1_1Buffer.html" title="Simple buffer of characters without initialization or growing functionality. ">Buffer</a> callbacks.  <a href="#ga766f3d9b59250913c0630dc36769693f">More...</a><br/></td></tr>
 <tr class="separator:ga766f3d9b59250913c0630dc36769693f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad2343b2eb0250c6531e377a7c50d30c1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gad2343b2eb0250c6531e377a7c50d30c1">AsyncReadByteBlockCallback</a> = <a class="el" href="namespacetlx.html#afacc9643f535d390fd0ead73790a6d56">tlx::delegate</a>&lt; void(Connection &amp;c, data::PinnedByteBlockPtr &amp;&amp;bytes), mem::GPoolAllocator&lt; char &gt; &gt;</td></tr>
+<tr class="memitem:gad2343b2eb0250c6531e377a7c50d30c1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gad2343b2eb0250c6531e377a7c50d30c1">AsyncReadByteBlockCallback</a> = <a class="el" href="namespacetlx.html#afacc9643f535d390fd0ead73790a6d56">tlx::delegate</a>&lt; void(Connection &amp;c, data::PinnedByteBlockPtr &amp;&amp;<a class="el" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#ab09b9b43d1b1783c78e39783e382b3dd">bytes</a>), mem::GPoolAllocator&lt; char &gt; &gt;</td></tr>
 <tr class="memdesc:gad2343b2eb0250c6531e377a7c50d30c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature of async read ByteBlock callbacks.  <a href="#gad2343b2eb0250c6531e377a7c50d30c1">More...</a><br/></td></tr>
 <tr class="separator:gad2343b2eb0250c6531e377a7c50d30c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaef2d914e5c13b372458028c626fbba63"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__net__layer.html#gaef2d914e5c13b372458028c626fbba63">AsyncReadCallback</a> = <a class="el" href="namespacetlx.html#afacc9643f535d390fd0ead73790a6d56">tlx::delegate</a>&lt; void(Connection &amp;c, Buffer &amp;&amp;buffer), mem::GPoolAllocator&lt; char &gt; &gt;</td></tr>
@@ -593,7 +593,7 @@ Additional Synchronous Collective Communication Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="collective_8hpp_source.html#l00278">278</a> of file <a class="el" href="collective_8hpp_source.html">collective.hpp</a>.</p>
 
-<p>References <a class="el" href="classthrill_1_1net_1_1Group.html#a6752d8d0b3cd2d27170254b51203e0b4">Group::connection()</a>, <a class="el" href="functional_8hpp_source.html#l00059">thrill::common::min()</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">Group::num_hosts()</a>, <a class="el" href="connection_8hpp_source.html#l00524">Connection::ReceiveN()</a>, and <a class="el" href="connection_8hpp_source.html#l00462">Connection::SendN()</a>.</p>
+<p>References <a class="el" href="classthrill_1_1net_1_1Group.html#a6752d8d0b3cd2d27170254b51203e0b4">Group::connection()</a>, <a class="el" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_source.html#l00217">min()</a>, <a class="el" href="group_8hpp_source.html#l00069">Group::my_host_rank()</a>, <a class="el" href="classthrill_1_1net_1_1Group.html#a8145c5bf294c305a98627afbac749eb2">Group::num_hosts()</a>, <a class="el" href="connection_8hpp_source.html#l00524">Connection::ReceiveN()</a>, and <a class="el" href="connection_8hpp_source.html#l00462">Connection::SendN()</a>.</p>
 
 <p>Referenced by <a class="el" href="flow__control__channel_8hpp_source.html#l00477">FlowControlChannel::AllGather()</a>.</p>
 
@@ -3183,7 +3183,7 @@ Non-Power-of-Two Number of Processors in Message-Passing Parallel Systems." In R
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 28 2018 16:12:15 for Thrill by
+    <li class="footer">Generated on Tue May 29 2018 12:45:43 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

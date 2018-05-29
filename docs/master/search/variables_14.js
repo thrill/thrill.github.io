@@ -2,6 +2,7 @@ var searchData=
 [
   ['ui_5fcurr_5f',['ui_curr_',['../classthrill_1_1vfs_1_1glob__local_1_1SimpleGlobBase.html#a859eacf172008e8de4ac1535045d6210',1,'thrill::vfs::glob_local::SimpleGlobBase']]],
   ['uniform',['uniform',['../classthrill_1_1common_1_1ReservoirSamplingFast.html#a6f1fe144396ce3510738ee8e8c0fcedd',1,'thrill::common::ReservoirSamplingFast']]],
+  ['unlink_5fon_5fopen',['unlink_on_open',['../classfoxxll_1_1disk__config.html#a6fe78887adbdf072ff088af877dbecf8',1,'foxxll::disk_config']]],
   ['unsorted_5ffile_5f',['unsorted_file_',['../classthrill_1_1api_1_1SortNode.html#a816420c0e3b6a69ca3df4434dc8c95d0',1,'thrill::api::SortNode']]],
   ['unsorted_5fwriter_5f',['unsorted_writer_',['../classthrill_1_1api_1_1SortNode.html#aec9042b732e2129eb439901e8d76290e',1,'thrill::api::SortNode']]],
   ['use_5fbackground_5fthread_5f',['use_background_thread_',['../classthrill_1_1api_1_1SortNode.html#a17d4faa0ddcae3da8b8f4f11e868555d',1,'thrill::api::SortNode']]],

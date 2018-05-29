@@ -1,0 +1,28 @@
+var classfoxxll_1_1typed__block =
+[
+    [ "Base", "classfoxxll_1_1typed__block.html#a548b5ab875f8d90da341df9ab86963df", null ],
+    [ "bid_type", "classfoxxll_1_1typed__block.html#ac1fdd4771cff229f7892b73269ee9406", null ],
+    [ "const_iterator", "classfoxxll_1_1typed__block.html#a82c3c04df36124e34ccfad98ebec2e25", null ],
+    [ "const_pointer", "classfoxxll_1_1typed__block.html#a1ce9d8c8e35f6c6ffb564c2e733ea05e", null ],
+    [ "const_reference", "classfoxxll_1_1typed__block.html#a5547e634a8602ad47bdbec65167d7fce", null ],
+    [ "iterator", "classfoxxll_1_1typed__block.html#a5ca971867bd70e81bf7f7bbba8605c5c", null ],
+    [ "pointer", "classfoxxll_1_1typed__block.html#a6fc03915d7633dfe3c2b7a160f410549", null ],
+    [ "reference", "classfoxxll_1_1typed__block.html#aaa3f89aae50054d0bb5c9f266819815b", null ],
+    [ "value_type", "classfoxxll_1_1typed__block.html#af0f70ef64d23e2379bacb63968e68b45", null ],
+    [ "typed_block", "classfoxxll_1_1typed__block.html#a865ffe7431713ec52465e8626fbc5b64", null ],
+    [ "~typed_block", "classfoxxll_1_1typed__block.html#ae8dff071d731189c4befdd6227f39a18", null ],
+    [ "operator delete", "classfoxxll_1_1typed__block.html#abaddef74659f8010efe056da488fd4b5", null ],
+    [ "operator delete", "classfoxxll_1_1typed__block.html#a9efda1297fc902e40a66ce9bd0023058", null ],
+    [ "operator delete[]", "classfoxxll_1_1typed__block.html#a9b893799cad502dda5d2b09205e91e19", null ],
+    [ "operator new", "classfoxxll_1_1typed__block.html#a86962c55b88d9b3f08af617b20cbd0c4", null ],
+    [ "operator new", "classfoxxll_1_1typed__block.html#af470aa80b4f88a9420aaf78be5b1fd1d", null ],
+    [ "operator new[]", "classfoxxll_1_1typed__block.html#ab9d8d88ac6bb6fd880968e1c1db715a8", null ],
+    [ "read", "classfoxxll_1_1typed__block.html#a5335cf13585b7d2b1539427aaa26749b", null ],
+    [ "read", "classfoxxll_1_1typed__block.html#aabeee70e7da0fd33de3db9b9cd29b36f", null ],
+    [ "write", "classfoxxll_1_1typed__block.html#acdd8362f4b98258fafb4df79c94a4fe0", null ],
+    [ "write", "classfoxxll_1_1typed__block.html#a5b94ad477d8ca7986d2b5bacf7a18b3c", null ],
+    [ "debug_block_life_cycle", "classfoxxll_1_1typed__block.html#afd1c5f6e448b63adacaae83700827cf2", null ],
+    [ "has_only_data", "classfoxxll_1_1typed__block.html#af05c43ada4e5a31dbff382407d058b75", null ],
+    [ "raw_size", "classfoxxll_1_1typed__block.html#a4b66528f6a786f73776cfba9dfb70406", null ],
+    [ "size", "classfoxxll_1_1typed__block.html#ae8542fe44413919dee9f41ede5a5032d", null ]
+];

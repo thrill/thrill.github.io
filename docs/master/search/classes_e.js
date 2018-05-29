@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['offset_5fallocator',['offset_allocator',['../structfoxxll_1_1offset__allocator.html',1,'foxxll']]],
+  ['onoff_5fswitch',['onoff_switch',['../classfoxxll_1_1onoff__switch.html',1,'foxxll']]],
   ['ourconcurrentboundedqueue',['OurConcurrentBoundedQueue',['../classthrill_1_1common_1_1OurConcurrentBoundedQueue.html',1,'thrill::common']]],
   ['ourconcurrentboundedqueue_3c_20thrill_3a_3adata_3a_3ablock_20_3e',['OurConcurrentBoundedQueue&lt; thrill::data::Block &gt;',['../classthrill_1_1common_1_1OurConcurrentBoundedQueue.html',1,'thrill::common']]],
   ['ourconcurrentboundedqueue_3c_20thrill_3a_3adata_3a_3amixblockqueue_3a_3asrcblockpair_20_3e',['OurConcurrentBoundedQueue&lt; thrill::data::MixBlockQueue::SrcBlockPair &gt;',['../classthrill_1_1common_1_1OurConcurrentBoundedQueue.html',1,'thrill::common']]],

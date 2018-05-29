@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('suffix__sorting_8cpp_source.html','');
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="read__binary_8hpp.html">thrill/api/read_binary.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="write__binary_8hpp.html">thrill/api/write_binary.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="uint__types_8hpp.html">thrill/common/uint_types.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2uint__types_8hpp.html">thrill/common/uint_types.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="cmdline__parser_8hpp.html">tlx/cmdline_parser.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('suffix__sorting_8cpp_source.html','');
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> input_path_;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> input_copy_path_;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> output_path_;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    uint64_t sizelimit_ = <a class="code" href="namespacethrill_1_1common.html#ac55d70406741c4f4be46fbb8f4dfd832">std::numeric_limits&lt;uint64_t&gt;::max</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    uint64_t sizelimit_ = <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::numeric_limits&lt;uint64_t&gt;::max</a>();</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> algorithm_;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('suffix__sorting_8cpp_source.html','');
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            SwitchIndexType(input_dia, input_vec.size());</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (input_path_ == <span class="stringliteral">&quot;unary&quot;</span>) {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">if</span> (sizelimit_ == <a class="code" href="namespacethrill_1_1common.html#ac55d70406741c4f4be46fbb8f4dfd832">std::numeric_limits&lt;size_t&gt;::max</a>()) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">if</span> (sizelimit_ == <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::numeric_limits&lt;size_t&gt;::max</a>()) {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;You must provide -s &lt;size&gt; for generated inputs.&quot;</span>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div>
@@ -211,7 +211,7 @@ $(document).ready(function(){initNavTree('suffix__sorting_8cpp_source.html','');
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            SwitchIndexType(input_dia, sizelimit_);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (input_path_ == <span class="stringliteral">&quot;random&quot;</span>) {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">if</span> (sizelimit_ == <a class="code" href="namespacethrill_1_1common.html#ac55d70406741c4f4be46fbb8f4dfd832">std::numeric_limits&lt;size_t&gt;::max</a>()) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">if</span> (sizelimit_ == <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::numeric_limits&lt;size_t&gt;::max</a>()) {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;You must provide -s &lt;size&gt; for generated inputs.&quot;</span>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            }</div>
@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('suffix__sorting_8cpp_source.html','');
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            SwitchIndexType(input_dia, sizelimit_);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (input_path_ == <span class="stringliteral">&quot;random10&quot;</span>) {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">if</span> (sizelimit_ == <a class="code" href="namespacethrill_1_1common.html#ac55d70406741c4f4be46fbb8f4dfd832">std::numeric_limits&lt;size_t&gt;::max</a>()) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">if</span> (sizelimit_ == <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::numeric_limits&lt;size_t&gt;::max</a>()) {</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;You must provide -s &lt;size&gt; for generated inputs.&quot;</span>;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            }</div>
@@ -254,7 +254,7 @@ $(document).ready(function(){initNavTree('suffix__sorting_8cpp_source.html','');
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            SwitchIndexType(input_dia, sizelimit_);</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (input_path_ == <span class="stringliteral">&quot;random2&quot;</span>) {</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordflow">if</span> (sizelimit_ == <a class="code" href="namespacethrill_1_1common.html#ac55d70406741c4f4be46fbb8f4dfd832">std::numeric_limits&lt;size_t&gt;::max</a>()) {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordflow">if</span> (sizelimit_ == <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::numeric_limits&lt;size_t&gt;::max</a>()) {</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;You must provide -s &lt;size&gt; for generated inputs.&quot;</span>;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            }</div>
@@ -483,6 +483,7 @@ $(document).ready(function(){initNavTree('suffix__sorting_8cpp_source.html','');
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;}</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="ttc" id="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_html_a0cfacbbf6e846521326f5de5ba3ecd05"><div class="ttname"><a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">max</a></div><div class="ttdeci">static uint_pair max()</div><div class="ttdoc">return an uint_pair instance containing the largest value possible </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_source.html#l00226">uint_types.hpp:226</a></div></div>
 <div class="ttc" id="print_8hpp_html"><div class="ttname"><a href="print_8hpp.html">print.hpp</a></div></div>
 <div class="ttc" id="group__dia__sources_html_gae0cda32a0aff6d8f1b21c5f1341a0fa1"><div class="ttname"><a href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1">thrill::api::Generate</a></div><div class="ttdeci">auto Generate(Context &amp;ctx, size_t size, const GenerateFunction &amp;generate_function)</div><div class="ttdoc">Generate is a Source-DOp, which creates a DIA of given size using a generator function. </div><div class="ttdef"><b>Definition:</b> <a href="generate_8hpp_source.html#l00085">generate.hpp:85</a></div></div>
 <div class="ttc" id="collapse_8hpp_html"><div class="ttname"><a href="collapse_8hpp.html">collapse.hpp</a></div></div>
@@ -502,9 +503,9 @@ $(document).ready(function(){initNavTree('suffix__sorting_8cpp_source.html','');
 <div class="ttc" id="dc3_8hpp_html"><div class="ttname"><a href="dc3_8hpp.html">dc3.hpp</a></div></div>
 <div class="ttc" id="equal__to__dia_8hpp_html"><div class="ttname"><a href="equal__to__dia_8hpp.html">equal_to_dia.hpp</a></div></div>
 <div class="ttc" id="read__binary_8hpp_html"><div class="ttname"><a href="read__binary_8hpp.html">read_binary.hpp</a></div></div>
+<div class="ttc" id="thrill_2common_2uint__types_8hpp_html"><div class="ttname"><a href="thrill_2common_2uint__types_8hpp.html">uint_types.hpp</a></div></div>
 <div class="ttc" id="namespaceexamples_1_1suffix__sorting_html_a423bcd132cb2e6faa495555627312913"><div class="ttname"><a href="namespaceexamples_1_1suffix__sorting.html#a423bcd132cb2e6faa495555627312913">examples::suffix_sorting::ConstructLCP</a></div><div class="ttdeci">IndexDIA ConstructLCP(const InputDIA &amp;input, const IndexDIA &amp;, const InputDIA &amp;bwt, uint64_t input_size)</div><div class="ttdef"><b>Definition:</b> <a href="construct__lcp_8hpp_source.html#l00077">construct_lcp.hpp:77</a></div></div>
 <div class="ttc" id="namespacethrill_1_1mem_html_a5568fe0d00a794e5f063e9fe040bc07f"><div class="ttname"><a href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">thrill::mem::string</a></div><div class="ttdeci">std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt; string</div><div class="ttdoc">string with Manager tracking </div><div class="ttdef"><b>Definition:</b> <a href="allocator_8hpp_source.html#l00220">allocator.hpp:220</a></div></div>
-<div class="ttc" id="uint__types_8hpp_html"><div class="ttname"><a href="uint__types_8hpp.html">uint_types.hpp</a></div></div>
 <div class="ttc" id="namespaceexamples_1_1suffix__sorting_html_ada83b17dd7aeeedb42de771a3c16fdcc"><div class="ttname"><a href="namespaceexamples_1_1suffix__sorting.html#ada83b17dd7aeeedb42de771a3c16fdcc">examples::suffix_sorting::CheckSA</a></div><div class="ttdeci">bool CheckSA(const InputDIA &amp;input, const SuffixArrayDIA &amp;suffix_array)</div><div class="ttdef"><b>Definition:</b> <a href="check__sa_8hpp_source.html#l00028">check_sa.hpp:28</a></div></div>
 <div class="ttc" id="classtlx_1_1CmdlineParser_html"><div class="ttname"><a href="classtlx_1_1CmdlineParser.html">tlx::CmdlineParser</a></div><div class="ttdoc">Command line parser which automatically fills variables and prints nice usage messages. </div><div class="ttdef"><b>Definition:</b> <a href="cmdline__parser_8hpp_source.html#l00077">cmdline_parser.hpp:77</a></div></div>
 <div class="ttc" id="cache_8hpp_html"><div class="ttname"><a href="cache_8hpp.html">cache.hpp</a></div></div>
@@ -516,7 +517,6 @@ $(document).ready(function(){initNavTree('suffix__sorting_8cpp_source.html','');
 <div class="ttc" id="check__sa_8hpp_html"><div class="ttname"><a href="check__sa_8hpp.html">check_sa.hpp</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1StatsTimerBaseStarted_html"><div class="ttname"><a href="classthrill_1_1common_1_1StatsTimerBaseStarted.html">thrill::common::StatsTimerBaseStarted</a></div><div class="ttdef"><b>Definition:</b> <a href="stats__timer_8hpp_source.html#l00263">stats_timer.hpp:263</a></div></div>
 <div class="ttc" id="prefix__doubling_8hpp_html"><div class="ttname"><a href="prefix__doubling_8hpp.html">prefix_doubling.hpp</a></div></div>
-<div class="ttc" id="namespacethrill_1_1common_html_ac55d70406741c4f4be46fbb8f4dfd832"><div class="ttname"><a href="namespacethrill_1_1common.html#ac55d70406741c4f4be46fbb8f4dfd832">thrill::common::max</a></div><div class="ttdeci">static constexpr const T &amp; max(const T &amp;a, const T &amp;b)</div><div class="ttdoc">template for constexpr max, because std::max is not good enough. </div><div class="ttdef"><b>Definition:</b> <a href="functional_8hpp_source.html#l00065">functional.hpp:65</a></div></div>
 <div class="ttc" id="wavelet__tree2_8cpp_html_a1423fe040effb15fac6fb23d57cea71e"><div class="ttname"><a href="wavelet__tree2_8cpp.html#a1423fe040effb15fac6fb23d57cea71e">ConstructWaveletTree</a></div><div class="ttdeci">auto ConstructWaveletTree(const InputDIA &amp;input_dia)</div><div class="ttdef"><b>Definition:</b> <a href="wavelet__tree2_8cpp_source.html#l00039">wavelet_tree2.cpp:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -524,7 +524,7 @@ $(document).ready(function(){initNavTree('suffix__sorting_8cpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_0b8cd80b43220fb0eacec85b2381def2.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="suffix__sorting_8cpp.html">suffix_sorting.cpp</a></li>
-    <li class="footer">Generated on Mon May 28 2018 16:12:12 for Thrill by
+    <li class="footer">Generated on Tue May 29 2018 12:45:38 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
