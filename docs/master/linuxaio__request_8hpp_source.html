@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('linuxaio__request_8hpp_source.html',''
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;linux/aio_abi.h&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html">tlx/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_2core_8hpp.html">tlx/logger/core.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="request__with__state_8hpp.html">foxxll/io/request_with_state.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
@@ -172,11 +172,11 @@ $(document).ready(function(){initNavTree('linuxaio__request_8hpp_source.html',''
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        : request_with_state(on_complete, file, buffer, offset, bytes, op)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        assert(dynamic_cast&lt;linuxaio_file*&gt;(file));</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;linuxaio_request[&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="stringliteral">&quot; linuxaio_request&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="stringliteral">&quot;(file=&quot;</span> &lt;&lt; file &lt;&lt; <span class="stringliteral">&quot; buffer=&quot;</span> &lt;&lt; buffer &lt;&lt;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="stringliteral">&quot; offset=&quot;</span> &lt;&lt; offset &lt;&lt; <span class="stringliteral">&quot; bytes=&quot;</span> &lt;&lt; bytes &lt;&lt;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="stringliteral">&quot; op=&quot;</span> &lt;&lt; op &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="logger_2core_8hpp.html#ad565f2ef3ecf71cede793d22e9aa45c2">TLX_LOG</a> &lt;&lt; <span class="stringliteral">&quot;linuxaio_request[&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                &lt;&lt; <span class="stringliteral">&quot; linuxaio_request&quot;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;(file=&quot;</span> &lt;&lt; file &lt;&lt; <span class="stringliteral">&quot; buffer=&quot;</span> &lt;&lt; buffer</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                &lt;&lt; <span class="stringliteral">&quot; offset=&quot;</span> &lt;&lt; offset &lt;&lt; <span class="stringliteral">&quot; bytes=&quot;</span> &lt;&lt; bytes</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                &lt;&lt; <span class="stringliteral">&quot; op=&quot;</span> &lt;&lt; op &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> post();</div>
@@ -195,20 +195,20 @@ $(document).ready(function(){initNavTree('linuxaio__request_8hpp_source.html',''
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif // !FOXXLL_IO_LINUXAIO_REQUEST_HEADER</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">/**************************************************************************/</span></div>
-<div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html">logger.hpp</a></div></div>
 <div class="ttc" id="linuxaio__file_8hpp_html"><div class="ttname"><a href="linuxaio__file_8hpp.html">linuxaio_file.hpp</a></div></div>
+<div class="ttc" id="logger_2core_8hpp_html"><div class="ttname"><a href="logger_2core_8hpp.html">core.hpp</a></div></div>
 <div class="ttc" id="group__foxxll__reqlayer_html_ga57b07b12c2f16a8799ace2cafc61add1"><div class="ttname"><a href="group__foxxll__reqlayer.html#ga57b07b12c2f16a8799ace2cafc61add1">foxxll::completion_handler</a></div><div class="ttdeci">tlx::delegate&lt; void(request *r, bool success)&gt; completion_handler</div><div class="ttdoc">completion handler </div><div class="ttdef"><b>Definition:</b> <a href="request_8hpp_source.html#l00046">request.hpp:46</a></div></div>
 <div class="ttc" id="wavelet__tree2_8cpp_html_a6b72e54baf646b08b4b87f987f583dcb"><div class="ttname"><a href="wavelet__tree2_8cpp.html#a6b72e54baf646b08b4b87f987f583dcb">debug</a></div><div class="ttdeci">static constexpr bool debug</div><div class="ttdef"><b>Definition:</b> <a href="wavelet__tree2_8cpp_source.html#l00034">wavelet_tree2.cpp:34</a></div></div>
 <div class="ttc" id="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_html_ab09b9b43d1b1783c78e39783e382b3dd"><div class="ttname"><a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#ab09b9b43d1b1783c78e39783e382b3dd">bytes</a></div><div class="ttdeci">static const size_t bytes</div><div class="ttdoc">number of bytes in uint_pair </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_source.html#l00075">uint_types.hpp:75</a></div></div>
 <div class="ttc" id="request__with__state_8hpp_html"><div class="ttname"><a href="request__with__state_8hpp.html">request_with_state.hpp</a></div></div>
-<div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html_a159ca84d25a5487d8e81e4438725df19"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a></div><div class="ttdeci">#define LOG</div><div class="ttdoc">Default logging method: output if the local debug variable is true. </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00141">logger.hpp:141</a></div></div>
+<div class="ttc" id="logger_2core_8hpp_html_ad565f2ef3ecf71cede793d22e9aa45c2"><div class="ttname"><a href="logger_2core_8hpp.html#ad565f2ef3ecf71cede793d22e9aa45c2">TLX_LOG</a></div><div class="ttdeci">#define TLX_LOG</div><div class="ttdoc">Default logging method: output if the local debug variable is true. </div><div class="ttdef"><b>Definition:</b> <a href="logger_2core_8hpp_source.html#l00141">core.hpp:141</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_6edb93c67f49003f2374f9bbffd8c119.html">foxxll</a></li><li class="navelem"><a class="el" href="dir_9554b3cb1d023b8265f4f4faa71025ef.html">foxxll</a></li><li class="navelem"><a class="el" href="dir_4baece39e6c6f47a0dce3856dc5eaa6a.html">io</a></li><li class="navelem"><a class="el" href="linuxaio__request_8hpp.html">linuxaio_request.hpp</a></li>
-    <li class="footer">Generated on Tue May 29 2018 12:45:38 for Thrill by
+    <li class="footer">Generated on Fri Sep 7 2018 14:05:37 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

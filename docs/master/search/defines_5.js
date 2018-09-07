@@ -20,7 +20,7 @@ var searchData=
   ['foxxll_5fverbose_5fwpool',['FOXXLL_VERBOSE_WPOOL',['../write__pool_8hpp.html#ae2b3866eaac9d5607d4e5862bee0e077',1,'write_pool.hpp']]],
   ['foxxll_5fversion_5fgit_5frefspec',['FOXXLL_VERSION_GIT_REFSPEC',['../config_8hpp_8in.html#ad56235f02f13aa08b74df08444a28db6',1,'config.hpp.in']]],
   ['foxxll_5fversion_5fgit_5fsha1',['FOXXLL_VERSION_GIT_SHA1',['../config_8hpp_8in.html#a6b30dd47ad69504fc016e41314817ef3',1,'config.hpp.in']]],
-  ['foxxll_5fversion_5finteger',['FOXXLL_VERSION_INTEGER',['../version_8hpp.html#a5026d9c973458b7ba83bebf3de890683',1,'version.hpp']]],
+  ['foxxll_5fversion_5finteger',['FOXXLL_VERSION_INTEGER',['../foxxll_2foxxll_2version_8hpp.html#a5026d9c973458b7ba83bebf3de890683',1,'version.hpp']]],
   ['foxxll_5fversion_5fmajor',['FOXXLL_VERSION_MAJOR',['../config_8hpp_8in.html#ac10641b54e69e1aa4b85902970a3955a',1,'config.hpp.in']]],
   ['foxxll_5fversion_5fminor',['FOXXLL_VERSION_MINOR',['../config_8hpp_8in.html#ae955937a2ef4b9dec276611ba200f063',1,'config.hpp.in']]],
   ['foxxll_5fversion_5fpatch',['FOXXLL_VERSION_PATCH',['../config_8hpp_8in.html#a3ce2b4983156091c350d2d603a687dea',1,'config.hpp.in']]],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['value_5fcompare',['value_compare',['../classtlx_1_1btree_1_1value__compare.html',1,'tlx::btree']]],
+  ['value_5fcompare',['value_compare',['../classtlx_1_1BTree_1_1value__compare.html',1,'tlx::BTree']]],
   ['valuecomparator',['ValueComparator',['../structthrill_1_1api_1_1GroupByNode_1_1ValueComparator.html',1,'thrill::api::GroupByNode']]],
   ['valuecomparator',['ValueComparator',['../classthrill_1_1api_1_1GroupToIndexNode_1_1ValueComparator.html',1,'thrill::api::GroupToIndexNode']]],
   ['vector',['Vector',['../classthrill_1_1common_1_1Vector.html',1,'thrill::common']]],

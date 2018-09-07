@@ -8,6 +8,5 @@ var searchData=
   ['die_5funless',['die_unless',['../die_8hpp.html#a63798a2675296e09260478493bf3829b',1,'die.hpp']]],
   ['die_5funless_5fthrows',['die_unless_throws',['../die_8hpp.html#a357da842bf02c9445e820f483b301542',1,'die.hpp']]],
   ['die_5fwith_5fmessage_5fif',['die_with_message_if',['../die__with__message_8hpp.html#adf95459c994422b3c82360b1876aa840',1,'die_with_message.hpp']]],
-  ['die_5fwith_5fmessage_5funless',['die_with_message_unless',['../die__with__message_8hpp.html#a7549db95fff34f421c30aff65cea1089',1,'die_with_message.hpp']]],
-  ['die_5fwith_5fsstream',['die_with_sstream',['../die_8hpp.html#a17ac1fcc957b3ac3414677c0058b1bad',1,'die.hpp']]]
+  ['die_5fwith_5fmessage_5funless',['die_with_message_unless',['../die__with__message_8hpp.html#a7549db95fff34f421c30aff65cea1089',1,'die_with_message.hpp']]]
 ];

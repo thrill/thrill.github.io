@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('wincall__file_8cpp_source.html','');})
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;windows.h&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html">tlx/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_2core_8hpp.html">tlx/logger/core.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="error__handling_8hpp.html">foxxll/common/error_handling.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iostats_8hpp.html">foxxll/io/iostats.hpp</a>&gt;</span></div>
@@ -153,93 +153,94 @@ $(document).ready(function(){initNavTree('wincall__file_8cpp_source.html','');})
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::unique_lock&lt;std::mutex&gt; fd_lock(fd_mutex_);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (bytes &gt; 32 * 1024 * 1024) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Using a block size larger than 32 MiB may not work with the &quot;</span> &lt;&lt; io_type() &lt;&lt; <span class="stringliteral">&quot; filetype&quot;</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    HANDLE handle = file_des_;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    LARGE_INTEGER desired_pos;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    desired_pos.QuadPart = offset;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (!SetFilePointerEx(handle, desired_pos, <span class="keyword">nullptr</span>, FILE_BEGIN))</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        FOXXLL_THROW_WIN_LASTERROR(</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            io_error,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="stringliteral">&quot;SetFilePointerEx in wincall_request::serve()&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="stringliteral">&quot; offset=&quot;</span> &lt;&lt; offset &lt;&lt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="stringliteral">&quot; this=&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="stringliteral">&quot; buffer=&quot;</span> &lt;&lt; buffer &lt;&lt;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="stringliteral">&quot; bytes=&quot;</span> &lt;&lt; bytes &lt;&lt;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="stringliteral">&quot; op=&quot;</span> &lt;&lt; ((op == <a class="code" href="classfoxxll_1_1request__interface.html#a74266dbf66678e0b32cb1784129fe8cbacb9be765f361bb7efb9073730aac92c6">request::READ</a>) ? <span class="stringliteral">&quot;READ&quot;</span> : <span class="stringliteral">&quot;WRITE&quot;</span>)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        );</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        file_stats::scoped_read_write_timer read_write_timer(</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            file_stats_, bytes, op == <a class="code" href="classfoxxll_1_1request__interface.html#a74266dbf66678e0b32cb1784129fe8cba61aa7ff70b76bff0fda378cf61d6afbc">request::WRITE</a>);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span> (op == <a class="code" href="classfoxxll_1_1request__interface.html#a74266dbf66678e0b32cb1784129fe8cbacb9be765f361bb7efb9073730aac92c6">request::READ</a>)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            DWORD NumberOfBytesRead = 0;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            assert(bytes &lt;= <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::numeric_limits&lt;DWORD&gt;::max</a>());</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">if</span> (!ReadFile(handle, buffer, (DWORD)bytes, &amp;NumberOfBytesRead, <span class="keyword">nullptr</span>))</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                FOXXLL_THROW_WIN_LASTERROR(</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    io_error,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    <span class="stringliteral">&quot;ReadFile&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                        <span class="stringliteral">&quot; this=&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                        <span class="stringliteral">&quot; offset=&quot;</span> &lt;&lt; offset &lt;&lt;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                        <span class="stringliteral">&quot; buffer=&quot;</span> &lt;&lt; buffer &lt;&lt;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                        <span class="stringliteral">&quot; bytes=&quot;</span> &lt;&lt; bytes &lt;&lt;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                        <span class="stringliteral">&quot; op=&quot;</span> &lt;&lt; ((op == <a class="code" href="classfoxxll_1_1request__interface.html#a74266dbf66678e0b32cb1784129fe8cbacb9be765f361bb7efb9073730aac92c6">request::READ</a>) ? <span class="stringliteral">&quot;READ&quot;</span> : <span class="stringliteral">&quot;WRITE&quot;</span>) &lt;&lt;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                        <span class="stringliteral">&quot; NumberOfBytesRead= &quot;</span> &lt;&lt; NumberOfBytesRead</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                );</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (NumberOfBytesRead != bytes) {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                FOXXLL_THROW_WIN_LASTERROR(io_error, <span class="stringliteral">&quot; partial read: missing &quot;</span> &lt;&lt; (bytes - NumberOfBytesRead) &lt;&lt; <span class="stringliteral">&quot; out of &quot;</span> &lt;&lt; bytes &lt;&lt; <span class="stringliteral">&quot; bytes&quot;</span>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            DWORD NumberOfBytesWritten = 0;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            assert(bytes &lt;= <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::numeric_limits&lt;DWORD&gt;::max</a>());</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">if</span> (!WriteFile(handle, buffer, (DWORD)bytes, &amp;NumberOfBytesWritten, <span class="keyword">nullptr</span>))</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                FOXXLL_THROW_WIN_LASTERROR(</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                    io_error,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                    <span class="stringliteral">&quot;WriteFile&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                        <span class="stringliteral">&quot; this=&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                        <span class="stringliteral">&quot; offset=&quot;</span> &lt;&lt; offset &lt;&lt;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                        <span class="stringliteral">&quot; buffer=&quot;</span> &lt;&lt; buffer &lt;&lt;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                        <span class="stringliteral">&quot; bytes=&quot;</span> &lt;&lt; bytes &lt;&lt;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                        <span class="stringliteral">&quot; op=&quot;</span> &lt;&lt; ((op == <a class="code" href="classfoxxll_1_1request__interface.html#a74266dbf66678e0b32cb1784129fe8cbacb9be765f361bb7efb9073730aac92c6">request::READ</a>) ? <span class="stringliteral">&quot;READ&quot;</span> : <span class="stringliteral">&quot;WRITE&quot;</span>) &lt;&lt;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                        <span class="stringliteral">&quot; NumberOfBytesWritten= &quot;</span> &lt;&lt; NumberOfBytesWritten</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                );</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (NumberOfBytesWritten != bytes) {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                FOXXLL_THROW_WIN_LASTERROR(io_error, <span class="stringliteral">&quot; partial write: missing &quot;</span> &lt;&lt; (bytes - NumberOfBytesWritten) &lt;&lt; <span class="stringliteral">&quot; out of &quot;</span> &lt;&lt; bytes &lt;&lt; <span class="stringliteral">&quot; bytes&quot;</span>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* wincall_file::io_type()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;wincall&quot;</span>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;} <span class="comment">// namespace foxxll</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif // #if FOXXLL_HAVE_WINCALL_FILE</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">/**************************************************************************/</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="logger_2core_8hpp.html#adf1f9adaa963e88e623df98c61d94d39">TLX_LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Using a block size larger than 32 MiB&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot; may not work with the &quot;</span> &lt;&lt; io_type() &lt;&lt; <span class="stringliteral">&quot; filetype&quot;</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    HANDLE handle = file_des_;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    LARGE_INTEGER desired_pos;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    desired_pos.QuadPart = offset;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (!SetFilePointerEx(handle, desired_pos, <span class="keyword">nullptr</span>, FILE_BEGIN))</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        FOXXLL_THROW_WIN_LASTERROR(</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            io_error,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="stringliteral">&quot;SetFilePointerEx in wincall_request::serve()&quot;</span> &lt;&lt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="stringliteral">&quot; offset=&quot;</span> &lt;&lt; offset &lt;&lt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="stringliteral">&quot; this=&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="stringliteral">&quot; buffer=&quot;</span> &lt;&lt; buffer &lt;&lt;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="stringliteral">&quot; bytes=&quot;</span> &lt;&lt; bytes &lt;&lt;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="stringliteral">&quot; op=&quot;</span> &lt;&lt; ((op == <a class="code" href="classfoxxll_1_1request__interface.html#a74266dbf66678e0b32cb1784129fe8cbacb9be765f361bb7efb9073730aac92c6">request::READ</a>) ? <span class="stringliteral">&quot;READ&quot;</span> : <span class="stringliteral">&quot;WRITE&quot;</span>)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        );</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        file_stats::scoped_read_write_timer read_write_timer(</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            file_stats_, bytes, op == <a class="code" href="classfoxxll_1_1request__interface.html#a74266dbf66678e0b32cb1784129fe8cba61aa7ff70b76bff0fda378cf61d6afbc">request::WRITE</a>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">if</span> (op == <a class="code" href="classfoxxll_1_1request__interface.html#a74266dbf66678e0b32cb1784129fe8cbacb9be765f361bb7efb9073730aac92c6">request::READ</a>)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            DWORD NumberOfBytesRead = 0;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            assert(bytes &lt;= <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::numeric_limits&lt;DWORD&gt;::max</a>());</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">if</span> (!ReadFile(handle, buffer, (DWORD)bytes, &amp;NumberOfBytesRead, <span class="keyword">nullptr</span>))</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                FOXXLL_THROW_WIN_LASTERROR(</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    io_error,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    <span class="stringliteral">&quot;ReadFile&quot;</span> &lt;&lt;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                        <span class="stringliteral">&quot; this=&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                        <span class="stringliteral">&quot; offset=&quot;</span> &lt;&lt; offset &lt;&lt;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                        <span class="stringliteral">&quot; buffer=&quot;</span> &lt;&lt; buffer &lt;&lt;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                        <span class="stringliteral">&quot; bytes=&quot;</span> &lt;&lt; bytes &lt;&lt;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                        <span class="stringliteral">&quot; op=&quot;</span> &lt;&lt; ((op == <a class="code" href="classfoxxll_1_1request__interface.html#a74266dbf66678e0b32cb1784129fe8cbacb9be765f361bb7efb9073730aac92c6">request::READ</a>) ? <span class="stringliteral">&quot;READ&quot;</span> : <span class="stringliteral">&quot;WRITE&quot;</span>) &lt;&lt;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                        <span class="stringliteral">&quot; NumberOfBytesRead= &quot;</span> &lt;&lt; NumberOfBytesRead</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                );</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (NumberOfBytesRead != bytes) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                FOXXLL_THROW_WIN_LASTERROR(io_error, <span class="stringliteral">&quot; partial read: missing &quot;</span> &lt;&lt; (bytes - NumberOfBytesRead) &lt;&lt; <span class="stringliteral">&quot; out of &quot;</span> &lt;&lt; bytes &lt;&lt; <span class="stringliteral">&quot; bytes&quot;</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            DWORD NumberOfBytesWritten = 0;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            assert(bytes &lt;= <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::numeric_limits&lt;DWORD&gt;::max</a>());</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">if</span> (!WriteFile(handle, buffer, (DWORD)bytes, &amp;NumberOfBytesWritten, <span class="keyword">nullptr</span>))</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                FOXXLL_THROW_WIN_LASTERROR(</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                    io_error,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    <span class="stringliteral">&quot;WriteFile&quot;</span> &lt;&lt;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                        <span class="stringliteral">&quot; this=&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                        <span class="stringliteral">&quot; offset=&quot;</span> &lt;&lt; offset &lt;&lt;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                        <span class="stringliteral">&quot; buffer=&quot;</span> &lt;&lt; buffer &lt;&lt;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                        <span class="stringliteral">&quot; bytes=&quot;</span> &lt;&lt; bytes &lt;&lt;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                        <span class="stringliteral">&quot; op=&quot;</span> &lt;&lt; ((op == <a class="code" href="classfoxxll_1_1request__interface.html#a74266dbf66678e0b32cb1784129fe8cbacb9be765f361bb7efb9073730aac92c6">request::READ</a>) ? <span class="stringliteral">&quot;READ&quot;</span> : <span class="stringliteral">&quot;WRITE&quot;</span>) &lt;&lt;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                        <span class="stringliteral">&quot; NumberOfBytesWritten= &quot;</span> &lt;&lt; NumberOfBytesWritten</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                );</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (NumberOfBytesWritten != bytes) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                FOXXLL_THROW_WIN_LASTERROR(io_error, <span class="stringliteral">&quot; partial write: missing &quot;</span> &lt;&lt; (bytes - NumberOfBytesWritten) &lt;&lt; <span class="stringliteral">&quot; out of &quot;</span> &lt;&lt; bytes &lt;&lt; <span class="stringliteral">&quot; bytes&quot;</span>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* wincall_file::io_type()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;wincall&quot;</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;} <span class="comment">// namespace foxxll</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif // #if FOXXLL_HAVE_WINCALL_FILE</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">/**************************************************************************/</span></div>
 <div class="ttc" id="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_html_a0cfacbbf6e846521326f5de5ba3ecd05"><div class="ttname"><a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">max</a></div><div class="ttdeci">static uint_pair max()</div><div class="ttdoc">return an uint_pair instance containing the largest value possible </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_source.html#l00226">uint_types.hpp:226</a></div></div>
 <div class="ttc" id="wincall__file_8hpp_html"><div class="ttname"><a href="wincall__file_8hpp.html">wincall_file.hpp</a></div></div>
-<div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html_a278e17dff6f1eff15d52f0bc57b65915"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a></div><div class="ttdeci">#define LOG1</div><div class="ttdef"><b>Definition:</b> <a href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00145">logger.hpp:145</a></div></div>
 <div class="ttc" id="classfoxxll_1_1request__interface_html_a74266dbf66678e0b32cb1784129fe8cb"><div class="ttname"><a href="classfoxxll_1_1request__interface.html#a74266dbf66678e0b32cb1784129fe8cb">foxxll::request_interface::read_or_write</a></div><div class="ttdeci">read_or_write</div><div class="ttdef"><b>Definition:</b> <a href="request__interface_8hpp_source.html#l00042">request_interface.hpp:42</a></div></div>
-<div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html">logger.hpp</a></div></div>
+<div class="ttc" id="logger_2core_8hpp_html"><div class="ttname"><a href="logger_2core_8hpp.html">core.hpp</a></div></div>
 <div class="ttc" id="error__handling_8hpp_html"><div class="ttname"><a href="error__handling_8hpp.html">error_handling.hpp</a></div></div>
 <div class="ttc" id="iostats_8hpp_html"><div class="ttname"><a href="iostats_8hpp.html">iostats.hpp</a></div></div>
 <div class="ttc" id="classfoxxll_1_1request__interface_html_a74266dbf66678e0b32cb1784129fe8cba61aa7ff70b76bff0fda378cf61d6afbc"><div class="ttname"><a href="classfoxxll_1_1request__interface.html#a74266dbf66678e0b32cb1784129fe8cba61aa7ff70b76bff0fda378cf61d6afbc">foxxll::request_interface::WRITE</a></div><div class="ttdef"><b>Definition:</b> <a href="request__interface_8hpp_source.html#l00042">request_interface.hpp:42</a></div></div>
 <div class="ttc" id="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_html_ab09b9b43d1b1783c78e39783e382b3dd"><div class="ttname"><a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#ab09b9b43d1b1783c78e39783e382b3dd">bytes</a></div><div class="ttdeci">static const size_t bytes</div><div class="ttdoc">number of bytes in uint_pair </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_source.html#l00075">uint_types.hpp:75</a></div></div>
+<div class="ttc" id="logger_2core_8hpp_html_adf1f9adaa963e88e623df98c61d94d39"><div class="ttname"><a href="logger_2core_8hpp.html#adf1f9adaa963e88e623df98c61d94d39">TLX_LOG1</a></div><div class="ttdeci">#define TLX_LOG1</div><div class="ttdef"><b>Definition:</b> <a href="logger_2core_8hpp_source.html#l00145">core.hpp:145</a></div></div>
 <div class="ttc" id="classfoxxll_1_1request__interface_html_a74266dbf66678e0b32cb1784129fe8cbacb9be765f361bb7efb9073730aac92c6"><div class="ttname"><a href="classfoxxll_1_1request__interface.html#a74266dbf66678e0b32cb1784129fe8cbacb9be765f361bb7efb9073730aac92c6">foxxll::request_interface::READ</a></div><div class="ttdef"><b>Definition:</b> <a href="request__interface_8hpp_source.html#l00042">request_interface.hpp:42</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -247,7 +248,7 @@ $(document).ready(function(){initNavTree('wincall__file_8cpp_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_6edb93c67f49003f2374f9bbffd8c119.html">foxxll</a></li><li class="navelem"><a class="el" href="dir_9554b3cb1d023b8265f4f4faa71025ef.html">foxxll</a></li><li class="navelem"><a class="el" href="dir_4baece39e6c6f47a0dce3856dc5eaa6a.html">io</a></li><li class="navelem"><a class="el" href="wincall__file_8cpp.html">wincall_file.cpp</a></li>
-    <li class="footer">Generated on Tue May 29 2018 12:45:39 for Thrill by
+    <li class="footer">Generated on Fri Sep 7 2018 14:05:37 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

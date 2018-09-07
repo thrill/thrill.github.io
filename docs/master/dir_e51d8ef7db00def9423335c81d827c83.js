@@ -3,6 +3,7 @@ var dir_e51d8ef7db00def9423335c81d827c83 =
     [ "algorithm", "dir_2fae90830e417302713857ba7587d5fe.html", "dir_2fae90830e417302713857ba7587d5fe" ],
     [ "container", "dir_32b7cef035cecd0b10cd51669c590a1c.html", "dir_32b7cef035cecd0b10cd51669c590a1c" ],
     [ "define", "dir_e39924738c5f6e7fad16b75e656b31fd.html", "dir_e39924738c5f6e7fad16b75e656b31fd" ],
+    [ "die", "dir_040d6456d7c4169c1665ff610f656afd.html", "dir_040d6456d7c4169c1665ff610f656afd" ],
     [ "digest", "dir_dc0f747e9b43a8e1ffa975169334da74.html", "dir_dc0f747e9b43a8e1ffa975169334da74" ],
     [ "logger", "dir_148f96dd94ba8884dfd27fc4f96ca2fe.html", "dir_148f96dd94ba8884dfd27fc4f96ca2fe" ],
     [ "math", "dir_12e1f04250d59a3988b9061d7bd0c3d8.html", "dir_12e1f04250d59a3988b9061d7bd0c3d8" ],
@@ -24,10 +25,8 @@ var dir_e51d8ef7db00def9423335c81d827c83 =
     [ "counting_ptr.hpp", "counting__ptr_8hpp.html", "counting__ptr_8hpp" ],
     [ "define.hpp", "define_8hpp.html", null ],
     [ "delegate.hpp", "delegate_8hpp.html", "delegate_8hpp" ],
-    [ "die.cpp", "die_8cpp.html", "die_8cpp" ],
     [ "die.hpp", "die_8hpp.html", "die_8hpp" ],
     [ "digest.hpp", "digest_8hpp.html", null ],
-    [ "logger.cpp", "extlib_2tlx_2tlx_2logger_8cpp.html", "extlib_2tlx_2tlx_2logger_8cpp" ],
     [ "logger.hpp", "extlib_2tlx_2tlx_2logger_8hpp.html", "extlib_2tlx_2tlx_2logger_8hpp" ],
     [ "math.hpp", "extlib_2tlx_2tlx_2math_8hpp.html", null ],
     [ "meta.hpp", "meta_8hpp.html", null ],
@@ -47,5 +46,6 @@ var dir_e51d8ef7db00def9423335c81d827c83 =
     [ "thread_pool.hpp", "thread__pool_8hpp.html", [
       [ "ThreadPool", "classtlx_1_1ThreadPool.html", "classtlx_1_1ThreadPool" ]
     ] ],
-    [ "unused.hpp", "unused_8hpp.html", "unused_8hpp" ]
+    [ "unused.hpp", "unused_8hpp.html", "unused_8hpp" ],
+    [ "version.hpp", "tlx_2tlx_2version_8hpp.html", "tlx_2tlx_2version_8hpp" ]
 ];

@@ -124,7 +124,7 @@ var group__foxxll__schedlayer =
     ] ],
     [ "prefetch_pool", "classfoxxll_1_1prefetch__pool.html", [
       [ "bid_hash", "structfoxxll_1_1prefetch__pool_1_1bid__hash.html", [
-        [ "operator()", "structfoxxll_1_1prefetch__pool_1_1bid__hash.html#ab590277e42be1c1f735c31fe92899ef4", null ]
+        [ "operator()", "structfoxxll_1_1prefetch__pool_1_1bid__hash.html#af3d538c60e461524ad59ec445514d3bd", null ]
       ] ],
       [ "bid_type", "classfoxxll_1_1prefetch__pool.html#a38c3ef73099716f6fa3de23364e770a2", null ],
       [ "block_type", "classfoxxll_1_1prefetch__pool.html#adc5d4043bebf71963b8f16cbe2060b99", null ],

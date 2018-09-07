@@ -15,6 +15,6 @@ var searchData=
   ['slog1',['sLOG1',['../extlib_2tlx_2tlx_2logger_8hpp.html#aea27f4824707b7aa21c0bcb69cd53ffb',1,'logger.hpp']]],
   ['slogc',['sLOGC',['../extlib_2tlx_2tlx_2logger_8hpp.html#a1ebd9a4bec506b6bf89af113a8f03ca1',1,'logger.hpp']]],
   ['sochar_5ft',['SOCHAR_T',['../simple__glob_8hpp.html#ac4bac48ab8cc497810176a9bedae52e3',1,'simple_glob.hpp']]],
-  ['stringify',['stringify',['../version_8hpp.html#a4f50cb4af81538ff988e02e4dc3c3a10',1,'version.hpp']]],
-  ['stringify_5f',['stringify_',['../version_8hpp.html#a70b53fcf992aece531d80e9697d7706e',1,'version.hpp']]]
+  ['stringify',['stringify',['../foxxll_2foxxll_2version_8hpp.html#a4f50cb4af81538ff988e02e4dc3c3a10',1,'version.hpp']]],
+  ['stringify_5f',['stringify_',['../foxxll_2foxxll_2version_8hpp.html#a70b53fcf992aece531d80e9697d7706e',1,'version.hpp']]]
 ];

@@ -2,7 +2,7 @@ var classtlx_1_1btree__multiset =
 [
     [ "key_of_value", "structtlx_1_1btree__multiset_1_1key__of__value.html", "structtlx_1_1btree__multiset_1_1key__of__value" ],
     [ "allocator_type", "classtlx_1_1btree__multiset.html#a552a180d973faf4f7ccc14b7d639a160", null ],
-    [ "btree_impl", "classtlx_1_1btree__multiset.html#ababaa208239be0bc6479eae3296778d7", null ],
+    [ "btree_impl", "classtlx_1_1btree__multiset.html#a00bce22abcfcd08fde238bf6dd349670", null ],
     [ "const_iterator", "classtlx_1_1btree__multiset.html#afcd3bad1ced519acc3641a8f83596d37", null ],
     [ "const_reverse_iterator", "classtlx_1_1btree__multiset.html#a4e16fc20a38234d65573c5e4eac083e4", null ],
     [ "iterator", "classtlx_1_1btree__multiset.html#afac99371679d954e37aefa29118a6459", null ],

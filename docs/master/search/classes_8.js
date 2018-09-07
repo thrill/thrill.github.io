@@ -6,7 +6,7 @@ var searchData=
   ['indexflag',['IndexFlag',['../structexamples_1_1suffix__sorting_1_1IndexFlag.html',1,'examples::suffix_sorting']]],
   ['indexrank',['IndexRank',['../structexamples_1_1suffix__sorting_1_1IndexRank.html',1,'examples::suffix_sorting']]],
   ['indexrankflag',['IndexRankFlag',['../structexamples_1_1suffix__sorting_1_1IndexRankFlag.html',1,'examples::suffix_sorting']]],
-  ['inner_5fnode',['inner_node',['../structtlx_1_1btree_1_1inner__node.html',1,'tlx::btree']]],
+  ['innernode',['InnerNode',['../structtlx_1_1BTree_1_1InnerNode.html',1,'tlx::BTree']]],
   ['inputlineiterator',['InputLineIterator',['../classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIterator.html',1,'thrill::api::ReadLinesNode']]],
   ['inputlineiteratorcompressed',['InputLineIteratorCompressed',['../classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIteratorCompressed.html',1,'thrill::api::ReadLinesNode']]],
   ['inputlineiteratoruncompressed',['InputLineIteratorUncompressed',['../classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIteratorUncompressed.html',1,'thrill::api::ReadLinesNode']]],
@@ -47,5 +47,5 @@ var searchData=
   ['itemwritertoolsbase_3c_20bufferbuilder_20_3e',['ItemWriterToolsBase&lt; BufferBuilder &gt;',['../classthrill_1_1common_1_1ItemWriterToolsBase.html',1,'thrill::common']]],
   ['itemwritertoolsbase_3c_20fixedbufferbuilder_3c_20capacity_20_3e_20_3e',['ItemWriterToolsBase&lt; FixedBufferBuilder&lt; Capacity &gt; &gt;',['../classthrill_1_1common_1_1ItemWriterToolsBase.html',1,'thrill::common']]],
   ['itemwritertoolsbase_3c_20vectorwriter_20_3e',['ItemWriterToolsBase&lt; VectorWriter &gt;',['../classthrill_1_1common_1_1ItemWriterToolsBase.html',1,'thrill::common']]],
-  ['iterator',['iterator',['../classtlx_1_1btree_1_1iterator.html',1,'tlx::btree']]]
+  ['iterator',['iterator',['../classtlx_1_1BTree_1_1iterator.html',1,'tlx::BTree']]]
 ];

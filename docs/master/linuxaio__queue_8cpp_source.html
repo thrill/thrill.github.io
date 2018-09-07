@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('linuxaio__queue_8cpp_source.html','');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="die_8hpp.html">tlx/die.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html">tlx/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_2core_8hpp.html">tlx/logger/core.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="error__handling_8hpp.html">foxxll/common/error_handling.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="linuxaio__request_8hpp.html">foxxll/io/linuxaio_request.hpp</a>&gt;</span></div>
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('linuxaio__queue_8cpp_source.html','');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    num_free_events_.signal(max_events_);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Set up an linuxaio queue with &quot;</span> &lt;&lt; max_events_ &lt;&lt; <span class="stringliteral">&quot; entries.&quot;</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="logger_2core_8hpp.html#adf1f9adaa963e88e623df98c61d94d39">TLX_LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Set up an linuxaio queue with &quot;</span> &lt;&lt; max_events_ &lt;&lt; <span class="stringliteral">&quot; entries.&quot;</span>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    start_thread(post_async, static_cast&lt;void*&gt;(<span class="keyword">this</span>), post_thread_, post_thread_state_);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    start_thread(wait_async, static_cast&lt;void*&gt;(<span class="keyword">this</span>), wait_thread_, wait_thread_state_);</div>
@@ -416,12 +416,12 @@ $(document).ready(function(){initNavTree('linuxaio__queue_8cpp_source.html','');
 <div class="ttc" id="error__handling_8hpp_html_a016896942f1bd88bfdfb5b66e74cad20"><div class="ttname"><a href="error__handling_8hpp.html#a016896942f1bd88bfdfb5b66e74cad20">FOXXLL_THROW_INVALID_ARGUMENT</a></div><div class="ttdeci">#define FOXXLL_THROW_INVALID_ARGUMENT(error_message)</div><div class="ttdoc">Throws std::invalid_argument with &quot;Error in [function] : [error_message]&quot;. </div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8hpp_source.html#l00067">error_handling.hpp:67</a></div></div>
 <div class="ttc" id="linuxaio__request_8hpp_html"><div class="ttname"><a href="linuxaio__request_8hpp.html">linuxaio_request.hpp</a></div></div>
 <div class="ttc" id="group__foxxll__reqlayer_html_gab80ecf11eb759f96598eff772adc7909"><div class="ttname"><a href="group__foxxll__reqlayer.html#gab80ecf11eb759f96598eff772adc7909">foxxll::request_ptr</a></div><div class="ttdeci">tlx::counting_ptr&lt; request &gt; request_ptr</div><div class="ttdoc">A reference counting pointer for request. </div><div class="ttdef"><b>Definition:</b> <a href="request_8hpp_source.html#l00043">request.hpp:43</a></div></div>
-<div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html_a278e17dff6f1eff15d52f0bc57b65915"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a></div><div class="ttdeci">#define LOG1</div><div class="ttdef"><b>Definition:</b> <a href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00145">logger.hpp:145</a></div></div>
-<div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html">logger.hpp</a></div></div>
 <div class="ttc" id="linuxaio__queue_8hpp_html"><div class="ttname"><a href="linuxaio__queue_8hpp.html">linuxaio_queue.hpp</a></div></div>
-<div class="ttc" id="die_8hpp_html_ab6acaec854169756098dfd26138a1a0e"><div class="ttname"><a href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e">die</a></div><div class="ttdeci">#define die(msg)</div><div class="ttdoc">Instead of std::terminate(), throw the output the message via an exception. </div><div class="ttdef"><b>Definition:</b> <a href="die_8hpp_source.html#l00043">die.hpp:43</a></div></div>
+<div class="ttc" id="logger_2core_8hpp_html"><div class="ttname"><a href="logger_2core_8hpp.html">core.hpp</a></div></div>
+<div class="ttc" id="die_8hpp_html_ab6acaec854169756098dfd26138a1a0e"><div class="ttname"><a href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e">die</a></div><div class="ttdeci">#define die(msg)</div><div class="ttdoc">Instead of std::terminate(), throw the output the message via an exception. </div><div class="ttdef"><b>Definition:</b> <a href="die_8hpp_source.html#l00022">die.hpp:22</a></div></div>
 <div class="ttc" id="error__handling_8hpp_html"><div class="ttname"><a href="error__handling_8hpp.html">error_handling.hpp</a></div></div>
 <div class="ttc" id="error__handling_8hpp_html_a5be7fab12a838b4a0b26334b3c72b1cd"><div class="ttname"><a href="error__handling_8hpp.html#a5be7fab12a838b4a0b26334b3c72b1cd">FOXXLL_THROW_ERRNO</a></div><div class="ttdeci">#define FOXXLL_THROW_ERRNO(exception_type, error_message)</div><div class="ttdoc">Throws exception_type with &quot;Error in [function] : [error_message] : [errno message]&quot;. </div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8hpp_source.html#l00063">error_handling.hpp:63</a></div></div>
+<div class="ttc" id="logger_2core_8hpp_html_adf1f9adaa963e88e623df98c61d94d39"><div class="ttname"><a href="logger_2core_8hpp.html#adf1f9adaa963e88e623df98c61d94d39">TLX_LOG1</a></div><div class="ttdeci">#define TLX_LOG1</div><div class="ttdef"><b>Definition:</b> <a href="logger_2core_8hpp_source.html#l00145">core.hpp:145</a></div></div>
 <div class="ttc" id="die_8hpp_html"><div class="ttname"><a href="die_8hpp.html">die.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -429,7 +429,7 @@ $(document).ready(function(){initNavTree('linuxaio__queue_8cpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_6edb93c67f49003f2374f9bbffd8c119.html">foxxll</a></li><li class="navelem"><a class="el" href="dir_9554b3cb1d023b8265f4f4faa71025ef.html">foxxll</a></li><li class="navelem"><a class="el" href="dir_4baece39e6c6f47a0dce3856dc5eaa6a.html">io</a></li><li class="navelem"><a class="el" href="linuxaio__queue_8cpp.html">linuxaio_queue.cpp</a></li>
-    <li class="footer">Generated on Tue May 29 2018 12:45:38 for Thrill by
+    <li class="footer">Generated on Fri Sep 7 2018 14:05:37 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

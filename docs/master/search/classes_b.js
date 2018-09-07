@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['leaf_5fnode',['leaf_node',['../structtlx_1_1btree_1_1leaf__node.html',1,'tlx::btree']]],
+  ['leafnode',['LeafNode',['../structtlx_1_1BTree_1_1LeafNode.html',1,'tlx::BTree']]],
   ['leastsquaresgradient',['LeastSquaresGradient',['../classexamples_1_1stochastic__gradient__descent_1_1LeastSquaresGradient.html',1,'examples::stochastic_gradient_descent']]],
   ['lexicographic',['lexicographic',['../classtlx_1_1multisequence__partition__detail_1_1lexicographic.html',1,'tlx::multisequence_partition_detail']]],
   ['lexicographic',['lexicographic',['../classtlx_1_1multisequence__selection__detail_1_1lexicographic.html',1,'tlx::multisequence_selection_detail']]],

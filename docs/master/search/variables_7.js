@@ -11,7 +11,7 @@ var searchData=
   ['hash_5fwriters1_5f',['hash_writers1_',['../classthrill_1_1api_1_1JoinNode.html#af062e8807c1d3ba2ac58c6daa0924e76',1,'thrill::api::JoinNode']]],
   ['hash_5fwriters2_5f',['hash_writers2_',['../classthrill_1_1api_1_1JoinNode.html#aeb51da9d00ade9ed8df2d8145a8c4c2b',1,'thrill::api::JoinNode']]],
   ['hashes_5f',['hashes_',['../classthrill_1_1core_1_1ReducePrePhase_3_01TableItem_00_01Key_00_01Value_00_01KeyExtractor_00_01R21d271c26c94d68a392fc2ad1836161c.html#aa7dab38cf60eecc8abc9bd2666bde3dc',1,'thrill::core::ReducePrePhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig, IndexFunction, EqualToFunction, HashFunction, true &gt;']]],
-  ['head_5fleaf_5f',['head_leaf_',['../classtlx_1_1btree.html#aa537b415741ac8c657b258aa21909e4f',1,'tlx::btree']]],
+  ['head_5fleaf_5f',['head_leaf_',['../classtlx_1_1BTree.html#a8d6ac34d80de837a5e6125c932f1c288',1,'tlx::BTree']]],
   ['header_5fsize',['header_size',['../classthrill_1_1data_1_1MultiplexerHeader.html#ac9a0c0d3a0eb73be7c7149c7c124220a',1,'thrill::data::MultiplexerHeader']]],
   ['high',['high',['../classfoxxll_1_1uint__pair.html#a6055cd14f4a8c0c11f7de8b6183dc441',1,'foxxll::uint_pair::high()'],['../extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a6055cd14f4a8c0c11f7de8b6183dc441',1,'high():&#160;uint_types.hpp']]],
   ['high_5f',['high_',['../classthrill_1_1common_1_1UIntPair.html#a546919992dbc211ccdd70a224405f979',1,'thrill::common::UIntPair']]],

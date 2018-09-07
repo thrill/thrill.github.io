@@ -1,7 +1,7 @@
 var searchData=
 [
   ['hard_5fram_5flimit',['hard_ram_limit',['../classthrill_1_1data_1_1BlockPool.html#a4f8d4accd3be0cb77aa774d4fbd0c9a2',1,'thrill::data::BlockPool']]],
-  ['has',['has',['../structtlx_1_1btree_1_1result__t.html#ae1c20bab9719dbdf19bb660a0a4a700d',1,'tlx::btree::result_t']]],
+  ['has',['has',['../structtlx_1_1BTree_1_1result__t.html#ae1c20bab9719dbdf19bb660a0a4a700d',1,'tlx::BTree::result_t']]],
   ['has_5favailable_5fspace',['has_available_space',['../classfoxxll_1_1disk__block__allocator.html#a71d5b7f89dd82451ef5f493de9b8cbdb',1,'foxxll::disk_block_allocator']]],
   ['has_5fext_5ffile',['has_ext_file',['../classthrill_1_1data_1_1ByteBlock.html#a3f8c15f91cb48453150e3d6724b81fd3',1,'thrill::data::ByteBlock']]],
   ['has_5fexternal_5fblock',['has_external_block',['../classfoxxll_1_1swappable__block.html#a18b8f2159de95fed9074ea28baec6432',1,'foxxll::swappable_block']]],

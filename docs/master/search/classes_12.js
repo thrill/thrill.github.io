@@ -15,7 +15,7 @@ var searchData=
   ['tovectoremitter_3c_20thrill_3a_3aapi_3a_3agroupbynode_3a_3ahashcount_20_3e',['ToVectorEmitter&lt; thrill::api::GroupByNode::HashCount &gt;',['../classthrill_1_1core_1_1ToVectorEmitter.html',1,'thrill::core']]],
   ['tovectoremitter_3c_20thrill_3a_3aapi_3a_3ajoinnode_3a_3ahashcount_20_3e',['ToVectorEmitter&lt; thrill::api::JoinNode::HashCount &gt;',['../classthrill_1_1core_1_1ToVectorEmitter.html',1,'thrill::core']]],
   ['traffic',['Traffic',['../structthrill_1_1net_1_1Traffic.html',1,'thrill::net']]],
-  ['tree_5fstats',['tree_stats',['../structtlx_1_1btree_1_1tree__stats.html',1,'tlx::btree']]],
+  ['tree_5fstats',['tree_stats',['../structtlx_1_1BTree_1_1tree__stats.html',1,'tlx::BTree']]],
   ['treebuilder',['TreeBuilder',['../classthrill_1_1api_1_1SortNode_1_1TreeBuilder.html',1,'thrill::api::SortNode']]],
   ['treeinfo',['TreeInfo',['../structexamples_1_1bfs_1_1TreeInfo.html',1,'examples::bfs']]],
   ['tupledeserializer',['TupleDeserializer',['../structthrill_1_1data_1_1detail_1_1TupleDeserializer.html',1,'thrill::data::detail']]],

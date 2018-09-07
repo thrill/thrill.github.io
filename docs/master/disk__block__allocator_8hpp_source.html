@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('disk__block__allocator_8hpp_source.htm
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html">tlx/logger.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="logger_2core_8hpp.html">tlx/logger/core.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="error__handling_8hpp.html">foxxll/common/error_handling.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="exceptions_8hpp.html">foxxll/common/exceptions.hpp</a>&gt;</span></div>
@@ -230,9 +230,9 @@ $(document).ready(function(){initNavTree('disk__block__allocator_8hpp_source.htm
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="classfoxxll_1_1disk__block__allocator.html#a281b5ec791338d4378e22ef44a51b4a1">mutex_</a>);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;disk_block_allocator::delete_block&lt;&quot;</span> &lt;&lt; BlockSize &lt;&lt;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="stringliteral">&quot;&gt;(pos=&quot;</span> &lt;&lt; bid.<a class="code" href="classfoxxll_1_1BID.html#a907cac7d4419f0ff0ce51b927ef3f2fc">offset</a> &lt;&lt; <span class="stringliteral">&quot;, size=&quot;</span> &lt;&lt; bid.<a class="code" href="classfoxxll_1_1BID.html#ae8542fe44413919dee9f41ede5a5032d">size</a> &lt;&lt;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="stringliteral">&quot;), free:&quot;</span> &lt;&lt; <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a558d3749deb2ef385bf21ad31b6de888">free_bytes_</a> &lt;&lt; <span class="stringliteral">&quot; total:&quot;</span> &lt;&lt; <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a1cbd824fc39150cebe7a82a7045098d3">disk_bytes_</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="logger_2core_8hpp.html#adf1f9adaa963e88e623df98c61d94d39">TLX_LOG1</a> &lt;&lt; <span class="stringliteral">&quot;disk_block_allocator::delete_block&lt;&quot;</span> &lt;&lt; BlockSize</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;&gt;(pos=&quot;</span> &lt;&lt; bid.<a class="code" href="classfoxxll_1_1BID.html#a907cac7d4419f0ff0ce51b927ef3f2fc">offset</a> &lt;&lt; <span class="stringliteral">&quot;, size=&quot;</span> &lt;&lt; size_t(bid.<a class="code" href="classfoxxll_1_1BID.html#ae8542fe44413919dee9f41ede5a5032d">size</a>)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;), free:&quot;</span> &lt;&lt; <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a558d3749deb2ef385bf21ad31b6de888">free_bytes_</a> &lt;&lt; <span class="stringliteral">&quot; total:&quot;</span> &lt;&lt; <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a1cbd824fc39150cebe7a82a7045098d3">disk_bytes_</a>;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a387d3544c9014443e97787f9bc601992">add_free_region</a>(bid.<a class="code" href="classfoxxll_1_1BID.html#a907cac7d4419f0ff0ce51b927ef3f2fc">offset</a>, bid.<a class="code" href="classfoxxll_1_1BID.html#ae8542fe44413919dee9f41ede5a5032d">size</a>);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
@@ -280,13 +280,13 @@ $(document).ready(function(){initNavTree('disk__block__allocator_8hpp_source.htm
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">for</span> (BIDIterator cur = begin; cur != end; ++cur)</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    {</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Asking for a block with size: &quot;</span> &lt;&lt; cur-&gt;size;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <a class="code" href="logger_2core_8hpp.html#ad565f2ef3ecf71cede793d22e9aa45c2">TLX_LOG</a> &lt;&lt; <span class="stringliteral">&quot;Asking for a block with size: &quot;</span> &lt;&lt; cur-&gt;size;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        requested_size += cur-&gt;size;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    std::unique_lock&lt;std::mutex&gt; lock(<a class="code" href="classfoxxll_1_1disk__block__allocator.html#a281b5ec791338d4378e22ef44a51b4a1">mutex_</a>);</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;disk_block_allocator::new_blocks&lt;BlockSize&gt;&quot;</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <a class="code" href="logger_2core_8hpp.html#ad565f2ef3ecf71cede793d22e9aa45c2">TLX_LOG</a> &lt;&lt; <span class="stringliteral">&quot;disk_block_allocator::new_blocks&lt;BlockSize&gt;&quot;</span></div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="stringliteral">&quot;, BlockSize = &quot;</span> &lt;&lt; begin-&gt;size &lt;&lt;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="stringliteral">&quot;, free:&quot;</span> &lt;&lt; <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a558d3749deb2ef385bf21ad31b6de888">free_bytes_</a> &lt;&lt; <span class="stringliteral">&quot; total:&quot;</span> &lt;&lt; <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a1cbd824fc39150cebe7a82a7045098d3">disk_bytes_</a> &lt;&lt;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="stringliteral">&quot;, blocks: &quot;</span> &lt;&lt; (end - begin) &lt;&lt;</div>
@@ -303,99 +303,99 @@ $(document).ready(function(){initNavTree('disk__block__allocator_8hpp_source.htm
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            );</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;External memory block allocation error: &quot;</span> &lt;&lt; requested_size &lt;&lt;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <span class="stringliteral">&quot; bytes requested, &quot;</span> &lt;&lt; <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a558d3749deb2ef385bf21ad31b6de888">free_bytes_</a> &lt;&lt;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <span class="stringliteral">&quot; bytes free. Trying to extend the external memory space...&quot;</span>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a02358894b508b1fe73993589ec1659dc">grow_file</a>(requested_size);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="comment">// dump();</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    space_map_type::iterator space =</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        std::find_if(</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a408cf7df1589673ab51cae5e0d9db5b3">free_space_</a>.begin(), <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a408cf7df1589673ab51cae5e0d9db5b3">free_space_</a>.end(),</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            [requested_size](<span class="keyword">const</span> <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a8e80461b0d5e3f640207669f6127a20d">place</a>&amp; entry) {</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                <span class="keywordflow">return</span> (entry.second &gt;= requested_size);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            }</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        );</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">if</span> (space == <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a408cf7df1589673ab51cae5e0d9db5b3">free_space_</a>.end() &amp;&amp; begin + 1 == end)</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classfoxxll_1_1disk__block__allocator.html#ad48781fc27074d0e0ec88598cdf6ba31">autogrow_</a>) {</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Warning: Severe external memory space fragmentation!&quot;</span>;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a4a4fecb6d7cd9d0b8eb6579eee183af8">dump</a>();</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;External memory block allocation error: &quot;</span> &lt;&lt; requested_size &lt;&lt;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                <span class="stringliteral">&quot; bytes requested, &quot;</span> &lt;&lt; <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a558d3749deb2ef385bf21ad31b6de888">free_bytes_</a> &lt;&lt;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                <span class="stringliteral">&quot; bytes free. Trying to extend the external memory space...&quot;</span>;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a02358894b508b1fe73993589ec1659dc">grow_file</a>(begin-&gt;size);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        space = std::find_if(</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a408cf7df1589673ab51cae5e0d9db5b3">free_space_</a>.begin(), <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a408cf7df1589673ab51cae5e0d9db5b3">free_space_</a>.end(),</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                [requested_size](<span class="keyword">const</span> <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a8e80461b0d5e3f640207669f6127a20d">place</a>&amp; entry) {</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                    <span class="keywordflow">return</span> (entry.second &gt;= requested_size);</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                }</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            );</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    }</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">if</span> (space != <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a408cf7df1589673ab51cae5e0d9db5b3">free_space_</a>.end())</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        uint64_t region_pos = (*space).first;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        uint64_t region_size = (*space).second;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a408cf7df1589673ab51cae5e0d9db5b3">free_space_</a>.erase(space);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">if</span> (region_size &gt; requested_size)</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a408cf7df1589673ab51cae5e0d9db5b3">free_space_</a>[region_pos + requested_size] = region_size - requested_size;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">for</span> (uint64_t pos = region_pos; begin != end; ++begin)</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            begin-&gt;offset = pos;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            pos += begin-&gt;size;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        assert(<a class="code" href="classfoxxll_1_1disk__block__allocator.html#a558d3749deb2ef385bf21ad31b6de888">free_bytes_</a> &gt;= requested_size);</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a558d3749deb2ef385bf21ad31b6de888">free_bytes_</a> -= requested_size;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="comment">//dump();</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    }</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="comment">// no contiguous region found</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; <span class="stringliteral">&quot;Warning, when allocating an external memory space, no&quot;</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="stringliteral">&quot;contiguous region found. It might harm the performance&quot;</span>;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    assert(end - begin &gt; 1);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    lock.unlock();</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    BIDIterator middle = begin + ((end - begin) / 2);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <a class="code" href="classfoxxll_1_1disk__block__allocator.html#aff6b652a738f56c9191c801a72ffaba9">new_blocks</a>(begin, middle);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <a class="code" href="classfoxxll_1_1disk__block__allocator.html#aff6b652a738f56c9191c801a72ffaba9">new_blocks</a>(middle, end);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">//! \}</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;} <span class="comment">// namespace foxxll</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">#endif // !FOXXLL_MNG_DISK_BLOCK_ALLOCATOR_HEADER</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="comment">/**************************************************************************/</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <a class="code" href="logger_2core_8hpp.html#adf1f9adaa963e88e623df98c61d94d39">TLX_LOG1</a></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            &lt;&lt; <span class="stringliteral">&quot;External memory block allocation error: &quot;</span> &lt;&lt; requested_size</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            &lt;&lt; <span class="stringliteral">&quot; bytes requested, &quot;</span> &lt;&lt; <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a558d3749deb2ef385bf21ad31b6de888">free_bytes_</a></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            &lt;&lt; <span class="stringliteral">&quot; bytes free. Trying to extend the external memory space...&quot;</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a02358894b508b1fe73993589ec1659dc">grow_file</a>(requested_size);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="comment">// dump();</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    space_map_type::iterator space =</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        std::find_if(</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a408cf7df1589673ab51cae5e0d9db5b3">free_space_</a>.begin(), <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a408cf7df1589673ab51cae5e0d9db5b3">free_space_</a>.end(),</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            [requested_size](<span class="keyword">const</span> <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a8e80461b0d5e3f640207669f6127a20d">place</a>&amp; entry) {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                <span class="keywordflow">return</span> (entry.second &gt;= requested_size);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        );</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">if</span> (space == <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a408cf7df1589673ab51cae5e0d9db5b3">free_space_</a>.end() &amp;&amp; begin + 1 == end)</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classfoxxll_1_1disk__block__allocator.html#ad48781fc27074d0e0ec88598cdf6ba31">autogrow_</a>) {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <a class="code" href="logger_2core_8hpp.html#adf1f9adaa963e88e623df98c61d94d39">TLX_LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Warning: Severe external memory space fragmentation!&quot;</span>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a4a4fecb6d7cd9d0b8eb6579eee183af8">dump</a>();</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <a class="code" href="logger_2core_8hpp.html#adf1f9adaa963e88e623df98c61d94d39">TLX_LOG1</a> &lt;&lt; <span class="stringliteral">&quot;External memory block allocation error: &quot;</span> &lt;&lt; requested_size &lt;&lt;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                <span class="stringliteral">&quot; bytes requested, &quot;</span> &lt;&lt; <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a558d3749deb2ef385bf21ad31b6de888">free_bytes_</a> &lt;&lt;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                <span class="stringliteral">&quot; bytes free. Trying to extend the external memory space...&quot;</span>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a02358894b508b1fe73993589ec1659dc">grow_file</a>(begin-&gt;size);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        space = std::find_if(</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a408cf7df1589673ab51cae5e0d9db5b3">free_space_</a>.begin(), <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a408cf7df1589673ab51cae5e0d9db5b3">free_space_</a>.end(),</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                [requested_size](<span class="keyword">const</span> <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a8e80461b0d5e3f640207669f6127a20d">place</a>&amp; entry) {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                    <span class="keywordflow">return</span> (entry.second &gt;= requested_size);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            );</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">if</span> (space != <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a408cf7df1589673ab51cae5e0d9db5b3">free_space_</a>.end())</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        uint64_t region_pos = (*space).first;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        uint64_t region_size = (*space).second;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a408cf7df1589673ab51cae5e0d9db5b3">free_space_</a>.erase(space);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">if</span> (region_size &gt; requested_size)</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a408cf7df1589673ab51cae5e0d9db5b3">free_space_</a>[region_pos + requested_size] = region_size - requested_size;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">for</span> (uint64_t pos = region_pos; begin != end; ++begin)</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        {</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            begin-&gt;offset = pos;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            pos += begin-&gt;size;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        assert(<a class="code" href="classfoxxll_1_1disk__block__allocator.html#a558d3749deb2ef385bf21ad31b6de888">free_bytes_</a> &gt;= requested_size);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <a class="code" href="classfoxxll_1_1disk__block__allocator.html#a558d3749deb2ef385bf21ad31b6de888">free_bytes_</a> -= requested_size;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="comment">//dump();</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    }</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="comment">// no contiguous region found</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <a class="code" href="logger_2core_8hpp.html#ad565f2ef3ecf71cede793d22e9aa45c2">TLX_LOG</a> &lt;&lt; <span class="stringliteral">&quot;Warning, when allocating an external memory space, no&quot;</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="stringliteral">&quot;contiguous region found. It might harm the performance&quot;</span>;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    assert(end - begin &gt; 1);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    lock.unlock();</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    BIDIterator middle = begin + ((end - begin) / 2);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <a class="code" href="classfoxxll_1_1disk__block__allocator.html#aff6b652a738f56c9191c801a72ffaba9">new_blocks</a>(begin, middle);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <a class="code" href="classfoxxll_1_1disk__block__allocator.html#aff6b652a738f56c9191c801a72ffaba9">new_blocks</a>(middle, end);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;}</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">//! \}</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;} <span class="comment">// namespace foxxll</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">#endif // !FOXXLL_MNG_DISK_BLOCK_ALLOCATOR_HEADER</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="comment">/**************************************************************************/</span></div>
 <div class="ttc" id="classfoxxll_1_1disk__config_html_a2a0ed9db3ce341499a43185d7073903e"><div class="ttname"><a href="classfoxxll_1_1disk__config.html#a2a0ed9db3ce341499a43185d7073903e">foxxll::disk_config::size</a></div><div class="ttdeci">external_size_type size</div><div class="ttdoc">file size to initially allocate </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2foxxll_2foxxll_2mng_2config_8hpp_source.html#l00046">config.hpp:46</a></div></div>
 <div class="ttc" id="classfoxxll_1_1file_html_a6ec862b406fb5d15d05198e50713a9b3"><div class="ttname"><a href="classfoxxll_1_1file.html#a6ec862b406fb5d15d05198e50713a9b3">foxxll::file::set_size</a></div><div class="ttdeci">virtual void set_size(offset_type newsize)=0</div></div>
 <div class="ttc" id="classtlx_1_1SimpleVector_html_afc5380afa64b233d0df01a147616974b"><div class="ttname"><a href="classtlx_1_1SimpleVector.html#afc5380afa64b233d0df01a147616974b">tlx::SimpleVector::end</a></div><div class="ttdeci">iterator end() noexcept</div><div class="ttdoc">return mutable iterator beyond last element </div><div class="ttdef"><b>Definition:</b> <a href="container_2simple__vector_8hpp_source.html#l00141">simple_vector.hpp:141</a></div></div>
 <div class="ttc" id="classfoxxll_1_1disk__block__allocator_html_a387d3544c9014443e97787f9bc601992"><div class="ttname"><a href="classfoxxll_1_1disk__block__allocator.html#a387d3544c9014443e97787f9bc601992">foxxll::disk_block_allocator::add_free_region</a></div><div class="ttdeci">void add_free_region(uint64_t block_pos, uint64_t block_size)</div><div class="ttdef"><b>Definition:</b> <a href="disk__block__allocator_8cpp_source.html#l00065">disk_block_allocator.cpp:65</a></div></div>
 <div class="ttc" id="classfoxxll_1_1disk__block__allocator_html_ae619ad541a2a228c6ca931bc6bb31626"><div class="ttname"><a href="classfoxxll_1_1disk__block__allocator.html#ae619ad541a2a228c6ca931bc6bb31626">foxxll::disk_block_allocator::total_bytes</a></div><div class="ttdeci">uint64_t total_bytes() const </div><div class="ttdef"><b>Definition:</b> <a href="disk__block__allocator_8hpp_source.html#l00089">disk_block_allocator.hpp:89</a></div></div>
 <div class="ttc" id="extlib_2foxxll_2foxxll_2mng_2config_8hpp_html"><div class="ttname"><a href="extlib_2foxxll_2foxxll_2mng_2config_8hpp.html">config.hpp</a></div></div>
-<div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html_a278e17dff6f1eff15d52f0bc57b65915"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a></div><div class="ttdeci">#define LOG1</div><div class="ttdef"><b>Definition:</b> <a href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00145">logger.hpp:145</a></div></div>
 <div class="ttc" id="error__handling_8hpp_html_a2a44f7fbc6c68ce827cd7d2229a81999"><div class="ttname"><a href="error__handling_8hpp.html#a2a44f7fbc6c68ce827cd7d2229a81999">FOXXLL_THROW</a></div><div class="ttdeci">#define FOXXLL_THROW(exception_type, error_message)</div><div class="ttdoc">Throws exception_type with &quot;Error in [function] : [error_message]&quot;. </div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8hpp_source.html#l00047">error_handling.hpp:47</a></div></div>
 <div class="ttc" id="exceptions_8hpp_html"><div class="ttname"><a href="exceptions_8hpp.html">exceptions.hpp</a></div></div>
-<div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html">logger.hpp</a></div></div>
 <div class="ttc" id="classtlx_1_1SimpleVector_html"><div class="ttname"><a href="classtlx_1_1SimpleVector.html">tlx::SimpleVector</a></div><div class="ttdoc">Simpler non-growing vector without initialization. </div><div class="ttdef"><b>Definition:</b> <a href="container_2simple__vector_8hpp_source.html#l00050">simple_vector.hpp:50</a></div></div>
 <div class="ttc" id="classfoxxll_1_1bad__ext__alloc_html"><div class="ttname"><a href="classfoxxll_1_1bad__ext__alloc.html">foxxll::bad_ext_alloc</a></div><div class="ttdef"><b>Definition:</b> <a href="exceptions_8hpp_source.html#l00047">exceptions.hpp:47</a></div></div>
 <div class="ttc" id="classfoxxll_1_1BID_html_a907cac7d4419f0ff0ce51b927ef3f2fc"><div class="ttname"><a href="classfoxxll_1_1BID.html#a907cac7d4419f0ff0ce51b927ef3f2fc">foxxll::BID::offset</a></div><div class="ttdeci">external_size_type offset</div><div class="ttdoc">offset within the file of the block (uint64_t) </div><div class="ttdef"><b>Definition:</b> <a href="bid_8hpp_source.html#l00050">bid.hpp:50</a></div></div>
+<div class="ttc" id="logger_2core_8hpp_html"><div class="ttname"><a href="logger_2core_8hpp.html">core.hpp</a></div></div>
 <div class="ttc" id="types_8hpp_html"><div class="ttname"><a href="types_8hpp.html">types.hpp</a></div></div>
 <div class="ttc" id="classfoxxll_1_1disk__block__allocator_html_a3599745b708e161d6d966e419913fb91"><div class="ttname"><a href="classfoxxll_1_1disk__block__allocator.html#a3599745b708e161d6d966e419913fb91">foxxll::disk_block_allocator::disk_block_allocator</a></div><div class="ttdeci">disk_block_allocator(file *storage, const disk_config &amp;cfg)</div><div class="ttdef"><b>Definition:</b> <a href="disk__block__allocator_8hpp_source.html#l00050">disk_block_allocator.hpp:50</a></div></div>
 <div class="ttc" id="classfoxxll_1_1disk__block__allocator_html_a1cbd824fc39150cebe7a82a7045098d3"><div class="ttname"><a href="classfoxxll_1_1disk__block__allocator.html#a1cbd824fc39150cebe7a82a7045098d3">foxxll::disk_block_allocator::disk_bytes_</a></div><div class="ttdeci">uint64_t disk_bytes_</div><div class="ttdef"><b>Definition:</b> <a href="disk__block__allocator_8hpp_source.html#l00131">disk_block_allocator.hpp:131</a></div></div>
@@ -423,22 +423,23 @@ $(document).ready(function(){initNavTree('disk__block__allocator_8hpp_source.htm
 <div class="ttc" id="classfoxxll_1_1disk__block__allocator_html_a2b18352a5a3d69bef7f3026b1f3f8c5b"><div class="ttname"><a href="classfoxxll_1_1disk__block__allocator.html#a2b18352a5a3d69bef7f3026b1f3f8c5b">foxxll::disk_block_allocator::deallocation_error</a></div><div class="ttdeci">void deallocation_error(uint64_t block_pos, uint64_t block_size, const space_map_type::iterator &amp;pred, const space_map_type::iterator &amp;succ) const </div><div class="ttdef"><b>Definition:</b> <a href="disk__block__allocator_8cpp_source.html#l00039">disk_block_allocator.cpp:39</a></div></div>
 <div class="ttc" id="classfoxxll_1_1disk__config_html"><div class="ttname"><a href="classfoxxll_1_1disk__config.html">foxxll::disk_config</a></div><div class="ttdef"><b>Definition:</b> <a href="extlib_2foxxll_2foxxll_2mng_2config_8hpp_source.html#l00036">config.hpp:36</a></div></div>
 <div class="ttc" id="classfoxxll_1_1disk__block__allocator_html_a71d5b7f89dd82451ef5f493de9b8cbdb"><div class="ttname"><a href="classfoxxll_1_1disk__block__allocator.html#a71d5b7f89dd82451ef5f493de9b8cbdb">foxxll::disk_block_allocator::has_available_space</a></div><div class="ttdeci">bool has_available_space(uint64_t bytes) const </div><div class="ttdef"><b>Definition:</b> <a href="disk__block__allocator_8hpp_source.html#l00074">disk_block_allocator.hpp:74</a></div></div>
+<div class="ttc" id="logger_2core_8hpp_html_adf1f9adaa963e88e623df98c61d94d39"><div class="ttname"><a href="logger_2core_8hpp.html#adf1f9adaa963e88e623df98c61d94d39">TLX_LOG1</a></div><div class="ttdeci">#define TLX_LOG1</div><div class="ttdef"><b>Definition:</b> <a href="logger_2core_8hpp_source.html#l00145">core.hpp:145</a></div></div>
 <div class="ttc" id="classfoxxll_1_1disk__block__allocator_html_a1ed5a9414d69bc0471ead7fc21f0b81a"><div class="ttname"><a href="classfoxxll_1_1disk__block__allocator.html#a1ed5a9414d69bc0471ead7fc21f0b81a">foxxll::disk_block_allocator::delete_block</a></div><div class="ttdeci">void delete_block(const BID&lt; BlockSize &gt; &amp;bid)</div><div class="ttdef"><b>Definition:</b> <a href="disk__block__allocator_8hpp_source.html#l00111">disk_block_allocator.hpp:111</a></div></div>
 <div class="ttc" id="classfoxxll_1_1disk__block__allocator_html_a1a336ed951f9196c866e0d11b82c67ee"><div class="ttname"><a href="classfoxxll_1_1disk__block__allocator.html#a1a336ed951f9196c866e0d11b82c67ee">foxxll::disk_block_allocator::autogrow</a></div><div class="ttdeci">bool autogrow() const </div><div class="ttdoc">Returns autogrow. </div><div class="ttdef"><b>Definition:</b> <a href="disk__block__allocator_8hpp_source.html#l00072">disk_block_allocator.hpp:72</a></div></div>
 <div class="ttc" id="classfoxxll_1_1disk__block__allocator_html_a8e80461b0d5e3f640207669f6127a20d"><div class="ttname"><a href="classfoxxll_1_1disk__block__allocator.html#a8e80461b0d5e3f640207669f6127a20d">foxxll::disk_block_allocator::place</a></div><div class="ttdeci">std::pair&lt; uint64_t, uint64_t &gt; place</div><div class="ttdoc">pair (offset, size) used for free space calculation </div><div class="ttdef"><b>Definition:</b> <a href="disk__block__allocator_8hpp_source.html#l00124">disk_block_allocator.hpp:124</a></div></div>
 <div class="ttc" id="classfoxxll_1_1disk__block__allocator_html_a348afec8f15c15ad45c05b9c28da3add"><div class="ttname"><a href="classfoxxll_1_1disk__block__allocator.html#a348afec8f15c15ad45c05b9c28da3add">foxxll::disk_block_allocator::free_bytes</a></div><div class="ttdeci">uint64_t free_bytes() const </div><div class="ttdef"><b>Definition:</b> <a href="disk__block__allocator_8hpp_source.html#l00079">disk_block_allocator.hpp:79</a></div></div>
-<div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html_a159ca84d25a5487d8e81e4438725df19"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a></div><div class="ttdeci">#define LOG</div><div class="ttdoc">Default logging method: output if the local debug variable is true. </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00141">logger.hpp:141</a></div></div>
 <div class="ttc" id="classfoxxll_1_1BID_html"><div class="ttname"><a href="classfoxxll_1_1BID.html">foxxll::BID</a></div><div class="ttdef"><b>Definition:</b> <a href="bid_8hpp_source.html#l00039">bid.hpp:39</a></div></div>
 <div class="ttc" id="classfoxxll_1_1BID_html_ae8542fe44413919dee9f41ede5a5032d"><div class="ttname"><a href="classfoxxll_1_1BID.html#ae8542fe44413919dee9f41ede5a5032d">foxxll::BID::size</a></div><div class="ttdeci">static constexpr size_t size</div><div class="ttdoc">Block size. </div><div class="ttdef"><b>Definition:</b> <a href="bid_8hpp_source.html#l00043">bid.hpp:43</a></div></div>
 <div class="ttc" id="classfoxxll_1_1disk__block__allocator_html"><div class="ttname"><a href="classfoxxll_1_1disk__block__allocator.html">foxxll::disk_block_allocator</a></div><div class="ttdoc">This class manages allocation of blocks onto a single disk. </div><div class="ttdef"><b>Definition:</b> <a href="disk__block__allocator_8hpp_source.html#l00045">disk_block_allocator.hpp:45</a></div></div>
 <div class="ttc" id="classfoxxll_1_1disk__block__allocator_html_a558d3749deb2ef385bf21ad31b6de888"><div class="ttname"><a href="classfoxxll_1_1disk__block__allocator.html#a558d3749deb2ef385bf21ad31b6de888">foxxll::disk_block_allocator::free_bytes_</a></div><div class="ttdeci">uint64_t free_bytes_</div><div class="ttdef"><b>Definition:</b> <a href="disk__block__allocator_8hpp_source.html#l00130">disk_block_allocator.hpp:130</a></div></div>
+<div class="ttc" id="logger_2core_8hpp_html_ad565f2ef3ecf71cede793d22e9aa45c2"><div class="ttname"><a href="logger_2core_8hpp.html#ad565f2ef3ecf71cede793d22e9aa45c2">TLX_LOG</a></div><div class="ttdeci">#define TLX_LOG</div><div class="ttdoc">Default logging method: output if the local debug variable is true. </div><div class="ttdef"><b>Definition:</b> <a href="logger_2core_8hpp_source.html#l00141">core.hpp:141</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_6edb93c67f49003f2374f9bbffd8c119.html">foxxll</a></li><li class="navelem"><a class="el" href="dir_9554b3cb1d023b8265f4f4faa71025ef.html">foxxll</a></li><li class="navelem"><a class="el" href="dir_1ba94d57ae6003f8c8aae77cde195977.html">mng</a></li><li class="navelem"><a class="el" href="disk__block__allocator_8hpp.html">disk_block_allocator.hpp</a></li>
-    <li class="footer">Generated on Tue May 29 2018 12:45:39 for Thrill by
+    <li class="footer">Generated on Fri Sep 7 2018 14:05:37 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

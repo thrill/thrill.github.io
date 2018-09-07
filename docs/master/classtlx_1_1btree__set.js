@@ -2,7 +2,7 @@ var classtlx_1_1btree__set =
 [
     [ "key_of_value", "structtlx_1_1btree__set_1_1key__of__value.html", "structtlx_1_1btree__set_1_1key__of__value" ],
     [ "allocator_type", "classtlx_1_1btree__set.html#a552a180d973faf4f7ccc14b7d639a160", null ],
-    [ "btree_impl", "classtlx_1_1btree__set.html#ace4feeba05811275b1e2354a1e67f35d", null ],
+    [ "btree_impl", "classtlx_1_1btree__set.html#a6b2d580d51eb7fab37fd7a952a4a5cee", null ],
     [ "const_iterator", "classtlx_1_1btree__set.html#afcd3bad1ced519acc3641a8f83596d37", null ],
     [ "const_reverse_iterator", "classtlx_1_1btree__set.html#a4e16fc20a38234d65573c5e4eac083e4", null ],
     [ "iterator", "classtlx_1_1btree__set.html#afac99371679d954e37aefa29118a6459", null ],

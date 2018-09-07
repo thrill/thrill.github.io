@@ -17,7 +17,7 @@ var dir_e590497cc50ef2eecc1d619a0ecad80d =
     [ "json_logger.hpp", "json__logger_8hpp.html", "json__logger_8hpp" ],
     [ "linux_proc_stats.cpp", "linux__proc__stats_8cpp.html", "linux__proc__stats_8cpp" ],
     [ "linux_proc_stats.hpp", "linux__proc__stats_8hpp.html", "linux__proc__stats_8hpp" ],
-    [ "logger.cpp", "thrill_2common_2logger_8cpp.html", "thrill_2common_2logger_8cpp" ],
+    [ "logger.cpp", "logger_8cpp.html", "logger_8cpp" ],
     [ "logger.hpp", "thrill_2common_2logger_8hpp.html", "thrill_2common_2logger_8hpp" ],
     [ "math.hpp", "thrill_2common_2math_8hpp.html", "thrill_2common_2math_8hpp" ],
     [ "matrix.hpp", "matrix_8hpp.html", "matrix_8hpp" ],

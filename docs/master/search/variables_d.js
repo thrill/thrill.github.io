@@ -13,7 +13,7 @@ var searchData=
   ['neutral_5felement_5fkey_5f',['neutral_element_key_',['../classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a0c86da57ee7f8d7bec3fdd1c4f2f5352',1,'thrill::core::ReduceByIndexPostPhase']]],
   ['next',['next',['../structthrill_1_1core_1_1ReduceBucketHashTable_1_1BucketBlock.html#a2d8451008fdf8c0f0a06034bbd41ea7e',1,'thrill::core::ReduceBucketHashTable::BucketBlock']]],
   ['next_5f',['next_',['../classtlx_1_1LoggerCollectOutput.html#a9dff1530ea1100398de9ab0977600092',1,'tlx::LoggerCollectOutput']]],
-  ['next_5fleaf',['next_leaf',['../structtlx_1_1btree_1_1leaf__node.html#a62f91e800a300a413c9fcab8d397e357',1,'tlx::btree::leaf_node']]],
+  ['next_5fleaf',['next_leaf',['../structtlx_1_1BTree_1_1LeafNode.html#a9110db83a99825d372dfb35fda3ab7e3',1,'tlx::BTree::LeafNode']]],
   ['next_5fop_5fto_5fschedule',['next_op_to_schedule',['../classfoxxll_1_1block__scheduler__algorithm__offline__lru__prefetching.html#a10975657611f71b25335b47284164282',1,'foxxll::block_scheduler_algorithm_offline_lru_prefetching']]],
   ['next_5ftimeout',['next_timeout',['../structthrill_1_1common_1_1ProfileThread_1_1Timer.html#af985b311c6b8154c43c6aef509964d00',1,'thrill::common::ProfileThread::Timer::next_timeout()'],['../structthrill_1_1net_1_1Dispatcher_1_1Timer.html#af985b311c6b8154c43c6aef509964d00',1,'thrill::net::Dispatcher::Timer::next_timeout()']]],
   ['next_5fuse',['next_use',['../classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a816b153313237f7748d2e0f396f5e88d',1,'foxxll::block_scheduler_algorithm_offline_lfd']]],

@@ -11,5 +11,5 @@ var dir_9554b3cb1d023b8265f4f4faa71025ef =
     [ "singleton.hpp", "extlib_2foxxll_2foxxll_2singleton_8hpp.html", [
       [ "singleton", "classfoxxll_1_1singleton.html", "classfoxxll_1_1singleton" ]
     ] ],
-    [ "version.hpp", "version_8hpp.html", "version_8hpp" ]
+    [ "version.hpp", "foxxll_2foxxll_2version_8hpp.html", "foxxll_2foxxll_2version_8hpp" ]
 ];

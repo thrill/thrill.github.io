@@ -2,7 +2,7 @@ var classtlx_1_1btree__multimap =
 [
     [ "key_of_value", "structtlx_1_1btree__multimap_1_1key__of__value.html", "structtlx_1_1btree__multimap_1_1key__of__value" ],
     [ "allocator_type", "classtlx_1_1btree__multimap.html#a552a180d973faf4f7ccc14b7d639a160", null ],
-    [ "btree_impl", "classtlx_1_1btree__multimap.html#ababaa208239be0bc6479eae3296778d7", null ],
+    [ "btree_impl", "classtlx_1_1btree__multimap.html#a00bce22abcfcd08fde238bf6dd349670", null ],
     [ "const_iterator", "classtlx_1_1btree__multimap.html#afcd3bad1ced519acc3641a8f83596d37", null ],
     [ "const_reverse_iterator", "classtlx_1_1btree__multimap.html#a4e16fc20a38234d65573c5e4eac083e4", null ],
     [ "data_type", "classtlx_1_1btree__multimap.html#a2a9bb4a20468cdfca8b476a26892f283", null ],
@@ -10,7 +10,7 @@ var classtlx_1_1btree__multimap =
     [ "key_compare", "classtlx_1_1btree__multimap.html#a7462b1e2b24182127f494d58dbb95fa9", null ],
     [ "key_type", "classtlx_1_1btree__multimap.html#acb65c421faf5d749d03882f64d184775", null ],
     [ "reverse_iterator", "classtlx_1_1btree__multimap.html#a080458f85e4aefc31cc89767613243df", null ],
-    [ "self", "classtlx_1_1btree__multimap.html#a11749a4305d091aab145bf7afae44ffe", null ],
+    [ "self", "classtlx_1_1btree__multimap.html#a36bc5e5cb716f3734aed7afb292668ba", null ],
     [ "size_type", "classtlx_1_1btree__multimap.html#a1be1cfb6ae3135c01d8e8d8fcfbe0ee8", null ],
     [ "traits", "classtlx_1_1btree__multimap.html#add985b33b72ef68812f3986e8df807f5", null ],
     [ "tree_stats", "classtlx_1_1btree__multimap.html#a77ce4303907bb816a959ac7b0725311e", null ],

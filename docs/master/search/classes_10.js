@@ -83,8 +83,8 @@ var searchData=
   ['resource_5ferror',['resource_error',['../classfoxxll_1_1resource__error.html',1,'foxxll']]],
   ['result',['Result',['../structthrill_1_1core_1_1ReduceByHash_1_1Result.html',1,'thrill::core::ReduceByHash']]],
   ['result',['Result',['../structthrill_1_1core_1_1ReduceByIndex_1_1Result.html',1,'thrill::core::ReduceByIndex']]],
-  ['result_5ft',['result_t',['../structtlx_1_1btree_1_1result__t.html',1,'tlx::btree']]],
-  ['reverse_5fiterator',['reverse_iterator',['../classtlx_1_1btree_1_1reverse__iterator.html',1,'tlx::btree']]],
+  ['result_5ft',['result_t',['../structtlx_1_1BTree_1_1result__t.html',1,'tlx::BTree']]],
+  ['reverse_5fiterator',['reverse_iterator',['../classtlx_1_1BTree_1_1reverse__iterator.html',1,'tlx::BTree']]],
   ['ringbuffer',['RingBuffer',['../classtlx_1_1RingBuffer.html',1,'tlx']]],
   ['ringbuffer_3c_20input_20_3e',['RingBuffer&lt; Input &gt;',['../classtlx_1_1RingBuffer.html',1,'tlx']]],
   ['runtimer',['RunTimer',['../classthrill_1_1common_1_1RunTimer.html',1,'thrill::common']]]

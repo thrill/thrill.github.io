@@ -1,7 +1,7 @@
 var sha1_8cpp =
 [
-    [ "SHA1_hex", "sha1_8cpp.html#ga039e94aa64c1466cf71362a5cedcd09d", null ],
-    [ "SHA1_hex", "sha1_8cpp.html#gae6126ca192f76b392ae7c945b8147abe", null ],
-    [ "SHA1_hex_uc", "sha1_8cpp.html#gad40a1cbc7b667f1b5b130e5c6bbed152", null ],
-    [ "SHA1_hex_uc", "sha1_8cpp.html#gaae599be1f3ddb71a31debf8732d1caf3", null ]
+    [ "sha1_hex", "sha1_8cpp.html#ga3e9766edc39a64fab5be44d202d7d34c", null ],
+    [ "sha1_hex", "sha1_8cpp.html#gae0d2b96d1009d969add4fed13446c65d", null ],
+    [ "sha1_hex_uc", "sha1_8cpp.html#gab71383f80da55d26496c1bc6b48bab12", null ],
+    [ "sha1_hex_uc", "sha1_8cpp.html#ga15daa9d133058039c094baaddc6cf3db", null ]
 ];

@@ -2,7 +2,7 @@ var searchData=
 [
   ['handle',['Handle',['../classthrill_1_1data_1_1CatStreamData.html#ab815409809b92616e365b90838cbdbcc',1,'thrill::data::CatStreamData::Handle()'],['../classthrill_1_1data_1_1MixStreamData.html#aba0de9c0e3bd47ef10e222557b3066b4',1,'thrill::data::MixStreamData::Handle()'],['../classfoxxll_1_1addressable__fifo__queue.html#ae3b018a342f17054a568b1bf4194b8bf',1,'foxxll::addressable_fifo_queue::handle()'],['../classfoxxll_1_1addressable__priority__queue.html#ae3b018a342f17054a568b1bf4194b8bf',1,'foxxll::addressable_priority_queue::handle()']]],
   ['hard_5fram_5flimit',['hard_ram_limit',['../classthrill_1_1data_1_1BlockPool.html#a4f8d4accd3be0cb77aa774d4fbd0c9a2',1,'thrill::data::BlockPool']]],
-  ['has',['has',['../structtlx_1_1btree_1_1result__t.html#ae1c20bab9719dbdf19bb660a0a4a700d',1,'tlx::btree::result_t']]],
+  ['has',['has',['../structtlx_1_1BTree_1_1result__t.html#ae1c20bab9719dbdf19bb660a0a4a700d',1,'tlx::BTree::result_t']]],
   ['has_5favailable_5fspace',['has_available_space',['../classfoxxll_1_1disk__block__allocator.html#a71d5b7f89dd82451ef5f493de9b8cbdb',1,'foxxll::disk_block_allocator']]],
   ['has_5fext_5ffile',['has_ext_file',['../classthrill_1_1data_1_1ByteBlock.html#a3f8c15f91cb48453150e3d6724b81fd3',1,'thrill::data::ByteBlock']]],
   ['has_5fexternal_5fblock',['has_external_block',['../classfoxxll_1_1swappable__block.html#a18b8f2159de95fed9074ea28baec6432',1,'foxxll::swappable_block']]],
@@ -55,7 +55,7 @@ var searchData=
   ['hdfs3initialize',['Hdfs3Initialize',['../namespacethrill_1_1vfs.html#a3d6fe81aa5571a41a73504d5b991bac4',1,'thrill::vfs']]],
   ['hdfs3openreadstream',['Hdfs3OpenReadStream',['../namespacethrill_1_1vfs.html#a3582b9a1e4dedf6cd093d52f92dd362d',1,'thrill::vfs']]],
   ['hdfs3openwritestream',['Hdfs3OpenWriteStream',['../namespacethrill_1_1vfs.html#a6a2cd0c9d002c4d7649e93d3580961b2',1,'thrill::vfs']]],
-  ['head_5fleaf_5f',['head_leaf_',['../classtlx_1_1btree.html#aa537b415741ac8c657b258aa21909e4f',1,'tlx::btree']]],
+  ['head_5fleaf_5f',['head_leaf_',['../classtlx_1_1BTree.html#a8d6ac34d80de837a5e6125c932f1c288',1,'tlx::BTree']]],
   ['header_5fsize',['header_size',['../classthrill_1_1data_1_1MultiplexerHeader.html#ac9a0c0d3a0eb73be7c7149c7c124220a',1,'thrill::data::MultiplexerHeader']]],
   ['helloreceived',['HelloReceived',['../group__net__tcp.html#ggaf905f830af92a188bfa734cbd78f7211a2d16a9c48da0e5e84f8348861ce25bc4',1,'thrill::net::tcp']]],
   ['hellosent',['HelloSent',['../group__net__tcp.html#ggaf905f830af92a188bfa734cbd78f7211a38c07f2d1e08abf0b30d8fd9b917188e',1,'thrill::net::tcp']]],

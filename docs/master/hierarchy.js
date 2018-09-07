@@ -13,8 +13,8 @@ var hierarchy =
     ] ],
     [ "BID< raw_size >", "classfoxxll_1_1BID.html", null ],
     [ "BinaryHeap< Timer >", "classthrill_1_1common_1_1BinaryHeap.html", null ],
-    [ "btree< key_type, value_type, key_of_value, key_compare, traits, false, allocator_type >", "classtlx_1_1btree.html", null ],
-    [ "btree< key_type, value_type, key_of_value, key_compare, traits, true, allocator_type >", "classtlx_1_1btree.html", null ],
+    [ "BTree< key_type, value_type, key_of_value, key_compare, traits, false, allocator_type >", "classtlx_1_1BTree.html", null ],
+    [ "BTree< key_type, value_type, key_of_value, key_compare, traits, true, allocator_type >", "classtlx_1_1BTree.html", null ],
     [ "buffered_writer< block_type >", "classfoxxll_1_1buffered__writer.html", null ],
     [ "CentroidAccumulated< Vector< D, double > >", "structexamples_1_1k__means_1_1CentroidAccumulated.html", null ],
     [ "InputArchive", null, [
@@ -608,18 +608,18 @@ var hierarchy =
       [ "PoolAllocator< Type >", "classthrill_1_1mem_1_1PoolAllocator.html", null ],
       [ "StackAllocator< Type, Size >", "classtlx_1_1StackAllocator.html", null ]
     ] ],
-    [ "btree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >", "classtlx_1_1btree.html", null ],
-    [ "btree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::const_iterator", "classtlx_1_1btree_1_1const__iterator.html", null ],
-    [ "btree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::const_reverse_iterator", "classtlx_1_1btree_1_1const__reverse__iterator.html", null ],
-    [ "btree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::iterator", "classtlx_1_1btree_1_1iterator.html", null ],
-    [ "btree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::node", "structtlx_1_1btree_1_1node.html", [
-      [ "btree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::inner_node", "structtlx_1_1btree_1_1inner__node.html", null ],
-      [ "btree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::leaf_node", "structtlx_1_1btree_1_1leaf__node.html", null ]
+    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >", "classtlx_1_1BTree.html", null ],
+    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::const_iterator", "classtlx_1_1BTree_1_1const__iterator.html", null ],
+    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::const_reverse_iterator", "classtlx_1_1BTree_1_1const__reverse__iterator.html", null ],
+    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::iterator", "classtlx_1_1BTree_1_1iterator.html", null ],
+    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::node", "structtlx_1_1BTree_1_1node.html", [
+      [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::InnerNode", "structtlx_1_1BTree_1_1InnerNode.html", null ],
+      [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::LeafNode", "structtlx_1_1BTree_1_1LeafNode.html", null ]
     ] ],
-    [ "btree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::result_t", "structtlx_1_1btree_1_1result__t.html", null ],
-    [ "btree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::reverse_iterator", "classtlx_1_1btree_1_1reverse__iterator.html", null ],
-    [ "btree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::tree_stats", "structtlx_1_1btree_1_1tree__stats.html", null ],
-    [ "btree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::value_compare", "classtlx_1_1btree_1_1value__compare.html", null ],
+    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::result_t", "structtlx_1_1BTree_1_1result__t.html", null ],
+    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::reverse_iterator", "classtlx_1_1BTree_1_1reverse__iterator.html", null ],
+    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::tree_stats", "structtlx_1_1BTree_1_1tree__stats.html", null ],
+    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::value_compare", "classtlx_1_1BTree_1_1value__compare.html", null ],
     [ "btree_default_traits< Key, Value >", "structtlx_1_1btree__default__traits.html", null ],
     [ "btree_map< Key_, Data_, Compare_, Traits_, Alloc_ >", "classtlx_1_1btree__map.html", null ],
     [ "btree_map< Key_, Data_, Compare_, Traits_, Alloc_ >::key_of_value", "structtlx_1_1btree__map_1_1key__of__value.html", null ],
