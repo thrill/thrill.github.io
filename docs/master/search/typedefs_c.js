@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['makemultiwaymergetreedelegate',['MakeMultiwayMergeTreeDelegate',['../classthrill_1_1api_1_1SortNode.html#a021a3df10b5332f0657ae7493e7d68a8',1,'thrill::api::SortNode']]],
+  ['makemultiwaymergetreedelegate',['MakeMultiwayMergeTreeDelegate',['../classthrill_1_1api_1_1SortNode.html#aa51fbdc3d6f849af30b3ce1d3536e1c7',1,'thrill::api::SortNode']]],
   ['maketableitem',['MakeTableItem',['../classthrill_1_1core_1_1ReduceByIndexPostPhase.html#aa26d3023668a46fc71d141934d8a8fdb',1,'thrill::core::ReduceByIndexPostPhase::MakeTableItem()'],['../classthrill_1_1core_1_1ReducePrePhase_3_01TableItem_00_01Key_00_01Value_00_01KeyExtractor_00_01R6998f81dc4b5ad1ea227fdf846bcd931.html#aa26d3023668a46fc71d141934d8a8fdb',1,'thrill::core::ReducePrePhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig_, IndexFunction, KeyEqualFunction, HashFunction, false &gt;::MakeTableItem()'],['../classthrill_1_1core_1_1ReduceTable.html#aa26d3023668a46fc71d141934d8a8fdb',1,'thrill::core::ReduceTable::MakeTableItem()']]],
   ['malloc_5ftype',['malloc_type',['../namespacethrill_1_1mem.html#ac9fc199ea6e601f343b23f8fb727b826',1,'thrill::mem']]],
   ['map',['Map',['../classtlx_1_1LruCacheSet.html#a861aef812bb830b05ff98b11bbb184be',1,'tlx::LruCacheSet::Map()'],['../classtlx_1_1LruCacheMap.html#a861aef812bb830b05ff98b11bbb184be',1,'tlx::LruCacheMap::Map()']]],

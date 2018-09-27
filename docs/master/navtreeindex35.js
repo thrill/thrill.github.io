@@ -1,7 +1,5 @@
 var NAVTREEINDEX35 =
 {
-"k-means_8hpp.html#a647782c82608555fc27ba5fca68ce64d":[6,0,1,1,0,6],
-"k-means_8hpp.html#adf5d527c89798d5984297ee3b01f3885":[6,0,1,1,0,5],
 "k-means_8hpp.html#af165c865d54faac3e47d683a8ae5b723":[6,0,1,1,0,3],
 "k-means_8hpp_source.html":[6,0,1,1,0],
 "k-means__run_8cpp.html":[6,0,1,1,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX35 =
 "malloc__tracker_8hpp.html#a87f1356f900dcb2dcebb55c3255acc51":[6,0,3,4,4,8],
 "malloc__tracker_8hpp.html#a8b143f6968b9afb1361073cebc3fc492":[6,0,3,4,4,1],
 "malloc__tracker_8hpp.html#aab2d6fb5cbfffb1c8474b5cd5d675467":[6,0,3,4,4,9],
-"malloc__tracker_8hpp.html#ab1cbc56ca79132826f17395e22842c21":[6,0,3,4,4,11]
+"malloc__tracker_8hpp.html#ab1cbc56ca79132826f17395e22842c21":[6,0,3,4,4,11],
+"malloc__tracker_8hpp.html#ac9c0bc6bc7646ad9bdc1fa7624737b9f":[6,0,3,4,4,10],
+"malloc__tracker_8hpp.html#ad733173609d4c53a3d85cb45a16dcb7f":[6,0,3,4,4,3]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX44 =
 {
-"window_8hpp.html#acb34b899890b3fcd31903f8748143cf7":[6,0,3,0,40,0],
-"window_8hpp_source.html":[6,0,3,0,40],
 "word__count_8hpp.html":[6,0,1,14,3],
 "word__count_8hpp.html#a16b2f1df2cb26c877d2398e5464024bc":[6,0,1,14,3,2],
 "word__count_8hpp.html#a2269673635fecefe4af7cb026dea3b31":[6,0,1,14,3,5],

@@ -1,7 +1,5 @@
 var NAVTREEINDEX42 =
 {
-"structtlx_1_1BTree_1_1result__t.html#a8b50d073eba40cd3cd2678b97b7e0002":[3,1,4,1,0,0,6,5],
-"structtlx_1_1BTree_1_1result__t.html#adbc903b428081896ec43d6eb50a30d50":[3,1,4,1,0,0,6,1],
 "structtlx_1_1BTree_1_1result__t.html#ae1c20bab9719dbdf19bb660a0a4a700d":[3,1,4,1,0,0,6,2],
 "structtlx_1_1BTree_1_1tree__stats.html":[3,1,4,1,0,0,8],
 "structtlx_1_1BTree_1_1tree__stats.html#a15e93268f0db30aba3e965bd0be33b02":[3,1,4,1,0,0,8,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX42 =
 "thrill_2data_2file_8hpp_source.html":[6,0,3,3,17],
 "thrill_2mem_2allocator__base_8hpp.html":[6,0,3,4,2],
 "thrill_2mem_2allocator__base_8hpp.html#a029803356f9cd5737c0cde376fca291c":[6,0,3,4,2,11],
-"thrill_2mem_2allocator__base_8hpp.html#a18ff93b570414e0855bc7119bb1a3c6a":[6,0,3,4,2,6]
+"thrill_2mem_2allocator__base_8hpp.html#a18ff93b570414e0855bc7119bb1a3c6a":[6,0,3,4,2,6],
+"thrill_2mem_2allocator__base_8hpp.html#a1c0ec876049ef298e87dc600a78199cf":[6,0,3,4,2,14],
+"thrill_2mem_2allocator__base_8hpp.html#a2b7f8ff9fe1192c8a5caf1d923c4ccab":[6,0,3,4,2,4]
 };

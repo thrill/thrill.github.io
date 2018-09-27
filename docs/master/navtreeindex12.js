@@ -1,7 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"classthrill_1_1common_1_1UIntPair.html#a96bf5db759da29819e913aab2f7db774":[5,0,4,1,59,38],
-"classthrill_1_1common_1_1UIntPair.html#a9a14a425763fe0cbeeafb27ba1dd6944":[5,0,4,1,59,11],
 "classthrill_1_1common_1_1UIntPair.html#aa6725399b53062ba100bb9ed494824b8":[5,0,4,1,59,39],
 "classthrill_1_1common_1_1UIntPair.html#aac92e06b53cb8bf02992aa16a3aaa0c6":[5,0,4,1,59,23],
 "classthrill_1_1common_1_1UIntPair.html#ab2162bfdbeb87894177a3f47658f1a2e":[5,0,4,1,59,21],
@@ -249,5 +247,7 @@ var NAVTREEINDEX12 =
 "classthrill_1_1core_1_1MultiwayMergeTree.html#a607016c8e2fa0e0b86ddf648462dcf5b":[5,0,4,2,13,10],
 "classthrill_1_1core_1_1MultiwayMergeTree.html#a97f27207d87af0e9eca8b06c608ed513":[5,0,4,2,13,5],
 "classthrill_1_1core_1_1MultiwayMergeTree.html#aa71240154b372bca01a04325047dc154":[5,0,4,2,13,1],
-"classthrill_1_1core_1_1MultiwayMergeTree.html#aab1564022808c7625ea755c503e7864e":[5,0,4,2,13,0]
+"classthrill_1_1core_1_1MultiwayMergeTree.html#aab1564022808c7625ea755c503e7864e":[5,0,4,2,13,0],
+"classthrill_1_1core_1_1MultiwayMergeTree.html#ac9755291ee1bbe6d2bc68a98542afa99":[5,0,4,2,13,2],
+"classthrill_1_1core_1_1MultiwayMergeTree.html#aded586c61712d9849dd08f4ab9f2960e":[5,0,4,2,13,4]
 };

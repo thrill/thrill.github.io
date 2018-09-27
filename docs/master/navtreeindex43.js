@@ -1,7 +1,5 @@
 var NAVTREEINDEX43 =
 {
-"thrill_2mem_2allocator__base_8hpp.html#a1c0ec876049ef298e87dc600a78199cf":[6,0,3,4,2,14],
-"thrill_2mem_2allocator__base_8hpp.html#a2b7f8ff9fe1192c8a5caf1d923c4ccab":[6,0,3,4,2,4],
 "thrill_2mem_2allocator__base_8hpp.html#a2c2fd4b42d2bc614209a3b48febdaf2d":[6,0,3,4,2,18],
 "thrill_2mem_2allocator__base_8hpp.html#a3438d3ed2b108a90a239222e9831b216":[6,0,3,4,2,16],
 "thrill_2mem_2allocator__base_8hpp.html#a4db347f2c00fb2a88ee2b1da34acc891":[6,0,3,4,2,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX43 =
 "wincall__file_8hpp.html":[6,0,2,0,0,1,47],
 "wincall__file_8hpp.html#a75b968c57f197978705b928918e75e2a":[6,0,2,0,0,1,47,0],
 "wincall__file_8hpp_source.html":[6,0,2,0,0,1,47],
-"window_8hpp.html":[6,0,3,0,40]
+"window_8hpp.html":[6,0,3,0,40],
+"window_8hpp.html#acb34b899890b3fcd31903f8748143cf7":[6,0,3,0,40,0],
+"window_8hpp_source.html":[6,0,3,0,40]
 };

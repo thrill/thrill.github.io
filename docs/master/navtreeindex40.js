@@ -1,7 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"structexamples_1_1k__means_1_1CentroidAccumulated.html#a471354d71ba97866fe5dabb75f1a016b":[5,0,0,1,0,0],
-"structexamples_1_1k__means_1_1CentroidAccumulated.html#a76d971a3c552bc58ba9f0d5fceae9806":[5,0,0,1,0,1],
 "structexamples_1_1k__means_1_1CentroidAccumulated.html#ae273773add45375b65c8555736acb60f":[5,0,0,1,0,2],
 "structexamples_1_1k__means_1_1ClosestCentroid.html":[5,0,0,1,1],
 "structexamples_1_1k__means_1_1ClosestCentroid.html#a1e98b0b13f946c50a4a54cc89b8f022a":[5,0,0,1,1,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX40 =
 "structthrill_1_1api_1_1SortNode_1_1MakeDefaultMultiwayMergeTree.html#ae522d75ad605b6a2aa798367f0dc249f":[3,1,0,30,0,0],
 "structthrill_1_1api_1_1SortNode_1_1MakeStableMultiwayMergeTree.html":[3,1,0,30,1],
 "structthrill_1_1api_1_1SortNode_1_1MakeStableMultiwayMergeTree.html#ae522d75ad605b6a2aa798367f0dc249f":[3,1,0,30,1,0],
-"structthrill_1_1api_1_1UnionNode_1_1UnionChild.html":[3,1,0,32,0]
+"structthrill_1_1api_1_1UnionNode_1_1UnionChild.html":[3,1,0,32,0],
+"structthrill_1_1api_1_1UnionNode_1_1UnionChild.html#a0942223e901e35e047e47e6dc2420843":[3,1,0,32,0,0],
+"structthrill_1_1api_1_1UnionNode_1_1UnionChild.html#a42712c99422eaa2019fa9713b1dc74b9":[3,1,0,32,0,1]
 };

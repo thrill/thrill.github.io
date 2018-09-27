@@ -1,7 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"classthrill_1_1api_1_1GroupByNode_1_1HashCount.html":[3,1,0,17,0],
-"classthrill_1_1api_1_1GroupByNode_1_1HashCount.html#a2b07c49e916f21a26aa731f4db68785a":[3,1,0,17,0,10],
 "classthrill_1_1api_1_1GroupByNode_1_1HashCount.html#a3393559cdbae8224177ec106f92a8000":[3,1,0,17,0,0],
 "classthrill_1_1api_1_1GroupByNode_1_1HashCount.html#a3a263216c6339ccdeae071025aaceac9":[3,1,0,17,0,6],
 "classthrill_1_1api_1_1GroupByNode_1_1HashCount.html#a482b45b2ece4dfa3f7c5a29d68ccb97f":[3,1,0,17,0,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX8 =
 "classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIteratorCompressed.html#a3551d22502a58cdc93b15d14f3fb87c2":[3,1,0,24,1,1],
 "classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIteratorCompressed.html#a82a6226e719ae65ccdbc55008c7aeeab":[3,1,0,24,1,3],
 "classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIteratorCompressed.html#ada3056206edef5f85acc1f77dc5acd69":[3,1,0,24,1,0],
-"classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIteratorUncompressed.html":[3,1,0,24,2]
+"classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIteratorUncompressed.html":[3,1,0,24,2],
+"classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIteratorUncompressed.html#a32ecdb251fcc138bd6b45cd4615a4e26":[3,1,0,24,2,2],
+"classthrill_1_1api_1_1ReadLinesNode_1_1InputLineIteratorUncompressed.html#a3551d22502a58cdc93b15d14f3fb87c2":[3,1,0,24,2,1]
 };

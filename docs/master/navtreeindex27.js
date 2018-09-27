@@ -1,7 +1,5 @@
 var NAVTREEINDEX27 =
 {
-"core_2hyperloglog_8hpp.html#a8fa87a9781e53fd8b02908a1b27427bb":[6,0,3,2,6,8],
-"core_2hyperloglog_8hpp.html#a92c320671695dbd069c644defc991d38":[6,0,3,2,6,4],
 "core_2hyperloglog_8hpp.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e":[6,0,3,2,6,4,0],
 "core_2hyperloglog_8hpp.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff":[6,0,3,2,6,4,1],
 "core_2hyperloglog_8hpp.html#a9afd4266c3cda053ccc293af1cb0690a":[6,0,3,2,6,6],
@@ -249,5 +247,7 @@ var NAVTREEINDEX27 =
 "dyn__block__reader_8hpp.html#gad64e8d70fb5585ec5c61546566e53ed4":[6,0,3,3,15,2],
 "dyn__block__reader_8hpp_source.html":[6,0,3,3,15],
 "endian_8hpp.html":[6,0,2,1,0,2,6],
-"endian_8hpp_source.html":[6,0,2,1,0,2,6]
+"endian_8hpp_source.html":[6,0,2,1,0,2,6],
+"ends__with_8cpp.html":[6,0,2,1,0,10,8],
+"ends__with_8cpp.html#ga6eadd6e031f051ff44c5ab2935cdddfd":[6,0,2,1,0,10,8,0]
 };

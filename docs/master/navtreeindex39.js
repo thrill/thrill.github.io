@@ -1,7 +1,5 @@
 var NAVTREEINDEX39 =
 {
-"sha512_8hpp.html":[6,0,2,1,0,4,7],
-"sha512_8hpp.html#ga7520cfaab5fa32dce14570c3ab3bd374":[6,0,2,1,0,4,7,2],
 "sha512_8hpp.html#gaae316a9dc1dd8f7632b69b1038e3fe46":[6,0,2,1,0,4,7,1],
 "sha512_8hpp.html#gadff7a13fb05332384ae53656f9f43c0e":[6,0,2,1,0,4,7,3],
 "sha512_8hpp.html#gaf708f5c7d1dc3811189bdfb7c514475b":[6,0,2,1,0,4,7,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX39 =
 "structexamples_1_1bfs_1_1TreeInfo.html":[5,0,0,0,2],
 "structexamples_1_1bfs_1_1TreeInfo.html#a16f98361587382b9a449f609231ec13b":[5,0,0,0,2,0],
 "structexamples_1_1bfs_1_1TreeInfo.html#a4929493cf2793c298f3e19fe1f4cdb62":[5,0,0,0,2,1],
-"structexamples_1_1k__means_1_1CentroidAccumulated.html":[5,0,0,1,0]
+"structexamples_1_1k__means_1_1CentroidAccumulated.html":[5,0,0,1,0],
+"structexamples_1_1k__means_1_1CentroidAccumulated.html#a471354d71ba97866fe5dabb75f1a016b":[5,0,0,1,0,0],
+"structexamples_1_1k__means_1_1CentroidAccumulated.html#a76d971a3c552bc58ba9f0d5fceae9806":[5,0,0,1,0,1]
 };

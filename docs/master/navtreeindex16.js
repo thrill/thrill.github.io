@@ -1,7 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"classthrill_1_1data_1_1MixBlockQueueReader.html#a371a08b32070854b5af0579059ee0a22":[3,1,1,26,12],
-"classthrill_1_1data_1_1MixBlockQueueReader.html#a521642f49f7d31bb8e838a68af8bede3":[3,1,1,26,2],
 "classthrill_1_1data_1_1MixBlockQueueReader.html#a54e0ba208bcf484a6f83533b2365f6f2":[3,1,1,26,3],
 "classthrill_1_1data_1_1MixBlockQueueReader.html#a5b91a77148cf091e36331a899e71e444":[3,1,1,26,16],
 "classthrill_1_1data_1_1MixBlockQueueReader.html#a5d8cf5a2cfa098a92ce0e96b4cf3b845":[3,1,1,26,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX16 =
 "classthrill_1_1data_1_1StreamData_1_1Writers.html#a7f7a3199c392465d0767c6506c1af5b4":[3,1,1,45,0,4],
 "classthrill_1_1data_1_1StreamData_1_1Writers.html#a7fd9b10fec6db34ef0c77d6c3ab01599":[3,1,1,45,0,6],
 "classthrill_1_1data_1_1StreamData_1_1Writers.html#a9b90f4e02fafc8a72e92d10c7f6e3b0a":[3,1,1,45,0,0],
-"classthrill_1_1data_1_1StreamData_1_1Writers.html#aadd5fc5d250ee9ee6b8728630df5e0bb":[3,1,1,45,0,1]
+"classthrill_1_1data_1_1StreamData_1_1Writers.html#aadd5fc5d250ee9ee6b8728630df5e0bb":[3,1,1,45,0,1],
+"classthrill_1_1data_1_1StreamData_1_1Writers.html#ad158be93253a23a9f1f7c851d88b5164":[3,1,1,45,0,3],
+"classthrill_1_1data_1_1StreamMultiplexerHeader.html":[3,1,1,46]
 };
