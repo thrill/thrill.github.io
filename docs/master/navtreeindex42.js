@@ -1,5 +1,7 @@
 var NAVTREEINDEX42 =
 {
+"structtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4_1_1IsMemberPair.html":[5,0,5,17,2],
+"structtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4_1_1IsMemberPair_3_01MemberPair_3_01C_01_4_01_4.html":[5,0,5,17,3],
 "structtlx_1_1LoserTreeCopyBase_1_1Loser.html":[3,1,4,1,1,3],
 "structtlx_1_1LoserTreeCopyUnguardedBase_1_1Loser.html":[3,1,4,1,1,6,0],
 "structtlx_1_1LoserTreePointerBase_1_1Loser.html":[3,1,4,1,1,9,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX42 =
 "thrill_2mem_2allocator__base_8hpp.html#aa978016df4356a6bc6e565df9b8c31cf":[6,0,3,4,2,15],
 "thrill_2mem_2allocator__base_8hpp.html#acdd6cb67d88d3f5c0144fb2556c51372":[6,0,3,4,2,8],
 "thrill_2mem_2allocator__base_8hpp_source.html":[6,0,3,4,2],
-"thrill_2net_2tcp_2select_8hpp.html":[6,0,3,5,2,5],
-"thrill_2net_2tcp_2select_8hpp.html#a5a6733bdd7b3d643207e02a29c913fc3":[6,0,3,5,2,5,0],
-"thrill_2net_2tcp_2select_8hpp_source.html":[6,0,3,5,2,5]
+"thrill_2net_2tcp_2select_8hpp.html":[6,0,3,5,2,5]
 };

@@ -9,7 +9,7 @@ var searchData=
   ['cachenode',['CacheNode',['../classthrill_1_1api_1_1CacheNode.html',1,'thrill::api']]],
   ['cachenode',['CacheNode',['../classthrill_1_1api_1_1CacheNode.html#add5ef6afac8ef48c2dd0217dfeb25779',1,'thrill::api::CacheNode']]],
   ['calc_5fbin_5ffor_5fsize',['calc_bin_for_size',['../namespacethrill_1_1mem.html#ae2e5e0e10a2aa35ec26b71a91e80237c',1,'thrill::mem']]],
-  ['calc_5fnext_5fgap',['calc_next_gap',['../classthrill_1_1common_1_1ReservoirSamplingFast.html#a711cd8ed62edcd62d9d1a7e4e0ffe172',1,'thrill::common::ReservoirSamplingFast::calc_next_gap()'],['../classthrill_1_1common_1_1ReservoirSamplingGrow.html#a36e9b114cd99244356721de926795597',1,'thrill::common::ReservoirSamplingGrow::calc_next_gap()']]],
+  ['calc_5fnext_5fgap',['calc_next_gap',['../classthrill_1_1common_1_1ReservoirSamplingFast.html#a711cd8ed62edcd62d9d1a7e4e0ffe172',1,'thrill::common::ReservoirSamplingFast::calc_next_gap()'],['../classthrill_1_1common_1_1ReservoirSamplingGrow.html#ad3b2570e8ec3727e8ddc95241aa96d0c',1,'thrill::common::ReservoirSamplingGrow::calc_next_gap()']]],
   ['calc_5fnorm',['calc_norm',['../namespaceexamples_1_1logistic__regression.html#aae76d37994b3ff16b08a8ac4975c3e61',1,'examples::logistic_regression']]],
   ['calc_5foption_5fmax',['calc_option_max',['../classtlx_1_1CmdlineParser.html#afb7b09ebd95902c6491bfb85ad92eedc',1,'tlx::CmdlineParser']]],
   ['calc_5fparam_5fmax',['calc_param_max',['../classtlx_1_1CmdlineParser.html#a8322f578f83bf1db9066dd60228951c1',1,'tlx::CmdlineParser']]],

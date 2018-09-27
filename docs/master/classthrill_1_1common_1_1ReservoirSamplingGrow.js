@@ -2,7 +2,7 @@ var classthrill_1_1common_1_1ReservoirSamplingGrow =
 [
     [ "ReservoirSamplingGrow", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#a87c1d269a8de6ca69d7d1ad3d3e1eb1d", null ],
     [ "add", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#ad5f1310100120dfab09b7ff82c3460f8", null ],
-    [ "calc_next_gap", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#a36e9b114cd99244356721de926795597", null ],
+    [ "calc_next_gap", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#ad3b2570e8ec3727e8ddc95241aa96d0c", null ],
     [ "calc_sample_size", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#a2000032e027274fe1658be49ec98fc51", null ],
     [ "calc_sample_size", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#a8f041af932c573b31b28ab022a5c410a", null ],
     [ "calc_steps_to_next_resize", "classthrill_1_1common_1_1ReservoirSamplingGrow.html#a44d02ef658f5ec305b4e5c3994d28c63", null ],

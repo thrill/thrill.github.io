@@ -1,5 +1,7 @@
 var NAVTREEINDEX35 =
 {
+"k-means__run_8cpp.html#addc1c142f189cdbb8c05be1b14de832f":[6,0,1,1,1,3],
+"k-means__run_8cpp_source.html":[6,0,1,1,1],
 "k-means__step1_8cpp.html":[6,0,1,12,0],
 "k-means__step1_8cpp.html#aab55cf13db83c55c46a961b2b2441960":[6,0,1,12,0,1],
 "k-means__step1_8cpp.html#ac7bb5d0df0bd46683a9907219857c725":[6,0,1,12,0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX35 =
 "manager_8cpp.html#aeb53b700051a0a76fddb87c567102fdf":[6,0,3,4,5,0],
 "manager_8cpp_source.html":[6,0,3,4,5],
 "map_8hpp.html":[6,0,2,1,0,5,5],
-"map_8hpp_source.html":[6,0,2,1,0,5,5],
-"matrix_8hpp.html":[6,0,3,1,20],
-"matrix_8hpp.html#abb3364834391d44cd9f5f14c77e2447f":[6,0,3,1,20,1]
+"map_8hpp_source.html":[6,0,2,1,0,5,5]
 };

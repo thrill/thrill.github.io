@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"classtlx_1_1sort__strings__detail_1_1StdStringSet.html#aac25c100e49ff6d34b083ce8916c1d69":[5,0,5,4,7,13],
+"classtlx_1_1sort__strings__detail_1_1StdStringSet.html#aac782da1f912bceb5d8ad00c8dc892ac":[5,0,5,4,7,10],
 "classtlx_1_1sort__strings__detail_1_1StdStringSet.html#ab2264c7fb14205f860e942ca80b74747":[5,0,5,4,7,8],
 "classtlx_1_1sort__strings__detail_1_1StdStringSet.html#ab454cf2f7c33da2cce6b276699a101ec":[5,0,5,4,7,0],
 "classtlx_1_1sort__strings__detail_1_1StdStringSet.html#ac3c5c63b3664bf4f2a5aefe4367891d0":[5,0,5,4,7,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "core_2hyperloglog_8hpp.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e":[6,0,3,2,6,4,0],
 "core_2hyperloglog_8hpp.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff":[6,0,3,2,6,4,1],
 "core_2hyperloglog_8hpp.html#a9afd4266c3cda053ccc293af1cb0690a":[6,0,3,2,6,6],
-"core_2hyperloglog_8hpp.html#aa8ed33c9275a5f50d8a4c14923ff8f3b":[6,0,3,2,6,3],
-"core_2hyperloglog_8hpp_source.html":[6,0,3,2,6],
-"counting__ptr_8hpp.html":[6,0,2,1,0,18]
+"core_2hyperloglog_8hpp.html#aa8ed33c9275a5f50d8a4c14923ff8f3b":[6,0,3,2,6,3]
 };

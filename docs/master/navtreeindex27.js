@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"core_2hyperloglog_8hpp_source.html":[6,0,3,2,6],
+"counting__ptr_8hpp.html":[6,0,2,1,0,18],
 "counting__ptr_8hpp.html#a2c4e023d82bca2172da2f965e3b42b40":[6,0,2,1,0,18,4],
 "counting__ptr_8hpp.html#a4a89ad01492580f7cf07d93a99539cf5":[6,0,2,1,0,18,6],
 "counting__ptr_8hpp.html#a571b1c19ce4d530c4aaa3cd797c8ccae":[6,0,2,1,0,18,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "ends__with_8cpp.html#ga849ffa2f657372a30b5cfc53fe1267a1":[6,0,2,1,0,10,8,2],
 "ends__with_8cpp.html#gac7e29572ead3f33c45cd95c8d4b720d0":[6,0,2,1,0,10,8,3],
 "ends__with_8cpp.html#gacea7b710bca17bae104e7e5eb6137fcf":[6,0,2,1,0,10,8,1],
-"ends__with_8cpp_source.html":[6,0,2,1,0,10,8],
-"ends__with_8hpp.html":[6,0,2,1,0,10,9],
-"ends__with_8hpp.html#ga6eadd6e031f051ff44c5ab2935cdddfd":[6,0,2,1,0,10,9,0]
+"ends__with_8cpp_source.html":[6,0,2,1,0,10,8]
 };

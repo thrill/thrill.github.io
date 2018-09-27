@@ -1,5 +1,7 @@
 var NAVTREEINDEX25 =
 {
+"classtlx_1_1btree__multimap.html#abbec00fa1cdcfbf6b78482915c644dba":[3,1,4,1,0,3,71],
+"classtlx_1_1btree__multimap.html#abc3949df520acc3517361a1ba7ad27a1":[3,1,4,1,0,3,44],
 "classtlx_1_1btree__multimap.html#ac048f549259de32da2acd742cce52d5c":[3,1,4,1,0,3,42],
 "classtlx_1_1btree__multimap.html#ac656c44e42993ed002d4578f7b66ab7f":[3,1,4,1,0,3,52],
 "classtlx_1_1btree__multimap.html#ac6e61de369e994009e36f344f99c15ad":[3,1,4,1,0,3,27],
@@ -247,7 +249,5 @@ var NAVTREEINDEX25 =
 "classtlx_1_1sort__strings__detail_1_1StdStringSet.html#a60ee5a9193259d72541200ddc0b18fb6":[5,0,5,4,7,1],
 "classtlx_1_1sort__strings__detail_1_1StdStringSet.html#a784ac7b1eab2cb9336cd51713e547cbf":[5,0,5,4,7,2],
 "classtlx_1_1sort__strings__detail_1_1StdStringSet.html#a7c19587af55f61dbff765ec7e291e583":[5,0,5,4,7,5],
-"classtlx_1_1sort__strings__detail_1_1StdStringSet.html#a83c9fd7252c97810a9aaf392e10a00d7":[5,0,5,4,7,3],
-"classtlx_1_1sort__strings__detail_1_1StdStringSet.html#aac25c100e49ff6d34b083ce8916c1d69":[5,0,5,4,7,13],
-"classtlx_1_1sort__strings__detail_1_1StdStringSet.html#aac782da1f912bceb5d8ad00c8dc892ac":[5,0,5,4,7,10]
+"classtlx_1_1sort__strings__detail_1_1StdStringSet.html#a83c9fd7252c97810a9aaf392e10a00d7":[5,0,5,4,7,3]
 };

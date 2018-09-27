@@ -132,7 +132,7 @@ class thrill::api::SampleNode&lt; ValueType &gt;</h3>
 <p>The implementation is an adaptation of Algorithm P from Sanders, Lamm, Hübschle-Schneider, Schrade, Dachsbacher, ACM TOMS 2017: "Efficient Random
 Sampling - Parallel, Vectorized, Cache-Efficient, and Online". The modification is in how samples are assigned to workers. Instead of doing log(num_workers) splits to assign samples to ranges of workers, do O(log(input_size)) splits to assign samples to input ranges. Workers only compute the ranges which overlap their local input range, and then add up the ranges that are fully contained in their local input range. This ensures consistency while requiring only a single prefix-sum and two scalar broadcasts. </p>
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00048">48</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00049">49</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for SampleNode&lt; ValueType &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -316,11 +316,11 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a0e7929fae361337345f8906f6980b6a5"><td class="memItemLeft" align="right" valign="top">const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SampleNode.html#a0e7929fae361337345f8906f6980b6a5">parent_stack_empty_</a></td></tr>
 <tr class="memdesc:a0e7929fae361337345f8906f6980b6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the parent stack is empty.  <a href="#a0e7929fae361337345f8906f6980b6a5">More...</a><br/></td></tr>
 <tr class="separator:a0e7929fae361337345f8906f6980b6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6c034a34a000f885fb3e423f1efb16e"><td class="memItemLeft" align="right" valign="top">std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SampleNode.html#ab6c034a34a000f885fb3e423f1efb16e">rng_</a> { std::random_device { } () }</td></tr>
-<tr class="memdesc:ab6c034a34a000f885fb3e423f1efb16e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random generator for reservoir sampler.  <a href="#ab6c034a34a000f885fb3e423f1efb16e">More...</a><br/></td></tr>
-<tr class="separator:ab6c034a34a000f885fb3e423f1efb16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d5a2f3f6703f1baf27ca10de183343"><td class="memItemLeft" align="right" valign="top">std::mt19937_64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SampleNode.html#af1d5a2f3f6703f1baf27ca10de183343">rng_</a> { std::random_device { } () }</td></tr>
+<tr class="memdesc:af1d5a2f3f6703f1baf27ca10de183343"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random generator for reservoir sampler.  <a href="#af1d5a2f3f6703f1baf27ca10de183343">More...</a><br/></td></tr>
+<tr class="separator:af1d5a2f3f6703f1baf27ca10de183343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af67fea5c7d6046b31870ab12f282a5e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingFast.html">common::ReservoirSamplingFast</a><br class="typebreak"/>
-&lt; ValueType, decltype(<a class="el" href="classthrill_1_1api_1_1SampleNode.html#ab6c034a34a000f885fb3e423f1efb16e">rng_</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SampleNode.html#af67fea5c7d6046b31870ab12f282a5e2">sampler_</a></td></tr>
+&lt; ValueType, decltype(<a class="el" href="classthrill_1_1api_1_1SampleNode.html#af1d5a2f3f6703f1baf27ca10de183343">rng_</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SampleNode.html#af67fea5c7d6046b31870ab12f282a5e2">sampler_</a></td></tr>
 <tr class="memdesc:af67fea5c7d6046b31870ab12f282a5e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reservoir sampler for pre-op.  <a href="#af67fea5c7d6046b31870ab12f282a5e2">More...</a><br/></td></tr>
 <tr class="separator:af67fea5c7d6046b31870ab12f282a5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e0e9a1dd0cca537e66bdbdd89765761"><td class="memItemLeft" align="right" valign="top">std::vector&lt; ValueType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SampleNode.html#a9e0e9a1dd0cca537e66bdbdd89765761">samples_</a></td></tr>
@@ -399,7 +399,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00052">52</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00053">53</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -436,7 +436,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00057">57</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00058">58</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -451,7 +451,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00240">240</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00241">241</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -473,7 +473,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00050">50</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00051">51</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -489,7 +489,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Hypergeometric distribution to calculate local sample sizes. </p>
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00234">234</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00235">235</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -505,7 +505,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Timers for local work and communication. </p>
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00240">240</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00241">241</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -521,23 +521,23 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Whether the parent stack is empty. </p>
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00242">242</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00243">243</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ab6c034a34a000f885fb3e423f1efb16e"></a>
+<a class="anchor" id="af1d5a2f3f6703f1baf27ca10de183343"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::mt19937 rng_ { std::random_device { } () }</td>
+          <td class="memname">std::mt19937_64 rng_ { std::random_device { } () }</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Random generator for reservoir sampler. </p>
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00236">236</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00237">237</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -546,14 +546,14 @@ Additional Inherited Members</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingFast.html">common::ReservoirSamplingFast</a>&lt;ValueType, decltype(<a class="el" href="classthrill_1_1api_1_1SampleNode.html#ab6c034a34a000f885fb3e423f1efb16e">rng_</a>)&gt; sampler_</td>
+          <td class="memname"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingFast.html">common::ReservoirSamplingFast</a>&lt;ValueType, decltype(<a class="el" href="classthrill_1_1api_1_1SampleNode.html#af1d5a2f3f6703f1baf27ca10de183343">rng_</a>)&gt; sampler_</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Reservoir sampler for pre-op. </p>
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00238">238</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00239">239</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -569,7 +569,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>local samples </p>
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00058">58</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00059">59</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -582,7 +582,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1api.html">api</a></li><li class="navelem"><a class="el" href="classthrill_1_1api_1_1SampleNode.html">SampleNode</a></li>
-    <li class="footer">Generated on Fri Sep 7 2018 14:05:43 for Thrill by
+    <li class="footer">Generated on Thu Sep 27 2018 16:51:55 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

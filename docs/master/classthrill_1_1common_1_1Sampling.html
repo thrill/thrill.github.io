@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('classthrill_1_1common_1_1Sampling.html
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename RNG = std::mt19937&gt;<br/>
+<div class="textblock"><h3>template&lt;typename RNG = std::mt19937_64&gt;<br/>
 class thrill::common::Sampling&lt; RNG &gt;</h3>
 
 <p><a class="el" href="classthrill_1_1common_1_1Sampling.html">Sampling</a> without replacement, implementing Algorithm R from Sanders, Lamm, Hübschle-Schneider, Schrade, Dachsbacher, ACM TOMS 2017: Efficient Random <a class="el" href="classthrill_1_1common_1_1Sampling.html">Sampling</a> - Parallel, Vectorized, Cache-Efficient, and Online </p>
@@ -196,7 +196,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -252,7 +252,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sampling_8hpp_source.html#l00056">56</a> of file <a class="el" href="sampling_8hpp_source.html">sampling.hpp</a>.</p>
 
-<p>References <a class="el" href="sampling_8hpp_source.html#l00096">Sampling&lt; RNG &gt;::hash_sample()</a>, <a class="el" href="sampling_8hpp_source.html#l00161">Sampling&lt; RNG &gt;::hyp_</a>, <a class="el" href="sampling_8hpp_source.html#l00160">Sampling&lt; RNG &gt;::rng_</a>, and <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00034">sLOG</a>.</p>
+<p>References <a class="el" href="sampling_8hpp_source.html#l00096">Sampling&lt; RNG &gt;::hash_sample()</a>, <a class="el" href="sampling_8hpp_source.html#l00162">Sampling&lt; RNG &gt;::hyp_</a>, <a class="el" href="sampling_8hpp_source.html#l00161">Sampling&lt; RNG &gt;::rng_</a>, and <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00034">sLOG</a>.</p>
 
 <p>Referenced by <a class="el" href="sampling_8hpp_source.html#l00042">Sampling&lt; RNG &gt;::operator()()</a>.</p>
 
@@ -304,7 +304,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sampling_8hpp_source.html#l00096">96</a> of file <a class="el" href="sampling_8hpp_source.html">sampling.hpp</a>.</p>
 
-<p>References <a class="el" href="sampling_8hpp_source.html#l00162">Sampling&lt; RNG &gt;::hash_table</a>, <a class="el" href="sampling_8hpp_source.html#l00162">Sampling&lt; RNG &gt;::indices</a>, <a class="el" href="integer__log2_8cpp_source.html#l00017">tlx::integer_log2_floor()</a>, <a class="el" href="sampling_8hpp_source.html#l00160">Sampling&lt; RNG &gt;::rng_</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00034">sLOG</a>, and <a class="el" href="likely_8hpp_source.html#l00023">TLX_LIKELY</a>.</p>
+<p>References <a class="el" href="sampling_8hpp_source.html#l00163">Sampling&lt; RNG &gt;::hash_table</a>, <a class="el" href="sampling_8hpp_source.html#l00163">Sampling&lt; RNG &gt;::indices</a>, <a class="el" href="integer__log2_8cpp_source.html#l00043">tlx::integer_log2_ceil()</a>, <a class="el" href="sampling_8hpp_source.html#l00161">Sampling&lt; RNG &gt;::rng_</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00034">sLOG</a>, and <a class="el" href="likely_8hpp_source.html#l00023">TLX_LIKELY</a>.</p>
 
 <p>Referenced by <a class="el" href="sampling_8hpp_source.html#l00056">Sampling&lt; RNG &gt;::do_sample()</a>.</p>
 
@@ -451,7 +451,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sampling_8hpp_source.html#l00162">162</a> of file <a class="el" href="sampling_8hpp_source.html">sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampling_8hpp_source.html#l00163">163</a> of file <a class="el" href="sampling_8hpp_source.html">sampling.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="sampling_8hpp_source.html#l00096">Sampling&lt; RNG &gt;::hash_sample()</a>.</p>
 
@@ -475,7 +475,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sampling_8hpp_source.html#l00161">161</a> of file <a class="el" href="sampling_8hpp_source.html">sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampling_8hpp_source.html#l00162">162</a> of file <a class="el" href="sampling_8hpp_source.html">sampling.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="sampling_8hpp_source.html#l00056">Sampling&lt; RNG &gt;::do_sample()</a>.</p>
 
@@ -499,7 +499,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sampling_8hpp_source.html#l00162">162</a> of file <a class="el" href="sampling_8hpp_source.html">sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampling_8hpp_source.html#l00163">163</a> of file <a class="el" href="sampling_8hpp_source.html">sampling.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="sampling_8hpp_source.html#l00096">Sampling&lt; RNG &gt;::hash_sample()</a>.</p>
 
@@ -523,7 +523,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sampling_8hpp_source.html#l00160">160</a> of file <a class="el" href="sampling_8hpp_source.html">sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sampling_8hpp_source.html#l00161">161</a> of file <a class="el" href="sampling_8hpp_source.html">sampling.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="sampling_8hpp_source.html#l00056">Sampling&lt; RNG &gt;::do_sample()</a>, and <a class="el" href="sampling_8hpp_source.html#l00096">Sampling&lt; RNG &gt;::hash_sample()</a>.</p>
 
@@ -538,7 +538,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1common.html">common</a></li><li class="navelem"><a class="el" href="classthrill_1_1common_1_1Sampling.html">Sampling</a></li>
-    <li class="footer">Generated on Fri Sep 7 2018 14:05:43 for Thrill by
+    <li class="footer">Generated on Thu Sep 27 2018 16:51:55 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

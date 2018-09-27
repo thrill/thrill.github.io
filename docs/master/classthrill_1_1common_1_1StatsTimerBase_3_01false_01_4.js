@@ -8,6 +8,7 @@ var classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4 =
     [ "Accumulated", "classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html#ac1c1b05f6a8f25b2dd55562a14587cc2", null ],
     [ "Microseconds", "classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html#a9db9b50e2f23598e0672943903e0e96d", null ],
     [ "Milliseconds", "classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html#a1e4cdf97877b918f2848963524779815", null ],
+    [ "MillisecondsDouble", "classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html#a339a8ee632aba0b05a7517a564d74637", null ],
     [ "operator+=", "classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html#a177b67373c74ff44d1329ef11e240e46", null ],
     [ "operator=", "classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html#a40f1c8ff9fb582fad02ebae40419ec73", null ],
     [ "Real", "classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html#aa47db2fd3444faf53baaf4799d19a1b3", null ],

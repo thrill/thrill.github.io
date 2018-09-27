@@ -131,7 +131,7 @@ class thrill::common::ReservoirSamplingGrow&lt; Type, RNG &gt;</h3>
 <p>Implementation of a fast approximation of adaptive reservoir sampling using <a href="http://erikerlandson.github.io/blog/2015/11/20/very-fast-reservoir-sampling/">http://erikerlandson.github.io/blog/2015/11/20/very-fast-reservoir-sampling/</a> The reservoir size grows logarithmically with the number given to the sampler, new items replace old ones such that all items in the stream are sampled with the same approximately uniform probability. </p>
 <p>Growing of the reservoir is implemented trivially by selecting any current item to expand the array. This works well enough if growing steps become rarer for larger streams. </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00173">173</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00174">174</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ReservoirSamplingGrow&lt; Type, RNG &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -172,9 +172,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a36e9b114cd99244356721de926795597"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html#a36e9b114cd99244356721de926795597">calc_next_gap</a> ()</td></tr>
-<tr class="memdesc:a36e9b114cd99244356721de926795597"><td class="mdescLeft">&#160;</td><td class="mdescRight">draw gap size from geometric distribution with p = size_ / count_  <a href="#a36e9b114cd99244356721de926795597">More...</a><br/></td></tr>
-<tr class="separator:a36e9b114cd99244356721de926795597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b2570e8ec3727e8ddc95241aa96d0c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html#ad3b2570e8ec3727e8ddc95241aa96d0c">calc_next_gap</a> () const </td></tr>
+<tr class="memdesc:ad3b2570e8ec3727e8ddc95241aa96d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">draw gap size from geometric distribution with p = size_ / count_  <a href="#ad3b2570e8ec3727e8ddc95241aa96d0c">More...</a><br/></td></tr>
+<tr class="separator:ad3b2570e8ec3727e8ddc95241aa96d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44d02ef658f5ec305b4e5c3994d28c63"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html#a44d02ef658f5ec305b4e5c3994d28c63">calc_steps_to_next_resize</a> () const </td></tr>
 <tr class="separator:a44d02ef658f5ec305b4e5c3994d28c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -247,7 +247,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>initialize reservoir sampler </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00179">179</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00180">180</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
 </div>
 </div>
@@ -276,11 +276,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>visit item, maybe add it to the sample. </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00186">186</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00187">187</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a36e9b114cd99244356721de926795597"></a>
+<a class="anchor" id="ad3b2570e8ec3727e8ddc95241aa96d0c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -291,7 +291,7 @@ Static Private Attributes</h2></td></tr>
           <td class="memname">size_t calc_next_gap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -303,9 +303,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>draw gap size from geometric distribution with p = size_ / count_ </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00301">301</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00302">302</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00186">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>.</p>
+<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00187">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>.</p>
 
 </div>
 </div>
@@ -333,7 +333,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>calculate desired sample size </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00269">269</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00270">270</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00295">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::wanted_sample_size()</a>.</p>
 
@@ -362,9 +362,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>calculate desired sample size </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00277">277</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00278">278</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00186">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00277">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::calc_sample_size()</a>.</p>
+<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00187">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00278">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::calc_sample_size()</a>.</p>
 
 </div>
 </div>
@@ -390,9 +390,9 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>calculate number of items/steps to process without checking for sample resize </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00317">317</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00318">318</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00186">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>.</p>
+<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00187">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>.</p>
 
 </div>
 </div>
@@ -419,7 +419,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>number of items seen </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00260">260</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00261">261</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
 </div>
 </div>
@@ -446,7 +446,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>desired imbalance </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00266">266</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00267">267</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
 </div>
 </div>
@@ -473,7 +473,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>access to samples </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00263">263</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00264">264</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
 </div>
 </div>
@@ -500,7 +500,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>size of reservoir </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00257">257</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00258">258</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
 </div>
 </div>
@@ -525,9 +525,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>number of items seen </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00285">285</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00286">286</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00186">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00301">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::calc_next_gap()</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00277">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::calc_sample_size()</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00317">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::calc_steps_to_next_resize()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00260">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::count()</a>.</p>
+<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00187">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00302">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::calc_next_gap()</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00278">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::calc_sample_size()</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00318">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::calc_steps_to_next_resize()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00261">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::count()</a>.</p>
 
 </div>
 </div>
@@ -549,9 +549,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00175">175</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00176">176</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00186">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>.</p>
+<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00187">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>.</p>
 
 </div>
 </div>
@@ -574,9 +574,9 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>epsilon imbalance: this reservoir sampling works well for the range 0.5 to 0.01. Imbalance 0.5 results in 79 samples for 1 million items, 0.1 in 1992, 0.05 in 6643, 0.02 in 49828, and 0.01 in 199315. </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00298">298</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00299">299</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00269">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::calc_sample_size()</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00317">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::calc_steps_to_next_resize()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00266">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::desired_imbalance()</a>.</p>
+<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00270">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::calc_sample_size()</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00318">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::calc_steps_to_next_resize()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00267">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::desired_imbalance()</a>.</p>
 
 </div>
 </div>
@@ -600,9 +600,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>items to skip until next sample (used in gap algorithm) </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00287">287</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00288">288</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00186">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>.</p>
+<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00187">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>.</p>
 
 </div>
 </div>
@@ -626,9 +626,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>source of randomness </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00293">293</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00294">294</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00186">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00301">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::calc_next_gap()</a>.</p>
+<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00187">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00302">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::calc_next_gap()</a>.</p>
 
 </div>
 </div>
@@ -652,9 +652,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>reservoir </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00291">291</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00292">292</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00186">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00263">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::samples()</a>.</p>
+<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00187">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00264">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::samples()</a>.</p>
 
 </div>
 </div>
@@ -678,9 +678,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>size of reservoir </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00283">283</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00284">284</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00186">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00301">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::calc_next_gap()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00257">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::size()</a>.</p>
+<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00187">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>, <a class="el" href="reservoir__sampling_8hpp_source.html#l00302">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::calc_next_gap()</a>, and <a class="el" href="reservoir__sampling_8hpp_source.html#l00258">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::size()</a>.</p>
 
 </div>
 </div>
@@ -704,9 +704,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>items to process prior to checking for reservoir resize </p>
 
-<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00289">289</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
+<p>Definition at line <a class="el" href="reservoir__sampling_8hpp_source.html#l00290">290</a> of file <a class="el" href="reservoir__sampling_8hpp_source.html">reservoir_sampling.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00186">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>.</p>
+<p>Referenced by <a class="el" href="reservoir__sampling_8hpp_source.html#l00187">ReservoirSamplingGrow&lt; SampleIndexPair &gt;::add()</a>.</p>
 
 </div>
 </div>
@@ -719,7 +719,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1common.html">common</a></li><li class="navelem"><a class="el" href="classthrill_1_1common_1_1ReservoirSamplingGrow.html">ReservoirSamplingGrow</a></li>
-    <li class="footer">Generated on Fri Sep 7 2018 14:05:43 for Thrill by
+    <li class="footer">Generated on Thu Sep 27 2018 16:51:55 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
