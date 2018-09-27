@@ -1,5 +1,11 @@
 var NAVTREEINDEX10 =
 {
+"classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01true_01_4.html#a3551d22502a58cdc93b15d14f3fb87c2":[5,0,4,0,67,5],
+"classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01true_01_4.html#aad4bea6560f84685aa78c1630bb9e1ff":[5,0,4,0,67,6],
+"classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01true_01_4.html#abb5c96a8b40082630acc6eb2e8a1fd77":[5,0,4,0,67,11],
+"classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01true_01_4.html#ae5340e5822ad51b66587b82a811d1bda":[5,0,4,0,67,3],
+"classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01true_01_4.html#af7b82a72bef5c17e1aac1ec0d66acd07":[5,0,4,0,67,0],
+"classthrill_1_1api_1_1ZipWithIndexNode.html":[3,1,0,38],
 "classthrill_1_1api_1_1ZipWithIndexNode.html#a0e7929fae361337345f8906f6980b6a5":[3,1,0,38,6],
 "classthrill_1_1api_1_1ZipWithIndexNode.html#a6b72e54baf646b08b4b87f987f583dcb":[3,1,0,38,3],
 "classthrill_1_1api_1_1ZipWithIndexNode.html#a891fa9a850833efd80b9a9aced7b443c":[3,1,0,38,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX10 =
 "classthrill_1_1common_1_1ReservoirSampling.html":[5,0,4,1,37],
 "classthrill_1_1common_1_1ReservoirSampling.html#a22a9772c09848d90444dda7fefa4d9ce":[5,0,4,1,37,2],
 "classthrill_1_1common_1_1ReservoirSampling.html#a35e83b77174bc9895cbc88cab7a7f706":[5,0,4,1,37,3],
-"classthrill_1_1common_1_1ReservoirSampling.html#a538e6e8d2baeaa3b00dc4cecaa6ad0dd":[5,0,4,1,37,0],
-"classthrill_1_1common_1_1ReservoirSampling.html#a5f31775800bbb46b35b5791def1f3acc":[5,0,4,1,37,8],
-"classthrill_1_1common_1_1ReservoirSampling.html#a6b06728795e8f208c0755874665b3a51":[5,0,4,1,37,5],
-"classthrill_1_1common_1_1ReservoirSampling.html#aac782da1f912bceb5d8ad00c8dc892ac":[5,0,4,1,37,4],
-"classthrill_1_1common_1_1ReservoirSampling.html#acc8e9980843e054033da2c94c2931c5e":[5,0,4,1,37,6],
-"classthrill_1_1common_1_1ReservoirSampling.html#ad5f1310100120dfab09b7ff82c3460f8":[5,0,4,1,37,1],
-"classthrill_1_1common_1_1ReservoirSampling.html#aff52e2dd0033a4a098aa37da3cb3c957":[5,0,4,1,37,7]
+"classthrill_1_1common_1_1ReservoirSampling.html#a538e6e8d2baeaa3b00dc4cecaa6ad0dd":[5,0,4,1,37,0]
 };

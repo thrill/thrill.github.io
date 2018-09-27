@@ -80,7 +80,7 @@ var searchData=
   ['path',['path',['../structthrill_1_1api_1_1ReadBinaryNode_1_1FileInfo.html#a4d455efceee21e97d8e21ee40e9b4a20',1,'thrill::api::ReadBinaryNode::FileInfo::path()'],['../structthrill_1_1vfs_1_1FileInfo.html#a4d455efceee21e97d8e21ee40e9b4a20',1,'thrill::vfs::FileInfo::path()'],['../classfoxxll_1_1disk__config.html#a4d455efceee21e97d8e21ee40e9b4a20',1,'foxxll::disk_config::path()']]],
   ['peak_5f',['peak_',['../classthrill_1_1mem_1_1Manager.html#ab2a2c49d7d59d0799deb98d1194762a3',1,'thrill::mem::Manager']]],
   ['peak_5fbytes',['peak_bytes',['../namespacethrill_1_1mem.html#a2377a6b82477a7e16291b0ed03d77c10',1,'thrill::mem']]],
-  ['peer',['peer',['../classthrill_1_1net_1_1mpi_1_1Connection.html#ab85cd94150e5399f80bf966b8ce79436',1,'thrill::net::mpi::Connection::peer()'],['../classthrill_1_1data_1_1StreamSet.html#ada5f33f66291fc3b19e098a984db5b8b',1,'thrill::data::StreamSet::Peer()']]],
+  ['peer',['Peer',['../classthrill_1_1data_1_1StreamSet.html#ada5f33f66291fc3b19e098a984db5b8b',1,'thrill::data::StreamSet::Peer()'],['../classthrill_1_1net_1_1mpi_1_1Connection.html#ab85cd94150e5399f80bf966b8ce79436',1,'thrill::net::mpi::Connection::peer()']]],
   ['peer_5f',['peer_',['../classthrill_1_1net_1_1mock_1_1Connection.html#a52142a4eec555dde7f0eed7c4ea9ba0a',1,'thrill::net::mock::Connection::peer_()'],['../classthrill_1_1net_1_1mpi_1_1Connection.html#a5c8bee4d4c99f416f2e5db08694733cc',1,'thrill::net::mpi::Connection::peer_()']]],
   ['peer_5fid',['peer_id',['../classthrill_1_1net_1_1tcp_1_1Connection.html#a6ed3ce94cb965777e111ea756716bdcf',1,'thrill::net::tcp::Connection']]],
   ['peer_5fid_5f',['peer_id_',['../classthrill_1_1net_1_1tcp_1_1Connection.html#afd9edcf392a2714efc689a6095f21872',1,'thrill::net::tcp::Connection']]],

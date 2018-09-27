@@ -18,6 +18,7 @@ var namespacethrill_1_1api =
     [ "DefaultReduceConfig", "classthrill_1_1api_1_1DefaultReduceConfig.html", null ],
     [ "DefaultReduceToIndexConfig", "classthrill_1_1api_1_1DefaultReduceToIndexConfig.html", null ],
     [ "DefaultSortAlgorithm", "classthrill_1_1api_1_1DefaultSortAlgorithm.html", "classthrill_1_1api_1_1DefaultSortAlgorithm" ],
+    [ "DefaultStableSortAlgorithm", "classthrill_1_1api_1_1DefaultStableSortAlgorithm.html", "classthrill_1_1api_1_1DefaultStableSortAlgorithm" ],
     [ "DIA", "classthrill_1_1api_1_1DIA.html", "classthrill_1_1api_1_1DIA" ],
     [ "DIABase", "classthrill_1_1api_1_1DIABase.html", "classthrill_1_1api_1_1DIABase" ],
     [ "DIAMemUse", "classthrill_1_1api_1_1DIAMemUse.html", "classthrill_1_1api_1_1DIAMemUse" ],

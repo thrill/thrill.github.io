@@ -1720,269 +1720,304 @@ $(document).ready(function(){initNavTree('dia_8hpp_source.html','');});
 <div class="line"><a name="l01602"></a><span class="lineno"> 1602</span>&#160;              <span class="keyword">const</span> SortFunction&amp; sort_algorithm) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l01603"></a><span class="lineno"> 1603</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;<span class="comment">    /*!</span></div>
-<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;<span class="comment">     * Merge is a DOp, which merges two sorted DIAs to a single sorted DIA.</span></div>
-<div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;<span class="comment">     * Both input DIAs must be used sorted conforming to the given comparator.</span></div>
-<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;<span class="comment">     * The type of the output DIA will be the type of this DIA.</span></div>
-<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;<span class="comment">     * The merge operation balances all input data, so that each worker will</span></div>
-<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;<span class="comment">     * have an equal number of elements when the merge completes.</span></div>
-<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;<span class="comment">     * \param comparator Comparator to specify the order of input and output.</span></div>
+<div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;<span class="comment">     * SortStable is a DOp, which sorts a given DIA stably according to the</span></div>
+<div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;<span class="comment">     *  given compare_function.</span></div>
+<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;<span class="comment">     * \tparam CompareFunction Type of the compare_function.</span></div>
+<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;<span class="comment">     *  Should be (ValueType,ValueType)-&gt;bool</span></div>
+<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;<span class="comment">     * \param compare_function Function, which compares two elements. Returns</span></div>
+<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;<span class="comment">     * true, if first element is smaller than second. False otherwise.</span></div>
 <div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;<span class="comment">     * \param second_dia DIA, which is merged with this DIA.</span></div>
-<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
-<div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Comparator = std::less&lt;ValueType&gt;, <span class="keyword">typename</span> SecondDIA&gt;</div>
-<div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#gae772b581a45cd14c0ef31b4ac2ea3b7f">Merge</a>(<span class="keyword">const</span> SecondDIA&amp; second_dia,</div>
-<div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;               <span class="keyword">const</span> Comparator&amp; comparator = Comparator()) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;<span class="comment">    /*!</span></div>
-<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;<span class="comment">     * PrefixSum is a DOp, which computes the (inclusive) prefix sum of all</span></div>
-<div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;<span class="comment">     * elements. The sum function defines how two elements are combined to a</span></div>
-<div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;<span class="comment">     * single element.</span></div>
-<div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;<span class="comment">     * \param sum_function Sum function (any associative function).</span></div>
+<div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
+<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CompareFunction = std::less&lt;ValueType&gt; &gt;</div>
+<div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga0048589266b038bc991f0a62fb1189a7">SortStable</a>(<span class="keyword">const</span> CompareFunction&amp; compare_function = CompareFunction()) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160;<span class="comment">    /*!</span></div>
+<div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;<span class="comment">     * SortStable is a DOp, which sorts a given DIA stably according to the</span></div>
+<div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160;<span class="comment">     *  given compare_function.</span></div>
+<div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;<span class="comment">     * \tparam CompareFunction Type of the compare_function.</span></div>
+<div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;<span class="comment">     *  Should be (ValueType,ValueType)-&gt;bool</span></div>
+<div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;<span class="comment">     * \param compare_function Function, which compares two elements. Returns</span></div>
+<div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;<span class="comment">     * true, if first element is smaller than second. False otherwise.</span></div>
 <div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160;<span class="comment">     * \param initial_element Initial element of the sum function.</span></div>
-<div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
-<div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> SumFunction = std::plus&lt;ValueType&gt; &gt;</div>
-<div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga16e1e32046563a78aab6d13804cef3bc">PrefixSum</a>(<span class="keyword">const</span> SumFunction&amp; sum_function = SumFunction(),</div>
-<div class="line"><a name="l01635"></a><span class="lineno"> 1635</span>&#160;                   <span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>&amp; initial_element = <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>()) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l01636"></a><span class="lineno"> 1636</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160;<span class="comment">    /*!</span></div>
-<div class="line"><a name="l01638"></a><span class="lineno"> 1638</span>&#160;<span class="comment">     * ExPrefixSum is a DOp, which computes the exclusive prefix sum of all</span></div>
-<div class="line"><a name="l01639"></a><span class="lineno"> 1639</span>&#160;<span class="comment">     * elements. The sum function defines how two elements are combined to a</span></div>
-<div class="line"><a name="l01640"></a><span class="lineno"> 1640</span>&#160;<span class="comment">     * single element.</span></div>
-<div class="line"><a name="l01641"></a><span class="lineno"> 1641</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01642"></a><span class="lineno"> 1642</span>&#160;<span class="comment">     * \param sum_function Sum function (any associative function).</span></div>
+<div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160;<span class="comment">     * \param sort_algorithm Algorithm class used to stably sort items. Merging</span></div>
+<div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;<span class="comment">     * is always done using a tournament tree with compare_function. In order</span></div>
+<div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;<span class="comment">     * for the sorting to be stable, this must be a stable sorting algorithm.</span></div>
+<div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
+<div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01635"></a><span class="lineno"> 1635</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CompareFunction, <span class="keyword">typename</span> SortFunction&gt;</div>
+<div class="line"><a name="l01636"></a><span class="lineno"> 1636</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga0048589266b038bc991f0a62fb1189a7">SortStable</a>(<span class="keyword">const</span> CompareFunction&amp; compare_function,</div>
+<div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160;              <span class="keyword">const</span> SortFunction&amp; sort_algorithm) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01638"></a><span class="lineno"> 1638</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01639"></a><span class="lineno"> 1639</span>&#160;<span class="comment">    /*!</span></div>
+<div class="line"><a name="l01640"></a><span class="lineno"> 1640</span>&#160;<span class="comment">     * Merge is a DOp, which merges two sorted DIAs to a single sorted DIA.</span></div>
+<div class="line"><a name="l01641"></a><span class="lineno"> 1641</span>&#160;<span class="comment">     * Both input DIAs must be used sorted conforming to the given comparator.</span></div>
+<div class="line"><a name="l01642"></a><span class="lineno"> 1642</span>&#160;<span class="comment">     * The type of the output DIA will be the type of this DIA.</span></div>
 <div class="line"><a name="l01643"></a><span class="lineno"> 1643</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01644"></a><span class="lineno"> 1644</span>&#160;<span class="comment">     * \param initial_element Initial element of the sum function.</span></div>
-<div class="line"><a name="l01645"></a><span class="lineno"> 1645</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01646"></a><span class="lineno"> 1646</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
-<div class="line"><a name="l01647"></a><span class="lineno"> 1647</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01648"></a><span class="lineno"> 1648</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> SumFunction = std::plus&lt;ValueType&gt; &gt;</div>
-<div class="line"><a name="l01649"></a><span class="lineno"> 1649</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga8b080a7545e8235fffc737171ab79986">ExPrefixSum</a>(<span class="keyword">const</span> SumFunction&amp; sum_function = SumFunction(),</div>
-<div class="line"><a name="l01650"></a><span class="lineno"> 1650</span>&#160;                     <span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>&amp; initial_element = <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>()) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l01651"></a><span class="lineno"> 1651</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01652"></a><span class="lineno"> 1652</span>&#160;<span class="comment">    /*!</span></div>
-<div class="line"><a name="l01653"></a><span class="lineno"> 1653</span>&#160;<span class="comment">     * Window is a DOp, which applies a window function to every k</span></div>
-<div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160;<span class="comment">     * consecutive items in a DIA. The window function is also given the index</span></div>
-<div class="line"><a name="l01655"></a><span class="lineno"> 1655</span>&#160;<span class="comment">     * of the first item, and can output zero or more items via an Emitter.</span></div>
-<div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160;<span class="comment">     * \param window_size the size of the delivered window. Signature: TODO(tb).</span></div>
-<div class="line"><a name="l01658"></a><span class="lineno"> 1658</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01659"></a><span class="lineno"> 1659</span>&#160;<span class="comment">     * \param window_function Window function applied to each k item.</span></div>
-<div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
-<div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> WindowFunction&gt;</div>
-<div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#gaecf7738614c339f5c2af6e26e104e7ed">Window</a>(<span class="keywordtype">size_t</span> window_size,</div>
-<div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;                <span class="keyword">const</span> WindowFunction&amp; window_function = WindowFunction()) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160;<span class="comment">    /*!</span></div>
-<div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;<span class="comment">     * Window is a DOp, which applies a window function to every k</span></div>
-<div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;<span class="comment">     * consecutive items in a DIA. The window function is also given the index</span></div>
-<div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;<span class="comment">     * of the first item, and can output zero or more items via an Emitter.</span></div>
-<div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;<span class="comment">     * \param window_size the size of the delivered window. Signature: TODO(tb).</span></div>
-<div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;<span class="comment">     * \param window_function Window function applied to each k item.</span></div>
-<div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160;<span class="comment">     * \param partial_window_function Window function applied to less than k</span></div>
-<div class="line"><a name="l01677"></a><span class="lineno"> 1677</span>&#160;<span class="comment">     * items.</span></div>
+<div class="line"><a name="l01644"></a><span class="lineno"> 1644</span>&#160;<span class="comment">     * The merge operation balances all input data, so that each worker will</span></div>
+<div class="line"><a name="l01645"></a><span class="lineno"> 1645</span>&#160;<span class="comment">     * have an equal number of elements when the merge completes.</span></div>
+<div class="line"><a name="l01646"></a><span class="lineno"> 1646</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01647"></a><span class="lineno"> 1647</span>&#160;<span class="comment">     * \param comparator Comparator to specify the order of input and output.</span></div>
+<div class="line"><a name="l01648"></a><span class="lineno"> 1648</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01649"></a><span class="lineno"> 1649</span>&#160;<span class="comment">     * \param second_dia DIA, which is merged with this DIA.</span></div>
+<div class="line"><a name="l01650"></a><span class="lineno"> 1650</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01651"></a><span class="lineno"> 1651</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
+<div class="line"><a name="l01652"></a><span class="lineno"> 1652</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01653"></a><span class="lineno"> 1653</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Comparator = std::less&lt;ValueType&gt;, <span class="keyword">typename</span> SecondDIA&gt;</div>
+<div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#gae772b581a45cd14c0ef31b4ac2ea3b7f">Merge</a>(<span class="keyword">const</span> SecondDIA&amp; second_dia,</div>
+<div class="line"><a name="l01655"></a><span class="lineno"> 1655</span>&#160;               <span class="keyword">const</span> Comparator&amp; comparator = Comparator()) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160;<span class="comment">    /*!</span></div>
+<div class="line"><a name="l01658"></a><span class="lineno"> 1658</span>&#160;<span class="comment">     * PrefixSum is a DOp, which computes the (inclusive) prefix sum of all</span></div>
+<div class="line"><a name="l01659"></a><span class="lineno"> 1659</span>&#160;<span class="comment">     * elements. The sum function defines how two elements are combined to a</span></div>
+<div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;<span class="comment">     * single element.</span></div>
+<div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;<span class="comment">     * \param sum_function Sum function (any associative function).</span></div>
+<div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;<span class="comment">     * \param initial_element Initial element of the sum function.</span></div>
+<div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
+<div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> SumFunction = std::plus&lt;ValueType&gt; &gt;</div>
+<div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga16e1e32046563a78aab6d13804cef3bc">PrefixSum</a>(<span class="keyword">const</span> SumFunction&amp; sum_function = SumFunction(),</div>
+<div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;                   <span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>&amp; initial_element = <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>()) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;<span class="comment">    /*!</span></div>
+<div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;<span class="comment">     * ExPrefixSum is a DOp, which computes the exclusive prefix sum of all</span></div>
+<div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;<span class="comment">     * elements. The sum function defines how two elements are combined to a</span></div>
+<div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160;<span class="comment">     * single element.</span></div>
+<div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01677"></a><span class="lineno"> 1677</span>&#160;<span class="comment">     * \param sum_function Sum function (any associative function).</span></div>
 <div class="line"><a name="l01678"></a><span class="lineno"> 1678</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01679"></a><span class="lineno"> 1679</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
-<div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> WindowFunction, <span class="keyword">typename</span> PartialWindowFunction&gt;</div>
-<div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#gaecf7738614c339f5c2af6e26e104e7ed">Window</a>(<span class="keywordtype">size_t</span> window_size,</div>
-<div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;                <span class="keyword">const</span> WindowFunction&amp; window_function,</div>
-<div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;                <span class="keyword">const</span> PartialWindowFunction&amp; partial_window_function) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;<span class="comment">    /*!</span></div>
-<div class="line"><a name="l01687"></a><span class="lineno"> 1687</span>&#160;<span class="comment">     * Window is a DOp, which applies a window function to every k</span></div>
-<div class="line"><a name="l01688"></a><span class="lineno"> 1688</span>&#160;<span class="comment">     * consecutive items in a DIA. The window function is also given the index</span></div>
-<div class="line"><a name="l01689"></a><span class="lineno"> 1689</span>&#160;<span class="comment">     * of the first item, and can output zero or more items via an Emitter.</span></div>
-<div class="line"><a name="l01690"></a><span class="lineno"> 1690</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01691"></a><span class="lineno"> 1691</span>&#160;<span class="comment">     * \param window_size the size of the delivered window.</span></div>
-<div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160;<span class="comment">     * \param window_function Window function applied to each k item.</span></div>
-<div class="line"><a name="l01694"></a><span class="lineno"> 1694</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01695"></a><span class="lineno"> 1695</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
-<div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> WindowFunction&gt;</div>
-<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#gaecf7738614c339f5c2af6e26e104e7ed">Window</a>(<span class="keyword">struct</span> <a class="code" href="structthrill_1_1api_1_1DisjointTag.html">DisjointTag</a> <span class="keyword">const</span>&amp;, <span class="keywordtype">size_t</span> window_size,</div>
-<div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160;                <span class="keyword">const</span> WindowFunction&amp; window_function) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160;<span class="comment">    /*!</span></div>
-<div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160;<span class="comment">     * FlatWindow is a DOp, which applies a window function to every k</span></div>
-<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;<span class="comment">     * consecutive items in a DIA. The window function is also given the index</span></div>
-<div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160;<span class="comment">     * of the first item, and can output zero or more items via an Emitter.</span></div>
-<div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160;<span class="comment">     * \param window_size the size of the delivered window. Signature: TODO(tb).</span></div>
-<div class="line"><a name="l01707"></a><span class="lineno"> 1707</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01708"></a><span class="lineno"> 1708</span>&#160;<span class="comment">     * \param window_function Window function applied to each k item.</span></div>
-<div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01710"></a><span class="lineno"> 1710</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
-<div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01712"></a><span class="lineno"> 1712</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueOut, <span class="keyword">typename</span> WindowFunction&gt;</div>
-<div class="line"><a name="l01713"></a><span class="lineno"> 1713</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga59be1d911a3bb9d61b7b1d8e8558d626">FlatWindow</a>(</div>
-<div class="line"><a name="l01714"></a><span class="lineno"> 1714</span>&#160;        <span class="keywordtype">size_t</span> window_size,</div>
-<div class="line"><a name="l01715"></a><span class="lineno"> 1715</span>&#160;        <span class="keyword">const</span> WindowFunction&amp; window_function = WindowFunction()) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;<span class="comment">    /*!</span></div>
-<div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;<span class="comment">     * FlatWindow is a DOp, which applies a window function to every k</span></div>
-<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160;<span class="comment">     * consecutive items in a DIA. The window function is also given the index</span></div>
-<div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160;<span class="comment">     * of the first item, and can output zero or more items via an Emitter.</span></div>
-<div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01722"></a><span class="lineno"> 1722</span>&#160;<span class="comment">     * \param window_size the size of the delivered window. Signature: TODO(tb).</span></div>
-<div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;<span class="comment">     * \param window_function Window function applied to each k item.</span></div>
+<div class="line"><a name="l01679"></a><span class="lineno"> 1679</span>&#160;<span class="comment">     * \param initial_element Initial element of the sum function.</span></div>
+<div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
+<div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> SumFunction = std::plus&lt;ValueType&gt; &gt;</div>
+<div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga8b080a7545e8235fffc737171ab79986">ExPrefixSum</a>(<span class="keyword">const</span> SumFunction&amp; sum_function = SumFunction(),</div>
+<div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160;                     <span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>&amp; initial_element = <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>()) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01687"></a><span class="lineno"> 1687</span>&#160;<span class="comment">    /*!</span></div>
+<div class="line"><a name="l01688"></a><span class="lineno"> 1688</span>&#160;<span class="comment">     * Window is a DOp, which applies a window function to every k</span></div>
+<div class="line"><a name="l01689"></a><span class="lineno"> 1689</span>&#160;<span class="comment">     * consecutive items in a DIA. The window function is also given the index</span></div>
+<div class="line"><a name="l01690"></a><span class="lineno"> 1690</span>&#160;<span class="comment">     * of the first item, and can output zero or more items via an Emitter.</span></div>
+<div class="line"><a name="l01691"></a><span class="lineno"> 1691</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;<span class="comment">     * \param window_size the size of the delivered window. Signature: TODO(tb).</span></div>
+<div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01694"></a><span class="lineno"> 1694</span>&#160;<span class="comment">     * \param window_function Window function applied to each k item.</span></div>
+<div class="line"><a name="l01695"></a><span class="lineno"> 1695</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
+<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> WindowFunction&gt;</div>
+<div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#gaecf7738614c339f5c2af6e26e104e7ed">Window</a>(<span class="keywordtype">size_t</span> window_size,</div>
+<div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;                <span class="keyword">const</span> WindowFunction&amp; window_function = WindowFunction()) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160;<span class="comment">    /*!</span></div>
+<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;<span class="comment">     * Window is a DOp, which applies a window function to every k</span></div>
+<div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160;<span class="comment">     * consecutive items in a DIA. The window function is also given the index</span></div>
+<div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;<span class="comment">     * of the first item, and can output zero or more items via an Emitter.</span></div>
+<div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01707"></a><span class="lineno"> 1707</span>&#160;<span class="comment">     * \param window_size the size of the delivered window. Signature: TODO(tb).</span></div>
+<div class="line"><a name="l01708"></a><span class="lineno"> 1708</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;<span class="comment">     * \param window_function Window function applied to each k item.</span></div>
+<div class="line"><a name="l01710"></a><span class="lineno"> 1710</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;<span class="comment">     * \param partial_window_function Window function applied to less than k</span></div>
+<div class="line"><a name="l01712"></a><span class="lineno"> 1712</span>&#160;<span class="comment">     * items.</span></div>
+<div class="line"><a name="l01713"></a><span class="lineno"> 1713</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01714"></a><span class="lineno"> 1714</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
+<div class="line"><a name="l01715"></a><span class="lineno"> 1715</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> WindowFunction, <span class="keyword">typename</span> PartialWindowFunction&gt;</div>
+<div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#gaecf7738614c339f5c2af6e26e104e7ed">Window</a>(<span class="keywordtype">size_t</span> window_size,</div>
+<div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;                <span class="keyword">const</span> WindowFunction&amp; window_function,</div>
+<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160;                <span class="keyword">const</span> PartialWindowFunction&amp; partial_window_function) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;<span class="comment">    /*!</span></div>
+<div class="line"><a name="l01722"></a><span class="lineno"> 1722</span>&#160;<span class="comment">     * Window is a DOp, which applies a window function to every k</span></div>
+<div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;<span class="comment">     * consecutive items in a DIA. The window function is also given the index</span></div>
+<div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;<span class="comment">     * of the first item, and can output zero or more items via an Emitter.</span></div>
 <div class="line"><a name="l01725"></a><span class="lineno"> 1725</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;<span class="comment">     * \param partial_window_function Window function applied to less than k</span></div>
-<div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;<span class="comment">     * items.</span></div>
-<div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
-<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueOut, <span class="keyword">typename</span> WindowFunction,</div>
-<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;              <span class="keyword">typename</span> PartialWindowFunction&gt;</div>
-<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga59be1d911a3bb9d61b7b1d8e8558d626">FlatWindow</a>(<span class="keywordtype">size_t</span> window_size,</div>
-<div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;                    <span class="keyword">const</span> WindowFunction&amp; window_function,</div>
-<div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;                    <span class="keyword">const</span> PartialWindowFunction&amp; partial_window_function) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01737"></a><span class="lineno"> 1737</span>&#160;<span class="comment">    /*!</span></div>
-<div class="line"><a name="l01738"></a><span class="lineno"> 1738</span>&#160;<span class="comment">     * FlatWindow is a DOp, which applies a window function to every k</span></div>
-<div class="line"><a name="l01739"></a><span class="lineno"> 1739</span>&#160;<span class="comment">     * consecutive items in a DIA. The window function is also given the index</span></div>
-<div class="line"><a name="l01740"></a><span class="lineno"> 1740</span>&#160;<span class="comment">     * of the first item, and can output zero or more items via an Emitter.</span></div>
-<div class="line"><a name="l01741"></a><span class="lineno"> 1741</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01742"></a><span class="lineno"> 1742</span>&#160;<span class="comment">     * \param window_size the size of the delivered window. Signature: TODO(tb).</span></div>
-<div class="line"><a name="l01743"></a><span class="lineno"> 1743</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01744"></a><span class="lineno"> 1744</span>&#160;<span class="comment">     * \param window_function Window function applied to each k item.</span></div>
-<div class="line"><a name="l01745"></a><span class="lineno"> 1745</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01746"></a><span class="lineno"> 1746</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
-<div class="line"><a name="l01747"></a><span class="lineno"> 1747</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01748"></a><span class="lineno"> 1748</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueOut, <span class="keyword">typename</span> WindowFunction&gt;</div>
-<div class="line"><a name="l01749"></a><span class="lineno"> 1749</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga59be1d911a3bb9d61b7b1d8e8558d626">FlatWindow</a>(<span class="keyword">struct</span> <a class="code" href="structthrill_1_1api_1_1DisjointTag.html">DisjointTag</a> <span class="keyword">const</span>&amp;, <span class="keywordtype">size_t</span> window_size,</div>
-<div class="line"><a name="l01750"></a><span class="lineno"> 1750</span>&#160;                    <span class="keyword">const</span> WindowFunction&amp; window_function) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;<span class="comment">     * \param window_size the size of the delivered window.</span></div>
+<div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160;<span class="comment">     * \param window_function Window function applied to each k item.</span></div>
+<div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
+<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> WindowFunction&gt;</div>
+<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#gaecf7738614c339f5c2af6e26e104e7ed">Window</a>(<span class="keyword">struct</span> <a class="code" href="structthrill_1_1api_1_1DisjointTag.html">DisjointTag</a> <span class="keyword">const</span>&amp;, <span class="keywordtype">size_t</span> window_size,</div>
+<div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;                <span class="keyword">const</span> WindowFunction&amp; window_function) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160;<span class="comment">    /*!</span></div>
+<div class="line"><a name="l01737"></a><span class="lineno"> 1737</span>&#160;<span class="comment">     * FlatWindow is a DOp, which applies a window function to every k</span></div>
+<div class="line"><a name="l01738"></a><span class="lineno"> 1738</span>&#160;<span class="comment">     * consecutive items in a DIA. The window function is also given the index</span></div>
+<div class="line"><a name="l01739"></a><span class="lineno"> 1739</span>&#160;<span class="comment">     * of the first item, and can output zero or more items via an Emitter.</span></div>
+<div class="line"><a name="l01740"></a><span class="lineno"> 1740</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01741"></a><span class="lineno"> 1741</span>&#160;<span class="comment">     * \param window_size the size of the delivered window. Signature: TODO(tb).</span></div>
+<div class="line"><a name="l01742"></a><span class="lineno"> 1742</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01743"></a><span class="lineno"> 1743</span>&#160;<span class="comment">     * \param window_function Window function applied to each k item.</span></div>
+<div class="line"><a name="l01744"></a><span class="lineno"> 1744</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01745"></a><span class="lineno"> 1745</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
+<div class="line"><a name="l01746"></a><span class="lineno"> 1746</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01747"></a><span class="lineno"> 1747</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueOut, <span class="keyword">typename</span> WindowFunction&gt;</div>
+<div class="line"><a name="l01748"></a><span class="lineno"> 1748</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga59be1d911a3bb9d61b7b1d8e8558d626">FlatWindow</a>(</div>
+<div class="line"><a name="l01749"></a><span class="lineno"> 1749</span>&#160;        <span class="keywordtype">size_t</span> window_size,</div>
+<div class="line"><a name="l01750"></a><span class="lineno"> 1750</span>&#160;        <span class="keyword">const</span> WindowFunction&amp; window_function = WindowFunction()) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l01751"></a><span class="lineno"> 1751</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l01752"></a><span class="lineno"> 1752</span>&#160;<span class="comment">    /*!</span></div>
-<div class="line"><a name="l01753"></a><span class="lineno"> 1753</span>&#160;<span class="comment">     * Concat is a DOp, which concatenates any number of DIAs to a single DIA.</span></div>
-<div class="line"><a name="l01754"></a><span class="lineno"> 1754</span>&#160;<span class="comment">     * All input DIAs must contain the same type, which is also the output DIA&#39;s</span></div>
-<div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;<span class="comment">     * type.</span></div>
+<div class="line"><a name="l01753"></a><span class="lineno"> 1753</span>&#160;<span class="comment">     * FlatWindow is a DOp, which applies a window function to every k</span></div>
+<div class="line"><a name="l01754"></a><span class="lineno"> 1754</span>&#160;<span class="comment">     * consecutive items in a DIA. The window function is also given the index</span></div>
+<div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;<span class="comment">     * of the first item, and can output zero or more items via an Emitter.</span></div>
 <div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;<span class="comment">     * The concat operation balances all input data, so that each worker will</span></div>
-<div class="line"><a name="l01758"></a><span class="lineno"> 1758</span>&#160;<span class="comment">     * have an equal number of elements when the concat completes.</span></div>
-<div class="line"><a name="l01759"></a><span class="lineno"> 1759</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01760"></a><span class="lineno"> 1760</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
-<div class="line"><a name="l01761"></a><span class="lineno"> 1761</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01762"></a><span class="lineno"> 1762</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> SecondDIA&gt;</div>
-<div class="line"><a name="l01763"></a><span class="lineno"> 1763</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga925b505e954ef7f08efbe1957f01139a">Concat</a>(<span class="keyword">const</span> SecondDIA&amp; second_dia) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l01764"></a><span class="lineno"> 1764</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160;<span class="comment">    /*!</span></div>
-<div class="line"><a name="l01766"></a><span class="lineno"> 1766</span>&#160;<span class="comment">     * Rebalance is a DOp, which rebalances a single DIA among all workers; in</span></div>
-<div class="line"><a name="l01767"></a><span class="lineno"> 1767</span>&#160;<span class="comment">     * general, this operation is needed only if previous steps are known to</span></div>
-<div class="line"><a name="l01768"></a><span class="lineno"> 1768</span>&#160;<span class="comment">     * create heavy imbalance (e.g. like Filter()s which cut DIAs to ranges).</span></div>
-<div class="line"><a name="l01769"></a><span class="lineno"> 1769</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
-<div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01772"></a><span class="lineno"> 1772</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga5469d047f156a142520303c26d53babc">Rebalance</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l01773"></a><span class="lineno"> 1773</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160;<span class="comment">    /*!</span></div>
-<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;<span class="comment">     * Create a CollapseNode which is mainly used to collapse the LOp chain into</span></div>
-<div class="line"><a name="l01776"></a><span class="lineno"> 1776</span>&#160;<span class="comment">     * a DIA&lt;T&gt; with an empty stack. This is most often necessary for iterative</span></div>
-<div class="line"><a name="l01777"></a><span class="lineno"> 1777</span>&#160;<span class="comment">     * algorithms, where a DIA&lt;T&gt; reference variable is updated in each</span></div>
-<div class="line"><a name="l01778"></a><span class="lineno"> 1778</span>&#160;<span class="comment">     * iteration.</span></div>
-<div class="line"><a name="l01779"></a><span class="lineno"> 1779</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01780"></a><span class="lineno"> 1780</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
-<div class="line"><a name="l01781"></a><span class="lineno"> 1781</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;    <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a> <a class="code" href="group__dia__dops.html#gaccfa2ac8759ca0365c932840685f0ae3">Collapse</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;<span class="comment">    /*!</span></div>
-<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;<span class="comment">     * Create a CacheNode which contains all items of a DIA in calculated plain</span></div>
-<div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;<span class="comment">     * format. This is needed if a DIA is reused many times, in order to avoid</span></div>
-<div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;<span class="comment">     * recalculating a PostOp multiple times.</span></div>
-<div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
-<div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;    <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a> <a class="code" href="group__dia__dops.html#ga1ce5f462d6e957e229a26c9649938b95">Cache</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;<span class="comment">    //! \}</span></div>
-<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;<span class="keyword">private</span>:<span class="comment"></span></div>
-<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;<span class="comment">    //! The DIANode which DIA points to. The node represents the latest DOp</span></div>
-<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;<span class="comment">    //! or Action performed previously.</span></div>
-<div class="line"><a name="l01798"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1DIA.html#a3b53989f4defe8628aeaeb00412fb666"> 1798</a></span>&#160;<span class="comment"></span>    <a class="code" href="classtlx_1_1CountingPtr.html">DIANodePtr</a> <a class="code" href="classthrill_1_1api_1_1DIA.html#a3b53989f4defe8628aeaeb00412fb666">node_</a>;</div>
+<div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;<span class="comment">     * \param window_size the size of the delivered window. Signature: TODO(tb).</span></div>
+<div class="line"><a name="l01758"></a><span class="lineno"> 1758</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01759"></a><span class="lineno"> 1759</span>&#160;<span class="comment">     * \param window_function Window function applied to each k item.</span></div>
+<div class="line"><a name="l01760"></a><span class="lineno"> 1760</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01761"></a><span class="lineno"> 1761</span>&#160;<span class="comment">     * \param partial_window_function Window function applied to less than k</span></div>
+<div class="line"><a name="l01762"></a><span class="lineno"> 1762</span>&#160;<span class="comment">     * items.</span></div>
+<div class="line"><a name="l01763"></a><span class="lineno"> 1763</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01764"></a><span class="lineno"> 1764</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
+<div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01766"></a><span class="lineno"> 1766</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueOut, <span class="keyword">typename</span> WindowFunction,</div>
+<div class="line"><a name="l01767"></a><span class="lineno"> 1767</span>&#160;              <span class="keyword">typename</span> PartialWindowFunction&gt;</div>
+<div class="line"><a name="l01768"></a><span class="lineno"> 1768</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga59be1d911a3bb9d61b7b1d8e8558d626">FlatWindow</a>(<span class="keywordtype">size_t</span> window_size,</div>
+<div class="line"><a name="l01769"></a><span class="lineno"> 1769</span>&#160;                    <span class="keyword">const</span> WindowFunction&amp; window_function,</div>
+<div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;                    <span class="keyword">const</span> PartialWindowFunction&amp; partial_window_function) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01772"></a><span class="lineno"> 1772</span>&#160;<span class="comment">    /*!</span></div>
+<div class="line"><a name="l01773"></a><span class="lineno"> 1773</span>&#160;<span class="comment">     * FlatWindow is a DOp, which applies a window function to every k</span></div>
+<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160;<span class="comment">     * consecutive items in a DIA. The window function is also given the index</span></div>
+<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;<span class="comment">     * of the first item, and can output zero or more items via an Emitter.</span></div>
+<div class="line"><a name="l01776"></a><span class="lineno"> 1776</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01777"></a><span class="lineno"> 1777</span>&#160;<span class="comment">     * \param window_size the size of the delivered window. Signature: TODO(tb).</span></div>
+<div class="line"><a name="l01778"></a><span class="lineno"> 1778</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01779"></a><span class="lineno"> 1779</span>&#160;<span class="comment">     * \param window_function Window function applied to each k item.</span></div>
+<div class="line"><a name="l01780"></a><span class="lineno"> 1780</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01781"></a><span class="lineno"> 1781</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
+<div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueOut, <span class="keyword">typename</span> WindowFunction&gt;</div>
+<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga59be1d911a3bb9d61b7b1d8e8558d626">FlatWindow</a>(<span class="keyword">struct</span> <a class="code" href="structthrill_1_1api_1_1DisjointTag.html">DisjointTag</a> <span class="keyword">const</span>&amp;, <span class="keywordtype">size_t</span> window_size,</div>
+<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;                    <span class="keyword">const</span> WindowFunction&amp; window_function) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;<span class="comment">    /*!</span></div>
+<div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;<span class="comment">     * Concat is a DOp, which concatenates any number of DIAs to a single DIA.</span></div>
+<div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;<span class="comment">     * All input DIAs must contain the same type, which is also the output DIA&#39;s</span></div>
+<div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;<span class="comment">     * type.</span></div>
+<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;<span class="comment">     * The concat operation balances all input data, so that each worker will</span></div>
+<div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;<span class="comment">     * have an equal number of elements when the concat completes.</span></div>
+<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
+<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> SecondDIA&gt;</div>
+<div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga925b505e954ef7f08efbe1957f01139a">Concat</a>(<span class="keyword">const</span> SecondDIA&amp; second_dia) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;<span class="comment">    //! The local function chain, which stores the chained lambda function from</span></div>
-<div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;<span class="comment">    //! the last DIANode to this DIA.</span></div>
-<div class="line"><a name="l01802"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1DIA.html#afcd17b523f31981fa6590d094d4474f2"> 1802</a></span>&#160;<span class="comment"></span>    <a class="code" href="classthrill_1_1api_1_1DIA.html#a12170f13eddfa6796a02c0e1160302c8">Stack</a> <a class="code" href="classthrill_1_1api_1_1DIA.html#afcd17b523f31981fa6590d094d4474f2">stack_</a>;</div>
-<div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;<span class="comment">    //! DIA serial id for logging, matches DIANode::id_ for DOps.</span></div>
-<div class="line"><a name="l01805"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1DIA.html#a84522bbbefdf5e778c78ed771032ba4b"> 1805</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a84522bbbefdf5e778c78ed771032ba4b">id_</a> = 0;</div>
-<div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;<span class="comment">    //! static DIA (LOp or DOp) node label string, may match DIANode::label_.</span></div>
-<div class="line"><a name="l01808"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1DIA.html#a14505c4e4cf70fbde5036647163ff671"> 1808</a></span>&#160;<span class="comment"></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classthrill_1_1api_1_1DIA.html#a14505c4e4cf70fbde5036647163ff671">label_</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;<span class="comment">    //! deliver next DIA serial id</span></div>
-<div class="line"><a name="l01811"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1DIA.html#abc1a8aa8d3c10be99d6d95bc42df23a8"> 1811</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#abc1a8aa8d3c10be99d6d95bc42df23a8">next_dia_id</a>() { <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a30939aa1412ef0bc6eab21ac2ffbf6d1">context</a>().<a class="code" href="classthrill_1_1api_1_1Context.html#abc1a8aa8d3c10be99d6d95bc42df23a8">next_dia_id</a>(); }</div>
-<div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;};</div>
-<div class="line"><a name="l01813"></a><span class="lineno"> 1813</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01814"></a><span class="lineno"> 1814</span>&#160;<span class="comment">//! \}</span></div>
-<div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160;} <span class="comment">// namespace api</span></div>
-<div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01818"></a><span class="lineno"> 1818</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l01819"></a><span class="lineno"> 1819</span>&#160;<span class="comment"></span><span class="keyword">using</span> api::DIA;</div>
-<div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01821"></a><span class="lineno"> 1821</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l01822"></a><span class="lineno"> 1822</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a8c6fb4ee8132900d4c585e1af22eb849">api::DisjointTag</a>;</div>
-<div class="line"><a name="l01823"></a><span class="lineno"> 1823</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;<span class="comment"></span><span class="keyword">using</span> api::VolatileKeyFlag;</div>
-<div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a373d7a591766e54c1f88264fefb9bd0a">api::VolatileKeyTag</a>;</div>
+<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;<span class="comment">    /*!</span></div>
+<div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;<span class="comment">     * Rebalance is a DOp, which rebalances a single DIA among all workers; in</span></div>
+<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;<span class="comment">     * general, this operation is needed only if previous steps are known to</span></div>
+<div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;<span class="comment">     * create heavy imbalance (e.g. like Filter()s which cut DIAs to ranges).</span></div>
+<div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
+<div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;    <span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga5469d047f156a142520303c26d53babc">Rebalance</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;<span class="comment">    /*!</span></div>
+<div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;<span class="comment">     * Create a CollapseNode which is mainly used to collapse the LOp chain into</span></div>
+<div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;<span class="comment">     * a DIA&lt;T&gt; with an empty stack. This is most often necessary for iterative</span></div>
+<div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;<span class="comment">     * algorithms, where a DIA&lt;T&gt; reference variable is updated in each</span></div>
+<div class="line"><a name="l01813"></a><span class="lineno"> 1813</span>&#160;<span class="comment">     * iteration.</span></div>
+<div class="line"><a name="l01814"></a><span class="lineno"> 1814</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
+<div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160;    <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a> <a class="code" href="group__dia__dops.html#gaccfa2ac8759ca0365c932840685f0ae3">Collapse</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01818"></a><span class="lineno"> 1818</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01819"></a><span class="lineno"> 1819</span>&#160;<span class="comment">    /*!</span></div>
+<div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160;<span class="comment">     * Create a CacheNode which contains all items of a DIA in calculated plain</span></div>
+<div class="line"><a name="l01821"></a><span class="lineno"> 1821</span>&#160;<span class="comment">     * format. This is needed if a DIA is reused many times, in order to avoid</span></div>
+<div class="line"><a name="l01822"></a><span class="lineno"> 1822</span>&#160;<span class="comment">     * recalculating a PostOp multiple times.</span></div>
+<div class="line"><a name="l01823"></a><span class="lineno"> 1823</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160;<span class="comment">     * \ingroup dia_dops</span></div>
+<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;    <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a> <a class="code" href="group__dia__dops.html#ga1ce5f462d6e957e229a26c9649938b95">Cache</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;<span class="comment">    //! \}</span></div>
 <div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a87c9961a35015a78ebd4c3396e000dd2">api::NoVolatileKeyTag</a>;</div>
-<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a0ce4ba687d9b4f850d264645613635c9">api::SkipPreReducePhaseTag</a>;</div>
-<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l01837"></a><span class="lineno"> 1837</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a25b6d4eddebb741b5cefd125b7375938">api::CutTag</a>;</div>
+<div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;<span class="keyword">private</span>:<span class="comment"></span></div>
+<div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;<span class="comment">    //! The DIANode which DIA points to. The node represents the latest DOp</span></div>
+<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;<span class="comment">    //! or Action performed previously.</span></div>
+<div class="line"><a name="l01833"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1DIA.html#a3b53989f4defe8628aeaeb00412fb666"> 1833</a></span>&#160;<span class="comment"></span>    <a class="code" href="classtlx_1_1CountingPtr.html">DIANodePtr</a> <a class="code" href="classthrill_1_1api_1_1DIA.html#a3b53989f4defe8628aeaeb00412fb666">node_</a>;</div>
+<div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;<span class="comment">    //! The local function chain, which stores the chained lambda function from</span></div>
+<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160;<span class="comment">    //! the last DIANode to this DIA.</span></div>
+<div class="line"><a name="l01837"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1DIA.html#afcd17b523f31981fa6590d094d4474f2"> 1837</a></span>&#160;<span class="comment"></span>    <a class="code" href="classthrill_1_1api_1_1DIA.html#a12170f13eddfa6796a02c0e1160302c8">Stack</a> <a class="code" href="classthrill_1_1api_1_1DIA.html#afcd17b523f31981fa6590d094d4474f2">stack_</a>;</div>
 <div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a5535b292ba4b2277576b8857f9c36c1d">api::PadTag</a>;</div>
+<div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160;<span class="comment">    //! DIA serial id for logging, matches DIANode::id_ for DOps.</span></div>
+<div class="line"><a name="l01840"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1DIA.html#a84522bbbefdf5e778c78ed771032ba4b"> 1840</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a84522bbbefdf5e778c78ed771032ba4b">id_</a> = 0;</div>
 <div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01842"></a><span class="lineno"> 1842</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a17bbdade091d6f4b60f8e1682f5b6409">api::NoRebalanceTag</a>;</div>
+<div class="line"><a name="l01842"></a><span class="lineno"> 1842</span>&#160;<span class="comment">    //! static DIA (LOp or DOp) node label string, may match DIANode::label_.</span></div>
+<div class="line"><a name="l01843"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1DIA.html#a14505c4e4cf70fbde5036647163ff671"> 1843</a></span>&#160;<span class="comment"></span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classthrill_1_1api_1_1DIA.html#a14505c4e4cf70fbde5036647163ff671">label_</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01844"></a><span class="lineno"> 1844</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01845"></a><span class="lineno"> 1845</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l01846"></a><span class="lineno"> 1846</span>&#160;<span class="comment"></span><span class="keyword">using</span> api::DuplicateDetectionFlag;</div>
-<div class="line"><a name="l01847"></a><span class="lineno"> 1847</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01848"></a><span class="lineno"> 1848</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l01849"></a><span class="lineno"> 1849</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a6d82df654c8f658799334ef23469f911">api::DuplicateDetectionTag</a>;</div>
+<div class="line"><a name="l01845"></a><span class="lineno"> 1845</span>&#160;<span class="comment">    //! deliver next DIA serial id</span></div>
+<div class="line"><a name="l01846"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1DIA.html#abc1a8aa8d3c10be99d6d95bc42df23a8"> 1846</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#abc1a8aa8d3c10be99d6d95bc42df23a8">next_dia_id</a>() { <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a30939aa1412ef0bc6eab21ac2ffbf6d1">context</a>().<a class="code" href="classthrill_1_1api_1_1Context.html#abc1a8aa8d3c10be99d6d95bc42df23a8">next_dia_id</a>(); }</div>
+<div class="line"><a name="l01847"></a><span class="lineno"> 1847</span>&#160;};</div>
+<div class="line"><a name="l01848"></a><span class="lineno"> 1848</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01849"></a><span class="lineno"> 1849</span>&#160;<span class="comment">//! \}</span></div>
 <div class="line"><a name="l01850"></a><span class="lineno"> 1850</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01851"></a><span class="lineno"> 1851</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a541982924f632754cbea467f0bde9b2d">api::NoDuplicateDetectionTag</a>;</div>
-<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;<span class="comment"></span><span class="keyword">using</span> api::LocationDetectionFlag;</div>
-<div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a8f5254202840aab5211e39e86ee1797c">api::LocationDetectionTag</a>;</div>
-<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#aac8e3f96206ebb637e8922e7400f88d5">api::NoLocationDetectionTag</a>;</div>
-<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;</div>
-<div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;} <span class="comment">// namespace thrill</span></div>
-<div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160;</div>
-<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;<span class="preprocessor">#endif // !THRILL_API_DIA_HEADER</span></div>
-<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l01851"></a><span class="lineno"> 1851</span>&#160;} <span class="comment">// namespace api</span></div>
+<div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;<span class="comment"></span><span class="keyword">using</span> api::DIA;</div>
+<div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a8c6fb4ee8132900d4c585e1af22eb849">api::DisjointTag</a>;</div>
+<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;<span class="comment"></span><span class="keyword">using</span> api::VolatileKeyFlag;</div>
+<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a373d7a591766e54c1f88264fefb9bd0a">api::VolatileKeyTag</a>;</div>
+<div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a87c9961a35015a78ebd4c3396e000dd2">api::NoVolatileKeyTag</a>;</div>
+<div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a0ce4ba687d9b4f850d264645613635c9">api::SkipPreReducePhaseTag</a>;</div>
+<div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a25b6d4eddebb741b5cefd125b7375938">api::CutTag</a>;</div>
+<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a5535b292ba4b2277576b8857f9c36c1d">api::PadTag</a>;</div>
+<div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a17bbdade091d6f4b60f8e1682f5b6409">api::NoRebalanceTag</a>;</div>
+<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;<span class="comment"></span><span class="keyword">using</span> api::DuplicateDetectionFlag;</div>
+<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a6d82df654c8f658799334ef23469f911">api::DuplicateDetectionTag</a>;</div>
+<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a541982924f632754cbea467f0bde9b2d">api::NoDuplicateDetectionTag</a>;</div>
+<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;<span class="comment"></span><span class="keyword">using</span> api::LocationDetectionFlag;</div>
+<div class="line"><a name="l01891"></a><span class="lineno"> 1891</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01892"></a><span class="lineno"> 1892</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#a8f5254202840aab5211e39e86ee1797c">api::LocationDetectionTag</a>;</div>
+<div class="line"><a name="l01894"></a><span class="lineno"> 1894</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01895"></a><span class="lineno"> 1895</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l01896"></a><span class="lineno"> 1896</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="namespacethrill_1_1api.html#aac8e3f96206ebb637e8922e7400f88d5">api::NoLocationDetectionTag</a>;</div>
+<div class="line"><a name="l01897"></a><span class="lineno"> 1897</span>&#160;</div>
+<div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;} <span class="comment">// namespace thrill</span></div>
+<div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;</div>
+<div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;<span class="preprocessor">#endif // !THRILL_API_DIA_HEADER</span></div>
+<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="group__dia__actions_html_gaf915f2ce3441536fe19b056cda06e9d5"><div class="ttname"><a href="group__dia__actions.html#gaf915f2ce3441536fe19b056cda06e9d5">thrill::api::DIA::AllGather</a></div><div class="ttdeci">std::vector&lt; ValueType &gt; AllGather() const </div><div class="ttdoc">Returns the whole DIA in an std::vector on each worker. </div><div class="ttdef"><b>Definition:</b> <a href="all__gather_8hpp_source.html#l00115">all_gather.hpp:115</a></div></div>
 <div class="ttc" id="structthrill_1_1api_1_1PadTag_html_a14a39ea5b4655be9e6b3b8dcbdcd6e44"><div class="ttname"><a href="structthrill_1_1api_1_1PadTag.html#a14a39ea5b4655be9e6b3b8dcbdcd6e44">thrill::api::PadTag::PadTag</a></div><div class="ttdeci">PadTag()</div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00079">dia.hpp:79</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIA_html_abe53b76f00a59b79305508dedfd849ec"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#abe53b76f00a59b79305508dedfd849ec">thrill::api::DIA::Keep</a></div><div class="ttdeci">const DIA &amp; Keep(size_t increase=1) const </div><div class="ttdoc">Mark the referenced DIANode for keeping, which makes children not consume the data when executing...</div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00293">dia.hpp:293</a></div></div>
@@ -1999,8 +2034,8 @@ $(document).ready(function(){initNavTree('dia_8hpp_source.html','');});
 <div class="ttc" id="classthrill_1_1api_1_1Context_html_a3add032aa80b275484c27d63b19c5fcd"><div class="ttname"><a href="classthrill_1_1api_1_1Context.html#a3add032aa80b275484c27d63b19c5fcd">thrill::api::Context::consume</a></div><div class="ttdeci">bool consume() const </div><div class="ttdoc">return value of consume flag. </div><div class="ttdef"><b>Definition:</b> <a href="context_8hpp_source.html#l00375">context.hpp:375</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIA_html_adf9b37818592dd96196376bf4c7e7b9a"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#adf9b37818592dd96196376bf4c7e7b9a">thrill::api::DIA::StackInput</a></div><div class="ttdeci">typename Stack::Input StackInput</div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00160">dia.hpp:160</a></div></div>
 <div class="ttc" id="namespacethrill_1_1api_html_a5535b292ba4b2277576b8857f9c36c1d"><div class="ttname"><a href="namespacethrill_1_1api.html#a5535b292ba4b2277576b8857f9c36c1d">thrill::api::PadTag</a></div><div class="ttdeci">const struct PadTag PadTag</div><div class="ttdoc">global const PadTag instance </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00083">dia.hpp:83</a></div></div>
-<div class="ttc" id="classthrill_1_1api_1_1DIA_html_a3b53989f4defe8628aeaeb00412fb666"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#a3b53989f4defe8628aeaeb00412fb666">thrill::api::DIA::node_</a></div><div class="ttdeci">DIANodePtr node_</div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l01798">dia.hpp:1798</a></div></div>
-<div class="ttc" id="classthrill_1_1api_1_1DIA_html_a14505c4e4cf70fbde5036647163ff671"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#a14505c4e4cf70fbde5036647163ff671">thrill::api::DIA::label_</a></div><div class="ttdeci">const char * label_</div><div class="ttdoc">static DIA (LOp or DOp) node label string, may match DIANode::label_. </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l01808">dia.hpp:1808</a></div></div>
+<div class="ttc" id="classthrill_1_1api_1_1DIA_html_a3b53989f4defe8628aeaeb00412fb666"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#a3b53989f4defe8628aeaeb00412fb666">thrill::api::DIA::node_</a></div><div class="ttdeci">DIANodePtr node_</div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l01833">dia.hpp:1833</a></div></div>
+<div class="ttc" id="classthrill_1_1api_1_1DIA_html_a14505c4e4cf70fbde5036647163ff671"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#a14505c4e4cf70fbde5036647163ff671">thrill::api::DIA::label_</a></div><div class="ttdeci">const char * label_</div><div class="ttdoc">static DIA (LOp or DOp) node label string, may match DIANode::label_. </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l01843">dia.hpp:1843</a></div></div>
 <div class="ttc" id="group__dia__actions_html_gac0f2000b2084791ab995d68fe834a77c"><div class="ttname"><a href="group__dia__actions.html#gac0f2000b2084791ab995d68fe834a77c">thrill::api::DIA::Gather</a></div><div class="ttdeci">std::vector&lt; ValueType &gt; Gather(size_t target_id=0) const </div><div class="ttdoc">Gather is an Action, which collects all data of the DIA into a vector at the given worker...</div><div class="ttdef"><b>Definition:</b> <a href="gather_8hpp_source.html#l00094">gather.hpp:94</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIABase_html_a9475db85feebac30473a169894558f46"><div class="ttname"><a href="classthrill_1_1api_1_1DIABase.html#a9475db85feebac30473a169894558f46">thrill::api::DIABase::consume_counter</a></div><div class="ttdeci">virtual size_t consume_counter() const </div><div class="ttdoc">Returns consume_counter_. </div><div class="ttdef"><b>Definition:</b> <a href="dia__base_8hpp_source.html#l00226">dia_base.hpp:226</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIA_html_a2358e3f716f78627cd361af589ee2d85"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#a2358e3f716f78627cd361af589ee2d85">thrill::api::DIA::DIA</a></div><div class="ttdeci">DIA()=default</div><div class="ttdoc">default-constructor: invalid DIA </div></div>
@@ -2026,7 +2061,8 @@ $(document).ready(function(){initNavTree('dia_8hpp_source.html','');});
 <div class="ttc" id="classthrill_1_1api_1_1DIA_html_a30939aa1412ef0bc6eab21ac2ffbf6d1"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#a30939aa1412ef0bc6eab21ac2ffbf6d1">thrill::api::DIA::context</a></div><div class="ttdeci">Context &amp; context() const </div><div class="ttdoc">Return context_ of DIANode, e.g. for creating new LOps and DOps. </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00269">dia.hpp:269</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIA_html_afbff330f2d0e7eade1e666c4d8621004"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#afbff330f2d0e7eade1e666c4d8621004">thrill::api::DIA::DIA</a></div><div class="ttdeci">DIA(const DIANodePtr &amp;node, const Stack &amp;stack, size_t id, const char *label)</div><div class="ttdoc">Constructor of a new DIA with a pointer to a DIANode and a function chain from the DIANode to this DI...</div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00194">dia.hpp:194</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIA_html_a373d55d48acf20802d2ac9b6bca83376"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#a373d55d48acf20802d2ac9b6bca83376">thrill::api::DIA::KeepForever</a></div><div class="ttdeci">const DIA &amp; KeepForever() const </div><div class="ttdoc">Mark the referenced DIANode for keeping forever, which makes children not consume the data when execu...</div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00308">dia.hpp:308</a></div></div>
-<div class="ttc" id="group__dia__dops_html_ga8932521ceb83dcba7dbe69b914523dd4"><div class="ttname"><a href="group__dia__dops.html#ga8932521ceb83dcba7dbe69b914523dd4">thrill::api::DIA::Sort</a></div><div class="ttdeci">auto Sort(const CompareFunction &amp;compare_function=CompareFunction()) const </div><div class="ttdoc">Sort is a DOp, which sorts a given DIA according to the given compare_function. </div><div class="ttdef"><b>Definition:</b> <a href="thrill_2api_2sort_8hpp_source.html#l00740">sort.hpp:740</a></div></div>
+<div class="ttc" id="group__dia__dops_html_ga0048589266b038bc991f0a62fb1189a7"><div class="ttname"><a href="group__dia__dops.html#ga0048589266b038bc991f0a62fb1189a7">thrill::api::DIA::SortStable</a></div><div class="ttdeci">auto SortStable(const CompareFunction &amp;compare_function=CompareFunction()) const </div><div class="ttdoc">SortStable is a DOp, which sorts a given DIA stably according to the given compare_function. </div><div class="ttdef"><b>Definition:</b> <a href="thrill_2api_2sort_8hpp_source.html#l00853">sort.hpp:853</a></div></div>
+<div class="ttc" id="group__dia__dops_html_ga8932521ceb83dcba7dbe69b914523dd4"><div class="ttname"><a href="group__dia__dops.html#ga8932521ceb83dcba7dbe69b914523dd4">thrill::api::DIA::Sort</a></div><div class="ttdeci">auto Sort(const CompareFunction &amp;compare_function=CompareFunction()) const </div><div class="ttdoc">Sort is a DOp, which sorts a given DIA according to the given compare_function. </div><div class="ttdef"><b>Definition:</b> <a href="thrill_2api_2sort_8hpp_source.html#l00780">sort.hpp:780</a></div></div>
 <div class="ttc" id="classtlx_1_1CountingPtr_html_a8db0d2fc192644bf209e350cfb486091"><div class="ttname"><a href="classtlx_1_1CountingPtr.html#a8db0d2fc192644bf209e350cfb486091">tlx::CountingPtr::get</a></div><div class="ttdeci">Type * get() const noexcept</div><div class="ttdoc">return the enclosed pointer. </div><div class="ttdef"><b>Definition:</b> <a href="counting__ptr_8hpp_source.html#l00194">counting_ptr.hpp:194</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1Future_3_01void_01_4_html"><div class="ttname"><a href="classthrill_1_1api_1_1Future_3_01void_01_4.html">thrill::api::Future&lt; void &gt;</a></div><div class="ttdoc">Specialized template class for ActionFuture which return void. </div><div class="ttdef"><b>Definition:</b> <a href="action__node_8hpp_source.html#l00126">action_node.hpp:126</a></div></div>
 <div class="ttc" id="function__stack_8hpp_html"><div class="ttname"><a href="function__stack_8hpp.html">function_stack.hpp</a></div></div>
@@ -2034,7 +2070,7 @@ $(document).ready(function(){initNavTree('dia_8hpp_source.html','');});
 <div class="ttc" id="group__dia__dops_html_ga5469d047f156a142520303c26d53babc"><div class="ttname"><a href="group__dia__dops.html#ga5469d047f156a142520303c26d53babc">thrill::api::DIA::Rebalance</a></div><div class="ttdeci">auto Rebalance() const </div><div class="ttdoc">Rebalance is a DOp, which rebalances a single DIA among all workers; in general, this operation is ne...</div><div class="ttdef"><b>Definition:</b> <a href="rebalance_8hpp_source.html#l00123">rebalance.hpp:123</a></div></div>
 <div class="ttc" id="classtlx_1_1FunctionStack_html"><div class="ttname"><a href="classtlx_1_1FunctionStack.html">tlx::FunctionStack</a></div><div class="ttdoc">A FunctionStack is a chain of functor that can be folded to a single functor (which is usually optimi...</div><div class="ttdef"><b>Definition:</b> <a href="function__stack_8hpp_source.html#l00090">function_stack.hpp:90</a></div></div>
 <div class="ttc" id="group__dia__actions_html_ga8c181321b75884a8b8994e1c6c9d2e13"><div class="ttname"><a href="group__dia__actions.html#ga8c181321b75884a8b8994e1c6c9d2e13">thrill::api::DIA::HyperLogLog</a></div><div class="ttdeci">double HyperLogLog() const </div><div class="ttdoc">Compute the approximate number of distinct elements in the DIA. </div><div class="ttdef"><b>Definition:</b> <a href="api_2hyperloglog_8hpp_source.html#l00064">hyperloglog.hpp:64</a></div></div>
-<div class="ttc" id="classthrill_1_1api_1_1DIA_html_abc1a8aa8d3c10be99d6d95bc42df23a8"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#abc1a8aa8d3c10be99d6d95bc42df23a8">thrill::api::DIA::next_dia_id</a></div><div class="ttdeci">size_t next_dia_id()</div><div class="ttdoc">deliver next DIA serial id </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l01811">dia.hpp:1811</a></div></div>
+<div class="ttc" id="classthrill_1_1api_1_1DIA_html_abc1a8aa8d3c10be99d6d95bc42df23a8"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#abc1a8aa8d3c10be99d6d95bc42df23a8">thrill::api::DIA::next_dia_id</a></div><div class="ttdeci">size_t next_dia_id()</div><div class="ttdoc">deliver next DIA serial id </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l01846">dia.hpp:1846</a></div></div>
 <div class="ttc" id="namespacethrill_1_1api_html_a87c9961a35015a78ebd4c3396e000dd2"><div class="ttname"><a href="namespacethrill_1_1api.html#a87c9961a35015a78ebd4c3396e000dd2">thrill::api::NoVolatileKeyTag</a></div><div class="ttdeci">const struct VolatileKeyFlag&lt; false &gt; NoVolatileKeyTag</div><div class="ttdoc">global const VolatileKeyFlag instance </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00051">dia.hpp:51</a></div></div>
 <div class="ttc" id="function__traits_8hpp_html"><div class="ttname"><a href="function__traits_8hpp.html">function_traits.hpp</a></div></div>
 <div class="ttc" id="group__dia__dops_html_ga16e1e32046563a78aab6d13804cef3bc"><div class="ttname"><a href="group__dia__dops.html#ga16e1e32046563a78aab6d13804cef3bc">thrill::api::DIA::PrefixSum</a></div><div class="ttdeci">auto PrefixSum(const SumFunction &amp;sum_function=SumFunction(), const ValueType &amp;initial_element=ValueType()) const </div><div class="ttdoc">PrefixSum is a DOp, which computes the (inclusive) prefix sum of all elements. </div><div class="ttdef"><b>Definition:</b> <a href="prefixsum_8hpp_source.html#l00135">prefixsum.hpp:135</a></div></div>
@@ -2058,7 +2094,7 @@ $(document).ready(function(){initNavTree('dia_8hpp_source.html','');});
 <div class="ttc" id="namespacethrill_1_1mem_html_a5568fe0d00a794e5f063e9fe040bc07f"><div class="ttname"><a href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">thrill::mem::string</a></div><div class="ttdeci">std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt; string</div><div class="ttdoc">string with Manager tracking </div><div class="ttdef"><b>Definition:</b> <a href="allocator_8hpp_source.html#l00220">allocator.hpp:220</a></div></div>
 <div class="ttc" id="group__dia__dops_html_gae772b581a45cd14c0ef31b4ac2ea3b7f"><div class="ttname"><a href="group__dia__dops.html#gae772b581a45cd14c0ef31b4ac2ea3b7f">thrill::api::DIA::Merge</a></div><div class="ttdeci">auto Merge(const SecondDIA &amp;second_dia, const Comparator &amp;comparator=Comparator()) const </div><div class="ttdoc">Merge is a DOp, which merges two sorted DIAs to a single sorted DIA. </div><div class="ttdef"><b>Definition:</b> <a href="merge_8hpp_source.html#l00717">merge.hpp:717</a></div></div>
 <div class="ttc" id="group__dia__actions_html_gab987cd5bfad35a70c02f1e4e70672743"><div class="ttname"><a href="group__dia__actions.html#gab987cd5bfad35a70c02f1e4e70672743">thrill::api::DIA::WriteLinesOne</a></div><div class="ttdeci">void WriteLinesOne(const std::string &amp;filepath) const </div><div class="ttdoc">WriteLinesOne is an Action, which writes std::strings to a single output file. </div><div class="ttdef"><b>Definition:</b> <a href="write__lines__one_8hpp_source.html#l00112">write_lines_one.hpp:112</a></div></div>
-<div class="ttc" id="classthrill_1_1api_1_1DIA_html_afcd17b523f31981fa6590d094d4474f2"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#afcd17b523f31981fa6590d094d4474f2">thrill::api::DIA::stack_</a></div><div class="ttdeci">Stack stack_</div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l01802">dia.hpp:1802</a></div></div>
+<div class="ttc" id="classthrill_1_1api_1_1DIA_html_afcd17b523f31981fa6590d094d4474f2"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#afcd17b523f31981fa6590d094d4474f2">thrill::api::DIA::stack_</a></div><div class="ttdeci">Stack stack_</div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l01837">dia.hpp:1837</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1Future_html"><div class="ttname"><a href="classthrill_1_1api_1_1Future.html">thrill::api::Future</a></div><div class="ttdoc">The return type class for all ActionFutures. </div><div class="ttdef"><b>Definition:</b> <a href="action__node_8hpp_source.html#l00083">action_node.hpp:83</a></div></div>
 <div class="ttc" id="group__dia__dops_html_gaada7421986d91977c873cbe15ce2d5e1"><div class="ttname"><a href="group__dia__dops.html#gaada7421986d91977c873cbe15ce2d5e1">thrill::api::DIA::GroupByKey</a></div><div class="ttdeci">auto GroupByKey(const KeyExtractor &amp;key_extractor, const GroupByFunction &amp;groupby_function) const </div><div class="ttdoc">GroupByKey is a DOp, which groups elements of the DIA by its key. </div></div>
 <div class="ttc" id="namespacethrill_1_1api_html_aac8e3f96206ebb637e8922e7400f88d5"><div class="ttname"><a href="namespacethrill_1_1api.html#aac8e3f96206ebb637e8922e7400f88d5">thrill::api::NoLocationDetectionTag</a></div><div class="ttdeci">const struct LocationDetectionFlag&lt; false &gt; NoLocationDetectionTag</div><div class="ttdoc">global const LocationDetectionFlag instance </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00125">dia.hpp:125</a></div></div>
@@ -2086,7 +2122,7 @@ $(document).ready(function(){initNavTree('dia_8hpp_source.html','');});
 <div class="ttc" id="structthrill_1_1api_1_1VolatileKeyFlag_html_a2db945cd858ff2089c779af3536fce05"><div class="ttname"><a href="structthrill_1_1api_1_1VolatileKeyFlag.html#a2db945cd858ff2089c779af3536fce05">thrill::api::VolatileKeyFlag::VolatileKeyFlag</a></div><div class="ttdeci">VolatileKeyFlag()</div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00043">dia.hpp:43</a></div></div>
 <div class="ttc" id="group__dia__actions_html_ga90052d8f105adde80951a3c7aac9f4e0"><div class="ttname"><a href="group__dia__actions.html#ga90052d8f105adde80951a3c7aac9f4e0">thrill::api::DIA::WriteBinary</a></div><div class="ttdeci">void WriteBinary(const std::string &amp;filepath, size_t max_file_size=128 *1024 *1024) const </div><div class="ttdoc">WriteBinary is a function, which writes a DIA to many files per worker. </div><div class="ttdef"><b>Definition:</b> <a href="write__binary_8hpp_source.html#l00192">write_binary.hpp:192</a></div></div>
 <div class="ttc" id="group__dia__dops_html_ga8b080a7545e8235fffc737171ab79986"><div class="ttname"><a href="group__dia__dops.html#ga8b080a7545e8235fffc737171ab79986">thrill::api::DIA::ExPrefixSum</a></div><div class="ttdeci">auto ExPrefixSum(const SumFunction &amp;sum_function=SumFunction(), const ValueType &amp;initial_element=ValueType()) const </div><div class="ttdoc">ExPrefixSum is a DOp, which computes the exclusive prefix sum of all elements. </div><div class="ttdef"><b>Definition:</b> <a href="prefixsum_8hpp_source.html#l00169">prefixsum.hpp:169</a></div></div>
-<div class="ttc" id="classthrill_1_1api_1_1DIA_html_a84522bbbefdf5e778c78ed771032ba4b"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#a84522bbbefdf5e778c78ed771032ba4b">thrill::api::DIA::id_</a></div><div class="ttdeci">size_t id_</div><div class="ttdoc">DIA serial id for logging, matches DIANode::id_ for DOps. </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l01805">dia.hpp:1805</a></div></div>
+<div class="ttc" id="classthrill_1_1api_1_1DIA_html_a84522bbbefdf5e778c78ed771032ba4b"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#a84522bbbefdf5e778c78ed771032ba4b">thrill::api::DIA::id_</a></div><div class="ttdeci">size_t id_</div><div class="ttdoc">DIA serial id for logging, matches DIANode::id_ for DOps. </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l01840">dia.hpp:1840</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIA_html_a5d6b7b866df2764ba8076c37bdfd5fc0"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#a5d6b7b866df2764ba8076c37bdfd5fc0">thrill::api::DIA::DIA</a></div><div class="ttdeci">DIA(DIANodePtr &amp;&amp;node)</div><div class="ttdoc">Constructor of a new DIA with a real backing DIABase. </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00219">dia.hpp:219</a></div></div>
 <div class="ttc" id="group__dia__actions_html_gaaec8d360c7ca7381765f9a53086152d1"><div class="ttname"><a href="group__dia__actions.html#gaaec8d360c7ca7381765f9a53086152d1">thrill::api::DIA::Max</a></div><div class="ttdeci">ValueType Max(const ValueType &amp;initial_value=ValueType()) const </div><div class="ttdoc">Max is an Action, which computes the maximum of all elements globally. </div><div class="ttdef"><b>Definition:</b> <a href="max_8hpp_source.html#l00022">max.hpp:22</a></div></div>
 <div class="ttc" id="group__dia__dops_html_ga59be1d911a3bb9d61b7b1d8e8558d626"><div class="ttname"><a href="group__dia__dops.html#ga59be1d911a3bb9d61b7b1d8e8558d626">thrill::api::DIA::FlatWindow</a></div><div class="ttdeci">auto FlatWindow(size_t window_size, const WindowFunction &amp;window_function=WindowFunction()) const </div><div class="ttdoc">FlatWindow is a DOp, which applies a window function to every k consecutive items in a DIA...</div><div class="ttdef"><b>Definition:</b> <a href="window_8hpp_source.html#l00272">window.hpp:272</a></div></div>
@@ -2120,7 +2156,7 @@ $(document).ready(function(){initNavTree('dia_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="dia_8hpp.html">dia.hpp</a></li>
-    <li class="footer">Generated on Thu Sep 27 2018 16:51:50 for Thrill by
+    <li class="footer">Generated on Thu Sep 27 2018 21:59:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

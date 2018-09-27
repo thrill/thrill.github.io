@@ -13,6 +13,7 @@ var searchData=
   ['make_5ffunction_5fstack',['make_function_stack',['../group__tlx__meta.html#gaf4f5461dca9e4be26479c56a5500357e',1,'tlx']]],
   ['make_5fmultiway_5fmerge_5ftree',['make_multiway_merge_tree',['../namespacethrill_1_1core.html#a824b1fe7821b6f02d385721ee9bb1e55',1,'thrill::core']]],
   ['make_5fqueue',['make_queue',['../classfoxxll_1_1disk__queues.html#a13f2fbb8015b4908373e779486c6f58c',1,'foxxll::disk_queues']]],
+  ['make_5fstable_5fmultiway_5fmerge_5ftree',['make_stable_multiway_merge_tree',['../namespacethrill_1_1core.html#a9a6315d21c4871d9f35f2112181ab823',1,'thrill::core']]],
   ['make_5funique',['make_unique',['../namespacethrill_1_1mem.html#a80e16dfd5916afd359568ae6d30baa56',1,'thrill::mem']]],
   ['makebzip2readfilter',['MakeBZip2ReadFilter',['../namespacethrill_1_1vfs.html#a9d70885f034b1a49ebade0d8ff5f265d',1,'thrill::vfs']]],
   ['makebzip2writefilter',['MakeBZip2WriteFilter',['../namespacethrill_1_1vfs.html#ab88894d311a14acddb01d154bb0bb857',1,'thrill::vfs']]],

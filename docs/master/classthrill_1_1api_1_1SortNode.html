@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Thrill: SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt; Class Template Reference</title>
+<title>Thrill: SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -123,39 +123,40 @@ $(document).ready(function(){initNavTree('classthrill_1_1api_1_1SortNode.html','
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classthrill_1_1api_1_1SortNode-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__api__layer.html">DIA API Layer</a></div></div>  </div>
+<div class="title">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt; Class Template Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__api__layer.html">DIA API Layer</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename ValueType, typename CompareFunction, typename SortAlgorithm&gt;<br/>
-class thrill::api::SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;</h3>
+<div class="textblock"><h3>template&lt;typename ValueType, typename CompareFunction, typename SortAlgorithm, bool Stable = false&gt;<br/>
+class thrill::api::SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;</h3>
 
 <p>A <a class="el" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill. ">DIANode</a> which performs a Sort operation. </p>
 <p>Sort sorts a <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> according to a given compare function</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">ValueType</td><td>Type of <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> elements</td></tr>
-    <tr><td class="paramname">Stack</td><td>Function stack, which contains the chained lambdas between the last and this <a class="el" href="classthrill_1_1api_1_1DIANode.html" title="A DIANode is a typed node representing and operation in Thrill. ">DIANode</a>.</td></tr>
-    <tr><td class="paramname">CompareFunction</td><td>Type of the compare function </td></tr>
+    <tr><td class="paramname">CompareFunction</td><td>Type of the compare function</td></tr>
+    <tr><td class="paramname">SortAlgorithm</td><td>Type of the local sort function</td></tr>
+    <tr><td class="paramname">Stable</td><td>Whether or not to use stable sorting mechanisms </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00056">56</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00062">62</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1api_1_1SortNode__inherit__graph.svg" width="238" height="352"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1api_1_1SortNode__inherit__graph.svg" width="230" height="366"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;:</div>
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1api_1_1SortNode__coll__graph.svg" width="2915" height="1144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1api_1_1SortNode__coll__graph.svg" width="2907" height="1144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 
@@ -163,6 +164,11 @@ class thrill::api::SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;</
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1api_1_1SortNode_1_1MakeDefaultMultiwayMergeTree.html">MakeDefaultMultiwayMergeTree</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiway merge tree creation depends on Stable flag.  <a href="structthrill_1_1api_1_1SortNode_1_1MakeDefaultMultiwayMergeTree.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1api_1_1SortNode_1_1MakeStableMultiwayMergeTree.html">MakeStableMultiwayMergeTree</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode_1_1TreeBuilder.html">TreeBuilder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -180,12 +186,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6fed7cfedd805b76e7ffdf331f0d9001"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50bbe9134ad3a335b52a0ca1ad4f54ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode.html#a50bbe9134ad3a335b52a0ca1ad4f54ab">MainOp</a> ()</td></tr>
 <tr class="separator:a50bbe9134ad3a335b52a0ca1ad4f54ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8475a310755c4353c44b5f51a9f8d3b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode.html#a8475a310755c4353c44b5f51a9f8d3b7">ReceiveItems</a> (<a class="el" href="group__data__layer.html#ga969da325e57eeefa9e0e2544086bee2d">data::MixStreamPtr</a> &amp;data_stream)</td></tr>
-<tr class="separator:a8475a310755c4353c44b5f51a9f8d3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9e1b37888a6a0914fee0b505eb6e04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode.html#a5c9e1b37888a6a0914fee0b505eb6e04">ReceiveItems</a> (<a class="el" href="classthrill_1_1api_1_1SortNode.html#a789aa823fe12452ed459aee692b6d4e4">TranmissionStreamPtr</a> &amp;data_stream)</td></tr>
+<tr class="separator:a5c9e1b37888a6a0914fee0b505eb6e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22fe2886cbd447fdbc616b3f4664856e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode.html#a22fe2886cbd447fdbc616b3f4664856e">SortAndWriteToFile</a> (std::vector&lt; ValueType &gt; &amp;vec)</td></tr>
 <tr class="separator:a22fe2886cbd447fdbc616b3f4664856e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd4c0a4ec3e1baab533888cb64d895a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode.html#afd4c0a4ec3e1baab533888cb64d895a8">TransmitItems</a> (const ValueType *const tree, size_t k, size_t log_k, size_t actual_k, const <a class="el" href="classthrill_1_1api_1_1SortNode.html#a6d863ed697b7ace6cb18368152598247">SampleIndexPair</a> *const sorted_splitters, size_t prefix_items, <a class="el" href="group__data__layer.html#ga969da325e57eeefa9e0e2544086bee2d">data::MixStreamPtr</a> &amp;data_stream)</td></tr>
-<tr class="separator:afd4c0a4ec3e1baab533888cb64d895a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08e35ebdf936873c384117e55f2fa658"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode.html#a08e35ebdf936873c384117e55f2fa658">TransmitItems</a> (const ValueType *const tree, size_t k, size_t log_k, size_t actual_k, const <a class="el" href="classthrill_1_1api_1_1SortNode.html#a6d863ed697b7ace6cb18368152598247">SampleIndexPair</a> *const sorted_splitters, size_t prefix_items, <a class="el" href="classthrill_1_1api_1_1SortNode.html#a789aa823fe12452ed459aee692b6d4e4">TranmissionStreamPtr</a> &amp;data_stream)</td></tr>
+<tr class="separator:a08e35ebdf936873c384117e55f2fa658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classthrill_1_1api_1_1DOpNode"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classthrill_1_1api_1_1DOpNode')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classthrill_1_1api_1_1DOpNode.html">DOpNode&lt; ValueType &gt;</a></td></tr>
 <tr class="memitem:ae58be5c6c33cff3a83b85d78ebbe97ce inherit pub_methods_classthrill_1_1api_1_1DOpNode"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1DOpNode.html#ae58be5c6c33cff3a83b85d78ebbe97ce">DOpNode</a> (<a class="el" href="classthrill_1_1api_1_1Context.html">Context</a> &amp;ctx, const char *<a class="el" href="classthrill_1_1api_1_1DIABase.html#a84c26b3ea1701ac19d446aa9fd87d82d">label</a>, const std::initializer_list&lt; size_t &gt; &amp;<a class="el" href="classthrill_1_1api_1_1DIABase.html#a548c187ac192a55c25278cbac58b2a2b">parent_ids</a>, const std::initializer_list&lt; <a class="el" href="classthrill_1_1api_1_1DIABase.html#afd807377b556060aa33d5dd9c12b75e2">DIABasePtr</a> &gt; &amp;<a class="el" href="classthrill_1_1api_1_1DIABase.html#a90b708ca304934aa9be03f692014b158">parents</a>)</td></tr>
 <tr class="memdesc:ae58be5c6c33cff3a83b85d78ebbe97ce inherit pub_methods_classthrill_1_1api_1_1DOpNode"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for a <a class="el" href="classthrill_1_1api_1_1DOpNode.html" title="A DOpNode is a typed node representing and distributed operations in Thrill. ">DOpNode</a>, which sets references to the parent nodes.  <a href="#ae58be5c6c33cff3a83b85d78ebbe97ce">More...</a><br/></td></tr>
@@ -370,6 +376,8 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
+<tr class="memitem:a021a3df10b5332f0657ae7493e7d68a8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode.html#a021a3df10b5332f0657ae7493e7d68a8">MakeMultiwayMergeTreeDelegate</a> = typename std::conditional&lt; Stable, <a class="el" href="structthrill_1_1api_1_1SortNode_1_1MakeStableMultiwayMergeTree.html">MakeStableMultiwayMergeTree</a>, <a class="el" href="structthrill_1_1api_1_1SortNode_1_1MakeDefaultMultiwayMergeTree.html">MakeDefaultMultiwayMergeTree</a> &gt;::type</td></tr>
+<tr class="separator:a021a3df10b5332f0657ae7493e7d68a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aede13199b2e3acd8c2926cd0afa2e438"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode.html#aede13199b2e3acd8c2926cd0afa2e438">RunTimer</a> = <a class="el" href="classthrill_1_1common_1_1RunTimer.html">common::RunTimer</a>&lt; <a class="el" href="classthrill_1_1api_1_1SortNode.html#ad03dc3b1e0b254d4ce63540d5c7a26a6">Timer</a> &gt;</td></tr>
 <tr class="memdesc:aede13199b2e3acd8c2926cd0afa2e438"><td class="mdescLeft">&#160;</td><td class="mdescRight">RIAA class for running the timer.  <a href="#aede13199b2e3acd8c2926cd0afa2e438">More...</a><br/></td></tr>
 <tr class="separator:aede13199b2e3acd8c2926cd0afa2e438"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -380,6 +388,11 @@ Private Types</h2></td></tr>
 <tr class="memitem:ad03dc3b1e0b254d4ce63540d5c7a26a6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode.html#ad03dc3b1e0b254d4ce63540d5c7a26a6">Timer</a> = <a class="el" href="classthrill_1_1common_1_1StatsTimerBaseStopped.html">common::StatsTimerBaseStopped</a>&lt; <a class="el" href="classthrill_1_1api_1_1SortNode.html#a9fab430f144b995b17f436543d6e9662">stats_enabled</a> &gt;</td></tr>
 <tr class="memdesc:ad03dc3b1e0b254d4ce63540d5c7a26a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer or FakeTimer.  <a href="#ad03dc3b1e0b254d4ce63540d5c7a26a6">More...</a><br/></td></tr>
 <tr class="separator:ad03dc3b1e0b254d4ce63540d5c7a26a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789aa823fe12452ed459aee692b6d4e4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode.html#a789aa823fe12452ed459aee692b6d4e4">TranmissionStreamPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; <a class="el" href="classthrill_1_1api_1_1SortNode.html#a8dc17d3b2eaf7f062b18ca8e6cdae54b">TranmissionStreamType</a> &gt;</td></tr>
+<tr class="separator:a789aa823fe12452ed459aee692b6d4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc17d3b2eaf7f062b18ca8e6cdae54b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1api_1_1SortNode.html#a8dc17d3b2eaf7f062b18ca8e6cdae54b">TranmissionStreamType</a> = typename std::conditional&lt; Stable, <a class="el" href="classthrill_1_1data_1_1CatStream.html">data::CatStream</a>, <a class="el" href="classthrill_1_1data_1_1MixStream.html">data::MixStream</a> &gt;::type</td></tr>
+<tr class="memdesc:a8dc17d3b2eaf7f062b18ca8e6cdae54b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream type for item transmission depends on Stable flag.  <a href="#a8dc17d3b2eaf7f062b18ca8e6cdae54b">More...</a><br/></td></tr>
+<tr class="separator:a8dc17d3b2eaf7f062b18ca8e6cdae54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -457,6 +470,28 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:aa6c04f5d0d2322e7fafad9735be8f21b inherit pro_attribs_classthrill_1_1api_1_1DIABase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="a021a3df10b5332f0657ae7493e7d68a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classthrill_1_1api_1_1SortNode.html#a021a3df10b5332f0657ae7493e7d68a8">MakeMultiwayMergeTreeDelegate</a> =  typename std::conditional&lt;Stable, <a class="el" href="structthrill_1_1api_1_1SortNode_1_1MakeStableMultiwayMergeTree.html">MakeStableMultiwayMergeTree</a>, <a class="el" href="structthrill_1_1api_1_1SortNode_1_1MakeDefaultMultiwayMergeTree.html">MakeDefaultMultiwayMergeTree</a>&gt;::type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00110">110</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aede13199b2e3acd8c2926cd0afa2e438"></a>
 <div class="memitem">
 <div class="memproto">
@@ -477,7 +512,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>RIAA class for running the timer. </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00069">69</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00075">75</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -499,7 +534,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00071">71</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00077">77</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -521,7 +556,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00063">63</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00069">69</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -545,7 +580,53 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Timer or FakeTimer. </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00067">67</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00073">73</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a789aa823fe12452ed459aee692b6d4e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classthrill_1_1api_1_1SortNode.html#a789aa823fe12452ed459aee692b6d4e4">TranmissionStreamPtr</a> =  <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; <a class="el" href="classthrill_1_1api_1_1SortNode.html#a8dc17d3b2eaf7f062b18ca8e6cdae54b">TranmissionStreamType</a> &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00082">82</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8dc17d3b2eaf7f062b18ca8e6cdae54b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classthrill_1_1api_1_1SortNode.html#a8dc17d3b2eaf7f062b18ca8e6cdae54b">TranmissionStreamType</a> =  typename std::conditional&lt;Stable, <a class="el" href="classthrill_1_1data_1_1CatStream.html">data::CatStream</a>, <a class="el" href="classthrill_1_1data_1_1MixStream.html">data::MixStream</a>&gt;::type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stream type for item transmission depends on Stable flag. </p>
+
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00081">81</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -590,7 +671,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor for a sort node. </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00080">80</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00119">119</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -627,9 +708,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00412">412</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00452">452</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00422">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00462">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::TransmitItems()</a>.</p>
 
 </div>
 </div>
@@ -677,11 +758,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00325">325</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00365">365</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00407">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::LessSampleIndex()</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00024">LOG</a>, and <a class="el" href="context_8hpp_source.html#l00248">Context::num_workers()</a>.</p>
+<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00447">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::LessSampleIndex()</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00024">LOG</a>, and <a class="el" href="context_8hpp_source.html#l00248">Context::num_workers()</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00525">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00565">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -717,9 +798,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00407">407</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00447">447</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00325">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::FindAndSendSplitters()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00365">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::FindAndSendSplitters()</a>.</p>
 
 </div>
 </div>
@@ -744,13 +825,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00525">525</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00565">565</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="stream__data_8cpp_source.html#l00066">StreamData::Writers::Close()</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="porting_8hpp_source.html#l00042">thrill::common::CreateThread()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00351">FlowControlChannel::ExPrefixSumTotal()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00325">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::FindAndSendSplitters()</a>, <a class="el" href="context_8cpp_source.html#l01128">Context::GetNewMixStream()</a>, <a class="el" href="mix__block__queue_8hpp_source.html#l00182">MixBlockQueueReader::HasNext()</a>, <a class="el" href="integer__log2_8cpp_source.html#l00043">tlx::integer_log2_ceil()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00283">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::local_items_</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00307">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::local_out_size_</a>, <a class="el" href="context_8hpp_source.html#l00260">Context::local_worker_id()</a>, <a class="el" href="dia__base_8hpp_source.html#l00329">DIABase::logger_</a>, <a class="el" href="context_8hpp_source.html#l00240">Context::my_rank()</a>, <a class="el" href="context_8hpp_source.html#l00443">Context::net</a>, <a class="el" href="context_8hpp_source.html#l00248">Context::num_workers()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00653">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::ReceiveItems()</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00235">CountingPtr&lt; Type, Deleter &gt;::reset()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00289">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::samples_</a>, <a class="el" href="porting_8cpp_source.html#l00110">thrill::common::SetCpuAffinity()</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00034">sLOG</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00263">tlx::swap()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00318">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::timer_execute_</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00422">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00073">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::use_background_thread_</a>.</p>
+<p>References <a class="el" href="stream__data_8cpp_source.html#l00066">StreamData::Writers::Close()</a>, <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="porting_8hpp_source.html#l00042">thrill::common::CreateThread()</a>, <a class="el" href="flow__control__channel_8hpp_source.html#l00351">FlowControlChannel::ExPrefixSumTotal()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00365">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::FindAndSendSplitters()</a>, <a class="el" href="context_8cpp_source.html#l01128">Context::GetNewMixStream()</a>, <a class="el" href="mix__block__queue_8hpp_source.html#l00182">MixBlockQueueReader::HasNext()</a>, <a class="el" href="dia__base_8hpp_source.html#l00213">DIABase::id()</a>, <a class="el" href="integer__log2_8cpp_source.html#l00043">tlx::integer_log2_ceil()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00323">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::local_items_</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00347">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::local_out_size_</a>, <a class="el" href="context_8hpp_source.html#l00260">Context::local_worker_id()</a>, <a class="el" href="dia__base_8hpp_source.html#l00329">DIABase::logger_</a>, <a class="el" href="context_8hpp_source.html#l00240">Context::my_rank()</a>, <a class="el" href="context_8hpp_source.html#l00443">Context::net</a>, <a class="el" href="context_8hpp_source.html#l00248">Context::num_workers()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00693">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::ReceiveItems()</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00235">CountingPtr&lt; Type, Deleter &gt;::reset()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00329">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::samples_</a>, <a class="el" href="porting_8cpp_source.html#l00110">thrill::common::SetCpuAffinity()</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00034">sLOG</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00263">tlx::swap()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00358">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::timer_execute_</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00462">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::TransmitItems()</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00112">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::use_background_thread_</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8475a310755c4353c44b5f51a9f8d3b7"></a>
+<a class="anchor" id="a5c9e1b37888a6a0914fee0b505eb6e04"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -760,7 +841,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void ReceiveItems </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__data__layer.html#ga969da325e57eeefa9e0e2544086bee2d">data::MixStreamPtr</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classthrill_1_1api_1_1SortNode.html#a789aa823fe12452ed459aee692b6d4e4">TranmissionStreamPtr</a> &amp;&#160;</td>
           <td class="paramname"><em>data_stream</em></td><td>)</td>
           <td></td>
         </tr>
@@ -772,11 +853,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00653">653</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00693">693</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00027">LOG0</a>, <a class="el" href="dia__base_8hpp_source.html#l00314">DIABase::mem_limit_</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00172">thrill::mem::memory_exceeded</a>, <a class="el" href="context_8hpp_source.html#l00349">Context::PrintCollectiveMeanStdev()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00682">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::SortAndWriteToFile()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00061">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::stats_enabled</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00321">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::timer_sort_</a>.</p>
+<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00027">LOG0</a>, <a class="el" href="dia__base_8hpp_source.html#l00314">DIABase::mem_limit_</a>, <a class="el" href="malloc__tracker_8cpp_source.html#l00172">thrill::mem::memory_exceeded</a>, <a class="el" href="context_8hpp_source.html#l00349">Context::PrintCollectiveMeanStdev()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00722">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::SortAndWriteToFile()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00067">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::stats_enabled</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00361">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::timer_sort_</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00525">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00565">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -814,9 +895,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>round n down by k where k is a power of two. </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00418">418</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00458">458</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00422">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00462">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::TransmitItems()</a>.</p>
 
 </div>
 </div>
@@ -842,15 +923,15 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00682">682</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00722">722</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00305">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::files_</a>, <a class="el" href="context_8hpp_source.html#l00280">Context::GetFile()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00307">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::local_out_size_</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00024">LOG</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00027">LOG0</a>, <a class="el" href="dia__base_8hpp_source.html#l00329">DIABase::logger_</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00083">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::sort_algorithm_</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00321">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::timer_sort_</a>.</p>
+<p>References <a class="el" href="dia__base_8hpp_source.html#l00293">DIABase::context_</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00345">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::files_</a>, <a class="el" href="context_8hpp_source.html#l00280">Context::GetFile()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00347">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::local_out_size_</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00024">LOG</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00027">LOG0</a>, <a class="el" href="dia__base_8hpp_source.html#l00329">DIABase::logger_</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00122">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::sort_algorithm_</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00361">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::timer_sort_</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00653">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::ReceiveItems()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00693">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::ReceiveItems()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afd4c0a4ec3e1baab533888cb64d895a8"></a>
+<a class="anchor" id="a08e35ebdf936873c384117e55f2fa658"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -896,7 +977,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__data__layer.html#ga969da325e57eeefa9e0e2544086bee2d">data::MixStreamPtr</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classthrill_1_1api_1_1SortNode.html#a789aa823fe12452ed459aee692b6d4e4">TranmissionStreamPtr</a> &amp;&#160;</td>
           <td class="paramname"><em>data_stream</em>&#160;</td>
         </tr>
         <tr>
@@ -912,11 +993,11 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00422">422</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00462">462</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00412">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::EqualSampleGreaterIndex()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00073">File::GetConsumeReader()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00283">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::local_items_</a>, <a class="el" href="block__reader_8hpp_source.html#l00089">BlockReader&lt; BlockSource &gt;::Next()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00418">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::RoundDown()</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00263">tlx::swap()</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00279">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::unsorted_file_</a>.</p>
+<p>References <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00452">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::EqualSampleGreaterIndex()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00073">File::GetConsumeReader()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00323">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::local_items_</a>, <a class="el" href="block__reader_8hpp_source.html#l00089">BlockReader&lt; BlockSource &gt;::Next()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00458">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::RoundDown()</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00263">tlx::swap()</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00319">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::unsorted_file_</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00525">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00565">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -943,9 +1024,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>calculate currently desired number of samples </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00295">295</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00335">335</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>References <a class="el" href="reservoir__sampling_8hpp_source.html#l00270">ReservoirSamplingGrow&lt; Type, RNG &gt;::calc_sample_size()</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00291">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::res_sampler_</a>.</p>
+<p>References <a class="el" href="reservoir__sampling_8hpp_source.html#l00270">ReservoirSamplingGrow&lt; Type, RNG &gt;::calc_sample_size()</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00331">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::res_sampler_</a>.</p>
 
 </div>
 </div>
@@ -968,7 +1049,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00058">58</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00064">64</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -992,7 +1073,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>epsilon </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00286">286</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00326">326</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -1008,9 +1089,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Local data files. </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00305">305</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00345">345</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00682">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::SortAndWriteToFile()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00722">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::SortAndWriteToFile()</a>.</p>
 
 </div>
 </div>
@@ -1026,9 +1107,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Number of items on this worker. </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00283">283</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00323">323</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00525">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00422">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00565">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::MainOp()</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00462">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::TransmitItems()</a>.</p>
 
 </div>
 </div>
@@ -1044,9 +1125,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Total number of local elements after communication. </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00307">307</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00347">347</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00525">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00682">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::SortAndWriteToFile()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00565">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::MainOp()</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00722">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::SortAndWriteToFile()</a>.</p>
 
 </div>
 </div>
@@ -1062,7 +1143,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Whether the parent stack is empty. </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00273">273</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00313">313</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -1081,9 +1162,9 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 <p>Reservoir sampler. </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00291">291</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00331">331</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00295">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::wanted_sample_size()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00335">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::wanted_sample_size()</a>.</p>
 
 </div>
 </div>
@@ -1099,9 +1180,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sample vector: pairs of (sample,local index) </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00289">289</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00329">329</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00525">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00565">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -1117,9 +1198,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sort function class. </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00083">83</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00122">122</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00682">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::SortAndWriteToFile()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00722">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::SortAndWriteToFile()</a>.</p>
 
 </div>
 </div>
@@ -1143,9 +1224,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Set this variable to true to enable generation and output of stats. </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00061">61</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00067">67</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00653">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::ReceiveItems()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00693">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::ReceiveItems()</a>.</p>
 
 </div>
 </div>
@@ -1161,9 +1242,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>time spent in Execute </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00318">318</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00358">358</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00525">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00565">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -1179,7 +1260,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>time spent in PreOp (including preceding Node's computation) </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00315">315</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00355">355</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -1195,9 +1276,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>time spent in sort() </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00321">321</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00361">361</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00653">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::ReceiveItems()</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00682">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::SortAndWriteToFile()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00693">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::ReceiveItems()</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00722">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::SortAndWriteToFile()</a>.</p>
 
 </div>
 </div>
@@ -1213,9 +1294,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>All local unsorted items before communication. </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00279">279</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00319">319</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00422">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::TransmitItems()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00462">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::TransmitItems()</a>.</p>
 
 </div>
 </div>
@@ -1231,7 +1312,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Writer for unsorted_file_. </p>
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00281">281</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00321">321</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
 </div>
 </div>
@@ -1253,9 +1334,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00073">73</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00112">112</a> of file <a class="el" href="thrill_2api_2sort_8hpp_source.html">sort.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00525">SortNode&lt; ValueType, CompareFunction, SortAlgorithm &gt;::MainOp()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00565">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::MainOp()</a>.</p>
 
 </div>
 </div>
@@ -1268,7 +1349,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1api.html">api</a></li><li class="navelem"><a class="el" href="classthrill_1_1api_1_1SortNode.html">SortNode</a></li>
-    <li class="footer">Generated on Thu Sep 27 2018 16:51:55 for Thrill by
+    <li class="footer">Generated on Thu Sep 27 2018 21:59:37 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

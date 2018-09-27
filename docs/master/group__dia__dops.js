@@ -94,6 +94,8 @@ var group__dia__dops =
     [ "ReduceToIndex", "group__dia__dops.html#gaf6b6ac9018486a7998799de3914a6dca", null ],
     [ "Sort", "group__dia__dops.html#ga8932521ceb83dcba7dbe69b914523dd4", null ],
     [ "Sort", "group__dia__dops.html#ga7c40b724110e824b59084371a6952202", null ],
+    [ "SortStable", "group__dia__dops.html#ga0048589266b038bc991f0a62fb1189a7", null ],
+    [ "SortStable", "group__dia__dops.html#gac8f8f5336f5a3bee41d721b51dc27095", null ],
     [ "Window", "group__dia__dops.html#gaecf7738614c339f5c2af6e26e104e7ed", null ],
     [ "Window", "group__dia__dops.html#ga96dd81d9e90c6381f7144fd5bfa73610", null ],
     [ "Window", "group__dia__dops.html#ga7b7a92ae849f4552ea10adcf445c0bb4", null ],
