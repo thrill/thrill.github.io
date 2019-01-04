@@ -27,6 +27,7 @@ var searchData=
   ['notify_5fwaiters',['notify_waiters',['../classfoxxll_1_1request__interface.html#af1b0a73fccd3a5f6b0cc5285c9f0d38c',1,'foxxll::request_interface::notify_waiters()'],['../classfoxxll_1_1request__with__waiters.html#abd31a7757361847012d04729ae2002ce',1,'foxxll::request_with_waiters::notify_waiters()']]],
   ['num_5fblocks',['num_blocks',['../classthrill_1_1core_1_1ReduceBucketHashTable.html#ae0f9086a50c83cba3e748cd7f2ab44ce',1,'thrill::core::ReduceBucketHashTable::num_blocks()'],['../classthrill_1_1data_1_1File.html#ae0f9086a50c83cba3e748cd7f2ab44ce',1,'thrill::data::File::num_blocks()']]],
   ['num_5fbuckets',['num_buckets',['../classthrill_1_1core_1_1ReduceTable.html#a46fdaa65eee84a26bb9139761bd287f9',1,'thrill::core::ReduceTable']]],
+  ['num_5fbuckets_5f',['num_buckets_',['../classtlx_1_1radix__heap__detail_1_1BucketComputation.html#a34be477e84fd613b3135b599b782bbe0',1,'tlx::radix_heap_detail::BucketComputation']]],
   ['num_5fbuckets_5fper_5fpartition',['num_buckets_per_partition',['../classthrill_1_1core_1_1ReduceTable.html#a271f4c8af2921281d7cfba80f09449c9',1,'thrill::core::ReduceTable']]],
   ['num_5fclusters',['num_clusters',['../classexamples_1_1k__means_1_1KMeansModel.html#a1ed0d7487b54586d5a24eb39afed2c78',1,'examples::k_means::KMeansModel']]],
   ['num_5ffiles',['num_files',['../classfoxxll_1_1stats__data.html#aa57c6d194a36b0712a7866fa9c8005a4',1,'foxxll::stats_data']]],

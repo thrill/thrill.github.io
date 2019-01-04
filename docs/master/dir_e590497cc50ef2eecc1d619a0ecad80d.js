@@ -1,6 +1,6 @@
 var dir_e590497cc50ef2eecc1d619a0ecad80d =
 [
-    [ "aggregate.hpp", "aggregate_8hpp.html", "aggregate_8hpp" ],
+    [ "aggregate.hpp", "thrill_2common_2aggregate_8hpp.html", "thrill_2common_2aggregate_8hpp" ],
     [ "atomic_movable.hpp", "atomic__movable_8hpp.html", "atomic__movable_8hpp" ],
     [ "binary_heap.hpp", "binary__heap_8hpp.html", "binary__heap_8hpp" ],
     [ "concurrent_bounded_queue.hpp", "concurrent__bounded__queue_8hpp.html", "concurrent__bounded__queue_8hpp" ],

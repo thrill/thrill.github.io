@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('thrill_2common_2radix__sort_8hpp_sourc
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        std::less&lt;typename std::iterator_traits&lt;Iterator&gt;::value_type&gt;,</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">typename</span> SubSorter = NoOperation&lt;void&gt; &gt;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespacethrill_1_1common.html#a13b9c9890284e090203e8473866f73e7">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#a13b9c9890284e090203e8473866f73e7">radix_sort_CI</a>(Iterator begin, Iterator end, <span class="keywordtype">size_t</span> K,</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespacethrill_1_1common.html#a13b9c9890284e090203e8473866f73e7">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#a13b9c9890284e090203e8473866f73e7">radix_sort_CI</a>(Iterator begin, Iterator end, <span class="keywordtype">size_t</span> <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>,</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                   <span class="keyword">const</span> Comparator&amp; cmp,</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                   <span class="keyword">const</span> SubSorter&amp; sub_sort, <span class="keywordtype">size_t</span> depth,</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                   Char* char_cache) {</div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('thrill_2common_2radix__sort_8hpp_sourc
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">size_t</span>* bkt_index = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">size_t</span>*<span class="keyword">&gt;</span>(alloca(K * <span class="keyword">sizeof</span>(<span class="keywordtype">size_t</span>)));</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    bkt_index[0] = bkt_size[0];</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">size_t</span> last_bkt_size = bkt_size[0];</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; K; ++i) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>; ++i) {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        bkt_index[i] = bkt_index[i - 1] + bkt_size[i];</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (bkt_size[i]) last_bkt_size = bkt_size[i];</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('thrill_2common_2radix__sort_8hpp_sourc
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span> (depth + 1 == MaxDepth) {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="comment">// allow post-radix sorting when max depth is reached</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">size_t</span> bsum = 0;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; K; bsum += bkt_size[i++]) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>; bsum += bkt_size[i++]) {</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">if</span> (bkt_size[i] &lt;= 1) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            sub_sort(begin + bsum, begin + bsum + bkt_size[i], cmp);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
@@ -211,11 +211,11 @@ $(document).ready(function(){initNavTree('thrill_2common_2radix__sort_8hpp_sourc
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">// recurse</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">size_t</span> bsum = 0;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; K; bsum += bkt_size[i++]) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>; bsum += bkt_size[i++]) {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">if</span> (bkt_size[i] &lt;= 1) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            radix_sort_CI&lt;MaxDepth&gt;(</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                begin + bsum, begin + bsum + bkt_size[i],</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                K, cmp, sub_sort, depth + 1, char_cache);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>, cmp, sub_sort, depth + 1, char_cache);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
@@ -233,7 +233,7 @@ $(document).ready(function(){initNavTree('thrill_2common_2radix__sort_8hpp_sourc
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        std::less&lt;typename std::iterator_traits&lt;Iterator&gt;::value_type&gt;,</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">typename</span> SubSorter = NoOperation&lt;void&gt; &gt;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="namespacethrill_1_1common.html#a3df0fa3e73dc6d3c6c7916a35ae04cbc">  118</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#a13b9c9890284e090203e8473866f73e7">radix_sort_CI</a>(Iterator begin, Iterator end, <span class="keywordtype">size_t</span> K,</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="namespacethrill_1_1common.html#a3df0fa3e73dc6d3c6c7916a35ae04cbc">  118</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#a13b9c9890284e090203e8473866f73e7">radix_sort_CI</a>(Iterator begin, Iterator end, <span class="keywordtype">size_t</span> <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>,</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                   <span class="keyword">const</span> Comparator&amp; cmp = Comparator(),</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                   <span class="keyword">const</span> SubSorter&amp; sub_sort = SubSorter()) {</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
@@ -252,7 +252,7 @@ $(document).ready(function(){initNavTree('thrill_2common_2radix__sort_8hpp_sourc
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">// allocate character cache once</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    Char* char_cache = <span class="keyword">new</span> Char[size];</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    radix_sort_CI&lt;MaxDepth&gt;(</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        begin, end, K, cmp, sub_sort, <span class="comment">/* depth */</span> 0, char_cache);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        begin, end, <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>, cmp, sub_sort, <span class="comment">/* depth */</span> 0, char_cache);</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">delete</span>[] char_cache;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment"></span></div>
@@ -286,8 +286,9 @@ $(document).ready(function(){initNavTree('thrill_2common_2radix__sort_8hpp_sourc
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="thrill_2common_2logger_8hpp_html"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html">logger.hpp</a></div></div>
 <div class="ttc" id="namespacethrill_1_1common_html_a13b9c9890284e090203e8473866f73e7"><div class="ttname"><a href="namespacethrill_1_1common.html#a13b9c9890284e090203e8473866f73e7">thrill::common::radix_sort_CI</a></div><div class="ttdeci">static void radix_sort_CI(Iterator begin, Iterator end, size_t K, const Comparator &amp;cmp, const SubSorter &amp;sub_sort, size_t depth, Char *char_cache)</div><div class="ttdoc">Internal helper method, use radix_sort_CI below. </div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2radix__sort_8hpp_source.html#l00037">radix_sort.hpp:37</a></div></div>
-<div class="ttc" id="namespacetlx_html_ade1320658af9846df1831480a96e7a38"><div class="ttname"><a href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">tlx::swap</a></div><div class="ttdeci">void swap(CountingPtr&lt; A, D &gt; &amp;a1, CountingPtr&lt; A, D &gt; &amp;a2) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="counting__ptr_8hpp_source.html#l00263">counting_ptr.hpp:263</a></div></div>
+<div class="ttc" id="namespacetlx_html_ade1320658af9846df1831480a96e7a38"><div class="ttname"><a href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">tlx::swap</a></div><div class="ttdeci">void swap(CountingPtr&lt; A, D &gt; &amp;a1, CountingPtr&lt; A, D &gt; &amp;a2) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="counting__ptr_8hpp_source.html#l00320">counting_ptr.hpp:320</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1RadixSort_html_a173252c88258bbdf36761265600f24ae"><div class="ttname"><a href="classthrill_1_1common_1_1RadixSort.html#a173252c88258bbdf36761265600f24ae">thrill::common::RadixSort::K_</a></div><div class="ttdeci">const size_t K_</div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2radix__sort_8hpp_source.html#l00160">radix_sort.hpp:160</a></div></div>
+<div class="ttc" id="namespacetlx_1_1digest__detail_html_ac69b6c21c56ac7b34828ba2145b59709"><div class="ttname"><a href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">tlx::digest_detail::K</a></div><div class="ttdeci">static const uint64_t K[80]</div><div class="ttdef"><b>Definition:</b> <a href="sha512_8cpp_source.html#l00032">sha512.cpp:32</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1RadixSort_html_a60f0b0b782c6b44105b082c84a167d0b"><div class="ttname"><a href="classthrill_1_1common_1_1RadixSort.html#a60f0b0b782c6b44105b082c84a167d0b">thrill::common::RadixSort::operator()</a></div><div class="ttdeci">void operator()(Iterator begin, Iterator end, const CompareFunction &amp;cmp) const </div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2radix__sort_8hpp_source.html#l00151">radix_sort.hpp:151</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1RadixSort_html_ab0fb8187701feff11de7c1bc1d918bf1"><div class="ttname"><a href="classthrill_1_1common_1_1RadixSort.html#ab0fb8187701feff11de7c1bc1d918bf1">thrill::common::RadixSort::RadixSort</a></div><div class="ttdeci">RadixSort(size_t K)</div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2radix__sort_8hpp_source.html#l00149">radix_sort.hpp:149</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1RadixSort_html"><div class="ttname"><a href="classthrill_1_1common_1_1RadixSort.html">thrill::common::RadixSort</a></div><div class="ttdoc">SortAlgorithm class for use with api::Sort() which calls radix_sort_CI() if K is small enough...</div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2radix__sort_8hpp_source.html#l00146">radix_sort.hpp:146</a></div></div>
@@ -298,7 +299,7 @@ $(document).ready(function(){initNavTree('thrill_2common_2radix__sort_8hpp_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="thrill_2common_2radix__sort_8hpp.html">radix_sort.hpp</a></li>
-    <li class="footer">Generated on Thu Sep 27 2018 22:31:57 for Thrill by
+    <li class="footer">Generated on Fri Jan 4 2019 10:47:50 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

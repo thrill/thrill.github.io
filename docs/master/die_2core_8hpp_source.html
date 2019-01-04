@@ -266,9 +266,9 @@ $(document).ready(function(){initNavTree('die_2core_8hpp_source.html','');});
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">        auto x__ = (X);                                     </span><span class="comment">/* NOLINT */</span><span class="preprocessor"> \</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">        auto y__ = (Y);                                     </span><span class="comment">/* NOLINT */</span><span class="preprocessor"> \</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">        if (!::tlx::die_equal_eps_compare(x__, y__, eps))                \</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">            die(&quot;DIE-UNEQUAL-EPS: &quot; #X &quot; != &quot; #Y &quot; : &quot;                   \</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">                &lt;&lt; std::setprecision(18)                                 \</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">                &lt;&lt; &quot;\&quot;&quot; &lt;&lt; x__ &lt;&lt; &quot;\&quot; != \&quot;&quot; &lt;&lt; y__ &lt;&lt; &quot;\&quot;&quot;);            \</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">            tlx_die(&quot;DIE-UNEQUAL-EPS: &quot; #X &quot; != &quot; #Y &quot; : &quot;               \</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">                    &lt;&lt; std::setprecision(18)                             \</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">                    &lt;&lt; &quot;\&quot;&quot; &lt;&lt; x__ &lt;&lt; &quot;\&quot; != \&quot;&quot; &lt;&lt; y__ &lt;&lt; &quot;\&quot;&quot;);        \</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">    } while (false)</span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">//! Check that ABS(X - Y) &lt;= 0.000001 or die miserably, but output the values of</span></div>
@@ -277,27 +277,49 @@ $(document).ready(function(){initNavTree('die_2core_8hpp_source.html','');});
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">    die_unequal_eps(X, Y, 1e-6)</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">// die_unless_throws()</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">// die_equal()</span></div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">//! Define to check that [code] throws and exception of given type</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="die_2core_8hpp.html#ae5ae25a771b222c30b34dd93e878bc70">  165</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define tlx_die_unless_throws(code, exception_type)                         \</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">    do {                                                                    \</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">        try {                                                               \</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">            code;                                                           \</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">        }                                                                   \</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">        catch (const exception_type&amp;) {                                     \</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">            break;                                                          \</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">        }                                                                   \</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">        ::tlx::die_with_message(                                            \</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">            &quot;DIE-UNLESS-THROWS: &quot; #code &quot; - NO EXCEPTION &quot; #exception_type, \</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">            __FILE__, __LINE__);                                            \</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">    } while (false)</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;} <span class="comment">// namespace tlx</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#endif // !TLX_DIE_CORE_HEADER</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">//! Die miserably if X == Y, but first output the values of X and Y for better</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment">//! debugging.</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="die_2core_8hpp.html#a0d3e703383d8ee82ec46e3b72974b5f4">  166</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define tlx_die_equal(X, Y)                                                  \</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">    do {                                                                     \</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">        auto x__ = (X);                                     </span><span class="comment">/* NOLINT */</span><span class="preprocessor">     \</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">        auto y__ = (Y);                                     </span><span class="comment">/* NOLINT */</span><span class="preprocessor">     \</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">        if (::tlx::die_equal_compare(x__, y__))                              \</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">            tlx_die_with_sstream(&quot;DIE-EQUAL: &quot; #X &quot; == &quot; #Y &quot; : &quot;            \</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">                                 &quot;\&quot;&quot; &lt;&lt; x__ &lt;&lt; &quot;\&quot; == \&quot;&quot; &lt;&lt; y__ &lt;&lt; &quot;\&quot;&quot;);  \</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">    } while (false)</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">//! Die miserably if X == Y, but first output the values of X and Y for better</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">//! debugging. Only active if NDEBUG is not defined.</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment"></span><span class="preprocessor">#ifdef NDEBUG</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define tlx_assert_unequal(X, Y)</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="die_2core_8hpp.html#aece8f3f5e64bb5e611fe6c21f0106dd1">  180</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define tlx_assert_unequal(X, Y)  die_equal(X, Y)</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">// die_unless_throws()</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">//! Define to check that [code] throws and exception of given type</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="die_2core_8hpp.html#ae5ae25a771b222c30b34dd93e878bc70">  187</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define tlx_die_unless_throws(code, exception_type)                         \</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">    do {                                                                    \</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">        try {                                                               \</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">            code;                                                           \</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">        }                                                                   \</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">        catch (const exception_type&amp;) {                                     \</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">            break;                                                          \</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">        }                                                                   \</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">        ::tlx::die_with_message(                                            \</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">            &quot;DIE-UNLESS-THROWS: &quot; #code &quot; - NO EXCEPTION &quot; #exception_type, \</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">            __FILE__, __LINE__);                                            \</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor">    } while (false)</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;} <span class="comment">// namespace tlx</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#endif // !TLX_DIE_CORE_HEADER</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="namespacetlx_html_a9f3602febd2a4b1979c9846da4ce8d62"><div class="ttname"><a href="namespacetlx.html#a9f3602febd2a4b1979c9846da4ce8d62">tlx::die_unequal_eps_abs</a></div><div class="ttdeci">Type die_unequal_eps_abs(const Type &amp;t)</div><div class="ttdoc">simple replacement for std::abs </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00133">core.hpp:133</a></div></div>
 <div class="ttc" id="namespacetlx_html_aa17989dc1fbbf1047c8f238aaafe7092"><div class="ttname"><a href="namespacetlx.html#aa17989dc1fbbf1047c8f238aaafe7092">tlx::set_die_with_exception</a></div><div class="ttdeci">bool set_die_with_exception(bool b)</div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8cpp_source.html#l00052">core.cpp:52</a></div></div>
 <div class="ttc" id="namespacetlx_html_a9f8179e15f255f7283de043a22560c25"><div class="ttname"><a href="namespacetlx.html#a9f8179e15f255f7283de043a22560c25">tlx::die_equal_compare</a></div><div class="ttdeci">bool die_equal_compare(TypeA a, TypeB b)</div><div class="ttdoc">helper method to compare two values in die_unequal() </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00087">core.hpp:87</a></div></div>
@@ -314,7 +336,7 @@ $(document).ready(function(){initNavTree('die_2core_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="dir_040d6456d7c4169c1665ff610f656afd.html">die</a></li><li class="navelem"><a class="el" href="die_2core_8hpp.html">core.hpp</a></li>
-    <li class="footer">Generated on Thu Sep 27 2018 22:31:56 for Thrill by
+    <li class="footer">Generated on Fri Jan 4 2019 10:47:49 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

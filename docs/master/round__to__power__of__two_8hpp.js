@@ -1,15 +1,16 @@
 var round__to__power__of__two_8hpp =
 [
-    [ "round_down_to_power_of_two", "round__to__power__of__two_8hpp.html#gaa50e73c46089254357071626407f6ae5", null ],
-    [ "round_down_to_power_of_two", "round__to__power__of__two_8hpp.html#gabba29a3381e0f408d02fdcfcf902d231", null ],
-    [ "round_down_to_power_of_two", "round__to__power__of__two_8hpp.html#gab4491e641b62d7fce29c55c6f433eb27", null ],
-    [ "round_down_to_power_of_two", "round__to__power__of__two_8hpp.html#gac4552e08e9a23d0e81ee4f8ee59120cf", null ],
-    [ "round_down_to_power_of_two", "round__to__power__of__two_8hpp.html#ga8ec390489ce7fdc3894c0fad838cf5a1", null ],
-    [ "round_down_to_power_of_two", "round__to__power__of__two_8hpp.html#gaff63db7737beabefc45daa2078c4652a", null ],
-    [ "round_up_to_power_of_two", "round__to__power__of__two_8hpp.html#gaa9b29ed1503f8d8345c0b3c6daad3a63", null ],
-    [ "round_up_to_power_of_two", "round__to__power__of__two_8hpp.html#ga9684b11398f4dc70e94b512e70b791d7", null ],
-    [ "round_up_to_power_of_two", "round__to__power__of__two_8hpp.html#ga181e095bba991ad9f8174a6eff001ad7", null ],
-    [ "round_up_to_power_of_two", "round__to__power__of__two_8hpp.html#ga06e019352e0529b297d39bfbb591775f", null ],
-    [ "round_up_to_power_of_two", "round__to__power__of__two_8hpp.html#gad221e96917e629c78fde55e8a365691f", null ],
-    [ "round_up_to_power_of_two", "round__to__power__of__two_8hpp.html#ga6a38aaf9675c285b2902a60148a7e932", null ]
+    [ "round_down_to_power_of_two", "round__to__power__of__two_8hpp.html#ga8e1503ff2006eab64f6a702bb4965b35", null ],
+    [ "round_down_to_power_of_two", "round__to__power__of__two_8hpp.html#gad62c547eed2088bf2e338952977c2696", null ],
+    [ "round_down_to_power_of_two", "round__to__power__of__two_8hpp.html#ga83557872685572d2bab35dacf6940240", null ],
+    [ "round_down_to_power_of_two", "round__to__power__of__two_8hpp.html#ga0fc146aedd8d10a8572d7523b890c65f", null ],
+    [ "round_down_to_power_of_two", "round__to__power__of__two_8hpp.html#ga99a4ae2fc070fbdd749f0678cacd7cd5", null ],
+    [ "round_down_to_power_of_two", "round__to__power__of__two_8hpp.html#ga14aac3576b27b2d819ca2de74865930b", null ],
+    [ "round_up_to_power_of_two", "round__to__power__of__two_8hpp.html#ga615a4ea8e2e4afc7a4458665fa2c7f3e", null ],
+    [ "round_up_to_power_of_two", "round__to__power__of__two_8hpp.html#ga8e08db92d8bd0a2bf0125128f1e60f67", null ],
+    [ "round_up_to_power_of_two", "round__to__power__of__two_8hpp.html#ga949a8d8a48175dda1fde458fbf6441b7", null ],
+    [ "round_up_to_power_of_two", "round__to__power__of__two_8hpp.html#ga444256634f36f74fed26ddb2994fb39b", null ],
+    [ "round_up_to_power_of_two", "round__to__power__of__two_8hpp.html#gab826ccef9deef2a0b9a88f318de84b3c", null ],
+    [ "round_up_to_power_of_two", "round__to__power__of__two_8hpp.html#gae376e5cd1611f929c26fd0691c47e00e", null ],
+    [ "round_up_to_power_of_two_template", "round__to__power__of__two_8hpp.html#ga165140a3f756701491e3958c9858ea2c", null ]
 ];

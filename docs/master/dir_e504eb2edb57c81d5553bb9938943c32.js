@@ -35,6 +35,7 @@ var dir_e504eb2edb57c81d5553bb9938943c32 =
     [ "join_quoted.hpp", "join__quoted_8hpp.html", "join__quoted_8hpp" ],
     [ "less_icase.cpp", "less__icase_8cpp.html", "less__icase_8cpp" ],
     [ "less_icase.hpp", "less__icase_8hpp.html", "less__icase_8hpp" ],
+    [ "levenshtein.hpp", "levenshtein_8hpp.html", "levenshtein_8hpp" ],
     [ "pad.cpp", "pad_8cpp.html", "pad_8cpp" ],
     [ "pad.hpp", "pad_8hpp.html", "pad_8hpp" ],
     [ "parse_si_iec_units.cpp", "parse__si__iec__units_8cpp.html", "parse__si__iec__units_8cpp" ],

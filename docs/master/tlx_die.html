@@ -116,12 +116,14 @@ $(document).ready(function(){initNavTree('tlx_die.html','');});
 <li><code><a class="el" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless(condition)</a></code> - terminates if condition is false</li>
 <li><code><a class="el" href="die_8hpp.html#a104ef9af1dda7b166a22fea791aad044">die_if(condition)</a></code> - terminates if condition is true</li>
 <li><code><a class="el" href="die_8hpp.html#a334b021076c0dff0e3964c6819774ceb">die_unequal(a,b)</a></code> - terminates unless a == b.</li>
-<li><code><a class="el" href="die_8hpp.html#a1a7675ff116550671881ba49da77808c">die_unequal_eps6(a,b)</a></code> - terminates unless abs(a - b) &lt; 1e-6 for approximate equality .</li>
+<li><code><a class="el" href="die_8hpp.html#a1a7675ff116550671881ba49da77808c">die_unequal_eps6(a,b)</a></code> - terminates unless abs(a - b) &lt; 1e-6 for approximate equality.</li>
+<li><code><a class="el" href="die_8hpp.html#afec2d02d5fa715cd831e7aabb8734a73">die_equal(a,b)</a></code> - terminates if a == b.</li>
 <li><code><a class="el" href="die_8hpp.html#a357da842bf02c9445e820f483b301542" title="Define to check that [code] throws and exception of given type. ">die_unless_throws(code,exception)</a></code> - terminate if code does not throw the exception</li>
 </ul>
 <p>Furthermore, some additional assert macros are also available. These are only active in Debug mode, if NDEBUG is defined they are compiled out.</p>
 <ul>
 <li><code><a class="el" href="die_8hpp.html#a5085068329fda13af995242db4555038">assert_equal(a,b)</a></code> - checks if a == b.</li>
+<li><code><a class="el" href="die_8hpp.html#a2b352f8d766a97c1d9d6e83a1b726b54">assert_unequal(a,b)</a></code> - checks if a != b.</li>
 </ul>
 <p>tlx die macros can also be modified to throw a <a class="el" href="classtlx_1_1DieException.html" title="Exception thrown by die_with_message() if. ">DieException</a> instead of calling std::terminate. Either call <code>set_die_with_exception(true)</code> to define TLX_DIE_WITH_EXCEPTION=1 using the preprocessor. </p>
 </div></div><!-- contents -->
@@ -130,7 +132,7 @@ $(document).ready(function(){initNavTree('tlx_die.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="tlx.html">tlx - Collection of C++ Data Structures, Algorithms, and Miscellaneous Helpers</a></li>
-    <li class="footer">Generated on Thu Sep 27 2018 22:32:00 for Thrill by
+    <li class="footer">Generated on Fri Jan 4 2019 10:47:52 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

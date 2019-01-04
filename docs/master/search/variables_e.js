@@ -17,6 +17,7 @@ var searchData=
   ['operations',['operations',['../structfoxxll_1_1block__scheduler__algorithm__offline__lru__prefetching_1_1scheduled__block__meta.html#a8de33f6c68536c58856a4ab56eab51fe',1,'foxxll::block_scheduler_algorithm_offline_lru_prefetching::scheduled_block_meta']]],
   ['option_5flist_5f',['option_list_',['../classtlx_1_1CmdlineParser.html#a1dfdda1dfa78d1addc33aaf91f6867a1',1,'tlx::CmdlineParser']]],
   ['option_5fmax_5fwidth_5f',['option_max_width_',['../classtlx_1_1CmdlineParser.html#a2780792d90885744803a109cdbd3608a',1,'tlx::CmdlineParser']]],
+  ['order_5f',['order_',['../classtlx_1_1PolynomialRegression.html#a4a9443feba0295716bb0c5dada330699',1,'tlx::PolynomialRegression']]],
   ['os_5f',['os_',['../classthrill_1_1common_1_1JsonLogger.html#af3e2ff16a050867067545823b4aeec02',1,'thrill::common::JsonLogger::os_()'],['../classthrill_1_1common_1_1JsonLine.html#af20ae96d3a771bd807d36aae8cfd0d4b',1,'thrill::common::JsonLine::os_()'],['../classtlx_1_1LoggerTupleFormatter.html#af20ae96d3a771bd807d36aae8cfd0d4b',1,'tlx::LoggerTupleFormatter::os_()']]],
   ['oss_5f',['oss_',['../classtlx_1_1Logger.html#acbe8bc75214c441a925eb2ab98ff869d',1,'tlx::Logger::oss_()'],['../classtlx_1_1SpacingLogger.html#acbe8bc75214c441a925eb2ab98ff869d',1,'tlx::SpacingLogger::oss_()'],['../classtlx_1_1LoggerCollectOutput.html#acbe8bc75214c441a925eb2ab98ff869d',1,'tlx::LoggerCollectOutput::oss_()']]],
   ['out',['out',['../structthrill_1_1common_1_1alias__cast__helper.html#affbdfaecff3a3730dd4a7e2732726835',1,'thrill::common::alias_cast_helper']]],

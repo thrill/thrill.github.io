@@ -1,6 +1,7 @@
 var searchData=
 [
   ['die',['die',['../die_8hpp.html#ab6acaec854169756098dfd26138a1a0e',1,'die.hpp']]],
+  ['die_5fequal',['die_equal',['../die_8hpp.html#afec2d02d5fa715cd831e7aabb8734a73',1,'die.hpp']]],
   ['die_5fif',['die_if',['../die_8hpp.html#a104ef9af1dda7b166a22fea791aad044',1,'die.hpp']]],
   ['die_5funequal',['die_unequal',['../die_8hpp.html#a334b021076c0dff0e3964c6819774ceb',1,'die.hpp']]],
   ['die_5funequal_5feps',['die_unequal_eps',['../die_8hpp.html#a6b7ce407ec77acd1f6b146c1a6ea65ef',1,'die.hpp']]],

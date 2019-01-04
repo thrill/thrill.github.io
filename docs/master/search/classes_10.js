@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['radixheap',['RadixHeap',['../classtlx_1_1RadixHeap.html',1,'tlx']]],
   ['radixsort',['RadixSort',['../classthrill_1_1common_1_1RadixSort.html',1,'thrill::common']]],
   ['radixstep_5fce0',['RadixStep_CE0',['../structtlx_1_1sort__strings__detail_1_1RadixStep__CE0.html',1,'tlx::sort_strings_detail']]],
   ['radixstep_5fce2',['RadixStep_CE2',['../structtlx_1_1sort__strings__detail_1_1RadixStep__CE2.html',1,'tlx::sort_strings_detail']]],
@@ -65,8 +66,8 @@ var searchData=
   ['reducetableselect_3c_20reducetableimpl_3a_3aprobing_2c_20tableitem_2c_20key_2c_20value_2c_20keyextractor_2c_20reducefunction_2c_20emitter_2c_20volatilekey_2c_20reduceconfig_2c_20indexfunction_2c_20keyequalfunction_20_3e',['ReduceTableSelect&lt; ReduceTableImpl::PROBING, TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig, IndexFunction, KeyEqualFunction &gt;',['../classthrill_1_1core_1_1ReduceTableSelect_3_01ReduceTableImpl_1_1PROBING_00_01TableItem_00_01Key_c274b996ad6a3c4a1d81b4d831bc02b4.html',1,'thrill::core']]],
   ['reducetoindexnode',['ReduceToIndexNode',['../classthrill_1_1api_1_1ReduceToIndexNode.html',1,'thrill::api']]],
   ['referencecounter',['ReferenceCounter',['../classtlx_1_1ReferenceCounter.html',1,'tlx']]],
-  ['registerparent',['RegisterParent',['../classthrill_1_1api_1_1ZipNode_1_1RegisterParent.html',1,'thrill::api::ZipNode']]],
   ['registerparent',['RegisterParent',['../classthrill_1_1api_1_1ZipWindowNode_1_1RegisterParent.html',1,'thrill::api::ZipWindowNode']]],
+  ['registerparent',['RegisterParent',['../classthrill_1_1api_1_1ZipNode_1_1RegisterParent.html',1,'thrill::api::ZipNode']]],
   ['request',['request',['../classfoxxll_1_1request.html',1,'foxxll']]],
   ['request_5finterface',['request_interface',['../classfoxxll_1_1request__interface.html',1,'foxxll']]],
   ['request_5fqueue',['request_queue',['../classfoxxll_1_1request__queue.html',1,'foxxll']]],
@@ -81,8 +82,8 @@ var searchData=
   ['reservoirsamplinggrow',['ReservoirSamplingGrow',['../classthrill_1_1common_1_1ReservoirSamplingGrow.html',1,'thrill::common']]],
   ['reservoirsamplinggrow_3c_20sampleindexpair_20_3e',['ReservoirSamplingGrow&lt; SampleIndexPair &gt;',['../classthrill_1_1common_1_1ReservoirSamplingGrow.html',1,'thrill::common']]],
   ['resource_5ferror',['resource_error',['../classfoxxll_1_1resource__error.html',1,'foxxll']]],
-  ['result',['Result',['../structthrill_1_1core_1_1ReduceByHash_1_1Result.html',1,'thrill::core::ReduceByHash']]],
   ['result',['Result',['../structthrill_1_1core_1_1ReduceByIndex_1_1Result.html',1,'thrill::core::ReduceByIndex']]],
+  ['result',['Result',['../structthrill_1_1core_1_1ReduceByHash_1_1Result.html',1,'thrill::core::ReduceByHash']]],
   ['result_5ft',['result_t',['../structtlx_1_1BTree_1_1result__t.html',1,'tlx::BTree']]],
   ['reverse_5fiterator',['reverse_iterator',['../classtlx_1_1BTree_1_1reverse__iterator.html',1,'tlx::BTree']]],
   ['ringbuffer',['RingBuffer',['../classtlx_1_1RingBuffer.html',1,'tlx']]],

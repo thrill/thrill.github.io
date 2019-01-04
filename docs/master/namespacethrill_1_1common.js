@@ -1,7 +1,6 @@
 var namespacethrill_1_1common =
 [
     [ "qsort_local", "namespacethrill_1_1common_1_1qsort__local.html", null ],
-    [ "Aggregate", "classthrill_1_1common_1_1Aggregate.html", "classthrill_1_1common_1_1Aggregate" ],
     [ "alias_cast_helper", "structthrill_1_1common_1_1alias__cast__helper.html", "structthrill_1_1common_1_1alias__cast__helper" ],
     [ "AtomicMovable", "classthrill_1_1common_1_1AtomicMovable.html", "classthrill_1_1common_1_1AtomicMovable" ],
     [ "BinaryHeap", "classthrill_1_1common_1_1BinaryHeap.html", "classthrill_1_1common_1_1BinaryHeap" ],

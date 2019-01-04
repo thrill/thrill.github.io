@@ -19,6 +19,7 @@ var dir_32b7cef035cecd0b10cd51669c590a1c =
       [ "Loser", "structtlx_1_1LoserTreePointerUnguardedBase_1_1Loser.html", "structtlx_1_1LoserTreePointerUnguardedBase_1_1Loser" ]
     ] ],
     [ "lru_cache.hpp", "lru__cache_8hpp.html", null ],
+    [ "radix_heap.hpp", "radix__heap_8hpp.html", "radix__heap_8hpp" ],
     [ "ring_buffer.hpp", "extlib_2tlx_2tlx_2container_2ring__buffer_8hpp.html", null ],
     [ "simple_vector.hpp", "container_2simple__vector_8hpp.html", "container_2simple__vector_8hpp" ]
 ];

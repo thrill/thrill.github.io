@@ -122,6 +122,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_v.html#index_v"><span>v</span></a></li>
       <li><a href="functions_w.html#index_w"><span>w</span></a></li>
       <li><a href="functions_x.html#index_x"><span>x</span></a></li>
+      <li><a href="functions_y.html#index_y"><span>y</span></a></li>
       <li><a href="functions_z.html#index_z"><span>z</span></a></li>
       <li><a href="functions_~.html#index_~"><span>~</span></a></li>
     </ul>
@@ -220,12 +221,19 @@ $(document).ready(function(){initNavTree('functions_e.html','');});
 : <a class="el" href="classthrill_1_1common_1_1BinaryHeap.html#a8fa02e7fb3eb0bd8a2e53eb803144bbd">BinaryHeap&lt; Type, Compare &gt;</a>
 , <a class="el" href="classthrill_1_1common_1_1OurConcurrentBoundedQueue.html#adb6454f47cdb28fc777e0c93a03247f6">OurConcurrentBoundedQueue&lt; T &gt;</a>
 , <a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html#adb6454f47cdb28fc777e0c93a03247f6">OurConcurrentQueue&lt; T, Allocator &gt;</a>
+, <a class="el" href="classtlx_1_1RadixHeap.html#a67e7a63805152444c354cc80500d459f">RadixHeap&lt; ValueType, KeyExtract, KeyType, Radix &gt;</a>
 </li>
 <li>emplace_back()
 : <a class="el" href="classtlx_1_1RingBuffer.html#ab5b725de047e6b4434ba01741744e457">RingBuffer&lt; Type, Allocator &gt;</a>
 </li>
 <li>emplace_front()
 : <a class="el" href="classtlx_1_1RingBuffer.html#a4a6a8bd707b8f908f69aa43c366b07f4">RingBuffer&lt; Type, Allocator &gt;</a>
+</li>
+<li>emplace_in_bucket()
+: <a class="el" href="classtlx_1_1RadixHeap.html#a1a6e7a6662d2ce425df7b097519ee612">RadixHeap&lt; ValueType, KeyExtract, KeyType, Radix &gt;</a>
+</li>
+<li>emplace_keyfirst()
+: <a class="el" href="classtlx_1_1RadixHeap.html#adeda5444239d9574bbb90213e0e1e987">RadixHeap&lt; ValueType, KeyExtract, KeyType, Radix &gt;</a>
 </li>
 <li>empty()
 : <a class="el" href="classfoxxll_1_1addressable__fifo__queue.html#ac6e61de369e994009e36f344f99c15ad">addressable_fifo_queue&lt; KeyType &gt;</a>
@@ -245,6 +253,10 @@ $(document).ready(function(){initNavTree('functions_e.html','');});
 , <a class="el" href="classtlx_1_1CountingPtr.html#a3f6fc5de06a318920d84f3c3742db07f">CountingPtr&lt; Type, Deleter &gt;</a>
 , <a class="el" href="classtlx_1_1FunctionChain.html#a2bb4850fb72ed6359cb85aa86baee45c">FunctionChain&lt; Functors &gt;</a>
 , <a class="el" href="classtlx_1_1FunctionStack.html#a2bb4850fb72ed6359cb85aa86baee45c">FunctionStack&lt; Input_, Functors &gt;</a>
+, <a class="el" href="classtlx_1_1radix__heap__detail_1_1BitArray.html#ac6e61de369e994009e36f344f99c15ad">BitArray&lt; Size &gt;</a>
+, <a class="el" href="classtlx_1_1radix__heap__detail_1_1BitArrayRecursive_3_01Size_00_01false_01_4.html#ac6e61de369e994009e36f344f99c15ad">BitArrayRecursive&lt; Size, false &gt;</a>
+, <a class="el" href="classtlx_1_1radix__heap__detail_1_1BitArrayRecursive_3_01Size_00_01true_01_4.html#ac6e61de369e994009e36f344f99c15ad">BitArrayRecursive&lt; Size, true &gt;</a>
+, <a class="el" href="classtlx_1_1RadixHeap.html#ac6e61de369e994009e36f344f99c15ad">RadixHeap&lt; ValueType, KeyExtract, KeyType, Radix &gt;</a>
 , <a class="el" href="classtlx_1_1RingBuffer.html#a3f6fc5de06a318920d84f3c3742db07f">RingBuffer&lt; Type, Allocator &gt;</a>
 </li>
 <li>enable_consume()
@@ -252,6 +264,9 @@ $(document).ready(function(){initNavTree('functions_e.html','');});
 </li>
 <li>enable_stats
 : <a class="el" href="classthrill_1_1net_1_1FlowControlChannel.html#a424227f316f3ebacb9b777b32724e14a">FlowControlChannel</a>
+</li>
+<li>Encoder
+: <a class="el" href="classtlx_1_1RadixHeap.html#a26fa691ae1a37c9beb4ad65280c272e9">RadixHeap&lt; ValueType, KeyExtract, KeyType, Radix &gt;</a>
 </li>
 <li>end()
 : <a class="el" href="classfoxxll_1_1mng__local_1_1element__block.html#acad38d52497a975bfb6f2f6acd76631f">element_block&lt; Type, kSize &gt;</a>
@@ -314,15 +329,15 @@ $(document).ready(function(){initNavTree('functions_e.html','');});
 : <a class="el" href="classthrill_1_1api_1_1EqualToDIANode.html#a54d9406319092183d0f0bf5c26a3dcc4">EqualToDIANode&lt; ValueType &gt;</a>
 </li>
 <li>erase()
-: <a class="el" href="classfoxxll_1_1addressable__fifo__queue.html#acf572f57e5e0c6125afc79bc030bb315">addressable_fifo_queue&lt; KeyType &gt;</a>
+: <a class="el" href="classfoxxll_1_1addressable__fifo__queue.html#a77223d9646a7a8d7dcaa4f7896b3175e">addressable_fifo_queue&lt; KeyType &gt;</a>
 , <a class="el" href="classfoxxll_1_1addressable__priority__queue.html#a77223d9646a7a8d7dcaa4f7896b3175e">addressable_priority_queue&lt; KeyType, PriorityType, Cmp &gt;</a>
 , <a class="el" href="classthrill_1_1common_1_1BinaryHeap.html#a3c25b57771e8d9f1be545f3e7b97ecf3">BinaryHeap&lt; Type, Compare &gt;</a>
 , <a class="el" href="classthrill_1_1common_1_1SplayzTree.html#a55de340ce0775f1dbb713d35aa3fa6f4">SplayzTree&lt; Key &gt;</a>
 , <a class="el" href="classtlx_1_1BTree.html#ae57ff6dd1cb4dc347b892dfa87ea6613">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;</a>
 , <a class="el" href="classtlx_1_1btree__map.html#ae57ff6dd1cb4dc347b892dfa87ea6613">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;</a>
-, <a class="el" href="classtlx_1_1btree__multimap.html#ae57ff6dd1cb4dc347b892dfa87ea6613">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;</a>
+, <a class="el" href="classtlx_1_1btree__multimap.html#af8b2d25c3e313e0b24656afe5cd4f6f2">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;</a>
 , <a class="el" href="classtlx_1_1btree__multiset.html#ae57ff6dd1cb4dc347b892dfa87ea6613">btree_multiset&lt; Key_, Compare_, Traits_, Alloc_ &gt;</a>
-, <a class="el" href="classtlx_1_1btree__set.html#ae57ff6dd1cb4dc347b892dfa87ea6613">btree_set&lt; Key_, Compare_, Traits_, Alloc_ &gt;</a>
+, <a class="el" href="classtlx_1_1btree__set.html#af8b2d25c3e313e0b24656afe5cd4f6f2">btree_set&lt; Key_, Compare_, Traits_, Alloc_ &gt;</a>
 , <a class="el" href="classtlx_1_1LruCacheMap.html#ae1364dfb8a0155951a6f429588d0de68">LruCacheMap&lt; Key, Value, Alloc &gt;</a>
 , <a class="el" href="classtlx_1_1LruCacheSet.html#ae1364dfb8a0155951a6f429588d0de68">LruCacheSet&lt; Key, Alloc &gt;</a>
 </li>
@@ -351,6 +366,10 @@ $(document).ready(function(){initNavTree('functions_e.html','');});
 </li>
 <li>error_occured()
 : <a class="el" href="classfoxxll_1_1request.html#aa49dc491c12ebcb8f73b3bbcee1c3564">request</a>
+</li>
+<li>evaluate()
+: <a class="el" href="structtlx_1_1PolynomialRegression_1_1Coefficients.html#a777eb4e94305f08439d22c8fb65d5560">PolynomialRegression&lt; Type, WithStore &gt;::Coefficients</a>
+, <a class="el" href="classtlx_1_1PolynomialRegression.html#a3cce71967f6da4cf929c4d21693b46d5">PolynomialRegression&lt; Type, WithStore &gt;</a>
 </li>
 <li>evictable_blocks
 : <a class="el" href="classfoxxll_1_1block__scheduler__algorithm__offline__lfd.html#a935040e3c02848dbaa7eafd712dfc0e3">block_scheduler_algorithm_offline_lfd&lt; SwappableBlockType &gt;</a>
@@ -385,7 +404,7 @@ $(document).ready(function(){initNavTree('functions_e.html','');});
 : <a class="el" href="classthrill_1_1net_1_1tcp_1_1Select.html#a432446d6546d421f500713d7c16933de">Select</a>
 </li>
 <li>Exception()
-: <a class="el" href="classthrill_1_1net_1_1Exception.html#a3195492c7be066e8401dcd93ce048ee1">Exception</a>
+: <a class="el" href="classthrill_1_1net_1_1Exception.html#ae835ca52798f53003b5589bd0f19a409">Exception</a>
 </li>
 <li>ExceptionCallback()
 : <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a7b4b5d0c7a527b23d84056cb3fc6c87f">Dispatcher</a>
@@ -426,7 +445,7 @@ $(document).ready(function(){initNavTree('functions_e.html','');});
 <li>ExPrefixSum()
 : <a class="el" href="group__dia__dops.html#ga8b080a7545e8235fffc737171ab79986">DIA&lt; ValueType_, Stack_ &gt;</a>
 , <a class="el" href="classthrill_1_1net_1_1FlowControlChannel.html#a8d9da8cf5077a3f0be9b224a964cf792">FlowControlChannel</a>
-, <a class="el" href="group__net__layer.html#gaf34af12c526ff03420ecca17d3585110">Group</a>
+, <a class="el" href="group__net__layer.html#ga5452a330a7c9fe9eba7c7998edbd3f28">Group</a>
 </li>
 <li>ExPrefixSumPlusInt()
 : <a class="el" href="classthrill_1_1net_1_1Group.html#a956286a294d3dc338b992052f0a5f83b">Group</a>
@@ -480,7 +499,7 @@ $(document).ready(function(){initNavTree('functions_e.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Sep 27 2018 22:32:04 for Thrill by
+    <li class="footer">Generated on Fri Jan 4 2019 10:47:55 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

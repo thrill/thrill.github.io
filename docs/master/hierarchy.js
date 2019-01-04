@@ -13,8 +13,10 @@ var hierarchy =
     ] ],
     [ "BID< raw_size >", "classfoxxll_1_1BID.html", null ],
     [ "BinaryHeap< Timer >", "classthrill_1_1common_1_1BinaryHeap.html", null ],
+    [ "BitArray< num_buckets >", "classtlx_1_1radix__heap__detail_1_1BitArray.html", null ],
     [ "BTree< key_type, value_type, key_of_value, key_compare, traits, false, allocator_type >", "classtlx_1_1BTree.html", null ],
     [ "BTree< key_type, value_type, key_of_value, key_compare, traits, true, allocator_type >", "classtlx_1_1BTree.html", null ],
+    [ "BucketComputation< Radix, ranked_key_type >", "classtlx_1_1radix__heap__detail_1_1BucketComputation.html", null ],
     [ "buffered_writer< block_type >", "classfoxxll_1_1buffered__writer.html", null ],
     [ "CentroidAccumulated< Vector< D, double > >", "structexamples_1_1k__means_1_1CentroidAccumulated.html", null ],
     [ "InputArchive", null, [
@@ -323,7 +325,8 @@ var hierarchy =
     ] ],
     [ "vector< T >", null, [
       [ "StreamData::Writers", "classthrill_1_1data_1_1StreamData_1_1Writers.html", null ],
-      [ "FileList", "structthrill_1_1vfs_1_1FileList.html", null ]
+      [ "FileList", "structthrill_1_1vfs_1_1FileList.html", null ],
+      [ "PolynomialRegression< Type, WithStore >::Coefficients", "structtlx_1_1PolynomialRegression_1_1Coefficients.html", null ]
     ] ],
     [ "StringSetBase< GenericCharStringSet< CharType >, GenericCharStringSetTraits< CharType > >", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html", [
       [ "GenericCharStringSet< CharType >", "classtlx_1_1sort__strings__detail_1_1GenericCharStringSet.html", null ]
@@ -392,7 +395,6 @@ var hierarchy =
     [ "ZipWindowTraits< ReturnType(ClassType::*)(Args...) const  >", "structthrill_1_1api_1_1ZipWindowTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4.html", [
       [ "ZipWindowTraits< ReturnType(ClassType::*)(Args...)>", "structthrill_1_1api_1_1ZipWindowTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_4.html", null ]
     ] ],
-    [ "Aggregate< Type_ >", "classthrill_1_1common_1_1Aggregate.html", null ],
     [ "alias_cast_helper< To, From >", "structthrill_1_1common_1_1alias__cast__helper.html", null ],
     [ "BinaryHeap< Type, Compare >", "classthrill_1_1common_1_1BinaryHeap.html", null ],
     [ "ComponentSum< ArrayType, Operation >", "classthrill_1_1common_1_1ComponentSum.html", null ],
@@ -603,6 +605,7 @@ var hierarchy =
     ] ],
     [ "SimpleGlobUtil", "classthrill_1_1vfs_1_1glob__local_1_1SimpleGlobUtil.html", null ],
     [ "TemporaryDirectory", "classthrill_1_1vfs_1_1TemporaryDirectory.html", null ],
+    [ "Aggregate< Type_ >", "classtlx_1_1Aggregate.html", null ],
     [ "AllocatorBase< Type >", "classtlx_1_1AllocatorBase.html", [
       [ "AlignedAllocator< Type, BaseAllocator, Alignment >", "classthrill_1_1mem_1_1AlignedAllocator.html", null ],
       [ "Allocator< Type >", "classthrill_1_1mem_1_1Allocator.html", null ],
@@ -643,6 +646,8 @@ var hierarchy =
     [ "FunctionChain< Functors >", "classtlx_1_1FunctionChain.html", null ],
     [ "FunctionStack< Input_, Functors >", "classtlx_1_1FunctionStack.html", null ],
     [ "index_sequence< Indexes >", "structtlx_1_1index__sequence.html", null ],
+    [ "LevenshteinStandardICaseParameters", "structtlx_1_1LevenshteinStandardICaseParameters.html", null ],
+    [ "LevenshteinStandardParameters", "structtlx_1_1LevenshteinStandardParameters.html", null ],
     [ "Log2< Input >", "classtlx_1_1Log2.html", null ],
     [ "Log2< 0 >", "classtlx_1_1Log2_3_010_01_4.html", null ],
     [ "Log2< 1 >", "classtlx_1_1Log2_3_011_01_4.html", null ],
@@ -704,6 +709,16 @@ var hierarchy =
     [ "VMapForRangeImpl< Index, 0, Functor >", "classtlx_1_1meta__detail_1_1VMapForRangeImpl_3_01Index_00_010_00_01Functor_01_4.html", null ],
     [ "guarded_iterator< RandomAccessIterator, Comparator >", "classtlx_1_1multiway__merge__detail_1_1guarded__iterator.html", null ],
     [ "unguarded_iterator< RandomAccessIterator, Comparator >", "classtlx_1_1multiway__merge__detail_1_1unguarded__iterator.html", null ],
+    [ "PolynomialRegression< Type, WithStore >", "classtlx_1_1PolynomialRegression.html", null ],
+    [ "PolynomialRegression< Type, WithStore >::Point", "structtlx_1_1PolynomialRegression_1_1Point.html", null ],
+    [ "BitArray< Size >", "classtlx_1_1radix__heap__detail_1_1BitArray.html", null ],
+    [ "BitArrayRecursive< Size, SizeIsAtmost64 >", "classtlx_1_1radix__heap__detail_1_1BitArrayRecursive.html", null ],
+    [ "BitArrayRecursive< Size, false >", "classtlx_1_1radix__heap__detail_1_1BitArrayRecursive_3_01Size_00_01false_01_4.html", null ],
+    [ "BitArrayRecursive< Size, true >", "classtlx_1_1radix__heap__detail_1_1BitArrayRecursive_3_01Size_00_01true_01_4.html", null ],
+    [ "BucketComputation< Radix, Int >", "classtlx_1_1radix__heap__detail_1_1BucketComputation.html", null ],
+    [ "IntegerRank< Int >", "classtlx_1_1radix__heap__detail_1_1IntegerRank.html", null ],
+    [ "PairKeyExtract< KeyType, DataType >", "structtlx_1_1radix__heap__detail_1_1PairKeyExtract.html", null ],
+    [ "RadixHeap< ValueType, KeyExtract, KeyType, Radix >", "classtlx_1_1RadixHeap.html", null ],
     [ "ReferenceCounter", "classtlx_1_1ReferenceCounter.html", [
       [ "file", "classfoxxll_1_1file.html", [
         [ "disk_queued_file", "classfoxxll_1_1disk__queued__file.html", [

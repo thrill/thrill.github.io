@@ -177,17 +177,30 @@ $(document).ready(function(){initNavTree('die_8hpp_source.html','');});
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">    tlx_die_unequal_eps6(X, Y)</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// die_unless_throws()</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// die_equal()</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//! Define to check that [code] throws and exception of given type</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="die_8hpp.html#a357da842bf02c9445e820f483b301542">   65</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_unless_throws(code, exception_type) \</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">    tlx_die_unless_throws(code, exception_type)</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;} <span class="comment">// namespace tlx</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif // !TLX_DIE_HEADER</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//! Die miserably if X == Y, but first output the values of X and Y for better</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//! debugging.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="die_8hpp.html#afec2d02d5fa715cd831e7aabb8734a73">   66</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_equal(X, Y) \</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">    tlx_die_equal(X, Y)</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//! Die miserably if X == Y, but first output the values of X and Y for better</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//! debugging. Only active if NDEBUG is not defined.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="die_8hpp.html#a2b352f8d766a97c1d9d6e83a1b726b54">   71</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define assert_unequal(X, Y) \</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">    tlx_assert_unequal(X, Y)</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// die_unless_throws()</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//! Define to check that [code] throws and exception of given type</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="die_8hpp.html#a357da842bf02c9445e820f483b301542">   78</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_unless_throws(code, exception_type) \</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">    tlx_die_unless_throws(code, exception_type)</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;} <span class="comment">// namespace tlx</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif // !TLX_DIE_HEADER</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="die_2core_8hpp_html"><div class="ttname"><a href="die_2core_8hpp.html">core.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -195,7 +208,7 @@ $(document).ready(function(){initNavTree('die_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="die_8hpp.html">die.hpp</a></li>
-    <li class="footer">Generated on Thu Sep 27 2018 22:31:56 for Thrill by
+    <li class="footer">Generated on Fri Jan 4 2019 10:47:49 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1915,14 +1915,14 @@ $(document).ready(function(){initNavTree('hyperloglog_8cpp_source.html','');});
 <div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;        E_ -= bias;</div>
 <div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;    }</div>
 <div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;</div>
-<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;    <span class="keywordtype">double</span> H = E_;</div>
+<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="namespacetlx_1_1digest__detail.html#a4aa334dd681999fabd33513a4a557d99">H</a> = E_;</div>
 <div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;    <span class="keywordflow">if</span> (V != 0) {</div>
 <div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;        <span class="comment">// linear count</span></div>
 <div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;        H = m * log(static_cast&lt;double&gt;(m) / V);</div>
 <div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;    }</div>
 <div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160;</div>
 <div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;    <span class="keywordflow">if</span> (H &lt;= hyperloglog::threshold&lt;p&gt;()) {</div>
-<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;        <span class="keywordflow">return</span> H;</div>
+<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacetlx_1_1digest__detail.html#a4aa334dd681999fabd33513a4a557d99">H</a>;</div>
 <div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;    }</div>
 <div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;    <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;        <span class="keywordflow">return</span> E_;</div>
@@ -2111,6 +2111,7 @@ $(document).ready(function(){initNavTree('hyperloglog_8cpp_source.html','');});
 <div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a932debc07fec3c0abcfc6d76b9f1ed36"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a932debc07fec3c0abcfc6d76b9f1ed36">thrill::core::HyperLogLogRegisters::sparseListBuffer_</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; sparseListBuffer_</div><div class="ttdef"><b>Definition:</b> <a href="core_2hyperloglog_8hpp_source.html#l00075">hyperloglog.hpp:75</a></div></div>
 <div class="ttc" id="buffer__builder_8hpp_html"><div class="ttname"><a href="buffer__builder_8hpp.html">buffer_builder.hpp</a></div></div>
 <div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a60096541655c96c62d6457f8828397d5"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a60096541655c96c62d6457f8828397d5">thrill::core::HyperLogLogRegisters::toDense</a></div><div class="ttdeci">void toDense()</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01678">hyperloglog.cpp:1678</a></div></div>
+<div class="ttc" id="namespacetlx_1_1digest__detail_html_a4aa334dd681999fabd33513a4a557d99"><div class="ttname"><a href="namespacetlx_1_1digest__detail.html#a4aa334dd681999fabd33513a4a557d99">tlx::digest_detail::H</a></div><div class="ttdeci">static uint32_t H(const uint32_t &amp;x, const uint32_t &amp;y, const uint32_t &amp;z)</div><div class="ttdef"><b>Definition:</b> <a href="md5_8cpp_source.html#l00062">md5.cpp:62</a></div></div>
 <div class="ttc" id="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_html_a59b0aded0f8145a9cd94ecdd54e3831f"><div class="ttname"><a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a59b0aded0f8145a9cd94ecdd54e3831f">operator!=</a></div><div class="ttdeci">bool operator!=(const uint_pair &amp;b) const </div><div class="ttdoc">inequality checking operator </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_source.html#l00181">uint_types.hpp:181</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_aa42a5a5bfd200db14d3465cebef28413"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#aa42a5a5bfd200db14d3465cebef28413">thrill::core::hyperloglog::encodeHash&lt; 25, 12 &gt;</a></div><div class="ttdeci">template uint32_t encodeHash&lt; 25, 12 &gt;(uint64_t)</div></div>
 <div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a10333adff28be0677be5167361f35982"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a10333adff28be0677be5167361f35982">thrill::core::HyperLogLogRegisters::shouldConvertToDense</a></div><div class="ttdeci">bool shouldConvertToDense()</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01702">hyperloglog.cpp:1702</a></div></div>
@@ -2161,7 +2162,7 @@ $(document).ready(function(){initNavTree('hyperloglog_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_8bfba075c6cd97373f9ca7badca61766.html">core</a></li><li class="navelem"><a class="el" href="hyperloglog_8cpp.html">hyperloglog.cpp</a></li>
-    <li class="footer">Generated on Thu Sep 27 2018 22:31:58 for Thrill by
+    <li class="footer">Generated on Fri Jan 4 2019 10:47:50 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

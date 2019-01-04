@@ -366,7 +366,7 @@ $(document).ready(function(){initNavTree('dc3_8cpp_source.html','');});
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="keyword">class </span>RadixSortFragment</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;{</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keyword">explicit</span> RadixSortFragment(<span class="keywordtype">size_t</span> K) : K_(K) { }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keyword">explicit</span> RadixSortFragment(<span class="keywordtype">size_t</span> <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>) : K_(K) { }</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> CompareFunction&gt;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordtype">void</span> operator () (</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keyword">typename</span> std::vector&lt;Type&gt;::iterator begin,</div>
@@ -397,7 +397,7 @@ $(document).ready(function(){initNavTree('dc3_8cpp_source.html','');});
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index, <span class="keyword">typename</span> InputDIA&gt;</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;DIA&lt;dc3_local::StringFragment&lt;Index, typename InputDIA::ValueType&gt; &gt;</div>
-<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="namespaceexamples_1_1suffix__sorting.html#a8224fc645bed573823f2443c8e79f44b">  282</a></span>&#160;<a class="code" href="namespaceexamples_1_1suffix__sorting.html#a8224fc645bed573823f2443c8e79f44b">DC3Recursive</a>(<span class="keyword">const</span> InputDIA&amp; input_dia, <span class="keywordtype">size_t</span> input_size, <span class="keywordtype">size_t</span> K) {</div>
+<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="namespaceexamples_1_1suffix__sorting.html#a8224fc645bed573823f2443c8e79f44b">  282</a></span>&#160;<a class="code" href="namespaceexamples_1_1suffix__sorting.html#a8224fc645bed573823f2443c8e79f44b">DC3Recursive</a>(<span class="keyword">const</span> InputDIA&amp; input_dia, <span class="keywordtype">size_t</span> input_size, <span class="keywordtype">size_t</span> <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>) {</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keyword">using</span> Char = <span class="keyword">typename</span> InputDIA::ValueType;</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keyword">using</span> IndexChars = dc3_local::IndexChars&lt;Index, Char&gt;;</div>
@@ -444,7 +444,7 @@ $(document).ready(function(){initNavTree('dc3_8cpp_source.html','');});
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="comment">// sort triples by contained letters</span></div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        .Sort([](<span class="keyword">const</span> IndexChars&amp; a, <span class="keyword">const</span> IndexChars&amp; b) {</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                  <span class="keywordflow">return</span> a.chars &lt; b.chars;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;              }, <a class="code" href="classthrill_1_1common_1_1RadixSort.html">common::RadixSort&lt;IndexChars, 3&gt;</a>(K));</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;              }, <a class="code" href="classthrill_1_1common_1_1RadixSort.html">common::RadixSort&lt;IndexChars, 3&gt;</a>(<a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>));</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespaceexamples_1_1suffix__sorting.html#a363eaffff6eaa8040e98d838b3c0b585">debug_print</a>)</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        triple_sorted.Keep().Print(<span class="stringliteral">&quot;triple_sorted&quot;</span>);</div>
@@ -753,26 +753,26 @@ $(document).ready(function(){initNavTree('dc3_8cpp_source.html','');});
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;}</div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;</div>
 <div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Index, <span class="keyword">typename</span> InputDIA&gt;</div>
-<div class="line"><a name="l00638"></a><span class="lineno"><a class="line" href="namespaceexamples_1_1suffix__sorting.html#aa672a9ebf0ba0ad4030404e4cc38a6d6">  638</a></span>&#160;DIA&lt;Index&gt; <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a963a2e4c781861fd09051686f7b29346">DC3</a>(<span class="keyword">const</span> InputDIA&amp; input_dia, <span class="keywordtype">size_t</span> input_size, <span class="keywordtype">size_t</span> K) {</div>
+<div class="line"><a name="l00638"></a><span class="lineno"><a class="line" href="namespaceexamples_1_1suffix__sorting.html#aa672a9ebf0ba0ad4030404e4cc38a6d6">  638</a></span>&#160;DIA&lt;Index&gt; <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a963a2e4c781861fd09051686f7b29346">DC3</a>(<span class="keyword">const</span> InputDIA&amp; input_dia, <span class="keywordtype">size_t</span> input_size, <span class="keywordtype">size_t</span> <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>) {</div>
 <div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;</div>
 <div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    <span class="keyword">using</span> Char = <span class="keyword">typename</span> InputDIA::ValueType;</div>
 <div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <span class="keyword">using</span> StringFragment = dc3_local::StringFragment&lt;Index, Char&gt;;</div>
 <div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <span class="keywordflow">return</span> DC3Recursive&lt;Index&gt;(input_dia, input_size, K)</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <span class="keywordflow">return</span> DC3Recursive&lt;Index&gt;(input_dia, input_size, <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>)</div>
 <div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;           .Map([](<span class="keyword">const</span> StringFragment&amp; a) { <span class="keywordflow">return</span> a.index; })</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;           .Collapse();</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;}</div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;</div>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;<span class="keyword">template</span> DIA&lt;uint32_t&gt; <a class="code" href="namespaceexamples_1_1suffix__sorting.html#ad8edbe20ae70c17f9243d89f75bf5ab0">DC3&lt;uint32_t&gt;</a>(</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <span class="keyword">const</span> DIA&lt;uint8_t&gt;&amp; input_dia, <span class="keywordtype">size_t</span> input_size, <span class="keywordtype">size_t</span> K);</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    <span class="keyword">const</span> DIA&lt;uint8_t&gt;&amp; input_dia, <span class="keywordtype">size_t</span> input_size, <span class="keywordtype">size_t</span> <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>);</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;</div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;<span class="preprocessor">#if !THRILL_ON_TRAVIS</span></div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;<span class="keyword">template</span> DIA&lt;common::uint40&gt; DC3&lt;common::uint40&gt;(</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    <span class="keyword">const</span> DIA&lt;uint8_t&gt;&amp; input_dia, <span class="keywordtype">size_t</span> input_size, <span class="keywordtype">size_t</span> K);</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    <span class="keyword">const</span> DIA&lt;uint8_t&gt;&amp; input_dia, <span class="keywordtype">size_t</span> input_size, <span class="keywordtype">size_t</span> <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>);</div>
 <div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;</div>
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;<span class="keyword">template</span> DIA&lt;uint64_t&gt; <a class="code" href="namespaceexamples_1_1suffix__sorting.html#a0914d588c37390e47c777883d6fdb946">DC3&lt;uint64_t&gt;</a>(</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    <span class="keyword">const</span> DIA&lt;uint8_t&gt;&amp; input_dia, <span class="keywordtype">size_t</span> input_size, <span class="keywordtype">size_t</span> K);</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    <span class="keyword">const</span> DIA&lt;uint8_t&gt;&amp; input_dia, <span class="keywordtype">size_t</span> input_size, <span class="keywordtype">size_t</span> <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>);</div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;</div>
 <div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;<span class="preprocessor"></span></div>
@@ -813,6 +813,7 @@ $(document).ready(function(){initNavTree('dc3_8cpp_source.html','');});
 <div class="ttc" id="cache_8hpp_html"><div class="ttname"><a href="cache_8hpp.html">cache.hpp</a></div></div>
 <div class="ttc" id="namespaceexamples_1_1suffix__sorting_html_adf92b94809275b5e93002873f6a2a2d2"><div class="ttname"><a href="namespaceexamples_1_1suffix__sorting.html#adf92b94809275b5e93002873f6a2a2d2">examples::suffix_sorting::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Status &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="prefix__doubling_8cpp_source.html#l00136">prefix_doubling.cpp:136</a></div></div>
 <div class="ttc" id="max_8hpp_html"><div class="ttname"><a href="max_8hpp.html">max.hpp</a></div></div>
+<div class="ttc" id="namespacetlx_1_1digest__detail_html_ac69b6c21c56ac7b34828ba2145b59709"><div class="ttname"><a href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">tlx::digest_detail::K</a></div><div class="ttdeci">static const uint64_t K[80]</div><div class="ttdef"><b>Definition:</b> <a href="sha512_8cpp_source.html#l00032">sha512.cpp:32</a></div></div>
 <div class="ttc" id="sum_8hpp_html"><div class="ttname"><a href="sum_8hpp.html">sum.hpp</a></div></div>
 <div class="ttc" id="namespaceexamples_1_1suffix__sorting_html_a0914d588c37390e47c777883d6fdb946"><div class="ttname"><a href="namespaceexamples_1_1suffix__sorting.html#a0914d588c37390e47c777883d6fdb946">examples::suffix_sorting::DC3&lt; uint64_t &gt;</a></div><div class="ttdeci">template DIA&lt; uint64_t &gt; DC3&lt; uint64_t &gt;(const DIA&lt; uint8_t &gt; &amp;input_dia, size_t input_size, size_t K)</div></div>
 <div class="ttc" id="namespaceexamples_1_1suffix__sorting_html_a363eaffff6eaa8040e98d838b3c0b585"><div class="ttname"><a href="namespaceexamples_1_1suffix__sorting.html#a363eaffff6eaa8040e98d838b3c0b585">examples::suffix_sorting::debug_print</a></div><div class="ttdeci">bool debug_print</div><div class="ttdef"><b>Definition:</b> <a href="suffix__sorting_8cpp_source.html#l00047">suffix_sorting.cpp:47</a></div></div>
@@ -832,7 +833,7 @@ $(document).ready(function(){initNavTree('dc3_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_0b8cd80b43220fb0eacec85b2381def2.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="dc3_8cpp.html">dc3.cpp</a></li>
-    <li class="footer">Generated on Thu Sep 27 2018 22:31:56 for Thrill by
+    <li class="footer">Generated on Fri Jan 4 2019 10:47:48 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

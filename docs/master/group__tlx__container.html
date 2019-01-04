@@ -110,7 +110,8 @@ $(document).ready(function(){initNavTree('group__tlx__container.html','');});
 <a href="#groups">Modules</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Containers and Data Structures<div class="ingroups"><a class="el" href="group__tlx.html">tlx - C++ Extensions and Utilities</a></div></div>  </div>
 </div><!--header-->
@@ -140,6 +141,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1LruCacheSet.html">LruCacheSet&lt; Key, Alloc &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an expected O(1) LRU cache which contains a set of key-only elements.  <a href="classtlx_1_1LruCacheSet.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1RadixHeap.html">RadixHeap&lt; ValueType, KeyExtract, KeyType, Radix &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class implements a monotonic integer min priority queue, more specific a multi-level radix heap.  <a href="classtlx_1_1RadixHeap.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1RingBuffer.html">RingBuffer&lt; Type, Allocator &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A ring (circular) buffer of static (non-growing) size.  <a href="classtlx_1_1RingBuffer.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +153,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ga1c9a8c3eea280d29bd2da8df37a01d9a"><td class="memTemplParams" colspan="2">template&lt;typename KeyType , typename DataType , unsigned Radix = 8&gt; </td></tr>
+<tr class="memitem:ga1c9a8c3eea280d29bd2da8df37a01d9a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga1c9a8c3eea280d29bd2da8df37a01d9a">RadixHeapPair</a> = RadixHeap&lt; std::pair&lt; KeyType, DataType &gt;, radix_heap_detail::PairKeyExtract&lt; KeyType, DataType &gt;, KeyType, Radix &gt;</td></tr>
+<tr class="memdesc:ga1c9a8c3eea280d29bd2da8df37a01d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is a variant of <a class="el" href="classtlx_1_1RadixHeap.html" title="This class implements a monotonic integer min priority queue, more specific a multi-level radix heap...">tlx::RadixHeap</a> for data types which do not include the key directly.  <a href="#ga1c9a8c3eea280d29bd2da8df37a01d9a">More...</a><br/></td></tr>
+<tr class="separator:ga1c9a8c3eea280d29bd2da8df37a01d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4843a6aed555573a98892469fee27b0b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ga4843a6aed555573a98892469fee27b0b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga4843a6aed555573a98892469fee27b0b">simple_vector</a> = SimpleVector&lt; <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &gt;</td></tr>
 <tr class="memdesc:ga4843a6aed555573a98892469fee27b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">make template alias due to similarity with std::vector  <a href="#ga4843a6aed555573a98892469fee27b0b">More...</a><br/></td></tr>
@@ -162,10 +170,34 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga07f67904ca9d31961dc022100101c358"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum class to select SimpleVector object initialization  <a href="group__tlx__container.html#ga07f67904ca9d31961dc022100101c358">More...</a><br/></td></tr>
 <tr class="separator:ga07f67904ca9d31961dc022100101c358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga5a349f9b8b3e8deeeb18e6428bc89777"><td class="memTemplParams" colspan="2">template&lt;typename DataType , unsigned Radix = 8, typename KeyExtract  = void&gt; </td></tr>
+<tr class="memitem:ga5a349f9b8b3e8deeeb18e6428bc89777"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga5a349f9b8b3e8deeeb18e6428bc89777">make_radix_heap</a> (KeyExtract &amp;&amp;key_extract) -&gt; RadixHeap&lt; DataType, KeyExtract, decltype(key_extract(std::declval&lt; DataType &gt;())), Radix &gt;</td></tr>
+<tr class="memdesc:ga5a349f9b8b3e8deeeb18e6428bc89777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to easily derive type of <a class="el" href="classtlx_1_1RadixHeap.html" title="This class implements a monotonic integer min priority queue, more specific a multi-level radix heap...">RadixHeap</a> for a pre-C++17 compiler.  <a href="#ga5a349f9b8b3e8deeeb18e6428bc89777">More...</a><br/></td></tr>
+<tr class="separator:ga5a349f9b8b3e8deeeb18e6428bc89777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Containers and Data Structures </p>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="ga1c9a8c3eea280d29bd2da8df37a01d9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using RadixHeapPair =  RadixHeap&lt; std::pair&lt;KeyType, DataType&gt;, radix_heap_detail::PairKeyExtract&lt;KeyType, DataType&gt;, KeyType, Radix &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This class is a variant of <a class="el" href="classtlx_1_1RadixHeap.html" title="This class implements a monotonic integer min priority queue, more specific a multi-level radix heap...">tlx::RadixHeap</a> for data types which do not include the key directly. </p>
+<p>Hence each entry is stored as an (Key,Value)-Pair implemented with std::pair. </p>
+
+<p>Definition at line <a class="el" href="radix__heap_8hpp_source.html#l00671">671</a> of file <a class="el" href="radix__heap_8hpp_source.html">radix_heap.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga4843a6aed555573a98892469fee27b0b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -218,12 +250,35 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga5a349f9b8b3e8deeeb18e6428bc89777"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto tlx::make_radix_heap </td>
+          <td>(</td>
+          <td class="paramtype">KeyExtract &amp;&amp;&#160;</td>
+          <td class="paramname"><em>key_extract</em></td><td>)</td>
+          <td> -&gt; RadixHeap&lt;DataType, KeyExtract,
+          decltype(key_extract(std::declval&lt;DataType&gt;())), Radix&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper to easily derive type of <a class="el" href="classtlx_1_1RadixHeap.html" title="This class implements a monotonic integer min priority queue, more specific a multi-level radix heap...">RadixHeap</a> for a pre-C++17 compiler. </p>
+<p>Refer to <a class="el" href="classtlx_1_1RadixHeap.html" title="This class implements a monotonic integer min priority queue, more specific a multi-level radix heap...">RadixHeap</a> for description of parameters. </p>
+
+<p>Definition at line <a class="el" href="radix__heap_8hpp_source.html#l00651">651</a> of file <a class="el" href="radix__heap_8hpp_source.html">radix_heap.hpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Sep 27 2018 22:32:00 for Thrill by
+    <li class="footer">Generated on Fri Jan 4 2019 10:47:52 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('is__power__of__two_8hpp_source.html','
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Part of tlx - http://panthema.net/tlx</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2007-2017 Timo Bingmann &lt;tb@panthema.net&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2007-2018 Timo Bingmann &lt;tb@panthema.net&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * All rights reserved. Published under the Boost Software License, Version 1.0</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
@@ -135,41 +135,62 @@ $(document).ready(function(){initNavTree('is__power__of__two_8hpp_source.html','
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//! \{</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// is_power_of_two()</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//! does what it says: true if i is a power of two</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> <a class="code" href="group__tlx__math.html#gaea4dbc101569da260c218aad97698847">is_power_of_two</a>(<span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//! does what it says: true if i is a power of two</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> <a class="code" href="group__tlx__math.html#gaea4dbc101569da260c218aad97698847">is_power_of_two</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//! does what it says: true if i is a power of two</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> <a class="code" href="group__tlx__math.html#gaea4dbc101569da260c218aad97698847">is_power_of_two</a>(<span class="keywordtype">long</span> i);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">//! does what it says: true if i is a power of two</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> <a class="code" href="group__tlx__math.html#gaea4dbc101569da260c218aad97698847">is_power_of_two</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> i);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//! does what it says: true if i is a power of two</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> <a class="code" href="group__tlx__math.html#gaea4dbc101569da260c218aad97698847">is_power_of_two</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> i);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">//! does what it says: true if i is a power of two</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> <a class="code" href="group__tlx__math.html#gaea4dbc101569da260c218aad97698847">is_power_of_two</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> i);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Integral&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="group__tlx__math.html#ga6bd0c156caa682f81c584b29f1d62104">   22</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group__tlx__math.html#ga6bd0c156caa682f81c584b29f1d62104">is_power_of_two_template</a>(Integral i) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">if</span> (i &lt;= 0) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> !(i &amp; (i - 1));</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// is_power_of_two()</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//! does what it says: true if i is a power of two</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="group__tlx__math.html#ga06084e6aa5055e2c602add77f1df1967">   31</a></span>&#160;<span class="comment"></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group__tlx__math.html#ga06084e6aa5055e2c602add77f1df1967">is_power_of_two</a>(<span class="keywordtype">int</span> i) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__tlx__math.html#ga6bd0c156caa682f81c584b29f1d62104">is_power_of_two_template</a>(i);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//! does what it says: true if i is a power of two</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group__tlx__math.html#gaa61484a72368630ede42c5ac942b719e">   36</a></span>&#160;<span class="comment"></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group__tlx__math.html#ga06084e6aa5055e2c602add77f1df1967">is_power_of_two</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__tlx__math.html#ga6bd0c156caa682f81c584b29f1d62104">is_power_of_two_template</a>(i);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//! \}</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace tlx</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif // !TLX_MATH_IS_POWER_OF_TWO_HEADER</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="ttc" id="group__tlx__math_html_gaea4dbc101569da260c218aad97698847"><div class="ttname"><a href="group__tlx__math.html#gaea4dbc101569da260c218aad97698847">tlx::is_power_of_two</a></div><div class="ttdeci">bool is_power_of_two(int i)</div><div class="ttdoc">does what it says: true if i is a power of two </div><div class="ttdef"><b>Definition:</b> <a href="is__power__of__two_8cpp_source.html#l00023">is_power_of_two.cpp:23</a></div></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//! does what it says: true if i is a power of two</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group__tlx__math.html#gae9fe5b4251eed0d5e136c1fc987cdb9b">   41</a></span>&#160;<span class="comment"></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group__tlx__math.html#ga06084e6aa5055e2c602add77f1df1967">is_power_of_two</a>(<span class="keywordtype">long</span> i) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__tlx__math.html#ga6bd0c156caa682f81c584b29f1d62104">is_power_of_two_template</a>(i);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//! does what it says: true if i is a power of two</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group__tlx__math.html#ga2ca48dfc557ef6581ab17a1c3e53d0a1">   46</a></span>&#160;<span class="comment"></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group__tlx__math.html#ga06084e6aa5055e2c602add77f1df1967">is_power_of_two</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> i) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__tlx__math.html#ga6bd0c156caa682f81c584b29f1d62104">is_power_of_two_template</a>(i);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">//! does what it says: true if i is a power of two</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group__tlx__math.html#ga6dc34ab52962230ca6f2aaff3a97b3ad">   51</a></span>&#160;<span class="comment"></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group__tlx__math.html#ga06084e6aa5055e2c602add77f1df1967">is_power_of_two</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span> i) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__tlx__math.html#ga6bd0c156caa682f81c584b29f1d62104">is_power_of_two_template</a>(i);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">//! does what it says: true if i is a power of two</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group__tlx__math.html#ga384054d31c4252ebb7acebc7d5829680">   56</a></span>&#160;<span class="comment"></span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group__tlx__math.html#ga06084e6aa5055e2c602add77f1df1967">is_power_of_two</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> i) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__tlx__math.html#ga6bd0c156caa682f81c584b29f1d62104">is_power_of_two_template</a>(i);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">//! \}</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// namespace tlx</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif // !TLX_MATH_IS_POWER_OF_TWO_HEADER</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="ttc" id="group__tlx__math_html_ga6bd0c156caa682f81c584b29f1d62104"><div class="ttname"><a href="group__tlx__math.html#ga6bd0c156caa682f81c584b29f1d62104">tlx::is_power_of_two_template</a></div><div class="ttdeci">static bool is_power_of_two_template(Integral i)</div><div class="ttdef"><b>Definition:</b> <a href="is__power__of__two_8hpp_source.html#l00022">is_power_of_two.hpp:22</a></div></div>
+<div class="ttc" id="group__tlx__math_html_ga06084e6aa5055e2c602add77f1df1967"><div class="ttname"><a href="group__tlx__math.html#ga06084e6aa5055e2c602add77f1df1967">tlx::is_power_of_two</a></div><div class="ttdeci">static bool is_power_of_two(int i)</div><div class="ttdoc">does what it says: true if i is a power of two </div><div class="ttdef"><b>Definition:</b> <a href="is__power__of__two_8hpp_source.html#l00031">is_power_of_two.hpp:31</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="dir_12e1f04250d59a3988b9061d7bd0c3d8.html">math</a></li><li class="navelem"><a class="el" href="is__power__of__two_8hpp.html">is_power_of_two.hpp</a></li>
-    <li class="footer">Generated on Thu Sep 27 2018 22:31:57 for Thrill by
+    <li class="footer">Generated on Fri Jan 4 2019 10:47:49 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

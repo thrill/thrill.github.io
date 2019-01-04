@@ -40,6 +40,7 @@ var searchData=
   ['nruns_5f',['nruns_',['../structfoxxll_1_1interleaved__striping.html#a182ea117c9cad0c5dc7ac0f952df802a',1,'foxxll::interleaved_striping']]],
   ['num_5fbins',['num_bins',['../classthrill_1_1mem_1_1Pool.html#a361fbb833013bdfeef33fe624ac717f7',1,'thrill::mem::Pool']]],
   ['num_5fblocks_5f',['num_blocks_',['../classthrill_1_1core_1_1ReduceBucketHashTable.html#ac3199746466b9fdd0437b6021f8a5d7e',1,'thrill::core::ReduceBucketHashTable']]],
+  ['num_5fbuckets',['num_buckets',['../classtlx_1_1radix__heap__detail_1_1BucketComputation.html#a5b6be4560d929bbb541ee9aada8adcb4',1,'tlx::radix_heap_detail::BucketComputation::num_buckets()'],['../classtlx_1_1RadixHeap.html#a63b1c319485ea110d2a9b99f35b823b4',1,'tlx::RadixHeap::num_buckets()']]],
   ['num_5fbuckets_5f',['num_buckets_',['../classthrill_1_1core_1_1ReduceTable.html#abff6cab86ab6aef08ca3e3c91af15d1d',1,'thrill::core::ReduceTable']]],
   ['num_5fbuckets_5fper_5fpartition',['num_buckets_per_partition',['../structthrill_1_1core_1_1ReduceByIndex_1_1Result.html#a463b51092bc81348bd8a3eee7d7f6275',1,'thrill::core::ReduceByIndex::Result']]],
   ['num_5fbuckets_5fper_5fpartition_5f',['num_buckets_per_partition_',['../classthrill_1_1core_1_1ReduceTable.html#a09b691ad40bc243c8c147de48c0271a7',1,'thrill::core::ReduceTable']]],
@@ -50,10 +51,11 @@ var searchData=
   ['num_5fitems_5f',['num_items_',['../classthrill_1_1core_1_1ReduceTable.html#a4a31cc8d9e12a21f498f792c6816b8f0',1,'thrill::core::ReduceTable::num_items_()'],['../classthrill_1_1data_1_1Block.html#a4a31cc8d9e12a21f498f792c6816b8f0',1,'thrill::data::Block::num_items_()'],['../classthrill_1_1data_1_1BlockReader.html#a4a31cc8d9e12a21f498f792c6816b8f0',1,'thrill::data::BlockReader::num_items_()']]],
   ['num_5fitems_5fsum_5f',['num_items_sum_',['../classthrill_1_1data_1_1File.html#ac232fa10f1ad05b5ca66f84faeb7893c',1,'thrill::data::File']]],
   ['num_5fiterations',['num_iterations',['../classexamples_1_1stochastic__gradient__descent_1_1StochasticGradientDescent.html#a22fec0af810a755e77ecbb7179c193d4',1,'examples::stochastic_gradient_descent::StochasticGradientDescent']]],
+  ['num_5flayers',['num_layers',['../classtlx_1_1RadixHeap.html#acf82a6d5ea185d46aa6f5c09debad53b',1,'tlx::RadixHeap']]],
   ['num_5fparallel_5fasync_5f',['num_parallel_async_',['../classthrill_1_1data_1_1Multiplexer.html#a3ac7b25d37c4b24a9ab3884100751a1e',1,'thrill::data::Multiplexer']]],
   ['num_5fpartitions_5f',['num_partitions_',['../classthrill_1_1core_1_1ReduceTable.html#aa76370128579c21dea9f3bd09697d798',1,'thrill::core::ReduceTable']]],
   ['num_5fsubranges_5f',['num_subranges_',['../classthrill_1_1core_1_1ReduceByIndexPostPhase.html#a6e0702390c0e60fb7d4df787dbb4ab9e',1,'thrill::core::ReduceByIndexPostPhase']]],
   ['num_5fworkers_5f',['num_workers_',['../classthrill_1_1data_1_1MixBlockQueue.html#a5babbe933617d7dd0cbb4e3c3d600cfd',1,'thrill::data::MixBlockQueue']]],
-  ['nvar_5f',['nvar_',['../classthrill_1_1common_1_1Aggregate.html#ad0a5355aca9c3db644144f06d6598705',1,'thrill::common::Aggregate']]],
+  ['nvar_5f',['nvar_',['../classtlx_1_1Aggregate.html#ad0a5355aca9c3db644144f06d6598705',1,'tlx::Aggregate']]],
   ['nwriteblocks',['nwriteblocks',['../classfoxxll_1_1buffered__writer.html#a765e2a3f46434532b2ac69fe3ecabad3',1,'foxxll::buffered_writer']]]
 ];

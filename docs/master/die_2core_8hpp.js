@@ -2,7 +2,9 @@ var die_2core_8hpp =
 [
     [ "DieException", "classtlx_1_1DieException.html", "classtlx_1_1DieException" ],
     [ "tlx_assert_equal", "die_2core_8hpp.html#aa96e510b8ec83cfbd1e73234561be9ff", null ],
+    [ "tlx_assert_unequal", "die_2core_8hpp.html#aece8f3f5e64bb5e611fe6c21f0106dd1", null ],
     [ "tlx_die", "die_2core_8hpp.html#a9fb1fdf960df264cc216459dbec9eea8", null ],
+    [ "tlx_die_equal", "die_2core_8hpp.html#a0d3e703383d8ee82ec46e3b72974b5f4", null ],
     [ "tlx_die_if", "die_2core_8hpp.html#af4884b374a843ce260431fb12591bf9c", null ],
     [ "tlx_die_unequal", "die_2core_8hpp.html#a61bc809e512300fb132a80e2c066b361", null ],
     [ "tlx_die_unequal_eps", "die_2core_8hpp.html#a634b1d594ee64649689c4644fb491641", null ],

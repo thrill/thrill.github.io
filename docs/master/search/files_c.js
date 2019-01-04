@@ -2,6 +2,7 @@ var searchData=
 [
   ['less_5ficase_2ecpp',['less_icase.cpp',['../less__icase_8cpp.html',1,'']]],
   ['less_5ficase_2ehpp',['less_icase.hpp',['../less__icase_8hpp.html',1,'']]],
+  ['levenshtein_2ehpp',['levenshtein.hpp',['../levenshtein_8hpp.html',1,'']]],
   ['libfoxxll_2ehpp',['libfoxxll.hpp',['../libfoxxll_8hpp.html',1,'']]],
   ['likely_2ehpp',['likely.hpp',['../likely_8hpp.html',1,'']]],
   ['line_5fcount_2ecpp',['line_count.cpp',['../line__count_8cpp.html',1,'']]],

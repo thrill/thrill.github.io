@@ -1,5 +1,15 @@
 var group__tlx__string =
 [
+    [ "LevenshteinStandardICaseParameters", "structtlx_1_1LevenshteinStandardICaseParameters.html", [
+      [ "char_equal", "structtlx_1_1LevenshteinStandardICaseParameters.html#a1aa27babd25f76b9fb821e7797748874", null ],
+      [ "cost_insert_delete", "structtlx_1_1LevenshteinStandardICaseParameters.html#aa2b1f0aaff1193840a5606b1c41a330d", null ],
+      [ "cost_replace", "structtlx_1_1LevenshteinStandardICaseParameters.html#acde19a6e13b252fec7473184680b2cd7", null ]
+    ] ],
+    [ "LevenshteinStandardParameters", "structtlx_1_1LevenshteinStandardParameters.html", [
+      [ "char_equal", "structtlx_1_1LevenshteinStandardParameters.html#a1aa27babd25f76b9fb821e7797748874", null ],
+      [ "cost_insert_delete", "structtlx_1_1LevenshteinStandardParameters.html#aa2b1f0aaff1193840a5606b1c41a330d", null ],
+      [ "cost_replace", "structtlx_1_1LevenshteinStandardParameters.html#acde19a6e13b252fec7473184680b2cd7", null ]
+    ] ],
     [ "base64_decode", "group__tlx__string.html#gac2775fbea220f27325aba0f8af1cc9a8", null ],
     [ "base64_decode", "group__tlx__string.html#gabe1e973cd3a2d5b7e55544d4c616da49", null ],
     [ "base64_encode", "group__tlx__string.html#ga691477f59c8496eec65e994ce3f6e6e5", null ],
@@ -68,6 +78,11 @@ var group__tlx__string =
     [ "less_icase", "group__tlx__string.html#ga0e53bb43043cc4fdf6fef5a9f017957c", null ],
     [ "less_icase", "group__tlx__string.html#ga25e2629353a36fb47c587b4eef89c0d2", null ],
     [ "less_icase", "group__tlx__string.html#ga9fb49f152c6bf0d96ec46bfb90a38bfc", null ],
+    [ "levenshtein", "group__tlx__string.html#ga5097f3a710847ed15aa3cdc2bbbe857c", null ],
+    [ "levenshtein", "group__tlx__string.html#ga643fe1eebc35da109f593cdcf068d3af", null ],
+    [ "levenshtein_algorithm", "group__tlx__string.html#ga28296225d021e2ff9a1bedfa711b26fa", null ],
+    [ "levenshtein_icase", "group__tlx__string.html#ga01fc1d66b4a6f822509d793576b2cce2", null ],
+    [ "levenshtein_icase", "group__tlx__string.html#ga0d20af010f11fab72744484ef67e00b6", null ],
     [ "pad", "group__tlx__string.html#ga03240bad0b02669f254c21c28009c21a", null ],
     [ "parse_hexdump", "group__tlx__string.html#ga81809bc5e0b69034f39659303baa4bf9", null ],
     [ "parse_si_iec_units", "group__tlx__string.html#ga58be0557b1b38913b28d947c935aed42", null ],
