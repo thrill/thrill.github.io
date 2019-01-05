@@ -1,5 +1,6 @@
 var NAVTREEINDEX43 =
 {
+"structtlx_1_1index__sequence.html":[3,1,4,5,3],
 "structtlx_1_1index__sequence.html#a0a22581a091167da9d9db49104dbf751":[3,1,4,5,3,0],
 "structtlx_1_1is__std__array.html":[3,1,4,5,4],
 "structtlx_1_1is__std__array_3_01std_1_1array_3_01T_00_01N_01_4_01_4.html":[3,1,4,5,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX43 =
 "tlx_2tlx_2version_8hpp.html#a63335ba7efedc082989fe21e89c57642":[6,0,2,1,0,36,1],
 "tlx_2tlx_2version_8hpp.html#a94153792f475982e5e9f90098c466a39":[6,0,2,1,0,36,2],
 "tlx_2tlx_2version_8hpp_source.html":[6,0,2,1,0,36],
-"tlx_counting_ptr.html":[1,0],
-"tlx_die.html":[1,1]
+"tlx_counting_ptr.html":[1,0]
 };

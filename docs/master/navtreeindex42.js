@@ -1,5 +1,6 @@
 var NAVTREEINDEX42 =
 {
+"structthrill_1_1common_1_1HashDataSwitch.html#aeff456312744f42e4934d800806ad6bc":[5,0,4,1,12,1],
 "structthrill_1_1common_1_1HashDataSwitch.html#afa5343e9b438fbd2207dfead9a8697f4":[5,0,4,1,12,0],
 "structthrill_1_1common_1_1HashDataSwitch_3_01std_1_1string_01_4.html":[5,0,4,1,13],
 "structthrill_1_1common_1_1HashDataSwitch_3_01std_1_1string_01_4.html#a96a19d72119f1ccfb880abd843f9a23a":[5,0,4,1,13,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX42 =
 "structtlx_1_1btree__multiset_1_1key__of__value.html":[3,1,4,1,0,4,0],
 "structtlx_1_1btree__multiset_1_1key__of__value.html#a2f06b332dc03ff5e9e52f85ac3794a95":[3,1,4,1,0,4,0,0],
 "structtlx_1_1btree__set_1_1key__of__value.html":[3,1,4,1,0,5,0],
-"structtlx_1_1btree__set_1_1key__of__value.html#a2f06b332dc03ff5e9e52f85ac3794a95":[3,1,4,1,0,5,0,0],
-"structtlx_1_1index__sequence.html":[3,1,4,5,3]
+"structtlx_1_1btree__set_1_1key__of__value.html#a2f06b332dc03ff5e9e52f85ac3794a95":[3,1,4,1,0,5,0,0]
 };

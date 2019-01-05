@@ -1,5 +1,6 @@
 var NAVTREEINDEX44 =
 {
+"tlx_die.html":[1,1],
 "tmeta_8hpp.html":[6,0,2,0,0,0,11],
 "tmeta_8hpp.html#a8ff93878e1e55b5328bc634364261a71":[6,0,2,0,0,0,11,4],
 "tmeta_8hpp_source.html":[6,0,2,0,0,0,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX44 =
 "word__wrap_8hpp.html#ga2d0ada76ddce7fc09d770fa512780839":[6,0,2,1,0,10,59,0],
 "word__wrap_8hpp_source.html":[6,0,2,1,0,10,59],
 "write__binary_8hpp.html":[6,0,3,0,41],
-"write__binary_8hpp.html#a01b7e397abfb33c3dc4ab6cf69032916":[6,0,3,0,41,0],
-"write__binary_8hpp_source.html":[6,0,3,0,41]
+"write__binary_8hpp.html#a01b7e397abfb33c3dc4ab6cf69032916":[6,0,3,0,41,0]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"classtlx_1_1RingBuffer.html#a0176d9303b082e74cc33cc7c8bfd1e2f":[3,1,4,1,5,30],
 "classtlx_1_1RingBuffer.html#a058bda4957df6a97b1ea6c9fd783f672":[3,1,4,1,5,33],
 "classtlx_1_1RingBuffer.html#a07e35b4118f1356c1b2745d60273fcfe":[3,1,4,1,5,29],
 "classtlx_1_1RingBuffer.html#a0801762a3fe36fe32dca5f16e515478d":[3,1,4,1,5,40],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "classtlx_1_1btree__map.html#a901955ac1cb674450b79aa9d192832b3":[3,1,4,1,0,2,75],
 "classtlx_1_1btree__map.html#a90d3f15473f945ef278f47cb8bb59bb3":[3,1,4,1,0,2,56],
 "classtlx_1_1btree__map.html#a97bb054bc81e97ec55f0b539cdcbfcde":[3,1,4,1,0,2,30],
-"classtlx_1_1btree__map.html#a99609d25589437b30cb42dab922bfaa9":[3,1,4,1,0,2,64],
-"classtlx_1_1btree__map.html#a9c9766a96c492f3e9e5861d6b4f87387":[3,1,4,1,0,2,36]
+"classtlx_1_1btree__map.html#a99609d25589437b30cb42dab922bfaa9":[3,1,4,1,0,2,64]
 };

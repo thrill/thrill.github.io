@@ -6,7 +6,7 @@ var classthrill_1_1api_1_1ConcatNode =
     [ "Execute", "classthrill_1_1api_1_1ConcatNode.html#abaefef09f7c5e04a0c2c61538d6ab0e4", null ],
     [ "OnPreOpFile", "classthrill_1_1api_1_1ConcatNode.html#a55d9a70368d8f0c6a0948ebec4bf80d5", null ],
     [ "PushData", "classthrill_1_1api_1_1ConcatNode.html#a77109353f39e9fb5fab00c9cccac822e", null ],
-    [ "StopPreOp", "classthrill_1_1api_1_1ConcatNode.html#a5787adfa1c4f30078758e95711880149", null ],
+    [ "StopPreOp", "classthrill_1_1api_1_1ConcatNode.html#a6566d89f7e9e5ea89de65bba3396ea30", null ],
     [ "debug", "classthrill_1_1api_1_1ConcatNode.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
     [ "files_", "classthrill_1_1api_1_1ConcatNode.html#a8bb9d507163ac6bc0f856fbf84ac01e6", null ],
     [ "num_inputs_", "classthrill_1_1api_1_1ConcatNode.html#abf7d76b3004da6afe8e067b2d82ab4e9", null ],

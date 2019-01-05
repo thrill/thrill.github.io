@@ -1,5 +1,6 @@
 var NAVTREEINDEX40 =
 {
+"size_8hpp.html#a7bb6c3d8ec90df56f2f87ff7d050eadc":[6,0,3,0,35,0],
 "size_8hpp_source.html":[6,0,3,0,35],
 "sleep_8cpp.html":[6,0,1,6,0],
 "sleep_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[6,0,1,6,0,0],
@@ -236,8 +237,8 @@ var NAVTREEINDEX40 =
 "structexamples_1_1suffix__sorting_1_1IndexRank.html":[5,0,0,6,4],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a0594e9f341a41ec7622edddb13e52dfb":[5,0,0,6,4,4],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a07ce41784935e8e951c1319123ddcdb4":[5,0,0,6,4,0],
-"structexamples_1_1suffix__sorting_1_1IndexRank.html#a4c277d4c268b1243432f9c82e904149b":[5,0,0,6,4,2],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a4c277d4c268b1243432f9c82e904149b":[5,0,0,6,4,1],
+"structexamples_1_1suffix__sorting_1_1IndexRank.html#a4c277d4c268b1243432f9c82e904149b":[5,0,0,6,4,2],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a7875de9269063a44a5480b1c0c530a84":[5,0,0,6,4,3],
 "structexamples_1_1suffix__sorting_1_1IndexRankFlag.html":[5,0,0,6,5],
 "structexamples_1_1suffix__sorting_1_1IndexRankFlag.html#a0594e9f341a41ec7622edddb13e52dfb":[5,0,0,6,5,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX40 =
 "structexamples_1_1word__count_1_1HashWordHasher.html#a97f6ae856c5f78bc055bd962d9494481":[5,0,0,8,0,0],
 "structfoxxll_1_1CASE.html":[5,0,1,22],
 "structfoxxll_1_1CASE.html#a19fffb7a6788d346a4ab677ce5d61f4c":[5,0,1,22,1],
-"structfoxxll_1_1CASE.html#a94798fdadfbf49a7c658ace669a1d310a9daab2aa897c0d2d4500bed734b0d780":[5,0,1,22,2],
-"structfoxxll_1_1CASE.html#ae15934f75254e3e29176f0a45cfa0c56":[5,0,1,22,0]
+"structfoxxll_1_1CASE.html#a94798fdadfbf49a7c658ace669a1d310a9daab2aa897c0d2d4500bed734b0d780":[5,0,1,22,2]
 };

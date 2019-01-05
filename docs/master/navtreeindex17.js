@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"classthrill_1_1data_1_1StreamSink.html#a6b72e54baf646b08b4b87f987f583dcb":[3,1,1,49,22],
 "classthrill_1_1data_1_1StreamSink.html#a7ac3ec26751fe8ed4578bcb7a2ae1117":[3,1,1,49,24],
 "classthrill_1_1data_1_1StreamSink.html#a86a685ea35fd63df45d4a3443d7f88e8":[3,1,1,49,17],
 "classthrill_1_1data_1_1StreamSink.html#a89bcbd30167c8563fc80f12bd313d084":[3,1,1,49,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "classthrill_1_1net_1_1AsyncWriteBlock.html#a6c7313f2f8301e16582b71156e0906e5":[3,1,2,5,15],
 "classthrill_1_1net_1_1AsyncWriteBlock.html#a77bd2623550e0216b4469003c29181d5":[3,1,2,5,7],
 "classthrill_1_1net_1_1AsyncWriteBlock.html#a8d4e66ffb6192b8b07f14a0fe774de7a":[3,1,2,5,12],
-"classthrill_1_1net_1_1AsyncWriteBlock.html#a8f756433e4abac77ecfb3c1bb85a483b":[3,1,2,5,0],
-"classthrill_1_1net_1_1AsyncWriteBlock.html#aa8d48ea2bd11e5163c3b9ef441a07906":[3,1,2,5,6]
+"classthrill_1_1net_1_1AsyncWriteBlock.html#a8f756433e4abac77ecfb3c1bb85a483b":[3,1,2,5,0]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX41 =
 {
+"structfoxxll_1_1CASE.html#ae15934f75254e3e29176f0a45cfa0c56":[5,0,1,22,0],
 "structfoxxll_1_1NilCase.html":[5,0,1,52],
 "structfoxxll_1_1addressable__priority__queue_1_1cmp.html":[5,0,1,3,0],
 "structfoxxll_1_1addressable__priority__queue_1_1cmp.html#afe79576009334e1684847ff0a50668b4":[5,0,1,3,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX41 =
 "structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4.html#affc9c250dbfdff07716f7c635efef02f":[5,0,4,1,8,3],
 "structthrill_1_1common_1_1HashCrc32Fallback.html":[5,0,4,1,11],
 "structthrill_1_1common_1_1HashCrc32Fallback.html#af6ee64b03c355d3b5bd6c12b42514997":[5,0,4,1,11,0],
-"structthrill_1_1common_1_1HashDataSwitch.html":[5,0,4,1,12],
-"structthrill_1_1common_1_1HashDataSwitch.html#aeff456312744f42e4934d800806ad6bc":[5,0,4,1,12,1]
+"structthrill_1_1common_1_1HashDataSwitch.html":[5,0,4,1,12]
 };

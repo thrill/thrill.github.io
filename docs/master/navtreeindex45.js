@@ -1,5 +1,6 @@
 var NAVTREEINDEX45 =
 {
+"write__binary_8hpp_source.html":[6,0,3,0,41],
 "write__lines_8hpp.html":[6,0,3,0,42],
 "write__lines_8hpp.html#ad2c264a9b1cb2fa2e11650deb3ff59ff":[6,0,3,0,42,0],
 "write__lines_8hpp_source.html":[6,0,3,0,42],

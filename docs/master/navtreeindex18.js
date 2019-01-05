@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"classthrill_1_1net_1_1AsyncWriteBlock.html#aa8d48ea2bd11e5163c3b9ef441a07906":[3,1,2,5,6],
 "classthrill_1_1net_1_1AsyncWriteBlock.html#aac782da1f912bceb5d8ad00c8dc892ac":[3,1,2,5,11],
 "classthrill_1_1net_1_1AsyncWriteBlock.html#ab8a51b489fb93f617991296e843631fb":[3,1,2,5,9],
 "classthrill_1_1net_1_1AsyncWriteBlock.html#acef80dec6298fc217923a30b63e4103e":[3,1,2,5,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "classthrill_1_1net_1_1FixedBufferBuilder.html#a2b88da5bba988415bf30824e159444d4":[3,1,2,15,17],
 "classthrill_1_1net_1_1FixedBufferBuilder.html#a350132543d80a1c1e5be844e6d2878ea":[3,1,2,15,14],
 "classthrill_1_1net_1_1FixedBufferBuilder.html#a4598833cddd0ea684d351ebd793b5bb7":[3,1,2,15,0],
-"classthrill_1_1net_1_1FixedBufferBuilder.html#a473e7b357d08447e625d68df41063440":[3,1,2,15,3],
-"classthrill_1_1net_1_1FixedBufferBuilder.html#a5f31775800bbb46b35b5791def1f3acc":[3,1,2,15,23]
+"classthrill_1_1net_1_1FixedBufferBuilder.html#a473e7b357d08447e625d68df41063440":[3,1,2,15,3]
 };

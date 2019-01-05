@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"classthrill_1_1net_1_1tcp_1_1SocketAddress.html#aa68c0af0717c9a1d9c77e41a961b2f77":[3,1,2,1,7,12],
 "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#aae0e0fc8c98a6b15ba60b2d76267e865":[3,1,2,1,7,14],
 "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#ab75f561454f177dc44dc29573f397ab5":[3,1,2,1,7,17],
 "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#ac7780a43d68caf5575cac7b6b6e1c797":[3,1,2,1,7,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "classtlx_1_1BTree_1_1const__iterator.html#a8ba2b56dfdb5b9beba97bb9ba59ae71b":[3,1,4,1,0,0,0,12],
 "classtlx_1_1BTree_1_1const__iterator.html#a9f3227c7f281ca3ffba95549ca2641e2":[3,1,4,1,0,0,0,5],
 "classtlx_1_1BTree_1_1const__iterator.html#aa149c2249879e7727f33688b76bf2c99":[3,1,4,1,0,0,0,14],
-"classtlx_1_1BTree_1_1const__iterator.html#aac736176f33ad72afc6ab405b1bf9ecc":[3,1,4,1,0,0,0,4],
-"classtlx_1_1BTree_1_1const__iterator.html#abdefca51d553d29c565b08e091f8cd19":[3,1,4,1,0,0,0,7]
+"classtlx_1_1BTree_1_1const__iterator.html#aac736176f33ad72afc6ab405b1bf9ecc":[3,1,4,1,0,0,0,4]
 };

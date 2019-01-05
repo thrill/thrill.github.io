@@ -1,5 +1,6 @@
 var NAVTREEINDEX35 =
 {
+"hyperloglog_8cpp.html#a8fa87a9781e53fd8b02908a1b27427bb":[6,0,3,2,5,14],
 "hyperloglog_8cpp.html#a9afd4266c3cda053ccc293af1cb0690a":[6,0,3,2,5,8],
 "hyperloglog_8cpp.html#aa1a79f5a89ce7414c3d42f5356d0a317":[6,0,3,2,5,22],
 "hyperloglog_8cpp.html#aa42a5a5bfd200db14d3465cebef28413":[6,0,3,2,5,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX35 =
 "linuxaio__file_8cpp_source.html":[6,0,2,0,0,1,12],
 "linuxaio__file_8hpp.html":[6,0,2,0,0,1,13],
 "linuxaio__file_8hpp_source.html":[6,0,2,0,0,1,13],
-"linuxaio__queue_8cpp.html":[6,0,2,0,0,1,14],
-"linuxaio__queue_8cpp_source.html":[6,0,2,0,0,1,14]
+"linuxaio__queue_8cpp.html":[6,0,2,0,0,1,14]
 };

@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('classthrill_1_1api_1_1HostContext.html
 <div class="textblock"><p>The <a class="el" href="classthrill_1_1api_1_1HostContext.html" title="The HostContext contains all data structures shared among workers on the same host. ">HostContext</a> contains all data structures shared among workers on the same host. </p>
 <p>It is used to construct and destroy them. For testing multiple instances are run in the same process. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00087">87</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00090">90</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for HostContext:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -282,9 +282,9 @@ Private Attributes</h2></td></tr>
 
 <p>constructor from existing net Groups. Used by the construction methods. </p>
 
-<p>Definition at line <a class="el" href="context_8cpp_source.html#l01035">1035</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8cpp_source.html#l01061">1061</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
 
-<p>References <a class="el" href="porting_8cpp_source.html#l00067">thrill::common::LogCmdlineParams()</a>, <a class="el" href="context_8hpp_source.html#l00155">HostContext::logger_</a>, <a class="el" href="context_8hpp_source.html#l00158">HostContext::profiler_</a>, <a class="el" href="linux__proc__stats_8cpp_source.html#l00859">thrill::common::StartLinuxProcStatsProfiler()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00383">thrill::mem::StartMemProfiler()</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00082">MemoryConfig::enable_proc_profiler_</a>, <a class="el" href="porting_8cpp_source.html#l00067">thrill::common::LogCmdlineParams()</a>, <a class="el" href="context_8hpp_source.html#l00158">HostContext::logger_</a>, <a class="el" href="context_8hpp_source.html#l00146">HostContext::mem_config_</a>, <a class="el" href="context_8hpp_source.html#l00161">HostContext::profiler_</a>, <a class="el" href="linux__proc__stats_8cpp_source.html#l00859">thrill::common::StartLinuxProcStatsProfiler()</a>, and <a class="el" href="malloc__tracker_8cpp_source.html#l00383">thrill::mem::StartMemProfiler()</a>.</p>
 
 </div>
 </div>
@@ -303,9 +303,9 @@ Private Attributes</h2></td></tr>
 
 <p>destructor </p>
 
-<p>Definition at line <a class="el" href="context_8cpp_source.html#l01060">1060</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8cpp_source.html#l01087">1087</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00173">HostContext::dispatcher_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00176">HostContext::dispatcher_</a>.</p>
 
 </div>
 </div>
@@ -333,9 +333,9 @@ Private Attributes</h2></td></tr>
 
 <p>the block manager keeps all data blocks moving through the system. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00136">136</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00139">139</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00191">HostContext::block_pool_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00194">HostContext::block_pool_</a>.</p>
 
 </div>
 </div>
@@ -375,7 +375,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="context_8cpp_source.html#l00307">307</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00120">HostContext::mem_config()</a>, <a class="el" href="context_8cpp_source.html#l00930">MemoryConfig::setup()</a>, <a class="el" href="context_8hpp_source.html#l00079">MemoryConfig::verbose_</a>, and <a class="el" href="context_8hpp_source.html#l00112">HostContext::workers_per_host()</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00123">HostContext::mem_config()</a>, <a class="el" href="context_8cpp_source.html#l00956">MemoryConfig::setup()</a>, <a class="el" href="context_8hpp_source.html#l00079">MemoryConfig::verbose_</a>, and <a class="el" href="context_8hpp_source.html#l00115">HostContext::workers_per_host()</a>.</p>
 
 </div>
 </div>
@@ -402,9 +402,9 @@ Private Attributes</h2></td></tr>
 
 <p>data multiplexer transmits large amounts of data asynchronously. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00139">139</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00142">142</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00204">HostContext::data_multiplexer_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00207">HostContext::data_multiplexer_</a>.</p>
 
 </div>
 </div>
@@ -431,9 +431,9 @@ Private Attributes</h2></td></tr>
 
 <p>the flow control group is used for collective communication. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00133">133</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00136">136</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00186">HostContext::flow_manager_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00189">HostContext::flow_manager_</a>.</p>
 
 </div>
 </div>
@@ -459,9 +459,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns id of this host in the cluser. A host is a machine in the cluster that hosts multiple workers </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00130">130</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00133">133</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="net_2manager_8hpp_source.html#l00063">Manager::my_host_rank()</a>, and <a class="el" href="context_8hpp_source.html#l00176">HostContext::net_manager_</a>.</p>
+<p>References <a class="el" href="net_2manager_8hpp_source.html#l00063">Manager::my_host_rank()</a>, and <a class="el" href="context_8hpp_source.html#l00179">HostContext::net_manager_</a>.</p>
 
 </div>
 </div>
@@ -488,9 +488,9 @@ Private Attributes</h2></td></tr>
 
 <p>Returns local_host_id_. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00109">109</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00112">112</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00164">HostContext::local_host_id_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00167">HostContext::local_host_id_</a>.</p>
 
 </div>
 </div>
@@ -510,9 +510,9 @@ Private Attributes</h2></td></tr>
 
 <p>create host log </p>
 
-<p>Definition at line <a class="el" href="context_8cpp_source.html#l01065">1065</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8cpp_source.html#l01092">1092</a> of file <a class="el" href="context_8cpp_source.html">context.cpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00120">HostContext::mem_config()</a>, and <a class="el" href="thrill_2mem_2allocator__base_8hpp_source.html#l00190">thrill::mem::to_string()</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00123">HostContext::mem_config()</a>, and <a class="el" href="thrill_2mem_2allocator__base_8hpp_source.html#l00190">thrill::mem::to_string()</a>.</p>
 
 </div>
 </div>
@@ -539,11 +539,11 @@ Private Attributes</h2></td></tr>
 
 <p>host-global memory config </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00120">120</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00123">123</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00143">HostContext::mem_config_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00146">HostContext::mem_config_</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8cpp_source.html#l00307">HostContext::ConstructLoopback()</a>, and <a class="el" href="context_8cpp_source.html#l01065">HostContext::MakeHostLogPath()</a>.</p>
+<p>Referenced by <a class="el" href="context_8cpp_source.html#l00307">HostContext::ConstructLoopback()</a>, and <a class="el" href="context_8cpp_source.html#l01092">HostContext::MakeHostLogPath()</a>.</p>
 
 </div>
 </div>
@@ -570,9 +570,9 @@ Private Attributes</h2></td></tr>
 
 <p>host-global memory manager </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00123">123</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00126">126</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00170">HostContext::mem_manager_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00173">HostContext::mem_manager_</a>.</p>
 
 </div>
 </div>
@@ -599,9 +599,9 @@ Private Attributes</h2></td></tr>
 
 <p>net manager constructs communication groups to other hosts. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00126">126</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00129">129</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00176">HostContext::net_manager_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00179">HostContext::net_manager_</a>.</p>
 
 </div>
 </div>
@@ -628,9 +628,9 @@ Private Attributes</h2></td></tr>
 
 <p>memory limit of each worker <a class="el" href="classthrill_1_1api_1_1Context.html" title="The Context of a job is a unique instance per worker which holds references to all underlying parts o...">Context</a> for local data structures </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00115">115</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00118">118</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00143">HostContext::mem_config_</a>, <a class="el" href="context_8hpp_source.html#l00073">MemoryConfig::ram_workers_</a>, and <a class="el" href="context_8hpp_source.html#l00167">HostContext::workers_per_host_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00146">HostContext::mem_config_</a>, <a class="el" href="context_8hpp_source.html#l00073">MemoryConfig::ram_workers_</a>, and <a class="el" href="context_8hpp_source.html#l00170">HostContext::workers_per_host_</a>.</p>
 
 </div>
 </div>
@@ -657,9 +657,9 @@ Private Attributes</h2></td></tr>
 
 <p>number of workers per host (all have the same). </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00112">112</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00115">115</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>References <a class="el" href="context_8hpp_source.html#l00167">HostContext::workers_per_host_</a>.</p>
+<p>References <a class="el" href="context_8hpp_source.html#l00170">HostContext::workers_per_host_</a>.</p>
 
 <p>Referenced by <a class="el" href="context_8cpp_source.html#l00307">HostContext::ConstructLoopback()</a>.</p>
 
@@ -678,7 +678,7 @@ Private Attributes</h2></td></tr>
 
 <p>base logger exclusive for this host context </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00150">150</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00153">153</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
 </div>
 </div>
@@ -706,9 +706,9 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p>data block pool </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00191">191</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00194">194</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00136">HostContext::block_pool()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00139">HostContext::block_pool()</a>.</p>
 
 </div>
 </div>
@@ -735,7 +735,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p>register BlockPool's profiling method </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00198">198</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00201">201</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
 </div>
 </div>
@@ -763,9 +763,9 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p>data multiplexer transmits large amounts of data asynchronously. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00204">204</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00207">207</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00139">HostContext::data_multiplexer()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00142">HostContext::data_multiplexer()</a>.</p>
 
 </div>
 </div>
@@ -789,9 +789,9 @@ Private Attributes</h2></td></tr>
 
 <p>main host network dispatcher thread backend </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00173">173</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00176">176</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8cpp_source.html#l01060">HostContext::~HostContext()</a>.</p>
+<p>Referenced by <a class="el" href="context_8cpp_source.html#l01087">HostContext::~HostContext()</a>.</p>
 
 </div>
 </div>
@@ -818,9 +818,9 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p>the flow control group is used for collective communication. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00186">186</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00189">189</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00133">HostContext::flow_manager()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00136">HostContext::flow_manager()</a>.</p>
 
 </div>
 </div>
@@ -844,9 +844,9 @@ Private Attributes</h2></td></tr>
 
 <p>id among all <em>local</em> hosts (in test program runs) </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00164">164</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00167">167</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00109">HostContext::local_host_id()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00112">HostContext::local_host_id()</a>.</p>
 
 </div>
 </div>
@@ -861,9 +861,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>public member which delivers key:value pairs as JSON log lines. this logger is local to this <a class="el" href="classthrill_1_1api_1_1Context.html" title="The Context of a job is a unique instance per worker which holds references to all underlying parts o...">Context</a> which is exclusive for one worker thread. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00155">155</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00158">158</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8cpp_source.html#l01035">HostContext::HostContext()</a>.</p>
+<p>Referenced by <a class="el" href="context_8cpp_source.html#l01061">HostContext::HostContext()</a>.</p>
 
 </div>
 </div>
@@ -887,9 +887,9 @@ Private Attributes</h2></td></tr>
 
 <p>memory configuration </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00143">143</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00146">146</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00120">HostContext::mem_config()</a>, and <a class="el" href="context_8hpp_source.html#l00115">HostContext::worker_mem_limit()</a>.</p>
+<p>Referenced by <a class="el" href="context_8cpp_source.html#l01061">HostContext::HostContext()</a>, <a class="el" href="context_8hpp_source.html#l00123">HostContext::mem_config()</a>, and <a class="el" href="context_8hpp_source.html#l00118">HostContext::worker_mem_limit()</a>.</p>
 
 </div>
 </div>
@@ -913,9 +913,9 @@ Private Attributes</h2></td></tr>
 
 <p>host-global memory manager for internal memory only </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00170">170</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00173">173</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00123">HostContext::mem_manager()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00126">HostContext::mem_manager()</a>.</p>
 
 </div>
 </div>
@@ -939,9 +939,9 @@ Private Attributes</h2></td></tr>
 
 <p>net manager constructs communication groups to other hosts. </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00176">176</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00179">179</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00130">HostContext::host_rank()</a>, and <a class="el" href="context_8hpp_source.html#l00126">HostContext::net_manager()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00133">HostContext::host_rank()</a>, and <a class="el" href="context_8hpp_source.html#l00129">HostContext::net_manager()</a>.</p>
 
 </div>
 </div>
@@ -968,7 +968,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p>register net_manager_'s profiling method </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00180">180</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00183">183</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
 </div>
 </div>
@@ -984,9 +984,9 @@ Private Attributes</h2></td></tr>
 
 <p>thread for scheduling profiling methods for statistical output </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00158">158</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00161">161</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8cpp_source.html#l01035">HostContext::HostContext()</a>.</p>
+<p>Referenced by <a class="el" href="context_8cpp_source.html#l01061">HostContext::HostContext()</a>.</p>
 
 </div>
 </div>
@@ -1010,9 +1010,9 @@ Private Attributes</h2></td></tr>
 
 <p>number of workers per host (all have the same). </p>
 
-<p>Definition at line <a class="el" href="context_8hpp_source.html#l00167">167</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
+<p>Definition at line <a class="el" href="context_8hpp_source.html#l00170">170</a> of file <a class="el" href="context_8hpp_source.html">context.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00115">HostContext::worker_mem_limit()</a>, and <a class="el" href="context_8hpp_source.html#l00112">HostContext::workers_per_host()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00118">HostContext::worker_mem_limit()</a>, and <a class="el" href="context_8hpp_source.html#l00115">HostContext::workers_per_host()</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1026,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1api.html">api</a></li><li class="navelem"><a class="el" href="classthrill_1_1api_1_1HostContext.html">HostContext</a></li>
-    <li class="footer">Generated on Fri Jan 4 2019 10:47:53 for Thrill by
+    <li class="footer">Generated on Sat Jan 5 2019 07:17:21 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

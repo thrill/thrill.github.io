@@ -23,8 +23,8 @@ var classthrill_1_1api_1_1UnionNode =
     [ "RequireParentPushData", "classthrill_1_1api_1_1UnionNode.html#a46e5245619b28183d8db5e18c636c450", null ],
     [ "RunPushData", "classthrill_1_1api_1_1UnionNode.html#aa97fdc5e7bbd968b957c796895c6d461", null ],
     [ "SetConsumeCounter", "classthrill_1_1api_1_1UnionNode.html#a1415b825ac1ae52a5dfa4c371b9c0de1", null ],
-    [ "StartPreOp", "classthrill_1_1api_1_1UnionNode.html#a71930557e096fbb41a76a928eee13c2a", null ],
-    [ "StopPreOp", "classthrill_1_1api_1_1UnionNode.html#a5787adfa1c4f30078758e95711880149", null ],
+    [ "StartPreOp", "classthrill_1_1api_1_1UnionNode.html#afa5c0989fd54c1deef4308a8fb6aa4c6", null ],
+    [ "StopPreOp", "classthrill_1_1api_1_1UnionNode.html#a6566d89f7e9e5ea89de65bba3396ea30", null ],
     [ "children_", "classthrill_1_1api_1_1UnionNode.html#a2f80ee6fc192f5f48832ad2c6ea43722", null ],
     [ "debug", "classthrill_1_1api_1_1UnionNode.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
     [ "num_inputs_", "classthrill_1_1api_1_1UnionNode.html#ab9d5690986653e6d13f1c224b11eb17a", null ]

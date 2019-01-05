@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"classtlx_1_1meta__detail_1_1CallForRangeImpl_3_01Index_00_010_00_01Functor_01_4.html":[5,0,5,1,1],
 "classtlx_1_1meta__detail_1_1CallForRangeImpl_3_01Index_00_010_00_01Functor_01_4.html#ad7af1de3ea92ecb3a7301eaa73e81acc":[5,0,5,1,1,0],
 "classtlx_1_1meta__detail_1_1VMapForRangeImpl.html":[5,0,5,1,4],
 "classtlx_1_1meta__detail_1_1VMapForRangeImpl.html#a3e21ec42b2f824873d59c3f71be2b48c":[5,0,5,1,4,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "cmdline__parser_8cpp_source.html":[6,0,2,1,0,15],
 "cmdline__parser_8hpp.html":[6,0,2,1,0,16],
 "cmdline__parser_8hpp_source.html":[6,0,2,1,0,16],
-"collapse_8hpp.html":[6,0,3,0,5],
-"collapse_8hpp.html#accf7e800b5d7fa61b1eff16e5202b590":[6,0,3,0,5,2]
+"collapse_8hpp.html":[6,0,3,0,5]
 };

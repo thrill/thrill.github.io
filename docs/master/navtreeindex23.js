@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"classtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html#aab7e238270860f97f119cc36f9720f03":[5,0,5,20,22],
 "classtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html#aad49edca1b38508932c5d2c279e3b89d":[5,0,5,20,4],
 "classtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html#ab221d6f56ef9cc5a219cda5c1f744768":[5,0,5,20,25],
 "classtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html#ab4fe0bd47df523c3f1500e907bbd9ee1":[5,0,5,20,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "classtlx_1_1ReferenceCounter.html#a84c7401c7aeead7b2b9a6795d9874e3b":[5,0,5,82,4],
 "classtlx_1_1ReferenceCounter.html#aad117db09f7dbf80d61e5ba2d8d53e75":[5,0,5,82,1],
 "classtlx_1_1ReferenceCounter.html#ad68b88788d7448285431d88ba05d4faf":[5,0,5,82,5],
-"classtlx_1_1RingBuffer.html":[3,1,4,1,5],
-"classtlx_1_1RingBuffer.html#a0176d9303b082e74cc33cc7c8bfd1e2f":[3,1,4,1,5,30]
+"classtlx_1_1RingBuffer.html":[3,1,4,1,5]
 };

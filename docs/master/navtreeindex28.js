@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"die_2core_8hpp.html#a0d3e703383d8ee82ec46e3b72974b5f4":[6,0,2,1,0,3,1,4],
 "die_2core_8hpp.html#a1972bdbc5b9ff146cf88d18ec9a12d64":[6,0,2,1,0,3,1,19],
 "die_2core_8hpp.html#a1a4f198a88970a7cb1f5d8d3a0555b79":[6,0,2,1,0,3,1,18],
 "die_2core_8hpp.html#a58f7344e93396da43cfd07592e373923":[6,0,2,1,0,3,1,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "exec-profile_8html_source.html":[6,0,0,0,0],
 "exithandler_8cpp.html":[6,0,2,0,0,0,5],
 "exithandler_8cpp.html#a53659dfe6b7e665a1bca43d3cadcf248":[6,0,2,0,0,0,5,0],
-"exithandler_8cpp.html#ac1b373d7bf0af6f1ccb9ff02c7a3b969":[6,0,2,0,0,0,5,1],
-"exithandler_8cpp_source.html":[6,0,2,0,0,0,5]
+"exithandler_8cpp.html#ac1b373d7bf0af6f1ccb9ff02c7a3b969":[6,0,2,0,0,0,5,1]
 };

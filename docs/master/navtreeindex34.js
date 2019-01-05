@@ -1,5 +1,6 @@
 var NAVTREEINDEX34 =
 {
+"group__tlx__string.html#ga0210d995cdc4df9aafcd09c005571449":[3,1,4,8,112],
 "group__tlx__string.html#ga03240bad0b02669f254c21c28009c21a":[3,1,4,8,75],
 "group__tlx__string.html#ga033f3fec1db85f0203f9f33ef0cfe271":[3,1,4,8,125],
 "group__tlx__string.html#ga059d265ada554d8653d877a28d4d518d":[3,1,4,8,131],
@@ -248,6 +249,5 @@ var NAVTREEINDEX34 =
 "hyperloglog_8cpp.html#a7604a9ed591b1dd31db2b4f8ab18eb64":[6,0,3,2,5,13],
 "hyperloglog_8cpp.html#a77a508ef8e62a8b3e8d8c1cba92c268b":[6,0,3,2,5,31],
 "hyperloglog_8cpp.html#a8397f922c7912fd28df4215222363dc4":[6,0,3,2,5,34],
-"hyperloglog_8cpp.html#a8b0a8009883e58fdb2d9c7904944bc13":[6,0,3,2,5,19],
-"hyperloglog_8cpp.html#a8fa87a9781e53fd8b02908a1b27427bb":[6,0,3,2,5,14]
+"hyperloglog_8cpp.html#a8b0a8009883e58fdb2d9c7904944bc13":[6,0,3,2,5,19]
 };
