@@ -1,6 +1,6 @@
 var classthrill_1_1data_1_1BlockQueue =
 [
-    [ "CloseCallback", "classthrill_1_1data_1_1BlockQueue.html#a08335ba0424d579b47e3fb4d0c144aa2", null ],
+    [ "CloseCallback", "classthrill_1_1data_1_1BlockQueue.html#ad33906c661aeb500bec0eebc56052fb8", null ],
     [ "ConsumeReader", "classthrill_1_1data_1_1BlockQueue.html#a7d765cf1578228934745a49ec446e67f", null ],
     [ "Reader", "classthrill_1_1data_1_1BlockQueue.html#ac306eb24ea466acd3e0d87ea82f56916", null ],
     [ "Writer", "classthrill_1_1data_1_1BlockQueue.html#a71613aa0158c1a378e6e06913a4f685d", null ],

@@ -1,7 +1,7 @@
 var classthrill_1_1api_1_1DIANode =
 [
     [ "Child", "structthrill_1_1api_1_1DIANode_1_1Child.html", "structthrill_1_1api_1_1DIANode_1_1Child" ],
-    [ "Callback", "classthrill_1_1api_1_1DIANode.html#aee28d6cdfe25b4ccb931314859d9551f", null ],
+    [ "Callback", "classthrill_1_1api_1_1DIANode.html#a83e932b5c20d89781468b6f5ceba9a0c", null ],
     [ "DIANode", "classthrill_1_1api_1_1DIANode.html#ae932885fd74d07124e0b5396e0230096", null ],
     [ "DIANode", "classthrill_1_1api_1_1DIANode.html#a6c410afa333025363ed82b6837a3f5ac", null ],
     [ "AddChild", "classthrill_1_1api_1_1DIANode.html#ab874030f3e9151292701059fa46616d2", null ],

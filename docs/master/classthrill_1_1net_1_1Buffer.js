@@ -1,9 +1,9 @@
 var classthrill_1_1net_1_1Buffer =
 [
     [ "const_iterator", "classthrill_1_1net_1_1Buffer.html#ad517750b1a85b1790f354ad2aac7e588", null ],
-    [ "const_reference", "classthrill_1_1net_1_1Buffer.html#a5547e634a8602ad47bdbec65167d7fce", null ],
+    [ "const_reference", "classthrill_1_1net_1_1Buffer.html#ab1137da269e66589b98fce3416d40502", null ],
     [ "iterator", "classthrill_1_1net_1_1Buffer.html#a992b1a22e86446784938e34df4b91fe3", null ],
-    [ "reference", "classthrill_1_1net_1_1Buffer.html#aaa3f89aae50054d0bb5c9f266819815b", null ],
+    [ "reference", "classthrill_1_1net_1_1Buffer.html#a74202cdd96628bc49a756e5fc87d22de", null ],
     [ "size_type", "classthrill_1_1net_1_1Buffer.html#a8560ac5527cd0ed38d71e0e58acc8021", null ],
     [ "value_type", "classthrill_1_1net_1_1Buffer.html#a7f885ee7afef166d26d4208624566958", null ],
     [ "Buffer", "classthrill_1_1net_1_1Buffer.html#a38a787bf4941e1f06c1ef2ce81743d38", null ],
@@ -32,7 +32,7 @@ var classthrill_1_1net_1_1Buffer =
     [ "size", "classthrill_1_1net_1_1Buffer.html#a0801762a3fe36fe32dca5f16e515478d", null ],
     [ "ToString", "classthrill_1_1net_1_1Buffer.html#a946e9412867b046958667b21a1236eca", null ],
     [ "Zero", "classthrill_1_1net_1_1Buffer.html#abcae23803b7517cce5047494dfcdd2c8", null ],
-    [ "operator<<", "classthrill_1_1net_1_1Buffer.html#abfa0f539fd2790aef0d8cb568a48d9f6", null ],
+    [ "operator<<", "classthrill_1_1net_1_1Buffer.html#a9e523142e8abde7f08b8eccd10030afc", null ],
     [ "swap", "classthrill_1_1net_1_1Buffer.html#a1bf6beb91e98a04f0538f1b68264f7d8", null ],
     [ "data_", "classthrill_1_1net_1_1Buffer.html#a0c47801601a9aa271a075cec74adf98b", null ],
     [ "size_", "classthrill_1_1net_1_1Buffer.html#a4f3592f75c4916a9a92255c165bd65d2", null ]

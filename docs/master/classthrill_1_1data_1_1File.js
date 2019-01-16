@@ -37,7 +37,7 @@ var classthrill_1_1data_1_1File =
     [ "size_bytes", "classthrill_1_1data_1_1File.html#a6b7939a033faf2ab815feb05d3bb0a1d", null ],
     [ "ConsumeFileBlockSource", "classthrill_1_1data_1_1File.html#a10c5a847993970cbc6c5893e9d583e58", null ],
     [ "KeepFileBlockSource", "classthrill_1_1data_1_1File.html#a32dc02aa60242fa7565dad4563a06e95", null ],
-    [ "operator<<", "classthrill_1_1data_1_1File.html#a7d55bba714506d2a87d284984a02bc17", null ],
+    [ "operator<<", "classthrill_1_1data_1_1File.html#acddd255992227853660a9c8b8f02d1cb", null ],
     [ "allocate_can_fail_", "classthrill_1_1data_1_1File.html#a8a52a84f0a2aa480b76baeb8a219ef68", null ],
     [ "blocks_", "classthrill_1_1data_1_1File.html#ab52438536de565fc61ee40f1e9092e9a", null ],
     [ "default_prefetch_size_", "classthrill_1_1data_1_1File.html#a72cb20a6a53a269d507c18272e1bf941", null ],

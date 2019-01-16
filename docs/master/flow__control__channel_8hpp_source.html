@@ -614,7 +614,7 @@ $(document).ready(function(){initNavTree('flow__control__channel_8hpp_source.htm
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;                <span class="keyword">auto</span> local_gather = std::make_shared&lt;std::vector&lt;T&gt; &gt;(n);</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="group__tlx__math.html#ga06084e6aa5055e2c602add77f1df1967">tlx::is_power_of_two</a>(<a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#a441dbca9f29c19504aadc38de1582f27">group</a>().num_hosts())) {</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;                        <span class="comment">// gather local values and insert at correct final positions in the vector</span></div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;                    <span class="comment">// gather local values and insert at correct final positions in the vector</span></div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#ae29834b2827b2988d6916046f17bb760">thread_count_</a>; i++) {</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;                        local_gather-&gt;at(thread_count_ * <a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#a4aaf0495d34f4921a5759faf85ff9a13">group_</a>.<a class="code" href="classthrill_1_1net_1_1Group.html#ae75328939a4b19114b4f83b395d1d1e3">my_host_rank</a>() + i) =</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;                            <a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#af818956f977b7936eb2c42a5d4600e2b">GetLocalShared</a>&lt;std::pair&lt;T, SharedVectorT&gt; &gt;(step, i)-&gt;first;</div>
@@ -624,7 +624,7 @@ $(document).ready(function(){initNavTree('flow__control__channel_8hpp_source.htm
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                    <a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#a4aaf0495d34f4921a5759faf85ff9a13">group_</a>.<a class="code" href="group__net__layer.html#ga6c7021d71c8e93209d170fb46b9a4886">AllGatherRecursiveDoublingPowerOfTwo</a>(local_gather-&gt;data(), <a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#ae29834b2827b2988d6916046f17bb760">thread_count_</a>);</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                }</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;                        <span class="comment">// gather local values and insert at correct final positions in the vector</span></div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;                    <span class="comment">// gather local values and insert at correct final positions in the vector</span></div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classthrill_1_1net_1_1FlowControlChannel.html#ae29834b2827b2988d6916046f17bb760">thread_count_</a>; i++) {</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;                        local_gather-&gt;at(i) =</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;                            GetLocalShared&lt;std::pair&lt;T, SharedVectorT&gt; &gt;(step, i)-&gt;first;</div>
@@ -1047,7 +1047,7 @@ $(document).ready(function(){initNavTree('flow__control__channel_8hpp_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_877fdf1e6de6dbbd26be6a4f8db0e6bf.html">net</a></li><li class="navelem"><a class="el" href="flow__control__channel_8hpp.html">flow_control_channel.hpp</a></li>
-    <li class="footer">Generated on Sat Jan 5 2019 07:17:18 for Thrill by
+    <li class="footer">Generated on Wed Jan 16 2019 18:40:29 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

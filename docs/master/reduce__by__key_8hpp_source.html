@@ -238,355 +238,354 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;          <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">post_phase_</a>(</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;              <a class="code" href="classthrill_1_1api_1_1DIABase.html#ae8f38e2955f476fde7f144a0f76129bb">context_</a>, <a class="code" href="classthrill_1_1api_1_1DIABase.html#af4d2f8359bc7945ac1ce5bc9e006953c">Super::dia_id</a>(), key_extractor, reduce_function,</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;              Emitter(<span class="keyword">this</span>), config,</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;              <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a25c4ed0613d19b7f957f1fd5dd58872f">HashIndexFunction</a>(key_hash_function), key_equal_function)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="comment">// Hook PreOp: Locally hash elements of the current DIA onto buckets and</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="comment">// reduce each bucket to a single value, afterwards send data to another</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">// worker given by the shuffle algorithm.</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keyword">auto</span> pre_op_fn = [<span class="keyword">this</span>](<span class="keyword">const</span> ValueType&amp; input) {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                             <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7">pre_phase_</a>.Insert(input);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                         };</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="comment">// close the function stack with our pre op and register it at</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="comment">// parent node for output</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keyword">auto</span> lop_chain = parent.stack().push(pre_op_fn).fold();</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        parent.node()-&gt;AddChild(<span class="keyword">this</span>, lop_chain);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    DIAMemUse <a class="code" href="classthrill_1_1api_1_1DIABase.html#ade76983c318547469ec16985fad93352">PreOpMemUse</a>() final {</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="comment">// request maximum RAM limit, the value is calculated by StageBuilder,</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="comment">// and set as DIABase::mem_limit_.</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIAMemUse.html#a1cd8d6781f5432d707e8687039893be7">DIAMemUse::Max</a>();</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#a4b3ddda1418ebf0574a00f8ebf341265">StartPreOp</a>(<span class="keywordtype">size_t</span> <span class="comment">/* parent_index */</span>) final {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; *<span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot; running StartPreOp&quot;</span>;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classthrill_1_1api_1_1ReduceNode.html#ad5cbd7d497b3933f17c69f5d71f6bec7">use_post_thread_</a>) {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="comment">// use pre_phase without extra thread</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7">pre_phase_</a>.Initialize(<a class="code" href="classthrill_1_1api_1_1DIABase.html#a3574aade2ec84d0abace4b3d80e31c2f">DIABase::mem_limit_</a>);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7">pre_phase_</a>.Initialize(<a class="code" href="classthrill_1_1api_1_1DIABase.html#a3574aade2ec84d0abace4b3d80e31c2f">DIABase::mem_limit_</a> / 2);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">post_phase_</a>.Initialize(<a class="code" href="classthrill_1_1api_1_1DIABase.html#a3574aade2ec84d0abace4b3d80e31c2f">DIABase::mem_limit_</a> / 2);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="comment">// start additional thread to receive from the channel</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#aeca1ca9969ec13ce72735b5f6d468ab1">thread_</a> = <a class="code" href="namespacethrill_1_1common.html#a2744bf429da7b68993e59e9c65df7c72">common::CreateThread</a>([<span class="keyword">this</span>] { ProcessChannel(); });</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#ae1434a566c104eefe027936856588f33">StopPreOp</a>(<span class="keywordtype">size_t</span> <span class="comment">/* parent_index */</span>) final {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; *<span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot; running StopPreOp&quot;</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="comment">// Flush hash table before the postOp</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7">pre_phase_</a>.FlushAll();</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7">pre_phase_</a>.CloseAll();</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1api_1_1ReduceNode.html#ad5cbd7d497b3933f17c69f5d71f6bec7">use_post_thread_</a>) {</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="comment">// waiting for the additional thread to finish the reduce</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#aeca1ca9969ec13ce72735b5f6d468ab1">thread_</a>.join();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="comment">// deallocate stream if already processed</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#ab2c4552c87902aff3cd748f9d39de5bb">use_mix_stream_</a> ? mix_stream_.reset() : <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a8d115b456cc5f148d35663f6061cf30d">cat_stream_</a>.<a class="code" href="classtlx_1_1CountingPtr.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a>();</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        }</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    }</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#ad1759538446397b32733b1f0747cda56">Execute</a>() final { }</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    DIAMemUse <a class="code" href="classthrill_1_1api_1_1DIABase.html#a5f1ad74bf30b2edaa8f0469ec3802f1f">PushDataMemUse</a>() final {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIAMemUse.html#a1cd8d6781f5432d707e8687039893be7">DIAMemUse::Max</a>();</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#a7b55875187fc15ca2640cb6b9266a624">PushData</a>(<span class="keywordtype">bool</span> consume) <span class="keyword">final</span> {</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classthrill_1_1api_1_1ReduceNode.html#ad5cbd7d497b3933f17c69f5d71f6bec7">use_post_thread_</a> &amp;&amp; !<a class="code" href="classthrill_1_1api_1_1ReduceNode.html#aec7a79b2ac83344b8470699cc128df00">reduced_</a>) {</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="comment">// not final reduced, and no additional thread, perform post reduce</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">post_phase_</a>.Initialize(<a class="code" href="classthrill_1_1api_1_1DIABase.html#a3574aade2ec84d0abace4b3d80e31c2f">DIABase::mem_limit_</a>);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            ProcessChannel();</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="comment">// deallocate stream if already processed</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#ab2c4552c87902aff3cd748f9d39de5bb">use_mix_stream_</a> ? mix_stream_.reset() : <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a8d115b456cc5f148d35663f6061cf30d">cat_stream_</a>.<a class="code" href="classtlx_1_1CountingPtr.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a>();</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#aec7a79b2ac83344b8470699cc128df00">reduced_</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">post_phase_</a>.PushData(consume);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">    //! process the inbound data in the post reduce phase</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> ProcessChannel() {</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1api_1_1ReduceNode.html#ab2c4552c87902aff3cd748f9d39de5bb">use_mix_stream_</a>)</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keyword">auto</span> reader = mix_stream_-&gt;GetMixReader(<span class="comment">/* consume */</span> <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;reading data from&quot;</span> &lt;&lt; mix_stream_-&gt;id()</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;to push into post phase which flushes to&quot;</span> &lt;&lt; this-&gt;<a class="code" href="classthrill_1_1api_1_1DIABase.html#af4d2f8359bc7945ac1ce5bc9e006953c">dia_id</a>();</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="keywordflow">while</span> (reader.HasNext()) {</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">post_phase_</a>.Insert(reader.template Next&lt;TableItem&gt;());</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            }</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        }</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        {</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keyword">auto</span> reader = <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a8d115b456cc5f148d35663f6061cf30d">cat_stream_</a>-&gt;GetCatReader(<span class="comment">/* consume */</span> <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;reading data from&quot;</span> &lt;&lt; <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a8d115b456cc5f148d35663f6061cf30d">cat_stream_</a>-&gt;id()</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;to push into post phase which flushes to&quot;</span> &lt;&lt; this-&gt;<a class="code" href="classthrill_1_1api_1_1DIABase.html#af4d2f8359bc7945ac1ce5bc9e006953c">dia_id</a>();</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            <span class="keywordflow">while</span> (reader.HasNext()) {</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">post_phase_</a>.Insert(reader.template Next&lt;TableItem&gt;());</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            }</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        }</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#a1b40a2658f30f8466f310ceea310afb5">Dispose</a>() final {</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">post_phase_</a>.Dispose();</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    }</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="comment">// pointers for both Mix and CatStream. only one is used, the other costs</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="comment">// only a null pointer.</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="code" href="group__data__layer.html#ga969da325e57eeefa9e0e2544086bee2d">data::MixStreamPtr</a> mix_stream_;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <a class="code" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a8d115b456cc5f148d35663f6061cf30d">cat_stream_</a>;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceNode.html#a499945058364ff571459f01b66daefc7">  224</a></span>&#160;    <a class="code" href="classthrill_1_1data_1_1StreamData_1_1Writers.html">data::Stream::Writers</a> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a499945058364ff571459f01b66daefc7">emitters_</a>;<span class="comment"></span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment">    //! handle to additional thread for post phase</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceNode.html#aeca1ca9969ec13ce72735b5f6d468ab1">  226</a></span>&#160;<span class="comment"></span>    std::thread <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#aeca1ca9969ec13ce72735b5f6d468ab1">thread_</a>;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="classthrill_1_1core_1_1ReducePrePhase.html">core::ReducePrePhase</a>&lt;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a204dee530e24efc047ecb3caef72bf3b">TableItem</a>, <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a17e6ef244d4d03395a813cf2a45a9648">Key</a>, ValueType, KeyExtractor,</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        ReduceFunction, VolatileKey, <a class="code" href="classthrill_1_1data_1_1Stream.html#aa69ca4ad57a0d2a683361d219fd48c2e">data::Stream::Writer</a>, ReduceConfig,</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a25c4ed0613d19b7f957f1fd5dd58872f">HashIndexFunction</a>, KeyEqualFunction, KeyHashFunction,</div>
-<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7">  232</a></span>&#160;        UseDuplicateDetection&gt; <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7">pre_phase_</a>;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="code" href="classthrill_1_1core_1_1ReduceByHashPostPhase.html">core::ReduceByHashPostPhase</a>&lt;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a204dee530e24efc047ecb3caef72bf3b">TableItem</a>, <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a17e6ef244d4d03395a813cf2a45a9648">Key</a>, ValueType, KeyExtractor, ReduceFunction, <a class="code" href="classthrill_1_1api_1_1ReduceNode_1_1Emitter.html">Emitter</a>,</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        VolatileKey, ReduceConfig,</div>
-<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">  237</a></span>&#160;        <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a25c4ed0613d19b7f957f1fd5dd58872f">HashIndexFunction</a>, KeyEqualFunction&gt; <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">post_phase_</a>;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceNode.html#aec7a79b2ac83344b8470699cc128df00">  239</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#aec7a79b2ac83344b8470699cc128df00">reduced_</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;};</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig&gt;</div>
-<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6">  244</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6">DIA&lt;ValueType, Stack&gt;::ReduceByKey</a>(</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="comment">// forward to main function</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">using</span> Key = <span class="keyword">typename</span> common::FunctionTraits&lt;KeyExtractor&gt;::result_type;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordflow">return</span> ReduceByKey(</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <a class="code" href="namespacethrill_1_1api.html#a87c9961a35015a78ebd4c3396e000dd2">NoVolatileKeyTag</a>, <a class="code" href="namespacethrill_1_1api.html#a541982924f632754cbea467f0bde9b2d">NoDuplicateDetectionTag</a>,</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        key_extractor, reduce_function, reduce_config,</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        std::hash&lt;Key&gt;(), std::equal_to&lt;Key&gt;());</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;}</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> ReduceFunction,</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;          <span class="keyword">typename</span> ReduceConfig, <span class="keyword">typename</span> KeyHashFunction&gt;</div>
-<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="group__dia__dops.html#ga2fb344604fe3e665a1cefb6af63ef27b">  259</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6">DIA&lt;ValueType, Stack&gt;::ReduceByKey</a>(</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="comment">// forward to main function</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keyword">using</span> Key = <span class="keyword">typename</span> common::FunctionTraits&lt;KeyExtractor&gt;::result_type;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">return</span> ReduceByKey(</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <a class="code" href="namespacethrill_1_1api.html#a87c9961a35015a78ebd4c3396e000dd2">NoVolatileKeyTag</a>, <a class="code" href="namespacethrill_1_1api.html#a541982924f632754cbea467f0bde9b2d">NoDuplicateDetectionTag</a>,</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        key_extractor, reduce_function, reduce_config,</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        key_hash_function, std::equal_to&lt;Key&gt;());</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> VolatileKeyValue,</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;          <span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig,</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;          <span class="keyword">typename</span> KeyHashFunction, <span class="keyword">typename</span> KeyEqualFunction&gt;</div>
-<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="group__dia__dops.html#gacc9ba2ee1e11caa4eb7fa52ea5dbe6f1">  276</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6">DIA&lt;ValueType, Stack&gt;::ReduceByKey</a>(</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1VolatileKeyFlag.html">VolatileKeyFlag&lt;VolatileKeyValue&gt;</a>&amp; volatile_key_flag,</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function,</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keyword">const</span> KeyEqualFunction&amp; key_equal_funtion)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="comment">// forward to main function</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">return</span> ReduceByKey(</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        volatile_key_flag, <a class="code" href="namespacethrill_1_1api.html#a541982924f632754cbea467f0bde9b2d">NoDuplicateDetectionTag</a>,</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        key_extractor, reduce_function, reduce_config,</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        key_hash_function, key_equal_funtion);</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;}</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> DuplicateDetectionValue,</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;          <span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig,</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;          <span class="keyword">typename</span> KeyHashFunction, <span class="keyword">typename</span> KeyEqualFunction&gt;</div>
-<div class="line"><a name="l00294"></a><span class="lineno"><a class="line" href="group__dia__dops.html#gaaf28c6a4e66f961e7bd21c936ac1ae04">  294</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6">DIA&lt;ValueType, Stack&gt;::ReduceByKey</a>(</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1DuplicateDetectionFlag.html">DuplicateDetectionFlag&lt;DuplicateDetectionValue&gt;</a>&amp; duplicate_detection_flag,</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function,</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keyword">const</span> KeyEqualFunction&amp; key_equal_funtion)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="comment">// forward to main function</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">return</span> ReduceByKey(</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <a class="code" href="namespacethrill_1_1api.html#a87c9961a35015a78ebd4c3396e000dd2">NoVolatileKeyTag</a>, duplicate_detection_flag,</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        key_extractor, reduce_function, reduce_config,</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        key_hash_function, key_equal_funtion);</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> VolatileKeyValue,</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;          <span class="keywordtype">bool</span> DuplicateDetectionValue,</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;          <span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig,</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;          <span class="keyword">typename</span> KeyHashFunction, <span class="keyword">typename</span> KeyEqualFunction&gt;</div>
-<div class="line"><a name="l00313"></a><span class="lineno"><a class="line" href="group__dia__dops.html#gaa79f670abaff6f17cb7d17002c475eb7">  313</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6">DIA&lt;ValueType, Stack&gt;::ReduceByKey</a>(</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1VolatileKeyFlag.html">VolatileKeyFlag&lt;VolatileKeyValue&gt;</a>&amp;,</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1DuplicateDetectionFlag.html">DuplicateDetectionFlag&lt;DuplicateDetectionValue&gt;</a>&amp;,</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function,</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keyword">const</span> KeyEqualFunction&amp; key_equal_funtion)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    assert(IsValid());</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keyword">using</span> DOpResult</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        = <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::result_type;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        std::is_convertible&lt;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>,</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::template arg&lt;0&gt;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="stringliteral">&quot;ReduceFunction has the wrong input type&quot;</span>);</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        std::is_convertible&lt;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>,</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::template arg&lt;1&gt;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="stringliteral">&quot;ReduceFunction has the wrong input type&quot;</span>);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        std::is_same&lt;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            DOpResult,</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>&gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="stringliteral">&quot;ReduceFunction has the wrong output type&quot;</span>);</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        std::is_same&lt;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            <span class="keyword">typename</span> std::decay&lt;<span class="keyword">typename</span> common::FunctionTraits&lt;KeyExtractor&gt;::</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                                <span class="keyword">template</span> arg&lt;0&gt; &gt;::type,</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>&gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="stringliteral">&quot;KeyExtractor has the wrong input type&quot;</span>);</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html">ReduceNode</a> = <a class="code" href="classthrill_1_1api_1_1ReduceNode.html">api::ReduceNode</a>&lt;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        DOpResult, KeyExtractor, ReduceFunction, ReduceConfig,</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        KeyHashFunction, KeyEqualFunction,</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        VolatileKeyValue, DuplicateDetectionValue&gt;;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ReduceNode&gt;(</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        *<span class="keyword">this</span>, <span class="stringliteral">&quot;ReduceByKey&quot;</span>,</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        key_extractor, reduce_function, reduce_config,</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        key_hash_function, key_equal_funtion);</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;DOpResult&gt;</a>(node);</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;}</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment">// ReducePair</span></div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig&gt;</div>
-<div class="line"><a name="l00371"></a><span class="lineno"><a class="line" href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd">  371</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd">DIA&lt;ValueType, Stack&gt;::ReducePair</a>(</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="comment">// forward to main function</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keyword">using</span> Key = <span class="keyword">typename</span> ValueType::first_type;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordflow">return</span> ReducePair(reduce_function, reduce_config,</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                      std::hash&lt;Key&gt;(), std::equal_to&lt;Key&gt;());</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;}</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig,</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;          <span class="keyword">typename</span> KeyHashFunction&gt;</div>
-<div class="line"><a name="l00383"></a><span class="lineno"><a class="line" href="group__dia__dops.html#gad79593a4c7c411a3883e49741b68a586">  383</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd">DIA&lt;ValueType, Stack&gt;::ReducePair</a>(</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="comment">// forward to main function</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keyword">using</span> Key = <span class="keyword">typename</span> ValueType::first_type;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordflow">return</span> ReducePair(reduce_function, reduce_config,</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                      key_hash_function, std::equal_to&lt;Key&gt;());</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;}</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig,</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;          <span class="keyword">typename</span> KeyHashFunction, <span class="keyword">typename</span> KeyEqualFunction&gt;</div>
-<div class="line"><a name="l00396"></a><span class="lineno"><a class="line" href="group__dia__dops.html#gaa83c4de24f28079cb3842d7306990ae5">  396</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd">DIA&lt;ValueType, Stack&gt;::ReducePair</a>(</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function,</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="keyword">const</span> KeyEqualFunction&amp; key_equal_funtion)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="comment">// forward to main function</span></div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordflow">return</span> ReducePair(<a class="code" href="namespacethrill_1_1api.html#a541982924f632754cbea467f0bde9b2d">NoDuplicateDetectionTag</a>,</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                      reduce_function, reduce_config,</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                      key_hash_function, key_equal_funtion);</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;}</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> DuplicateDetectionValue,</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;          <span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig,</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;          <span class="keyword">typename</span> KeyHashFunction, <span class="keyword">typename</span> KeyEqualFunction&gt;</div>
-<div class="line"><a name="l00411"></a><span class="lineno"><a class="line" href="group__dia__dops.html#ga0c2fd8eb498c64eeb3acad27398d4770">  411</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd">DIA&lt;ValueType, Stack&gt;::ReducePair</a>(</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1DuplicateDetectionFlag.html">DuplicateDetectionFlag&lt;DuplicateDetectionValue&gt;</a>&amp;,</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function,</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keyword">const</span> KeyEqualFunction&amp; key_equal_funtion)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    assert(IsValid());</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="keyword">using</span> DOpResult</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        = <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::result_type;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    static_assert(<a class="code" href="structtlx_1_1is__std__pair.html">tlx::is_std_pair&lt;ValueType&gt;::value</a>,</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;                  <span class="stringliteral">&quot;ValueType is not a pair&quot;</span>);</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        std::is_convertible&lt;</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;            <span class="keyword">typename</span> ValueType::second_type,</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;            <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::template arg&lt;0&gt;</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        <span class="stringliteral">&quot;ReduceFunction has the wrong input type&quot;</span>);</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        std::is_convertible&lt;</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            <span class="keyword">typename</span> ValueType::second_type,</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::template arg&lt;1&gt;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="stringliteral">&quot;ReduceFunction has the wrong input type&quot;</span>);</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        std::is_same&lt;</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            DOpResult,</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;            <span class="keyword">typename</span> ValueType::second_type&gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <span class="stringliteral">&quot;ReduceFunction has the wrong output type&quot;</span>);</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keyword">auto</span> key_extractor = [](<span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>&amp; <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>) { <span class="keywordflow">return</span> <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>.first; };</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="keyword">auto</span> reduce_pair_function =</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        [reduce_function](<span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>&amp; a, <span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>&amp; b) {</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>(a.first, reduce_function(a.second, b.second));</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        };</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html">ReduceNode</a> = <a class="code" href="classthrill_1_1api_1_1ReduceNode.html">api::ReduceNode</a>&lt;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>,</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        decltype(key_extractor), decltype(reduce_pair_function),</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        ReduceConfig, KeyHashFunction, KeyEqualFunction,</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="comment">/* VolatileKey */</span> <span class="keyword">false</span>, DuplicateDetectionValue&gt;;</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ReduceNode&gt;(</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        *<span class="keyword">this</span>, <span class="stringliteral">&quot;ReducePair&quot;</span>,</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        key_extractor, reduce_pair_function, reduce_config,</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        key_hash_function, key_equal_funtion);</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(node);</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;}</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;} <span class="comment">// namespace api</span></div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;} <span class="comment">// namespace thrill</span></div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="preprocessor">#endif // !THRILL_API_REDUCE_BY_KEY_HEADER</span></div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;              <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a25c4ed0613d19b7f957f1fd5dd58872f">HashIndexFunction</a>(key_hash_function), key_equal_function) {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="comment">// Hook PreOp: Locally hash elements of the current DIA onto buckets and</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="comment">// reduce each bucket to a single value, afterwards send data to another</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="comment">// worker given by the shuffle algorithm.</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keyword">auto</span> pre_op_fn = [<span class="keyword">this</span>](<span class="keyword">const</span> ValueType&amp; input) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                             <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7">pre_phase_</a>.Insert(input);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                         };</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="comment">// close the function stack with our pre op and register it at</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="comment">// parent node for output</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keyword">auto</span> lop_chain = parent.stack().push(pre_op_fn).fold();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        parent.node()-&gt;AddChild(<span class="keyword">this</span>, lop_chain);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    DIAMemUse <a class="code" href="classthrill_1_1api_1_1DIABase.html#ade76983c318547469ec16985fad93352">PreOpMemUse</a>() final {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="comment">// request maximum RAM limit, the value is calculated by StageBuilder,</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="comment">// and set as DIABase::mem_limit_.</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIAMemUse.html#a1cd8d6781f5432d707e8687039893be7">DIAMemUse::Max</a>();</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#a4b3ddda1418ebf0574a00f8ebf341265">StartPreOp</a>(<span class="keywordtype">size_t</span> <span class="comment">/* parent_index */</span>) final {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; *<span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot; running StartPreOp&quot;</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classthrill_1_1api_1_1ReduceNode.html#ad5cbd7d497b3933f17c69f5d71f6bec7">use_post_thread_</a>) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="comment">// use pre_phase without extra thread</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7">pre_phase_</a>.Initialize(<a class="code" href="classthrill_1_1api_1_1DIABase.html#a3574aade2ec84d0abace4b3d80e31c2f">DIABase::mem_limit_</a>);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7">pre_phase_</a>.Initialize(<a class="code" href="classthrill_1_1api_1_1DIABase.html#a3574aade2ec84d0abace4b3d80e31c2f">DIABase::mem_limit_</a> / 2);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">post_phase_</a>.Initialize(<a class="code" href="classthrill_1_1api_1_1DIABase.html#a3574aade2ec84d0abace4b3d80e31c2f">DIABase::mem_limit_</a> / 2);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="comment">// start additional thread to receive from the channel</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#aeca1ca9969ec13ce72735b5f6d468ab1">thread_</a> = <a class="code" href="namespacethrill_1_1common.html#a2744bf429da7b68993e59e9c65df7c72">common::CreateThread</a>([<span class="keyword">this</span>] { ProcessChannel(); });</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#ae1434a566c104eefe027936856588f33">StopPreOp</a>(<span class="keywordtype">size_t</span> <span class="comment">/* parent_index */</span>) final {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a> &lt;&lt; *<span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot; running StopPreOp&quot;</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="comment">// Flush hash table before the postOp</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7">pre_phase_</a>.FlushAll();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7">pre_phase_</a>.CloseAll();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1api_1_1ReduceNode.html#ad5cbd7d497b3933f17c69f5d71f6bec7">use_post_thread_</a>) {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="comment">// waiting for the additional thread to finish the reduce</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#aeca1ca9969ec13ce72735b5f6d468ab1">thread_</a>.join();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="comment">// deallocate stream if already processed</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#ab2c4552c87902aff3cd748f9d39de5bb">use_mix_stream_</a> ? mix_stream_.reset() : <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a8d115b456cc5f148d35663f6061cf30d">cat_stream_</a>.<a class="code" href="classtlx_1_1CountingPtr.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a>();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#ad1759538446397b32733b1f0747cda56">Execute</a>() final { }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    DIAMemUse <a class="code" href="classthrill_1_1api_1_1DIABase.html#a5f1ad74bf30b2edaa8f0469ec3802f1f">PushDataMemUse</a>() final {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIAMemUse.html#a1cd8d6781f5432d707e8687039893be7">DIAMemUse::Max</a>();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#a7b55875187fc15ca2640cb6b9266a624">PushData</a>(<span class="keywordtype">bool</span> consume) <span class="keyword">final</span> {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classthrill_1_1api_1_1ReduceNode.html#ad5cbd7d497b3933f17c69f5d71f6bec7">use_post_thread_</a> &amp;&amp; !<a class="code" href="classthrill_1_1api_1_1ReduceNode.html#aec7a79b2ac83344b8470699cc128df00">reduced_</a>) {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="comment">// not final reduced, and no additional thread, perform post reduce</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">post_phase_</a>.Initialize(<a class="code" href="classthrill_1_1api_1_1DIABase.html#a3574aade2ec84d0abace4b3d80e31c2f">DIABase::mem_limit_</a>);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            ProcessChannel();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <span class="comment">// deallocate stream if already processed</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#ab2c4552c87902aff3cd748f9d39de5bb">use_mix_stream_</a> ? mix_stream_.reset() : <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a8d115b456cc5f148d35663f6061cf30d">cat_stream_</a>.<a class="code" href="classtlx_1_1CountingPtr.html#ad20897c5c8bd47f5d4005989bead0e55">reset</a>();</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#aec7a79b2ac83344b8470699cc128df00">reduced_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">post_phase_</a>.PushData(consume);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">    //! process the inbound data in the post reduce phase</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> ProcessChannel() {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1api_1_1ReduceNode.html#ab2c4552c87902aff3cd748f9d39de5bb">use_mix_stream_</a>)</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        {</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keyword">auto</span> reader = mix_stream_-&gt;GetMixReader(<span class="comment">/* consume */</span> <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;reading data from&quot;</span> &lt;&lt; mix_stream_-&gt;id()</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;to push into post phase which flushes to&quot;</span> &lt;&lt; this-&gt;<a class="code" href="classthrill_1_1api_1_1DIABase.html#af4d2f8359bc7945ac1ce5bc9e006953c">dia_id</a>();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">while</span> (reader.HasNext()) {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">post_phase_</a>.Insert(reader.template Next&lt;TableItem&gt;());</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="keyword">auto</span> reader = <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a8d115b456cc5f148d35663f6061cf30d">cat_stream_</a>-&gt;GetCatReader(<span class="comment">/* consume */</span> <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a">sLOG</a> &lt;&lt; <span class="stringliteral">&quot;reading data from&quot;</span> &lt;&lt; <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a8d115b456cc5f148d35663f6061cf30d">cat_stream_</a>-&gt;id()</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                 &lt;&lt; <span class="stringliteral">&quot;to push into post phase which flushes to&quot;</span> &lt;&lt; this-&gt;<a class="code" href="classthrill_1_1api_1_1DIABase.html#af4d2f8359bc7945ac1ce5bc9e006953c">dia_id</a>();</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <span class="keywordflow">while</span> (reader.HasNext()) {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">post_phase_</a>.Insert(reader.template Next&lt;TableItem&gt;());</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1api_1_1DIABase.html#a1b40a2658f30f8466f310ceea310afb5">Dispose</a>() final {</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">post_phase_</a>.Dispose();</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="comment">// pointers for both Mix and CatStream. only one is used, the other costs</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="comment">// only a null pointer.</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <a class="code" href="group__data__layer.html#ga969da325e57eeefa9e0e2544086bee2d">data::MixStreamPtr</a> mix_stream_;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="code" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">data::CatStreamPtr</a> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a8d115b456cc5f148d35663f6061cf30d">cat_stream_</a>;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceNode.html#a499945058364ff571459f01b66daefc7">  223</a></span>&#160;    <a class="code" href="classthrill_1_1data_1_1StreamData_1_1Writers.html">data::Stream::Writers</a> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a499945058364ff571459f01b66daefc7">emitters_</a>;<span class="comment"></span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment">    //! handle to additional thread for post phase</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceNode.html#aeca1ca9969ec13ce72735b5f6d468ab1">  225</a></span>&#160;<span class="comment"></span>    std::thread <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#aeca1ca9969ec13ce72735b5f6d468ab1">thread_</a>;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <a class="code" href="classthrill_1_1core_1_1ReducePrePhase.html">core::ReducePrePhase</a>&lt;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a204dee530e24efc047ecb3caef72bf3b">TableItem</a>, <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a17e6ef244d4d03395a813cf2a45a9648">Key</a>, ValueType, KeyExtractor,</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        ReduceFunction, VolatileKey, <a class="code" href="classthrill_1_1data_1_1Stream.html#aa69ca4ad57a0d2a683361d219fd48c2e">data::Stream::Writer</a>, ReduceConfig,</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a25c4ed0613d19b7f957f1fd5dd58872f">HashIndexFunction</a>, KeyEqualFunction, KeyHashFunction,</div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7">  231</a></span>&#160;        UseDuplicateDetection&gt; <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7">pre_phase_</a>;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="code" href="classthrill_1_1core_1_1ReduceByHashPostPhase.html">core::ReduceByHashPostPhase</a>&lt;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a204dee530e24efc047ecb3caef72bf3b">TableItem</a>, <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a17e6ef244d4d03395a813cf2a45a9648">Key</a>, ValueType, KeyExtractor, ReduceFunction, <a class="code" href="classthrill_1_1api_1_1ReduceNode_1_1Emitter.html">Emitter</a>,</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        VolatileKey, ReduceConfig,</div>
+<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">  236</a></span>&#160;        <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#a25c4ed0613d19b7f957f1fd5dd58872f">HashIndexFunction</a>, KeyEqualFunction&gt; <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">post_phase_</a>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="classthrill_1_1api_1_1ReduceNode.html#aec7a79b2ac83344b8470699cc128df00">  238</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html#aec7a79b2ac83344b8470699cc128df00">reduced_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;};</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig&gt;</div>
+<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6">  243</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6">DIA&lt;ValueType, Stack&gt;::ReduceByKey</a>(</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="comment">// forward to main function</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keyword">using</span> Key = <span class="keyword">typename</span> common::FunctionTraits&lt;KeyExtractor&gt;::result_type;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">return</span> ReduceByKey(</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <a class="code" href="namespacethrill_1_1api.html#a87c9961a35015a78ebd4c3396e000dd2">NoVolatileKeyTag</a>, <a class="code" href="namespacethrill_1_1api.html#a541982924f632754cbea467f0bde9b2d">NoDuplicateDetectionTag</a>,</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        key_extractor, reduce_function, reduce_config,</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        std::hash&lt;Key&gt;(), std::equal_to&lt;Key&gt;());</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> ReduceFunction,</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;          <span class="keyword">typename</span> ReduceConfig, <span class="keyword">typename</span> KeyHashFunction&gt;</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="group__dia__dops.html#ga2fb344604fe3e665a1cefb6af63ef27b">  258</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6">DIA&lt;ValueType, Stack&gt;::ReduceByKey</a>(</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="comment">// forward to main function</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keyword">using</span> Key = <span class="keyword">typename</span> common::FunctionTraits&lt;KeyExtractor&gt;::result_type;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordflow">return</span> ReduceByKey(</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <a class="code" href="namespacethrill_1_1api.html#a87c9961a35015a78ebd4c3396e000dd2">NoVolatileKeyTag</a>, <a class="code" href="namespacethrill_1_1api.html#a541982924f632754cbea467f0bde9b2d">NoDuplicateDetectionTag</a>,</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        key_extractor, reduce_function, reduce_config,</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        key_hash_function, std::equal_to&lt;Key&gt;());</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> VolatileKeyValue,</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;          <span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig,</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;          <span class="keyword">typename</span> KeyHashFunction, <span class="keyword">typename</span> KeyEqualFunction&gt;</div>
+<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="group__dia__dops.html#gacc9ba2ee1e11caa4eb7fa52ea5dbe6f1">  275</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6">DIA&lt;ValueType, Stack&gt;::ReduceByKey</a>(</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1VolatileKeyFlag.html">VolatileKeyFlag&lt;VolatileKeyValue&gt;</a>&amp; volatile_key_flag,</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function,</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keyword">const</span> KeyEqualFunction&amp; key_equal_funtion)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="comment">// forward to main function</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordflow">return</span> ReduceByKey(</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        volatile_key_flag, <a class="code" href="namespacethrill_1_1api.html#a541982924f632754cbea467f0bde9b2d">NoDuplicateDetectionTag</a>,</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        key_extractor, reduce_function, reduce_config,</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        key_hash_function, key_equal_funtion);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;}</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> DuplicateDetectionValue,</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;          <span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig,</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;          <span class="keyword">typename</span> KeyHashFunction, <span class="keyword">typename</span> KeyEqualFunction&gt;</div>
+<div class="line"><a name="l00293"></a><span class="lineno"><a class="line" href="group__dia__dops.html#gaaf28c6a4e66f961e7bd21c936ac1ae04">  293</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6">DIA&lt;ValueType, Stack&gt;::ReduceByKey</a>(</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1DuplicateDetectionFlag.html">DuplicateDetectionFlag&lt;DuplicateDetectionValue&gt;</a>&amp; duplicate_detection_flag,</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function,</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keyword">const</span> KeyEqualFunction&amp; key_equal_funtion)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="comment">// forward to main function</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordflow">return</span> ReduceByKey(</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <a class="code" href="namespacethrill_1_1api.html#a87c9961a35015a78ebd4c3396e000dd2">NoVolatileKeyTag</a>, duplicate_detection_flag,</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        key_extractor, reduce_function, reduce_config,</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        key_hash_function, key_equal_funtion);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> VolatileKeyValue,</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;          <span class="keywordtype">bool</span> DuplicateDetectionValue,</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;          <span class="keyword">typename</span> KeyExtractor, <span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig,</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;          <span class="keyword">typename</span> KeyHashFunction, <span class="keyword">typename</span> KeyEqualFunction&gt;</div>
+<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="group__dia__dops.html#gaa79f670abaff6f17cb7d17002c475eb7">  312</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6">DIA&lt;ValueType, Stack&gt;::ReduceByKey</a>(</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1VolatileKeyFlag.html">VolatileKeyFlag&lt;VolatileKeyValue&gt;</a>&amp;,</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1DuplicateDetectionFlag.html">DuplicateDetectionFlag&lt;DuplicateDetectionValue&gt;</a>&amp;,</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keyword">const</span> KeyExtractor&amp; key_extractor,</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function,</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keyword">const</span> KeyEqualFunction&amp; key_equal_funtion)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    assert(IsValid());</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keyword">using</span> DOpResult</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        = <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::result_type;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        std::is_convertible&lt;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>,</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::template arg&lt;0&gt;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="stringliteral">&quot;ReduceFunction has the wrong input type&quot;</span>);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        std::is_convertible&lt;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>,</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::template arg&lt;1&gt;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="stringliteral">&quot;ReduceFunction has the wrong input type&quot;</span>);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        std::is_same&lt;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            DOpResult,</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>&gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="stringliteral">&quot;ReduceFunction has the wrong output type&quot;</span>);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        std::is_same&lt;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            <span class="keyword">typename</span> std::decay&lt;<span class="keyword">typename</span> common::FunctionTraits&lt;KeyExtractor&gt;::</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                                <span class="keyword">template</span> arg&lt;0&gt; &gt;::type,</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>&gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="stringliteral">&quot;KeyExtractor has the wrong input type&quot;</span>);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html">ReduceNode</a> = <a class="code" href="classthrill_1_1api_1_1ReduceNode.html">api::ReduceNode</a>&lt;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        DOpResult, KeyExtractor, ReduceFunction, ReduceConfig,</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        KeyHashFunction, KeyEqualFunction,</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        VolatileKeyValue, DuplicateDetectionValue&gt;;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ReduceNode&gt;(</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        *<span class="keyword">this</span>, <span class="stringliteral">&quot;ReduceByKey&quot;</span>,</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        key_extractor, reduce_function, reduce_config,</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        key_hash_function, key_equal_funtion);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;DOpResult&gt;</a>(node);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment">// ReducePair</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig&gt;</div>
+<div class="line"><a name="l00370"></a><span class="lineno"><a class="line" href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd">  370</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd">DIA&lt;ValueType, Stack&gt;::ReducePair</a>(</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="comment">// forward to main function</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keyword">using</span> Key = <span class="keyword">typename</span> ValueType::first_type;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordflow">return</span> ReducePair(reduce_function, reduce_config,</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                      std::hash&lt;Key&gt;(), std::equal_to&lt;Key&gt;());</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;}</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig,</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;          <span class="keyword">typename</span> KeyHashFunction&gt;</div>
+<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="group__dia__dops.html#gad79593a4c7c411a3883e49741b68a586">  382</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd">DIA&lt;ValueType, Stack&gt;::ReducePair</a>(</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="comment">// forward to main function</span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keyword">using</span> Key = <span class="keyword">typename</span> ValueType::first_type;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordflow">return</span> ReducePair(reduce_function, reduce_config,</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                      key_hash_function, std::equal_to&lt;Key&gt;());</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;}</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig,</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;          <span class="keyword">typename</span> KeyHashFunction, <span class="keyword">typename</span> KeyEqualFunction&gt;</div>
+<div class="line"><a name="l00395"></a><span class="lineno"><a class="line" href="group__dia__dops.html#gaa83c4de24f28079cb3842d7306990ae5">  395</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd">DIA&lt;ValueType, Stack&gt;::ReducePair</a>(</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function,</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keyword">const</span> KeyEqualFunction&amp; key_equal_funtion)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    <span class="comment">// forward to main function</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="keywordflow">return</span> ReducePair(<a class="code" href="namespacethrill_1_1api.html#a541982924f632754cbea467f0bde9b2d">NoDuplicateDetectionTag</a>,</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                      reduce_function, reduce_config,</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                      key_hash_function, key_equal_funtion);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;}</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span> DuplicateDetectionValue,</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;          <span class="keyword">typename</span> ReduceFunction, <span class="keyword">typename</span> ReduceConfig,</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;          <span class="keyword">typename</span> KeyHashFunction, <span class="keyword">typename</span> KeyEqualFunction&gt;</div>
+<div class="line"><a name="l00410"></a><span class="lineno"><a class="line" href="group__dia__dops.html#ga0c2fd8eb498c64eeb3acad27398d4770">  410</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd">DIA&lt;ValueType, Stack&gt;::ReducePair</a>(</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keyword">const</span> <a class="code" href="structthrill_1_1api_1_1DuplicateDetectionFlag.html">DuplicateDetectionFlag&lt;DuplicateDetectionValue&gt;</a>&amp;,</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keyword">const</span> ReduceFunction&amp; reduce_function,</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keyword">const</span> ReduceConfig&amp; reduce_config,</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keyword">const</span> KeyHashFunction&amp; key_hash_function,</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keyword">const</span> KeyEqualFunction&amp; key_equal_funtion)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    assert(IsValid());</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keyword">using</span> DOpResult</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        = <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::result_type;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    static_assert(<a class="code" href="structtlx_1_1is__std__pair.html">tlx::is_std_pair&lt;ValueType&gt;::value</a>,</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                  <span class="stringliteral">&quot;ValueType is not a pair&quot;</span>);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        std::is_convertible&lt;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;            <span class="keyword">typename</span> ValueType::second_type,</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;            <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::template arg&lt;0&gt;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        <span class="stringliteral">&quot;ReduceFunction has the wrong input type&quot;</span>);</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        std::is_convertible&lt;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;            <span class="keyword">typename</span> ValueType::second_type,</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;            <span class="keyword">typename</span> common::FunctionTraits&lt;ReduceFunction&gt;::template arg&lt;1&gt;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <span class="stringliteral">&quot;ReduceFunction has the wrong input type&quot;</span>);</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        std::is_same&lt;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            DOpResult,</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            <span class="keyword">typename</span> ValueType::second_type&gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="stringliteral">&quot;ReduceFunction has the wrong output type&quot;</span>);</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    <span class="keyword">auto</span> key_extractor = [](<span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>&amp; <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>) { <span class="keywordflow">return</span> <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>.first; };</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="keyword">auto</span> reduce_pair_function =</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        [reduce_function](<span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>&amp; a, <span class="keyword">const</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>&amp; b) {</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>(a.first, reduce_function(a.second, b.second));</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        };</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ReduceNode.html">ReduceNode</a> = <a class="code" href="classthrill_1_1api_1_1ReduceNode.html">api::ReduceNode</a>&lt;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        <a class="code" href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">ValueType</a>,</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        decltype(key_extractor), decltype(reduce_pair_function),</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        ReduceConfig, KeyHashFunction, KeyEqualFunction,</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="comment">/* VolatileKey */</span> <span class="keyword">false</span>, DuplicateDetectionValue&gt;;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ReduceNode&gt;(</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        *<span class="keyword">this</span>, <span class="stringliteral">&quot;ReducePair&quot;</span>,</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        key_extractor, reduce_pair_function, reduce_config,</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        key_hash_function, key_equal_funtion);</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(node);</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;}</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;} <span class="comment">// namespace api</span></div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;} <span class="comment">// namespace thrill</span></div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="preprocessor">#endif // !THRILL_API_REDUCE_BY_KEY_HEADER</span></div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="classthrill_1_1core_1_1ReduceByHashPostPhase_html"><div class="ttname"><a href="classthrill_1_1core_1_1ReduceByHashPostPhase.html">thrill::core::ReduceByHashPostPhase</a></div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__hash__post__phase_8hpp_source.html#l00044">reduce_by_hash_post_phase.hpp:44</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIAMemUse_html_a1cd8d6781f5432d707e8687039893be7"><div class="ttname"><a href="classthrill_1_1api_1_1DIAMemUse.html#a1cd8d6781f5432d707e8687039893be7">thrill::api::DIAMemUse::Max</a></div><div class="ttdeci">static DIAMemUse Max()</div><div class="ttdef"><b>Definition:</b> <a href="dia__base_8hpp_source.html#l00060">dia_base.hpp:60</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIABase_html_a1b40a2658f30f8466f310ceea310afb5"><div class="ttname"><a href="classthrill_1_1api_1_1DIABase.html#a1b40a2658f30f8466f310ceea310afb5">thrill::api::DIABase::Dispose</a></div><div class="ttdeci">virtual void Dispose()</div><div class="ttdoc">Virtual clear method. Triggers actual disposing in sub-classes. </div><div class="ttdef"><b>Definition:</b> <a href="dia__base_8hpp_source.html#l00188">dia_base.hpp:188</a></div></div>
@@ -595,7 +594,7 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="ttc" id="classthrill_1_1api_1_1DIA_html_a48f6eee0351a3cea4b2c4fb25705241a"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html#a48f6eee0351a3cea4b2c4fb25705241a">thrill::api::DIA::ValueType</a></div><div class="ttdeci">ValueType_ ValueType</div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00152">dia.hpp:152</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html_ad5cbd7d497b3933f17c69f5d71f6bec7"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html#ad5cbd7d497b3933f17c69f5d71f6bec7">thrill::api::ReduceNode::use_post_thread_</a></div><div class="ttdeci">static constexpr bool use_post_thread_</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00081">reduce_by_key.hpp:81</a></div></div>
 <div class="ttc" id="porting_8hpp_html"><div class="ttname"><a href="porting_8hpp.html">porting.hpp</a></div></div>
-<div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html_aec7a79b2ac83344b8470699cc128df00"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html#aec7a79b2ac83344b8470699cc128df00">thrill::api::ReduceNode::reduced_</a></div><div class="ttdeci">bool reduced_</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00239">reduce_by_key.hpp:239</a></div></div>
+<div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html_aec7a79b2ac83344b8470699cc128df00"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html#aec7a79b2ac83344b8470699cc128df00">thrill::api::ReduceNode::reduced_</a></div><div class="ttdeci">bool reduced_</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00238">reduce_by_key.hpp:238</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1ReduceNode_1_1Emitter_html_aa3760879777c65ddad63803b9dd75584"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode_1_1Emitter.html#aa3760879777c65ddad63803b9dd75584">thrill::api::ReduceNode::Emitter::node_</a></div><div class="ttdeci">ReduceNode * node_</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00092">reduce_by_key.hpp:92</a></div></div>
 <div class="ttc" id="classtlx_1_1CountingPtr_html_ad20897c5c8bd47f5d4005989bead0e55"><div class="ttname"><a href="classtlx_1_1CountingPtr.html#ad20897c5c8bd47f5d4005989bead0e55">tlx::CountingPtr::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">release contained pointer, frees object if this is the last reference. </div><div class="ttdef"><b>Definition:</b> <a href="counting__ptr_8hpp_source.html#l00231">counting_ptr.hpp:231</a></div></div>
 <div class="ttc" id="thrill_2common_2logger_8hpp_html"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html">logger.hpp</a></div></div>
@@ -606,7 +605,7 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="ttc" id="reduce__by__hash__post__phase_8hpp_html"><div class="ttname"><a href="reduce__by__hash__post__phase_8hpp.html">reduce_by_hash_post_phase.hpp</a></div></div>
 <div class="ttc" id="reduce__pre__phase_8hpp_html"><div class="ttname"><a href="reduce__pre__phase_8hpp.html">reduce_pre_phase.hpp</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html_a25c4ed0613d19b7f957f1fd5dd58872f"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html#a25c4ed0613d19b7f957f1fd5dd58872f">thrill::api::ReduceNode::HashIndexFunction</a></div><div class="ttdeci">core::ReduceByHash&lt; Key, KeyHashFunction &gt; HashIndexFunction</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00078">reduce_by_key.hpp:78</a></div></div>
-<div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html_afd8b7336105e1f6b9d7df1044f664390"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">thrill::api::ReduceNode::post_phase_</a></div><div class="ttdeci">core::ReduceByHashPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig, HashIndexFunction, KeyEqualFunction &gt; post_phase_</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00237">reduce_by_key.hpp:237</a></div></div>
+<div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html_afd8b7336105e1f6b9d7df1044f664390"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html#afd8b7336105e1f6b9d7df1044f664390">thrill::api::ReduceNode::post_phase_</a></div><div class="ttdeci">core::ReduceByHashPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig, HashIndexFunction, KeyEqualFunction &gt; post_phase_</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00236">reduce_by_key.hpp:236</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html_a8d115b456cc5f148d35663f6061cf30d"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html#a8d115b456cc5f148d35663f6061cf30d">thrill::api::ReduceNode::cat_stream_</a></div><div class="ttdeci">data::CatStreamPtr cat_stream_</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00108">reduce_by_key.hpp:108</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIABase_html_ade76983c318547469ec16985fad93352"><div class="ttname"><a href="classthrill_1_1api_1_1DIABase.html#ade76983c318547469ec16985fad93352">thrill::api::DIABase::PreOpMemUse</a></div><div class="ttdeci">virtual DIAMemUse PreOpMemUse()</div><div class="ttdoc">Amount of RAM used by PreOp after StartPreOp() </div><div class="ttdef"><b>Definition:</b> <a href="dia__base_8hpp_source.html#l00160">dia_base.hpp:160</a></div></div>
 <div class="ttc" id="classthrill_1_1core_1_1ReduceByHash_html"><div class="ttname"><a href="classthrill_1_1core_1_1ReduceByHash.html">thrill::core::ReduceByHash</a></div><div class="ttdoc">A reduce index function which returns a hash index and partition. </div><div class="ttdef"><b>Definition:</b> <a href="reduce__functional_8hpp_source.html#l00031">reduce_functional.hpp:31</a></div></div>
@@ -618,18 +617,18 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="ttc" id="structthrill_1_1api_1_1VolatileKeyFlag_html"><div class="ttname"><a href="structthrill_1_1api_1_1VolatileKeyFlag.html">thrill::api::VolatileKeyFlag</a></div><div class="ttdoc">tag structure for ReduceByKey(), and ReduceToIndex() </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00042">dia.hpp:42</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIABase_html_ae1434a566c104eefe027936856588f33"><div class="ttname"><a href="classthrill_1_1api_1_1DIABase.html#ae1434a566c104eefe027936856588f33">thrill::api::DIABase::StopPreOp</a></div><div class="ttdeci">virtual void StopPreOp(size_t)</div><div class="ttdoc">Virtual method for preparing end of PushData. </div><div class="ttdef"><b>Definition:</b> <a href="dia__base_8hpp_source.html#l00173">dia_base.hpp:173</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html">thrill::api::ReduceNode</a></div><div class="ttdoc">A DIANode which performs a Reduce operation. </div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00064">reduce_by_key.hpp:64</a></div></div>
-<div class="ttc" id="group__dia__dops_html_ga6ae3dd29bb2af6b44cd82b5c6755d1dd"><div class="ttname"><a href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd">thrill::api::DIA::ReducePair</a></div><div class="ttdeci">auto ReducePair(const ReduceFunction &amp;reduce_function, const ReduceConfig &amp;reduce_config=ReduceConfig()) const </div><div class="ttdoc">ReducePair is a DOp, which groups key-value-pairs in the input DIA by their key and reduces each key-...</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00371">reduce_by_key.hpp:371</a></div></div>
+<div class="ttc" id="group__dia__dops_html_ga6ae3dd29bb2af6b44cd82b5c6755d1dd"><div class="ttname"><a href="group__dia__dops.html#ga6ae3dd29bb2af6b44cd82b5c6755d1dd">thrill::api::DIA::ReducePair</a></div><div class="ttdeci">auto ReducePair(const ReduceFunction &amp;reduce_function, const ReduceConfig &amp;reduce_config=ReduceConfig()) const </div><div class="ttdoc">ReducePair is a DOp, which groups key-value-pairs in the input DIA by their key and reduces each key-...</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00370">reduce_by_key.hpp:370</a></div></div>
 <div class="ttc" id="dop__node_8hpp_html"><div class="ttname"><a href="dop__node_8hpp.html">dop_node.hpp</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIABase_html_ad1759538446397b32733b1f0747cda56"><div class="ttname"><a href="classthrill_1_1api_1_1DIABase.html#ad1759538446397b32733b1f0747cda56">thrill::api::DIABase::Execute</a></div><div class="ttdeci">virtual void Execute()=0</div><div class="ttdoc">Virtual execution method. Triggers actual computation in sub-classes. </div></div>
 <div class="ttc" id="namespacegen__data_html_ac4f474c82e82cbb89ca7c36dd52be0ed"><div class="ttname"><a href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">gen_data.value</a></div><div class="ttdeci">int value</div><div class="ttdef"><b>Definition:</b> <a href="gen__data_8py_source.html#l00041">gen_data.py:41</a></div></div>
 <div class="ttc" id="classthrill_1_1core_1_1DefaultReduceConfig_html"><div class="ttname"><a href="classthrill_1_1core_1_1DefaultReduceConfig.html">thrill::core::DefaultReduceConfig</a></div><div class="ttdoc">Configuration class to define operational parameters of reduce hash tables and reduce phases...</div><div class="ttdef"><b>Definition:</b> <a href="reduce__table_8hpp_source.html#l00038">reduce_table.hpp:38</a></div></div>
-<div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html_a499945058364ff571459f01b66daefc7"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html#a499945058364ff571459f01b66daefc7">thrill::api::ReduceNode::emitters_</a></div><div class="ttdeci">data::Stream::Writers emitters_</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00224">reduce_by_key.hpp:224</a></div></div>
+<div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html_a499945058364ff571459f01b66daefc7"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html#a499945058364ff571459f01b66daefc7">thrill::api::ReduceNode::emitters_</a></div><div class="ttdeci">data::Stream::Writers emitters_</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00223">reduce_by_key.hpp:223</a></div></div>
 <div class="ttc" id="structtlx_1_1is__std__pair_html"><div class="ttname"><a href="structtlx_1_1is__std__pair.html">tlx::is_std_pair</a></div><div class="ttdoc">test if is a std::pair&lt;...&gt; </div><div class="ttdef"><b>Definition:</b> <a href="is__std__pair_8hpp_source.html#l00023">is_std_pair.hpp:23</a></div></div>
 <div class="ttc" id="namespacethrill_1_1common_html_a2744bf429da7b68993e59e9c65df7c72"><div class="ttname"><a href="namespacethrill_1_1common.html#a2744bf429da7b68993e59e9c65df7c72">thrill::common::CreateThread</a></div><div class="ttdeci">std::thread CreateThread(Args &amp;&amp;...args)</div><div class="ttdoc">create a std::thread and repeat creation if it fails </div><div class="ttdef"><b>Definition:</b> <a href="porting_8hpp_source.html#l00042">porting.hpp:42</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1ReduceNode_1_1Emitter_html_a42d1005f945ede17523c4064dc8f848c"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode_1_1Emitter.html#a42d1005f945ede17523c4064dc8f848c">thrill::api::ReduceNode::Emitter::operator()</a></div><div class="ttdeci">void operator()(const ValueType &amp;item) const </div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00088">reduce_by_key.hpp:88</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1ReduceNode_1_1Emitter_html_a3d1faa740d6d268b37b439fe4891029d"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode_1_1Emitter.html#a3d1faa740d6d268b37b439fe4891029d">thrill::api::ReduceNode::Emitter::Emitter</a></div><div class="ttdeci">Emitter(ReduceNode *node)</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00087">reduce_by_key.hpp:87</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIABase_html_a4b3ddda1418ebf0574a00f8ebf341265"><div class="ttname"><a href="classthrill_1_1api_1_1DIABase.html#a4b3ddda1418ebf0574a00f8ebf341265">thrill::api::DIABase::StartPreOp</a></div><div class="ttdeci">virtual void StartPreOp(size_t)</div><div class="ttdoc">Virtual method for preparing start of PushData. </div><div class="ttdef"><b>Definition:</b> <a href="dia__base_8hpp_source.html#l00163">dia_base.hpp:163</a></div></div>
-<div class="ttc" id="group__dia__dops_html_ga6efe78f9c0c61db306711736391481f6"><div class="ttname"><a href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6">thrill::api::DIA::ReduceByKey</a></div><div class="ttdeci">auto ReduceByKey(const KeyExtractor &amp;key_extractor, const ReduceFunction &amp;reduce_function, const ReduceConfig &amp;reduce_config=ReduceConfig()) const </div><div class="ttdoc">ReduceByKey is a DOp, which groups elements of the DIA with the key_extractor and reduces each key-bu...</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00244">reduce_by_key.hpp:244</a></div></div>
+<div class="ttc" id="group__dia__dops_html_ga6efe78f9c0c61db306711736391481f6"><div class="ttname"><a href="group__dia__dops.html#ga6efe78f9c0c61db306711736391481f6">thrill::api::DIA::ReduceByKey</a></div><div class="ttdeci">auto ReduceByKey(const KeyExtractor &amp;key_extractor, const ReduceFunction &amp;reduce_function, const ReduceConfig &amp;reduce_config=ReduceConfig()) const </div><div class="ttdoc">ReduceByKey is a DOp, which groups elements of the DIA with the key_extractor and reduces each key-bu...</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00243">reduce_by_key.hpp:243</a></div></div>
 <div class="ttc" id="namespacethrill_1_1api_html_a541982924f632754cbea467f0bde9b2d"><div class="ttname"><a href="namespacethrill_1_1api.html#a541982924f632754cbea467f0bde9b2d">thrill::api::NoDuplicateDetectionTag</a></div><div class="ttdeci">const struct DuplicateDetectionFlag&lt; false &gt; NoDuplicateDetectionTag</div><div class="ttdoc">global const DuplicateDetectionFlag instance </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00112">dia.hpp:112</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIABase_html_a3574aade2ec84d0abace4b3d80e31c2f"><div class="ttname"><a href="classthrill_1_1api_1_1DIABase.html#a3574aade2ec84d0abace4b3d80e31c2f">thrill::api::DIABase::mem_limit_</a></div><div class="ttdeci">DIAMemUse mem_limit_</div><div class="ttdef"><b>Definition:</b> <a href="dia__base_8hpp_source.html#l00314">dia_base.hpp:314</a></div></div>
 <div class="ttc" id="classthrill_1_1data_1_1Stream_html_aa69ca4ad57a0d2a683361d219fd48c2e"><div class="ttname"><a href="classthrill_1_1data_1_1Stream.html#aa69ca4ad57a0d2a683361d219fd48c2e">thrill::data::Stream::Writer</a></div><div class="ttdeci">StreamData::Writer Writer</div><div class="ttdef"><b>Definition:</b> <a href="stream_8hpp_source.html#l00039">stream.hpp:39</a></div></div>
@@ -638,13 +637,13 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html_a17e6ef244d4d03395a813cf2a45a9648"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html#a17e6ef244d4d03395a813cf2a45a9648">thrill::api::ReduceNode::Key</a></div><div class="ttdeci">typename common::FunctionTraits&lt; KeyExtractor &gt;::result_type Key</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00072">reduce_by_key.hpp:72</a></div></div>
 <div class="ttc" id="structthrill_1_1api_1_1DuplicateDetectionFlag_html"><div class="ttname"><a href="structthrill_1_1api_1_1DuplicateDetectionFlag.html">thrill::api::DuplicateDetectionFlag</a></div><div class="ttdoc">tag structure for ReduceByKey() </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00103">dia.hpp:103</a></div></div>
 <div class="ttc" id="group__data__layer_html_ga969da325e57eeefa9e0e2544086bee2d"><div class="ttname"><a href="group__data__layer.html#ga969da325e57eeefa9e0e2544086bee2d">thrill::data::MixStreamPtr</a></div><div class="ttdeci">tlx::CountingPtr&lt; MixStream &gt; MixStreamPtr</div><div class="ttdef"><b>Definition:</b> <a href="mix__stream_8hpp_source.html#l00156">mix_stream.hpp:156</a></div></div>
-<div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html_aeca1ca9969ec13ce72735b5f6d468ab1"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html#aeca1ca9969ec13ce72735b5f6d468ab1">thrill::api::ReduceNode::thread_</a></div><div class="ttdeci">std::thread thread_</div><div class="ttdoc">handle to additional thread for post phase </div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00226">reduce_by_key.hpp:226</a></div></div>
+<div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html_aeca1ca9969ec13ce72735b5f6d468ab1"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html#aeca1ca9969ec13ce72735b5f6d468ab1">thrill::api::ReduceNode::thread_</a></div><div class="ttdeci">std::thread thread_</div><div class="ttdoc">handle to additional thread for post phase </div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00225">reduce_by_key.hpp:225</a></div></div>
 <div class="ttc" id="classthrill_1_1core_1_1ReducePrePhase_html"><div class="ttname"><a href="classthrill_1_1core_1_1ReducePrePhase.html">thrill::core::ReducePrePhase</a></div><div class="ttdef"><b>Definition:</b> <a href="reduce__pre__phase_8hpp_source.html#l00094">reduce_pre_phase.hpp:94</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DefaultReduceConfig_html"><div class="ttname"><a href="classthrill_1_1api_1_1DefaultReduceConfig.html">thrill::api::DefaultReduceConfig</a></div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00038">reduce_by_key.hpp:38</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html_a204dee530e24efc047ecb3caef72bf3b"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html#a204dee530e24efc047ecb3caef72bf3b">thrill::api::ReduceNode::TableItem</a></div><div class="ttdeci">typename std::conditional&lt; VolatileKey, std::pair&lt; Key, ValueType &gt;, ValueType &gt;::type TableItem</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00076">reduce_by_key.hpp:76</a></div></div>
 <div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html_a159ca84d25a5487d8e81e4438725df19"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html#a159ca84d25a5487d8e81e4438725df19">LOG</a></div><div class="ttdeci">#define LOG</div><div class="ttdoc">Default logging method: output if the local debug variable is true. </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00024">logger.hpp:24</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html_a6b72e54baf646b08b4b87f987f583dcb"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html#a6b72e54baf646b08b4b87f987f583dcb">thrill::api::ReduceNode::debug</a></div><div class="ttdeci">static constexpr bool debug</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00067">reduce_by_key.hpp:67</a></div></div>
-<div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html_a7d93d61046b04c4effd8fa74be31a9c7"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7">thrill::api::ReduceNode::pre_phase_</a></div><div class="ttdeci">core::ReducePrePhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, VolatileKey, data::Stream::Writer, ReduceConfig, HashIndexFunction, KeyEqualFunction, KeyHashFunction, UseDuplicateDetection &gt; pre_phase_</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00232">reduce_by_key.hpp:232</a></div></div>
+<div class="ttc" id="classthrill_1_1api_1_1ReduceNode_html_a7d93d61046b04c4effd8fa74be31a9c7"><div class="ttname"><a href="classthrill_1_1api_1_1ReduceNode.html#a7d93d61046b04c4effd8fa74be31a9c7">thrill::api::ReduceNode::pre_phase_</a></div><div class="ttdeci">core::ReducePrePhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, VolatileKey, data::Stream::Writer, ReduceConfig, HashIndexFunction, KeyEqualFunction, KeyHashFunction, UseDuplicateDetection &gt; pre_phase_</div><div class="ttdef"><b>Definition:</b> <a href="reduce__by__key_8hpp_source.html#l00231">reduce_by_key.hpp:231</a></div></div>
 <div class="ttc" id="group__data__layer_html_ga5e26e99f6cf880f5376fe272cfc59dcf"><div class="ttname"><a href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">thrill::data::CatStreamPtr</a></div><div class="ttdeci">tlx::CountingPtr&lt; CatStream &gt; CatStreamPtr</div><div class="ttdef"><b>Definition:</b> <a href="cat__stream_8hpp_source.html#l00191">cat_stream.hpp:191</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIABase_html_ae8f38e2955f476fde7f144a0f76129bb"><div class="ttname"><a href="classthrill_1_1api_1_1DIABase.html#ae8f38e2955f476fde7f144a0f76129bb">thrill::api::DIABase::context_</a></div><div class="ttdeci">Context &amp; context_</div><div class="ttdoc">associated Context </div><div class="ttdef"><b>Definition:</b> <a href="dia__base_8hpp_source.html#l00293">dia_base.hpp:293</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIABase_html_a5f1ad74bf30b2edaa8f0469ec3802f1f"><div class="ttname"><a href="classthrill_1_1api_1_1DIABase.html#a5f1ad74bf30b2edaa8f0469ec3802f1f">thrill::api::DIABase::PushDataMemUse</a></div><div class="ttdeci">virtual DIAMemUse PushDataMemUse()</div><div class="ttdoc">Amount of RAM used by PushData() </div><div class="ttdef"><b>Definition:</b> <a href="dia__base_8hpp_source.html#l00182">dia_base.hpp:182</a></div></div>
@@ -656,7 +655,7 @@ $(document).ready(function(){initNavTree('reduce__by__key_8hpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="reduce__by__key_8hpp.html">reduce_by_key.hpp</a></li>
-    <li class="footer">Generated on Sat Jan 5 2019 07:17:17 for Thrill by
+    <li class="footer">Generated on Wed Jan 16 2019 18:40:28 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

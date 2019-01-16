@@ -155,7 +155,7 @@ var group__net__mpi =
       [ "group_tag_", "classthrill_1_1net_1_1mpi_1_1Group.html#a2b76f992d7f29f794aff47b8289480d0", null ]
     ] ],
     [ "THRILL_NET_MPI_QUEUES", "group__net__mpi.html#gac3d50cb8460852b69b5f21d4474e1509", null ],
-    [ "AsyncRequestCallback", "group__net__mpi.html#ga769838a4869b196a982532f4f9c152f8", null ],
+    [ "AsyncRequestCallback", "group__net__mpi.html#ga67d579b3109072348a9236c29d8476bd", null ],
     [ "Construct", "group__net__mpi.html#ga005cca5db2fb3a4a8d2a8bb9a588868d", null ],
     [ "MpiRank", "group__net__mpi.html#gabaf52e63cd94b66bef1e0e41319bc15f", null ],
     [ "NumMpiProcesses", "group__net__mpi.html#gab1d52a1e9b5e0bf549b49bcc040c8558", null ]

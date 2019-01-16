@@ -31,7 +31,7 @@ var classthrill_1_1net_1_1Connection =
     [ "SyncSend", "classthrill_1_1net_1_1Connection.html#abbd71682c470a8e0233d4cecc93df4b0", null ],
     [ "SyncSendRecv", "classthrill_1_1net_1_1Connection.html#ad7ed843a065f0a59d4e4933c58cef09a", null ],
     [ "ToString", "classthrill_1_1net_1_1Connection.html#a7797ce7c715f383c3538fc93bab9ddf1", null ],
-    [ "operator<<", "classthrill_1_1net_1_1Connection.html#a5bbf89203ed980ad782f0efdc079da14", null ],
+    [ "operator<<", "classthrill_1_1net_1_1Connection.html#a49db216c5520bcf90ed6d78eca8c29f3", null ],
     [ "operator|", "classthrill_1_1net_1_1Connection.html#a6582abbd3fd5c98a95bd2b410806183b", null ],
     [ "is_loopback_", "classthrill_1_1net_1_1Connection.html#aacce03b15aa572b42cd58c8d63765b16", null ],
     [ "prev_rx_bytes_", "classthrill_1_1net_1_1Connection.html#a8d9343cf64d90942f33ff2d537e84f32", null ],

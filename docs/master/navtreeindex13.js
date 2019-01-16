@@ -244,10 +244,10 @@ var NAVTREEINDEX13 =
 "classthrill_1_1core_1_1ToVectorEmitter.html#a9a2329feaa615d1018c71b37869e4a8a":[5,0,4,2,34,2],
 "classthrill_1_1core_1_1ToVectorEmitter.html#aaeb6062e02c45884093139e410a26677":[5,0,4,2,34,3],
 "classthrill_1_1data_1_1Block.html":[3,1,1,1],
-"classthrill_1_1data_1_1Block.html#a0fa39edbee66ca9e659bb6e553929d45":[3,1,1,1,19],
 "classthrill_1_1data_1_1Block.html#a1d3b34c761e80e943f34028970edf349":[3,1,1,1,13],
 "classthrill_1_1data_1_1Block.html#a225dc9b4f1bed3c4418c3f6541f72bb8":[3,1,1,1,12],
 "classthrill_1_1data_1_1Block.html#a2523d434e0e0f436989a032e8ff075e3":[3,1,1,1,4],
 "classthrill_1_1data_1_1Block.html#a2d6f303d1fb8e244bac32ed5de45454d":[3,1,1,1,1],
-"classthrill_1_1data_1_1Block.html#a2dae5de2ed70953538dbd8499b600469":[3,1,1,1,2]
+"classthrill_1_1data_1_1Block.html#a2dae5de2ed70953538dbd8499b600469":[3,1,1,1,2],
+"classthrill_1_1data_1_1Block.html#a31dff6e0f41d0b3af0adb37ddba79e3c":[3,1,1,1,10]
 };

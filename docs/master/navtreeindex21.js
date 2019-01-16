@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"classthrill_1_1net_1_1tcp_1_1SocketAddress.html#aa5f2d318a3fc9867c5cb1f889ffd7193":[3,1,2,1,7,15],
 "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#aa68c0af0717c9a1d9c77e41a961b2f77":[3,1,2,1,7,12],
 "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#aae0e0fc8c98a6b15ba60b2d76267e865":[3,1,2,1,7,14],
 "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#ab75f561454f177dc44dc29573f397ab5":[3,1,2,1,7,17],
@@ -12,7 +13,6 @@ var NAVTREEINDEX21 =
 "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#af092bb09ec0884c6428dd0a978ff7e70":[3,1,2,1,7,1],
 "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#af326e18136d3f1528c935f02dc713fb4":[3,1,2,1,7,3],
 "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#afa8720abaf6972d6dac22a8cd1a67225":[3,1,2,1,7,9],
-"classthrill_1_1net_1_1tcp_1_1SocketAddress.html#aff977365d9ba84720ff391b7a0d401da":[3,1,2,1,7,24],
 "classthrill_1_1vfs_1_1ReadStream.html":[5,0,4,6,3],
 "classthrill_1_1vfs_1_1ReadStream.html#a8711c33e1cd7595d01391814d16c6927":[5,0,4,6,3,2],
 "classthrill_1_1vfs_1_1ReadStream.html#ab20cf3cec1282999781a0c56b0fb30bc":[5,0,4,6,3,0],

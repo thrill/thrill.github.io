@@ -24,7 +24,7 @@ var classthrill_1_1net_1_1tcp_1_1SocketAddress =
     [ "socklen", "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#aec2e347981223b901ac5eccf3f604288", null ],
     [ "ToStringHost", "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#a41aa7be003d1a80b2a025e0119e2c8b3", null ],
     [ "ToStringHostPort", "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#a611a1d436da0de6d0b83146694caa2ac", null ],
-    [ "operator<<", "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#aff977365d9ba84720ff391b7a0d401da", null ],
+    [ "operator<<", "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#a18836101621d40c4fe88c50edc7d99bc", null ],
     [ "debug", "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
     [ "resolve_error_", "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#a23fdbd7021b3c75b9c30be650faf5c67", null ],
     [ "sockaddr_", "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#a9720d1de340086bdce68742436cd14ec", null ]

@@ -29,7 +29,7 @@ var classthrill_1_1api_1_1Context =
     [ "num_workers", "classthrill_1_1api_1_1Context.html#a5ecd6ddfee677b7d2c2fd7b332e90c90", null ],
     [ "PrintCollectiveMeanStdev", "classthrill_1_1api_1_1Context.html#ade215344d694c0ee08c0e40b5c13df54", null ],
     [ "workers_per_host", "classthrill_1_1api_1_1Context.html#ab918f792039fb144dd12528701199562", null ],
-    [ "operator<<", "classthrill_1_1api_1_1Context.html#a3a64af554aab14adba864a2f62c14723", null ],
+    [ "operator<<", "classthrill_1_1api_1_1Context.html#a19b6b9fb56c9c5a98d47f7039373bfab", null ],
     [ "base_logger_", "classthrill_1_1api_1_1Context.html#a97eee45196e394d5728889ff3ab04666", null ],
     [ "block_pool_", "classthrill_1_1api_1_1Context.html#ad350d61cee47bd7846d7a9dd2db0203c", null ],
     [ "consume_", "classthrill_1_1api_1_1Context.html#a64337e3debec8c665399b639e72ddcda", null ],

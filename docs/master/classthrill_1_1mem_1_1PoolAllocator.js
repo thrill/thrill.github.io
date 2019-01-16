@@ -2,11 +2,11 @@ var classthrill_1_1mem_1_1PoolAllocator =
 [
     [ "rebind", "structthrill_1_1mem_1_1PoolAllocator_1_1rebind.html", "structthrill_1_1mem_1_1PoolAllocator_1_1rebind" ],
     [ "const_pointer", "classthrill_1_1mem_1_1PoolAllocator.html#a5485252cb202b5d33f98409d3390f233", null ],
-    [ "const_reference", "classthrill_1_1mem_1_1PoolAllocator.html#a9292c3e34b31f09cb6cd0b42b511fa7a", null ],
+    [ "const_reference", "classthrill_1_1mem_1_1PoolAllocator.html#a99645e3f798107152f56c026fb86d696", null ],
     [ "difference_type", "classthrill_1_1mem_1_1PoolAllocator.html#ace405568d0b2f3fad4990044252c7732", null ],
     [ "is_always_equal", "classthrill_1_1mem_1_1PoolAllocator.html#a96805d5608516f1b0436874900768619", null ],
     [ "pointer", "classthrill_1_1mem_1_1PoolAllocator.html#a1e67311e1f4ae3600af384f0a7e6addc", null ],
-    [ "reference", "classthrill_1_1mem_1_1PoolAllocator.html#a6f5ffa417c77fc24c2932a11f08311ec", null ],
+    [ "reference", "classthrill_1_1mem_1_1PoolAllocator.html#a01e1df50060518200c2819bad5fd350e", null ],
     [ "size_type", "classthrill_1_1mem_1_1PoolAllocator.html#af38ce1af42d538f410180c265518d4f0", null ],
     [ "value_type", "classthrill_1_1mem_1_1PoolAllocator.html#af0f70ef64d23e2379bacb63968e68b45", null ],
     [ "PoolAllocator", "classthrill_1_1mem_1_1PoolAllocator.html#a4da289e2b5c381ed7162965b330fb264", null ],

@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('functional_8hpp_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">//! Specialized noop functor which returns a void.</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structthrill_1_1common_1_1NoOperation_3_01void_01_4.html">   53</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structthrill_1_1common_1_1NoOperation.html">NoOperation</a>&lt;void&gt;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structthrill_1_1common_1_1NoOperation_3_01void_01_4.html">   53</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structthrill_1_1common_1_1NoOperation.html">NoOperation</a>&lt;void&gt; {</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structthrill_1_1common_1_1NoOperation_3_01void_01_4.html#a000676efc35e7d556136c19bd0ce4643">   54</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structthrill_1_1common_1_1NoOperation.html#a63d1b2ce08e2d6b4a6e9536f7c613cab">operator () </a>(...) const noexcept { }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"></span></div>
@@ -214,7 +214,7 @@ $(document).ready(function(){initNavTree('functional_8hpp_source.html','');});
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">//! std::vector&lt;U&gt; with different type.</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type, <span class="keyword">typename</span> Functor&gt;</div>
 <div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="namespacethrill_1_1common.html#a76341af55641f958db297db503433084">   98</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> <a class="code" href="namespacethrill_1_1common.html#a76341af55641f958db297db503433084">MapVector</a>(<span class="keyword">const</span> std::vector&lt;Type&gt;&amp; input, <span class="keyword">const</span> Functor&amp; f)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;-&gt;std::vector&lt;<span class="keyword">typename</span> std::result_of&lt;Functor(Type)&gt;::type&gt;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;-&gt;std::vector&lt;<span class="keyword">typename</span> std::result_of&lt;Functor(Type)&gt;::type&gt; {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    std::vector&lt;typename std::result_of&lt;Functor(Type)&gt;::type&gt; output;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    output.reserve(input.size());</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">typename</span> std::vector&lt;Type&gt;::const_iterator it = input.begin();</div>
@@ -330,7 +330,7 @@ $(document).ready(function(){initNavTree('functional_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="functional_8hpp.html">functional.hpp</a></li>
-    <li class="footer">Generated on Sat Jan 5 2019 07:17:18 for Thrill by
+    <li class="footer">Generated on Wed Jan 16 2019 18:40:29 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

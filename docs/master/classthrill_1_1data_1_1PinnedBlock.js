@@ -30,6 +30,6 @@ var classthrill_1_1data_1_1PinnedBlock =
     [ "ToString", "classthrill_1_1data_1_1PinnedBlock.html#a946e9412867b046958667b21a1236eca", null ],
     [ "typecode_verify", "classthrill_1_1data_1_1PinnedBlock.html#addb1adbf6a2120603e19f98290aac33e", null ],
     [ "BlockPool", "classthrill_1_1data_1_1PinnedBlock.html#a9f3b06b6b6edaf1e1bf2d91aa5ef20c5", null ],
-    [ "operator<<", "classthrill_1_1data_1_1PinnedBlock.html#aa0fc7017af4107e9506d8d2cb68587fa", null ],
+    [ "operator<<", "classthrill_1_1data_1_1PinnedBlock.html#a7cfda91c67a3a00fde4ba1c54829d665", null ],
     [ "local_worker_id_", "classthrill_1_1data_1_1PinnedBlock.html#a14f406dd3db4af71f3634ff63cedac2e", null ]
 ];

@@ -2,9 +2,9 @@ var classthrill_1_1net_1_1BufferBuilder =
 [
     [ "Byte", "classthrill_1_1net_1_1BufferBuilder.html#a4598833cddd0ea684d351ebd793b5bb7", null ],
     [ "const_iterator", "classthrill_1_1net_1_1BufferBuilder.html#a204f15fff69f8a0a4cf4f7b685139ce7", null ],
-    [ "const_reference", "classthrill_1_1net_1_1BufferBuilder.html#a86dd90ff412d38ab433246560cfb236e", null ],
+    [ "const_reference", "classthrill_1_1net_1_1BufferBuilder.html#a05b9e1f07b621f855d174988ddd29321", null ],
     [ "iterator", "classthrill_1_1net_1_1BufferBuilder.html#a473e7b357d08447e625d68df41063440", null ],
-    [ "reference", "classthrill_1_1net_1_1BufferBuilder.html#a0e90f926712588588bb0e920bc8549c0", null ],
+    [ "reference", "classthrill_1_1net_1_1BufferBuilder.html#ac31389b1efa2d39525a989f68bd83215", null ],
     [ "BufferBuilder", "classthrill_1_1net_1_1BufferBuilder.html#adc0c7aa7d3b268571a4dd79145efef51", null ],
     [ "BufferBuilder", "classthrill_1_1net_1_1BufferBuilder.html#a7933c9fcc4311a43e7c2e58670aaa5d4", null ],
     [ "BufferBuilder", "classthrill_1_1net_1_1BufferBuilder.html#ac4d1f398b4b957ea8fb4af6f61b4f424", null ],

@@ -266,7 +266,7 @@ $(document).ready(function(){initNavTree('context_8cpp_source.html','');});
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            host_mem_config, num_hosts, workers_per_host);</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="comment">// launch thread for each of the workers on this host.</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    std::vector&lt;std::thread&gt; threads(num_hosts* workers_per_host);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    std::vector&lt;std::thread&gt; threads(num_hosts * workers_per_host);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> host = 0; host &lt; num_hosts; ++host) {</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> log_prefix = <span class="stringliteral">&quot;host &quot;</span> + <a class="code" href="namespacethrill_1_1mem.html#a83c1c233231a5bfd03944ee141b9609a">std::to_string</a>(host);</div>
@@ -1305,7 +1305,7 @@ $(document).ready(function(){initNavTree('context_8cpp_source.html','');});
 <div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;<span class="comment">    //! maximum external memory allocation</span></div>
 <div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> io_max_allocation;</div>
 <div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;</div>
-<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;    <span class="keyword">friend</span> std ::ostream&amp; <a class="code" href="namespacethrill_1_1api.html#ae8473cbd67ac02098251c03a8218ae49">operator &lt;&lt; </a>(std::ostream&amp; os, <span class="keyword">const</span> OverallStats&amp; c) {</div>
+<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="namespacethrill_1_1api.html#ae8473cbd67ac02098251c03a8218ae49">operator &lt;&lt; </a>(std::ostream&amp; os, <span class="keyword">const</span> OverallStats&amp; c) {</div>
 <div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;        <span class="keywordflow">return</span> os &lt;&lt; <span class="stringliteral">&quot;[OverallStats&quot;</span></div>
 <div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; runtime=&quot;</span> &lt;&lt; c.runtime</div>
 <div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; max_block_bytes=&quot;</span> &lt;&lt; c.max_block_bytes</div>
@@ -1547,7 +1547,7 @@ $(document).ready(function(){initNavTree('context_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="context_8cpp.html">context.cpp</a></li>
-    <li class="footer">Generated on Sat Jan 5 2019 07:17:17 for Thrill by
+    <li class="footer">Generated on Wed Jan 16 2019 18:40:28 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

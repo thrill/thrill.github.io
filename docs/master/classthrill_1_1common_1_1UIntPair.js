@@ -33,7 +33,7 @@ var classthrill_1_1common_1_1UIntPair =
     [ "operator>=", "classthrill_1_1common_1_1UIntPair.html#ace41c8be14022c46a5818f39bb4b106a", null ],
     [ "u64", "classthrill_1_1common_1_1UIntPair.html#a08c038891eb7d8b2484401d19276d8cc", null ],
     [ "ull", "classthrill_1_1common_1_1UIntPair.html#a02db6a0f110438d2d7eb89eca3771c91", null ],
-    [ "operator<<", "classthrill_1_1common_1_1UIntPair.html#a514aa41f32b8c7feb506370ecb4d8576", null ],
+    [ "operator<<", "classthrill_1_1common_1_1UIntPair.html#a08a45a05a5dcd391c612c54e3bf58814", null ],
     [ "bytes", "classthrill_1_1common_1_1UIntPair.html#a1b4691e3462e468eb5578403b659fd62", null ],
     [ "digits", "classthrill_1_1common_1_1UIntPair.html#a0991333c8e681f2aae094083640ce34f", null ],
     [ "high_", "classthrill_1_1common_1_1UIntPair.html#a546919992dbc211ccdd70a224405f979", null ],
