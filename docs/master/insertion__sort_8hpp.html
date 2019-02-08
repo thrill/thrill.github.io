@@ -120,13 +120,14 @@ $(document).ready(function(){initNavTree('insertion__sort_8hpp.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="likely_8hpp_source.html">tlx/define/likely.hpp</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="string__set_8hpp_source.html">tlx/sort/strings/string_set.hpp</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="enable__if_8hpp_source.html">tlx/meta/enable_if.hpp</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="string__ptr_8hpp_source.html">tlx/sort/strings/string_ptr.hpp</a>&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for insertion_sort.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="insertion__sort_8hpp__incl.svg" width="700" height="294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="insertion__sort_8hpp__incl.svg" width="768" height="384"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -134,7 +135,7 @@ $(document).ready(function(){initNavTree('insertion__sort_8hpp.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="insertion__sort_8hpp__dep__incl.svg" width="447" height="326"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="insertion__sort_8hpp__dep__incl.svg" width="282" height="400"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -149,9 +150,16 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a67e6e553c0da73c40d179757906530a2"><td class="memTemplParams" colspan="2">template&lt;typename StringSet &gt; </td></tr>
-<tr class="memitem:a67e6e553c0da73c40d179757906530a2"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetlx_1_1sort__strings__detail.html#a67e6e553c0da73c40d179757906530a2">insertion_sort</a> (const StringSet &amp;ss, size_t depth, size_t)</td></tr>
-<tr class="separator:a67e6e553c0da73c40d179757906530a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686ae068ee17573dd4567372dced6c9d"><td class="memTemplParams" colspan="2">template&lt;typename StringPtr &gt; </td></tr>
+<tr class="memitem:a686ae068ee17573dd4567372dced6c9d"><td class="memTemplItemLeft" align="right" valign="top">static enable_if<br class="typebreak"/>
+&lt;!StringPtr::with_lcp, void &gt;<br class="typebreak"/>
+::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetlx_1_1sort__strings__detail.html#a686ae068ee17573dd4567372dced6c9d">insertion_sort</a> (const StringPtr &amp;strptr, size_t depth, size_t)</td></tr>
+<tr class="separator:a686ae068ee17573dd4567372dced6c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2cc68e6fa0eca74c46df77a443ff103"><td class="memTemplParams" colspan="2">template&lt;typename StringPtr &gt; </td></tr>
+<tr class="memitem:af2cc68e6fa0eca74c46df77a443ff103"><td class="memTemplItemLeft" align="right" valign="top">static enable_if<br class="typebreak"/>
+&lt; StringPtr::with_lcp, void &gt;<br class="typebreak"/>
+::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetlx_1_1sort__strings__detail.html#af2cc68e6fa0eca74c46df77a443ff103">insertion_sort</a> (const StringPtr &amp;strptr, size_t depth, size_t)</td></tr>
+<tr class="separator:af2cc68e6fa0eca74c46df77a443ff103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -159,7 +167,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="dir_12608fa34d4defb0bdb04f2e95c7c699.html">sort</a></li><li class="navelem"><a class="el" href="dir_6ca6acbfebcb640ace7fde1d044f50f0.html">strings</a></li><li class="navelem"><a class="el" href="insertion__sort_8hpp.html">insertion_sort.hpp</a></li>
-    <li class="footer">Generated on Wed Jan 16 2019 18:40:30 for Thrill by
+    <li class="footer">Generated on Fri Feb 8 2019 18:00:39 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

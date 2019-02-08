@@ -25,6 +25,10 @@ var hierarchy =
     [ "OutputArchive", null, [
       [ "ThrillOutputArchive< Writer >", "classthrill_1_1data_1_1serialization__cereal_1_1ThrillOutputArchive.html", null ]
     ] ],
+    [ "ConcurrentBoundedQueue< thrill::data::Block >", "classthrill_1_1common_1_1ConcurrentBoundedQueue.html", null ],
+    [ "ConcurrentBoundedQueue< thrill::data::MixBlockQueue::SrcBlockPair >", "classthrill_1_1common_1_1ConcurrentBoundedQueue.html", null ],
+    [ "ConcurrentBoundedQueue< thrill::net::mock::Connection * >", "classthrill_1_1common_1_1ConcurrentBoundedQueue.html", null ],
+    [ "ConcurrentQueue< tlx::Delegate, mem::GPoolAllocator< tlx::Delegate > >", "classthrill_1_1common_1_1ConcurrentQueue.html", null ],
     [ "CountingPtr< ActionNode >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< ActionResultNode< ValueType > >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< base_file_type >", "classtlx_1_1CountingPtr.html", null ],
@@ -216,10 +220,6 @@ var hierarchy =
     [ "type", null, [
       [ "make_index_sequence< Size >", "structtlx_1_1make__index__sequence.html", null ]
     ] ],
-    [ "OurConcurrentBoundedQueue< thrill::data::Block >", "classthrill_1_1common_1_1OurConcurrentBoundedQueue.html", null ],
-    [ "OurConcurrentBoundedQueue< thrill::data::MixBlockQueue::SrcBlockPair >", "classthrill_1_1common_1_1OurConcurrentBoundedQueue.html", null ],
-    [ "OurConcurrentBoundedQueue< thrill::net::mock::Connection * >", "classthrill_1_1common_1_1OurConcurrentBoundedQueue.html", null ],
-    [ "OurConcurrentQueue< tlx::Delegate, mem::GPoolAllocator< tlx::Delegate > >", "classthrill_1_1common_1_1OurConcurrentQueue.html", null ],
     [ "ReduceByHashPostPhase< TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceNode::Emitter, VolatileKey, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction >", "classthrill_1_1core_1_1ReduceByHashPostPhase.html", null ],
     [ "ReduceByIndexPostPhase< TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig >", "classthrill_1_1core_1_1ReduceByIndexPostPhase.html", null ],
     [ "ReducePostPhaseEmitter< TableItem, ValueType, thrill::api::ReduceNode::Emitter, VolatileKey >", "classthrill_1_1core_1_1ReducePostPhaseEmitter.html", null ],
@@ -340,7 +340,6 @@ var hierarchy =
     [ "StringSetBase< UPtrStdStringSet, UPtrStdStringSetTraits >", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html", [
       [ "UPtrStdStringSet", "classtlx_1_1sort__strings__detail_1_1UPtrStdStringSet.html", null ]
     ] ],
-    [ "StringShadowPtr< StringSet >", "classtlx_1_1sort__strings__detail_1_1StringShadowPtr.html", null ],
     [ "ArrayTag", "structthrill_1_1api_1_1ArrayTag.html", null ],
     [ "BernoulliSampleNode< ValueType >", "classthrill_1_1api_1_1BernoulliSampleNode.html", null ],
     [ "CollapseSwitch< ValueType, Stack >", "structthrill_1_1api_1_1CollapseSwitch.html", null ],
@@ -398,6 +397,8 @@ var hierarchy =
     [ "alias_cast_helper< To, From >", "structthrill_1_1common_1_1alias__cast__helper.html", null ],
     [ "BinaryHeap< Type, Compare >", "classthrill_1_1common_1_1BinaryHeap.html", null ],
     [ "ComponentSum< ArrayType, Operation >", "classthrill_1_1common_1_1ComponentSum.html", null ],
+    [ "ConcurrentBoundedQueue< T >", "classthrill_1_1common_1_1ConcurrentBoundedQueue.html", null ],
+    [ "ConcurrentQueue< T, Allocator >", "classthrill_1_1common_1_1ConcurrentQueue.html", null ],
     [ "FunctionTraits< ReturnType(*)(Args...)>", "structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4.html", null ],
     [ "FunctionTraits< ReturnType(ClassType::*)(Args...) const  >", "structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4.html", [
       [ "FunctionTraits< ReturnType(ClassType::*)(Args...)>", "structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_4.html", null ]
@@ -420,8 +421,6 @@ var hierarchy =
     [ "Matrix< Type >", "classthrill_1_1common_1_1Matrix.html", null ],
     [ "NoOperation< ReturnType >", "structthrill_1_1common_1_1NoOperation.html", null ],
     [ "NoOperation< void >", "structthrill_1_1common_1_1NoOperation_3_01void_01_4.html", null ],
-    [ "OurConcurrentBoundedQueue< T >", "classthrill_1_1common_1_1OurConcurrentBoundedQueue.html", null ],
-    [ "OurConcurrentQueue< T, Allocator >", "classthrill_1_1common_1_1OurConcurrentQueue.html", null ],
     [ "ProfileTask", "classthrill_1_1common_1_1ProfileTask.html", [
       [ "BlockPool", "classthrill_1_1data_1_1BlockPool.html", null ],
       [ "Manager", "classthrill_1_1net_1_1Manager.html", null ]
@@ -643,6 +642,8 @@ var hierarchy =
     [ "CountingPtrNoOperationDeleter", "classtlx_1_1CountingPtrNoOperationDeleter.html", null ],
     [ "Delegate< T, Allocator >", "classtlx_1_1Delegate.html", null ],
     [ "Delegate< R(A...), Allocator >", "classtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html", null ],
+    [ "enable_if< bool, T >", "structtlx_1_1enable__if.html", null ],
+    [ "enable_if< true, T >", "structtlx_1_1enable__if_3_01true_00_01T_01_4.html", null ],
     [ "FunctionChain< Functors >", "classtlx_1_1FunctionChain.html", null ],
     [ "FunctionStack< Input_, Functors >", "classtlx_1_1FunctionStack.html", null ],
     [ "index_sequence< Indexes >", "structtlx_1_1index__sequence.html", null ],
@@ -819,15 +820,18 @@ var hierarchy =
     [ "GenericCharStringSetTraits< CharType >", "classtlx_1_1sort__strings__detail_1_1GenericCharStringSetTraits.html", [
       [ "GenericCharStringSet< CharType >", "classtlx_1_1sort__strings__detail_1_1GenericCharStringSet.html", null ]
     ] ],
-    [ "RadixStep_CE0< StringSet >", "structtlx_1_1sort__strings__detail_1_1RadixStep__CE0.html", null ],
-    [ "RadixStep_CE2< StringSet >", "structtlx_1_1sort__strings__detail_1_1RadixStep__CE2.html", null ],
-    [ "RadixStep_CE3< StringSet >", "structtlx_1_1sort__strings__detail_1_1RadixStep__CE3.html", null ],
-    [ "RadixStep_CI2< StringSet >", "structtlx_1_1sort__strings__detail_1_1RadixStep__CI2.html", null ],
-    [ "RadixStep_CI3< StringSet >", "structtlx_1_1sort__strings__detail_1_1RadixStep__CI3.html", null ],
+    [ "RadixStep_CE0< StringShadowPtr >", "structtlx_1_1sort__strings__detail_1_1RadixStep__CE0.html", null ],
+    [ "RadixStep_CE2< StringShadowPtr >", "structtlx_1_1sort__strings__detail_1_1RadixStep__CE2.html", null ],
+    [ "RadixStep_CE3< StringShadowPtr >", "structtlx_1_1sort__strings__detail_1_1RadixStep__CE3.html", null ],
+    [ "RadixStep_CI2< StringPtr >", "structtlx_1_1sort__strings__detail_1_1RadixStep__CI2.html", null ],
+    [ "RadixStep_CI3< StringPtr >", "structtlx_1_1sort__strings__detail_1_1RadixStep__CI3.html", null ],
     [ "StdStringSetTraits", "classtlx_1_1sort__strings__detail_1_1StdStringSetTraits.html", [
       [ "StdStringSet", "classtlx_1_1sort__strings__detail_1_1StdStringSet.html", null ]
     ] ],
+    [ "StringLcpPtr< StringSet_, LcpType_ >", "classtlx_1_1sort__strings__detail_1_1StringLcpPtr.html", null ],
+    [ "StringPtr< StringSet_ >", "classtlx_1_1sort__strings__detail_1_1StringPtr.html", null ],
     [ "StringSetBase< StringSet, Traits >", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html", null ],
+    [ "StringShadowLcpPtr< StringSet_, LcpType_ >", "classtlx_1_1sort__strings__detail_1_1StringShadowLcpPtr.html", null ],
     [ "StringShadowPtr< StringSet_ >", "classtlx_1_1sort__strings__detail_1_1StringShadowPtr.html", null ],
     [ "StringSuffixSetTraits", "classtlx_1_1sort__strings__detail_1_1StringSuffixSetTraits.html", [
       [ "StringSuffixSet", "classtlx_1_1sort__strings__detail_1_1StringSuffixSet.html", null ]

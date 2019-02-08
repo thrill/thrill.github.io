@@ -149,6 +149,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ComponentSum_3_01std_1_1vector_3_01Type_01_4_00_01Operation_01_4.html">ComponentSum&lt; std::vector&lt; Type &gt;, Operation &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the component-wise sum of two std::vector&lt;T&gt; of same sizes.  <a href="classthrill_1_1common_1_1ComponentSum_3_01std_1_1vector_3_01Type_01_4_00_01Operation_01_4.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ConcurrentBoundedQueue.html">ConcurrentBoundedQueue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a queue, similar to std::queue and tbb::concurrent_bounded_queue, except that it uses mutexes for synchronization.  <a href="classthrill_1_1common_1_1ConcurrentBoundedQueue.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ConcurrentQueue.html">ConcurrentQueue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a queue, similar to std::queue and tbb::concurrent_queue, except that it uses mutexes for synchronization.  <a href="classthrill_1_1common_1_1ConcurrentQueue.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ErrnoException.html">ErrnoException</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An Exception which is thrown on system errors and contains errno information.  <a href="classthrill_1_1common_1_1ErrnoException.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,12 +213,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1common_1_1NoOperation_3_01void_01_4.html">NoOperation&lt; void &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialized noop functor which returns a void.  <a href="structthrill_1_1common_1_1NoOperation_3_01void_01_4.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1OurConcurrentBoundedQueue.html">OurConcurrentBoundedQueue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a queue, similar to std::queue and tbb::concurrent_bounded_queue, except that it uses mutexes for synchronization.  <a href="classthrill_1_1common_1_1OurConcurrentBoundedQueue.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html">OurConcurrentQueue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a queue, similar to std::queue and tbb::concurrent_queue, except that it uses mutexes for synchronization.  <a href="classthrill_1_1common_1_1OurConcurrentQueue.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1ProfileTask.html">ProfileTask</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,12 +303,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:abe374ed5846e201b7d1b543626d0c0e1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#abe374ed5846e201b7d1b543626d0c0e1">Array</a> = Type[]</td></tr>
 <tr class="memdesc:abe374ed5846e201b7d1b543626d0c0e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template to make writing temporary arrays easy: Array&lt;int&gt;{ 1, 2, 3 }.  <a href="#abe374ed5846e201b7d1b543626d0c0e1">More...</a><br/></td></tr>
 <tr class="separator:abe374ed5846e201b7d1b543626d0c0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10374cf53d327fcf2ca319487ca56bae"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a10374cf53d327fcf2ca319487ca56bae"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a10374cf53d327fcf2ca319487ca56bae">ConcurrentBoundedQueue</a> = <a class="el" href="classthrill_1_1common_1_1OurConcurrentBoundedQueue.html">OurConcurrentBoundedQueue</a>&lt; <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &gt;</td></tr>
-<tr class="separator:a10374cf53d327fcf2ca319487ca56bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3036130ba042e85595aa12e63d69782e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Allocator &gt; </td></tr>
-<tr class="memitem:a3036130ba042e85595aa12e63d69782e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a3036130ba042e85595aa12e63d69782e">ConcurrentQueue</a> = <a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html">OurConcurrentQueue</a>&lt; <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>, Allocator &gt;</td></tr>
-<tr class="separator:a3036130ba042e85595aa12e63d69782e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd1bdb8c074c4a6b9a1ccd618b6238bf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#acd1bdb8c074c4a6b9a1ccd618b6238bf">FakeStatsTimer</a> = <a class="el" href="classthrill_1_1common_1_1StatsTimerBase.html">StatsTimerBase</a>&lt; false &gt;</td></tr>
 <tr class="separator:acd1bdb8c074c4a6b9a1ccd618b6238bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7468c3022e87e889ac363a409d44d165"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a7468c3022e87e889ac363a409d44d165">FakeStatsTimerStart</a> = <a class="el" href="classthrill_1_1common_1_1StatsTimerBaseStarted.html">StatsTimerBaseStarted</a>&lt; false &gt;</td></tr>
@@ -591,6 +585,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5f921572e7148b383411a63733947be2"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
 <tr class="memitem:a5f921572e7148b383411a63733947be2"><td class="memTemplItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a5f921572e7148b383411a63733947be2">to_str</a> (const Type &amp;t)</td></tr>
 <tr class="separator:a5f921572e7148b383411a63733947be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a95828629fe7f79b8f7e55e0313ebb"><td class="memItemLeft" align="right" valign="top">struct dirent *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#ae1a95828629fe7f79b8f7e55e0313ebb">ts_readdir</a> (DIR *dirp)</td></tr>
+<tr class="memdesc:ae1a95828629fe7f79b8f7e55e0313ebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">mutex-locked readdir() call  <a href="#ae1a95828629fe7f79b8f7e55e0313ebb">More...</a><br/></td></tr>
+<tr class="separator:ae1a95828629fe7f79b8f7e55e0313ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dcfa0783f3e01b7ccd182711f77cc0c"><td class="memTemplParams" colspan="2">template&lt;typename T , size_t N&gt; </td></tr>
 <tr class="memitem:a4dcfa0783f3e01b7ccd182711f77cc0c"><td class="memTemplItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a4dcfa0783f3e01b7ccd182711f77cc0c">VecToStr</a> (const std::array&lt; <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>, N &gt; &amp;data)</td></tr>
 <tr class="memdesc:a4dcfa0783f3e01b7ccd182711f77cc0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging helper to print arrays as [a1,a2,a3,...].  <a href="#a4dcfa0783f3e01b7ccd182711f77cc0c">More...</a><br/></td></tr>
@@ -665,34 +662,6 @@ Variables</h2></td></tr>
 <p>A template to make writing temporary arrays easy: Array&lt;int&gt;{ 1, 2, 3 }. </p>
 
 <p>Definition at line <a class="el" href="json__logger_8hpp_source.html#l00064">64</a> of file <a class="el" href="json__logger_8hpp_source.html">json_logger.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a10374cf53d327fcf2ca319487ca56bae"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacethrill_1_1common.html#a10374cf53d327fcf2ca319487ca56bae">ConcurrentBoundedQueue</a> =  <a class="el" href="classthrill_1_1common_1_1OurConcurrentBoundedQueue.html">OurConcurrentBoundedQueue</a>&lt;<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="concurrent__bounded__queue_8hpp_source.html#l00173">173</a> of file <a class="el" href="concurrent__bounded__queue_8hpp_source.html">concurrent_bounded_queue.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a3036130ba042e85595aa12e63d69782e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="namespacethrill_1_1common.html#a3036130ba042e85595aa12e63d69782e">ConcurrentQueue</a> =  <a class="el" href="classthrill_1_1common_1_1OurConcurrentQueue.html">OurConcurrentQueue</a>&lt;<a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a>, Allocator&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="concurrent__queue_8hpp_source.html#l00127">127</a> of file <a class="el" href="concurrent__queue_8hpp_source.html">concurrent_queue.hpp</a>.</p>
 
 </div>
 </div>
@@ -950,7 +919,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="thrill_2common_2math_8hpp_source.html#l00031">31</a> of file <a class="el" href="thrill_2common_2math_8hpp_source.html">math.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="group__by__key_8hpp_source.html#l00081">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::HashCount::operator+()</a>, <a class="el" href="inner__join_8hpp_source.html#l00091">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::HashCount::operator+()</a>, <a class="el" href="group__by__key_8hpp_source.html#l00086">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::HashCount::operator+=()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00100">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::HashCount::operator+=()</a>.</p>
+<p>Referenced by <a class="el" href="group__by__key_8hpp_source.html#l00083">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::HashCount::operator+()</a>, <a class="el" href="inner__join_8hpp_source.html#l00091">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::HashCount::operator+()</a>, <a class="el" href="group__by__key_8hpp_source.html#l00088">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::HashCount::operator+=()</a>, and <a class="el" href="inner__join_8hpp_source.html#l00100">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::HashCount::operator+=()</a>.</p>
 
 </div>
 </div>
@@ -1125,7 +1094,7 @@ Variables</h2></td></tr>
 
 <p>References <a class="el" href="thrill_2common_2math_8hpp_source.html#l00085">Range::Partition()</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8hpp_source.html#l00339">Context::CalculateLocalRange()</a>, <a class="el" href="context_8hpp_source.html#l00344">Context::CalculateLocalRangeOnHost()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00115">CalculatePartition()</a>, <a class="el" href="distribute_8hpp_source.html#l00054">DistributeNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="duplicate__detection_8hpp_source.html#l00074">DuplicateDetection::WriteEncodedHashes()</a>, and <a class="el" href="location__detection_8hpp_source.html#l00117">LocationDetection&lt; thrill::api::JoinNode::HashCount &gt;::WriteOccurenceCounts()</a>.</p>
+<p>Referenced by <a class="el" href="context_8hpp_source.html#l00339">Context::CalculateLocalRange()</a>, <a class="el" href="context_8hpp_source.html#l00344">Context::CalculateLocalRangeOnHost()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00115">CalculatePartition()</a>, <a class="el" href="distribute_8hpp_source.html#l00056">DistributeNode&lt; ValueType &gt;::Execute()</a>, <a class="el" href="duplicate__detection_8hpp_source.html#l00074">DuplicateDetection::WriteEncodedHashes()</a>, and <a class="el" href="location__detection_8hpp_source.html#l00118">LocationDetection&lt; thrill::api::JoinNode::HashCount &gt;::WriteOccurenceCounts()</a>.</p>
 
 </div>
 </div>
@@ -1227,11 +1196,11 @@ Variables</h2></td></tr>
 
 <p>create a std::thread and repeat creation if it fails </p>
 
-<p>Definition at line <a class="el" href="porting_8hpp_source.html#l00042">42</a> of file <a class="el" href="porting_8hpp_source.html">porting.hpp</a>.</p>
+<p>Definition at line <a class="el" href="porting_8hpp_source.html#l00044">44</a> of file <a class="el" href="porting_8hpp_source.html">porting.hpp</a>.</p>
 
 <p>References <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00028">LOG1</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00566">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::MainOp()</a>, and <a class="el" href="context_8cpp_source.html#l00135">thrill::api::RunLoopbackThreads()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00568">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::MainOp()</a>, and <a class="el" href="context_8cpp_source.html#l00135">thrill::api::RunLoopbackThreads()</a>.</p>
 
 </div>
 </div>
@@ -1617,7 +1586,7 @@ Variables</h2></td></tr>
 
 <p>get hostname </p>
 
-<p>Definition at line <a class="el" href="porting_8cpp_source.html#l00142">142</a> of file <a class="el" href="porting_8cpp_source.html">porting.cpp</a>.</p>
+<p>Definition at line <a class="el" href="porting_8cpp_source.html#l00143">143</a> of file <a class="el" href="porting_8cpp_source.html">porting.cpp</a>.</p>
 
 </div>
 </div>
@@ -1724,7 +1693,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>try to figure out the command line options of the current process and log it to json logger </p>
 
-<p>Definition at line <a class="el" href="porting_8cpp_source.html#l00067">67</a> of file <a class="el" href="porting_8cpp_source.html">porting.cpp</a>.</p>
+<p>Definition at line <a class="el" href="porting_8cpp_source.html#l00068">68</a> of file <a class="el" href="porting_8cpp_source.html">porting.cpp</a>.</p>
 
 <p>References <a class="el" href="replace_8cpp_source.html#l00141">tlx::replace_all()</a>, <a class="el" href="thrill_2mem_2allocator__base_8hpp_source.html#l00190">thrill::mem::to_string()</a>, and <a class="el" href="unused_8hpp_source.html#l00020">tlx::unused()</a>.</p>
 
@@ -1748,11 +1717,11 @@ Variables</h2></td></tr>
 
 <p>create a pair of pipe file descriptors </p>
 
-<p>Definition at line <a class="el" href="porting_8cpp_source.html#l00051">51</a> of file <a class="el" href="porting_8cpp_source.html">porting.cpp</a>.</p>
+<p>Definition at line <a class="el" href="porting_8cpp_source.html#l00052">52</a> of file <a class="el" href="porting_8cpp_source.html">porting.cpp</a>.</p>
 
-<p>References <a class="el" href="sys__file_8cpp_source.html#l00033">O_BINARY</a>, and <a class="el" href="porting_8cpp_source.html#l00041">PortSetCloseOnExec()</a>.</p>
+<p>References <a class="el" href="sys__file_8cpp_source.html#l00034">O_BINARY</a>, and <a class="el" href="porting_8cpp_source.html#l00042">PortSetCloseOnExec()</a>.</p>
 
-<p>Referenced by <a class="el" href="select__dispatcher_8hpp_source.html#l00062">SelectDispatcher::SelectDispatcher()</a>, <a class="el" href="sys__file_8cpp_source.html#l00322">thrill::vfs::SysOpenReadStream()</a>, and <a class="el" href="sys__file_8cpp_source.html#l00413">thrill::vfs::SysOpenWriteStream()</a>.</p>
+<p>Referenced by <a class="el" href="select__dispatcher_8hpp_source.html#l00062">SelectDispatcher::SelectDispatcher()</a>, <a class="el" href="sys__file_8cpp_source.html#l00323">thrill::vfs::SysOpenReadStream()</a>, and <a class="el" href="sys__file_8cpp_source.html#l00414">thrill::vfs::SysOpenWriteStream()</a>.</p>
 
 </div>
 </div>
@@ -2044,11 +2013,11 @@ Variables</h2></td></tr>
 
 <p>set FD_CLOEXEC on file descriptor (if possible) </p>
 
-<p>Definition at line <a class="el" href="porting_8cpp_source.html#l00041">41</a> of file <a class="el" href="porting_8cpp_source.html">porting.cpp</a>.</p>
+<p>Definition at line <a class="el" href="porting_8cpp_source.html#l00042">42</a> of file <a class="el" href="porting_8cpp_source.html">porting.cpp</a>.</p>
 
 <p>References <a class="el" href="unused_8hpp_source.html#l00020">tlx::unused()</a>.</p>
 
-<p>Referenced by <a class="el" href="porting_8cpp_source.html#l00051">MakePipe()</a>, <a class="el" href="sys__file_8cpp_source.html#l00322">thrill::vfs::SysOpenReadStream()</a>, and <a class="el" href="sys__file_8cpp_source.html#l00413">thrill::vfs::SysOpenWriteStream()</a>.</p>
+<p>Referenced by <a class="el" href="porting_8cpp_source.html#l00052">MakePipe()</a>, <a class="el" href="sys__file_8cpp_source.html#l00323">thrill::vfs::SysOpenReadStream()</a>, and <a class="el" href="sys__file_8cpp_source.html#l00414">thrill::vfs::SysOpenWriteStream()</a>.</p>
 
 </div>
 </div>
@@ -2909,11 +2878,11 @@ Variables</h2></td></tr>
 
 <p>set cpu/core affinity of a thread </p>
 
-<p>Definition at line <a class="el" href="porting_8cpp_source.html#l00110">110</a> of file <a class="el" href="porting_8cpp_source.html">porting.cpp</a>.</p>
+<p>Definition at line <a class="el" href="porting_8cpp_source.html#l00111">111</a> of file <a class="el" href="porting_8cpp_source.html">porting.cpp</a>.</p>
 
 <p>References <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00028">LOG1</a>, and <a class="el" href="unused_8hpp_source.html#l00020">tlx::unused()</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00566">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::MainOp()</a>, <a class="el" href="context_8cpp_source.html#l00135">thrill::api::RunLoopbackThreads()</a>, and <a class="el" href="dispatcher__thread_8cpp_source.html#l00138">DispatcherThread::Work()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00568">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::MainOp()</a>, <a class="el" href="context_8cpp_source.html#l00135">thrill::api::RunLoopbackThreads()</a>, and <a class="el" href="dispatcher__thread_8cpp_source.html#l00138">DispatcherThread::Work()</a>.</p>
 
 </div>
 </div>
@@ -2933,7 +2902,7 @@ Variables</h2></td></tr>
 
 <p>set cpu/core affinity of current thread </p>
 
-<p>Definition at line <a class="el" href="porting_8cpp_source.html#l00127">127</a> of file <a class="el" href="porting_8cpp_source.html">porting.cpp</a>.</p>
+<p>Definition at line <a class="el" href="porting_8cpp_source.html#l00128">128</a> of file <a class="el" href="porting_8cpp_source.html">porting.cpp</a>.</p>
 
 <p>References <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00028">LOG1</a>, and <a class="el" href="unused_8hpp_source.html#l00020">tlx::unused()</a>.</p>
 
@@ -3792,7 +3761,7 @@ Variables</h2></td></tr>
 
 <p>launch profiler task </p>
 
-<p>Definition at line <a class="el" href="linux__proc__stats_8cpp_source.html#l00859">859</a> of file <a class="el" href="linux__proc__stats_8cpp_source.html">linux_proc_stats.cpp</a>.</p>
+<p>Definition at line <a class="el" href="linux__proc__stats_8cpp_source.html#l00860">860</a> of file <a class="el" href="linux__proc__stats_8cpp_source.html">linux_proc_stats.cpp</a>.</p>
 
 <p>Referenced by <a class="el" href="context_8cpp_source.html#l01061">HostContext::HostContext()</a>.</p>
 
@@ -3961,6 +3930,28 @@ Variables</h2></td></tr>
 <p>Use ostream to output any type as string. You generally DO NOT want to use this, instead create a larger ostringstream. </p>
 
 <p>Definition at line <a class="el" href="thrill_2common_2string_8hpp_source.html#l00094">94</a> of file <a class="el" href="thrill_2common_2string_8hpp_source.html">string.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae1a95828629fe7f79b8f7e55e0313ebb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct dirent * ts_readdir </td>
+          <td>(</td>
+          <td class="paramtype">DIR *&#160;</td>
+          <td class="paramname"><em>dirp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>mutex-locked readdir() call </p>
+
+<p>Definition at line <a class="el" href="porting_8cpp_source.html#l00153">153</a> of file <a class="el" href="porting_8cpp_source.html">porting.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="sys__file_8cpp_source.html#l00055">thrill::vfs::SysGlobWalkRecursive()</a>, and <a class="el" href="temporary__directory_8cpp_source.html#l00115">TemporaryDirectory::wipe_directory()</a>.</p>
 
 </div>
 </div>
@@ -4407,7 +4398,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1common.html">common</a></li>
-    <li class="footer">Generated on Wed Jan 16 2019 18:40:32 for Thrill by
+    <li class="footer">Generated on Fri Feb 8 2019 18:00:42 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

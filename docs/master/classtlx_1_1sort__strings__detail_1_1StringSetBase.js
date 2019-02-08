@@ -9,6 +9,7 @@ var classtlx_1_1sort__strings__detail_1_1StringSetBase =
     [ "get_uint8", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#a8de5546acfcc0b4beb6ff865dabaaa11", null ],
     [ "is_equal", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#a6f42d71bde29199d8ef30b17e8f9a71b", null ],
     [ "is_leq", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#a3bc3f10d579e9ce1487fd1973197ed2c", null ],
+    [ "is_less", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#a32686902566b4b260d07c1811ea80b4d", null ],
     [ "print", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#a3a3ab31c19c38fe926198ddc4a0a4a91", null ],
     [ "subi", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#a5ed2143d63663f9044c95797c0a08e91", null ]
 ];

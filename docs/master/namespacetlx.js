@@ -22,6 +22,8 @@ var namespacetlx =
     [ "Delegate", "classtlx_1_1Delegate.html", null ],
     [ "Delegate< R(A...), Allocator >", "classtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4.html", "classtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4" ],
     [ "DieException", "classtlx_1_1DieException.html", "classtlx_1_1DieException" ],
+    [ "enable_if", "structtlx_1_1enable__if.html", null ],
+    [ "enable_if< true, T >", "structtlx_1_1enable__if_3_01true_00_01T_01_4.html", "structtlx_1_1enable__if_3_01true_00_01T_01_4" ],
     [ "FunctionChain", "classtlx_1_1FunctionChain.html", "classtlx_1_1FunctionChain" ],
     [ "FunctionStack", "classtlx_1_1FunctionStack.html", "classtlx_1_1FunctionStack" ],
     [ "index_sequence", "structtlx_1_1index__sequence.html", "structtlx_1_1index__sequence" ],

@@ -142,67 +142,73 @@ $(document).ready(function(){initNavTree('porting_8hpp_source.html','');});
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;system_error&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>thrill {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>common {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//! set FD_CLOEXEC on file descriptor (if possible)</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#a0052d2e5e138b1ae20083a2a4623b04c">PortSetCloseOnExec</a>(<span class="keywordtype">int</span> fd);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//! create a pair of pipe file descriptors</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#ad97e7f77001556f66073ce82c9c3410e">MakePipe</a>(<span class="keywordtype">int</span> out_pipefds[2]);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//! try to figure out the command line options of the current process and log it</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">//! to json logger</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#a198a2f0adfbc4f1e904cc6154aec7793">LogCmdlineParams</a>(JsonLogger&amp; logger);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//! create a std::thread and repeat creation if it fails</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="namespacethrill_1_1common.html#a2744bf429da7b68993e59e9c65df7c72">   42</a></span>&#160;std::thread <a class="code" href="namespacethrill_1_1common.html#a2744bf429da7b68993e59e9c65df7c72">CreateThread</a>(Args&amp;&amp; ... args) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// try for 300 seconds</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">size_t</span> r = 3000;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">while</span> (1) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">try</span> {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">return</span> std::thread(std::forward&lt;Args&gt;(args) ...);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">catch</span> (std::system_error&amp;) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">if</span> (--r == 0) <span class="keywordflow">throw</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Thread creation failed, retrying.&quot;</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            std::this_thread::sleep_for(std::chrono::milliseconds(100));</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">//! set cpu/core affinity of a thread</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#ab87e8304d4351372d5c8ffbe2228bbbf">SetCpuAffinity</a>(std::thread&amp; thread, <span class="keywordtype">size_t</span> cpu_id);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">//! set cpu/core affinity of current thread</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#ab87e8304d4351372d5c8ffbe2228bbbf">SetCpuAffinity</a>(<span class="keywordtype">size_t</span> cpu_id);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">//! get hostname</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span><a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> <a class="code" href="namespacethrill_1_1common.html#a3b99106b15a0934a58130021021aeefd">GetHostname</a>();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;} <span class="comment">// namespace common</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;} <span class="comment">// namespace thrill</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif // !THRILL_COMMON_PORTING_HEADER</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="ttc" id="namespacethrill_1_1common_html_a198a2f0adfbc4f1e904cc6154aec7793"><div class="ttname"><a href="namespacethrill_1_1common.html#a198a2f0adfbc4f1e904cc6154aec7793">thrill::common::LogCmdlineParams</a></div><div class="ttdeci">void LogCmdlineParams(JsonLogger &amp;logger)</div><div class="ttdef"><b>Definition:</b> <a href="porting_8cpp_source.html#l00067">porting.cpp:67</a></div></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;dirent.h&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>thrill {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>common {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">//! set FD_CLOEXEC on file descriptor (if possible)</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#a0052d2e5e138b1ae20083a2a4623b04c">PortSetCloseOnExec</a>(<span class="keywordtype">int</span> fd);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//! create a pair of pipe file descriptors</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#ad97e7f77001556f66073ce82c9c3410e">MakePipe</a>(<span class="keywordtype">int</span> out_pipefds[2]);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//! try to figure out the command line options of the current process and log it</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//! to json logger</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#a198a2f0adfbc4f1e904cc6154aec7793">LogCmdlineParams</a>(JsonLogger&amp; logger);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//! create a std::thread and repeat creation if it fails</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="namespacethrill_1_1common.html#a2744bf429da7b68993e59e9c65df7c72">   44</a></span>&#160;std::thread <a class="code" href="namespacethrill_1_1common.html#a2744bf429da7b68993e59e9c65df7c72">CreateThread</a>(Args&amp;&amp; ... args) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// try for 300 seconds</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">size_t</span> r = 3000;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">while</span> (1) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">return</span> std::thread(std::forward&lt;Args&gt;(args) ...);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">catch</span> (std::system_error&amp;) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">if</span> (--r == 0) <span class="keywordflow">throw</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a> &lt;&lt; <span class="stringliteral">&quot;Thread creation failed, retrying.&quot;</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            std::this_thread::sleep_for(std::chrono::milliseconds(100));</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">//! set cpu/core affinity of a thread</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#ab87e8304d4351372d5c8ffbe2228bbbf">SetCpuAffinity</a>(std::thread&amp; thread, <span class="keywordtype">size_t</span> cpu_id);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">//! set cpu/core affinity of current thread</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"></span><span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#ab87e8304d4351372d5c8ffbe2228bbbf">SetCpuAffinity</a>(<span class="keywordtype">size_t</span> cpu_id);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//! get hostname</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span><a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> <a class="code" href="namespacethrill_1_1common.html#a3b99106b15a0934a58130021021aeefd">GetHostname</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//! mutex-locked readdir() call</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"></span><span class="keyword">struct </span>dirent * <a class="code" href="namespacethrill_1_1common.html#ae1a95828629fe7f79b8f7e55e0313ebb">ts_readdir</a>(DIR* dirp);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <span class="comment">// namespace common</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;} <span class="comment">// namespace thrill</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif // !THRILL_COMMON_PORTING_HEADER</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="ttc" id="namespacethrill_1_1common_html_a198a2f0adfbc4f1e904cc6154aec7793"><div class="ttname"><a href="namespacethrill_1_1common.html#a198a2f0adfbc4f1e904cc6154aec7793">thrill::common::LogCmdlineParams</a></div><div class="ttdeci">void LogCmdlineParams(JsonLogger &amp;logger)</div><div class="ttdef"><b>Definition:</b> <a href="porting_8cpp_source.html#l00068">porting.cpp:68</a></div></div>
 <div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html_a278e17dff6f1eff15d52f0bc57b65915"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html#a278e17dff6f1eff15d52f0bc57b65915">LOG1</a></div><div class="ttdeci">#define LOG1</div><div class="ttdef"><b>Definition:</b> <a href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00028">logger.hpp:28</a></div></div>
-<div class="ttc" id="namespacethrill_1_1common_html_a0052d2e5e138b1ae20083a2a4623b04c"><div class="ttname"><a href="namespacethrill_1_1common.html#a0052d2e5e138b1ae20083a2a4623b04c">thrill::common::PortSetCloseOnExec</a></div><div class="ttdeci">void PortSetCloseOnExec(int fd)</div><div class="ttdoc">set FD_CLOEXEC on file descriptor (if possible) </div><div class="ttdef"><b>Definition:</b> <a href="porting_8cpp_source.html#l00041">porting.cpp:41</a></div></div>
+<div class="ttc" id="namespacethrill_1_1common_html_a0052d2e5e138b1ae20083a2a4623b04c"><div class="ttname"><a href="namespacethrill_1_1common.html#a0052d2e5e138b1ae20083a2a4623b04c">thrill::common::PortSetCloseOnExec</a></div><div class="ttdeci">void PortSetCloseOnExec(int fd)</div><div class="ttdoc">set FD_CLOEXEC on file descriptor (if possible) </div><div class="ttdef"><b>Definition:</b> <a href="porting_8cpp_source.html#l00042">porting.cpp:42</a></div></div>
 <div class="ttc" id="thrill_2common_2logger_8hpp_html"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html">logger.hpp</a></div></div>
-<div class="ttc" id="namespacethrill_1_1common_html_ad97e7f77001556f66073ce82c9c3410e"><div class="ttname"><a href="namespacethrill_1_1common.html#ad97e7f77001556f66073ce82c9c3410e">thrill::common::MakePipe</a></div><div class="ttdeci">void MakePipe(int out_pipefds[2])</div><div class="ttdoc">create a pair of pipe file descriptors </div><div class="ttdef"><b>Definition:</b> <a href="porting_8cpp_source.html#l00051">porting.cpp:51</a></div></div>
-<div class="ttc" id="namespacethrill_1_1common_html_a3b99106b15a0934a58130021021aeefd"><div class="ttname"><a href="namespacethrill_1_1common.html#a3b99106b15a0934a58130021021aeefd">thrill::common::GetHostname</a></div><div class="ttdeci">std::string GetHostname()</div><div class="ttdoc">get hostname </div><div class="ttdef"><b>Definition:</b> <a href="porting_8cpp_source.html#l00142">porting.cpp:142</a></div></div>
+<div class="ttc" id="namespacethrill_1_1common_html_ad97e7f77001556f66073ce82c9c3410e"><div class="ttname"><a href="namespacethrill_1_1common.html#ad97e7f77001556f66073ce82c9c3410e">thrill::common::MakePipe</a></div><div class="ttdeci">void MakePipe(int out_pipefds[2])</div><div class="ttdoc">create a pair of pipe file descriptors </div><div class="ttdef"><b>Definition:</b> <a href="porting_8cpp_source.html#l00052">porting.cpp:52</a></div></div>
+<div class="ttc" id="namespacethrill_1_1common_html_a3b99106b15a0934a58130021021aeefd"><div class="ttname"><a href="namespacethrill_1_1common.html#a3b99106b15a0934a58130021021aeefd">thrill::common::GetHostname</a></div><div class="ttdeci">std::string GetHostname()</div><div class="ttdoc">get hostname </div><div class="ttdef"><b>Definition:</b> <a href="porting_8cpp_source.html#l00143">porting.cpp:143</a></div></div>
+<div class="ttc" id="namespacethrill_1_1common_html_ae1a95828629fe7f79b8f7e55e0313ebb"><div class="ttname"><a href="namespacethrill_1_1common.html#ae1a95828629fe7f79b8f7e55e0313ebb">thrill::common::ts_readdir</a></div><div class="ttdeci">struct dirent * ts_readdir(DIR *dirp)</div><div class="ttdoc">mutex-locked readdir() call </div><div class="ttdef"><b>Definition:</b> <a href="porting_8cpp_source.html#l00153">porting.cpp:153</a></div></div>
 <div class="ttc" id="namespacethrill_1_1mem_html_a5568fe0d00a794e5f063e9fe040bc07f"><div class="ttname"><a href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">thrill::mem::string</a></div><div class="ttdeci">std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt; string</div><div class="ttdoc">string with Manager tracking </div><div class="ttdef"><b>Definition:</b> <a href="allocator_8hpp_source.html#l00220">allocator.hpp:220</a></div></div>
-<div class="ttc" id="namespacethrill_1_1common_html_a2744bf429da7b68993e59e9c65df7c72"><div class="ttname"><a href="namespacethrill_1_1common.html#a2744bf429da7b68993e59e9c65df7c72">thrill::common::CreateThread</a></div><div class="ttdeci">std::thread CreateThread(Args &amp;&amp;...args)</div><div class="ttdoc">create a std::thread and repeat creation if it fails </div><div class="ttdef"><b>Definition:</b> <a href="porting_8hpp_source.html#l00042">porting.hpp:42</a></div></div>
-<div class="ttc" id="namespacethrill_1_1common_html_ab87e8304d4351372d5c8ffbe2228bbbf"><div class="ttname"><a href="namespacethrill_1_1common.html#ab87e8304d4351372d5c8ffbe2228bbbf">thrill::common::SetCpuAffinity</a></div><div class="ttdeci">void SetCpuAffinity(std::thread &amp;thread, size_t cpu_id)</div><div class="ttdoc">set cpu/core affinity of a thread </div><div class="ttdef"><b>Definition:</b> <a href="porting_8cpp_source.html#l00110">porting.cpp:110</a></div></div>
+<div class="ttc" id="namespacethrill_1_1common_html_a2744bf429da7b68993e59e9c65df7c72"><div class="ttname"><a href="namespacethrill_1_1common.html#a2744bf429da7b68993e59e9c65df7c72">thrill::common::CreateThread</a></div><div class="ttdeci">std::thread CreateThread(Args &amp;&amp;...args)</div><div class="ttdoc">create a std::thread and repeat creation if it fails </div><div class="ttdef"><b>Definition:</b> <a href="porting_8hpp_source.html#l00044">porting.hpp:44</a></div></div>
+<div class="ttc" id="namespacethrill_1_1common_html_ab87e8304d4351372d5c8ffbe2228bbbf"><div class="ttname"><a href="namespacethrill_1_1common.html#ab87e8304d4351372d5c8ffbe2228bbbf">thrill::common::SetCpuAffinity</a></div><div class="ttdeci">void SetCpuAffinity(std::thread &amp;thread, size_t cpu_id)</div><div class="ttdoc">set cpu/core affinity of a thread </div><div class="ttdef"><b>Definition:</b> <a href="porting_8cpp_source.html#l00111">porting.cpp:111</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="porting_8hpp.html">porting.hpp</a></li>
-    <li class="footer">Generated on Wed Jan 16 2019 18:40:29 for Thrill by
+    <li class="footer">Generated on Fri Feb 8 2019 18:00:38 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

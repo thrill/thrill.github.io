@@ -60,8 +60,6 @@ var searchData=
   ['operator_7c_3d',['operator|=',['../structtlx_1_1BTree_1_1result__t.html#a5303413c5fc55a269163161efc2398a4',1,'tlx::BTree::result_t']]],
   ['optimize',['optimize',['../classexamples_1_1stochastic__gradient__descent_1_1StochasticGradientDescent.html#aa4dfe84370d449c6091a0f5164d776cd',1,'examples::stochastic_gradient_descent::StochasticGradientDescent']]],
   ['origin',['Origin',['../classthrill_1_1common_1_1Vector.html#a9d4a359583c0a29272ef62020ac8836a',1,'thrill::common::Vector']]],
-  ['ourconcurrentboundedqueue',['OurConcurrentBoundedQueue',['../classthrill_1_1common_1_1OurConcurrentBoundedQueue.html#ae9e9d99932fcd4b68190b4edffb8600e',1,'thrill::common::OurConcurrentBoundedQueue::OurConcurrentBoundedQueue()=default'],['../classthrill_1_1common_1_1OurConcurrentBoundedQueue.html#a1246c9a345852883ab3d5e79ec1df7c2',1,'thrill::common::OurConcurrentBoundedQueue::OurConcurrentBoundedQueue(OurConcurrentBoundedQueue &amp;&amp;other)']]],
-  ['ourconcurrentqueue',['OurConcurrentQueue',['../classthrill_1_1common_1_1OurConcurrentQueue.html#abff5e59bc6e653af46f19c10e68a8ebf',1,'thrill::common::OurConcurrentQueue']]],
   ['ournewhandler',['OurNewHandler',['../namespacethrill_1_1data.html#a238f114b8424b5477f7b03dfb53335ea',1,'thrill::data']]],
   ['output_5fwrap',['output_wrap',['../classtlx_1_1CmdlineParser.html#a64cb538abed4a27b7eaff6c96a60e25e',1,'tlx::CmdlineParser']]],
   ['outputbfsresult',['outputBFSResult',['../bfs_8cpp.html#a415f850c182e07eb092f55862994f601',1,'bfs.cpp']]],

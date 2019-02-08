@@ -2,11 +2,11 @@ var classtlx_1_1StackAllocator =
 [
     [ "rebind", "structtlx_1_1StackAllocator_1_1rebind.html", "structtlx_1_1StackAllocator_1_1rebind" ],
     [ "const_pointer", "classtlx_1_1StackAllocator.html#a5485252cb202b5d33f98409d3390f233", null ],
-    [ "const_reference", "classtlx_1_1StackAllocator.html#a9292c3e34b31f09cb6cd0b42b511fa7a", null ],
+    [ "const_reference", "classtlx_1_1StackAllocator.html#a99645e3f798107152f56c026fb86d696", null ],
     [ "difference_type", "classtlx_1_1StackAllocator.html#ace405568d0b2f3fad4990044252c7732", null ],
     [ "is_always_equal", "classtlx_1_1StackAllocator.html#a96805d5608516f1b0436874900768619", null ],
     [ "pointer", "classtlx_1_1StackAllocator.html#a1e67311e1f4ae3600af384f0a7e6addc", null ],
-    [ "reference", "classtlx_1_1StackAllocator.html#a6f5ffa417c77fc24c2932a11f08311ec", null ],
+    [ "reference", "classtlx_1_1StackAllocator.html#a01e1df50060518200c2819bad5fd350e", null ],
     [ "size_type", "classtlx_1_1StackAllocator.html#af38ce1af42d538f410180c265518d4f0", null ],
     [ "value_type", "classtlx_1_1StackAllocator.html#af0f70ef64d23e2379bacb63968e68b45", null ],
     [ "StackAllocator", "classtlx_1_1StackAllocator.html#a798fb2eaeece455e7bb6edd974b154d5", null ],

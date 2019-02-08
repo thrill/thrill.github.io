@@ -34,7 +34,7 @@ var searchData=
   ['flags',['flags',['../structtlx_1_1BTree_1_1result__t.html#a8977bdc6bb20adb10785684083b8077f',1,'tlx::BTree::result_t']]],
   ['flags_5f',['flags_',['../classtlx_1_1radix__heap__detail_1_1BitArrayRecursive_3_01Size_00_01true_01_4.html#a73b4a440d82f864c2a64b18867335554',1,'tlx::radix_heap_detail::BitArrayRecursive&lt; Size, true &gt;']]],
   ['flash',['flash',['../classfoxxll_1_1disk__config.html#a5a483d65b3bc3c34154e6b31c07e4aa9',1,'foxxll::disk_config']]],
-  ['flipped_5f',['flipped_',['../classtlx_1_1sort__strings__detail_1_1StringShadowPtr.html#a90f923ce7ff63d00c89fcc0fb61d7cb5',1,'tlx::sort_strings_detail::StringShadowPtr']]],
+  ['flipped_5f',['flipped_',['../classtlx_1_1sort__strings__detail_1_1StringShadowPtr.html#a90f923ce7ff63d00c89fcc0fb61d7cb5',1,'tlx::sort_strings_detail::StringShadowPtr::flipped_()'],['../classtlx_1_1sort__strings__detail_1_1StringShadowLcpPtr.html#a90f923ce7ff63d00c89fcc0fb61d7cb5',1,'tlx::sort_strings_detail::StringShadowLcpPtr::flipped_()']]],
   ['float_5fcurr',['float_curr',['../namespacethrill_1_1mem.html#a9b7d59c5b262bf2f56ec52783c6cb9f0',1,'thrill::mem']]],
   ['flow_5fmanager_5f',['flow_manager_',['../classthrill_1_1api_1_1HostContext.html#ac94160d19a1ef0dc56b0817f8337ddfd',1,'thrill::api::HostContext::flow_manager_()'],['../classthrill_1_1api_1_1Context.html#ace00a12d869e8f77f0c8f0ee63512d62',1,'thrill::api::Context::flow_manager_()']]],
   ['format_5f',['format_',['../classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905',1,'thrill::core::HyperLogLogRegisters']]],

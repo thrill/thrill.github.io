@@ -132,7 +132,7 @@ class thrill::api::SampleNode&lt; ValueType &gt;</h3>
 <p>The implementation is an adaptation of Algorithm P from Sanders, Lamm, Hübschle-Schneider, Schrade, Dachsbacher, ACM TOMS 2017: "Efficient Random
 Sampling - Parallel, Vectorized, Cache-Efficient, and Online". The modification is in how samples are assigned to workers. Instead of doing log(num_workers) splits to assign samples to ranges of workers, do O(log(input_size)) splits to assign samples to input ranges. Workers only compute the ranges which overlap their local input range, and then add up the ranges that are fully contained in their local input range. This ensures consistency while requiring only a single prefix-sum and two scalar broadcasts. </p>
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00049">49</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00050">50</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for SampleNode&lt; ValueType &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -146,7 +146,7 @@ Sampling - Parallel, Vectorized, Cache-Efficient, and Online". The modification 
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1api_1_1SampleNode__coll__graph.svg" width="2886" height="1002"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1api_1_1SampleNode__coll__graph.svg" width="2918" height="987"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 
@@ -399,7 +399,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00053">53</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00054">54</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -436,7 +436,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00058">58</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00059">59</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -451,7 +451,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00240">240</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00241">241</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -473,7 +473,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00051">51</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00052">52</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -489,7 +489,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Hypergeometric distribution to calculate local sample sizes. </p>
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00234">234</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00235">235</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -505,7 +505,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Timers for local work and communication. </p>
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00240">240</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00241">241</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -521,7 +521,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Whether the parent stack is empty. </p>
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00242">242</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00243">243</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -537,7 +537,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Random generator for reservoir sampler. </p>
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00236">236</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00237">237</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -553,7 +553,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reservoir sampler for pre-op. </p>
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00238">238</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00239">239</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -569,7 +569,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>local samples </p>
 
-<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00059">59</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
+<p>Definition at line <a class="el" href="sample_8hpp_source.html#l00060">60</a> of file <a class="el" href="sample_8hpp_source.html">sample.hpp</a>.</p>
 
 </div>
 </div>
@@ -582,7 +582,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1api.html">api</a></li><li class="navelem"><a class="el" href="classthrill_1_1api_1_1SampleNode.html">SampleNode</a></li>
-    <li class="footer">Generated on Wed Jan 16 2019 18:40:32 for Thrill by
+    <li class="footer">Generated on Fri Feb 8 2019 18:00:41 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,9 +1,9 @@
 var classtlx_1_1SimpleVector =
 [
     [ "const_iterator", "classtlx_1_1SimpleVector.html#ad517750b1a85b1790f354ad2aac7e588", null ],
-    [ "const_reference", "classtlx_1_1SimpleVector.html#a5547e634a8602ad47bdbec65167d7fce", null ],
+    [ "const_reference", "classtlx_1_1SimpleVector.html#ab1137da269e66589b98fce3416d40502", null ],
     [ "iterator", "classtlx_1_1SimpleVector.html#a992b1a22e86446784938e34df4b91fe3", null ],
-    [ "reference", "classtlx_1_1SimpleVector.html#aaa3f89aae50054d0bb5c9f266819815b", null ],
+    [ "reference", "classtlx_1_1SimpleVector.html#a74202cdd96628bc49a756e5fc87d22de", null ],
     [ "size_type", "classtlx_1_1SimpleVector.html#a8560ac5527cd0ed38d71e0e58acc8021", null ],
     [ "value_type", "classtlx_1_1SimpleVector.html#a52422eb0a58c3a0dbe6eadf2727e78f8", null ],
     [ "SimpleVector", "classtlx_1_1SimpleVector.html#a588ceefa7d4f32a7e52a9a46f73c17d1", null ],

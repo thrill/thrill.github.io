@@ -1,6 +1,10 @@
 var group__tlx__meta =
 [
     [ "meta_detail", "namespacetlx_1_1meta__detail.html", null ],
+    [ "enable_if", "structtlx_1_1enable__if.html", null ],
+    [ "enable_if< true, T >", "structtlx_1_1enable__if_3_01true_00_01T_01_4.html", [
+      [ "type", "structtlx_1_1enable__if_3_01true_00_01T_01_4.html#a565429e62c1d4fd084335146ba778e17", null ]
+    ] ],
     [ "FunctionChain", "classtlx_1_1FunctionChain.html", [
       [ "FunctionChain", "classtlx_1_1FunctionChain.html#a46bd07dd339af54250e82936fe9bb992", null ],
       [ "FunctionChain", "classtlx_1_1FunctionChain.html#aca53db38c24e6b401b249d7596e7d677", null ],

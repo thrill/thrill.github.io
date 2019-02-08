@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['withshadow',['WithShadow',['../classtlx_1_1sort__strings__detail_1_1StringPtr.html#a07642b61274e495654fd7eaad5c1777d',1,'tlx::sort_strings_detail::StringPtr::WithShadow()'],['../classtlx_1_1sort__strings__detail_1_1StringLcpPtr.html#a1d8de8a4b9b8d64cefb273d5f5d5446c',1,'tlx::sort_strings_detail::StringLcpPtr::WithShadow()']]],
   ['wordcountpair',['WordCountPair',['../namespaceexamples_1_1word__count.html#ac1b98b7792a66c1925f2daef33d6777b',1,'examples::word_count']]],
   ['write_5fpool_5ftype',['write_pool_type',['../classfoxxll_1_1read__write__pool.html#aec47267b0fef06f31f1472120bbc1774',1,'foxxll::read_write_pool']]],
   ['write_5fscheduled_5fblocks_5fiterator',['write_scheduled_blocks_iterator',['../classfoxxll_1_1block__scheduler__algorithm__offline__lru__prefetching.html#a58aaac2bf3ec79bf3e7d3fcdc4e5a54d',1,'foxxll::block_scheduler_algorithm_offline_lru_prefetching']]],

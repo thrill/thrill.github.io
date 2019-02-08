@@ -47,5 +47,6 @@ var dir_e51d8ef7db00def9423335c81d827c83 =
       [ "ThreadPool", "classtlx_1_1ThreadPool.html", "classtlx_1_1ThreadPool" ]
     ] ],
     [ "unused.hpp", "unused_8hpp.html", "unused_8hpp" ],
+    [ "vector_free.hpp", "vector__free_8hpp.html", "vector__free_8hpp" ],
     [ "version.hpp", "tlx_2tlx_2version_8hpp.html", "tlx_2tlx_2version_8hpp" ]
 ];

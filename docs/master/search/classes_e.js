@@ -2,11 +2,5 @@ var searchData=
 [
   ['offset_5fallocator',['offset_allocator',['../structfoxxll_1_1offset__allocator.html',1,'foxxll']]],
   ['onoff_5fswitch',['onoff_switch',['../classfoxxll_1_1onoff__switch.html',1,'foxxll']]],
-  ['ourconcurrentboundedqueue',['OurConcurrentBoundedQueue',['../classthrill_1_1common_1_1OurConcurrentBoundedQueue.html',1,'thrill::common']]],
-  ['ourconcurrentboundedqueue_3c_20thrill_3a_3adata_3a_3ablock_20_3e',['OurConcurrentBoundedQueue&lt; thrill::data::Block &gt;',['../classthrill_1_1common_1_1OurConcurrentBoundedQueue.html',1,'thrill::common']]],
-  ['ourconcurrentboundedqueue_3c_20thrill_3a_3adata_3a_3amixblockqueue_3a_3asrcblockpair_20_3e',['OurConcurrentBoundedQueue&lt; thrill::data::MixBlockQueue::SrcBlockPair &gt;',['../classthrill_1_1common_1_1OurConcurrentBoundedQueue.html',1,'thrill::common']]],
-  ['ourconcurrentboundedqueue_3c_20thrill_3a_3anet_3a_3amock_3a_3aconnection_20_2a_20_3e',['OurConcurrentBoundedQueue&lt; thrill::net::mock::Connection * &gt;',['../classthrill_1_1common_1_1OurConcurrentBoundedQueue.html',1,'thrill::common']]],
-  ['ourconcurrentqueue',['OurConcurrentQueue',['../classthrill_1_1common_1_1OurConcurrentQueue.html',1,'thrill::common']]],
-  ['ourconcurrentqueue_3c_20tlx_3a_3adelegate_2c_20mem_3a_3agpoolallocator_3c_20tlx_3a_3adelegate_20_3e_20_3e',['OurConcurrentQueue&lt; tlx::Delegate, mem::GPoolAllocator&lt; tlx::Delegate &gt; &gt;',['../classthrill_1_1common_1_1OurConcurrentQueue.html',1,'thrill::common']]],
   ['overlapwindownode',['OverlapWindowNode',['../classthrill_1_1api_1_1OverlapWindowNode.html',1,'thrill::api']]]
 ];

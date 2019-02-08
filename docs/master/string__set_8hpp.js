@@ -5,7 +5,6 @@ var string__set_8hpp =
     [ "StdStringSet", "classtlx_1_1sort__strings__detail_1_1StdStringSet.html", "classtlx_1_1sort__strings__detail_1_1StdStringSet" ],
     [ "StdStringSetTraits", "classtlx_1_1sort__strings__detail_1_1StdStringSetTraits.html", "classtlx_1_1sort__strings__detail_1_1StdStringSetTraits" ],
     [ "StringSetBase", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html", "classtlx_1_1sort__strings__detail_1_1StringSetBase" ],
-    [ "StringShadowPtr", "classtlx_1_1sort__strings__detail_1_1StringShadowPtr.html", "classtlx_1_1sort__strings__detail_1_1StringShadowPtr" ],
     [ "StringSuffixSet", "classtlx_1_1sort__strings__detail_1_1StringSuffixSet.html", "classtlx_1_1sort__strings__detail_1_1StringSuffixSet" ],
     [ "StringSuffixSetTraits", "classtlx_1_1sort__strings__detail_1_1StringSuffixSetTraits.html", "classtlx_1_1sort__strings__detail_1_1StringSuffixSetTraits" ],
     [ "UPtrStdStringSet", "classtlx_1_1sort__strings__detail_1_1UPtrStdStringSet.html", "classtlx_1_1sort__strings__detail_1_1UPtrStdStringSet" ],
