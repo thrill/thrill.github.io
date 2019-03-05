@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['daryaddressableintheap',['DAryAddressableIntHeap',['../classtlx_1_1DAryAddressableIntHeap.html',1,'tlx']]],
+  ['daryheap',['DAryHeap',['../classtlx_1_1DAryHeap.html',1,'tlx']]],
   ['datapoint',['DataPoint',['../structexamples_1_1stochastic__gradient__descent_1_1DataPoint.html',1,'examples::stochastic_gradient_descent']]],
   ['defaultreduceconfig',['DefaultReduceConfig',['../classthrill_1_1api_1_1DefaultReduceConfig.html',1,'thrill::api']]],
   ['defaultreduceconfig',['DefaultReduceConfig',['../classthrill_1_1core_1_1DefaultReduceConfig.html',1,'thrill::core']]],

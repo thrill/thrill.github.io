@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('construct__wt_8hpp_source.html','');})
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            })</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        .WriteBinary(</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            output_path + <a class="code" href="namespacethrill_1_1common.html#a094d23796d3143cb2a6b542689392cc4">common::str_sprintf</a>(<span class="stringliteral">&quot;-lvl%02u-&quot;</span>, <span class="keywordtype">unsigned</span>(level)));</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            output_path + <a class="code" href="group__tlx__string.html#gae5a94b0f02730f1df3009eb5ce67eb17">tlx::ssprintf</a>(<span class="stringliteral">&quot;-lvl%02u-&quot;</span>, <span class="keywordtype">unsigned</span>(level)));</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        wt = wt.Sort(</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            [mask](<span class="keyword">const</span> uint8_t&amp; a, <span class="keyword">const</span> uint8_t&amp; b) {</div>
@@ -211,8 +211,8 @@ $(document).ready(function(){initNavTree('construct__wt_8hpp_source.html','');})
 <div class="ttc" id="write__binary_8hpp_html"><div class="ttname"><a href="write__binary_8hpp.html">write_binary.hpp</a></div></div>
 <div class="ttc" id="thrill_2api_2sort_8hpp_html"><div class="ttname"><a href="thrill_2api_2sort_8hpp.html">sort.hpp</a></div></div>
 <div class="ttc" id="thrill_2common_2logger_8hpp_html"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html">logger.hpp</a></div></div>
-<div class="ttc" id="namespacethrill_1_1common_html_a094d23796d3143cb2a6b542689392cc4"><div class="ttname"><a href="namespacethrill_1_1common.html#a094d23796d3143cb2a6b542689392cc4">thrill::common::str_sprintf</a></div><div class="ttdeci">String str_sprintf(const char *fmt,...) TLX_ATTRIBUTE_FORMAT_PRINTF(1</div><div class="ttdoc">Helper for using sprintf to format into std::string and also to_string converters. </div></div>
 <div class="ttc" id="namespacegen__data_html_a573e66358ede67c6f901dfaf4722f75a"><div class="ttname"><a href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">gen_data.x</a></div><div class="ttdeci">list x</div><div class="ttdef"><b>Definition:</b> <a href="gen__data_8py_source.html#l00039">gen_data.py:39</a></div></div>
+<div class="ttc" id="group__tlx__string_html_gae5a94b0f02730f1df3009eb5ce67eb17"><div class="ttname"><a href="group__tlx__string.html#gae5a94b0f02730f1df3009eb5ce67eb17">tlx::ssprintf</a></div><div class="ttdeci">std::string ssprintf(const char *fmt,...)</div><div class="ttdoc">Helper for return the result of a sprintf() call inside a std::string. </div><div class="ttdef"><b>Definition:</b> <a href="ssprintf_8cpp_source.html#l00018">ssprintf.cpp:18</a></div></div>
 <div class="ttc" id="namespacethrill_1_1mem_html_a5568fe0d00a794e5f063e9fe040bc07f"><div class="ttname"><a href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">thrill::mem::string</a></div><div class="ttdeci">std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt; string</div><div class="ttdoc">string with Manager tracking </div><div class="ttdef"><b>Definition:</b> <a href="allocator_8hpp_source.html#l00220">allocator.hpp:220</a></div></div>
 <div class="ttc" id="namespaceexamples_1_1suffix__sorting_html_a6b72e54baf646b08b4b87f987f583dcb"><div class="ttname"><a href="namespaceexamples_1_1suffix__sorting.html#a6b72e54baf646b08b4b87f987f583dcb">examples::suffix_sorting::debug</a></div><div class="ttdeci">static constexpr bool debug</div><div class="ttdef"><b>Definition:</b> <a href="wavelet__tree_8cpp_source.html#l00035">wavelet_tree.cpp:35</a></div></div>
 <div class="ttc" id="namespaceexamples_1_1suffix__sorting_html_a560968bf7184fe9d5aeec968dff1a129"><div class="ttname"><a href="namespaceexamples_1_1suffix__sorting.html#a560968bf7184fe9d5aeec968dff1a129">examples::suffix_sorting::ConstructWaveletTree</a></div><div class="ttdeci">auto ConstructWaveletTree(const InputDIA &amp;input_dia, const std::string &amp;output_path)</div><div class="ttdef"><b>Definition:</b> <a href="construct__wt_8hpp_source.html#l00035">construct_wt.hpp:35</a></div></div>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('construct__wt_8hpp_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_37fe638abcaf0b770f4bbf8e34158a25.html">examples</a></li><li class="navelem"><a class="el" href="dir_0b8cd80b43220fb0eacec85b2381def2.html">suffix_sorting</a></li><li class="navelem"><a class="el" href="construct__wt_8hpp.html">construct_wt.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 8 2019 18:00:37 for Thrill by
+    <li class="footer">Generated on Tue Mar 5 2019 05:24:24 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

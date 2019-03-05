@@ -15,6 +15,7 @@ var classtlx_1_1Aggregate =
     [ "operator+", "classtlx_1_1Aggregate.html#ab1e48aa0991d569ae9f119d843c5b074", null ],
     [ "operator+=", "classtlx_1_1Aggregate.html#a37ee7134e4d76ba9f8eaef7b300fd2ce", null ],
     [ "serialize", "classtlx_1_1Aggregate.html#a471354d71ba97866fe5dabb75f1a016b", null ],
+    [ "span", "classtlx_1_1Aggregate.html#a551b2f42da5c0e97d1446d92656e413b", null ],
     [ "standard_deviation", "classtlx_1_1Aggregate.html#aef63242acc053c992cb02d0206c9a9f2", null ],
     [ "stdev", "classtlx_1_1Aggregate.html#a2bf0b4bbbc941d70269dbf5d7f7ff52f", null ],
     [ "sum", "classtlx_1_1Aggregate.html#a12b57ad1352a157d6ee94b701ee0fcf1", null ],

@@ -15,6 +15,7 @@ var searchData=
   ['addressable_5fpriority_5fqueue',['addressable_priority_queue',['../classfoxxll_1_1addressable__priority__queue.html',1,'foxxll']]],
   ['addressable_5fpriority_5fqueue_3c_20swappable_5fblock_5fidentifier_5ftype_2c_20foxxll_3a_3ablock_5fscheduler_5falgorithm_5foffline_5flfd_3a_3apriority_20_3e',['addressable_priority_queue&lt; swappable_block_identifier_type, foxxll::block_scheduler_algorithm_offline_lfd::priority &gt;',['../classfoxxll_1_1addressable__priority__queue.html',1,'foxxll']]],
   ['aggregate',['Aggregate',['../classtlx_1_1Aggregate.html',1,'tlx']]],
+  ['aggregateminmax',['AggregateMinMax',['../classtlx_1_1AggregateMinMax.html',1,'tlx']]],
   ['alias_5fcast_5fhelper',['alias_cast_helper',['../structthrill_1_1common_1_1alias__cast__helper.html',1,'thrill::common']]],
   ['aligned_5falloc_5fsettings',['aligned_alloc_settings',['../structfoxxll_1_1aligned__alloc__settings.html',1,'foxxll']]],
   ['alignedallocator',['AlignedAllocator',['../classthrill_1_1mem_1_1AlignedAllocator.html',1,'thrill::mem']]],

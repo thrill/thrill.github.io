@@ -5,6 +5,7 @@ var searchData=
   ['addressable_5fqueues_2ehpp',['addressable_queues.hpp',['../addressable__queues_8hpp.html',1,'']]],
   ['aggregate_2ehpp',['aggregate.hpp',['../thrill_2common_2aggregate_8hpp.html',1,'']]],
   ['aggregate_2ehpp',['aggregate.hpp',['../extlib_2tlx_2tlx_2math_2aggregate_8hpp.html',1,'']]],
+  ['aggregate_5fmin_5fmax_2ehpp',['aggregate_min_max.hpp',['../aggregate__min__max_8hpp.html',1,'']]],
   ['algorithm_2ehpp',['algorithm.hpp',['../algorithm_8hpp.html',1,'']]],
   ['aligned_5falloc_2ehpp',['aligned_alloc.hpp',['../aligned__alloc_8hpp.html',1,'']]],
   ['aligned_5fallocator_2ehpp',['aligned_allocator.hpp',['../aligned__allocator_8hpp.html',1,'']]],

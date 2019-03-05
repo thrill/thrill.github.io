@@ -11,10 +11,6 @@ var thrill_2common_2string_8hpp =
     [ "from_cstr< unsigned long long >", "thrill_2common_2string_8hpp.html#aa411be8ae7b871870cf34b18d296ebb9", null ],
     [ "from_str", "thrill_2common_2string_8hpp.html#ae6b0ecac793177dc4b7b8f8578e395d4", null ],
     [ "RandomString", "thrill_2common_2string_8hpp.html#aa0e228ee31c71dc708f3983ea9f03fe4", null ],
-    [ "str_snprintf", "thrill_2common_2string_8hpp.html#a0e26c3b7e4aea0cd7d604286770fa5e2", null ],
-    [ "str_snprintf", "thrill_2common_2string_8hpp.html#ad44d61434ab1581d172fcb328fb12515", null ],
-    [ "str_sprintf", "thrill_2common_2string_8hpp.html#a094d23796d3143cb2a6b542689392cc4", null ],
-    [ "str_sprintf", "thrill_2common_2string_8hpp.html#acfab5690d0a92ed12a4ecac04b910553", null ],
     [ "to_str", "thrill_2common_2string_8hpp.html#a5f921572e7148b383411a63733947be2", null ],
     [ "VecToStr", "thrill_2common_2string_8hpp.html#a4dcfa0783f3e01b7ccd182711f77cc0c", null ],
     [ "VecToStr", "thrill_2common_2string_8hpp.html#a19dadeee63f8e024ef3438a09c03cc1c", null ]

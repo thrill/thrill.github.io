@@ -2,6 +2,7 @@ var searchData=
 [
   ['h',['H',['../namespacetlx_1_1digest__detail.html#a4aa334dd681999fabd33513a4a557d99',1,'tlx::digest_detail']]],
   ['handle',['Handle',['../classthrill_1_1data_1_1CatStreamData.html#ab815409809b92616e365b90838cbdbcc',1,'thrill::data::CatStreamData::Handle()'],['../classthrill_1_1data_1_1MixStreamData.html#aba0de9c0e3bd47ef10e222557b3066b4',1,'thrill::data::MixStreamData::Handle()'],['../classfoxxll_1_1addressable__fifo__queue.html#ae3b018a342f17054a568b1bf4194b8bf',1,'foxxll::addressable_fifo_queue::handle()'],['../classfoxxll_1_1addressable__priority__queue.html#ae3b018a342f17054a568b1bf4194b8bf',1,'foxxll::addressable_priority_queue::handle()']]],
+  ['handles_5f',['handles_',['../classtlx_1_1DAryAddressableIntHeap.html#abd9a0cfcc99e09d66422e43cb336ccdd',1,'tlx::DAryAddressableIntHeap']]],
   ['hard_5fram_5flimit',['hard_ram_limit',['../classthrill_1_1data_1_1BlockPool.html#a4f8d4accd3be0cb77aa774d4fbd0c9a2',1,'thrill::data::BlockPool']]],
   ['has',['has',['../structtlx_1_1BTree_1_1result__t.html#ae1c20bab9719dbdf19bb660a0a4a700d',1,'tlx::BTree::result_t']]],
   ['has_5favailable_5fspace',['has_available_space',['../classfoxxll_1_1disk__block__allocator.html#a71d5b7f89dd82451ef5f493de9b8cbdb',1,'foxxll::disk_block_allocator']]],
@@ -58,6 +59,7 @@ var searchData=
   ['hdfs3openwritestream',['Hdfs3OpenWriteStream',['../namespacethrill_1_1vfs.html#a6a2cd0c9d002c4d7649e93d3580961b2',1,'thrill::vfs']]],
   ['head_5fleaf_5f',['head_leaf_',['../classtlx_1_1BTree.html#a8d6ac34d80de837a5e6125c932f1c288',1,'tlx::BTree']]],
   ['header_5fsize',['header_size',['../classthrill_1_1data_1_1MultiplexerHeader.html#ac9a0c0d3a0eb73be7c7149c7c124220a',1,'thrill::data::MultiplexerHeader']]],
+  ['heap_5f',['heap_',['../classtlx_1_1DAryAddressableIntHeap.html#aceab918c00caa3fe698240e76b4bf316',1,'tlx::DAryAddressableIntHeap::heap_()'],['../classtlx_1_1DAryHeap.html#aceab918c00caa3fe698240e76b4bf316',1,'tlx::DAryHeap::heap_()']]],
   ['helloreceived',['HelloReceived',['../group__net__tcp.html#ggaf905f830af92a188bfa734cbd78f7211a2d16a9c48da0e5e84f8348861ce25bc4',1,'thrill::net::tcp']]],
   ['hellosent',['HelloSent',['../group__net__tcp.html#ggaf905f830af92a188bfa734cbd78f7211a38c07f2d1e08abf0b30d8fd9b917188e',1,'thrill::net::tcp']]],
   ['hexdump',['hexdump',['../group__tlx__string.html#gab4c0ada9ff7b0d905361e60050316899',1,'tlx::hexdump(const void *const data, size_t size)'],['../group__tlx__string.html#gaa0757bf9871dc4e2526ab48e4cde28e1',1,'tlx::hexdump(const std::string &amp;str)'],['../group__tlx__string.html#ga15c83e3e2055412b0440758c98b3f148',1,'tlx::hexdump(const std::vector&lt; char &gt; &amp;data)'],['../group__tlx__string.html#ga6c6446ce9a61a434b3a10345cbf3ebed',1,'tlx::hexdump(const std::vector&lt; uint8_t &gt; &amp;data)']]],
@@ -88,11 +90,11 @@ var searchData=
   ['hyperloglog_2ecpp',['hyperloglog.cpp',['../hyperloglog_8cpp.html',1,'']]],
   ['hyperloglog_2ehpp',['hyperloglog.hpp',['../core_2hyperloglog_8hpp.html',1,'']]],
   ['hyperloglog_2ehpp',['hyperloglog.hpp',['../api_2hyperloglog_8hpp.html',1,'']]],
-  ['hyperloglognode',['HyperLogLogNode',['../classthrill_1_1api_1_1HyperLogLogNode.html#ab291e490d49d49d227275cfeb3fb14ba',1,'thrill::api::HyperLogLogNode']]],
   ['hyperloglognode',['HyperLogLogNode',['../classthrill_1_1api_1_1HyperLogLogNode.html',1,'thrill::api']]],
+  ['hyperloglognode',['HyperLogLogNode',['../classthrill_1_1api_1_1HyperLogLogNode.html#ab291e490d49d49d227275cfeb3fb14ba',1,'thrill::api::HyperLogLogNode']]],
   ['hyperloglogregisterformat',['HyperLogLogRegisterFormat',['../namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38',1,'thrill::core']]],
-  ['hyperloglogregisters',['HyperLogLogRegisters',['../classthrill_1_1core_1_1HyperLogLogRegisters.html',1,'thrill::core']]],
   ['hyperloglogregisters',['HyperLogLogRegisters',['../classthrill_1_1core_1_1HyperLogLogRegisters.html#a97f1e57a2e27a595c7dae37a7bd64da5',1,'thrill::core::HyperLogLogRegisters']]],
+  ['hyperloglogregisters',['HyperLogLogRegisters',['../classthrill_1_1core_1_1HyperLogLogRegisters.html',1,'thrill::core']]],
   ['hyperloglogsparseregister',['HyperLogLogSparseRegister',['../namespacethrill_1_1core.html#aa8ed33c9275a5f50d8a4c14923ff8f3b',1,'thrill::core']]],
   ['helpers_20for_20portable_20code',['Helpers for Portable Code',['../group__tlx__port.html',1,'']]]
 ];

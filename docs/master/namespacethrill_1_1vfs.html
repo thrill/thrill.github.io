@@ -343,7 +343,7 @@ Functions</h2></td></tr>
 
 <p>Deinitialize VFS layer. </p>
 
-<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00039">39</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00040">40</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
 
 <p>References <a class="el" href="hdfs3__file_8cpp_source.html#l00295">Hdfs3Deinitialize()</a>, and <a class="el" href="s3__file_8cpp_source.html#l00734">S3Deinitialize()</a>.</p>
 
@@ -382,9 +382,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>function which takes pathbase and replaces $$$ with worker and ### with the file_part values. </p>
 
-<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00070">70</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00071">71</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
 
-<p>References <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, and <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00034">sLOG</a>.</p>
+<p>References <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00034">sLOG</a>, and <a class="el" href="ssprintf_8cpp_source.html#l00042">tlx::ssnprintf()</a>.</p>
 
 <p>Referenced by <a class="el" href="write__binary_8hpp_source.html#l00172">WriteBinaryNode&lt; ValueType &gt;::OpenNextFile()</a>.</p>
 
@@ -416,11 +416,11 @@ Functions</h2></td></tr>
 
 <p>Reads a glob path list and deliver a file list, sizes, and prefixsums (in bytes) for all matching files. </p>
 
-<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00127">127</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00128">128</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
 
 <p>References <a class="el" href="file__io_8hpp_source.html#l00084">FileList::contains_compressed</a>, <a class="el" href="file__io_8hpp_source.html#l00087">FileList::contains_remote_uri</a>, <a class="el" href="hdfs3__file_8cpp_source.html#l00298">Hdfs3Glob()</a>, <a class="el" href="s3__file_8cpp_source.html#l00737">S3Glob()</a>, <a class="el" href="starts__with_8cpp_source.html#l00019">tlx::starts_with()</a>, <a class="el" href="sys__file_8cpp_source.html#l00144">SysGlob()</a>, and <a class="el" href="file__io_8hpp_source.html#l00081">FileList::total_size</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00171">Glob()</a>, <a class="el" href="vfs__tool_8cpp_source.html#l00022">main()</a>, <a class="el" href="read__binary_8hpp_source.html#l00082">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>, and <a class="el" href="read__lines_8hpp_source.html#l00050">ReadLinesNode::ReadLinesNode()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00172">Glob()</a>, <a class="el" href="vfs__tool_8cpp_source.html#l00022">main()</a>, <a class="el" href="read__binary_8hpp_source.html#l00082">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>, and <a class="el" href="read__lines_8hpp_source.html#l00050">ReadLinesNode::ReadLinesNode()</a>.</p>
 
 </div>
 </div>
@@ -450,9 +450,9 @@ Functions</h2></td></tr>
 
 <p>Reads a glob path list and deliver a file list, sizes, and prefixsums (in bytes) for all matching files. </p>
 
-<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00171">171</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00172">172</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
 
-<p>References <a class="el" href="file__io_8cpp_source.html#l00127">Glob()</a>.</p>
+<p>References <a class="el" href="file__io_8cpp_source.html#l00128">Glob()</a>.</p>
 
 </div>
 </div>
@@ -471,7 +471,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="hdfs3__file_8cpp_source.html#l00295">295</a> of file <a class="el" href="hdfs3__file_8cpp_source.html">hdfs3_file.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00039">Deinitialize()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00040">Deinitialize()</a>.</p>
 
 </div>
 </div>
@@ -509,7 +509,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="die_8hpp_source.html#l00022">die</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00127">Glob()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00128">Glob()</a>.</p>
 
 </div>
 </div>
@@ -528,7 +528,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="hdfs3__file_8cpp_source.html#l00292">292</a> of file <a class="el" href="hdfs3__file_8cpp_source.html">hdfs3_file.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00034">Initialize()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00035">Initialize()</a>.</p>
 
 </div>
 </div>
@@ -560,7 +560,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="die_8hpp_source.html#l00022">die</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00179">OpenReadStream()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00180">OpenReadStream()</a>.</p>
 
 </div>
 </div>
@@ -582,7 +582,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="die_8hpp_source.html#l00022">die</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00210">OpenWriteStream()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00211">OpenWriteStream()</a>.</p>
 
 </div>
 </div>
@@ -601,7 +601,7 @@ Functions</h2></td></tr>
 
 <p>Initialize VFS layer. </p>
 
-<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00034">34</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00035">35</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
 
 <p>References <a class="el" href="hdfs3__file_8cpp_source.html#l00292">Hdfs3Initialize()</a>, and <a class="el" href="s3__file_8cpp_source.html#l00731">S3Initialize()</a>.</p>
 
@@ -624,7 +624,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns true, if file at filepath is compressed (e.g, ends with '.{gz,bz2,xz,lzo}') </p>
 
-<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00046">46</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00047">47</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
 
 <p>References <a class="el" href="ends__with_8cpp_source.html#l00020">tlx::ends_with()</a>.</p>
 
@@ -648,7 +648,7 @@ Functions</h2></td></tr>
 
 <p>Returns true, if file at filepath is a remote uri like s3:// or hdfs://. </p>
 
-<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00054">54</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00055">55</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
 
 <p>References <a class="el" href="starts__with_8cpp_source.html#l00019">tlx::starts_with()</a>.</p>
 
@@ -674,7 +674,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="die_8hpp_source.html#l00022">die</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00179">OpenReadStream()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00180">OpenReadStream()</a>.</p>
 
 </div>
 </div>
@@ -696,7 +696,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="die_8hpp_source.html#l00022">die</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00210">OpenWriteStream()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00211">OpenWriteStream()</a>.</p>
 
 </div>
 </div>
@@ -718,7 +718,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="die_8hpp_source.html#l00022">die</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00179">OpenReadStream()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00180">OpenReadStream()</a>.</p>
 
 </div>
 </div>
@@ -740,7 +740,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="die_8hpp_source.html#l00022">die</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00210">OpenWriteStream()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00211">OpenWriteStream()</a>.</p>
 
 </div>
 </div>
@@ -773,7 +773,7 @@ Functions</h2></td></tr>
 <p>For the POSIX SysFile implementation the range is used only to seek to the byte offset b. It allows additional bytes after e to be read.</p>
 <p>For the S3File implementations, however, the range[b,e) is used to determine which data to fetch from S3. Hence, once e is reached, read() will return EOF. </p>
 
-<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00179">179</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00180">180</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
 
 <p>References <a class="el" href="thrill_2common_2math_8hpp_source.html#l00056">Range::begin</a>, <a class="el" href="die_8hpp_source.html#l00027">die_unless</a>, <a class="el" href="ends__with_8cpp_source.html#l00020">tlx::ends_with()</a>, <a class="el" href="hdfs3__file_8cpp_source.html#l00303">Hdfs3OpenReadStream()</a>, <a class="el" href="bzip2__filter_8cpp_source.html#l00233">MakeBZip2ReadFilter()</a>, <a class="el" href="gzip__filter_8cpp_source.html#l00271">MakeGZipReadFilter()</a>, <a class="el" href="s3__file_8cpp_source.html#l00742">S3OpenReadStream()</a>, <a class="el" href="starts__with_8cpp_source.html#l00019">tlx::starts_with()</a>, and <a class="el" href="sys__file_8cpp_source.html#l00323">SysOpenReadStream()</a>.</p>
 
@@ -795,7 +795,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00210">210</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00211">211</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
 
 <p>References <a class="el" href="ends__with_8cpp_source.html#l00020">tlx::ends_with()</a>, <a class="el" href="hdfs3__file_8cpp_source.html#l00308">Hdfs3OpenWriteStream()</a>, <a class="el" href="bzip2__filter_8cpp_source.html#l00228">MakeBZip2WriteFilter()</a>, <a class="el" href="gzip__filter_8cpp_source.html#l00266">MakeGZipWriteFilter()</a>, <a class="el" href="s3__file_8cpp_source.html#l00747">S3OpenWriteStream()</a>, <a class="el" href="starts__with_8cpp_source.html#l00019">tlx::starts_with()</a>, and <a class="el" href="sys__file_8cpp_source.html#l00414">SysOpenWriteStream()</a>.</p>
 
@@ -827,7 +827,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00059">59</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
+<p>Definition at line <a class="el" href="file__io_8cpp_source.html#l00060">60</a> of file <a class="el" href="file__io_8cpp_source.html">file_io.cpp</a>.</p>
 
 <p>References <a class="el" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7ae73cda510e8bb947f7e61089e5581494">Directory</a>, and <a class="el" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7a0b27918290ff5323bea1e3b78a9cf04e">File</a>.</p>
 
@@ -848,7 +848,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="s3__file_8cpp_source.html#l00734">734</a> of file <a class="el" href="s3__file_8cpp_source.html">s3_file.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00039">Deinitialize()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00040">Deinitialize()</a>.</p>
 
 </div>
 </div>
@@ -886,7 +886,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="die_8hpp_source.html#l00022">die</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00127">Glob()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00128">Glob()</a>.</p>
 
 </div>
 </div>
@@ -905,7 +905,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="s3__file_8cpp_source.html#l00731">731</a> of file <a class="el" href="s3__file_8cpp_source.html">s3_file.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00034">Initialize()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00035">Initialize()</a>.</p>
 
 </div>
 </div>
@@ -937,7 +937,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="die_8hpp_source.html#l00022">die</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00179">OpenReadStream()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00180">OpenReadStream()</a>.</p>
 
 </div>
 </div>
@@ -959,7 +959,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="die_8hpp_source.html#l00022">die</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00210">OpenWriteStream()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00211">OpenWriteStream()</a>.</p>
 
 </div>
 </div>
@@ -999,7 +999,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="namespacethrill_1_1vfs.html#ac7206d989022001555916ee86ef21cf5ab1c94ca2fbc3e78fc30069c8d0f01680">All</a>, <a class="el" href="simple__glob_8hpp_source.html#l00974">CSimpleGlob</a>, <a class="el" href="die_8hpp_source.html#l00022">die</a>, <a class="el" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7ae73cda510e8bb947f7e61089e5581494">Directory</a>, <a class="el" href="namespacethrill_1_1vfs.html#ac7206d989022001555916ee86ef21cf5a0b27918290ff5323bea1e3b78a9cf04e">File</a>, <a class="el" href="file__io_8hpp_source.html#l00061">FileInfo::path</a>, <a class="el" href="file__io_8hpp_source.html#l00063">FileInfo::size</a>, <a class="el" href="sys__file_8cpp_source.html#l00055">SysGlobWalkRecursive()</a>, and <a class="el" href="file__io_8hpp_source.html#l00059">FileInfo::type</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00127">Glob()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00128">Glob()</a>.</p>
 
 </div>
 </div>
@@ -1037,7 +1037,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="sys__file_8cpp_source.html#l00055">55</a> of file <a class="el" href="sys__file_8cpp_source.html">sys_file.cpp</a>.</p>
 
-<p>References <a class="el" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7ae73cda510e8bb947f7e61089e5581494">Directory</a>, <a class="el" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7a0b27918290ff5323bea1e3b78a9cf04e">File</a>, <a class="el" href="file__io_8hpp_source.html#l00061">FileInfo::path</a>, <a class="el" href="file__io_8hpp_source.html#l00063">FileInfo::size</a>, <a class="el" href="thrill_2mem_2allocator__base_8hpp_source.html#l00190">thrill::mem::to_string()</a>, <a class="el" href="porting_8cpp_source.html#l00153">thrill::common::ts_readdir()</a>, and <a class="el" href="file__io_8hpp_source.html#l00059">FileInfo::type</a>.</p>
+<p>References <a class="el" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7ae73cda510e8bb947f7e61089e5581494">Directory</a>, <a class="el" href="namespacethrill_1_1vfs.html#a1d1cfd8ffb84e947f82999c682b666a7a0b27918290ff5323bea1e3b78a9cf04e">File</a>, <a class="el" href="file__io_8hpp_source.html#l00061">FileInfo::path</a>, <a class="el" href="file__io_8hpp_source.html#l00063">FileInfo::size</a>, <a class="el" href="thrill_2mem_2allocator__base_8hpp_source.html#l00191">thrill::mem::to_string()</a>, <a class="el" href="porting_8cpp_source.html#l00153">thrill::common::ts_readdir()</a>, and <a class="el" href="file__io_8hpp_source.html#l00059">FileInfo::type</a>.</p>
 
 <p>Referenced by <a class="el" href="sys__file_8cpp_source.html#l00144">SysGlob()</a>.</p>
 
@@ -1083,7 +1083,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="thrill_2common_2math_8hpp_source.html#l00056">Range::begin</a>, <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, <a class="el" href="ends__with_8cpp_source.html#l00020">tlx::ends_with()</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00028">LOG1</a>, <a class="el" href="porting_8cpp_source.html#l00052">thrill::common::MakePipe()</a>, <a class="el" href="sys__file_8cpp_source.html#l00034">O_BINARY</a>, <a class="el" href="porting_8cpp_source.html#l00042">thrill::common::PortSetCloseOnExec()</a>, and <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00034">sLOG</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00179">OpenReadStream()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00180">OpenReadStream()</a>.</p>
 
 </div>
 </div>
@@ -1114,7 +1114,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, <a class="el" href="ends__with_8cpp_source.html#l00020">tlx::ends_with()</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00028">LOG1</a>, <a class="el" href="porting_8cpp_source.html#l00052">thrill::common::MakePipe()</a>, <a class="el" href="sys__file_8cpp_source.html#l00034">O_BINARY</a>, <a class="el" href="porting_8cpp_source.html#l00042">thrill::common::PortSetCloseOnExec()</a>, and <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00034">sLOG</a>.</p>
 
-<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00210">OpenWriteStream()</a>.</p>
+<p>Referenced by <a class="el" href="file__io_8cpp_source.html#l00211">OpenWriteStream()</a>.</p>
 
 </div>
 </div>
@@ -1124,7 +1124,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1vfs.html">vfs</a></li>
-    <li class="footer">Generated on Fri Feb 8 2019 18:00:43 for Thrill by
+    <li class="footer">Generated on Tue Mar 5 2019 05:24:30 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

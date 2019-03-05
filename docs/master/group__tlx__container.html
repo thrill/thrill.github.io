@@ -135,6 +135,12 @@ Modules</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1DAryAddressableIntHeap.html">DAryAddressableIntHeap&lt; KeyType, Arity, Compare &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class implements an addressable integer priority queue, precisely a d-ary heap.  <a href="classtlx_1_1DAryAddressableIntHeap.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1DAryHeap.html">DAryHeap&lt; KeyType, Arity, Compare &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class implements a d-ary comparison-based heap usable as a priority queue.  <a href="classtlx_1_1DAryHeap.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1LruCacheMap.html">LruCacheMap&lt; Key, Value, Alloc &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an expected O(1) LRU cache which contains a map of (key -&gt; value) elements.  <a href="classtlx_1_1LruCacheMap.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +159,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ga1689ee2489dc0a29c45605ae5ee25cd3"><td class="memTemplParams" colspan="2">template&lt;typename KeyType , unsigned Arity = 2, typename Compare  = std::less&lt;KeyType&gt;&gt; </td></tr>
+<tr class="memitem:ga1689ee2489dc0a29c45605ae5ee25cd3"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga1689ee2489dc0a29c45605ae5ee25cd3">d_ary_addressable_int_heap</a> = DAryAddressableIntHeap&lt; KeyType, Arity, Compare &gt;</td></tr>
+<tr class="memdesc:ga1689ee2489dc0a29c45605ae5ee25cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">make template alias due to similarity with std::priority_queue  <a href="#ga1689ee2489dc0a29c45605ae5ee25cd3">More...</a><br/></td></tr>
+<tr class="separator:ga1689ee2489dc0a29c45605ae5ee25cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36e59dd0c9957af99aa5f99b30ab7fd5"><td class="memTemplParams" colspan="2">template&lt;typename KeyType , unsigned Arity = 2, typename Compare  = std::less&lt;KeyType&gt;&gt; </td></tr>
+<tr class="memitem:ga36e59dd0c9957af99aa5f99b30ab7fd5"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga36e59dd0c9957af99aa5f99b30ab7fd5">d_ary_heap</a> = DAryHeap&lt; KeyType, Arity, Compare &gt;</td></tr>
+<tr class="memdesc:ga36e59dd0c9957af99aa5f99b30ab7fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">make template alias due to similarity with std::priority_queue  <a href="#ga36e59dd0c9957af99aa5f99b30ab7fd5">More...</a><br/></td></tr>
+<tr class="separator:ga36e59dd0c9957af99aa5f99b30ab7fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1c9a8c3eea280d29bd2da8df37a01d9a"><td class="memTemplParams" colspan="2">template&lt;typename KeyType , typename DataType , unsigned Radix = 8&gt; </td></tr>
 <tr class="memitem:ga1c9a8c3eea280d29bd2da8df37a01d9a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga1c9a8c3eea280d29bd2da8df37a01d9a">RadixHeapPair</a> = RadixHeap&lt; std::pair&lt; KeyType, DataType &gt;, radix_heap_detail::PairKeyExtract&lt; KeyType, DataType &gt;, KeyType, Radix &gt;</td></tr>
 <tr class="memdesc:ga1c9a8c3eea280d29bd2da8df37a01d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is a variant of <a class="el" href="classtlx_1_1RadixHeap.html" title="This class implements a monotonic integer min priority queue, more specific a multi-level radix heap...">tlx::RadixHeap</a> for data types which do not include the key directly.  <a href="#ga1c9a8c3eea280d29bd2da8df37a01d9a">More...</a><br/></td></tr>
@@ -181,6 +195,38 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Containers and Data Structures </p>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="ga1689ee2489dc0a29c45605ae5ee25cd3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using d_ary_addressable_int_heap =  DAryAddressableIntHeap&lt;KeyType, Arity, Compare&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>make template alias due to similarity with std::priority_queue </p>
+
+<p>Definition at line <a class="el" href="d__ary__addressable__int__heap_8hpp_source.html#l00296">296</a> of file <a class="el" href="d__ary__addressable__int__heap_8hpp_source.html">d_ary_addressable_int_heap.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga36e59dd0c9957af99aa5f99b30ab7fd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using d_ary_heap =  DAryHeap&lt;KeyType, Arity, Compare&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>make template alias due to similarity with std::priority_queue </p>
+
+<p>Definition at line <a class="el" href="d__ary__heap_8hpp_source.html#l00200">200</a> of file <a class="el" href="d__ary__heap_8hpp_source.html">d_ary_heap.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga1c9a8c3eea280d29bd2da8df37a01d9a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -278,7 +324,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 8 2019 18:00:40 for Thrill by
+    <li class="footer">Generated on Tue Mar 5 2019 05:24:28 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

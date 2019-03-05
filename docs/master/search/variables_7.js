@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['handles_5f',['handles_',['../classtlx_1_1DAryAddressableIntHeap.html#abd9a0cfcc99e09d66422e43cb336ccdd',1,'tlx::DAryAddressableIntHeap']]],
   ['has_5finfinity',['has_infinity',['../classstd_1_1numeric__limits_3_01thrill_1_1common_1_1UIntPair_3_01HighType_01_4_01_4.html#ab30b325da1c1dfcdc9c13c85aaee7f43',1,'std::numeric_limits&lt; thrill::common::UIntPair&lt; HighType &gt; &gt;::has_infinity()'],['../classstd_1_1numeric__limits_3_01foxxll_1_1uint__pair_3_01HighType_01_4_01_4.html#ab30b325da1c1dfcdc9c13c85aaee7f43',1,'std::numeric_limits&lt; foxxll::uint_pair&lt; HighType &gt; &gt;::has_infinity()']]],
   ['has_5fonly_5fdata',['has_only_data',['../classfoxxll_1_1typed__block.html#af05c43ada4e5a31dbff382407d058b75',1,'foxxll::typed_block']]],
   ['hash',['hash',['../classthrill_1_1api_1_1GroupByNode_1_1HashCount.html#a2b07c49e916f21a26aa731f4db68785a',1,'thrill::api::GroupByNode::HashCount::hash()'],['../classthrill_1_1api_1_1JoinNode_1_1HashCount.html#a2b07c49e916f21a26aa731f4db68785a',1,'thrill::api::JoinNode::HashCount::hash()']]],
@@ -13,6 +14,7 @@ var searchData=
   ['hashes_5f',['hashes_',['../classthrill_1_1core_1_1ReducePrePhase_3_01TableItem_00_01Key_00_01Value_00_01KeyExtractor_00_01R21d271c26c94d68a392fc2ad1836161c.html#aa7dab38cf60eecc8abc9bd2666bde3dc',1,'thrill::core::ReducePrePhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig, IndexFunction, EqualToFunction, HashFunction, true &gt;']]],
   ['head_5fleaf_5f',['head_leaf_',['../classtlx_1_1BTree.html#a8d6ac34d80de837a5e6125c932f1c288',1,'tlx::BTree']]],
   ['header_5fsize',['header_size',['../classthrill_1_1data_1_1MultiplexerHeader.html#ac9a0c0d3a0eb73be7c7149c7c124220a',1,'thrill::data::MultiplexerHeader']]],
+  ['heap_5f',['heap_',['../classtlx_1_1DAryAddressableIntHeap.html#aceab918c00caa3fe698240e76b4bf316',1,'tlx::DAryAddressableIntHeap::heap_()'],['../classtlx_1_1DAryHeap.html#aceab918c00caa3fe698240e76b4bf316',1,'tlx::DAryHeap::heap_()']]],
   ['high',['high',['../classfoxxll_1_1uint__pair.html#a6055cd14f4a8c0c11f7de8b6183dc441',1,'foxxll::uint_pair::high()'],['../extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a6055cd14f4a8c0c11f7de8b6183dc441',1,'high():&#160;uint_types.hpp']]],
   ['high_5f',['high_',['../classthrill_1_1common_1_1UIntPair.html#a546919992dbc211ccdd70a224405f979',1,'thrill::common::UIntPair']]],
   ['high_5fbits',['high_bits',['../classthrill_1_1common_1_1UIntPair.html#af523aabc73b8e63307a48e45104fa30a',1,'thrill::common::UIntPair::high_bits()'],['../classfoxxll_1_1uint__pair.html#a82f25d0102a42767fa9a2184b488a569',1,'foxxll::uint_pair::high_bits()'],['../extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a82f25d0102a42767fa9a2184b488a569',1,'high_bits():&#160;uint_types.hpp']]],

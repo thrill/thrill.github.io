@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['d_5fary_5faddressable_5fint_5fheap',['d_ary_addressable_int_heap',['../group__tlx__container.html#ga1689ee2489dc0a29c45605ae5ee25cd3',1,'tlx']]],
+  ['d_5fary_5fheap',['d_ary_heap',['../group__tlx__container.html#ga36e59dd0c9957af99aa5f99b30ab7fd5',1,'tlx']]],
   ['data_5ftype',['data_type',['../classtlx_1_1btree__map.html#a2a9bb4a20468cdfca8b476a26892f283',1,'tlx::btree_map::data_type()'],['../classtlx_1_1btree__multimap.html#a2a9bb4a20468cdfca8b476a26892f283',1,'tlx::btree_multimap::data_type()']]],
   ['dataobject',['DataObject',['../logistic__regression_8cpp.html#acc23041de4296ac9554bdd57bcbf8c87',1,'logistic_regression.cpp']]],
   ['default_5falloc_5fstrategy',['default_alloc_strategy',['../group__foxxll__alloc.html#ga68e16dec96842e540c7767744e2df030',1,'foxxll']]],
