@@ -181,26 +181,29 @@ $(document).ready(function(){initNavTree('die_2core_8cpp_source.html','');});
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">- `die(message)` - always terminates with given message.</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">- `die_unless(condition)` - terminates if condition is false</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">- `die_if(condition)` - terminates if condition is true</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">- `die_unequal(a,b)` - terminates unless a == b.</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">- `die_unequal_eps6(a,b)` - terminates unless abs(a - b) &lt; 1e-6 for approximate equality.</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">- `die_equal(a,b)` - terminates if a == b.</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">- `die_unless_throws(code,exception)` - terminate if code does not throw the exception</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">Furthermore, some additional assert macros are also available. These are only</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">active in Debug mode, if NDEBUG is defined they are compiled out.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">- `die_verbose_unless(condition,message)` - terminates if condition is false</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">- `die_verbose_if(condition,message)` - terminates if condition is true</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">- `die_unequal(a,b)` - terminates unless a == b.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">- `die_unequal_eps6(a,b)` - terminates unless abs(a - b) &lt; 1e-6 for approximate equality.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">- `die_equal(a,b)` - terminates if a == b.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">- `die_unless_throws(code,exception)` - terminate if code does not throw the exception</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">- `assert_equal(a,b)` - checks if a == b.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">- `assert_unequal(a,b)` - checks if a != b.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">Furthermore, some additional assert macros are also available. These are only</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">active in Debug mode, if NDEBUG is defined they are compiled out.</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">tlx die macros can also be modified to throw a DieException instead of calling</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">std::terminate. Either call `set_die_with_exception(true)` to define</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">TLX_DIE_WITH_EXCEPTION=1 using the preprocessor.</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;} <span class="comment">// namespace tlx</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">- `assert_equal(a,b)` - checks if a == b.</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">- `assert_unequal(a,b)` - checks if a != b.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">tlx die macros can also be modified to throw a DieException instead of calling</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">std::terminate. Either call `set_die_with_exception(true)` to define</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">TLX_DIE_WITH_EXCEPTION=1 using the preprocessor.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;} <span class="comment">// namespace tlx</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="namespacetlx_html_aa17989dc1fbbf1047c8f238aaafe7092"><div class="ttname"><a href="namespacetlx.html#aa17989dc1fbbf1047c8f238aaafe7092">tlx::set_die_with_exception</a></div><div class="ttdeci">bool set_die_with_exception(bool b)</div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8cpp_source.html#l00052">core.cpp:52</a></div></div>
 <div class="ttc" id="classtlx_1_1DieException_html_aa5a876a546d70d22b260e1c174f44de7"><div class="ttname"><a href="classtlx_1_1DieException.html#aa5a876a546d70d22b260e1c174f44de7">tlx::DieException::DieException</a></div><div class="ttdeci">DieException(const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8cpp_source.html#l00049">core.cpp:49</a></div></div>
 <div class="ttc" id="namespacetlx_html_a1a4f198a88970a7cb1f5d8d3a0555b79"><div class="ttname"><a href="namespacetlx.html#a1a4f198a88970a7cb1f5d8d3a0555b79">tlx::die_with_message</a></div><div class="ttdeci">void die_with_message(const std::string &amp;msg)</div><div class="ttdoc">die with message - either throw an exception or die via std::terminate() </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8cpp_source.html#l00029">core.cpp:29</a></div></div>
@@ -214,7 +217,7 @@ $(document).ready(function(){initNavTree('die_2core_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="dir_040d6456d7c4169c1665ff610f656afd.html">die</a></li><li class="navelem"><a class="el" href="die_2core_8cpp.html">core.cpp</a></li>
-    <li class="footer">Generated on Tue Mar 5 2019 05:24:24 for Thrill by
+    <li class="footer">Generated on Tue Mar 19 2019 19:54:25 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

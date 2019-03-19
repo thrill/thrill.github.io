@@ -168,6 +168,18 @@ Macros</h2></td></tr>
 <tr class="memitem:a357da842bf02c9445e820f483b301542"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="die_8hpp.html#a357da842bf02c9445e820f483b301542">die_unless_throws</a>(code, exception_type)&#160;&#160;&#160;<a class="el" href="die_2core_8hpp.html#ae5ae25a771b222c30b34dd93e878bc70">tlx_die_unless_throws</a>(code, exception_type)</td></tr>
 <tr class="memdesc:a357da842bf02c9445e820f483b301542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define to check that [code] throws and exception of given type.  <a href="#a357da842bf02c9445e820f483b301542">More...</a><br/></td></tr>
 <tr class="separator:a357da842bf02c9445e820f483b301542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b9d681565eddee12fb3e7890f4643d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="die_8hpp.html#a14b9d681565eddee12fb3e7890f4643d">die_verbose_equal</a>(X, Y, msg)&#160;&#160;&#160;<a class="el" href="die_2core_8hpp.html#ae4978f08b824fd48b1df232d1dbfaa1c">tlx_die_verbose_equal</a>(X, Y, msg)</td></tr>
+<tr class="separator:a14b9d681565eddee12fb3e7890f4643d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f9cb8532d83a176b7c6409ad491ce02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="die_8hpp.html#a6f9cb8532d83a176b7c6409ad491ce02">die_verbose_if</a>(X, msg)&#160;&#160;&#160;<a class="el" href="die_2core_8hpp.html#ae0590079d690450b883ee08675054406">tlx_die_verbose_if</a>(X, msg)</td></tr>
+<tr class="separator:a6f9cb8532d83a176b7c6409ad491ce02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec95996ff008c79a031ea01bd3b65850"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="die_8hpp.html#aec95996ff008c79a031ea01bd3b65850">die_verbose_unequal</a>(X, Y, msg)&#160;&#160;&#160;<a class="el" href="die_2core_8hpp.html#aac27b8bd9a2c0b5ff60fd7feafb17f8a">tlx_die_verbose_unequal</a>(X, Y, msg)</td></tr>
+<tr class="separator:aec95996ff008c79a031ea01bd3b65850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf5f09b21a708586c2af9290e58f99b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="die_8hpp.html#a1cf5f09b21a708586c2af9290e58f99b">die_verbose_unequal_eps</a>(X, Y, eps, msg)&#160;&#160;&#160;<a class="el" href="die_2core_8hpp.html#a827fe6eaab3adf26dd6dfa54b425dd28">tlx_die_verbose_unequal_eps</a>(X, Y, eps, msg)</td></tr>
+<tr class="separator:a1cf5f09b21a708586c2af9290e58f99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9110de6f9ff16d7b0234613c0ab8087e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="die_8hpp.html#a9110de6f9ff16d7b0234613c0ab8087e">die_verbose_unequal_eps6</a>(X, Y, msg)&#160;&#160;&#160;<a class="el" href="die_2core_8hpp.html#a6eb79486bc10917c8cbb86103cdc2442">tlx_die_verbose_unequal_eps6</a>(X, Y, msg)</td></tr>
+<tr class="separator:a9110de6f9ff16d7b0234613c0ab8087e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4415af0b3479c250e0b564f072607792"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="die_8hpp.html#a4415af0b3479c250e0b564f072607792">die_verbose_unless</a>(X, msg)&#160;&#160;&#160;<a class="el" href="die_2core_8hpp.html#acb79865d9c065ce2954a04e2f189d21c">tlx_die_verbose_unless</a>(X, msg)</td></tr>
+<tr class="separator:a4415af0b3479c250e0b564f072607792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a5085068329fda13af995242db4555038"></a>
@@ -195,7 +207,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Check that X == Y or die miserably, but output the values of X and Y for better debugging. Only active if NDEBUG is not defined. </p>
 
-<p>Definition at line <a class="el" href="die_8hpp_source.html#l00045">45</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_8hpp_source.html#l00055">55</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="dc7_8cpp_source.html#l00411">examples::suffix_sorting::DC7Recursive()</a>.</p>
 
@@ -226,7 +238,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Die miserably if X == Y, but first output the values of X and Y for better debugging. Only active if NDEBUG is not defined. </p>
 
-<p>Definition at line <a class="el" href="die_8hpp_source.html#l00071">71</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_8hpp_source.html#l00099">99</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
 
 </div>
 </div>
@@ -278,7 +290,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Die miserably if X == Y, but first output the values of X and Y for better debugging. </p>
 
-<p>Definition at line <a class="el" href="die_8hpp_source.html#l00066">66</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_8hpp_source.html#l00094">94</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
 
 </div>
 </div>
@@ -326,7 +338,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Check that X == Y or die miserably, but output the values of X and Y for better debugging. </p>
 
-<p>Definition at line <a class="el" href="die_8hpp_source.html#l00040">40</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_8hpp_source.html#l00050">50</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="pool_8cpp_source.html#l00537">Pool::AllocateFreeArena()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00137">AsyncReadBuffer::DoCallback()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00341">AsyncReadByteBlock::DoCallback()</a>, <a class="el" href="terasort_8cpp_source.html#l00120">main()</a>, <a class="el" href="block__pool_8cpp_source.html#l01297">BlockPool::OnWriteComplete()</a>, <a class="el" href="pool_8cpp_source.html#l00867">Pool::print()</a>, <a class="el" href="mock_2group_8cpp_source.html#l00104">Connection::SyncRecv()</a>, and <a class="el" href="block__pool_8cpp_source.html#l00404">BlockPool::~BlockPool()</a>.</p>
 
@@ -363,7 +375,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Check that ABS(X - Y) &lt;= eps or die miserably, but output the values of X and Y for better debugging. </p>
 
-<p>Definition at line <a class="el" href="die_8hpp_source.html#l00053">53</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_8hpp_source.html#l00069">69</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
 
 </div>
 </div>
@@ -392,7 +404,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>Check that ABS(X - Y) &lt;= 0.000001 or die miserably, but output the values of X and Y for better debugging. </p>
 
-<p>Definition at line <a class="el" href="die_8hpp_source.html#l00058">58</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_8hpp_source.html#l00080">80</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
 
 </div>
 </div>
@@ -443,7 +455,211 @@ Macros</h2></td></tr>
 
 <p>Define to check that [code] throws and exception of given type. </p>
 
-<p>Definition at line <a class="el" href="die_8hpp_source.html#l00078">78</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_8hpp_source.html#l00112">112</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a14b9d681565eddee12fb3e7890f4643d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define die_verbose_equal</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">X, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Y, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="die_2core_8hpp.html#ae4978f08b824fd48b1df232d1dbfaa1c">tlx_die_verbose_equal</a>(X, Y, msg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Die miserably if X == Y, but first output the values of X and Y for better debugging. Same as <a class="el" href="die_8hpp.html#afec2d02d5fa715cd831e7aabb8734a73">die_equal()</a> except the user additionally passes a message. </p>
+
+<p>Definition at line <a class="el" href="die_8hpp_source.html#l00105">105</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f9cb8532d83a176b7c6409ad491ce02"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define die_verbose_if</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">X, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="die_2core_8hpp.html#ae0590079d690450b883ee08675054406">tlx_die_verbose_if</a>(X, msg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check condition X and die miserably if false. Same as <a class="el" href="die_8hpp.html#a104ef9af1dda7b166a22fea791aad044">die_if()</a> except the the user additionally passes a message. </p>
+
+<p>Definition at line <a class="el" href="die_8hpp_source.html#l00042">42</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aec95996ff008c79a031ea01bd3b65850"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define die_verbose_unequal</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">X, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Y, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="die_2core_8hpp.html#aac27b8bd9a2c0b5ff60fd7feafb17f8a">tlx_die_verbose_unequal</a>(X, Y, msg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check that X == Y or die miserably, but output the values of X and Y for better debugging. Same as <a class="el" href="die_8hpp.html#a334b021076c0dff0e3964c6819774ceb">die_unequal()</a> except the user additionally passes a message. </p>
+
+<p>Definition at line <a class="el" href="die_8hpp_source.html#l00061">61</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1cf5f09b21a708586c2af9290e58f99b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define die_verbose_unequal_eps</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">X, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Y, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">eps, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="die_2core_8hpp.html#a827fe6eaab3adf26dd6dfa54b425dd28">tlx_die_verbose_unequal_eps</a>(X, Y, eps, msg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check that ABS(X - Y) &lt;= eps or die miserably, but output the values of X and Y for better debugging. Same as <a class="el" href="die_8hpp.html#a6b7ce407ec77acd1f6b146c1a6ea65ef">die_unequal_eps()</a> except the user additionally passes a message. </p>
+
+<p>Definition at line <a class="el" href="die_8hpp_source.html#l00075">75</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9110de6f9ff16d7b0234613c0ab8087e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define die_verbose_unequal_eps6</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">X, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Y, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="die_2core_8hpp.html#a6eb79486bc10917c8cbb86103cdc2442">tlx_die_verbose_unequal_eps6</a>(X, Y, msg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check that ABS(X - Y) &lt;= 0.000001 or die miserably, but output the values of X and Y for better debugging. Same as <a class="el" href="die_8hpp.html#a1a7675ff116550671881ba49da77808c">die_unequal_eps6()</a> except the user additionally passes a message. </p>
+
+<p>Definition at line <a class="el" href="die_8hpp_source.html#l00086">86</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4415af0b3479c250e0b564f072607792"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define die_verbose_unless</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">X, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="die_2core_8hpp.html#acb79865d9c065ce2954a04e2f189d21c">tlx_die_verbose_unless</a>(X, msg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check condition X and die miserably if false. Same as <a class="el" href="die_8hpp.html#a63798a2675296e09260478493bf3829b">die_unless()</a> except the user additionally passes a message. </p>
+
+<p>Definition at line <a class="el" href="die_8hpp_source.html#l00037">37</a> of file <a class="el" href="die_8hpp_source.html">die.hpp</a>.</p>
 
 </div>
 </div>
@@ -453,7 +669,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="die_8hpp.html">die.hpp</a></li>
-    <li class="footer">Generated on Tue Mar 5 2019 05:24:27 for Thrill by
+    <li class="footer">Generated on Tue Mar 19 2019 19:54:27 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

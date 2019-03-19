@@ -150,11 +150,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5524204bfdb58acebd952153208d9a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a749ba93ea62dd66bb49ecd8f159258db"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1Semaphore.html#a749ba93ea62dd66bb49ecd8f159258db">signal</a> (size_t delta)</td></tr>
 <tr class="separator:a749ba93ea62dd66bb49ecd8f159258db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace35066e20ea8cd7be03de4c849cb689"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1Semaphore.html#ace35066e20ea8cd7be03de4c849cb689">try_acquire</a> (size_t delta=1, size_t slack=0)</td></tr>
+<tr class="separator:ace35066e20ea8cd7be03de4c849cb689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5ac3b1668cf6e56ab4341aa2c2c61c2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1Semaphore.html#ac5ac3b1668cf6e56ab4341aa2c2c61c2">value</a> () const </td></tr>
 <tr class="memdesc:ac5ac3b1668cf6e56ab4341aa2c2c61c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the current value &ndash; should only be used for debugging.  <a href="#ac5ac3b1668cf6e56ab4341aa2c2c61c2">More...</a><br/></td></tr>
 <tr class="separator:ac5ac3b1668cf6e56ab4341aa2c2c61c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a646f6c0cfc1c5f8cdc223868efa535e7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1Semaphore.html#a646f6c0cfc1c5f8cdc223868efa535e7">wait</a> (size_t delta=1)</td></tr>
-<tr class="separator:a646f6c0cfc1c5f8cdc223868efa535e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f5c6f62df59b809c796b94c237513f8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1Semaphore.html#a5f5c6f62df59b809c796b94c237513f8">wait</a> (size_t delta=1, size_t slack=0)</td></tr>
+<tr class="separator:a5f5c6f62df59b809c796b94c237513f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -304,7 +306,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="semaphore_8hpp_source.html#l00040">40</a> of file <a class="el" href="semaphore_8hpp_source.html">semaphore.hpp</a>.</p>
 
-<p>References <a class="el" href="semaphore_8hpp_source.html#l00073">Semaphore::value_</a>.</p>
+<p>References <a class="el" href="semaphore_8hpp_source.html#l00083">Semaphore::value_</a>.</p>
 
 </div>
 </div>
@@ -332,7 +334,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="semaphore_8hpp_source.html#l00044">44</a> of file <a class="el" href="semaphore_8hpp_source.html">semaphore.hpp</a>.</p>
 
-<p>References <a class="el" href="semaphore_8hpp_source.html#l00079">Semaphore::cv_</a>, <a class="el" href="semaphore_8hpp_source.html#l00076">Semaphore::mutex_</a>, and <a class="el" href="semaphore_8hpp_source.html#l00073">Semaphore::value_</a>.</p>
+<p>References <a class="el" href="semaphore_8hpp_source.html#l00089">Semaphore::cv_</a>, <a class="el" href="semaphore_8hpp_source.html#l00086">Semaphore::mutex_</a>, and <a class="el" href="semaphore_8hpp_source.html#l00083">Semaphore::value_</a>.</p>
 
 <p>Referenced by <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00062">request_queue_impl_1q::add_request()</a>, <a class="el" href="request__queue__impl__qwqr_8cpp_source.html#l00061">request_queue_impl_qwqr::add_request()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00201">MixStreamData::OnStreamBlockOrdered()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00281">CatStreamData::OnStreamBlockOrdered()</a>, and <a class="el" href="request__queue__impl__worker_8cpp_source.html#l00041">request_queue_impl_worker::stop_thread()</a>.</p>
 
@@ -363,7 +365,46 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="semaphore_8hpp_source.html#l00052">52</a> of file <a class="el" href="semaphore_8hpp_source.html">semaphore.hpp</a>.</p>
 
-<p>References <a class="el" href="semaphore_8hpp_source.html#l00079">Semaphore::cv_</a>, <a class="el" href="examples_2select_2select_8hpp_source.html#l00035">examples::select::delta</a>, <a class="el" href="semaphore_8hpp_source.html#l00076">Semaphore::mutex_</a>, and <a class="el" href="semaphore_8hpp_source.html#l00073">Semaphore::value_</a>.</p>
+<p>References <a class="el" href="semaphore_8hpp_source.html#l00089">Semaphore::cv_</a>, <a class="el" href="examples_2select_2select_8hpp_source.html#l00035">examples::select::delta</a>, <a class="el" href="semaphore_8hpp_source.html#l00086">Semaphore::mutex_</a>, and <a class="el" href="semaphore_8hpp_source.html#l00083">Semaphore::value_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ace35066e20ea8cd7be03de4c849cb689"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool try_acquire </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>delta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>slack</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>function decrements the semaphore by delta if (delta + slack) tokens are available as a batch. the function will not block and returns true if delta was acquired otherwise false. </p>
+
+<p>Definition at line <a class="el" href="semaphore_8hpp_source.html#l00070">70</a> of file <a class="el" href="semaphore_8hpp_source.html">semaphore.hpp</a>.</p>
+
+<p>References <a class="el" href="examples_2select_2select_8hpp_source.html#l00035">examples::select::delta</a>, <a class="el" href="semaphore_8hpp_source.html#l00086">Semaphore::mutex_</a>, and <a class="el" href="semaphore_8hpp_source.html#l00083">Semaphore::value_</a>.</p>
 
 </div>
 </div>
@@ -390,15 +431,15 @@ Private Attributes</h2></td></tr>
 
 <p>return the current value &ndash; should only be used for debugging. </p>
 
-<p>Definition at line <a class="el" href="semaphore_8hpp_source.html#l00069">69</a> of file <a class="el" href="semaphore_8hpp_source.html">semaphore.hpp</a>.</p>
+<p>Definition at line <a class="el" href="semaphore_8hpp_source.html#l00079">79</a> of file <a class="el" href="semaphore_8hpp_source.html">semaphore.hpp</a>.</p>
 
-<p>References <a class="el" href="semaphore_8hpp_source.html#l00073">Semaphore::value_</a>.</p>
+<p>References <a class="el" href="semaphore_8hpp_source.html#l00083">Semaphore::value_</a>.</p>
 
 <p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00118">MixStreamData::Close()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a646f6c0cfc1c5f8cdc223868efa535e7"></a>
+<a class="anchor" id="a5f5c6f62df59b809c796b94c237513f8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -409,8 +450,18 @@ Private Attributes</h2></td></tr>
           <td class="memname">size_t wait </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>delta</em> = <code>1</code></td><td>)</td>
+          <td class="paramname"><em>delta</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>slack</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -419,11 +470,11 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>function decrements the semaphore and blocks if the semaphore is &lt; delta until another thread signals a change </p>
+<p>function decrements the semaphore by delta and blocks if the semaphore is &lt; (delta + slack) until another thread signals a change </p>
 
 <p>Definition at line <a class="el" href="semaphore_8hpp_source.html#l00060">60</a> of file <a class="el" href="semaphore_8hpp_source.html">semaphore.hpp</a>.</p>
 
-<p>References <a class="el" href="semaphore_8hpp_source.html#l00079">Semaphore::cv_</a>, <a class="el" href="examples_2select_2select_8hpp_source.html#l00035">examples::select::delta</a>, <a class="el" href="semaphore_8hpp_source.html#l00076">Semaphore::mutex_</a>, and <a class="el" href="semaphore_8hpp_source.html#l00073">Semaphore::value_</a>.</p>
+<p>References <a class="el" href="semaphore_8hpp_source.html#l00089">Semaphore::cv_</a>, <a class="el" href="examples_2select_2select_8hpp_source.html#l00035">examples::select::delta</a>, <a class="el" href="semaphore_8hpp_source.html#l00086">Semaphore::mutex_</a>, and <a class="el" href="semaphore_8hpp_source.html#l00083">Semaphore::value_</a>.</p>
 
 <p>Referenced by <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00090">request_queue_impl_1q::cancel_request()</a>, <a class="el" href="request__queue__impl__qwqr_8cpp_source.html#l00110">request_queue_impl_qwqr::cancel_request()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00118">MixStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00187">CatStreamData::Close()</a>, <a class="el" href="request__queue__impl__1q_8cpp_source.html#l00122">request_queue_impl_1q::worker()</a>, and <a class="el" href="request__queue__impl__qwqr_8cpp_source.html#l00155">request_queue_impl_qwqr::worker()</a>.</p>
 
@@ -450,7 +501,7 @@ Private Attributes</h2></td></tr>
 
 <p>condition variable </p>
 
-<p>Definition at line <a class="el" href="semaphore_8hpp_source.html#l00079">79</a> of file <a class="el" href="semaphore_8hpp_source.html">semaphore.hpp</a>.</p>
+<p>Definition at line <a class="el" href="semaphore_8hpp_source.html#l00089">89</a> of file <a class="el" href="semaphore_8hpp_source.html">semaphore.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="semaphore_8hpp_source.html#l00044">Semaphore::signal()</a>, and <a class="el" href="semaphore_8hpp_source.html#l00060">Semaphore::wait()</a>.</p>
 
@@ -476,9 +527,9 @@ Private Attributes</h2></td></tr>
 
 <p>mutex for condition variable </p>
 
-<p>Definition at line <a class="el" href="semaphore_8hpp_source.html#l00076">76</a> of file <a class="el" href="semaphore_8hpp_source.html">semaphore.hpp</a>.</p>
+<p>Definition at line <a class="el" href="semaphore_8hpp_source.html#l00086">86</a> of file <a class="el" href="semaphore_8hpp_source.html">semaphore.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="semaphore_8hpp_source.html#l00044">Semaphore::signal()</a>, and <a class="el" href="semaphore_8hpp_source.html#l00060">Semaphore::wait()</a>.</p>
+<p>Referenced by <a class="el" href="semaphore_8hpp_source.html#l00044">Semaphore::signal()</a>, <a class="el" href="semaphore_8hpp_source.html#l00070">Semaphore::try_acquire()</a>, and <a class="el" href="semaphore_8hpp_source.html#l00060">Semaphore::wait()</a>.</p>
 
 </div>
 </div>
@@ -502,9 +553,9 @@ Private Attributes</h2></td></tr>
 
 <p>value of the semaphore </p>
 
-<p>Definition at line <a class="el" href="semaphore_8hpp_source.html#l00073">73</a> of file <a class="el" href="semaphore_8hpp_source.html">semaphore.hpp</a>.</p>
+<p>Definition at line <a class="el" href="semaphore_8hpp_source.html#l00083">83</a> of file <a class="el" href="semaphore_8hpp_source.html">semaphore.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="semaphore_8hpp_source.html#l00040">Semaphore::operator=()</a>, <a class="el" href="semaphore_8hpp_source.html#l00044">Semaphore::signal()</a>, <a class="el" href="semaphore_8hpp_source.html#l00069">Semaphore::value()</a>, and <a class="el" href="semaphore_8hpp_source.html#l00060">Semaphore::wait()</a>.</p>
+<p>Referenced by <a class="el" href="semaphore_8hpp_source.html#l00040">Semaphore::operator=()</a>, <a class="el" href="semaphore_8hpp_source.html#l00044">Semaphore::signal()</a>, <a class="el" href="semaphore_8hpp_source.html#l00070">Semaphore::try_acquire()</a>, <a class="el" href="semaphore_8hpp_source.html#l00079">Semaphore::value()</a>, and <a class="el" href="semaphore_8hpp_source.html#l00060">Semaphore::wait()</a>.</p>
 
 </div>
 </div>
@@ -517,7 +568,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacetlx.html">tlx</a></li><li class="navelem"><a class="el" href="classtlx_1_1Semaphore.html">Semaphore</a></li>
-    <li class="footer">Generated on Tue Mar 5 2019 05:24:31 for Thrill by
+    <li class="footer">Generated on Tue Mar 19 2019 19:54:31 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

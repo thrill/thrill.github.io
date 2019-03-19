@@ -207,7 +207,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html','');});
 , <a class="el" href="classthrill_1_1data_1_1BlockReader.html#a51f3d93e980ccb92259a9ad807abf54b">BlockReader&lt; BlockSource &gt;</a>
 , <a class="el" href="classthrill_1_1data_1_1BlockWriter.html#a51f3d93e980ccb92259a9ad807abf54b">BlockWriter&lt; BlockSink &gt;</a>
 , <a class="el" href="classthrill_1_1data_1_1MultiplexerHeader.html#a51f3d93e980ccb92259a9ad807abf54b">MultiplexerHeader</a>
-, <a class="el" href="classtlx_1_1BTree.html#a81a632bc519f850f4af56567ba404f4e">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;</a>
+, <a class="el" href="classtlx_1_1BTree.html#a81a632bc519f850f4af56567ba404f4e">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;</a>
 , <a class="el" href="structtlx_1_1btree__default__traits.html#a81a632bc519f850f4af56567ba404f4e">btree_default_traits&lt; Key, Value &gt;</a>
 , <a class="el" href="classtlx_1_1btree__map.html#a81a632bc519f850f4af56567ba404f4e">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;</a>
 , <a class="el" href="classtlx_1_1btree__multimap.html#a81a632bc519f850f4af56567ba404f4e">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;</a>
@@ -286,11 +286,10 @@ $(document).ready(function(){initNavTree('functions_vars_s.html','');});
 , <a class="el" href="classfoxxll_1_1disk__config.html#a2a0ed9db3ce341499a43185d7073903e">disk_config</a>
 , <a class="el" href="classfoxxll_1_1mng__local_1_1element__block.html#ae8542fe44413919dee9f41ede5a5032d">element_block&lt; Type, kSize &gt;</a>
 , <a class="el" href="classfoxxll_1_1typed__block.html#ae8542fe44413919dee9f41ede5a5032d">typed_block&lt; RawSize, Type, NRef, MetaInfoType &gt;</a>
-, <a class="el" href="structthrill_1_1common_1_1SplayzTree_1_1Node.html#a854352f53b148adc24983a58a1866d66">SplayzTree&lt; Key &gt;::Node</a>
 , <a class="el" href="structthrill_1_1core_1_1ReduceBucketHashTable_1_1BucketBlock.html#a854352f53b148adc24983a58a1866d66">ReduceBucketHashTable&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig, IndexFunction, KeyEqualFunction &gt;::BucketBlock</a>
 , <a class="el" href="classthrill_1_1data_1_1MultiplexerHeader.html#ab2c6b258f02add8fdf4cfc7c371dd772">MultiplexerHeader</a>
 , <a class="el" href="structthrill_1_1vfs_1_1FileInfo.html#af931a8871310b4dad23f0f0b0f623560">FileInfo</a>
-, <a class="el" href="structtlx_1_1BTree_1_1tree__stats.html#a769e947b7bd053d20cc72d6187e1d0fb">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;::tree_stats</a>
+, <a class="el" href="structtlx_1_1BTree_1_1tree__stats.html#a769e947b7bd053d20cc72d6187e1d0fb">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;::tree_stats</a>
 , <a class="el" href="classtlx_1_1FunctionChain.html#ae8542fe44413919dee9f41ede5a5032d">FunctionChain&lt; Functors &gt;</a>
 , <a class="el" href="classtlx_1_1FunctionStack.html#ae8542fe44413919dee9f41ede5a5032d">FunctionStack&lt; Input_, Functors &gt;</a>
 , <a class="el" href="classtlx_1_1radix__heap__detail_1_1BitArray.html#ae8542fe44413919dee9f41ede5a5032d">BitArray&lt; Size &gt;</a>
@@ -315,6 +314,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html','');});
 , <a class="el" href="classtlx_1_1PolynomialRegression.html#a5f31775800bbb46b35b5791def1f3acc">PolynomialRegression&lt; Type, WithStore &gt;</a>
 , <a class="el" href="classtlx_1_1RadixHeap.html#a5f31775800bbb46b35b5791def1f3acc">RadixHeap&lt; ValueType, KeyExtract, KeyType, Radix &gt;</a>
 , <a class="el" href="classtlx_1_1SimpleVector.html#a4f3592f75c4916a9a92255c165bd65d2">SimpleVector&lt; ValueType, Mode &gt;</a>
+, <a class="el" href="classtlx_1_1SplayTree.html#a5f31775800bbb46b35b5791def1f3acc">SplayTree&lt; Key, Compare, Duplicates, Allocator &gt;</a>
 </li>
 <li>size_bytes_
 : <a class="el" href="classthrill_1_1data_1_1File.html#aff27f989f1869183398e52c517012e74">File</a>
@@ -342,13 +342,13 @@ $(document).ready(function(){initNavTree('functions_vars_s.html','');});
 : <a class="el" href="classthrill_1_1api_1_1BernoulliSampleNode.html#ac06a94f3b43eb6fdc303d169a3f9a5cd">BernoulliSampleNode&lt; ValueType &gt;</a>
 </li>
 <li>slotdata
-: <a class="el" href="structtlx_1_1BTree_1_1LeafNode.html#a05e3d86c2442ace4b66c19e28e2a9585">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;::LeafNode</a>
+: <a class="el" href="structtlx_1_1BTree_1_1LeafNode.html#a05e3d86c2442ace4b66c19e28e2a9585">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;::LeafNode</a>
 </li>
 <li>slotkey
-: <a class="el" href="structtlx_1_1BTree_1_1InnerNode.html#aadab4c4629760352c8b7766669471657">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;::InnerNode</a>
+: <a class="el" href="structtlx_1_1BTree_1_1InnerNode.html#aadab4c4629760352c8b7766669471657">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;::InnerNode</a>
 </li>
 <li>slotuse
-: <a class="el" href="structtlx_1_1BTree_1_1node.html#a55ebc33d4c95919ff2c45023beb5ef64">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;::node</a>
+: <a class="el" href="structtlx_1_1BTree_1_1node.html#a55ebc33d4c95919ff2c45023beb5ef64">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;::node</a>
 </li>
 <li>sockaddr_
 : <a class="el" href="classthrill_1_1net_1_1tcp_1_1SocketAddress.html#a9720d1de340086bdce68742436cd14ec">SocketAddress</a>
@@ -414,7 +414,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html','');});
 <li>stats_
 : <a class="el" href="classthrill_1_1api_1_1MergeNode.html#ac7576c732f88f7f4b4dfad6cda92272b">MergeNode&lt; ValueType, Comparator, kNumInputs &gt;</a>
 , <a class="el" href="classthrill_1_1core_1_1ReducePrePhaseEmitter.html#ac41cdc850e23796448097f11d1364734">ReducePrePhaseEmitter&lt; TableItem, VolatileKey, BlockWriter &gt;</a>
-, <a class="el" href="classtlx_1_1BTree.html#aed457b19fc617a12201f09de1d885368">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;</a>
+, <a class="el" href="classtlx_1_1BTree.html#aed457b19fc617a12201f09de1d885368">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;</a>
 </li>
 <li>stats_bytes_
 : <a class="el" href="classthrill_1_1data_1_1File.html#abc2b9fd7d0a73aee8231120d0d1d97bf">File</a>
@@ -542,7 +542,7 @@ $(document).ready(function(){initNavTree('functions_vars_s.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 5 2019 05:24:31 for Thrill by
+    <li class="footer">Generated on Tue Mar 19 2019 19:54:32 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

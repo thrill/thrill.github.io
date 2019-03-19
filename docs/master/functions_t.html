@@ -214,7 +214,7 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 : <a class="el" href="structfoxxll_1_1CASE.html#a94798fdadfbf49a7c658ace669a1d310a9daab2aa897c0d2d4500bed734b0d780">CASE&lt; Tag, Type_, Next_ &gt;</a>
 </li>
 <li>tail_leaf_
-: <a class="el" href="classtlx_1_1BTree.html#a6747e195cffb9e4dbceef6a4848b3563">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;</a>
+: <a class="el" href="classtlx_1_1BTree.html#a6747e195cffb9e4dbceef6a4848b3563">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;</a>
 </li>
 <li>taker
 : <a class="el" href="structfoxxll_1_1block__scheduler__algorithm__offline__lru__prefetching_1_1write__read__request.html#aa0183762df921817847934d39a5d2681">block_scheduler_algorithm_offline_lru_prefetching&lt; SwappableBlockType &gt;::write_read_request</a>
@@ -536,7 +536,7 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 , <a class="el" href="structthrill_1_1net_1_1Traffic.html#a787ef26afa51c859151890458ae84895">Traffic</a>
 </li>
 <li>traits
-: <a class="el" href="classtlx_1_1BTree.html#add985b33b72ef68812f3986e8df807f5">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;</a>
+: <a class="el" href="classtlx_1_1BTree.html#ab0d2e59411be6b53e63c29149a17fbcc">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;</a>
 , <a class="el" href="classtlx_1_1btree__map.html#add985b33b72ef68812f3986e8df807f5">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;</a>
 , <a class="el" href="classtlx_1_1btree__multimap.html#add985b33b72ef68812f3986e8df807f5">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;</a>
 , <a class="el" href="classtlx_1_1btree__multiset.html#add985b33b72ef68812f3986e8df807f5">btree_multiset&lt; Key_, Compare_, Traits_, Alloc_ &gt;</a>
@@ -555,7 +555,7 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 : <a class="el" href="classthrill_1_1api_1_1SortNode.html#a08e35ebdf936873c384117e55f2fa658">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;</a>
 </li>
 <li>traverse_preorder()
-: <a class="el" href="classthrill_1_1common_1_1SplayzTree.html#a79fa2c6dc6154e4e6987c7a29aa02c12">SplayzTree&lt; Key &gt;</a>
+: <a class="el" href="classtlx_1_1SplayTree.html#a79fa2c6dc6154e4e6987c7a29aa02c12">SplayTree&lt; Key, Compare, Duplicates, Allocator &gt;</a>
 </li>
 <li>tree_
 : <a class="el" href="classthrill_1_1api_1_1SortNode_1_1TreeBuilder.html#a5ba87094f3d66686368c030110cf9846">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::TreeBuilder</a>
@@ -565,7 +565,7 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 , <a class="el" href="classtlx_1_1btree__set.html#a901955ac1cb674450b79aa9d192832b3">btree_set&lt; Key_, Compare_, Traits_, Alloc_ &gt;</a>
 </li>
 <li>tree_stats()
-: <a class="el" href="structtlx_1_1BTree_1_1tree__stats.html#aee390aabd0d5706d9a55d51259151704">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;::tree_stats</a>
+: <a class="el" href="structtlx_1_1BTree_1_1tree__stats.html#aee390aabd0d5706d9a55d51259151704">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;::tree_stats</a>
 , <a class="el" href="classtlx_1_1btree__map.html#a77ce4303907bb816a959ac7b0725311e">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;</a>
 , <a class="el" href="classtlx_1_1btree__multimap.html#a77ce4303907bb816a959ac7b0725311e">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;</a>
 , <a class="el" href="classtlx_1_1btree__multiset.html#a77ce4303907bb816a959ac7b0725311e">btree_multiset&lt; Key_, Compare_, Traits_, Alloc_ &gt;</a>
@@ -585,6 +585,9 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 </li>
 <li>truncate()
 : <a class="el" href="classfoxxll_1_1file.html#af787f57caa35bdffee4af95e54b6f581">file</a>
+</li>
+<li>try_acquire()
+: <a class="el" href="classtlx_1_1Semaphore.html#ace35066e20ea8cd7be03de4c849cb689">Semaphore</a>
 </li>
 <li>try_interrupt_read()
 : <a class="el" href="classfoxxll_1_1block__scheduler__algorithm__offline__lru__prefetching.html#a8c3a9fcebe4705d21ca6921565c679d4">block_scheduler_algorithm_offline_lru_prefetching&lt; SwappableBlockType &gt;</a>
@@ -711,7 +714,7 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 5 2019 05:24:31 for Thrill by
+    <li class="footer">Generated on Tue Mar 19 2019 19:54:32 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

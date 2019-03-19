@@ -6,7 +6,6 @@ var dir_a01749dddfb7bd03dbbc5a0a6a7320ce =
       [ "cmp", "structfoxxll_1_1addressable__priority__queue_1_1cmp.html", "structfoxxll_1_1addressable__priority__queue_1_1cmp" ]
     ] ],
     [ "aligned_alloc.hpp", "aligned__alloc_8hpp.html", "aligned__alloc_8hpp" ],
-    [ "die_with_message.hpp", "die__with__message_8hpp.html", "die__with__message_8hpp" ],
     [ "error_handling.hpp", "error__handling_8hpp.html", "error__handling_8hpp" ],
     [ "exceptions.hpp", "exceptions_8hpp.html", [
       [ "bad_ext_alloc", "classfoxxll_1_1bad__ext__alloc.html", "classfoxxll_1_1bad__ext__alloc" ],

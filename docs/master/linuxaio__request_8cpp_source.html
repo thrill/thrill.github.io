@@ -169,90 +169,71 @@ $(document).ready(function(){initNavTree('linuxaio__request_8cpp_source.html',''
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classfoxxll_1_1request__with__state.html#af0793049b16add6c9e1bd1710c16a3c0">request_with_state::completed</a>(canceled);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">void</span> linuxaio_request::fill_control_block()</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;iocb* linuxaio_request::fill_control_block()</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    linuxaio_file* af = <span class="keyword">dynamic_cast&lt;</span>linuxaio_file*<span class="keyword">&gt;</span>(file_);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    memset(&amp;cb_, 0, <span class="keyword">sizeof</span>(cb_));</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// indirection, I/O system retains a virtual counting_ptr reference</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    ReferenceCounter::inc_reference();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    cb_.aio_data = <span class="keyword">reinterpret_cast&lt;</span>__u64<span class="keyword">&gt;</span>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    cb_.aio_fildes = af-&gt;file_des_;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    cb_.aio_lio_opcode = (op_ == READ) ? IOCB_CMD_PREAD : IOCB_CMD_PWRITE;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    cb_.aio_reqprio = 0;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    cb_.aio_buf = <span class="keyword">static_cast&lt;</span>__u64<span class="keyword">&gt;</span>(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">long</span><span class="keyword">&gt;</span>(buffer_));</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    cb_.aio_nbytes = bytes_;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    cb_.aio_offset = offset_;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//! Submits an I/O request to the OS</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//! \returns false if submission fails</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> linuxaio_request::post()</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="logger_2core_8hpp.html#ad565f2ef3ecf71cede793d22e9aa45c2">TLX_LOG</a> &lt;&lt; <span class="stringliteral">&quot;linuxaio_request[&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;] post()&quot;</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    fill_control_block();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    iocb* cb_pointer = &amp;cb_;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// io_submit might considerable time, so we have to remember the current</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// time before the call.</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    time_posted_ = <a class="code" href="group__foxxll__support.html#gad778da578ed85369f51f18bc45e81d89">timestamp</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    linuxaio_queue* queue = <span class="keyword">dynamic_cast&lt;</span>linuxaio_queue*<span class="keyword">&gt;</span>(</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="classfoxxll_1_1singleton.html#a3dc1baf0100a3f759a319174bc6e4d46">disk_queues::get_instance</a>()-&gt;<a class="code" href="classfoxxll_1_1disk__queues.html#a61eaab74688da5ec217caf81f6cf279f">get_queue</a>(file_-&gt;get_queue_id()));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// increment, I/O system retains a virtual counting_ptr reference</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    ReferenceCounter::inc_reference();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    memset(&amp;cb_, 0, <span class="keyword">sizeof</span>(cb_));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    cb_.aio_data = <span class="keyword">reinterpret_cast&lt;</span>__u64<span class="keyword">&gt;</span>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    cb_.aio_fildes = af-&gt;file_des_;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    cb_.aio_lio_opcode = (op_ == READ) ? IOCB_CMD_PREAD : IOCB_CMD_PWRITE;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    cb_.aio_reqprio = 0;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    cb_.aio_buf = <span class="keyword">static_cast&lt;</span>__u64<span class="keyword">&gt;</span>(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">long</span><span class="keyword">&gt;</span>(buffer_));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    cb_.aio_nbytes = bytes_;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    cb_.aio_offset = offset_;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// io_submit might considerable time, so we have to remember the current</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// time before the call.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    time_posted_ = <a class="code" href="group__foxxll__support.html#gad778da578ed85369f51f18bc45e81d89">timestamp</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> &amp;cb_;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//! Cancel the request</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">//!</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//! Routine is called by user, as part of the request interface.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> linuxaio_request::cancel()</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="logger_2core_8hpp.html#ad565f2ef3ecf71cede793d22e9aa45c2">TLX_LOG</a> &lt;&lt; <span class="stringliteral">&quot;linuxaio_request[&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;] cancel()&quot;</span>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">long</span> success = syscall(SYS_io_submit, queue-&gt;get_io_context(), 1, &amp;cb_pointer);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// At this point another thread may have already called complete(),</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// so consider most values as invalidated!</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (success == -1 &amp;&amp; errno != EAGAIN)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="error__handling_8hpp.html#a5be7fab12a838b4a0b26334b3c72b1cd">FOXXLL_THROW_ERRNO</a>(</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            io_error, <span class="stringliteral">&quot;linuxaio_request::post&quot;</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="stringliteral">&quot; io_submit()&quot;</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        );</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> success == 1;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">//! Cancel the request</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">//!</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">//! Routine is called by user, as part of the request interface.</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> linuxaio_request::cancel()</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="logger_2core_8hpp.html#ad565f2ef3ecf71cede793d22e9aa45c2">TLX_LOG</a> &lt;&lt; <span class="stringliteral">&quot;linuxaio_request[&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;] cancel()&quot;</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">if</span> (!file_) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="group__foxxll__reqlayer.html#gab80ecf11eb759f96598eff772adc7909">request_ptr</a> req(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    linuxaio_queue* queue = <span class="keyword">dynamic_cast&lt;</span>linuxaio_queue*<span class="keyword">&gt;</span>(</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <a class="code" href="classfoxxll_1_1singleton.html#a3dc1baf0100a3f759a319174bc6e4d46">disk_queues::get_instance</a>()-&gt;<a class="code" href="classfoxxll_1_1disk__queues.html#a61eaab74688da5ec217caf81f6cf279f">get_queue</a>(file_-&gt;get_queue_id()));</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">return</span> queue-&gt;cancel_request(req);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">//! Cancel already posted request</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> linuxaio_request::cancel_aio(linuxaio_queue* queue)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="logger_2core_8hpp.html#ad565f2ef3ecf71cede793d22e9aa45c2">TLX_LOG</a> &lt;&lt; <span class="stringliteral">&quot;linuxaio_request[&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;] cancel_aio()&quot;</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">if</span> (!file_) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    io_event event;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">long</span> result = syscall(SYS_io_cancel, queue-&gt;get_io_context(), &amp;cb_, &amp;event);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">if</span> (result == 0)    <span class="comment">//successfully canceled</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        queue-&gt;handle_events(&amp;event, 1, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">return</span> result == 0;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;} <span class="comment">// namespace foxxll</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif // #if FOXXLL_HAVE_LINUXAIO_FILE</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">/**************************************************************************/</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span> (!file_) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="group__foxxll__reqlayer.html#gab80ecf11eb759f96598eff772adc7909">request_ptr</a> req(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    linuxaio_queue* queue = <span class="keyword">dynamic_cast&lt;</span>linuxaio_queue*<span class="keyword">&gt;</span>(</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <a class="code" href="classfoxxll_1_1singleton.html#a3dc1baf0100a3f759a319174bc6e4d46">disk_queues::get_instance</a>()-&gt;<a class="code" href="classfoxxll_1_1disk__queues.html#a61eaab74688da5ec217caf81f6cf279f">get_queue</a>(file_-&gt;get_queue_id()));</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> queue-&gt;cancel_request(req);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">//! Cancel already posted request</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> linuxaio_request::cancel_aio(linuxaio_queue* queue)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="logger_2core_8hpp.html#ad565f2ef3ecf71cede793d22e9aa45c2">TLX_LOG</a> &lt;&lt; <span class="stringliteral">&quot;linuxaio_request[&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;] cancel_aio()&quot;</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">if</span> (!file_) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    io_event event;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">long</span> result = syscall(SYS_io_cancel, queue-&gt;get_io_context(), &amp;cb_, &amp;event);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span> (result == 0) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="comment">// successfully canceled</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        queue-&gt;handle_events(&amp;event, 1, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> result == 0;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;} <span class="comment">// namespace foxxll</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif // #if FOXXLL_HAVE_LINUXAIO_FILE</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">/**************************************************************************/</span></div>
 <div class="ttc" id="linuxaio__request_8hpp_html"><div class="ttname"><a href="linuxaio__request_8hpp.html">linuxaio_request.hpp</a></div></div>
 <div class="ttc" id="disk__queues_8hpp_html"><div class="ttname"><a href="disk__queues_8hpp.html">disk_queues.hpp</a></div></div>
 <div class="ttc" id="group__foxxll__reqlayer_html_gab80ecf11eb759f96598eff772adc7909"><div class="ttname"><a href="group__foxxll__reqlayer.html#gab80ecf11eb759f96598eff772adc7909">foxxll::request_ptr</a></div><div class="ttdeci">tlx::counting_ptr&lt; request &gt; request_ptr</div><div class="ttdoc">A reference counting pointer for request. </div><div class="ttdef"><b>Definition:</b> <a href="request_8hpp_source.html#l00043">request.hpp:43</a></div></div>
 <div class="ttc" id="error__handling_8hpp_html"><div class="ttname"><a href="error__handling_8hpp.html">error_handling.hpp</a></div></div>
 <div class="ttc" id="group__foxxll__support_html_gad778da578ed85369f51f18bc45e81d89"><div class="ttname"><a href="group__foxxll__support.html#gad778da578ed85369f51f18bc45e81d89">foxxll::timestamp</a></div><div class="ttdeci">static double timestamp()</div><div class="ttdoc">Returns number of seconds since the epoch, high resolution. </div><div class="ttdef"><b>Definition:</b> <a href="timer_8hpp_source.html#l00036">timer.hpp:36</a></div></div>
 <div class="ttc" id="classfoxxll_1_1request__with__state_html_af0793049b16add6c9e1bd1710c16a3c0"><div class="ttname"><a href="classfoxxll_1_1request__with__state.html#af0793049b16add6c9e1bd1710c16a3c0">foxxll::request_with_state::completed</a></div><div class="ttdeci">void completed(bool canceled) override</div><div class="ttdef"><b>Definition:</b> <a href="request__with__state_8cpp_source.html#l00078">request_with_state.cpp:78</a></div></div>
-<div class="ttc" id="error__handling_8hpp_html_a5be7fab12a838b4a0b26334b3c72b1cd"><div class="ttname"><a href="error__handling_8hpp.html#a5be7fab12a838b4a0b26334b3c72b1cd">FOXXLL_THROW_ERRNO</a></div><div class="ttdeci">#define FOXXLL_THROW_ERRNO(exception_type, error_message)</div><div class="ttdoc">Throws exception_type with &quot;Error in [function] : [error_message] : [errno message]&quot;. </div><div class="ttdef"><b>Definition:</b> <a href="error__handling_8hpp_source.html#l00063">error_handling.hpp:63</a></div></div>
 <div class="ttc" id="classfoxxll_1_1singleton_html_a3dc1baf0100a3f759a319174bc6e4d46"><div class="ttname"><a href="classfoxxll_1_1singleton.html#a3dc1baf0100a3f759a319174bc6e4d46">foxxll::singleton&lt; disk_queues &gt;::get_instance</a></div><div class="ttdeci">static instance_pointer get_instance()</div><div class="ttdef"><b>Definition:</b> <a href="extlib_2foxxll_2foxxll_2singleton_8hpp_source.html#l00044">singleton.hpp:44</a></div></div>
 <div class="ttc" id="classfoxxll_1_1disk__queues_html_a61eaab74688da5ec217caf81f6cf279f"><div class="ttname"><a href="classfoxxll_1_1disk__queues.html#a61eaab74688da5ec217caf81f6cf279f">foxxll::disk_queues::get_queue</a></div><div class="ttdeci">request_queue * get_queue(disk_id_type disk)</div><div class="ttdef"><b>Definition:</b> <a href="disk__queues_8cpp_source.html#l00100">disk_queues.cpp:100</a></div></div>
 <div class="ttc" id="logger_2core_8hpp_html_ad565f2ef3ecf71cede793d22e9aa45c2"><div class="ttname"><a href="logger_2core_8hpp.html#ad565f2ef3ecf71cede793d22e9aa45c2">TLX_LOG</a></div><div class="ttdeci">#define TLX_LOG</div><div class="ttdoc">Default logging method: output if the local debug variable is true. </div><div class="ttdef"><b>Definition:</b> <a href="logger_2core_8hpp_source.html#l00141">core.hpp:141</a></div></div>
@@ -262,7 +243,7 @@ $(document).ready(function(){initNavTree('linuxaio__request_8cpp_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_6edb93c67f49003f2374f9bbffd8c119.html">foxxll</a></li><li class="navelem"><a class="el" href="dir_9554b3cb1d023b8265f4f4faa71025ef.html">foxxll</a></li><li class="navelem"><a class="el" href="dir_4baece39e6c6f47a0dce3856dc5eaa6a.html">io</a></li><li class="navelem"><a class="el" href="linuxaio__request_8cpp.html">linuxaio_request.cpp</a></li>
-    <li class="footer">Generated on Tue Mar 5 2019 05:24:24 for Thrill by
+    <li class="footer">Generated on Tue Mar 19 2019 19:54:25 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

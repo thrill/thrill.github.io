@@ -370,6 +370,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1SpacingLogger.html">SpacingLogger</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A logging class which outputs spaces between elements pushed via operator&lt;&lt;.  <a href="classtlx_1_1SpacingLogger.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1SplayTree.html">SplayTree</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1StackAllocator.html">StackAllocator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1StackArena.html">StackArena</a></td></tr>
@@ -417,6 +419,12 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga4843a6aed555573a98892469fee27b0b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga4843a6aed555573a98892469fee27b0b">simple_vector</a> = <a class="el" href="classtlx_1_1SimpleVector.html">SimpleVector</a>&lt; <a class="el" href="logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb">T</a> &gt;</td></tr>
 <tr class="memdesc:ga4843a6aed555573a98892469fee27b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">make template alias due to similarity with std::vector  <a href="group__tlx__container.html#ga4843a6aed555573a98892469fee27b0b">More...</a><br/></td></tr>
 <tr class="separator:ga4843a6aed555573a98892469fee27b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c6288bed9ea72458c107ba60de69776"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Compare  = std::less&lt;Key&gt;, typename Allocator  = std::allocator&lt;Key&gt;&gt; </td></tr>
+<tr class="memitem:ga7c6288bed9ea72458c107ba60de69776"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga7c6288bed9ea72458c107ba60de69776">splay_multiset</a> = <a class="el" href="classtlx_1_1SplayTree.html">SplayTree</a>&lt; Key, Compare, true, Allocator &gt;</td></tr>
+<tr class="separator:ga7c6288bed9ea72458c107ba60de69776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41e381f67b77a92a0521fb1b268c930c"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Compare  = std::less&lt;Key&gt;, typename Allocator  = std::allocator&lt;Key&gt;&gt; </td></tr>
+<tr class="memitem:ga41e381f67b77a92a0521fb1b268c930c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga41e381f67b77a92a0521fb1b268c930c">splay_set</a> = <a class="el" href="classtlx_1_1SplayTree.html">SplayTree</a>&lt; Key, Compare, false, Allocator &gt;</td></tr>
+<tr class="separator:ga41e381f67b77a92a0521fb1b268c930c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaa62991928fb9fb18ff0db62a040aba"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html#afaa62991928fb9fb18ff0db62a040aba">u32</a></td></tr>
 <tr class="separator:afaa62991928fb9fb18ff0db62a040aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f7e2bcbb0b4c338f3c4f6c937cd4234"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a></td></tr>
@@ -1083,6 +1091,31 @@ Functions</h2></td></tr>
 <tr class="separator:a36e52665aa49af074f344396ad6264f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dbb7e10c5e866474d0a516ba06388f8"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html#a1dbb7e10c5e866474d0a516ba06388f8">siphash_plain</a> (const uint8_t key[16], const uint8_t *m, size_t len)</td></tr>
 <tr class="separator:a1dbb7e10c5e866474d0a516ba06388f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a2095ef4e565c914bbbab9b8ddeb5fe"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Tree , typename Compare &gt; </td></tr>
+<tr class="memitem:ga4a2095ef4e565c914bbbab9b8ddeb5fe"><td class="memTemplItemLeft" align="right" valign="top">Tree *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga4a2095ef4e565c914bbbab9b8ddeb5fe">splay</a> (const Key &amp;k, Tree *t, const Compare &amp;cmp)</td></tr>
+<tr class="separator:ga4a2095ef4e565c914bbbab9b8ddeb5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d9d3030d15353337ec87bb84cbd0d4b"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Compare &gt; </td></tr>
+<tr class="memitem:ga0d9d3030d15353337ec87bb84cbd0d4b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga0d9d3030d15353337ec87bb84cbd0d4b">splay_check</a> (const Tree *t, const Tree *&amp;out_tmin, const Tree *&amp;out_tmax, const Compare &amp;cmp)</td></tr>
+<tr class="memdesc:ga0d9d3030d15353337ec87bb84cbd0d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">check the tree order, recursively calculate min and max elements  <a href="group__tlx__container.html#ga0d9d3030d15353337ec87bb84cbd0d4b">More...</a><br/></td></tr>
+<tr class="separator:ga0d9d3030d15353337ec87bb84cbd0d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefd27b9686bc2139cc43490f13c16315"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Compare &gt; </td></tr>
+<tr class="memitem:gaefd27b9686bc2139cc43490f13c16315"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#gaefd27b9686bc2139cc43490f13c16315">splay_check</a> (const Tree *t, const Compare &amp;cmp)</td></tr>
+<tr class="memdesc:gaefd27b9686bc2139cc43490f13c16315"><td class="mdescLeft">&#160;</td><td class="mdescRight">check the tree order  <a href="group__tlx__container.html#gaefd27b9686bc2139cc43490f13c16315">More...</a><br/></td></tr>
+<tr class="separator:gaefd27b9686bc2139cc43490f13c16315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae768c3fbbdebb44b09b92637c285b8f7"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Tree , typename Compare &gt; </td></tr>
+<tr class="memitem:gae768c3fbbdebb44b09b92637c285b8f7"><td class="memTemplItemLeft" align="right" valign="top">Tree *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#gae768c3fbbdebb44b09b92637c285b8f7">splay_erase</a> (const Key &amp;k, Tree *&amp;t, const Compare &amp;cmp)</td></tr>
+<tr class="separator:gae768c3fbbdebb44b09b92637c285b8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3cc3fe23b6946ec8147fd163c167f3e"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Compare &gt; </td></tr>
+<tr class="memitem:gad3cc3fe23b6946ec8147fd163c167f3e"><td class="memTemplItemLeft" align="right" valign="top">Tree *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#gad3cc3fe23b6946ec8147fd163c167f3e">splay_insert</a> (Tree *nn, Tree *t, const Compare &amp;cmp)</td></tr>
+<tr class="separator:gad3cc3fe23b6946ec8147fd163c167f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8f0e0a9f2fa6150b5c8c5270a31ad89"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Functor &gt; </td></tr>
+<tr class="memitem:gad8f0e0a9f2fa6150b5c8c5270a31ad89"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#gad8f0e0a9f2fa6150b5c8c5270a31ad89">splay_traverse_postorder</a> (const Functor &amp;f, Tree *t)</td></tr>
+<tr class="memdesc:gad8f0e0a9f2fa6150b5c8c5270a31ad89"><td class="mdescLeft">&#160;</td><td class="mdescRight">traverse the tree in postorder (left, right, node)  <a href="group__tlx__container.html#gad8f0e0a9f2fa6150b5c8c5270a31ad89">More...</a><br/></td></tr>
+<tr class="separator:gad8f0e0a9f2fa6150b5c8c5270a31ad89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac719dadccd01dfa9a38fee2943f08134"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Functor &gt; </td></tr>
+<tr class="memitem:gac719dadccd01dfa9a38fee2943f08134"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#gac719dadccd01dfa9a38fee2943f08134">splay_traverse_preorder</a> (const Functor &amp;f, const Tree *t)</td></tr>
+<tr class="memdesc:gac719dadccd01dfa9a38fee2943f08134"><td class="mdescLeft">&#160;</td><td class="mdescRight">traverse the tree in preorder (left, node, right)  <a href="group__tlx__container.html#gac719dadccd01dfa9a38fee2943f08134">More...</a><br/></td></tr>
+<tr class="separator:gac719dadccd01dfa9a38fee2943f08134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae88597e53210df27ef4d5db668a02fa7"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html#ae88597e53210df27ef4d5db668a02fa7">split</a> (std::vector&lt; std::string &gt; *into, const char *sep, size_t sep_size, const std::string &amp;str, std::string::size_type limit)</td></tr>
 <tr class="separator:ae88597e53210df27ef4d5db668a02fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92d58b1e8b06cbb57400b5959281a4a1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__string.html#ga92d58b1e8b06cbb57400b5959281a4a1">split_words</a> (const std::string &amp;str, std::string::size_type limit=std::string::npos)</td></tr>
@@ -1617,7 +1650,7 @@ Variables</h2></td></tr>
 
 <p>alias for STL-like code style </p>
 
-<p>Definition at line <a class="el" href="semaphore_8hpp_source.html#l00083">83</a> of file <a class="el" href="semaphore_8hpp_source.html">semaphore.hpp</a>.</p>
+<p>Definition at line <a class="el" href="semaphore_8hpp_source.html#l00093">93</a> of file <a class="el" href="semaphore_8hpp_source.html">semaphore.hpp</a>.</p>
 
 </div>
 </div>
@@ -1684,7 +1717,7 @@ Variables</h2></td></tr>
 
 <p>helper method to compare two values in <a class="el" href="die_8hpp.html#a334b021076c0dff0e3964c6819774ceb">die_unequal()</a> </p>
 
-<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00087">87</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00107">107</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
 
 </div>
 </div>
@@ -1720,7 +1753,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00092">92</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00112">112</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
 
 </div>
 </div>
@@ -1756,7 +1789,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00098">98</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00118">118</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
 
 </div>
 </div>
@@ -1792,7 +1825,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00104">104</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00124">124</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
 
 </div>
 </div>
@@ -1836,9 +1869,9 @@ Variables</h2></td></tr>
 
 <p>helper method to compare two values in <a class="el" href="die_8hpp.html#a6b7ce407ec77acd1f6b146c1a6ea65ef">die_unequal_eps()</a> </p>
 
-<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00139">139</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00172">172</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
 
-<p>References <a class="el" href="die_2core_8hpp_source.html#l00133">die_unequal_eps_abs()</a>.</p>
+<p>References <a class="el" href="die_2core_8hpp_source.html#l00166">die_unequal_eps_abs()</a>.</p>
 
 </div>
 </div>
@@ -1866,9 +1899,9 @@ Variables</h2></td></tr>
 
 <p>simple replacement for std::abs </p>
 
-<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00133">133</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00166">166</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="die_2core_8hpp_source.html#l00139">die_equal_eps_compare()</a>.</p>
+<p>Referenced by <a class="el" href="die_2core_8hpp_source.html#l00172">die_equal_eps_compare()</a>.</p>
 
 </div>
 </div>
@@ -2808,7 +2841,7 @@ Variables</h2></td></tr>
 
 <p>Definition at line <a class="el" href="counting__ptr_8hpp_source.html#l00320">320</a> of file <a class="el" href="counting__ptr_8hpp_source.html">counting_ptr.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2data_2file_8cpp_source.html#l00057">File::Clear()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00198">LoserTreeCopy&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00265">LoserTreeCopy&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00433">LoserTreePointer&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00493">LoserTreePointer&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00629">LoserTreeCopyUnguarded&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00670">LoserTreeCopyUnguarded&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00806">LoserTreePointerUnguarded&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00844">LoserTreePointerUnguarded&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="binary__heap_8hpp_source.html#l00079">BinaryHeap&lt; Timer &gt;::erase()</a>, <a class="el" href="polynomial__regression_8hpp_source.html#l00154">PolynomialRegression&lt; Type, WithStore &gt;::fit_coefficients()</a>, <a class="el" href="qsort_8hpp_source.html#l00113">thrill::common::qsort_local::InsertionSort()</a>, <a class="el" href="levenshtein_8hpp_source.html#l00067">levenshtein_algorithm()</a>, <a class="el" href="multikey__quicksort_8hpp_source.html#l00074">tlx::sort_strings_detail::multikey_quicksort()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00728">tlx::multiway_merge_detail::multiway_merge_bubble()</a>, <a class="el" href="d__ary__heap_8hpp_source.html#l00107">DAryHeap&lt; KeyType, Arity, Compare &gt;::pop()</a>, <a class="el" href="binary__heap_8hpp_source.html#l00173">BinaryHeap&lt; Timer &gt;::pop_heap()</a>, <a class="el" href="qsort_8hpp_source.html#l00244">thrill::common::qsort_three_pivots()</a>, <a class="el" href="qsort_8hpp_source.html#l00186">thrill::common::qsort_two_pivots_yaroslavskiy()</a>, <a class="el" href="thrill_2common_2radix__sort_8hpp_source.html#l00037">thrill::common::radix_sort_CI()</a>, <a class="el" href="extlib_2tlx_2tlx_2sort_2strings_2radix__sort_8hpp_source.html#l00547">RadixStep_CI2&lt; StringPtr &gt;::RadixStep_CI2()</a>, <a class="el" href="extlib_2tlx_2tlx_2sort_2strings_2radix__sort_8hpp_source.html#l00711">RadixStep_CI3&lt; StringPtr &gt;::RadixStep_CI3()</a>, <a class="el" href="random__bipartition__shuffle_8hpp_source.html#l00044">random_bipartition_shuffle()</a>, <a class="el" href="d__ary__addressable__int__heap_8hpp_source.html#l00140">DAryAddressableIntHeap&lt; KeyType, Arity, Compare &gt;::remove()</a>, <a class="el" href="block__scheduler_8hpp_source.html#l01285">block_scheduler_algorithm_offline_lru_prefetching&lt; SwappableBlockType &gt;::schedule_read()</a>, <a class="el" href="qsort_8hpp_source.html#l00051">thrill::common::qsort_local::sort3()</a>, <a class="el" href="qsort_8hpp_source.html#l00076">thrill::common::qsort_local::sort4()</a>, <a class="el" href="qsort_8hpp_source.html#l00093">thrill::common::qsort_local::sort5()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00071">Range::Swap()</a>, <a class="el" href="container_2simple__vector_8hpp_source.html#l00104">SimpleVector&lt; std::thread &gt;::swap()</a>, <a class="el" href="btree__set_8hpp_source.html#l00202">btree_set&lt; Key_, Compare_, Traits_, Alloc_ &gt;::swap()</a>, <a class="el" href="btree__multiset_8hpp_source.html#l00203">btree_multiset&lt; Key_, Compare_, Traits_, Alloc_ &gt;::swap()</a>, <a class="el" href="btree__map_8hpp_source.html#l00204">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::swap()</a>, <a class="el" href="btree__multimap_8hpp_source.html#l00205">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::swap()</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00238">CountingPtr&lt; WriteStream &gt;::swap()</a>, <a class="el" href="delegate_8hpp_source.html#l00266">Delegate&lt; R(A...), Allocator &gt;::swap()</a>, <a class="el" href="btree_8hpp_source.html#l01144">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::swap()</a>, <a class="el" href="utils_8hpp_source.html#l00105">foxxll::swap_1D_arrays()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00465">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::TransmitItems()</a>, <a class="el" href="multikey__quicksort_8hpp_source.html#l00040">tlx::sort_strings_detail::vec_swap()</a>, and <a class="el" href="vector__free_8hpp_source.html#l00021">vector_free()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2data_2file_8cpp_source.html#l00057">File::Clear()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00198">LoserTreeCopy&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00265">LoserTreeCopy&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00433">LoserTreePointer&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00493">LoserTreePointer&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00629">LoserTreeCopyUnguarded&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00670">LoserTreeCopyUnguarded&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00806">LoserTreePointerUnguarded&lt; Stable, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="loser__tree_8hpp_source.html#l00844">LoserTreePointerUnguarded&lt; true, ValueType, Comparator &gt;::delete_min_insert()</a>, <a class="el" href="binary__heap_8hpp_source.html#l00079">BinaryHeap&lt; Timer &gt;::erase()</a>, <a class="el" href="polynomial__regression_8hpp_source.html#l00154">PolynomialRegression&lt; Type, WithStore &gt;::fit_coefficients()</a>, <a class="el" href="qsort_8hpp_source.html#l00113">thrill::common::qsort_local::InsertionSort()</a>, <a class="el" href="levenshtein_8hpp_source.html#l00067">levenshtein_algorithm()</a>, <a class="el" href="multikey__quicksort_8hpp_source.html#l00074">tlx::sort_strings_detail::multikey_quicksort()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00728">tlx::multiway_merge_detail::multiway_merge_bubble()</a>, <a class="el" href="d__ary__heap_8hpp_source.html#l00107">DAryHeap&lt; KeyType, Arity, Compare &gt;::pop()</a>, <a class="el" href="binary__heap_8hpp_source.html#l00173">BinaryHeap&lt; Timer &gt;::pop_heap()</a>, <a class="el" href="qsort_8hpp_source.html#l00244">thrill::common::qsort_three_pivots()</a>, <a class="el" href="qsort_8hpp_source.html#l00186">thrill::common::qsort_two_pivots_yaroslavskiy()</a>, <a class="el" href="thrill_2common_2radix__sort_8hpp_source.html#l00037">thrill::common::radix_sort_CI()</a>, <a class="el" href="extlib_2tlx_2tlx_2sort_2strings_2radix__sort_8hpp_source.html#l00547">RadixStep_CI2&lt; StringPtr &gt;::RadixStep_CI2()</a>, <a class="el" href="extlib_2tlx_2tlx_2sort_2strings_2radix__sort_8hpp_source.html#l00711">RadixStep_CI3&lt; StringPtr &gt;::RadixStep_CI3()</a>, <a class="el" href="random__bipartition__shuffle_8hpp_source.html#l00044">random_bipartition_shuffle()</a>, <a class="el" href="d__ary__addressable__int__heap_8hpp_source.html#l00140">DAryAddressableIntHeap&lt; KeyType, Arity, Compare &gt;::remove()</a>, <a class="el" href="block__scheduler_8hpp_source.html#l01285">block_scheduler_algorithm_offline_lru_prefetching&lt; SwappableBlockType &gt;::schedule_read()</a>, <a class="el" href="qsort_8hpp_source.html#l00051">thrill::common::qsort_local::sort3()</a>, <a class="el" href="qsort_8hpp_source.html#l00076">thrill::common::qsort_local::sort4()</a>, <a class="el" href="qsort_8hpp_source.html#l00093">thrill::common::qsort_local::sort5()</a>, <a class="el" href="thrill_2common_2math_8hpp_source.html#l00071">Range::Swap()</a>, <a class="el" href="container_2simple__vector_8hpp_source.html#l00104">SimpleVector&lt; std::thread &gt;::swap()</a>, <a class="el" href="btree__set_8hpp_source.html#l00202">btree_set&lt; Key_, Compare_, Traits_, Alloc_ &gt;::swap()</a>, <a class="el" href="btree__multiset_8hpp_source.html#l00203">btree_multiset&lt; Key_, Compare_, Traits_, Alloc_ &gt;::swap()</a>, <a class="el" href="btree__map_8hpp_source.html#l00204">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::swap()</a>, <a class="el" href="btree__multimap_8hpp_source.html#l00205">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::swap()</a>, <a class="el" href="counting__ptr_8hpp_source.html#l00238">CountingPtr&lt; WriteStream &gt;::swap()</a>, <a class="el" href="delegate_8hpp_source.html#l00266">Delegate&lt; R(A...), Allocator &gt;::swap()</a>, <a class="el" href="btree_8hpp_source.html#l01144">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::swap()</a>, <a class="el" href="utils_8hpp_source.html#l00089">foxxll::swap_1D_arrays()</a>, <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00465">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::TransmitItems()</a>, <a class="el" href="multikey__quicksort_8hpp_source.html#l00040">tlx::sort_strings_detail::vec_swap()</a>, and <a class="el" href="vector__free_8hpp_source.html#l00021">vector_free()</a>.</p>
 
 </div>
 </div>
@@ -2976,7 +3009,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacetlx.html">tlx</a></li>
-    <li class="footer">Generated on Tue Mar 5 2019 05:24:30 for Thrill by
+    <li class="footer">Generated on Tue Mar 19 2019 19:54:31 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

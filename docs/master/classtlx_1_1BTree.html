@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Thrill: BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt; Class Template Reference</title>
+<title>Thrill: BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -118,12 +118,12 @@ $(document).ready(function(){initNavTree('classtlx_1_1BTree.html','');});
 <a href="#nested-classes">Classes</a> &#124;
 <a href="classtlx_1_1BTree-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__tlx__container__btree.html">B+ Trees</a></div></div>  </div>
+<div class="title">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__tlx__container__btree.html">B+ Trees</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename Key_, typename Value_, typename KeyOfValue_, typename Compare_ = std::less&lt;Key_&gt;, typename Traits_ = btree_default_traits&lt;Key_, Value_&gt;, bool Duplicates_ = false, typename Alloc_ = std::allocator&lt;Value_&gt;&gt;<br/>
-class tlx::BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;</h3>
+<div class="textblock"><h3>template&lt;typename Key, typename Value, typename KeyOfValue, typename Compare = std::less&lt;Key&gt;, typename Traits = btree_default_traits&lt;Key, Value&gt;, bool Duplicates = false, typename Allocator = std::allocator&lt;Value&gt;&gt;<br/>
+class tlx::BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;</h3>
 
 <p>Basic class implementing a B+ tree data structure in memory. </p>
 <p>The base implementation of an in-memory B+ tree. It is based on the implementation in Cormen's Introduction into Algorithms, Jan Jannink's paper and other algorithm resources. Almost all STL-required function calls are implemented. The asymptotic time requirements of the STL are not always fulfilled in theory, however, in practice this B+ tree performs better than a red-black tree and almost always uses less memory. The insertion function splits the nodes on the recursion unroll. Erase is largely based on Jannink's ideas.</p>
@@ -131,15 +131,15 @@ class tlx::BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, 
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l00124">124</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classtlx_1_1BTree__inherit__graph.svg" width="576" height="175"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classtlx_1_1BTree__inherit__graph.svg" width="563" height="175"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;:</div>
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
@@ -177,11 +177,11 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructed Types</div></td></tr>
-<tr class="memitem:a33b885434598e4d5ac5f06605e53b678"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a>, <br class="typebreak"/>
-<a class="el" href="classtlx_1_1BTree.html#a5512bf4c2a5c53a6205718ccc957d7a6">value_type</a>, <a class="el" href="classtlx_1_1BTree.html#a1059238b7811618137ac16f4dc2e1d5e">key_of_value</a>, <br class="typebreak"/>
-<a class="el" href="classtlx_1_1BTree.html#a7462b1e2b24182127f494d58dbb95fa9">key_compare</a>, <a class="el" href="classtlx_1_1BTree.html#add985b33b72ef68812f3986e8df807f5">traits</a>, <br class="typebreak"/>
+<tr class="memitem:a33b885434598e4d5ac5f06605e53b678"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a>, <br class="typebreak"/>
+<a class="el" href="classtlx_1_1BTree.html#a04f69f8f2936ff309627511179c1709b">value_type</a>, <a class="el" href="classtlx_1_1BTree.html#a21e576e049c90e014ffeb583c24d2f38">key_of_value</a>, <br class="typebreak"/>
+<a class="el" href="classtlx_1_1BTree.html#a6ff4e347839868db0770859a3dd55a27">key_compare</a>, <a class="el" href="classtlx_1_1BTree.html#ab0d2e59411be6b53e63c29149a17fbcc">traits</a>, <br class="typebreak"/>
 <a class="el" href="classtlx_1_1BTree.html#a4a380c8745ff0a1c814742821e85403e">allow_duplicates</a>, <br class="typebreak"/>
-<a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a33b885434598e4d5ac5f06605e53b678">Self</a></td></tr>
+<a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a33b885434598e4d5ac5f06605e53b678">Self</a></td></tr>
 <tr class="memdesc:a33b885434598e4d5ac5f06605e53b678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef of our own type.  <a href="#a33b885434598e4d5ac5f06605e53b678">More...</a><br/></td></tr>
 <tr class="separator:a33b885434598e4d5ac5f06605e53b678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49b489a408a211a90e766329c0732d7b"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a49b489a408a211a90e766329c0732d7b">size_type</a></td></tr>
@@ -191,15 +191,15 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors and Destructor</div></td></tr>
-<tr class="memitem:a6f73c3bb670ec75c0b6910927cf6606b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a6f73c3bb670ec75c0b6910927cf6606b">BTree</a> (const <a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a> &amp;alloc=<a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a>())</td></tr>
+<tr class="memitem:a6f73c3bb670ec75c0b6910927cf6606b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a6f73c3bb670ec75c0b6910927cf6606b">BTree</a> (const <a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a> &amp;alloc=<a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a>())</td></tr>
 <tr class="separator:a6f73c3bb670ec75c0b6910927cf6606b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f96f907c281e0c29c4f5129b6cf3169"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a8f96f907c281e0c29c4f5129b6cf3169">BTree</a> (const <a class="el" href="classtlx_1_1BTree.html#a7462b1e2b24182127f494d58dbb95fa9">key_compare</a> &amp;kcf, const <a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a> &amp;alloc=<a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a>())</td></tr>
+<tr class="memitem:a8f96f907c281e0c29c4f5129b6cf3169"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a8f96f907c281e0c29c4f5129b6cf3169">BTree</a> (const <a class="el" href="classtlx_1_1BTree.html#a6ff4e347839868db0770859a3dd55a27">key_compare</a> &amp;kcf, const <a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a> &amp;alloc=<a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a>())</td></tr>
 <tr class="separator:a8f96f907c281e0c29c4f5129b6cf3169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cbb054ada3a2e9ebe4f822f0799b10b"><td class="memTemplParams" colspan="2">template&lt;class InputIterator &gt; </td></tr>
-<tr class="memitem:a6cbb054ada3a2e9ebe4f822f0799b10b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a6cbb054ada3a2e9ebe4f822f0799b10b">BTree</a> (InputIterator first, InputIterator last, const <a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a> &amp;alloc=<a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a>())</td></tr>
+<tr class="memitem:a6cbb054ada3a2e9ebe4f822f0799b10b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a6cbb054ada3a2e9ebe4f822f0799b10b">BTree</a> (InputIterator first, InputIterator last, const <a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a> &amp;alloc=<a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a>())</td></tr>
 <tr class="separator:a6cbb054ada3a2e9ebe4f822f0799b10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9c4fcb14953cafb848894fccab09ebe"><td class="memTemplParams" colspan="2">template&lt;class InputIterator &gt; </td></tr>
-<tr class="memitem:ad9c4fcb14953cafb848894fccab09ebe"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ad9c4fcb14953cafb848894fccab09ebe">BTree</a> (InputIterator first, InputIterator last, const <a class="el" href="classtlx_1_1BTree.html#a7462b1e2b24182127f494d58dbb95fa9">key_compare</a> &amp;kcf, const <a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a> &amp;alloc=<a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a>())</td></tr>
+<tr class="memitem:ad9c4fcb14953cafb848894fccab09ebe"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ad9c4fcb14953cafb848894fccab09ebe">BTree</a> (InputIterator first, InputIterator last, const <a class="el" href="classtlx_1_1BTree.html#a6ff4e347839868db0770859a3dd55a27">key_compare</a> &amp;kcf, const <a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a> &amp;alloc=<a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a>())</td></tr>
 <tr class="separator:ad9c4fcb14953cafb848894fccab09ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af50bbeb39af1051f057b65da1c71a671"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#af50bbeb39af1051f057b65da1c71a671">~BTree</a> ()</td></tr>
 <tr class="memdesc:af50bbeb39af1051f057b65da1c71a671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees up all used B+ tree memory pages.  <a href="#af50bbeb39af1051f057b65da1c71a671">More...</a><br/></td></tr>
@@ -208,13 +208,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0c1e04d5d606adc2876b61fafc73c645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast swapping of two identical B+ tree objects.  <a href="#a0c1e04d5d606adc2876b61fafc73c645">More...</a><br/></td></tr>
 <tr class="separator:a0c1e04d5d606adc2876b61fafc73c645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Key and Value Comparison Function Objects</div></td></tr>
-<tr class="memitem:a62c2add0ee33d7acce9f02077cd1da99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree.html#a7462b1e2b24182127f494d58dbb95fa9">key_compare</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a62c2add0ee33d7acce9f02077cd1da99">key_comp</a> () const </td></tr>
+<tr class="memitem:a62c2add0ee33d7acce9f02077cd1da99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree.html#a6ff4e347839868db0770859a3dd55a27">key_compare</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a62c2add0ee33d7acce9f02077cd1da99">key_comp</a> () const </td></tr>
 <tr class="memdesc:a62c2add0ee33d7acce9f02077cd1da99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant access to the key comparison object sorting the B+ tree.  <a href="#a62c2add0ee33d7acce9f02077cd1da99">More...</a><br/></td></tr>
 <tr class="separator:a62c2add0ee33d7acce9f02077cd1da99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab42ea149fdde84e56ff0a7ed11e13aa8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree_1_1value__compare.html">value_compare</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ab42ea149fdde84e56ff0a7ed11e13aa8">value_comp</a> () const </td></tr>
 <tr class="separator:ab42ea149fdde84e56ff0a7ed11e13aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Allocators</div></td></tr>
-<tr class="memitem:acfbc5374e81f060b1cdffeb9c494ae86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#acfbc5374e81f060b1cdffeb9c494ae86">get_allocator</a> () const </td></tr>
+<tr class="memitem:acfbc5374e81f060b1cdffeb9c494ae86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#acfbc5374e81f060b1cdffeb9c494ae86">get_allocator</a> () const </td></tr>
 <tr class="memdesc:acfbc5374e81f060b1cdffeb9c494ae86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the base node allocator provided during construction.  <a href="#acfbc5374e81f060b1cdffeb9c494ae86">More...</a><br/></td></tr>
 <tr class="separator:acfbc5374e81f060b1cdffeb9c494ae86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">STL Iterator Construction Functions</div></td></tr>
@@ -247,27 +247,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3b5e61b63a8f02f388e295a287aab316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a const reference to the current statistics.  <a href="#a3b5e61b63a8f02f388e295a287aab316">More...</a><br/></td></tr>
 <tr class="separator:a3b5e61b63a8f02f388e295a287aab316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">STL Access Functions Querying the Tree by Descending to a Leaf</div></td></tr>
-<tr class="memitem:a0d3d86d13f26293e1ddcff5569ad1ccb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a0d3d86d13f26293e1ddcff5569ad1ccb">exists</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key) const </td></tr>
+<tr class="memitem:a0d3d86d13f26293e1ddcff5569ad1ccb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a0d3d86d13f26293e1ddcff5569ad1ccb">exists</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key) const </td></tr>
 <tr class="separator:a0d3d86d13f26293e1ddcff5569ad1ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c9766a96c492f3e9e5861d6b4f87387"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a9c9766a96c492f3e9e5861d6b4f87387">find</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key)</td></tr>
+<tr class="memitem:a9c9766a96c492f3e9e5861d6b4f87387"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a9c9766a96c492f3e9e5861d6b4f87387">find</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key)</td></tr>
 <tr class="separator:a9c9766a96c492f3e9e5861d6b4f87387"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc204502ef1606c9daa4a613da6aacfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree_1_1const__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#adc204502ef1606c9daa4a613da6aacfb">find</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key) const </td></tr>
+<tr class="memitem:adc204502ef1606c9daa4a613da6aacfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree_1_1const__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#adc204502ef1606c9daa4a613da6aacfb">find</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key) const </td></tr>
 <tr class="separator:adc204502ef1606c9daa4a613da6aacfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addd4e2b6ff9c7bef508bc908caabb2d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree.html#a49b489a408a211a90e766329c0732d7b">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#addd4e2b6ff9c7bef508bc908caabb2d4">count</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key) const </td></tr>
+<tr class="memitem:addd4e2b6ff9c7bef508bc908caabb2d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree.html#a49b489a408a211a90e766329c0732d7b">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#addd4e2b6ff9c7bef508bc908caabb2d4">count</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key) const </td></tr>
 <tr class="separator:addd4e2b6ff9c7bef508bc908caabb2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a373c61cca9b31735f4548b5b59b70184"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a373c61cca9b31735f4548b5b59b70184">lower_bound</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key)</td></tr>
+<tr class="memitem:a373c61cca9b31735f4548b5b59b70184"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a373c61cca9b31735f4548b5b59b70184">lower_bound</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key)</td></tr>
 <tr class="separator:a373c61cca9b31735f4548b5b59b70184"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31fbffbdf311ce68ec99f0aebab5c0ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree_1_1const__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a31fbffbdf311ce68ec99f0aebab5c0ea">lower_bound</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key) const </td></tr>
+<tr class="memitem:a31fbffbdf311ce68ec99f0aebab5c0ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree_1_1const__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a31fbffbdf311ce68ec99f0aebab5c0ea">lower_bound</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key) const </td></tr>
 <tr class="separator:a31fbffbdf311ce68ec99f0aebab5c0ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a482b50e623a123f653e2a91f113a507b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a482b50e623a123f653e2a91f113a507b">upper_bound</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key)</td></tr>
+<tr class="memitem:a482b50e623a123f653e2a91f113a507b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a482b50e623a123f653e2a91f113a507b">upper_bound</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key)</td></tr>
 <tr class="separator:a482b50e623a123f653e2a91f113a507b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99609d25589437b30cb42dab922bfaa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree_1_1const__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a99609d25589437b30cb42dab922bfaa9">upper_bound</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key) const </td></tr>
+<tr class="memitem:a99609d25589437b30cb42dab922bfaa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree_1_1const__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a99609d25589437b30cb42dab922bfaa9">upper_bound</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key) const </td></tr>
 <tr class="separator:a99609d25589437b30cb42dab922bfaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97bb054bc81e97ec55f0b539cdcbfcde"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>, <a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a97bb054bc81e97ec55f0b539cdcbfcde">equal_range</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key)</td></tr>
+<tr class="memitem:a97bb054bc81e97ec55f0b539cdcbfcde"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>, <a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a97bb054bc81e97ec55f0b539cdcbfcde">equal_range</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key)</td></tr>
 <tr class="memdesc:a97bb054bc81e97ec55f0b539cdcbfcde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches the B+ tree and returns both <a class="el" href="classtlx_1_1BTree.html#a373c61cca9b31735f4548b5b59b70184">lower_bound()</a> and <a class="el" href="classtlx_1_1BTree.html#a482b50e623a123f653e2a91f113a507b">upper_bound()</a>.  <a href="#a97bb054bc81e97ec55f0b539cdcbfcde">More...</a><br/></td></tr>
 <tr class="separator:a97bb054bc81e97ec55f0b539cdcbfcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33c1ee0eb39360edec2a985301b9d631"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classtlx_1_1BTree_1_1const__iterator.html">const_iterator</a>, <br class="typebreak"/>
-<a class="el" href="classtlx_1_1BTree_1_1const__iterator.html">const_iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a33c1ee0eb39360edec2a985301b9d631">equal_range</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key) const </td></tr>
+<a class="el" href="classtlx_1_1BTree_1_1const__iterator.html">const_iterator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a33c1ee0eb39360edec2a985301b9d631">equal_range</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key) const </td></tr>
 <tr class="memdesc:a33c1ee0eb39360edec2a985301b9d631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches the B+ tree and returns both <a class="el" href="classtlx_1_1BTree.html#a373c61cca9b31735f4548b5b59b70184">lower_bound()</a> and <a class="el" href="classtlx_1_1BTree.html#a482b50e623a123f653e2a91f113a507b">upper_bound()</a>.  <a href="#a33c1ee0eb39360edec2a985301b9d631">More...</a><br/></td></tr>
 <tr class="separator:a33c1ee0eb39360edec2a985301b9d631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">B+ Tree Object Comparison Functions</div></td></tr>
@@ -288,9 +288,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3edfcc8ae79e36d8444f993ed53e4dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Greater-equal relation. Based on operator&lt;.  <a href="#a3edfcc8ae79e36d8444f993ed53e4dad">More...</a><br/></td></tr>
 <tr class="separator:a3edfcc8ae79e36d8444f993ed53e4dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Public Insertion Functions</div></td></tr>
-<tr class="memitem:aa218c2c89397f8d0484ef9438d540456"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#aa218c2c89397f8d0484ef9438d540456">insert</a> (const <a class="el" href="classtlx_1_1BTree.html#a5512bf4c2a5c53a6205718ccc957d7a6">value_type</a> &amp;x)</td></tr>
+<tr class="memitem:aa218c2c89397f8d0484ef9438d540456"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#aa218c2c89397f8d0484ef9438d540456">insert</a> (const <a class="el" href="classtlx_1_1BTree.html#a04f69f8f2936ff309627511179c1709b">value_type</a> &amp;x)</td></tr>
 <tr class="separator:aa218c2c89397f8d0484ef9438d540456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ff25301e2f68b6862c2ea4a36dab058"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a3ff25301e2f68b6862c2ea4a36dab058">insert</a> (<a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>, const <a class="el" href="classtlx_1_1BTree.html#a5512bf4c2a5c53a6205718ccc957d7a6">value_type</a> &amp;x)</td></tr>
+<tr class="memitem:a3ff25301e2f68b6862c2ea4a36dab058"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a3ff25301e2f68b6862c2ea4a36dab058">insert</a> (<a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>, const <a class="el" href="classtlx_1_1BTree.html#a04f69f8f2936ff309627511179c1709b">value_type</a> &amp;x)</td></tr>
 <tr class="separator:a3ff25301e2f68b6862c2ea4a36dab058"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac048f549259de32da2acd742cce52d5c"><td class="memTemplParams" colspan="2">template&lt;typename InputIterator &gt; </td></tr>
 <tr class="memitem:ac048f549259de32da2acd742cce52d5c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ac048f549259de32da2acd742cce52d5c">insert</a> (InputIterator first, InputIterator last)</td></tr>
@@ -300,9 +300,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d0a35a00bc2ff5608fe613ea8fa47e6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a3d0a35a00bc2ff5608fe613ea8fa47e6">bulk_load</a> (Iterator ibegin, Iterator iend)</td></tr>
 <tr class="separator:a3d0a35a00bc2ff5608fe613ea8fa47e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Public Erase Functions</div></td></tr>
-<tr class="memitem:a3a79f5c030eea924dbd8fcc9417b9263"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a3a79f5c030eea924dbd8fcc9417b9263">erase_one</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key)</td></tr>
+<tr class="memitem:a3a79f5c030eea924dbd8fcc9417b9263"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a3a79f5c030eea924dbd8fcc9417b9263">erase_one</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key)</td></tr>
 <tr class="separator:a3a79f5c030eea924dbd8fcc9417b9263"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae57ff6dd1cb4dc347b892dfa87ea6613"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree.html#a49b489a408a211a90e766329c0732d7b">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ae57ff6dd1cb4dc347b892dfa87ea6613">erase</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key)</td></tr>
+<tr class="memitem:ae57ff6dd1cb4dc347b892dfa87ea6613"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree.html#a49b489a408a211a90e766329c0732d7b">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ae57ff6dd1cb4dc347b892dfa87ea6613">erase</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key)</td></tr>
 <tr class="separator:ae57ff6dd1cb4dc347b892dfa87ea6613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8b2d25c3e313e0b24656afe5cd4f6f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#af8b2d25c3e313e0b24656afe5cd4f6f2">erase</a> (<a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a> iter)</td></tr>
 <tr class="memdesc:af8b2d25c3e313e0b24656afe5cd4f6f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erase the key/data pair referenced by the iterator.  <a href="#af8b2d25c3e313e0b24656afe5cd4f6f2">More...</a><br/></td></tr>
@@ -339,25 +339,25 @@ Private Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Convenient Key Comparison Functions Generated From key_less</div></td></tr>
-<tr class="memitem:a4d396f4c2d232e90fabff194a345a283"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a4d396f4c2d232e90fabff194a345a283">key_less</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;a, const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;b) const </td></tr>
+<tr class="memitem:a4d396f4c2d232e90fabff194a345a283"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a4d396f4c2d232e90fabff194a345a283">key_less</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;a, const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;b) const </td></tr>
 <tr class="memdesc:a4d396f4c2d232e90fabff194a345a283"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if a &lt; b ? "constructed" from <a class="el" href="classtlx_1_1BTree.html#a5d945dbdb41ca2fe76d87b2ba122e13e">key_less_()</a>  <a href="#a4d396f4c2d232e90fabff194a345a283">More...</a><br/></td></tr>
 <tr class="separator:a4d396f4c2d232e90fabff194a345a283"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25950f60bc42a7b7bbd2fa6e9cecc7f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a25950f60bc42a7b7bbd2fa6e9cecc7f4">key_lessequal</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;a, const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;b) const </td></tr>
+<tr class="memitem:a25950f60bc42a7b7bbd2fa6e9cecc7f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a25950f60bc42a7b7bbd2fa6e9cecc7f4">key_lessequal</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;a, const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;b) const </td></tr>
 <tr class="memdesc:a25950f60bc42a7b7bbd2fa6e9cecc7f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if a &lt;= b ? constructed from <a class="el" href="classtlx_1_1BTree.html#a4d396f4c2d232e90fabff194a345a283" title="True if a &lt; b ? &quot;constructed&quot; from key_less_() ">key_less()</a>  <a href="#a25950f60bc42a7b7bbd2fa6e9cecc7f4">More...</a><br/></td></tr>
 <tr class="separator:a25950f60bc42a7b7bbd2fa6e9cecc7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8eeb2fd6ed899b070ade045b4957c2a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a8eeb2fd6ed899b070ade045b4957c2a2">key_greater</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;a, const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;b) const </td></tr>
+<tr class="memitem:a8eeb2fd6ed899b070ade045b4957c2a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a8eeb2fd6ed899b070ade045b4957c2a2">key_greater</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;a, const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;b) const </td></tr>
 <tr class="memdesc:a8eeb2fd6ed899b070ade045b4957c2a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if a &gt; b ? constructed from <a class="el" href="classtlx_1_1BTree.html#a4d396f4c2d232e90fabff194a345a283" title="True if a &lt; b ? &quot;constructed&quot; from key_less_() ">key_less()</a>  <a href="#a8eeb2fd6ed899b070ade045b4957c2a2">More...</a><br/></td></tr>
 <tr class="separator:a8eeb2fd6ed899b070ade045b4957c2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86ce69542070f80643dee49e06bebf64"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a86ce69542070f80643dee49e06bebf64">key_greaterequal</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;a, const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;b) const </td></tr>
+<tr class="memitem:a86ce69542070f80643dee49e06bebf64"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a86ce69542070f80643dee49e06bebf64">key_greaterequal</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;a, const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;b) const </td></tr>
 <tr class="memdesc:a86ce69542070f80643dee49e06bebf64"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if a &gt;= b ? constructed from <a class="el" href="classtlx_1_1BTree.html#a4d396f4c2d232e90fabff194a345a283" title="True if a &lt; b ? &quot;constructed&quot; from key_less_() ">key_less()</a>  <a href="#a86ce69542070f80643dee49e06bebf64">More...</a><br/></td></tr>
 <tr class="separator:a86ce69542070f80643dee49e06bebf64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a117b795a14531e05da974077af0ff76e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a117b795a14531e05da974077af0ff76e">key_equal</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;a, const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;b) const </td></tr>
+<tr class="memitem:a117b795a14531e05da974077af0ff76e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a117b795a14531e05da974077af0ff76e">key_equal</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;a, const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;b) const </td></tr>
 <tr class="separator:a117b795a14531e05da974077af0ff76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Node Object Allocation and Deallocation Functions</div></td></tr>
-<tr class="memitem:a353e5a73d56e289c9b48a5bc43e72211"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtlx_1_1BTree_1_1LeafNode.html#ace1063cc97cf8d80fbdbc0cc7c1c2ddb">LeafNode::alloc_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a353e5a73d56e289c9b48a5bc43e72211">leaf_node_allocator</a> ()</td></tr>
+<tr class="memitem:a353e5a73d56e289c9b48a5bc43e72211"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtlx_1_1BTree_1_1LeafNode.html#a022e856be0486dadd1a67f21a65562f4">LeafNode::alloc_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a353e5a73d56e289c9b48a5bc43e72211">leaf_node_allocator</a> ()</td></tr>
 <tr class="memdesc:a353e5a73d56e289c9b48a5bc43e72211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an allocator for <a class="el" href="structtlx_1_1BTree_1_1LeafNode.html">LeafNode</a> objects.  <a href="#a353e5a73d56e289c9b48a5bc43e72211">More...</a><br/></td></tr>
 <tr class="separator:a353e5a73d56e289c9b48a5bc43e72211"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a791d570451c392e04774581a7d04707a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtlx_1_1BTree_1_1InnerNode.html#a32be9540c1e0d06e1696d390ec0285c8">InnerNode::alloc_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a791d570451c392e04774581a7d04707a">inner_node_allocator</a> ()</td></tr>
+<tr class="memitem:a791d570451c392e04774581a7d04707a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtlx_1_1BTree_1_1InnerNode.html#a420a071517903c1cfc59a6846534982d">InnerNode::alloc_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a791d570451c392e04774581a7d04707a">inner_node_allocator</a> ()</td></tr>
 <tr class="memdesc:a791d570451c392e04774581a7d04707a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an allocator for <a class="el" href="structtlx_1_1BTree_1_1InnerNode.html">InnerNode</a> objects.  <a href="#a791d570451c392e04774581a7d04707a">More...</a><br/></td></tr>
 <tr class="separator:a791d570451c392e04774581a7d04707a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3ac8f3e8366bd3a32709a1fb44e8524"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtlx_1_1BTree_1_1LeafNode.html">LeafNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ab3ac8f3e8366bd3a32709a1fb44e8524">allocate_leaf</a> ()</td></tr>
@@ -370,20 +370,20 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a12d054d5f2dfa6c0d777e2ceb7e4f89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">B+ Tree Node Binary Search Functions</div></td></tr>
 <tr class="memitem:ae8009ed54bc12a51d11dfdcb447a9227"><td class="memTemplParams" colspan="2">template&lt;typename node_type &gt; </td></tr>
-<tr class="memitem:ae8009ed54bc12a51d11dfdcb447a9227"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a> (const node_type *n, const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key) const </td></tr>
+<tr class="memitem:ae8009ed54bc12a51d11dfdcb447a9227"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a> (const node_type *n, const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key) const </td></tr>
 <tr class="separator:ae8009ed54bc12a51d11dfdcb447a9227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0544e2a2c0a7df7f7f2efa47682e5c4"><td class="memTemplParams" colspan="2">template&lt;typename node_type &gt; </td></tr>
-<tr class="memitem:ab0544e2a2c0a7df7f7f2efa47682e5c4"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ab0544e2a2c0a7df7f7f2efa47682e5c4">find_upper</a> (const node_type *n, const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key) const </td></tr>
+<tr class="memitem:ab0544e2a2c0a7df7f7f2efa47682e5c4"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ab0544e2a2c0a7df7f7f2efa47682e5c4">find_upper</a> (const node_type *n, const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key) const </td></tr>
 <tr class="separator:ab0544e2a2c0a7df7f7f2efa47682e5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Private Insertion Functions</div></td></tr>
-<tr class="memitem:af580a76629eafd1d907fa5e1e18556a2"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#af580a76629eafd1d907fa5e1e18556a2">insert_start</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key, const <a class="el" href="classtlx_1_1BTree.html#a5512bf4c2a5c53a6205718ccc957d7a6">value_type</a> &amp;value)</td></tr>
+<tr class="memitem:af580a76629eafd1d907fa5e1e18556a2"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#af580a76629eafd1d907fa5e1e18556a2">insert_start</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key, const <a class="el" href="classtlx_1_1BTree.html#a04f69f8f2936ff309627511179c1709b">value_type</a> &amp;value)</td></tr>
 <tr class="separator:af580a76629eafd1d907fa5e1e18556a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3734f27e109c9117ded78c25d6d40624"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a3734f27e109c9117ded78c25d6d40624">insert_descend</a> (<a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> *n, const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key, const <a class="el" href="classtlx_1_1BTree.html#a5512bf4c2a5c53a6205718ccc957d7a6">value_type</a> &amp;value, <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> *splitkey, <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> **splitnode)</td></tr>
+<tr class="memitem:a3734f27e109c9117ded78c25d6d40624"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a3734f27e109c9117ded78c25d6d40624">insert_descend</a> (<a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> *n, const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key, const <a class="el" href="classtlx_1_1BTree.html#a04f69f8f2936ff309627511179c1709b">value_type</a> &amp;value, <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> *splitkey, <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> **splitnode)</td></tr>
 <tr class="memdesc:a3734f27e109c9117ded78c25d6d40624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert an item into the B+ tree.  <a href="#a3734f27e109c9117ded78c25d6d40624">More...</a><br/></td></tr>
 <tr class="separator:a3734f27e109c9117ded78c25d6d40624"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1234e2d209b518ae0396fb36b4be82d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a1234e2d209b518ae0396fb36b4be82d4">split_leaf_node</a> (<a class="el" href="structtlx_1_1BTree_1_1LeafNode.html">LeafNode</a> *leaf, <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> *out_newkey, <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> **out_newleaf)</td></tr>
+<tr class="memitem:a1234e2d209b518ae0396fb36b4be82d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a1234e2d209b518ae0396fb36b4be82d4">split_leaf_node</a> (<a class="el" href="structtlx_1_1BTree_1_1LeafNode.html">LeafNode</a> *leaf, <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> *out_newkey, <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> **out_newleaf)</td></tr>
 <tr class="separator:a1234e2d209b518ae0396fb36b4be82d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd6849b9290c28ea815a0c03b1d9321a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#afd6849b9290c28ea815a0c03b1d9321a">split_inner_node</a> (<a class="el" href="structtlx_1_1BTree_1_1InnerNode.html">InnerNode</a> *inner, <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> *out_newkey, <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> **out_newinner, unsigned int addslot)</td></tr>
+<tr class="memitem:afd6849b9290c28ea815a0c03b1d9321a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#afd6849b9290c28ea815a0c03b1d9321a">split_inner_node</a> (<a class="el" href="structtlx_1_1BTree_1_1InnerNode.html">InnerNode</a> *inner, <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> *out_newkey, <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> **out_newinner, unsigned int addslot)</td></tr>
 <tr class="separator:afd6849b9290c28ea815a0c03b1d9321a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -401,30 +401,30 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aed457b19fc617a12201f09de1d885368"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtlx_1_1BTree_1_1tree__stats.html">tree_stats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#aed457b19fc617a12201f09de1d885368">stats_</a></td></tr>
 <tr class="memdesc:aed457b19fc617a12201f09de1d885368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Other small statistics about the B+ tree.  <a href="#aed457b19fc617a12201f09de1d885368">More...</a><br/></td></tr>
 <tr class="separator:aed457b19fc617a12201f09de1d885368"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d945dbdb41ca2fe76d87b2ba122e13e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree.html#a7462b1e2b24182127f494d58dbb95fa9">key_compare</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a5d945dbdb41ca2fe76d87b2ba122e13e">key_less_</a></td></tr>
+<tr class="memitem:a5d945dbdb41ca2fe76d87b2ba122e13e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree.html#a6ff4e347839868db0770859a3dd55a27">key_compare</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a5d945dbdb41ca2fe76d87b2ba122e13e">key_less_</a></td></tr>
 <tr class="separator:a5d945dbdb41ca2fe76d87b2ba122e13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8746da7b8170695c17d760f1a43bd4fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a8746da7b8170695c17d760f1a43bd4fe">allocator_</a></td></tr>
+<tr class="memitem:a8746da7b8170695c17d760f1a43bd4fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a8746da7b8170695c17d760f1a43bd4fe">allocator_</a></td></tr>
 <tr class="memdesc:a8746da7b8170695c17d760f1a43bd4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory allocator.  <a href="#a8746da7b8170695c17d760f1a43bd4fe">More...</a><br/></td></tr>
 <tr class="separator:a8746da7b8170695c17d760f1a43bd4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Template Parameter Types</h2></td></tr>
-<tr class="memitem:acb65c421faf5d749d03882f64d184775"><td class="memItemLeft" align="right" valign="top">typedef Key_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a></td></tr>
-<tr class="separator:acb65c421faf5d749d03882f64d184775"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5512bf4c2a5c53a6205718ccc957d7a6"><td class="memItemLeft" align="right" valign="top">typedef Value_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a5512bf4c2a5c53a6205718ccc957d7a6">value_type</a></td></tr>
-<tr class="separator:a5512bf4c2a5c53a6205718ccc957d7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1059238b7811618137ac16f4dc2e1d5e"><td class="memItemLeft" align="right" valign="top">typedef KeyOfValue_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a1059238b7811618137ac16f4dc2e1d5e">key_of_value</a></td></tr>
-<tr class="memdesc:a1059238b7811618137ac16f4dc2e1d5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Third template: key extractor class to pull key_type from value_type.  <a href="#a1059238b7811618137ac16f4dc2e1d5e">More...</a><br/></td></tr>
-<tr class="separator:a1059238b7811618137ac16f4dc2e1d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7462b1e2b24182127f494d58dbb95fa9"><td class="memItemLeft" align="right" valign="top">typedef Compare_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a7462b1e2b24182127f494d58dbb95fa9">key_compare</a></td></tr>
-<tr class="memdesc:a7462b1e2b24182127f494d58dbb95fa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fourth template parameter: key_type comparison function object.  <a href="#a7462b1e2b24182127f494d58dbb95fa9">More...</a><br/></td></tr>
-<tr class="separator:a7462b1e2b24182127f494d58dbb95fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add985b33b72ef68812f3986e8df807f5"><td class="memItemLeft" align="right" valign="top">typedef Traits_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#add985b33b72ef68812f3986e8df807f5">traits</a></td></tr>
-<tr class="separator:add985b33b72ef68812f3986e8df807f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a552a180d973faf4f7ccc14b7d639a160"><td class="memItemLeft" align="right" valign="top">typedef Alloc_&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a></td></tr>
-<tr class="memdesc:a552a180d973faf4f7ccc14b7d639a160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seventh template parameter: STL allocator for tree nodes.  <a href="#a552a180d973faf4f7ccc14b7d639a160">More...</a><br/></td></tr>
-<tr class="separator:a552a180d973faf4f7ccc14b7d639a160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a380c8745ff0a1c814742821e85403e"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a4a380c8745ff0a1c814742821e85403e">allow_duplicates</a> = Duplicates_</td></tr>
+<tr class="memitem:a38ec6d0825c22c2d0ad31f3209ed2d02"><td class="memItemLeft" align="right" valign="top">typedef Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a></td></tr>
+<tr class="separator:a38ec6d0825c22c2d0ad31f3209ed2d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04f69f8f2936ff309627511179c1709b"><td class="memItemLeft" align="right" valign="top">typedef Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a04f69f8f2936ff309627511179c1709b">value_type</a></td></tr>
+<tr class="separator:a04f69f8f2936ff309627511179c1709b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21e576e049c90e014ffeb583c24d2f38"><td class="memItemLeft" align="right" valign="top">typedef KeyOfValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a21e576e049c90e014ffeb583c24d2f38">key_of_value</a></td></tr>
+<tr class="memdesc:a21e576e049c90e014ffeb583c24d2f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Third template: key extractor class to pull key_type from value_type.  <a href="#a21e576e049c90e014ffeb583c24d2f38">More...</a><br/></td></tr>
+<tr class="separator:a21e576e049c90e014ffeb583c24d2f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff4e347839868db0770859a3dd55a27"><td class="memItemLeft" align="right" valign="top">typedef Compare&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a6ff4e347839868db0770859a3dd55a27">key_compare</a></td></tr>
+<tr class="memdesc:a6ff4e347839868db0770859a3dd55a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fourth template parameter: key_type comparison function object.  <a href="#a6ff4e347839868db0770859a3dd55a27">More...</a><br/></td></tr>
+<tr class="separator:a6ff4e347839868db0770859a3dd55a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d2e59411be6b53e63c29149a17fbcc"><td class="memItemLeft" align="right" valign="top">typedef Traits&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ab0d2e59411be6b53e63c29149a17fbcc">traits</a></td></tr>
+<tr class="separator:ab0d2e59411be6b53e63c29149a17fbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff35d256caa55f37343da8200179e608"><td class="memItemLeft" align="right" valign="top">typedef Allocator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a></td></tr>
+<tr class="memdesc:aff35d256caa55f37343da8200179e608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seventh template parameter: STL allocator for tree nodes.  <a href="#aff35d256caa55f37343da8200179e608">More...</a><br/></td></tr>
+<tr class="separator:aff35d256caa55f37343da8200179e608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a380c8745ff0a1c814742821e85403e"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a4a380c8745ff0a1c814742821e85403e">allow_duplicates</a> = Duplicates</td></tr>
 <tr class="separator:a4a380c8745ff0a1c814742821e85403e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
@@ -449,7 +449,7 @@ Fast Copy: Assign Operator and Copy Constructors</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Private Erase Functions</h2></td></tr>
-<tr class="memitem:aaa130f2c02b8f7701a6795c09d8988f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtlx_1_1BTree_1_1result__t.html">result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#aaa130f2c02b8f7701a6795c09d8988f5">erase_one_descend</a> (const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;key, <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> *curr, <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> *left, <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> *right, <a class="el" href="structtlx_1_1BTree_1_1InnerNode.html">InnerNode</a> *left_parent, <a class="el" href="structtlx_1_1BTree_1_1InnerNode.html">InnerNode</a> *right_parent, <a class="el" href="structtlx_1_1BTree_1_1InnerNode.html">InnerNode</a> *parent, unsigned int parentslot)</td></tr>
+<tr class="memitem:aaa130f2c02b8f7701a6795c09d8988f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtlx_1_1BTree_1_1result__t.html">result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#aaa130f2c02b8f7701a6795c09d8988f5">erase_one_descend</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key, <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> *curr, <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> *left, <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> *right, <a class="el" href="structtlx_1_1BTree_1_1InnerNode.html">InnerNode</a> *left_parent, <a class="el" href="structtlx_1_1BTree_1_1InnerNode.html">InnerNode</a> *right_parent, <a class="el" href="structtlx_1_1BTree_1_1InnerNode.html">InnerNode</a> *parent, unsigned int parentslot)</td></tr>
 <tr class="memdesc:aaa130f2c02b8f7701a6795c09d8988f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erase one (the first) key/data pair in the B+ tree matching key.  <a href="#aaa130f2c02b8f7701a6795c09d8988f5">More...</a><br/></td></tr>
 <tr class="separator:aaa130f2c02b8f7701a6795c09d8988f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59929a3ceec53dc1b7e288c245f7f4f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtlx_1_1BTree_1_1result__t.html">result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a59929a3ceec53dc1b7e288c245f7f4f7">erase_iter_descend</a> (const <a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a> &amp;iter, <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> *curr, <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> *left, <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> *right, <a class="el" href="structtlx_1_1BTree_1_1InnerNode.html">InnerNode</a> *left_parent, <a class="el" href="structtlx_1_1BTree_1_1InnerNode.html">InnerNode</a> *right_parent, <a class="el" href="structtlx_1_1BTree_1_1InnerNode.html">InnerNode</a> *parent, unsigned int parentslot)</td></tr>
@@ -472,7 +472,7 @@ Private Erase Functions</h2></td></tr>
 Verification of B+ Tree Invariants</h2></td></tr>
 <tr class="memitem:af26aef03a7dfaca8fabb99969312307a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#af26aef03a7dfaca8fabb99969312307a">verify</a> () const </td></tr>
 <tr class="separator:af26aef03a7dfaca8fabb99969312307a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6ed64cad61c5ac8cb5a4dc97ac34baf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ad6ed64cad61c5ac8cb5a4dc97ac34baf">verify_node</a> (const <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> *n, <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> *minkey, <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> *maxkey, <a class="el" href="structtlx_1_1BTree_1_1tree__stats.html">tree_stats</a> &amp;vstats) const </td></tr>
+<tr class="memitem:ad6ed64cad61c5ac8cb5a4dc97ac34baf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ad6ed64cad61c5ac8cb5a4dc97ac34baf">verify_node</a> (const <a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> *n, <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> *minkey, <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> *maxkey, <a class="el" href="structtlx_1_1BTree_1_1tree__stats.html">tree_stats</a> &amp;vstats) const </td></tr>
 <tr class="memdesc:ad6ed64cad61c5ac8cb5a4dc97ac34baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively descend down the tree and verify each node.  <a href="#ad6ed64cad61c5ac8cb5a4dc97ac34baf">More...</a><br/></td></tr>
 <tr class="separator:ad6ed64cad61c5ac8cb5a4dc97ac34baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a288f383c102e522614ffcb27b1b979a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a288f383c102e522614ffcb27b1b979a9">verify_leaflinks</a> () const </td></tr>
@@ -480,12 +480,12 @@ Verification of B+ Tree Invariants</h2></td></tr>
 <tr class="separator:a288f383c102e522614ffcb27b1b979a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a552a180d973faf4f7ccc14b7d639a160"></a>
+<a class="anchor" id="aff35d256caa55f37343da8200179e608"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef Alloc_ <a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a></td>
+          <td class="memname">typedef Allocator <a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -496,12 +496,12 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7462b1e2b24182127f494d58dbb95fa9"></a>
+<a class="anchor" id="a6ff4e347839868db0770859a3dd55a27"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef Compare_ <a class="el" href="classtlx_1_1BTree.html#a7462b1e2b24182127f494d58dbb95fa9">key_compare</a></td>
+          <td class="memname">typedef Compare <a class="el" href="classtlx_1_1BTree.html#a6ff4e347839868db0770859a3dd55a27">key_compare</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -512,12 +512,12 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1059238b7811618137ac16f4dc2e1d5e"></a>
+<a class="anchor" id="a21e576e049c90e014ffeb583c24d2f38"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef KeyOfValue_ <a class="el" href="classtlx_1_1BTree.html#a1059238b7811618137ac16f4dc2e1d5e">key_of_value</a></td>
+          <td class="memname">typedef KeyOfValue <a class="el" href="classtlx_1_1BTree.html#a21e576e049c90e014ffeb583c24d2f38">key_of_value</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -528,12 +528,12 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="acb65c421faf5d749d03882f64d184775"></a>
+<a class="anchor" id="a38ec6d0825c22c2d0ad31f3209ed2d02"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef Key_ <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a></td>
+          <td class="memname">typedef Key <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -548,7 +548,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt;<a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a>, <a class="el" href="classtlx_1_1BTree.html#a5512bf4c2a5c53a6205718ccc957d7a6">value_type</a>, <a class="el" href="classtlx_1_1BTree.html#a1059238b7811618137ac16f4dc2e1d5e">key_of_value</a>, <a class="el" href="classtlx_1_1BTree.html#a7462b1e2b24182127f494d58dbb95fa9">key_compare</a>, <a class="el" href="classtlx_1_1BTree.html#add985b33b72ef68812f3986e8df807f5">traits</a>, <a class="el" href="classtlx_1_1BTree.html#a4a380c8745ff0a1c814742821e85403e">allow_duplicates</a>, <a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a>&gt; <a class="el" href="classtlx_1_1BTree.html#a33b885434598e4d5ac5f06605e53b678">Self</a></td>
+          <td class="memname">typedef <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt;<a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a>, <a class="el" href="classtlx_1_1BTree.html#a04f69f8f2936ff309627511179c1709b">value_type</a>, <a class="el" href="classtlx_1_1BTree.html#a21e576e049c90e014ffeb583c24d2f38">key_of_value</a>, <a class="el" href="classtlx_1_1BTree.html#a6ff4e347839868db0770859a3dd55a27">key_compare</a>, <a class="el" href="classtlx_1_1BTree.html#ab0d2e59411be6b53e63c29149a17fbcc">traits</a>, <a class="el" href="classtlx_1_1BTree.html#a4a380c8745ff0a1c814742821e85403e">allow_duplicates</a>, <a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a>&gt; <a class="el" href="classtlx_1_1BTree.html#a33b885434598e4d5ac5f06605e53b678">Self</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -575,12 +575,12 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="add985b33b72ef68812f3986e8df807f5"></a>
+<a class="anchor" id="ab0d2e59411be6b53e63c29149a17fbcc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef Traits_ <a class="el" href="classtlx_1_1BTree.html#add985b33b72ef68812f3986e8df807f5">traits</a></td>
+          <td class="memname">typedef Traits <a class="el" href="classtlx_1_1BTree.html#ab0d2e59411be6b53e63c29149a17fbcc">traits</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -590,12 +590,12 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5512bf4c2a5c53a6205718ccc957d7a6"></a>
+<a class="anchor" id="a04f69f8f2936ff309627511179c1709b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef Value_ <a class="el" href="classtlx_1_1BTree.html#a5512bf4c2a5c53a6205718ccc957d7a6">value_type</a></td>
+          <td class="memname">typedef Value <a class="el" href="classtlx_1_1BTree.html#a04f69f8f2936ff309627511179c1709b">value_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -640,7 +640,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02304">2304</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02307">2307</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
 </div>
 </div>
@@ -655,8 +655,8 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classtlx_1_1BTree.html">BTree</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a> &amp;&#160;</td>
-          <td class="paramname"><em>alloc</em> = <code><a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a>()</code></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>alloc</em> = <code><a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a>()</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -682,14 +682,14 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classtlx_1_1BTree.html">BTree</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a7462b1e2b24182127f494d58dbb95fa9">key_compare</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a6ff4e347839868db0770859a3dd55a27">key_compare</a> &amp;&#160;</td>
           <td class="paramname"><em>kcf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a> &amp;&#160;</td>
-          <td class="paramname"><em>alloc</em> = <code><a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a>()</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>alloc</em> = <code><a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -731,8 +731,8 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a> &amp;&#160;</td>
-          <td class="paramname"><em>alloc</em> = <code><a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a>()</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>alloc</em> = <code><a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -774,14 +774,14 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a7462b1e2b24182127f494d58dbb95fa9">key_compare</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a6ff4e347839868db0770859a3dd55a27">key_compare</a> &amp;&#160;</td>
           <td class="paramname"><em>kcf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a> &amp;&#160;</td>
-          <td class="paramname"><em>alloc</em> = <code><a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a>()</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>alloc</em> = <code><a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -838,7 +838,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classtlx_1_1BTree.html">BTree</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -882,7 +882,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l01261">1261</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02152">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l01796">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::copy_recursive()</a>, <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>, and <a class="el" href="btree_8hpp_source.html#l02107">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::split_inner_node()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02155">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l01796">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::copy_recursive()</a>, <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>, and <a class="el" href="btree_8hpp_source.html#l02110">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::split_inner_node()</a>.</p>
 
 </div>
 </div>
@@ -911,7 +911,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l01253">1253</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02152">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l01796">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::copy_recursive()</a>, <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>, and <a class="el" href="btree_8hpp_source.html#l02071">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::split_leaf_node()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02155">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l01796">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::copy_recursive()</a>, <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>, and <a class="el" href="btree_8hpp_source.html#l02074">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::split_leaf_node()</a>.</p>
 
 </div>
 </div>
@@ -1002,7 +1002,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 </div><div class="memdoc">
 <p>Bulk load a sorted range. Loads items into leaves and constructs a B-tree above them. The tree must be empty when calling this function. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02152">2152</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02155">2155</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="btree__set_8hpp_source.html#l00482">btree_set&lt; Key_, Compare_, Traits_, Alloc_ &gt;::bulk_load()</a>, <a class="el" href="btree__multiset_8hpp_source.html#l00483">btree_multiset&lt; Key_, Compare_, Traits_, Alloc_ &gt;::bulk_load()</a>, <a class="el" href="btree__multimap_8hpp_source.html#l00495">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::bulk_load()</a>, and <a class="el" href="btree__map_8hpp_source.html#l00502">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::bulk_load()</a>.</p>
 
@@ -1107,7 +1107,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classtlx_1_1BTree.html#a49b489a408a211a90e766329c0732d7b">size_type</a> count </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1151,7 +1151,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l01499">1499</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02152">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree__set_8hpp_source.html#l00311">btree_set&lt; Key_, Compare_, Traits_, Alloc_ &gt;::empty()</a>, <a class="el" href="btree__multiset_8hpp_source.html#l00312">btree_multiset&lt; Key_, Compare_, Traits_, Alloc_ &gt;::empty()</a>, <a class="el" href="btree__map_8hpp_source.html#l00313">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::empty()</a>, and <a class="el" href="btree__multimap_8hpp_source.html#l00314">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::empty()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02155">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree__set_8hpp_source.html#l00311">btree_set&lt; Key_, Compare_, Traits_, Alloc_ &gt;::empty()</a>, <a class="el" href="btree__multiset_8hpp_source.html#l00312">btree_multiset&lt; Key_, Compare_, Traits_, Alloc_ &gt;::empty()</a>, <a class="el" href="btree__map_8hpp_source.html#l00313">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::empty()</a>, and <a class="el" href="btree__multimap_8hpp_source.html#l00314">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::empty()</a>.</p>
 
 </div>
 </div>
@@ -1219,7 +1219,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">std::pair&lt;<a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>, <a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>&gt; equal_range </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1249,7 +1249,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">std::pair&lt;<a class="el" href="classtlx_1_1BTree_1_1const__iterator.html">const_iterator</a>, <a class="el" href="classtlx_1_1BTree_1_1const__iterator.html">const_iterator</a>&gt; equal_range </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1277,7 +1277,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classtlx_1_1BTree.html#a49b489a408a211a90e766329c0732d7b">size_type</a> erase </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1290,7 +1290,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 </div><div class="memdoc">
 <p>Erases all the key/data pairs associated with the given key. This is implemented using <a class="el" href="classtlx_1_1BTree.html#a3a79f5c030eea924dbd8fcc9417b9263">erase_one()</a>. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02389">2389</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02392">2392</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="btree__set_8hpp_source.html#l00499">btree_set&lt; Key_, Compare_, Traits_, Alloc_ &gt;::erase()</a>, <a class="el" href="btree__multiset_8hpp_source.html#l00500">btree_multiset&lt; Key_, Compare_, Traits_, Alloc_ &gt;::erase()</a>, <a class="el" href="btree__multimap_8hpp_source.html#l00513">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::erase()</a>, and <a class="el" href="btree__map_8hpp_source.html#l00520">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::erase()</a>.</p>
 
@@ -1320,7 +1320,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Erase the key/data pair referenced by the iterator. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02402">2402</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02405">2405</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
 </div>
 </div>
@@ -1396,9 +1396,9 @@ Verification of B+ Tree Invariants</h2></td></tr>
 <p>Descends down the tree in search of an iterator. During the descent the parent, left and right siblings and their parents are computed and passed down. The difficulty is that the iterator contains only a pointer to a <a class="el" href="structtlx_1_1BTree_1_1LeafNode.html">LeafNode</a>, which means that this function must do a recursive depth first search for that leaf node in the subtree containing all pairs of the same key. This subtree can be very large, even the whole tree, though in practice it would not make sense to have so many duplicate keys.</p>
 <p>Once the referenced key/data pair is found, it is removed from the leaf and the same underflow cases are handled as in erase_one_descend. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02776">2776</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02779">2779</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02402">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, and <a class="el" href="btree_8hpp_source.html#l02776">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02405">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, and <a class="el" href="btree_8hpp_source.html#l02779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>.</p>
 
 </div>
 </div>
@@ -1412,7 +1412,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">bool erase_one </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1425,9 +1425,9 @@ Verification of B+ Tree Invariants</h2></td></tr>
 </div><div class="memdoc">
 <p>Erases one (the first) of the key/data pairs associated with the given key. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02365">2365</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02368">2368</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02389">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, <a class="el" href="btree__set_8hpp_source.html#l00494">btree_set&lt; Key_, Compare_, Traits_, Alloc_ &gt;::erase_one()</a>, <a class="el" href="btree__multiset_8hpp_source.html#l00494">btree_multiset&lt; Key_, Compare_, Traits_, Alloc_ &gt;::erase_one()</a>, <a class="el" href="btree__multimap_8hpp_source.html#l00507">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::erase_one()</a>, and <a class="el" href="btree__map_8hpp_source.html#l00514">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::erase_one()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02392">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, <a class="el" href="btree__set_8hpp_source.html#l00494">btree_set&lt; Key_, Compare_, Traits_, Alloc_ &gt;::erase_one()</a>, <a class="el" href="btree__multiset_8hpp_source.html#l00494">btree_multiset&lt; Key_, Compare_, Traits_, Alloc_ &gt;::erase_one()</a>, <a class="el" href="btree__multimap_8hpp_source.html#l00507">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::erase_one()</a>, and <a class="el" href="btree__map_8hpp_source.html#l00514">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::erase_one()</a>.</p>
 
 </div>
 </div>
@@ -1441,7 +1441,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="structtlx_1_1BTree_1_1result__t.html">result_t</a> erase_one_descend </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -1502,9 +1502,9 @@ Verification of B+ Tree Invariants</h2></td></tr>
 <p>Erase one (the first) key/data pair in the B+ tree matching key. </p>
 <p>Descends down the tree in search of key. During the descent the parent, left and right siblings and their parents are computed and passed down. Once the key/data pair is found, it is removed from the leaf. If the leaf underflows 6 different cases are handled. These cases resolve the underflow by shifting key/data pairs from adjacent sibling nodes, merging two sibling nodes or trimming the tree. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02446">2446</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02449">2449</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02365">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one()</a>, and <a class="el" href="btree_8hpp_source.html#l02446">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02368">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one()</a>, and <a class="el" href="btree_8hpp_source.html#l02449">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>.</p>
 
 </div>
 </div>
@@ -1518,7 +1518,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">bool exists </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1547,7 +1547,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a> find </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1576,7 +1576,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classtlx_1_1BTree_1_1const__iterator.html">const_iterator</a> find </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1609,7 +1609,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em>&#160;</td>
         </tr>
         <tr>
@@ -1628,7 +1628,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l01398">1398</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01584">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::count()</a>, <a class="el" href="btree_8hpp_source.html#l02776">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, <a class="el" href="btree_8hpp_source.html#l02446">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>, <a class="el" href="btree_8hpp_source.html#l01522">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::exists()</a>, <a class="el" href="btree_8hpp_source.html#l01542">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find()</a>, <a class="el" href="btree_8hpp_source.html#l01925">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l01616">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::lower_bound()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01584">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::count()</a>, <a class="el" href="btree_8hpp_source.html#l02779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, <a class="el" href="btree_8hpp_source.html#l02449">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>, <a class="el" href="btree_8hpp_source.html#l01522">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::exists()</a>, <a class="el" href="btree_8hpp_source.html#l01542">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find()</a>, <a class="el" href="btree_8hpp_source.html#l01928">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l01616">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::lower_bound()</a>.</p>
 
 </div>
 </div>
@@ -1648,7 +1648,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em>&#160;</td>
         </tr>
         <tr>
@@ -1696,7 +1696,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l01270">1270</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01294">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::clear()</a>, <a class="el" href="btree_8hpp_source.html#l01311">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::clear_recursive()</a>, <a class="el" href="btree_8hpp_source.html#l02776">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l02446">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01294">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::clear()</a>, <a class="el" href="btree_8hpp_source.html#l01311">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::clear_recursive()</a>, <a class="el" href="btree_8hpp_source.html#l02779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l02449">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>.</p>
 
 </div>
 </div>
@@ -1708,7 +1708,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a> get_allocator </td>
+          <td class="memname"><a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a> get_allocator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1766,7 +1766,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structtlx_1_1BTree_1_1InnerNode.html#a32be9540c1e0d06e1696d390ec0285c8">InnerNode::alloc_type</a> inner_node_allocator </td>
+          <td class="memname"><a class="el" href="structtlx_1_1BTree_1_1InnerNode.html#a420a071517903c1cfc59a6846534982d">InnerNode::alloc_type</a> inner_node_allocator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1797,7 +1797,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">std::pair&lt;<a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>, bool&gt; insert </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a5512bf4c2a5c53a6205718ccc957d7a6">value_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a04f69f8f2936ff309627511179c1709b">value_type</a> &amp;&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1832,7 +1832,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a5512bf4c2a5c53a6205718ccc957d7a6">value_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a04f69f8f2936ff309627511179c1709b">value_type</a> &amp;&#160;</td>
           <td class="paramname"><em>x</em>&#160;</td>
         </tr>
         <tr>
@@ -1906,19 +1906,19 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a5512bf4c2a5c53a6205718ccc957d7a6">value_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a04f69f8f2936ff309627511179c1709b">value_type</a> &amp;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> *&#160;</td>
           <td class="paramname"><em>splitkey</em>, </td>
         </tr>
         <tr>
@@ -1943,9 +1943,9 @@ Verification of B+ Tree Invariants</h2></td></tr>
 <p>Insert an item into the B+ tree. </p>
 <p>Descend down the nodes to a leaf, insert the key/data pair in a free slot. If the node overflows, then it must be split and the new split node inserted into the parent. Unroll / this splitting up to the root. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l01925">1925</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l01928">1928</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01925">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01928">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>.</p>
 
 </div>
 </div>
@@ -1959,13 +1959,13 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">std::pair&lt;<a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>, bool&gt; insert_start </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a5512bf4c2a5c53a6205718ccc957d7a6">value_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a04f69f8f2936ff309627511179c1709b">value_type</a> &amp;&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -1996,7 +1996,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtlx_1_1BTree.html#a7462b1e2b24182127f494d58dbb95fa9">key_compare</a> key_comp </td>
+          <td class="memname"><a class="el" href="classtlx_1_1BTree.html#a6ff4e347839868db0770859a3dd55a27">key_compare</a> key_comp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -2027,13 +2027,13 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">bool key_equal </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -2052,7 +2052,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l01221">1221</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01584">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::count()</a>, <a class="el" href="btree_8hpp_source.html#l02446">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>, <a class="el" href="btree_8hpp_source.html#l01522">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::exists()</a>, <a class="el" href="btree_8hpp_source.html#l01542">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find()</a>, <a class="el" href="btree_8hpp_source.html#l01925">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l03556">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_node()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01584">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::count()</a>, <a class="el" href="btree_8hpp_source.html#l02449">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>, <a class="el" href="btree_8hpp_source.html#l01522">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::exists()</a>, <a class="el" href="btree_8hpp_source.html#l01542">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find()</a>, <a class="el" href="btree_8hpp_source.html#l01928">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l03559">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_node()</a>.</p>
 
 </div>
 </div>
@@ -2066,13 +2066,13 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">bool key_greater </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -2104,13 +2104,13 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">bool key_greaterequal </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -2130,7 +2130,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l01215">1215</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l03556">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_node()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l03559">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_node()</a>.</p>
 
 </div>
 </div>
@@ -2144,13 +2144,13 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">bool key_less </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -2170,7 +2170,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l01200">1200</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02776">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, <a class="el" href="btree_8hpp_source.html#l01398">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find_lower()</a>, and <a class="el" href="btree_8hpp_source.html#l01445">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find_upper()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, <a class="el" href="btree_8hpp_source.html#l01398">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find_lower()</a>, and <a class="el" href="btree_8hpp_source.html#l01445">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find_upper()</a>.</p>
 
 </div>
 </div>
@@ -2184,13 +2184,13 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">bool key_lessequal </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em>&#160;</td>
         </tr>
         <tr>
@@ -2210,7 +2210,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l01205">1205</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01398">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find_lower()</a>, <a class="el" href="btree_8hpp_source.html#l01445">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find_upper()</a>, <a class="el" href="btree_8hpp_source.html#l03650">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_leaflinks()</a>, and <a class="el" href="btree_8hpp_source.html#l03556">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_node()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01398">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find_lower()</a>, <a class="el" href="btree_8hpp_source.html#l01445">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find_upper()</a>, <a class="el" href="btree_8hpp_source.html#l03653">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_leaflinks()</a>, and <a class="el" href="btree_8hpp_source.html#l03559">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_node()</a>.</p>
 
 </div>
 </div>
@@ -2222,7 +2222,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structtlx_1_1BTree_1_1LeafNode.html#ace1063cc97cf8d80fbdbc0cc7c1c2ddb">LeafNode::alloc_type</a> leaf_node_allocator </td>
+          <td class="memname"><a class="el" href="structtlx_1_1BTree_1_1LeafNode.html#a022e856be0486dadd1a67f21a65562f4">LeafNode::alloc_type</a> leaf_node_allocator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2253,7 +2253,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a> lower_bound </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2282,7 +2282,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classtlx_1_1BTree_1_1const__iterator.html">const_iterator</a> lower_bound </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -2372,9 +2372,9 @@ Verification of B+ Tree Invariants</h2></td></tr>
 </div><div class="memdoc">
 <p>Merge two inner nodes. The function moves all key/childid pairs from right to left and sets right's slotuse to zero. The right slot is then removed by the calling parent node. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03166">3166</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03169">3169</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02776">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l02446">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l02449">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>.</p>
 
 </div>
 </div>
@@ -2417,9 +2417,9 @@ Verification of B+ Tree Invariants</h2></td></tr>
 </div><div class="memdoc">
 <p>Merge two leaf nodes. The function moves all key/data pairs from right to left and sets right's slotuse to zero. The right slot is then removed by the calling parent node. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03136">3136</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03139">3139</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02776">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l02446">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l02449">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>.</p>
 
 </div>
 </div>
@@ -2433,7 +2433,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">bool operator!= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -2461,7 +2461,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">bool operator&lt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -2488,7 +2488,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">bool operator&lt;= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -2516,7 +2516,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classtlx_1_1BTree.html">BTree</a>&amp; operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2544,7 +2544,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">bool operator== </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -2571,7 +2571,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">bool operator&gt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -2599,7 +2599,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">bool operator&gt;= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -2770,9 +2770,9 @@ Verification of B+ Tree Invariants</h2></td></tr>
 </div><div class="memdoc">
 <p>Balance two inner nodes. The function moves key/data pairs from right to left so that both nodes are equally filled. The parent node is updated if possible. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03261">3261</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03264">3264</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02776">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l02446">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l02449">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>.</p>
 
 </div>
 </div>
@@ -2821,9 +2821,9 @@ Verification of B+ Tree Invariants</h2></td></tr>
 </div><div class="memdoc">
 <p>Balance two leaf nodes. The function moves key/data pairs from right to left so that both nodes are equally filled. The parent node is updated if possible. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03212">3212</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03215">3215</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02776">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l02446">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l02449">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>.</p>
 
 </div>
 </div>
@@ -2872,9 +2872,9 @@ Verification of B+ Tree Invariants</h2></td></tr>
 </div><div class="memdoc">
 <p>Balance two inner nodes. The function moves key/data pairs from left to right so that both nodes are equally filled. The parent node is updated if possible. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03382">3382</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03385">3385</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02776">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l02446">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l02449">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>.</p>
 
 </div>
 </div>
@@ -2923,9 +2923,9 @@ Verification of B+ Tree Invariants</h2></td></tr>
 </div><div class="memdoc">
 <p>Balance two leaf nodes. The function moves key/data pairs from left to right so that both nodes are equally filled. The parent node is updated if possible. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03326">3326</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03329">3329</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02776">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l02446">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l02449">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>.</p>
 
 </div>
 </div>
@@ -2954,7 +2954,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l01494">1494</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::BTree()</a>, <a class="el" href="btree_8hpp_source.html#l01499">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::empty()</a>, <a class="el" href="btree_8hpp_source.html#l02402">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, <a class="el" href="btree_8hpp_source.html#l02365">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one()</a>, <a class="el" href="btree_8hpp_source.html#l01755">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::operator=()</a>, <a class="el" href="btree_8hpp_source.html#l01716">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::operator==()</a>, <a class="el" href="btree__set_8hpp_source.html#l00306">btree_set&lt; Key_, Compare_, Traits_, Alloc_ &gt;::size()</a>, <a class="el" href="btree__multiset_8hpp_source.html#l00307">btree_multiset&lt; Key_, Compare_, Traits_, Alloc_ &gt;::size()</a>, <a class="el" href="btree__map_8hpp_source.html#l00308">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::size()</a>, <a class="el" href="btree__multimap_8hpp_source.html#l00309">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::size()</a>, and <a class="el" href="btree_8hpp_source.html#l03650">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_leaflinks()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::BTree()</a>, <a class="el" href="btree_8hpp_source.html#l01499">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::empty()</a>, <a class="el" href="btree_8hpp_source.html#l02405">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, <a class="el" href="btree_8hpp_source.html#l02368">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one()</a>, <a class="el" href="btree_8hpp_source.html#l01755">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::operator=()</a>, <a class="el" href="btree_8hpp_source.html#l01716">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::operator==()</a>, <a class="el" href="btree__set_8hpp_source.html#l00306">btree_set&lt; Key_, Compare_, Traits_, Alloc_ &gt;::size()</a>, <a class="el" href="btree__multiset_8hpp_source.html#l00307">btree_multiset&lt; Key_, Compare_, Traits_, Alloc_ &gt;::size()</a>, <a class="el" href="btree__map_8hpp_source.html#l00308">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::size()</a>, <a class="el" href="btree__multimap_8hpp_source.html#l00309">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::size()</a>, and <a class="el" href="btree_8hpp_source.html#l03653">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_leaflinks()</a>.</p>
 
 </div>
 </div>
@@ -2974,7 +2974,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> *&#160;</td>
           <td class="paramname"><em>out_newkey</em>, </td>
         </tr>
         <tr>
@@ -3003,9 +3003,9 @@ Verification of B+ Tree Invariants</h2></td></tr>
 </div><div class="memdoc">
 <p>Split up an inner node into two equally-filled sibling nodes. Returns the new nodes and it's insertion key in the two parameters. Requires the slot of the item will be inserted, so the nodes will be the same size after the insert. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02107">2107</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02110">2110</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01925">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01928">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>.</p>
 
 </div>
 </div>
@@ -3025,7 +3025,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> *&#160;</td>
           <td class="paramname"><em>out_newkey</em>, </td>
         </tr>
         <tr>
@@ -3048,9 +3048,9 @@ Verification of B+ Tree Invariants</h2></td></tr>
 </div><div class="memdoc">
 <p>Split up a leaf node into two equally-filled sibling leaves. Returns the new nodes and it's insertion key in the two parameters. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02071">2071</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l02074">2074</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01925">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01928">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>.</p>
 
 </div>
 </div>
@@ -3064,7 +3064,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname">void swap </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classtlx_1_1BTree.html">BTree</a>&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt; &amp;&#160;</td>
           <td class="paramname"><em>from</em></td><td>)</td>
           <td></td>
         </tr>
@@ -3092,7 +3092,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a> upper_bound </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -3121,7 +3121,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classtlx_1_1BTree_1_1const__iterator.html">const_iterator</a> upper_bound </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -3188,9 +3188,9 @@ Verification of B+ Tree Invariants</h2></td></tr>
 </div><div class="memdoc">
 <p>Run a thorough verification of all B+ tree invariants. The program aborts via <a class="el" href="die_2core_8hpp.html#ae75b813cfb11a89830e7e7e98dec7ac0">tlx_die_unless()</a> if something is wrong. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03538">3538</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03541">3541</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::BTree()</a>, <a class="el" href="btree_8hpp_source.html#l02152">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l02402">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, <a class="el" href="btree_8hpp_source.html#l02365">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one()</a>, <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>, <a class="el" href="btree_8hpp_source.html#l01755">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::operator=()</a>, <a class="el" href="btree__set_8hpp_source.html#l00545">btree_set&lt; Key_, Compare_, Traits_, Alloc_ &gt;::verify()</a>, <a class="el" href="btree__multiset_8hpp_source.html#l00546">btree_multiset&lt; Key_, Compare_, Traits_, Alloc_ &gt;::verify()</a>, <a class="el" href="btree__multimap_8hpp_source.html#l00559">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::verify()</a>, and <a class="el" href="btree__map_8hpp_source.html#l00566">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::verify()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::BTree()</a>, <a class="el" href="btree_8hpp_source.html#l02155">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l02405">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, <a class="el" href="btree_8hpp_source.html#l02368">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one()</a>, <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>, <a class="el" href="btree_8hpp_source.html#l01755">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::operator=()</a>, <a class="el" href="btree__set_8hpp_source.html#l00545">btree_set&lt; Key_, Compare_, Traits_, Alloc_ &gt;::verify()</a>, <a class="el" href="btree__multiset_8hpp_source.html#l00546">btree_multiset&lt; Key_, Compare_, Traits_, Alloc_ &gt;::verify()</a>, <a class="el" href="btree__multimap_8hpp_source.html#l00559">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::verify()</a>, and <a class="el" href="btree__map_8hpp_source.html#l00566">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;::verify()</a>.</p>
 
 </div>
 </div>
@@ -3217,9 +3217,9 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Verify the double linked list of leaves. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03650">3650</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03653">3653</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l03538">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l03541">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify()</a>.</p>
 
 </div>
 </div>
@@ -3239,13 +3239,13 @@ Verification of B+ Tree Invariants</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> *&#160;</td>
           <td class="paramname"><em>minkey</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775">key_type</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> *&#160;</td>
           <td class="paramname"><em>maxkey</em>, </td>
         </tr>
         <tr>
@@ -3269,9 +3269,9 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Recursively descend down the tree and verify each node. </p>
 
-<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03556">3556</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="btree_8hpp_source.html#l03559">3559</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l03538">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify()</a>, and <a class="el" href="btree_8hpp_source.html#l03556">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_node()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l03541">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify()</a>, and <a class="el" href="btree_8hpp_source.html#l03559">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_node()</a>.</p>
 
 </div>
 </div>
@@ -3284,7 +3284,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160">allocator_type</a> allocator_</td>
+          <td class="memname"><a class="el" href="classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608">allocator_type</a> allocator_</td>
         </tr>
       </table>
   </td>
@@ -3310,7 +3310,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const bool allow_duplicates = Duplicates_</td>
+          <td class="memname">const bool allow_duplicates = Duplicates</td>
         </tr>
       </table>
   </td>
@@ -3323,7 +3323,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l00150">150</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02389">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, and <a class="el" href="btree_8hpp_source.html#l01925">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02392">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, and <a class="el" href="btree_8hpp_source.html#l01928">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>.</p>
 
 </div>
 </div>
@@ -3348,7 +3348,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l00203">203</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02402">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, <a class="el" href="btree_8hpp_source.html#l02365">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one()</a>, <a class="el" href="btree_8hpp_source.html#l01925">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02405">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, <a class="el" href="btree_8hpp_source.html#l02368">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one()</a>, <a class="el" href="btree_8hpp_source.html#l01928">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>, and <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>.</p>
 
 </div>
 </div>
@@ -3374,7 +3374,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l01080">1080</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01341">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::begin()</a>, <a class="el" href="btree_8hpp_source.html#l02152">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l01294">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::clear()</a>, <a class="el" href="btree_8hpp_source.html#l01796">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::copy_recursive()</a>, <a class="el" href="btree_8hpp_source.html#l02776">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, <a class="el" href="btree_8hpp_source.html#l02446">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>, <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>, <a class="el" href="btree_8hpp_source.html#l01144">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::swap()</a>, and <a class="el" href="btree_8hpp_source.html#l03650">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_leaflinks()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01341">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::begin()</a>, <a class="el" href="btree_8hpp_source.html#l02155">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l01294">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::clear()</a>, <a class="el" href="btree_8hpp_source.html#l01796">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::copy_recursive()</a>, <a class="el" href="btree_8hpp_source.html#l02779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, <a class="el" href="btree_8hpp_source.html#l02449">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>, <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>, <a class="el" href="btree_8hpp_source.html#l01144">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::swap()</a>, and <a class="el" href="btree_8hpp_source.html#l03653">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_leaflinks()</a>.</p>
 
 </div>
 </div>
@@ -3399,7 +3399,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l00184">184</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02152">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l01925">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>, <a class="el" href="btree_8hpp_source.html#l00256">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;::InnerNode::is_full()</a>, <a class="el" href="btree_8hpp_source.html#l03166">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::merge_inner()</a>, <a class="el" href="btree_8hpp_source.html#l03261">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::shift_left_inner()</a>, and <a class="el" href="btree_8hpp_source.html#l03382">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::shift_right_inner()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02155">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l01928">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>, <a class="el" href="btree_8hpp_source.html#l00256">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;::InnerNode::is_full()</a>, <a class="el" href="btree_8hpp_source.html#l03169">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::merge_inner()</a>, <a class="el" href="btree_8hpp_source.html#l03264">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::shift_left_inner()</a>, and <a class="el" href="btree_8hpp_source.html#l03385">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::shift_right_inner()</a>.</p>
 
 </div>
 </div>
@@ -3424,7 +3424,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l00194">194</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l00261">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;::InnerNode::is_few()</a>, and <a class="el" href="btree_8hpp_source.html#l00266">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;::InnerNode::is_underflow()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l00261">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;::InnerNode::is_few()</a>, and <a class="el" href="btree_8hpp_source.html#l00266">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;::InnerNode::is_underflow()</a>.</p>
 
 </div>
 </div>
@@ -3436,7 +3436,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtlx_1_1BTree.html#a7462b1e2b24182127f494d58dbb95fa9">key_compare</a> key_less_</td>
+          <td class="memname"><a class="el" href="classtlx_1_1BTree.html#a6ff4e347839868db0770859a3dd55a27">key_compare</a> key_less_</td>
         </tr>
       </table>
   </td>
@@ -3475,7 +3475,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l00180">180</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02152">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l00298">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;::LeafNode::is_full()</a>, <a class="el" href="btree_8hpp_source.html#l03136">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::merge_leaves()</a>, <a class="el" href="btree_8hpp_source.html#l03212">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::shift_left_leaf()</a>, and <a class="el" href="btree_8hpp_source.html#l03326">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::shift_right_leaf()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02155">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l00298">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;::LeafNode::is_full()</a>, <a class="el" href="btree_8hpp_source.html#l03139">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::merge_leaves()</a>, <a class="el" href="btree_8hpp_source.html#l03215">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::shift_left_leaf()</a>, and <a class="el" href="btree_8hpp_source.html#l03329">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::shift_right_leaf()</a>.</p>
 
 </div>
 </div>
@@ -3500,7 +3500,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l00189">189</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l00303">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;::LeafNode::is_few()</a>, and <a class="el" href="btree_8hpp_source.html#l00308">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;::LeafNode::is_underflow()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l00303">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;::LeafNode::is_few()</a>, and <a class="el" href="btree_8hpp_source.html#l00308">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;::LeafNode::is_underflow()</a>.</p>
 
 </div>
 </div>
@@ -3526,7 +3526,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l01077">1077</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::BTree()</a>, <a class="el" href="btree_8hpp_source.html#l02152">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l01294">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::clear()</a>, <a class="el" href="btree_8hpp_source.html#l01584">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::count()</a>, <a class="el" href="btree_8hpp_source.html#l02402">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, <a class="el" href="btree_8hpp_source.html#l02776">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, <a class="el" href="btree_8hpp_source.html#l02365">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one()</a>, <a class="el" href="btree_8hpp_source.html#l02446">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>, <a class="el" href="btree_8hpp_source.html#l01522">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::exists()</a>, <a class="el" href="btree_8hpp_source.html#l01542">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find()</a>, <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>, <a class="el" href="btree_8hpp_source.html#l01616">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::lower_bound()</a>, <a class="el" href="btree_8hpp_source.html#l01755">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::operator=()</a>, <a class="el" href="btree_8hpp_source.html#l01144">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::swap()</a>, <a class="el" href="btree_8hpp_source.html#l01656">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::upper_bound()</a>, <a class="el" href="btree_8hpp_source.html#l03538">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify()</a>, and <a class="el" href="btree_8hpp_source.html#l03556">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_node()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::BTree()</a>, <a class="el" href="btree_8hpp_source.html#l02155">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l01294">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::clear()</a>, <a class="el" href="btree_8hpp_source.html#l01584">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::count()</a>, <a class="el" href="btree_8hpp_source.html#l02405">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, <a class="el" href="btree_8hpp_source.html#l02779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, <a class="el" href="btree_8hpp_source.html#l02368">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one()</a>, <a class="el" href="btree_8hpp_source.html#l02449">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>, <a class="el" href="btree_8hpp_source.html#l01522">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::exists()</a>, <a class="el" href="btree_8hpp_source.html#l01542">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find()</a>, <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>, <a class="el" href="btree_8hpp_source.html#l01616">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::lower_bound()</a>, <a class="el" href="btree_8hpp_source.html#l01755">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::operator=()</a>, <a class="el" href="btree_8hpp_source.html#l01144">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::swap()</a>, <a class="el" href="btree_8hpp_source.html#l01656">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::upper_bound()</a>, <a class="el" href="btree_8hpp_source.html#l03541">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify()</a>, and <a class="el" href="btree_8hpp_source.html#l03559">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_node()</a>.</p>
 
 </div>
 </div>
@@ -3551,7 +3551,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l00198">198</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::BTree()</a>, <a class="el" href="btree_8hpp_source.html#l02152">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l02402">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, <a class="el" href="btree_8hpp_source.html#l02365">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one()</a>, <a class="el" href="btree_8hpp_source.html#l01398">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find_lower()</a>, <a class="el" href="btree_8hpp_source.html#l01445">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find_upper()</a>, <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>, <a class="el" href="btree_8hpp_source.html#l03166">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::merge_inner()</a>, <a class="el" href="btree_8hpp_source.html#l01755">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::operator=()</a>, <a class="el" href="btree_8hpp_source.html#l03261">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::shift_left_inner()</a>, <a class="el" href="btree_8hpp_source.html#l03382">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::shift_right_inner()</a>, and <a class="el" href="btree_8hpp_source.html#l03326">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::shift_right_leaf()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::BTree()</a>, <a class="el" href="btree_8hpp_source.html#l02155">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l02405">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, <a class="el" href="btree_8hpp_source.html#l02368">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one()</a>, <a class="el" href="btree_8hpp_source.html#l01398">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find_lower()</a>, <a class="el" href="btree_8hpp_source.html#l01445">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::find_upper()</a>, <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>, <a class="el" href="btree_8hpp_source.html#l03169">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::merge_inner()</a>, <a class="el" href="btree_8hpp_source.html#l01755">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::operator=()</a>, <a class="el" href="btree_8hpp_source.html#l03264">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::shift_left_inner()</a>, <a class="el" href="btree_8hpp_source.html#l03385">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::shift_right_inner()</a>, and <a class="el" href="btree_8hpp_source.html#l03329">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::shift_right_leaf()</a>.</p>
 
 </div>
 </div>
@@ -3577,7 +3577,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l01086">1086</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01261">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::allocate_inner()</a>, <a class="el" href="btree_8hpp_source.html#l01253">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::allocate_leaf()</a>, <a class="el" href="btree_8hpp_source.html#l01779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::BTree()</a>, <a class="el" href="btree_8hpp_source.html#l02152">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l01294">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::clear()</a>, <a class="el" href="btree_8hpp_source.html#l02402">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, <a class="el" href="btree_8hpp_source.html#l02776">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, <a class="el" href="btree_8hpp_source.html#l02365">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one()</a>, <a class="el" href="btree_8hpp_source.html#l02446">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>, <a class="el" href="btree_8hpp_source.html#l01270">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::free_node()</a>, <a class="el" href="btree_8hpp_source.html#l01510">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::get_stats()</a>, <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>, <a class="el" href="btree_8hpp_source.html#l01755">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::operator=()</a>, <a class="el" href="btree_8hpp_source.html#l01494">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::size()</a>, <a class="el" href="btree_8hpp_source.html#l01144">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::swap()</a>, and <a class="el" href="btree_8hpp_source.html#l03538">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l01261">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::allocate_inner()</a>, <a class="el" href="btree_8hpp_source.html#l01253">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::allocate_leaf()</a>, <a class="el" href="btree_8hpp_source.html#l01779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::BTree()</a>, <a class="el" href="btree_8hpp_source.html#l02155">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l01294">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::clear()</a>, <a class="el" href="btree_8hpp_source.html#l02405">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase()</a>, <a class="el" href="btree_8hpp_source.html#l02779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, <a class="el" href="btree_8hpp_source.html#l02368">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one()</a>, <a class="el" href="btree_8hpp_source.html#l02449">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>, <a class="el" href="btree_8hpp_source.html#l01270">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::free_node()</a>, <a class="el" href="btree_8hpp_source.html#l01510">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::get_stats()</a>, <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>, <a class="el" href="btree_8hpp_source.html#l01755">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::operator=()</a>, <a class="el" href="btree_8hpp_source.html#l01494">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::size()</a>, <a class="el" href="btree_8hpp_source.html#l01144">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::swap()</a>, and <a class="el" href="btree_8hpp_source.html#l03541">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify()</a>.</p>
 
 </div>
 </div>
@@ -3603,7 +3603,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 <p>Definition at line <a class="el" href="btree_8hpp_source.html#l01083">1083</a> of file <a class="el" href="btree_8hpp_source.html">btree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02152">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l01294">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::clear()</a>, <a class="el" href="btree_8hpp_source.html#l01796">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::copy_recursive()</a>, <a class="el" href="btree_8hpp_source.html#l01347">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::end()</a>, <a class="el" href="btree_8hpp_source.html#l02776">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, <a class="el" href="btree_8hpp_source.html#l02446">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>, <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>, <a class="el" href="btree_8hpp_source.html#l03136">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::merge_leaves()</a>, <a class="el" href="btree_8hpp_source.html#l02071">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::split_leaf_node()</a>, <a class="el" href="btree_8hpp_source.html#l01144">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::swap()</a>, and <a class="el" href="btree_8hpp_source.html#l03650">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_leaflinks()</a>.</p>
+<p>Referenced by <a class="el" href="btree_8hpp_source.html#l02155">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::bulk_load()</a>, <a class="el" href="btree_8hpp_source.html#l01294">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::clear()</a>, <a class="el" href="btree_8hpp_source.html#l01796">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::copy_recursive()</a>, <a class="el" href="btree_8hpp_source.html#l01347">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::end()</a>, <a class="el" href="btree_8hpp_source.html#l02779">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_iter_descend()</a>, <a class="el" href="btree_8hpp_source.html#l02449">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::erase_one_descend()</a>, <a class="el" href="btree_8hpp_source.html#l01878">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_start()</a>, <a class="el" href="btree_8hpp_source.html#l03139">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::merge_leaves()</a>, <a class="el" href="btree_8hpp_source.html#l02074">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::split_leaf_node()</a>, <a class="el" href="btree_8hpp_source.html#l01144">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::swap()</a>, and <a class="el" href="btree_8hpp_source.html#l03653">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_leaflinks()</a>.</p>
 
 </div>
 </div>
@@ -3616,7 +3616,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacetlx.html">tlx</a></li><li class="navelem"><a class="el" href="classtlx_1_1BTree.html">BTree</a></li>
-    <li class="footer">Generated on Tue Mar 5 2019 05:24:30 for Thrill by
+    <li class="footer">Generated on Tue Mar 19 2019 19:54:31 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

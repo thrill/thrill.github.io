@@ -95,6 +95,7 @@ var namespacetlx =
     [ "SHA512", "classtlx_1_1SHA512.html", "classtlx_1_1SHA512" ],
     [ "SimpleVector", "classtlx_1_1SimpleVector.html", "classtlx_1_1SimpleVector" ],
     [ "SpacingLogger", "classtlx_1_1SpacingLogger.html", "classtlx_1_1SpacingLogger" ],
+    [ "SplayTree", "classtlx_1_1SplayTree.html", "classtlx_1_1SplayTree" ],
     [ "StackAllocator", "classtlx_1_1StackAllocator.html", "classtlx_1_1StackAllocator" ],
     [ "StackArena", "classtlx_1_1StackArena.html", "classtlx_1_1StackArena" ],
     [ "StaticIndex", "structtlx_1_1StaticIndex.html", "structtlx_1_1StaticIndex" ],

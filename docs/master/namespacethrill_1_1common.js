@@ -43,7 +43,6 @@ var namespacethrill_1_1common =
     [ "Sampling", "classthrill_1_1common_1_1Sampling.html", "classthrill_1_1common_1_1Sampling" ],
     [ "SharedState", "classthrill_1_1common_1_1SharedState.html", "classthrill_1_1common_1_1SharedState" ],
     [ "Singleton", "classthrill_1_1common_1_1Singleton.html", "classthrill_1_1common_1_1Singleton" ],
-    [ "SplayzTree", "classthrill_1_1common_1_1SplayzTree.html", "classthrill_1_1common_1_1SplayzTree" ],
     [ "StatsCounter", "classthrill_1_1common_1_1StatsCounter.html", null ],
     [ "StatsCounter< ValueType_, false >", "classthrill_1_1common_1_1StatsCounter_3_01ValueType___00_01false_01_4.html", "classthrill_1_1common_1_1StatsCounter_3_01ValueType___00_01false_01_4" ],
     [ "StatsCounter< ValueType_, true >", "classthrill_1_1common_1_1StatsCounter_3_01ValueType___00_01true_01_4.html", "classthrill_1_1common_1_1StatsCounter_3_01ValueType___00_01true_01_4" ],

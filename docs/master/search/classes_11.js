@@ -59,7 +59,7 @@ var searchData=
   ['sourcenode',['SourceNode',['../classthrill_1_1api_1_1SourceNode.html',1,'thrill::api']]],
   ['sourcenode_3c_20std_3a_3astring_20_3e',['SourceNode&lt; std::string &gt;',['../classthrill_1_1api_1_1SourceNode.html',1,'thrill::api']]],
   ['spacinglogger',['SpacingLogger',['../classtlx_1_1SpacingLogger.html',1,'tlx']]],
-  ['splayztree',['SplayzTree',['../classthrill_1_1common_1_1SplayzTree.html',1,'thrill::common']]],
+  ['splaytree',['SplayTree',['../classtlx_1_1SplayTree.html',1,'tlx']]],
   ['srcblockpair',['SrcBlockPair',['../structthrill_1_1data_1_1MixBlockQueue_1_1SrcBlockPair.html',1,'thrill::data::MixBlockQueue']]],
   ['stackallocator',['StackAllocator',['../classtlx_1_1StackAllocator.html',1,'tlx']]],
   ['stackarena',['StackArena',['../classtlx_1_1StackArena.html',1,'tlx']]],

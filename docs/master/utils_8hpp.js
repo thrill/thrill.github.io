@@ -1,7 +1,5 @@
 var utils_8hpp =
 [
-    [ "LIKELY", "utils_8hpp.html#ad2918fb704172af36604e04ba735ded2", null ],
-    [ "UNLIKELY", "utils_8hpp.html#a21c2be1ee56688a6f485ab194b697da7", null ],
     [ "atoi64", "utils_8hpp.html#aab6c69f179a6bb1c696b46c2143060fb", null ],
     [ "atouint64", "utils_8hpp.html#a789877e0d9e8e3096bfc85fa2e1044c8", null ],
     [ "div_ceil", "utils_8hpp.html#a37c0eb3ef1f7ba69c1b8a912cb23f5e5", null ],

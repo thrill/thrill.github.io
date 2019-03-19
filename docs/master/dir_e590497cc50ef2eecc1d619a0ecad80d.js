@@ -33,7 +33,6 @@ var dir_e590497cc50ef2eecc1d619a0ecad80d =
     [ "sampling.hpp", "sampling_8hpp.html", "sampling_8hpp" ],
     [ "shared_state.hpp", "thrill_2common_2shared__state_8hpp.html", "thrill_2common_2shared__state_8hpp" ],
     [ "singleton.hpp", "thrill_2common_2singleton_8hpp.html", "thrill_2common_2singleton_8hpp" ],
-    [ "splay_tree.hpp", "splay__tree_8hpp.html", "splay__tree_8hpp" ],
     [ "stats_counter.hpp", "stats__counter_8hpp.html", "stats__counter_8hpp" ],
     [ "stats_timer.hpp", "stats__timer_8hpp.html", "stats__timer_8hpp" ],
     [ "string.hpp", "thrill_2common_2string_8hpp.html", "thrill_2common_2string_8hpp" ],

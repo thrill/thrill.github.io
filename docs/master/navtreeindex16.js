@@ -1,13 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"classthrill_1_1data_1_1MixStreamData.html":[3,1,1,28],
-"classthrill_1_1data_1_1MixStreamData.html#a003ef159b7259479c2b087912970e4c4":[3,1,1,28,15],
-"classthrill_1_1data_1_1MixStreamData.html#a0e7fd7ca77f77da1e0b65d4b35451f44":[3,1,1,28,16],
-"classthrill_1_1data_1_1MixStreamData.html#a138c267e6813d07bf164d653f176dca5":[3,1,1,28,4],
-"classthrill_1_1data_1_1MixStreamData.html#a29dc6798f18d73abd4ba8e4910f6831f":[3,1,1,28,6],
-"classthrill_1_1data_1_1MixStreamData.html#a3c310149e32ff3cb3a3de4d6c458e17f":[3,1,1,28,11],
-"classthrill_1_1data_1_1MixStreamData.html#a4787f90b7b2f8ae1b76c61a3fbfee1ca":[3,1,1,28,13],
-"classthrill_1_1data_1_1MixStreamData.html#a502e1d3a784c2cd0901a9ea86f6e7777":[3,1,1,28,5],
 "classthrill_1_1data_1_1MixStreamData.html#a65c28b3f8e00feef339ed0c65853eec8":[3,1,1,28,10],
 "classthrill_1_1data_1_1MixStreamData.html#a6b72e54baf646b08b4b87f987f583dcb":[3,1,1,28,17],
 "classthrill_1_1data_1_1MixStreamData.html#a7812898dd632c8e18679121699fc5395":[3,1,1,28,3],
@@ -249,5 +241,13 @@ var NAVTREEINDEX16 =
 "classthrill_1_1data_1_1StreamSink.html#a0f5b8e096afb06ebf3b666ae76ed9995":[3,1,1,49,31],
 "classthrill_1_1data_1_1StreamSink.html#a24c88f59fb7d18a293dbc5e6cbebd744":[3,1,1,49,10],
 "classthrill_1_1data_1_1StreamSink.html#a29dc6798f18d73abd4ba8e4910f6831f":[3,1,1,49,9],
-"classthrill_1_1data_1_1StreamSink.html#a2d55f127bad270629cbf8ef4161558b9":[3,1,1,49,30]
+"classthrill_1_1data_1_1StreamSink.html#a2d55f127bad270629cbf8ef4161558b9":[3,1,1,49,30],
+"classthrill_1_1data_1_1StreamSink.html#a3c07d3b3d645dfdff219855e7b69e54e":[3,1,1,49,23],
+"classthrill_1_1data_1_1StreamSink.html#a62f1fb01dec488ad1724ff8b40c9cd7c":[3,1,1,49,15],
+"classthrill_1_1data_1_1StreamSink.html#a6b72e54baf646b08b4b87f987f583dcb":[3,1,1,49,22],
+"classthrill_1_1data_1_1StreamSink.html#a7ac3ec26751fe8ed4578bcb7a2ae1117":[3,1,1,49,24],
+"classthrill_1_1data_1_1StreamSink.html#a86a685ea35fd63df45d4a3443d7f88e8":[3,1,1,49,17],
+"classthrill_1_1data_1_1StreamSink.html#a89bcbd30167c8563fc80f12bd313d084":[3,1,1,49,2],
+"classthrill_1_1data_1_1StreamSink.html#a8a52a84f0a2aa480b76baeb8a219ef68":[3,1,1,49,16],
+"classthrill_1_1data_1_1StreamSink.html#a8fee61d7a783cade1a3d07fe86284d27":[3,1,1,49,11]
 };

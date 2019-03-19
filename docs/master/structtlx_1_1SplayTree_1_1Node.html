@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Thrill: SplayzTree&lt; Key &gt;::Node Struct Reference</title>
+<title>Thrill: SplayTree&lt; Key, Compare, Duplicates, Allocator &gt;::Node Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,7 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('structthrill_1_1common_1_1SplayzTree_1_1Node.html','');});
+$(document).ready(function(){initNavTree('structtlx_1_1SplayTree_1_1Node.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -117,23 +117,24 @@ $(document).ready(function(){initNavTree('structthrill_1_1common_1_1SplayzTree_1
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structthrill_1_1common_1_1SplayzTree_1_1Node-members.html">List of all members</a>  </div>
+<a href="structtlx_1_1SplayTree_1_1Node-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">SplayzTree&lt; Key &gt;::Node Struct Reference</div>  </div>
+<div class="title">SplayTree&lt; Key, Compare, Duplicates, Allocator &gt;::Node Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename Key&gt;<br/>
-struct thrill::common::SplayzTree&lt; Key &gt;::Node</h3>
+<div class="textblock"><h3>template&lt;typename Key, typename Compare = std::less&lt;Key&gt;, bool Duplicates = false, typename Allocator = std::allocator&lt;Key&gt;&gt;<br/>
+struct tlx::SplayTree&lt; Key, Compare, Duplicates, Allocator &gt;::Node</h3>
 
+<p>splay tree node, also seen as public iterator </p>
 
-<p>Definition at line <a class="el" href="splay__tree_8hpp_source.html#l00480">480</a> of file <a class="el" href="splay__tree_8hpp_source.html">splay_tree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="splay__tree_8hpp_source.html#l00227">227</a> of file <a class="el" href="splay__tree_8hpp_source.html">splay_tree.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for SplayzTree&lt; Key &gt;::Node:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for SplayTree&lt; Key, Compare, Duplicates, Allocator &gt;::Node:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structthrill_1_1common_1_1SplayzTree_1_1Node__coll__graph.svg" width="238" height="40"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structtlx_1_1SplayTree_1_1Node__coll__graph.svg" width="246" height="67"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 
@@ -141,21 +142,17 @@ struct thrill::common::SplayzTree&lt; Key &gt;::Node</h3>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a367602fd7d549671f88f2672ebc08a8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1common_1_1SplayzTree_1_1Node.html#a367602fd7d549671f88f2672ebc08a8a">Node</a> (const Key &amp;k)</td></tr>
+<tr class="memitem:a367602fd7d549671f88f2672ebc08a8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtlx_1_1SplayTree_1_1Node.html#a367602fd7d549671f88f2672ebc08a8a">Node</a> (const Key &amp;k)</td></tr>
 <tr class="separator:a367602fd7d549671f88f2672ebc08a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a325a48b29994b2c5b17655fd7d7e369e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1common_1_1SplayzTree_1_1Node.html#a325a48b29994b2c5b17655fd7d7e369e">Node</a> ()=default</td></tr>
-<tr class="separator:a325a48b29994b2c5b17655fd7d7e369e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a96313403719d705d2df812e3ba166772"><td class="memItemLeft" align="right" valign="top">Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1common_1_1SplayzTree_1_1Node.html#a96313403719d705d2df812e3ba166772">key</a></td></tr>
+<tr class="memitem:a96313403719d705d2df812e3ba166772"><td class="memItemLeft" align="right" valign="top">Key&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtlx_1_1SplayTree_1_1Node.html#a96313403719d705d2df812e3ba166772">key</a></td></tr>
 <tr class="separator:a96313403719d705d2df812e3ba166772"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58fb104c04bf9132852fe55bdaf2298e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structthrill_1_1common_1_1SplayzTree_1_1Node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1common_1_1SplayzTree_1_1Node.html#a58fb104c04bf9132852fe55bdaf2298e">left</a> = nullptr</td></tr>
+<tr class="memitem:a58fb104c04bf9132852fe55bdaf2298e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtlx_1_1SplayTree_1_1Node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtlx_1_1SplayTree_1_1Node.html#a58fb104c04bf9132852fe55bdaf2298e">left</a> = nullptr</td></tr>
 <tr class="separator:a58fb104c04bf9132852fe55bdaf2298e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed0bb7b39809fd34bd9e73867906b5f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structthrill_1_1common_1_1SplayzTree_1_1Node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1common_1_1SplayzTree_1_1Node.html#aed0bb7b39809fd34bd9e73867906b5f4">right</a> = nullptr</td></tr>
+<tr class="memitem:aed0bb7b39809fd34bd9e73867906b5f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtlx_1_1SplayTree_1_1Node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtlx_1_1SplayTree_1_1Node.html#aed0bb7b39809fd34bd9e73867906b5f4">right</a> = nullptr</td></tr>
 <tr class="separator:aed0bb7b39809fd34bd9e73867906b5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a854352f53b148adc24983a58a1866d66"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1common_1_1SplayzTree_1_1Node.html#a854352f53b148adc24983a58a1866d66">size</a></td></tr>
-<tr class="separator:a854352f53b148adc24983a58a1866d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a367602fd7d549671f88f2672ebc08a8a"></a>
@@ -166,7 +163,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structthrill_1_1common_1_1SplayzTree_1_1Node.html">Node</a> </td>
+          <td class="memname"><a class="el" href="structtlx_1_1SplayTree_1_1Node.html">Node</a> </td>
           <td>(</td>
           <td class="paramtype">const Key &amp;&#160;</td>
           <td class="paramname"><em>k</em></td><td>)</td>
@@ -180,30 +177,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="splay__tree_8hpp_source.html#l00485">485</a> of file <a class="el" href="splay__tree_8hpp_source.html">splay_tree.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a325a48b29994b2c5b17655fd7d7e369e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structthrill_1_1common_1_1SplayzTree_1_1Node.html">Node</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Definition at line <a class="el" href="splay__tree_8hpp_source.html#l00230">230</a> of file <a class="el" href="splay__tree_8hpp_source.html">splay_tree.hpp</a>.</p>
 
 </div>
 </div>
@@ -218,9 +192,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="splay__tree_8hpp_source.html#l00484">484</a> of file <a class="el" href="splay__tree_8hpp_source.html">splay_tree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="splay__tree_8hpp_source.html#l00229">229</a> of file <a class="el" href="splay__tree_8hpp_source.html">splay_tree.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="splay__tree_8hpp_source.html#l00526">SplayzTree&lt; Key &gt;::exists()</a>, <a class="el" href="splay__tree_8hpp_source.html#l00490">SplayzTree&lt; Key &gt;::NodeCompare::operator()()</a>, and <a class="el" href="splay__tree_8hpp_source.html#l00540">SplayzTree&lt; Key &gt;::traverse_preorder()</a>.</p>
+<p>Referenced by <a class="el" href="splay__tree_8hpp_source.html#l00268">SplayTree&lt; Key, Compare, Duplicates, Allocator &gt;::erase()</a>, <a class="el" href="splay__tree_8hpp_source.html#l00278">SplayTree&lt; Key, Compare, Duplicates, Allocator &gt;::exists()</a>, <a class="el" href="splay__tree_8hpp_source.html#l00244">SplayTree&lt; Key, Compare, Duplicates, Allocator &gt;::insert()</a>, and <a class="el" href="splay__tree_8hpp_source.html#l00305">SplayTree&lt; Key, Compare, Duplicates, Allocator &gt;::traverse_preorder()</a>.</p>
 
 </div>
 </div>
@@ -229,12 +203,12 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structthrill_1_1common_1_1SplayzTree_1_1Node.html">Node</a>* left = nullptr</td>
+          <td class="memname"><a class="el" href="structtlx_1_1SplayTree_1_1Node.html">Node</a>* left = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="splay__tree_8hpp_source.html#l00481">481</a> of file <a class="el" href="splay__tree_8hpp_source.html">splay_tree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="splay__tree_8hpp_source.html#l00228">228</a> of file <a class="el" href="splay__tree_8hpp_source.html">splay_tree.hpp</a>.</p>
 
 </div>
 </div>
@@ -243,39 +217,25 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structthrill_1_1common_1_1SplayzTree_1_1Node.html">Node</a> * right = nullptr</td>
+          <td class="memname"><a class="el" href="structtlx_1_1SplayTree_1_1Node.html">Node</a> * right = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="splay__tree_8hpp_source.html#l00481">481</a> of file <a class="el" href="splay__tree_8hpp_source.html">splay_tree.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a854352f53b148adc24983a58a1866d66"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t size</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="splay__tree_8hpp_source.html#l00483">483</a> of file <a class="el" href="splay__tree_8hpp_source.html">splay_tree.hpp</a>.</p>
+<p>Definition at line <a class="el" href="splay__tree_8hpp_source.html#l00228">228</a> of file <a class="el" href="splay__tree_8hpp_source.html">splay_tree.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>thrill/common/<a class="el" href="splay__tree_8hpp_source.html">splay_tree.hpp</a></li>
+<li>extlib/tlx/tlx/container/<a class="el" href="splay__tree_8hpp_source.html">splay_tree.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1common.html">common</a></li><li class="navelem"><a class="el" href="classthrill_1_1common_1_1SplayzTree.html">SplayzTree</a></li><li class="navelem"><a class="el" href="structthrill_1_1common_1_1SplayzTree_1_1Node.html">Node</a></li>
-    <li class="footer">Generated on Tue Mar 5 2019 05:24:29 for Thrill by
+    <li class="navelem"><a class="el" href="namespacetlx.html">tlx</a></li><li class="navelem"><a class="el" href="classtlx_1_1SplayTree.html">SplayTree</a></li><li class="navelem"><a class="el" href="structtlx_1_1SplayTree_1_1Node.html">Node</a></li>
+    <li class="footer">Generated on Tue Mar 19 2019 19:54:31 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

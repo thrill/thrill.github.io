@@ -1,13 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"classthrill_1_1net_1_1mpi_1_1Dispatcher.html#ae8832b85301947baca192a7b6a59942b":[3,1,2,2,2,11],
-"classthrill_1_1net_1_1mpi_1_1Dispatcher.html#ae9757576c65c27b50601af29eed6217f":[3,1,2,2,2,34],
-"classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aebde02bf4fd9df0eb3505a5f69e66899":[3,1,2,2,2,4],
-"classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aee2cbcdaea572418c8ad5d54094e3af0":[3,1,2,2,2,17],
-"classthrill_1_1net_1_1mpi_1_1Dispatcher.html#affa63df258e07a5f81576daef8ffb19c":[3,1,2,2,2,9],
-"classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html":[3,1,2,2,2,0],
-"classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#a02ab1913e0a006e3f401e55ba9cbf3d4":[3,1,2,2,2,0,2],
-"classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#a09fc99a61d38826d3eb66de3aa77e3b4":[3,1,2,2,2,0,18],
 "classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#a187a61ae89e73ab716a58db57fc04503":[3,1,2,2,2,0,15],
 "classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#a1c4be7f6c519f90a07a2605237552cf7":[3,1,2,2,2,0,20],
 "classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html#a1d1cfd8ffb84e947f82999c682b666a7":[3,1,2,2,2,0,0],
@@ -249,5 +241,13 @@ var NAVTREEINDEX20 =
 "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#a6b72e54baf646b08b4b87f987f583dcb":[3,1,2,1,7,25],
 "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#a78c3ea4a6eaf73455a0caa2c8a51119c":[3,1,2,1,7,8],
 "classthrill_1_1net_1_1tcp_1_1SocketAddress.html#a92db8ad58668dfd9d1ae7266a5bcfb1d":[3,1,2,1,7,2],
-"classthrill_1_1net_1_1tcp_1_1SocketAddress.html#a93f2d47df4ae5ffffa7d8a95c73eaddc":[3,1,2,1,7,10]
+"classthrill_1_1net_1_1tcp_1_1SocketAddress.html#a93f2d47df4ae5ffffa7d8a95c73eaddc":[3,1,2,1,7,10],
+"classthrill_1_1net_1_1tcp_1_1SocketAddress.html#a946b17b00aae103168814199fdf56b2f":[3,1,2,1,7,13],
+"classthrill_1_1net_1_1tcp_1_1SocketAddress.html#a9720d1de340086bdce68742436cd14ec":[3,1,2,1,7,27],
+"classthrill_1_1net_1_1tcp_1_1SocketAddress.html#aa5f2d318a3fc9867c5cb1f889ffd7193":[3,1,2,1,7,15],
+"classthrill_1_1net_1_1tcp_1_1SocketAddress.html#aa68c0af0717c9a1d9c77e41a961b2f77":[3,1,2,1,7,12],
+"classthrill_1_1net_1_1tcp_1_1SocketAddress.html#aae0e0fc8c98a6b15ba60b2d76267e865":[3,1,2,1,7,14],
+"classthrill_1_1net_1_1tcp_1_1SocketAddress.html#ab75f561454f177dc44dc29573f397ab5":[3,1,2,1,7,17],
+"classthrill_1_1net_1_1tcp_1_1SocketAddress.html#ac7780a43d68caf5575cac7b6b6e1c797":[3,1,2,1,7,16],
+"classthrill_1_1net_1_1tcp_1_1SocketAddress.html#acba30a6b494166dde44176f9930e8439":[3,1,2,1,7,20]
 };

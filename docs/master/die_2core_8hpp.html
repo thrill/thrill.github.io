@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('die_2core_8hpp.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="die_2core_8hpp__dep__incl.svg" width="5506" height="1064"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="die_2core_8hpp__dep__incl.svg" width="5456" height="1064"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -179,6 +179,18 @@ Macros</h2></td></tr>
 <tr class="memitem:ae5ae25a771b222c30b34dd93e878bc70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="die_2core_8hpp.html#ae5ae25a771b222c30b34dd93e878bc70">tlx_die_unless_throws</a>(code, exception_type)</td></tr>
 <tr class="memdesc:ae5ae25a771b222c30b34dd93e878bc70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define to check that [code] throws and exception of given type.  <a href="#ae5ae25a771b222c30b34dd93e878bc70">More...</a><br/></td></tr>
 <tr class="separator:ae5ae25a771b222c30b34dd93e878bc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4978f08b824fd48b1df232d1dbfaa1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="die_2core_8hpp.html#ae4978f08b824fd48b1df232d1dbfaa1c">tlx_die_verbose_equal</a>(X, Y, msg)</td></tr>
+<tr class="separator:ae4978f08b824fd48b1df232d1dbfaa1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0590079d690450b883ee08675054406"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="die_2core_8hpp.html#ae0590079d690450b883ee08675054406">tlx_die_verbose_if</a>(X, msg)</td></tr>
+<tr class="separator:ae0590079d690450b883ee08675054406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac27b8bd9a2c0b5ff60fd7feafb17f8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="die_2core_8hpp.html#aac27b8bd9a2c0b5ff60fd7feafb17f8a">tlx_die_verbose_unequal</a>(X, Y, msg)</td></tr>
+<tr class="separator:aac27b8bd9a2c0b5ff60fd7feafb17f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a827fe6eaab3adf26dd6dfa54b425dd28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="die_2core_8hpp.html#a827fe6eaab3adf26dd6dfa54b425dd28">tlx_die_verbose_unequal_eps</a>(X, Y, eps, msg)</td></tr>
+<tr class="separator:a827fe6eaab3adf26dd6dfa54b425dd28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eb79486bc10917c8cbb86103cdc2442"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="die_2core_8hpp.html#a6eb79486bc10917c8cbb86103cdc2442">tlx_die_verbose_unequal_eps6</a>(X, Y, msg)&#160;&#160;&#160;<a class="el" href="die_8hpp.html#a1cf5f09b21a708586c2af9290e58f99b">die_verbose_unequal_eps</a>(X, Y, 1e-6, msg)</td></tr>
+<tr class="separator:a6eb79486bc10917c8cbb86103cdc2442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb79865d9c065ce2954a04e2f189d21c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="die_2core_8hpp.html#acb79865d9c065ce2954a04e2f189d21c">tlx_die_verbose_unless</a>(X, msg)</td></tr>
+<tr class="separator:acb79865d9c065ce2954a04e2f189d21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8644f91fb627fd67cd17401c10a8448f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">tlx_die_with_sstream</a>(msg)</td></tr>
 <tr class="memdesc:a8644f91fb627fd67cd17401c10a8448f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instead of std::terminate(), throw the output the message via an exception.  <a href="#a8644f91fb627fd67cd17401c10a8448f">More...</a><br/></td></tr>
 <tr class="separator:a8644f91fb627fd67cd17401c10a8448f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,7 +256,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Check that X == Y or die miserably, but output the values of X and Y for better debugging. Only active if NDEBUG is not defined. </p>
 
-<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00125">125</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00145">145</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
 
 </div>
 </div>
@@ -273,7 +285,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Die miserably if X == Y, but first output the values of X and Y for better debugging. Only active if NDEBUG is not defined. </p>
 
-<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00180">180</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00233">233</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
 
 </div>
 </div>
@@ -333,11 +345,11 @@ Functions</h2></td></tr>
 <div class="line"><a class="code" href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">            tlx_die_with_sstream</a>(<span class="stringliteral">&quot;DIE-EQUAL: &quot;</span> #X <span class="stringliteral">&quot; == &quot;</span> #Y <span class="stringliteral">&quot; : &quot;</span>            \</div>
 <div class="line">                                 <span class="stringliteral">&quot;\&quot;&quot;</span> &lt;&lt; x__ &lt;&lt; <span class="stringliteral">&quot;\&quot; == \&quot;&quot;</span> &lt;&lt; y__ &lt;&lt; <span class="stringliteral">&quot;\&quot;&quot;</span>);  \</div>
 <div class="line">    } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
-<div class="ttc" id="namespacetlx_html_a9f8179e15f255f7283de043a22560c25"><div class="ttname"><a href="namespacetlx.html#a9f8179e15f255f7283de043a22560c25">tlx::die_equal_compare</a></div><div class="ttdeci">bool die_equal_compare(TypeA a, TypeB b)</div><div class="ttdoc">helper method to compare two values in die_unequal() </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00087">core.hpp:87</a></div></div>
+<div class="ttc" id="namespacetlx_html_a9f8179e15f255f7283de043a22560c25"><div class="ttname"><a href="namespacetlx.html#a9f8179e15f255f7283de043a22560c25">tlx::die_equal_compare</a></div><div class="ttdeci">bool die_equal_compare(TypeA a, TypeB b)</div><div class="ttdoc">helper method to compare two values in die_unequal() </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00107">core.hpp:107</a></div></div>
 <div class="ttc" id="die_2core_8hpp_html_a8644f91fb627fd67cd17401c10a8448f"><div class="ttname"><a href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">tlx_die_with_sstream</a></div><div class="ttdeci">#define tlx_die_with_sstream(msg)</div><div class="ttdoc">Instead of std::terminate(), throw the output the message via an exception. </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00034">core.hpp:34</a></div></div>
 </div><!-- fragment --><p>Die miserably if X == Y, but first output the values of X and Y for better debugging. </p>
 
-<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00166">166</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00219">219</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
 
 </div>
 </div>
@@ -397,11 +409,11 @@ Functions</h2></td></tr>
 <div class="line"><a class="code" href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">            tlx_die_with_sstream</a>(<span class="stringliteral">&quot;DIE-UNEQUAL: &quot;</span> #X <span class="stringliteral">&quot; != &quot;</span> #Y <span class="stringliteral">&quot; : &quot;</span>          \</div>
 <div class="line">                                 <span class="stringliteral">&quot;\&quot;&quot;</span> &lt;&lt; x__ &lt;&lt; <span class="stringliteral">&quot;\&quot; != \&quot;&quot;</span> &lt;&lt; y__ &lt;&lt; <span class="stringliteral">&quot;\&quot;&quot;</span>);  \</div>
 <div class="line">    } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
-<div class="ttc" id="namespacetlx_html_a9f8179e15f255f7283de043a22560c25"><div class="ttname"><a href="namespacetlx.html#a9f8179e15f255f7283de043a22560c25">tlx::die_equal_compare</a></div><div class="ttdeci">bool die_equal_compare(TypeA a, TypeB b)</div><div class="ttdoc">helper method to compare two values in die_unequal() </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00087">core.hpp:87</a></div></div>
+<div class="ttc" id="namespacetlx_html_a9f8179e15f255f7283de043a22560c25"><div class="ttname"><a href="namespacetlx.html#a9f8179e15f255f7283de043a22560c25">tlx::die_equal_compare</a></div><div class="ttdeci">bool die_equal_compare(TypeA a, TypeB b)</div><div class="ttdoc">helper method to compare two values in die_unequal() </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00107">core.hpp:107</a></div></div>
 <div class="ttc" id="die_2core_8hpp_html_a8644f91fb627fd67cd17401c10a8448f"><div class="ttname"><a href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">tlx_die_with_sstream</a></div><div class="ttdeci">#define tlx_die_with_sstream(msg)</div><div class="ttdoc">Instead of std::terminate(), throw the output the message via an exception. </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00034">core.hpp:34</a></div></div>
 </div><!-- fragment --><p>Check that X == Y or die miserably, but output the values of X and Y for better debugging. </p>
 
-<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00111">111</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00131">131</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
 
 </div>
 </div>
@@ -442,11 +454,11 @@ Functions</h2></td></tr>
 <div class="line">                    &lt;&lt; std::setprecision(18)                             \</div>
 <div class="line">                    &lt;&lt; <span class="stringliteral">&quot;\&quot;&quot;</span> &lt;&lt; x__ &lt;&lt; <span class="stringliteral">&quot;\&quot; != \&quot;&quot;</span> &lt;&lt; y__ &lt;&lt; <span class="stringliteral">&quot;\&quot;&quot;</span>);        \</div>
 <div class="line">    } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
-<div class="ttc" id="namespacetlx_html_acc85623f015ff3ce8bf5a365f14770c4"><div class="ttname"><a href="namespacetlx.html#acc85623f015ff3ce8bf5a365f14770c4">tlx::die_equal_eps_compare</a></div><div class="ttdeci">bool die_equal_eps_compare(TypeA x, TypeB y, double eps)</div><div class="ttdoc">helper method to compare two values in die_unequal_eps() </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00139">core.hpp:139</a></div></div>
+<div class="ttc" id="namespacetlx_html_acc85623f015ff3ce8bf5a365f14770c4"><div class="ttname"><a href="namespacetlx.html#acc85623f015ff3ce8bf5a365f14770c4">tlx::die_equal_eps_compare</a></div><div class="ttdeci">bool die_equal_eps_compare(TypeA x, TypeB y, double eps)</div><div class="ttdoc">helper method to compare two values in die_unequal_eps() </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00172">core.hpp:172</a></div></div>
 <div class="ttc" id="die_2core_8hpp_html_a9fb1fdf960df264cc216459dbec9eea8"><div class="ttname"><a href="die_2core_8hpp.html#a9fb1fdf960df264cc216459dbec9eea8">tlx_die</a></div><div class="ttdeci">#define tlx_die(msg)</div><div class="ttdoc">Instead of std::terminate(), throw the output the message via an exception. </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00043">core.hpp:43</a></div></div>
 </div><!-- fragment --><p>Check that ABS(X - Y) &lt;= eps or die miserably, but output the values of X and Y for better debugging. </p>
 
-<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00146">146</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00179">179</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
 
 </div>
 </div>
@@ -475,7 +487,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Check that ABS(X - Y) &lt;= 0.000001 or die miserably, but output the values of X and Y for better debugging. </p>
 
-<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00158">158</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00205">205</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
 
 </div>
 </div>
@@ -503,7 +515,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00064">64</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="prefetch__pool_8hpp_source.html#l00152">prefetch_pool&lt; BlockType &gt;::steal()</a>, <a class="el" href="btree_8hpp_source.html#l03538">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify()</a>, <a class="el" href="btree_8hpp_source.html#l03650">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_leaflinks()</a>, and <a class="el" href="btree_8hpp_source.html#l03556">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_node()</a>.</p>
+<p>Referenced by <a class="el" href="prefetch__pool_8hpp_source.html#l00152">prefetch_pool&lt; BlockType &gt;::steal()</a>, <a class="el" href="btree_8hpp_source.html#l03541">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify()</a>, <a class="el" href="btree_8hpp_source.html#l03653">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_leaflinks()</a>, and <a class="el" href="btree_8hpp_source.html#l03559">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::verify_node()</a>.</p>
 
 </div>
 </div>
@@ -545,7 +557,256 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p>Define to check that [code] throws and exception of given type. </p>
 
-<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00187">187</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00253">253</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4978f08b824fd48b1df232d1dbfaa1c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define tlx_die_verbose_equal</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">X, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Y, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
+<div class="line">        auto x__ = (X);                                     <span class="comment">/* NOLINT */</span>       \</div>
+<div class="line">        auto y__ = (Y);                                     <span class="comment">/* NOLINT */</span>       \</div>
+<div class="line">        if (::<a class="code" href="namespacetlx.html#a9f8179e15f255f7283de043a22560c25">tlx::die_equal_compare</a>(x__, y__))                                <a class="code" href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">\</a></div>
+<div class="line"><a class="code" href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">            tlx_die_with_sstream</a>(<span class="stringliteral">&quot;DIE-EQUAL: &quot;</span> #X <span class="stringliteral">&quot; == &quot;</span> #Y <span class="stringliteral">&quot; : &quot;</span>              \</div>
+<div class="line">                                 <span class="stringliteral">&quot;\&quot;&quot;</span> &lt;&lt; x__ &lt;&lt; <span class="stringliteral">&quot;\&quot; == \&quot;&quot;</span> &lt;&lt; y__ &lt;&lt; <span class="stringliteral">&quot;\&quot;\n&quot;</span> &lt;&lt; \</div>
+<div class="line">                                 msg &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>);                                 \</div>
+<div class="line">    } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
+<div class="ttc" id="namespacetlx_html_a9f8179e15f255f7283de043a22560c25"><div class="ttname"><a href="namespacetlx.html#a9f8179e15f255f7283de043a22560c25">tlx::die_equal_compare</a></div><div class="ttdeci">bool die_equal_compare(TypeA a, TypeB b)</div><div class="ttdoc">helper method to compare two values in die_unequal() </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00107">core.hpp:107</a></div></div>
+<div class="ttc" id="die_2core_8hpp_html_a8644f91fb627fd67cd17401c10a8448f"><div class="ttname"><a href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">tlx_die_with_sstream</a></div><div class="ttdeci">#define tlx_die_with_sstream(msg)</div><div class="ttdoc">Instead of std::terminate(), throw the output the message via an exception. </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00034">core.hpp:34</a></div></div>
+</div><!-- fragment --><p>Die miserably if X == Y, but first output the values of X and Y for better debugging. Same as <a class="el" href="die_2core_8hpp.html#a0d3e703383d8ee82ec46e3b72974b5f4">tlx_die_equal()</a> except the user additionally passes a message. </p>
+
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00239">239</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0590079d690450b883ee08675054406"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define tlx_die_verbose_if</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">X, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                  \</div>
+<div class="line">        if ((X)) {                                                        <a class="code" href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">\</a></div>
+<div class="line"><a class="code" href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">            tlx_die_with_sstream</a>(                                         \</div>
+<div class="line">                <span class="stringliteral">&quot;DIE: Assertion \&quot;&quot;</span> #X <span class="stringliteral">&quot;\&quot; succeeded!\n&quot;</span> &lt;&lt; msg &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>); \</div>
+<div class="line">        }                                                                 \</div>
+<div class="line">    } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
+<div class="ttc" id="die_2core_8hpp_html_a8644f91fb627fd67cd17401c10a8448f"><div class="ttname"><a href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">tlx_die_with_sstream</a></div><div class="ttdeci">#define tlx_die_with_sstream(msg)</div><div class="ttdoc">Instead of std::terminate(), throw the output the message via an exception. </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00034">core.hpp:34</a></div></div>
+</div><!-- fragment --><p>Check condition X and die miserably if false. Same as <a class="el" href="die_2core_8hpp.html#af4884b374a843ce260431fb12591bf9c">tlx_die_if()</a> except the user additionally passes a message. </p>
+
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00094">94</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aac27b8bd9a2c0b5ff60fd7feafb17f8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define tlx_die_verbose_unequal</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">X, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Y, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
+<div class="line">        auto x__ = (X);                                     <span class="comment">/* NOLINT */</span>       \</div>
+<div class="line">        auto y__ = (Y);                                     <span class="comment">/* NOLINT */</span>       \</div>
+<div class="line">        if (!::<a class="code" href="namespacetlx.html#a9f8179e15f255f7283de043a22560c25">tlx::die_equal_compare</a>(x__, y__))                               <a class="code" href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">\</a></div>
+<div class="line"><a class="code" href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">            tlx_die_with_sstream</a>(<span class="stringliteral">&quot;DIE-UNEQUAL: &quot;</span> #X <span class="stringliteral">&quot; != &quot;</span> #Y <span class="stringliteral">&quot; : &quot;</span>            \</div>
+<div class="line">                                 <span class="stringliteral">&quot;\&quot;&quot;</span> &lt;&lt; x__ &lt;&lt; <span class="stringliteral">&quot;\&quot; != \&quot;&quot;</span> &lt;&lt; y__ &lt;&lt; <span class="stringliteral">&quot;\&quot;\n&quot;</span> &lt;&lt; \</div>
+<div class="line">                                 msg &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>);                                 \</div>
+<div class="line">    } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
+<div class="ttc" id="namespacetlx_html_a9f8179e15f255f7283de043a22560c25"><div class="ttname"><a href="namespacetlx.html#a9f8179e15f255f7283de043a22560c25">tlx::die_equal_compare</a></div><div class="ttdeci">bool die_equal_compare(TypeA a, TypeB b)</div><div class="ttdoc">helper method to compare two values in die_unequal() </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00107">core.hpp:107</a></div></div>
+<div class="ttc" id="die_2core_8hpp_html_a8644f91fb627fd67cd17401c10a8448f"><div class="ttname"><a href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">tlx_die_with_sstream</a></div><div class="ttdeci">#define tlx_die_with_sstream(msg)</div><div class="ttdoc">Instead of std::terminate(), throw the output the message via an exception. </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00034">core.hpp:34</a></div></div>
+</div><!-- fragment --><p>Check that X == Y or die miserably, but output the values of X and Y for better debugging. Same as <a class="el" href="die_2core_8hpp.html#a61bc809e512300fb132a80e2c066b361">tlx_die_unequal()</a> except the user additionally pass a message. </p>
+
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00151">151</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a827fe6eaab3adf26dd6dfa54b425dd28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define tlx_die_verbose_unequal_eps</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">X, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Y, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">eps, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                 \</div>
+<div class="line">        auto x__ = (X);                                     <span class="comment">/* NOLINT */</span> \</div>
+<div class="line">        auto y__ = (Y);                                     <span class="comment">/* NOLINT */</span> \</div>
+<div class="line">        if (!::<a class="code" href="namespacetlx.html#acc85623f015ff3ce8bf5a365f14770c4">tlx::die_equal_eps_compare</a>(x__, y__, eps))                <a class="code" href="die_2core_8hpp.html#a9fb1fdf960df264cc216459dbec9eea8">\</a></div>
+<div class="line"><a class="code" href="die_2core_8hpp.html#a9fb1fdf960df264cc216459dbec9eea8">            tlx_die</a>(<span class="stringliteral">&quot;DIE-UNEQUAL-EPS: &quot;</span> #X <span class="stringliteral">&quot; != &quot;</span> #Y <span class="stringliteral">&quot; : &quot;</span>               \</div>
+<div class="line">                    &lt;&lt; std::setprecision(18)                             \</div>
+<div class="line">                    &lt;&lt; <span class="stringliteral">&quot;\&quot;&quot;</span> &lt;&lt; x__ &lt;&lt; <span class="stringliteral">&quot;\&quot; != \&quot;&quot;</span> &lt;&lt; y__ &lt;&lt; <span class="stringliteral">&quot;\&quot;\n&quot;</span> &lt;&lt;     \</div>
+<div class="line">                    msg &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>);                                        \</div>
+<div class="line">    } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
+<div class="ttc" id="namespacetlx_html_acc85623f015ff3ce8bf5a365f14770c4"><div class="ttname"><a href="namespacetlx.html#acc85623f015ff3ce8bf5a365f14770c4">tlx::die_equal_eps_compare</a></div><div class="ttdeci">bool die_equal_eps_compare(TypeA x, TypeB y, double eps)</div><div class="ttdoc">helper method to compare two values in die_unequal_eps() </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00172">core.hpp:172</a></div></div>
+<div class="ttc" id="die_2core_8hpp_html_a9fb1fdf960df264cc216459dbec9eea8"><div class="ttname"><a href="die_2core_8hpp.html#a9fb1fdf960df264cc216459dbec9eea8">tlx_die</a></div><div class="ttdeci">#define tlx_die(msg)</div><div class="ttdoc">Instead of std::terminate(), throw the output the message via an exception. </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00043">core.hpp:43</a></div></div>
+</div><!-- fragment --><p>Check that ABS(X - Y) &lt;= eps or die miserably, but output the values of X and Y for better debugging. Same as <a class="el" href="die_2core_8hpp.html#a634b1d594ee64649689c4644fb491641">tlx_die_unequal_eps()</a> except the user additionally passes a message. </p>
+
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00192">192</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6eb79486bc10917c8cbb86103cdc2442"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define tlx_die_verbose_unequal_eps6</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">X, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Y, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="die_8hpp.html#a1cf5f09b21a708586c2af9290e58f99b">die_verbose_unequal_eps</a>(X, Y, 1e-6, msg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check that ABS(X - Y) &lt;= 0.000001 or die miserably, but output the values of X and Y for better debugging. Same as <a class="el" href="die_2core_8hpp.html#a58f7344e93396da43cfd07592e373923">tlx_die_unequal_eps6()</a> except the user additionally passes a message. </p>
+
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00211">211</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acb79865d9c065ce2954a04e2f189d21c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define tlx_die_verbose_unless</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">X, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">msg&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                               \</div>
+<div class="line">        if (!(X)) {                                                    <a class="code" href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">\</a></div>
+<div class="line"><a class="code" href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">            tlx_die_with_sstream</a>(                                      \</div>
+<div class="line">                <span class="stringliteral">&quot;DIE: Assertion \&quot;&quot;</span> #X <span class="stringliteral">&quot;\&quot; failed!\n&quot;</span> &lt;&lt; msg &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>); \</div>
+<div class="line">        }                                                              \</div>
+<div class="line">    } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
+<div class="ttc" id="die_2core_8hpp_html_a8644f91fb627fd67cd17401c10a8448f"><div class="ttname"><a href="die_2core_8hpp.html#a8644f91fb627fd67cd17401c10a8448f">tlx_die_with_sstream</a></div><div class="ttdeci">#define tlx_die_with_sstream(msg)</div><div class="ttdoc">Instead of std::terminate(), throw the output the message via an exception. </div><div class="ttdef"><b>Definition:</b> <a href="die_2core_8hpp_source.html#l00034">core.hpp:34</a></div></div>
+</div><!-- fragment --><p>Check condition X and die miserably if false. Same as <a class="el" href="die_2core_8hpp.html#ae75b813cfb11a89830e7e7e98dec7ac0">tlx_die_unless()</a> except the user additionally passes a message. </p>
+
+<p>Definition at line <a class="el" href="die_2core_8hpp_source.html#l00084">84</a> of file <a class="el" href="die_2core_8hpp_source.html">core.hpp</a>.</p>
 
 </div>
 </div>
@@ -582,7 +843,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="dir_040d6456d7c4169c1665ff610f656afd.html">die</a></li><li class="navelem"><a class="el" href="die_2core_8hpp.html">core.hpp</a></li>
-    <li class="footer">Generated on Tue Mar 5 2019 05:24:27 for Thrill by
+    <li class="footer">Generated on Tue Mar 19 2019 19:54:27 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

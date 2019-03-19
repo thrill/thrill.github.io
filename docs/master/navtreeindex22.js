@@ -1,13 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"classtlx_1_1BTree.html#afd6849b9290c28ea815a0c03b1d9321a":[3,1,4,1,0,0,86],
-"classtlx_1_1BTree.html#aff45baa0e3eb1e71b96fbc218603261b":[3,1,4,1,0,0,71],
-"classtlx_1_1BTree_1_1const__iterator.html":[3,1,4,1,0,0,0],
-"classtlx_1_1BTree_1_1const__iterator.html#a0389393ef46862bf253a20ee13ad2ceb":[3,1,4,1,0,0,0,10],
-"classtlx_1_1BTree_1_1const__iterator.html#a0cc59491125a67abc87e8bfe6a4022c1":[3,1,4,1,0,0,0,2],
-"classtlx_1_1BTree_1_1const__iterator.html#a1662eef91eb8e828a6ef9ba7651c9c8e":[3,1,4,1,0,0,0,1],
-"classtlx_1_1BTree_1_1const__iterator.html#a323e325d694e0d5d9a148d5a49b6cfb1":[3,1,4,1,0,0,0,23],
-"classtlx_1_1BTree_1_1const__iterator.html#a33ce448509e9cc0d73861e4c1919c7a7":[3,1,4,1,0,0,0,19],
 "classtlx_1_1BTree_1_1const__iterator.html#a644114c330bd0e27ee08a7e1087beaef":[3,1,4,1,0,0,0,16],
 "classtlx_1_1BTree_1_1const__iterator.html#a68cddae987349286dd9471b9a78386bc":[3,1,4,1,0,0,0,17],
 "classtlx_1_1BTree_1_1const__iterator.html#a737b24366e00158c2d5b99ab327a2ed4":[3,1,4,1,0,0,0,20],
@@ -249,5 +241,13 @@ var NAVTREEINDEX22 =
 "classtlx_1_1DAryAddressableIntHeap.html#a227517a1cb03479f6db9cbb8ef4d1ae4":[3,1,4,1,2,3],
 "classtlx_1_1DAryAddressableIntHeap.html#a2461ef5cb3238e75b03f12385740d58e":[3,1,4,1,2,20],
 "classtlx_1_1DAryAddressableIntHeap.html#a260442ef344f843c480ff1f6aefd6db3":[3,1,4,1,2,5],
-"classtlx_1_1DAryAddressableIntHeap.html#a2f1486517c9219409cd7bb15d0e6afc0":[3,1,4,1,2,24]
+"classtlx_1_1DAryAddressableIntHeap.html#a2f1486517c9219409cd7bb15d0e6afc0":[3,1,4,1,2,24],
+"classtlx_1_1DAryAddressableIntHeap.html#a312e7f6c761a199c1369fbe651e084f0":[3,1,4,1,2,15],
+"classtlx_1_1DAryAddressableIntHeap.html#a33a535b15bfe53c7ec339b7653a84ee9":[3,1,4,1,2,22],
+"classtlx_1_1DAryAddressableIntHeap.html#a3b3a26e812c14cc21139d7e0f07356ec":[3,1,4,1,2,12],
+"classtlx_1_1DAryAddressableIntHeap.html#a3caedb145a667c26028740417dcf32c3":[3,1,4,1,2,23],
+"classtlx_1_1DAryAddressableIntHeap.html#a3f6fc5de06a318920d84f3c3742db07f":[3,1,4,1,2,8],
+"classtlx_1_1DAryAddressableIntHeap.html#a461c64bafdd30903af059c05fa7b5b56":[3,1,4,1,2,9],
+"classtlx_1_1DAryAddressableIntHeap.html#a4d2b11bfc03b1cfe7e5f73d8d19a975e":[3,1,4,1,2,0],
+"classtlx_1_1DAryAddressableIntHeap.html#a516b266521ea0144add365390660cf41":[3,1,4,1,2,1]
 };

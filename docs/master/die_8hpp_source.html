@@ -149,58 +149,92 @@ $(document).ready(function(){initNavTree('die_8hpp_source.html','');});
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">//! this is also active in Release mode.</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="die_8hpp.html#a104ef9af1dda7b166a22fea791aad044">   32</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_if(X) \</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">    tlx_die_if(X)</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// die_unequal()</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//! Check that X == Y or die miserably, but output the values of X and Y for</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//! better debugging.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="die_8hpp.html#a334b021076c0dff0e3964c6819774ceb">   40</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_unequal(X, Y) \</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">    tlx_die_unequal(X, Y)</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//! Check that X == Y or die miserably, but output the values of X and Y for</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//! better debugging. Only active if NDEBUG is not defined.</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="die_8hpp.html#a5085068329fda13af995242db4555038">   45</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define assert_equal(X, Y) \</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">    tlx_assert_equal(X, Y)</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">// die_unequal_eps()</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">//! Check that ABS(X - Y) &lt;= eps or die miserably, but output the values of X</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">//! and Y for better debugging.</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="die_8hpp.html#a6b7ce407ec77acd1f6b146c1a6ea65ef">   53</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_unequal_eps(X, Y, eps) \</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">    tlx_die_unequal_eps(X, Y, eps)</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">//! Check that ABS(X - Y) &lt;= 0.000001 or die miserably, but output the values of</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">//! X and Y for better debugging.</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="die_8hpp.html#a1a7675ff116550671881ba49da77808c">   58</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_unequal_eps6(X, Y) \</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">    tlx_die_unequal_eps6(X, Y)</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// die_equal()</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//! Die miserably if X == Y, but first output the values of X and Y for better</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//! debugging.</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="die_8hpp.html#afec2d02d5fa715cd831e7aabb8734a73">   66</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_equal(X, Y) \</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">    tlx_die_equal(X, Y)</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//! Die miserably if X == Y, but first output the values of X and Y for better</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//! debugging. Only active if NDEBUG is not defined.</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="die_8hpp.html#a2b352f8d766a97c1d9d6e83a1b726b54">   71</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define assert_unequal(X, Y) \</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">    tlx_assert_unequal(X, Y)</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// die_unless_throws()</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//! Define to check that [code] throws and exception of given type</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="die_8hpp.html#a357da842bf02c9445e820f483b301542">   78</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_unless_throws(code, exception_type) \</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">    tlx_die_unless_throws(code, exception_type)</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;} <span class="comment">// namespace tlx</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif // !TLX_DIE_HEADER</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//! Check condition X and die miserably if false. Same as die_unless() except</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//! the user additionally passes a message.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="die_8hpp.html#a4415af0b3479c250e0b564f072607792">   37</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_verbose_unless(X, msg) \</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">    tlx_die_verbose_unless(X, msg)</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//! Check condition X and die miserably if false. Same as die_if() except the</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//! the user additionally passes a message.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="die_8hpp.html#a6f9cb8532d83a176b7c6409ad491ce02">   42</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_verbose_if(X, msg) \</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">    tlx_die_verbose_if(X, msg)</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">// die_unequal()</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">//! Check that X == Y or die miserably, but output the values of X and Y for</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">//! better debugging.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="die_8hpp.html#a334b021076c0dff0e3964c6819774ceb">   50</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_unequal(X, Y) \</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">    tlx_die_unequal(X, Y)</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">//! Check that X == Y or die miserably, but output the values of X and Y for</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//! better debugging. Only active if NDEBUG is not defined.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="die_8hpp.html#a5085068329fda13af995242db4555038">   55</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define assert_equal(X, Y) \</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">    tlx_assert_equal(X, Y)</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">//! Check that X == Y or die miserably, but output the values of X and Y for</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">//! better debugging. Same as die_unequal() except the user additionally passes</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">//! a message.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="die_8hpp.html#aec95996ff008c79a031ea01bd3b65850">   61</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_verbose_unequal(X, Y, msg) \</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">    tlx_die_verbose_unequal(X, Y, msg)</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// die_unequal_eps()</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">//! Check that ABS(X - Y) &lt;= eps or die miserably, but output the values of X</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//! and Y for better debugging.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="die_8hpp.html#a6b7ce407ec77acd1f6b146c1a6ea65ef">   69</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_unequal_eps(X, Y, eps) \</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">    tlx_die_unequal_eps(X, Y, eps)</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//! Check that ABS(X - Y) &lt;= eps or die miserably, but output the values of X</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//! and Y for better debugging. Same as die_unequal_eps() except the user</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//! additionally passes a message.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="die_8hpp.html#a1cf5f09b21a708586c2af9290e58f99b">   75</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_verbose_unequal_eps(X, Y, eps, msg) \</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">    tlx_die_verbose_unequal_eps(X, Y, eps, msg)</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">//! Check that ABS(X - Y) &lt;= 0.000001 or die miserably, but output the values of</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//! X and Y for better debugging.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="die_8hpp.html#a1a7675ff116550671881ba49da77808c">   80</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_unequal_eps6(X, Y) \</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">    tlx_die_unequal_eps6(X, Y)</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">//! Check that ABS(X - Y) &lt;= 0.000001 or die miserably, but output the values of</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">//! X and Y for better debugging. Same as die_unequal_eps6() except the user</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">//! additionally passes a message.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="die_8hpp.html#a9110de6f9ff16d7b0234613c0ab8087e">   86</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_verbose_unequal_eps6(X, Y, msg) \</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">    tlx_die_verbose_unequal_eps6(X, Y, msg)</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">// die_equal()</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">//! Die miserably if X == Y, but first output the values of X and Y for better</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">//! debugging.</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="die_8hpp.html#afec2d02d5fa715cd831e7aabb8734a73">   94</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_equal(X, Y) \</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">    tlx_die_equal(X, Y)</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">//! Die miserably if X == Y, but first output the values of X and Y for better</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">//! debugging. Only active if NDEBUG is not defined.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="die_8hpp.html#a2b352f8d766a97c1d9d6e83a1b726b54">   99</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define assert_unequal(X, Y) \</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">    tlx_assert_unequal(X, Y)</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor"></span><span class="comment"></span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">//! Die miserably if X == Y, but first output the values of X and Y for better</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">//! debugging. Same as die_equal() except the user additionally passes a</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">//! message.</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="die_8hpp.html#a14b9d681565eddee12fb3e7890f4643d">  105</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_verbose_equal(X, Y, msg) \</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">    tlx_die_verbose_equal(X, Y, msg)</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">// die_unless_throws()</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">//! Define to check that [code] throws and exception of given type</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="die_8hpp.html#a357da842bf02c9445e820f483b301542">  112</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define die_unless_throws(code, exception_type) \</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">    tlx_die_unless_throws(code, exception_type)</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;} <span class="comment">// namespace tlx</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif // !TLX_DIE_HEADER</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="die_2core_8hpp_html"><div class="ttname"><a href="die_2core_8hpp.html">core.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -208,7 +242,7 @@ $(document).ready(function(){initNavTree('die_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="die_8hpp.html">die.hpp</a></li>
-    <li class="footer">Generated on Tue Mar 5 2019 05:24:24 for Thrill by
+    <li class="footer">Generated on Tue Mar 19 2019 19:54:25 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

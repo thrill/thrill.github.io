@@ -1,13 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"classthrill_1_1data_1_1StreamSink.html#a3c07d3b3d645dfdff219855e7b69e54e":[3,1,1,49,23],
-"classthrill_1_1data_1_1StreamSink.html#a62f1fb01dec488ad1724ff8b40c9cd7c":[3,1,1,49,15],
-"classthrill_1_1data_1_1StreamSink.html#a6b72e54baf646b08b4b87f987f583dcb":[3,1,1,49,22],
-"classthrill_1_1data_1_1StreamSink.html#a7ac3ec26751fe8ed4578bcb7a2ae1117":[3,1,1,49,24],
-"classthrill_1_1data_1_1StreamSink.html#a86a685ea35fd63df45d4a3443d7f88e8":[3,1,1,49,17],
-"classthrill_1_1data_1_1StreamSink.html#a89bcbd30167c8563fc80f12bd313d084":[3,1,1,49,2],
-"classthrill_1_1data_1_1StreamSink.html#a8a52a84f0a2aa480b76baeb8a219ef68":[3,1,1,49,16],
-"classthrill_1_1data_1_1StreamSink.html#a8fee61d7a783cade1a3d07fe86284d27":[3,1,1,49,11],
 "classthrill_1_1data_1_1StreamSink.html#a92a299332034578140b68fdb2e514319":[3,1,1,49,6],
 "classthrill_1_1data_1_1StreamSink.html#a9445a581fc47ebf6bb90fce05dc79596":[3,1,1,49,19],
 "classthrill_1_1data_1_1StreamSink.html#a9a2419998e8a85e72a5c65513bbba69c":[3,1,1,49,13],
@@ -249,5 +241,13 @@ var NAVTREEINDEX17 =
 "classthrill_1_1net_1_1AsyncWriteBlock.html#a4d1bc925473b39c9100cfc7ddcab1ffb":[3,1,2,5,2],
 "classthrill_1_1net_1_1AsyncWriteBlock.html#a4ed42115af7a01fde7d23e9209c89f23":[3,1,2,5,14],
 "classthrill_1_1net_1_1AsyncWriteBlock.html#a6c7313f2f8301e16582b71156e0906e5":[3,1,2,5,15],
-"classthrill_1_1net_1_1AsyncWriteBlock.html#a77bd2623550e0216b4469003c29181d5":[3,1,2,5,7]
+"classthrill_1_1net_1_1AsyncWriteBlock.html#a77bd2623550e0216b4469003c29181d5":[3,1,2,5,7],
+"classthrill_1_1net_1_1AsyncWriteBlock.html#a8d4e66ffb6192b8b07f14a0fe774de7a":[3,1,2,5,12],
+"classthrill_1_1net_1_1AsyncWriteBlock.html#a8f756433e4abac77ecfb3c1bb85a483b":[3,1,2,5,0],
+"classthrill_1_1net_1_1AsyncWriteBlock.html#aa8d48ea2bd11e5163c3b9ef441a07906":[3,1,2,5,6],
+"classthrill_1_1net_1_1AsyncWriteBlock.html#aac782da1f912bceb5d8ad00c8dc892ac":[3,1,2,5,11],
+"classthrill_1_1net_1_1AsyncWriteBlock.html#ab8a51b489fb93f617991296e843631fb":[3,1,2,5,9],
+"classthrill_1_1net_1_1AsyncWriteBlock.html#acef80dec6298fc217923a30b63e4103e":[3,1,2,5,4],
+"classthrill_1_1net_1_1AsyncWriteBlock.html#adeed88636a2a5565db2bd549635e16df":[3,1,2,5,3],
+"classthrill_1_1net_1_1AsyncWriteBuffer.html":[3,1,2,6]
 };

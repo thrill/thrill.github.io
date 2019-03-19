@@ -347,7 +347,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 , <a class="el" href="classthrill_1_1net_1_1tcp_1_1Socket.html#a6b72e54baf646b08b4b87f987f583dcb">Socket</a>
 , <a class="el" href="classthrill_1_1net_1_1tcp_1_1SocketAddress.html#a6b72e54baf646b08b4b87f987f583dcb">SocketAddress</a>
 , <a class="el" href="classtlx_1_1AllocatorBase.html#a6b72e54baf646b08b4b87f987f583dcb">AllocatorBase&lt; Type &gt;</a>
-, <a class="el" href="classtlx_1_1BTree.html#a6295d47efda04de55c38cb8ea1cdb807">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;</a>
+, <a class="el" href="classtlx_1_1BTree.html#a6295d47efda04de55c38cb8ea1cdb807">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;</a>
 , <a class="el" href="structtlx_1_1btree__default__traits.html#a6295d47efda04de55c38cb8ea1cdb807">btree_default_traits&lt; Key, Value &gt;</a>
 , <a class="el" href="classtlx_1_1btree__map.html#a6295d47efda04de55c38cb8ea1cdb807">btree_map&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;</a>
 , <a class="el" href="classtlx_1_1btree__multimap.html#a6295d47efda04de55c38cb8ea1cdb807">btree_multimap&lt; Key_, Data_, Compare_, Traits_, Alloc_ &gt;</a>
@@ -453,6 +453,9 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 , <a class="el" href="group__tlx__container__loser__tree.html#ga662020d2414024ea935bf7fc67423d26">LoserTreePointerUnguarded&lt; Stable, ValueType, Comparator &gt;</a>
 , <a class="el" href="group__tlx__container__loser__tree.html#ga662020d2414024ea935bf7fc67423d26">LoserTreePointerUnguarded&lt; true, ValueType, Comparator &gt;</a>
 </li>
+<li>delete_node()
+: <a class="el" href="classtlx_1_1SplayTree.html#af8df1d23ca1b4eed7bb6ae777df8a8da">SplayTree&lt; Key, Compare, Duplicates, Allocator &gt;</a>
+</li>
 <li>delete_on_exit
 : <a class="el" href="classfoxxll_1_1disk__config.html#a5b64baa9e95e050973a434db3c6330ca">disk_config</a>
 </li>
@@ -517,7 +520,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 </li>
 <li>destroy()
 : <a class="el" href="classthrill_1_1mem_1_1Pool.html#a7019c68cf2e752e301a9e51c87ca6da0">Pool</a>
-, <a class="el" href="classtlx_1_1AllocatorBase.html#a73ac79dce9c71cc39b3d1eb262116ab7">AllocatorBase&lt; Type &gt;</a>
+, <a class="el" href="classtlx_1_1AllocatorBase.html#a19ed9be1546e344955208e4ec59dd9a4">AllocatorBase&lt; Type &gt;</a>
 </li>
 <li>destroy_array()
 : <a class="el" href="classtlx_1_1SimpleVector.html#af5bb6579266664efe61f1369ab0a02e3">SimpleVector&lt; ValueType, Mode &gt;</a>
@@ -549,7 +552,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 , <a class="el" href="classfoxxll_1_1file__stats__data.html#a43b8bc8a51d80298cacada81581f9227">file_stats_data</a>
 </li>
 <li>DIA()
-: <a class="el" href="classthrill_1_1api_1_1DIA.html#a2d397301a37e9faa41248334a05e7a27">DIA&lt; ValueType_, Stack_ &gt;</a>
+: <a class="el" href="classthrill_1_1api_1_1DIA.html#a2358e3f716f78627cd361af589ee2d85">DIA&lt; ValueType_, Stack_ &gt;</a>
 </li>
 <li>dia_id()
 : <a class="el" href="classthrill_1_1api_1_1DIABase.html#af4d2f8359bc7945ac1ce5bc9e006953c">DIABase</a>
@@ -571,7 +574,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 : <a class="el" href="classthrill_1_1api_1_1JoinNode_1_1HashCount.html#ae7312b72a0bc7db5d0a11bf5aa9c1f16">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::HashCount</a>
 </li>
 <li>DIABase()
-: <a class="el" href="classthrill_1_1api_1_1DIABase.html#a5b2968db87ffe8ddcc0da946618ef474">DIABase</a>
+: <a class="el" href="classthrill_1_1api_1_1DIABase.html#ac077949579fd999da15f88cb15c6992d">DIABase</a>
 </li>
 <li>DIABasePtr
 : <a class="el" href="classthrill_1_1api_1_1DIABase.html#afd807377b556060aa33d5dd9c12b75e2">DIABase</a>
@@ -606,10 +609,10 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 , <a class="el" href="classthrill_1_1mem_1_1FixedPoolAllocator.html#ace405568d0b2f3fad4990044252c7732">FixedPoolAllocator&lt; Type, pool_ &gt;</a>
 , <a class="el" href="classthrill_1_1mem_1_1PoolAllocator.html#ace405568d0b2f3fad4990044252c7732">PoolAllocator&lt; Type &gt;</a>
 , <a class="el" href="classtlx_1_1AllocatorBase.html#ace405568d0b2f3fad4990044252c7732">AllocatorBase&lt; Type &gt;</a>
-, <a class="el" href="classtlx_1_1BTree_1_1const__iterator.html#acf947bbb9e09f863cc3572ff8550b183">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;::const_iterator</a>
-, <a class="el" href="classtlx_1_1BTree_1_1const__reverse__iterator.html#acf947bbb9e09f863cc3572ff8550b183">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;::const_reverse_iterator</a>
-, <a class="el" href="classtlx_1_1BTree_1_1iterator.html#acf947bbb9e09f863cc3572ff8550b183">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;::iterator</a>
-, <a class="el" href="classtlx_1_1BTree_1_1reverse__iterator.html#acf947bbb9e09f863cc3572ff8550b183">BTree&lt; Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ &gt;::reverse_iterator</a>
+, <a class="el" href="classtlx_1_1BTree_1_1const__iterator.html#acf947bbb9e09f863cc3572ff8550b183">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;::const_iterator</a>
+, <a class="el" href="classtlx_1_1BTree_1_1const__reverse__iterator.html#acf947bbb9e09f863cc3572ff8550b183">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;::const_reverse_iterator</a>
+, <a class="el" href="classtlx_1_1BTree_1_1iterator.html#acf947bbb9e09f863cc3572ff8550b183">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;::iterator</a>
+, <a class="el" href="classtlx_1_1BTree_1_1reverse__iterator.html#acf947bbb9e09f863cc3572ff8550b183">BTree&lt; Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator &gt;::reverse_iterator</a>
 , <a class="el" href="classtlx_1_1RingBuffer.html#a4db1526a7432629938f1aba3203accaa">RingBuffer&lt; Type, Allocator &gt;</a>
 , <a class="el" href="classtlx_1_1StackAllocator.html#ace405568d0b2f3fad4990044252c7732">StackAllocator&lt; Type, Size &gt;</a>
 </li>
@@ -686,7 +689,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 : <a class="el" href="classthrill_1_1api_1_1DisjointWindowNode.html#ae35f6fe0d5f51ca36c74810d9dba6b4b">DisjointWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;</a>
 </li>
 <li>disk()
-: <a class="el" href="classfoxxll_1_1config.html#a514bdd7616a21d020fdf889c1e4b3506">config</a>
+: <a class="el" href="classfoxxll_1_1config.html#a64a552aa9588840cd31d8ef712b66cd8">config</a>
 </li>
 <li>disk_
 : <a class="el" href="structfoxxll_1_1single__disk.html#ac6f805d166937bdfabb7a5510f6f7fe0">single_disk</a>
@@ -701,7 +704,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 : <a class="el" href="classfoxxll_1_1disk__block__allocator.html#a1cbd824fc39150cebe7a82a7045098d3">disk_block_allocator</a>
 </li>
 <li>disk_config()
-: <a class="el" href="classfoxxll_1_1disk__config.html#a58bb4d43261d203ae1c3ce2de7deaa25">disk_config</a>
+: <a class="el" href="classfoxxll_1_1disk__config.html#a6d7399279b1f85c3f7ebbb2bf540f068">disk_config</a>
 </li>
 <li>disk_files_
 : <a class="el" href="classfoxxll_1_1block__manager.html#aa8bf05ae509d2682e6e7dfde97e117dc">block_manager</a>
@@ -754,7 +757,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 , <a class="el" href="classthrill_1_1net_1_1mpi_1_1Group.html#a3d58d206edc34cec9c0a6d4258f5a601">Group</a>
 </li>
 <li>DispatcherThread()
-: <a class="el" href="classthrill_1_1net_1_1DispatcherThread.html#a8a13c75760629fca835f079d869162d8">DispatcherThread</a>
+: <a class="el" href="classthrill_1_1net_1_1DispatcherThread.html#ad0dda933b66c6e081328261fa9c31d25">DispatcherThread</a>
 </li>
 <li>DispatchOne()
 : <a class="el" href="classthrill_1_1net_1_1Dispatcher.html#a2c1985d161f7c8be981e6a92423d9a99">Dispatcher</a>
@@ -828,7 +831,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 , <a class="el" href="classtlx_1_1ThreadPool.html#a18e1ce640131051703d238c31d041f30">ThreadPool</a>
 </li>
 <li>DOpNode()
-: <a class="el" href="classthrill_1_1api_1_1DOpNode.html#ae58be5c6c33cff3a83b85d78ebbe97ce">DOpNode&lt; ValueType &gt;</a>
+: <a class="el" href="classthrill_1_1api_1_1DOpNode.html#a8cbbcae4c703aba693b758fb7da4539a">DOpNode&lt; ValueType &gt;</a>
 </li>
 <li>DoScatter()
 : <a class="el" href="classthrill_1_1api_1_1ZipNode.html#a5196ae124e0fb593b5e819504c7fe4ba">ZipNode&lt; ValueType, ZipFunction, Pad, UnequalCheck, NoRebalance, kNumInputs &gt;</a>
@@ -861,7 +864,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 : <a class="el" href="classthrill_1_1data_1_1DynBlockSource.html#a0348ee3f5e5759bb771f49863a047df9">DynBlockSource</a>
 </li>
 <li>DynBlockSourceAdapter()
-: <a class="el" href="classthrill_1_1data_1_1DynBlockSourceAdapter.html#a6c2683f4891d0daa1bd6bcc20833c489">DynBlockSourceAdapter&lt; BlockSource &gt;</a>
+: <a class="el" href="classthrill_1_1data_1_1DynBlockSourceAdapter.html#a35d34af7bca4a8a8abd09892a8be50d4">DynBlockSourceAdapter&lt; BlockSource &gt;</a>
 </li>
 <li>DynReserve()
 : <a class="el" href="classthrill_1_1net_1_1BufferBuilder.html#a8d087a538dde49c49d8cbf4eb71136a1">BufferBuilder</a>
@@ -872,7 +875,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Mar 5 2019 05:24:31 for Thrill by
+    <li class="footer">Generated on Tue Mar 19 2019 19:54:32 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

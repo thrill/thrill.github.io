@@ -224,14 +224,51 @@ var group__tlx__container =
       [ "array_", "classtlx_1_1SimpleVector.html#a581987641fc2ed1e4c1fff21240dcd01", null ],
       [ "size_", "classtlx_1_1SimpleVector.html#a4f3592f75c4916a9a92255c165bd65d2", null ]
     ] ],
+    [ "SplayTree", "classtlx_1_1SplayTree.html", [
+      [ "Node", "structtlx_1_1SplayTree_1_1Node.html", [
+        [ "Node", "structtlx_1_1SplayTree_1_1Node.html#a367602fd7d549671f88f2672ebc08a8a", null ],
+        [ "key", "structtlx_1_1SplayTree_1_1Node.html#a96313403719d705d2df812e3ba166772", null ],
+        [ "left", "structtlx_1_1SplayTree_1_1Node.html#a58fb104c04bf9132852fe55bdaf2298e", null ],
+        [ "right", "structtlx_1_1SplayTree_1_1Node.html#aed0bb7b39809fd34bd9e73867906b5f4", null ]
+      ] ],
+      [ "node_alloc_type", "classtlx_1_1SplayTree.html#af3548b0b3b7d9cf700540ac1e2d9965f", null ],
+      [ "SplayTree", "classtlx_1_1SplayTree.html#a71632d532fdc992375c743fdca582c78", null ],
+      [ "SplayTree", "classtlx_1_1SplayTree.html#ac994473cd9d4aa8800b60644490c79c3", null ],
+      [ "~SplayTree", "classtlx_1_1SplayTree.html#a9f1ac27da4be7c17045195fda7f6a83d", null ],
+      [ "check", "classtlx_1_1SplayTree.html#a6ecddb2c44556b7acbc1723a968ff8bb", null ],
+      [ "clear", "classtlx_1_1SplayTree.html#ac8bb3912a3ce86b15842e79d0b421204", null ],
+      [ "delete_node", "classtlx_1_1SplayTree.html#af8df1d23ca1b4eed7bb6ae777df8a8da", null ],
+      [ "empty", "classtlx_1_1SplayTree.html#ac6e61de369e994009e36f344f99c15ad", null ],
+      [ "erase", "classtlx_1_1SplayTree.html#a55de340ce0775f1dbb713d35aa3fa6f4", null ],
+      [ "erase", "classtlx_1_1SplayTree.html#ac862dab8efff06ba490ec9257ccd774d", null ],
+      [ "exists", "classtlx_1_1SplayTree.html#af84f8ba40202c91b0cfb6e3496a48bae", null ],
+      [ "find", "classtlx_1_1SplayTree.html#a5fcd1d6596f61b9e49335d4c1d492150", null ],
+      [ "insert", "classtlx_1_1SplayTree.html#ae2871cc7873a9f880494f211e5186cb6", null ],
+      [ "size", "classtlx_1_1SplayTree.html#aac782da1f912bceb5d8ad00c8dc892ac", null ],
+      [ "traverse_preorder", "classtlx_1_1SplayTree.html#a79fa2c6dc6154e4e6987c7a29aa02c12", null ],
+      [ "alloc_", "classtlx_1_1SplayTree.html#a5911860eaf6040e8418c2fb81166c26c", null ],
+      [ "cmp_", "classtlx_1_1SplayTree.html#aca7808f9cdac8962f945d682f1d10ffd", null ],
+      [ "node_allocator_", "classtlx_1_1SplayTree.html#a2f6492f00cd19a53712b895118b49ead", null ],
+      [ "root_", "classtlx_1_1SplayTree.html#a0eea8a17e55a35a137fd9628d5dc98d8", null ],
+      [ "size_", "classtlx_1_1SplayTree.html#a5f31775800bbb46b35b5791def1f3acc", null ]
+    ] ],
     [ "d_ary_addressable_int_heap", "group__tlx__container.html#ga1689ee2489dc0a29c45605ae5ee25cd3", null ],
     [ "d_ary_heap", "group__tlx__container.html#ga36e59dd0c9957af99aa5f99b30ab7fd5", null ],
     [ "RadixHeapPair", "group__tlx__container.html#ga1c9a8c3eea280d29bd2da8df37a01d9a", null ],
     [ "simple_vector", "group__tlx__container.html#ga4843a6aed555573a98892469fee27b0b", null ],
+    [ "splay_multiset", "group__tlx__container.html#ga7c6288bed9ea72458c107ba60de69776", null ],
+    [ "splay_set", "group__tlx__container.html#ga41e381f67b77a92a0521fb1b268c930c", null ],
     [ "SimpleVectorMode", "group__tlx__container.html#ga07f67904ca9d31961dc022100101c358", [
       [ "Normal", "group__tlx__container.html#gga07f67904ca9d31961dc022100101c358a960b44c579bc2f6818d2daaf9e4c16f0", null ],
       [ "NoInitButDestroy", "group__tlx__container.html#gga07f67904ca9d31961dc022100101c358a96726bf24e630d03d0f4e5715e9fd097", null ],
       [ "NoInitNoDestroy", "group__tlx__container.html#gga07f67904ca9d31961dc022100101c358a60008b87abd54104caffab5779ea7244", null ]
     ] ],
-    [ "make_radix_heap", "group__tlx__container.html#ga5a349f9b8b3e8deeeb18e6428bc89777", null ]
+    [ "make_radix_heap", "group__tlx__container.html#ga5a349f9b8b3e8deeeb18e6428bc89777", null ],
+    [ "splay", "group__tlx__container.html#ga4a2095ef4e565c914bbbab9b8ddeb5fe", null ],
+    [ "splay_check", "group__tlx__container.html#ga0d9d3030d15353337ec87bb84cbd0d4b", null ],
+    [ "splay_check", "group__tlx__container.html#gaefd27b9686bc2139cc43490f13c16315", null ],
+    [ "splay_erase", "group__tlx__container.html#gae768c3fbbdebb44b09b92637c285b8f7", null ],
+    [ "splay_insert", "group__tlx__container.html#gad3cc3fe23b6946ec8147fd163c167f3e", null ],
+    [ "splay_traverse_postorder", "group__tlx__container.html#gad8f0e0a9f2fa6150b5c8c5270a31ad89", null ],
+    [ "splay_traverse_preorder", "group__tlx__container.html#gac719dadccd01dfa9a38fee2943f08134", null ]
 ];

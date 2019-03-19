@@ -1,13 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"classthrill_1_1data_1_1ByteBlock.html#acb945171ea438cebd4af3199452a3e98":[3,1,1,10,29],
-"classthrill_1_1data_1_1ByteBlock.html#adbe4d6e73e6ed321c805857bf57d8c24":[3,1,1,10,33],
-"classthrill_1_1data_1_1ByteBlock.html#ae9b0f64178dcb6dc73d13898b52e94da":[3,1,1,10,27],
-"classthrill_1_1data_1_1ByteBlock.html#af480aa248eb366476448947497b5e53a":[3,1,1,10,24],
-"classthrill_1_1data_1_1ByteBlock.html#afa65be12e7fc52b47b138d5bc5f8ef49":[3,1,1,10,23],
-"classthrill_1_1data_1_1ByteBlock.html#afb4bedf5b59f060a9ce5d17478f1bd23":[3,1,1,10,4],
-"classthrill_1_1data_1_1ByteBlock_1_1Deleter.html":[3,1,1,10,0],
-"classthrill_1_1data_1_1ByteBlock_1_1Deleter.html#a0f5d5bc0186092ee81692bc8b6ff636f":[3,1,1,10,0,0],
 "classthrill_1_1data_1_1ByteBlock_1_1Deleter.html#a8557032d89bc1f0efd76ae6bed0accf0":[3,1,1,10,0,1],
 "classthrill_1_1data_1_1CacheBlockQueueSource.html":[3,1,1,11],
 "classthrill_1_1data_1_1CacheBlockQueueSource.html#a080efdb9367d0f09315d6a458c62922f":[3,1,1,11,2],
@@ -249,5 +241,13 @@ var NAVTREEINDEX15 =
 "classthrill_1_1data_1_1MixStream.html#ae3af2cc593a469f01b54bcbee6a35a2a":[3,1,1,27,2],
 "classthrill_1_1data_1_1MixStream.html#aeb2c6eb8568ab9d90469bbf5f4a3f14f":[3,1,1,27,9],
 "classthrill_1_1data_1_1MixStream.html#af64aa0ccaec2b0e16f41e7e52c550898":[3,1,1,27,6],
-"classthrill_1_1data_1_1MixStream.html#af769ba61d257bc1d884bcb0a9ead0c56":[3,1,1,27,7]
+"classthrill_1_1data_1_1MixStream.html#af769ba61d257bc1d884bcb0a9ead0c56":[3,1,1,27,7],
+"classthrill_1_1data_1_1MixStreamData.html":[3,1,1,28],
+"classthrill_1_1data_1_1MixStreamData.html#a003ef159b7259479c2b087912970e4c4":[3,1,1,28,15],
+"classthrill_1_1data_1_1MixStreamData.html#a0e7fd7ca77f77da1e0b65d4b35451f44":[3,1,1,28,16],
+"classthrill_1_1data_1_1MixStreamData.html#a138c267e6813d07bf164d653f176dca5":[3,1,1,28,4],
+"classthrill_1_1data_1_1MixStreamData.html#a29dc6798f18d73abd4ba8e4910f6831f":[3,1,1,28,6],
+"classthrill_1_1data_1_1MixStreamData.html#a3c310149e32ff3cb3a3de4d6c458e17f":[3,1,1,28,11],
+"classthrill_1_1data_1_1MixStreamData.html#a4787f90b7b2f8ae1b76c61a3fbfee1ca":[3,1,1,28,13],
+"classthrill_1_1data_1_1MixStreamData.html#a502e1d3a784c2cd0901a9ea86f6e7777":[3,1,1,28,5]
 };

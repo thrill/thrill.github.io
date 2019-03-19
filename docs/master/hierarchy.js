@@ -437,9 +437,6 @@ var hierarchy =
     [ "Sampling< RNG >", "classthrill_1_1common_1_1Sampling.html", null ],
     [ "SharedState< ValueType >", "classthrill_1_1common_1_1SharedState.html", null ],
     [ "Singleton< Instance, destroy_on_exit >", "classthrill_1_1common_1_1Singleton.html", null ],
-    [ "SplayzTree< Key >", "classthrill_1_1common_1_1SplayzTree.html", null ],
-    [ "SplayzTree< Key >::Node", "structthrill_1_1common_1_1SplayzTree_1_1Node.html", null ],
-    [ "SplayzTree< Key >::NodeCompare", "structthrill_1_1common_1_1SplayzTree_1_1NodeCompare.html", null ],
     [ "StatsCounter< ValueType_, Active >", "classthrill_1_1common_1_1StatsCounter.html", null ],
     [ "StatsCounter< ValueType_, false >", "classthrill_1_1common_1_1StatsCounter_3_01ValueType___00_01false_01_4.html", null ],
     [ "StatsCounter< ValueType_, true >", "classthrill_1_1common_1_1StatsCounter_3_01ValueType___00_01true_01_4.html", null ],
@@ -614,18 +611,18 @@ var hierarchy =
       [ "PoolAllocator< Type >", "classthrill_1_1mem_1_1PoolAllocator.html", null ],
       [ "StackAllocator< Type, Size >", "classtlx_1_1StackAllocator.html", null ]
     ] ],
-    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >", "classtlx_1_1BTree.html", null ],
-    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::const_iterator", "classtlx_1_1BTree_1_1const__iterator.html", null ],
-    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::const_reverse_iterator", "classtlx_1_1BTree_1_1const__reverse__iterator.html", null ],
-    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::iterator", "classtlx_1_1BTree_1_1iterator.html", null ],
-    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::node", "structtlx_1_1BTree_1_1node.html", [
-      [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::InnerNode", "structtlx_1_1BTree_1_1InnerNode.html", null ],
-      [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::LeafNode", "structtlx_1_1BTree_1_1LeafNode.html", null ]
+    [ "BTree< Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator >", "classtlx_1_1BTree.html", null ],
+    [ "BTree< Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator >::const_iterator", "classtlx_1_1BTree_1_1const__iterator.html", null ],
+    [ "BTree< Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator >::const_reverse_iterator", "classtlx_1_1BTree_1_1const__reverse__iterator.html", null ],
+    [ "BTree< Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator >::iterator", "classtlx_1_1BTree_1_1iterator.html", null ],
+    [ "BTree< Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator >::node", "structtlx_1_1BTree_1_1node.html", [
+      [ "BTree< Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator >::InnerNode", "structtlx_1_1BTree_1_1InnerNode.html", null ],
+      [ "BTree< Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator >::LeafNode", "structtlx_1_1BTree_1_1LeafNode.html", null ]
     ] ],
-    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::result_t", "structtlx_1_1BTree_1_1result__t.html", null ],
-    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::reverse_iterator", "classtlx_1_1BTree_1_1reverse__iterator.html", null ],
-    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::tree_stats", "structtlx_1_1BTree_1_1tree__stats.html", null ],
-    [ "BTree< Key_, Value_, KeyOfValue_, Compare_, Traits_, Duplicates_, Alloc_ >::value_compare", "classtlx_1_1BTree_1_1value__compare.html", null ],
+    [ "BTree< Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator >::result_t", "structtlx_1_1BTree_1_1result__t.html", null ],
+    [ "BTree< Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator >::reverse_iterator", "classtlx_1_1BTree_1_1reverse__iterator.html", null ],
+    [ "BTree< Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator >::tree_stats", "structtlx_1_1BTree_1_1tree__stats.html", null ],
+    [ "BTree< Key, Value, KeyOfValue, Compare, Traits, Duplicates, Allocator >::value_compare", "classtlx_1_1BTree_1_1value__compare.html", null ],
     [ "btree_default_traits< Key, Value >", "structtlx_1_1btree__default__traits.html", null ],
     [ "btree_map< Key_, Data_, Compare_, Traits_, Alloc_ >", "classtlx_1_1btree__map.html", null ],
     [ "btree_map< Key_, Data_, Compare_, Traits_, Alloc_ >::key_of_value", "structtlx_1_1btree__map_1_1key__of__value.html", null ],
@@ -843,6 +840,8 @@ var hierarchy =
       [ "UPtrStdStringSet", "classtlx_1_1sort__strings__detail_1_1UPtrStdStringSet.html", null ]
     ] ],
     [ "SpacingLogger", "classtlx_1_1SpacingLogger.html", null ],
+    [ "SplayTree< Key, Compare, Duplicates, Allocator >", "classtlx_1_1SplayTree.html", null ],
+    [ "SplayTree< Key, Compare, Duplicates, Allocator >::Node", "structtlx_1_1SplayTree_1_1Node.html", null ],
     [ "StackAllocator< Type, Size >::rebind< Other >", "structtlx_1_1StackAllocator_1_1rebind.html", null ],
     [ "StackArena< Size >", "classtlx_1_1StackArena.html", null ],
     [ "StackArena< Size >::AlignmentHelper", "uniontlx_1_1StackArena_1_1AlignmentHelper.html", null ],

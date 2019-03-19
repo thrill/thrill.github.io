@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Thrill: thrill/common/splay_tree.hpp File Reference</title>
+<title>Thrill: extlib/tlx/tlx/container/splay_tree.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -115,20 +115,28 @@ $(document).ready(function(){initNavTree('splay__tree_8hpp.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">splay_tree.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cassert&gt;</code><br/>
-<code>#include &lt;iostream&gt;</code><br/>
+<div class="textblock"><code>#include &lt;functional&gt;</code><br/>
+<code>#include &lt;memory&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for splay_tree.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="splay__tree_8hpp__incl.svg" width="172" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="splay__tree_8hpp__incl.svg" width="183" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="splay__tree_8hpp__dep__incl.svg" width="182" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -136,113 +144,61 @@ $(document).ready(function(){initNavTree('splay__tree_8hpp.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1SplayzTree.html">SplayzTree&lt; Key &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1SplayTree.html">SplayTree&lt; Key, Compare, Duplicates, Allocator &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1common_1_1SplayzTree_1_1Node.html">SplayzTree&lt; Key &gt;::Node</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthrill_1_1common_1_1SplayzTree_1_1NodeCompare.html">SplayzTree&lt; Key &gt;::NodeCompare</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtlx_1_1SplayTree_1_1Node.html">SplayTree&lt; Key, Compare, Duplicates, Allocator &gt;::Node</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">splay tree node, also seen as public iterator  <a href="structtlx_1_1SplayTree_1_1Node.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacethrill"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill.html">thrill</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacethrill_1_1common"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html">thrill::common</a></td></tr>
-<tr class="memdesc:namespacethrill_1_1common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains many common tools and helpers shared by higher layers. See <a class="el" href="namespacethrill_1_1common.html">common</a>. <br/></td></tr>
+<tr class="memitem:namespacetlx"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html">tlx</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a9301d893cfc9d9bd64186fe1d5473872"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="splay__tree_8hpp.html#a9301d893cfc9d9bd64186fe1d5473872">THRILL_COMMON_SPLAY_TREE_HEADER</a></td></tr>
-<tr class="separator:a9301d893cfc9d9bd64186fe1d5473872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga7c6288bed9ea72458c107ba60de69776"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Compare  = std::less&lt;Key&gt;, typename Allocator  = std::allocator&lt;Key&gt;&gt; </td></tr>
+<tr class="memitem:ga7c6288bed9ea72458c107ba60de69776"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga7c6288bed9ea72458c107ba60de69776">splay_multiset</a> = SplayTree&lt; Key, Compare, true, Allocator &gt;</td></tr>
+<tr class="separator:ga7c6288bed9ea72458c107ba60de69776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41e381f67b77a92a0521fb1b268c930c"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Compare  = std::less&lt;Key&gt;, typename Allocator  = std::allocator&lt;Key&gt;&gt; </td></tr>
+<tr class="memitem:ga41e381f67b77a92a0521fb1b268c930c"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga41e381f67b77a92a0521fb1b268c930c">splay_set</a> = SplayTree&lt; Key, Compare, false, Allocator &gt;</td></tr>
+<tr class="separator:ga41e381f67b77a92a0521fb1b268c930c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3e9bdfab3ae32f9d5bd2e6dd27dac16c"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Tree , typename Compare &gt; </td></tr>
-<tr class="memitem:a3e9bdfab3ae32f9d5bd2e6dd27dac16c"><td class="memTemplItemLeft" align="right" valign="top">Tree *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a3e9bdfab3ae32f9d5bd2e6dd27dac16c">splay</a> (const Key &amp;k, Tree *t, const Compare &amp;cmp)</td></tr>
-<tr class="separator:a3e9bdfab3ae32f9d5bd2e6dd27dac16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a353fa9edf1d687a8019b7852e2b1a10e"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Compare &gt; </td></tr>
-<tr class="memitem:a353fa9edf1d687a8019b7852e2b1a10e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a353fa9edf1d687a8019b7852e2b1a10e">splay_check</a> (const Tree *t, const Tree *&amp;out_tmin, const Tree *&amp;out_tmax, const Compare &amp;cmp)</td></tr>
-<tr class="memdesc:a353fa9edf1d687a8019b7852e2b1a10e"><td class="mdescLeft">&#160;</td><td class="mdescRight">check the tree order, recursively calculate min and max elements  <a href="#a353fa9edf1d687a8019b7852e2b1a10e">More...</a><br/></td></tr>
-<tr class="separator:a353fa9edf1d687a8019b7852e2b1a10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30f5f17d5df71f3103766eb13328e6d6"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Compare &gt; </td></tr>
-<tr class="memitem:a30f5f17d5df71f3103766eb13328e6d6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a30f5f17d5df71f3103766eb13328e6d6">splay_check</a> (const Tree *t, const Compare &amp;cmp)</td></tr>
-<tr class="memdesc:a30f5f17d5df71f3103766eb13328e6d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">check the tree order  <a href="#a30f5f17d5df71f3103766eb13328e6d6">More...</a><br/></td></tr>
-<tr class="separator:a30f5f17d5df71f3103766eb13328e6d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabee6a2b867c2a95e35e1457d29d6f91"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Tree , typename Compare &gt; </td></tr>
-<tr class="memitem:aabee6a2b867c2a95e35e1457d29d6f91"><td class="memTemplItemLeft" align="right" valign="top">Tree *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#aabee6a2b867c2a95e35e1457d29d6f91">splay_erase</a> (const Key &amp;k, Tree *&amp;t, const Compare &amp;cmp)</td></tr>
-<tr class="separator:aabee6a2b867c2a95e35e1457d29d6f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94b0e498dcd0e49cb77332b2d3c1f400"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Compare &gt; </td></tr>
-<tr class="memitem:a94b0e498dcd0e49cb77332b2d3c1f400"><td class="memTemplItemLeft" align="right" valign="top">Tree *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a94b0e498dcd0e49cb77332b2d3c1f400">splay_erase_top</a> (Tree *&amp;t, const Compare &amp;cmp)</td></tr>
-<tr class="separator:a94b0e498dcd0e49cb77332b2d3c1f400"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a867cb84a279771a376a18c04fa175d75"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Compare &gt; </td></tr>
-<tr class="memitem:a867cb84a279771a376a18c04fa175d75"><td class="memTemplItemLeft" align="right" valign="top">Tree *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a867cb84a279771a376a18c04fa175d75">splay_insert</a> (Tree *nn, Tree *t, const Compare &amp;cmp)</td></tr>
-<tr class="separator:a867cb84a279771a376a18c04fa175d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f5515edaf2a10b0fa1447d0a3e83526"><td class="memTemplParams" colspan="2">template&lt;typename Tree &gt; </td></tr>
-<tr class="memitem:a5f5515edaf2a10b0fa1447d0a3e83526"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a5f5515edaf2a10b0fa1447d0a3e83526">splay_print</a> (Tree *t, size_t d=0)</td></tr>
-<tr class="memdesc:a5f5515edaf2a10b0fa1447d0a3e83526"><td class="mdescLeft">&#160;</td><td class="mdescRight">print the tree  <a href="#a5f5515edaf2a10b0fa1447d0a3e83526">More...</a><br/></td></tr>
-<tr class="separator:a5f5515edaf2a10b0fa1447d0a3e83526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb357ec23da0240ed2957bb9f4de40d1"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Functor &gt; </td></tr>
-<tr class="memitem:adb357ec23da0240ed2957bb9f4de40d1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#adb357ec23da0240ed2957bb9f4de40d1">splay_traverse_preorder</a> (const Functor &amp;f, const Tree *t)</td></tr>
-<tr class="memdesc:adb357ec23da0240ed2957bb9f4de40d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">traverse the tree in preorder  <a href="#adb357ec23da0240ed2957bb9f4de40d1">More...</a><br/></td></tr>
-<tr class="separator:adb357ec23da0240ed2957bb9f4de40d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fe5cc8bfc8c5de6b6443b6492dc5e63"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Tree , typename Compare &gt; </td></tr>
-<tr class="memitem:a7fe5cc8bfc8c5de6b6443b6492dc5e63"><td class="memTemplItemLeft" align="right" valign="top">Tree *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a7fe5cc8bfc8c5de6b6443b6492dc5e63">splayz</a> (const Key &amp;k, Tree *t, const Compare &amp;cmp)</td></tr>
-<tr class="separator:a7fe5cc8bfc8c5de6b6443b6492dc5e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7600d14d4dbf6873984fcad3db59027"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Compare &gt; </td></tr>
-<tr class="memitem:ad7600d14d4dbf6873984fcad3db59027"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#ad7600d14d4dbf6873984fcad3db59027">splayz_check</a> (const Tree *t, const Tree *&amp;out_tmin, const Tree *&amp;out_tmax, size_t &amp;out_size, const Compare &amp;cmp)</td></tr>
-<tr class="memdesc:ad7600d14d4dbf6873984fcad3db59027"><td class="mdescLeft">&#160;</td><td class="mdescRight">check the tree order, recursively calculate min and max elements  <a href="#ad7600d14d4dbf6873984fcad3db59027">More...</a><br/></td></tr>
-<tr class="separator:ad7600d14d4dbf6873984fcad3db59027"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0451f301d2d6651a4a30d8388461ec45"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Compare &gt; </td></tr>
-<tr class="memitem:a0451f301d2d6651a4a30d8388461ec45"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a0451f301d2d6651a4a30d8388461ec45">splayz_check</a> (const Tree *t, const Compare &amp;cmp)</td></tr>
-<tr class="memdesc:a0451f301d2d6651a4a30d8388461ec45"><td class="mdescLeft">&#160;</td><td class="mdescRight">check the tree order  <a href="#a0451f301d2d6651a4a30d8388461ec45">More...</a><br/></td></tr>
-<tr class="separator:a0451f301d2d6651a4a30d8388461ec45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc8a822521398fd2278d13c9b3a2915a"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Tree , typename Compare &gt; </td></tr>
-<tr class="memitem:abc8a822521398fd2278d13c9b3a2915a"><td class="memTemplItemLeft" align="right" valign="top">Tree *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#abc8a822521398fd2278d13c9b3a2915a">splayz_erase</a> (const Key &amp;k, Tree *&amp;t, const Compare &amp;cmp)</td></tr>
-<tr class="separator:abc8a822521398fd2278d13c9b3a2915a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6415ae21a3d465c0e713b28493625dab"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Compare &gt; </td></tr>
-<tr class="memitem:a6415ae21a3d465c0e713b28493625dab"><td class="memTemplItemLeft" align="right" valign="top">Tree *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a6415ae21a3d465c0e713b28493625dab">splayz_erase_top</a> (Tree *&amp;t, const Compare &amp;cmp)</td></tr>
-<tr class="separator:a6415ae21a3d465c0e713b28493625dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf5e2f58341950e9a8caf49734174b34"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Compare &gt; </td></tr>
-<tr class="memitem:abf5e2f58341950e9a8caf49734174b34"><td class="memTemplItemLeft" align="right" valign="top">Tree *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#abf5e2f58341950e9a8caf49734174b34">splayz_insert</a> (Tree *nn, Tree *t, const Compare &amp;cmp)</td></tr>
-<tr class="separator:abf5e2f58341950e9a8caf49734174b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa11ae2e4f7015b0f9f67c166c46c0fa7"><td class="memTemplParams" colspan="2">template&lt;typename Tree &gt; </td></tr>
-<tr class="memitem:aa11ae2e4f7015b0f9f67c166c46c0fa7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#aa11ae2e4f7015b0f9f67c166c46c0fa7">splayz_print</a> (Tree *t, size_t d=0)</td></tr>
-<tr class="memdesc:aa11ae2e4f7015b0f9f67c166c46c0fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">print the tree  <a href="#aa11ae2e4f7015b0f9f67c166c46c0fa7">More...</a><br/></td></tr>
-<tr class="separator:aa11ae2e4f7015b0f9f67c166c46c0fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4307e3906dac2f42fa0bb04b934e1db"><td class="memTemplParams" colspan="2">template&lt;typename Tree &gt; </td></tr>
-<tr class="memitem:aa4307e3906dac2f42fa0bb04b934e1db"><td class="memTemplItemLeft" align="right" valign="top">Tree *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#aa4307e3906dac2f42fa0bb04b934e1db">splayz_rank</a> (size_t r, Tree *t)</td></tr>
-<tr class="separator:aa4307e3906dac2f42fa0bb04b934e1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae650f5366e8ce88786211de056d15d2c"><td class="memTemplParams" colspan="2">template&lt;typename Tree &gt; </td></tr>
-<tr class="memitem:ae650f5366e8ce88786211de056d15d2c"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#ae650f5366e8ce88786211de056d15d2c">splayz_size</a> (Tree *x)</td></tr>
-<tr class="separator:ae650f5366e8ce88786211de056d15d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe1eb22a8e2802a1ee007549cb4bd8c4"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Functor &gt; </td></tr>
-<tr class="memitem:afe1eb22a8e2802a1ee007549cb4bd8c4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#afe1eb22a8e2802a1ee007549cb4bd8c4">splayz_traverse_preorder</a> (const Functor &amp;f, const Tree *t)</td></tr>
-<tr class="memdesc:afe1eb22a8e2802a1ee007549cb4bd8c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">traverse the tree in preorder  <a href="#afe1eb22a8e2802a1ee007549cb4bd8c4">More...</a><br/></td></tr>
-<tr class="separator:afe1eb22a8e2802a1ee007549cb4bd8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a2095ef4e565c914bbbab9b8ddeb5fe"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Tree , typename Compare &gt; </td></tr>
+<tr class="memitem:ga4a2095ef4e565c914bbbab9b8ddeb5fe"><td class="memTemplItemLeft" align="right" valign="top">Tree *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga4a2095ef4e565c914bbbab9b8ddeb5fe">splay</a> (const Key &amp;k, Tree *t, const Compare &amp;cmp)</td></tr>
+<tr class="separator:ga4a2095ef4e565c914bbbab9b8ddeb5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d9d3030d15353337ec87bb84cbd0d4b"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Compare &gt; </td></tr>
+<tr class="memitem:ga0d9d3030d15353337ec87bb84cbd0d4b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga0d9d3030d15353337ec87bb84cbd0d4b">splay_check</a> (const Tree *t, const Tree *&amp;out_tmin, const Tree *&amp;out_tmax, const Compare &amp;cmp)</td></tr>
+<tr class="memdesc:ga0d9d3030d15353337ec87bb84cbd0d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">check the tree order, recursively calculate min and max elements  <a href="group__tlx__container.html#ga0d9d3030d15353337ec87bb84cbd0d4b">More...</a><br/></td></tr>
+<tr class="separator:ga0d9d3030d15353337ec87bb84cbd0d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefd27b9686bc2139cc43490f13c16315"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Compare &gt; </td></tr>
+<tr class="memitem:gaefd27b9686bc2139cc43490f13c16315"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#gaefd27b9686bc2139cc43490f13c16315">splay_check</a> (const Tree *t, const Compare &amp;cmp)</td></tr>
+<tr class="memdesc:gaefd27b9686bc2139cc43490f13c16315"><td class="mdescLeft">&#160;</td><td class="mdescRight">check the tree order  <a href="group__tlx__container.html#gaefd27b9686bc2139cc43490f13c16315">More...</a><br/></td></tr>
+<tr class="separator:gaefd27b9686bc2139cc43490f13c16315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae768c3fbbdebb44b09b92637c285b8f7"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Tree , typename Compare &gt; </td></tr>
+<tr class="memitem:gae768c3fbbdebb44b09b92637c285b8f7"><td class="memTemplItemLeft" align="right" valign="top">Tree *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#gae768c3fbbdebb44b09b92637c285b8f7">splay_erase</a> (const Key &amp;k, Tree *&amp;t, const Compare &amp;cmp)</td></tr>
+<tr class="separator:gae768c3fbbdebb44b09b92637c285b8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3cc3fe23b6946ec8147fd163c167f3e"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Compare &gt; </td></tr>
+<tr class="memitem:gad3cc3fe23b6946ec8147fd163c167f3e"><td class="memTemplItemLeft" align="right" valign="top">Tree *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#gad3cc3fe23b6946ec8147fd163c167f3e">splay_insert</a> (Tree *nn, Tree *t, const Compare &amp;cmp)</td></tr>
+<tr class="separator:gad3cc3fe23b6946ec8147fd163c167f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8f0e0a9f2fa6150b5c8c5270a31ad89"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Functor &gt; </td></tr>
+<tr class="memitem:gad8f0e0a9f2fa6150b5c8c5270a31ad89"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#gad8f0e0a9f2fa6150b5c8c5270a31ad89">splay_traverse_postorder</a> (const Functor &amp;f, Tree *t)</td></tr>
+<tr class="memdesc:gad8f0e0a9f2fa6150b5c8c5270a31ad89"><td class="mdescLeft">&#160;</td><td class="mdescRight">traverse the tree in postorder (left, right, node)  <a href="group__tlx__container.html#gad8f0e0a9f2fa6150b5c8c5270a31ad89">More...</a><br/></td></tr>
+<tr class="separator:gad8f0e0a9f2fa6150b5c8c5270a31ad89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac719dadccd01dfa9a38fee2943f08134"><td class="memTemplParams" colspan="2">template&lt;typename Tree , typename Functor &gt; </td></tr>
+<tr class="memitem:gac719dadccd01dfa9a38fee2943f08134"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#gac719dadccd01dfa9a38fee2943f08134">splay_traverse_preorder</a> (const Functor &amp;f, const Tree *t)</td></tr>
+<tr class="memdesc:gac719dadccd01dfa9a38fee2943f08134"><td class="mdescLeft">&#160;</td><td class="mdescRight">traverse the tree in preorder (left, node, right)  <a href="group__tlx__container.html#gac719dadccd01dfa9a38fee2943f08134">More...</a><br/></td></tr>
+<tr class="separator:gac719dadccd01dfa9a38fee2943f08134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a9301d893cfc9d9bd64186fe1d5473872"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define THRILL_COMMON_SPLAY_TREE_HEADER</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="splay__tree_8hpp_source.html#l00012">12</a> of file <a class="el" href="splay__tree_8hpp_source.html">splay_tree.hpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="splay__tree_8hpp.html">splay_tree.hpp</a></li>
-    <li class="footer">Generated on Tue Mar 5 2019 05:24:27 for Thrill by
+    <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="dir_32b7cef035cecd0b10cd51669c590a1c.html">container</a></li><li class="navelem"><a class="el" href="splay__tree_8hpp.html">splay_tree.hpp</a></li>
+    <li class="footer">Generated on Tue Mar 19 2019 19:54:27 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

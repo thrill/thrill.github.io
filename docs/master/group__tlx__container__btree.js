@@ -56,7 +56,7 @@ var group__tlx__container__btree =
         [ "curr_slot", "classtlx_1_1BTree_1_1const__reverse__iterator.html#ae606c9d192f5f681a19b60b19d8f18d2", null ]
       ] ],
       [ "InnerNode", "structtlx_1_1BTree_1_1InnerNode.html", [
-        [ "alloc_type", "structtlx_1_1BTree_1_1InnerNode.html#a32be9540c1e0d06e1696d390ec0285c8", null ],
+        [ "alloc_type", "structtlx_1_1BTree_1_1InnerNode.html#a420a071517903c1cfc59a6846534982d", null ],
         [ "initialize", "structtlx_1_1BTree_1_1InnerNode.html#a85fe587cefa3de25d9549aaf09356ba6", null ],
         [ "is_few", "structtlx_1_1BTree_1_1InnerNode.html#a6b3d146cb22feb18ab880a19892aa01a", null ],
         [ "is_full", "structtlx_1_1BTree_1_1InnerNode.html#ae028d16479603404a2f2b71bfc0abe82", null ],
@@ -94,7 +94,7 @@ var group__tlx__container__btree =
         [ "curr_slot", "classtlx_1_1BTree_1_1iterator.html#ae606c9d192f5f681a19b60b19d8f18d2", null ]
       ] ],
       [ "LeafNode", "structtlx_1_1BTree_1_1LeafNode.html", [
-        [ "alloc_type", "structtlx_1_1BTree_1_1LeafNode.html#ace1063cc97cf8d80fbdbc0cc7c1c2ddb", null ],
+        [ "alloc_type", "structtlx_1_1BTree_1_1LeafNode.html#a022e856be0486dadd1a67f21a65562f4", null ],
         [ "initialize", "structtlx_1_1BTree_1_1LeafNode.html#a25a40b6614565f755233080a384c35f1", null ],
         [ "is_few", "structtlx_1_1BTree_1_1LeafNode.html#a6b3d146cb22feb18ab880a19892aa01a", null ],
         [ "is_full", "structtlx_1_1BTree_1_1LeafNode.html#ae028d16479603404a2f2b71bfc0abe82", null ],
@@ -162,14 +162,14 @@ var group__tlx__container__btree =
         [ "BTree< key_type, value_type, key_of_value, key_compare, traits, allow_duplicates, allocator_type >", "classtlx_1_1BTree_1_1value__compare.html#a76632aa900e0cb04d12e9e93f34a891d", null ],
         [ "key_comp", "classtlx_1_1BTree_1_1value__compare.html#ae7dd7fc42fbc38520d612a82099fdd96", null ]
       ] ],
-      [ "allocator_type", "classtlx_1_1BTree.html#a552a180d973faf4f7ccc14b7d639a160", null ],
-      [ "key_compare", "classtlx_1_1BTree.html#a7462b1e2b24182127f494d58dbb95fa9", null ],
-      [ "key_of_value", "classtlx_1_1BTree.html#a1059238b7811618137ac16f4dc2e1d5e", null ],
-      [ "key_type", "classtlx_1_1BTree.html#acb65c421faf5d749d03882f64d184775", null ],
+      [ "allocator_type", "classtlx_1_1BTree.html#aff35d256caa55f37343da8200179e608", null ],
+      [ "key_compare", "classtlx_1_1BTree.html#a6ff4e347839868db0770859a3dd55a27", null ],
+      [ "key_of_value", "classtlx_1_1BTree.html#a21e576e049c90e014ffeb583c24d2f38", null ],
+      [ "key_type", "classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02", null ],
       [ "Self", "classtlx_1_1BTree.html#a33b885434598e4d5ac5f06605e53b678", null ],
       [ "size_type", "classtlx_1_1BTree.html#a49b489a408a211a90e766329c0732d7b", null ],
-      [ "traits", "classtlx_1_1BTree.html#add985b33b72ef68812f3986e8df807f5", null ],
-      [ "value_type", "classtlx_1_1BTree.html#a5512bf4c2a5c53a6205718ccc957d7a6", null ],
+      [ "traits", "classtlx_1_1BTree.html#ab0d2e59411be6b53e63c29149a17fbcc", null ],
+      [ "value_type", "classtlx_1_1BTree.html#a04f69f8f2936ff309627511179c1709b", null ],
       [ "result_flags_t", "classtlx_1_1BTree.html#a3a617d72a0b84dcbdf111d1fe19ec0b5", [
         [ "btree_ok", "classtlx_1_1BTree.html#a3a617d72a0b84dcbdf111d1fe19ec0b5acc548bf14d595f9790f15c6514e626d8", null ],
         [ "btree_not_found", "classtlx_1_1BTree.html#a3a617d72a0b84dcbdf111d1fe19ec0b5a828fdc69a5b8ce344d849c52f4002434", null ],
