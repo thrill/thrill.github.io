@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"classthrill_1_1core_1_1ReduceBucketHashTable_1_1BucketBlockPool.html#a982f29ba8774bc746d43bf4b9bf3b0a1":[5,0,4,2,14,1,6],
 "classthrill_1_1core_1_1ReduceBucketHashTable_1_1BucketBlockPool.html#a9aa2dd72612e1b987faa378c5920e01b":[5,0,4,2,14,1,9],
 "classthrill_1_1core_1_1ReduceBucketHashTable_1_1BucketBlockPool.html#a9ee8b22dbd03fe734eeca7de687c2c79":[5,0,4,2,14,1,7],
 "classthrill_1_1core_1_1ReduceBucketHashTable_1_1BucketBlockPool.html#aa45d567fbcd665637574818b44672d32":[5,0,4,2,14,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "classthrill_1_1data_1_1Block.html#a3cd6144fa17b08c3095955563446c521":[3,1,1,1,0],
 "classthrill_1_1data_1_1Block.html#a4a31cc8d9e12a21f498f792c6816b8f0":[3,1,1,1,25],
 "classthrill_1_1data_1_1Block.html#a511cccf8f8c63a8dfc40421062144bc1":[3,1,1,1,20],
-"classthrill_1_1data_1_1Block.html#a5c95878a5e377dd22f2864a4ceb46708":[3,1,1,1,15],
-"classthrill_1_1data_1_1Block.html#a6b72e54baf646b08b4b87f987f583dcb":[3,1,1,1,22]
+"classthrill_1_1data_1_1Block.html#a5c95878a5e377dd22f2864a4ceb46708":[3,1,1,1,15]
 };

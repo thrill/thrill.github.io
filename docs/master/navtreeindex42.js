@@ -1,5 +1,6 @@
 var NAVTREEINDEX42 =
 {
+"structfoxxll_1_1interleaved__fully__random.html#a49d3e419266a0fcb9d03b86bc55abb3f":[5,0,1,43,0],
 "structfoxxll_1_1interleaved__fully__random.html#aa9fae34d3ffbf0d868ded27d7db35133":[5,0,1,43,2],
 "structfoxxll_1_1interleaved__random__cyclic.html":[5,0,1,44],
 "structfoxxll_1_1interleaved__random__cyclic.html#a49ab7ab66b2d9ca738817a0ad8ce88f2":[5,0,1,44,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX42 =
 "structthrill_1_1data_1_1Serialization_3_01Archive_00_01core_1_1HyperLogLogRegisters_3_01p_01_4_01_4.html":[5,0,4,3,37],
 "structthrill_1_1data_1_1Serialization_3_01Archive_00_01core_1_1HyperLogLogRegisters_3_01p_01_4_01_4.html#a0b5228d69c0390fefb176e0210a177d1":[5,0,4,3,37,0],
 "structthrill_1_1data_1_1Serialization_3_01Archive_00_01core_1_1HyperLogLogRegisters_3_01p_01_4_01_4.html#a2c5bde91e5ea916a64e8cbe6892cdfef":[5,0,4,3,37,2],
-"structthrill_1_1data_1_1Serialization_3_01Archive_00_01core_1_1HyperLogLogRegisters_3_01p_01_4_01_4.html#aa59ac0fcd44b9c87dee7a6fb4281e02d":[5,0,4,3,37,3],
-"structthrill_1_1data_1_1Serialization_3_01Archive_00_01core_1_1HyperLogLogRegisters_3_01p_01_4_01_4.html#ae1e8b8fc41705ad77cfa0c5d8c152f13":[5,0,4,3,37,1]
+"structthrill_1_1data_1_1Serialization_3_01Archive_00_01core_1_1HyperLogLogRegisters_3_01p_01_4_01_4.html#aa59ac0fcd44b9c87dee7a6fb4281e02d":[5,0,4,3,37,3]
 };

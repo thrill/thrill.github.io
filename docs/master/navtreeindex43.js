@@ -1,5 +1,6 @@
 var NAVTREEINDEX43 =
 {
+"structthrill_1_1data_1_1Serialization_3_01Archive_00_01core_1_1HyperLogLogRegisters_3_01p_01_4_01_4.html#ae1e8b8fc41705ad77cfa0c5d8c152f13":[5,0,4,3,37,1],
 "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1array_3_01T_00_01N_01_4_00_01typendd6da9eb5a32d8f993226f7c7b486035.html":[3,1,1,36],
 "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1array_3_01T_00_01N_01_4_00_01typendd6da9eb5a32d8f993226f7c7b486035.html#a0d7d7cf35048ada63bcafc3a11f1fd7d":[3,1,1,36,0],
 "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1array_3_01T_00_01N_01_4_00_01typendd6da9eb5a32d8f993226f7c7b486035.html#a2c5bde91e5ea916a64e8cbe6892cdfef":[3,1,1,36,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX43 =
 "suffix__sorting_2UNFINISHED.html#a86c3e135a17ade8f13c169540ea94849":[6,0,1,8,16,0],
 "suffix__sorting_2UNFINISHED_source.html":[6,0,1,8,16],
 "suffix__sorting_8cpp.html":[6,0,1,8,14],
-"suffix__sorting_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[6,0,1,8,14,0],
-"suffix__sorting_8cpp.html#a363eaffff6eaa8040e98d838b3c0b585":[6,0,1,8,14,1]
+"suffix__sorting_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[6,0,1,8,14,0]
 };

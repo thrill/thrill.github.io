@@ -1,5 +1,6 @@
 var NAVTREEINDEX37 =
 {
+"lru__cache_8hpp_source.html":[6,0,2,1,0,1,8],
 "malloc__tracker_8cpp.html":[6,0,3,4,3],
 "malloc__tracker_8cpp.html#a03d699b4ac18c35baac50fbc1ee81aa0":[6,0,3,4,3,38],
 "malloc__tracker_8cpp.html#a049203f4ad29befbb479edfddf7d3800":[6,0,3,4,3,51],
@@ -238,16 +239,15 @@ var NAVTREEINDEX37 =
 "namespaceexamples_1_1page__rank.html":[5,0,0,3],
 "namespaceexamples_1_1select.html":[5,0,0,4],
 "namespaceexamples_1_1select.html":[4,0,0,4],
-"namespaceexamples_1_1stochastic__gradient__descent.html":[4,0,0,5],
 "namespaceexamples_1_1stochastic__gradient__descent.html":[5,0,0,5],
-"namespaceexamples_1_1suffix__sorting.html":[5,0,0,6],
+"namespaceexamples_1_1stochastic__gradient__descent.html":[4,0,0,5],
 "namespaceexamples_1_1suffix__sorting.html":[4,0,0,6],
+"namespaceexamples_1_1suffix__sorting.html":[5,0,0,6],
 "namespaceexamples_1_1suffix__sorting_1_1dc3__local.html":[5,0,0,6,0],
 "namespaceexamples_1_1suffix__sorting_1_1dc3__local.html":[4,0,0,6,0],
 "namespaceexamples_1_1suffix__sorting_1_1dc7__local.html":[5,0,0,6,1],
 "namespaceexamples_1_1suffix__sorting_1_1dc7__local.html":[4,0,0,6,1],
 "namespaceexamples_1_1triangles.html":[5,0,0,7],
 "namespaceexamples_1_1triangles.html":[4,0,0,7],
-"namespaceexamples_1_1word__count.html":[5,0,0,8],
-"namespaceexamples_1_1word__count.html":[4,0,0,8]
+"namespaceexamples_1_1word__count.html":[5,0,0,8]
 };

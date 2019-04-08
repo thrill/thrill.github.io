@@ -1,5 +1,6 @@
 var NAVTREEINDEX30 =
 {
+"extlib_2tlx_2tlx_2allocator__base_8hpp_source.html":[6,0,2,1,0,12],
 "extlib_2tlx_2tlx_2container_2ring__buffer_8hpp.html":[6,0,2,1,0,1,10],
 "extlib_2tlx_2tlx_2container_2ring__buffer_8hpp_source.html":[6,0,2,1,0,1,10],
 "extlib_2tlx_2tlx_2logger_8hpp.html":[6,0,2,1,0,23],
@@ -168,8 +169,8 @@ var NAVTREEINDEX30 =
 "functional_8hpp.html#ac55d70406741c4f4be46fbb8f4dfd832":[6,0,3,1,8,11],
 "functional_8hpp.html#af06fbf706bdaafea92ddc5c8351e7177":[6,0,3,1,8,12],
 "functional_8hpp_source.html":[6,0,3,1,8],
-"functions.html":[5,3,0,0],
 "functions.html":[5,3,0],
+"functions.html":[5,3,0,0],
 "functions_a.html":[5,3,0,1],
 "functions_b.html":[5,3,0,2],
 "functions_c.html":[5,3,0,3],
@@ -247,7 +248,6 @@ var NAVTREEINDEX30 =
 "functions_type_z.html":[5,3,3,23],
 "functions_u.html":[5,3,0,21],
 "functions_v.html":[5,3,0,22],
-"functions_vars.html":[5,3,2],
 "functions_vars.html":[5,3,2,0],
-"functions_vars_b.html":[5,3,2,1]
+"functions_vars.html":[5,3,2]
 };

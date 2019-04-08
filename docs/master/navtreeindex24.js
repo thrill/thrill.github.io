@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"classtlx_1_1PolynomialRegression.html":[3,1,4,4,2],
 "classtlx_1_1PolynomialRegression.html#a1814960a3bbbc92dd0ba1271db4cebea":[3,1,4,4,2,4],
 "classtlx_1_1PolynomialRegression.html#a228842e9c806aa8174a81fba483d0999":[3,1,4,4,2,2],
 "classtlx_1_1PolynomialRegression.html#a3cce71967f6da4cf929c4d21693b46d5":[3,1,4,4,2,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "classtlx_1_1StackAllocator.html#a96805d5608516f1b0436874900768619":[5,0,5,96,4],
 "classtlx_1_1StackAllocator.html#a99645e3f798107152f56c026fb86d696":[5,0,5,96,2],
 "classtlx_1_1StackAllocator.html#ac73fe7e3bf0646d33e39f1653d0a6484":[5,0,5,96,21],
-"classtlx_1_1StackAllocator.html#acae3687e9850d92981301977a372d4f3":[5,0,5,96,16],
-"classtlx_1_1StackAllocator.html#ace405568d0b2f3fad4990044252c7732":[5,0,5,96,3]
+"classtlx_1_1StackAllocator.html#acae3687e9850d92981301977a372d4f3":[5,0,5,96,16]
 };

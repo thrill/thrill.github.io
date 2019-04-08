@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"iostats_8hpp_source.html":[6,0,2,0,0,1,11],
 "is__power__of__two_8hpp.html":[6,0,2,1,0,6,10],
 "is__power__of__two_8hpp.html#ga06084e6aa5055e2c602add77f1df1967":[6,0,2,1,0,6,10,0],
 "is__power__of__two_8hpp.html#ga2ca48dfc557ef6581ab17a1c3e53d0a1":[6,0,2,1,0,6,10,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX36 =
 "logistic__regression_8hpp_source.html":[6,0,1,2,1],
 "loser__tree_8hpp.html":[6,0,2,1,0,1,7],
 "loser__tree_8hpp_source.html":[6,0,2,1,0,1,7],
-"lru__cache_8hpp.html":[6,0,2,1,0,1,8],
-"lru__cache_8hpp_source.html":[6,0,2,1,0,1,8]
+"lru__cache_8hpp.html":[6,0,2,1,0,1,8]
 };

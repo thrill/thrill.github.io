@@ -1,5 +1,6 @@
 var NAVTREEINDEX41 =
 {
+"split__quoted_8hpp.html#gafc48ce717ba77df6c6f395fb07bc8a1e":[6,0,2,1,0,10,45,0],
 "split__quoted_8hpp_source.html":[6,0,2,1,0,10,45],
 "split__words_8cpp.html":[6,0,2,1,0,10,46],
 "split__words_8cpp.html#ga92d58b1e8b06cbb57400b5959281a4a1":[6,0,2,1,0,10,46,0],
@@ -16,8 +17,8 @@ var NAVTREEINDEX41 =
 "ssprintf_8hpp.html#gae5a94b0f02730f1df3009eb5ce67eb17":[6,0,2,1,0,10,49,1],
 "ssprintf_8hpp_source.html":[6,0,2,1,0,10,49],
 "ssprintf__generic_8hpp.html":[6,0,2,1,0,10,50],
-"ssprintf__generic_8hpp.html#ga1cc4f715331a96631370a8a25d6e9526":[6,0,2,1,0,10,50,1],
 "ssprintf__generic_8hpp.html#ga1cc4f715331a96631370a8a25d6e9526":[6,0,2,1,0,10,50,0],
+"ssprintf__generic_8hpp.html#ga1cc4f715331a96631370a8a25d6e9526":[6,0,2,1,0,10,50,1],
 "ssprintf__generic_8hpp.html#gaa45e4c8639177f5deb682313a572c32b":[6,0,2,1,0,10,50,2],
 "ssprintf__generic_8hpp.html#gaa45e4c8639177f5deb682313a572c32b":[6,0,2,1,0,10,50,3],
 "ssprintf__generic_8hpp_source.html":[6,0,2,1,0,10,50],
@@ -170,8 +171,8 @@ var NAVTREEINDEX41 =
 "structexamples_1_1suffix__sorting_1_1IndexFlag.html#a8b3ab54ed3e81c69863d65e4e6c424a0":[5,0,0,6,3,1],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html":[5,0,0,6,4],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a0594e9f341a41ec7622edddb13e52dfb":[5,0,0,6,4,4],
-"structexamples_1_1suffix__sorting_1_1IndexRank.html#a4d77b3fb48833ee41178f27ba47560c8":[5,0,0,6,4,1],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a4d77b3fb48833ee41178f27ba47560c8":[5,0,0,6,4,2],
+"structexamples_1_1suffix__sorting_1_1IndexRank.html#a4d77b3fb48833ee41178f27ba47560c8":[5,0,0,6,4,1],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a5d5b22eb77c392277e53ecec6b85cf2d":[5,0,0,6,4,0],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a7875de9269063a44a5480b1c0c530a84":[5,0,0,6,4,3],
 "structexamples_1_1suffix__sorting_1_1IndexRankFlag.html":[5,0,0,6,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX41 =
 "structfoxxll_1_1interleaved__alloc__traits_3_01striping_01_4.html":[5,0,1,42],
 "structfoxxll_1_1interleaved__alloc__traits_3_01striping_01_4.html#ae413af696fa3c92fcbc78eea02e9c03a":[5,0,1,42,0],
 "structfoxxll_1_1interleaved__fully__random.html":[5,0,1,43],
-"structfoxxll_1_1interleaved__fully__random.html#a3c330340f97d896973fe93429da1325a":[5,0,1,43,1],
-"structfoxxll_1_1interleaved__fully__random.html#a49d3e419266a0fcb9d03b86bc55abb3f":[5,0,1,43,0]
+"structfoxxll_1_1interleaved__fully__random.html#a3c330340f97d896973fe93429da1325a":[5,0,1,43,1]
 };

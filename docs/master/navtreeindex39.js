@@ -1,5 +1,6 @@
 var NAVTREEINDEX39 =
 {
+"prefix__doubling_8cpp.html#aeca5ed1e1f905b1b47fa8b6112943668":[6,0,1,8,9,7],
 "prefix__doubling_8cpp.html#af96025c3652ed01640b02418fd77becd":[6,0,1,8,9,9],
 "prefix__doubling_8cpp_source.html":[6,0,1,8,9],
 "prefix__doubling_8hpp.html":[6,0,1,8,10],
@@ -10,10 +11,10 @@ var NAVTREEINDEX39 =
 "prefix__doubling_8hpp_source.html":[6,0,1,8,10],
 "prefix__quadrupling_8cpp.html":[6,0,1,8,11],
 "prefix__quadrupling_8cpp.html#a0a4f3a9529720d35be02b55b8f7444d0":[6,0,1,8,11,1],
-"prefix__quadrupling_8cpp.html#a0a4f3a9529720d35be02b55b8f7444d0a88e3e8040c7cd11b9faffdf34372fa2a":[6,0,1,8,11,1,4],
 "prefix__quadrupling_8cpp.html#a0a4f3a9529720d35be02b55b8f7444d0a88e3e8040c7cd11b9faffdf34372fa2a":[6,0,1,8,11,1,1],
-"prefix__quadrupling_8cpp.html#a0a4f3a9529720d35be02b55b8f7444d0a8ba8ac037709b266f6ec856ea77e4489":[6,0,1,8,11,1,0],
+"prefix__quadrupling_8cpp.html#a0a4f3a9529720d35be02b55b8f7444d0a88e3e8040c7cd11b9faffdf34372fa2a":[6,0,1,8,11,1,4],
 "prefix__quadrupling_8cpp.html#a0a4f3a9529720d35be02b55b8f7444d0a8ba8ac037709b266f6ec856ea77e4489":[6,0,1,8,11,1,3],
+"prefix__quadrupling_8cpp.html#a0a4f3a9529720d35be02b55b8f7444d0a8ba8ac037709b266f6ec856ea77e4489":[6,0,1,8,11,1,0],
 "prefix__quadrupling_8cpp.html#a0a4f3a9529720d35be02b55b8f7444d0abb9c7abe9d4a342794d5e465889500f2":[6,0,1,8,11,1,2],
 "prefix__quadrupling_8cpp.html#a0a4f3a9529720d35be02b55b8f7444d0abb9c7abe9d4a342794d5e465889500f2":[6,0,1,8,11,1,5],
 "prefix__quadrupling_8cpp.html#a16a64393f78844403b0660475bf4ab4e":[6,0,1,8,11,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX39 =
 "ror_8hpp_source.html":[6,0,2,1,0,6,14],
 "round__to__power__of__two_8hpp.html":[6,0,2,1,0,6,15],
 "round__to__power__of__two_8hpp.html#ga0fc146aedd8d10a8572d7523b890c65f":[6,0,2,1,0,6,15,3],
-"round__to__power__of__two_8hpp.html#ga14aac3576b27b2d819ca2de74865930b":[6,0,2,1,0,6,15,5],
-"round__to__power__of__two_8hpp.html#ga165140a3f756701491e3958c9858ea2c":[6,0,2,1,0,6,15,12]
+"round__to__power__of__two_8hpp.html#ga14aac3576b27b2d819ca2de74865930b":[6,0,2,1,0,6,15,5]
 };

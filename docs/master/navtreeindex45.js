@@ -1,5 +1,6 @@
 var NAVTREEINDEX45 =
 {
+"trim_8hpp.html#ga033f3fec1db85f0203f9f33ef0cfe271":[6,0,2,1,0,10,58,1],
 "trim_8hpp.html#ga059d265ada554d8653d877a28d4d518d":[6,0,2,1,0,10,58,7],
 "trim_8hpp.html#ga1480a3758759216e8206fc9bbb58c0da":[6,0,2,1,0,10,58,13],
 "trim_8hpp.html#ga1bc881fad43aa1c573d47d459ed2a721":[6,0,2,1,0,10,58,10],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"classtlx_1_1DAryAddressableIntHeap.html#a516b266521ea0144add365390660cf41":[3,1,4,1,2,1],
 "classtlx_1_1DAryAddressableIntHeap.html#a7210f2fadcc61f9a08a4f9d655ad363c":[3,1,4,1,2,18],
 "classtlx_1_1DAryAddressableIntHeap.html#a7eafd72240ce8c3041d9e6688c20266d":[3,1,4,1,2,19],
 "classtlx_1_1DAryAddressableIntHeap.html#a8e207c6b9f19123c2ad36f8f9042613a":[3,1,4,1,2,27],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "classtlx_1_1MD5.html#aa1735c03c96350e523110f2109e0facb":[3,1,4,3,0,12],
 "classtlx_1_1MD5.html#ad4e5816dc54a81eaa5bd7fd94d51621a":[3,1,4,3,0,10],
 "classtlx_1_1MD5.html#ad73ec031d3f1dfbd49d882980d689aa8":[3,1,4,3,0,9],
-"classtlx_1_1MD5.html#af044f67f0f9100c12e47c1780a55b640":[3,1,4,3,0,8],
-"classtlx_1_1PolynomialRegression.html":[3,1,4,4,2]
+"classtlx_1_1MD5.html#af044f67f0f9100c12e47c1780a55b640":[3,1,4,3,0,8]
 };

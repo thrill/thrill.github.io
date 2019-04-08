@@ -1,5 +1,6 @@
 var NAVTREEINDEX44 =
 {
+"suffix__sorting_8cpp.html#a363eaffff6eaa8040e98d838b3c0b585":[6,0,1,8,14,1],
 "suffix__sorting_8cpp_source.html":[6,0,1,8,14],
 "suffix__sorting_8hpp.html":[6,0,1,8,15],
 "suffix__sorting_8hpp.html#a5a7c0ecace526954dffe974557e092fc":[6,0,1,8,15,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX44 =
 "trim_8cpp.html#gacd01f5ea03e1d4a21ee26d2f3e20206f":[6,0,2,1,0,10,57,6],
 "trim_8cpp.html#gaff5e9a8a1501b420ae5a5f8eca2a2f01":[6,0,2,1,0,10,57,14],
 "trim_8cpp_source.html":[6,0,2,1,0,10,57],
-"trim_8hpp.html":[6,0,2,1,0,10,58],
-"trim_8hpp.html#ga033f3fec1db85f0203f9f33ef0cfe271":[6,0,2,1,0,10,58,1]
+"trim_8hpp.html":[6,0,2,1,0,10,58]
 };

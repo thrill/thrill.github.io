@@ -1722,363 +1722,362 @@ $(document).ready(function(){initNavTree('hyperloglog_8cpp_source.html','');});
 <div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l01605"></a><span class="lineno"> 1605</span>&#160;    <span class="keyword">explicit</span> SparseListIterator(ForwardIt it) : iterator(it) { }</div>
 <div class="line"><a name="l01606"></a><span class="lineno"> 1606</span>&#160;    uint8_t GetByte() { <span class="keywordflow">return</span> *iterator++; }</div>
-<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;    SparseListIterator&lt;ForwardIt&gt;&amp; <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#ab3b8e87c6048edbab667d8c19812d6eb">operator ++ </a>() {</div>
-<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;        lastVal = lastVal + this-&gt;GetVarint32();</div>
-<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;    }</div>
-<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;    SparseListIterator&lt;ForwardIt&gt; <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#ab3b8e87c6048edbab667d8c19812d6eb">operator ++ </a>(<span class="keywordtype">int</span>) {</div>
-<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;        SparseListIterator&lt;ForwardIt&gt; prev(*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;        ++*<span class="keyword">this</span>;</div>
-<div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;        <span class="keywordflow">return</span> prev;</div>
-<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;    }</div>
-<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;    uint32_t <a class="code" href="namespacethrill_1_1common.html#a2ccde75485682c9a6486b3657487771c">operator * </a>() {</div>
-<div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;        ForwardIt prevIt = iterator;</div>
-<div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;        uint32_t val = this-&gt;GetVarint32();</div>
-<div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160;        iterator = prevIt;</div>
-<div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;        <span class="keywordflow">return</span> lastVal + val;</div>
-<div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160;    }</div>
-<div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#aeeaeb80c008f27201493c2b9a0b52937">operator == </a>(<span class="keyword">const</span> SparseListIterator&lt;ForwardIt&gt;&amp; other) {</div>
-<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;        <span class="keywordflow">return</span> iterator == other.iterator;</div>
-<div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;    }</div>
-<div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a59b0aded0f8145a9cd94ecdd54e3831f">operator != </a>(<span class="keyword">const</span> SparseListIterator&lt;ForwardIt&gt;&amp; other) {</div>
-<div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;        <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == other);</div>
-<div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;    }</div>
-<div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160;};</div>
-<div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160;</div>
-<div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt&gt;</div>
-<div class="line"><a name="l01631"></a><span class="lineno"><a class="line" href="namespacethrill_1_1core_1_1hyperloglog.html#a8397f922c7912fd28df4215222363dc4"> 1631</a></span>&#160;SparseListIterator&lt;ForwardIt&gt; <a class="code" href="namespacethrill_1_1core_1_1hyperloglog.html#a8397f922c7912fd28df4215222363dc4">makeSparseListIterator</a>(ForwardIt it) {</div>
-<div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160;    <span class="keywordflow">return</span> SparseListIterator&lt;ForwardIt&gt;(it);</div>
-<div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;}</div>
-<div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;</div>
-<div class="line"><a name="l01635"></a><span class="lineno"> 1635</span>&#160;<span class="keyword">class </span>DecodedSparseList</div>
-<div class="line"><a name="l01636"></a><span class="lineno"> 1636</span>&#160;{</div>
-<div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160;    <span class="keyword">const</span> std::vector&lt;uint8_t&gt;&amp; sparseListBuffer_;</div>
-<div class="line"><a name="l01638"></a><span class="lineno"> 1638</span>&#160;</div>
-<div class="line"><a name="l01639"></a><span class="lineno"> 1639</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l01640"></a><span class="lineno"> 1640</span>&#160;    DecodedSparseList(<span class="keyword">const</span> std::vector&lt;uint8_t&gt;&amp; sparseListBuf)</div>
-<div class="line"><a name="l01641"></a><span class="lineno"> 1641</span>&#160;        : sparseListBuffer_(sparseListBuf) { }</div>
-<div class="line"><a name="l01642"></a><span class="lineno"> 1642</span>&#160;    <span class="keyword">auto</span> begin() { <span class="keywordflow">return</span> <a class="code" href="namespacethrill_1_1core_1_1hyperloglog.html#a8397f922c7912fd28df4215222363dc4">makeSparseListIterator</a>(sparseListBuffer_.begin()); }</div>
-<div class="line"><a name="l01643"></a><span class="lineno"> 1643</span>&#160;    <span class="keyword">auto</span> end() { <span class="keywordflow">return</span> <a class="code" href="namespacethrill_1_1core_1_1hyperloglog.html#a8397f922c7912fd28df4215222363dc4">makeSparseListIterator</a>(sparseListBuffer_.end()); }</div>
-<div class="line"><a name="l01644"></a><span class="lineno"> 1644</span>&#160;};</div>
-<div class="line"><a name="l01645"></a><span class="lineno"> 1645</span>&#160;</div>
-<div class="line"><a name="l01646"></a><span class="lineno"><a class="line" href="namespacethrill_1_1core_1_1hyperloglog.html#a8fa87a9781e53fd8b02908a1b27427bb"> 1646</a></span>&#160;std::vector&lt;uint8_t&gt; <a class="code" href="namespacethrill_1_1core_1_1hyperloglog.html#a8fa87a9781e53fd8b02908a1b27427bb">encodeSparseList</a>(<span class="keyword">const</span> std::vector&lt;uint32_t&gt;&amp; sparseList) {</div>
-<div class="line"><a name="l01647"></a><span class="lineno"> 1647</span>&#160;    <span class="keywordflow">if</span> (sparseList.empty()) {</div>
-<div class="line"><a name="l01648"></a><span class="lineno"> 1648</span>&#160;        <span class="keywordflow">return</span> { };</div>
-<div class="line"><a name="l01649"></a><span class="lineno"> 1649</span>&#160;    }</div>
-<div class="line"><a name="l01650"></a><span class="lineno"> 1650</span>&#160;    assert(std::is_sorted(sparseList.begin(), sparseList.end()));</div>
-<div class="line"><a name="l01651"></a><span class="lineno"> 1651</span>&#160;    std::vector&lt;uint8_t&gt; sparseListBuffer_;</div>
-<div class="line"><a name="l01652"></a><span class="lineno"> 1652</span>&#160;    sparseListBuffer_.reserve(sparseList.size());</div>
-<div class="line"><a name="l01653"></a><span class="lineno"> 1653</span>&#160;    VectorWriter writer(sparseListBuffer_);</div>
-<div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160;    <span class="keyword">auto</span> it = sparseList.begin();</div>
-<div class="line"><a name="l01655"></a><span class="lineno"> 1655</span>&#160;    uint32_t prevVal = *it++;</div>
-<div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160;    writer.PutVarint32(prevVal);</div>
-<div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160;    <span class="keywordflow">for</span> ( ; it != sparseList.end(); ++it) {</div>
-<div class="line"><a name="l01658"></a><span class="lineno"> 1658</span>&#160;        writer.PutVarint32(*it - prevVal);</div>
-<div class="line"><a name="l01659"></a><span class="lineno"> 1659</span>&#160;        prevVal = *it;</div>
-<div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;    }</div>
-<div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160;    <span class="keywordflow">return</span> sparseListBuffer_;</div>
-<div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;}</div>
-<div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160;</div>
-<div class="line"><a name="l01664"></a><span class="lineno"><a class="line" href="namespacethrill_1_1core_1_1hyperloglog.html#a9afd4266c3cda053ccc293af1cb0690a"> 1664</a></span>&#160;std::vector&lt;uint32_t&gt; <a class="code" href="namespacethrill_1_1core_1_1hyperloglog.html#a9afd4266c3cda053ccc293af1cb0690a">decodeSparseList</a>(<span class="keyword">const</span> std::vector&lt;uint8_t&gt;&amp; sparseList) {</div>
-<div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;    std::vector&lt;uint32_t&gt; decoded;</div>
-<div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> val : core::hyperloglog::DecodedSparseList(sparseList)) {</div>
-<div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160;        decoded.emplace_back(val);</div>
-<div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;    }</div>
-<div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;    <span class="keywordflow">return</span> decoded;</div>
-<div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;}</div>
+<div class="line"><a name="l01607"></a><span class="lineno"> 1607</span>&#160;    uint8_t PeekByte(<span class="keywordtype">size_t</span> i)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> iterator[i]; }</div>
+<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;    SparseListIterator&lt;ForwardIt&gt;&amp; <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#ab3b8e87c6048edbab667d8c19812d6eb">operator ++ </a>() {</div>
+<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;        lastVal = lastVal + this-&gt;GetVarint32();</div>
+<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;    }</div>
+<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;    SparseListIterator&lt;ForwardIt&gt; <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#ab3b8e87c6048edbab667d8c19812d6eb">operator ++ </a>(<span class="keywordtype">int</span>) {</div>
+<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;        SparseListIterator&lt;ForwardIt&gt; prev(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;        ++*<span class="keyword">this</span>;</div>
+<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;        <span class="keywordflow">return</span> prev;</div>
+<div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;    }</div>
+<div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;    uint32_t <a class="code" href="namespacethrill_1_1common.html#a2ccde75485682c9a6486b3657487771c">operator * </a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;        <span class="keywordflow">return</span> lastVal + this-&gt;PeekVarint32();</div>
+<div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160;    }</div>
+<div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#aeeaeb80c008f27201493c2b9a0b52937">operator == </a>(<span class="keyword">const</span> SparseListIterator&lt;ForwardIt&gt;&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160;        <span class="keywordflow">return</span> iterator == other.iterator;</div>
+<div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;    }</div>
+<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a59b0aded0f8145a9cd94ecdd54e3831f">operator != </a>(<span class="keyword">const</span> SparseListIterator&lt;ForwardIt&gt;&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;        <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == other);</div>
+<div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;    }</div>
+<div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;};</div>
+<div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;</div>
+<div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ForwardIt&gt;</div>
+<div class="line"><a name="l01629"></a><span class="lineno"><a class="line" href="namespacethrill_1_1core_1_1hyperloglog.html#a8397f922c7912fd28df4215222363dc4"> 1629</a></span>&#160;SparseListIterator&lt;ForwardIt&gt; <a class="code" href="namespacethrill_1_1core_1_1hyperloglog.html#a8397f922c7912fd28df4215222363dc4">makeSparseListIterator</a>(ForwardIt it) {</div>
+<div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;    <span class="keywordflow">return</span> SparseListIterator&lt;ForwardIt&gt;(it);</div>
+<div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;}</div>
+<div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160;</div>
+<div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;<span class="keyword">class </span>DecodedSparseList</div>
+<div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;{</div>
+<div class="line"><a name="l01635"></a><span class="lineno"> 1635</span>&#160;    <span class="keyword">const</span> std::vector&lt;uint8_t&gt;&amp; sparseListBuffer_;</div>
+<div class="line"><a name="l01636"></a><span class="lineno"> 1636</span>&#160;</div>
+<div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l01638"></a><span class="lineno"> 1638</span>&#160;    DecodedSparseList(<span class="keyword">const</span> std::vector&lt;uint8_t&gt;&amp; sparseListBuf)</div>
+<div class="line"><a name="l01639"></a><span class="lineno"> 1639</span>&#160;        : sparseListBuffer_(sparseListBuf) { }</div>
+<div class="line"><a name="l01640"></a><span class="lineno"> 1640</span>&#160;    <span class="keyword">auto</span> begin() { <span class="keywordflow">return</span> <a class="code" href="namespacethrill_1_1core_1_1hyperloglog.html#a8397f922c7912fd28df4215222363dc4">makeSparseListIterator</a>(sparseListBuffer_.begin()); }</div>
+<div class="line"><a name="l01641"></a><span class="lineno"> 1641</span>&#160;    <span class="keyword">auto</span> end() { <span class="keywordflow">return</span> <a class="code" href="namespacethrill_1_1core_1_1hyperloglog.html#a8397f922c7912fd28df4215222363dc4">makeSparseListIterator</a>(sparseListBuffer_.end()); }</div>
+<div class="line"><a name="l01642"></a><span class="lineno"> 1642</span>&#160;};</div>
+<div class="line"><a name="l01643"></a><span class="lineno"> 1643</span>&#160;</div>
+<div class="line"><a name="l01644"></a><span class="lineno"><a class="line" href="namespacethrill_1_1core_1_1hyperloglog.html#a8fa87a9781e53fd8b02908a1b27427bb"> 1644</a></span>&#160;std::vector&lt;uint8_t&gt; <a class="code" href="namespacethrill_1_1core_1_1hyperloglog.html#a8fa87a9781e53fd8b02908a1b27427bb">encodeSparseList</a>(<span class="keyword">const</span> std::vector&lt;uint32_t&gt;&amp; sparseList) {</div>
+<div class="line"><a name="l01645"></a><span class="lineno"> 1645</span>&#160;    <span class="keywordflow">if</span> (sparseList.empty()) {</div>
+<div class="line"><a name="l01646"></a><span class="lineno"> 1646</span>&#160;        <span class="keywordflow">return</span> { };</div>
+<div class="line"><a name="l01647"></a><span class="lineno"> 1647</span>&#160;    }</div>
+<div class="line"><a name="l01648"></a><span class="lineno"> 1648</span>&#160;    assert(std::is_sorted(sparseList.begin(), sparseList.end()));</div>
+<div class="line"><a name="l01649"></a><span class="lineno"> 1649</span>&#160;    std::vector&lt;uint8_t&gt; sparseListBuffer_;</div>
+<div class="line"><a name="l01650"></a><span class="lineno"> 1650</span>&#160;    sparseListBuffer_.reserve(sparseList.size());</div>
+<div class="line"><a name="l01651"></a><span class="lineno"> 1651</span>&#160;    VectorWriter writer(sparseListBuffer_);</div>
+<div class="line"><a name="l01652"></a><span class="lineno"> 1652</span>&#160;    <span class="keyword">auto</span> it = sparseList.begin();</div>
+<div class="line"><a name="l01653"></a><span class="lineno"> 1653</span>&#160;    uint32_t prevVal = *it++;</div>
+<div class="line"><a name="l01654"></a><span class="lineno"> 1654</span>&#160;    writer.PutVarint32(prevVal);</div>
+<div class="line"><a name="l01655"></a><span class="lineno"> 1655</span>&#160;    <span class="keywordflow">for</span> ( ; it != sparseList.end(); ++it) {</div>
+<div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160;        writer.PutVarint32(*it - prevVal);</div>
+<div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160;        prevVal = *it;</div>
+<div class="line"><a name="l01658"></a><span class="lineno"> 1658</span>&#160;    }</div>
+<div class="line"><a name="l01659"></a><span class="lineno"> 1659</span>&#160;    <span class="keywordflow">return</span> sparseListBuffer_;</div>
+<div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;}</div>
+<div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160;</div>
+<div class="line"><a name="l01662"></a><span class="lineno"><a class="line" href="namespacethrill_1_1core_1_1hyperloglog.html#a9afd4266c3cda053ccc293af1cb0690a"> 1662</a></span>&#160;std::vector&lt;uint32_t&gt; <a class="code" href="namespacethrill_1_1core_1_1hyperloglog.html#a9afd4266c3cda053ccc293af1cb0690a">decodeSparseList</a>(<span class="keyword">const</span> std::vector&lt;uint8_t&gt;&amp; sparseList) {</div>
+<div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160;    std::vector&lt;uint32_t&gt; decoded;</div>
+<div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> val : core::hyperloglog::DecodedSparseList(sparseList)) {</div>
+<div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;        decoded.emplace_back(val);</div>
+<div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160;    }</div>
+<div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160;    <span class="keywordflow">return</span> decoded;</div>
+<div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;}</div>
+<div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;</div>
+<div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;} <span class="comment">// namespace hyperloglog</span></div>
 <div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160;</div>
-<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;} <span class="comment">// namespace hyperloglog</span></div>
-<div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;</div>
-<div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;<span class="comment">/******************************************************************************/</span></div>
-<div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160;<span class="comment">// HyperLogLog Class Methods</span></div>
-<div class="line"><a name="l01676"></a><span class="lineno"> 1676</span>&#160;</div>
-<div class="line"><a name="l01677"></a><span class="lineno"> 1677</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> p&gt;</div>
-<div class="line"><a name="l01678"></a><span class="lineno"><a class="line" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a60096541655c96c62d6457f8828397d5"> 1678</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a60096541655c96c62d6457f8828397d5">HyperLogLogRegisters&lt;p&gt;::toDense</a>() {</div>
-<div class="line"><a name="l01679"></a><span class="lineno"> 1679</span>&#160;    assert(format_ == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e">HyperLogLogRegisterFormat::SPARSE</a>);</div>
-<div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;    format_ = <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff">HyperLogLogRegisterFormat::DENSE</a>;</div>
-<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;    entries_.resize(1 &lt;&lt; p, 0);</div>
-<div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> val : hyperloglog::DecodedSparseList(sparseListBuffer_)) {</div>
-<div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;        <span class="keyword">auto</span> decoded = hyperloglog::decodeHash&lt;25, p&gt;(val);</div>
-<div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;        <span class="keyword">auto</span> entry = entries_[decoded.first];</div>
-<div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160;        <span class="keyword">auto</span> <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a> = <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::max</a>(entry, decoded.second);</div>
-<div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;        entries_[decoded.first] = <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>;</div>
-<div class="line"><a name="l01687"></a><span class="lineno"> 1687</span>&#160;    }</div>
-<div class="line"><a name="l01688"></a><span class="lineno"> 1688</span>&#160;</div>
-<div class="line"><a name="l01689"></a><span class="lineno"> 1689</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; val : deltaSet_) {</div>
-<div class="line"><a name="l01690"></a><span class="lineno"> 1690</span>&#160;        <span class="keyword">auto</span> decoded = hyperloglog::decodeHash&lt;25, p&gt;(val);</div>
-<div class="line"><a name="l01691"></a><span class="lineno"> 1691</span>&#160;        <span class="keyword">auto</span> entry = entries_[decoded.first];</div>
-<div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;        <span class="keyword">auto</span> <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a> = <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::max</a>(entry, decoded.second);</div>
-<div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160;        entries_[decoded.first] = <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>;</div>
-<div class="line"><a name="l01694"></a><span class="lineno"> 1694</span>&#160;    }</div>
-<div class="line"><a name="l01695"></a><span class="lineno"> 1695</span>&#160;    sparseListBuffer_.clear();</div>
-<div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;    deltaSet_.clear();</div>
-<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;    sparseListBuffer_.shrink_to_fit();</div>
-<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;    deltaSet_.shrink_to_fit();</div>
-<div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160;}</div>
-<div class="line"><a name="l01700"></a><span class="lineno"> 1700</span>&#160;</div>
-<div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> p&gt;</div>
-<div class="line"><a name="l01702"></a><span class="lineno"><a class="line" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a10333adff28be0677be5167361f35982"> 1702</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a10333adff28be0677be5167361f35982">HyperLogLogRegisters&lt;p&gt;::shouldConvertToDense</a>() {</div>
-<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;    <span class="keywordtype">size_t</span> tmpSize = deltaSet_.size() * <span class="keyword">sizeof</span>(<a class="code" href="namespacethrill_1_1core.html#aa8ed33c9275a5f50d8a4c14923ff8f3b">HyperLogLogSparseRegister</a>);</div>
-<div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160;    <span class="keywordtype">size_t</span> sparseSize = tmpSize + sparseListBuffer_.size() * <span class="keyword">sizeof</span>(uint8_t);</div>
-<div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;    <span class="keywordtype">size_t</span> denseSize = (1 &lt;&lt; p) * <span class="keyword">sizeof</span>(uint8_t);</div>
-<div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160;    <span class="keywordflow">return</span> sparseSize &gt; denseSize;</div>
-<div class="line"><a name="l01707"></a><span class="lineno"> 1707</span>&#160;}</div>
-<div class="line"><a name="l01708"></a><span class="lineno"> 1708</span>&#160;</div>
-<div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> p&gt;</div>
-<div class="line"><a name="l01710"></a><span class="lineno"><a class="line" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a3e6c14554026f796cc99c7c7045ae967"> 1710</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a3e6c14554026f796cc99c7c7045ae967">HyperLogLogRegisters&lt;p&gt;::shouldMerge</a>() {</div>
-<div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;    <span class="keywordtype">size_t</span> tmpSize = deltaSet_.size() * <span class="keyword">sizeof</span>(<a class="code" href="namespacethrill_1_1core.html#aa8ed33c9275a5f50d8a4c14923ff8f3b">HyperLogLogSparseRegister</a>);</div>
-<div class="line"><a name="l01712"></a><span class="lineno"> 1712</span>&#160;    <span class="keywordtype">size_t</span> denseSize = (1 &lt;&lt; p) * <span class="keyword">sizeof</span>(uint8_t);</div>
-<div class="line"><a name="l01713"></a><span class="lineno"> 1713</span>&#160;    <span class="keywordflow">return</span> tmpSize &gt; (denseSize / 4);</div>
-<div class="line"><a name="l01714"></a><span class="lineno"> 1714</span>&#160;}</div>
-<div class="line"><a name="l01715"></a><span class="lineno"> 1715</span>&#160;</div>
-<div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> p&gt;</div>
-<div class="line"><a name="l01717"></a><span class="lineno"><a class="line" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a83692a19ea4ebac0e7c4f1118c39cda6"> 1717</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a83692a19ea4ebac0e7c4f1118c39cda6">HyperLogLogRegisters&lt;p&gt;::insert_hash</a>(<span class="keyword">const</span> uint64_t&amp; hash_value) {</div>
-<div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;    <span class="comment">// first p bits are the index</span></div>
-<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160;    static_assert(<span class="keyword">sizeof</span>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>) * CHAR_BIT == 64,</div>
-<div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160;                  <span class="stringliteral">&quot;64 Bit long long are required for hyperloglog.&quot;</span>);</div>
-<div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;    <span class="keywordflow">switch</span> (format_) {</div>
-<div class="line"><a name="l01722"></a><span class="lineno"> 1722</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e">HyperLogLogRegisterFormat::SPARSE</a>: {</div>
-<div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;        sparse_size_++;</div>
-<div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;        deltaSet_.emplace_back(hyperloglog::encodeHash&lt;25, p&gt;(hash_value));</div>
-<div class="line"><a name="l01725"></a><span class="lineno"> 1725</span>&#160;</div>
-<div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;        <span class="keywordflow">if</span> (shouldMerge()) {</div>
-<div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;            mergeSparse();</div>
-<div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160;        }</div>
-<div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;</div>
-<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;        <span class="keywordflow">if</span> (shouldConvertToDense()) {</div>
-<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;            toDense();</div>
-<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;        }</div>
-<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;    }</div>
-<div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff">HyperLogLogRegisterFormat::DENSE</a>:</div>
-<div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160;        uint64_t index = hash_value &gt;&gt; (64 - p);</div>
-<div class="line"><a name="l01737"></a><span class="lineno"> 1737</span>&#160;        uint64_t val = hash_value &lt;&lt; p;</div>
-<div class="line"><a name="l01738"></a><span class="lineno"> 1738</span>&#160;        uint8_t leadingZeroes = val == 0 ? (64 - p) : <a class="code" href="group__tlx__math.html#ga8eebbd26ffd74bb652bdd95bbdf9cff8">tlx::clz</a>(val);</div>
-<div class="line"><a name="l01739"></a><span class="lineno"> 1739</span>&#160;        assert(leadingZeroes &gt;= 0 &amp;&amp; leadingZeroes &lt;= (64 - p));</div>
-<div class="line"><a name="l01740"></a><span class="lineno"> 1740</span>&#160;        entries_[index] =</div>
-<div class="line"><a name="l01741"></a><span class="lineno"> 1741</span>&#160;            std::max&lt;uint8_t&gt;(leadingZeroes + 1, entries_[index]);</div>
-<div class="line"><a name="l01742"></a><span class="lineno"> 1742</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01743"></a><span class="lineno"> 1743</span>&#160;    }</div>
-<div class="line"><a name="l01744"></a><span class="lineno"> 1744</span>&#160;}</div>
-<div class="line"><a name="l01745"></a><span class="lineno"> 1745</span>&#160;</div>
-<div class="line"><a name="l01746"></a><span class="lineno"> 1746</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> p&gt;</div>
-<div class="line"><a name="l01747"></a><span class="lineno"><a class="line" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a9301b7eba9e5e113838c629bfd13aa89"> 1747</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a9301b7eba9e5e113838c629bfd13aa89">HyperLogLogRegisters&lt;p&gt;::mergeSparse</a>() {</div>
-<div class="line"><a name="l01748"></a><span class="lineno"> 1748</span>&#160;    hyperloglog::DecodedSparseList sparseList(sparseListBuffer_);</div>
-<div class="line"><a name="l01749"></a><span class="lineno"> 1749</span>&#160;    assert(std::is_sorted(sparseList.begin(), sparseList.end()));</div>
-<div class="line"><a name="l01750"></a><span class="lineno"> 1750</span>&#160;    std::sort(deltaSet_.begin(), deltaSet_.end());</div>
-<div class="line"><a name="l01751"></a><span class="lineno"> 1751</span>&#160;    std::vector&lt;HyperLogLogSparseRegister&gt; resultVec;</div>
-<div class="line"><a name="l01752"></a><span class="lineno"> 1752</span>&#160;    std::merge(sparseList.begin(), sparseList.end(), deltaSet_.begin(),</div>
-<div class="line"><a name="l01753"></a><span class="lineno"> 1753</span>&#160;               deltaSet_.end(), std::back_inserter(resultVec));</div>
-<div class="line"><a name="l01754"></a><span class="lineno"> 1754</span>&#160;    deltaSet_.clear();</div>
-<div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;    deltaSet_.shrink_to_fit();</div>
-<div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;    std::vector&lt;HyperLogLogSparseRegister&gt; vec = hyperloglog::mergeSameIndices&lt;25&gt;(resultVec);</div>
-<div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;    sparse_size_ = vec.size();</div>
-<div class="line"><a name="l01758"></a><span class="lineno"> 1758</span>&#160;    sparseListBuffer_ = <a class="code" href="namespacethrill_1_1core_1_1hyperloglog.html#a8fa87a9781e53fd8b02908a1b27427bb">hyperloglog::encodeSparseList</a>(vec);</div>
-<div class="line"><a name="l01759"></a><span class="lineno"> 1759</span>&#160;}</div>
-<div class="line"><a name="l01760"></a><span class="lineno"> 1760</span>&#160;</div>
-<div class="line"><a name="l01761"></a><span class="lineno"> 1761</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> p&gt;</div>
-<div class="line"><a name="l01762"></a><span class="lineno"><a class="line" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a49ace48d3ceba1ed52572ce48e6770c1"> 1762</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a49ace48d3ceba1ed52572ce48e6770c1">HyperLogLogRegisters&lt;p&gt;::mergeDense</a>(<span class="keyword">const</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;p&gt;</a>&amp; b) {</div>
-<div class="line"><a name="l01763"></a><span class="lineno"> 1763</span>&#160;    assert(format_ == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff">HyperLogLogRegisterFormat::DENSE</a>);</div>
-<div class="line"><a name="l01764"></a><span class="lineno"> 1764</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> m = 1 &lt;&lt; p;</div>
-<div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160;    assert(m == size() &amp;&amp; m == b.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#aac782da1f912bceb5d8ad00c8dc892ac">size</a>());</div>
-<div class="line"><a name="l01766"></a><span class="lineno"> 1766</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; m; ++i) {</div>
-<div class="line"><a name="l01767"></a><span class="lineno"> 1767</span>&#160;        entries_[i] = <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::max</a>(entries_[i], b.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#abc37e52eaa79c8490b419fc39e02ba7e">entries_</a>[i]);</div>
-<div class="line"><a name="l01768"></a><span class="lineno"> 1768</span>&#160;    }</div>
-<div class="line"><a name="l01769"></a><span class="lineno"> 1769</span>&#160;}</div>
-<div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;</div>
-<div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> p&gt;</div>
-<div class="line"><a name="l01772"></a><span class="lineno"><a class="line" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a8f657242097002b05a56fd4e286b668f"> 1772</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a8f657242097002b05a56fd4e286b668f">HyperLogLogRegisters&lt;p&gt;::result</a>() {</div>
-<div class="line"><a name="l01773"></a><span class="lineno"> 1773</span>&#160;    <span class="keywordflow">if</span> (format_ == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e">HyperLogLogRegisterFormat::SPARSE</a>) {</div>
-<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160;        mergeSparse();</div>
-<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;        <span class="comment">// 25 is precision of sparse representation</span></div>
-<div class="line"><a name="l01776"></a><span class="lineno"> 1776</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">size_t</span> m = 1 &lt;&lt; 25;</div>
-<div class="line"><a name="l01777"></a><span class="lineno"> 1777</span>&#160;        <span class="keywordtype">unsigned</span> sparseListCount = sparse_size_;</div>
-<div class="line"><a name="l01778"></a><span class="lineno"> 1778</span>&#160;        <span class="keywordtype">unsigned</span> V = m - sparseListCount;</div>
-<div class="line"><a name="l01779"></a><span class="lineno"> 1779</span>&#160;        <span class="keywordflow">return</span> m * log(static_cast&lt;double&gt;(m) / V);</div>
-<div class="line"><a name="l01780"></a><span class="lineno"> 1780</span>&#160;    }</div>
-<div class="line"><a name="l01781"></a><span class="lineno"> 1781</span>&#160;</div>
-<div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> m = 1 &lt;&lt; p;</div>
-<div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;    assert(size() == m);</div>
-<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;</div>
-<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;    <span class="keywordtype">double</span> E = 0.0;</div>
-<div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;    <span class="keywordtype">unsigned</span> V = 0;</div>
-<div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;</div>
-<div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> uint64_t&amp; entry : entries_) {</div>
-<div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;        E += std::pow(2.0, -static_cast&lt;double&gt;(entry));</div>
-<div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;        V += (entry == 0 ? 1 : 0);</div>
-<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;    }</div>
-<div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;</div>
-<div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;    E = hyperloglog::alpha&lt;p&gt;() * m * m / E;</div>
-<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;    <span class="keywordtype">double</span> E_ = E;</div>
-<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;    <span class="keywordflow">if</span> (E &lt;= 5 * m) {</div>
-<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;        <span class="keywordtype">double</span> bias = hyperloglog::estimateBias&lt;p&gt;(E);</div>
-<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;        E_ -= bias;</div>
-<div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;    }</div>
-<div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;</div>
-<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="namespacetlx_1_1digest__detail.html#a4aa334dd681999fabd33513a4a557d99">H</a> = E_;</div>
-<div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;    <span class="keywordflow">if</span> (V != 0) {</div>
-<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;        <span class="comment">// linear count</span></div>
-<div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;        H = m * log(static_cast&lt;double&gt;(m) / V);</div>
-<div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;    }</div>
-<div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160;</div>
-<div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;    <span class="keywordflow">if</span> (H &lt;= hyperloglog::threshold&lt;p&gt;()) {</div>
-<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacetlx_1_1digest__detail.html#a4aa334dd681999fabd33513a4a557d99">H</a>;</div>
-<div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;    }</div>
-<div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;        <span class="keywordflow">return</span> E_;</div>
-<div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;    }</div>
-<div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;}</div>
-<div class="line"><a name="l01813"></a><span class="lineno"> 1813</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l01814"></a><span class="lineno"> 1814</span>&#160;<span class="comment">//! combine two HyperloglogRegisters, switches between sparse/dense</span></div>
-<div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;<span class="comment">//! representations</span></div>
-<div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> p&gt;</div>
-<div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160;<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;p&gt;</a></div>
-<div class="line"><a name="l01818"></a><span class="lineno"><a class="line" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a5c7fa65f22f1f61b4cf9b28fd5f19209"> 1818</a></span>&#160;<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a5c7fa65f22f1f61b4cf9b28fd5f19209">HyperLogLogRegisters&lt;p&gt;::operator + </a>(<span class="keyword">const</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;p&gt;</a>&amp; regs2)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l01819"></a><span class="lineno"> 1819</span>&#160;</div>
-<div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160;    <span class="keywordflow">if</span> (format_ == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e">HyperLogLogRegisterFormat::SPARSE</a> &amp;&amp;</div>
-<div class="line"><a name="l01821"></a><span class="lineno"> 1821</span>&#160;        regs2.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905">format_</a> == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e">HyperLogLogRegisterFormat::SPARSE</a>) {</div>
-<div class="line"><a name="l01822"></a><span class="lineno"> 1822</span>&#160;</div>
-<div class="line"><a name="l01823"></a><span class="lineno"> 1823</span>&#160;        <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;p&gt;</a> result = *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160;</div>
-<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;        hyperloglog::DecodedSparseList sparseList2(regs2.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a932debc07fec3c0abcfc6d76b9f1ed36">sparseListBuffer_</a>);</div>
-<div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;        std::copy(sparseList2.begin(), sparseList2.end(),</div>
-<div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160;                  std::back_inserter(result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a15d4b49b0525ad99256df6013d8a0ff6">deltaSet_</a>));</div>
-<div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;        std::copy(regs2.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a15d4b49b0525ad99256df6013d8a0ff6">deltaSet_</a>.begin(), regs2.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a15d4b49b0525ad99256df6013d8a0ff6">deltaSet_</a>.end(),</div>
-<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;                  std::back_inserter(result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a15d4b49b0525ad99256df6013d8a0ff6">deltaSet_</a>));</div>
-<div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;        result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a9301b7eba9e5e113838c629bfd13aa89">mergeSparse</a>();</div>
-<div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;        <span class="keywordflow">if</span> (result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a10333adff28be0677be5167361f35982">shouldConvertToDense</a>()) {</div>
-<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;            result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a60096541655c96c62d6457f8828397d5">toDense</a>();</div>
-<div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;        }</div>
-<div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160;        <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;    }</div>
-<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (format_ == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e">HyperLogLogRegisterFormat::SPARSE</a> &amp;&amp;</div>
-<div class="line"><a name="l01837"></a><span class="lineno"> 1837</span>&#160;             regs2.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905">format_</a> == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff">HyperLogLogRegisterFormat::DENSE</a>) {</div>
-<div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160;</div>
-<div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160;        <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;p&gt;</a> result = *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160;        result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a60096541655c96c62d6457f8828397d5">toDense</a>();</div>
-<div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160;        result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a49ace48d3ceba1ed52572ce48e6770c1">mergeDense</a>(regs2);</div>
-<div class="line"><a name="l01842"></a><span class="lineno"> 1842</span>&#160;        <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;    }</div>
-<div class="line"><a name="l01844"></a><span class="lineno"> 1844</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (format_ == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff">HyperLogLogRegisterFormat::DENSE</a> &amp;&amp;</div>
-<div class="line"><a name="l01845"></a><span class="lineno"> 1845</span>&#160;             regs2.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905">format_</a> == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e">HyperLogLogRegisterFormat::SPARSE</a>) {</div>
-<div class="line"><a name="l01846"></a><span class="lineno"> 1846</span>&#160;</div>
-<div class="line"><a name="l01847"></a><span class="lineno"> 1847</span>&#160;        <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;p&gt;</a> result = regs2;</div>
-<div class="line"><a name="l01848"></a><span class="lineno"> 1848</span>&#160;        result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a60096541655c96c62d6457f8828397d5">toDense</a>();</div>
-<div class="line"><a name="l01849"></a><span class="lineno"> 1849</span>&#160;        result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a49ace48d3ceba1ed52572ce48e6770c1">mergeDense</a>(*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l01850"></a><span class="lineno"> 1850</span>&#160;        <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l01851"></a><span class="lineno"> 1851</span>&#160;    }</div>
-<div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (format_ == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff">HyperLogLogRegisterFormat::DENSE</a> &amp;&amp;</div>
-<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;             regs2.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905">format_</a> == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff">HyperLogLogRegisterFormat::DENSE</a>) {</div>
-<div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;</div>
-<div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;        <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;p&gt;</a> result = *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;        result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a49ace48d3ceba1ed52572ce48e6770c1">mergeDense</a>(regs2);</div>
-<div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;        <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;    }</div>
-<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;    <a class="code" href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e">die</a>(<span class="stringliteral">&quot;Impossible.&quot;</span>);</div>
-<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;}</div>
-<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;</div>
-<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;<span class="comment">/*----------------------------------------------------------------------------*/</span></div>
-<div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;</div>
-<div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;4&gt;</a>;</div>
-<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;5&gt;</a>;</div>
-<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;6&gt;</a>;</div>
-<div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;7&gt;</a>;</div>
-<div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;8&gt;</a>;</div>
-<div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;9&gt;</a>;</div>
-<div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;10&gt;</a>;</div>
-<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;11&gt;</a>;</div>
-<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;12&gt;</a>;</div>
-<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;13&gt;</a>;</div>
-<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;14&gt;</a>;</div>
-<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;15&gt;</a>;</div>
-<div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;16&gt;</a>;</div>
-<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;17&gt;</a>;</div>
-<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;18&gt;</a>;</div>
-<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;</div>
-<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;} <span class="comment">// namespace core</span></div>
-<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;</div>
-<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;<span class="comment">/*----------------------------------------------------------------------------*/</span></div>
-<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;</div>
-<div class="line"><a name="l01884"></a><span class="lineno"><a class="line" href="namespacethrill_1_1data.html"> 1884</a></span>&#160;<span class="keyword">namespace </span>data {</div>
-<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;</div>
-<div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;<span class="keyword">using</span> <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38">core::HyperLogLogRegisterFormat</a>;</div>
-<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;</div>
-<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Archive, <span class="keywordtype">size_t</span> p&gt;</div>
-<div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;<span class="keywordtype">void</span> <a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization&lt;Archive, core::HyperLogLogRegisters&lt;p&gt;</a> &gt;::</div>
-<div class="line"><a name="l01890"></a><span class="lineno"><a class="line" href="structthrill_1_1data_1_1Serialization_3_01Archive_00_01core_1_1HyperLogLogRegisters_3_01p_01_4_01_4.html#ae1e8b8fc41705ad77cfa0c5d8c152f13"> 1890</a></span>&#160;Serialize(<span class="keyword">const</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">core::HyperLogLogRegisters&lt;p&gt;</a>&amp; <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a>, Archive&amp; ar) {</div>
-<div class="line"><a name="l01891"></a><span class="lineno"> 1891</span>&#160;    <a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization&lt;Archive, HyperLogLogRegisterFormat&gt;::Serialize</a>(x.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905">format_</a>, ar);</div>
-<div class="line"><a name="l01892"></a><span class="lineno"> 1892</span>&#160;    <span class="keywordflow">switch</span> (x.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905">format_</a>) {</div>
-<div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;    <span class="keywordflow">case</span> HyperLogLogRegisterFormat::SPARSE:</div>
-<div class="line"><a name="l01894"></a><span class="lineno"> 1894</span>&#160;        <a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization</a>&lt;Archive, decltype(x.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a932debc07fec3c0abcfc6d76b9f1ed36">sparseListBuffer_</a>)&gt;::Serialize(</div>
-<div class="line"><a name="l01895"></a><span class="lineno"> 1895</span>&#160;            x.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a932debc07fec3c0abcfc6d76b9f1ed36">sparseListBuffer_</a>, ar);</div>
-<div class="line"><a name="l01896"></a><span class="lineno"> 1896</span>&#160;        <a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization</a>&lt;Archive, decltype(x.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a15d4b49b0525ad99256df6013d8a0ff6">deltaSet_</a>)&gt;::Serialize(x.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a15d4b49b0525ad99256df6013d8a0ff6">deltaSet_</a>, ar);</div>
-<div class="line"><a name="l01897"></a><span class="lineno"> 1897</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;    <span class="keywordflow">case</span> HyperLogLogRegisterFormat::DENSE:</div>
-<div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = x.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#abc37e52eaa79c8490b419fc39e02ba7e">entries_</a>.begin(); it != x.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#abc37e52eaa79c8490b419fc39e02ba7e">entries_</a>.end(); ++it) {</div>
-<div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;            <a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization&lt;Archive, uint64_t&gt;::Serialize</a>(*it, ar);</div>
-<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;        }</div>
-<div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;    }</div>
-<div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;}</div>
-<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;</div>
-<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Archive, <span class="keywordtype">size_t</span> p&gt;</div>
-<div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">core::HyperLogLogRegisters&lt;p&gt;</a></div>
-<div class="line"><a name="l01908"></a><span class="lineno"><a class="line" href="structthrill_1_1data_1_1Serialization_3_01Archive_00_01core_1_1HyperLogLogRegisters_3_01p_01_4_01_4.html#a0b5228d69c0390fefb176e0210a177d1"> 1908</a></span>&#160;<a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization&lt;Archive, core::HyperLogLogRegisters&lt;p&gt;</a> &gt;::Deserialize(Archive&amp; ar) {</div>
-<div class="line"><a name="l01909"></a><span class="lineno"> 1909</span>&#160;    <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">core::HyperLogLogRegisters&lt;p&gt;</a> out;</div>
-<div class="line"><a name="l01910"></a><span class="lineno"> 1910</span>&#160;    out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905">format_</a> =</div>
-<div class="line"><a name="l01911"></a><span class="lineno"> 1911</span>&#160;        std::move(<a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization&lt;Archive, HyperLogLogRegisterFormat&gt;::Deserialize</a>(ar));</div>
-<div class="line"><a name="l01912"></a><span class="lineno"> 1912</span>&#160;    <span class="keywordflow">switch</span> (out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905">format_</a>) {</div>
-<div class="line"><a name="l01913"></a><span class="lineno"> 1913</span>&#160;    <span class="keywordflow">case</span> HyperLogLogRegisterFormat::SPARSE:</div>
-<div class="line"><a name="l01914"></a><span class="lineno"> 1914</span>&#160;        out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a932debc07fec3c0abcfc6d76b9f1ed36">sparseListBuffer_</a> = std::move(</div>
-<div class="line"><a name="l01915"></a><span class="lineno"> 1915</span>&#160;            <a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization</a>&lt;Archive, decltype(out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a932debc07fec3c0abcfc6d76b9f1ed36">sparseListBuffer_</a>)&gt;::Deserialize(ar));</div>
-<div class="line"><a name="l01916"></a><span class="lineno"> 1916</span>&#160;        out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a15d4b49b0525ad99256df6013d8a0ff6">deltaSet_</a> = std::move(</div>
-<div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;            <a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization</a>&lt;Archive, decltype(out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a15d4b49b0525ad99256df6013d8a0ff6">deltaSet_</a>)&gt;::Deserialize(ar));</div>
-<div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;    <span class="keywordflow">case</span> HyperLogLogRegisterFormat::DENSE:</div>
-<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;        out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#abc37e52eaa79c8490b419fc39e02ba7e">entries_</a>.resize(1 &lt;&lt; p);</div>
-<div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i != out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#aac782da1f912bceb5d8ad00c8dc892ac">size</a>(); ++i) {</div>
-<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;            out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#abc37e52eaa79c8490b419fc39e02ba7e">entries_</a>[i] = std::move(</div>
-<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;                <a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization&lt;Archive, uint64_t&gt;::Deserialize</a>(ar));</div>
-<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;        }</div>
-<div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;    }</div>
-<div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;    <span class="keywordflow">return</span> out;</div>
-<div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160;}</div>
-<div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;</div>
-<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;<span class="preprocessor">#ifndef THRILL_DOXYGEN_IGNORE</span></div>
-<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;<span class="comment">// make serialization instantiations</span></div>
-<div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;<span class="preprocessor">#define MAKE_INSTANTIATIONS(X)                                              \</span></div>
-<div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;<span class="preprocessor">    template void Serialization&lt;                                            \</span></div>
-<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;<span class="preprocessor">        net::BufferBuilder, core::HyperLogLogRegisters&lt;X&gt; &gt;                 \</span></div>
-<div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;<span class="preprocessor">    ::Serialize(const core::HyperLogLogRegisters&lt;X&gt;&amp;, net::BufferBuilder&amp;); \</span></div>
-<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;<span class="preprocessor">                                                                            \</span></div>
-<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;<span class="preprocessor">    template core::HyperLogLogRegisters&lt;X&gt;                                  \</span></div>
-<div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;<span class="preprocessor">    Serialization&lt;net::BufferReader, core::HyperLogLogRegisters&lt;X&gt; &gt;        \</span></div>
-<div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;<span class="preprocessor">    ::Deserialize(net::BufferReader&amp;);</span></div>
-<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;MAKE_INSTANTIATIONS(4)</div>
-<div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;MAKE_INSTANTIATIONS(5)</div>
-<div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;MAKE_INSTANTIATIONS(6)</div>
-<div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;MAKE_INSTANTIATIONS(7)</div>
-<div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;MAKE_INSTANTIATIONS(8)</div>
-<div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;MAKE_INSTANTIATIONS(9)</div>
-<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;MAKE_INSTANTIATIONS(10)</div>
-<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;MAKE_INSTANTIATIONS(11)</div>
-<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;MAKE_INSTANTIATIONS(12)</div>
-<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;MAKE_INSTANTIATIONS(13)</div>
-<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;MAKE_INSTANTIATIONS(14)</div>
-<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;MAKE_INSTANTIATIONS(15)</div>
-<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;MAKE_INSTANTIATIONS(16)</div>
-<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;MAKE_INSTANTIATIONS(17)</div>
-<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;MAKE_INSTANTIATIONS(18)</div>
-<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;</div>
-<div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;<span class="preprocessor">#endif  // THRILL_DOXYGEN_IGNORE</span></div>
-<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01960"></a><span class="lineno"> 1960</span>&#160;} <span class="comment">// namespace data</span></div>
-<div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160;} <span class="comment">// namespace thrill</span></div>
-<div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;</div>
-<div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;<span class="comment">// HyperLogLog Class Methods</span></div>
+<div class="line"><a name="l01674"></a><span class="lineno"> 1674</span>&#160;</div>
+<div class="line"><a name="l01675"></a><span class="lineno"> 1675</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> p&gt;</div>
+<div class="line"><a name="l01676"></a><span class="lineno"><a class="line" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a60096541655c96c62d6457f8828397d5"> 1676</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a60096541655c96c62d6457f8828397d5">HyperLogLogRegisters&lt;p&gt;::toDense</a>() {</div>
+<div class="line"><a name="l01677"></a><span class="lineno"> 1677</span>&#160;    assert(format_ == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e">HyperLogLogRegisterFormat::SPARSE</a>);</div>
+<div class="line"><a name="l01678"></a><span class="lineno"> 1678</span>&#160;    format_ = <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff">HyperLogLogRegisterFormat::DENSE</a>;</div>
+<div class="line"><a name="l01679"></a><span class="lineno"> 1679</span>&#160;    entries_.resize(1 &lt;&lt; p, 0);</div>
+<div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> val : hyperloglog::DecodedSparseList(sparseListBuffer_)) {</div>
+<div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;        <span class="keyword">auto</span> decoded = hyperloglog::decodeHash&lt;25, p&gt;(val);</div>
+<div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;        <span class="keyword">auto</span> entry = entries_[decoded.first];</div>
+<div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;        <span class="keyword">auto</span> <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a> = <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::max</a>(entry, decoded.second);</div>
+<div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;        entries_[decoded.first] = <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>;</div>
+<div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160;    }</div>
+<div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;</div>
+<div class="line"><a name="l01687"></a><span class="lineno"> 1687</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; val : deltaSet_) {</div>
+<div class="line"><a name="l01688"></a><span class="lineno"> 1688</span>&#160;        <span class="keyword">auto</span> decoded = hyperloglog::decodeHash&lt;25, p&gt;(val);</div>
+<div class="line"><a name="l01689"></a><span class="lineno"> 1689</span>&#160;        <span class="keyword">auto</span> entry = entries_[decoded.first];</div>
+<div class="line"><a name="l01690"></a><span class="lineno"> 1690</span>&#160;        <span class="keyword">auto</span> <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a> = <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::max</a>(entry, decoded.second);</div>
+<div class="line"><a name="l01691"></a><span class="lineno"> 1691</span>&#160;        entries_[decoded.first] = <a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>;</div>
+<div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;    }</div>
+<div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160;    sparseListBuffer_.clear();</div>
+<div class="line"><a name="l01694"></a><span class="lineno"> 1694</span>&#160;    deltaSet_.clear();</div>
+<div class="line"><a name="l01695"></a><span class="lineno"> 1695</span>&#160;    sparseListBuffer_.shrink_to_fit();</div>
+<div class="line"><a name="l01696"></a><span class="lineno"> 1696</span>&#160;    deltaSet_.shrink_to_fit();</div>
+<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;}</div>
+<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;</div>
+<div class="line"><a name="l01699"></a><span class="lineno"> 1699</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> p&gt;</div>
+<div class="line"><a name="l01700"></a><span class="lineno"><a class="line" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a10333adff28be0677be5167361f35982"> 1700</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a10333adff28be0677be5167361f35982">HyperLogLogRegisters&lt;p&gt;::shouldConvertToDense</a>() {</div>
+<div class="line"><a name="l01701"></a><span class="lineno"> 1701</span>&#160;    <span class="keywordtype">size_t</span> tmpSize = deltaSet_.size() * <span class="keyword">sizeof</span>(<a class="code" href="namespacethrill_1_1core.html#aa8ed33c9275a5f50d8a4c14923ff8f3b">HyperLogLogSparseRegister</a>);</div>
+<div class="line"><a name="l01702"></a><span class="lineno"> 1702</span>&#160;    <span class="keywordtype">size_t</span> sparseSize = tmpSize + sparseListBuffer_.size() * <span class="keyword">sizeof</span>(uint8_t);</div>
+<div class="line"><a name="l01703"></a><span class="lineno"> 1703</span>&#160;    <span class="keywordtype">size_t</span> denseSize = (1 &lt;&lt; p) * <span class="keyword">sizeof</span>(uint8_t);</div>
+<div class="line"><a name="l01704"></a><span class="lineno"> 1704</span>&#160;    <span class="keywordflow">return</span> sparseSize &gt; denseSize;</div>
+<div class="line"><a name="l01705"></a><span class="lineno"> 1705</span>&#160;}</div>
+<div class="line"><a name="l01706"></a><span class="lineno"> 1706</span>&#160;</div>
+<div class="line"><a name="l01707"></a><span class="lineno"> 1707</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> p&gt;</div>
+<div class="line"><a name="l01708"></a><span class="lineno"><a class="line" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a3e6c14554026f796cc99c7c7045ae967"> 1708</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a3e6c14554026f796cc99c7c7045ae967">HyperLogLogRegisters&lt;p&gt;::shouldMerge</a>() {</div>
+<div class="line"><a name="l01709"></a><span class="lineno"> 1709</span>&#160;    <span class="keywordtype">size_t</span> tmpSize = deltaSet_.size() * <span class="keyword">sizeof</span>(<a class="code" href="namespacethrill_1_1core.html#aa8ed33c9275a5f50d8a4c14923ff8f3b">HyperLogLogSparseRegister</a>);</div>
+<div class="line"><a name="l01710"></a><span class="lineno"> 1710</span>&#160;    <span class="keywordtype">size_t</span> denseSize = (1 &lt;&lt; p) * <span class="keyword">sizeof</span>(uint8_t);</div>
+<div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;    <span class="keywordflow">return</span> tmpSize &gt; (denseSize / 4);</div>
+<div class="line"><a name="l01712"></a><span class="lineno"> 1712</span>&#160;}</div>
+<div class="line"><a name="l01713"></a><span class="lineno"> 1713</span>&#160;</div>
+<div class="line"><a name="l01714"></a><span class="lineno"> 1714</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> p&gt;</div>
+<div class="line"><a name="l01715"></a><span class="lineno"><a class="line" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a83692a19ea4ebac0e7c4f1118c39cda6"> 1715</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a83692a19ea4ebac0e7c4f1118c39cda6">HyperLogLogRegisters&lt;p&gt;::insert_hash</a>(<span class="keyword">const</span> uint64_t&amp; hash_value) {</div>
+<div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160;    <span class="comment">// first p bits are the index</span></div>
+<div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;    static_assert(<span class="keyword">sizeof</span>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>) * CHAR_BIT == 64,</div>
+<div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;                  <span class="stringliteral">&quot;64 Bit long long are required for hyperloglog.&quot;</span>);</div>
+<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160;    <span class="keywordflow">switch</span> (format_) {</div>
+<div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e">HyperLogLogRegisterFormat::SPARSE</a>: {</div>
+<div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;        sparse_size_++;</div>
+<div class="line"><a name="l01722"></a><span class="lineno"> 1722</span>&#160;        deltaSet_.emplace_back(hyperloglog::encodeHash&lt;25, p&gt;(hash_value));</div>
+<div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;</div>
+<div class="line"><a name="l01724"></a><span class="lineno"> 1724</span>&#160;        <span class="keywordflow">if</span> (shouldMerge()) {</div>
+<div class="line"><a name="l01725"></a><span class="lineno"> 1725</span>&#160;            mergeSparse();</div>
+<div class="line"><a name="l01726"></a><span class="lineno"> 1726</span>&#160;        }</div>
+<div class="line"><a name="l01727"></a><span class="lineno"> 1727</span>&#160;</div>
+<div class="line"><a name="l01728"></a><span class="lineno"> 1728</span>&#160;        <span class="keywordflow">if</span> (shouldConvertToDense()) {</div>
+<div class="line"><a name="l01729"></a><span class="lineno"> 1729</span>&#160;            toDense();</div>
+<div class="line"><a name="l01730"></a><span class="lineno"> 1730</span>&#160;        }</div>
+<div class="line"><a name="l01731"></a><span class="lineno"> 1731</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01732"></a><span class="lineno"> 1732</span>&#160;    }</div>
+<div class="line"><a name="l01733"></a><span class="lineno"> 1733</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff">HyperLogLogRegisterFormat::DENSE</a>:</div>
+<div class="line"><a name="l01734"></a><span class="lineno"> 1734</span>&#160;        uint64_t index = hash_value &gt;&gt; (64 - p);</div>
+<div class="line"><a name="l01735"></a><span class="lineno"> 1735</span>&#160;        uint64_t val = hash_value &lt;&lt; p;</div>
+<div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160;        uint8_t leadingZeroes = val == 0 ? (64 - p) : <a class="code" href="group__tlx__math.html#ga8eebbd26ffd74bb652bdd95bbdf9cff8">tlx::clz</a>(val);</div>
+<div class="line"><a name="l01737"></a><span class="lineno"> 1737</span>&#160;        assert(leadingZeroes &gt;= 0 &amp;&amp; leadingZeroes &lt;= (64 - p));</div>
+<div class="line"><a name="l01738"></a><span class="lineno"> 1738</span>&#160;        entries_[index] =</div>
+<div class="line"><a name="l01739"></a><span class="lineno"> 1739</span>&#160;            std::max&lt;uint8_t&gt;(leadingZeroes + 1, entries_[index]);</div>
+<div class="line"><a name="l01740"></a><span class="lineno"> 1740</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01741"></a><span class="lineno"> 1741</span>&#160;    }</div>
+<div class="line"><a name="l01742"></a><span class="lineno"> 1742</span>&#160;}</div>
+<div class="line"><a name="l01743"></a><span class="lineno"> 1743</span>&#160;</div>
+<div class="line"><a name="l01744"></a><span class="lineno"> 1744</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> p&gt;</div>
+<div class="line"><a name="l01745"></a><span class="lineno"><a class="line" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a9301b7eba9e5e113838c629bfd13aa89"> 1745</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a9301b7eba9e5e113838c629bfd13aa89">HyperLogLogRegisters&lt;p&gt;::mergeSparse</a>() {</div>
+<div class="line"><a name="l01746"></a><span class="lineno"> 1746</span>&#160;    hyperloglog::DecodedSparseList sparseList(sparseListBuffer_);</div>
+<div class="line"><a name="l01747"></a><span class="lineno"> 1747</span>&#160;    assert(std::is_sorted(sparseList.begin(), sparseList.end()));</div>
+<div class="line"><a name="l01748"></a><span class="lineno"> 1748</span>&#160;    std::sort(deltaSet_.begin(), deltaSet_.end());</div>
+<div class="line"><a name="l01749"></a><span class="lineno"> 1749</span>&#160;    std::vector&lt;HyperLogLogSparseRegister&gt; resultVec;</div>
+<div class="line"><a name="l01750"></a><span class="lineno"> 1750</span>&#160;    std::merge(sparseList.begin(), sparseList.end(),</div>
+<div class="line"><a name="l01751"></a><span class="lineno"> 1751</span>&#160;               deltaSet_.begin(), deltaSet_.end(),</div>
+<div class="line"><a name="l01752"></a><span class="lineno"> 1752</span>&#160;               std::back_inserter(resultVec));</div>
+<div class="line"><a name="l01753"></a><span class="lineno"> 1753</span>&#160;    deltaSet_.clear();</div>
+<div class="line"><a name="l01754"></a><span class="lineno"> 1754</span>&#160;    deltaSet_.shrink_to_fit();</div>
+<div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;    std::vector&lt;HyperLogLogSparseRegister&gt; vec = hyperloglog::mergeSameIndices&lt;25&gt;(resultVec);</div>
+<div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;    sparse_size_ = vec.size();</div>
+<div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;    sparseListBuffer_ = <a class="code" href="namespacethrill_1_1core_1_1hyperloglog.html#a8fa87a9781e53fd8b02908a1b27427bb">hyperloglog::encodeSparseList</a>(vec);</div>
+<div class="line"><a name="l01758"></a><span class="lineno"> 1758</span>&#160;}</div>
+<div class="line"><a name="l01759"></a><span class="lineno"> 1759</span>&#160;</div>
+<div class="line"><a name="l01760"></a><span class="lineno"> 1760</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> p&gt;</div>
+<div class="line"><a name="l01761"></a><span class="lineno"><a class="line" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a49ace48d3ceba1ed52572ce48e6770c1"> 1761</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a49ace48d3ceba1ed52572ce48e6770c1">HyperLogLogRegisters&lt;p&gt;::mergeDense</a>(<span class="keyword">const</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;p&gt;</a>&amp; b) {</div>
+<div class="line"><a name="l01762"></a><span class="lineno"> 1762</span>&#160;    assert(format_ == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff">HyperLogLogRegisterFormat::DENSE</a>);</div>
+<div class="line"><a name="l01763"></a><span class="lineno"> 1763</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> m = 1 &lt;&lt; p;</div>
+<div class="line"><a name="l01764"></a><span class="lineno"> 1764</span>&#160;    assert(m == size() &amp;&amp; m == b.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#aac782da1f912bceb5d8ad00c8dc892ac">size</a>());</div>
+<div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; m; ++i) {</div>
+<div class="line"><a name="l01766"></a><span class="lineno"> 1766</span>&#160;        entries_[i] = <a class="code" href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">std::max</a>(entries_[i], b.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#abc37e52eaa79c8490b419fc39e02ba7e">entries_</a>[i]);</div>
+<div class="line"><a name="l01767"></a><span class="lineno"> 1767</span>&#160;    }</div>
+<div class="line"><a name="l01768"></a><span class="lineno"> 1768</span>&#160;}</div>
+<div class="line"><a name="l01769"></a><span class="lineno"> 1769</span>&#160;</div>
+<div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> p&gt;</div>
+<div class="line"><a name="l01771"></a><span class="lineno"><a class="line" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a8f657242097002b05a56fd4e286b668f"> 1771</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a8f657242097002b05a56fd4e286b668f">HyperLogLogRegisters&lt;p&gt;::result</a>() {</div>
+<div class="line"><a name="l01772"></a><span class="lineno"> 1772</span>&#160;    <span class="keywordflow">if</span> (format_ == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e">HyperLogLogRegisterFormat::SPARSE</a>) {</div>
+<div class="line"><a name="l01773"></a><span class="lineno"> 1773</span>&#160;        mergeSparse();</div>
+<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160;        <span class="comment">// 25 is precision of sparse representation</span></div>
+<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">size_t</span> m = 1 &lt;&lt; 25;</div>
+<div class="line"><a name="l01776"></a><span class="lineno"> 1776</span>&#160;        <span class="keywordtype">unsigned</span> sparseListCount = sparse_size_;</div>
+<div class="line"><a name="l01777"></a><span class="lineno"> 1777</span>&#160;        <span class="keywordtype">unsigned</span> V = m - sparseListCount;</div>
+<div class="line"><a name="l01778"></a><span class="lineno"> 1778</span>&#160;        <span class="keywordflow">return</span> m * log(static_cast&lt;double&gt;(m) / V);</div>
+<div class="line"><a name="l01779"></a><span class="lineno"> 1779</span>&#160;    }</div>
+<div class="line"><a name="l01780"></a><span class="lineno"> 1780</span>&#160;</div>
+<div class="line"><a name="l01781"></a><span class="lineno"> 1781</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> m = 1 &lt;&lt; p;</div>
+<div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;    assert(size() == m);</div>
+<div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;</div>
+<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;    <span class="keywordtype">double</span> E = 0.0;</div>
+<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;    <span class="keywordtype">unsigned</span> V = 0;</div>
+<div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;</div>
+<div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> uint64_t&amp; entry : entries_) {</div>
+<div class="line"><a name="l01788"></a><span class="lineno"> 1788</span>&#160;        E += std::pow(2.0, -static_cast&lt;double&gt;(entry));</div>
+<div class="line"><a name="l01789"></a><span class="lineno"> 1789</span>&#160;        V += (entry == 0 ? 1 : 0);</div>
+<div class="line"><a name="l01790"></a><span class="lineno"> 1790</span>&#160;    }</div>
+<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;</div>
+<div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;    E = hyperloglog::alpha&lt;p&gt;() * m * m / E;</div>
+<div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;    <span class="keywordtype">double</span> E_ = E;</div>
+<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;    <span class="keywordflow">if</span> (E &lt;= 5 * m) {</div>
+<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;        <span class="keywordtype">double</span> bias = hyperloglog::estimateBias&lt;p&gt;(E);</div>
+<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;        E_ -= bias;</div>
+<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;    }</div>
+<div class="line"><a name="l01798"></a><span class="lineno"> 1798</span>&#160;</div>
+<div class="line"><a name="l01799"></a><span class="lineno"> 1799</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="namespacetlx_1_1digest__detail.html#a4aa334dd681999fabd33513a4a557d99">H</a> = E_;</div>
+<div class="line"><a name="l01800"></a><span class="lineno"> 1800</span>&#160;    <span class="keywordflow">if</span> (V != 0) {</div>
+<div class="line"><a name="l01801"></a><span class="lineno"> 1801</span>&#160;        <span class="comment">// linear count</span></div>
+<div class="line"><a name="l01802"></a><span class="lineno"> 1802</span>&#160;        H = m * log(static_cast&lt;double&gt;(m) / V);</div>
+<div class="line"><a name="l01803"></a><span class="lineno"> 1803</span>&#160;    }</div>
+<div class="line"><a name="l01804"></a><span class="lineno"> 1804</span>&#160;</div>
+<div class="line"><a name="l01805"></a><span class="lineno"> 1805</span>&#160;    <span class="keywordflow">if</span> (H &lt;= hyperloglog::threshold&lt;p&gt;()) {</div>
+<div class="line"><a name="l01806"></a><span class="lineno"> 1806</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacetlx_1_1digest__detail.html#a4aa334dd681999fabd33513a4a557d99">H</a>;</div>
+<div class="line"><a name="l01807"></a><span class="lineno"> 1807</span>&#160;    }</div>
+<div class="line"><a name="l01808"></a><span class="lineno"> 1808</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01809"></a><span class="lineno"> 1809</span>&#160;        <span class="keywordflow">return</span> E_;</div>
+<div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;    }</div>
+<div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;}</div>
+<div class="line"><a name="l01812"></a><span class="lineno"> 1812</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l01813"></a><span class="lineno"> 1813</span>&#160;<span class="comment">//! combine two HyperloglogRegisters, switches between sparse/dense</span></div>
+<div class="line"><a name="l01814"></a><span class="lineno"> 1814</span>&#160;<span class="comment">//! representations</span></div>
+<div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;<span class="comment"></span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> p&gt;</div>
+<div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160;<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;p&gt;</a></div>
+<div class="line"><a name="l01817"></a><span class="lineno"><a class="line" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a5c7fa65f22f1f61b4cf9b28fd5f19209"> 1817</a></span>&#160;<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a5c7fa65f22f1f61b4cf9b28fd5f19209">HyperLogLogRegisters&lt;p&gt;::operator + </a>(<span class="keyword">const</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;p&gt;</a>&amp; regs2)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l01818"></a><span class="lineno"> 1818</span>&#160;</div>
+<div class="line"><a name="l01819"></a><span class="lineno"> 1819</span>&#160;    <span class="keywordflow">if</span> (format_ == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e">HyperLogLogRegisterFormat::SPARSE</a> &amp;&amp;</div>
+<div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160;        regs2.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905">format_</a> == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e">HyperLogLogRegisterFormat::SPARSE</a>) {</div>
+<div class="line"><a name="l01821"></a><span class="lineno"> 1821</span>&#160;</div>
+<div class="line"><a name="l01822"></a><span class="lineno"> 1822</span>&#160;        <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;p&gt;</a> result = *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l01823"></a><span class="lineno"> 1823</span>&#160;</div>
+<div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160;        hyperloglog::DecodedSparseList sparseList2(regs2.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a932debc07fec3c0abcfc6d76b9f1ed36">sparseListBuffer_</a>);</div>
+<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;        std::copy(sparseList2.begin(), sparseList2.end(),</div>
+<div class="line"><a name="l01826"></a><span class="lineno"> 1826</span>&#160;                  std::back_inserter(result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a15d4b49b0525ad99256df6013d8a0ff6">deltaSet_</a>));</div>
+<div class="line"><a name="l01827"></a><span class="lineno"> 1827</span>&#160;        std::copy(regs2.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a15d4b49b0525ad99256df6013d8a0ff6">deltaSet_</a>.begin(), regs2.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a15d4b49b0525ad99256df6013d8a0ff6">deltaSet_</a>.end(),</div>
+<div class="line"><a name="l01828"></a><span class="lineno"> 1828</span>&#160;                  std::back_inserter(result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a15d4b49b0525ad99256df6013d8a0ff6">deltaSet_</a>));</div>
+<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;        result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a9301b7eba9e5e113838c629bfd13aa89">mergeSparse</a>();</div>
+<div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;        <span class="keywordflow">if</span> (result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a10333adff28be0677be5167361f35982">shouldConvertToDense</a>()) {</div>
+<div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;            result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a60096541655c96c62d6457f8828397d5">toDense</a>();</div>
+<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;        }</div>
+<div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160;    }</div>
+<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (format_ == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e">HyperLogLogRegisterFormat::SPARSE</a> &amp;&amp;</div>
+<div class="line"><a name="l01836"></a><span class="lineno"> 1836</span>&#160;             regs2.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905">format_</a> == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff">HyperLogLogRegisterFormat::DENSE</a>) {</div>
+<div class="line"><a name="l01837"></a><span class="lineno"> 1837</span>&#160;</div>
+<div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160;        <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;p&gt;</a> result = *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160;        result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a60096541655c96c62d6457f8828397d5">toDense</a>();</div>
+<div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160;        result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a49ace48d3ceba1ed52572ce48e6770c1">mergeDense</a>(regs2);</div>
+<div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160;        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l01842"></a><span class="lineno"> 1842</span>&#160;    }</div>
+<div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (format_ == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff">HyperLogLogRegisterFormat::DENSE</a> &amp;&amp;</div>
+<div class="line"><a name="l01844"></a><span class="lineno"> 1844</span>&#160;             regs2.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905">format_</a> == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e">HyperLogLogRegisterFormat::SPARSE</a>) {</div>
+<div class="line"><a name="l01845"></a><span class="lineno"> 1845</span>&#160;</div>
+<div class="line"><a name="l01846"></a><span class="lineno"> 1846</span>&#160;        <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;p&gt;</a> result = regs2;</div>
+<div class="line"><a name="l01847"></a><span class="lineno"> 1847</span>&#160;        result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a60096541655c96c62d6457f8828397d5">toDense</a>();</div>
+<div class="line"><a name="l01848"></a><span class="lineno"> 1848</span>&#160;        result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a49ace48d3ceba1ed52572ce48e6770c1">mergeDense</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l01849"></a><span class="lineno"> 1849</span>&#160;        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l01850"></a><span class="lineno"> 1850</span>&#160;    }</div>
+<div class="line"><a name="l01851"></a><span class="lineno"> 1851</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (format_ == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff">HyperLogLogRegisterFormat::DENSE</a> &amp;&amp;</div>
+<div class="line"><a name="l01852"></a><span class="lineno"> 1852</span>&#160;             regs2.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905">format_</a> == <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff">HyperLogLogRegisterFormat::DENSE</a>) {</div>
+<div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;</div>
+<div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;        <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;p&gt;</a> result = *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160;        result.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a49ace48d3ceba1ed52572ce48e6770c1">mergeDense</a>(regs2);</div>
+<div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;    }</div>
+<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;    <a class="code" href="die_8hpp.html#ab6acaec854169756098dfd26138a1a0e">die</a>(<span class="stringliteral">&quot;Impossible.&quot;</span>);</div>
+<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;}</div>
+<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;</div>
+<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;<span class="comment">/*----------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;</div>
+<div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;4&gt;</a>;</div>
+<div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;5&gt;</a>;</div>
+<div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;6&gt;</a>;</div>
+<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;7&gt;</a>;</div>
+<div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;8&gt;</a>;</div>
+<div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;9&gt;</a>;</div>
+<div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;10&gt;</a>;</div>
+<div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;11&gt;</a>;</div>
+<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;12&gt;</a>;</div>
+<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;13&gt;</a>;</div>
+<div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;14&gt;</a>;</div>
+<div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;15&gt;</a>;</div>
+<div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;16&gt;</a>;</div>
+<div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;17&gt;</a>;</div>
+<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;<span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">HyperLogLogRegisters&lt;18&gt;</a>;</div>
+<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;</div>
+<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;} <span class="comment">// namespace core</span></div>
+<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;</div>
+<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;<span class="comment">/*----------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;</div>
+<div class="line"><a name="l01883"></a><span class="lineno"><a class="line" href="namespacethrill_1_1data.html"> 1883</a></span>&#160;<span class="keyword">namespace </span>data {</div>
+<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;</div>
+<div class="line"><a name="l01885"></a><span class="lineno"> 1885</span>&#160;<span class="keyword">using</span> <a class="code" href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38">core::HyperLogLogRegisterFormat</a>;</div>
+<div class="line"><a name="l01886"></a><span class="lineno"> 1886</span>&#160;</div>
+<div class="line"><a name="l01887"></a><span class="lineno"> 1887</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Archive, <span class="keywordtype">size_t</span> p&gt;</div>
+<div class="line"><a name="l01888"></a><span class="lineno"> 1888</span>&#160;<span class="keywordtype">void</span> <a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization&lt;Archive, core::HyperLogLogRegisters&lt;p&gt;</a> &gt;::</div>
+<div class="line"><a name="l01889"></a><span class="lineno"><a class="line" href="structthrill_1_1data_1_1Serialization_3_01Archive_00_01core_1_1HyperLogLogRegisters_3_01p_01_4_01_4.html#ae1e8b8fc41705ad77cfa0c5d8c152f13"> 1889</a></span>&#160;Serialize(<span class="keyword">const</span> <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">core::HyperLogLogRegisters&lt;p&gt;</a>&amp; <a class="code" href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">x</a>, Archive&amp; ar) {</div>
+<div class="line"><a name="l01890"></a><span class="lineno"> 1890</span>&#160;    <a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization&lt;Archive, HyperLogLogRegisterFormat&gt;::Serialize</a>(x.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905">format_</a>, ar);</div>
+<div class="line"><a name="l01891"></a><span class="lineno"> 1891</span>&#160;    <span class="keywordflow">switch</span> (x.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905">format_</a>) {</div>
+<div class="line"><a name="l01892"></a><span class="lineno"> 1892</span>&#160;    <span class="keywordflow">case</span> HyperLogLogRegisterFormat::SPARSE:</div>
+<div class="line"><a name="l01893"></a><span class="lineno"> 1893</span>&#160;        <a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization</a>&lt;Archive, decltype(x.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a932debc07fec3c0abcfc6d76b9f1ed36">sparseListBuffer_</a>)&gt;::Serialize(</div>
+<div class="line"><a name="l01894"></a><span class="lineno"> 1894</span>&#160;            x.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a932debc07fec3c0abcfc6d76b9f1ed36">sparseListBuffer_</a>, ar);</div>
+<div class="line"><a name="l01895"></a><span class="lineno"> 1895</span>&#160;        <a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization</a>&lt;Archive, decltype(x.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a15d4b49b0525ad99256df6013d8a0ff6">deltaSet_</a>)&gt;::Serialize(x.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a15d4b49b0525ad99256df6013d8a0ff6">deltaSet_</a>, ar);</div>
+<div class="line"><a name="l01896"></a><span class="lineno"> 1896</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01897"></a><span class="lineno"> 1897</span>&#160;    <span class="keywordflow">case</span> HyperLogLogRegisterFormat::DENSE:</div>
+<div class="line"><a name="l01898"></a><span class="lineno"> 1898</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = x.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#abc37e52eaa79c8490b419fc39e02ba7e">entries_</a>.begin(); it != x.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#abc37e52eaa79c8490b419fc39e02ba7e">entries_</a>.end(); ++it) {</div>
+<div class="line"><a name="l01899"></a><span class="lineno"> 1899</span>&#160;            <a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization&lt;Archive, uint64_t&gt;::Serialize</a>(*it, ar);</div>
+<div class="line"><a name="l01900"></a><span class="lineno"> 1900</span>&#160;        }</div>
+<div class="line"><a name="l01901"></a><span class="lineno"> 1901</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01902"></a><span class="lineno"> 1902</span>&#160;    }</div>
+<div class="line"><a name="l01903"></a><span class="lineno"> 1903</span>&#160;}</div>
+<div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;</div>
+<div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Archive, <span class="keywordtype">size_t</span> p&gt;</div>
+<div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">core::HyperLogLogRegisters&lt;p&gt;</a></div>
+<div class="line"><a name="l01907"></a><span class="lineno"><a class="line" href="structthrill_1_1data_1_1Serialization_3_01Archive_00_01core_1_1HyperLogLogRegisters_3_01p_01_4_01_4.html#a0b5228d69c0390fefb176e0210a177d1"> 1907</a></span>&#160;<a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization&lt;Archive, core::HyperLogLogRegisters&lt;p&gt;</a> &gt;::Deserialize(Archive&amp; ar) {</div>
+<div class="line"><a name="l01908"></a><span class="lineno"> 1908</span>&#160;    <a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html">core::HyperLogLogRegisters&lt;p&gt;</a> out;</div>
+<div class="line"><a name="l01909"></a><span class="lineno"> 1909</span>&#160;    out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905">format_</a> =</div>
+<div class="line"><a name="l01910"></a><span class="lineno"> 1910</span>&#160;        std::move(<a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization&lt;Archive, HyperLogLogRegisterFormat&gt;::Deserialize</a>(ar));</div>
+<div class="line"><a name="l01911"></a><span class="lineno"> 1911</span>&#160;    <span class="keywordflow">switch</span> (out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#af1bde038b54c3803c4f08218d6304905">format_</a>) {</div>
+<div class="line"><a name="l01912"></a><span class="lineno"> 1912</span>&#160;    <span class="keywordflow">case</span> HyperLogLogRegisterFormat::SPARSE:</div>
+<div class="line"><a name="l01913"></a><span class="lineno"> 1913</span>&#160;        out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a932debc07fec3c0abcfc6d76b9f1ed36">sparseListBuffer_</a> = std::move(</div>
+<div class="line"><a name="l01914"></a><span class="lineno"> 1914</span>&#160;            <a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization</a>&lt;Archive, decltype(out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a932debc07fec3c0abcfc6d76b9f1ed36">sparseListBuffer_</a>)&gt;::Deserialize(ar));</div>
+<div class="line"><a name="l01915"></a><span class="lineno"> 1915</span>&#160;        out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a15d4b49b0525ad99256df6013d8a0ff6">deltaSet_</a> = std::move(</div>
+<div class="line"><a name="l01916"></a><span class="lineno"> 1916</span>&#160;            <a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization</a>&lt;Archive, decltype(out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a15d4b49b0525ad99256df6013d8a0ff6">deltaSet_</a>)&gt;::Deserialize(ar));</div>
+<div class="line"><a name="l01917"></a><span class="lineno"> 1917</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01918"></a><span class="lineno"> 1918</span>&#160;    <span class="keywordflow">case</span> HyperLogLogRegisterFormat::DENSE:</div>
+<div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;        out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#abc37e52eaa79c8490b419fc39e02ba7e">entries_</a>.resize(1 &lt;&lt; p);</div>
+<div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i != out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#aac782da1f912bceb5d8ad00c8dc892ac">size</a>(); ++i) {</div>
+<div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;            out.<a class="code" href="classthrill_1_1core_1_1HyperLogLogRegisters.html#abc37e52eaa79c8490b419fc39e02ba7e">entries_</a>[i] = std::move(</div>
+<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;                <a class="code" href="structthrill_1_1data_1_1Serialization.html">Serialization&lt;Archive, uint64_t&gt;::Deserialize</a>(ar));</div>
+<div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;        }</div>
+<div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;    }</div>
+<div class="line"><a name="l01926"></a><span class="lineno"> 1926</span>&#160;    <span class="keywordflow">return</span> out;</div>
+<div class="line"><a name="l01927"></a><span class="lineno"> 1927</span>&#160;}</div>
+<div class="line"><a name="l01928"></a><span class="lineno"> 1928</span>&#160;</div>
+<div class="line"><a name="l01929"></a><span class="lineno"> 1929</span>&#160;<span class="preprocessor">#ifndef THRILL_DOXYGEN_IGNORE</span></div>
+<div class="line"><a name="l01930"></a><span class="lineno"> 1930</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01931"></a><span class="lineno"> 1931</span>&#160;<span class="comment">// make serialization instantiations</span></div>
+<div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;<span class="preprocessor">#define MAKE_INSTANTIATIONS(X)                                              \</span></div>
+<div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;<span class="preprocessor">    template void Serialization&lt;                                            \</span></div>
+<div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;<span class="preprocessor">        net::BufferBuilder, core::HyperLogLogRegisters&lt;X&gt; &gt;                 \</span></div>
+<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;<span class="preprocessor">    ::Serialize(const core::HyperLogLogRegisters&lt;X&gt;&amp;, net::BufferBuilder&amp;); \</span></div>
+<div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;<span class="preprocessor">                                                                            \</span></div>
+<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;<span class="preprocessor">    template core::HyperLogLogRegisters&lt;X&gt;                                  \</span></div>
+<div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;<span class="preprocessor">    Serialization&lt;net::BufferReader, core::HyperLogLogRegisters&lt;X&gt; &gt;        \</span></div>
+<div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;<span class="preprocessor">    ::Deserialize(net::BufferReader&amp;);</span></div>
+<div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;MAKE_INSTANTIATIONS(4)</div>
+<div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;MAKE_INSTANTIATIONS(5)</div>
+<div class="line"><a name="l01943"></a><span class="lineno"> 1943</span>&#160;MAKE_INSTANTIATIONS(6)</div>
+<div class="line"><a name="l01944"></a><span class="lineno"> 1944</span>&#160;MAKE_INSTANTIATIONS(7)</div>
+<div class="line"><a name="l01945"></a><span class="lineno"> 1945</span>&#160;MAKE_INSTANTIATIONS(8)</div>
+<div class="line"><a name="l01946"></a><span class="lineno"> 1946</span>&#160;MAKE_INSTANTIATIONS(9)</div>
+<div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;MAKE_INSTANTIATIONS(10)</div>
+<div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;MAKE_INSTANTIATIONS(11)</div>
+<div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;MAKE_INSTANTIATIONS(12)</div>
+<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;MAKE_INSTANTIATIONS(13)</div>
+<div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;MAKE_INSTANTIATIONS(14)</div>
+<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;MAKE_INSTANTIATIONS(15)</div>
+<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;MAKE_INSTANTIATIONS(16)</div>
+<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;MAKE_INSTANTIATIONS(17)</div>
+<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;MAKE_INSTANTIATIONS(18)</div>
+<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;</div>
+<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;<span class="preprocessor">#endif  // THRILL_DOXYGEN_IGNORE</span></div>
+<div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;} <span class="comment">// namespace data</span></div>
+<div class="line"><a name="l01960"></a><span class="lineno"> 1960</span>&#160;} <span class="comment">// namespace thrill</span></div>
+<div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160;</div>
+<div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_ade74a5e09947ef7364b113f46ace3e1d"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#ade74a5e09947ef7364b113f46ace3e1d">thrill::core::hyperloglog::decodeHash&lt; 25, 4 &gt;</a></div><div class="ttdeci">template std::pair&lt; size_t, uint8_t &gt; decodeHash&lt; 25, 4 &gt;(HyperLogLogSparseRegister)</div></div>
 <div class="ttc" id="namespacethrill_1_1core_html_a92c320671695dbd069c644defc991d38"><div class="ttname"><a href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38">thrill::core::HyperLogLogRegisterFormat</a></div><div class="ttdeci">HyperLogLogRegisterFormat</div><div class="ttdef"><b>Definition:</b> <a href="core_2hyperloglog_8hpp_source.html#l00031">hyperloglog.hpp:31</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a52a4224681e3f05e8758b300a6fd38d6"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a52a4224681e3f05e8758b300a6fd38d6">thrill::core::hyperloglog::decodeHash</a></div><div class="ttdeci">std::pair&lt; size_t, uint8_t &gt; decodeHash(HyperLogLogSparseRegister reg)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01482">hyperloglog.cpp:1482</a></div></div>
@@ -2087,21 +2086,21 @@ $(document).ready(function(){initNavTree('hyperloglog_8cpp_source.html','');});
 <div class="ttc" id="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_html_a0cfacbbf6e846521326f5de5ba3ecd05"><div class="ttname"><a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a0cfacbbf6e846521326f5de5ba3ecd05">max</a></div><div class="ttdeci">static uint_pair max()</div><div class="ttdoc">return an uint_pair instance containing the largest value possible </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_source.html#l00226">uint_types.hpp:226</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a73a3e8c4b4dd3a35dd0ab3c4b3406411"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a73a3e8c4b4dd3a35dd0ab3c4b3406411">thrill::core::hyperloglog::encodeHash&lt; 25, 16 &gt;</a></div><div class="ttdeci">template uint32_t encodeHash&lt; 25, 16 &gt;(uint64_t)</div></div>
 <div class="ttc" id="namespacethrill_1_1core_html_aa8ed33c9275a5f50d8a4c14923ff8f3b"><div class="ttname"><a href="namespacethrill_1_1core.html#aa8ed33c9275a5f50d8a4c14923ff8f3b">thrill::core::HyperLogLogSparseRegister</a></div><div class="ttdeci">uint32_t HyperLogLogSparseRegister</div><div class="ttdef"><b>Definition:</b> <a href="core_2hyperloglog_8hpp_source.html#l00029">hyperloglog.hpp:29</a></div></div>
-<div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a49ace48d3ceba1ed52572ce48e6770c1"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a49ace48d3ceba1ed52572ce48e6770c1">thrill::core::HyperLogLogRegisters::mergeDense</a></div><div class="ttdeci">void mergeDense(const HyperLogLogRegisters&lt; p &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01762">hyperloglog.cpp:1762</a></div></div>
+<div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a49ace48d3ceba1ed52572ce48e6770c1"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a49ace48d3ceba1ed52572ce48e6770c1">thrill::core::HyperLogLogRegisters::mergeDense</a></div><div class="ttdeci">void mergeDense(const HyperLogLogRegisters&lt; p &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01761">hyperloglog.cpp:1761</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_ae4100dd7405b352f1d05e84d145b9ac9"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#ae4100dd7405b352f1d05e84d145b9ac9">thrill::core::hyperloglog::estimateBias&lt; 8 &gt;</a></div><div class="ttdeci">double estimateBias&lt; 8 &gt;(double rawEstimate)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l00417">hyperloglog.cpp:417</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a77a508ef8e62a8b3e8d8c1cba92c268b"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a77a508ef8e62a8b3e8d8c1cba92c268b">thrill::core::hyperloglog::estimateBiasCalculation</a></div><div class="ttdeci">static double estimateBiasCalculation(double rawEstimate, const double *estimatedData, const double *biasData, size_t estimateSize)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l00100">hyperloglog.cpp:100</a></div></div>
 <div class="ttc" id="core_2hyperloglog_8hpp_html"><div class="ttname"><a href="core_2hyperloglog_8hpp.html">hyperloglog.hpp</a></div></div>
 <div class="ttc" id="group__tlx__math_html_ga8eebbd26ffd74bb652bdd95bbdf9cff8"><div class="ttname"><a href="group__tlx__math.html#ga8eebbd26ffd74bb652bdd95bbdf9cff8">tlx::clz</a></div><div class="ttdeci">unsigned clz(Integral x)</div></div>
-<div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a9301b7eba9e5e113838c629bfd13aa89"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a9301b7eba9e5e113838c629bfd13aa89">thrill::core::HyperLogLogRegisters::mergeSparse</a></div><div class="ttdeci">void mergeSparse()</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01747">hyperloglog.cpp:1747</a></div></div>
+<div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a9301b7eba9e5e113838c629bfd13aa89"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a9301b7eba9e5e113838c629bfd13aa89">thrill::core::HyperLogLogRegisters::mergeSparse</a></div><div class="ttdeci">void mergeSparse()</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01745">hyperloglog.cpp:1745</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_ad57a52d1be0ed7185dcdd61dd4c31cb7"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#ad57a52d1be0ed7185dcdd61dd4c31cb7">thrill::core::hyperloglog::estimateBias&lt; 4 &gt;</a></div><div class="ttdeci">double estimateBias&lt; 4 &gt;(double rawEstimate)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l00122">hyperloglog.cpp:122</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a1fd95c7b3ac118ace982e2e166c6d25e"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a1fd95c7b3ac118ace982e2e166c6d25e">thrill::core::hyperloglog::alpha&lt; 5 &gt;</a></div><div class="ttdeci">constexpr double alpha&lt; 5 &gt;()</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l00051">hyperloglog.cpp:51</a></div></div>
 <div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_aac782da1f912bceb5d8ad00c8dc892ac"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#aac782da1f912bceb5d8ad00c8dc892ac">thrill::core::HyperLogLogRegisters::size</a></div><div class="ttdeci">size_t size() const </div><div class="ttdef"><b>Definition:</b> <a href="core_2hyperloglog_8hpp_source.html#l00039">hyperloglog.hpp:39</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_ab3862c504ab1be48ad9c5925fcb2f047"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#ab3862c504ab1be48ad9c5925fcb2f047">thrill::core::hyperloglog::upperNBitMask</a></div><div class="ttdeci">constexpr uint32_t upperNBitMask(uint32_t n)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01477">hyperloglog.cpp:1477</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_ac648db92303830eef2cf7dd55b93092f"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#ac648db92303830eef2cf7dd55b93092f">thrill::core::hyperloglog::estimateBias&lt; 12 &gt;</a></div><div class="ttdeci">double estimateBias&lt; 12 &gt;(double rawEstimate)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l00783">hyperloglog.cpp:783</a></div></div>
-<div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a3e6c14554026f796cc99c7c7045ae967"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a3e6c14554026f796cc99c7c7045ae967">thrill::core::HyperLogLogRegisters::shouldMerge</a></div><div class="ttdeci">bool shouldMerge()</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01710">hyperloglog.cpp:1710</a></div></div>
+<div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a3e6c14554026f796cc99c7c7045ae967"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a3e6c14554026f796cc99c7c7045ae967">thrill::core::HyperLogLogRegisters::shouldMerge</a></div><div class="ttdeci">bool shouldMerge()</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01708">hyperloglog.cpp:1708</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a16cfe4231ae67b4e007a069a3e4239f1"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a16cfe4231ae67b4e007a069a3e4239f1">thrill::core::hyperloglog::estimateBias&lt; 11 &gt;</a></div><div class="ttdeci">double estimateBias&lt; 11 &gt;(double rawEstimate)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l00691">hyperloglog.cpp:691</a></div></div>
-<div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a83692a19ea4ebac0e7c4f1118c39cda6"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a83692a19ea4ebac0e7c4f1118c39cda6">thrill::core::HyperLogLogRegisters::insert_hash</a></div><div class="ttdeci">void insert_hash(const uint64_t &amp;hash_value)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01717">hyperloglog.cpp:1717</a></div></div>
-<div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a8f657242097002b05a56fd4e286b668f"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a8f657242097002b05a56fd4e286b668f">thrill::core::HyperLogLogRegisters::result</a></div><div class="ttdeci">double result()</div><div class="ttdoc">calculate count estimation result adjusted for bias </div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01772">hyperloglog.cpp:1772</a></div></div>
+<div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a83692a19ea4ebac0e7c4f1118c39cda6"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a83692a19ea4ebac0e7c4f1118c39cda6">thrill::core::HyperLogLogRegisters::insert_hash</a></div><div class="ttdeci">void insert_hash(const uint64_t &amp;hash_value)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01715">hyperloglog.cpp:1715</a></div></div>
+<div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a8f657242097002b05a56fd4e286b668f"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a8f657242097002b05a56fd4e286b668f">thrill::core::HyperLogLogRegisters::result</a></div><div class="ttdeci">double result()</div><div class="ttdoc">calculate count estimation result adjusted for bias </div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01771">hyperloglog.cpp:1771</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_ac236ef0528190847c1d4104eeffea5b1"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#ac236ef0528190847c1d4104eeffea5b1">thrill::core::hyperloglog::estimateBias</a></div><div class="ttdeci">double estimateBias(double rawEstimate)</div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a192f4e22f0ddccfc3aa44cf683c7fdd1"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a192f4e22f0ddccfc3aa44cf683c7fdd1">thrill::core::hyperloglog::alpha</a></div><div class="ttdeci">constexpr double alpha()</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l00043">hyperloglog.cpp:43</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_aa1a79f5a89ce7414c3d42f5356d0a317"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#aa1a79f5a89ce7414c3d42f5356d0a317">thrill::core::hyperloglog::estimateBias&lt; 16 &gt;</a></div><div class="ttdeci">double estimateBias&lt; 16 &gt;(double rawEstimate)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01172">hyperloglog.cpp:1172</a></div></div>
@@ -2110,18 +2109,18 @@ $(document).ready(function(){initNavTree('hyperloglog_8cpp_source.html','');});
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a03f5c79da787cf7d2642b737c9a0c28d"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a03f5c79da787cf7d2642b737c9a0c28d">thrill::core::hyperloglog::s_thresholds</a></div><div class="ttdeci">static const double s_thresholds[15]</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l00030">hyperloglog.cpp:30</a></div></div>
 <div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a932debc07fec3c0abcfc6d76b9f1ed36"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a932debc07fec3c0abcfc6d76b9f1ed36">thrill::core::HyperLogLogRegisters::sparseListBuffer_</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; sparseListBuffer_</div><div class="ttdef"><b>Definition:</b> <a href="core_2hyperloglog_8hpp_source.html#l00075">hyperloglog.hpp:75</a></div></div>
 <div class="ttc" id="buffer__builder_8hpp_html"><div class="ttname"><a href="buffer__builder_8hpp.html">buffer_builder.hpp</a></div></div>
-<div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a60096541655c96c62d6457f8828397d5"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a60096541655c96c62d6457f8828397d5">thrill::core::HyperLogLogRegisters::toDense</a></div><div class="ttdeci">void toDense()</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01678">hyperloglog.cpp:1678</a></div></div>
+<div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a60096541655c96c62d6457f8828397d5"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a60096541655c96c62d6457f8828397d5">thrill::core::HyperLogLogRegisters::toDense</a></div><div class="ttdeci">void toDense()</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01676">hyperloglog.cpp:1676</a></div></div>
 <div class="ttc" id="namespacetlx_1_1digest__detail_html_a4aa334dd681999fabd33513a4a557d99"><div class="ttname"><a href="namespacetlx_1_1digest__detail.html#a4aa334dd681999fabd33513a4a557d99">tlx::digest_detail::H</a></div><div class="ttdeci">static uint32_t H(const uint32_t &amp;x, const uint32_t &amp;y, const uint32_t &amp;z)</div><div class="ttdef"><b>Definition:</b> <a href="md5_8cpp_source.html#l00062">md5.cpp:62</a></div></div>
 <div class="ttc" id="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_html_a59b0aded0f8145a9cd94ecdd54e3831f"><div class="ttname"><a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#a59b0aded0f8145a9cd94ecdd54e3831f">operator!=</a></div><div class="ttdeci">bool operator!=(const uint_pair &amp;b) const </div><div class="ttdoc">inequality checking operator </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_source.html#l00181">uint_types.hpp:181</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_aa42a5a5bfd200db14d3465cebef28413"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#aa42a5a5bfd200db14d3465cebef28413">thrill::core::hyperloglog::encodeHash&lt; 25, 12 &gt;</a></div><div class="ttdeci">template uint32_t encodeHash&lt; 25, 12 &gt;(uint64_t)</div></div>
-<div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a10333adff28be0677be5167361f35982"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a10333adff28be0677be5167361f35982">thrill::core::HyperLogLogRegisters::shouldConvertToDense</a></div><div class="ttdeci">bool shouldConvertToDense()</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01702">hyperloglog.cpp:1702</a></div></div>
+<div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a10333adff28be0677be5167361f35982"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a10333adff28be0677be5167361f35982">thrill::core::HyperLogLogRegisters::shouldConvertToDense</a></div><div class="ttdeci">bool shouldConvertToDense()</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01700">hyperloglog.cpp:1700</a></div></div>
 <div class="ttc" id="namespacethrill_1_1common_html_a2ccde75485682c9a6486b3657487771c"><div class="ttname"><a href="namespacethrill_1_1common.html#a2ccde75485682c9a6486b3657487771c">thrill::common::operator*</a></div><div class="ttdeci">Vector&lt; D &gt; operator*(const double a, const Vector&lt; D &gt; &amp;b)</div><div class="ttdef"><b>Definition:</b> <a href="vector_8hpp_source.html#l00115">vector.hpp:115</a></div></div>
 <div class="ttc" id="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_html_aeeaeb80c008f27201493c2b9a0b52937"><div class="ttname"><a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp.html#aeeaeb80c008f27201493c2b9a0b52937">operator==</a></div><div class="ttdeci">bool operator==(const uint_pair &amp;b) const </div><div class="ttdoc">equality checking operator </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2foxxll_2foxxll_2common_2uint__types_8hpp_source.html#l00175">uint_types.hpp:175</a></div></div>
 <div class="ttc" id="item__serialization__tools_8hpp_html"><div class="ttname"><a href="item__serialization__tools_8hpp.html">item_serialization_tools.hpp</a></div></div>
-<div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a9afd4266c3cda053ccc293af1cb0690a"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a9afd4266c3cda053ccc293af1cb0690a">thrill::core::hyperloglog::decodeSparseList</a></div><div class="ttdeci">std::vector&lt; uint32_t &gt; decodeSparseList(const std::vector&lt; uint8_t &gt; &amp;sparseList)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01664">hyperloglog.cpp:1664</a></div></div>
+<div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a9afd4266c3cda053ccc293af1cb0690a"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a9afd4266c3cda053ccc293af1cb0690a">thrill::core::hyperloglog::decodeSparseList</a></div><div class="ttdeci">std::vector&lt; uint32_t &gt; decodeSparseList(const std::vector&lt; uint8_t &gt; &amp;sparseList)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01662">hyperloglog.cpp:1662</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a8b0a8009883e58fdb2d9c7904944bc13"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a8b0a8009883e58fdb2d9c7904944bc13">thrill::core::hyperloglog::estimateBias&lt; 13 &gt;</a></div><div class="ttdeci">double estimateBias&lt; 13 &gt;(double rawEstimate)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l00879">hyperloglog.cpp:879</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a39635a13311da39bb68b8a35fcbf9876"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a39635a13311da39bb68b8a35fcbf9876">thrill::core::hyperloglog::lowerNBitMask</a></div><div class="ttdeci">constexpr uint64_t lowerNBitMask(uint64_t n)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01473">hyperloglog.cpp:1473</a></div></div>
-<div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a8397f922c7912fd28df4215222363dc4"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a8397f922c7912fd28df4215222363dc4">thrill::core::hyperloglog::makeSparseListIterator</a></div><div class="ttdeci">SparseListIterator&lt; ForwardIt &gt; makeSparseListIterator(ForwardIt it)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01631">hyperloglog.cpp:1631</a></div></div>
+<div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a8397f922c7912fd28df4215222363dc4"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a8397f922c7912fd28df4215222363dc4">thrill::core::hyperloglog::makeSparseListIterator</a></div><div class="ttdeci">SparseListIterator&lt; ForwardIt &gt; makeSparseListIterator(ForwardIt it)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01629">hyperloglog.cpp:1629</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_html_a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff"><div class="ttname"><a href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0706fbbd929bd8abc4de386c53d439ff">thrill::core::HyperLogLogRegisterFormat::DENSE</a></div></div>
 <div class="ttc" id="namespacegen__data_html_a573e66358ede67c6f901dfaf4722f75a"><div class="ttname"><a href="namespacegen__data.html#a573e66358ede67c6f901dfaf4722f75a">gen_data.x</a></div><div class="ttdeci">list x</div><div class="ttdef"><b>Definition:</b> <a href="gen__data_8py_source.html#l00039">gen_data.py:39</a></div></div>
 <div class="ttc" id="namespacegen__data_html_ac4f474c82e82cbb89ca7c36dd52be0ed"><div class="ttname"><a href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">gen_data.value</a></div><div class="ttdeci">int value</div><div class="ttdef"><b>Definition:</b> <a href="gen__data_8py_source.html#l00041">gen_data.py:41</a></div></div>
@@ -2142,7 +2141,7 @@ $(document).ready(function(){initNavTree('hyperloglog_8cpp_source.html','');});
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a444a352c6c1de89e5ce5658438a9b063"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a444a352c6c1de89e5ce5658438a9b063">thrill::core::hyperloglog::estimateBias&lt; 10 &gt;</a></div><div class="ttdeci">double estimateBias&lt; 10 &gt;(double rawEstimate)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l00598">hyperloglog.cpp:598</a></div></div>
 <div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_abc37e52eaa79c8490b419fc39e02ba7e"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#abc37e52eaa79c8490b419fc39e02ba7e">thrill::core::HyperLogLogRegisters::entries_</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; entries_</div><div class="ttdef"><b>Definition:</b> <a href="core_2hyperloglog_8hpp_source.html#l00077">hyperloglog.hpp:77</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a2b9cb0db51a466cb7782bc66d4a00578"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a2b9cb0db51a466cb7782bc66d4a00578">thrill::core::hyperloglog::encodeHash</a></div><div class="ttdeci">uint32_t encodeHash(uint64_t hash)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01527">hyperloglog.cpp:1527</a></div></div>
-<div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a8fa87a9781e53fd8b02908a1b27427bb"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a8fa87a9781e53fd8b02908a1b27427bb">thrill::core::hyperloglog::encodeSparseList</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; encodeSparseList(const std::vector&lt; uint32_t &gt; &amp;sparseList)</div><div class="ttdoc">Perform a varint and a difference encoding. </div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01646">hyperloglog.cpp:1646</a></div></div>
+<div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a8fa87a9781e53fd8b02908a1b27427bb"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a8fa87a9781e53fd8b02908a1b27427bb">thrill::core::hyperloglog::encodeSparseList</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; encodeSparseList(const std::vector&lt; uint32_t &gt; &amp;sparseList)</div><div class="ttdoc">Perform a varint and a difference encoding. </div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01644">hyperloglog.cpp:1644</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a4106bcca0516ec6d57ee4f9cc73ba4b9"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a4106bcca0516ec6d57ee4f9cc73ba4b9">thrill::core::hyperloglog::estimateBias&lt; 7 &gt;</a></div><div class="ttdeci">double estimateBias&lt; 7 &gt;(double rawEstimate)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l00332">hyperloglog.cpp:332</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a42eb625c258e42a98462b8a8a231cae1"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a42eb625c258e42a98462b8a8a231cae1">thrill::core::hyperloglog::estimateBias&lt; 9 &gt;</a></div><div class="ttdeci">double estimateBias&lt; 9 &gt;(double rawEstimate)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l00504">hyperloglog.cpp:504</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a21d3a6dd2df1a02d197a95802587b588"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a21d3a6dd2df1a02d197a95802587b588">thrill::core::hyperloglog::splitSparseRegister</a></div><div class="ttdeci">std::pair&lt; uint32_t, uint8_t &gt; splitSparseRegister(const HyperLogLogSparseRegister &amp;reg)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01505">hyperloglog.cpp:1505</a></div></div>
@@ -2152,7 +2151,7 @@ $(document).ready(function(){initNavTree('hyperloglog_8cpp_source.html','');});
 <div class="ttc" id="namespacethrill_1_1core_html_a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e"><div class="ttname"><a href="namespacethrill_1_1core.html#a92c320671695dbd069c644defc991d38a0459833ba9cad7cfd7bbfe10d7bbbe6e">thrill::core::HyperLogLogRegisterFormat::SPARSE</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_ad644ed5d31353cd5b7cbc99c1180b6a1"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#ad644ed5d31353cd5b7cbc99c1180b6a1">thrill::core::hyperloglog::estimateBias&lt; 15 &gt;</a></div><div class="ttdeci">double estimateBias&lt; 15 &gt;(double rawEstimate)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01073">hyperloglog.cpp:1073</a></div></div>
 <div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html">thrill::core::HyperLogLogRegisters</a></div><div class="ttdef"><b>Definition:</b> <a href="core_2hyperloglog_8hpp_source.html#l00034">hyperloglog.hpp:34</a></div></div>
-<div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a5c7fa65f22f1f61b4cf9b28fd5f19209"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a5c7fa65f22f1f61b4cf9b28fd5f19209">thrill::core::HyperLogLogRegisters::operator+</a></div><div class="ttdeci">HyperLogLogRegisters operator+(const HyperLogLogRegisters&lt; p &gt; &amp;registers2) const </div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01818">hyperloglog.cpp:1818</a></div></div>
+<div class="ttc" id="classthrill_1_1core_1_1HyperLogLogRegisters_html_a5c7fa65f22f1f61b4cf9b28fd5f19209"><div class="ttname"><a href="classthrill_1_1core_1_1HyperLogLogRegisters.html#a5c7fa65f22f1f61b4cf9b28fd5f19209">thrill::core::HyperLogLogRegisters::operator+</a></div><div class="ttdeci">HyperLogLogRegisters operator+(const HyperLogLogRegisters&lt; p &gt; &amp;registers2) const </div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01817">hyperloglog.cpp:1817</a></div></div>
 <div class="ttc" id="namespacethrill_1_1core_1_1hyperloglog_html_a7604a9ed591b1dd31db2b4f8ab18eb64"><div class="ttname"><a href="namespacethrill_1_1core_1_1hyperloglog.html#a7604a9ed591b1dd31db2b4f8ab18eb64">thrill::core::hyperloglog::encodePair</a></div><div class="ttdeci">uint32_t encodePair(uint32_t index, uint8_t value)</div><div class="ttdef"><b>Definition:</b> <a href="hyperloglog_8cpp_source.html#l01512">hyperloglog.cpp:1512</a></div></div>
 <div class="ttc" id="buffer__reader_8hpp_html"><div class="ttname"><a href="buffer__reader_8hpp.html">buffer_reader.hpp</a></div></div>
 <div class="ttc" id="functional_8hpp_html"><div class="ttname"><a href="functional_8hpp.html">functional.hpp</a></div></div>
@@ -2162,7 +2161,7 @@ $(document).ready(function(){initNavTree('hyperloglog_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_8bfba075c6cd97373f9ca7badca61766.html">core</a></li><li class="navelem"><a class="el" href="hyperloglog_8cpp.html">hyperloglog.cpp</a></li>
-    <li class="footer">Generated on Tue Mar 19 2019 19:54:26 for Thrill by
+    <li class="footer">Generated on Mon Apr 8 2019 20:42:55 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
