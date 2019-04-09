@@ -18,6 +18,8 @@ var classthrill_1_1data_1_1Stream =
     [ "rx_net_bytes", "classthrill_1_1data_1_1Stream.html#ac79823d9827a7dc9c970a52cb6e99186", null ],
     [ "rx_net_items", "classthrill_1_1data_1_1Stream.html#acda489f4b5bd9e8e69be277d09f42c7c", null ],
     [ "Scatter", "classthrill_1_1data_1_1Stream.html#a0b173d0ccadd2c20be68054fe610fd0c", null ],
+    [ "ScatterConsume", "classthrill_1_1data_1_1Stream.html#a28491686deee6e919448bc0c358d5757", null ],
+    [ "ScatterKeep", "classthrill_1_1data_1_1Stream.html#a846b9a5915c0a68b19b958a8e84cbb80", null ],
     [ "tx_blocks", "classthrill_1_1data_1_1Stream.html#a9c5bef94b5b2c2b0a29cac1f658c39fe", null ],
     [ "tx_bytes", "classthrill_1_1data_1_1Stream.html#a155814533f57eb38293db5bf3933247c", null ],
     [ "tx_int_blocks", "classthrill_1_1data_1_1Stream.html#a4cde5d16160f9099c5160ec4c2e3f065", null ],

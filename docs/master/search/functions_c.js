@@ -25,6 +25,7 @@ var searchData=
   ['load_5fdefault_5fconfig',['load_default_config',['../classfoxxll_1_1config.html#aadf1ec73321221983c972124ed84dd77',1,'foxxll::config']]],
   ['loadbfsgraph',['LoadBFSGraph',['../bfs_8cpp.html#a15b28c16e4ba89d13fc3b4425421bc6d',1,'bfs.cpp']]],
   ['loadbinary',['loadBinary',['../classthrill_1_1data_1_1serialization__cereal_1_1ThrillInputArchive.html#ae1a087717d8e74ac55bcce95820e0ce0',1,'thrill::data::serialization_cereal::ThrillInputArchive']]],
+  ['loadblock',['LoadBlock',['../classthrill_1_1data_1_1BlockReader.html#a8a881d02377fd27a521d835bd4faeb36',1,'thrill::data::BlockReader']]],
   ['loadpoints',['LoadPoints',['../k-means__step5_8cpp.html#ae10fab4513e0cbb5cba655a23a016e93',1,'LoadPoints(thrill::Context &amp;ctx, const char *path):&#160;k-means_step5.cpp'],['../k-means__step6_8cpp.html#ae10fab4513e0cbb5cba655a23a016e93',1,'LoadPoints(thrill::Context &amp;ctx, const char *path):&#160;k-means_step6.cpp']]],
   ['local_5fhost_5fid',['local_host_id',['../classthrill_1_1api_1_1HostContext.html#a61e4b7137d2efefe92a3de8531b59b28',1,'thrill::api::HostContext::local_host_id()'],['../classthrill_1_1api_1_1Context.html#a61e4b7137d2efefe92a3de8531b59b28',1,'thrill::api::Context::local_host_id()']]],
   ['local_5findex',['local_index',['../structthrill_1_1core_1_1ReduceByHash_1_1Result.html#a9e63260e05480a5993d1df7926009514',1,'thrill::core::ReduceByHash::Result::local_index()'],['../structthrill_1_1core_1_1ReduceByIndex_1_1Result.html#a9e63260e05480a5993d1df7926009514',1,'thrill::core::ReduceByIndex::Result::local_index()']]],

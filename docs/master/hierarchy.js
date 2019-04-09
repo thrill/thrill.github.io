@@ -634,7 +634,9 @@ var hierarchy =
     [ "btree_set< Key_, Compare_, Traits_, Alloc_ >::key_of_value", "structtlx_1_1btree__set_1_1key__of__value.html", null ],
     [ "CmdlineParser", "classtlx_1_1CmdlineParser.html", null ],
     [ "CountingPtr< Type, Deleter >", "classtlx_1_1CountingPtr.html", [
-      [ "PinnedByteBlockPtr", "classthrill_1_1data_1_1PinnedByteBlockPtr.html", null ]
+      [ "ByteBlockPtr", "classthrill_1_1data_1_1ByteBlockPtr.html", [
+        [ "PinnedByteBlockPtr", "classthrill_1_1data_1_1PinnedByteBlockPtr.html", null ]
+      ] ]
     ] ],
     [ "CountingPtrDefaultDeleter", "classtlx_1_1CountingPtrDefaultDeleter.html", null ],
     [ "CountingPtrNoOperationDeleter", "classtlx_1_1CountingPtrNoOperationDeleter.html", null ],

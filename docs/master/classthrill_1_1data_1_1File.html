@@ -274,7 +274,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9032b7fbe7f57c9a80527c95ec402740 inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1BlockSink.html">BlockSink</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockSink.html#a9032b7fbe7f57c9a80527c95ec402740">operator=</a> (<a class="el" href="classthrill_1_1data_1_1BlockSink.html">BlockSink</a> &amp;&amp;)=default</td></tr>
 <tr class="memdesc:a9032b7fbe7f57c9a80527c95ec402740 inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="mdescLeft">&#160;</td><td class="mdescRight">move-assignment operator: default  <a href="#a9032b7fbe7f57c9a80527c95ec402740">More...</a><br/></td></tr>
 <tr class="separator:a9032b7fbe7f57c9a80527c95ec402740 inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af486a27d4543d700ab9ec19d2cba0d2e inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockSink.html#af486a27d4543d700ab9ec19d2cba0d2e">ReleaseByteBlock</a> (<a class="el" href="group__data__layer.html#ga8eb59a5f16aacf17b53f2fef06bff83f">ByteBlockPtr</a> &amp;block)</td></tr>
+<tr class="memitem:af486a27d4543d700ab9ec19d2cba0d2e inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockSink.html#af486a27d4543d700ab9ec19d2cba0d2e">ReleaseByteBlock</a> (<a class="el" href="classthrill_1_1data_1_1ByteBlockPtr.html">ByteBlockPtr</a> &amp;block)</td></tr>
 <tr class="memdesc:af486a27d4543d700ab9ec19d2cba0d2e inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release an unused <a class="el" href="classthrill_1_1data_1_1ByteBlock.html" title="A ByteBlock is the basic storage units of containers like File, BlockQueue, etc. ">ByteBlock</a> with n bytes backing memory.  <a href="#af486a27d4543d700ab9ec19d2cba0d2e">More...</a><br/></td></tr>
 <tr class="separator:af486a27d4543d700ab9ec19d2cba0d2e inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab918f792039fb144dd12528701199562 inherit pub_methods_classthrill_1_1data_1_1BlockSink"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockSink.html#ab918f792039fb144dd12528701199562">workers_per_host</a> () const </td></tr>
@@ -707,7 +707,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="thrill_2data_2file_8hpp_source.html#l00262">File::blocks_</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2data_2file_8cpp_source.html#l00165">KeepFileBlockSource::NextUnpinnedBlock()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2data_2file_8cpp_source.html#l00118">KeepFileBlockSource::MakeNextBlock()</a>.</p>
 
 </div>
 </div>
@@ -759,7 +759,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="thrill_2data_2file_8hpp_source.html#l00262">File::blocks_</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00267">File::num_items_sum_</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00270">File::size_bytes_</a>, and <a class="el" href="counting__ptr_8hpp_source.html#l00320">tlx::swap()</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2data_2file_8cpp_source.html#l00241">ConsumeFileBlockSource::~ConsumeFileBlockSource()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2data_2file_8cpp_source.html#l00282">ConsumeFileBlockSource::~ConsumeFileBlockSource()</a>.</p>
 
 </div>
 </div>
@@ -863,7 +863,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="thrill_2data_2file_8hpp_source.html#l00282">File::ConsumeFileBlockSource</a>, and <a class="el" href="block__sink_8hpp_source.html#l00103">BlockSink::local_worker_id_</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00465">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::TransmitItems()</a>.</p>
+<p>Referenced by <a class="el" href="stream_8hpp_source.html#l00089">Stream::ScatterConsume()</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00465">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::TransmitItems()</a>.</p>
 
 </div>
 </div>
@@ -911,7 +911,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="thrill_2data_2file_8hpp_source.html#l00236">236</a> of file <a class="el" href="thrill_2data_2file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>References <a class="el" href="thrill_2data_2file_8hpp_source.html#l00519">File::GetIndexOf()</a>, and <a class="el" href="thrill_2data_2file_8hpp_source.html#l00180">File::num_items()</a>.</p>
+<p>References <a class="el" href="thrill_2data_2file_8hpp_source.html#l00534">File::GetIndexOf()</a>, and <a class="el" href="thrill_2data_2file_8hpp_source.html#l00180">File::num_items()</a>.</p>
 
 </div>
 </div>
@@ -934,6 +934,8 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="thrill_2data_2file_8cpp_source.html#l00068">68</a> of file <a class="el" href="thrill_2data_2file_8cpp_source.html">file.cpp</a>.</p>
 
 <p>References <a class="el" href="thrill_2data_2file_8hpp_source.html#l00281">File::KeepFileBlockSource</a>, and <a class="el" href="block__sink_8hpp_source.html#l00103">BlockSink::local_worker_id_</a>.</p>
+
+<p>Referenced by <a class="el" href="stream_8hpp_source.html#l00142">Stream::ScatterKeep()</a>.</p>
 
 </div>
 </div>
@@ -968,7 +970,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="block__sink_8hpp_source.html#l00103">BlockSink::local_worker_id_</a>.</p>
 
-<p>Referenced by <a class="el" href="dia__node_8hpp_source.html#l00156">DIANode&lt; StackInput &gt;::PushFile()</a>, <a class="el" href="group__to__index_8hpp_source.html#l00186">GroupToIndexNode&lt; ValueType, KeyExtractor, GroupFunction &gt;::RunUserFunc()</a>, <a class="el" href="group__by__key_8hpp_source.html#l00314">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::RunUserFunc()</a>, and <a class="el" href="stream_8hpp_source.html#l00077">Stream::Scatter()</a>.</p>
+<p>Referenced by <a class="el" href="dia__node_8hpp_source.html#l00156">DIANode&lt; StackInput &gt;::PushFile()</a>, <a class="el" href="group__to__index_8hpp_source.html#l00186">GroupToIndexNode&lt; ValueType, KeyExtractor, GroupFunction &gt;::RunUserFunc()</a>, and <a class="el" href="group__by__key_8hpp_source.html#l00314">GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::RunUserFunc()</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +1053,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="thrill_2data_2file_8hpp_source.html#l00262">File::blocks_</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2data_2file_8cpp_source.html#l00135">KeepFileBlockSource::NextBlock()</a>, and <a class="el" href="thrill_2data_2file_8cpp_source.html#l00117">KeepFileBlockSource::Prefetch()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2data_2file_8cpp_source.html#l00149">KeepFileBlockSource::NextBlock()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00177">KeepFileBlockSource::NextBlockUnpinned()</a>, and <a class="el" href="thrill_2data_2file_8cpp_source.html#l00131">KeepFileBlockSource::Prefetch()</a>.</p>
 
 </div>
 </div>
@@ -1303,7 +1305,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="thrill_2data_2file_8hpp_source.html#l00262">262</a> of file <a class="el" href="thrill_2data_2file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2data_2file_8hpp_source.html#l00088">File::AppendBlock()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00191">File::block()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00197">File::blocks()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00057">File::Clear()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00042">File::Copy()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00185">File::empty()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00452">File::GetReaderAt()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00200">File::ItemsStartIn()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00214">ConsumeFileBlockSource::NextBlock()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00177">File::num_blocks()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00094">thrill::data::operator&lt;&lt;()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00197">ConsumeFileBlockSource::Prefetch()</a>, and <a class="el" href="thrill_2data_2file_8cpp_source.html#l00087">File::ReadComplete()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2data_2file_8hpp_source.html#l00088">File::AppendBlock()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00191">File::block()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00197">File::blocks()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00057">File::Clear()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00042">File::Copy()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00185">File::empty()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00467">File::GetReaderAt()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00200">File::ItemsStartIn()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00232">ConsumeFileBlockSource::NextBlock()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00259">ConsumeFileBlockSource::NextBlockUnpinned()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00177">File::num_blocks()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00094">thrill::data::operator&lt;&lt;()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00215">ConsumeFileBlockSource::Prefetch()</a>, and <a class="el" href="thrill_2data_2file_8cpp_source.html#l00087">File::ReadComplete()</a>.</p>
 
 </div>
 </div>
@@ -1403,7 +1405,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="thrill_2data_2file_8hpp_source.html#l00267">267</a> of file <a class="el" href="thrill_2data_2file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2data_2file_8hpp_source.html#l00088">File::AppendBlock()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00057">File::Clear()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00042">File::Copy()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00452">File::GetReaderAt()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00200">File::ItemsStartIn()</a>, and <a class="el" href="thrill_2data_2file_8hpp_source.html#l00180">File::num_items()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2data_2file_8hpp_source.html#l00088">File::AppendBlock()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00057">File::Clear()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00042">File::Copy()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00467">File::GetReaderAt()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00200">File::ItemsStartIn()</a>, and <a class="el" href="thrill_2data_2file_8hpp_source.html#l00180">File::num_items()</a>.</p>
 
 </div>
 </div>
@@ -1494,7 +1496,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1File.html">File</a></li>
-    <li class="footer">Generated on Mon Apr 8 2019 20:42:59 for Thrill by
+    <li class="footer">Generated on Tue Apr 9 2019 16:16:13 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

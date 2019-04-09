@@ -145,7 +145,7 @@ class thrill::data::BlockReader&lt; BlockSource &gt;</h3>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1data_1_1BlockReader__coll__graph.svg" width="396" height="358"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1data_1_1BlockReader__coll__graph.svg" width="396" height="419"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 
@@ -165,7 +165,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a50dd34095b70d531578ef33d3f548ecf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockReader.html#a50dd34095b70d531578ef33d3f548ecf">BlockReader</a> (<a class="el" href="classthrill_1_1data_1_1BlockReader.html">BlockReader</a> &amp;&amp;)=default</td></tr>
 <tr class="memdesc:a50dd34095b70d531578ef33d3f548ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">move-constructor: default  <a href="#a50dd34095b70d531578ef33d3f548ecf">More...</a><br/></td></tr>
 <tr class="separator:a50dd34095b70d531578ef33d3f548ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2ad33a687fbea6b583795315c551d09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__data__layer.html#ga8eb59a5f16aacf17b53f2fef06bff83f">ByteBlockPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockReader.html#af2ad33a687fbea6b583795315c551d09">byte_block</a> () const </td></tr>
+<tr class="memitem:af2ad33a687fbea6b583795315c551d09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1ByteBlockPtr.html">ByteBlockPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockReader.html#af2ad33a687fbea6b583795315c551d09">byte_block</a> () const </td></tr>
 <tr class="memdesc:af2ad33a687fbea6b583795315c551d09"><td class="mdescLeft">&#160;</td><td class="mdescRight">return current <a class="el" href="classthrill_1_1data_1_1ByteBlock.html" title="A ByteBlock is the basic storage units of containers like File, BlockQueue, etc. ">ByteBlock</a>  <a href="#af2ad33a687fbea6b583795315c551d09">More...</a><br/></td></tr>
 <tr class="separator:af2ad33a687fbea6b583795315c551d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2744bf82223ddbfcea6e9bd82570ac23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1PinnedBlock.html">PinnedBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockReader.html#a2744bf82223ddbfcea6e9bd82570ac23">CopyBlock</a> () const </td></tr>
@@ -235,6 +235,9 @@ Static Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a8a881d02377fd27a521d835bd4faeb36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockReader.html#a8a881d02377fd27a521d835bd4faeb36">LoadBlock</a> (<a class="el" href="classthrill_1_1data_1_1PinnedBlock.html">PinnedBlock</a> &amp;&amp;block)</td></tr>
+<tr class="memdesc:a8a881d02377fd27a521d835bd4faeb36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load <a class="el" href="classthrill_1_1data_1_1Block.html" title="Block combines a reference to a read-only ByteBlock and book-keeping information. ...">Block</a> into Reader.  <a href="#a8a881d02377fd27a521d835bd4faeb36">More...</a><br/></td></tr>
+<tr class="separator:a8a881d02377fd27a521d835bd4faeb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91e9a1fa7664c8284a28e0ee6acb6e24"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockReader.html#a91e9a1fa7664c8284a28e0ee6acb6e24">NextBlock</a> ()</td></tr>
 <tr class="memdesc:a91e9a1fa7664c8284a28e0ee6acb6e24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call source_.NextBlock with appropriate parameters.  <a href="#a91e9a1fa7664c8284a28e0ee6acb6e24">More...</a><br/></td></tr>
 <tr class="separator:a91e9a1fa7664c8284a28e0ee6acb6e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -376,7 +379,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__data__layer.html#ga8eb59a5f16aacf17b53f2fef06bff83f">ByteBlockPtr</a> byte_block </td>
+          <td class="memname"><a class="el" href="classthrill_1_1data_1_1ByteBlockPtr.html">ByteBlockPtr</a> byte_block </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -422,7 +425,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00069">69</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2data_2file_8hpp_source.html#l00452">File::GetReaderAt()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2data_2file_8hpp_source.html#l00467">File::GetReaderAt()</a>.</p>
 
 </div>
 </div>
@@ -449,7 +452,7 @@ Private Attributes</h2></td></tr>
 
 <p>Fetch a single byte from the current block, advancing the cursor. </p>
 
-<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00316">316</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00313">313</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
 </div>
 </div>
@@ -502,7 +505,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Fetch a single item of the template type Type from the buffer, advancing the cursor. Be careful with implicit type conversions! </p>
 
-<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00329">329</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00326">326</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
 </div>
 </div>
@@ -531,7 +534,37 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00118">118</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__hash__post__phase_8hpp_source.html#l00096">ReduceByHashPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceNode::Emitter, VolatileKey, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction &gt;::Flush()</a>, <a class="el" href="location__detection_8hpp_source.html#l00193">LocationDetection&lt; thrill::api::JoinNode::HashCount &gt;::Flush()</a>, <a class="el" href="reduce__pre__phase_8hpp_source.html#l00291">ReducePrePhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig, IndexFunction, EqualToFunction, HashFunction, true &gt;::FlushPartition()</a>, <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00452">File::GetReaderAt()</a>, <a class="el" href="mix__block__queue_8hpp_source.html#l00182">MixBlockQueueReader::HasNext()</a>, <a class="el" href="inner__join_8hpp_source.html#l00571">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::JoinAllElements()</a>, <a class="el" href="block__reader_8hpp_source.html#l00089">BlockReader&lt; CatBlockSource &gt;::Next()</a>, <a class="el" href="block__reader_8hpp_source.html#l00111">BlockReader&lt; CatBlockSource &gt;::NextNoSelfVerify()</a>, <a class="el" href="distribute_8hpp_source.html#l00076">DistributeNode&lt; ValueType &gt;::PushData()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00191">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>, <a class="el" href="reduce__by__hash__post__phase_8hpp_source.html#l00228">ReduceByHashPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceNode::Emitter, VolatileKey, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction &gt;::PushData()</a>, <a class="el" href="concat_8hpp_source.html#l00280">ConcatNode&lt; ValueType &gt;::PushData()</a>, <a class="el" href="dia__node_8hpp_source.html#l00156">DIANode&lt; StackInput &gt;::PushFile()</a>, <a class="el" href="block__reader_8hpp_source.html#l00130">BlockReader&lt; CatBlockSource &gt;::ReadComplete()</a>, and <a class="el" href="stream_8hpp_source.html#l00077">Stream::Scatter()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__hash__post__phase_8hpp_source.html#l00096">ReduceByHashPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceNode::Emitter, VolatileKey, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction &gt;::Flush()</a>, <a class="el" href="location__detection_8hpp_source.html#l00193">LocationDetection&lt; thrill::api::JoinNode::HashCount &gt;::Flush()</a>, <a class="el" href="reduce__pre__phase_8hpp_source.html#l00291">ReducePrePhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig, IndexFunction, EqualToFunction, HashFunction, true &gt;::FlushPartition()</a>, <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00467">File::GetReaderAt()</a>, <a class="el" href="mix__block__queue_8hpp_source.html#l00182">MixBlockQueueReader::HasNext()</a>, <a class="el" href="inner__join_8hpp_source.html#l00571">JoinNode&lt; ValueType, FirstDIA, SecondDIA, KeyExtractor1, KeyExtractor2, JoinFunction, HashFunction, UseLocationDetection &gt;::JoinAllElements()</a>, <a class="el" href="block__reader_8hpp_source.html#l00089">BlockReader&lt; CatBlockSource &gt;::Next()</a>, <a class="el" href="block__reader_8hpp_source.html#l00111">BlockReader&lt; CatBlockSource &gt;::NextNoSelfVerify()</a>, <a class="el" href="distribute_8hpp_source.html#l00076">DistributeNode&lt; ValueType &gt;::PushData()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00191">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>, <a class="el" href="reduce__by__hash__post__phase_8hpp_source.html#l00228">ReduceByHashPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceNode::Emitter, VolatileKey, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction &gt;::PushData()</a>, <a class="el" href="concat_8hpp_source.html#l00280">ConcatNode&lt; ValueType &gt;::PushData()</a>, <a class="el" href="dia__node_8hpp_source.html#l00156">DIANode&lt; StackInput &gt;::PushFile()</a>, <a class="el" href="block__reader_8hpp_source.html#l00130">BlockReader&lt; CatBlockSource &gt;::ReadComplete()</a>, <a class="el" href="stream_8hpp_source.html#l00089">Stream::ScatterConsume()</a>, and <a class="el" href="stream_8hpp_source.html#l00142">Stream::ScatterKeep()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8a881d02377fd27a521d835bd4faeb36"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LoadBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classthrill_1_1data_1_1PinnedBlock.html">PinnedBlock</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>block</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load <a class="el" href="classthrill_1_1data_1_1Block.html" title="Block combines a reference to a read-only ByteBlock and book-keeping information. ...">Block</a> into Reader. </p>
+
+<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00391">391</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>.</p>
 
 </div>
 </div>
@@ -560,7 +593,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00089">89</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="reduce__by__hash__post__phase_8hpp_source.html#l00096">ReduceByHashPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceNode::Emitter, VolatileKey, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction &gt;::Flush()</a>, <a class="el" href="location__detection_8hpp_source.html#l00193">LocationDetection&lt; thrill::api::JoinNode::HashCount &gt;::Flush()</a>, <a class="el" href="reduce__pre__phase_8hpp_source.html#l00291">ReducePrePhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig, IndexFunction, EqualToFunction, HashFunction, true &gt;::FlushPartition()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00513">File::GetItemAt()</a>, <a class="el" href="distribute_8hpp_source.html#l00076">DistributeNode&lt; ValueType &gt;::PushData()</a>, <a class="el" href="window_8hpp_source.html#l00191">OverlapWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::PushData()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00191">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>, <a class="el" href="reduce__by__hash__post__phase_8hpp_source.html#l00228">ReduceByHashPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceNode::Emitter, VolatileKey, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction &gt;::PushData()</a>, <a class="el" href="concat_8hpp_source.html#l00280">ConcatNode&lt; ValueType &gt;::PushData()</a>, <a class="el" href="window_8hpp_source.html#l00447">DisjointWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::PushData()</a>, <a class="el" href="dia__node_8hpp_source.html#l00156">DIANode&lt; StackInput &gt;::PushFile()</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00465">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::TransmitItems()</a>.</p>
+<p>Referenced by <a class="el" href="reduce__by__hash__post__phase_8hpp_source.html#l00096">ReduceByHashPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceNode::Emitter, VolatileKey, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction &gt;::Flush()</a>, <a class="el" href="location__detection_8hpp_source.html#l00193">LocationDetection&lt; thrill::api::JoinNode::HashCount &gt;::Flush()</a>, <a class="el" href="reduce__pre__phase_8hpp_source.html#l00291">ReducePrePhase&lt; TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig, IndexFunction, EqualToFunction, HashFunction, true &gt;::FlushPartition()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00528">File::GetItemAt()</a>, <a class="el" href="distribute_8hpp_source.html#l00076">DistributeNode&lt; ValueType &gt;::PushData()</a>, <a class="el" href="window_8hpp_source.html#l00191">OverlapWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::PushData()</a>, <a class="el" href="reduce__by__index__post__phase_8hpp_source.html#l00191">ReduceByIndexPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig &gt;::PushData()</a>, <a class="el" href="reduce__by__hash__post__phase_8hpp_source.html#l00228">ReduceByHashPostPhase&lt; TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceNode::Emitter, VolatileKey, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction &gt;::PushData()</a>, <a class="el" href="concat_8hpp_source.html#l00280">ConcatNode&lt; ValueType &gt;::PushData()</a>, <a class="el" href="window_8hpp_source.html#l00447">DisjointWindowNode&lt; ValueType, Input, WindowFunction, PartialWindowFunction &gt;::PushData()</a>, <a class="el" href="dia__node_8hpp_source.html#l00156">DIANode&lt; StackInput &gt;::PushFile()</a>, and <a class="el" href="thrill_2api_2sort_8hpp_source.html#l00465">SortNode&lt; ValueType, CompareFunction, SortAlgorithm, Stable &gt;::TransmitItems()</a>.</p>
 
 </div>
 </div>
@@ -587,9 +620,9 @@ Private Attributes</h2></td></tr>
 
 <p>Call source_.NextBlock with appropriate parameters. </p>
 
-<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00374">374</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00371">371</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00316">BlockReader&lt; CatBlockSource &gt;::GetByte()</a>, <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, <a class="el" href="block__reader_8hpp_source.html#l00118">BlockReader&lt; CatBlockSource &gt;::HasNext()</a>, <a class="el" href="block__reader_8hpp_source.html#l00268">BlockReader&lt; CatBlockSource &gt;::Read()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00300">BlockReader&lt; CatBlockSource &gt;::Skip()</a>.</p>
+<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00313">BlockReader&lt; CatBlockSource &gt;::GetByte()</a>, <a class="el" href="block__reader_8hpp_source.html#l00118">BlockReader&lt; CatBlockSource &gt;::HasNext()</a>, <a class="el" href="block__reader_8hpp_source.html#l00265">BlockReader&lt; CatBlockSource &gt;::Read()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00297">BlockReader&lt; CatBlockSource &gt;::Skip()</a>.</p>
 
 </div>
 </div>
@@ -704,9 +737,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Fetch a number of unstructured bytes from the current block, advancing the cursor. </p>
 
-<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00268">268</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00265">265</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00329">BlockReader&lt; CatBlockSource &gt;::GetRaw()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00293">BlockReader&lt; CatBlockSource &gt;::Read()</a>.</p>
+<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00326">BlockReader&lt; CatBlockSource &gt;::GetRaw()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00290">BlockReader&lt; CatBlockSource &gt;::Read()</a>.</p>
 
 </div>
 </div>
@@ -733,7 +766,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Fetch a number of unstructured bytes from the buffer as std::string, advancing the cursor. </p>
 
-<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00293">293</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00290">290</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
 </div>
 </div>
@@ -797,9 +830,9 @@ Private Attributes</h2></td></tr>
 
 <p>Advance the cursor given number of bytes without reading them. </p>
 
-<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00300">300</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00297">297</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, and <a class="el" href="thrill_2data_2file_8hpp_source.html#l00452">File::GetReaderAt()</a>.</p>
+<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, and <a class="el" href="thrill_2data_2file_8hpp_source.html#l00467">File::GetReaderAt()</a>.</p>
 
 </div>
 </div>
@@ -855,7 +888,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00081">81</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thrill_2data_2file_8hpp_source.html#l00452">File::GetReaderAt()</a>.</p>
+<p>Referenced by <a class="el" href="thrill_2data_2file_8hpp_source.html#l00467">File::GetReaderAt()</a>.</p>
 
 </div>
 </div>
@@ -880,9 +913,9 @@ Private Attributes</h2></td></tr>
 
 <p>The current block being read, this holds a shared pointer reference. </p>
 
-<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00355">355</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00352">352</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00078">BlockReader&lt; CatBlockSource &gt;::byte_block()</a>, <a class="el" href="block__reader_8hpp_source.html#l00069">BlockReader&lt; CatBlockSource &gt;::CopyBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00374">BlockReader&lt; CatBlockSource &gt;::NextBlock()</a>.</p>
+<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00078">BlockReader&lt; CatBlockSource &gt;::byte_block()</a>, <a class="el" href="block__reader_8hpp_source.html#l00069">BlockReader&lt; CatBlockSource &gt;::CopyBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, <a class="el" href="block__reader_8hpp_source.html#l00391">BlockReader&lt; CatBlockSource &gt;::LoadBlock()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00371">BlockReader&lt; CatBlockSource &gt;::NextBlock()</a>.</p>
 
 </div>
 </div>
@@ -906,9 +939,9 @@ Private Attributes</h2></td></tr>
 
 <p>pointer to vector to collect blocks in GetItemRange. </p>
 
-<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00367">367</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00364">364</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00374">BlockReader&lt; CatBlockSource &gt;::NextBlock()</a>.</p>
+<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00371">BlockReader&lt; CatBlockSource &gt;::NextBlock()</a>.</p>
 
 </div>
 </div>
@@ -932,9 +965,9 @@ Private Attributes</h2></td></tr>
 
 <p>current read pointer into current block of file. </p>
 
-<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00358">358</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00355">355</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00069">BlockReader&lt; CatBlockSource &gt;::CopyBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00316">BlockReader&lt; CatBlockSource &gt;::GetByte()</a>, <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, <a class="el" href="block__reader_8hpp_source.html#l00329">BlockReader&lt; CatBlockSource &gt;::GetRaw()</a>, <a class="el" href="block__reader_8hpp_source.html#l00118">BlockReader&lt; CatBlockSource &gt;::HasNext()</a>, <a class="el" href="block__reader_8hpp_source.html#l00374">BlockReader&lt; CatBlockSource &gt;::NextBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00268">BlockReader&lt; CatBlockSource &gt;::Read()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00300">BlockReader&lt; CatBlockSource &gt;::Skip()</a>.</p>
+<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00069">BlockReader&lt; CatBlockSource &gt;::CopyBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00313">BlockReader&lt; CatBlockSource &gt;::GetByte()</a>, <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, <a class="el" href="block__reader_8hpp_source.html#l00326">BlockReader&lt; CatBlockSource &gt;::GetRaw()</a>, <a class="el" href="block__reader_8hpp_source.html#l00118">BlockReader&lt; CatBlockSource &gt;::HasNext()</a>, <a class="el" href="block__reader_8hpp_source.html#l00391">BlockReader&lt; CatBlockSource &gt;::LoadBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00371">BlockReader&lt; CatBlockSource &gt;::NextBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00265">BlockReader&lt; CatBlockSource &gt;::Read()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00297">BlockReader&lt; CatBlockSource &gt;::Skip()</a>.</p>
 
 </div>
 </div>
@@ -958,9 +991,9 @@ Private Attributes</h2></td></tr>
 
 <p>pointer to end of current block. </p>
 
-<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00361">361</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00358">358</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00069">BlockReader&lt; CatBlockSource &gt;::CopyBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00316">BlockReader&lt; CatBlockSource &gt;::GetByte()</a>, <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, <a class="el" href="block__reader_8hpp_source.html#l00329">BlockReader&lt; CatBlockSource &gt;::GetRaw()</a>, <a class="el" href="block__reader_8hpp_source.html#l00118">BlockReader&lt; CatBlockSource &gt;::HasNext()</a>, <a class="el" href="block__reader_8hpp_source.html#l00374">BlockReader&lt; CatBlockSource &gt;::NextBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00268">BlockReader&lt; CatBlockSource &gt;::Read()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00300">BlockReader&lt; CatBlockSource &gt;::Skip()</a>.</p>
+<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00069">BlockReader&lt; CatBlockSource &gt;::CopyBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00313">BlockReader&lt; CatBlockSource &gt;::GetByte()</a>, <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, <a class="el" href="block__reader_8hpp_source.html#l00326">BlockReader&lt; CatBlockSource &gt;::GetRaw()</a>, <a class="el" href="block__reader_8hpp_source.html#l00118">BlockReader&lt; CatBlockSource &gt;::HasNext()</a>, <a class="el" href="block__reader_8hpp_source.html#l00391">BlockReader&lt; CatBlockSource &gt;::LoadBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00371">BlockReader&lt; CatBlockSource &gt;::NextBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00265">BlockReader&lt; CatBlockSource &gt;::Read()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00297">BlockReader&lt; CatBlockSource &gt;::Skip()</a>.</p>
 
 </div>
 </div>
@@ -984,9 +1017,9 @@ Private Attributes</h2></td></tr>
 
 <p>remaining number of items starting in this block </p>
 
-<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00364">364</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00361">361</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00069">BlockReader&lt; CatBlockSource &gt;::CopyBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, <a class="el" href="block__reader_8hpp_source.html#l00089">BlockReader&lt; CatBlockSource &gt;::Next()</a>, <a class="el" href="block__reader_8hpp_source.html#l00374">BlockReader&lt; CatBlockSource &gt;::NextBlock()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00300">BlockReader&lt; CatBlockSource &gt;::Skip()</a>.</p>
+<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00069">BlockReader&lt; CatBlockSource &gt;::CopyBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, <a class="el" href="block__reader_8hpp_source.html#l00391">BlockReader&lt; CatBlockSource &gt;::LoadBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00089">BlockReader&lt; CatBlockSource &gt;::Next()</a>, <a class="el" href="block__reader_8hpp_source.html#l00371">BlockReader&lt; CatBlockSource &gt;::NextBlock()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00297">BlockReader&lt; CatBlockSource &gt;::Skip()</a>.</p>
 
 </div>
 </div>
@@ -1033,9 +1066,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Instance of BlockSource. This is NOT a reference, as to enable embedding of FileBlockSource to compose classes into <a class="el" href="classthrill_1_1data_1_1File.html#ac306eb24ea466acd3e0d87ea82f56916">File::Reader</a>. </p>
 
-<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00352">352</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00349">349</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00374">BlockReader&lt; CatBlockSource &gt;::NextBlock()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00056">BlockReader&lt; CatBlockSource &gt;::source()</a>.</p>
+<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, <a class="el" href="block__reader_8hpp_source.html#l00371">BlockReader&lt; CatBlockSource &gt;::NextBlock()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00056">BlockReader&lt; CatBlockSource &gt;::source()</a>.</p>
 
 </div>
 </div>
@@ -1058,9 +1091,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>flag whether the underlying data contains self verify type codes from <a class="el" href="classthrill_1_1data_1_1BlockReader.html" title="BlockReader takes Block objects from BlockSource and allows reading of a) serializable Items or b) ar...">BlockReader</a>, this is false to needed to read external files. </p>
 
-<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00371">371</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
+<p>Definition at line <a class="el" href="block__reader_8hpp_source.html#l00368">368</a> of file <a class="el" href="block__reader_8hpp_source.html">block_reader.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00069">BlockReader&lt; CatBlockSource &gt;::CopyBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, <a class="el" href="block__reader_8hpp_source.html#l00089">BlockReader&lt; CatBlockSource &gt;::Next()</a>, <a class="el" href="block__reader_8hpp_source.html#l00374">BlockReader&lt; CatBlockSource &gt;::NextBlock()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00081">BlockReader&lt; CatBlockSource &gt;::typecode_verify()</a>.</p>
+<p>Referenced by <a class="el" href="block__reader_8hpp_source.html#l00069">BlockReader&lt; CatBlockSource &gt;::CopyBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00140">BlockReader&lt; CatBlockSource &gt;::GetItemBatch()</a>, <a class="el" href="block__reader_8hpp_source.html#l00391">BlockReader&lt; CatBlockSource &gt;::LoadBlock()</a>, <a class="el" href="block__reader_8hpp_source.html#l00089">BlockReader&lt; CatBlockSource &gt;::Next()</a>, <a class="el" href="block__reader_8hpp_source.html#l00371">BlockReader&lt; CatBlockSource &gt;::NextBlock()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00081">BlockReader&lt; CatBlockSource &gt;::typecode_verify()</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1106,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1BlockReader.html">BlockReader</a></li>
-    <li class="footer">Generated on Mon Apr 8 2019 20:42:59 for Thrill by
+    <li class="footer">Generated on Tue Apr 9 2019 16:16:13 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -69,5 +69,6 @@ var searchData=
   ['bufferreader',['BufferReader',['../classthrill_1_1net_1_1BufferReader.html',1,'thrill::net']]],
   ['bufferref',['BufferRef',['../classthrill_1_1net_1_1BufferRef.html',1,'thrill::net']]],
   ['busy_5fentry',['busy_entry',['../structfoxxll_1_1write__pool_1_1busy__entry.html',1,'foxxll::write_pool']]],
-  ['byteblock',['ByteBlock',['../classthrill_1_1data_1_1ByteBlock.html',1,'thrill::data']]]
+  ['byteblock',['ByteBlock',['../classthrill_1_1data_1_1ByteBlock.html',1,'thrill::data']]],
+  ['byteblockptr',['ByteBlockPtr',['../classthrill_1_1data_1_1ByteBlockPtr.html',1,'thrill::data']]]
 ];

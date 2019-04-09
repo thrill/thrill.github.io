@@ -163,6 +163,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ByteBlock.html">ByteBlock</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classthrill_1_1data_1_1ByteBlock.html" title="A ByteBlock is the basic storage units of containers like File, BlockQueue, etc. ">ByteBlock</a> is the basic storage units of containers like <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>, <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a>, etc.  <a href="classthrill_1_1data_1_1ByteBlock.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ByteBlockPtr.html">ByteBlockPtr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A non-pinned counting pointer to a <a class="el" href="classthrill_1_1data_1_1ByteBlock.html" title="A ByteBlock is the basic storage units of containers like File, BlockQueue, etc. ">ByteBlock</a>.  <a href="classthrill_1_1data_1_1ByteBlockPtr.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1CacheBlockQueueSource.html">CacheBlockQueueSource</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A BlockSource to read Blocks from a <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a> using a <a class="el" href="classthrill_1_1data_1_1BlockReader.html" title="BlockReader takes Block objects from BlockSource and allows reading of a) serializable Items or b) ar...">BlockReader</a>, and at the same time CACHE all items received.  <a href="classthrill_1_1data_1_1CacheBlockQueueSource.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,8 +279,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga5df5518b488228d9937501d80f7b70e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga5df5518b488228d9937501d80f7b70e2">Byte</a> = uint8_t</td></tr>
 <tr class="memdesc:ga5df5518b488228d9937501d80f7b70e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of underlying memory area  <a href="group__data__layer.html#ga5df5518b488228d9937501d80f7b70e2">More...</a><br/></td></tr>
 <tr class="separator:ga5df5518b488228d9937501d80f7b70e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8eb59a5f16aacf17b53f2fef06bff83f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga8eb59a5f16aacf17b53f2fef06bff83f">ByteBlockPtr</a> = <a class="el" href="classthrill_1_1data_1_1ByteBlock.html#a07ff5f64ca2cb4cf9e0d5963df489453">ByteBlock::ByteBlockPtr</a></td></tr>
-<tr class="separator:ga8eb59a5f16aacf17b53f2fef06bff83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4c9227f65cc5fae907c969a9861025cc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga4c9227f65cc5fae907c969a9861025cc">CatStreamDataPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; <a class="el" href="classthrill_1_1data_1_1CatStreamData.html">CatStreamData</a> &gt;</td></tr>
 <tr class="separator:ga4c9227f65cc5fae907c969a9861025cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5e26e99f6cf880f5376fe272cfc59dcf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">CatStreamPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; <a class="el" href="classthrill_1_1data_1_1CatStream.html">CatStream</a> &gt;</td></tr>
@@ -810,7 +811,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li>
-    <li class="footer">Generated on Mon Apr 8 2019 20:42:59 for Thrill by
+    <li class="footer">Generated on Tue Apr 9 2019 16:16:12 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

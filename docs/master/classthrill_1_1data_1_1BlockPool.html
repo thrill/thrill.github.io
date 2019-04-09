@@ -171,7 +171,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afcf71e44beb7437388f9388f7da8e19b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrement a <a class="el" href="classthrill_1_1data_1_1ByteBlock.html" title="A ByteBlock is the basic storage units of containers like File, BlockQueue, etc. ">ByteBlock</a>'s pin count and possibly unpin it.  <a href="#afcf71e44beb7437388f9388f7da8e19b">More...</a><br/></td></tr>
 <tr class="separator:afcf71e44beb7437388f9388f7da8e19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a605b981bb5605b5f12c69049905378d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockPool.html#a605b981bb5605b5f12c69049905378d5">DestroyBlock</a> (<a class="el" href="classthrill_1_1data_1_1ByteBlock.html">ByteBlock</a> *block_ptr)</td></tr>
-<tr class="memdesc:a605b981bb5605b5f12c69049905378d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the block. Called by ByteBlockPtr's deleter.  <a href="#a605b981bb5605b5f12c69049905378d5">More...</a><br/></td></tr>
+<tr class="memdesc:a605b981bb5605b5f12c69049905378d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the block. Called by <a class="el" href="classthrill_1_1data_1_1ByteBlockPtr.html" title="A non-pinned counting pointer to a ByteBlock. ">ByteBlockPtr</a>'s deleter.  <a href="#a605b981bb5605b5f12c69049905378d5">More...</a><br/></td></tr>
 <tr class="separator:a605b981bb5605b5f12c69049905378d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a586e070551f123438b27dd3027609f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockPool.html#a2a586e070551f123438b27dd3027609f">EvictBlock</a> (<a class="el" href="classthrill_1_1data_1_1ByteBlock.html">ByteBlock</a> *block_ptr)</td></tr>
 <tr class="separator:a2a586e070551f123438b27dd3027609f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,7 +186,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae34d8ffa837be823690600d6a05e9ef5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1common_1_1JsonLogger.html">common::JsonLogger</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockPool.html#ae34d8ffa837be823690600d6a05e9ef5">logger</a> ()</td></tr>
 <tr class="memdesc:ae34d8ffa837be823690600d6a05e9ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns logger_.  <a href="#ae34d8ffa837be823690600d6a05e9ef5">More...</a><br/></td></tr>
 <tr class="separator:ae34d8ffa837be823690600d6a05e9ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb7175461c2f2359a1959fbde71a09c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__data__layer.html#ga8eb59a5f16aacf17b53f2fef06bff83f">ByteBlockPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockPool.html#abb7175461c2f2359a1959fbde71a09c8">MapExternalBlock</a> (const <a class="el" href="group__foxxll__reqlayer.html#ga34031e8de004f3e0a30ddac75648f6ff">foxxll::file_ptr</a> &amp;file, uint64_t offset, size_t size)</td></tr>
+<tr class="memitem:abb7175461c2f2359a1959fbde71a09c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1ByteBlockPtr.html">ByteBlockPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockPool.html#abb7175461c2f2359a1959fbde71a09c8">MapExternalBlock</a> (const <a class="el" href="group__foxxll__reqlayer.html#ga34031e8de004f3e0a30ddac75648f6ff">foxxll::file_ptr</a> &amp;file, uint64_t offset, size_t size)</td></tr>
 <tr class="separator:abb7175461c2f2359a1959fbde71a09c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5110b7cc7d01fb7c26d3a0bbd3c3865"><td class="memItemLeft" align="right" valign="top">std::pair&lt; size_t, size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockPool.html#ad5110b7cc7d01fb7c26d3a0bbd3c3865">MaxMergeDegreePrefetch</a> (size_t num_files)</td></tr>
 <tr class="separator:ad5110b7cc7d01fb7c26d3a0bbd3c3865"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -527,7 +527,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Destroys the block. Called by ByteBlockPtr's deleter. </p>
+<p>Destroys the block. Called by <a class="el" href="classthrill_1_1data_1_1ByteBlockPtr.html" title="A non-pinned counting pointer to a ByteBlock. ">ByteBlockPtr</a>'s deleter. </p>
 
 <p>Definition at line <a class="el" href="block__pool_8cpp_source.html#l00939">939</a> of file <a class="el" href="block__pool_8cpp_source.html">block_pool.cpp</a>.</p>
 
@@ -742,7 +742,7 @@ Friends</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__data__layer.html#ga8eb59a5f16aacf17b53f2fef06bff83f">ByteBlockPtr</a> MapExternalBlock </td>
+          <td class="memname"><a class="el" href="classthrill_1_1data_1_1ByteBlockPtr.html">ByteBlockPtr</a> MapExternalBlock </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__foxxll__reqlayer.html#ga34031e8de004f3e0a30ddac75648f6ff">foxxll::file_ptr</a> &amp;&#160;</td>
           <td class="paramname"><em>file</em>, </td>
@@ -803,7 +803,7 @@ Friends</h2></td></tr>
 
 <p>References <a class="el" href="block__pool_8hpp_source.html#l00203">BlockPool::d_</a>, and <a class="el" href="block__pool_8hpp_source.html#l00181">BlockPool::mutex_</a>.</p>
 
-<p>Referenced by <a class="el" href="context_8cpp_source.html#l01213">Context::Launch()</a>.</p>
+<p>Referenced by <a class="el" href="context_8cpp_source.html#l01217">Context::Launch()</a>.</p>
 
 </div>
 </div>
@@ -1538,7 +1538,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1BlockPool.html">BlockPool</a></li>
-    <li class="footer">Generated on Mon Apr 8 2019 20:42:59 for Thrill by
+    <li class="footer">Generated on Tue Apr 9 2019 16:16:12 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

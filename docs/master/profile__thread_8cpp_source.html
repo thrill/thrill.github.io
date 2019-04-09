@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('profile__thread_8cpp_source.html','');
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">while</span> (!<a class="code" href="classthrill_1_1common_1_1ProfileThread.html#a5c7c161ce42f7ccc3184d9bec18fa969">terminate_</a>)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1common_1_1ProfileThread.html#a31e0791d239b1a2d19c538c0820884ed">tasks_</a>.<a class="code" href="classthrill_1_1common_1_1BinaryHeap.html#ac6e61de369e994009e36f344f99c15ad">empty</a>()) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">while</span> (<a class="code" href="classthrill_1_1common_1_1ProfileThread.html#a31e0791d239b1a2d19c538c0820884ed">tasks_</a>.<a class="code" href="classthrill_1_1common_1_1BinaryHeap.html#ac6e61de369e994009e36f344f99c15ad">empty</a>())</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">while</span> (!<a class="code" href="classthrill_1_1common_1_1ProfileThread.html#a5c7c161ce42f7ccc3184d9bec18fa969">terminate_</a> &amp;&amp; <a class="code" href="classthrill_1_1common_1_1ProfileThread.html#a31e0791d239b1a2d19c538c0820884ed">tasks_</a>.<a class="code" href="classthrill_1_1common_1_1BinaryHeap.html#ac6e61de369e994009e36f344f99c15ad">empty</a>())</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <a class="code" href="classthrill_1_1common_1_1ProfileThread.html#a357d5d45500a7beae8bef009fd395dc0">cv_</a>.wait(<a class="code" href="classthrill_1_1common_1_1ProfileThread.html#aee2e22f1f0d83ce182f4f9fde3ca8f11">mutex_</a>);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
@@ -264,7 +264,7 @@ $(document).ready(function(){initNavTree('profile__thread_8cpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="profile__thread_8cpp.html">profile_thread.cpp</a></li>
-    <li class="footer">Generated on Mon Apr 8 2019 20:42:55 for Thrill by
+    <li class="footer">Generated on Tue Apr 9 2019 16:16:08 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

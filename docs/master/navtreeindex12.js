@@ -1,6 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"classthrill_1_1common_1_1VVector.html#ade135466390d2ebc07d8f561974d4e90":[5,0,4,1,60,1],
 "classthrill_1_1common_1_1VVector.html#afcb9e4d7e5d718f2b007256f38fcc771":[5,0,4,1,60,4],
 "classthrill_1_1common_1_1Vector.html":[5,0,4,1,58],
 "classthrill_1_1common_1_1Vector.html#a0a22581a091167da9d9db49104dbf751":[5,0,4,1,58,16],
@@ -249,5 +248,6 @@ var NAVTREEINDEX12 =
 "classthrill_1_1core_1_1ReduceBucketHashTable_1_1BucketBlockPool.html#a1919e548e14787abba462f5b42d1d3e2":[5,0,4,2,14,1,1],
 "classthrill_1_1core_1_1ReduceBucketHashTable_1_1BucketBlockPool.html#a26fe551b8f68f13556cddcc48c1e4b6a":[5,0,4,2,14,1,3],
 "classthrill_1_1core_1_1ReduceBucketHashTable_1_1BucketBlockPool.html#a592f2dda608dfa442e45cda3c5274090":[5,0,4,2,14,1,8],
-"classthrill_1_1core_1_1ReduceBucketHashTable_1_1BucketBlockPool.html#a65ccf9ea859957dc3e4c7832b3d560ba":[5,0,4,2,14,1,2]
+"classthrill_1_1core_1_1ReduceBucketHashTable_1_1BucketBlockPool.html#a65ccf9ea859957dc3e4c7832b3d560ba":[5,0,4,2,14,1,2],
+"classthrill_1_1core_1_1ReduceBucketHashTable_1_1BucketBlockPool.html#a982f29ba8774bc746d43bf4b9bf3b0a1":[5,0,4,2,14,1,6]
 };

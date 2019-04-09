@@ -7,7 +7,6 @@ var NAVTREEINDEX1 =
 "byte__block_8hpp.html":[6,0,3,3,10],
 "byte__block_8hpp.html#a7f917a74281a91a6935550b5ae9e3e4d":[6,0,3,3,10,1],
 "byte__block_8hpp.html#ga5df5518b488228d9937501d80f7b70e2":[6,0,3,3,10,2],
-"byte__block_8hpp.html#ga8eb59a5f16aacf17b53f2fef06bff83f":[6,0,3,3,10,3],
 "byte__block_8hpp_source.html":[6,0,3,3,10],
 "bzip2__filter_8cpp.html":[6,0,3,6,0],
 "bzip2__filter_8cpp.html#a9d70885f034b1a49ebade0d8ff5f265d":[6,0,3,6,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "classfoxxll_1_1block__scheduler.html#a777b6c6ce78bbaa5a243243a990ad553":[5,0,1,12,35],
 "classfoxxll_1_1block__scheduler.html#a797cb8de50c06535adf5b95d80386a4f":[5,0,1,12,27],
 "classfoxxll_1_1block__scheduler.html#a8768234b9c72a6451906816d5db2da60":[5,0,1,12,21],
-"classfoxxll_1_1block__scheduler.html#a8a234a2c80ba824c12c1da99a1eeb0e2":[5,0,1,12,34]
+"classfoxxll_1_1block__scheduler.html#a8a234a2c80ba824c12c1da99a1eeb0e2":[5,0,1,12,34],
+"classfoxxll_1_1block__scheduler.html#a9c714544a95befc1f8401ac1a33801ff":[5,0,1,12,9]
 };

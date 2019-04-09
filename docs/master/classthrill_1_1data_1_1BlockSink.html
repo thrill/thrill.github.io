@@ -193,7 +193,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9032b7fbe7f57c9a80527c95ec402740"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1BlockSink.html">BlockSink</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockSink.html#a9032b7fbe7f57c9a80527c95ec402740">operator=</a> (<a class="el" href="classthrill_1_1data_1_1BlockSink.html">BlockSink</a> &amp;&amp;)=default</td></tr>
 <tr class="memdesc:a9032b7fbe7f57c9a80527c95ec402740"><td class="mdescLeft">&#160;</td><td class="mdescRight">move-assignment operator: default  <a href="#a9032b7fbe7f57c9a80527c95ec402740">More...</a><br/></td></tr>
 <tr class="separator:a9032b7fbe7f57c9a80527c95ec402740"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af486a27d4543d700ab9ec19d2cba0d2e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockSink.html#af486a27d4543d700ab9ec19d2cba0d2e">ReleaseByteBlock</a> (<a class="el" href="group__data__layer.html#ga8eb59a5f16aacf17b53f2fef06bff83f">ByteBlockPtr</a> &amp;block)</td></tr>
+<tr class="memitem:af486a27d4543d700ab9ec19d2cba0d2e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockSink.html#af486a27d4543d700ab9ec19d2cba0d2e">ReleaseByteBlock</a> (<a class="el" href="classthrill_1_1data_1_1ByteBlockPtr.html">ByteBlockPtr</a> &amp;block)</td></tr>
 <tr class="memdesc:af486a27d4543d700ab9ec19d2cba0d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release an unused <a class="el" href="classthrill_1_1data_1_1ByteBlock.html" title="A ByteBlock is the basic storage units of containers like File, BlockQueue, etc. ">ByteBlock</a> with n bytes backing memory.  <a href="#af486a27d4543d700ab9ec19d2cba0d2e">More...</a><br/></td></tr>
 <tr class="separator:af486a27d4543d700ab9ec19d2cba0d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab918f792039fb144dd12528701199562"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1BlockSink.html#ab918f792039fb144dd12528701199562">workers_per_host</a> () const </td></tr>
@@ -394,7 +394,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Allocate a <a class="el" href="classthrill_1_1data_1_1ByteBlock.html" title="A ByteBlock is the basic storage units of containers like File, BlockQueue, etc. ">ByteBlock</a> with n bytes backing memory. If returned ByteBlockPtr is a nullptr, then memory of this <a class="el" href="classthrill_1_1data_1_1BlockSink.html" title="Pure virtual base class for all things that can receive Blocks from a BlockWriter. ">BlockSink</a> is exhausted. </p>
+<p>Allocate a <a class="el" href="classthrill_1_1data_1_1ByteBlock.html" title="A ByteBlock is the basic storage units of containers like File, BlockQueue, etc. ">ByteBlock</a> with n bytes backing memory. If returned <a class="el" href="classthrill_1_1data_1_1ByteBlockPtr.html" title="A non-pinned counting pointer to a ByteBlock. ">ByteBlockPtr</a> is a nullptr, then memory of this <a class="el" href="classthrill_1_1data_1_1BlockSink.html" title="Pure virtual base class for all things that can receive Blocks from a BlockWriter. ">BlockSink</a> is exhausted. </p>
 
 <p>Reimplemented in <a class="el" href="classthrill_1_1data_1_1BoundedBlockSink.html#ad44f18d19d3473d293ef8f7abfa4bc6f">BoundedBlockSink</a>.</p>
 
@@ -524,7 +524,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="classthrill_1_1data_1_1BlockSink.html#a51d6650162c2d11a84243db1d394e947">BlockSink::AppendBlock()</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__sink_8cpp_source.html#l00106">StreamSink::AppendPinnedBlock()</a>, <a class="el" href="block__writer_8hpp_source.html#l00135">BlockWriter&lt; BlockSink &gt;::Flush()</a>, and <a class="el" href="block__writer_8hpp_source.html#l00227">BlockWriter&lt; BlockSink &gt;::PutSafe()</a>.</p>
+<p>Referenced by <a class="el" href="stream__sink_8cpp_source.html#l00162">StreamSink::AppendPinnedBlock()</a>, <a class="el" href="block__writer_8hpp_source.html#l00135">BlockWriter&lt; BlockSink &gt;::Flush()</a>, and <a class="el" href="block__writer_8hpp_source.html#l00227">BlockWriter&lt; BlockSink &gt;::PutSafe()</a>.</p>
 
 </div>
 </div>
@@ -646,7 +646,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="block__sink_8hpp_source.html#l00099">BlockSink::block_pool_</a>, and <a class="el" href="block__pool_8hpp_source.html#l00085">BlockPool::logger()</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__sink_8cpp_source.html#l00246">StreamSink::Finalize()</a>, <a class="el" href="stream__sink_8cpp_source.html#l00026">StreamSink::StreamSink()</a>, and <a class="el" href="thrill_2data_2file_8cpp_source.html#l00026">File::~File()</a>.</p>
+<p>Referenced by <a class="el" href="stream__sink_8cpp_source.html#l00303">StreamSink::Finalize()</a>, <a class="el" href="stream__sink_8cpp_source.html#l00026">StreamSink::StreamSink()</a>, and <a class="el" href="thrill_2data_2file_8cpp_source.html#l00026">File::~File()</a>.</p>
 
 </div>
 </div>
@@ -712,7 +712,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual void ReleaseByteBlock </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__data__layer.html#ga8eb59a5f16aacf17b53f2fef06bff83f">ByteBlockPtr</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classthrill_1_1data_1_1ByteBlockPtr.html">ByteBlockPtr</a> &amp;&#160;</td>
           <td class="paramname"><em>block</em></td><td>)</td>
           <td></td>
         </tr>
@@ -729,6 +729,8 @@ Private Attributes</h2></td></tr>
 <p>Reimplemented in <a class="el" href="classthrill_1_1data_1_1BoundedBlockSink.html#a17117f37c0f94164e5b09c06433be09c">BoundedBlockSink</a>.</p>
 
 <p>Definition at line <a class="el" href="block__sink_8hpp_source.html#l00061">61</a> of file <a class="el" href="block__sink_8hpp_source.html">block_sink.hpp</a>.</p>
+
+<p>References <a class="el" href="counting__ptr_8hpp_source.html#l00231">CountingPtr&lt; Type, Deleter &gt;::reset()</a>.</p>
 
 <p>Referenced by <a class="el" href="block__writer_8hpp_source.html#l00227">BlockWriter&lt; BlockSink &gt;::PutSafe()</a>.</p>
 
@@ -761,7 +763,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="block__sink_8hpp_source.html#l00099">BlockSink::block_pool_</a>, and <a class="el" href="block__pool_8hpp_source.html#l00082">BlockPool::workers_per_host()</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__sink_8cpp_source.html#l00192">StreamSink::Close()</a>, <a class="el" href="stream__sink_8cpp_source.html#l00090">StreamSink::my_worker_rank()</a>, and <a class="el" href="stream__sink_8cpp_source.html#l00094">StreamSink::peer_worker_rank()</a>.</p>
+<p>Referenced by <a class="el" href="stream__sink_8cpp_source.html#l00249">StreamSink::Close()</a>, <a class="el" href="stream__sink_8cpp_source.html#l00090">StreamSink::my_worker_rank()</a>, and <a class="el" href="stream__sink_8cpp_source.html#l00094">StreamSink::peer_worker_rank()</a>.</p>
 
 </div>
 </div>
@@ -838,7 +840,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="block__sink_8hpp_source.html#l00103">103</a> of file <a class="el" href="block__sink_8hpp_source.html">block_sink.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="block__sink_8hpp_source.html#l00056">BlockSink::AllocateByteBlock()</a>, <a class="el" href="stream__sink_8cpp_source.html#l00106">StreamSink::AppendPinnedBlock()</a>, <a class="el" href="stream__sink_8cpp_source.html#l00192">StreamSink::Close()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00073">File::GetConsumeReader()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00068">File::GetKeepReader()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00078">File::GetReader()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00452">File::GetReaderAt()</a>, <a class="el" href="block__sink_8hpp_source.html#l00094">BlockSink::local_worker_id()</a>, and <a class="el" href="stream__sink_8cpp_source.html#l00090">StreamSink::my_worker_rank()</a>.</p>
+<p>Referenced by <a class="el" href="block__sink_8hpp_source.html#l00056">BlockSink::AllocateByteBlock()</a>, <a class="el" href="stream__sink_8cpp_source.html#l00098">StreamSink::AppendBlock()</a>, <a class="el" href="stream__sink_8cpp_source.html#l00162">StreamSink::AppendPinnedBlock()</a>, <a class="el" href="stream__sink_8cpp_source.html#l00249">StreamSink::Close()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00073">File::GetConsumeReader()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00068">File::GetKeepReader()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00078">File::GetReader()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00467">File::GetReaderAt()</a>, <a class="el" href="block__sink_8hpp_source.html#l00094">BlockSink::local_worker_id()</a>, and <a class="el" href="stream__sink_8cpp_source.html#l00090">StreamSink::my_worker_rank()</a>.</p>
 
 </div>
 </div>
@@ -851,7 +853,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1BlockSink.html">BlockSink</a></li>
-    <li class="footer">Generated on Mon Apr 8 2019 20:42:59 for Thrill by
+    <li class="footer">Generated on Tue Apr 9 2019 16:16:13 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

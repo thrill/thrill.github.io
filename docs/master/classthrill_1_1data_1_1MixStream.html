@@ -190,6 +190,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b173d0ccadd2c20be68054fe610fd0c inherit pub_methods_classthrill_1_1data_1_1Stream"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a0b173d0ccadd2c20be68054fe610fd0c">Scatter</a> (<a class="el" href="classthrill_1_1data_1_1File.html">File</a> &amp;source, const std::vector&lt; size_t &gt; &amp;offsets, bool consume=false)</td></tr>
 <tr class="memdesc:a0b173d0ccadd2c20be68054fe610fd0c inherit pub_methods_classthrill_1_1data_1_1Stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scatters a <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> to many worker: elements from [offset[0],offset[1]) are sent to the first worker, elements from [offset[1], offset[2]) are sent to the second worker, ..., elements from [offset[my_rank - 1],offset[my_rank]) are copied locally, ..., elements from [offset[num_workers - 1], offset[num_workers]) are sent to the last worker.  <a href="#a0b173d0ccadd2c20be68054fe610fd0c">More...</a><br/></td></tr>
 <tr class="separator:a0b173d0ccadd2c20be68054fe610fd0c inherit pub_methods_classthrill_1_1data_1_1Stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28491686deee6e919448bc0c358d5757 inherit pub_methods_classthrill_1_1data_1_1Stream"><td class="memTemplParams" colspan="2">template&lt;typename ItemType &gt; </td></tr>
+<tr class="memitem:a28491686deee6e919448bc0c358d5757 inherit pub_methods_classthrill_1_1data_1_1Stream"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a28491686deee6e919448bc0c358d5757">ScatterConsume</a> (<a class="el" href="classthrill_1_1data_1_1File.html">File</a> &amp;source, const std::vector&lt; size_t &gt; &amp;offsets)</td></tr>
+<tr class="memdesc:a28491686deee6e919448bc0c358d5757 inherit pub_methods_classthrill_1_1data_1_1Stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consuming Version of <a class="el" href="classthrill_1_1data_1_1Stream.html#a0b173d0ccadd2c20be68054fe610fd0c" title="Scatters a File to many worker: elements from [offset[0],offset[1]) are sent to the first worker...">Scatter()</a> see documentation there.  <a href="#a28491686deee6e919448bc0c358d5757">More...</a><br/></td></tr>
+<tr class="separator:a28491686deee6e919448bc0c358d5757 inherit pub_methods_classthrill_1_1data_1_1Stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846b9a5915c0a68b19b958a8e84cbb80 inherit pub_methods_classthrill_1_1data_1_1Stream"><td class="memTemplParams" colspan="2">template&lt;typename ItemType &gt; </td></tr>
+<tr class="memitem:a846b9a5915c0a68b19b958a8e84cbb80 inherit pub_methods_classthrill_1_1data_1_1Stream"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a846b9a5915c0a68b19b958a8e84cbb80">ScatterKeep</a> (<a class="el" href="classthrill_1_1data_1_1File.html">File</a> &amp;source, const std::vector&lt; size_t &gt; &amp;offsets)</td></tr>
+<tr class="memdesc:a846b9a5915c0a68b19b958a8e84cbb80 inherit pub_methods_classthrill_1_1data_1_1Stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keep Version of <a class="el" href="classthrill_1_1data_1_1Stream.html#a0b173d0ccadd2c20be68054fe610fd0c" title="Scatters a File to many worker: elements from [offset[0],offset[1]) are sent to the first worker...">Scatter()</a> see documentation there.  <a href="#a846b9a5915c0a68b19b958a8e84cbb80">More...</a><br/></td></tr>
+<tr class="separator:a846b9a5915c0a68b19b958a8e84cbb80 inherit pub_methods_classthrill_1_1data_1_1Stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafba34f43045b121f2ceefe8fd667da7 inherit pub_methods_classthrill_1_1data_1_1Stream"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#aafba34f43045b121f2ceefe8fd667da7">tx_items</a> () const </td></tr>
 <tr class="memdesc:aafba34f43045b121f2ceefe8fd667da7 inherit pub_methods_classthrill_1_1data_1_1Stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of items transmitted  <a href="#aafba34f43045b121f2ceefe8fd667da7">More...</a><br/></td></tr>
 <tr class="separator:aafba34f43045b121f2ceefe8fd667da7 inherit pub_methods_classthrill_1_1data_1_1Stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -326,7 +334,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="mix__stream_8cpp_source.html#l00230">230</a> of file <a class="el" href="mix__stream_8cpp_source.html">mix_stream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mix__stream_8cpp_source.html#l00229">229</a> of file <a class="el" href="mix__stream_8cpp_source.html">mix_stream.cpp</a>.</p>
 
 </div>
 </div>
@@ -344,7 +352,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>When the user handle is destroyed, close the stream (but maybe not destroy the data object) </p>
 
-<p>Definition at line <a class="el" href="mix__stream_8cpp_source.html#l00233">233</a> of file <a class="el" href="mix__stream_8cpp_source.html">mix_stream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mix__stream_8cpp_source.html#l00232">232</a> of file <a class="el" href="mix__stream_8cpp_source.html">mix_stream.cpp</a>.</p>
 
 <p>References <a class="el" href="mix__stream_8hpp_source.html#l00153">MixStream::ptr_</a>.</p>
 
@@ -376,7 +384,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8">Stream</a>.</p>
 
-<p>Definition at line <a class="el" href="mix__stream_8cpp_source.html#l00241">241</a> of file <a class="el" href="mix__stream_8cpp_source.html">mix_stream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mix__stream_8cpp_source.html#l00240">240</a> of file <a class="el" href="mix__stream_8cpp_source.html">mix_stream.cpp</a>.</p>
 
 <p>References <a class="el" href="mix__stream_8hpp_source.html#l00153">MixStream::ptr_</a>.</p>
 
@@ -407,7 +415,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classthrill_1_1data_1_1Stream.html#a42c8d62a71c6e964fc5954fdc0ba7d48">Stream</a>.</p>
 
-<p>Definition at line <a class="el" href="mix__stream_8cpp_source.html#l00245">245</a> of file <a class="el" href="mix__stream_8cpp_source.html">mix_stream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mix__stream_8cpp_source.html#l00244">244</a> of file <a class="el" href="mix__stream_8cpp_source.html">mix_stream.cpp</a>.</p>
 
 <p>References <a class="el" href="mix__stream_8hpp_source.html#l00153">MixStream::ptr_</a>.</p>
 
@@ -428,7 +436,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Creates a <a class="el" href="classthrill_1_1data_1_1BlockReader.html" title="BlockReader takes Block objects from BlockSource and allows reading of a) serializable Items or b) ar...">BlockReader</a> which concatenates items from all workers in an arbitrary order. </p>
 
-<p>Definition at line <a class="el" href="mix__stream_8cpp_source.html#l00253">253</a> of file <a class="el" href="mix__stream_8cpp_source.html">mix_stream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mix__stream_8cpp_source.html#l00252">252</a> of file <a class="el" href="mix__stream_8cpp_source.html">mix_stream.cpp</a>.</p>
 
 <p>References <a class="el" href="mix__stream_8hpp_source.html#l00153">MixStream::ptr_</a>.</p>
 
@@ -450,7 +458,7 @@ Private Attributes</h2></td></tr>
 
 <p>Open a MixReader (function name matches a method in <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> and <a class="el" href="classthrill_1_1data_1_1CatStream.html" title="Ownership handle onto a CatStreamData. ">CatStream</a>). </p>
 
-<p>Definition at line <a class="el" href="mix__stream_8cpp_source.html#l00257">257</a> of file <a class="el" href="mix__stream_8cpp_source.html">mix_stream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mix__stream_8cpp_source.html#l00256">256</a> of file <a class="el" href="mix__stream_8cpp_source.html">mix_stream.cpp</a>.</p>
 
 <p>References <a class="el" href="mix__stream_8hpp_source.html#l00153">MixStream::ptr_</a>.</p>
 
@@ -480,7 +488,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classthrill_1_1data_1_1Stream.html#a1ed868156fd0366a5e480c9a8cea495b">Stream</a>.</p>
 
-<p>Definition at line <a class="el" href="mix__stream_8cpp_source.html#l00249">249</a> of file <a class="el" href="mix__stream_8cpp_source.html">mix_stream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mix__stream_8cpp_source.html#l00248">248</a> of file <a class="el" href="mix__stream_8cpp_source.html">mix_stream.cpp</a>.</p>
 
 <p>References <a class="el" href="mix__stream_8hpp_source.html#l00153">MixStream::ptr_</a>.</p>
 
@@ -511,7 +519,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classthrill_1_1data_1_1Stream.html#a3fa188f62b85c2af5028cf55f7edba3c">Stream</a>.</p>
 
-<p>Definition at line <a class="el" href="mix__stream_8cpp_source.html#l00237">237</a> of file <a class="el" href="mix__stream_8cpp_source.html">mix_stream.cpp</a>.</p>
+<p>Definition at line <a class="el" href="mix__stream_8cpp_source.html#l00236">236</a> of file <a class="el" href="mix__stream_8cpp_source.html">mix_stream.cpp</a>.</p>
 
 <p>References <a class="el" href="mix__stream_8hpp_source.html#l00153">MixStream::ptr_</a>.</p>
 
@@ -538,7 +546,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="mix__stream_8hpp_source.html#l00153">153</a> of file <a class="el" href="mix__stream_8hpp_source.html">mix_stream.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00241">MixStream::data()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00253">MixStream::GetMixReader()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00257">MixStream::GetReader()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00249">MixStream::GetWriters()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00237">MixStream::id()</a>, and <a class="el" href="mix__stream_8cpp_source.html#l00233">MixStream::~MixStream()</a>.</p>
+<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00240">MixStream::data()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00252">MixStream::GetMixReader()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00256">MixStream::GetReader()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00248">MixStream::GetWriters()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00236">MixStream::id()</a>, and <a class="el" href="mix__stream_8cpp_source.html#l00232">MixStream::~MixStream()</a>.</p>
 
 </div>
 </div>
@@ -552,7 +560,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1MixStream.html">MixStream</a></li>
-    <li class="footer">Generated on Mon Apr 8 2019 20:42:59 for Thrill by
+    <li class="footer">Generated on Tue Apr 9 2019 16:16:13 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

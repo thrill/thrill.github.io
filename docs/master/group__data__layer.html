@@ -164,6 +164,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ByteBlock.html">ByteBlock</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classthrill_1_1data_1_1ByteBlock.html" title="A ByteBlock is the basic storage units of containers like File, BlockQueue, etc. ">ByteBlock</a> is the basic storage units of containers like <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>, <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a>, etc.  <a href="classthrill_1_1data_1_1ByteBlock.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1ByteBlockPtr.html">ByteBlockPtr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A non-pinned counting pointer to a <a class="el" href="classthrill_1_1data_1_1ByteBlock.html" title="A ByteBlock is the basic storage units of containers like File, BlockQueue, etc. ">ByteBlock</a>.  <a href="classthrill_1_1data_1_1ByteBlockPtr.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1CacheBlockQueueSource.html">CacheBlockQueueSource</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A BlockSource to read Blocks from a <a class="el" href="classthrill_1_1data_1_1BlockQueue.html" title="A BlockQueue is a thread-safe queue used to hand-over Block objects between threads. ">BlockQueue</a> using a <a class="el" href="classthrill_1_1data_1_1BlockReader.html" title="BlockReader takes Block objects from BlockSource and allows reading of a) serializable Items or b) ar...">BlockReader</a>, and at the same time CACHE all items received.  <a href="classthrill_1_1data_1_1CacheBlockQueueSource.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -275,8 +278,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga5df5518b488228d9937501d80f7b70e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga5df5518b488228d9937501d80f7b70e2">Byte</a> = uint8_t</td></tr>
 <tr class="memdesc:ga5df5518b488228d9937501d80f7b70e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of underlying memory area  <a href="#ga5df5518b488228d9937501d80f7b70e2">More...</a><br/></td></tr>
 <tr class="separator:ga5df5518b488228d9937501d80f7b70e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8eb59a5f16aacf17b53f2fef06bff83f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga8eb59a5f16aacf17b53f2fef06bff83f">ByteBlockPtr</a> = ByteBlock::ByteBlockPtr</td></tr>
-<tr class="separator:ga8eb59a5f16aacf17b53f2fef06bff83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4c9227f65cc5fae907c969a9861025cc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga4c9227f65cc5fae907c969a9861025cc">CatStreamDataPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; CatStreamData &gt;</td></tr>
 <tr class="separator:ga4c9227f65cc5fae907c969a9861025cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5e26e99f6cf880f5376fe272cfc59dcf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#ga5e26e99f6cf880f5376fe272cfc59dcf">CatStreamPtr</a> = <a class="el" href="classtlx_1_1CountingPtr.html">tlx::CountingPtr</a>&lt; CatStream &gt;</td></tr>
@@ -318,6 +319,12 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gab27a4bbf2edadabbdc0ac5f1cb6aafaa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#gab27a4bbf2edadabbdc0ac5f1cb6aafaa">ByteBlockPtr</a> (const PinnedByteBlockPtr &amp;p)</td></tr>
+<tr class="memdesc:gab27a4bbf2edadabbdc0ac5f1cb6aafaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">(protected) ctor from <a class="el" href="classthrill_1_1data_1_1PinnedByteBlockPtr.html" title="A pinned / pin-counted pointer to a ByteBlock. ">PinnedByteBlockPtr</a>  <a href="#gab27a4bbf2edadabbdc0ac5f1cb6aafaa">More...</a><br/></td></tr>
+<tr class="separator:gab27a4bbf2edadabbdc0ac5f1cb6aafaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf58925d6bfd2e284a226a99d01fb229"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__data__layer.html#gabf58925d6bfd2e284a226a99d01fb229">ByteBlockPtr</a> (PinnedByteBlockPtr &amp;&amp;p)</td></tr>
+<tr class="memdesc:gabf58925d6bfd2e284a226a99d01fb229"><td class="mdescLeft">&#160;</td><td class="mdescRight">(protected) ctor from <a class="el" href="classthrill_1_1data_1_1PinnedByteBlockPtr.html" title="A pinned / pin-counted pointer to a ByteBlock. ">PinnedByteBlockPtr</a>  <a href="#gabf58925d6bfd2e284a226a99d01fb229">More...</a><br/></td></tr>
+<tr class="separator:gabf58925d6bfd2e284a226a99d01fb229"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad64e8d70fb5585ec5c61546566e53ed4"><td class="memTemplParams" colspan="2">template&lt;typename BlockSource , typename... Params&gt; </td></tr>
 <tr class="memitem:gad64e8d70fb5585ec5c61546566e53ed4"><td class="memTemplItemLeft" align="right" valign="top">DynBlockReader&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__data__layer.html#gad64e8d70fb5585ec5c61546566e53ed4">ConstructDynBlockReader</a> (Params &amp;&amp;...params)</td></tr>
 <tr class="memdesc:gad64e8d70fb5585ec5c61546566e53ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to construct a DynBlockReader from a non-polymorphic BlockSource.  <a href="#gad64e8d70fb5585ec5c61546566e53ed4">More...</a><br/></td></tr>
@@ -377,20 +384,6 @@ Writers and Readers</h2></td></tr>
 <p>type of underlying memory area </p>
 
 <p>Definition at line <a class="el" href="byte__block_8hpp_source.html#l00037">37</a> of file <a class="el" href="byte__block_8hpp_source.html">byte_block.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga8eb59a5f16aacf17b53f2fef06bff83f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using ByteBlockPtr =  ByteBlock::ByteBlockPtr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="byte__block_8hpp_source.html#l00171">171</a> of file <a class="el" href="byte__block_8hpp_source.html">byte_block.hpp</a>.</p>
 
 </div>
 </div>
@@ -626,6 +619,62 @@ Writers and Readers</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gab27a4bbf2edadabbdc0ac5f1cb6aafaa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ByteBlockPtr </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classthrill_1_1data_1_1PinnedByteBlockPtr.html">PinnedByteBlockPtr</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>(protected) ctor from <a class="el" href="classthrill_1_1data_1_1PinnedByteBlockPtr.html" title="A pinned / pin-counted pointer to a ByteBlock. ">PinnedByteBlockPtr</a> </p>
+
+<p>Definition at line <a class="el" href="byte__block_8hpp_source.html#l00282">282</a> of file <a class="el" href="byte__block_8hpp_source.html">byte_block.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gabf58925d6bfd2e284a226a99d01fb229"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ByteBlockPtr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classthrill_1_1data_1_1PinnedByteBlockPtr.html">PinnedByteBlockPtr</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>(protected) ctor from <a class="el" href="classthrill_1_1data_1_1PinnedByteBlockPtr.html" title="A pinned / pin-counted pointer to a ByteBlock. ">PinnedByteBlockPtr</a> </p>
+
+<p>Definition at line <a class="el" href="byte__block_8hpp_source.html#l00285">285</a> of file <a class="el" href="byte__block_8hpp_source.html">byte_block.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="gad64e8d70fb5585ec5c61546566e53ed4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -718,7 +767,7 @@ Writers and Readers</h2></td></tr>
 <p>The file has to be ordered according to the given compare function. The tie value can be used to make a decision in case of many successive equal elements. The tie is compared with the local rank of the element.</p>
 <p>WARNING: This method uses GetItemAt combined with a binary search and is therefore not efficient. The method should be reimplemented in near future. </p>
 
-<p>Definition at line <a class="el" href="thrill_2data_2file_8hpp_source.html#l00519">519</a> of file <a class="el" href="thrill_2data_2file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2data_2file_8hpp_source.html#l00534">534</a> of file <a class="el" href="thrill_2data_2file_8hpp_source.html">file.hpp</a>.</p>
 
 <p>References <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00024">LOG</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00180">File::num_items()</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
@@ -741,7 +790,7 @@ Writers and Readers</h2></td></tr>
 </div><div class="memdoc">
 <p>Get item at the corresponding position. Do not use this method for reading multiple successive items. </p>
 
-<p>Definition at line <a class="el" href="thrill_2data_2file_8hpp_source.html#l00513">513</a> of file <a class="el" href="thrill_2data_2file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2data_2file_8hpp_source.html#l00528">528</a> of file <a class="el" href="thrill_2data_2file_8hpp_source.html">file.hpp</a>.</p>
 
 <p>References <a class="el" href="block__reader_8hpp_source.html#l00089">BlockReader&lt; BlockSource &gt;::Next()</a>.</p>
 
@@ -772,7 +821,7 @@ Writers and Readers</h2></td></tr>
 </div><div class="memdoc">
 <p>Seek in <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a>: return a <a class="el" href="classthrill_1_1data_1_1Block.html" title="Block combines a reference to a read-only ByteBlock and book-keeping information. ...">Block</a> range containing items begin, end of given type. </p>
 
-<p>Definition at line <a class="el" href="thrill_2data_2file_8hpp_source.html#l00561">561</a> of file <a class="el" href="thrill_2data_2file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2data_2file_8hpp_source.html#l00576">576</a> of file <a class="el" href="thrill_2data_2file_8hpp_source.html">file.hpp</a>.</p>
 
 </div>
 </div>
@@ -802,9 +851,9 @@ Writers and Readers</h2></td></tr>
 
 <p>Get <a class="el" href="classthrill_1_1data_1_1BlockReader.html" title="BlockReader takes Block objects from BlockSource and allows reading of a) serializable Items or b) ar...">BlockReader</a> seeked to the corresponding item index. </p>
 
-<p>Definition at line <a class="el" href="thrill_2data_2file_8hpp_source.html#l00452">452</a> of file <a class="el" href="thrill_2data_2file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2data_2file_8hpp_source.html#l00467">467</a> of file <a class="el" href="thrill_2data_2file_8hpp_source.html">file.hpp</a>.</p>
 
-<p>References <a class="el" href="thrill_2data_2file_8hpp_source.html#l00262">File::blocks_</a>, <a class="el" href="block__reader_8hpp_source.html#l00069">BlockReader&lt; BlockSource &gt;::CopyBlock()</a>, <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, <a class="el" href="die_8hpp_source.html#l00022">die</a>, <a class="el" href="block__reader_8hpp_source.html#l00118">BlockReader&lt; BlockSource &gt;::HasNext()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00281">File::KeepFileBlockSource</a>, <a class="el" href="block__sink_8hpp_source.html#l00103">BlockSink::local_worker_id_</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00267">File::num_items_sum_</a>, <a class="el" href="block__reader_8hpp_source.html#l00300">BlockReader&lt; BlockSource &gt;::Skip()</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00034">sLOG</a>, and <a class="el" href="block__reader_8hpp_source.html#l00081">BlockReader&lt; BlockSource &gt;::typecode_verify()</a>.</p>
+<p>References <a class="el" href="thrill_2data_2file_8hpp_source.html#l00262">File::blocks_</a>, <a class="el" href="block__reader_8hpp_source.html#l00069">BlockReader&lt; BlockSource &gt;::CopyBlock()</a>, <a class="el" href="wavelet__tree2_8cpp_source.html#l00034">debug</a>, <a class="el" href="die_8hpp_source.html#l00022">die</a>, <a class="el" href="block__reader_8hpp_source.html#l00118">BlockReader&lt; BlockSource &gt;::HasNext()</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00281">File::KeepFileBlockSource</a>, <a class="el" href="block__sink_8hpp_source.html#l00103">BlockSink::local_worker_id_</a>, <a class="el" href="thrill_2data_2file_8hpp_source.html#l00267">File::num_items_sum_</a>, <a class="el" href="block__reader_8hpp_source.html#l00297">BlockReader&lt; BlockSource &gt;::Skip()</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00034">sLOG</a>, and <a class="el" href="block__reader_8hpp_source.html#l00081">BlockReader&lt; BlockSource &gt;::typecode_verify()</a>.</p>
 
 </div>
 </div>
@@ -834,7 +883,7 @@ Writers and Readers</h2></td></tr>
 
 <p>Take a vector of Readers and prefetch equally from them. </p>
 
-<p>Definition at line <a class="el" href="thrill_2data_2file_8hpp_source.html#l00570">570</a> of file <a class="el" href="thrill_2data_2file_8hpp_source.html">file.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thrill_2data_2file_8hpp_source.html#l00585">585</a> of file <a class="el" href="thrill_2data_2file_8hpp_source.html">file.hpp</a>.</p>
 
 <p>References <a class="el" href="byte__block_8cpp_source.html#l00025">thrill::data::default_block_size</a>.</p>
 
@@ -873,7 +922,7 @@ Writers and Readers</h2></td></tr>
 
 <p>Definition at line <a class="el" href="byte__block_8cpp_source.html#l00025">25</a> of file <a class="el" href="byte__block_8cpp_source.html">byte_block.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>, <a class="el" href="block__pool_8cpp_source.html#l00703">BlockPool::MaxMergeDegreePrefetch()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00128">Multiplexer::Multiplexer()</a>, <a class="el" href="read__binary_8hpp_source.html#l00082">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>, <a class="el" href="context_8cpp_source.html#l00178">thrill::api::SetupBlockSize()</a>, and <a class="el" href="thrill_2data_2file_8hpp_source.html#l00570">thrill::data::StartPrefetch()</a>.</p>
+<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>, <a class="el" href="block__pool_8cpp_source.html#l00703">BlockPool::MaxMergeDegreePrefetch()</a>, <a class="el" href="multiplexer_8cpp_source.html#l00128">Multiplexer::Multiplexer()</a>, <a class="el" href="read__binary_8hpp_source.html#l00082">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>, <a class="el" href="context_8cpp_source.html#l00178">thrill::api::SetupBlockSize()</a>, and <a class="el" href="thrill_2data_2file_8hpp_source.html#l00585">thrill::data::StartPrefetch()</a>.</p>
 
 </div>
 </div>
@@ -912,7 +961,7 @@ Writers and Readers</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Apr 8 2019 20:42:58 for Thrill by
+    <li class="footer">Generated on Tue Apr 9 2019 16:16:11 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

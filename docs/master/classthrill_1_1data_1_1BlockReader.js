@@ -10,6 +10,7 @@ var classthrill_1_1data_1_1BlockReader =
     [ "GetItemBatch", "classthrill_1_1data_1_1BlockReader.html#a27581d97f872c1b776ee21e5ac24f64d", null ],
     [ "GetRaw", "classthrill_1_1data_1_1BlockReader.html#a2d726fe6f8c215d5601c8e40173c8a47", null ],
     [ "HasNext", "classthrill_1_1data_1_1BlockReader.html#aec475639ee4bb45df40e1ce269a35a0c", null ],
+    [ "LoadBlock", "classthrill_1_1data_1_1BlockReader.html#a8a881d02377fd27a521d835bd4faeb36", null ],
     [ "Next", "classthrill_1_1data_1_1BlockReader.html#a702ea54d622e0077caae37848a1d8bd9", null ],
     [ "NextBlock", "classthrill_1_1data_1_1BlockReader.html#a91e9a1fa7664c8284a28e0ee6acb6e24", null ],
     [ "NextNoSelfVerify", "classthrill_1_1data_1_1BlockReader.html#a7a837158882f1d7ca816761b3a1974bd", null ],

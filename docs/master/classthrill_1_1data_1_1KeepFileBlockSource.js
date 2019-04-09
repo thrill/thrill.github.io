@@ -1,8 +1,10 @@
 var classthrill_1_1data_1_1KeepFileBlockSource =
 [
     [ "KeepFileBlockSource", "classthrill_1_1data_1_1KeepFileBlockSource.html#a17cd6c2f53e981d3a033fb9170efc9c3", null ],
+    [ "AcquirePin", "classthrill_1_1data_1_1KeepFileBlockSource.html#a824aadd412ee4aeaaf742d2c0d7411b7", null ],
+    [ "MakeNextBlock", "classthrill_1_1data_1_1KeepFileBlockSource.html#a92ce621220f6b7e89d16dfd9b277974b", null ],
     [ "NextBlock", "classthrill_1_1data_1_1KeepFileBlockSource.html#a968d65e397adaf3d7488ffec0b649d53", null ],
-    [ "NextUnpinnedBlock", "classthrill_1_1data_1_1KeepFileBlockSource.html#a66f0684ad214fb3d69e96339ad6c654f", null ],
+    [ "NextBlockUnpinned", "classthrill_1_1data_1_1KeepFileBlockSource.html#a1f3c5d7c9853b5b3f165c910f631e245", null ],
     [ "Prefetch", "classthrill_1_1data_1_1KeepFileBlockSource.html#a4082fc2aa1495426361a522c8f05494b", null ],
     [ "current_block_", "classthrill_1_1data_1_1KeepFileBlockSource.html#a742420e7f1bd6763b3e8bf005b9d549e", null ],
     [ "fetching_blocks_", "classthrill_1_1data_1_1KeepFileBlockSource.html#afc2c73d4b69a12f6e96083d8c65c7bbd", null ],

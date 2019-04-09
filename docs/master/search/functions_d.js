@@ -23,6 +23,7 @@ var searchData=
   ['makegzipreadfilter',['MakeGZipReadFilter',['../namespacethrill_1_1vfs.html#aff217eca610e42aa95ff44abece47cc5',1,'thrill::vfs']]],
   ['makegzipwritefilter',['MakeGZipWriteFilter',['../namespacethrill_1_1vfs.html#abc220f7ba931d8c8b736519c848409d7',1,'thrill::vfs']]],
   ['makehostlogpath',['MakeHostLogPath',['../classthrill_1_1api_1_1HostContext.html#a571902578fbf6b3ce57b3d09937c342f',1,'thrill::api::HostContext']]],
+  ['makenextblock',['MakeNextBlock',['../classthrill_1_1data_1_1KeepFileBlockSource.html#a92ce621220f6b7e89d16dfd9b277974b',1,'thrill::data::KeepFileBlockSource']]],
   ['makepipe',['MakePipe',['../namespacethrill_1_1common.html#ad97e7f77001556f66073ce82c9c3410e',1,'thrill::common']]],
   ['makepuller',['MakePuller',['../classthrill_1_1api_1_1JoinNode.html#a3c8b0f8db72fe958759db87528b70a0c',1,'thrill::api::JoinNode']]],
   ['makesparselistiterator',['makeSparseListIterator',['../namespacethrill_1_1core_1_1hyperloglog.html#a8397f922c7912fd28df4215222363dc4',1,'thrill::core::hyperloglog']]],

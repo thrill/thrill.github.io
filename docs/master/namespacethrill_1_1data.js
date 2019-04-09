@@ -12,6 +12,7 @@ var namespacethrill_1_1data =
     [ "BlockWriter", "classthrill_1_1data_1_1BlockWriter.html", "classthrill_1_1data_1_1BlockWriter" ],
     [ "BoundedBlockSink", "classthrill_1_1data_1_1BoundedBlockSink.html", "classthrill_1_1data_1_1BoundedBlockSink" ],
     [ "ByteBlock", "classthrill_1_1data_1_1ByteBlock.html", "classthrill_1_1data_1_1ByteBlock" ],
+    [ "ByteBlockPtr", "classthrill_1_1data_1_1ByteBlockPtr.html", "classthrill_1_1data_1_1ByteBlockPtr" ],
     [ "CacheBlockQueueSource", "classthrill_1_1data_1_1CacheBlockQueueSource.html", "classthrill_1_1data_1_1CacheBlockQueueSource" ],
     [ "CatBlockSource", "classthrill_1_1data_1_1CatBlockSource.html", "classthrill_1_1data_1_1CatBlockSource" ],
     [ "CatStream", "classthrill_1_1data_1_1CatStream.html", "classthrill_1_1data_1_1CatStream" ],

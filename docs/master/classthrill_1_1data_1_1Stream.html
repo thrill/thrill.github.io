@@ -174,6 +174,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b173d0ccadd2c20be68054fe610fd0c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a0b173d0ccadd2c20be68054fe610fd0c">Scatter</a> (<a class="el" href="classthrill_1_1data_1_1File.html">File</a> &amp;source, const std::vector&lt; size_t &gt; &amp;offsets, bool consume=false)</td></tr>
 <tr class="memdesc:a0b173d0ccadd2c20be68054fe610fd0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scatters a <a class="el" href="classthrill_1_1data_1_1File.html" title="A File is an ordered sequence of Block objects for storing items. ">File</a> to many worker: elements from [offset[0],offset[1]) are sent to the first worker, elements from [offset[1], offset[2]) are sent to the second worker, ..., elements from [offset[my_rank - 1],offset[my_rank]) are copied locally, ..., elements from [offset[num_workers - 1], offset[num_workers]) are sent to the last worker.  <a href="#a0b173d0ccadd2c20be68054fe610fd0c">More...</a><br/></td></tr>
 <tr class="separator:a0b173d0ccadd2c20be68054fe610fd0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28491686deee6e919448bc0c358d5757"><td class="memTemplParams" colspan="2">template&lt;typename ItemType &gt; </td></tr>
+<tr class="memitem:a28491686deee6e919448bc0c358d5757"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a28491686deee6e919448bc0c358d5757">ScatterConsume</a> (<a class="el" href="classthrill_1_1data_1_1File.html">File</a> &amp;source, const std::vector&lt; size_t &gt; &amp;offsets)</td></tr>
+<tr class="memdesc:a28491686deee6e919448bc0c358d5757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consuming Version of <a class="el" href="classthrill_1_1data_1_1Stream.html#a0b173d0ccadd2c20be68054fe610fd0c" title="Scatters a File to many worker: elements from [offset[0],offset[1]) are sent to the first worker...">Scatter()</a> see documentation there.  <a href="#a28491686deee6e919448bc0c358d5757">More...</a><br/></td></tr>
+<tr class="separator:a28491686deee6e919448bc0c358d5757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846b9a5915c0a68b19b958a8e84cbb80"><td class="memTemplParams" colspan="2">template&lt;typename ItemType &gt; </td></tr>
+<tr class="memitem:a846b9a5915c0a68b19b958a8e84cbb80"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#a846b9a5915c0a68b19b958a8e84cbb80">ScatterKeep</a> (<a class="el" href="classthrill_1_1data_1_1File.html">File</a> &amp;source, const std::vector&lt; size_t &gt; &amp;offsets)</td></tr>
+<tr class="memdesc:a846b9a5915c0a68b19b958a8e84cbb80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keep Version of <a class="el" href="classthrill_1_1data_1_1Stream.html#a0b173d0ccadd2c20be68054fe610fd0c" title="Scatters a File to many worker: elements from [offset[0],offset[1]) are sent to the first worker...">Scatter()</a> see documentation there.  <a href="#a846b9a5915c0a68b19b958a8e84cbb80">More...</a><br/></td></tr>
+<tr class="separator:a846b9a5915c0a68b19b958a8e84cbb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Statistics</div></td></tr>
 <tr class="memitem:aafba34f43045b121f2ceefe8fd667da7"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1Stream.html#aafba34f43045b121f2ceefe8fd667da7">tx_items</a> () const </td></tr>
 <tr class="memdesc:aafba34f43045b121f2ceefe8fd667da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of items transmitted  <a href="#aafba34f43045b121f2ceefe8fd667da7">More...</a><br/></td></tr>
@@ -411,7 +419,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classthrill_1_1data_1_1CatStream.html#a42df271784732c202f7ad3e7f9426bfb">CatStream</a>, and <a class="el" href="classthrill_1_1data_1_1MixStream.html#a9413f3936702fe3871d5e382ca9d4a65">MixStream</a>.</p>
 
-<p>Referenced by <a class="el" href="stream_8hpp_source.html#l00077">Stream::Scatter()</a>.</p>
+<p>Referenced by <a class="el" href="stream_8hpp_source.html#l00089">Stream::ScatterConsume()</a>, and <a class="el" href="stream_8hpp_source.html#l00142">Stream::ScatterKeep()</a>.</p>
 
 </div>
 </div>
@@ -688,7 +696,85 @@ Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="stream_8hpp_source.html#l00077">77</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
 
-<p>References <a class="el" href="stream__data_8cpp_source.html#l00066">StreamData::Writers::Close()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00078">File::GetReader()</a>, <a class="el" href="classthrill_1_1data_1_1Stream.html#a1ed868156fd0366a5e480c9a8cea495b">Stream::GetWriters()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00118">BlockReader&lt; BlockSource &gt;::HasNext()</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a28491686deee6e919448bc0c358d5757"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ScatterConsume </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classthrill_1_1data_1_1File.html">File</a> &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>offsets</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Consuming Version of <a class="el" href="classthrill_1_1data_1_1Stream.html#a0b173d0ccadd2c20be68054fe610fd0c" title="Scatters a File to many worker: elements from [offset[0],offset[1]) are sent to the first worker...">Scatter()</a> see documentation there. </p>
+
+<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00089">89</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+
+<p>References <a class="el" href="stream__data_8cpp_source.html#l00066">StreamData::Writers::Close()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00073">File::GetConsumeReader()</a>, <a class="el" href="classthrill_1_1data_1_1Stream.html#a1ed868156fd0366a5e480c9a8cea495b">Stream::GetWriters()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00118">BlockReader&lt; BlockSource &gt;::HasNext()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a846b9a5915c0a68b19b958a8e84cbb80"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ScatterKeep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classthrill_1_1data_1_1File.html">File</a> &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; size_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>offsets</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Keep Version of <a class="el" href="classthrill_1_1data_1_1Stream.html#a0b173d0ccadd2c20be68054fe610fd0c" title="Scatters a File to many worker: elements from [offset[0],offset[1]) are sent to the first worker...">Scatter()</a> see documentation there. </p>
+
+<p>Definition at line <a class="el" href="stream_8hpp_source.html#l00142">142</a> of file <a class="el" href="stream_8hpp_source.html">stream.hpp</a>.</p>
+
+<p>References <a class="el" href="stream__data_8cpp_source.html#l00066">StreamData::Writers::Close()</a>, <a class="el" href="thrill_2data_2file_8cpp_source.html#l00068">File::GetKeepReader()</a>, <a class="el" href="classthrill_1_1data_1_1Stream.html#a1ed868156fd0366a5e480c9a8cea495b">Stream::GetWriters()</a>, and <a class="el" href="block__reader_8hpp_source.html#l00118">BlockReader&lt; BlockSource &gt;::HasNext()</a>.</p>
 
 </div>
 </div>
@@ -903,7 +989,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1Stream.html">Stream</a></li>
-    <li class="footer">Generated on Mon Apr 8 2019 20:42:59 for Thrill by
+    <li class="footer">Generated on Tue Apr 9 2019 16:16:13 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
