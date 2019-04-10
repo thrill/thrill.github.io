@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"classtlx_1_1BTree.html#aed457b19fc617a12201f09de1d885368":[3,1,4,1,0,0,107],
 "classtlx_1_1BTree.html#af26aef03a7dfaca8fabb99969312307a":[3,1,4,1,0,0,92],
 "classtlx_1_1BTree.html#af50bbeb39af1051f057b65da1c71a671":[3,1,4,1,0,0,23],
 "classtlx_1_1BTree.html#af580a76629eafd1d907fa5e1e18556a2":[3,1,4,1,0,0,57],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "classtlx_1_1CountingPtrNoOperationDeleter.html":[5,0,5,19],
 "classtlx_1_1CountingPtrNoOperationDeleter.html#a3419c2ed82eb50f4797b0594ef915051":[5,0,5,19,0],
 "classtlx_1_1DAryAddressableIntHeap.html":[3,1,4,1,2],
-"classtlx_1_1DAryAddressableIntHeap.html#a16f3b806cf179aeb68d9e6e4c4de66a1":[3,1,4,1,2,11],
-"classtlx_1_1DAryAddressableIntHeap.html#a176be754a17862d5ff6371315e235775":[3,1,4,1,2,2]
+"classtlx_1_1DAryAddressableIntHeap.html#a16f3b806cf179aeb68d9e6e4c4de66a1":[3,1,4,1,2,11]
 };

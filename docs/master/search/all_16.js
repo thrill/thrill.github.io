@@ -49,7 +49,7 @@ var searchData=
   ['unsorted_5fwriter_5f',['unsorted_writer_',['../classthrill_1_1api_1_1SortNode.html#aec9042b732e2129eb439901e8d76290e',1,'thrill::api::SortNode']]],
   ['unused',['unused',['../namespacetlx.html#a5a63b398e6678264958fb8590e9332bf',1,'tlx']]],
   ['unused_2ehpp',['unused.hpp',['../unused_8hpp.html',1,'']]],
-  ['update',['update',['../classtlx_1_1DAryAddressableIntHeap.html#aa8a7f7853c68042e7f9b804761f751a4',1,'tlx::DAryAddressableIntHeap::update()'],['../classthrill_1_1core_1_1BufferedMultiwayMergeTree.html#a205f4c947e10d95ae2d1d59171ed64de',1,'thrill::core::BufferedMultiwayMergeTree::Update()']]],
+  ['update',['Update',['../classthrill_1_1core_1_1BufferedMultiwayMergeTree.html#a205f4c947e10d95ae2d1d59171ed64de',1,'thrill::core::BufferedMultiwayMergeTree::Update()'],['../classtlx_1_1DAryAddressableIntHeap.html#aa8a7f7853c68042e7f9b804761f751a4',1,'tlx::DAryAddressableIntHeap::update()']]],
   ['update_5fmax_5fdevice_5fid',['update_max_device_id',['../classfoxxll_1_1config.html#a05c23ed61b79003a319aa04d7d3339d6',1,'foxxll::config']]],
   ['update_5fmemprofile',['update_memprofile',['../namespacethrill_1_1mem.html#a64f9cb97d3085675558a791249433737',1,'thrill::mem']]],
   ['update_5fpeak',['update_peak',['../namespacethrill_1_1mem.html#a7612bfeb672d2f57f71561541e6e007b',1,'thrill::mem']]],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"classtlx_1_1StackAllocator.html#a073560f1c46413d1304672ebf6aec28e":[5,0,5,96,12],
 "classtlx_1_1StackAllocator.html#a07906f2f2355e984652708099d7b2170":[5,0,5,96,10],
 "classtlx_1_1StackAllocator.html#a1e67311e1f4ae3600af384f0a7e6addc":[5,0,5,96,5],
 "classtlx_1_1StackAllocator.html#a3135ad9d83db302cce8b0ea1a24acb7f":[5,0,5,96,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "classtlx_1_1btree__multiset.html#a8b8497e30f5382f04b66ed4204019b30":[3,1,4,1,0,4,38],
 "classtlx_1_1btree__multiset.html#a901955ac1cb674450b79aa9d192832b3":[3,1,4,1,0,4,71],
 "classtlx_1_1btree__multiset.html#a91e0e10e972a10087c0a999e958c8675":[3,1,4,1,0,4,20],
-"classtlx_1_1btree__multiset.html#a97bb054bc81e97ec55f0b539cdcbfcde":[3,1,4,1,0,4,29],
-"classtlx_1_1btree__multiset.html#a99609d25589437b30cb42dab922bfaa9":[3,1,4,1,0,4,60]
+"classtlx_1_1btree__multiset.html#a97bb054bc81e97ec55f0b539cdcbfcde":[3,1,4,1,0,4,29]
 };

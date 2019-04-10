@@ -1,5 +1,6 @@
 var NAVTREEINDEX42 =
 {
+"structfoxxll_1_1interleaved__alloc__traits.html":[5,0,1,35],
 "structfoxxll_1_1interleaved__alloc__traits_3_01fully__random_01_4.html":[5,0,1,36],
 "structfoxxll_1_1interleaved__alloc__traits_3_01fully__random_01_4.html#a0fd6040bce2d20c87f3e135fa010a645":[5,0,1,36,0],
 "structfoxxll_1_1interleaved__alloc__traits_3_01random__cyclic_01_4.html":[5,0,1,37],
@@ -248,6 +249,5 @@ var NAVTREEINDEX42 =
 "structthrill_1_1data_1_1MixBlockQueue_1_1SrcBlockPair.html#a8648ffe7342bea77e2698690589da3c1":[3,1,1,26,0,1],
 "structthrill_1_1data_1_1Serialization.html":[3,1,1,36],
 "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01ce5d6e20fe42ba95a9a6db50ee3d26580.html":[3,1,1,42],
-"structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01ce5d6e20fe42ba95a9a6db50ee3d26580.html#a2c5bde91e5ea916a64e8cbe6892cdfef":[3,1,1,42,2],
-"structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01ce5d6e20fe42ba95a9a6db50ee3d26580.html#a31c1eb6b75254795478398cdd1b58c72":[3,1,1,42,1]
+"structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01ce5d6e20fe42ba95a9a6db50ee3d26580.html#a2c5bde91e5ea916a64e8cbe6892cdfef":[3,1,1,42,2]
 };

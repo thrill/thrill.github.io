@@ -1,5 +1,6 @@
 var NAVTREEINDEX37 =
 {
+"logistic__regression_8cpp.html#ac1278ef2f31932f85702a3d9f6cad547":[6,0,1,2,0,8],
 "logistic__regression_8cpp.html#acc23041de4296ac9554bdd57bcbf8c87":[6,0,1,2,0,1],
 "logistic__regression_8cpp.html#adb4593b8a74ae2314c77e8d7c56cfaf5":[6,0,1,2,0,4],
 "logistic__regression_8cpp_source.html":[6,0,1,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX37 =
 "namespaceexamples_1_1bfs.html":[5,0,0,0],
 "namespaceexamples_1_1bfs.html":[4,0,0,0],
 "namespaceexamples_1_1k__means.html":[5,0,0,1],
-"namespaceexamples_1_1k__means.html":[4,0,0,1],
-"namespaceexamples_1_1logistic__regression.html":[5,0,0,2]
+"namespaceexamples_1_1k__means.html":[4,0,0,1]
 };

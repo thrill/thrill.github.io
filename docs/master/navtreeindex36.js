@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"integer__log2_8hpp.html#ga74a8ec330f47970ce1f3e5265f913a86":[6,0,2,1,0,6,9,9],
 "integer__log2_8hpp.html#ga819e2d0d244166deaf699dbd962dfc4c":[6,0,2,1,0,6,9,12],
 "integer__log2_8hpp.html#ga87dd01e935a4d31259cb4044b1abb48d":[6,0,2,1,0,6,9,2],
 "integer__log2_8hpp.html#ga8b609dabb83130f9dbc545bf4fe11e5a":[6,0,2,1,0,6,9,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX36 =
 "logistic__regression_8cpp.html#a6b2d038ea9c8d2651eecffe0e28b7ebb":[6,0,1,2,0,3],
 "logistic__regression_8cpp.html#a9ca5d4657704ea8d11a0de3e6ba5eed2":[6,0,1,2,0,10],
 "logistic__regression_8cpp.html#aa79c676c802044305d1173b4536baa38":[6,0,1,2,0,0],
-"logistic__regression_8cpp.html#abf23d1905abde01ec2fc2b8c9dce8b22":[6,0,1,2,0,2],
-"logistic__regression_8cpp.html#ac1278ef2f31932f85702a3d9f6cad547":[6,0,1,2,0,8]
+"logistic__regression_8cpp.html#abf23d1905abde01ec2fc2b8c9dce8b22":[6,0,1,2,0,2]
 };

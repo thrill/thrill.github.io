@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"classthrill_1_1net_1_1Exception.html#a3195492c7be066e8401dcd93ce048ee1":[3,1,2,14,1],
 "classthrill_1_1net_1_1Exception.html#ae835ca52798f53003b5589bd0f19a409":[3,1,2,14,0],
 "classthrill_1_1net_1_1FixedBufferBuilder.html":[3,1,2,15],
 "classthrill_1_1net_1_1FixedBufferBuilder.html#a05b9e1f07b621f855d174988ddd29321":[3,1,2,15,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a8f89e372e5845a5a88c0da6bff517f7c":[3,1,2,2,2,8],
 "classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a93d7f8ccf71dab931a60118f6ccb536c":[3,1,2,2,2,23],
 "classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aa0be9beb694ba495f90ae3dacd3cbdd2":[3,1,2,2,2,25],
-"classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aa23ce8a8c0f657b3079e924515315a7f":[3,1,2,2,2,26],
-"classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aa30df76599abe553fef6a82a135dc807":[3,1,2,2,2,18]
+"classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aa23ce8a8c0f657b3079e924515315a7f":[3,1,2,2,2,26]
 };

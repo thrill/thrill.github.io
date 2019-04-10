@@ -15,7 +15,7 @@ var searchData=
   ['unpinned_5fblocks',['unpinned_blocks',['../classthrill_1_1data_1_1BlockPool.html#a3e300e3930012e3242a13f60baff1fea',1,'thrill::data::BlockPool']]],
   ['unreachable',['unreachable',['../classfoxxll_1_1unreachable.html#a56afebcc23521813484f3afe75644b60',1,'foxxll::unreachable::unreachable() noexcept'],['../classfoxxll_1_1unreachable.html#a97b629236a2f1ae0bcae6358d6558b87',1,'foxxll::unreachable::unreachable(const std::string &amp;message) noexcept']]],
   ['unused',['unused',['../namespacetlx.html#a5a63b398e6678264958fb8590e9332bf',1,'tlx']]],
-  ['update',['update',['../classtlx_1_1DAryAddressableIntHeap.html#aa8a7f7853c68042e7f9b804761f751a4',1,'tlx::DAryAddressableIntHeap::update()'],['../classthrill_1_1core_1_1BufferedMultiwayMergeTree.html#a205f4c947e10d95ae2d1d59171ed64de',1,'thrill::core::BufferedMultiwayMergeTree::Update()']]],
+  ['update',['Update',['../classthrill_1_1core_1_1BufferedMultiwayMergeTree.html#a205f4c947e10d95ae2d1d59171ed64de',1,'thrill::core::BufferedMultiwayMergeTree::Update()'],['../classtlx_1_1DAryAddressableIntHeap.html#aa8a7f7853c68042e7f9b804761f751a4',1,'tlx::DAryAddressableIntHeap::update()']]],
   ['update_5fmax_5fdevice_5fid',['update_max_device_id',['../classfoxxll_1_1config.html#a05c23ed61b79003a319aa04d7d3339d6',1,'foxxll::config']]],
   ['update_5fmemprofile',['update_memprofile',['../namespacethrill_1_1mem.html#a64f9cb97d3085675558a791249433737',1,'thrill::mem']]],
   ['update_5fpeak',['update_peak',['../namespacethrill_1_1mem.html#a7612bfeb672d2f57f71561541e6e007b',1,'thrill::mem']]],

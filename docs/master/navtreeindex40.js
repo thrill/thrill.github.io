@@ -1,5 +1,6 @@
 var NAVTREEINDEX40 =
 {
+"rl__bwt_8cpp.html#a9b63210dbe505d01b5f03386d064bd4e":[6,0,1,8,13,0],
 "rl__bwt_8cpp_source.html":[6,0,1,8,13],
 "rol_8hpp.html":[6,0,2,1,0,6,13],
 "rol_8hpp.html#ga1d4a226ca1fa55b6e4b5921ca3f492b5":[6,0,2,1,0,6,13,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX40 =
 "split_8cpp_source.html":[6,0,2,1,0,10,42],
 "split_8hpp.html":[6,0,2,1,0,10,43],
 "split_8hpp.html#ga00c921a6a793d9c4e59e380b2bb32fca":[6,0,2,1,0,10,43,3],
-"split_8hpp.html#ga0d57e8e6ac19e94787bf3cd44a79c1fe":[6,0,2,1,0,10,43,2],
-"split_8hpp.html#ga177a8fd78d5cc4e0fd8dc50810967d89":[6,0,2,1,0,10,43,7]
+"split_8hpp.html#ga0d57e8e6ac19e94787bf3cd44a79c1fe":[6,0,2,1,0,10,43,2]
 };

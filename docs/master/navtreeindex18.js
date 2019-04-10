@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"classthrill_1_1net_1_1AsyncWriteBlock.html#a402885bd3b95ec9f32828ea07b010c56":[3,1,2,5,13],
 "classthrill_1_1net_1_1AsyncWriteBlock.html#a40fe50b14bf164129156972247acb8e4":[3,1,2,5,5],
 "classthrill_1_1net_1_1AsyncWriteBlock.html#a4c66fa7233238c2a534aa245f486036d":[3,1,2,5,1],
 "classthrill_1_1net_1_1AsyncWriteBlock.html#a4d1bc925473b39c9100cfc7ddcab1ffb":[3,1,2,5,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "classthrill_1_1net_1_1DispatcherThread.html#adfcd78f9dff4691756c19c63ddb5051f":[3,1,2,13,20],
 "classthrill_1_1net_1_1DispatcherThread.html#aeca1ca9969ec13ce72735b5f6d468ab1":[3,1,2,13,26],
 "classthrill_1_1net_1_1DispatcherThread.html#aff2d0ca47dac689563b93c32dddcf038":[3,1,2,13,0],
-"classthrill_1_1net_1_1Exception.html":[3,1,2,14],
-"classthrill_1_1net_1_1Exception.html#a3195492c7be066e8401dcd93ce048ee1":[3,1,2,14,1]
+"classthrill_1_1net_1_1Exception.html":[3,1,2,14]
 };

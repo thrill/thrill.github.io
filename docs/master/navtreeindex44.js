@@ -1,5 +1,6 @@
 var NAVTREEINDEX44 =
 {
+"structtlx_1_1sort__strings__detail_1_1RadixStep__CI2.html#a9f21a243ffd0156cda2d12d6cd140a5f":[5,0,5,6,5,3],
 "structtlx_1_1sort__strings__detail_1_1RadixStep__CI3.html":[5,0,5,6,6],
 "structtlx_1_1sort__strings__detail_1_1RadixStep__CI3.html#a103fe1fcacccda7d9cdacde44721faef":[5,0,5,6,6,7],
 "structtlx_1_1sort__strings__detail_1_1RadixStep__CI3.html#a12f855aa9b9d43da788e743bbc8e1009":[5,0,5,6,6,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX44 =
 "trim_8cpp.html":[6,0,2,1,0,10,57],
 "trim_8cpp.html#ga033f3fec1db85f0203f9f33ef0cfe271":[6,0,2,1,0,10,57,1],
 "trim_8cpp.html#ga059d265ada554d8653d877a28d4d518d":[6,0,2,1,0,10,57,7],
-"trim_8cpp.html#ga1480a3758759216e8206fc9bbb58c0da":[6,0,2,1,0,10,57,13],
-"trim_8cpp.html#ga1bc881fad43aa1c573d47d459ed2a721":[6,0,2,1,0,10,57,10]
+"trim_8cpp.html#ga1480a3758759216e8206fc9bbb58c0da":[6,0,2,1,0,10,57,13]
 };

@@ -20,6 +20,7 @@ var searchData=
   ['parse_5fhexdump',['parse_hexdump',['../group__tlx__string.html#ga81809bc5e0b69034f39659303baa4bf9',1,'tlx']]],
   ['parse_5fline',['parse_line',['../classfoxxll_1_1disk__config.html#ae1fbeefdb5edc779e7070229e6266e8a',1,'foxxll::disk_config']]],
   ['parse_5fsi_5fiec_5funits',['parse_si_iec_units',['../group__tlx__string.html#ga58be0557b1b38913b28d947c935aed42',1,'tlx::parse_si_iec_units(const char *str, uint64_t *out_size, char default_unit=0)'],['../group__tlx__string.html#ga42a656ed3586b515140cb71b312f0f9b',1,'tlx::parse_si_iec_units(const std::string &amp;str, uint64_t *out_size, char default_unit=0)']]],
+  ['partialmultiwaymerge',['PartialMultiwayMerge',['../classthrill_1_1api_1_1SortNode.html#a5356d21f62699662c89bad504385374b',1,'thrill::api::SortNode']]],
   ['partialtostring',['PartialToString',['../classthrill_1_1net_1_1Buffer.html#a5f9ac225edd01c84bdcac8c20689d002',1,'thrill::net::Buffer']]],
   ['partition',['Partition',['../classthrill_1_1common_1_1Range.html#a274c6f43917e963451f76dafddaa281a',1,'thrill::common::Range']]],
   ['partition_5ffiles',['partition_files',['../classthrill_1_1core_1_1ReduceTable.html#acd22eacceb03df690ed22ffbe97be62b',1,'thrill::core::ReduceTable']]],
