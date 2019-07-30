@@ -1,6 +1,9 @@
 var group__tlx__sort =
 [
+    [ "parallel_mergesort_detail", "namespacetlx_1_1parallel__mergesort__detail.html", null ],
     [ "sort_strings_detail", "namespacetlx_1_1sort__strings__detail.html", null ],
+    [ "parallel_mergesort", "group__tlx__sort.html#ga400ae7e170366e84a4bdb9b6ed1592e7", null ],
+    [ "parallel_mergesort_base", "group__tlx__sort.html#ga81fdf70add19aa5134ecee16dba0925d", null ],
     [ "sort_strings", "group__tlx__sort.html#ga8e7fda09de57c231e74a748fe3dfa61c", null ],
     [ "sort_strings", "group__tlx__sort.html#ga59cb049031e299dda057c08cfc37ad12", null ],
     [ "sort_strings", "group__tlx__sort.html#ga5923dd19ad5b5ae6912ea324b862d413", null ],
@@ -20,5 +23,26 @@ var group__tlx__sort =
     [ "sort_strings_lcp", "group__tlx__sort.html#ga9def4a694058c1ace9ef256836dbf1a9", null ],
     [ "sort_strings_lcp", "group__tlx__sort.html#gafb0658037005ae5101c904fe0f0e0665", null ],
     [ "sort_strings_lcp", "group__tlx__sort.html#gaad1b4b054b20f4b88dd0b91248468f58", null ],
-    [ "sort_strings_lcp", "group__tlx__sort.html#ga3d4425aaa806ea6ce44e09b6b15b4d12", null ]
+    [ "sort_strings_lcp", "group__tlx__sort.html#ga3d4425aaa806ea6ce44e09b6b15b4d12", null ],
+    [ "sort_strings_parallel", "group__tlx__sort.html#ga01d8c1d0d8ebd1260b4b74d81d3e4f4e", null ],
+    [ "sort_strings_parallel", "group__tlx__sort.html#ga9dc6116f75a9ceaf36af593ba9bac288", null ],
+    [ "sort_strings_parallel", "group__tlx__sort.html#ga257ebf3fa7b3fc7a301c6ee88d8cd914", null ],
+    [ "sort_strings_parallel", "group__tlx__sort.html#gaaa842d824076845984fbb47196f6eb3a", null ],
+    [ "sort_strings_parallel", "group__tlx__sort.html#gaa8e9d501914aca721c13406c34999f03", null ],
+    [ "sort_strings_parallel", "group__tlx__sort.html#ga86b0a544e30ccb7fe137a12e6b64454a", null ],
+    [ "sort_strings_parallel", "group__tlx__sort.html#ga3af099e9a2411b11fd8f1eefbadabef1", null ],
+    [ "sort_strings_parallel", "group__tlx__sort.html#ga976187fa564f53171efd121611b10100", null ],
+    [ "sort_strings_parallel", "group__tlx__sort.html#ga2e1d512a5f7fa852f4bfd8f3cf0a16dc", null ],
+    [ "sort_strings_parallel", "group__tlx__sort.html#gaf103cae75f148a84cec9321975db69cc", null ],
+    [ "sort_strings_parallel_lcp", "group__tlx__sort.html#gaa2a4a118fe5614e217845fb9203c1faa", null ],
+    [ "sort_strings_parallel_lcp", "group__tlx__sort.html#gaf10a31cd2dc0012c30aee6d9d36d9b67", null ],
+    [ "sort_strings_parallel_lcp", "group__tlx__sort.html#ga8f6fdf8dca03ad872def0f4b83c5df22", null ],
+    [ "sort_strings_parallel_lcp", "group__tlx__sort.html#ga01316949c178bf30efc6e0f299a1042d", null ],
+    [ "sort_strings_parallel_lcp", "group__tlx__sort.html#ga11a3494abe397873ccbb17519869d996", null ],
+    [ "sort_strings_parallel_lcp", "group__tlx__sort.html#ga4bec949d2b430635c108557b2641d598", null ],
+    [ "sort_strings_parallel_lcp", "group__tlx__sort.html#ga71636f19f875a1ed1c8ec93616fc2786", null ],
+    [ "sort_strings_parallel_lcp", "group__tlx__sort.html#gac0d3b304937c8bb497c4bb239fa52d94", null ],
+    [ "sort_strings_parallel_lcp", "group__tlx__sort.html#gab49ea4abd1127021cdeba45947b193a2", null ],
+    [ "sort_strings_parallel_lcp", "group__tlx__sort.html#ga0e5a45bfc49abbacd812407d604c65c7", null ],
+    [ "stable_parallel_mergesort", "group__tlx__sort.html#ga4aa384ccbe79fdd32a7eec193142781a", null ]
 ];

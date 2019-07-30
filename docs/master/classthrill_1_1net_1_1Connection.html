@@ -335,6 +335,12 @@ Statistics</h2></td></tr>
 <tr class="memitem:a8d9343cf64d90942f33ff2d537e84f32"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Connection.html#a8d9343cf64d90942f33ff2d537e84f32">prev_rx_bytes_</a> = 0</td></tr>
 <tr class="memdesc:a8d9343cf64d90942f33ff2d537e84f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">previous read of received bytes  <a href="#a8d9343cf64d90942f33ff2d537e84f32">More...</a><br/></td></tr>
 <tr class="separator:a8d9343cf64d90942f33ff2d537e84f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee18b637b1cd4038b4155959f926311e"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Connection.html#aee18b637b1cd4038b4155959f926311e">tx_active_</a> { 0 }</td></tr>
+<tr class="memdesc:aee18b637b1cd4038b4155959f926311e"><td class="mdescLeft">&#160;</td><td class="mdescRight">active send requests  <a href="#aee18b637b1cd4038b4155959f926311e">More...</a><br/></td></tr>
+<tr class="separator:aee18b637b1cd4038b4155959f926311e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85660c2a83d34486321a5239781e196c"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Connection.html#a85660c2a83d34486321a5239781e196c">rx_active_</a> = { 0 }</td></tr>
+<tr class="memdesc:a85660c2a83d34486321a5239781e196c"><td class="mdescLeft">&#160;</td><td class="mdescRight">active recv requests  <a href="#a85660c2a83d34486321a5239781e196c">More...</a><br/></td></tr>
+<tr class="separator:a85660c2a83d34486321a5239781e196c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49db216c5520bcf90ed6d78eca8c29f3"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1net_1_1Connection.html#a49db216c5520bcf90ed6d78eca8c29f3">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a> &amp;c)</td></tr>
 <tr class="memdesc:a49db216c5520bcf90ed6d78eca8c29f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">}  <a href="#a49db216c5520bcf90ed6d78eca8c29f3">More...</a><br/></td></tr>
 <tr class="separator:a49db216c5520bcf90ed6d78eca8c29f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -389,7 +395,7 @@ Statistics</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classthrill_1_1net_1_1tcp_1_1Connection.html#ada0eaf84b2b8c8db68d6d24ad1a0a34a">Connection</a>, <a class="el" href="classthrill_1_1net_1_1mpi_1_1Connection.html#ada0eaf84b2b8c8db68d6d24ad1a0a34a">Connection</a>, and <a class="el" href="classthrill_1_1net_1_1mock_1_1Connection.html#ada0eaf84b2b8c8db68d6d24ad1a0a34a">Connection</a>.</p>
 
-<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00537">Dispatcher::AsyncRead()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00579">Dispatcher::AsyncWrite()</a>.</p>
+<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00567">Dispatcher::AsyncRead()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00609">Dispatcher::AsyncWrite()</a>.</p>
 
 </div>
 </div>
@@ -786,7 +792,7 @@ Statistics</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classthrill_1_1net_1_1tcp_1_1Connection.html#a2ee6939b8787f7fc2c094ea6c87f2583">Connection</a>, <a class="el" href="classthrill_1_1net_1_1mpi_1_1Connection.html#a2ee6939b8787f7fc2c094ea6c87f2583">Connection</a>, and <a class="el" href="classthrill_1_1net_1_1mock_1_1Connection.html#a2ee6939b8787f7fc2c094ea6c87f2583">Connection</a>.</p>
 
-<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00094">AsyncReadBuffer::operator()()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00297">AsyncReadByteBlock::operator()()</a>.</p>
+<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00097">AsyncReadBuffer::operator()()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00314">AsyncReadByteBlock::operator()()</a>.</p>
 
 </div>
 </div>
@@ -1039,7 +1045,7 @@ Statistics</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classthrill_1_1net_1_1tcp_1_1Connection.html#acc6f0ffbcbd22f80e5465f4d93aa2a22">Connection</a>, <a class="el" href="classthrill_1_1net_1_1mpi_1_1Connection.html#afb5baefcdab8f0a9a60cf7544ba4a3cd">Connection</a>, and <a class="el" href="classthrill_1_1net_1_1mock_1_1Connection.html#afb5baefcdab8f0a9a60cf7544ba4a3cd">Connection</a>.</p>
 
-<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00200">AsyncWriteBuffer::operator()()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00408">AsyncWriteBlock::operator()()</a>.</p>
+<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00210">AsyncWriteBuffer::operator()()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00432">AsyncWriteBlock::operator()()</a>.</p>
 
 </div>
 </div>
@@ -1393,7 +1399,7 @@ Statistics</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classthrill_1_1net_1_1tcp_1_1Connection.html#a60f7a37bcc27fe705dd2b7d6227aae0b">Connection</a>, <a class="el" href="classthrill_1_1net_1_1mpi_1_1Connection.html#a60f7a37bcc27fe705dd2b7d6227aae0b">Connection</a>, and <a class="el" href="classthrill_1_1net_1_1mock_1_1Connection.html#a60f7a37bcc27fe705dd2b7d6227aae0b">Connection</a>.</p>
 
-<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00719">Dispatcher::ExceptionCallback()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00094">AsyncReadBuffer::operator()()</a>.</p>
+<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00749">Dispatcher::ExceptionCallback()</a>, and <a class="el" href="dispatcher_8hpp_source.html#l00097">AsyncReadBuffer::operator()()</a>.</p>
 
 </div>
 </div>
@@ -1433,7 +1439,7 @@ Statistics</h2></td></tr>
 <p>} </p>
 <p>make ostreamable </p>
 
-<p>Definition at line <a class="el" href="connection_8hpp_source.html#l00623">623</a> of file <a class="el" href="connection_8hpp_source.html">connection.hpp</a>.</p>
+<p>Definition at line <a class="el" href="connection_8hpp_source.html#l00629">629</a> of file <a class="el" href="connection_8hpp_source.html">connection.hpp</a>.</p>
 
 </div>
 </div>
@@ -1529,6 +1535,24 @@ Statistics</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a85660c2a83d34486321a5239781e196c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;size_t&gt; rx_active_ = { 0 }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>active recv requests </p>
+
+<p>Definition at line <a class="el" href="connection_8hpp_source.html#l00624">624</a> of file <a class="el" href="connection_8hpp_source.html">connection.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00070">AsyncReadBuffer::AsyncReadBuffer()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00283">AsyncReadByteBlock::AsyncReadByteBlock()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00097">AsyncReadBuffer::operator()()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00314">AsyncReadByteBlock::operator()()</a>, and <a class="el" href="group_8cpp_source.html#l00084">Manager::RunTask()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="abedb4f733de28a4e8e8228e3d7d0bc3a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1590,6 +1614,24 @@ Statistics</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aee18b637b1cd4038b4155959f926311e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;size_t&gt; tx_active_ { 0 }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>active send requests </p>
+
+<p>Definition at line <a class="el" href="connection_8hpp_source.html#l00621">621</a> of file <a class="el" href="connection_8hpp_source.html">connection.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="dispatcher_8hpp_source.html#l00404">AsyncWriteBlock::AsyncWriteBlock()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00183">AsyncWriteBuffer::AsyncWriteBuffer()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00210">AsyncWriteBuffer::operator()()</a>, <a class="el" href="dispatcher_8hpp_source.html#l00432">AsyncWriteBlock::operator()()</a>, and <a class="el" href="group_8cpp_source.html#l00084">Manager::RunTask()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a597a259166090cf9a92740c4b7b423ec"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1635,7 +1677,7 @@ Statistics</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1net.html">net</a></li><li class="navelem"><a class="el" href="classthrill_1_1net_1_1Connection.html">Connection</a></li>
-    <li class="footer">Generated on Wed Apr 10 2019 11:10:33 for Thrill by
+    <li class="footer">Generated on Tue Jul 30 2019 13:52:35 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

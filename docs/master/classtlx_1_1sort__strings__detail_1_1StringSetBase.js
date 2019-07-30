@@ -1,10 +1,15 @@
 var classtlx_1_1sort__strings__detail_1_1StringSetBase =
 [
+    [ "at", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#ace352ee915b2d9f015afb067d4525207", null ],
     [ "check_order", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#a7ea8273bbdbccbdb06b7b79dc2580ff8", null ],
     [ "check_order", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#aacdb33228b1a3b3c04f26d6f64a75594", null ],
     [ "get_char", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#a4fdc9fe7d9422b57e0f87a0e1e239595", null ],
     [ "get_uint16", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#a7df1afec6e44ddb3287576e303ea449d", null ],
     [ "get_uint16", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#a14142b1699e23d1ab07b079c55c16453", null ],
+    [ "get_uint32", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#a2e31f37bed31048c78bab52b082ce360", null ],
+    [ "get_uint32", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#aff8af8d77f5b2c22987a5ec212396f81", null ],
+    [ "get_uint64", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#a0a2686ca12893ea8741f858de129dcb4", null ],
+    [ "get_uint64", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#af722f63feecbe605ba75e520fe83058e", null ],
     [ "get_uint8", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#a26eaacbd19b54e499145b3e13260a6a7", null ],
     [ "get_uint8", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#a8de5546acfcc0b4beb6ff865dabaaa11", null ],
     [ "is_equal", "classtlx_1_1sort__strings__detail_1_1StringSetBase.html#a6f42d71bde29199d8ef30b17e8f9a71b", null ],

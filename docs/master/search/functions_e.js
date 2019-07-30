@@ -20,7 +20,7 @@ var searchData=
   ['node',['node',['../classthrill_1_1api_1_1DIA.html#a625f105e999b6ef765c7ed1997a61322',1,'thrill::api::DIA::node()'],['../structtlx_1_1SplayTree_1_1Node.html#a367602fd7d549671f88f2672ebc08a8a',1,'tlx::SplayTree::Node::Node()']]],
   ['node_5frefcount',['node_refcount',['../classthrill_1_1api_1_1DIA.html#a76c9b4a047328cf9705c411d1dc59f38',1,'thrill::api::DIA']]],
   ['nodes',['nodes',['../structtlx_1_1BTree_1_1tree__stats.html#a942a7c4c9368b0fa17df9feb4e0dbd74',1,'tlx::BTree::tree_stats']]],
-  ['nooperation',['NoOperation',['../structthrill_1_1common_1_1NoOperation.html#afdcb88e0f2e0c3faf3323e6bba1feef3',1,'thrill::common::NoOperation']]],
+  ['nooperation',['NoOperation',['../classtlx_1_1NoOperation.html#afdcb88e0f2e0c3faf3323e6bba1feef3',1,'tlx::NoOperation']]],
   ['norebalancetag',['NoRebalanceTag',['../structthrill_1_1api_1_1NoRebalanceTag.html#a0fcc6b317ffcb94e2ddd554376d080e7',1,'thrill::api::NoRebalanceTag']]],
   ['norm',['Norm',['../classthrill_1_1common_1_1Vector.html#a789960451505e63dc79ec19ff575ca55',1,'thrill::common::Vector::Norm()'],['../classthrill_1_1common_1_1VVector.html#a789960451505e63dc79ec19ff575ca55',1,'thrill::common::VVector::Norm()']]],
   ['not_5fpresent',['not_present',['../classtlx_1_1DAryAddressableIntHeap.html#a16f3b806cf179aeb68d9e6e4c4de66a1',1,'tlx::DAryAddressableIntHeap']]],

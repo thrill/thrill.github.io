@@ -19,5 +19,6 @@ var logger_2core_8hpp =
     [ "TLX_sLOG1", "logger_2core_8hpp.html#ae014a492fb8e1699bab55b839a5d0200", null ],
     [ "TLX_sLOGC", "logger_2core_8hpp.html#adedb84eac5406763b057241ca6e441c2", null ],
     [ "set_logger_output_hook", "logger_2core_8hpp.html#a369d24d80d405a29502266c3c3742b42", null ],
-    [ "set_logger_prefix_hook", "logger_2core_8hpp.html#a6f6fd6485b3c32e7706d585634e012d0", null ]
+    [ "set_logger_prefix_hook", "logger_2core_8hpp.html#a6f6fd6485b3c32e7706d585634e012d0", null ],
+    [ "set_logger_to_stderr", "logger_2core_8hpp.html#aafcbf5e112757758add1662cf66498d0", null ]
 ];

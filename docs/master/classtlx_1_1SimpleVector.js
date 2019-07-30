@@ -18,6 +18,7 @@ var classtlx_1_1SimpleVector =
     [ "create_array", "classtlx_1_1SimpleVector.html#a631b59e584b115ebe3921fb26e01ff74", null ],
     [ "data", "classtlx_1_1SimpleVector.html#a0b4fb6c261ed5f5792806334824d8bc8", null ],
     [ "data", "classtlx_1_1SimpleVector.html#a93bf6c5e2a99028f205cd1aacfcfbc04", null ],
+    [ "destroy", "classtlx_1_1SimpleVector.html#a3a80b6032f86a56bec74609034b3246f", null ],
     [ "destroy_array", "classtlx_1_1SimpleVector.html#af5bb6579266664efe61f1369ab0a02e3", null ],
     [ "end", "classtlx_1_1SimpleVector.html#afc5380afa64b233d0df01a147616974b", null ],
     [ "end", "classtlx_1_1SimpleVector.html#a5b9b57293fae9b18b26349ac0b3fdcd3", null ],

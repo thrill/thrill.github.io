@@ -18,8 +18,10 @@ var searchData=
   ['mixblockqueuereader',['MixBlockQueueReader',['../classthrill_1_1data_1_1MixBlockQueueReader.html',1,'thrill::data']]],
   ['mixstream',['MixStream',['../classthrill_1_1data_1_1MixStream.html',1,'thrill::data']]],
   ['mixstreamdata',['MixStreamData',['../classthrill_1_1data_1_1MixStreamData.html',1,'thrill::data']]],
+  ['mkqsstep',['MKQSStep',['../classtlx_1_1sort__strings__detail_1_1PS5SmallsortJob_1_1MKQSStep.html',1,'tlx::sort_strings_detail::PS5SmallsortJob']]],
   ['mpiasync',['MpiAsync',['../classthrill_1_1net_1_1mpi_1_1Dispatcher_1_1MpiAsync.html',1,'thrill::net::mpi::Dispatcher']]],
   ['multiplexer',['Multiplexer',['../classthrill_1_1data_1_1Multiplexer.html',1,'thrill::data']]],
   ['multiplexerheader',['MultiplexerHeader',['../classthrill_1_1data_1_1MultiplexerHeader.html',1,'thrill::data']]],
+  ['multitimer',['MultiTimer',['../classtlx_1_1MultiTimer.html',1,'tlx']]],
   ['multiwaymergetree',['MultiwayMergeTree',['../classthrill_1_1core_1_1MultiwayMergeTree.html',1,'thrill::core']]]
 ];

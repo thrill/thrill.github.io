@@ -36,8 +36,8 @@ var hierarchy =
     [ "CountingPtr< CatStreamData >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< DIABase >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< DIANode< StackInput > >", "classtlx_1_1CountingPtr.html", null ],
-    [ "CountingPtr< File >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< file >", "classtlx_1_1CountingPtr.html", null ],
+    [ "CountingPtr< File >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< MixStream >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< MixStreamData >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< ReadStream >", "classtlx_1_1CountingPtr.html", null ],
@@ -220,6 +220,9 @@ var hierarchy =
     [ "type", null, [
       [ "make_index_sequence< Size >", "structtlx_1_1make__index__sequence.html", null ]
     ] ],
+    [ "Parameters", null, [
+      [ "PS5Context< Parameters >", "classtlx_1_1sort__strings__detail_1_1PS5Context.html", null ]
+    ] ],
     [ "ReduceByHashPostPhase< TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceNode::Emitter, VolatileKey, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction >", "classthrill_1_1core_1_1ReduceByHashPostPhase.html", null ],
     [ "ReduceByIndexPostPhase< TableItem, Key, ValueType, KeyExtractor, ReduceFunction, thrill::api::ReduceToIndexNode::Emitter, VolatileKey, ReduceConfig >", "classthrill_1_1core_1_1ReduceByIndexPostPhase.html", null ],
     [ "ReducePostPhaseEmitter< TableItem, ValueType, thrill::api::ReduceNode::Emitter, VolatileKey >", "classthrill_1_1core_1_1ReducePostPhaseEmitter.html", null ],
@@ -248,6 +251,7 @@ var hierarchy =
     [ "shared_state< request_state >", "classfoxxll_1_1shared__state.html", null ],
     [ "shared_state< thread_state >", "classfoxxll_1_1shared__state.html", null ],
     [ "SimpleVector< block_type::raw_size >", "classtlx_1_1SimpleVector.html", null ],
+    [ "SimpleVector< DiffType >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< foxxll::disk_block_allocator * >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< std::thread >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< tlx::CountingPtr >", "classtlx_1_1SimpleVector.html", null ],
@@ -255,6 +259,12 @@ var hierarchy =
     [ "SimpleVector< tlx::LoserTreeCopyUnguardedBase::Loser >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< tlx::LoserTreePointerBase::Loser >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< tlx::LoserTreePointerUnguardedBase::Loser >", "classtlx_1_1SimpleVector.html", null ],
+    [ "SimpleVector< tlx::SimpleVector< size_t > >", "classtlx_1_1SimpleVector.html", null ],
+    [ "SimpleVector< tlx::SimpleVector< tlx::parallel_mergesort_detail::PMWMSPiece< DiffType > > >", "classtlx_1_1SimpleVector.html", null ],
+    [ "SimpleVector< tlx::SimpleVector< uint16_t > >", "classtlx_1_1SimpleVector.html", null ],
+    [ "SimpleVector< uint8_t >", "classtlx_1_1SimpleVector.html", null ],
+    [ "SimpleVector< ValueType * >", "classtlx_1_1SimpleVector.html", null ],
+    [ "SimpleVector< ValueType >", "classtlx_1_1SimpleVector.html", null ],
     [ "singleton< block_manager >", "classfoxxll_1_1singleton.html", [
       [ "block_manager", "classfoxxll_1_1block__manager.html", null ]
     ] ],
@@ -270,7 +280,6 @@ var hierarchy =
     [ "atomic", null, [
       [ "AtomicMovable< bool >", "classthrill_1_1common_1_1AtomicMovable.html", null ],
       [ "AtomicMovable< size_t >", "classthrill_1_1common_1_1AtomicMovable.html", null ],
-      [ "AtomicMovable< uint64_t >", "classthrill_1_1common_1_1AtomicMovable.html", null ],
       [ "AtomicMovable< T >", "classthrill_1_1common_1_1AtomicMovable.html", null ]
     ] ],
     [ "binary_function", null, [
@@ -419,8 +428,6 @@ var hierarchy =
     [ "JsonLogger", "classthrill_1_1common_1_1JsonLogger.html", null ],
     [ "JsonVerbatim", "classthrill_1_1common_1_1JsonVerbatim.html", null ],
     [ "Matrix< Type >", "classthrill_1_1common_1_1Matrix.html", null ],
-    [ "NoOperation< ReturnType >", "structthrill_1_1common_1_1NoOperation.html", null ],
-    [ "NoOperation< void >", "structthrill_1_1common_1_1NoOperation_3_01void_01_4.html", null ],
     [ "ProfileTask", "classthrill_1_1common_1_1ProfileTask.html", [
       [ "BlockPool", "classthrill_1_1data_1_1BlockPool.html", null ],
       [ "Manager", "classthrill_1_1net_1_1Manager.html", null ]
@@ -450,8 +457,6 @@ var hierarchy =
     [ "StatsTimerBase< true >", "classthrill_1_1common_1_1StatsTimerBase_3_01true_01_4.html", null ],
     [ "StringView", "classthrill_1_1common_1_1StringView.html", null ],
     [ "TabulationHashing< size, hash_t, prng_t >", "classthrill_1_1common_1_1TabulationHashing.html", null ],
-    [ "ThreadBarrierLocking", "classthrill_1_1common_1_1ThreadBarrierLocking.html", null ],
-    [ "ThreadBarrierSpinning", "classthrill_1_1common_1_1ThreadBarrierSpinning.html", null ],
     [ "TimedCounter", "classthrill_1_1common_1_1TimedCounter.html", null ],
     [ "UIntPair< High_ >", "classthrill_1_1common_1_1UIntPair.html", null ],
     [ "Vector< D, Type >", "classthrill_1_1common_1_1Vector.html", null ],
@@ -710,8 +715,14 @@ var hierarchy =
     [ "make_index_sequence_helper< 0, Indexes...>", "structtlx_1_1meta__detail_1_1make__index__sequence__helper_3_010_00_01Indexes_8_8_8_4.html", null ],
     [ "VMapForRangeImpl< Index, Size, Functor >", "classtlx_1_1meta__detail_1_1VMapForRangeImpl.html", null ],
     [ "VMapForRangeImpl< Index, 0, Functor >", "classtlx_1_1meta__detail_1_1VMapForRangeImpl_3_01Index_00_010_00_01Functor_01_4.html", null ],
+    [ "MultiTimer", "classtlx_1_1MultiTimer.html", null ],
+    [ "MultiTimer::Entry", "structtlx_1_1MultiTimer_1_1Entry.html", null ],
     [ "guarded_iterator< RandomAccessIterator, Comparator >", "classtlx_1_1multiway__merge__detail_1_1guarded__iterator.html", null ],
     [ "unguarded_iterator< RandomAccessIterator, Comparator >", "classtlx_1_1multiway__merge__detail_1_1unguarded__iterator.html", null ],
+    [ "NoOperation< ReturnType >", "classtlx_1_1NoOperation.html", null ],
+    [ "NoOperation< void >", "classtlx_1_1NoOperation_3_01void_01_4.html", null ],
+    [ "PMWMSPiece< DiffType >", "structtlx_1_1parallel__mergesort__detail_1_1PMWMSPiece.html", null ],
+    [ "PMWMSSortingData< RandomAccessIterator >", "structtlx_1_1parallel__mergesort__detail_1_1PMWMSSortingData.html", null ],
     [ "PolynomialRegression< Type, WithStore >", "classtlx_1_1PolynomialRegression.html", null ],
     [ "PolynomialRegression< Type, WithStore >::Point", "structtlx_1_1PolynomialRegression_1_1Point.html", null ],
     [ "BitArray< Size >", "classtlx_1_1radix__heap__detail_1_1BitArray.html", null ],
@@ -814,6 +825,8 @@ var hierarchy =
       [ "WriteStream", "classthrill_1_1vfs_1_1WriteStream.html", null ]
     ] ],
     [ "RingBuffer< Type, Allocator >", "classtlx_1_1RingBuffer.html", null ],
+    [ "ScopedMultiTimer", "classtlx_1_1ScopedMultiTimer.html", null ],
+    [ "ScopedMultiTimerSwitch", "classtlx_1_1ScopedMultiTimerSwitch.html", null ],
     [ "Semaphore", "classtlx_1_1Semaphore.html", null ],
     [ "SHA1", "classtlx_1_1SHA1.html", null ],
     [ "SHA256", "classtlx_1_1SHA256.html", null ],
@@ -822,11 +835,24 @@ var hierarchy =
     [ "GenericCharStringSetTraits< CharType >", "classtlx_1_1sort__strings__detail_1_1GenericCharStringSetTraits.html", [
       [ "GenericCharStringSet< CharType >", "classtlx_1_1sort__strings__detail_1_1GenericCharStringSet.html", null ]
     ] ],
+    [ "PerfectTreeCalculations< TreeBits >", "structtlx_1_1sort__strings__detail_1_1PerfectTreeCalculations.html", null ],
+    [ "PS5ParametersDefault", "classtlx_1_1sort__strings__detail_1_1PS5ParametersDefault.html", null ],
+    [ "PS5SmallsortJob< Context, StringPtr, BktSizeType >::MKQSStep", "classtlx_1_1sort__strings__detail_1_1PS5SmallsortJob_1_1MKQSStep.html", null ],
+    [ "PS5SmallsortJob< Context, StringPtr, BktSizeType >::SeqSampleSortStep", "classtlx_1_1sort__strings__detail_1_1PS5SmallsortJob_1_1SeqSampleSortStep.html", null ],
+    [ "PS5SortStep", "classtlx_1_1sort__strings__detail_1_1PS5SortStep.html", [
+      [ "PS5BigSortStep< Context, StringPtr >", "classtlx_1_1sort__strings__detail_1_1PS5BigSortStep.html", null ],
+      [ "PS5SmallsortJob< Context, StringPtr, BktSizeType >", "classtlx_1_1sort__strings__detail_1_1PS5SmallsortJob.html", null ]
+    ] ],
     [ "RadixStep_CE0< StringShadowPtr >", "structtlx_1_1sort__strings__detail_1_1RadixStep__CE0.html", null ],
     [ "RadixStep_CE2< StringShadowPtr >", "structtlx_1_1sort__strings__detail_1_1RadixStep__CE2.html", null ],
     [ "RadixStep_CE3< StringShadowPtr >", "structtlx_1_1sort__strings__detail_1_1RadixStep__CE3.html", null ],
     [ "RadixStep_CI2< StringPtr >", "structtlx_1_1sort__strings__detail_1_1RadixStep__CI2.html", null ],
     [ "RadixStep_CI3< StringPtr >", "structtlx_1_1sort__strings__detail_1_1RadixStep__CI3.html", null ],
+    [ "SSClassifyEqualUnroll< key_type, TreeBits >", "classtlx_1_1sort__strings__detail_1_1SSClassifyEqualUnroll.html", null ],
+    [ "SSClassifyTreeCalcUnrollInterleave< key_type, TreeBits, Rollout >", "classtlx_1_1sort__strings__detail_1_1SSClassifyTreeCalcUnrollInterleave.html", null ],
+    [ "SSClassifyTreeUnrollInterleave< key_type, TreeBits, Rollout >", "classtlx_1_1sort__strings__detail_1_1SSClassifyTreeUnrollInterleave.html", null ],
+    [ "SSTreeBuilderLevelOrder< key_type, num_splitters >", "classtlx_1_1sort__strings__detail_1_1SSTreeBuilderLevelOrder.html", null ],
+    [ "SSTreeBuilderPreAndLevelOrder< key_type, num_splitters >", "classtlx_1_1sort__strings__detail_1_1SSTreeBuilderPreAndLevelOrder.html", null ],
     [ "StdStringSetTraits", "classtlx_1_1sort__strings__detail_1_1StdStringSetTraits.html", [
       [ "StdStringSet", "classtlx_1_1sort__strings__detail_1_1StdStringSet.html", null ]
     ] ],
@@ -848,6 +874,8 @@ var hierarchy =
     [ "StackArena< Size >", "classtlx_1_1StackArena.html", null ],
     [ "StackArena< Size >::AlignmentHelper", "uniontlx_1_1StackArena_1_1AlignmentHelper.html", null ],
     [ "StaticIndex< Index >", "structtlx_1_1StaticIndex.html", null ],
+    [ "ThreadBarrierMutex", "classtlx_1_1ThreadBarrierMutex.html", null ],
+    [ "ThreadBarrierSpin", "classtlx_1_1ThreadBarrierSpin.html", null ],
     [ "ThreadPool", "classtlx_1_1ThreadPool.html", null ],
     [ "ToVectorEmitter< thrill::api::GroupByNode::HashCount >", "classthrill_1_1core_1_1ToVectorEmitter.html", null ],
     [ "ToVectorEmitter< thrill::api::JoinNode::HashCount >", "classthrill_1_1core_1_1ToVectorEmitter.html", null ],

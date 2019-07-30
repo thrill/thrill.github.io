@@ -30,6 +30,13 @@ var dir_e51d8ef7db00def9423335c81d827c83 =
     [ "logger.hpp", "extlib_2tlx_2tlx_2logger_8hpp.html", "extlib_2tlx_2tlx_2logger_8hpp" ],
     [ "math.hpp", "extlib_2tlx_2tlx_2math_8hpp.html", null ],
     [ "meta.hpp", "meta_8hpp.html", null ],
+    [ "multi_timer.cpp", "multi__timer_8cpp.html", "multi__timer_8cpp" ],
+    [ "multi_timer.hpp", "multi__timer_8hpp.html", [
+      [ "MultiTimer", "classtlx_1_1MultiTimer.html", "classtlx_1_1MultiTimer" ],
+      [ "Entry", "structtlx_1_1MultiTimer_1_1Entry.html", "structtlx_1_1MultiTimer_1_1Entry" ],
+      [ "ScopedMultiTimer", "classtlx_1_1ScopedMultiTimer.html", "classtlx_1_1ScopedMultiTimer" ],
+      [ "ScopedMultiTimerSwitch", "classtlx_1_1ScopedMultiTimerSwitch.html", "classtlx_1_1ScopedMultiTimerSwitch" ]
+    ] ],
     [ "port.hpp", "port_8hpp.html", null ],
     [ "semaphore.hpp", "semaphore_8hpp.html", "semaphore_8hpp" ],
     [ "simple_vector.hpp", "simple__vector_8hpp.html", null ],
@@ -42,10 +49,18 @@ var dir_e51d8ef7db00def9423335c81d827c83 =
       [ "AlignmentHelper", "uniontlx_1_1StackArena_1_1AlignmentHelper.html", "uniontlx_1_1StackArena_1_1AlignmentHelper" ]
     ] ],
     [ "string.hpp", "extlib_2tlx_2tlx_2string_8hpp.html", null ],
+    [ "thread_barrier_mutex.hpp", "thread__barrier__mutex_8hpp.html", [
+      [ "ThreadBarrierMutex", "classtlx_1_1ThreadBarrierMutex.html", "classtlx_1_1ThreadBarrierMutex" ]
+    ] ],
+    [ "thread_barrier_spin.hpp", "thread__barrier__spin_8hpp.html", [
+      [ "ThreadBarrierSpin", "classtlx_1_1ThreadBarrierSpin.html", "classtlx_1_1ThreadBarrierSpin" ]
+    ] ],
     [ "thread_pool.cpp", "thread__pool_8cpp.html", null ],
     [ "thread_pool.hpp", "thread__pool_8hpp.html", [
       [ "ThreadPool", "classtlx_1_1ThreadPool.html", "classtlx_1_1ThreadPool" ]
     ] ],
+    [ "timestamp.cpp", "timestamp_8cpp.html", "timestamp_8cpp" ],
+    [ "timestamp.hpp", "timestamp_8hpp.html", "timestamp_8hpp" ],
     [ "unused.hpp", "unused_8hpp.html", "unused_8hpp" ],
     [ "vector_free.hpp", "vector__free_8hpp.html", "vector__free_8hpp" ],
     [ "version.hpp", "tlx_2tlx_2version_8hpp.html", "tlx_2tlx_2version_8hpp" ]

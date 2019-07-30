@@ -32,8 +32,8 @@ var searchData=
   ['allocatorbase_3c_20char_20_3e',['AllocatorBase&lt; char &gt;',['../classtlx_1_1AllocatorBase.html',1,'tlx']]],
   ['allocatorbase_3c_20t_20_3e',['AllocatorBase&lt; T &gt;',['../classtlx_1_1AllocatorBase.html',1,'tlx']]],
   ['allreducenode',['AllReduceNode',['../classthrill_1_1api_1_1AllReduceNode.html',1,'thrill::api']]],
-  ['arraytag',['ArrayTag',['../structthrill_1_1api_1_1ArrayTag.html',1,'thrill::api']]],
   ['arraytag',['ArrayTag',['../structthrill_1_1common_1_1JsonLine_1_1ArrayTag.html',1,'thrill::common::JsonLine']]],
+  ['arraytag',['ArrayTag',['../structthrill_1_1api_1_1ArrayTag.html',1,'thrill::api']]],
   ['asyncreadbuffer',['AsyncReadBuffer',['../classthrill_1_1net_1_1AsyncReadBuffer.html',1,'thrill::net']]],
   ['asyncreadbyteblock',['AsyncReadByteBlock',['../classthrill_1_1net_1_1AsyncReadByteBlock.html',1,'thrill::net']]],
   ['asyncrequest',['AsyncRequest',['../classthrill_1_1net_1_1mpi_1_1AsyncRequest.html',1,'thrill::net::mpi']]],
@@ -41,6 +41,5 @@ var searchData=
   ['asyncwritebuffer',['AsyncWriteBuffer',['../classthrill_1_1net_1_1AsyncWriteBuffer.html',1,'thrill::net']]],
   ['atomicmovable',['AtomicMovable',['../classthrill_1_1common_1_1AtomicMovable.html',1,'thrill::common']]],
   ['atomicmovable_3c_20bool_20_3e',['AtomicMovable&lt; bool &gt;',['../classthrill_1_1common_1_1AtomicMovable.html',1,'thrill::common']]],
-  ['atomicmovable_3c_20size_5ft_20_3e',['AtomicMovable&lt; size_t &gt;',['../classthrill_1_1common_1_1AtomicMovable.html',1,'thrill::common']]],
-  ['atomicmovable_3c_20uint64_5ft_20_3e',['AtomicMovable&lt; uint64_t &gt;',['../classthrill_1_1common_1_1AtomicMovable.html',1,'thrill::common']]]
+  ['atomicmovable_3c_20size_5ft_20_3e',['AtomicMovable&lt; size_t &gt;',['../classthrill_1_1common_1_1AtomicMovable.html',1,'thrill::common']]]
 ];

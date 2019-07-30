@@ -6,6 +6,7 @@ var classtlx_1_1sort__strings__detail_1_1StringPtr =
     [ "StringPtr", "classtlx_1_1sort__strings__detail_1_1StringPtr.html#a494141c0b985feaf3a4de1085ac9c1f3", null ],
     [ "active", "classtlx_1_1sort__strings__detail_1_1StringPtr.html#addd2f6bb497d81d65158fccb303a23e9", null ],
     [ "add_shadow", "classtlx_1_1sort__strings__detail_1_1StringPtr.html#a0aaf221d507bb4bcf5c8f73a69d98f92", null ],
+    [ "fill_lcp", "classtlx_1_1sort__strings__detail_1_1StringPtr.html#a5f33be5b42eaa302be1eaca6c33b1899", null ],
     [ "set_lcp", "classtlx_1_1sort__strings__detail_1_1StringPtr.html#aa96b5a44b81d83f2b43936eec2e6fc0b", null ],
     [ "size", "classtlx_1_1sort__strings__detail_1_1StringPtr.html#aac782da1f912bceb5d8ad00c8dc892ac", null ],
     [ "sub", "classtlx_1_1sort__strings__detail_1_1StringPtr.html#ae4cf79d4c8afaf4a1bc8736d3cbcb25d", null ],

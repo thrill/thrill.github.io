@@ -10,6 +10,8 @@ var searchData=
   ['bid_2ehpp',['bid.hpp',['../bid_8hpp.html',1,'']]],
   ['binary_5fheap_2ehpp',['binary_heap.hpp',['../binary__heap_8hpp.html',1,'']]],
   ['bit_5fstream_2ehpp',['bit_stream.hpp',['../bit__stream_8hpp.html',1,'']]],
+  ['bitdump_2ecpp',['bitdump.cpp',['../bitdump_8cpp.html',1,'']]],
+  ['bitdump_2ehpp',['bitdump.hpp',['../bitdump_8hpp.html',1,'']]],
   ['block_2ecpp',['block.cpp',['../block_8cpp.html',1,'']]],
   ['block_2ehpp',['block.hpp',['../block_8hpp.html',1,'']]],
   ['block_5falloc_5fstrategy_2ehpp',['block_alloc_strategy.hpp',['../block__alloc__strategy_8hpp.html',1,'']]],

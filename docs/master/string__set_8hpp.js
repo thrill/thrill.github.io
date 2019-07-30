@@ -12,5 +12,8 @@ var string__set_8hpp =
     [ "CCharStringSet", "string__set_8hpp.html#a846d1081bb4d43b383e8a0897207b4e3", null ],
     [ "CharStringSet", "string__set_8hpp.html#a85c7b63d45582425267fd73c508797ad", null ],
     [ "CUCharStringSet", "string__set_8hpp.html#ac7f3c8e688b9c563bdbad2854e565c39", null ],
-    [ "UCharStringSet", "string__set_8hpp.html#aeca5156de1a7513cc3ae5b19d5aa2d5f", null ]
+    [ "UCharStringSet", "string__set_8hpp.html#aeca5156de1a7513cc3ae5b19d5aa2d5f", null ],
+    [ "get_key", "string__set_8hpp.html#ae923fa210a7553d83e987a37805f0d3f", null ],
+    [ "get_key", "string__set_8hpp.html#a42abd27941810b9e8cc9a32efee453fd", null ],
+    [ "get_key_at", "string__set_8hpp.html#ac6a36ea9dd0f8f96d33a44e89c8f0eba", null ]
 ];

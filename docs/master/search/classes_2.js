@@ -47,7 +47,7 @@ var searchData=
   ['countingptr_3c_20catstreamdata_20_3e',['CountingPtr&lt; CatStreamData &gt;',['../classtlx_1_1CountingPtr.html',1,'tlx']]],
   ['countingptr_3c_20diabase_20_3e',['CountingPtr&lt; DIABase &gt;',['../classtlx_1_1CountingPtr.html',1,'tlx']]],
   ['countingptr_3c_20dianode_3c_20stackinput_20_3e_20_3e',['CountingPtr&lt; DIANode&lt; StackInput &gt; &gt;',['../classtlx_1_1CountingPtr.html',1,'tlx']]],
-  ['countingptr_3c_20file_20_3e',['CountingPtr&lt; File &gt;',['../classtlx_1_1CountingPtr.html',1,'CountingPtr&lt; File &gt;'],['../classtlx_1_1CountingPtr.html',1,'CountingPtr&lt; file &gt;']]],
+  ['countingptr_3c_20file_20_3e',['CountingPtr&lt; file &gt;',['../classtlx_1_1CountingPtr.html',1,'CountingPtr&lt; file &gt;'],['../classtlx_1_1CountingPtr.html',1,'CountingPtr&lt; File &gt;']]],
   ['countingptr_3c_20mixstream_20_3e',['CountingPtr&lt; MixStream &gt;',['../classtlx_1_1CountingPtr.html',1,'tlx']]],
   ['countingptr_3c_20mixstreamdata_20_3e',['CountingPtr&lt; MixStreamData &gt;',['../classtlx_1_1CountingPtr.html',1,'tlx']]],
   ['countingptr_3c_20readstream_20_3e',['CountingPtr&lt; ReadStream &gt;',['../classtlx_1_1CountingPtr.html',1,'tlx']]],

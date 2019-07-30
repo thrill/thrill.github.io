@@ -36,9 +36,11 @@ var classthrill_1_1net_1_1Connection =
     [ "is_loopback_", "classthrill_1_1net_1_1Connection.html#aacce03b15aa572b42cd58c8d63765b16", null ],
     [ "prev_rx_bytes_", "classthrill_1_1net_1_1Connection.html#a8d9343cf64d90942f33ff2d537e84f32", null ],
     [ "prev_tx_bytes_", "classthrill_1_1net_1_1Connection.html#a3e7d95c83f7aa336c291822006b0dc73", null ],
+    [ "rx_active_", "classthrill_1_1net_1_1Connection.html#a85660c2a83d34486321a5239781e196c", null ],
     [ "rx_bytes_", "classthrill_1_1net_1_1Connection.html#abedb4f733de28a4e8e8228e3d7d0bc3a", null ],
     [ "rx_seq_", "classthrill_1_1net_1_1Connection.html#af8812c745d1e706e5761fe3b3ac07159", null ],
     [ "self_verify_", "classthrill_1_1net_1_1Connection.html#aea22ad377284c6c9830497905ddc68e0", null ],
+    [ "tx_active_", "classthrill_1_1net_1_1Connection.html#aee18b637b1cd4038b4155959f926311e", null ],
     [ "tx_bytes_", "classthrill_1_1net_1_1Connection.html#a597a259166090cf9a92740c4b7b423ec", null ],
     [ "tx_seq_", "classthrill_1_1net_1_1Connection.html#a26847a99f640df8210b3d9fc825a35dc", null ]
 ];

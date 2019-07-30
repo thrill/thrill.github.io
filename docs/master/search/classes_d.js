@@ -7,8 +7,8 @@ var searchData=
   ['node',['node',['../structtlx_1_1BTree_1_1node.html',1,'tlx::BTree']]],
   ['node',['Node',['../structtlx_1_1SplayTree_1_1Node.html',1,'tlx::SplayTree']]],
   ['nodeparentpair',['NodeParentPair',['../structexamples_1_1bfs_1_1NodeParentPair.html',1,'examples::bfs']]],
-  ['nooperation',['NoOperation',['../structthrill_1_1common_1_1NoOperation.html',1,'thrill::common']]],
-  ['nooperation_3c_20void_20_3e',['NoOperation&lt; void &gt;',['../structthrill_1_1common_1_1NoOperation_3_01void_01_4.html',1,'thrill::common']]],
+  ['nooperation',['NoOperation',['../classtlx_1_1NoOperation.html',1,'tlx']]],
+  ['nooperation_3c_20void_20_3e',['NoOperation&lt; void &gt;',['../classtlx_1_1NoOperation_3_01void_01_4.html',1,'tlx']]],
   ['norebalancetag',['NoRebalanceTag',['../structthrill_1_1api_1_1NoRebalanceTag.html',1,'thrill::api']]],
   ['numeric_5flimits_3c_20foxxll_3a_3auint_5fpair_3c_20hightype_20_3e_20_3e',['numeric_limits&lt; foxxll::uint_pair&lt; HighType &gt; &gt;',['../classstd_1_1numeric__limits_3_01foxxll_1_1uint__pair_3_01HighType_01_4_01_4.html',1,'std']]],
   ['numeric_5flimits_3c_20thrill_3a_3acommon_3a_3auintpair_3c_20hightype_20_3e_20_3e',['numeric_limits&lt; thrill::common::UIntPair&lt; HighType &gt; &gt;',['../classstd_1_1numeric__limits_3_01thrill_1_1common_1_1UIntPair_3_01HighType_01_4_01_4.html',1,'std']]]

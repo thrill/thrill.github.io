@@ -38,10 +38,11 @@ var searchData=
   ['request_5fwith_5fwaiters_2ecpp',['request_with_waiters.cpp',['../request__with__waiters_8cpp.html',1,'']]],
   ['request_5fwith_5fwaiters_2ehpp',['request_with_waiters.hpp',['../request__with__waiters_8hpp.html',1,'']]],
   ['reservoir_5fsampling_2ehpp',['reservoir_sampling.hpp',['../reservoir__sampling_8hpp.html',1,'']]],
-  ['ring_5fbuffer_2ehpp',['ring_buffer.hpp',['../extlib_2tlx_2tlx_2container_2ring__buffer_8hpp.html',1,'']]],
   ['ring_5fbuffer_2ehpp',['ring_buffer.hpp',['../thrill_2common_2ring__buffer_8hpp.html',1,'']]],
+  ['ring_5fbuffer_2ehpp',['ring_buffer.hpp',['../extlib_2tlx_2tlx_2container_2ring__buffer_8hpp.html',1,'']]],
   ['rl_5fbwt_2ecpp',['rl_bwt.cpp',['../rl__bwt_8cpp.html',1,'']]],
   ['rol_2ehpp',['rol.hpp',['../rol_8hpp.html',1,'']]],
   ['ror_2ehpp',['ror.hpp',['../ror_8hpp.html',1,'']]],
-  ['round_5fto_5fpower_5fof_5ftwo_2ehpp',['round_to_power_of_two.hpp',['../round__to__power__of__two_8hpp.html',1,'']]]
+  ['round_5fto_5fpower_5fof_5ftwo_2ehpp',['round_to_power_of_two.hpp',['../round__to__power__of__two_8hpp.html',1,'']]],
+  ['round_5fup_2ehpp',['round_up.hpp',['../round__up_8hpp.html',1,'']]]
 ];

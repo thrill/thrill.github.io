@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('join__generic_8hpp_source.html','');})
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Container&gt;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group__tlx__string.html#ga4a96227b0edd6c65800124ba1dac82cf">   62</a></span>&#160;<a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> <a class="code" href="group__tlx__string.html#gad383d32ace209b51abe936d256d0bb1e">join</a>(<span class="keywordtype">char</span> glue, <span class="keyword">const</span> Container&amp; parts) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__tlx__string.html#gad383d32ace209b51abe936d256d0bb1e">join</a>(glue, parts.begin(), parts.end());</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__tlx__string.html#gad383d32ace209b51abe936d256d0bb1e">join</a>(glue, std::begin(parts), std::end(parts));</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">/*!</span></div>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('join__generic_8hpp_source.html','');})
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Container&gt;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group__tlx__string.html#gaffea57c0c1e61aa8c9bc50e1ec2f9fe2">   76</a></span>&#160;<a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> <a class="code" href="group__tlx__string.html#gad383d32ace209b51abe936d256d0bb1e">join</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* glue, <span class="keyword">const</span> Container&amp; parts) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__tlx__string.html#gad383d32ace209b51abe936d256d0bb1e">join</a>(glue, parts.begin(), parts.end());</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__tlx__string.html#gad383d32ace209b51abe936d256d0bb1e">join</a>(glue, std::begin(parts), std::end(parts));</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">/*!</span></div>
@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('join__generic_8hpp_source.html','');})
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Container&gt;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group__tlx__string.html#ga2e35ca12bd4564ba470e3bf4f6a91798">   90</a></span>&#160;<a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a> <a class="code" href="group__tlx__string.html#gad383d32ace209b51abe936d256d0bb1e">join</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; glue, <span class="keyword">const</span> Container&amp; parts) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__tlx__string.html#gad383d32ace209b51abe936d256d0bb1e">join</a>(glue, parts.begin(), parts.end());</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__tlx__string.html#gad383d32ace209b51abe936d256d0bb1e">join</a>(glue, std::begin(parts), std::end(parts));</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">//! \}</span></div>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('join__generic_8hpp_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e504eb2edb57c81d5553bb9938943c32.html">string</a></li><li class="navelem"><a class="el" href="join__generic_8hpp.html">join_generic.hpp</a></li>
-    <li class="footer">Generated on Wed Apr 10 2019 11:10:28 for Thrill by
+    <li class="footer">Generated on Tue Jul 30 2019 13:52:30 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

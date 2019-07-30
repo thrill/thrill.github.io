@@ -16,6 +16,7 @@ var searchData=
   ['multisequence_5fselection_5fdetail',['multisequence_selection_detail',['../namespacetlx_1_1multisequence__selection__detail.html',1,'tlx']]],
   ['multiway_5fmerge_5fdetail',['multiway_merge_detail',['../namespacetlx_1_1multiway__merge__detail.html',1,'tlx']]],
   ['net',['net',['../namespacethrill_1_1net.html',1,'thrill']]],
+  ['parallel_5fmergesort_5fdetail',['parallel_mergesort_detail',['../namespacetlx_1_1parallel__mergesort__detail.html',1,'tlx']]],
   ['qsort_5flocal',['qsort_local',['../namespacethrill_1_1common_1_1qsort__local.html',1,'thrill::common']]],
   ['radix_5fheap_5fdetail',['radix_heap_detail',['../namespacetlx_1_1radix__heap__detail.html',1,'tlx']]],
   ['serialization_5fcereal',['serialization_cereal',['../namespacethrill_1_1data_1_1serialization__cereal.html',1,'thrill::data']]],

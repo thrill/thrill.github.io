@@ -183,6 +183,7 @@ var searchData=
   ['thrill_5fvfs_5ftemporary_5fdirectory_5fheader',['THRILL_VFS_TEMPORARY_DIRECTORY_HEADER',['../temporary__directory_8hpp.html#afa3780ceceb0065246448ac95b88612f',1,'temporary_directory.hpp']]],
   ['tlx_5fassert_5fequal',['tlx_assert_equal',['../die_2core_8hpp.html#aa96e510b8ec83cfbd1e73234561be9ff',1,'core.hpp']]],
   ['tlx_5fassert_5funequal',['tlx_assert_unequal',['../die_2core_8hpp.html#aece8f3f5e64bb5e611fe6c21f0106dd1',1,'core.hpp']]],
+  ['tlx_5fclassify_5ftree_5fstep',['TLX_CLASSIFY_TREE_STEP',['../sample__sort__tools_8hpp.html#aa18bdb020b2f0e4d334acbe8105b2bbd',1,'TLX_CLASSIFY_TREE_STEP():&#160;sample_sort_tools.hpp'],['../sample__sort__tools_8hpp.html#aa18bdb020b2f0e4d334acbe8105b2bbd',1,'TLX_CLASSIFY_TREE_STEP():&#160;sample_sort_tools.hpp'],['../sample__sort__tools_8hpp.html#aa18bdb020b2f0e4d334acbe8105b2bbd',1,'TLX_CLASSIFY_TREE_STEP():&#160;sample_sort_tools.hpp']]],
   ['tlx_5fdecision',['TLX_DECISION',['../extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html#a02b4aab00fbdc785c7fdcaa29fa51a94',1,'multiway_merge.hpp']]],
   ['tlx_5fdie',['tlx_die',['../die_2core_8hpp.html#a9fb1fdf960df264cc216459dbec9eea8',1,'core.hpp']]],
   ['tlx_5fdie_5fequal',['tlx_die_equal',['../die_2core_8hpp.html#a0d3e703383d8ee82ec46e3b72974b5f4',1,'core.hpp']]],

@@ -6,8 +6,6 @@ var functional_8hpp =
     [ "Identity", "structthrill_1_1common_1_1Identity.html", "structthrill_1_1common_1_1Identity" ],
     [ "maximum", "classthrill_1_1common_1_1maximum.html", "classthrill_1_1common_1_1maximum" ],
     [ "minimum", "classthrill_1_1common_1_1minimum.html", "classthrill_1_1common_1_1minimum" ],
-    [ "NoOperation", "structthrill_1_1common_1_1NoOperation.html", "structthrill_1_1common_1_1NoOperation" ],
-    [ "NoOperation< void >", "structthrill_1_1common_1_1NoOperation_3_01void_01_4.html", "structthrill_1_1common_1_1NoOperation_3_01void_01_4" ],
     [ "VectorConcat", "classthrill_1_1common_1_1VectorConcat.html", "classthrill_1_1common_1_1VectorConcat" ],
     [ "THRILL_COMMON_FUNCTIONAL_HEADER", "functional_8hpp.html#a5e6e71b62dafbe3200d9ed821b8244c5", null ],
     [ "MapVector", "functional_8hpp.html#a76341af55641f958db297db503433084", null ],

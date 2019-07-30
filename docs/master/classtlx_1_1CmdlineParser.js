@@ -73,6 +73,7 @@ var classtlx_1_1CmdlineParser =
     [ "set_author", "classtlx_1_1CmdlineParser.html#a1f0e0ccea403fbb478df8e170e276133", null ],
     [ "set_description", "classtlx_1_1CmdlineParser.html#a9b582ca26190005482986c1ac7f8609f", null ],
     [ "set_verbose_process", "classtlx_1_1CmdlineParser.html#a4ec636355dd759f3742d5d5e5b49e1b2", null ],
+    [ "sort", "classtlx_1_1CmdlineParser.html#a2ab8f08c804a78193e01518eebea356c", null ],
     [ "author_", "classtlx_1_1CmdlineParser.html#a90d2a2533b2434302f3be98438f9f470", null ],
     [ "description_", "classtlx_1_1CmdlineParser.html#ae841a0f62292d2d5f1a1747b0ef8f9fc", null ],
     [ "line_wrap_", "classtlx_1_1CmdlineParser.html#a573e1de8565db8166a5c220075bf1049", null ],

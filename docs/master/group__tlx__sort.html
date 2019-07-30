@@ -124,8 +124,25 @@ $(document).ready(function(){initNavTree('group__tlx__sort.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:namespacetlx_1_1parallel__mergesort__detail"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx_1_1parallel__mergesort__detail.html">tlx::parallel_mergesort_detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacetlx_1_1sort__strings__detail"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx_1_1sort__strings__detail.html">tlx::sort_strings_detail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Parallel Sorting Algorithms</h2></td></tr>
+<tr class="memitem:ga81fdf70add19aa5134ecee16dba0925d"><td class="memTemplParams" colspan="2">template&lt;bool Stable, typename RandomAccessIterator , typename Comparator &gt; </td></tr>
+<tr class="memitem:ga81fdf70add19aa5134ecee16dba0925d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga81fdf70add19aa5134ecee16dba0925d">parallel_mergesort_base</a> (RandomAccessIterator begin, RandomAccessIterator end, Comparator comp, size_t num_threads=std::thread::hardware_concurrency(), MultiwayMergeSplittingAlgorithm mwmsa=MWMSA_DEFAULT)</td></tr>
+<tr class="memdesc:ga81fdf70add19aa5134ecee16dba0925d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parallel multiway mergesort main call.  <a href="#ga81fdf70add19aa5134ecee16dba0925d">More...</a><br/></td></tr>
+<tr class="separator:ga81fdf70add19aa5134ecee16dba0925d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga400ae7e170366e84a4bdb9b6ed1592e7"><td class="memTemplParams" colspan="2">template&lt;typename RandomAccessIterator , typename Comparator  = std::less&lt;              typename std::iterator_traits&lt;RandomAccessIterator&gt;::value_type&gt;&gt; </td></tr>
+<tr class="memitem:ga400ae7e170366e84a4bdb9b6ed1592e7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga400ae7e170366e84a4bdb9b6ed1592e7">parallel_mergesort</a> (RandomAccessIterator begin, RandomAccessIterator end, Comparator comp=Comparator(), size_t num_threads=std::thread::hardware_concurrency(), MultiwayMergeSplittingAlgorithm mwmsa=MWMSA_DEFAULT)</td></tr>
+<tr class="memdesc:ga400ae7e170366e84a4bdb9b6ed1592e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parallel multiway mergesort.  <a href="#ga400ae7e170366e84a4bdb9b6ed1592e7">More...</a><br/></td></tr>
+<tr class="separator:ga400ae7e170366e84a4bdb9b6ed1592e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4aa384ccbe79fdd32a7eec193142781a"><td class="memTemplParams" colspan="2">template&lt;typename RandomAccessIterator , typename Comparator  = std::less&lt;              typename std::iterator_traits&lt;RandomAccessIterator&gt;::value_type&gt;&gt; </td></tr>
+<tr class="memitem:ga4aa384ccbe79fdd32a7eec193142781a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga4aa384ccbe79fdd32a7eec193142781a">stable_parallel_mergesort</a> (RandomAccessIterator begin, RandomAccessIterator end, Comparator comp=Comparator(), size_t num_threads=std::thread::hardware_concurrency(), MultiwayMergeSplittingAlgorithm mwmsa=MWMSA_DEFAULT)</td></tr>
+<tr class="memdesc:ga4aa384ccbe79fdd32a7eec193142781a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stable parallel multiway mergesort.  <a href="#ga4aa384ccbe79fdd32a7eec193142781a">More...</a><br/></td></tr>
+<tr class="separator:ga4aa384ccbe79fdd32a7eec193142781a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 String Sorting Algorithms</h2></td></tr>
@@ -189,10 +206,198 @@ String Sorting Algorithms</h2></td></tr>
 <tr class="memitem:ga3d4425aaa806ea6ce44e09b6b15b4d12"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga3d4425aaa806ea6ce44e09b6b15b4d12">sort_strings_lcp</a> (std::vector&lt; std::string &gt; &amp;strings, uint32_t *lcp, size_t memory=0)</td></tr>
 <tr class="memdesc:ga3d4425aaa806ea6ce44e09b6b15b4d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a vector of std::strings in place.  <a href="#ga3d4425aaa806ea6ce44e09b6b15b4d12">More...</a><br/></td></tr>
 <tr class="separator:ga3d4425aaa806ea6ce44e09b6b15b4d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01d8c1d0d8ebd1260b4b74d81d3e4f4e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga01d8c1d0d8ebd1260b4b74d81d3e4f4e">sort_strings_parallel</a> (unsigned char **strings, size_t size, size_t memory=0)</td></tr>
+<tr class="memdesc:ga01d8c1d0d8ebd1260b4b74d81d3e4f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of strings in parallel represented by C-style uint8_t* in place.  <a href="#ga01d8c1d0d8ebd1260b4b74d81d3e4f4e">More...</a><br/></td></tr>
+<tr class="separator:ga01d8c1d0d8ebd1260b4b74d81d3e4f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9dc6116f75a9ceaf36af593ba9bac288"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga9dc6116f75a9ceaf36af593ba9bac288">sort_strings_parallel</a> (char **strings, size_t size, size_t memory=0)</td></tr>
+<tr class="memdesc:ga9dc6116f75a9ceaf36af593ba9bac288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of strings in parallel represented by C-style char* in place.  <a href="#ga9dc6116f75a9ceaf36af593ba9bac288">More...</a><br/></td></tr>
+<tr class="separator:ga9dc6116f75a9ceaf36af593ba9bac288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga257ebf3fa7b3fc7a301c6ee88d8cd914"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga257ebf3fa7b3fc7a301c6ee88d8cd914">sort_strings_parallel</a> (const unsigned char **strings, size_t size, size_t memory=0)</td></tr>
+<tr class="memdesc:ga257ebf3fa7b3fc7a301c6ee88d8cd914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of strings in parallel represented by C-style uint8_t* in place.  <a href="#ga257ebf3fa7b3fc7a301c6ee88d8cd914">More...</a><br/></td></tr>
+<tr class="separator:ga257ebf3fa7b3fc7a301c6ee88d8cd914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaa842d824076845984fbb47196f6eb3a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#gaaa842d824076845984fbb47196f6eb3a">sort_strings_parallel</a> (const char **strings, size_t size, size_t memory=0)</td></tr>
+<tr class="memdesc:gaaa842d824076845984fbb47196f6eb3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of strings in parallel represented by C-style char* in place.  <a href="#gaaa842d824076845984fbb47196f6eb3a">More...</a><br/></td></tr>
+<tr class="separator:gaaa842d824076845984fbb47196f6eb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8e9d501914aca721c13406c34999f03"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#gaa8e9d501914aca721c13406c34999f03">sort_strings_parallel</a> (std::vector&lt; char * &gt; &amp;strings, size_t memory=0)</td></tr>
+<tr class="memdesc:gaa8e9d501914aca721c13406c34999f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of strings in parallel represented by C-style char* in place.  <a href="#gaa8e9d501914aca721c13406c34999f03">More...</a><br/></td></tr>
+<tr class="separator:gaa8e9d501914aca721c13406c34999f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86b0a544e30ccb7fe137a12e6b64454a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga86b0a544e30ccb7fe137a12e6b64454a">sort_strings_parallel</a> (std::vector&lt; unsigned char * &gt; &amp;strings, size_t memory=0)</td></tr>
+<tr class="memdesc:ga86b0a544e30ccb7fe137a12e6b64454a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of strings in parallel represented by C-style uint8_t* in place.  <a href="#ga86b0a544e30ccb7fe137a12e6b64454a">More...</a><br/></td></tr>
+<tr class="separator:ga86b0a544e30ccb7fe137a12e6b64454a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3af099e9a2411b11fd8f1eefbadabef1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga3af099e9a2411b11fd8f1eefbadabef1">sort_strings_parallel</a> (std::vector&lt; const char * &gt; &amp;strings, size_t memory=0)</td></tr>
+<tr class="memdesc:ga3af099e9a2411b11fd8f1eefbadabef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of strings in parallel represented by C-style char* in place.  <a href="#ga3af099e9a2411b11fd8f1eefbadabef1">More...</a><br/></td></tr>
+<tr class="separator:ga3af099e9a2411b11fd8f1eefbadabef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga976187fa564f53171efd121611b10100"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga976187fa564f53171efd121611b10100">sort_strings_parallel</a> (std::vector&lt; const unsigned char * &gt; &amp;strings, size_t memory=0)</td></tr>
+<tr class="memdesc:ga976187fa564f53171efd121611b10100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of strings in parallel represented by C-style uint8_t* in place.  <a href="#ga976187fa564f53171efd121611b10100">More...</a><br/></td></tr>
+<tr class="separator:ga976187fa564f53171efd121611b10100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e1d512a5f7fa852f4bfd8f3cf0a16dc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga2e1d512a5f7fa852f4bfd8f3cf0a16dc">sort_strings_parallel</a> (std::string *strings, size_t size, size_t memory=0)</td></tr>
+<tr class="memdesc:ga2e1d512a5f7fa852f4bfd8f3cf0a16dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of std::strings in place in parallel.  <a href="#ga2e1d512a5f7fa852f4bfd8f3cf0a16dc">More...</a><br/></td></tr>
+<tr class="separator:ga2e1d512a5f7fa852f4bfd8f3cf0a16dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf103cae75f148a84cec9321975db69cc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#gaf103cae75f148a84cec9321975db69cc">sort_strings_parallel</a> (std::vector&lt; std::string &gt; &amp;strings, size_t memory=0)</td></tr>
+<tr class="memdesc:gaf103cae75f148a84cec9321975db69cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a vector of std::strings in place in parallel.  <a href="#gaf103cae75f148a84cec9321975db69cc">More...</a><br/></td></tr>
+<tr class="separator:gaf103cae75f148a84cec9321975db69cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa2a4a118fe5614e217845fb9203c1faa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#gaa2a4a118fe5614e217845fb9203c1faa">sort_strings_parallel_lcp</a> (unsigned char **strings, size_t size, uint32_t *lcp, size_t memory=0)</td></tr>
+<tr class="memdesc:gaa2a4a118fe5614e217845fb9203c1faa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of strings in parallel represented by C-style uint8_t* in place.  <a href="#gaa2a4a118fe5614e217845fb9203c1faa">More...</a><br/></td></tr>
+<tr class="separator:gaa2a4a118fe5614e217845fb9203c1faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf10a31cd2dc0012c30aee6d9d36d9b67"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#gaf10a31cd2dc0012c30aee6d9d36d9b67">sort_strings_parallel_lcp</a> (char **strings, size_t size, uint32_t *lcp, size_t memory=0)</td></tr>
+<tr class="memdesc:gaf10a31cd2dc0012c30aee6d9d36d9b67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of strings in parallel represented by C-style char* in place.  <a href="#gaf10a31cd2dc0012c30aee6d9d36d9b67">More...</a><br/></td></tr>
+<tr class="separator:gaf10a31cd2dc0012c30aee6d9d36d9b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f6fdf8dca03ad872def0f4b83c5df22"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga8f6fdf8dca03ad872def0f4b83c5df22">sort_strings_parallel_lcp</a> (const unsigned char **strings, size_t size, uint32_t *lcp, size_t memory=0)</td></tr>
+<tr class="memdesc:ga8f6fdf8dca03ad872def0f4b83c5df22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of strings in parallel represented by C-style uint8_t* in place.  <a href="#ga8f6fdf8dca03ad872def0f4b83c5df22">More...</a><br/></td></tr>
+<tr class="separator:ga8f6fdf8dca03ad872def0f4b83c5df22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01316949c178bf30efc6e0f299a1042d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga01316949c178bf30efc6e0f299a1042d">sort_strings_parallel_lcp</a> (const char **strings, size_t size, uint32_t *lcp, size_t memory=0)</td></tr>
+<tr class="memdesc:ga01316949c178bf30efc6e0f299a1042d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of strings in parallel represented by C-style char* in place.  <a href="#ga01316949c178bf30efc6e0f299a1042d">More...</a><br/></td></tr>
+<tr class="separator:ga01316949c178bf30efc6e0f299a1042d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11a3494abe397873ccbb17519869d996"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga11a3494abe397873ccbb17519869d996">sort_strings_parallel_lcp</a> (std::vector&lt; char * &gt; &amp;strings, uint32_t *lcp, size_t memory=0)</td></tr>
+<tr class="memdesc:ga11a3494abe397873ccbb17519869d996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of strings in parallel represented by C-style char* in place.  <a href="#ga11a3494abe397873ccbb17519869d996">More...</a><br/></td></tr>
+<tr class="separator:ga11a3494abe397873ccbb17519869d996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4bec949d2b430635c108557b2641d598"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga4bec949d2b430635c108557b2641d598">sort_strings_parallel_lcp</a> (std::vector&lt; unsigned char * &gt; &amp;strings, uint32_t *lcp, size_t memory=0)</td></tr>
+<tr class="memdesc:ga4bec949d2b430635c108557b2641d598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of strings in parallel represented by C-style uint8_t* in place.  <a href="#ga4bec949d2b430635c108557b2641d598">More...</a><br/></td></tr>
+<tr class="separator:ga4bec949d2b430635c108557b2641d598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71636f19f875a1ed1c8ec93616fc2786"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga71636f19f875a1ed1c8ec93616fc2786">sort_strings_parallel_lcp</a> (std::vector&lt; const char * &gt; &amp;strings, uint32_t *lcp, size_t memory=0)</td></tr>
+<tr class="memdesc:ga71636f19f875a1ed1c8ec93616fc2786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of strings in parallel represented by C-style char* in place.  <a href="#ga71636f19f875a1ed1c8ec93616fc2786">More...</a><br/></td></tr>
+<tr class="separator:ga71636f19f875a1ed1c8ec93616fc2786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0d3b304937c8bb497c4bb239fa52d94"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#gac0d3b304937c8bb497c4bb239fa52d94">sort_strings_parallel_lcp</a> (std::vector&lt; const unsigned char * &gt; &amp;strings, uint32_t *lcp, size_t memory=0)</td></tr>
+<tr class="memdesc:gac0d3b304937c8bb497c4bb239fa52d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of strings in parallel represented by C-style uint8_t* in place.  <a href="#gac0d3b304937c8bb497c4bb239fa52d94">More...</a><br/></td></tr>
+<tr class="separator:gac0d3b304937c8bb497c4bb239fa52d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab49ea4abd1127021cdeba45947b193a2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#gab49ea4abd1127021cdeba45947b193a2">sort_strings_parallel_lcp</a> (std::string *strings, size_t size, uint32_t *lcp, size_t memory=0)</td></tr>
+<tr class="memdesc:gab49ea4abd1127021cdeba45947b193a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a set of std::strings in place in parallel.  <a href="#gab49ea4abd1127021cdeba45947b193a2">More...</a><br/></td></tr>
+<tr class="separator:gab49ea4abd1127021cdeba45947b193a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e5a45bfc49abbacd812407d604c65c7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga0e5a45bfc49abbacd812407d604c65c7">sort_strings_parallel_lcp</a> (std::vector&lt; std::string &gt; &amp;strings, uint32_t *lcp, size_t memory=0)</td></tr>
+<tr class="memdesc:ga0e5a45bfc49abbacd812407d604c65c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort a vector of std::strings in place in parallel.  <a href="#ga0e5a45bfc49abbacd812407d604c65c7">More...</a><br/></td></tr>
+<tr class="separator:ga0e5a45bfc49abbacd812407d604c65c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Specialized Sorting Algorithms </p>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga400ae7e170366e84a4bdb9b6ed1592e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tlx::parallel_mergesort </td>
+          <td>(</td>
+          <td class="paramtype">RandomAccessIterator&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIterator&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Comparator&#160;</td>
+          <td class="paramname"><em>comp</em> = <code>Comparator()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_threads</em> = <code>std::thread::hardware_concurrency()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MultiwayMergeSplittingAlgorithm&#160;</td>
+          <td class="paramname"><em>mwmsa</em> = <code>MWMSA_DEFAULT</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parallel multiway mergesort. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin</td><td>Begin iterator of sequence. </td></tr>
+    <tr><td class="paramname">end</td><td>End iterator of sequence. </td></tr>
+    <tr><td class="paramname">comp</td><td>Comparator. </td></tr>
+    <tr><td class="paramname">num_threads</td><td>Number of threads to use. </td></tr>
+    <tr><td class="paramname">mwmsa</td><td>MultiwayMergeSplittingAlgorithm to use. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="parallel__mergesort_8hpp_source.html#l00360">360</a> of file <a class="el" href="parallel__mergesort_8hpp_source.html">parallel_mergesort.hpp</a>.</p>
+
+<p>References <a class="el" href="parallel__mergesort_8hpp_source.html#l00279">tlx::parallel_mergesort_base()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga81fdf70add19aa5134ecee16dba0925d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tlx::parallel_mergesort_base </td>
+          <td>(</td>
+          <td class="paramtype">RandomAccessIterator&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIterator&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Comparator&#160;</td>
+          <td class="paramname"><em>comp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_threads</em> = <code>std::thread::hardware_concurrency()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MultiwayMergeSplittingAlgorithm&#160;</td>
+          <td class="paramname"><em>mwmsa</em> = <code>MWMSA_DEFAULT</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parallel multiway mergesort main call. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin</td><td>Begin iterator of sequence. </td></tr>
+    <tr><td class="paramname">end</td><td>End iterator of sequence. </td></tr>
+    <tr><td class="paramname">comp</td><td>Comparator. </td></tr>
+    <tr><td class="paramname">num_threads</td><td>Number of threads to use. </td></tr>
+    <tr><td class="paramname">mwmsa</td><td>MultiwayMergeSplittingAlgorithm to use. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Stable</td><td>Stable sorting. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="parallel__mergesort_8hpp_source.html#l00279">279</a> of file <a class="el" href="parallel__mergesort_8hpp_source.html">parallel_mergesort.hpp</a>.</p>
+
+<p>References <a class="el" href="multiway__merge__splitting_8hpp_source.html#l00036">tlx::MWMSA_SAMPLING</a>, <a class="el" href="parallel__multiway__merge_8cpp_source.html#l00035">tlx::parallel_multiway_merge_oversampling</a>, and <a class="el" href="split_8cpp_source.html#l00020">tlx::split()</a>.</p>
+
+<p>Referenced by <a class="el" href="parallel__mergesort_8hpp_source.html#l00360">tlx::parallel_mergesort()</a>, and <a class="el" href="parallel__mergesort_8hpp_source.html#l00383">tlx::stable_parallel_mergesort()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ga8e7fda09de57c231e74a748fe3dfa61c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -234,11 +439,11 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of strings represented by C-style uint8_t* in place. </p>
 <p>If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00041">41</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00040">40</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
 <p>References <a class="el" href="extlib_2tlx_2tlx_2sort_2strings_2radix__sort_8hpp_source.html#l00502">tlx::sort_strings_detail::radixsort_CE3()</a>.</p>
 
-<p>Referenced by <a class="el" href="strings_8hpp_source.html#l00056">tlx::sort_strings()</a>.</p>
+<p>Referenced by <a class="el" href="strings_8hpp_source.html#l00055">tlx::sort_strings()</a>.</p>
 
 </div>
 </div>
@@ -283,9 +488,9 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of strings represented by C-style char* in place. </p>
 <p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00056">56</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00055">55</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
-<p>References <a class="el" href="strings_8hpp_source.html#l00041">tlx::sort_strings()</a>.</p>
+<p>References <a class="el" href="strings_8hpp_source.html#l00040">tlx::sort_strings()</a>.</p>
 
 </div>
 </div>
@@ -330,7 +535,7 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of strings represented by C-style uint8_t* in place. </p>
 <p>If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00068">68</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00067">67</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
 <p>References <a class="el" href="extlib_2tlx_2tlx_2sort_2strings_2radix__sort_8hpp_source.html#l00502">tlx::sort_strings_detail::radixsort_CE3()</a>.</p>
 
@@ -377,9 +582,9 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of strings represented by C-style char* in place. </p>
 <p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00084">84</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00083">83</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
-<p>References <a class="el" href="strings_8hpp_source.html#l00041">tlx::sort_strings()</a>.</p>
+<p>References <a class="el" href="strings_8hpp_source.html#l00040">tlx::sort_strings()</a>.</p>
 
 </div>
 </div>
@@ -418,9 +623,9 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of strings represented by C-style char* in place. </p>
 <p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00099">99</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00098">98</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
-<p>References <a class="el" href="strings_8hpp_source.html#l00041">tlx::sort_strings()</a>.</p>
+<p>References <a class="el" href="strings_8hpp_source.html#l00040">tlx::sort_strings()</a>.</p>
 
 </div>
 </div>
@@ -459,9 +664,9 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of strings represented by C-style uint8_t* in place. </p>
 <p>If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00110">110</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00109">109</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
-<p>References <a class="el" href="strings_8hpp_source.html#l00041">tlx::sort_strings()</a>.</p>
+<p>References <a class="el" href="strings_8hpp_source.html#l00040">tlx::sort_strings()</a>.</p>
 
 </div>
 </div>
@@ -500,9 +705,9 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of strings represented by C-style char* in place. </p>
 <p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00122">122</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00121">121</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
-<p>References <a class="el" href="strings_8hpp_source.html#l00041">tlx::sort_strings()</a>.</p>
+<p>References <a class="el" href="strings_8hpp_source.html#l00040">tlx::sort_strings()</a>.</p>
 
 </div>
 </div>
@@ -541,9 +746,9 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of strings represented by C-style uint8_t* in place. </p>
 <p>If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00133">133</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00132">132</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
-<p>References <a class="el" href="strings_8hpp_source.html#l00041">tlx::sort_strings()</a>.</p>
+<p>References <a class="el" href="strings_8hpp_source.html#l00040">tlx::sort_strings()</a>.</p>
 
 </div>
 </div>
@@ -588,7 +793,7 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of std::strings in place. </p>
 <p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00148">148</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00147">147</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
 <p>References <a class="el" href="extlib_2tlx_2tlx_2sort_2strings_2radix__sort_8hpp_source.html#l00502">tlx::sort_strings_detail::radixsort_CE3()</a>.</p>
 
@@ -629,9 +834,9 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a vector of std::strings in place. </p>
 <p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00163">163</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00162">162</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
-<p>References <a class="el" href="strings_8hpp_source.html#l00041">tlx::sort_strings()</a>.</p>
+<p>References <a class="el" href="strings_8hpp_source.html#l00040">tlx::sort_strings()</a>.</p>
 
 </div>
 </div>
@@ -682,11 +887,11 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of strings represented by C-style uint8_t* in place. </p>
 <p>If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00178">178</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00177">177</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
 <p>References <a class="el" href="extlib_2tlx_2tlx_2sort_2strings_2radix__sort_8hpp_source.html#l00502">tlx::sort_strings_detail::radixsort_CE3()</a>.</p>
 
-<p>Referenced by <a class="el" href="strings_8hpp_source.html#l00195">tlx::sort_strings_lcp()</a>.</p>
+<p>Referenced by <a class="el" href="strings_8hpp_source.html#l00194">tlx::sort_strings_lcp()</a>.</p>
 
 </div>
 </div>
@@ -737,9 +942,9 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of strings represented by C-style char* in place. </p>
 <p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00195">195</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00194">194</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
-<p>References <a class="el" href="strings_8hpp_source.html#l00178">tlx::sort_strings_lcp()</a>.</p>
+<p>References <a class="el" href="strings_8hpp_source.html#l00177">tlx::sort_strings_lcp()</a>.</p>
 
 </div>
 </div>
@@ -790,7 +995,7 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of strings represented by C-style uint8_t* in place. </p>
 <p>If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00208">208</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00207">207</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
 <p>References <a class="el" href="extlib_2tlx_2tlx_2sort_2strings_2radix__sort_8hpp_source.html#l00502">tlx::sort_strings_detail::radixsort_CE3()</a>.</p>
 
@@ -843,9 +1048,9 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of strings represented by C-style char* in place. </p>
 <p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00225">225</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00224">224</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
-<p>References <a class="el" href="strings_8hpp_source.html#l00178">tlx::sort_strings_lcp()</a>.</p>
+<p>References <a class="el" href="strings_8hpp_source.html#l00177">tlx::sort_strings_lcp()</a>.</p>
 
 </div>
 </div>
@@ -890,9 +1095,9 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of strings represented by C-style char* in place. </p>
 <p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00241">241</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00240">240</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
-<p>References <a class="el" href="strings_8hpp_source.html#l00178">tlx::sort_strings_lcp()</a>.</p>
+<p>References <a class="el" href="strings_8hpp_source.html#l00177">tlx::sort_strings_lcp()</a>.</p>
 
 </div>
 </div>
@@ -937,9 +1142,9 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of strings represented by C-style uint8_t* in place. </p>
 <p>If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00253">253</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00252">252</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
-<p>References <a class="el" href="strings_8hpp_source.html#l00178">tlx::sort_strings_lcp()</a>.</p>
+<p>References <a class="el" href="strings_8hpp_source.html#l00177">tlx::sort_strings_lcp()</a>.</p>
 
 </div>
 </div>
@@ -984,9 +1189,9 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of strings represented by C-style char* in place. </p>
 <p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00266">266</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00265">265</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
-<p>References <a class="el" href="strings_8hpp_source.html#l00178">tlx::sort_strings_lcp()</a>.</p>
+<p>References <a class="el" href="strings_8hpp_source.html#l00177">tlx::sort_strings_lcp()</a>.</p>
 
 </div>
 </div>
@@ -1031,9 +1236,9 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of strings represented by C-style uint8_t* in place. </p>
 <p>If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00278">278</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00277">277</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
-<p>References <a class="el" href="strings_8hpp_source.html#l00178">tlx::sort_strings_lcp()</a>.</p>
+<p>References <a class="el" href="strings_8hpp_source.html#l00177">tlx::sort_strings_lcp()</a>.</p>
 
 </div>
 </div>
@@ -1084,7 +1289,7 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a set of std::strings in place. </p>
 <p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00293">293</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00292">292</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
 <p>References <a class="el" href="extlib_2tlx_2tlx_2sort_2strings_2radix__sort_8hpp_source.html#l00502">tlx::sort_strings_detail::radixsort_CE3()</a>.</p>
 
@@ -1131,9 +1336,1013 @@ String Sorting Algorithms</h2></td></tr>
 <p>Sort a vector of std::strings in place. </p>
 <p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! If the memory limit is non zero, possibly slower algorithms will be selected to stay within the memory limit. </p>
 
-<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00310">310</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
+<p>Definition at line <a class="el" href="strings_8hpp_source.html#l00309">309</a> of file <a class="el" href="strings_8hpp_source.html">strings.hpp</a>.</p>
 
-<p>References <a class="el" href="strings_8hpp_source.html#l00178">tlx::sort_strings_lcp()</a>.</p>
+<p>References <a class="el" href="strings_8hpp_source.html#l00177">tlx::sort_strings_lcp()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga01d8c1d0d8ebd1260b4b74d81d3e4f4e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char **&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of strings in parallel represented by C-style uint8_t* in place. </p>
+<p>The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00037">37</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="parallel__sample__sort_8hpp_source.html#l01510">tlx::sort_strings_detail::parallel_sample_sort()</a>.</p>
+
+<p>Referenced by <a class="el" href="strings__parallel_8hpp_source.html#l00052">tlx::sort_strings_parallel()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga9dc6116f75a9ceaf36af593ba9bac288"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of strings in parallel represented by C-style char* in place. </p>
+<p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00052">52</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="strings__parallel_8hpp_source.html#l00037">tlx::sort_strings_parallel()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga257ebf3fa7b3fc7a301c6ee88d8cd914"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char **&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of strings in parallel represented by C-style uint8_t* in place. </p>
+<p>The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00063">63</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="parallel__sample__sort_8hpp_source.html#l01510">tlx::sort_strings_detail::parallel_sample_sort()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaaa842d824076845984fbb47196f6eb3a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel </td>
+          <td>(</td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of strings in parallel represented by C-style char* in place. </p>
+<p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00078">78</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="strings__parallel_8hpp_source.html#l00037">tlx::sort_strings_parallel()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa8e9d501914aca721c13406c34999f03"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; char * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of strings in parallel represented by C-style char* in place. </p>
+<p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00093">93</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="strings__parallel_8hpp_source.html#l00037">tlx::sort_strings_parallel()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga86b0a544e30ccb7fe137a12e6b64454a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; unsigned char * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of strings in parallel represented by C-style uint8_t* in place. </p>
+<p>The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00103">103</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="strings__parallel_8hpp_source.html#l00037">tlx::sort_strings_parallel()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3af099e9a2411b11fd8f1eefbadabef1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; const char * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of strings in parallel represented by C-style char* in place. </p>
+<p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00115">115</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="strings__parallel_8hpp_source.html#l00037">tlx::sort_strings_parallel()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga976187fa564f53171efd121611b10100"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; const unsigned char * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of strings in parallel represented by C-style uint8_t* in place. </p>
+<p>The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00126">126</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="strings__parallel_8hpp_source.html#l00037">tlx::sort_strings_parallel()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga2e1d512a5f7fa852f4bfd8f3cf0a16dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel </td>
+          <td>(</td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of std::strings in place in parallel. </p>
+<p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00140">140</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="parallel__sample__sort_8hpp_source.html#l01510">tlx::sort_strings_detail::parallel_sample_sort()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf103cae75f148a84cec9321975db69cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a vector of std::strings in place in parallel. </p>
+<p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00155">155</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="strings__parallel_8hpp_source.html#l00037">tlx::sort_strings_parallel()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa2a4a118fe5614e217845fb9203c1faa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel_lcp </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char **&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>lcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of strings in parallel represented by C-style uint8_t* in place. </p>
+<p>The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00170">170</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="parallel__sample__sort_8hpp_source.html#l01510">tlx::sort_strings_detail::parallel_sample_sort()</a>.</p>
+
+<p>Referenced by <a class="el" href="strings__parallel_8hpp_source.html#l00186">tlx::sort_strings_parallel_lcp()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf10a31cd2dc0012c30aee6d9d36d9b67"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel_lcp </td>
+          <td>(</td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>lcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of strings in parallel represented by C-style char* in place. </p>
+<p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00186">186</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="strings__parallel_8hpp_source.html#l00170">tlx::sort_strings_parallel_lcp()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga8f6fdf8dca03ad872def0f4b83c5df22"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel_lcp </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char **&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>lcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of strings in parallel represented by C-style uint8_t* in place. </p>
+<p>The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00198">198</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="parallel__sample__sort_8hpp_source.html#l01510">tlx::sort_strings_detail::parallel_sample_sort()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga01316949c178bf30efc6e0f299a1042d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel_lcp </td>
+          <td>(</td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>lcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of strings in parallel represented by C-style char* in place. </p>
+<p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00214">214</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="strings__parallel_8hpp_source.html#l00170">tlx::sort_strings_parallel_lcp()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga11a3494abe397873ccbb17519869d996"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel_lcp </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; char * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>lcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of strings in parallel represented by C-style char* in place. </p>
+<p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00229">229</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="strings__parallel_8hpp_source.html#l00170">tlx::sort_strings_parallel_lcp()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4bec949d2b430635c108557b2641d598"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel_lcp </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; unsigned char * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>lcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of strings in parallel represented by C-style uint8_t* in place. </p>
+<p>The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00241">241</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="strings__parallel_8hpp_source.html#l00170">tlx::sort_strings_parallel_lcp()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga71636f19f875a1ed1c8ec93616fc2786"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel_lcp </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; const char * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>lcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of strings in parallel represented by C-style char* in place. </p>
+<p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00254">254</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="strings__parallel_8hpp_source.html#l00170">tlx::sort_strings_parallel_lcp()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gac0d3b304937c8bb497c4bb239fa52d94"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel_lcp </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; const unsigned char * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>lcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of strings in parallel represented by C-style uint8_t* in place. </p>
+<p>The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00266">266</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="strings__parallel_8hpp_source.html#l00170">tlx::sort_strings_parallel_lcp()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab49ea4abd1127021cdeba45947b193a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel_lcp </td>
+          <td>(</td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>lcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a set of std::strings in place in parallel. </p>
+<p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00281">281</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="parallel__sample__sort_8hpp_source.html#l01510">tlx::sort_strings_detail::parallel_sample_sort()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0e5a45bfc49abbacd812407d604c65c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::sort_strings_parallel_lcp </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>strings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>lcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>memory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort a vector of std::strings in place in parallel. </p>
+<p>The strings are sorted as <em>unsigned</em> 8-bit characters, not signed characters! The memory limit is currently not used. </p>
+
+<p>Definition at line <a class="el" href="strings__parallel_8hpp_source.html#l00297">297</a> of file <a class="el" href="strings__parallel_8hpp_source.html">strings_parallel.hpp</a>.</p>
+
+<p>References <a class="el" href="strings__parallel_8hpp_source.html#l00170">tlx::sort_strings_parallel_lcp()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga4aa384ccbe79fdd32a7eec193142781a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tlx::stable_parallel_mergesort </td>
+          <td>(</td>
+          <td class="paramtype">RandomAccessIterator&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RandomAccessIterator&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Comparator&#160;</td>
+          <td class="paramname"><em>comp</em> = <code>Comparator()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_threads</em> = <code>std::thread::hardware_concurrency()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MultiwayMergeSplittingAlgorithm&#160;</td>
+          <td class="paramname"><em>mwmsa</em> = <code>MWMSA_DEFAULT</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stable parallel multiway mergesort. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">begin</td><td>Begin iterator of sequence. </td></tr>
+    <tr><td class="paramname">end</td><td>End iterator of sequence. </td></tr>
+    <tr><td class="paramname">comp</td><td>Comparator. </td></tr>
+    <tr><td class="paramname">num_threads</td><td>Number of threads to use. </td></tr>
+    <tr><td class="paramname">mwmsa</td><td>MultiwayMergeSplittingAlgorithm to use. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="parallel__mergesort_8hpp_source.html#l00383">383</a> of file <a class="el" href="parallel__mergesort_8hpp_source.html">parallel_mergesort.hpp</a>.</p>
+
+<p>References <a class="el" href="parallel__mergesort_8hpp_source.html#l00279">tlx::parallel_mergesort_base()</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +2351,7 @@ String Sorting Algorithms</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 10 2019 11:10:31 for Thrill by
+    <li class="footer">Generated on Tue Jul 30 2019 13:52:33 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

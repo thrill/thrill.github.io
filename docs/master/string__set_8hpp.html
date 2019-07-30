@@ -115,7 +115,8 @@ $(document).ready(function(){initNavTree('string__set_8hpp.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">string_set.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -128,12 +129,13 @@ $(document).ready(function(){initNavTree('string__set_8hpp.html','');});
 <code>#include &lt;vector&gt;</code><br/>
 <code>#include &lt;<a class="el" href="logger_2core_8hpp_source.html">tlx/logger/core.hpp</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="bswap_8hpp_source.html">tlx/math/bswap.hpp</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="enable__if_8hpp_source.html">tlx/meta/enable_if.hpp</a>&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for string_set.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__set_8hpp__incl.svg" width="699" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="string__set_8hpp__incl.svg" width="860" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -141,7 +143,7 @@ $(document).ready(function(){initNavTree('string__set_8hpp.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__set_8hpp__dep__incl.svg" width="282" height="582"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="string__set_8hpp__dep__incl.svg" width="511" height="608"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -198,6 +200,20 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aeca5156de1a7513cc3ae5b19d5aa2d5f"><td class="memItemLeft" align="right" valign="top">typedef GenericCharStringSet<br class="typebreak"/>
 &lt; unsigned char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx_1_1sort__strings__detail.html#aeca5156de1a7513cc3ae5b19d5aa2d5f">UCharStringSet</a></td></tr>
 <tr class="separator:aeca5156de1a7513cc3ae5b19d5aa2d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ae923fa210a7553d83e987a37805f0d3f"><td class="memTemplParams" colspan="2">template&lt;typename Type , typename StringSet &gt; </td></tr>
+<tr class="memitem:ae923fa210a7553d83e987a37805f0d3f"><td class="memTemplItemLeft" align="right" valign="top">enable_if&lt; sizeof(Type)==4, <br class="typebreak"/>
+uint32_t &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetlx_1_1sort__strings__detail.html#ae923fa210a7553d83e987a37805f0d3f">get_key</a> (const StringSet &amp;strset, const typename StringSet::String &amp;s, size_t depth)</td></tr>
+<tr class="separator:ae923fa210a7553d83e987a37805f0d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42abd27941810b9e8cc9a32efee453fd"><td class="memTemplParams" colspan="2">template&lt;typename Type , typename StringSet &gt; </td></tr>
+<tr class="memitem:a42abd27941810b9e8cc9a32efee453fd"><td class="memTemplItemLeft" align="right" valign="top">enable_if&lt; sizeof(Type)==8, <br class="typebreak"/>
+uint64_t &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetlx_1_1sort__strings__detail.html#a42abd27941810b9e8cc9a32efee453fd">get_key</a> (const StringSet &amp;strset, const typename StringSet::String &amp;s, size_t depth)</td></tr>
+<tr class="separator:a42abd27941810b9e8cc9a32efee453fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a36ea9dd0f8f96d33a44e89c8f0eba"><td class="memTemplParams" colspan="2">template&lt;typename Type , typename StringSet &gt; </td></tr>
+<tr class="memitem:ac6a36ea9dd0f8f96d33a44e89c8f0eba"><td class="memTemplItemLeft" align="right" valign="top">Type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetlx_1_1sort__strings__detail.html#ac6a36ea9dd0f8f96d33a44e89c8f0eba">get_key_at</a> (const StringSet &amp;strset, size_t idx, size_t depth)</td></tr>
+<tr class="separator:ac6a36ea9dd0f8f96d33a44e89c8f0eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -205,7 +221,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="dir_12608fa34d4defb0bdb04f2e95c7c699.html">sort</a></li><li class="navelem"><a class="el" href="dir_6ca6acbfebcb640ace7fde1d044f50f0.html">strings</a></li><li class="navelem"><a class="el" href="string__set_8hpp.html">string_set.hpp</a></li>
-    <li class="footer">Generated on Wed Apr 10 2019 11:10:30 for Thrill by
+    <li class="footer">Generated on Tue Jul 30 2019 13:52:32 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

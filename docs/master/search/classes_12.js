@@ -2,8 +2,8 @@ var searchData=
 [
   ['tabulationhashing',['TabulationHashing',['../classthrill_1_1common_1_1TabulationHashing.html',1,'thrill::common']]],
   ['temporarydirectory',['TemporaryDirectory',['../classthrill_1_1vfs_1_1TemporaryDirectory.html',1,'thrill::vfs']]],
-  ['threadbarrierlocking',['ThreadBarrierLocking',['../classthrill_1_1common_1_1ThreadBarrierLocking.html',1,'thrill::common']]],
-  ['threadbarrierspinning',['ThreadBarrierSpinning',['../classthrill_1_1common_1_1ThreadBarrierSpinning.html',1,'thrill::common']]],
+  ['threadbarriermutex',['ThreadBarrierMutex',['../classtlx_1_1ThreadBarrierMutex.html',1,'tlx']]],
+  ['threadbarrierspin',['ThreadBarrierSpin',['../classtlx_1_1ThreadBarrierSpin.html',1,'tlx']]],
   ['threadpool',['ThreadPool',['../classtlx_1_1ThreadPool.html',1,'tlx']]],
   ['thrillinputarchive',['ThrillInputArchive',['../classthrill_1_1data_1_1serialization__cereal_1_1ThrillInputArchive.html',1,'thrill::data::serialization_cereal']]],
   ['thrilloutputarchive',['ThrillOutputArchive',['../classthrill_1_1data_1_1serialization__cereal_1_1ThrillOutputArchive.html',1,'thrill::data::serialization_cereal']]],

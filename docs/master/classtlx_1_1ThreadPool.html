@@ -179,6 +179,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac0197b1301f4bec0f2421cfe41e9435a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1ThreadPool.html#ac0197b1301f4bec0f2421cfe41e9435a">enqueue</a> (<a class="el" href="classtlx_1_1ThreadPool.html#a2d861499325cc7e7130fd05e6fbae2f9">Job</a> &amp;&amp;job)</td></tr>
 <tr class="memdesc:ac0197b1301f4bec0f2421cfe41e9435a"><td class="mdescLeft">&#160;</td><td class="mdescRight">enqueue a Job, the caller must pass in all context using captures.  <a href="#ac0197b1301f4bec0f2421cfe41e9435a">More...</a><br/></td></tr>
 <tr class="separator:ac0197b1301f4bec0f2421cfe41e9435a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6604881aa1b3d144c0281d93c0754fb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1ThreadPool.html#a6604881aa1b3d144c0281d93c0754fb0">has_idle</a> () const </td></tr>
+<tr class="memdesc:a6604881aa1b3d144c0281d93c0754fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if any thread is idle (= waiting for jobs)  <a href="#a6604881aa1b3d144c0281d93c0754fb0">More...</a><br/></td></tr>
+<tr class="separator:a6604881aa1b3d144c0281d93c0754fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6cbb0b7c86232363d191b804fc553f8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1ThreadPool.html#ad6cbb0b7c86232363d191b804fc553f8">idle</a> () const </td></tr>
+<tr class="memdesc:ad6cbb0b7c86232363d191b804fc553f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">return number of idle threads in pool  <a href="#ad6cbb0b7c86232363d191b804fc553f8">More...</a><br/></td></tr>
+<tr class="separator:ad6cbb0b7c86232363d191b804fc553f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a07bc90245a99944cfe79f9d282bc0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1ThreadPool.html#a9a07bc90245a99944cfe79f9d282bc0d">loop_until_empty</a> ()</td></tr>
 <tr class="separator:a9a07bc90245a99944cfe79f9d282bc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0957729c2ffe0e4d65247fbd1880f3ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1ThreadPool.html#a0957729c2ffe0e4d65247fbd1880f3ad">loop_until_terminate</a> ()</td></tr>
@@ -192,9 +198,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aac782da1f912bceb5d8ad00c8dc892ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74a45d2648335936561898c390281a6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1ThreadPool.html#a74a45d2648335936561898c390281a6a">terminate</a> ()</td></tr>
 <tr class="separator:a74a45d2648335936561898c390281a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f985327d805ba29b03e347335d611d2"><td class="memItemLeft" align="right" valign="top">std::thread &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1ThreadPool.html#a4f985327d805ba29b03e347335d611d2">thread</a> (size_t i)</td></tr>
-<tr class="memdesc:a4f985327d805ba29b03e347335d611d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return thread handle to thread i.  <a href="#a4f985327d805ba29b03e347335d611d2">More...</a><br/></td></tr>
-<tr class="separator:a4f985327d805ba29b03e347335d611d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1968610812ee4f5905e2abfaa86263ca"><td class="memItemLeft" align="right" valign="top">std::thread &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1ThreadPool.html#a1968610812ee4f5905e2abfaa86263ca">thread</a> (size_t i)</td></tr>
+<tr class="memdesc:a1968610812ee4f5905e2abfaa86263ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return thread handle to thread i.  <a href="#a1968610812ee4f5905e2abfaa86263ca">More...</a><br/></td></tr>
+<tr class="separator:a1968610812ee4f5905e2abfaa86263ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -215,6 +221,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a18e1ce640131051703d238c31d041f30"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1ThreadPool.html#a18e1ce640131051703d238c31d041f30">done_</a> = { 0 }</td></tr>
 <tr class="memdesc:a18e1ce640131051703d238c31d041f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter for total number of jobs executed.  <a href="#a18e1ce640131051703d238c31d041f30">More...</a><br/></td></tr>
 <tr class="separator:a18e1ce640131051703d238c31d041f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0bb272ed7d2e92f4539827e98e7352"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1ThreadPool.html#a0a0bb272ed7d2e92f4539827e98e7352">idle_</a> = { 0 }</td></tr>
+<tr class="memdesc:a0a0bb272ed7d2e92f4539827e98e7352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter for number of idle threads waiting for a job.  <a href="#a0a0bb272ed7d2e92f4539827e98e7352">More...</a><br/></td></tr>
+<tr class="separator:a0a0bb272ed7d2e92f4539827e98e7352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa85aa94b00dd9400cf594c8509470a04"><td class="memItemLeft" align="right" valign="top">std::deque&lt; <a class="el" href="classtlx_1_1ThreadPool.html#a2d861499325cc7e7130fd05e6fbae2f9">Job</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1ThreadPool.html#aa85aa94b00dd9400cf594c8509470a04">jobs_</a></td></tr>
 <tr class="memdesc:aa85aa94b00dd9400cf594c8509470a04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deque of scheduled jobs.  <a href="#aa85aa94b00dd9400cf594c8509470a04">More...</a><br/></td></tr>
 <tr class="separator:aa85aa94b00dd9400cf594c8509470a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,7 +279,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="thread__pool_8cpp_source.html#l00017">17</a> of file <a class="el" href="thread__pool_8cpp_source.html">thread_pool.cpp</a>.</p>
 
-<p>References <a class="el" href="thread__pool_8hpp_source.html#l00077">ThreadPool::threads_</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00058">ThreadPool::worker()</a>.</p>
+<p>References <a class="el" href="thread__pool_8hpp_source.html#l00077">ThreadPool::threads_</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00085">ThreadPool::worker()</a>.</p>
 
 </div>
 </div>
@@ -317,7 +326,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="thread__pool_8cpp_source.html#l00024">24</a> of file <a class="el" href="thread__pool_8cpp_source.html">thread_pool.cpp</a>.</p>
 
-<p>References <a class="el" href="thread__pool_8hpp_source.html#l00081">ThreadPool::cv_jobs_</a>, <a class="el" href="join_8cpp_source.html#l00016">tlx::join()</a>, <a class="el" href="thread__pool_8hpp_source.html#l00074">ThreadPool::mutex_</a>, <a class="el" href="container_2simple__vector_8hpp_source.html#l00123">SimpleVector&lt; ValueType, Mode &gt;::size()</a>, <a class="el" href="thread__pool_8hpp_source.html#l00091">ThreadPool::terminate_</a>, and <a class="el" href="thread__pool_8hpp_source.html#l00077">ThreadPool::threads_</a>.</p>
+<p>References <a class="el" href="thread__pool_8hpp_source.html#l00081">ThreadPool::cv_jobs_</a>, <a class="el" href="join_8cpp_source.html#l00016">tlx::join()</a>, <a class="el" href="thread__pool_8hpp_source.html#l00074">ThreadPool::mutex_</a>, <a class="el" href="container_2simple__vector_8hpp_source.html#l00123">SimpleVector&lt; ValueType, Mode &gt;::size()</a>, <a class="el" href="thread__pool_8hpp_source.html#l00093">ThreadPool::terminate_</a>, and <a class="el" href="thread__pool_8hpp_source.html#l00077">ThreadPool::threads_</a>.</p>
 
 </div>
 </div>
@@ -325,9 +334,6 @@ Private Attributes</h2></td></tr>
 <a class="anchor" id="a6ab55ecd45f61789b99e299e1cf679ea"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">size_t done </td>
@@ -336,27 +342,19 @@ Private Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Return number of jobs currently completed. </p>
 
-<p>Definition at line <a class="el" href="thread__pool_8hpp_source.html#l00126">126</a> of file <a class="el" href="thread__pool_8hpp_source.html">thread_pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thread__pool_8cpp_source.html#l00064">64</a> of file <a class="el" href="thread__pool_8cpp_source.html">thread_pool.cpp</a>.</p>
 
-<p>References <a class="el" href="thread__pool_8hpp_source.html#l00088">ThreadPool::done_</a>.</p>
+<p>References <a class="el" href="thread__pool_8hpp_source.html#l00090">ThreadPool::done_</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="ac0197b1301f4bec0f2421cfe41e9435a"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void enqueue </td>
@@ -366,18 +364,55 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>enqueue a Job, the caller must pass in all context using captures. </p>
 
-<p>Definition at line <a class="el" href="thread__pool_8hpp_source.html#l00107">107</a> of file <a class="el" href="thread__pool_8hpp_source.html">thread_pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thread__pool_8cpp_source.html#l00036">36</a> of file <a class="el" href="thread__pool_8cpp_source.html">thread_pool.cpp</a>.</p>
 
 <p>References <a class="el" href="thread__pool_8hpp_source.html#l00081">ThreadPool::cv_jobs_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00071">ThreadPool::jobs_</a>, and <a class="el" href="thread__pool_8hpp_source.html#l00074">ThreadPool::mutex_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6604881aa1b3d144c0281d93c0754fb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool has_idle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>true if any thread is idle (= waiting for jobs) </p>
+
+<p>Definition at line <a class="el" href="thread__pool_8cpp_source.html#l00076">76</a> of file <a class="el" href="thread__pool_8cpp_source.html">thread_pool.cpp</a>.</p>
+
+<p>References <a class="el" href="thread__pool_8hpp_source.html#l00088">ThreadPool::idle_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad6cbb0b7c86232363d191b804fc553f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t idle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>return number of idle threads in pool </p>
+
+<p>Definition at line <a class="el" href="thread__pool_8cpp_source.html#l00072">72</a> of file <a class="el" href="thread__pool_8cpp_source.html">thread_pool.cpp</a>.</p>
+
+<p>References <a class="el" href="thread__pool_8hpp_source.html#l00088">ThreadPool::idle_</a>.</p>
 
 </div>
 </div>
@@ -395,7 +430,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Loop until no more jobs are in the queue AND all threads are idle. When this occurs, this method exits, however, the threads remain active. </p>
 
-<p>Definition at line <a class="el" href="thread__pool_8cpp_source.html#l00036">36</a> of file <a class="el" href="thread__pool_8cpp_source.html">thread_pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="thread__pool_8cpp_source.html#l00042">42</a> of file <a class="el" href="thread__pool_8cpp_source.html">thread_pool.cpp</a>.</p>
 
 <p>References <a class="el" href="thread__pool_8hpp_source.html#l00086">ThreadPool::busy_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00083">ThreadPool::cv_finished_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00071">ThreadPool::jobs_</a>, and <a class="el" href="thread__pool_8hpp_source.html#l00074">ThreadPool::mutex_</a>.</p>
 
@@ -416,9 +451,9 @@ Private Attributes</h2></td></tr>
 
 <p>Loop until terminate flag was set. </p>
 
-<p>Definition at line <a class="el" href="thread__pool_8cpp_source.html#l00042">42</a> of file <a class="el" href="thread__pool_8cpp_source.html">thread_pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="thread__pool_8cpp_source.html#l00048">48</a> of file <a class="el" href="thread__pool_8cpp_source.html">thread_pool.cpp</a>.</p>
 
-<p>References <a class="el" href="thread__pool_8hpp_source.html#l00086">ThreadPool::busy_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00083">ThreadPool::cv_finished_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00074">ThreadPool::mutex_</a>, and <a class="el" href="thread__pool_8hpp_source.html#l00091">ThreadPool::terminate_</a>.</p>
+<p>References <a class="el" href="thread__pool_8hpp_source.html#l00086">ThreadPool::busy_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00083">ThreadPool::cv_finished_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00074">ThreadPool::mutex_</a>, and <a class="el" href="thread__pool_8hpp_source.html#l00093">ThreadPool::terminate_</a>.</p>
 
 </div>
 </div>
@@ -451,9 +486,6 @@ Private Attributes</h2></td></tr>
 <a class="anchor" id="aac782da1f912bceb5d8ad00c8dc892ac"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">size_t size </td>
@@ -462,16 +494,11 @@ Private Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Return number of threads in pool. </p>
 
-<p>Definition at line <a class="el" href="thread__pool_8hpp_source.html#l00129">129</a> of file <a class="el" href="thread__pool_8hpp_source.html">thread_pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thread__pool_8cpp_source.html#l00068">68</a> of file <a class="el" href="thread__pool_8cpp_source.html">thread_pool.cpp</a>.</p>
 
 <p>References <a class="el" href="container_2simple__vector_8hpp_source.html#l00123">SimpleVector&lt; ValueType, Mode &gt;::size()</a>, and <a class="el" href="thread__pool_8hpp_source.html#l00077">ThreadPool::threads_</a>.</p>
 
@@ -491,37 +518,29 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Terminate thread pool gracefully, wait until currently running jobs finish and then exit. This should be called from within one of the enqueue jobs or from an outside thread. </p>
 
-<p>Definition at line <a class="el" href="thread__pool_8cpp_source.html#l00048">48</a> of file <a class="el" href="thread__pool_8cpp_source.html">thread_pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="thread__pool_8cpp_source.html#l00054">54</a> of file <a class="el" href="thread__pool_8cpp_source.html">thread_pool.cpp</a>.</p>
 
-<p>References <a class="el" href="thread__pool_8hpp_source.html#l00083">ThreadPool::cv_finished_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00081">ThreadPool::cv_jobs_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00074">ThreadPool::mutex_</a>, and <a class="el" href="thread__pool_8hpp_source.html#l00091">ThreadPool::terminate_</a>.</p>
+<p>References <a class="el" href="thread__pool_8hpp_source.html#l00083">ThreadPool::cv_finished_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00081">ThreadPool::cv_jobs_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00074">ThreadPool::mutex_</a>, and <a class="el" href="thread__pool_8hpp_source.html#l00093">ThreadPool::terminate_</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4f985327d805ba29b03e347335d611d2"></a>
+<a class="anchor" id="a1968610812ee4f5905e2abfaa86263ca"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::thread&amp; thread </td>
+          <td class="memname">std::thread &amp; thread </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Return thread handle to thread i. </p>
 
-<p>Definition at line <a class="el" href="thread__pool_8hpp_source.html#l00132">132</a> of file <a class="el" href="thread__pool_8hpp_source.html">thread_pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thread__pool_8cpp_source.html#l00080">80</a> of file <a class="el" href="thread__pool_8cpp_source.html">thread_pool.cpp</a>.</p>
 
 <p>References <a class="el" href="container_2simple__vector_8hpp_source.html#l00123">SimpleVector&lt; ValueType, Mode &gt;::size()</a>, and <a class="el" href="thread__pool_8hpp_source.html#l00077">ThreadPool::threads_</a>.</p>
 
@@ -550,9 +569,9 @@ Private Attributes</h2></td></tr>
 
 <p>Worker function, one per thread is started. </p>
 
-<p>Definition at line <a class="el" href="thread__pool_8cpp_source.html#l00058">58</a> of file <a class="el" href="thread__pool_8cpp_source.html">thread_pool.cpp</a>.</p>
+<p>Definition at line <a class="el" href="thread__pool_8cpp_source.html#l00085">85</a> of file <a class="el" href="thread__pool_8cpp_source.html">thread_pool.cpp</a>.</p>
 
-<p>References <a class="el" href="thread__pool_8hpp_source.html#l00086">ThreadPool::busy_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00083">ThreadPool::cv_finished_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00081">ThreadPool::cv_jobs_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00088">ThreadPool::done_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00071">ThreadPool::jobs_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00074">ThreadPool::mutex_</a>, and <a class="el" href="thread__pool_8hpp_source.html#l00091">ThreadPool::terminate_</a>.</p>
+<p>References <a class="el" href="thread__pool_8hpp_source.html#l00086">ThreadPool::busy_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00083">ThreadPool::cv_finished_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00081">ThreadPool::cv_jobs_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00090">ThreadPool::done_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00088">ThreadPool::idle_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00071">ThreadPool::jobs_</a>, <a class="el" href="thread__pool_8hpp_source.html#l00074">ThreadPool::mutex_</a>, and <a class="el" href="thread__pool_8hpp_source.html#l00093">ThreadPool::terminate_</a>.</p>
 
 <p>Referenced by <a class="el" href="thread__pool_8cpp_source.html#l00017">ThreadPool::ThreadPool()</a>.</p>
 
@@ -581,7 +600,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="thread__pool_8hpp_source.html#l00086">86</a> of file <a class="el" href="thread__pool_8hpp_source.html">thread_pool.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thread__pool_8cpp_source.html#l00036">ThreadPool::loop_until_empty()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00042">ThreadPool::loop_until_terminate()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00058">ThreadPool::worker()</a>.</p>
+<p>Referenced by <a class="el" href="thread__pool_8cpp_source.html#l00042">ThreadPool::loop_until_empty()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00048">ThreadPool::loop_until_terminate()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00085">ThreadPool::worker()</a>.</p>
 
 </div>
 </div>
@@ -607,7 +626,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="thread__pool_8hpp_source.html#l00083">83</a> of file <a class="el" href="thread__pool_8hpp_source.html">thread_pool.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thread__pool_8cpp_source.html#l00036">ThreadPool::loop_until_empty()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00042">ThreadPool::loop_until_terminate()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00048">ThreadPool::terminate()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00058">ThreadPool::worker()</a>.</p>
+<p>Referenced by <a class="el" href="thread__pool_8cpp_source.html#l00042">ThreadPool::loop_until_empty()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00048">ThreadPool::loop_until_terminate()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00054">ThreadPool::terminate()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00085">ThreadPool::worker()</a>.</p>
 
 </div>
 </div>
@@ -632,7 +651,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="thread__pool_8hpp_source.html#l00081">81</a> of file <a class="el" href="thread__pool_8hpp_source.html">thread_pool.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thread__pool_8hpp_source.html#l00107">ThreadPool::enqueue()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00048">ThreadPool::terminate()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00058">ThreadPool::worker()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00024">ThreadPool::~ThreadPool()</a>.</p>
+<p>Referenced by <a class="el" href="thread__pool_8cpp_source.html#l00036">ThreadPool::enqueue()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00054">ThreadPool::terminate()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00085">ThreadPool::worker()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00024">ThreadPool::~ThreadPool()</a>.</p>
 
 </div>
 </div>
@@ -656,9 +675,35 @@ Private Attributes</h2></td></tr>
 
 <p>Counter for total number of jobs executed. </p>
 
+<p>Definition at line <a class="el" href="thread__pool_8hpp_source.html#l00090">90</a> of file <a class="el" href="thread__pool_8hpp_source.html">thread_pool.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="thread__pool_8cpp_source.html#l00064">ThreadPool::done()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00085">ThreadPool::worker()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a0bb272ed7d2e92f4539827e98e7352"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;size_t&gt; idle_ = { 0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Counter for number of idle threads waiting for a job. </p>
+
 <p>Definition at line <a class="el" href="thread__pool_8hpp_source.html#l00088">88</a> of file <a class="el" href="thread__pool_8hpp_source.html">thread_pool.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thread__pool_8hpp_source.html#l00126">ThreadPool::done()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00058">ThreadPool::worker()</a>.</p>
+<p>Referenced by <a class="el" href="thread__pool_8cpp_source.html#l00076">ThreadPool::has_idle()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00072">ThreadPool::idle()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00085">ThreadPool::worker()</a>.</p>
 
 </div>
 </div>
@@ -684,7 +729,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="thread__pool_8hpp_source.html#l00071">71</a> of file <a class="el" href="thread__pool_8hpp_source.html">thread_pool.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thread__pool_8hpp_source.html#l00107">ThreadPool::enqueue()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00036">ThreadPool::loop_until_empty()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00058">ThreadPool::worker()</a>.</p>
+<p>Referenced by <a class="el" href="thread__pool_8cpp_source.html#l00036">ThreadPool::enqueue()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00042">ThreadPool::loop_until_empty()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00085">ThreadPool::worker()</a>.</p>
 
 </div>
 </div>
@@ -710,7 +755,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="thread__pool_8hpp_source.html#l00074">74</a> of file <a class="el" href="thread__pool_8hpp_source.html">thread_pool.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thread__pool_8hpp_source.html#l00107">ThreadPool::enqueue()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00036">ThreadPool::loop_until_empty()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00042">ThreadPool::loop_until_terminate()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00048">ThreadPool::terminate()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00058">ThreadPool::worker()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00024">ThreadPool::~ThreadPool()</a>.</p>
+<p>Referenced by <a class="el" href="thread__pool_8cpp_source.html#l00036">ThreadPool::enqueue()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00042">ThreadPool::loop_until_empty()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00048">ThreadPool::loop_until_terminate()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00054">ThreadPool::terminate()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00085">ThreadPool::worker()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00024">ThreadPool::~ThreadPool()</a>.</p>
 
 </div>
 </div>
@@ -734,9 +779,9 @@ Private Attributes</h2></td></tr>
 
 <p>Flag whether to terminate. </p>
 
-<p>Definition at line <a class="el" href="thread__pool_8hpp_source.html#l00091">91</a> of file <a class="el" href="thread__pool_8hpp_source.html">thread_pool.hpp</a>.</p>
+<p>Definition at line <a class="el" href="thread__pool_8hpp_source.html#l00093">93</a> of file <a class="el" href="thread__pool_8hpp_source.html">thread_pool.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thread__pool_8cpp_source.html#l00042">ThreadPool::loop_until_terminate()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00048">ThreadPool::terminate()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00058">ThreadPool::worker()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00024">ThreadPool::~ThreadPool()</a>.</p>
+<p>Referenced by <a class="el" href="thread__pool_8cpp_source.html#l00048">ThreadPool::loop_until_terminate()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00054">ThreadPool::terminate()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00085">ThreadPool::worker()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00024">ThreadPool::~ThreadPool()</a>.</p>
 
 </div>
 </div>
@@ -762,7 +807,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="thread__pool_8hpp_source.html#l00077">77</a> of file <a class="el" href="thread__pool_8hpp_source.html">thread_pool.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="thread__pool_8hpp_source.html#l00129">ThreadPool::size()</a>, <a class="el" href="thread__pool_8hpp_source.html#l00132">ThreadPool::thread()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00017">ThreadPool::ThreadPool()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00024">ThreadPool::~ThreadPool()</a>.</p>
+<p>Referenced by <a class="el" href="thread__pool_8cpp_source.html#l00068">ThreadPool::size()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00080">ThreadPool::thread()</a>, <a class="el" href="thread__pool_8cpp_source.html#l00017">ThreadPool::ThreadPool()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00024">ThreadPool::~ThreadPool()</a>.</p>
 
 </div>
 </div>
@@ -776,7 +821,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacetlx.html">tlx</a></li><li class="navelem"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></li>
-    <li class="footer">Generated on Wed Apr 10 2019 11:10:34 for Thrill by
+    <li class="footer">Generated on Tue Jul 30 2019 13:52:36 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

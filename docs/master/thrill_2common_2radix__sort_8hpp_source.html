@@ -135,163 +135,166 @@ $(document).ready(function(){initNavTree('thrill_2common_2radix__sort_8hpp_sourc
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="functional_8hpp.html">thrill/common/functional.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2logger_8hpp.html">thrill/common/logger.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>thrill {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>common {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/*!</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * Internal helper method, use radix_sort_CI below.</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span> &lt;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">size_t</span> MaxDepth, <span class="keyword">typename</span> Iterator, <span class="keyword">typename</span> Char,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">typename</span> Comparator =</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        std::less&lt;typename std::iterator_traits&lt;Iterator&gt;::value_type&gt;,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">typename</span> SubSorter = NoOperation&lt;void&gt; &gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespacethrill_1_1common.html#a13b9c9890284e090203e8473866f73e7">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#a13b9c9890284e090203e8473866f73e7">radix_sort_CI</a>(Iterator begin, Iterator end, <span class="keywordtype">size_t</span> <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                   <span class="keyword">const</span> Comparator&amp; cmp,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                   <span class="keyword">const</span> SubSorter&amp; sub_sort, <span class="keywordtype">size_t</span> depth,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                   Char* char_cache) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> size = end - begin;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (size &lt; 32)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> std::sort(begin, end, cmp);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">using</span> value_type = <span class="keyword">typename</span> std::iterator_traits&lt;Iterator&gt;::value_type;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// cache characters</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    Char* cc = char_cache;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">for</span> (Iterator it = begin; it != end; ++it, ++cc) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        *cc = it-&gt;at_radix(depth);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        assert(static_cast&lt;size_t&gt;(*cc) &lt; K);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// count character occurrences</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">size_t</span>* bkt_size = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">size_t</span>*<span class="keyword">&gt;</span>(alloca(K * <span class="keyword">sizeof</span>(<span class="keywordtype">size_t</span>)));</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::fill(bkt_size, bkt_size + K, 0);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> Char* cci = char_cache; cci != char_cache + size; ++cci)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        ++bkt_size[*cci];</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// inclusive prefix sum</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">size_t</span>* bkt_index = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">size_t</span>*<span class="keyword">&gt;</span>(alloca(K * <span class="keyword">sizeof</span>(<span class="keywordtype">size_t</span>)));</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    bkt_index[0] = bkt_size[0];</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">size_t</span> last_bkt_size = bkt_size[0];</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>; ++i) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        bkt_index[i] = bkt_index[i - 1] + bkt_size[i];</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (bkt_size[i]) last_bkt_size = bkt_size[i];</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// premute in-place</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0, j; i &lt; size - last_bkt_size; )</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        value_type v = std::move(begin[i]);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        Char vc = std::move(char_cache[i]);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">while</span> ((j = --bkt_index[vc]) &gt; i)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">std::swap</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">swap</a>(v, begin[j]);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">swap</a>(vc, char_cache[j]);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        begin[i] = std::move(v);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        i += bkt_size[vc];</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span> (depth + 1 == MaxDepth) {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="comment">// allow post-radix sorting when max depth is reached</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">size_t</span> bsum = 0;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>; bsum += bkt_size[i++]) {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">if</span> (bkt_size[i] &lt;= 1) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            sub_sort(begin + bsum, begin + bsum + bkt_size[i], cmp);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">// recurse</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">size_t</span> bsum = 0;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>; bsum += bkt_size[i++]) {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">if</span> (bkt_size[i] &lt;= 1) <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            radix_sort_CI&lt;MaxDepth&gt;(</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                begin + bsum, begin + bsum + bkt_size[i],</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>, cmp, sub_sort, depth + 1, char_cache);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">/*!</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment"> * Radix sort the iterator range [begin,end). Sort unconditionally up to depth</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"> * MaxDepth, then call the sub_sort method for further sorting. Small buckets</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"> * are sorted using std::sort() with given comparator. Characters are extracted</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"> * from items in the range using the at_radix(depth) method. All character</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"> * values must be less than K (the counting array size).</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">template</span> &lt;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">size_t</span> MaxDepth, <span class="keyword">typename</span> Iterator,</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">typename</span> Comparator =</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        std::less&lt;typename std::iterator_traits&lt;Iterator&gt;::value_type&gt;,</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">typename</span> SubSorter = NoOperation&lt;void&gt; &gt;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="namespacethrill_1_1common.html#a3df0fa3e73dc6d3c6c7916a35ae04cbc">  118</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#a13b9c9890284e090203e8473866f73e7">radix_sort_CI</a>(Iterator begin, Iterator end, <span class="keywordtype">size_t</span> <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>,</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                   <span class="keyword">const</span> Comparator&amp; cmp = Comparator(),</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                   <span class="keyword">const</span> SubSorter&amp; sub_sort = SubSorter()) {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">if</span> (MaxDepth == 0) {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="comment">// allow post-radix sorting when max depth is reached</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        sub_sort(begin, end, cmp);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> size = end - begin;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">using</span> CharRet = decltype(begin-&gt;at_radix(0));</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">using</span> Char = <span class="keyword">typename</span> std::remove_cv&lt;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keyword">typename</span> std::remove_reference&lt;CharRet&gt;::type&gt;::type;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">// allocate character cache once</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    Char* char_cache = <span class="keyword">new</span> Char[size];</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    radix_sort_CI&lt;MaxDepth&gt;(</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        begin, end, <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>, cmp, sub_sort, <span class="comment">/* depth */</span> 0, char_cache);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">delete</span>[] char_cache;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">/*!</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment"> * SortAlgorithm class for use with api::Sort() which calls radix_sort_CI() if K</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment"> * is small enough.</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type, <span class="keywordtype">size_t</span> MaxDepth&gt;</div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classthrill_1_1common_1_1RadixSort.html">  146</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthrill_1_1common_1_1RadixSort.html">RadixSort</a></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;{</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classthrill_1_1common_1_1RadixSort.html#ab0fb8187701feff11de7c1bc1d918bf1">  149</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classthrill_1_1common_1_1RadixSort.html#ab0fb8187701feff11de7c1bc1d918bf1">RadixSort</a>(<span class="keywordtype">size_t</span> K) : <a class="code" href="classthrill_1_1common_1_1RadixSort.html#a173252c88258bbdf36761265600f24ae">K_</a>(K) { }</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Iterator, <span class="keyword">typename</span> CompareFunction&gt;</div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classthrill_1_1common_1_1RadixSort.html#a60f0b0b782c6b44105b082c84a167d0b">  151</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1common_1_1RadixSort.html#a60f0b0b782c6b44105b082c84a167d0b">operator () </a>(Iterator begin, Iterator end,</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                      <span class="keyword">const</span> CompareFunction&amp; cmp)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1common_1_1RadixSort.html#a173252c88258bbdf36761265600f24ae">K_</a> &lt; 4096)</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            thrill::common::radix_sort_CI&lt;MaxDepth&gt;(begin, end, <a class="code" href="classthrill_1_1common_1_1RadixSort.html#a173252c88258bbdf36761265600f24ae">K_</a>, cmp);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            std::sort(begin, end, cmp);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classthrill_1_1common_1_1RadixSort.html#a173252c88258bbdf36761265600f24ae">  160</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1common_1_1RadixSort.html#a173252c88258bbdf36761265600f24ae">K_</a>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;};</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;} <span class="comment">// namespace common</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;} <span class="comment">// namespace thrill</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#endif // !THRILL_COMMON_RADIX_SORT_HEADER</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="no__operation_8hpp.html">tlx/meta/no_operation.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>thrill {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>common {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/*!</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * Internal helper method, use radix_sort_CI below.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">size_t</span> MaxDepth, <span class="keyword">typename</span> Iterator, <span class="keyword">typename</span> Char,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">typename</span> Comparator =</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        std::less&lt;typename std::iterator_traits&lt;Iterator&gt;::value_type&gt;,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">typename</span> SubSorter = <a class="code" href="classtlx_1_1NoOperation_3_01void_01_4.html">tlx::NoOperation&lt;void&gt;</a> &gt;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacethrill_1_1common.html#a13b9c9890284e090203e8473866f73e7">   38</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#a13b9c9890284e090203e8473866f73e7">radix_sort_CI</a>(Iterator begin, Iterator end, <span class="keywordtype">size_t</span> <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                   <span class="keyword">const</span> Comparator&amp; cmp,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                   <span class="keyword">const</span> SubSorter&amp; sub_sort, <span class="keywordtype">size_t</span> depth,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                   Char* char_cache) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> size = end - begin;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (size &lt; 32)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> std::sort(begin, end, cmp);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">using</span> value_type = <span class="keyword">typename</span> std::iterator_traits&lt;Iterator&gt;::value_type;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// cache characters</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    Char* cc = char_cache;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">for</span> (Iterator it = begin; it != end; ++it, ++cc) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        *cc = it-&gt;at_radix(depth);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        assert(static_cast&lt;size_t&gt;(*cc) &lt; K);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// count character occurrences</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">size_t</span>* bkt_size = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">size_t</span>*<span class="keyword">&gt;</span>(alloca(K * <span class="keyword">sizeof</span>(<span class="keywordtype">size_t</span>)));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::fill(bkt_size, bkt_size + K, 0);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> Char* cci = char_cache; cci != char_cache + size; ++cci)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        ++bkt_size[*cci];</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// inclusive prefix sum</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">size_t</span>* bkt_index = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">size_t</span>*<span class="keyword">&gt;</span>(alloca(K * <span class="keyword">sizeof</span>(<span class="keywordtype">size_t</span>)));</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    bkt_index[0] = bkt_size[0];</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">size_t</span> last_bkt_size = bkt_size[0];</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>; ++i) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        bkt_index[i] = bkt_index[i - 1] + bkt_size[i];</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span> (bkt_size[i]) last_bkt_size = bkt_size[i];</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// premute in-place</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0, j; i &lt; size - last_bkt_size; )</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        value_type v = std::move(begin[i]);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        Char vc = std::move(char_cache[i]);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">while</span> ((j = --bkt_index[vc]) &gt; i)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keyword">using</span> <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">std::swap</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">swap</a>(v, begin[j]);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <a class="code" href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">swap</a>(vc, char_cache[j]);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        begin[i] = std::move(v);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        i += bkt_size[vc];</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span> (depth + 1 == MaxDepth) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">// allow post-radix sorting when max depth is reached</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">size_t</span> bsum = 0;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>; bsum += bkt_size[i++]) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">if</span> (bkt_size[i] &lt;= 1) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            sub_sort(begin + bsum, begin + bsum + bkt_size[i], cmp);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="comment">// recurse</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">size_t</span> bsum = 0;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>; bsum += bkt_size[i++]) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">if</span> (bkt_size[i] &lt;= 1) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            radix_sort_CI&lt;MaxDepth&gt;(</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                begin + bsum, begin + bsum + bkt_size[i],</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>, cmp, sub_sort, depth + 1, char_cache);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">/*!</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"> * Radix sort the iterator range [begin,end). Sort unconditionally up to depth</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment"> * MaxDepth, then call the sub_sort method for further sorting. Small buckets</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"> * are sorted using std::sort() with given comparator. Characters are extracted</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"> * from items in the range using the at_radix(depth) method. All character</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"> * values must be less than K (the counting array size).</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">template</span> &lt;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">size_t</span> MaxDepth, <span class="keyword">typename</span> Iterator,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">typename</span> Comparator =</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        std::less&lt;typename std::iterator_traits&lt;Iterator&gt;::value_type&gt;,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">typename</span> SubSorter = <a class="code" href="classtlx_1_1NoOperation_3_01void_01_4.html">tlx::NoOperation&lt;void&gt;</a> &gt;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="namespacethrill_1_1common.html#a3df0fa3e73dc6d3c6c7916a35ae04cbc">  119</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacethrill_1_1common.html#a13b9c9890284e090203e8473866f73e7">radix_sort_CI</a>(Iterator begin, Iterator end, <span class="keywordtype">size_t</span> <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>,</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                   <span class="keyword">const</span> Comparator&amp; cmp = Comparator(),</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                   <span class="keyword">const</span> SubSorter&amp; sub_sort = SubSorter()) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span> (MaxDepth == 0) {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="comment">// allow post-radix sorting when max depth is reached</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        sub_sort(begin, end, cmp);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> size = end - begin;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">using</span> CharRet = decltype(begin-&gt;at_radix(0));</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keyword">using</span> Char = <span class="keyword">typename</span> std::remove_cv&lt;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keyword">typename</span> std::remove_reference&lt;CharRet&gt;::type&gt;::type;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="comment">// allocate character cache once</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    Char* char_cache = <span class="keyword">new</span> Char[size];</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    radix_sort_CI&lt;MaxDepth&gt;(</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        begin, end, <a class="code" href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">K</a>, cmp, sub_sort, <span class="comment">/* depth */</span> 0, char_cache);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keyword">delete</span>[] char_cache;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment">/*!</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment"> * SortAlgorithm class for use with api::Sort() which calls radix_sort_CI() if K</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment"> * is small enough.</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type, <span class="keywordtype">size_t</span> MaxDepth&gt;</div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classthrill_1_1common_1_1RadixSort.html">  147</a></span>&#160;<span class="keyword">class </span><a class="code" href="classthrill_1_1common_1_1RadixSort.html">RadixSort</a></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;{</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classthrill_1_1common_1_1RadixSort.html#ab0fb8187701feff11de7c1bc1d918bf1">  150</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classthrill_1_1common_1_1RadixSort.html#ab0fb8187701feff11de7c1bc1d918bf1">RadixSort</a>(<span class="keywordtype">size_t</span> K) : <a class="code" href="classthrill_1_1common_1_1RadixSort.html#a173252c88258bbdf36761265600f24ae">K_</a>(K) { }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Iterator, <span class="keyword">typename</span> CompareFunction&gt;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="classthrill_1_1common_1_1RadixSort.html#a60f0b0b782c6b44105b082c84a167d0b">  152</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1common_1_1RadixSort.html#a60f0b0b782c6b44105b082c84a167d0b">operator () </a>(Iterator begin, Iterator end,</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                      <span class="keyword">const</span> CompareFunction&amp; cmp)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classthrill_1_1common_1_1RadixSort.html#a173252c88258bbdf36761265600f24ae">K_</a> &lt; 4096)</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            thrill::common::radix_sort_CI&lt;MaxDepth&gt;(begin, end, <a class="code" href="classthrill_1_1common_1_1RadixSort.html#a173252c88258bbdf36761265600f24ae">K_</a>, cmp);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            std::sort(begin, end, cmp);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="classthrill_1_1common_1_1RadixSort.html#a173252c88258bbdf36761265600f24ae">  161</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1common_1_1RadixSort.html#a173252c88258bbdf36761265600f24ae">K_</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;};</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;} <span class="comment">// namespace common</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;} <span class="comment">// namespace thrill</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#endif // !THRILL_COMMON_RADIX_SORT_HEADER</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="ttc" id="classtlx_1_1NoOperation_3_01void_01_4_html"><div class="ttname"><a href="classtlx_1_1NoOperation_3_01void_01_4.html">tlx::NoOperation&lt; void &gt;</a></div><div class="ttdoc">Specialized noop functor which returns a void. </div><div class="ttdef"><b>Definition:</b> <a href="no__operation_8hpp_source.html#l00038">no_operation.hpp:38</a></div></div>
 <div class="ttc" id="thrill_2common_2logger_8hpp_html"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html">logger.hpp</a></div></div>
-<div class="ttc" id="namespacethrill_1_1common_html_a13b9c9890284e090203e8473866f73e7"><div class="ttname"><a href="namespacethrill_1_1common.html#a13b9c9890284e090203e8473866f73e7">thrill::common::radix_sort_CI</a></div><div class="ttdeci">static void radix_sort_CI(Iterator begin, Iterator end, size_t K, const Comparator &amp;cmp, const SubSorter &amp;sub_sort, size_t depth, Char *char_cache)</div><div class="ttdoc">Internal helper method, use radix_sort_CI below. </div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2radix__sort_8hpp_source.html#l00037">radix_sort.hpp:37</a></div></div>
+<div class="ttc" id="namespacethrill_1_1common_html_a13b9c9890284e090203e8473866f73e7"><div class="ttname"><a href="namespacethrill_1_1common.html#a13b9c9890284e090203e8473866f73e7">thrill::common::radix_sort_CI</a></div><div class="ttdeci">static void radix_sort_CI(Iterator begin, Iterator end, size_t K, const Comparator &amp;cmp, const SubSorter &amp;sub_sort, size_t depth, Char *char_cache)</div><div class="ttdoc">Internal helper method, use radix_sort_CI below. </div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2radix__sort_8hpp_source.html#l00038">radix_sort.hpp:38</a></div></div>
 <div class="ttc" id="namespacetlx_html_ade1320658af9846df1831480a96e7a38"><div class="ttname"><a href="namespacetlx.html#ade1320658af9846df1831480a96e7a38">tlx::swap</a></div><div class="ttdeci">void swap(CountingPtr&lt; A, D &gt; &amp;a1, CountingPtr&lt; A, D &gt; &amp;a2) noexcept</div><div class="ttdef"><b>Definition:</b> <a href="counting__ptr_8hpp_source.html#l00320">counting_ptr.hpp:320</a></div></div>
-<div class="ttc" id="classthrill_1_1common_1_1RadixSort_html_a173252c88258bbdf36761265600f24ae"><div class="ttname"><a href="classthrill_1_1common_1_1RadixSort.html#a173252c88258bbdf36761265600f24ae">thrill::common::RadixSort::K_</a></div><div class="ttdeci">const size_t K_</div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2radix__sort_8hpp_source.html#l00160">radix_sort.hpp:160</a></div></div>
+<div class="ttc" id="classthrill_1_1common_1_1RadixSort_html_a173252c88258bbdf36761265600f24ae"><div class="ttname"><a href="classthrill_1_1common_1_1RadixSort.html#a173252c88258bbdf36761265600f24ae">thrill::common::RadixSort::K_</a></div><div class="ttdeci">const size_t K_</div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2radix__sort_8hpp_source.html#l00161">radix_sort.hpp:161</a></div></div>
 <div class="ttc" id="namespacetlx_1_1digest__detail_html_ac69b6c21c56ac7b34828ba2145b59709"><div class="ttname"><a href="namespacetlx_1_1digest__detail.html#ac69b6c21c56ac7b34828ba2145b59709">tlx::digest_detail::K</a></div><div class="ttdeci">static const uint64_t K[80]</div><div class="ttdef"><b>Definition:</b> <a href="sha512_8cpp_source.html#l00032">sha512.cpp:32</a></div></div>
-<div class="ttc" id="classthrill_1_1common_1_1RadixSort_html_a60f0b0b782c6b44105b082c84a167d0b"><div class="ttname"><a href="classthrill_1_1common_1_1RadixSort.html#a60f0b0b782c6b44105b082c84a167d0b">thrill::common::RadixSort::operator()</a></div><div class="ttdeci">void operator()(Iterator begin, Iterator end, const CompareFunction &amp;cmp) const </div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2radix__sort_8hpp_source.html#l00151">radix_sort.hpp:151</a></div></div>
-<div class="ttc" id="classthrill_1_1common_1_1RadixSort_html_ab0fb8187701feff11de7c1bc1d918bf1"><div class="ttname"><a href="classthrill_1_1common_1_1RadixSort.html#ab0fb8187701feff11de7c1bc1d918bf1">thrill::common::RadixSort::RadixSort</a></div><div class="ttdeci">RadixSort(size_t K)</div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2radix__sort_8hpp_source.html#l00149">radix_sort.hpp:149</a></div></div>
-<div class="ttc" id="classthrill_1_1common_1_1RadixSort_html"><div class="ttname"><a href="classthrill_1_1common_1_1RadixSort.html">thrill::common::RadixSort</a></div><div class="ttdoc">SortAlgorithm class for use with api::Sort() which calls radix_sort_CI() if K is small enough...</div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2radix__sort_8hpp_source.html#l00146">radix_sort.hpp:146</a></div></div>
+<div class="ttc" id="classthrill_1_1common_1_1RadixSort_html_a60f0b0b782c6b44105b082c84a167d0b"><div class="ttname"><a href="classthrill_1_1common_1_1RadixSort.html#a60f0b0b782c6b44105b082c84a167d0b">thrill::common::RadixSort::operator()</a></div><div class="ttdeci">void operator()(Iterator begin, Iterator end, const CompareFunction &amp;cmp) const </div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2radix__sort_8hpp_source.html#l00152">radix_sort.hpp:152</a></div></div>
+<div class="ttc" id="classthrill_1_1common_1_1RadixSort_html_ab0fb8187701feff11de7c1bc1d918bf1"><div class="ttname"><a href="classthrill_1_1common_1_1RadixSort.html#ab0fb8187701feff11de7c1bc1d918bf1">thrill::common::RadixSort::RadixSort</a></div><div class="ttdeci">RadixSort(size_t K)</div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2radix__sort_8hpp_source.html#l00150">radix_sort.hpp:150</a></div></div>
+<div class="ttc" id="no__operation_8hpp_html"><div class="ttname"><a href="no__operation_8hpp.html">no_operation.hpp</a></div></div>
+<div class="ttc" id="classthrill_1_1common_1_1RadixSort_html"><div class="ttname"><a href="classthrill_1_1common_1_1RadixSort.html">thrill::common::RadixSort</a></div><div class="ttdoc">SortAlgorithm class for use with api::Sort() which calls radix_sort_CI() if K is small enough...</div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2radix__sort_8hpp_source.html#l00147">radix_sort.hpp:147</a></div></div>
 <div class="ttc" id="functional_8hpp_html"><div class="ttname"><a href="functional_8hpp.html">functional.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -299,7 +302,7 @@ $(document).ready(function(){initNavTree('thrill_2common_2radix__sort_8hpp_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="thrill_2common_2radix__sort_8hpp.html">radix_sort.hpp</a></li>
-    <li class="footer">Generated on Wed Apr 10 2019 11:10:28 for Thrill by
+    <li class="footer">Generated on Tue Jul 30 2019 13:52:30 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

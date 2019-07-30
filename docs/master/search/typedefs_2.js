@@ -15,6 +15,7 @@ var searchData=
   ['charstringset',['CharStringSet',['../namespacetlx_1_1sort__strings__detail.html#a85c7b63d45582425267fd73c508797ad',1,'tlx::sort_strings_detail']]],
   ['child_5farray_5ftype',['child_array_type',['../classtlx_1_1radix__heap__detail_1_1BitArrayRecursive_3_01Size_00_01false_01_4.html#add53b2af468229b378cfe5a7f971805f',1,'tlx::radix_heap_detail::BitArrayRecursive&lt; Size, false &gt;']]],
   ['child_5ftype',['child_type',['../classtlx_1_1radix__heap__detail_1_1BitArrayRecursive_3_01Size_00_01false_01_4.html#a575d2d2bd58a7c894291b7fabd45a40d',1,'tlx::radix_heap_detail::BitArrayRecursive&lt; Size, false &gt;']]],
+  ['classify',['Classify',['../classtlx_1_1sort__strings__detail_1_1PS5ParametersDefault.html#a870b1e2a5a29133023328bd2a07718a9',1,'tlx::sort_strings_detail::PS5ParametersDefault']]],
   ['closecallback',['CloseCallback',['../classthrill_1_1data_1_1BlockQueue.html#ad33906c661aeb500bec0eebc56052fb8',1,'thrill::data::BlockQueue']]],
   ['compare_5ftype',['compare_type',['../classtlx_1_1DAryAddressableIntHeap.html#a4d2b11bfc03b1cfe7e5f73d8d19a975e',1,'tlx::DAryAddressableIntHeap::compare_type()'],['../classtlx_1_1DAryHeap.html#a4d2b11bfc03b1cfe7e5f73d8d19a975e',1,'tlx::DAryHeap::compare_type()']]],
   ['completion_5fhandler',['completion_handler',['../group__foxxll__reqlayer.html#ga57b07b12c2f16a8799ace2cafc61add1',1,'foxxll']]],

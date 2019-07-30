@@ -112,27 +112,88 @@ $(document).ready(function(){initNavTree('parallel__mergesort_8hpp.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">parallel_mergesort.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br/>
+<code>#include &lt;functional&gt;</code><br/>
+<code>#include &lt;thread&gt;</code><br/>
+<code>#include &lt;utility&gt;</code><br/>
+<code>#include &lt;<a class="el" href="multisequence__selection_8hpp_source.html">tlx/algorithm/multisequence_selection.hpp</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="parallel__multiway__merge_8hpp_source.html">tlx/algorithm/parallel_multiway_merge.hpp</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="simple__vector_8hpp_source.html">tlx/simple_vector.hpp</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="thread__barrier__mutex_8hpp_source.html">tlx/thread_barrier_mutex.hpp</a>&gt;</code><br/>
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for parallel_mergesort.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="parallel__mergesort_8hpp__incl.svg" width="2214" height="491"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="parallel__mergesort_8hpp__dep__incl.svg" width="168" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
 <p><a href="parallel__mergesort_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtlx_1_1parallel__mergesort__detail_1_1PMWMSPiece.html">PMWMSPiece&lt; DiffType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subsequence description.  <a href="structtlx_1_1parallel__mergesort__detail_1_1PMWMSPiece.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtlx_1_1parallel__mergesort__detail_1_1PMWMSSortingData.html">PMWMSSortingData&lt; RandomAccessIterator &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data accessed by all threads.  <a href="structtlx_1_1parallel__mergesort__detail_1_1PMWMSSortingData.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacetlx"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html">tlx</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacetlx_1_1parallel__mergesort__detail"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx_1_1parallel__mergesort__detail.html">tlx::parallel_mergesort_detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a500637883c17b2e5a7d7865fe1d62765"><td class="memTemplParams" colspan="2">template&lt;typename RandomAccessIterator , typename DiffType &gt; </td></tr>
+<tr class="memitem:a500637883c17b2e5a7d7865fe1d62765"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetlx_1_1parallel__mergesort__detail.html#a500637883c17b2e5a7d7865fe1d62765">determine_samples</a> (PMWMSSortingData&lt; RandomAccessIterator &gt; *sd, DiffType &amp;num_samples, size_t iam, size_t num_threads)</td></tr>
+<tr class="memdesc:a500637883c17b2e5a7d7865fe1d62765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select samples from a sequence.  <a href="#a500637883c17b2e5a7d7865fe1d62765">More...</a><br/></td></tr>
+<tr class="separator:a500637883c17b2e5a7d7865fe1d62765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ab59882cca5203ebf94cf562b5f346"><td class="memTemplParams" colspan="2">template&lt;bool Stable, typename RandomAccessIterator , typename Comparator &gt; </td></tr>
+<tr class="memitem:a21ab59882cca5203ebf94cf562b5f346"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetlx_1_1parallel__mergesort__detail.html#a21ab59882cca5203ebf94cf562b5f346">parallel_sort_mwms_pu</a> (PMWMSSortingData&lt; RandomAccessIterator &gt; *sd, size_t iam, size_t num_threads, ThreadBarrierMutex &amp;barrier, Comparator &amp;comp, MultiwayMergeSplittingAlgorithm mwmsa)</td></tr>
+<tr class="memdesc:a21ab59882cca5203ebf94cf562b5f346"><td class="mdescLeft">&#160;</td><td class="mdescRight">PMWMS code executed by each thread.  <a href="#a21ab59882cca5203ebf94cf562b5f346">More...</a><br/></td></tr>
+<tr class="separator:a21ab59882cca5203ebf94cf562b5f346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Parallel Sorting Algorithms</div></td></tr>
+<tr class="memitem:ga81fdf70add19aa5134ecee16dba0925d"><td class="memTemplParams" colspan="2">template&lt;bool Stable, typename RandomAccessIterator , typename Comparator &gt; </td></tr>
+<tr class="memitem:ga81fdf70add19aa5134ecee16dba0925d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga81fdf70add19aa5134ecee16dba0925d">parallel_mergesort_base</a> (RandomAccessIterator begin, RandomAccessIterator end, Comparator comp, size_t num_threads=std::thread::hardware_concurrency(), MultiwayMergeSplittingAlgorithm mwmsa=MWMSA_DEFAULT)</td></tr>
+<tr class="memdesc:ga81fdf70add19aa5134ecee16dba0925d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parallel multiway mergesort main call.  <a href="group__tlx__sort.html#ga81fdf70add19aa5134ecee16dba0925d">More...</a><br/></td></tr>
+<tr class="separator:ga81fdf70add19aa5134ecee16dba0925d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga400ae7e170366e84a4bdb9b6ed1592e7"><td class="memTemplParams" colspan="2">template&lt;typename RandomAccessIterator , typename Comparator  = std::less&lt;              typename std::iterator_traits&lt;RandomAccessIterator&gt;::value_type&gt;&gt; </td></tr>
+<tr class="memitem:ga400ae7e170366e84a4bdb9b6ed1592e7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga400ae7e170366e84a4bdb9b6ed1592e7">parallel_mergesort</a> (RandomAccessIterator begin, RandomAccessIterator end, Comparator comp=Comparator(), size_t num_threads=std::thread::hardware_concurrency(), MultiwayMergeSplittingAlgorithm mwmsa=MWMSA_DEFAULT)</td></tr>
+<tr class="memdesc:ga400ae7e170366e84a4bdb9b6ed1592e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parallel multiway mergesort.  <a href="group__tlx__sort.html#ga400ae7e170366e84a4bdb9b6ed1592e7">More...</a><br/></td></tr>
+<tr class="separator:ga400ae7e170366e84a4bdb9b6ed1592e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4aa384ccbe79fdd32a7eec193142781a"><td class="memTemplParams" colspan="2">template&lt;typename RandomAccessIterator , typename Comparator  = std::less&lt;              typename std::iterator_traits&lt;RandomAccessIterator&gt;::value_type&gt;&gt; </td></tr>
+<tr class="memitem:ga4aa384ccbe79fdd32a7eec193142781a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__sort.html#ga4aa384ccbe79fdd32a7eec193142781a">stable_parallel_mergesort</a> (RandomAccessIterator begin, RandomAccessIterator end, Comparator comp=Comparator(), size_t num_threads=std::thread::hardware_concurrency(), MultiwayMergeSplittingAlgorithm mwmsa=MWMSA_DEFAULT)</td></tr>
+<tr class="memdesc:ga4aa384ccbe79fdd32a7eec193142781a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stable parallel multiway mergesort.  <a href="group__tlx__sort.html#ga4aa384ccbe79fdd32a7eec193142781a">More...</a><br/></td></tr>
+<tr class="separator:ga4aa384ccbe79fdd32a7eec193142781a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="dir_12608fa34d4defb0bdb04f2e95c7c699.html">sort</a></li><li class="navelem"><a class="el" href="parallel__mergesort_8hpp.html">parallel_mergesort.hpp</a></li>
-    <li class="footer">Generated on Wed Apr 10 2019 11:10:30 for Thrill by
+    <li class="footer">Generated on Tue Jul 30 2019 13:52:32 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
