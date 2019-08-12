@@ -112,15 +112,6 @@ $(document).ready(function(){initNavTree('group__dia__lops.html','');});
 <div class="title">Local Operations (LOps)<div class="ingroups"><a class="el" href="group__dia__api.html">DIA API Operations</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for Local Operations (LOps):</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<center><table><tr><td><div class="center"><iframe scrolling="no" frameborder="0" src="group__dia__lops.svg" width="360" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</td></tr></table></center>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -204,6 +195,9 @@ Local Operations (LOps)</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Each item of a <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> is tested using <code>filter_function</code> : \( A \to \textrm{bool} \) to determine whether it is copied into the output <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> or excluded. </p>
+<div class="image">
+<img src="Filter.svg" alt="Filter.svg"/>
+</div>
 <p>The function chain of the returned <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> is this <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a>'s stack_ chained with filter_function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -212,9 +206,9 @@ Local Operations (LOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="dia_8hpp_source.html#l00390">390</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dia_8hpp_source.html#l00392">392</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
-<p>References <a class="el" href="dia__base_8hpp_source.html#l00208">DIABase::context()</a>, <a class="el" href="dia_8hpp_source.html#l00273">DIA&lt; ValueType_, Stack_ &gt;::context()</a>, <a class="el" href="dia_8hpp_source.html#l01844">DIA&lt; ValueType_, Stack_ &gt;::dia_id_</a>, <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, <a class="el" href="context_8hpp_source.html#l00462">Context::logger_</a>, <a class="el" href="context_8hpp_source.html#l00391">Context::next_dia_id()</a>, <a class="el" href="dia_8hpp_source.html#l01837">DIA&lt; ValueType_, Stack_ &gt;::node_</a>, <a class="el" href="dia_8hpp_source.html#l01841">DIA&lt; ValueType_, Stack_ &gt;::stack_</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
+<p>References <a class="el" href="dia__base_8hpp_source.html#l00208">DIABase::context()</a>, <a class="el" href="dia_8hpp_source.html#l00273">DIA&lt; ValueType_, Stack_ &gt;::context()</a>, <a class="el" href="dia_8hpp_source.html#l01947">DIA&lt; ValueType_, Stack_ &gt;::dia_id_</a>, <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, <a class="el" href="context_8hpp_source.html#l00462">Context::logger_</a>, <a class="el" href="context_8hpp_source.html#l00391">Context::next_dia_id()</a>, <a class="el" href="dia_8hpp_source.html#l01940">DIA&lt; ValueType_, Stack_ &gt;::node_</a>, <a class="el" href="dia_8hpp_source.html#l01944">DIA&lt; ValueType_, Stack_ &gt;::stack_</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
 </div>
 </div>
@@ -242,6 +236,9 @@ Local Operations (LOps)</h2></td></tr>
 
 <p>Each item of a <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> is expanded by the <code>flatmap_function</code> : \( A \to \textrm{array}(B) \) to zero or more items of different type, which are concatenated in the resulting <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a>. </p>
 <p>The return type of <code>flatmap_function</code> must be specified as template parameter.</p>
+<div class="image">
+<img src="FlatMap.svg" alt="FlatMap.svg"/>
+</div>
 <p>FlatMap is a LOp, which maps this <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> according to the flatmap_function given by the user. The flatmap_function maps each element to elements of a possibly different type. The flatmap_function has an emitter function as it's second parameter. This emitter is called once for each element to be emitted. The function chain of the returned <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> is this <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a>'s stack_ chained with flatmap_function.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -256,9 +253,9 @@ Local Operations (LOps)</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="dia_8hpp_source.html#l00441">441</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dia_8hpp_source.html#l00445">445</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
-<p>References <a class="el" href="dia__base_8hpp_source.html#l00208">DIABase::context()</a>, <a class="el" href="dia_8hpp_source.html#l00273">DIA&lt; ValueType_, Stack_ &gt;::context()</a>, <a class="el" href="dia_8hpp_source.html#l01844">DIA&lt; ValueType_, Stack_ &gt;::dia_id_</a>, <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, <a class="el" href="context_8hpp_source.html#l00462">Context::logger_</a>, <a class="el" href="context_8hpp_source.html#l00391">Context::next_dia_id()</a>, <a class="el" href="dia_8hpp_source.html#l01837">DIA&lt; ValueType_, Stack_ &gt;::node_</a>, and <a class="el" href="dia_8hpp_source.html#l01841">DIA&lt; ValueType_, Stack_ &gt;::stack_</a>.</p>
+<p>References <a class="el" href="dia__base_8hpp_source.html#l00208">DIABase::context()</a>, <a class="el" href="dia_8hpp_source.html#l00273">DIA&lt; ValueType_, Stack_ &gt;::context()</a>, <a class="el" href="dia_8hpp_source.html#l01947">DIA&lt; ValueType_, Stack_ &gt;::dia_id_</a>, <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, <a class="el" href="context_8hpp_source.html#l00462">Context::logger_</a>, <a class="el" href="context_8hpp_source.html#l00391">Context::next_dia_id()</a>, <a class="el" href="dia_8hpp_source.html#l01940">DIA&lt; ValueType_, Stack_ &gt;::node_</a>, and <a class="el" href="dia_8hpp_source.html#l01944">DIA&lt; ValueType_, Stack_ &gt;::stack_</a>.</p>
 
 </div>
 </div>
@@ -295,7 +292,7 @@ Local Operations (LOps)</h2></td></tr>
 
 <p>Definition at line <a class="el" href="dia_8hpp_source.html#l00345">345</a> of file <a class="el" href="dia_8hpp_source.html">dia.hpp</a>.</p>
 
-<p>References <a class="el" href="dia__base_8hpp_source.html#l00208">DIABase::context()</a>, <a class="el" href="dia_8hpp_source.html#l00273">DIA&lt; ValueType_, Stack_ &gt;::context()</a>, <a class="el" href="dia_8hpp_source.html#l01844">DIA&lt; ValueType_, Stack_ &gt;::dia_id_</a>, <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, <a class="el" href="context_8hpp_source.html#l00462">Context::logger_</a>, <a class="el" href="context_8hpp_source.html#l00391">Context::next_dia_id()</a>, <a class="el" href="dia_8hpp_source.html#l01837">DIA&lt; ValueType_, Stack_ &gt;::node_</a>, <a class="el" href="dia_8hpp_source.html#l01841">DIA&lt; ValueType_, Stack_ &gt;::stack_</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
+<p>References <a class="el" href="dia__base_8hpp_source.html#l00208">DIABase::context()</a>, <a class="el" href="dia_8hpp_source.html#l00273">DIA&lt; ValueType_, Stack_ &gt;::context()</a>, <a class="el" href="dia_8hpp_source.html#l01947">DIA&lt; ValueType_, Stack_ &gt;::dia_id_</a>, <a class="el" href="dia_8hpp_source.html#l00175">DIA&lt; ValueType_, Stack_ &gt;::IsValid()</a>, <a class="el" href="context_8hpp_source.html#l00462">Context::logger_</a>, <a class="el" href="context_8hpp_source.html#l00391">Context::next_dia_id()</a>, <a class="el" href="dia_8hpp_source.html#l01940">DIA&lt; ValueType_, Stack_ &gt;::node_</a>, <a class="el" href="dia_8hpp_source.html#l01944">DIA&lt; ValueType_, Stack_ &gt;::stack_</a>, and <a class="el" href="gen__data_8py_source.html#l00041">gen_data::value</a>.</p>
 
 </div>
 </div>
@@ -427,7 +424,7 @@ Local Operations (LOps)</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Aug 8 2019 12:51:25 for Thrill by
+    <li class="footer">Generated on Mon Aug 12 2019 17:09:39 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

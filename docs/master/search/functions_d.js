@@ -60,7 +60,7 @@ var searchData=
   ['mem_5flimit',['mem_limit',['../classthrill_1_1api_1_1Context.html#a1cf35df6448618a1d7ca139e33d57152',1,'thrill::api::Context']]],
   ['mem_5fmanager',['mem_manager',['../classthrill_1_1api_1_1HostContext.html#a140117ebf6f0d19c52948868ce94cd9a',1,'thrill::api::HostContext::mem_manager()'],['../classthrill_1_1api_1_1Context.html#a140117ebf6f0d19c52948868ce94cd9a',1,'thrill::api::Context::mem_manager()'],['../classthrill_1_1api_1_1DIABase.html#a140117ebf6f0d19c52948868ce94cd9a',1,'thrill::api::DIABase::mem_manager()']]],
   ['memory_5ffile',['memory_file',['../classfoxxll_1_1memory__file.html#ae91e301d72bffe80042d61c9a63c2e31',1,'foxxll::memory_file']]],
-  ['merge',['Merge',['../group__dia__dops.html#gae772b581a45cd14c0ef31b4ac2ea3b7f',1,'thrill::api::DIA::Merge()'],['../group__dia__dops.html#gad35c16791b8d75ea6b6d741b952d7579',1,'thrill::api::Merge()']]],
+  ['merge',['Merge',['../group__dia__dops.html#gae772b581a45cd14c0ef31b4ac2ea3b7f',1,'thrill::api::DIA::Merge()'],['../group__dia__dops__free.html#gad35c16791b8d75ea6b6d741b952d7579',1,'thrill::api::Merge()']]],
   ['merge_5fadvance',['merge_advance',['../group__tlx__algorithm.html#gaea5cc8f7ba44822560e49eb74ae83794',1,'tlx']]],
   ['merge_5fadvance_5fmovc',['merge_advance_movc',['../group__tlx__algorithm.html#gae146e022866f8e3e983cfc46b2287555',1,'tlx']]],
   ['merge_5fadvance_5fusual',['merge_advance_usual',['../group__tlx__algorithm.html#gad57c4ceef5354d1657467303fe06bebf',1,'tlx']]],

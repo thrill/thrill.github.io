@@ -8,7 +8,11 @@ var group__dia__sources =
     [ "Generate", "group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1", null ],
     [ "Generate", "group__dia__sources.html#ga2433432b71ba99d3fef753f8dda30c4c", null ],
     [ "ReadBinary", "group__dia__sources.html#ga5053c698f3075bd4ca95ccea5186f7b6", null ],
+    [ "ReadBinary", "group__dia__sources.html#gaa68dc21eeb627b880a5429e6b7d72202", null ],
     [ "ReadBinary", "group__dia__sources.html#gaf7849e7598b3578fb23eff3966434d6f", null ],
+    [ "ReadBinary", "group__dia__sources.html#ga7d268ae799cad7f00eb703858c77e6b3", null ],
     [ "ReadLines", "group__dia__sources.html#ga2cc91996c91259fea9434632b58bf14c", null ],
-    [ "ReadLines", "group__dia__sources.html#ga6bef41d6ddf0342d3c2125394e1c0ab3", null ]
+    [ "ReadLines", "group__dia__sources.html#ga0af8972f914cc22978496007eb99a1ee", null ],
+    [ "ReadLines", "group__dia__sources.html#ga6bef41d6ddf0342d3c2125394e1c0ab3", null ],
+    [ "ReadLines", "group__dia__sources.html#ga111a5d1d6a9f1faa61b8020a433f5118", null ]
 ];

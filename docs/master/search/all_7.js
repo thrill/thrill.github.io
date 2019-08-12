@@ -1,6 +1,7 @@
 var searchData=
 [
   ['async_5fschedule_5flocal',['async_schedule_local',['../namespacefoxxll_1_1async__schedule__local.html',1,'foxxll']]],
+  ['free_20operation_20functions',['Free Operation Functions',['../group__dia__dops__free.html',1,'']]],
   ['f',['F',['../namespacetlx_1_1digest__detail.html#ad576ac53aaa315e3bcbdc56addb92fd0',1,'tlx::digest_detail']]],
   ['f0',['F0',['../namespacetlx_1_1digest__detail.html#a17cf4a95cea96b8f6cb169d398a47708',1,'tlx::digest_detail']]],
   ['f1',['F1',['../namespacetlx_1_1digest__detail.html#a65ace23f09d59142cb05b523ef0fab2f',1,'tlx::digest_detail']]],

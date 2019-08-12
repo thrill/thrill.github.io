@@ -110,15 +110,6 @@ $(document).ready(function(){initNavTree('group__dia__actions.html','');});
 <div class="title">Actions<div class="ingroups"><a class="el" href="group__dia__api.html">DIA API Operations</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for Actions:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<center><table><tr><td><div class="center"><iframe scrolling="no" frameborder="0" src="group__dia__actions.svg" width="264" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</td></tr></table></center>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Actions</h2></td></tr>
@@ -219,8 +210,11 @@ Actions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the whole <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> in an std::vector on each worker. </p>
-<p>This is only for testing purposes and should not be used on large datasets. </p>
-
+<p>This is only for testing purposes and should not be used on large datasets.</p>
+<div class="image">
+<img src="AllGather.svg" alt="AllGather.svg"/>
+</div>
+ 
 <p>Definition at line <a class="el" href="all__gather_8hpp_source.html#l00114">114</a> of file <a class="el" href="all__gather_8hpp_source.html">all_gather.hpp</a>.</p>
 
 <p>References <a class="el" href="dia__base_8cpp_source.html#l00381">DIABase::RunScope()</a>.</p>
@@ -242,7 +236,10 @@ Actions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AllGather is an Action, which returns the whole <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> in an std::vector on each worker. This is only for testing purposes and should not be used on large datasets. </p>
-
+<div class="image">
+<img src="AllGather.svg" alt="AllGather.svg"/>
+</div>
+ 
 <p>Definition at line <a class="el" href="all__gather_8hpp_source.html#l00130">130</a> of file <a class="el" href="all__gather_8hpp_source.html">all_gather.hpp</a>.</p>
 
 <p>References <a class="el" href="dia__base_8cpp_source.html#l00381">DIABase::RunScope()</a>.</p>
@@ -263,8 +260,11 @@ Actions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the whole <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> in an std::vector on each worker. </p>
-<p>This is only for testing purposes and should not be used on large datasets. </p>
-
+<p>This is only for testing purposes and should not be used on large datasets.</p>
+<div class="image">
+<img src="AllGather.svg" alt="AllGather.svg"/>
+</div>
+ 
 <p>Definition at line <a class="el" href="all__gather_8hpp_source.html#l00143">143</a> of file <a class="el" href="all__gather_8hpp_source.html">all_gather.hpp</a>.</p>
 
 </div>
@@ -294,6 +294,9 @@ Actions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AllReduce is an Action, which computes the reduction sum of all elements globally and delivers the same value on all workers. </p>
+<div class="image">
+<img src="AllReduce.svg" alt="AllReduce.svg"/>
+</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">reduce_function</td><td>Reduce function.</td></tr>
@@ -333,6 +336,9 @@ Actions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>AllReduce is an ActionFuture, which computes the reduction sum of all elements globally and delivers the same value on all workers. </p>
+<div class="image">
+<img src="AllReduce.svg" alt="AllReduce.svg"/>
+</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">reduce_function</td><td>Reduce function.</td></tr>
@@ -443,6 +449,9 @@ Actions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Max is an Action, which computes the maximum of all elements globally. </p>
+<div class="image">
+<img src="Sum.svg" alt="Sum.svg"/>
+</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">initial_value</td><td>Initial value of the max. </td></tr>
@@ -471,6 +480,9 @@ Actions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Max is an ActionFuture, which computes the maximum of all elements globally. </p>
+<div class="image">
+<img src="Sum.svg" alt="Sum.svg"/>
+</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">initial_value</td><td>Initial value of the max. </td></tr>
@@ -497,6 +509,9 @@ Actions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Min is an Action, which computes the minimum of all elements globally. </p>
+<div class="image">
+<img src="Sum.svg" alt="Sum.svg"/>
+</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">initial_value</td><td>Initial value of the min. </td></tr>
@@ -525,6 +540,9 @@ Actions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Min is an ActionFuture, which computes the minimum of all elements globally. </p>
+<div class="image">
+<img src="Sum.svg" alt="Sum.svg"/>
+</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">initial_value</td><td>Initial value of the min. </td></tr>
@@ -675,6 +693,9 @@ Actions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sum is an Action, which computes the sum of all elements globally. </p>
+<div class="image">
+<img src="Sum.svg" alt="Sum.svg"/>
+</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sum_function</td><td>Sum function.</td></tr>
@@ -714,6 +735,9 @@ Actions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sum is an ActionFuture, which computes the sum of all elements globally. </p>
+<div class="image">
+<img src="Sum.svg" alt="Sum.svg"/>
+</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sum_function</td><td>Sum function.</td></tr>
@@ -754,6 +778,9 @@ Actions</h2></td></tr>
 
 <p>WriteBinary is a function, which writes a <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> to many files per worker. </p>
 <p>The input <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> can be recreated with ReadBinary and equal filepath.</p>
+<div class="image">
+<img src="WriteBinary.svg" alt="WriteBinary.svg"/>
+</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filepath</td><td>Destination of the output file. This filepath must contain two special substrings: "$$$$$" is replaced by the worker id and "#####" will be replaced by the file chunk id. The last occurrences of "$" and "#" are replaced, otherwise "$$$$" and/or "##########" are automatically appended.</td></tr>
@@ -794,6 +821,9 @@ Actions</h2></td></tr>
 
 <p>WriteBinary is a function, which writes a <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> to many files per worker. </p>
 <p>The input <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> can be recreated with ReadBinary and equal filepath.</p>
+<div class="image">
+<img src="WriteBinary.svg" alt="WriteBinary.svg"/>
+</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filepath</td><td>Destination of the output file. This filepath must contain two special substrings: "$$$$$" is replaced by the worker id and "#####" will be replaced by the file chunk id. The last occurrences of "$" and "#" are replaced, otherwise "$$$$" and/or "##########" are automatically appended.</td></tr>
@@ -832,6 +862,9 @@ Actions</h2></td></tr>
 
 <p>WriteLines is an Action, which writes std::strings to multiple output files. </p>
 <p>Strings are written using fstream with a newline after each entry. Each worker creates its individual file.</p>
+<div class="image">
+<img src="WriteLines.svg" alt="WriteLines.svg"/>
+</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filepath</td><td>Destination of the output file. This filepath must contain two special substrings: "$$$$$" is replaced by the worker id and "#####" will be replaced by the file chunk id. The last occurrences of "$" and "#" are replaced, otherwise "$$$$" and/or "##########" are automatically appended.</td></tr>
@@ -872,6 +905,9 @@ Actions</h2></td></tr>
 
 <p>WriteLines is an ActionFuture, which writes std::strings to multiple output files. </p>
 <p>Strings are written using fstream with a newline after each entry. Each worker creates its individual file.</p>
+<div class="image">
+<img src="WriteLines.svg" alt="WriteLines.svg"/>
+</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filepath</td><td>Destination of the output file. This filepath must contain two special substrings: "$$$$$" is replaced by the worker id and "#####" will be replaced by the file chunk id. The last occurrences of "$" and "#" are replaced, otherwise "$$$$" and/or "##########" are automatically appended.</td></tr>
@@ -947,7 +983,7 @@ Actions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Aug 8 2019 12:51:26 for Thrill by
+    <li class="footer">Generated on Mon Aug 12 2019 17:09:39 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

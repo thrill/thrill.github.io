@@ -186,60 +186,64 @@ $(document).ready(function(){initNavTree('equal__to__dia_8hpp_source.html','');}
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> * data from a single worker, EqualToDIA is a wrapper if the data is already</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> * distributed.</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> * \param ctx Reference to the Context object</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> * \image html dia_ops/EqualToDIA.svg</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> * \param in_vector Vector to convert to a DIA, the contents is COPIED into the</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> * DIANode.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="group__dia__sources.html#gafb02c857c8b58cc3409e54eca0a76589">   79</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__sources.html#gafb02c857c8b58cc3409e54eca0a76589">EqualToDIA</a>(<a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <span class="keyword">const</span> std::vector&lt;ValueType&gt;&amp; in_vector) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1EqualToDIANode.html">EqualToDIANode</a> = <a class="code" href="classthrill_1_1api_1_1EqualToDIANode.html">api::EqualToDIANode&lt;ValueType&gt;</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> * \param ctx Reference to the Context object</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * \param in_vector Vector to convert to a DIA, the contents is COPIED into the</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> * DIANode.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group__dia__sources.html#gafb02c857c8b58cc3409e54eca0a76589">   81</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__sources.html#gafb02c857c8b58cc3409e54eca0a76589">EqualToDIA</a>(<a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <span class="keyword">const</span> std::vector&lt;ValueType&gt;&amp; in_vector) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(tlx::make_counting&lt;EqualToDIANode&gt;(ctx, in_vector));</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">/*!</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> * EqualToDIA is an Source-DOp, which takes a vector of data EQUAL on all</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> * workers, and returns the data in a DIA. Use Distribute to actually distribute</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> * data from a single worker, EqualToDIA is a wrapper if the data is already</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> * distributed.</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> * \param ctx Reference to the Context object</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1EqualToDIANode.html">EqualToDIANode</a> = <a class="code" href="classthrill_1_1api_1_1EqualToDIANode.html">api::EqualToDIANode&lt;ValueType&gt;</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(tlx::make_counting&lt;EqualToDIANode&gt;(ctx, in_vector));</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">/*!</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> * EqualToDIA is an Source-DOp, which takes a vector of data EQUAL on all</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> * workers, and returns the data in a DIA. Use Distribute to actually distribute</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> * data from a single worker, EqualToDIA is a wrapper if the data is already</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> * distributed.</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> * \param in_vector Vector to convert to a DIA, the contents is MOVED into the</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> * DIANode.</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="group__dia__sources.html#ga877b4c4d090c2698b13a82ef4417852b">  101</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__sources.html#gafb02c857c8b58cc3409e54eca0a76589">EqualToDIA</a>(<a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                std::vector&lt;ValueType&gt;&amp;&amp; in_vector) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1EqualToDIANode.html">EqualToDIANode</a> = <a class="code" href="classthrill_1_1api_1_1EqualToDIANode.html">api::EqualToDIANode&lt;ValueType&gt;</a>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        tlx::make_counting&lt;EqualToDIANode&gt;(ctx, std::move(in_vector)));</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> * \image html dia_ops/EqualToDIA.svg</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> * \param ctx Reference to the Context object</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> * \param in_vector Vector to convert to a DIA, the contents is MOVED into the</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> * DIANode.</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="group__dia__sources.html#ga877b4c4d090c2698b13a82ef4417852b">  105</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__sources.html#gafb02c857c8b58cc3409e54eca0a76589">EqualToDIA</a>(<a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                std::vector&lt;ValueType&gt;&amp;&amp; in_vector) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1EqualToDIANode.html">EqualToDIANode</a> = <a class="code" href="classthrill_1_1api_1_1EqualToDIANode.html">api::EqualToDIANode&lt;ValueType&gt;</a>;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;} <span class="comment">// namespace api</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="group__dia__sources.html#gafb02c857c8b58cc3409e54eca0a76589">api::EqualToDIA</a>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;} <span class="comment">// namespace thrill</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif // !THRILL_API_EQUAL_TO_DIA_HEADER</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        tlx::make_counting&lt;EqualToDIANode&gt;(ctx, std::move(in_vector)));</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;} <span class="comment">// namespace api</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="group__dia__sources.html#gafb02c857c8b58cc3409e54eca0a76589">api::EqualToDIA</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;} <span class="comment">// namespace thrill</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif // !THRILL_API_EQUAL_TO_DIA_HEADER</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="classthrill_1_1api_1_1EqualToDIANode_html_aeebcebe0b019aa1b4333a5bbfb39439e"><div class="ttname"><a href="classthrill_1_1api_1_1EqualToDIANode.html#aeebcebe0b019aa1b4333a5bbfb39439e">thrill::api::EqualToDIANode::PushData</a></div><div class="ttdeci">void PushData(bool) final</div><div class="ttdoc">Virtual method for pushing data. Triggers actual pushing in sub-classes. </div><div class="ttdef"><b>Definition:</b> <a href="equal__to__dia_8hpp_source.html#l00048">equal_to_dia.hpp:48</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIA_html"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html">thrill::api::DIA</a></div><div class="ttdoc">DIA is the interface between the user and the Thrill framework. </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00141">dia.hpp:141</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1EqualToDIANode_html_a511f78f13353983256fc08aec28f28f2"><div class="ttname"><a href="classthrill_1_1api_1_1EqualToDIANode.html#a511f78f13353983256fc08aec28f28f2">thrill::api::EqualToDIANode::in_vector_</a></div><div class="ttdeci">std::vector&lt; ValueType &gt; in_vector_</div><div class="ttdoc">Vector pointer to read elements from. </div><div class="ttdef"><b>Definition:</b> <a href="equal__to__dia_8hpp_source.html#l00062">equal_to_dia.hpp:62</a></div></div>
 <div class="ttc" id="vector__free_8hpp_html"><div class="ttname"><a href="vector__free_8hpp.html">vector_free.hpp</a></div></div>
-<div class="ttc" id="group__dia__sources_html_gafb02c857c8b58cc3409e54eca0a76589"><div class="ttname"><a href="group__dia__sources.html#gafb02c857c8b58cc3409e54eca0a76589">thrill::api::EqualToDIA</a></div><div class="ttdeci">auto EqualToDIA(Context &amp;ctx, const std::vector&lt; ValueType &gt; &amp;in_vector)</div><div class="ttdoc">EqualToDIA is a Source-DOp, which takes a vector of data EQUAL on all workers, and returns the data i...</div><div class="ttdef"><b>Definition:</b> <a href="equal__to__dia_8hpp_source.html#l00079">equal_to_dia.hpp:79</a></div></div>
+<div class="ttc" id="group__dia__sources_html_gafb02c857c8b58cc3409e54eca0a76589"><div class="ttname"><a href="group__dia__sources.html#gafb02c857c8b58cc3409e54eca0a76589">thrill::api::EqualToDIA</a></div><div class="ttdeci">auto EqualToDIA(Context &amp;ctx, const std::vector&lt; ValueType &gt; &amp;in_vector)</div><div class="ttdoc">EqualToDIA is a Source-DOp, which takes a vector of data EQUAL on all workers, and returns the data i...</div><div class="ttdef"><b>Definition:</b> <a href="equal__to__dia_8hpp_source.html#l00081">equal_to_dia.hpp:81</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1EqualToDIANode_html_a54d9406319092183d0f0bf5c26a3dcc4"><div class="ttname"><a href="classthrill_1_1api_1_1EqualToDIANode.html#a54d9406319092183d0f0bf5c26a3dcc4">thrill::api::EqualToDIANode::EqualToDIANode</a></div><div class="ttdeci">EqualToDIANode(Context &amp;ctx, const std::vector&lt; ValueType &gt; &amp;in_vector)</div><div class="ttdef"><b>Definition:</b> <a href="equal__to__dia_8hpp_source.html#l00036">equal_to_dia.hpp:36</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1Range_html"><div class="ttname"><a href="classthrill_1_1common_1_1Range.html">thrill::common::Range</a></div><div class="ttdoc">represents a 1 dimensional range (interval) [begin,end) </div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2math_8hpp_source.html#l00041">math.hpp:41</a></div></div>
 <div class="ttc" id="thrill_2common_2logger_8hpp_html"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html">logger.hpp</a></div></div>
@@ -262,7 +266,7 @@ $(document).ready(function(){initNavTree('equal__to__dia_8hpp_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="equal__to__dia_8hpp.html">equal_to_dia.hpp</a></li>
-    <li class="footer">Generated on Thu Aug 8 2019 12:51:23 for Thrill by
+    <li class="footer">Generated on Mon Aug 12 2019 17:09:36 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

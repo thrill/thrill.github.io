@@ -183,56 +183,60 @@ $(document).ready(function(){initNavTree('concat__to__dia_8hpp_source.html','');
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> * CONCATENATES them into a DIA. Use Distribute to actually distribute data from</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> * a single worker, ConcatToDIA is a wrapper if the data is already distributed.</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> * \param ctx Reference to the Context object</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> * \image html dia_ops/ConcatToDIA.svg</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> * \param in_vector Vector to concatenate into a DIA, the contents is COPIED</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> * into the DIANode.</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group__dia__sources.html#gac14dd90c4c4bae5cc56ce1decc863e5d">   76</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__sources.html#gac14dd90c4c4bae5cc56ce1decc863e5d">ConcatToDIA</a>(<a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                 <span class="keyword">const</span> std::vector&lt;ValueType&gt;&amp; in_vector) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ConcatToDIANode.html">ConcatToDIANode</a> = <a class="code" href="classthrill_1_1api_1_1ConcatToDIANode.html">api::ConcatToDIANode&lt;ValueType&gt;</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> * \param ctx Reference to the Context object</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> * \param in_vector Vector to concatenate into a DIA, the contents is COPIED</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> * into the DIANode.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group__dia__sources.html#gac14dd90c4c4bae5cc56ce1decc863e5d">   78</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__sources.html#gac14dd90c4c4bae5cc56ce1decc863e5d">ConcatToDIA</a>(<a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                 <span class="keyword">const</span> std::vector&lt;ValueType&gt;&amp; in_vector) {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(tlx::make_counting&lt;ConcatToDIANode&gt;(ctx, in_vector));</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">/*!</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"> * ConcatToDIA is a Source-DOp, which takes a vector of data on all workers, and</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"> * CONCATENATES them into a DIA. Use Distribute to actually distribute data from</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"> * a single worker, ConcatToDIA is a wrapper if the data is already distributed.</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> * \param ctx Reference to the Context object</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ConcatToDIANode.html">ConcatToDIANode</a> = <a class="code" href="classthrill_1_1api_1_1ConcatToDIANode.html">api::ConcatToDIANode&lt;ValueType&gt;</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(tlx::make_counting&lt;ConcatToDIANode&gt;(ctx, in_vector));</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">/*!</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"> * ConcatToDIA is a Source-DOp, which takes a vector of data on all workers, and</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> * CONCATENATES them into a DIA. Use Distribute to actually distribute data from</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> * a single worker, ConcatToDIA is a wrapper if the data is already distributed.</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> * \param in_vector Vector to concatenate into a DIA, the contents is MOVED into</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> * the DIANode.</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="namespacethrill_1_1api.html#a982f650e6ecc6adf75d2da34c247b635">   95</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__sources.html#gac14dd90c4c4bae5cc56ce1decc863e5d">ConcatToDIA</a>(<a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                 std::vector&lt;ValueType&gt;&amp;&amp; in_vector) {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ConcatToDIANode.html">ConcatToDIANode</a> = <a class="code" href="classthrill_1_1api_1_1ConcatToDIANode.html">api::ConcatToDIANode&lt;ValueType&gt;</a>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        tlx::make_counting&lt;ConcatToDIANode&gt;(ctx, std::move(in_vector)));</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> * \image html dia_ops/ConcatToDIA.svg</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> * \param ctx Reference to the Context object</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> * \param in_vector Vector to concatenate into a DIA, the contents is MOVED into</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> * the DIANode.</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="namespacethrill_1_1api.html#a982f650e6ecc6adf75d2da34c247b635">   99</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__sources.html#gac14dd90c4c4bae5cc56ce1decc863e5d">ConcatToDIA</a>(<a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                 std::vector&lt;ValueType&gt;&amp;&amp; in_vector) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1ConcatToDIANode.html">ConcatToDIANode</a> = <a class="code" href="classthrill_1_1api_1_1ConcatToDIANode.html">api::ConcatToDIANode&lt;ValueType&gt;</a>;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;} <span class="comment">// namespace api</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="group__dia__sources.html#gac14dd90c4c4bae5cc56ce1decc863e5d">api::ConcatToDIA</a>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;} <span class="comment">// namespace thrill</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif // !THRILL_API_CONCAT_TO_DIA_HEADER</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        tlx::make_counting&lt;ConcatToDIANode&gt;(ctx, std::move(in_vector)));</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;} <span class="comment">// namespace api</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="group__dia__sources.html#gac14dd90c4c4bae5cc56ce1decc863e5d">api::ConcatToDIA</a>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;} <span class="comment">// namespace thrill</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif // !THRILL_API_CONCAT_TO_DIA_HEADER</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIA_html"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html">thrill::api::DIA</a></div><div class="ttdoc">DIA is the interface between the user and the Thrill framework. </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00141">dia.hpp:141</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1ConcatToDIANode_html_a34ce5e4343a2da91a1a471becc5aa1a8"><div class="ttname"><a href="classthrill_1_1api_1_1ConcatToDIANode.html#a34ce5e4343a2da91a1a471becc5aa1a8">thrill::api::ConcatToDIANode::ConcatToDIANode</a></div><div class="ttdeci">ConcatToDIANode(Context &amp;ctx, const std::vector&lt; ValueType &gt; &amp;in_vector)</div><div class="ttdef"><b>Definition:</b> <a href="concat__to__dia_8hpp_source.html#l00036">concat_to_dia.hpp:36</a></div></div>
 <div class="ttc" id="vector__free_8hpp_html"><div class="ttname"><a href="vector__free_8hpp.html">vector_free.hpp</a></div></div>
-<div class="ttc" id="group__dia__sources_html_gac14dd90c4c4bae5cc56ce1decc863e5d"><div class="ttname"><a href="group__dia__sources.html#gac14dd90c4c4bae5cc56ce1decc863e5d">thrill::api::ConcatToDIA</a></div><div class="ttdeci">auto ConcatToDIA(Context &amp;ctx, const std::vector&lt; ValueType &gt; &amp;in_vector)</div><div class="ttdoc">ConcatToDIA is a Source-DOp, which takes a vector of data on all workers, and CONCATENATES them into ...</div><div class="ttdef"><b>Definition:</b> <a href="concat__to__dia_8hpp_source.html#l00076">concat_to_dia.hpp:76</a></div></div>
+<div class="ttc" id="group__dia__sources_html_gac14dd90c4c4bae5cc56ce1decc863e5d"><div class="ttname"><a href="group__dia__sources.html#gac14dd90c4c4bae5cc56ce1decc863e5d">thrill::api::ConcatToDIA</a></div><div class="ttdeci">auto ConcatToDIA(Context &amp;ctx, const std::vector&lt; ValueType &gt; &amp;in_vector)</div><div class="ttdoc">ConcatToDIA is a Source-DOp, which takes a vector of data on all workers, and CONCATENATES them into ...</div><div class="ttdef"><b>Definition:</b> <a href="concat__to__dia_8hpp_source.html#l00078">concat_to_dia.hpp:78</a></div></div>
 <div class="ttc" id="thrill_2common_2logger_8hpp_html"><div class="ttname"><a href="thrill_2common_2logger_8hpp.html">logger.hpp</a></div></div>
 <div class="ttc" id="dia_8hpp_html"><div class="ttname"><a href="dia_8hpp.html">dia.hpp</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1Context_html"><div class="ttname"><a href="classthrill_1_1api_1_1Context.html">thrill::api::Context</a></div><div class="ttdoc">The Context of a job is a unique instance per worker which holds references to all underlying parts o...</div><div class="ttdef"><b>Definition:</b> <a href="context_8hpp_source.html#l00221">context.hpp:221</a></div></div>
@@ -252,7 +256,7 @@ $(document).ready(function(){initNavTree('concat__to__dia_8hpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="concat__to__dia_8hpp.html">concat_to_dia.hpp</a></li>
-    <li class="footer">Generated on Thu Aug 8 2019 12:51:23 for Thrill by
+    <li class="footer">Generated on Mon Aug 12 2019 17:09:36 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

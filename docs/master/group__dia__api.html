@@ -112,15 +112,6 @@ $(document).ready(function(){initNavTree('group__dia__api.html','');});
 <div class="title">DIA API Operations</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for DIA API Operations:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<center><table><tr><td><div class="center"><iframe scrolling="no" frameborder="0" src="group__dia__api.svg" width="360" height="204"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</td></tr></table></center>
-</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
@@ -134,12 +125,19 @@ Modules</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>The set of <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> operations is grouped into four types:</p>
+<ul>
+<li>Source operations create DIAs from outside data, they have no parent DIAs and thus initiate the data-flow graph.</li>
+<li>Local operations require no communication and are composed with the previous operations.</li>
+<li>Distributed operations are the main class and contain many parameterized transformations which have one or more DIAs as inputs and result in one <a class="el" href="classthrill_1_1api_1_1DIA.html" title="DIA is the interface between the user and the Thrill framework. ">DIA</a> as output.</li>
+<li>Actions are terminal nodes in the data-flow graph which trigger computation of a result and deliver this back to the user program. </li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Aug 8 2019 12:51:25 for Thrill by
+    <li class="footer">Generated on Mon Aug 12 2019 17:09:39 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

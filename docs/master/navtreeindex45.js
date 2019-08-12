@@ -1,5 +1,10 @@
 var NAVTREEINDEX45 =
 {
+"structthrill_1_1net_1_1tcp_1_1SelectDispatcher_1_1Watch.html#acb5b88a6f065a050107c600e8fe837e9":[3,1,2,1,5,0,1],
+"structthrill_1_1net_1_1tcp_1_1SelectDispatcher_1_1Watch.html#af7a29a4e87f668a8362ff20900dec098":[3,1,2,1,5,0,2],
+"structthrill_1_1vfs_1_1FileInfo.html":[5,0,4,6,1],
+"structthrill_1_1vfs_1_1FileInfo.html#a2a78dec0386caa0989d7670a4cd4c0c0":[5,0,4,6,1,2],
+"structthrill_1_1vfs_1_1FileInfo.html#a4d455efceee21e97d8e21ee40e9b4a20":[5,0,4,6,1,4],
 "structthrill_1_1vfs_1_1FileInfo.html#a4d6ea769ef670622b4be98223e81bb13":[5,0,4,6,1,3],
 "structthrill_1_1vfs_1_1FileInfo.html#a4ec01c5cbb385fbe57f1abb3361938ff":[5,0,4,6,1,6],
 "structthrill_1_1vfs_1_1FileInfo.html#a7816a35fb0fca00a0d329cfb9ba5e9da":[5,0,4,6,1,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX45 =
 "temporary__directory_8hpp.html":[6,0,3,6,14],
 "temporary__directory_8hpp.html#afa3780ceceb0065246448ac95b88612f":[6,0,3,6,14,1],
 "temporary__directory_8hpp_source.html":[6,0,3,6,14],
-"terasort_8cpp.html":[6,0,1,9,0],
-"terasort_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[6,0,1,9,0,0],
-"terasort_8cpp.html#aa41f9531b5286a898c9710f428d8fbf7":[6,0,1,9,0,1],
-"terasort_8cpp_source.html":[6,0,1,9,0],
-"tests_2common_2stats_counter_test_8cpp-example.html":[7,6],
-"tests_2common_2stats_timer_test_8cpp-example.html":[7,7]
+"terasort_8cpp.html":[6,0,1,9,0]
 };

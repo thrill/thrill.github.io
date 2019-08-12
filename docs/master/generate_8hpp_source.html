@@ -190,69 +190,73 @@ $(document).ready(function(){initNavTree('generate_8hpp_source.html','');});
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> * generator function. The generator function called for each index in the range</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> * of `[0,size)` and must output exactly one item.</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * \param ctx Reference to the Context object</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * \image html dia_ops/Generate.svg</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> * \param size Size of the output DIA</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> * \param ctx Reference to the Context object</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> * \param generate_function Generator function, which maps `size_t` from</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> * `[0,size)` to elements. Input type has to be `size_t`.</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> GenerateFunction&gt;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1">   85</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1">Generate</a>(<a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx, <span class="keywordtype">size_t</span> size,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;              <span class="keyword">const</span> GenerateFunction&amp; generate_function) {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">using</span> GenerateResult =</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keyword">typename</span> common::FunctionTraits&lt;GenerateFunction&gt;::result_type;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1GenerateNode.html">GenerateNode</a> =</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="classthrill_1_1api_1_1GenerateNode.html">api::GenerateNode&lt;GenerateResult, GenerateFunction&gt;</a>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        common::FunctionTraits&lt;GenerateFunction&gt;::arity == 1,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="stringliteral">&quot;GenerateFunction must take exactly one parameter&quot;</span>);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        std::is_convertible&lt;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordtype">size_t</span>,</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keyword">typename</span> common::FunctionTraits&lt;GenerateFunction&gt;::template arg&lt;0&gt;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="stringliteral">&quot;GenerateFunction needs a const unsigned long int&amp; (aka. size_t) as input&quot;</span>);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;GenerateNode&gt;(</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        ctx, generate_function, size);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;GenerateResult&gt;</a>(node);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">/*!</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"> * Generate is a Source-DOp, which creates a DIA of given size containing the</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment"> * size_t indexes `[0,size)`.</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"> * \param ctx Reference to the Context object</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> * \param size Size of the output DIA</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> * \param generate_function Generator function, which maps `size_t` from</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> * `[0,size)` to elements. Input type has to be `size_t`.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> GenerateFunction&gt;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1">   87</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1">Generate</a>(<a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx, <span class="keywordtype">size_t</span> size,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;              <span class="keyword">const</span> GenerateFunction&amp; generate_function) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">using</span> GenerateResult =</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">typename</span> common::FunctionTraits&lt;GenerateFunction&gt;::result_type;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1GenerateNode.html">GenerateNode</a> =</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="classthrill_1_1api_1_1GenerateNode.html">api::GenerateNode&lt;GenerateResult, GenerateFunction&gt;</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        common::FunctionTraits&lt;GenerateFunction&gt;::arity == 1,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="stringliteral">&quot;GenerateFunction must take exactly one parameter&quot;</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        std::is_convertible&lt;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordtype">size_t</span>,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keyword">typename</span> common::FunctionTraits&lt;GenerateFunction&gt;::template arg&lt;0&gt;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="stringliteral">&quot;GenerateFunction needs a const unsigned long int&amp; (aka. size_t) as input&quot;</span>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;GenerateNode&gt;(</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        ctx, generate_function, size);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;GenerateResult&gt;</a>(node);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">/*!</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment"> * Generate is a Source-DOp, which creates a DIA of given size containing the</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"> * size_t indexes `[0,size)`.</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment"> * \param size Size of the output DIA</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment"> * \image html dia_ops/Generate.svg</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="group__dia__sources.html#ga2433432b71ba99d3fef753f8dda30c4c">  122</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1">Generate</a>(<a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx, <span class="keywordtype">size_t</span> size) {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1">Generate</a>(ctx, size, [](<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp; index) { <span class="keywordflow">return</span> index; });</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;} <span class="comment">// namespace api</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1">api::Generate</a>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;} <span class="comment">// namespace thrill</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif // !THRILL_API_GENERATE_HEADER</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment"> * \param ctx Reference to the Context object</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment"> * \param size Size of the output DIA</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="group__dia__sources.html#ga2433432b71ba99d3fef753f8dda30c4c">  126</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1">Generate</a>(<a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx, <span class="keywordtype">size_t</span> size) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1">Generate</a>(ctx, size, [](<span class="keyword">const</span> <span class="keywordtype">size_t</span>&amp; index) { <span class="keywordflow">return</span> index; });</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;} <span class="comment">// namespace api</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1">api::Generate</a>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;} <span class="comment">// namespace thrill</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif // !THRILL_API_GENERATE_HEADER</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIA_html"><div class="ttname"><a href="classthrill_1_1api_1_1DIA.html">thrill::api::DIA</a></div><div class="ttdoc">DIA is the interface between the user and the Thrill framework. </div><div class="ttdef"><b>Definition:</b> <a href="dia_8hpp_source.html#l00141">dia.hpp:141</a></div></div>
-<div class="ttc" id="group__dia__sources_html_gae0cda32a0aff6d8f1b21c5f1341a0fa1"><div class="ttname"><a href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1">thrill::api::Generate</a></div><div class="ttdeci">auto Generate(Context &amp;ctx, size_t size, const GenerateFunction &amp;generate_function)</div><div class="ttdoc">Generate is a Source-DOp, which creates a DIA of given size using a generator function. </div><div class="ttdef"><b>Definition:</b> <a href="generate_8hpp_source.html#l00085">generate.hpp:85</a></div></div>
+<div class="ttc" id="group__dia__sources_html_gae0cda32a0aff6d8f1b21c5f1341a0fa1"><div class="ttname"><a href="group__dia__sources.html#gae0cda32a0aff6d8f1b21c5f1341a0fa1">thrill::api::Generate</a></div><div class="ttdeci">auto Generate(Context &amp;ctx, size_t size, const GenerateFunction &amp;generate_function)</div><div class="ttdoc">Generate is a Source-DOp, which creates a DIA of given size using a generator function. </div><div class="ttdef"><b>Definition:</b> <a href="generate_8hpp_source.html#l00087">generate.hpp:87</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1GenerateNode_html_afaaffa774f4e24b3cbbe2fe7130c782e"><div class="ttname"><a href="classthrill_1_1api_1_1GenerateNode.html#afaaffa774f4e24b3cbbe2fe7130c782e">thrill::api::GenerateNode::generate_function_</a></div><div class="ttdeci">GenerateFunction generate_function_</div><div class="ttdoc">The generator function which is applied to every index. </div><div class="ttdef"><b>Definition:</b> <a href="generate_8hpp_source.html#l00065">generate.hpp:65</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1GenerateNode_html_aaf69893ef325fa63faae8490597b20a0"><div class="ttname"><a href="classthrill_1_1api_1_1GenerateNode.html#aaf69893ef325fa63faae8490597b20a0">thrill::api::GenerateNode::GenerateNode</a></div><div class="ttdeci">GenerateNode(Context &amp;ctx, GenerateFunction generate_function, size_t size)</div><div class="ttdoc">Constructor for a GenerateNode. </div><div class="ttdef"><b>Definition:</b> <a href="generate_8hpp_source.html#l00047">generate.hpp:47</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1Range_html"><div class="ttname"><a href="classthrill_1_1common_1_1Range.html">thrill::common::Range</a></div><div class="ttdoc">represents a 1 dimensional range (interval) [begin,end) </div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2math_8hpp_source.html#l00041">math.hpp:41</a></div></div>
@@ -276,7 +280,7 @@ $(document).ready(function(){initNavTree('generate_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="generate_8hpp.html">generate.hpp</a></li>
-    <li class="footer">Generated on Thu Aug 8 2019 12:51:23 for Thrill by
+    <li class="footer">Generated on Mon Aug 12 2019 17:09:36 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -462,79 +462,109 @@ $(document).ready(function(){initNavTree('read__binary_8hpp_source.html','');});
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="comment"> * ReadBinary is a DOp, which reads a file written by WriteBinary from the file</span></div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment"> * system and creates a DIA.</span></div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment"> * \param ctx Reference to the context object</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment"> * \param filepath Path of the file in the file system</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="comment"> * \param size_limit Optional limit to the total file size (e.g. for testing</span></div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment"> * algorithms on prefixes)</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="group__dia__sources.html#ga5053c698f3075bd4ca95ccea5186f7b6">  355</a></span>&#160;<a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a> <a class="code" href="group__dia__sources.html#ga5053c698f3075bd4ca95ccea5186f7b6">ReadBinary</a>(</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx, <span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; filepath,</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    uint64_t size_limit = <a class="code" href="classthrill_1_1api_1_1ReadBinaryNode.html">ReadBinaryNode&lt;ValueType&gt;::no_size_limit_</a>) {</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ReadBinaryNode&lt;ValueType&gt; &gt;(</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        ctx, filepath, size_limit, <span class="comment">/* local_storage */</span> <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(node);</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;}</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00366"></a><span class="lineno"><a class="line" href="namespacethrill_1_1api.html#aa68dc21eeb627b880a5429e6b7d72202">  366</a></span>&#160;<a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a> <a class="code" href="group__dia__sources.html#ga5053c698f3075bd4ca95ccea5186f7b6">ReadBinary</a>(</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keyword">struct</span> <a class="code" href="structthrill_1_1api_1_1LocalStorageTag.html">LocalStorageTag</a>, <a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx,</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; filepath,</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    uint64_t size_limit = <a class="code" href="classthrill_1_1api_1_1ReadBinaryNode.html">ReadBinaryNode&lt;ValueType&gt;::no_size_limit_</a>) {</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ReadBinaryNode&lt;ValueType&gt; &gt;(</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        ctx, filepath, size_limit, <span class="comment">/* local_storage */</span> <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(node);</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;}</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment">/*!</span></div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment"> * ReadBinary is a DOp, which reads a file written by WriteBinary from the file</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment"> * system and creates a DIA.</span></div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="comment"> * \param ctx Reference to the context object</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="comment"> * \param filepath Path of the file in the file system</span></div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="comment"> * \param size_limit Optional limit to the total file size (e.g. for testing</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="comment"> * algorithms on prefixes)</span></div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00389"></a><span class="lineno"><a class="line" href="group__dia__sources.html#gaf7849e7598b3578fb23eff3966434d6f">  389</a></span>&#160;<a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a> <a class="code" href="group__dia__sources.html#ga5053c698f3075bd4ca95ccea5186f7b6">ReadBinary</a>(</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx, <span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; filepath,</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    uint64_t size_limit = <a class="code" href="classthrill_1_1api_1_1ReadBinaryNode.html">ReadBinaryNode&lt;ValueType&gt;::no_size_limit_</a>) {</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ReadBinaryNode&lt;ValueType&gt; &gt;(</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        ctx, filepath, size_limit, <span class="comment">/* local_storage */</span> <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(node);</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;}</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
-<div class="line"><a name="l00400"></a><span class="lineno"><a class="line" href="namespacethrill_1_1api.html#a7d268ae799cad7f00eb703858c77e6b3">  400</a></span>&#160;<a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a> <a class="code" href="group__dia__sources.html#ga5053c698f3075bd4ca95ccea5186f7b6">ReadBinary</a>(</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="keyword">struct</span> <a class="code" href="structthrill_1_1api_1_1LocalStorageTag.html">LocalStorageTag</a>, <a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx, <span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; filepath,</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    uint64_t size_limit = <a class="code" href="classthrill_1_1api_1_1ReadBinaryNode.html">ReadBinaryNode&lt;ValueType&gt;::no_size_limit_</a>) {</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ReadBinaryNode&lt;ValueType&gt; &gt;(</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        ctx, filepath, size_limit, <span class="comment">/* local_storage */</span> <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(node);</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;}</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment"> * \image html dia_ops/ReadBinary.svg</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="comment"> * \param ctx Reference to the context object</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment"> * \param filepath Path of the file in the file system</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment"> * \param size_limit Optional limit to the total file size (e.g. for testing</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="comment"> * algorithms on prefixes)</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="group__dia__sources.html#ga5053c698f3075bd4ca95ccea5186f7b6">  357</a></span>&#160;<a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a> <a class="code" href="group__dia__sources.html#ga5053c698f3075bd4ca95ccea5186f7b6">ReadBinary</a>(</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx, <span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; filepath,</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    uint64_t size_limit = <a class="code" href="classthrill_1_1api_1_1ReadBinaryNode.html">ReadBinaryNode&lt;ValueType&gt;::no_size_limit_</a>) {</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ReadBinaryNode&lt;ValueType&gt; &gt;(</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        ctx, filepath, size_limit, <span class="comment">/* local_storage */</span> <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(node);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;}</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment">/*!</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment"> * ReadBinary is a DOp, which reads a file written by WriteBinary from the file</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="comment"> * system and creates a DIA.</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment"> * \image html dia_ops/ReadBinary.svg</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="comment"> * \param ctx Reference to the context object</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="comment"> * \param filepath Path of the file in the file system</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment"> * \param size_limit Optional limit to the total file size (e.g. for testing</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="comment"> * algorithms on prefixes)</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00381"></a><span class="lineno"><a class="line" href="group__dia__sources.html#gaa68dc21eeb627b880a5429e6b7d72202">  381</a></span>&#160;<a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a> <a class="code" href="group__dia__sources.html#ga5053c698f3075bd4ca95ccea5186f7b6">ReadBinary</a>(</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keyword">struct</span> <a class="code" href="structthrill_1_1api_1_1LocalStorageTag.html">LocalStorageTag</a>, <a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx,</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; filepath,</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    uint64_t size_limit = <a class="code" href="classthrill_1_1api_1_1ReadBinaryNode.html">ReadBinaryNode&lt;ValueType&gt;::no_size_limit_</a>) {</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ReadBinaryNode&lt;ValueType&gt; &gt;(</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        ctx, filepath, size_limit, <span class="comment">/* local_storage */</span> <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(node);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;}</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">/*!</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment"> * ReadBinary is a DOp, which reads a file written by WriteBinary from the file</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="comment"> * system and creates a DIA.</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment"> * \image html dia_ops/ReadBinary.svg</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment"> * \param ctx Reference to the context object</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment"> * \param filepath Path of the file in the file system</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment"> * \param size_limit Optional limit to the total file size (e.g. for testing</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;<span class="comment"> * algorithms on prefixes)</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00406"></a><span class="lineno"><a class="line" href="group__dia__sources.html#gaf7849e7598b3578fb23eff3966434d6f">  406</a></span>&#160;<a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a> <a class="code" href="group__dia__sources.html#ga5053c698f3075bd4ca95ccea5186f7b6">ReadBinary</a>(</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx, <span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; filepath,</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    uint64_t size_limit = <a class="code" href="classthrill_1_1api_1_1ReadBinaryNode.html">ReadBinaryNode&lt;ValueType&gt;::no_size_limit_</a>) {</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;} <span class="comment">// namespace api</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="group__dia__sources.html#ga5053c698f3075bd4ca95ccea5186f7b6">api::ReadBinary</a>;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;} <span class="comment">// namespace thrill</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="preprocessor">#endif // !THRILL_API_READ_BINARY_HEADER</span></div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ReadBinaryNode&lt;ValueType&gt; &gt;(</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        ctx, filepath, size_limit, <span class="comment">/* local_storage */</span> <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(node);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;}</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="comment">/*!</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment"> * ReadBinary is a DOp, which reads a file written by WriteBinary from the file</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment"> * system and creates a DIA.</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="comment"> * \image html dia_ops/ReadBinary.svg</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="comment"> * \param ctx Reference to the context object</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="comment"> * \param filepath Path of the file in the file system</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="comment"> * \param size_limit Optional limit to the total file size (e.g. for testing</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="comment"> * algorithms on prefixes)</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="comment"> * \ingroup dia_sources</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType&gt;</div>
+<div class="line"><a name="l00430"></a><span class="lineno"><a class="line" href="group__dia__sources.html#ga7d268ae799cad7f00eb703858c77e6b3">  430</a></span>&#160;<a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a> <a class="code" href="group__dia__sources.html#ga5053c698f3075bd4ca95ccea5186f7b6">ReadBinary</a>(</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <span class="keyword">struct</span> <a class="code" href="structthrill_1_1api_1_1LocalStorageTag.html">LocalStorageTag</a>, <a class="code" href="classthrill_1_1api_1_1Context.html">Context</a>&amp; ctx, <span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; filepath,</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    uint64_t size_limit = <a class="code" href="classthrill_1_1api_1_1ReadBinaryNode.html">ReadBinaryNode&lt;ValueType&gt;::no_size_limit_</a>) {</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keyword">auto</span> node = tlx::make_counting&lt;ReadBinaryNode&lt;ValueType&gt; &gt;(</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        ctx, filepath, size_limit, <span class="comment">/* local_storage */</span> <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(node);</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;}</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;} <span class="comment">// namespace api</span></div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="group__dia__sources.html#ga5053c698f3075bd4ca95ccea5186f7b6">api::ReadBinary</a>;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;} <span class="comment">// namespace thrill</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="preprocessor">#endif // !THRILL_API_READ_BINARY_HEADER</span></div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource_html_ae8f38e2955f476fde7f144a0f76129bb"><div class="ttname"><a href="classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html#ae8f38e2955f476fde7f144a0f76129bb">thrill::api::ReadBinaryNode::VfsFileBlockSource::context_</a></div><div class="ttdeci">Context &amp; context_</div><div class="ttdef"><b>Definition:</b> <a href="read__binary_8hpp_source.html#l00333">read_binary.hpp:333</a></div></div>
 <div class="ttc" id="classthrill_1_1data_1_1Block_html"><div class="ttname"><a href="classthrill_1_1data_1_1Block.html">thrill::data::Block</a></div><div class="ttdoc">Block combines a reference to a read-only ByteBlock and book-keeping information. ...</div><div class="ttdef"><b>Definition:</b> <a href="block_8hpp_source.html#l00052">block.hpp:52</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1ReadBinaryNode_html_a964de03ca34529d20b341b15dc60a56e"><div class="ttname"><a href="classthrill_1_1api_1_1ReadBinaryNode.html#a964de03ca34529d20b341b15dc60a56e">thrill::api::ReadBinaryNode::size_limit</a></div><div class="ttdeci">size_limit</div><div class="ttdef"><b>Definition:</b> <a href="read__binary_8hpp_source.html#l00226">read_binary.hpp:226</a></div></div>
@@ -579,7 +609,7 @@ $(document).ready(function(){initNavTree('read__binary_8hpp_source.html','');});
 <div class="ttc" id="context_8hpp_html"><div class="ttname"><a href="context_8hpp.html">context.hpp</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIABase_html_a7b55875187fc15ca2640cb6b9266a624"><div class="ttname"><a href="classthrill_1_1api_1_1DIABase.html#a7b55875187fc15ca2640cb6b9266a624">thrill::api::DIABase::PushData</a></div><div class="ttdeci">virtual void PushData(bool consume)=0</div><div class="ttdoc">Virtual method for pushing data. Triggers actual pushing in sub-classes. </div></div>
 <div class="ttc" id="buffer__builder_8hpp_html"><div class="ttname"><a href="buffer__builder_8hpp.html">buffer_builder.hpp</a></div></div>
-<div class="ttc" id="group__dia__sources_html_ga5053c698f3075bd4ca95ccea5186f7b6"><div class="ttname"><a href="group__dia__sources.html#ga5053c698f3075bd4ca95ccea5186f7b6">thrill::api::ReadBinary</a></div><div class="ttdeci">DIA&lt; ValueType &gt; ReadBinary(Context &amp;ctx, const std::vector&lt; std::string &gt; &amp;filepath, uint64_t size_limit=ReadBinaryNode&lt; ValueType &gt;::no_size_limit_)</div><div class="ttdoc">ReadBinary is a DOp, which reads a file written by WriteBinary from the file system and creates a DIA...</div><div class="ttdef"><b>Definition:</b> <a href="read__binary_8hpp_source.html#l00355">read_binary.hpp:355</a></div></div>
+<div class="ttc" id="group__dia__sources_html_ga5053c698f3075bd4ca95ccea5186f7b6"><div class="ttname"><a href="group__dia__sources.html#ga5053c698f3075bd4ca95ccea5186f7b6">thrill::api::ReadBinary</a></div><div class="ttdeci">DIA&lt; ValueType &gt; ReadBinary(Context &amp;ctx, const std::vector&lt; std::string &gt; &amp;filepath, uint64_t size_limit=ReadBinaryNode&lt; ValueType &gt;::no_size_limit_)</div><div class="ttdoc">ReadBinary is a DOp, which reads a file written by WriteBinary from the file system and creates a DIA...</div><div class="ttdef"><b>Definition:</b> <a href="read__binary_8hpp_source.html#l00357">read_binary.hpp:357</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource_html_a82a6226e719ae65ccdbc55008c7aeeab"><div class="ttname"><a href="classthrill_1_1api_1_1ReadBinaryNode_1_1VfsFileBlockSource.html#a82a6226e719ae65ccdbc55008c7aeeab">thrill::api::ReadBinaryNode::VfsFileBlockSource::stream_</a></div><div class="ttdeci">vfs::ReadStreamPtr stream_</div><div class="ttdef"><b>Definition:</b> <a href="read__binary_8hpp_source.html#l00334">read_binary.hpp:334</a></div></div>
 <div class="ttc" id="classthrill_1_1data_1_1BlockPool_html_a58ab71370ebcc35528a5bf39a4ae21b7"><div class="ttname"><a href="classthrill_1_1data_1_1BlockPool.html#a58ab71370ebcc35528a5bf39a4ae21b7">thrill::data::BlockPool::AllocateByteBlock</a></div><div class="ttdeci">PinnedByteBlockPtr AllocateByteBlock(size_t size, size_t local_worker_id)</div><div class="ttdef"><b>Definition:</b> <a href="block__pool_8cpp_source.html#l00484">block_pool.cpp:484</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIANode_html_a68a9de78be2b39c646e465f610a2e8b2"><div class="ttname"><a href="classthrill_1_1api_1_1DIANode.html#a68a9de78be2b39c646e465f610a2e8b2">thrill::api::DIANode::PushItem</a></div><div class="ttdeci">void PushItem(const ValueType &amp;item) const </div><div class="ttdoc">Method for derived classes to Push a single item to all children. </div><div class="ttdef"><b>Definition:</b> <a href="dia__node_8hpp_source.html#l00147">dia_node.hpp:147</a></div></div>
@@ -638,7 +668,7 @@ $(document).ready(function(){initNavTree('read__binary_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="read__binary_8hpp.html">read_binary.hpp</a></li>
-    <li class="footer">Generated on Thu Aug 8 2019 12:51:23 for Thrill by
+    <li class="footer">Generated on Mon Aug 12 2019 17:09:36 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

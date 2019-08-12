@@ -774,78 +774,80 @@ $(document).ready(function(){initNavTree('merge_8hpp_source.html','');});
 <div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;<span class="comment"> * DIA.  All input DIAs must be sorted conforming to the given comparator.  The</span></div>
 <div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;<span class="comment"> * type of the output DIA will be the type of this DIA.</span></div>
 <div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;<span class="comment"> * The merge operation balances all input data, so that each worker will have an</span></div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;<span class="comment"> * equal number of elements when the merge completes.</span></div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;<span class="comment"> * \tparam Comparator Comparator to specify the order of input and output.</span></div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;<span class="comment"> * \image html dia_ops/Merge.svg</span></div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;<span class="comment"> * The merge operation balances all input data, so that each worker will have an</span></div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;<span class="comment"> * equal number of elements when the merge completes.</span></div>
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;<span class="comment"> * \param comparator Comparator to specify the order of input and output.</span></div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;<span class="comment"> * \tparam Comparator Comparator to specify the order of input and output.</span></div>
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;<span class="comment"> * \param first_dia first DIA</span></div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;<span class="comment"> * \param dias DIAs, which is merged with this DIA.</span></div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;<span class="comment"> * \ingroup dia_dops</span></div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Comparator, <span class="keyword">typename</span> FirstDIA, <span class="keyword">typename</span>... DIAs&gt;</div>
-<div class="line"><a name="l00672"></a><span class="lineno"><a class="line" href="group__dia__dops.html#gad35c16791b8d75ea6b6d741b952d7579">  672</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#gad35c16791b8d75ea6b6d741b952d7579">Merge</a>(<span class="keyword">const</span> Comparator&amp; comparator,</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;           <span class="keyword">const</span> FirstDIA&amp; first_dia, <span class="keyword">const</span> DIAs&amp; ... dias) {</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <a class="code" href="group__tlx__meta.html#ga44a90b0de44f0e1aa17ae215db35f458">tlx::vexpand</a>((first_dia.AssertValid(), 0), (dias.AssertValid(), 0) ...);</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;<span class="comment"> * \param comparator Comparator to specify the order of input and output.</span></div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;<span class="comment"> * \param first_dia first DIA</span></div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;<span class="comment"> * \param dias DIAs, which is merged with this DIA.</span></div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;<span class="comment"> * \ingroup dia_dops_free</span></div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Comparator, <span class="keyword">typename</span> FirstDIA, <span class="keyword">typename</span>... DIAs&gt;</div>
+<div class="line"><a name="l00674"></a><span class="lineno"><a class="line" href="group__dia__dops__free.html#gad35c16791b8d75ea6b6d741b952d7579">  674</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops__free.html#gad35c16791b8d75ea6b6d741b952d7579">Merge</a>(<span class="keyword">const</span> Comparator&amp; comparator,</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;           <span class="keyword">const</span> FirstDIA&amp; first_dia, <span class="keyword">const</span> DIAs&amp; ... dias) {</div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    <span class="keyword">using</span> ValueType = <span class="keyword">typename</span> FirstDIA::ValueType;</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    <a class="code" href="group__tlx__meta.html#ga44a90b0de44f0e1aa17ae215db35f458">tlx::vexpand</a>((first_dia.AssertValid(), 0), (dias.AssertValid(), 0) ...);</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    <span class="keyword">using</span> CompareResult =</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;        <span class="keyword">typename</span> common::FunctionTraits&lt;Comparator&gt;::result_type;</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1MergeNode.html">MergeNode</a> = <a class="code" href="classthrill_1_1api_1_1MergeNode.html">api::MergeNode</a>&lt;</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;        ValueType, Comparator, 1 + <span class="keyword">sizeof</span> ... (DIAs)&gt;;</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <span class="comment">// Assert comparator types.</span></div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;        std::is_convertible&lt;</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;            ValueType,</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;            <span class="keyword">typename</span> common::FunctionTraits&lt;Comparator&gt;::template arg&lt;0&gt;</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        <span class="stringliteral">&quot;Comparator has the wrong input type in argument 0&quot;</span>);</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        std::is_convertible&lt;</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;            ValueType,</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;            <span class="keyword">typename</span> common::FunctionTraits&lt;Comparator&gt;::template arg&lt;1&gt;</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        <span class="stringliteral">&quot;Comparator has the wrong input type in argument 1&quot;</span>);</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <span class="comment">// Assert meaningful return type of comperator.</span></div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    static_assert(</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;        std::is_convertible&lt;</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;            CompareResult,</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;            <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;        <span class="stringliteral">&quot;Comparator must return bool&quot;</span>);</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    <span class="keyword">auto</span> merge_node =</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;        tlx::make_counting&lt;MergeNode&gt;(comparator, first_dia, dias...);</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(merge_node);</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;}</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Comparator, <span class="keyword">typename</span> SecondDIA&gt;</div>
-<div class="line"><a name="l00716"></a><span class="lineno"><a class="line" href="group__dia__dops.html#gae772b581a45cd14c0ef31b4ac2ea3b7f">  716</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#gae772b581a45cd14c0ef31b4ac2ea3b7f">DIA&lt;ValueType, Stack&gt;::Merge</a>(</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    <span class="keyword">const</span> SecondDIA&amp; second_dia, <span class="keyword">const</span> Comparator&amp; comparator)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__dia__dops.html#gad35c16791b8d75ea6b6d741b952d7579">api::Merge</a>(comparator, *<span class="keyword">this</span>, second_dia);</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;}</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;} <span class="comment">// namespace api</span></div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;<span class="comment">//! imported from api namespace</span></div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="group__dia__dops.html#gad35c16791b8d75ea6b6d741b952d7579">api::Merge</a>;</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;} <span class="comment">// namespace thrill</span></div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    <span class="keyword">using</span> ValueType = <span class="keyword">typename</span> FirstDIA::ValueType;</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    <span class="keyword">using</span> CompareResult =</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        <span class="keyword">typename</span> common::FunctionTraits&lt;Comparator&gt;::result_type;</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    <span class="keyword">using</span> <a class="code" href="classthrill_1_1api_1_1MergeNode.html">MergeNode</a> = <a class="code" href="classthrill_1_1api_1_1MergeNode.html">api::MergeNode</a>&lt;</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;        ValueType, Comparator, 1 + <span class="keyword">sizeof</span> ... (DIAs)&gt;;</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    <span class="comment">// Assert comparator types.</span></div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;        std::is_convertible&lt;</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;            ValueType,</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;            <span class="keyword">typename</span> common::FunctionTraits&lt;Comparator&gt;::template arg&lt;0&gt;</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        <span class="stringliteral">&quot;Comparator has the wrong input type in argument 0&quot;</span>);</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        std::is_convertible&lt;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;            ValueType,</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;            <span class="keyword">typename</span> common::FunctionTraits&lt;Comparator&gt;::template arg&lt;1&gt;</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;        <span class="stringliteral">&quot;Comparator has the wrong input type in argument 1&quot;</span>);</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    <span class="comment">// Assert meaningful return type of comperator.</span></div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    static_assert(</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;        std::is_convertible&lt;</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;            CompareResult,</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;            <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;            &gt;::<a class="code" href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a>,</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;        <span class="stringliteral">&quot;Comparator must return bool&quot;</span>);</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    <span class="keyword">auto</span> merge_node =</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;        tlx::make_counting&lt;MergeNode&gt;(comparator, first_dia, dias...);</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classthrill_1_1api_1_1DIA.html">DIA&lt;ValueType&gt;</a>(merge_node);</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;}</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> Stack&gt;</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Comparator, <span class="keyword">typename</span> SecondDIA&gt;</div>
+<div class="line"><a name="l00718"></a><span class="lineno"><a class="line" href="group__dia__dops.html#gae772b581a45cd14c0ef31b4ac2ea3b7f">  718</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="group__dia__dops.html#gae772b581a45cd14c0ef31b4ac2ea3b7f">DIA&lt;ValueType, Stack&gt;::Merge</a>(</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    <span class="keyword">const</span> SecondDIA&amp; second_dia, <span class="keyword">const</span> Comparator&amp; comparator)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__dia__dops__free.html#gad35c16791b8d75ea6b6d741b952d7579">api::Merge</a>(comparator, *<span class="keyword">this</span>, second_dia);</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;}</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;} <span class="comment">// namespace api</span></div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;<span class="comment">//! imported from api namespace</span></div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;<span class="comment"></span><span class="keyword">using</span> <a class="code" href="group__dia__dops__free.html#gad35c16791b8d75ea6b6d741b952d7579">api::Merge</a>;</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;<span class="preprocessor">#endif // !THRILL_API_MERGE_HEADER</span></div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;} <span class="comment">// namespace thrill</span></div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;<span class="preprocessor">#endif // !THRILL_API_MERGE_HEADER</span></div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="classthrill_1_1api_1_1MergeNode_html_a763dfe5e2905a6a208258f34a8c5c5a2"><div class="ttname"><a href="classthrill_1_1api_1_1MergeNode.html#a763dfe5e2905a6a208258f34a8c5c5a2">thrill::api::MergeNode::comparator_</a></div><div class="ttdeci">Comparator comparator_</div><div class="ttdoc">Merge comparator. </div><div class="ttdef"><b>Definition:</b> <a href="merge_8hpp_source.html#l00191">merge.hpp:191</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1Context_html_aea6bd2f5fe241819865a3713c71b6158"><div class="ttname"><a href="classthrill_1_1api_1_1Context.html#aea6bd2f5fe241819865a3713c71b6158">thrill::api::Context::net</a></div><div class="ttdeci">net::FlowControlChannel &amp; net</div><div class="ttdef"><b>Definition:</b> <a href="context_8hpp_source.html#l00446">context.hpp:446</a></div></div>
 <div class="ttc" id="extlib_2tlx_2tlx_2logger_8hpp_html_a7d888e928a1068cc90c57560ad5d669a"><div class="ttname"><a href="extlib_2tlx_2tlx_2logger_8hpp.html#a7d888e928a1068cc90c57560ad5d669a">sLOG</a></div><div class="ttdeci">#define sLOG</div><div class="ttdoc">Default logging method: output if the local debug variable is true. </div><div class="ttdef"><b>Definition:</b> <a href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00034">logger.hpp:34</a></div></div>
@@ -898,12 +900,13 @@ $(document).ready(function(){initNavTree('merge_8hpp_source.html','');});
 <div class="ttc" id="classthrill_1_1api_1_1Context_html_a92b6ec0c56ca33dc491f8c2e72414c7b"><div class="ttname"><a href="classthrill_1_1api_1_1Context.html#a92b6ec0c56ca33dc491f8c2e72414c7b">thrill::api::Context::GetNewCatStream</a></div><div class="ttdeci">data::CatStreamPtr GetNewCatStream(size_t dia_id)</div><div class="ttdef"><b>Definition:</b> <a href="context_8cpp_source.html#l01151">context.cpp:1151</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DIANode_html_a68a9de78be2b39c646e465f610a2e8b2"><div class="ttname"><a href="classthrill_1_1api_1_1DIANode.html#a68a9de78be2b39c646e465f610a2e8b2">thrill::api::DIANode::PushItem</a></div><div class="ttdeci">void PushItem(const ValueType &amp;item) const </div><div class="ttdoc">Method for derived classes to Push a single item to all children. </div><div class="ttdef"><b>Definition:</b> <a href="dia__node_8hpp_source.html#l00147">dia_node.hpp:147</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1MergeNode_1_1Stats_html"><div class="ttname"><a href="classthrill_1_1api_1_1MergeNode_1_1Stats.html">thrill::api::MergeNode::Stats</a></div><div class="ttdoc">Stats holds timers for measuring merge performance, that supports accumulating the output and printin...</div><div class="ttdef"><b>Definition:</b> <a href="merge_8hpp_source.html#l00244">merge.hpp:244</a></div></div>
+<div class="ttc" id="group__dia__dops__free_html_gad35c16791b8d75ea6b6d741b952d7579"><div class="ttname"><a href="group__dia__dops__free.html#gad35c16791b8d75ea6b6d741b952d7579">thrill::api::Merge</a></div><div class="ttdeci">auto Merge(const Comparator &amp;comparator, const FirstDIA &amp;first_dia, const DIAs &amp;...dias)</div><div class="ttdoc">Merge is a DOp, which merges any number of sorted DIAs to a single sorted DIA. </div><div class="ttdef"><b>Definition:</b> <a href="merge_8hpp_source.html#l00674">merge.hpp:674</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1MergeNode_1_1Stats_html_a1d09ce2c9eb2fc0636cfe6a7a1565381"><div class="ttname"><a href="classthrill_1_1api_1_1MergeNode_1_1Stats.html#a1d09ce2c9eb2fc0636cfe6a7a1565381">thrill::api::MergeNode::Stats::PrintToSQLPlotTool</a></div><div class="ttdeci">void PrintToSQLPlotTool(const std::string &amp;label, size_t p, size_t value)</div><div class="ttdef"><b>Definition:</b> <a href="merge_8hpp_source.html#l00268">merge.hpp:268</a></div></div>
 <div class="ttc" id="dop__node_8hpp_html"><div class="ttname"><a href="dop__node_8hpp.html">dop_node.hpp</a></div></div>
 <div class="ttc" id="namespacegen__data_html_ac4f474c82e82cbb89ca7c36dd52be0ed"><div class="ttname"><a href="namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed">gen_data.value</a></div><div class="ttdeci">int value</div><div class="ttdef"><b>Definition:</b> <a href="gen__data_8py_source.html#l00041">gen_data.py:41</a></div></div>
 <div class="ttc" id="group__tlx__math_html_ga72ac8fb39736ae5d2b8d920b17d815a8"><div class="ttname"><a href="group__tlx__math.html#ga72ac8fb39736ae5d2b8d920b17d815a8">tlx::abs_diff</a></div><div class="ttdeci">T abs_diff(const T &amp;a, const T &amp;b)</div><div class="ttdoc">absolute difference, which also works for unsigned types </div><div class="ttdef"><b>Definition:</b> <a href="abs__diff_8hpp_source.html#l00024">abs_diff.hpp:24</a></div></div>
 <div class="ttc" id="namespacethrill_1_1mem_html_a5568fe0d00a794e5f063e9fe040bc07f"><div class="ttname"><a href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">thrill::mem::string</a></div><div class="ttdeci">std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt; string</div><div class="ttdoc">string with Manager tracking </div><div class="ttdef"><b>Definition:</b> <a href="allocator_8hpp_source.html#l00220">allocator.hpp:220</a></div></div>
-<div class="ttc" id="group__dia__dops_html_gae772b581a45cd14c0ef31b4ac2ea3b7f"><div class="ttname"><a href="group__dia__dops.html#gae772b581a45cd14c0ef31b4ac2ea3b7f">thrill::api::DIA::Merge</a></div><div class="ttdeci">auto Merge(const SecondDIA &amp;second_dia, const Comparator &amp;comparator=Comparator()) const </div><div class="ttdoc">Merge is a DOp, which merges two sorted DIAs to a single sorted DIA. </div><div class="ttdef"><b>Definition:</b> <a href="merge_8hpp_source.html#l00716">merge.hpp:716</a></div></div>
+<div class="ttc" id="group__dia__dops_html_gae772b581a45cd14c0ef31b4ac2ea3b7f"><div class="ttname"><a href="group__dia__dops.html#gae772b581a45cd14c0ef31b4ac2ea3b7f">thrill::api::DIA::Merge</a></div><div class="ttdeci">auto Merge(const SecondDIA &amp;second_dia, const Comparator &amp;comparator=Comparator()) const </div><div class="ttdoc">Merge is a DOp, which merges two sorted DIAs to a single sorted DIA. </div><div class="ttdef"><b>Definition:</b> <a href="merge_8hpp_source.html#l00718">merge.hpp:718</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1MergeNode_1_1Stats_html_a2115a44e4dbf7b0db1551e2a6267aa3b"><div class="ttname"><a href="classthrill_1_1api_1_1MergeNode_1_1Stats.html#a2115a44e4dbf7b0db1551e2a6267aa3b">thrill::api::MergeNode::Stats::merge_timer_</a></div><div class="ttdeci">StatsTimer merge_timer_</div><div class="ttdoc">A Timer accumulating all time spent while actually merging. </div><div class="ttdef"><b>Definition:</b> <a href="merge_8hpp_source.html#l00250">merge.hpp:250</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1MergeNode_html_a06a0d88316d639685a052b7eafc6b212"><div class="ttname"><a href="classthrill_1_1api_1_1MergeNode.html#a06a0d88316d639685a052b7eafc6b212">thrill::api::MergeNode::VToStr</a></div><div class="ttdeci">static std::string VToStr(const std::vector&lt; Pivot &gt; &amp;data)</div><div class="ttdoc">Logging helper to print vectors of vectors of pivots. </div><div class="ttdef"><b>Definition:</b> <a href="merge_8hpp_source.html#l00217">merge.hpp:217</a></div></div>
 <div class="ttc" id="abs__diff_8hpp_html"><div class="ttname"><a href="abs__diff_8hpp.html">abs_diff.hpp</a></div></div>
@@ -913,7 +916,6 @@ $(document).ready(function(){initNavTree('merge_8hpp_source.html','');});
 <div class="ttc" id="classthrill_1_1api_1_1MergeNode_html_a26f31d2221fd5964db63cd3d9e450594"><div class="ttname"><a href="classthrill_1_1api_1_1MergeNode.html#a26f31d2221fd5964db63cd3d9e450594">thrill::api::MergeNode::ArrayNumInputsSizeT</a></div><div class="ttdeci">std::array&lt; size_t, kNumInputs &gt; ArrayNumInputsSizeT</div><div class="ttdef"><b>Definition:</b> <a href="merge_8hpp_source.html#l00214">merge.hpp:214</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1MergeNode_html_a6b72e54baf646b08b4b87f987f583dcb"><div class="ttname"><a href="classthrill_1_1api_1_1MergeNode.html#a6b72e54baf646b08b4b87f987f583dcb">thrill::api::MergeNode::debug</a></div><div class="ttdeci">static constexpr bool debug</div><div class="ttdef"><b>Definition:</b> <a href="merge_8hpp_source.html#l00078">merge.hpp:78</a></div></div>
 <div class="ttc" id="namespacethrill_1_1common_html_af05dbb730a1e826a0bd61c26d6f884d6"><div class="ttname"><a href="namespacethrill_1_1common.html#af05dbb730a1e826a0bd61c26d6f884d6">thrill::common::g_debug_mode</a></div><div class="ttdeci">static constexpr bool g_debug_mode</div><div class="ttdoc">debug mode is active, if NDEBUG is false. </div><div class="ttdef"><b>Definition:</b> <a href="thrill_2common_2config_8hpp_source.html#l00028">config.hpp:28</a></div></div>
-<div class="ttc" id="group__dia__dops_html_gad35c16791b8d75ea6b6d741b952d7579"><div class="ttname"><a href="group__dia__dops.html#gad35c16791b8d75ea6b6d741b952d7579">thrill::api::Merge</a></div><div class="ttdeci">auto Merge(const Comparator &amp;comparator, const FirstDIA &amp;first_dia, const DIAs &amp;...dias)</div><div class="ttdoc">Merge is a DOp, which merges any number of sorted DIAs to a single sorted DIA. </div><div class="ttdef"><b>Definition:</b> <a href="merge_8hpp_source.html#l00672">merge.hpp:672</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1DOpNode_html"><div class="ttname"><a href="classthrill_1_1api_1_1DOpNode.html">thrill::api::DOpNode</a></div><div class="ttdoc">A DOpNode is a typed node representing and distributed operations in Thrill. </div><div class="ttdef"><b>Definition:</b> <a href="dop__node_8hpp_source.html#l00032">dop_node.hpp:32</a></div></div>
 <div class="ttc" id="classthrill_1_1api_1_1MergeNode_1_1Stats_html_a3154570af54c87bbde686121c7e61972"><div class="ttname"><a href="classthrill_1_1api_1_1MergeNode_1_1Stats.html#a3154570af54c87bbde686121c7e61972">thrill::api::MergeNode::Stats::file_op_timer_</a></div><div class="ttdeci">StatsTimer file_op_timer_</div><div class="ttdoc">A Timer accumulating all time spent in File operations. </div><div class="ttdef"><b>Definition:</b> <a href="merge_8hpp_source.html#l00248">merge.hpp:248</a></div></div>
 <div class="ttc" id="thrill_2data_2file_8hpp_html"><div class="ttname"><a href="thrill_2data_2file_8hpp.html">file.hpp</a></div></div>
@@ -942,7 +944,7 @@ $(document).ready(function(){initNavTree('merge_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_fbeb8aa52172167bbf39dee15dce81ea.html">api</a></li><li class="navelem"><a class="el" href="merge_8hpp.html">merge.hpp</a></li>
-    <li class="footer">Generated on Thu Aug 8 2019 12:51:23 for Thrill by
+    <li class="footer">Generated on Mon Aug 12 2019 17:09:36 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

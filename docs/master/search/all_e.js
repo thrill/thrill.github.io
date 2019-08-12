@@ -147,7 +147,7 @@ var searchData=
   ['memory_5ffile_2ehpp',['memory_file.hpp',['../memory__file_8hpp.html',1,'']]],
   ['memory_5flimit_5findication',['memory_limit_indication',['../namespacethrill_1_1mem.html#a706931041c5a33bee3df9d575b1cfedb',1,'thrill::mem']]],
   ['memoryconfig',['MemoryConfig',['../classthrill_1_1api_1_1MemoryConfig.html',1,'thrill::api']]],
-  ['merge',['Merge',['../group__dia__dops.html#gae772b581a45cd14c0ef31b4ac2ea3b7f',1,'thrill::api::DIA::Merge()'],['../group__dia__dops.html#gad35c16791b8d75ea6b6d741b952d7579',1,'thrill::api::Merge()']]],
+  ['merge',['Merge',['../group__dia__dops.html#gae772b581a45cd14c0ef31b4ac2ea3b7f',1,'thrill::api::DIA::Merge()'],['../group__dia__dops__free.html#gad35c16791b8d75ea6b6d741b952d7579',1,'thrill::api::Merge()']]],
   ['merge_2ehpp',['merge.hpp',['../merge_8hpp.html',1,'']]],
   ['merge_5fadvance',['merge_advance',['../group__tlx__algorithm.html#gaea5cc8f7ba44822560e49eb74ae83794',1,'tlx']]],
   ['merge_5fadvance_2ehpp',['merge_advance.hpp',['../merge__advance_8hpp.html',1,'']]],
