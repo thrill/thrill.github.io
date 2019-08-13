@@ -369,12 +369,12 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a12d054d5f2dfa6c0d777e2ceb7e4f89d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a12d054d5f2dfa6c0d777e2ceb7e4f89d">free_node</a> (<a class="el" href="structtlx_1_1BTree_1_1node.html">node</a> *n)</td></tr>
 <tr class="separator:a12d054d5f2dfa6c0d777e2ceb7e4f89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">B+ Tree Node Binary Search Functions</div></td></tr>
-<tr class="memitem:ae8009ed54bc12a51d11dfdcb447a9227"><td class="memTemplParams" colspan="2">template&lt;typename node_type &gt; </td></tr>
-<tr class="memitem:ae8009ed54bc12a51d11dfdcb447a9227"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a> (const node_type *n, const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key) const </td></tr>
-<tr class="separator:ae8009ed54bc12a51d11dfdcb447a9227"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0544e2a2c0a7df7f7f2efa47682e5c4"><td class="memTemplParams" colspan="2">template&lt;typename node_type &gt; </td></tr>
-<tr class="memitem:ab0544e2a2c0a7df7f7f2efa47682e5c4"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ab0544e2a2c0a7df7f7f2efa47682e5c4">find_upper</a> (const node_type *n, const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key) const </td></tr>
-<tr class="separator:ab0544e2a2c0a7df7f7f2efa47682e5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8683ae6c55649dd2c6d909cf618de0a0"><td class="memTemplParams" colspan="2">template&lt;typename node_type &gt; </td></tr>
+<tr class="memitem:a8683ae6c55649dd2c6d909cf618de0a0"><td class="memTemplItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a> (const node_type *n, const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key) const </td></tr>
+<tr class="separator:a8683ae6c55649dd2c6d909cf618de0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a6e56ee5e948ed239abafb7ac4f749"><td class="memTemplParams" colspan="2">template&lt;typename node_type &gt; </td></tr>
+<tr class="memitem:ad0a6e56ee5e948ed239abafb7ac4f749"><td class="memTemplItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#ad0a6e56ee5e948ed239abafb7ac4f749">find_upper</a> (const node_type *n, const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key) const </td></tr>
+<tr class="separator:ad0a6e56ee5e948ed239abafb7ac4f749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Private Insertion Functions</div></td></tr>
 <tr class="memitem:af580a76629eafd1d907fa5e1e18556a2"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classtlx_1_1BTree_1_1iterator.html">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1BTree.html#af580a76629eafd1d907fa5e1e18556a2">insert_start</a> (const <a class="el" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> &amp;key, const <a class="el" href="classtlx_1_1BTree.html#a04f69f8f2936ff309627511179c1709b">value_type</a> &amp;value)</td></tr>
 <tr class="separator:af580a76629eafd1d907fa5e1e18556a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1593,7 +1593,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae8009ed54bc12a51d11dfdcb447a9227"></a>
+<a class="anchor" id="a8683ae6c55649dd2c6d909cf618de0a0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1601,7 +1601,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int find_lower </td>
+          <td class="memname">unsigned short find_lower </td>
           <td>(</td>
           <td class="paramtype">const node_type *&#160;</td>
           <td class="paramname"><em>n</em>, </td>
@@ -1632,7 +1632,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab0544e2a2c0a7df7f7f2efa47682e5c4"></a>
+<a class="anchor" id="ad0a6e56ee5e948ed239abafb7ac4f749"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1640,7 +1640,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int find_upper </td>
+          <td class="memname">unsigned short find_upper </td>
           <td>(</td>
           <td class="paramtype">const node_type *&#160;</td>
           <td class="paramname"><em>n</em>, </td>
@@ -3616,7 +3616,7 @@ Verification of B+ Tree Invariants</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacetlx.html">tlx</a></li><li class="navelem"><a class="el" href="classtlx_1_1BTree.html">BTree</a></li>
-    <li class="footer">Generated on Tue Aug 13 2019 11:05:24 for Thrill by
+    <li class="footer">Generated on Tue Aug 13 2019 18:01:32 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

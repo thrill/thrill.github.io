@@ -130,6 +130,8 @@ $(document).ready(function(){initNavTree('classtlx_1_1ThreadPool.html','');});
   <tr class="even"><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#a6604881aa1b3d144c0281d93c0754fb0">has_idle</a>() const </td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#ad6cbb0b7c86232363d191b804fc553f8">idle</a>() const </td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#a0a0bb272ed7d2e92f4539827e98e7352">idle_</a></td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#ab8f86780ce5c55d71afcb8ffeb84b3fb">init_thread_</a></td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#a4b3494e2ee8986a9e1bd58b71600c81f">InitThread</a> typedef</td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#a2d861499325cc7e7130fd05e6fbae2f9">Job</a> typedef</td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#aa85aa94b00dd9400cf594c8509470a04">jobs_</a></td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#a9a07bc90245a99944cfe79f9d282bc0d">loop_until_empty</a>()</td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
@@ -140,17 +142,17 @@ $(document).ready(function(){initNavTree('classtlx_1_1ThreadPool.html','');});
   <tr class="even"><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#a74a45d2648335936561898c390281a6a">terminate</a>()</td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#a5c7c161ce42f7ccc3184d9bec18fa969">terminate_</a></td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#a1968610812ee4f5905e2abfaa86263ca">thread</a>(size_t i)</td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#a652357386d4c67fe3ae6f36459c501be">ThreadPool</a>(size_t num_threads=std::thread::hardware_concurrency())</td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#ab4b73ff6d7c67a09fdaeb57ab563f8fe">ThreadPool</a>(size_t num_threads=std::thread::hardware_concurrency(), InitThread &amp;&amp;init_thread=InitThread())</td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#ad6610d680083314d3125628cd00c0348">ThreadPool</a>(const ThreadPool &amp;)=delete</td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#a1381729bb622c2600b5c489bd9cf2d4f">threads_</a></td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#a3aa959a4a5e8a3fa9e2e1b04b8051f38">worker</a>()</td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#a2bc42a4a1e6a09d7af8ddf3adc7c15f0">threads_</a></td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#a28b50f375b10234accaf0e4b4d22970d">worker</a>(size_t p)</td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html#ad41a30b11a0c9d8566ca1a53b4cf43f6">~ThreadPool</a>()</td><td class="entry"><a class="el" href="classtlx_1_1ThreadPool.html">ThreadPool</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 13 2019 11:05:24 for Thrill by
+    <li class="footer">Generated on Tue Aug 13 2019 18:01:32 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

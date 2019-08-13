@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('less__icase_8hpp_source.html','');});
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Part of tlx - http://panthema.net/tlx</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2007-2017 Timo Bingmann &lt;tb@panthema.net&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * Copyright (C) 2007-2019 Timo Bingmann &lt;tb@panthema.net&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * All rights reserved. Published under the Boost Software License, Version 1.0</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> ******************************************************************************/</span></div>
@@ -150,23 +150,45 @@ $(document).ready(function(){initNavTree('less__icase_8hpp_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//! returns true if a &lt; b without regard for letter case</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span><span class="keywordtype">bool</span> <a class="code" href="group__tlx__string.html#ga3a73759be8d7ec5778cb6192bc32c4c2">less_icase</a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; b);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//! \}</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <span class="comment">// namespace tlx</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif // !TLX_STRING_LESS_ICASE_HEADER</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// order_less_icase: case-insensitive order relation functional classes</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//! Case-insensitive less order relation functional class for std::map, etc.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structtlx_1_1less__icase__asc.html">   40</a></span>&#160;<span class="comment"></span><span class="keyword">struct </span><a class="code" href="structtlx_1_1less__icase__asc.html">less_icase_asc</a> {</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structtlx_1_1less__icase__asc.html#a0f3599515dbf37239c2d0e3797d597bf">   41</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="structtlx_1_1less__icase__asc.html#a0f3599515dbf37239c2d0e3797d597bf">operator () </a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; b)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group__tlx__string.html#ga3a73759be8d7ec5778cb6192bc32c4c2">less_icase</a>(a, b);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//! Descending case-insensitive less order relation functional class for</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">//! std::map, etc.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structtlx_1_1less__icase__desc.html">   48</a></span>&#160;<span class="comment"></span><span class="keyword">struct </span><a class="code" href="structtlx_1_1less__icase__desc.html">less_icase_desc</a> {</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="structtlx_1_1less__icase__desc.html#a0f3599515dbf37239c2d0e3797d597bf">   49</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="structtlx_1_1less__icase__desc.html#a0f3599515dbf37239c2d0e3797d597bf">operator () </a>(<span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; a, <span class="keyword">const</span> <a class="code" href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">std::string</a>&amp; b)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> !<a class="code" href="group__tlx__string.html#ga3a73759be8d7ec5778cb6192bc32c4c2">less_icase</a>(a, b);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//! \}</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <span class="comment">// namespace tlx</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif // !TLX_STRING_LESS_ICASE_HEADER</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="group__tlx__string_html_ga3a73759be8d7ec5778cb6192bc32c4c2"><div class="ttname"><a href="group__tlx__string.html#ga3a73759be8d7ec5778cb6192bc32c4c2">tlx::less_icase</a></div><div class="ttdeci">bool less_icase(const char *a, const char *b)</div><div class="ttdoc">returns true if a &lt; b without regard for letter case </div><div class="ttdef"><b>Definition:</b> <a href="less__icase_8cpp_source.html#l00018">less_icase.cpp:18</a></div></div>
+<div class="ttc" id="structtlx_1_1less__icase__desc_html"><div class="ttname"><a href="structtlx_1_1less__icase__desc.html">tlx::less_icase_desc</a></div><div class="ttdef"><b>Definition:</b> <a href="less__icase_8hpp_source.html#l00048">less_icase.hpp:48</a></div></div>
+<div class="ttc" id="structtlx_1_1less__icase__asc_html_a0f3599515dbf37239c2d0e3797d597bf"><div class="ttname"><a href="structtlx_1_1less__icase__asc.html#a0f3599515dbf37239c2d0e3797d597bf">tlx::less_icase_asc::operator()</a></div><div class="ttdeci">bool operator()(const std::string &amp;a, const std::string &amp;b) const </div><div class="ttdef"><b>Definition:</b> <a href="less__icase_8hpp_source.html#l00041">less_icase.hpp:41</a></div></div>
 <div class="ttc" id="namespacethrill_1_1mem_html_a5568fe0d00a794e5f063e9fe040bc07f"><div class="ttname"><a href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">thrill::mem::string</a></div><div class="ttdeci">std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt; string</div><div class="ttdoc">string with Manager tracking </div><div class="ttdef"><b>Definition:</b> <a href="allocator_8hpp_source.html#l00220">allocator.hpp:220</a></div></div>
+<div class="ttc" id="structtlx_1_1less__icase__desc_html_a0f3599515dbf37239c2d0e3797d597bf"><div class="ttname"><a href="structtlx_1_1less__icase__desc.html#a0f3599515dbf37239c2d0e3797d597bf">tlx::less_icase_desc::operator()</a></div><div class="ttdeci">bool operator()(const std::string &amp;a, const std::string &amp;b) const </div><div class="ttdef"><b>Definition:</b> <a href="less__icase_8hpp_source.html#l00049">less_icase.hpp:49</a></div></div>
+<div class="ttc" id="structtlx_1_1less__icase__asc_html"><div class="ttname"><a href="structtlx_1_1less__icase__asc.html">tlx::less_icase_asc</a></div><div class="ttdoc">Case-insensitive less order relation functional class for std::map, etc. </div><div class="ttdef"><b>Definition:</b> <a href="less__icase_8hpp_source.html#l00040">less_icase.hpp:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e504eb2edb57c81d5553bb9938943c32.html">string</a></li><li class="navelem"><a class="el" href="less__icase_8hpp.html">less_icase.hpp</a></li>
-    <li class="footer">Generated on Tue Aug 13 2019 11:05:18 for Thrill by
+    <li class="footer">Generated on Tue Aug 13 2019 18:01:26 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

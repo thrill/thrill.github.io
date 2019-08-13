@@ -192,7 +192,7 @@ Functions</h2></td></tr>
 
 <p>References <a class="el" href="container_2simple__vector_8hpp_source.html#l00128">SimpleVector&lt; ValueType, Mode &gt;::begin()</a>, <a class="el" href="multiway__merge__splitting_8hpp_source.html#l00057">tlx::multiway_merge_detail::equally_split()</a>, <a class="el" href="parallel__multiway__merge_8cpp_source.html#l00035">tlx::parallel_multiway_merge_oversampling</a>, <a class="el" href="parallel__mergesort_8hpp_source.html#l00071">PMWMSSortingData&lt; RandomAccessIterator &gt;::samples</a>, <a class="el" href="parallel__mergesort_8hpp_source.html#l00064">PMWMSSortingData&lt; RandomAccessIterator &gt;::source</a>, and <a class="el" href="parallel__mergesort_8hpp_source.html#l00066">PMWMSSortingData&lt; RandomAccessIterator &gt;::starts</a>.</p>
 
-<p>Referenced by <a class="el" href="parallel__mergesort_8hpp_source.html#l00119">parallel_sort_mwms_pu()</a>.</p>
+<p>Referenced by <a class="el" href="parallel__mergesort_8hpp_source.html#l00120">parallel_sort_mwms_pu()</a>.</p>
 
 </div>
 </div>
@@ -250,13 +250,14 @@ Functions</h2></td></tr>
     <tr><td class="paramname">sd</td><td>Pointer to sorting data struct. </td></tr>
     <tr><td class="paramname">iam</td><td>my thread number </td></tr>
     <tr><td class="paramname">num_threads</td><td>number of threads in group </td></tr>
+    <tr><td class="paramname">barrier</td><td>thread barrier from main function </td></tr>
     <tr><td class="paramname">comp</td><td>Comparator. </td></tr>
     <tr><td class="paramname">mwmsa</td><td>MultiwayMergeSplittingAlgorithm to use. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="parallel__mergesort_8hpp_source.html#l00119">119</a> of file <a class="el" href="parallel__mergesort_8hpp_source.html">parallel_mergesort.hpp</a>.</p>
+<p>Definition at line <a class="el" href="parallel__mergesort_8hpp_source.html#l00120">120</a> of file <a class="el" href="parallel__mergesort_8hpp_source.html">parallel_mergesort.hpp</a>.</p>
 
 <p>References <a class="el" href="container_2simple__vector_8hpp_source.html#l00128">SimpleVector&lt; ValueType, Mode &gt;::begin()</a>, <a class="el" href="parallel__mergesort_8hpp_source.html#l00093">determine_samples()</a>, <a class="el" href="multisequence__partition_8hpp_source.html#l00109">tlx::multisequence_partition()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l01198">tlx::multiway_merge_base()</a>, <a class="el" href="multiway__merge__splitting_8hpp_source.html#l00037">tlx::MWMSA_EXACT</a>, <a class="el" href="multiway__merge__splitting_8hpp_source.html#l00036">tlx::MWMSA_SAMPLING</a>, <a class="el" href="parallel__mergesort_8hpp_source.html#l00075">PMWMSSortingData&lt; RandomAccessIterator &gt;::pieces</a>, <a class="el" href="parallel__mergesort_8hpp_source.html#l00071">PMWMSSortingData&lt; RandomAccessIterator &gt;::samples</a>, <a class="el" href="parallel__mergesort_8hpp_source.html#l00064">PMWMSSortingData&lt; RandomAccessIterator &gt;::source</a>, <a class="el" href="parallel__mergesort_8hpp_source.html#l00066">PMWMSSortingData&lt; RandomAccessIterator &gt;::starts</a>, <a class="el" href="parallel__mergesort_8hpp_source.html#l00069">PMWMSSortingData&lt; RandomAccessIterator &gt;::temporary</a>, and <a class="el" href="thread__barrier__mutex_8hpp_source.html#l00042">ThreadBarrierMutex::wait()</a>.</p>
 
@@ -268,7 +269,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacetlx.html">tlx</a></li><li class="navelem"><a class="el" href="namespacetlx_1_1parallel__mergesort__detail.html">parallel_mergesort_detail</a></li>
-    <li class="footer">Generated on Tue Aug 13 2019 11:05:24 for Thrill by
+    <li class="footer">Generated on Tue Aug 13 2019 18:01:32 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

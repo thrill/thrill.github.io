@@ -36,7 +36,6 @@ var dir_e590497cc50ef2eecc1d619a0ecad80d =
     [ "stats_counter.hpp", "stats__counter_8hpp.html", "stats__counter_8hpp" ],
     [ "stats_timer.hpp", "stats__timer_8hpp.html", "stats__timer_8hpp" ],
     [ "string.hpp", "thrill_2common_2string_8hpp.html", "thrill_2common_2string_8hpp" ],
-    [ "string_view.hpp", "string__view_8hpp.html", "string__view_8hpp" ],
     [ "system_exception.hpp", "system__exception_8hpp.html", "system__exception_8hpp" ],
     [ "thread_barrier.hpp", "thread__barrier_8hpp.html", "thread__barrier_8hpp" ],
     [ "timed_counter.hpp", "timed__counter_8hpp.html", "timed__counter_8hpp" ],

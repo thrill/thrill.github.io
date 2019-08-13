@@ -76,7 +76,6 @@ var searchData=
   ['thrill_5fcommon_5fstats_5fcounter_5fheader',['THRILL_COMMON_STATS_COUNTER_HEADER',['../stats__counter_8hpp.html#a4f84824ed6192dcb6e919f52fe43b976',1,'stats_counter.hpp']]],
   ['thrill_5fcommon_5fstats_5ftimer_5fheader',['THRILL_COMMON_STATS_TIMER_HEADER',['../stats__timer_8hpp.html#a73c6258e9a21c9c29b462151b0f442d4',1,'stats_timer.hpp']]],
   ['thrill_5fcommon_5fstring_5fheader',['THRILL_COMMON_STRING_HEADER',['../thrill_2common_2string_8hpp.html#a788b712ded38a656f1af199de36bd337',1,'string.hpp']]],
-  ['thrill_5fcommon_5fstring_5fview_5fheader',['THRILL_COMMON_STRING_VIEW_HEADER',['../string__view_8hpp.html#a7c74e05977a87b378644ae413cf6eee6',1,'string_view.hpp']]],
   ['thrill_5fcommon_5fsystem_5fexception_5fheader',['THRILL_COMMON_SYSTEM_EXCEPTION_HEADER',['../system__exception_8hpp.html#a51d6a3543881a5a963b9ff5d77fe9bf8',1,'system_exception.hpp']]],
   ['thrill_5fcommon_5fthread_5fbarrier_5fheader',['THRILL_COMMON_THREAD_BARRIER_HEADER',['../thread__barrier_8hpp.html#a9de92d2944b2f4d544c25fc30c0b0d33',1,'thread_barrier.hpp']]],
   ['thrill_5fcommon_5ftimed_5fcounter_5fheader',['THRILL_COMMON_TIMED_COUNTER_HEADER',['../timed__counter_8hpp.html#a8efc1bb13686b3723a2f666cc672cc43',1,'timed_counter.hpp']]],

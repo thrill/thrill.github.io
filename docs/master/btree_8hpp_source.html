@@ -1431,7 +1431,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;        {</div>
 <div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;            LeafNode* leafnode = <span class="keyword">static_cast&lt;</span>LeafNode*<span class="keyword">&gt;</span>(n);</div>
 <div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;</div>
-<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> slot = 0; slot &lt; leafnode-&gt;slotuse; ++slot)</div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = 0; slot &lt; leafnode-&gt;slotuse; ++slot)</div>
 <div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;            {</div>
 <div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;                <span class="comment">// data objects are deleted by LeafNode&#39;s destructor</span></div>
 <div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;            }</div>
@@ -1513,16 +1513,16 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;<span class="comment">    //! template function, because the slotkey array is located at different</span></div>
 <div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;<span class="comment">    //! places in LeafNode and InnerNode.</span></div>
 <div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;<span class="comment"></span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> node_type&gt;</div>
-<div class="line"><a name="l01398"></a><span class="lineno"><a class="line" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227"> 1398</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(<span class="keyword">const</span> node_type* n, <span class="keyword">const</span> <a class="code" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a>&amp; key)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l01398"></a><span class="lineno"><a class="line" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0"> 1398</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(<span class="keyword">const</span> node_type* n, <span class="keyword">const</span> <a class="code" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a>&amp; key)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">sizeof</span>(*n) &gt; traits::binsearch_threshold)</div>
 <div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;        {</div>
 <div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;            <span class="keywordflow">if</span> (n-&gt;slotuse == 0) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;</div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;            <span class="keywordtype">int</span> lo = 0, hi = n-&gt;slotuse;</div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> lo = 0, hi = n-&gt;slotuse;</div>
 <div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;</div>
 <div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;            <span class="keywordflow">while</span> (lo &lt; hi)</div>
 <div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;            {</div>
-<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;                <span class="keywordtype">int</span> mid = (lo + hi) &gt;&gt; 1;</div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> mid = (lo + hi) &gt;&gt; 1;</div>
 <div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;</div>
 <div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classtlx_1_1BTree.html#a25950f60bc42a7b7bbd2fa6e9cecc7f4">key_lessequal</a>(key, n-&gt;key(mid))) {</div>
 <div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;                    hi = mid; <span class="comment">// key &lt;= mid</span></div>
@@ -1538,7 +1538,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;            <span class="comment">// verify result using simple linear search</span></div>
 <div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classtlx_1_1BTree.html#a81a632bc519f850f4af56567ba404f4e">self_verify</a>)</div>
 <div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;            {</div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;                <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> i = 0;</div>
 <div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;                <span class="keywordflow">while</span> (i &lt; n-&gt;slotuse &amp;&amp; <a class="code" href="classtlx_1_1BTree.html#a4d396f4c2d232e90fabff194a345a283">key_less</a>(n-&gt;key(i), key)) ++i;</div>
 <div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;</div>
 <div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;                <a class="code" href="group__tlx__container__btree.html#gabe5546ec024823fdb200cf2e6e9b624c">TLX_BTREE_PRINT</a>(<span class="stringliteral">&quot;BTree::find_lower: testfind: &quot;</span> &lt;&lt; i);</div>
@@ -1549,7 +1549,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;        }</div>
 <div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;        <span class="keywordflow">else</span> <span class="comment">// for nodes &lt;= binsearch_threshold do linear search.</span></div>
 <div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;        {</div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;            <span class="keywordtype">int</span> lo = 0;</div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> lo = 0;</div>
 <div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;            <span class="keywordflow">while</span> (lo &lt; n-&gt;slotuse &amp;&amp; <a class="code" href="classtlx_1_1BTree.html#a4d396f4c2d232e90fabff194a345a283">key_less</a>(n-&gt;key(lo), key)) ++lo;</div>
 <div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;            <span class="keywordflow">return</span> lo;</div>
 <div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;        }</div>
@@ -1560,16 +1560,16 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;<span class="comment">    //! function, because the slotkey array is located at different places in</span></div>
 <div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;<span class="comment">    //! LeafNode and InnerNode.</span></div>
 <div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;<span class="comment"></span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> node_type&gt;</div>
-<div class="line"><a name="l01445"></a><span class="lineno"><a class="line" href="classtlx_1_1BTree.html#ab0544e2a2c0a7df7f7f2efa47682e5c4"> 1445</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classtlx_1_1BTree.html#ab0544e2a2c0a7df7f7f2efa47682e5c4">find_upper</a>(<span class="keyword">const</span> node_type* n, <span class="keyword">const</span> <a class="code" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a>&amp; key)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l01445"></a><span class="lineno"><a class="line" href="classtlx_1_1BTree.html#ad0a6e56ee5e948ed239abafb7ac4f749"> 1445</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="classtlx_1_1BTree.html#ad0a6e56ee5e948ed239abafb7ac4f749">find_upper</a>(<span class="keyword">const</span> node_type* n, <span class="keyword">const</span> <a class="code" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a>&amp; key)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">sizeof</span>(*n) &gt; traits::binsearch_threshold)</div>
 <div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;        {</div>
 <div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;            <span class="keywordflow">if</span> (n-&gt;slotuse == 0) <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;</div>
-<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;            <span class="keywordtype">int</span> lo = 0, hi = n-&gt;slotuse;</div>
+<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> lo = 0, hi = n-&gt;slotuse;</div>
 <div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;</div>
 <div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;            <span class="keywordflow">while</span> (lo &lt; hi)</div>
 <div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;            {</div>
-<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;                <span class="keywordtype">int</span> mid = (lo + hi) &gt;&gt; 1;</div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> mid = (lo + hi) &gt;&gt; 1;</div>
 <div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;</div>
 <div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="classtlx_1_1BTree.html#a4d396f4c2d232e90fabff194a345a283">key_less</a>(key, n-&gt;key(mid))) {</div>
 <div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;                    hi = mid; <span class="comment">// key &lt; mid</span></div>
@@ -1585,7 +1585,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;            <span class="comment">// verify result using simple linear search</span></div>
 <div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classtlx_1_1BTree.html#a81a632bc519f850f4af56567ba404f4e">self_verify</a>)</div>
 <div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;            {</div>
-<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;                <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> i = 0;</div>
 <div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;                <span class="keywordflow">while</span> (i &lt; n-&gt;slotuse &amp;&amp; <a class="code" href="classtlx_1_1BTree.html#a25950f60bc42a7b7bbd2fa6e9cecc7f4">key_lessequal</a>(n-&gt;key(i), key)) ++i;</div>
 <div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;</div>
 <div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;                <a class="code" href="group__tlx__container__btree.html#gabe5546ec024823fdb200cf2e6e9b624c">TLX_BTREE_PRINT</a>(<span class="stringliteral">&quot;BTree::find_upper testfind: &quot;</span> &lt;&lt; i);</div>
@@ -1596,7 +1596,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;        }</div>
 <div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;        <span class="keywordflow">else</span> <span class="comment">// for nodes &lt;= binsearch_threshold do linear search.</span></div>
 <div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;        {</div>
-<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;            <span class="keywordtype">int</span> lo = 0;</div>
+<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> lo = 0;</div>
 <div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;            <span class="keywordflow">while</span> (lo &lt; n-&gt;slotuse &amp;&amp; <a class="code" href="classtlx_1_1BTree.html#a25950f60bc42a7b7bbd2fa6e9cecc7f4">key_lessequal</a>(n-&gt;key(lo), key)) ++lo;</div>
 <div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;            <span class="keywordflow">return</span> lo;</div>
 <div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;        }</div>
@@ -1644,14 +1644,14 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;        <span class="keywordflow">while</span> (!n-&gt;is_leafnode())</div>
 <div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;        {</div>
 <div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;            <span class="keyword">const</span> InnerNode* inner = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>InnerNode*<span class="keyword">&gt;</span>(n);</div>
-<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;            <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(inner, key);</div>
+<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(inner, key);</div>
 <div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;</div>
 <div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;            n = inner-&gt;childid[slot];</div>
 <div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;        }</div>
 <div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;</div>
 <div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;        <span class="keyword">const</span> LeafNode* leaf = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>LeafNode*<span class="keyword">&gt;</span>(n);</div>
 <div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;</div>
-<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;        <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(leaf, key);</div>
+<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(leaf, key);</div>
 <div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;        <span class="keywordflow">return</span> (slot &lt; leaf-&gt;slotuse &amp;&amp; <a class="code" href="classtlx_1_1BTree.html#a117b795a14531e05da974077af0ff76e">key_equal</a>(key, leaf-&gt;key(slot)));</div>
 <div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;    }</div>
 <div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;<span class="comment"></span></div>
@@ -1664,14 +1664,14 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160;        <span class="keywordflow">while</span> (!n-&gt;is_leafnode())</div>
 <div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160;        {</div>
 <div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160;            <span class="keyword">const</span> InnerNode* inner = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>InnerNode*<span class="keyword">&gt;</span>(n);</div>
-<div class="line"><a name="l01549"></a><span class="lineno"> 1549</span>&#160;            <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(inner, key);</div>
+<div class="line"><a name="l01549"></a><span class="lineno"> 1549</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(inner, key);</div>
 <div class="line"><a name="l01550"></a><span class="lineno"> 1550</span>&#160;</div>
 <div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160;            n = inner-&gt;childid[slot];</div>
 <div class="line"><a name="l01552"></a><span class="lineno"> 1552</span>&#160;        }</div>
 <div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;</div>
 <div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;        LeafNode* leaf = <span class="keyword">static_cast&lt;</span>LeafNode*<span class="keyword">&gt;</span>(n);</div>
 <div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;</div>
-<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;        <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(leaf, key);</div>
+<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(leaf, key);</div>
 <div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160;        <span class="keywordflow">return</span> (slot &lt; leaf-&gt;slotuse &amp;&amp; <a class="code" href="classtlx_1_1BTree.html#a117b795a14531e05da974077af0ff76e">key_equal</a>(key, leaf-&gt;key(slot)))</div>
 <div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;               ? iterator(leaf, slot) : <a class="code" href="classtlx_1_1BTree.html#acad38d52497a975bfb6f2f6acd76631f">end</a>();</div>
 <div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;    }</div>
@@ -1685,14 +1685,14 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160;        <span class="keywordflow">while</span> (!n-&gt;is_leafnode())</div>
 <div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;        {</div>
 <div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;            <span class="keyword">const</span> InnerNode* inner = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>InnerNode*<span class="keyword">&gt;</span>(n);</div>
-<div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160;            <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(inner, key);</div>
+<div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(inner, key);</div>
 <div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;</div>
 <div class="line"><a name="l01572"></a><span class="lineno"> 1572</span>&#160;            n = inner-&gt;childid[slot];</div>
 <div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160;        }</div>
 <div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160;</div>
 <div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160;        <span class="keyword">const</span> LeafNode* leaf = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>LeafNode*<span class="keyword">&gt;</span>(n);</div>
 <div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160;</div>
-<div class="line"><a name="l01577"></a><span class="lineno"> 1577</span>&#160;        <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(leaf, key);</div>
+<div class="line"><a name="l01577"></a><span class="lineno"> 1577</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(leaf, key);</div>
 <div class="line"><a name="l01578"></a><span class="lineno"> 1578</span>&#160;        <span class="keywordflow">return</span> (slot &lt; leaf-&gt;slotuse &amp;&amp; <a class="code" href="classtlx_1_1BTree.html#a117b795a14531e05da974077af0ff76e">key_equal</a>(key, leaf-&gt;key(slot)))</div>
 <div class="line"><a name="l01579"></a><span class="lineno"> 1579</span>&#160;               ? const_iterator(leaf, slot) : <a class="code" href="classtlx_1_1BTree.html#acad38d52497a975bfb6f2f6acd76631f">end</a>();</div>
 <div class="line"><a name="l01580"></a><span class="lineno"> 1580</span>&#160;    }</div>
@@ -1706,14 +1706,14 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l01588"></a><span class="lineno"> 1588</span>&#160;        <span class="keywordflow">while</span> (!n-&gt;is_leafnode())</div>
 <div class="line"><a name="l01589"></a><span class="lineno"> 1589</span>&#160;        {</div>
 <div class="line"><a name="l01590"></a><span class="lineno"> 1590</span>&#160;            <span class="keyword">const</span> InnerNode* inner = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>InnerNode*<span class="keyword">&gt;</span>(n);</div>
-<div class="line"><a name="l01591"></a><span class="lineno"> 1591</span>&#160;            <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(inner, key);</div>
+<div class="line"><a name="l01591"></a><span class="lineno"> 1591</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(inner, key);</div>
 <div class="line"><a name="l01592"></a><span class="lineno"> 1592</span>&#160;</div>
 <div class="line"><a name="l01593"></a><span class="lineno"> 1593</span>&#160;            n = inner-&gt;childid[slot];</div>
 <div class="line"><a name="l01594"></a><span class="lineno"> 1594</span>&#160;        }</div>
 <div class="line"><a name="l01595"></a><span class="lineno"> 1595</span>&#160;</div>
 <div class="line"><a name="l01596"></a><span class="lineno"> 1596</span>&#160;        <span class="keyword">const</span> LeafNode* leaf = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>LeafNode*<span class="keyword">&gt;</span>(n);</div>
 <div class="line"><a name="l01597"></a><span class="lineno"> 1597</span>&#160;</div>
-<div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;        <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(leaf, key);</div>
+<div class="line"><a name="l01598"></a><span class="lineno"> 1598</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(leaf, key);</div>
 <div class="line"><a name="l01599"></a><span class="lineno"> 1599</span>&#160;        <a class="code" href="classtlx_1_1BTree.html#a49b489a408a211a90e766329c0732d7b">size_type</a> num = 0;</div>
 <div class="line"><a name="l01600"></a><span class="lineno"> 1600</span>&#160;</div>
 <div class="line"><a name="l01601"></a><span class="lineno"> 1601</span>&#160;        <span class="keywordflow">while</span> (leaf &amp;&amp; slot &lt; leaf-&gt;slotuse &amp;&amp; <a class="code" href="classtlx_1_1BTree.html#a117b795a14531e05da974077af0ff76e">key_equal</a>(key, leaf-&gt;key(slot)))</div>
@@ -1738,14 +1738,14 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;        <span class="keywordflow">while</span> (!n-&gt;is_leafnode())</div>
 <div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160;        {</div>
 <div class="line"><a name="l01622"></a><span class="lineno"> 1622</span>&#160;            <span class="keyword">const</span> InnerNode* inner = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>InnerNode*<span class="keyword">&gt;</span>(n);</div>
-<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;            <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(inner, key);</div>
+<div class="line"><a name="l01623"></a><span class="lineno"> 1623</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(inner, key);</div>
 <div class="line"><a name="l01624"></a><span class="lineno"> 1624</span>&#160;</div>
 <div class="line"><a name="l01625"></a><span class="lineno"> 1625</span>&#160;            n = inner-&gt;childid[slot];</div>
 <div class="line"><a name="l01626"></a><span class="lineno"> 1626</span>&#160;        }</div>
 <div class="line"><a name="l01627"></a><span class="lineno"> 1627</span>&#160;</div>
 <div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160;        LeafNode* leaf = <span class="keyword">static_cast&lt;</span>LeafNode*<span class="keyword">&gt;</span>(n);</div>
 <div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160;</div>
-<div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;        <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(leaf, key);</div>
+<div class="line"><a name="l01630"></a><span class="lineno"> 1630</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(leaf, key);</div>
 <div class="line"><a name="l01631"></a><span class="lineno"> 1631</span>&#160;        <span class="keywordflow">return</span> iterator(leaf, slot);</div>
 <div class="line"><a name="l01632"></a><span class="lineno"> 1632</span>&#160;    }</div>
 <div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;<span class="comment"></span></div>
@@ -1758,14 +1758,14 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l01640"></a><span class="lineno"> 1640</span>&#160;        <span class="keywordflow">while</span> (!n-&gt;is_leafnode())</div>
 <div class="line"><a name="l01641"></a><span class="lineno"> 1641</span>&#160;        {</div>
 <div class="line"><a name="l01642"></a><span class="lineno"> 1642</span>&#160;            <span class="keyword">const</span> InnerNode* inner = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>InnerNode*<span class="keyword">&gt;</span>(n);</div>
-<div class="line"><a name="l01643"></a><span class="lineno"> 1643</span>&#160;            <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(inner, key);</div>
+<div class="line"><a name="l01643"></a><span class="lineno"> 1643</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(inner, key);</div>
 <div class="line"><a name="l01644"></a><span class="lineno"> 1644</span>&#160;</div>
 <div class="line"><a name="l01645"></a><span class="lineno"> 1645</span>&#160;            n = inner-&gt;childid[slot];</div>
 <div class="line"><a name="l01646"></a><span class="lineno"> 1646</span>&#160;        }</div>
 <div class="line"><a name="l01647"></a><span class="lineno"> 1647</span>&#160;</div>
 <div class="line"><a name="l01648"></a><span class="lineno"> 1648</span>&#160;        <span class="keyword">const</span> LeafNode* leaf = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>LeafNode*<span class="keyword">&gt;</span>(n);</div>
 <div class="line"><a name="l01649"></a><span class="lineno"> 1649</span>&#160;</div>
-<div class="line"><a name="l01650"></a><span class="lineno"> 1650</span>&#160;        <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(leaf, key);</div>
+<div class="line"><a name="l01650"></a><span class="lineno"> 1650</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(leaf, key);</div>
 <div class="line"><a name="l01651"></a><span class="lineno"> 1651</span>&#160;        <span class="keywordflow">return</span> const_iterator(leaf, slot);</div>
 <div class="line"><a name="l01652"></a><span class="lineno"> 1652</span>&#160;    }</div>
 <div class="line"><a name="l01653"></a><span class="lineno"> 1653</span>&#160;<span class="comment"></span></div>
@@ -1778,14 +1778,14 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l01660"></a><span class="lineno"> 1660</span>&#160;        <span class="keywordflow">while</span> (!n-&gt;is_leafnode())</div>
 <div class="line"><a name="l01661"></a><span class="lineno"> 1661</span>&#160;        {</div>
 <div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;            <span class="keyword">const</span> InnerNode* inner = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>InnerNode*<span class="keyword">&gt;</span>(n);</div>
-<div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160;            <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ab0544e2a2c0a7df7f7f2efa47682e5c4">find_upper</a>(inner, key);</div>
+<div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#ad0a6e56ee5e948ed239abafb7ac4f749">find_upper</a>(inner, key);</div>
 <div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;</div>
 <div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;            n = inner-&gt;childid[slot];</div>
 <div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160;        }</div>
 <div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160;</div>
 <div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;        LeafNode* leaf = <span class="keyword">static_cast&lt;</span>LeafNode*<span class="keyword">&gt;</span>(n);</div>
 <div class="line"><a name="l01669"></a><span class="lineno"> 1669</span>&#160;</div>
-<div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;        <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ab0544e2a2c0a7df7f7f2efa47682e5c4">find_upper</a>(leaf, key);</div>
+<div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#ad0a6e56ee5e948ed239abafb7ac4f749">find_upper</a>(leaf, key);</div>
 <div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160;        <span class="keywordflow">return</span> iterator(leaf, slot);</div>
 <div class="line"><a name="l01672"></a><span class="lineno"> 1672</span>&#160;    }</div>
 <div class="line"><a name="l01673"></a><span class="lineno"> 1673</span>&#160;<span class="comment"></span></div>
@@ -1798,14 +1798,14 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l01680"></a><span class="lineno"> 1680</span>&#160;        <span class="keywordflow">while</span> (!n-&gt;is_leafnode())</div>
 <div class="line"><a name="l01681"></a><span class="lineno"> 1681</span>&#160;        {</div>
 <div class="line"><a name="l01682"></a><span class="lineno"> 1682</span>&#160;            <span class="keyword">const</span> InnerNode* inner = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>InnerNode*<span class="keyword">&gt;</span>(n);</div>
-<div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;            <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ab0544e2a2c0a7df7f7f2efa47682e5c4">find_upper</a>(inner, key);</div>
+<div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#ad0a6e56ee5e948ed239abafb7ac4f749">find_upper</a>(inner, key);</div>
 <div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;</div>
 <div class="line"><a name="l01685"></a><span class="lineno"> 1685</span>&#160;            n = inner-&gt;childid[slot];</div>
 <div class="line"><a name="l01686"></a><span class="lineno"> 1686</span>&#160;        }</div>
 <div class="line"><a name="l01687"></a><span class="lineno"> 1687</span>&#160;</div>
 <div class="line"><a name="l01688"></a><span class="lineno"> 1688</span>&#160;        <span class="keyword">const</span> LeafNode* leaf = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>LeafNode*<span class="keyword">&gt;</span>(n);</div>
 <div class="line"><a name="l01689"></a><span class="lineno"> 1689</span>&#160;</div>
-<div class="line"><a name="l01690"></a><span class="lineno"> 1690</span>&#160;        <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ab0544e2a2c0a7df7f7f2efa47682e5c4">find_upper</a>(leaf, key);</div>
+<div class="line"><a name="l01690"></a><span class="lineno"> 1690</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#ad0a6e56ee5e948ed239abafb7ac4f749">find_upper</a>(leaf, key);</div>
 <div class="line"><a name="l01691"></a><span class="lineno"> 1691</span>&#160;        <span class="keywordflow">return</span> const_iterator(leaf, slot);</div>
 <div class="line"><a name="l01692"></a><span class="lineno"> 1692</span>&#160;    }</div>
 <div class="line"><a name="l01693"></a><span class="lineno"> 1693</span>&#160;<span class="comment"></span></div>
@@ -2054,7 +2054,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;            <a class="code" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a> newkey = <a class="code" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a>();</div>
 <div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;            node* newchild = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;</div>
-<div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;            <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(inner, key);</div>
+<div class="line"><a name="l01939"></a><span class="lineno"> 1939</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(inner, key);</div>
 <div class="line"><a name="l01940"></a><span class="lineno"> 1940</span>&#160;</div>
 <div class="line"><a name="l01941"></a><span class="lineno"> 1941</span>&#160;            <a class="code" href="group__tlx__container__btree.html#gabe5546ec024823fdb200cf2e6e9b624c">TLX_BTREE_PRINT</a>(</div>
 <div class="line"><a name="l01942"></a><span class="lineno"> 1942</span>&#160;                <span class="stringliteral">&quot;BTree::insert_descend into &quot;</span> &lt;&lt; inner-&gt;childid[slot]);</div>
@@ -2147,7 +2147,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l02029"></a><span class="lineno"> 2029</span>&#160;        {</div>
 <div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160;            LeafNode* leaf = <span class="keyword">static_cast&lt;</span>LeafNode*<span class="keyword">&gt;</span>(n);</div>
 <div class="line"><a name="l02031"></a><span class="lineno"> 2031</span>&#160;</div>
-<div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;            <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(leaf, key);</div>
+<div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(leaf, key);</div>
 <div class="line"><a name="l02033"></a><span class="lineno"> 2033</span>&#160;</div>
 <div class="line"><a name="l02034"></a><span class="lineno"> 2034</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="classtlx_1_1BTree.html#a4a380c8745ff0a1c814742821e85403e">allow_duplicates</a> &amp;&amp;</div>
 <div class="line"><a name="l02035"></a><span class="lineno"> 2035</span>&#160;                slot &lt; leaf-&gt;slotuse &amp;&amp; <a class="code" href="classtlx_1_1BTree.html#a117b795a14531e05da974077af0ff76e">key_equal</a>(key, leaf-&gt;key(slot))) {</div>
@@ -2193,7 +2193,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l02075"></a><span class="lineno"> 2075</span>&#160;                         <a class="code" href="classtlx_1_1BTree.html#a38ec6d0825c22c2d0ad31f3209ed2d02">key_type</a>* out_newkey, node** out_newleaf) {</div>
 <div class="line"><a name="l02076"></a><span class="lineno"> 2076</span>&#160;        <a class="code" href="group__tlx__container__btree.html#gaf7a068d4e246b8f8e74bfc33f205596b">TLX_BTREE_ASSERT</a>(leaf-&gt;is_full());</div>
 <div class="line"><a name="l02077"></a><span class="lineno"> 2077</span>&#160;</div>
-<div class="line"><a name="l02078"></a><span class="lineno"> 2078</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mid = (leaf-&gt;slotuse &gt;&gt; 1);</div>
+<div class="line"><a name="l02078"></a><span class="lineno"> 2078</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> mid = (leaf-&gt;slotuse &gt;&gt; 1);</div>
 <div class="line"><a name="l02079"></a><span class="lineno"> 2079</span>&#160;</div>
 <div class="line"><a name="l02080"></a><span class="lineno"> 2080</span>&#160;        <a class="code" href="group__tlx__container__btree.html#gabe5546ec024823fdb200cf2e6e9b624c">TLX_BTREE_PRINT</a>(<span class="stringliteral">&quot;BTree::split_leaf_node on &quot;</span> &lt;&lt; leaf);</div>
 <div class="line"><a name="l02081"></a><span class="lineno"> 2081</span>&#160;</div>
@@ -2229,7 +2229,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l02111"></a><span class="lineno"> 2111</span>&#160;                          node** out_newinner, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> addslot) {</div>
 <div class="line"><a name="l02112"></a><span class="lineno"> 2112</span>&#160;        <a class="code" href="group__tlx__container__btree.html#gaf7a068d4e246b8f8e74bfc33f205596b">TLX_BTREE_ASSERT</a>(inner-&gt;is_full());</div>
 <div class="line"><a name="l02113"></a><span class="lineno"> 2113</span>&#160;</div>
-<div class="line"><a name="l02114"></a><span class="lineno"> 2114</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mid = (inner-&gt;slotuse &gt;&gt; 1);</div>
+<div class="line"><a name="l02114"></a><span class="lineno"> 2114</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> mid = (inner-&gt;slotuse &gt;&gt; 1);</div>
 <div class="line"><a name="l02115"></a><span class="lineno"> 2115</span>&#160;</div>
 <div class="line"><a name="l02116"></a><span class="lineno"> 2116</span>&#160;        <a class="code" href="group__tlx__container__btree.html#gabe5546ec024823fdb200cf2e6e9b624c">TLX_BTREE_PRINT</a>(<span class="stringliteral">&quot;BTree::split_inner: mid &quot;</span> &lt;&lt; mid &lt;&lt;</div>
 <div class="line"><a name="l02117"></a><span class="lineno"> 2117</span>&#160;                        <span class="stringliteral">&quot; addslot &quot;</span> &lt;&lt; addslot);</div>
@@ -2575,7 +2575,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l02457"></a><span class="lineno"> 2457</span>&#160;            LeafNode* left_leaf = <span class="keyword">static_cast&lt;</span>LeafNode*<span class="keyword">&gt;</span>(left);</div>
 <div class="line"><a name="l02458"></a><span class="lineno"> 2458</span>&#160;            LeafNode* right_leaf = <span class="keyword">static_cast&lt;</span>LeafNode*<span class="keyword">&gt;</span>(right);</div>
 <div class="line"><a name="l02459"></a><span class="lineno"> 2459</span>&#160;</div>
-<div class="line"><a name="l02460"></a><span class="lineno"> 2460</span>&#160;            <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(leaf, key);</div>
+<div class="line"><a name="l02460"></a><span class="lineno"> 2460</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(leaf, key);</div>
 <div class="line"><a name="l02461"></a><span class="lineno"> 2461</span>&#160;</div>
 <div class="line"><a name="l02462"></a><span class="lineno"> 2462</span>&#160;            <span class="keywordflow">if</span> (slot &gt;= leaf-&gt;slotuse || !<a class="code" href="classtlx_1_1BTree.html#a117b795a14531e05da974077af0ff76e">key_equal</a>(key, leaf-&gt;key(slot)))</div>
 <div class="line"><a name="l02463"></a><span class="lineno"> 2463</span>&#160;            {</div>
@@ -2708,7 +2708,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l02590"></a><span class="lineno"> 2590</span>&#160;            node* myleft, * myright;</div>
 <div class="line"><a name="l02591"></a><span class="lineno"> 2591</span>&#160;            InnerNode* myleft_parent, * myright_parent;</div>
 <div class="line"><a name="l02592"></a><span class="lineno"> 2592</span>&#160;</div>
-<div class="line"><a name="l02593"></a><span class="lineno"> 2593</span>&#160;            <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(inner, key);</div>
+<div class="line"><a name="l02593"></a><span class="lineno"> 2593</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(inner, key);</div>
 <div class="line"><a name="l02594"></a><span class="lineno"> 2594</span>&#160;</div>
 <div class="line"><a name="l02595"></a><span class="lineno"> 2595</span>&#160;            <span class="keywordflow">if</span> (slot == 0) {</div>
 <div class="line"><a name="l02596"></a><span class="lineno"> 2596</span>&#160;                myleft =</div>
@@ -2921,7 +2921,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l02803"></a><span class="lineno"> 2803</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classtlx_1_1BTree.html#a3a617d72a0b84dcbdf111d1fe19ec0b5a828fdc69a5b8ce344d849c52f4002434">btree_not_found</a>;</div>
 <div class="line"><a name="l02804"></a><span class="lineno"> 2804</span>&#160;            }</div>
 <div class="line"><a name="l02805"></a><span class="lineno"> 2805</span>&#160;</div>
-<div class="line"><a name="l02806"></a><span class="lineno"> 2806</span>&#160;            <span class="keywordtype">int</span> slot = iter.curr_slot;</div>
+<div class="line"><a name="l02806"></a><span class="lineno"> 2806</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = iter.curr_slot;</div>
 <div class="line"><a name="l02807"></a><span class="lineno"> 2807</span>&#160;</div>
 <div class="line"><a name="l02808"></a><span class="lineno"> 2808</span>&#160;            <a class="code" href="group__tlx__container__btree.html#gabe5546ec024823fdb200cf2e6e9b624c">TLX_BTREE_PRINT</a>(<span class="stringliteral">&quot;Found iterator in leaf &quot;</span> &lt;&lt;</div>
 <div class="line"><a name="l02809"></a><span class="lineno"> 2809</span>&#160;                            curr &lt;&lt; <span class="stringliteral">&quot; at slot &quot;</span> &lt;&lt; slot);</div>
@@ -3056,7 +3056,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l02938"></a><span class="lineno"> 2938</span>&#160;            <span class="comment">// located.</span></div>
 <div class="line"><a name="l02939"></a><span class="lineno"> 2939</span>&#160;</div>
 <div class="line"><a name="l02940"></a><span class="lineno"> 2940</span>&#160;            result_t result;</div>
-<div class="line"><a name="l02941"></a><span class="lineno"> 2941</span>&#160;            <span class="keywordtype">int</span> slot = <a class="code" href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">find_lower</a>(inner, iter.key());</div>
+<div class="line"><a name="l02941"></a><span class="lineno"> 2941</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = <a class="code" href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">find_lower</a>(inner, iter.key());</div>
 <div class="line"><a name="l02942"></a><span class="lineno"> 2942</span>&#160;</div>
 <div class="line"><a name="l02943"></a><span class="lineno"> 2943</span>&#160;            <span class="keywordflow">while</span> (slot &lt;= inner-&gt;slotuse)</div>
 <div class="line"><a name="l02944"></a><span class="lineno"> 2944</span>&#160;            {</div>
@@ -3613,7 +3613,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="line"><a name="l03495"></a><span class="lineno"> 3495</span>&#160;</div>
 <div class="line"><a name="l03496"></a><span class="lineno"> 3496</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; depth; i++) os &lt;&lt; <span class="stringliteral">&quot;  &quot;</span>;</div>
 <div class="line"><a name="l03497"></a><span class="lineno"> 3497</span>&#160;</div>
-<div class="line"><a name="l03498"></a><span class="lineno"> 3498</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> slot = 0; slot &lt; leafnode-&gt;slotuse; ++slot)</div>
+<div class="line"><a name="l03498"></a><span class="lineno"> 3498</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> slot = 0; slot &lt; leafnode-&gt;slotuse; ++slot)</div>
 <div class="line"><a name="l03499"></a><span class="lineno"> 3499</span>&#160;            {</div>
 <div class="line"><a name="l03500"></a><span class="lineno"> 3500</span>&#160;                <span class="comment">// os &lt;&lt; leafnode-&gt;key(slot) &lt;&lt; &quot; &quot;</span></div>
 <div class="line"><a name="l03501"></a><span class="lineno"> 3501</span>&#160;                <span class="comment">//    &lt;&lt; &quot;(data: &quot; &lt;&lt; leafnode-&gt;slotdata[slot] &lt;&lt; &quot;) &quot;;</span></div>
@@ -3892,6 +3892,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="ttc" id="structtlx_1_1BTree_1_1node_html_a15137871fddf6b98c4f13fda9d53c33c"><div class="ttname"><a href="structtlx_1_1BTree_1_1node.html#a15137871fddf6b98c4f13fda9d53c33c">tlx::BTree::node::level</a></div><div class="ttdeci">unsigned short level</div><div class="ttdoc">Level in the b-tree, if level == 0 -&gt; leaf node. </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l00215">btree.hpp:215</a></div></div>
 <div class="ttc" id="classtlx_1_1BTree_1_1const__iterator_html_ad5a73e69afab11500e7c48e766bc869e"><div class="ttname"><a href="classtlx_1_1BTree_1_1const__iterator.html#ad5a73e69afab11500e7c48e766bc869e">tlx::BTree::const_iterator::operator++</a></div><div class="ttdeci">const_iterator &amp; operator++()</div><div class="ttdoc">Prefix++ advance the iterator to the next slot. </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l00596">btree.hpp:596</a></div></div>
 <div class="ttc" id="classtlx_1_1BTree_1_1const__iterator_html_a8ba2b56dfdb5b9beba97bb9ba59ae71b"><div class="ttname"><a href="classtlx_1_1BTree_1_1const__iterator.html#a8ba2b56dfdb5b9beba97bb9ba59ae71b">tlx::BTree::const_iterator::key</a></div><div class="ttdeci">const key_type &amp; key() const </div><div class="ttdoc">Key of the current slot. </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l00591">btree.hpp:591</a></div></div>
+<div class="ttc" id="classtlx_1_1BTree_html_a8683ae6c55649dd2c6d909cf618de0a0"><div class="ttname"><a href="classtlx_1_1BTree.html#a8683ae6c55649dd2c6d909cf618de0a0">tlx::BTree::find_lower</a></div><div class="ttdeci">unsigned short find_lower(const node_type *n, const key_type &amp;key) const </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l01398">btree.hpp:1398</a></div></div>
 <div class="ttc" id="classtlx_1_1BTree_1_1const__reverse__iterator_html_ae606c9d192f5f681a19b60b19d8f18d2"><div class="ttname"><a href="classtlx_1_1BTree_1_1const__reverse__iterator.html#ae606c9d192f5f681a19b60b19d8f18d2">tlx::BTree::const_reverse_iterator::curr_slot</a></div><div class="ttdeci">unsigned short curr_slot</div><div class="ttdoc">One slot past the current key/data slot referenced. </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l00886">btree.hpp:886</a></div></div>
 <div class="ttc" id="classtlx_1_1BTree_html_a6ff4e347839868db0770859a3dd55a27"><div class="ttname"><a href="classtlx_1_1BTree.html#a6ff4e347839868db0770859a3dd55a27">tlx::BTree::key_compare</a></div><div class="ttdeci">Compare key_compare</div><div class="ttdoc">Fourth template parameter: key_type comparison function object. </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l00142">btree.hpp:142</a></div></div>
 <div class="ttc" id="classtlx_1_1BTree_1_1const__reverse__iterator_html"><div class="ttname"><a href="classtlx_1_1BTree_1_1const__reverse__iterator.html">tlx::BTree::const_reverse_iterator</a></div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l00853">btree.hpp:853</a></div></div>
@@ -3958,6 +3959,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="ttc" id="classtlx_1_1BTree_html_a3e25d4b9f9efb4a5496dcf849836fe16"><div class="ttname"><a href="classtlx_1_1BTree.html#a3e25d4b9f9efb4a5496dcf849836fe16">tlx::BTree::shift_right_inner</a></div><div class="ttdeci">static void shift_right_inner(InnerNode *left, InnerNode *right, InnerNode *parent, unsigned int parentslot)</div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l03385">btree.hpp:3385</a></div></div>
 <div class="ttc" id="structtlx_1_1BTree_1_1result__t_html_a51e8cab78f4a914e9cb4247c84927e8f"><div class="ttname"><a href="structtlx_1_1BTree_1_1result__t.html#a51e8cab78f4a914e9cb4247c84927e8f">tlx::BTree::result_t::result_t</a></div><div class="ttdeci">result_t(result_flags_t f=btree_ok)</div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l02334">btree.hpp:2334</a></div></div>
 <div class="ttc" id="classtlx_1_1BTree_html_a86ce69542070f80643dee49e06bebf64"><div class="ttname"><a href="classtlx_1_1BTree.html#a86ce69542070f80643dee49e06bebf64">tlx::BTree::key_greaterequal</a></div><div class="ttdeci">bool key_greaterequal(const key_type &amp;a, const key_type &amp;b) const </div><div class="ttdoc">True if a &gt;= b ? constructed from key_less() </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l01215">btree.hpp:1215</a></div></div>
+<div class="ttc" id="classtlx_1_1BTree_html_ad0a6e56ee5e948ed239abafb7ac4f749"><div class="ttname"><a href="classtlx_1_1BTree.html#ad0a6e56ee5e948ed239abafb7ac4f749">tlx::BTree::find_upper</a></div><div class="ttdeci">unsigned short find_upper(const node_type *n, const key_type &amp;key) const </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l01445">btree.hpp:1445</a></div></div>
 <div class="ttc" id="classtlx_1_1BTree_html_acad38d52497a975bfb6f2f6acd76631f"><div class="ttname"><a href="classtlx_1_1BTree.html#acad38d52497a975bfb6f2f6acd76631f">tlx::BTree::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l01347">btree.hpp:1347</a></div></div>
 <div class="ttc" id="classtlx_1_1BTree_1_1iterator_html_af55cd2eba9d655b56966add998d51b37"><div class="ttname"><a href="classtlx_1_1BTree_1_1iterator.html#af55cd2eba9d655b56966add998d51b37">tlx::BTree::iterator::iterator</a></div><div class="ttdeci">iterator(typename BTree::LeafNode *l, unsigned short s)</div><div class="ttdoc">Initializing-Constructor of a mutable iterator. </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l00399">btree.hpp:399</a></div></div>
 <div class="ttc" id="classtlx_1_1BTree_1_1iterator_html_a67d652c2433cf9217ed2a1485092fdd1"><div class="ttname"><a href="classtlx_1_1BTree_1_1iterator.html#a67d652c2433cf9217ed2a1485092fdd1">tlx::BTree::iterator::iterator</a></div><div class="ttdeci">iterator()</div><div class="ttdoc">Default-Constructor of a mutable iterator. </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l00394">btree.hpp:394</a></div></div>
@@ -3972,7 +3974,6 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="ttc" id="classtlx_1_1BTree_html_a25950f60bc42a7b7bbd2fa6e9cecc7f4"><div class="ttname"><a href="classtlx_1_1BTree.html#a25950f60bc42a7b7bbd2fa6e9cecc7f4">tlx::BTree::key_lessequal</a></div><div class="ttdeci">bool key_lessequal(const key_type &amp;a, const key_type &amp;b) const </div><div class="ttdoc">True if a &lt;= b ? constructed from key_less() </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l01205">btree.hpp:1205</a></div></div>
 <div class="ttc" id="wavelet__tree2_8cpp_html_a6b72e54baf646b08b4b87f987f583dcb"><div class="ttname"><a href="wavelet__tree2_8cpp.html#a6b72e54baf646b08b4b87f987f583dcb">debug</a></div><div class="ttdeci">static constexpr bool debug</div><div class="ttdef"><b>Definition:</b> <a href="wavelet__tree2_8cpp_source.html#l00034">wavelet_tree2.cpp:34</a></div></div>
 <div class="ttc" id="structtlx_1_1BTree_1_1LeafNode_html"><div class="ttname"><a href="structtlx_1_1BTree_1_1LeafNode.html">tlx::BTree::LeafNode</a></div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l00273">btree.hpp:273</a></div></div>
-<div class="ttc" id="classtlx_1_1BTree_html_ab0544e2a2c0a7df7f7f2efa47682e5c4"><div class="ttname"><a href="classtlx_1_1BTree.html#ab0544e2a2c0a7df7f7f2efa47682e5c4">tlx::BTree::find_upper</a></div><div class="ttdeci">int find_upper(const node_type *n, const key_type &amp;key) const </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l01445">btree.hpp:1445</a></div></div>
 <div class="ttc" id="classtlx_1_1BTree_html_abbec00fa1cdcfbf6b78482915c644dba"><div class="ttname"><a href="classtlx_1_1BTree.html#abbec00fa1cdcfbf6b78482915c644dba">tlx::BTree::leaf_slotmin</a></div><div class="ttdeci">static const unsigned short leaf_slotmin</div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l00189">btree.hpp:189</a></div></div>
 <div class="ttc" id="classtlx_1_1BTree_html_a049ea88e87d1254a65596324d47155ed"><div class="ttname"><a href="classtlx_1_1BTree.html#a049ea88e87d1254a65596324d47155ed">tlx::BTree::clear_recursive</a></div><div class="ttdeci">void clear_recursive(node *n)</div><div class="ttdoc">Recursively free up nodes. </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l01311">btree.hpp:1311</a></div></div>
 <div class="ttc" id="classtlx_1_1BTree_html_a8d6ac34d80de837a5e6125c932f1c288"><div class="ttname"><a href="classtlx_1_1BTree.html#a8d6ac34d80de837a5e6125c932f1c288">tlx::BTree::head_leaf_</a></div><div class="ttdeci">LeafNode * head_leaf_</div><div class="ttdoc">Pointer to first leaf in the double linked leaf chain. </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l01080">btree.hpp:1080</a></div></div>
@@ -4006,7 +4007,6 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div class="ttc" id="classtlx_1_1BTree_html_a59929a3ceec53dc1b7e288c245f7f4f7"><div class="ttname"><a href="classtlx_1_1BTree.html#a59929a3ceec53dc1b7e288c245f7f4f7">tlx::BTree::erase_iter_descend</a></div><div class="ttdeci">result_t erase_iter_descend(const iterator &amp;iter, node *curr, node *left, node *right, InnerNode *left_parent, InnerNode *right_parent, InnerNode *parent, unsigned int parentslot)</div><div class="ttdoc">Erase one key/data pair referenced by an iterator in the B+ tree. </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l02779">btree.hpp:2779</a></div></div>
 <div class="ttc" id="group__tlx__container__btree_html_gaf7a068d4e246b8f8e74bfc33f205596b"><div class="ttname"><a href="group__tlx__container__btree.html#gaf7a068d4e246b8f8e74bfc33f205596b">TLX_BTREE_ASSERT</a></div><div class="ttdeci">#define TLX_BTREE_ASSERT(x)</div><div class="ttdoc">Assertion only if TLX_BTREE_DEBUG is defined. This is not used in verify(). </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l00055">btree.hpp:55</a></div></div>
 <div class="ttc" id="classtlx_1_1BTree_html_a62c2add0ee33d7acce9f02077cd1da99"><div class="ttname"><a href="classtlx_1_1BTree.html#a62c2add0ee33d7acce9f02077cd1da99">tlx::BTree::key_comp</a></div><div class="ttdeci">key_compare key_comp() const </div><div class="ttdoc">Constant access to the key comparison object sorting the B+ tree. </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l01183">btree.hpp:1183</a></div></div>
-<div class="ttc" id="classtlx_1_1BTree_html_ae8009ed54bc12a51d11dfdcb447a9227"><div class="ttname"><a href="classtlx_1_1BTree.html#ae8009ed54bc12a51d11dfdcb447a9227">tlx::BTree::find_lower</a></div><div class="ttdeci">int find_lower(const node_type *n, const key_type &amp;key) const </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l01398">btree.hpp:1398</a></div></div>
 <div class="ttc" id="classtlx_1_1BTree_html_aff45baa0e3eb1e71b96fbc218603261b"><div class="ttname"><a href="classtlx_1_1BTree.html#aff45baa0e3eb1e71b96fbc218603261b">tlx::BTree::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const BTree &amp;other) const </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l01728">btree.hpp:1728</a></div></div>
 <div class="ttc" id="classtlx_1_1BTree_1_1reverse__iterator_html_ab01a64ad14e5dad8394b204fba8c41ad"><div class="ttname"><a href="classtlx_1_1BTree_1_1reverse__iterator.html#ab01a64ad14e5dad8394b204fba8c41ad">tlx::BTree::reverse_iterator::reverse_iterator</a></div><div class="ttdeci">reverse_iterator()</div><div class="ttdoc">Default-Constructor of a reverse iterator. </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l00736">btree.hpp:736</a></div></div>
 <div class="ttc" id="classtlx_1_1BTree_1_1const__reverse__iterator_html_aa149c2249879e7727f33688b76bf2c99"><div class="ttname"><a href="classtlx_1_1BTree_1_1const__reverse__iterator.html#aa149c2249879e7727f33688b76bf2c99">tlx::BTree::const_reverse_iterator::operator*</a></div><div class="ttdeci">reference operator*() const </div><div class="ttdoc">Dereference the iterator. </div><div class="ttdef"><b>Definition:</b> <a href="btree_8hpp_source.html#l00927">btree.hpp:927</a></div></div>
@@ -4069,7 +4069,7 @@ $(document).ready(function(){initNavTree('btree_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="dir_32b7cef035cecd0b10cd51669c590a1c.html">container</a></li><li class="navelem"><a class="el" href="btree_8hpp.html">btree.hpp</a></li>
-    <li class="footer">Generated on Tue Aug 13 2019 11:05:18 for Thrill by
+    <li class="footer">Generated on Tue Aug 13 2019 18:01:26 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

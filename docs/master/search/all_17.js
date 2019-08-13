@@ -24,7 +24,7 @@ var searchData=
   ['vec_5f',['vec_',['../classthrill_1_1core_1_1ToVectorEmitter.html#a3b88b609ead41693c60ba9a0631ed04e',1,'thrill::core::ToVectorEmitter']]],
   ['vec_5fswap',['vec_swap',['../namespacetlx_1_1sort__strings__detail.html#a21be236ba84e1f61521ffe333e1f35cf',1,'tlx::sort_strings_detail']]],
   ['vector',['Vector',['../classthrill_1_1common_1_1Vector.html',1,'thrill::common']]],
-  ['vector',['Vector',['../namespaceexamples_1_1stochastic__gradient__descent.html#a56e86bc38c33a35923620cb3ef54fa24',1,'examples::stochastic_gradient_descent::Vector()'],['../namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7',1,'thrill::mem::vector()']]],
+  ['vector',['vector',['../namespacethrill_1_1mem.html#a0dd305ebee8568fb376553a1f70b46a7',1,'thrill::mem::vector()'],['../namespaceexamples_1_1stochastic__gradient__descent.html#a56e86bc38c33a35923620cb3ef54fa24',1,'examples::stochastic_gradient_descent::Vector()']]],
   ['vector_2ehpp',['vector.hpp',['../vector_8hpp.html',1,'']]],
   ['vector_3c_20d_2c_20double_20_3e',['Vector&lt; D, double &gt;',['../classthrill_1_1common_1_1Vector.html',1,'thrill::common']]],
   ['vector_5ffree',['vector_free',['../namespacetlx.html#a3e74e205a0ec4b2d823fd7baf42dcd82',1,'tlx']]],

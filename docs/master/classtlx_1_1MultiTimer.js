@@ -1,11 +1,15 @@
 var classtlx_1_1MultiTimer =
 [
-    [ "Entry", "structtlx_1_1MultiTimer_1_1Entry.html", "structtlx_1_1MultiTimer_1_1Entry" ],
     [ "MultiTimer", "classtlx_1_1MultiTimer.html#a2214875e7b5ca1d1299c70776a3f4ebb", null ],
+    [ "MultiTimer", "classtlx_1_1MultiTimer.html#a86cf3e7bc09ad82ad27e34df42d8cb75", null ],
+    [ "MultiTimer", "classtlx_1_1MultiTimer.html#a554c7a62cf51d8f4cbcd16a1e949e67f", null ],
+    [ "~MultiTimer", "classtlx_1_1MultiTimer.html#a6affb50aea2d5e75e9ae7a0ef1a7e9a1", null ],
     [ "add", "classtlx_1_1MultiTimer.html#a9e6ac15d5f0133d957e75183b35c223e", null ],
     [ "find_or_create", "classtlx_1_1MultiTimer.html#a3782f00e593c1f0df204e470ea42a768", null ],
     [ "get", "classtlx_1_1MultiTimer.html#aa729a8aa36b1c6a204c8c12d85e68575", null ],
     [ "operator+=", "classtlx_1_1MultiTimer.html#a5ff03f65d802f850db15eef7c145fe7b", null ],
+    [ "operator=", "classtlx_1_1MultiTimer.html#aa1c19f23ccab19fb75f18089baa3c655", null ],
+    [ "operator=", "classtlx_1_1MultiTimer.html#a8bd4e0ff20739a7bc432d041f325ca8d", null ],
     [ "print", "classtlx_1_1MultiTimer.html#a8a16e6b5c844823474b31d591bc22e10", null ],
     [ "print", "classtlx_1_1MultiTimer.html#afeb5908fb1c5565f4c9ba934ffdded01", null ],
     [ "reset", "classtlx_1_1MultiTimer.html#ad20897c5c8bd47f5d4005989bead0e55", null ],

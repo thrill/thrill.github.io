@@ -137,9 +137,9 @@ $(document).ready(function(){initNavTree('linux__proc__stats_8cpp_source.html','
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="profile__task_8hpp.html">thrill/common/profile_task.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="profile__thread_8hpp.html">thrill/common/profile_thread.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="thrill_2common_2string_8hpp.html">thrill/common/string.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="string__view_8hpp.html">thrill/common/string_view.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="die_8hpp.html">tlx/die.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="die_8hpp.html">tlx/die.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="split__view_8hpp.html">tlx/string/split_view.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="starts__with_8hpp.html">tlx/string/starts_with.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="trim_8hpp.html">tlx/string/trim.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
@@ -913,7 +913,7 @@ $(document).ready(function(){initNavTree('linux__proc__stats_8cpp_source.html','
 <div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;        std::string::size_type colonpos = line.find(<span class="charliteral">&#39;:&#39;</span>);</div>
 <div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;        <span class="keywordflow">if</span> (colonpos == std::string::npos) <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;        common::StringView key(line.begin(), line.begin() + colonpos);</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;        <a class="code" href="classtlx_1_1StringView.html">tlx::string_view</a> key(line.begin(), line.begin() + colonpos);</div>
 <div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;</div>
 <div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        <span class="keywordtype">size_t</span> size;</div>
 <div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;</div>
@@ -1002,9 +1002,10 @@ $(document).ready(function(){initNavTree('linux__proc__stats_8cpp_source.html','
 <div class="ttc" id="namespacethrill_1_1common_html_ae1a95828629fe7f79b8f7e55e0313ebb"><div class="ttname"><a href="namespacethrill_1_1common.html#ae1a95828629fe7f79b8f7e55e0313ebb">thrill::common::ts_readdir</a></div><div class="ttdeci">struct dirent * ts_readdir(DIR *dirp)</div><div class="ttdoc">mutex-locked readdir() call </div><div class="ttdef"><b>Definition:</b> <a href="porting_8cpp_source.html#l00153">porting.cpp:153</a></div></div>
 <div class="ttc" id="namespacethrill_1_1mem_html_a5568fe0d00a794e5f063e9fe040bc07f"><div class="ttname"><a href="namespacethrill_1_1mem.html#a5568fe0d00a794e5f063e9fe040bc07f">thrill::mem::string</a></div><div class="ttdeci">std::basic_string&lt; char, std::char_traits&lt; char &gt;, Allocator&lt; char &gt; &gt; string</div><div class="ttdoc">string with Manager tracking </div><div class="ttdef"><b>Definition:</b> <a href="allocator_8hpp_source.html#l00220">allocator.hpp:220</a></div></div>
 <div class="ttc" id="wavelet__tree2_8cpp_html_a6b72e54baf646b08b4b87f987f583dcb"><div class="ttname"><a href="wavelet__tree2_8cpp.html#a6b72e54baf646b08b4b87f987f583dcb">debug</a></div><div class="ttdeci">static constexpr bool debug</div><div class="ttdef"><b>Definition:</b> <a href="wavelet__tree2_8cpp_source.html#l00034">wavelet_tree2.cpp:34</a></div></div>
-<div class="ttc" id="string__view_8hpp_html"><div class="ttname"><a href="string__view_8hpp.html">string_view.hpp</a></div></div>
+<div class="ttc" id="classtlx_1_1StringView_html"><div class="ttname"><a href="classtlx_1_1StringView.html">tlx::StringView</a></div><div class="ttdoc">StringView is a reference to a part of a string, consisting of only a char pointer and a length...</div><div class="ttdef"><b>Definition:</b> <a href="string__view_8hpp_source.html#l00032">string_view.hpp:32</a></div></div>
 <div class="ttc" id="classthrill_1_1common_1_1JsonLogger_html"><div class="ttname"><a href="classthrill_1_1common_1_1JsonLogger.html">thrill::common::JsonLogger</a></div><div class="ttdoc">JsonLogger is a receiver of JSON output objects for logging. </div><div class="ttdef"><b>Definition:</b> <a href="json__logger_8hpp_source.html#l00069">json_logger.hpp:69</a></div></div>
 <div class="ttc" id="json__logger_8hpp_html"><div class="ttname"><a href="json__logger_8hpp.html">json_logger.hpp</a></div></div>
+<div class="ttc" id="split__view_8hpp_html"><div class="ttname"><a href="split__view_8hpp.html">split_view.hpp</a></div></div>
 <div class="ttc" id="die_8hpp_html"><div class="ttname"><a href="die_8hpp.html">die.hpp</a></div></div>
 <div class="ttc" id="starts__with_8hpp_html"><div class="ttname"><a href="starts__with_8hpp.html">starts_with.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -1013,7 +1014,7 @@ $(document).ready(function(){initNavTree('linux__proc__stats_8cpp_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="linux__proc__stats_8cpp.html">linux_proc_stats.cpp</a></li>
-    <li class="footer">Generated on Tue Aug 13 2019 11:05:19 for Thrill by
+    <li class="footer">Generated on Tue Aug 13 2019 18:01:27 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

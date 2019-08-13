@@ -52,6 +52,7 @@ var dir_e504eb2edb57c81d5553bb9938943c32 =
     [ "split.hpp", "split_8hpp.html", "split_8hpp" ],
     [ "split_quoted.cpp", "split__quoted_8cpp.html", "split__quoted_8cpp" ],
     [ "split_quoted.hpp", "split__quoted_8hpp.html", "split__quoted_8hpp" ],
+    [ "split_view.hpp", "split__view_8hpp.html", "split__view_8hpp" ],
     [ "split_words.cpp", "split__words_8cpp.html", "split__words_8cpp" ],
     [ "split_words.hpp", "split__words_8hpp.html", "split__words_8hpp" ],
     [ "ssprintf.cpp", "ssprintf_8cpp.html", "ssprintf_8cpp" ],

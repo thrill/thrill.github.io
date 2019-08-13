@@ -54,6 +54,7 @@ var hierarchy =
     [ "Delegate< void(const ValueType &)>", "classtlx_1_1Delegate.html", null ],
     [ "Delegate< void(MPI_Status &), mem::GPoolAllocator< char > >", "classtlx_1_1Delegate.html", null ],
     [ "Delegate< void(request *r, bool success)>", "classtlx_1_1Delegate.html", null ],
+    [ "Delegate< void(size_t)>", "classtlx_1_1Delegate.html", null ],
     [ "element_block< Type, Size >", "classfoxxll_1_1mng__local_1_1element__block.html", [
       [ "block_w_bids< Type,((RawSize-sizeof(BID< RawSize >)*NBids)/sizeof(Type)), RawSize, NBids >", "classfoxxll_1_1mng__local_1_1block__w__bids.html", [
         [ "block_w_info< Type, RawSize, NBids, void >", "classfoxxll_1_1mng__local_1_1block__w__info_3_01Type_00_01RawSize_00_01NBids_00_01void_01_4.html", null ]
@@ -321,7 +322,7 @@ var hierarchy =
       [ "is_std_vector< T >", "structtlx_1_1is__std__vector.html", null ]
     ] ],
     [ "hash< Edge >", "structstd_1_1hash_3_01Edge_01_4.html", null ],
-    [ "hash< thrill::common::StringView >", "structstd_1_1hash_3_01thrill_1_1common_1_1StringView_01_4.html", null ],
+    [ "hash< tlx::StringView >", "structstd_1_1hash_3_01tlx_1_1StringView_01_4.html", null ],
     [ "numeric_limits< foxxll::uint_pair< HighType > >", "classstd_1_1numeric__limits_3_01foxxll_1_1uint__pair_3_01HighType_01_4_01_4.html", null ],
     [ "numeric_limits< thrill::common::UIntPair< HighType > >", "classstd_1_1numeric__limits_3_01thrill_1_1common_1_1UIntPair_3_01HighType_01_4_01_4.html", null ],
     [ "true_type", null, [
@@ -455,7 +456,6 @@ var hierarchy =
     ] ],
     [ "StatsTimerBase< false >", "classthrill_1_1common_1_1StatsTimerBase_3_01false_01_4.html", null ],
     [ "StatsTimerBase< true >", "classthrill_1_1common_1_1StatsTimerBase_3_01true_01_4.html", null ],
-    [ "StringView", "classthrill_1_1common_1_1StringView.html", null ],
     [ "TabulationHashing< size, hash_t, prng_t >", "classthrill_1_1common_1_1TabulationHashing.html", null ],
     [ "TimedCounter", "classthrill_1_1common_1_1TimedCounter.html", null ],
     [ "UIntPair< High_ >", "classthrill_1_1common_1_1UIntPair.html", null ],
@@ -654,6 +654,8 @@ var hierarchy =
     [ "FunctionChain< Functors >", "classtlx_1_1FunctionChain.html", null ],
     [ "FunctionStack< Input_, Functors >", "classtlx_1_1FunctionStack.html", null ],
     [ "index_sequence< Indexes >", "structtlx_1_1index__sequence.html", null ],
+    [ "less_icase_asc", "structtlx_1_1less__icase__asc.html", null ],
+    [ "less_icase_desc", "structtlx_1_1less__icase__desc.html", null ],
     [ "LevenshteinStandardICaseParameters", "structtlx_1_1LevenshteinStandardICaseParameters.html", null ],
     [ "LevenshteinStandardParameters", "structtlx_1_1LevenshteinStandardParameters.html", null ],
     [ "Log2< Input >", "classtlx_1_1Log2.html", null ],
@@ -716,7 +718,6 @@ var hierarchy =
     [ "VMapForRangeImpl< Index, Size, Functor >", "classtlx_1_1meta__detail_1_1VMapForRangeImpl.html", null ],
     [ "VMapForRangeImpl< Index, 0, Functor >", "classtlx_1_1meta__detail_1_1VMapForRangeImpl_3_01Index_00_010_00_01Functor_01_4.html", null ],
     [ "MultiTimer", "classtlx_1_1MultiTimer.html", null ],
-    [ "MultiTimer::Entry", "structtlx_1_1MultiTimer_1_1Entry.html", null ],
     [ "guarded_iterator< RandomAccessIterator, Comparator >", "classtlx_1_1multiway__merge__detail_1_1guarded__iterator.html", null ],
     [ "unguarded_iterator< RandomAccessIterator, Comparator >", "classtlx_1_1multiway__merge__detail_1_1unguarded__iterator.html", null ],
     [ "NoOperation< ReturnType >", "classtlx_1_1NoOperation.html", null ],
@@ -874,6 +875,7 @@ var hierarchy =
     [ "StackArena< Size >", "classtlx_1_1StackArena.html", null ],
     [ "StackArena< Size >::AlignmentHelper", "uniontlx_1_1StackArena_1_1AlignmentHelper.html", null ],
     [ "StaticIndex< Index >", "structtlx_1_1StaticIndex.html", null ],
+    [ "StringView", "classtlx_1_1StringView.html", null ],
     [ "ThreadBarrierMutex", "classtlx_1_1ThreadBarrierMutex.html", null ],
     [ "ThreadBarrierSpin", "classtlx_1_1ThreadBarrierSpin.html", null ],
     [ "ThreadPool", "classtlx_1_1ThreadPool.html", null ],

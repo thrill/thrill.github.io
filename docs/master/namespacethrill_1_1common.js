@@ -49,7 +49,6 @@ var namespacethrill_1_1common =
     [ "StatsTimerBase< true >", "classthrill_1_1common_1_1StatsTimerBase_3_01true_01_4.html", "classthrill_1_1common_1_1StatsTimerBase_3_01true_01_4" ],
     [ "StatsTimerBaseStarted", "classthrill_1_1common_1_1StatsTimerBaseStarted.html", "classthrill_1_1common_1_1StatsTimerBaseStarted" ],
     [ "StatsTimerBaseStopped", "classthrill_1_1common_1_1StatsTimerBaseStopped.html", "classthrill_1_1common_1_1StatsTimerBaseStopped" ],
-    [ "StringView", "classthrill_1_1common_1_1StringView.html", "classthrill_1_1common_1_1StringView" ],
     [ "SystemException", "classthrill_1_1common_1_1SystemException.html", "classthrill_1_1common_1_1SystemException" ],
     [ "TabulationHashing", "classthrill_1_1common_1_1TabulationHashing.html", "classthrill_1_1common_1_1TabulationHashing" ],
     [ "TimedCounter", "classthrill_1_1common_1_1TimedCounter.html", "classthrill_1_1common_1_1TimedCounter" ],

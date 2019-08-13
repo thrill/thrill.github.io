@@ -116,6 +116,11 @@ $(document).ready(function(){initNavTree('group__tlx__string.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtlx_1_1less__icase__asc.html">less_icase_asc</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Case-insensitive less order relation functional class for std::map, etc.  <a href="structtlx_1_1less__icase__asc.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtlx_1_1less__icase__desc.html">less_icase_desc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtlx_1_1LevenshteinStandardICaseParameters.html">LevenshteinStandardICaseParameters</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard parameters to Levenshtein distance function.  <a href="structtlx_1_1LevenshteinStandardICaseParameters.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -538,6 +543,10 @@ Split and Join</h2></td></tr>
 <tr class="memitem:ga0210d995cdc4df9aafcd09c005571449"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__string.html#ga0210d995cdc4df9aafcd09c005571449">split_quoted</a> (const std::string &amp;str)</td></tr>
 <tr class="memdesc:ga0210d995cdc4df9aafcd09c005571449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split the given string at each space into distinct substrings.  <a href="#ga0210d995cdc4df9aafcd09c005571449">More...</a><br/></td></tr>
 <tr class="separator:ga0210d995cdc4df9aafcd09c005571449"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c9fac87ddaeb902c500f4854af69bec"><td class="memTemplParams" colspan="2">template&lt;typename Functor &gt; </td></tr>
+<tr class="memitem:ga6c9fac87ddaeb902c500f4854af69bec"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tlx__string.html#ga6c9fac87ddaeb902c500f4854af69bec">split_view</a> (char sep, const std::string &amp;str, Functor &amp;&amp;callback, std::string::size_type limit=std::string::npos)</td></tr>
+<tr class="memdesc:ga6c9fac87ddaeb902c500f4854af69bec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split the given string at each separator character into distinct substrings, and call the given callback with a <a class="el" href="classtlx_1_1StringView.html" title="StringView is a reference to a part of a string, consisting of only a char pointer and a length...">StringView</a> for each substring.  <a href="#ga6c9fac87ddaeb902c500f4854af69bec">More...</a><br/></td></tr>
+<tr class="separator:ga6c9fac87ddaeb902c500f4854af69bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Search and Replace</h2></td></tr>
@@ -2323,7 +2332,7 @@ Trim</h2></td></tr>
 
 <p>Definition at line <a class="el" href="hash__djb2_8hpp_source.html#l00026">26</a> of file <a class="el" href="hash__djb2_8hpp_source.html">hash_djb2.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="multi__timer_8cpp_source.html#l00033">MultiTimer::find_or_create()</a>, <a class="el" href="hash__djb2_8hpp_source.html#l00041">tlx::hash_djb2()</a>, and <a class="el" href="multi__timer_8cpp_source.html#l00047">MultiTimer::start()</a>.</p>
+<p>Referenced by <a class="el" href="multi__timer_8cpp_source.html#l00052">MultiTimer::find_or_create()</a>, <a class="el" href="hash__djb2_8hpp_source.html#l00041">tlx::hash_djb2()</a>, <a class="el" href="string__view_8hpp_source.html#l00181">hash&lt; tlx::StringView &gt;::operator()()</a>, and <a class="el" href="multi__timer_8cpp_source.html#l00066">MultiTimer::start()</a>.</p>
 
 </div>
 </div>
@@ -3150,7 +3159,7 @@ Trim</h2></td></tr>
 
 <p>Definition at line <a class="el" href="join_8cpp_source.html#l00016">16</a> of file <a class="el" href="join_8cpp_source.html">join.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="join_8cpp_source.html#l00020">tlx::join()</a>, <a class="el" href="block__pool_8cpp_source.html#l00216">thrill::data::operator&lt;&lt;()</a>, <a class="el" href="page__rank_8hpp_source.html#l00071">examples::page_rank::PageRank()</a>, <a class="el" href="page__rank_8hpp_source.html#l00142">examples::page_rank::PageRankJoin()</a>, <a class="el" href="parallel__multiway__merge_8hpp_source.html#l00068">tlx::parallel_multiway_merge_base()</a>, <a class="el" href="byte__block_8cpp_source.html#l00063">ByteBlock::pin_count_str()</a>, <a class="el" href="read__binary_8hpp_source.html#l00082">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>, <a class="el" href="read__lines_8hpp_source.html#l00050">ReadLinesNode::ReadLinesNode()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00024">ThreadPool::~ThreadPool()</a>.</p>
+<p>Referenced by <a class="el" href="join_8cpp_source.html#l00020">tlx::join()</a>, <a class="el" href="block__pool_8cpp_source.html#l00216">thrill::data::operator&lt;&lt;()</a>, <a class="el" href="page__rank_8hpp_source.html#l00071">examples::page_rank::PageRank()</a>, <a class="el" href="page__rank_8hpp_source.html#l00142">examples::page_rank::PageRankJoin()</a>, <a class="el" href="parallel__multiway__merge_8hpp_source.html#l00068">tlx::parallel_multiway_merge_base()</a>, <a class="el" href="byte__block_8cpp_source.html#l00063">ByteBlock::pin_count_str()</a>, <a class="el" href="read__binary_8hpp_source.html#l00082">ReadBinaryNode&lt; ValueType &gt;::ReadBinaryNode()</a>, <a class="el" href="read__lines_8hpp_source.html#l00050">ReadLinesNode::ReadLinesNode()</a>, and <a class="el" href="thread__pool_8cpp_source.html#l00025">ThreadPool::~ThreadPool()</a>.</p>
 
 </div>
 </div>
@@ -3529,6 +3538,8 @@ Trim</h2></td></tr>
 <p>Definition at line <a class="el" href="less__icase_8cpp_source.html#l00018">18</a> of file <a class="el" href="less__icase_8cpp_source.html">less_icase.cpp</a>.</p>
 
 <p>References <a class="el" href="to__lower_8cpp_source.html#l00017">tlx::to_lower()</a>.</p>
+
+<p>Referenced by <a class="el" href="less__icase_8hpp_source.html#l00041">less_icase_asc::operator()()</a>, and <a class="el" href="less__icase_8hpp_source.html#l00049">less_icase_desc::operator()()</a>.</p>
 
 </div>
 </div>
@@ -4987,7 +4998,7 @@ Trim</h2></td></tr>
 
 <p>Definition at line <a class="el" href="split_8cpp_source.html#l00020">20</a> of file <a class="el" href="split_8cpp_source.html">split.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="multiway__merge__splitting_8hpp_source.html#l00057">tlx::multiway_merge_detail::equally_split()</a>, <a class="el" href="btree_8hpp_source.html#l01928">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>, <a class="el" href="tpch__run_8cpp_source.html#l00167">JoinTPCH4()</a>, <a class="el" href="parallel__mergesort_8hpp_source.html#l00279">tlx::parallel_mergesort_base()</a>, <a class="el" href="config_8cpp_source.html#l00393">disk_config::parse_fileio()</a>, <a class="el" href="config_8cpp_source.html#l00326">disk_config::parse_line()</a>, <a class="el" href="percentiles_8cpp_source.html#l00031">Percentiles()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00232">tlx::multiway_merge_detail::prepare_unguarded()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00310">tlx::multiway_merge_detail::prepare_unguarded_sentinel()</a>, and <a class="el" href="split_8cpp_source.html#l00028">tlx::split()</a>.</p>
+<p>Referenced by <a class="el" href="multiway__merge__splitting_8hpp_source.html#l00057">tlx::multiway_merge_detail::equally_split()</a>, <a class="el" href="btree_8hpp_source.html#l01928">BTree&lt; key_type, value_type, key_of_value, key_compare, traits, true, allocator_type &gt;::insert_descend()</a>, <a class="el" href="tpch__run_8cpp_source.html#l00167">JoinTPCH4()</a>, <a class="el" href="parallel__mergesort_8hpp_source.html#l00280">tlx::parallel_mergesort_base()</a>, <a class="el" href="config_8cpp_source.html#l00393">disk_config::parse_fileio()</a>, <a class="el" href="config_8cpp_source.html#l00326">disk_config::parse_line()</a>, <a class="el" href="percentiles_8cpp_source.html#l00031">Percentiles()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00232">tlx::multiway_merge_detail::prepare_unguarded()</a>, <a class="el" href="extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp_source.html#l00310">tlx::multiway_merge_detail::prepare_unguarded_sentinel()</a>, and <a class="el" href="split_8cpp_source.html#l00028">tlx::split()</a>.</p>
 
 </div>
 </div>
@@ -5666,6 +5677,68 @@ Trim</h2></td></tr>
 <p>Definition at line <a class="el" href="split__quoted_8cpp_source.html#l00122">122</a> of file <a class="el" href="split__quoted_8cpp_source.html">split_quoted.cpp</a>.</p>
 
 <p>References <a class="el" href="split__quoted_8cpp_source.html#l00018">tlx::split_quoted()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga6c9fac87ddaeb902c500f4854af69bec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void tlx::split_view </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>sep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Functor &amp;&amp;&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string::size_type&#160;</td>
+          <td class="paramname"><em>limit</em> = <code>std::string::npos</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Split the given string at each separator character into distinct substrings, and call the given callback with a <a class="el" href="classtlx_1_1StringView.html" title="StringView is a reference to a part of a string, consisting of only a char pointer and a length...">StringView</a> for each substring. </p>
+<p>Multiple consecutive separators are considered individually and will result in empty split substrings.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>string to split </td></tr>
+    <tr><td class="paramname">sep</td><td>separator character </td></tr>
+    <tr><td class="paramname">callback</td><td>callback taking <a class="el" href="classtlx_1_1StringView.html" title="StringView is a reference to a part of a string, consisting of only a char pointer and a length...">StringView</a> of substring </td></tr>
+    <tr><td class="paramname">limit</td><td>maximum number of parts returned </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="split__view_8hpp_source.html#l00038">38</a> of file <a class="el" href="split__view_8hpp_source.html">split_view.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="word__count_8hpp_source.html#l00074">examples::word_count::HashWordCountExample()</a>, <a class="el" href="word__count__sequential_8cpp_source.html#l00023">main()</a>, <a class="el" href="word__count__simple_8cpp_source.html#l00020">WordCount()</a>, and <a class="el" href="word__count_8hpp_source.html#l00035">examples::word_count::WordCount()</a>.</p>
 
 </div>
 </div>
@@ -6998,7 +7071,7 @@ Trim</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 13 2019 11:05:21 for Thrill by
+    <li class="footer">Generated on Tue Aug 13 2019 18:01:30 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

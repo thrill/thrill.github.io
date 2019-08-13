@@ -2,7 +2,6 @@ var searchData=
 [
   ['n',['N',['../namespacegen__data.html#a7722c8ecbb62d99aee7ce68b1752f337',1,'gen_data']]],
   ['n_5f',['N_',['../classthrill_1_1common_1_1ZipfDistribution.html#ad6747cc0d034da6dca59c002e7088c97',1,'thrill::common::ZipfDistribution']]],
-  ['name',['name',['../structtlx_1_1MultiTimer_1_1Entry.html#a8f8f80d37794cde9472343e4487ba3eb',1,'tlx::MultiTimer::Entry']]],
   ['name_5f',['name_',['../classthrill_1_1mem_1_1Manager.html#a7dac8366c11fbcad2f49d85fe8fc4fbe',1,'thrill::mem::Manager']]],
   ['ndisks_5f',['ndisks_',['../classfoxxll_1_1block__manager.html#a4c5b3cfb808162e372a2109d085fcd94',1,'foxxll::block_manager']]],
   ['need_5falignment_5f',['need_alignment_',['../classfoxxll_1_1file.html#a24f05930681d0e35014298e3bf4349e3',1,'foxxll::file']]],

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['hash_3c_20edge_20_3e',['hash&lt; Edge &gt;',['../structstd_1_1hash_3_01Edge_01_4.html',1,'std']]],
-  ['hash_3c_20thrill_3a_3acommon_3a_3astringview_20_3e',['hash&lt; thrill::common::StringView &gt;',['../structstd_1_1hash_3_01thrill_1_1common_1_1StringView_01_4.html',1,'std']]],
+  ['hash_3c_20tlx_3a_3astringview_20_3e',['hash&lt; tlx::StringView &gt;',['../structstd_1_1hash_3_01tlx_1_1StringView_01_4.html',1,'std']]],
   ['hashcount',['HashCount',['../classthrill_1_1api_1_1JoinNode_1_1HashCount.html',1,'thrill::api::JoinNode']]],
   ['hashcount',['HashCount',['../classthrill_1_1api_1_1GroupByNode_1_1HashCount.html',1,'thrill::api::GroupByNode']]],
   ['hashcrc32fallback',['HashCrc32Fallback',['../structthrill_1_1common_1_1HashCrc32Fallback.html',1,'thrill::common']]],

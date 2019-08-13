@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Thrill: thrill/common/string_view.hpp File Reference</title>
+<title>Thrill: extlib/tlx/tlx/container/string_view.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('string__view_8hpp.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">string_view.hpp File Reference</div>  </div>
@@ -124,12 +124,13 @@ $(document).ready(function(){initNavTree('string__view_8hpp.html','');});
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br/>
 <code>#include &lt;ostream&gt;</code><br/>
 <code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;<a class="el" href="hash__djb2_8hpp_source.html">tlx/string/hash_djb2.hpp</a>&gt;</code><br/>
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for string_view.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__view_8hpp__incl.svg" width="258" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="string__view_8hpp__incl.svg" width="414" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -137,7 +138,7 @@ $(document).ready(function(){initNavTree('string__view_8hpp.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string__view_8hpp__dep__incl.svg" width="708" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="string__view_8hpp__dep__incl.svg" width="6020" height="1592"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -145,58 +146,42 @@ $(document).ready(function(){initNavTree('string__view_8hpp.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01thrill_1_1common_1_1StringView_01_4.html">hash&lt; thrill::common::StringView &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01tlx_1_1StringView_01_4.html">hash&lt; tlx::StringView &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1common_1_1StringView.html">StringView</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classthrill_1_1common_1_1StringView.html" title="StringView is a reference to a part of a string, consisting of only a char pointer and a length...">StringView</a> is a reference to a part of a string, consisting of only a char pointer and a length.  <a href="classthrill_1_1common_1_1StringView.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtlx_1_1StringView.html">StringView</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classtlx_1_1StringView.html" title="StringView is a reference to a part of a string, consisting of only a char pointer and a length...">StringView</a> is a reference to a part of a string, consisting of only a char pointer and a length.  <a href="classtlx_1_1StringView.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacethrill"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill.html">thrill</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacethrill_1_1common"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html">thrill::common</a></td></tr>
-<tr class="memdesc:namespacethrill_1_1common"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains many common tools and helpers shared by higher layers. See <a class="el" href="namespacethrill_1_1common.html">common</a>. <br/></td></tr>
+<tr class="memitem:namespacetlx"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetlx.html">tlx</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a7c74e05977a87b378644ae413cf6eee6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string__view_8hpp.html#a7c74e05977a87b378644ae413cf6eee6">THRILL_COMMON_STRING_VIEW_HEADER</a></td></tr>
-<tr class="separator:a7c74e05977a87b378644ae413cf6eee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga325e3200f2c48d6cc3c8e198a2426f4e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga325e3200f2c48d6cc3c8e198a2426f4e">string_view</a> = StringView</td></tr>
+<tr class="memdesc:ga325e3200f2c48d6cc3c8e198a2426f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">make alias due to STL similarity  <a href="group__tlx__container.html#ga325e3200f2c48d6cc3c8e198a2426f4e">More...</a><br/></td></tr>
+<tr class="separator:ga325e3200f2c48d6cc3c8e198a2426f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a88d1004f5735e0c6000ebfb15f251399"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a88d1004f5735e0c6000ebfb15f251399">operator!=</a> (const std::string &amp;a, const StringView &amp;b) noexcept</td></tr>
-<tr class="separator:a88d1004f5735e0c6000ebfb15f251399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a968ccb04e8aa577c69add6e3a1924e01"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a968ccb04e8aa577c69add6e3a1924e01">operator==</a> (const std::string &amp;a, const StringView &amp;b) noexcept</td></tr>
-<tr class="separator:a968ccb04e8aa577c69add6e3a1924e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bff4b064afd6216c0b11d6e816140d1"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
-<tr class="memitem:a9bff4b064afd6216c0b11d6e816140d1"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacethrill_1_1common.html#a9bff4b064afd6216c0b11d6e816140d1">SplitView</a> (const std::string &amp;str, char sep, F &amp;&amp;callback, std::string::size_type limit=std::string::npos)</td></tr>
-<tr class="memdesc:a9bff4b064afd6216c0b11d6e816140d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split the given string at each separator character into distinct substrings, and call the given callback for each substring, represented by two iterators begin and end.  <a href="#a9bff4b064afd6216c0b11d6e816140d1">More...</a><br/></td></tr>
-<tr class="separator:a9bff4b064afd6216c0b11d6e816140d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga054ee2cfd2bd32928806134be36ae33c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga054ee2cfd2bd32928806134be36ae33c">operator!=</a> (const std::string &amp;a, const StringView &amp;b) noexcept</td></tr>
+<tr class="memdesc:ga054ee2cfd2bd32928806134be36ae33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality operator to compare a std::string with a <a class="el" href="classtlx_1_1StringView.html" title="StringView is a reference to a part of a string, consisting of only a char pointer and a length...">StringView</a>.  <a href="group__tlx__container.html#ga054ee2cfd2bd32928806134be36ae33c">More...</a><br/></td></tr>
+<tr class="separator:ga054ee2cfd2bd32928806134be36ae33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d08f6faf8bede3dfb9d75ac1f731d48"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga0d08f6faf8bede3dfb9d75ac1f731d48">operator&lt;</a> (const std::string &amp;a, const StringView &amp;b) noexcept</td></tr>
+<tr class="memdesc:ga0d08f6faf8bede3dfb9d75ac1f731d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Less operator to compare a std::string with a <a class="el" href="classtlx_1_1StringView.html" title="StringView is a reference to a part of a string, consisting of only a char pointer and a length...">StringView</a> lexicographically.  <a href="group__tlx__container.html#ga0d08f6faf8bede3dfb9d75ac1f731d48">More...</a><br/></td></tr>
+<tr class="separator:ga0d08f6faf8bede3dfb9d75ac1f731d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a9af0024876a54443f35667e7f620bd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tlx__container.html#ga9a9af0024876a54443f35667e7f620bd">operator==</a> (const std::string &amp;a, const StringView &amp;b) noexcept</td></tr>
+<tr class="memdesc:ga9a9af0024876a54443f35667e7f620bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality operator to compare a std::string with a <a class="el" href="classtlx_1_1StringView.html" title="StringView is a reference to a part of a string, consisting of only a char pointer and a length...">StringView</a>.  <a href="group__tlx__container.html#ga9a9af0024876a54443f35667e7f620bd">More...</a><br/></td></tr>
+<tr class="separator:ga9a9af0024876a54443f35667e7f620bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a7c74e05977a87b378644ae413cf6eee6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define THRILL_COMMON_STRING_VIEW_HEADER</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="string__view_8hpp_source.html#l00017">17</a> of file <a class="el" href="string__view_8hpp_source.html">string_view.hpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_e590497cc50ef2eecc1d619a0ecad80d.html">common</a></li><li class="navelem"><a class="el" href="string__view_8hpp.html">string_view.hpp</a></li>
-    <li class="footer">Generated on Tue Aug 13 2019 11:05:21 for Thrill by
+    <li class="navelem"><a class="el" href="dir_61fca223603293d028001fb85ee7b316.html">extlib</a></li><li class="navelem"><a class="el" href="dir_d2747beea350062e3e09fa8dc3b7f824.html">tlx</a></li><li class="navelem"><a class="el" href="dir_e51d8ef7db00def9423335c81d827c83.html">tlx</a></li><li class="navelem"><a class="el" href="dir_32b7cef035cecd0b10cd51669c590a1c.html">container</a></li><li class="navelem"><a class="el" href="string__view_8hpp.html">string_view.hpp</a></li>
+    <li class="footer">Generated on Tue Aug 13 2019 18:01:28 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
