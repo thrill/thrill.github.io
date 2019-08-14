@@ -1,5 +1,9 @@
 var NAVTREEINDEX37 =
 {
+"hdfs3__file_8cpp.html#aa9f49fc6c46b77651f4a0208c0d4ee7a":[6,0,3,6,6,0],
+"hdfs3__file_8cpp_source.html":[6,0,3,6,6],
+"hdfs3__file_8hpp.html":[6,0,3,6,7],
+"hdfs3__file_8hpp.html#a224d075eddfc9c110ed428ea3507308e":[6,0,3,6,7,0],
 "hdfs3__file_8hpp.html#a3582b9a1e4dedf6cd093d52f92dd362d":[6,0,3,6,7,4],
 "hdfs3__file_8hpp.html#a3d6fe81aa5571a41a73504d5b991bac4":[6,0,3,6,7,3],
 "hdfs3__file_8hpp.html#a6a2cd0c9d002c4d7649e93d3580961b2":[6,0,3,6,7,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX37 =
 "k-means__step5_8cpp.html#a5e7ee76dd747227bc054d6f8f000c70d":[6,0,1,12,4,4],
 "k-means__step5_8cpp.html#aab55cf13db83c55c46a961b2b2441960":[6,0,1,12,4,3],
 "k-means__step5_8cpp.html#add27ebd318677fc7e53476f12a6d1acd":[6,0,1,12,4,5],
-"k-means__step5_8cpp.html#ae10fab4513e0cbb5cba655a23a016e93":[6,0,1,12,4,1],
-"k-means__step5_8cpp.html#aea534997f8a50866a57ee4cf2a48d810":[6,0,1,12,4,0],
-"k-means__step5_8cpp_source.html":[6,0,1,12,4],
-"k-means__step6_8cpp.html":[6,0,1,12,5],
-"k-means__step6_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[6,0,1,12,5,2]
+"k-means__step5_8cpp.html#ae10fab4513e0cbb5cba655a23a016e93":[6,0,1,12,4,1]
 };

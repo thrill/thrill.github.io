@@ -18,5 +18,6 @@ var context_8cpp =
     [ "RunLocalTests", "context_8cpp.html#aa4470189930c7d6a1d6b171ae353008f", null ],
     [ "RunLoopbackThreads", "context_8cpp.html#a05fb432b2eb6f0d80fadf62e834e8328", null ],
     [ "RunNotSupported", "context_8cpp.html#afea58b4b153ebf234f09f71a8e27c91a", null ],
+    [ "RunSetupFoxxll", "context_8cpp.html#aa21a6e0704d2e92c141de9a213bdafb2", null ],
     [ "SetupBlockSize", "context_8cpp.html#a3d4f6920a4e2c31e3908801bc2217c2e", null ]
 ];

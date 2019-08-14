@@ -1,5 +1,9 @@
 var NAVTREEINDEX44 =
 {
+"structfoxxll_1_1random__cyclic__flash.html#a7ea2fa3326f722f4c659069d55a4f7dc":[3,1,3,0,0,5,1],
+"structfoxxll_1_1random__cyclic__flash.html#aa6be32e0d1b4bd24f8745d1d3267b295":[3,1,3,0,0,5,2],
+"structfoxxll_1_1random__cyclic__flash.html#acd50b6dab440e7c228d8828e009cbeed":[3,1,3,0,0,5,0],
+"structfoxxll_1_1simple__random.html":[3,1,3,0,0,6],
 "structfoxxll_1_1simple__random.html#a00ac22525f37a0a3a4acfb6d49aebf73":[3,1,3,0,0,6,0],
 "structfoxxll_1_1simple__random.html#a02fd73d861ef2e4aabb38c0c9ff82947":[3,1,3,0,0,6,2],
 "structfoxxll_1_1simple__random.html#aa6be32e0d1b4bd24f8745d1d3267b295":[3,1,3,0,0,6,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX44 =
 "structthrill_1_1mem_1_1Allocator_3_01void_01_4_1_1rebind.html#af695ab29f9436ffc0c60829fab4e5087":[5,0,4,4,3,0,0],
 "structthrill_1_1mem_1_1FixedAllocator_1_1rebind.html":[5,0,4,4,5,0],
 "structthrill_1_1mem_1_1FixedAllocator_1_1rebind.html#a8a06f34c5dde0a3dae111725fafafe6c":[5,0,4,4,5,0,0],
-"structthrill_1_1mem_1_1FixedAllocator_3_01void_00_01manager___01_4_1_1rebind.html":[5,0,4,4,6,0],
-"structthrill_1_1mem_1_1FixedAllocator_3_01void_00_01manager___01_4_1_1rebind.html#a8a06f34c5dde0a3dae111725fafafe6c":[5,0,4,4,6,0,0],
-"structthrill_1_1mem_1_1FixedPoolAllocator_1_1rebind.html":[5,0,4,4,7,0],
-"structthrill_1_1mem_1_1FixedPoolAllocator_1_1rebind.html#a0b57cc8615659f64ff28b6ebd6e96a93":[5,0,4,4,7,0,0],
-"structthrill_1_1mem_1_1PoolAllocator_1_1rebind.html":[5,0,4,4,11,0]
+"structthrill_1_1mem_1_1FixedAllocator_3_01void_00_01manager___01_4_1_1rebind.html":[5,0,4,4,6,0]
 };

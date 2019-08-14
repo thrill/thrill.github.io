@@ -148,7 +148,7 @@ var searchData=
   ['create_5farray',['create_array',['../classtlx_1_1SimpleVector.html#a631b59e584b115ebe3921fb26e01ff74',1,'tlx::SimpleVector']]],
   ['create_5ffile',['create_file',['../namespacefoxxll.html#a92097729be5ba4d40e3bb5234de9c637',1,'foxxll::create_file(const std::string &amp;io_impl, const std::string &amp;filename, int options, int physical_device_id=file::DEFAULT_QUEUE, int disk_allocator_id=file::NO_ALLOCATOR)'],['../namespacefoxxll.html#a6f61a1a730d70938e4a5d16d705c228b',1,'foxxll::create_file(disk_config &amp;config, int mode, int disk_allocator_id=file::NO_ALLOCATOR)']]],
   ['create_5ffile_5fstats',['create_file_stats',['../classfoxxll_1_1stats.html#a493d2dd111f68986ed068c976bb236a8',1,'foxxll::stats']]],
-  ['create_5finstance',['create_instance',['../classfoxxll_1_1singleton.html#a6ff66de16b5ccc54c9c0f15e6f4c384e',1,'foxxll::singleton']]],
+  ['create_5finstance',['create_instance',['../classfoxxll_1_1singleton.html#abe948c14dff0c2e5ffc3602dcad58d22',1,'foxxll::singleton::create_instance()'],['../classfoxxll_1_1singleton.html#a905e7ae3024bf9655bad58c4c8b441b3',1,'foxxll::singleton::create_instance()']]],
   ['createinstance',['CreateInstance',['../classthrill_1_1common_1_1Singleton.html#a6773e98f43af2cd356c99c16e96bbdaa',1,'thrill::common::Singleton']]],
   ['createpair',['CreatePair',['../classthrill_1_1net_1_1tcp_1_1Socket.html#aa6b9fe6cd6404d714622bec0dfcf857c',1,'thrill::net::tcp::Socket']]],
   ['createthread',['CreateThread',['../namespacethrill_1_1common.html#a2744bf429da7b68993e59e9c65df7c72',1,'thrill::common']]],

@@ -146,7 +146,7 @@ var searchData=
   ['logcmdlineparams',['LogCmdlineParams',['../namespacethrill_1_1common.html#a198a2f0adfbc4f1e904cc6154aec7793',1,'thrill::common']]],
   ['loggam',['loggam',['../classthrill_1_1common_1_1hypergeometric__distribution.html#ad190742aee74a4799ed86f16d4ac1068',1,'thrill::common::hypergeometric_distribution']]],
   ['logger',['Logger',['../classtlx_1_1Logger.html',1,'tlx']]],
-  ['logger',['logger',['../classthrill_1_1data_1_1BlockPool.html#ae34d8ffa837be823690600d6a05e9ef5',1,'thrill::data::BlockPool::logger()'],['../classthrill_1_1data_1_1BlockSink.html#ae34d8ffa837be823690600d6a05e9ef5',1,'thrill::data::BlockSink::logger()'],['../classthrill_1_1data_1_1Multiplexer.html#a7f78325e84be09946b175fe4ee958bb0',1,'thrill::data::Multiplexer::logger()'],['../classtlx_1_1Logger.html#a4fac0c9f6ee2dce6abd726264b9195f7',1,'tlx::Logger::Logger()']]],
+  ['logger',['Logger',['../classtlx_1_1Logger.html#a4fac0c9f6ee2dce6abd726264b9195f7',1,'tlx::Logger::Logger()'],['../classthrill_1_1data_1_1BlockPool.html#ae34d8ffa837be823690600d6a05e9ef5',1,'thrill::data::BlockPool::logger()'],['../classthrill_1_1data_1_1BlockSink.html#ae34d8ffa837be823690600d6a05e9ef5',1,'thrill::data::BlockSink::logger()'],['../classthrill_1_1data_1_1Multiplexer.html#a7f78325e84be09946b175fe4ee958bb0',1,'thrill::data::Multiplexer::logger()']]],
   ['logger_2ecpp',['logger.cpp',['../logger_8cpp.html',1,'']]],
   ['logger_2ehpp',['logger.hpp',['../extlib_2tlx_2tlx_2logger_8hpp.html',1,'']]],
   ['logger_2ehpp',['logger.hpp',['../thrill_2common_2logger_8hpp.html',1,'']]],

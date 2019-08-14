@@ -353,7 +353,7 @@ var searchData=
   ['create_5ffile_2ecpp',['create_file.cpp',['../create__file_8cpp.html',1,'']]],
   ['create_5ffile_2ehpp',['create_file.hpp',['../create__file_8hpp.html',1,'']]],
   ['create_5ffile_5fstats',['create_file_stats',['../classfoxxll_1_1stats.html#a493d2dd111f68986ed068c976bb236a8',1,'foxxll::stats']]],
-  ['create_5finstance',['create_instance',['../classfoxxll_1_1singleton.html#a6ff66de16b5ccc54c9c0f15e6f4c384e',1,'foxxll::singleton']]],
+  ['create_5finstance',['create_instance',['../classfoxxll_1_1singleton.html#abe948c14dff0c2e5ffc3602dcad58d22',1,'foxxll::singleton::create_instance()'],['../classfoxxll_1_1singleton.html#a905e7ae3024bf9655bad58c4c8b441b3',1,'foxxll::singleton::create_instance()']]],
   ['createinstance',['CreateInstance',['../classthrill_1_1common_1_1Singleton.html#a6773e98f43af2cd356c99c16e96bbdaa',1,'thrill::common::Singleton']]],
   ['createpair',['CreatePair',['../classthrill_1_1net_1_1tcp_1_1Socket.html#aa6b9fe6cd6404d714622bec0dfcf857c',1,'thrill::net::tcp::Socket']]],
   ['createthread',['CreateThread',['../namespacethrill_1_1common.html#a2744bf429da7b68993e59e9c65df7c72',1,'thrill::common']]],

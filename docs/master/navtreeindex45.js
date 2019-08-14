@@ -1,5 +1,9 @@
 var NAVTREEINDEX45 =
 {
+"structthrill_1_1mem_1_1FixedAllocator_3_01void_00_01manager___01_4_1_1rebind.html#a8a06f34c5dde0a3dae111725fafafe6c":[5,0,4,4,6,0,0],
+"structthrill_1_1mem_1_1FixedPoolAllocator_1_1rebind.html":[5,0,4,4,7,0],
+"structthrill_1_1mem_1_1FixedPoolAllocator_1_1rebind.html#a0b57cc8615659f64ff28b6ebd6e96a93":[5,0,4,4,7,0,0],
+"structthrill_1_1mem_1_1PoolAllocator_1_1rebind.html":[5,0,4,4,11,0],
 "structthrill_1_1mem_1_1PoolAllocator_1_1rebind.html#afc07414d2dad3d15557826d8a6c8fbd4":[5,0,4,4,11,0,0],
 "structthrill_1_1net_1_1Dispatcher_1_1Timer.html":[3,1,2,12,0],
 "structthrill_1_1net_1_1Dispatcher_1_1Timer.html#a3f1e6145eb197380a1ba50f1747cf1ad":[3,1,2,12,0,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX45 =
 "system__exception_8hpp_source.html":[6,0,3,1,36],
 "tcp_2connection_8hpp.html":[6,0,3,5,2,0],
 "tcp_2connection_8hpp.html#a1f1d99d5ee7168d17ebb35fdfca1c75c":[6,0,3,5,2,0,1],
-"tcp_2connection_8hpp.html#ga7b7c7e5e523ff0fc8823e7bff7665ead":[6,0,3,5,2,0,0],
-"tcp_2connection_8hpp.html#gaf905f830af92a188bfa734cbd78f7211":[6,0,3,5,2,0,2],
-"tcp_2connection_8hpp.html#ggaf905f830af92a188bfa734cbd78f7211a2d16a9c48da0e5e84f8348861ce25bc4":[6,0,3,5,2,0,2,3],
-"tcp_2connection_8hpp.html#ggaf905f830af92a188bfa734cbd78f7211a38c07f2d1e08abf0b30d8fd9b917188e":[6,0,3,5,2,0,2,4],
-"tcp_2connection_8hpp.html#ggaf905f830af92a188bfa734cbd78f7211a41de0dd42c2b95eed31627f5e4466029":[6,0,3,5,2,0,2,5]
+"tcp_2connection_8hpp.html#ga7b7c7e5e523ff0fc8823e7bff7665ead":[6,0,3,5,2,0,0]
 };

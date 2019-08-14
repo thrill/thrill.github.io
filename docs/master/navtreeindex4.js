@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classfoxxll_1_1file__stats__data.html#aa00865ace786a3cccd1df3ef55de9d7c":[3,1,3,1,3,5],
 "classfoxxll_1_1file__stats__data.html#aa24957966f9be34b0cc34ce79e3423ed":[3,1,3,1,3,0],
 "classfoxxll_1_1file__stats__data.html#aa302ad9eb09e2f182c2d7811920e237c":[3,1,3,1,3,13],
 "classfoxxll_1_1file__stats__data.html#ace5b258877d15598c4cedad17e23555d":[3,1,3,1,3,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "classfoxxll_1_1request__queue__impl__1q.html":[3,1,3,1,1,4],
 "classfoxxll_1_1request__queue__impl__1q.html#a0c98c29ba3d703a052adf5d3c5708b04":[3,1,3,1,1,4,8],
 "classfoxxll_1_1request__queue__impl__1q.html#a14f25549c2b78bb1a90405ba3148ebd4":[3,1,3,1,1,4,9],
-"classfoxxll_1_1request__queue__impl__1q.html#a15b16453216ed29570af03009e7c7c63":[3,1,3,1,1,4,7],
-"classfoxxll_1_1request__queue__impl__1q.html#a2a51800b1e3b6346cd9b99daa9383d83":[3,1,3,1,1,4,0]
+"classfoxxll_1_1request__queue__impl__1q.html#a15b16453216ed29570af03009e7c7c63":[3,1,3,1,1,4,7]
 };

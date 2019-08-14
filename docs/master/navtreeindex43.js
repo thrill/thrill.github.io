@@ -1,5 +1,9 @@
 var NAVTREEINDEX43 =
 {
+"stream_8hpp.html#a70fd10987860220f33b9642f1d5ed65d":[6,0,3,3,29,0],
+"stream_8hpp_source.html":[6,0,3,3,29],
+"stream__data_8cpp.html":[6,0,3,3,30],
+"stream__data_8cpp_source.html":[6,0,3,3,30],
 "stream__data_8hpp.html":[6,0,3,3,31],
 "stream__data_8hpp.html#af6904cabf2d9985428552bddfe812cbc":[6,0,3,3,31,1],
 "stream__data_8hpp.html#ga03df594c744fac6cea6f4559bc7494d2":[6,0,3,3,31,3],
@@ -121,8 +125,8 @@ var NAVTREEINDEX43 =
 "structexamples_1_1suffix__sorting_1_1IndexFlag.html#a8b3ab54ed3e81c69863d65e4e6c424a0":[5,0,0,6,3,1],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html":[5,0,0,6,4],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a0594e9f341a41ec7622edddb13e52dfb":[5,0,0,6,4,4],
-"structexamples_1_1suffix__sorting_1_1IndexRank.html#a4d77b3fb48833ee41178f27ba47560c8":[5,0,0,6,4,2],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a4d77b3fb48833ee41178f27ba47560c8":[5,0,0,6,4,1],
+"structexamples_1_1suffix__sorting_1_1IndexRank.html#a4d77b3fb48833ee41178f27ba47560c8":[5,0,0,6,4,2],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a5d5b22eb77c392277e53ecec6b85cf2d":[5,0,0,6,4,0],
 "structexamples_1_1suffix__sorting_1_1IndexRank.html#a7875de9269063a44a5480b1c0c530a84":[5,0,0,6,4,3],
 "structexamples_1_1suffix__sorting_1_1IndexRankFlag.html":[5,0,0,6,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX43 =
 "structfoxxll_1_1random__cyclic__disk.html#a58959d3efa7c60a91b37f86b440a18c6":[3,1,3,0,0,4,0],
 "structfoxxll_1_1random__cyclic__disk.html#aa6be32e0d1b4bd24f8745d1d3267b295":[3,1,3,0,0,4,2],
 "structfoxxll_1_1random__cyclic__disk.html#ace128ffc76d237055357ca9920c5eacd":[3,1,3,0,0,4,1],
-"structfoxxll_1_1random__cyclic__flash.html":[3,1,3,0,0,5],
-"structfoxxll_1_1random__cyclic__flash.html#a7ea2fa3326f722f4c659069d55a4f7dc":[3,1,3,0,0,5,1],
-"structfoxxll_1_1random__cyclic__flash.html#aa6be32e0d1b4bd24f8745d1d3267b295":[3,1,3,0,0,5,2],
-"structfoxxll_1_1random__cyclic__flash.html#acd50b6dab440e7c228d8828e009cbeed":[3,1,3,0,0,5,0],
-"structfoxxll_1_1simple__random.html":[3,1,3,0,0,6]
+"structfoxxll_1_1random__cyclic__flash.html":[3,1,3,0,0,5]
 };

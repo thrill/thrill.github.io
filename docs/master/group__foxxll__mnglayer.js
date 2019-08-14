@@ -63,6 +63,7 @@ var group__foxxll__mnglayer =
       [ "~config", "classfoxxll_1_1config.html#a2a5ea9eb2fdc9553f23e2c6419243049", null ],
       [ "add_disk", "classfoxxll_1_1config.html#a8fe056e444b2e8df5de806fabf12a17b", null ],
       [ "check_initialized", "classfoxxll_1_1config.html#a164874530aa6284259bc4cfeda845504", null ],
+      [ "default_config_file_name", "classfoxxll_1_1config.html#af6359936ac41453569d20e859ccb3c72", null ],
       [ "default_disk_io_impl", "classfoxxll_1_1config.html#a184a45714946f3e0d83987fe1bf13e3e", null ],
       [ "default_disk_path", "classfoxxll_1_1config.html#a26ca809a4fec5ad29fb9543c6b84da27", null ],
       [ "disk", "classfoxxll_1_1config.html#a64a552aa9588840cd31d8ef712b66cd8", null ],

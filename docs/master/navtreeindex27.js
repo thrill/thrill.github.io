@@ -1,5 +1,8 @@
 var NAVTREEINDEX27 =
 {
+"classtlx_1_1radix__heap__detail_1_1BitArrayRecursive_3_01Size_00_01false_01_4.html#a06249da24e60482978a23254c0a39180":[5,0,5,6,2,3],
+"classtlx_1_1radix__heap__detail_1_1BitArrayRecursive_3_01Size_00_01false_01_4.html#a0ed749f49711ee5b30e01e7746aaf1b8":[5,0,5,6,2,17],
+"classtlx_1_1radix__heap__detail_1_1BitArrayRecursive_3_01Size_00_01false_01_4.html#a3e0d8920c1a14e078c4b34e4d7f310cc":[5,0,5,6,2,4],
 "classtlx_1_1radix__heap__detail_1_1BitArrayRecursive_3_01Size_00_01false_01_4.html#a4737341fe09d10855bea1bbe199fa726":[5,0,5,6,2,15],
 "classtlx_1_1radix__heap__detail_1_1BitArrayRecursive_3_01Size_00_01false_01_4.html#a5515d81ab0be6a28adf4902208ba215d":[5,0,5,6,2,5],
 "classtlx_1_1radix__heap__detail_1_1BitArrayRecursive_3_01Size_00_01false_01_4.html#a575d2d2bd58a7c894291b7fabd45a40d":[5,0,5,6,2,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX27 =
 "classtlx_1_1sort__strings__detail_1_1StdStringSet.html#a784ac7b1eab2cb9336cd51713e547cbf":[5,0,5,7,18,2],
 "classtlx_1_1sort__strings__detail_1_1StdStringSet.html#a7c19587af55f61dbff765ec7e291e583":[5,0,5,7,18,5],
 "classtlx_1_1sort__strings__detail_1_1StdStringSet.html#a83c9fd7252c97810a9aaf392e10a00d7":[5,0,5,7,18,3],
-"classtlx_1_1sort__strings__detail_1_1StdStringSet.html#aac25c100e49ff6d34b083ce8916c1d69":[5,0,5,7,18,13],
-"classtlx_1_1sort__strings__detail_1_1StdStringSet.html#aac782da1f912bceb5d8ad00c8dc892ac":[5,0,5,7,18,10],
-"classtlx_1_1sort__strings__detail_1_1StdStringSet.html#ab2264c7fb14205f860e942ca80b74747":[5,0,5,7,18,8],
-"classtlx_1_1sort__strings__detail_1_1StdStringSet.html#ab454cf2f7c33da2cce6b276699a101ec":[5,0,5,7,18,0]
+"classtlx_1_1sort__strings__detail_1_1StdStringSet.html#aac25c100e49ff6d34b083ce8916c1d69":[5,0,5,7,18,13]
 };

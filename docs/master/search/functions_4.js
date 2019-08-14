@@ -31,6 +31,7 @@ var searchData=
   ['decodesparselist',['decodeSparseList',['../namespacethrill_1_1core_1_1hyperloglog.html#a9afd4266c3cda053ccc293af1cb0690a',1,'thrill::core::hyperloglog']]],
   ['decpincount',['DecPinCount',['../classthrill_1_1data_1_1ByteBlock.html#aab32068ffe6e1e12b03ed1923b969009',1,'thrill::data::ByteBlock']]],
   ['deepcopy_5ffile_5fstats_5fdata_5flist',['deepcopy_file_stats_data_list',['../classfoxxll_1_1stats.html#ab7979ea473c051107ad8d701ac2c80c0',1,'foxxll::stats']]],
+  ['default_5fconfig_5ffile_5fname',['default_config_file_name',['../classfoxxll_1_1config.html#af6359936ac41453569d20e859ccb3c72',1,'foxxll::config']]],
   ['default_5fdisk_5fio_5fimpl',['default_disk_io_impl',['../classfoxxll_1_1config.html#a184a45714946f3e0d83987fe1bf13e3e',1,'foxxll::config']]],
   ['default_5fdisk_5fpath',['default_disk_path',['../classfoxxll_1_1config.html#a26ca809a4fec5ad29fb9543c6b84da27',1,'foxxll::config']]],
   ['defaultexceptioncallback',['DefaultExceptionCallback',['../classthrill_1_1net_1_1mpi_1_1Dispatcher.html#a2354a372bea7d108b7a56673c569d209',1,'thrill::net::mpi::Dispatcher::DefaultExceptionCallback()'],['../classthrill_1_1net_1_1tcp_1_1SelectDispatcher.html#a2354a372bea7d108b7a56673c569d209',1,'thrill::net::tcp::SelectDispatcher::DefaultExceptionCallback()']]],

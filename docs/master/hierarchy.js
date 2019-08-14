@@ -174,7 +174,7 @@ var hierarchy =
     [ "set_switch_handler", "classfoxxll_1_1set__switch__handler.html", null ],
     [ "shared_state< ValueType >", "classfoxxll_1_1shared__state.html", null ],
     [ "single_disk", "structfoxxll_1_1single__disk.html", null ],
-    [ "singleton< INSTANCE, destroy_on_exit >", "classfoxxll_1_1singleton.html", null ],
+    [ "singleton< InstanceType, destroy_on_exit >", "classfoxxll_1_1singleton.html", null ],
     [ "stats::scoped_wait_timer", "classfoxxll_1_1stats_1_1scoped__wait__timer.html", null ],
     [ "stats_data", "classfoxxll_1_1stats__data.html", null ],
     [ "stats_data::summary< T >", "structfoxxll_1_1stats__data_1_1summary.html", null ],
