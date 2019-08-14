@@ -16,7 +16,6 @@ var dir_0b8cd80b43220fb0eacec85b2381def2 =
     [ "rl_bwt.cpp", "rl__bwt_8cpp.html", "rl__bwt_8cpp" ],
     [ "suffix_sorting.cpp", "suffix__sorting_8cpp.html", "suffix__sorting_8cpp" ],
     [ "suffix_sorting.hpp", "suffix__sorting_8hpp.html", "suffix__sorting_8hpp" ],
-    [ "UNFINISHED", "suffix__sorting_2UNFINISHED.html", "suffix__sorting_2UNFINISHED" ],
     [ "wavelet_tree.cpp", "wavelet__tree_8cpp.html", "wavelet__tree_8cpp" ],
     [ "wavelet_tree2.cpp", "wavelet__tree2_8cpp.html", "wavelet__tree2_8cpp" ],
     [ "wavelet_tree3.cpp", "wavelet__tree3_8cpp.html", "wavelet__tree3_8cpp" ]

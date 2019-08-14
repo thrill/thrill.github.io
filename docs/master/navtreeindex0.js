@@ -5,6 +5,9 @@ var NAVTREEINDEX0 =
 "100_8graph_source.html":[6,0,1,0,0],
 "110_8graph.html":[6,0,1,0,1],
 "110_8graph_source.html":[6,0,1,0,1],
+"UNFINISHED.html":[6,0,1,2,2],
+"UNFINISHED.html#a86c3e135a17ade8f13c169540ea94849":[6,0,1,2,2,0],
+"UNFINISHED_source.html":[6,0,1,2,2],
 "abs__diff_8hpp.html":[6,0,2,1,0,6,0],
 "abs__diff_8hpp.html#ga72ac8fb39736ae5d2b8d920b17d815a8":[6,0,2,1,0,6,0,0],
 "abs__diff_8hpp_source.html":[6,0,2,1,0,6,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX0 =
 "buf__ostream_8hpp.html":[6,0,2,0,0,2,11],
 "buf__ostream_8hpp_source.html":[6,0,2,0,0,2,11],
 "buf__writer_8hpp.html":[6,0,2,0,0,2,12],
-"buf__writer_8hpp_source.html":[6,0,2,0,0,2,12],
-"buffer_8hpp.html":[6,0,3,5,3],
-"buffer_8hpp.html#a9f5146466ac470c5a1348486447606aa":[6,0,3,5,3,0],
-"buffer_8hpp_source.html":[6,0,3,5,3]
+"buf__writer_8hpp_source.html":[6,0,2,0,0,2,12]
 };

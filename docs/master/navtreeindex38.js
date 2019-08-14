@@ -1,5 +1,8 @@
 var NAVTREEINDEX38 =
 {
+"k-means__step6_8cpp.html#a5e7ee76dd747227bc054d6f8f000c70d":[6,0,1,12,5,4],
+"k-means__step6_8cpp.html#aab55cf13db83c55c46a961b2b2441960":[6,0,1,12,5,3],
+"k-means__step6_8cpp.html#add27ebd318677fc7e53476f12a6d1acd":[6,0,1,12,5,5],
 "k-means__step6_8cpp.html#ae10fab4513e0cbb5cba655a23a016e93":[6,0,1,12,5,1],
 "k-means__step6_8cpp.html#aea534997f8a50866a57ee4cf2a48d810":[6,0,1,12,5,0],
 "k-means__step6_8cpp_source.html":[6,0,1,12,5],
@@ -98,9 +101,6 @@ var NAVTREEINDEX38 =
 "logger_8cpp.html#aa1ab9d7cef0962d0cf00bb65ccf40f00":[6,0,3,1,17,0],
 "logger_8cpp.html#abe04fea447ac558291578b0799eb868a":[6,0,3,1,17,4],
 "logger_8cpp_source.html":[6,0,3,1,17],
-"logistic__regression_2UNFINISHED.html":[6,0,1,2,2],
-"logistic__regression_2UNFINISHED.html#a86c3e135a17ade8f13c169540ea94849":[6,0,1,2,2,0],
-"logistic__regression_2UNFINISHED_source.html":[6,0,1,2,2],
 "logistic__regression_8cpp.html":[6,0,1,2,0],
 "logistic__regression_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97":[6,0,1,2,0,6],
 "logistic__regression_8cpp.html#a385f9ba8c24e692b0633cfa1b7031758":[6,0,1,2,0,7],
