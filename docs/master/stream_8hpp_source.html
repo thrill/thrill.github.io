@@ -206,183 +206,190 @@ $(document).ready(function(){initNavTree('stream_8hpp_source.html','');});
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ItemType&gt;</div>
 <div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classthrill_1_1data_1_1Stream.html#a28491686deee6e919448bc0c358d5757">   89</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a28491686deee6e919448bc0c358d5757">ScatterConsume</a>(<a class="code" href="classthrill_1_1data_1_1File.html">File</a>&amp; source, <span class="keyword">const</span> std::vector&lt;size_t&gt;&amp; offsets) {</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="classthrill_1_1data_1_1BlockReader.html">File::ConsumeReader</a> reader =</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            source.<a class="code" href="classthrill_1_1data_1_1File.html#ab46144ae54aaed39a1cf496eaf87926d">GetConsumeReader</a>(<span class="comment">/* prefetch_size */</span> 0);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">size_t</span> current = 0;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="comment">// discard first items in Reader</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordtype">size_t</span> limit = offsets[0];</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">for</span> ( ; current &lt; limit; ++current) {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                assert(reader.<a class="code" href="classthrill_1_1data_1_1BlockReader.html#aec475639ee4bb45df40e1ce269a35a0c">HasNext</a>());</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="comment">// discard one item (with deserialization)</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                reader.template Next&lt;ItemType&gt;();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">if</span> (current != limit) {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                reader.template GetItemBatch&lt;ItemType&gt;(limit - current);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                current = limit;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor"></span>        }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="classthrill_1_1data_1_1StreamData_1_1Writers.html">Writers</a> writers = <a class="code" href="classthrill_1_1data_1_1Stream.html#a1ed868156fd0366a5e480c9a8cea495b">GetWriters</a>();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordtype">size_t</span> num_workers = writers.size();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        assert(offsets.size() == num_workers + 1);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> worker = 0; worker &lt; num_workers; ++worker) {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="comment">// write [current,limit) to this worker</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordtype">size_t</span> limit = offsets[worker + 1];</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            assert(current &lt;= limit);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">for</span> ( ; current &lt; limit; ++current) {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                assert(reader.<a class="code" href="classthrill_1_1data_1_1BlockReader.html#aec475639ee4bb45df40e1ce269a35a0c">HasNext</a>());</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="comment">// move over one item (with deserialization and serialization)</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                writers[worker](reader.template Next&lt;ItemType&gt;());</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">if</span> (current != limit) {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                writers[worker].AppendBlocks(</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    reader.template GetItemBatch&lt;ItemType&gt;(limit - current));</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                current = limit;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor"></span>            writers[worker].<a class="code" href="classthrill_1_1data_1_1StreamData_1_1Writers.html#a7f7a3199c392465d0767c6506c1af5b4">Close</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="classthrill_1_1data_1_1StreamData_1_1Writers.html">Writers</a> writers = <a class="code" href="classthrill_1_1data_1_1Stream.html#a1ed868156fd0366a5e480c9a8cea495b">GetWriters</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordtype">size_t</span> num_workers = writers.size();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        assert(offsets.size() == num_workers + 1);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">size_t</span> my_rank = <a class="code" href="classthrill_1_1data_1_1Stream.html#a2c8b76212a97002b25cf3e88e8bf24d8">data</a>().<a class="code" href="classthrill_1_1data_1_1StreamData.html#a9a2419998e8a85e72a5c65513bbba69c">my_worker_rank</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">// send blocks from my_rank to last worker, store the other Blocks</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        std::vector&lt;std::vector&lt;Block&gt; &gt; block_store;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="classthrill_1_1data_1_1BlockReader.html">File::ConsumeReader</a> reader =</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            source.<a class="code" href="classthrill_1_1data_1_1File.html#ab46144ae54aaed39a1cf496eaf87926d">GetConsumeReader</a>(<span class="comment">/* prefetch_size */</span> 0);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordtype">size_t</span> current = 0;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="comment">// discard first items in Reader</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordtype">size_t</span> limit = offsets[0];</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">if</span> (current != limit) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                reader.template GetItemBatch&lt;ItemType&gt;(limit - current);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                current = limit;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> worker = 0; worker &lt; num_workers; ++worker) {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="comment">// write [current,limit) to this worker</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordtype">size_t</span> limit = offsets[worker + 1];</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            assert(current &lt;= limit);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordflow">if</span> (worker &lt; my_rank) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                <span class="keywordflow">if</span> (current != limit) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                    block_store.emplace_back(</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                        reader.template GetItemBatch&lt;ItemType&gt;(limit - current));</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                    block_store.emplace_back(std::vector&lt;Block&gt;());</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="keywordflow">if</span> (current != limit) {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                    writers[worker].AppendBlocks(</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                        reader.template GetItemBatch&lt;ItemType&gt;(limit - current));</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            current = limit;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        }</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">    /*!</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">     * Keep Version of Scatter() see documentation there.</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ItemType&gt;</div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="classthrill_1_1data_1_1Stream.html#a846b9a5915c0a68b19b958a8e84cbb80">  142</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a846b9a5915c0a68b19b958a8e84cbb80">ScatterKeep</a>(<a class="code" href="classthrill_1_1data_1_1File.html">File</a>&amp; source, <span class="keyword">const</span> std::vector&lt;size_t&gt;&amp; offsets) {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <a class="code" href="classthrill_1_1data_1_1BlockReader.html">File::KeepReader</a> reader = source.<a class="code" href="classthrill_1_1data_1_1File.html#a8678dd80a86f2af3f73f76ff181bb3a4">GetKeepReader</a>(<span class="comment">/* prefetch_size */</span> 0);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordtype">size_t</span> current = 0;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        {</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="comment">// discard first items in Reader</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordtype">size_t</span> limit = offsets[0];</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">for</span> ( ; current &lt; limit; ++current) {</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                assert(reader.<a class="code" href="classthrill_1_1data_1_1BlockReader.html#aec475639ee4bb45df40e1ce269a35a0c">HasNext</a>());</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                <span class="comment">// discard one item (with deserialization)</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                reader.template Next&lt;ItemType&gt;();</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            }</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">if</span> (current != limit) {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                reader.template GetItemBatch&lt;ItemType&gt;(limit - current);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                current = limit;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            }</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor"></span>        }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="classthrill_1_1data_1_1StreamData_1_1Writers.html">Writers</a> writers = <a class="code" href="classthrill_1_1data_1_1Stream.html#a1ed868156fd0366a5e480c9a8cea495b">GetWriters</a>();</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordtype">size_t</span> num_workers = writers.size();</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        assert(offsets.size() == num_workers + 1);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> worker = 0; worker &lt; num_workers; ++worker) {</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="comment">// write [current,limit) to this worker</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordtype">size_t</span> limit = offsets[worker + 1];</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            assert(current &lt;= limit);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">for</span> ( ; current &lt; limit; ++current) {</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                assert(reader.<a class="code" href="classthrill_1_1data_1_1BlockReader.html#aec475639ee4bb45df40e1ce269a35a0c">HasNext</a>());</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <span class="comment">// move over one item (with deserialization and serialization)</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                writers[worker](reader.template Next&lt;ItemType&gt;());</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            }</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">if</span> (current != limit) {</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                writers[worker].AppendBlocks(</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                    reader.template GetItemBatch&lt;ItemType&gt;(limit - current));</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                current = limit;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            }</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor"></span>            writers[worker].<a class="code" href="classthrill_1_1data_1_1StreamData_1_1Writers.html#a7f7a3199c392465d0767c6506c1af5b4">Close</a>();</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        }</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="comment">/**************************************************************************/</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">    //! \name Statistics</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment">    //! \{</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment"></span><span class="comment"></span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment">    //! return number of items transmitted</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#aafba34f43045b121f2ceefe8fd667da7">tx_items</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment">    //! return number of bytes transmitted</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a155814533f57eb38293db5bf3933247c">tx_bytes</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment">    //! return number of blocks transmitted</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a9c5bef94b5b2c2b0a29cac1f658c39fe">tx_blocks</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">    //! return number of items received</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a0e85dd34005a617e0b96c1271ac60ae6">rx_items</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">    //! return number of bytes received</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#abd43a40e015438622d3d540f0777773c">rx_bytes</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">    //! return number of blocks received</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#ab01828661e59e31fcb5efe99fa0fb0c9">rx_blocks</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="comment">/*------------------------------------------------------------------------*/</span></div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">    //! return number of items transmitted via network excluding internal tx</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#ab426d0f9fa1bfac97627627041e1d616">tx_net_items</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">    //! return number of bytes transmitted via network excluding internal tx</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#ac270a0f8f34469959233dfc9700e4f82">tx_net_bytes</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment">    //! return number of blocks transmitted via network excluding internal tx</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a628eff1283790dd8370e0417cfd2b559">tx_net_blocks</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment">    //! return number of items received via network excluding internal tx</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#acda489f4b5bd9e8e69be277d09f42c7c">rx_net_items</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment">    //! return number of bytes received via network excluding internal tx</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#ac79823d9827a7dc9c970a52cb6e99186">rx_net_bytes</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">    //! return number of blocks received via network excluding internal tx</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#aba4359513a71a9b7acb07a1d467699f7">rx_net_blocks</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="comment">/*------------------------------------------------------------------------*/</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment">    //! return number of items transmitted via internal loopback queues</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a32cb7dddb9c3a8d284146bc494b7989b">tx_int_items</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment">    //! return number of bytes transmitted via internal loopback queues</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#ad56b0e62dbb44f92abad45db7cfcc5ff">tx_int_bytes</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment">    //! return number of blocks transmitted via internal loopback queues</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a4cde5d16160f9099c5160ec4c2e3f065">tx_int_blocks</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment">    //! return number of items received via network internal loopback queues</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a2e3b14cd0e2a2fb3242c99d194d6afd3">rx_int_items</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment">    //! return number of bytes received via network internal loopback queues</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#af01b111e4419c6e6408c4129a6c6d0b5">rx_int_bytes</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment">    //! return number of blocks received via network internal loopback queues</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#ae0c274e61cf7798b87934d4d5584b993">rx_int_blocks</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment">    //! \}</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment"></span>};</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">//! \}</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;} <span class="comment">// namespace data</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;} <span class="comment">// namespace thrill</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#endif // !THRILL_DATA_STREAM_HEADER</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment">/******************************************************************************/</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        assert(block_store.size() == my_rank);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> worker = 0; worker &lt; my_rank; ++worker) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keywordflow">if</span> (!block_store[worker].empty())</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                writers[worker].AppendBlocks(std::move(block_store[worker]));</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">    /*!</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">     * Keep Version of Scatter() see documentation there.</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ItemType&gt;</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classthrill_1_1data_1_1Stream.html#a846b9a5915c0a68b19b958a8e84cbb80">  149</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a846b9a5915c0a68b19b958a8e84cbb80">ScatterKeep</a>(<a class="code" href="classthrill_1_1data_1_1File.html">File</a>&amp; source, <span class="keyword">const</span> std::vector&lt;size_t&gt;&amp; offsets) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <a class="code" href="classthrill_1_1data_1_1BlockReader.html">File::KeepReader</a> reader = source.<a class="code" href="classthrill_1_1data_1_1File.html#a8678dd80a86f2af3f73f76ff181bb3a4">GetKeepReader</a>(<span class="comment">/* prefetch_size */</span> 0);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordtype">size_t</span> current = 0;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="comment">// discard first items in Reader</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keywordtype">size_t</span> limit = offsets[0];</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">for</span> ( ; current &lt; limit; ++current) {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                assert(reader.<a class="code" href="classthrill_1_1data_1_1BlockReader.html#aec475639ee4bb45df40e1ce269a35a0c">HasNext</a>());</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                <span class="comment">// discard one item (with deserialization)</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                reader.template Next&lt;ItemType&gt;();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">if</span> (current != limit) {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                reader.template GetItemBatch&lt;ItemType&gt;(limit - current);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                current = limit;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor"></span>        }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="classthrill_1_1data_1_1StreamData_1_1Writers.html">Writers</a> writers = <a class="code" href="classthrill_1_1data_1_1Stream.html#a1ed868156fd0366a5e480c9a8cea495b">GetWriters</a>();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordtype">size_t</span> num_workers = writers.size();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        assert(offsets.size() == num_workers + 1);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> worker = 0; worker &lt; num_workers; ++worker) {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="comment">// write [current,limit) to this worker</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keywordtype">size_t</span> limit = offsets[worker + 1];</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            assert(current &lt;= limit);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">for</span> ( ; current &lt; limit; ++current) {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                assert(reader.<a class="code" href="classthrill_1_1data_1_1BlockReader.html#aec475639ee4bb45df40e1ce269a35a0c">HasNext</a>());</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                <span class="comment">// move over one item (with deserialization and serialization)</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                writers[worker](reader.template Next&lt;ItemType&gt;());</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor"></span>            <span class="keywordflow">if</span> (current != limit) {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                writers[worker].AppendBlocks(</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                    reader.template GetItemBatch&lt;ItemType&gt;(limit - current));</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                current = limit;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor"></span>            writers[worker].<a class="code" href="classthrill_1_1data_1_1StreamData_1_1Writers.html#a7f7a3199c392465d0767c6506c1af5b4">Close</a>();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="comment">/**************************************************************************/</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">    //! \name Statistics</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">    //! \{</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment"></span><span class="comment"></span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">    //! return number of items transmitted</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#aafba34f43045b121f2ceefe8fd667da7">tx_items</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">    //! return number of bytes transmitted</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a155814533f57eb38293db5bf3933247c">tx_bytes</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">    //! return number of blocks transmitted</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a9c5bef94b5b2c2b0a29cac1f658c39fe">tx_blocks</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">    //! return number of items received</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a0e85dd34005a617e0b96c1271ac60ae6">rx_items</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="comment">    //! return number of bytes received</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#abd43a40e015438622d3d540f0777773c">rx_bytes</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment">    //! return number of blocks received</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#ab01828661e59e31fcb5efe99fa0fb0c9">rx_blocks</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="comment">/*------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment">    //! return number of items transmitted via network excluding internal tx</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#ab426d0f9fa1bfac97627627041e1d616">tx_net_items</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="comment">    //! return number of bytes transmitted via network excluding internal tx</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#ac270a0f8f34469959233dfc9700e4f82">tx_net_bytes</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">    //! return number of blocks transmitted via network excluding internal tx</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a628eff1283790dd8370e0417cfd2b559">tx_net_blocks</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment">    //! return number of items received via network excluding internal tx</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#acda489f4b5bd9e8e69be277d09f42c7c">rx_net_items</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="comment">    //! return number of bytes received via network excluding internal tx</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#ac79823d9827a7dc9c970a52cb6e99186">rx_net_bytes</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">    //! return number of blocks received via network excluding internal tx</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#aba4359513a71a9b7acb07a1d467699f7">rx_net_blocks</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="comment">/*------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment">    //! return number of items transmitted via internal loopback queues</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a32cb7dddb9c3a8d284146bc494b7989b">tx_int_items</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="comment">    //! return number of bytes transmitted via internal loopback queues</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#ad56b0e62dbb44f92abad45db7cfcc5ff">tx_int_bytes</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment">    //! return number of blocks transmitted via internal loopback queues</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a4cde5d16160f9099c5160ec4c2e3f065">tx_int_blocks</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment">    //! return number of items received via network internal loopback queues</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#a2e3b14cd0e2a2fb3242c99d194d6afd3">rx_int_items</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="comment">    //! return number of bytes received via network internal loopback queues</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#af01b111e4419c6e6408c4129a6c6d0b5">rx_int_bytes</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment">    //! return number of blocks received via network internal loopback queues</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment"></span>    <span class="keywordtype">size_t</span> <a class="code" href="classthrill_1_1data_1_1Stream.html#ae0c274e61cf7798b87934d4d5584b993">rx_int_blocks</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">    //! \}</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment"></span>};</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment">//! \}</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;} <span class="comment">// namespace data</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;} <span class="comment">// namespace thrill</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">#endif // !THRILL_DATA_STREAM_HEADER</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">/******************************************************************************/</span></div>
 <div class="ttc" id="classthrill_1_1data_1_1Stream_html_ab426d0f9fa1bfac97627627041e1d616"><div class="ttname"><a href="classthrill_1_1data_1_1Stream.html#ab426d0f9fa1bfac97627627041e1d616">thrill::data::Stream::tx_net_items</a></div><div class="ttdeci">size_t tx_net_items() const </div><div class="ttdoc">return number of items transmitted via network excluding internal tx </div><div class="ttdef"><b>Definition:</b> <a href="stream_8cpp_source.html#l00058">stream.cpp:58</a></div></div>
 <div class="ttc" id="classthrill_1_1data_1_1Stream_html_ac79823d9827a7dc9c970a52cb6e99186"><div class="ttname"><a href="classthrill_1_1data_1_1Stream.html#ac79823d9827a7dc9c970a52cb6e99186">thrill::data::Stream::rx_net_bytes</a></div><div class="ttdeci">size_t rx_net_bytes() const </div><div class="ttdoc">return number of bytes received via network excluding internal tx </div><div class="ttdef"><b>Definition:</b> <a href="stream_8cpp_source.html#l00074">stream.cpp:74</a></div></div>
 <div class="ttc" id="classthrill_1_1data_1_1Stream_html_ab01828661e59e31fcb5efe99fa0fb0c9"><div class="ttname"><a href="classthrill_1_1data_1_1Stream.html#ab01828661e59e31fcb5efe99fa0fb0c9">thrill::data::Stream::rx_blocks</a></div><div class="ttdeci">size_t rx_blocks() const </div><div class="ttdoc">return number of blocks received </div><div class="ttdef"><b>Definition:</b> <a href="stream_8cpp_source.html#l00052">stream.cpp:52</a></div></div>
-<div class="ttc" id="classthrill_1_1data_1_1StreamData_html"><div class="ttname"><a href="classthrill_1_1data_1_1StreamData.html">thrill::data::StreamData</a></div><div class="ttdoc">Base class for common structures for ConcatStream and MixedStream. </div><div class="ttdef"><b>Definition:</b> <a href="stream__data_8hpp_source.html#l00045">stream_data.hpp:45</a></div></div>
+<div class="ttc" id="classthrill_1_1data_1_1StreamData_html"><div class="ttname"><a href="classthrill_1_1data_1_1StreamData.html">thrill::data::StreamData</a></div><div class="ttdoc">Base class for common structures for ConcatStream and MixedStream. </div><div class="ttdef"><b>Definition:</b> <a href="stream__data_8hpp_source.html#l00046">stream_data.hpp:46</a></div></div>
 <div class="ttc" id="classthrill_1_1data_1_1Stream_html_a0b173d0ccadd2c20be68054fe610fd0c"><div class="ttname"><a href="classthrill_1_1data_1_1Stream.html#a0b173d0ccadd2c20be68054fe610fd0c">thrill::data::Stream::Scatter</a></div><div class="ttdeci">void Scatter(File &amp;source, const std::vector&lt; size_t &gt; &amp;offsets, bool consume=false)</div><div class="ttdoc">Scatters a File to many worker: elements from [offset[0],offset[1]) are sent to the first worker...</div><div class="ttdef"><b>Definition:</b> <a href="stream_8hpp_source.html#l00077">stream.hpp:77</a></div></div>
 <div class="ttc" id="block__writer_8hpp_html"><div class="ttname"><a href="block__writer_8hpp.html">block_writer.hpp</a></div></div>
 <div class="ttc" id="stats__timer_8hpp_html"><div class="ttname"><a href="stats__timer_8hpp.html">stats_timer.hpp</a></div></div>
@@ -392,15 +399,16 @@ $(document).ready(function(){initNavTree('stream_8hpp_source.html','');});
 <div class="ttc" id="classthrill_1_1data_1_1Stream_html_a0e85dd34005a617e0b96c1271ac60ae6"><div class="ttname"><a href="classthrill_1_1data_1_1Stream.html#a0e85dd34005a617e0b96c1271ac60ae6">thrill::data::Stream::rx_items</a></div><div class="ttdeci">size_t rx_items() const </div><div class="ttdoc">return number of items received </div><div class="ttdef"><b>Definition:</b> <a href="stream_8cpp_source.html#l00044">stream.cpp:44</a></div></div>
 <div class="ttc" id="classthrill_1_1data_1_1BlockWriter_html"><div class="ttname"><a href="classthrill_1_1data_1_1BlockWriter.html">thrill::data::BlockWriter</a></div><div class="ttdoc">BlockWriter contains a temporary Block object into which a) any serializable item can be stored or b)...</div><div class="ttdef"><b>Definition:</b> <a href="block__writer_8hpp_source.html#l00053">block_writer.hpp:53</a></div></div>
 <div class="ttc" id="classthrill_1_1data_1_1Stream_html_ad56b0e62dbb44f92abad45db7cfcc5ff"><div class="ttname"><a href="classthrill_1_1data_1_1Stream.html#ad56b0e62dbb44f92abad45db7cfcc5ff">thrill::data::Stream::tx_int_bytes</a></div><div class="ttdeci">size_t tx_int_bytes() const </div><div class="ttdoc">return number of bytes transmitted via internal loopback queues </div><div class="ttdef"><b>Definition:</b> <a href="stream_8cpp_source.html#l00088">stream.cpp:88</a></div></div>
-<div class="ttc" id="classthrill_1_1data_1_1StreamData_html_a08f9d7d340d452efab7eab158fcbfe64"><div class="ttname"><a href="classthrill_1_1data_1_1StreamData.html#a08f9d7d340d452efab7eab158fcbfe64">thrill::data::StreamData::Writer</a></div><div class="ttdeci">BlockWriter&lt; StreamSink &gt; Writer</div><div class="ttdef"><b>Definition:</b> <a href="stream__data_8hpp_source.html#l00048">stream_data.hpp:48</a></div></div>
+<div class="ttc" id="classthrill_1_1data_1_1StreamData_html_a08f9d7d340d452efab7eab158fcbfe64"><div class="ttname"><a href="classthrill_1_1data_1_1StreamData.html#a08f9d7d340d452efab7eab158fcbfe64">thrill::data::StreamData::Writer</a></div><div class="ttdeci">BlockWriter&lt; StreamSink &gt; Writer</div><div class="ttdef"><b>Definition:</b> <a href="stream__data_8hpp_source.html#l00051">stream_data.hpp:51</a></div></div>
 <div class="ttc" id="classthrill_1_1data_1_1Stream_html_a3fa188f62b85c2af5028cf55f7edba3c"><div class="ttname"><a href="classthrill_1_1data_1_1Stream.html#a3fa188f62b85c2af5028cf55f7edba3c">thrill::data::Stream::id</a></div><div class="ttdeci">virtual const StreamId &amp; id() const =0</div><div class="ttdoc">Return stream id. </div></div>
 <div class="ttc" id="classthrill_1_1data_1_1Stream_html_aba4359513a71a9b7acb07a1d467699f7"><div class="ttname"><a href="classthrill_1_1data_1_1Stream.html#aba4359513a71a9b7acb07a1d467699f7">thrill::data::Stream::rx_net_blocks</a></div><div class="ttdeci">size_t rx_net_blocks() const </div><div class="ttdoc">return number of blocks received via network excluding internal tx </div><div class="ttdef"><b>Definition:</b> <a href="stream_8cpp_source.html#l00078">stream.cpp:78</a></div></div>
 <div class="ttc" id="stream__sink_8hpp_html"><div class="ttname"><a href="stream__sink_8hpp.html">stream_sink.hpp</a></div></div>
 <div class="ttc" id="stats__counter_8hpp_html"><div class="ttname"><a href="stats__counter_8hpp.html">stats_counter.hpp</a></div></div>
-<div class="ttc" id="classthrill_1_1data_1_1StreamData_1_1Writers_html_a7f7a3199c392465d0767c6506c1af5b4"><div class="ttname"><a href="classthrill_1_1data_1_1StreamData_1_1Writers.html#a7f7a3199c392465d0767c6506c1af5b4">thrill::data::StreamData::Writers::Close</a></div><div class="ttdeci">void Close()</div><div class="ttdoc">custom destructor to close writers is a cyclic fashion </div><div class="ttdef"><b>Definition:</b> <a href="stream__data_8cpp_source.html#l00066">stream_data.cpp:66</a></div></div>
-<div class="ttc" id="classthrill_1_1data_1_1Stream_html_a846b9a5915c0a68b19b958a8e84cbb80"><div class="ttname"><a href="classthrill_1_1data_1_1Stream.html#a846b9a5915c0a68b19b958a8e84cbb80">thrill::data::Stream::ScatterKeep</a></div><div class="ttdeci">void ScatterKeep(File &amp;source, const std::vector&lt; size_t &gt; &amp;offsets)</div><div class="ttdoc">Keep Version of Scatter() see documentation there. </div><div class="ttdef"><b>Definition:</b> <a href="stream_8hpp_source.html#l00142">stream.hpp:142</a></div></div>
+<div class="ttc" id="classthrill_1_1data_1_1StreamData_1_1Writers_html_a7f7a3199c392465d0767c6506c1af5b4"><div class="ttname"><a href="classthrill_1_1data_1_1StreamData_1_1Writers.html#a7f7a3199c392465d0767c6506c1af5b4">thrill::data::StreamData::Writers::Close</a></div><div class="ttdeci">void Close()</div><div class="ttdoc">custom destructor to close writers is a cyclic fashion </div><div class="ttdef"><b>Definition:</b> <a href="stream__data_8cpp_source.html#l00092">stream_data.cpp:92</a></div></div>
+<div class="ttc" id="classthrill_1_1data_1_1Stream_html_a846b9a5915c0a68b19b958a8e84cbb80"><div class="ttname"><a href="classthrill_1_1data_1_1Stream.html#a846b9a5915c0a68b19b958a8e84cbb80">thrill::data::Stream::ScatterKeep</a></div><div class="ttdeci">void ScatterKeep(File &amp;source, const std::vector&lt; size_t &gt; &amp;offsets)</div><div class="ttdoc">Keep Version of Scatter() see documentation there. </div><div class="ttdef"><b>Definition:</b> <a href="stream_8hpp_source.html#l00149">stream.hpp:149</a></div></div>
 <div class="ttc" id="classthrill_1_1data_1_1Stream_html_ac270a0f8f34469959233dfc9700e4f82"><div class="ttname"><a href="classthrill_1_1data_1_1Stream.html#ac270a0f8f34469959233dfc9700e4f82">thrill::data::Stream::tx_net_bytes</a></div><div class="ttdeci">size_t tx_net_bytes() const </div><div class="ttdoc">return number of bytes transmitted via network excluding internal tx </div><div class="ttdef"><b>Definition:</b> <a href="stream_8cpp_source.html#l00062">stream.cpp:62</a></div></div>
-<div class="ttc" id="classthrill_1_1data_1_1StreamData_1_1Writers_html"><div class="ttname"><a href="classthrill_1_1data_1_1StreamData_1_1Writers.html">thrill::data::StreamData::Writers</a></div><div class="ttdoc">An extra class derived from std::vector&lt;&gt; for delivery of the BlockWriters of a Stream. </div><div class="ttdef"><b>Definition:</b> <a href="stream__data_8hpp_source.html#l00056">stream_data.hpp:56</a></div></div>
+<div class="ttc" id="classthrill_1_1data_1_1StreamData_html_a9a2419998e8a85e72a5c65513bbba69c"><div class="ttname"><a href="classthrill_1_1data_1_1StreamData.html#a9a2419998e8a85e72a5c65513bbba69c">thrill::data::StreamData::my_worker_rank</a></div><div class="ttdeci">size_t my_worker_rank() const </div><div class="ttdoc">Returns my_worker_rank_. </div><div class="ttdef"><b>Definition:</b> <a href="stream__data_8hpp_source.html#l00106">stream_data.hpp:106</a></div></div>
+<div class="ttc" id="classthrill_1_1data_1_1StreamData_1_1Writers_html"><div class="ttname"><a href="classthrill_1_1data_1_1StreamData_1_1Writers.html">thrill::data::StreamData::Writers</a></div><div class="ttdoc">An extra class derived from std::vector&lt;&gt; for delivery of the BlockWriters of a Stream. </div><div class="ttdef"><b>Definition:</b> <a href="stream__data_8hpp_source.html#l00059">stream_data.hpp:59</a></div></div>
 <div class="ttc" id="classthrill_1_1data_1_1File_html_ab46144ae54aaed39a1cf496eaf87926d"><div class="ttname"><a href="classthrill_1_1data_1_1File.html#ab46144ae54aaed39a1cf496eaf87926d">thrill::data::File::GetConsumeReader</a></div><div class="ttdeci">ConsumeReader GetConsumeReader(size_t prefetch_size=File::default_prefetch_size_)</div><div class="ttdoc">Get consuming BlockReader for beginning of File. </div><div class="ttdef"><b>Definition:</b> <a href="thrill_2data_2file_8cpp_source.html#l00073">file.cpp:73</a></div></div>
 <div class="ttc" id="classthrill_1_1data_1_1Stream_html_a7f7a3199c392465d0767c6506c1af5b4"><div class="ttname"><a href="classthrill_1_1data_1_1Stream.html#a7f7a3199c392465d0767c6506c1af5b4">thrill::data::Stream::Close</a></div><div class="ttdeci">void Close()</div><div class="ttdoc">shuts down the stream, waits for all closing blocks </div><div class="ttdef"><b>Definition:</b> <a href="stream_8cpp_source.html#l00026">stream.cpp:26</a></div></div>
 <div class="ttc" id="classthrill_1_1data_1_1Stream_html_a155814533f57eb38293db5bf3933247c"><div class="ttname"><a href="classthrill_1_1data_1_1Stream.html#a155814533f57eb38293db5bf3933247c">thrill::data::Stream::tx_bytes</a></div><div class="ttdeci">size_t tx_bytes() const </div><div class="ttdoc">return number of bytes transmitted </div><div class="ttdef"><b>Definition:</b> <a href="stream_8cpp_source.html#l00036">stream.cpp:36</a></div></div>
@@ -431,7 +439,7 @@ $(document).ready(function(){initNavTree('stream_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_797bdb82f8ebf7321361fb31ef626aaf.html">thrill</a></li><li class="navelem"><a class="el" href="dir_1b62fa212cebae5dc6aa23a01bf7093d.html">data</a></li><li class="navelem"><a class="el" href="stream_8hpp.html">stream.hpp</a></li>
-    <li class="footer">Generated on Wed Aug 14 2019 23:30:16 for Thrill by
+    <li class="footer">Generated on Thu Oct 17 2019 06:16:04 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -19,6 +19,7 @@ var searchData=
   ['filled_5f',['filled_',['../classtlx_1_1RadixHeap.html#acc1b7af8ce62ba7d8317e6e707dfd46b',1,'tlx::RadixHeap']]],
   ['filler',['filler',['../classfoxxll_1_1mng__local_1_1add__filler.html#a021f1332b24243d84e5266ce315e4829',1,'foxxll::mng_local::add_filler']]],
   ['filler_5farray',['filler_array',['../classfoxxll_1_1mng__local_1_1filler__struct.html#aea4c41d5c11baac47930a1b310ed4ee5',1,'foxxll::mng_local::filler_struct']]],
+  ['final_5fseq',['final_seq',['../classthrill_1_1data_1_1StreamMultiplexerHeader.html#a3ae1984036875560986ccb9017483053',1,'thrill::data::StreamMultiplexerHeader']]],
   ['first_5f',['first_',['../classthrill_1_1api_1_1AllReduceNode.html#aa184fabd856fc0190c1f552fcc3f4143',1,'thrill::api::AllReduceNode::first_()'],['../classtlx_1_1SpacingLogger.html#aa184fabd856fc0190c1f552fcc3f4143',1,'tlx::SpacingLogger::first_()']]],
   ['first_5fblock_5f',['first_block_',['../classthrill_1_1data_1_1KeepFileBlockSource.html#a97e544147c2daf55847e65106d88e073',1,'thrill::data::KeepFileBlockSource']]],
   ['first_5fcall_5f',['first_call_',['../classthrill_1_1core_1_1GolombBitStreamWriter.html#ab880637c5a949c598e765244ccc84937',1,'thrill::core::GolombBitStreamWriter::first_call_()'],['../classthrill_1_1core_1_1GolombBitStreamReader.html#ab880637c5a949c598e765244ccc84937',1,'thrill::core::GolombBitStreamReader::first_call_()']]],

@@ -119,6 +119,7 @@ $(document).ready(function(){initNavTree('classthrill_1_1data_1_1StreamData.html
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classthrill_1_1data_1_1StreamData-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -129,7 +130,7 @@ $(document).ready(function(){initNavTree('classthrill_1_1data_1_1StreamData.html
 <div class="textblock"><p>Base class for common structures for ConcatStream and MixedStream. </p>
 <p>This is also a virtual base class use by <a class="el" href="classthrill_1_1data_1_1Multiplexer.html" title="Multiplexes virtual Connections on Dispatcher. ">Multiplexer</a> to pass blocks to streams! Instead, it contains common items like stats. </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00045">45</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00046">46</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 </div><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for StreamData:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -143,7 +144,7 @@ $(document).ready(function(){initNavTree('classthrill_1_1data_1_1StreamData.html
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1data_1_1StreamData__coll__graph.svg" width="1342" height="312"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classthrill_1_1data_1_1StreamData__coll__graph.svg" width="1331" height="312"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 
@@ -162,8 +163,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7d6edda4e94e25143bce4eedc363fc82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a7d6edda4e94e25143bce4eedc363fc82">StreamData</a> (<a class="el" href="classthrill_1_1data_1_1Multiplexer.html">Multiplexer</a> &amp;multiplexer, size_t send_size_limit, const <a class="el" href="group__data__layer.html#ga03df594c744fac6cea6f4559bc7494d2">StreamId</a> &amp;<a class="el" href="classthrill_1_1data_1_1StreamData.html#a48d1f80794534f3f501f64386d6647e7">id</a>, size_t local_worker_id, size_t dia_id)</td></tr>
-<tr class="separator:a7d6edda4e94e25143bce4eedc363fc82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f3439985006069628c8db446d20e08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#ae7f3439985006069628c8db446d20e08">StreamData</a> (<a class="el" href="classthrill_1_1data_1_1StreamSetBase.html">StreamSetBase</a> *stream_set_base, <a class="el" href="classthrill_1_1data_1_1Multiplexer.html">Multiplexer</a> &amp;multiplexer, size_t send_size_limit, const <a class="el" href="group__data__layer.html#ga03df594c744fac6cea6f4559bc7494d2">StreamId</a> &amp;<a class="el" href="classthrill_1_1data_1_1StreamData.html#a48d1f80794534f3f501f64386d6647e7">id</a>, size_t local_worker_id, size_t dia_id)</td></tr>
+<tr class="separator:ae7f3439985006069628c8db446d20e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c2a576a02e1fb5b421d073b74a9184f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a4c2a576a02e1fb5b421d073b74a9184f">~StreamData</a> ()</td></tr>
 <tr class="separator:a4c2a576a02e1fb5b421d073b74a9184f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacb6d0e5e6d570cdc2b0da14c3921ff0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#aacb6d0e5e6d570cdc2b0da14c3921ff0">Close</a> ()=0</td></tr>
@@ -188,8 +189,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ecd6ddfee677b7d2c2fd7b332e90c90"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a5ecd6ddfee677b7d2c2fd7b332e90c90">num_workers</a> () const </td></tr>
 <tr class="memdesc:a5ecd6ddfee677b7d2c2fd7b332e90c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of workers in system.  <a href="#a5ecd6ddfee677b7d2c2fd7b332e90c90">More...</a><br/></td></tr>
 <tr class="separator:a5ecd6ddfee677b7d2c2fd7b332e90c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a060a2efa2142f5d6169ebc016692e88d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a060a2efa2142f5d6169ebc016692e88d">OnAllClosed</a> (const char *stream_type)</td></tr>
-<tr class="separator:a060a2efa2142f5d6169ebc016692e88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59eb2e21c5b5cf85a692f4385db43198"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a59eb2e21c5b5cf85a692f4385db43198">OnAllWritersClosed</a> ()</td></tr>
+<tr class="memdesc:a59eb2e21c5b5cf85a692f4385db43198"><td class="mdescLeft">&#160;</td><td class="mdescRight">method called when all <a class="el" href="classthrill_1_1data_1_1StreamSink.html" title="StreamSink is an BlockSink that sends data via a network socket to the StreamData object on a differe...">StreamSink</a> writers have finished  <a href="#a59eb2e21c5b5cf85a692f4385db43198">More...</a><br/></td></tr>
+<tr class="separator:a59eb2e21c5b5cf85a692f4385db43198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c7ed62333b4831b52666cdb527fef42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a8c7ed62333b4831b52666cdb527fef42">OnWriterClosed</a> (size_t peer_worker_rank, bool sent)</td></tr>
+<tr class="separator:a8c7ed62333b4831b52666cdb527fef42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33b5e5c650779b3907cec311db7d3113"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a33b5e5c650779b3907cec311db7d3113">stream_type</a> ()=0</td></tr>
+<tr class="memdesc:a33b5e5c650779b3907cec311db7d3113"><td class="mdescLeft">&#160;</td><td class="mdescRight">return stream type string  <a href="#a33b5e5c650779b3907cec311db7d3113">More...</a><br/></td></tr>
+<tr class="separator:a33b5e5c650779b3907cec311db7d3113"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab918f792039fb144dd12528701199562"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#ab918f792039fb144dd12528701199562">workers_per_host</a> () const </td></tr>
 <tr class="memdesc:ab918f792039fb144dd12528701199562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns workers_per_host.  <a href="#ab918f792039fb144dd12528701199562">More...</a><br/></td></tr>
 <tr class="separator:ab918f792039fb144dd12528701199562"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,15 +264,24 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a787c3fb00179b2dd461f6f8261927fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timers from first rx / tx package until rx / tx direction is closed.  <a href="#a787c3fb00179b2dd461f6f8261927fd4">More...</a><br/></td></tr>
 <tr class="separator:a787c3fb00179b2dd461f6f8261927fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a6b72e54baf646b08b4b87f987f583dcb"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a6b72e54baf646b08b4b87f987f583dcb">debug</a> = false</td></tr>
+<tr class="separator:a6b72e54baf646b08b4b87f987f583dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a507218777ce4917a2068ddc94cb4abb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a507218777ce4917a2068ddc94cb4abb3">all_writers_closed_</a> = false</td></tr>
+<tr class="memdesc:a507218777ce4917a2068ddc94cb4abb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">bool if all writers were closed  <a href="#a507218777ce4917a2068ddc94cb4abb3">More...</a><br/></td></tr>
+<tr class="separator:a507218777ce4917a2068ddc94cb4abb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a802518f1133d686c0444ff642dc65d88"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a802518f1133d686c0444ff642dc65d88">dia_id_</a></td></tr>
-<tr class="memdesc:a802518f1133d686c0444ff642dc65d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associated DIANode id.  <a href="#a802518f1133d686c0444ff642dc65d88">More...</a><br/></td></tr>
+<tr class="memdesc:a802518f1133d686c0444ff642dc65d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">associated DIANode id.  <a href="#a802518f1133d686c0444ff642dc65d88">More...</a><br/></td></tr>
 <tr class="separator:a802518f1133d686c0444ff642dc65d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ac3ec26751fe8ed4578bcb7a2ae1117"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__data__layer.html#ga03df594c744fac6cea6f4559bc7494d2">StreamId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a7ac3ec26751fe8ed4578bcb7a2ae1117">id_</a></td></tr>
 <tr class="memdesc:a7ac3ec26751fe8ed4578bcb7a2ae1117"><td class="mdescLeft">&#160;</td><td class="mdescRight">our own stream id.  <a href="#a7ac3ec26751fe8ed4578bcb7a2ae1117">More...</a><br/></td></tr>
 <tr class="separator:a7ac3ec26751fe8ed4578bcb7a2ae1117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14f406dd3db4af71f3634ff63cedac2e"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a14f406dd3db4af71f3634ff63cedac2e">local_worker_id_</a></td></tr>
+<tr class="memdesc:a14f406dd3db4af71f3634ff63cedac2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">local worker id  <a href="#a14f406dd3db4af71f3634ff63cedac2e">More...</a><br/></td></tr>
 <tr class="separator:a14f406dd3db4af71f3634ff63cedac2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7476140d0b9f77770419e69f53d0739"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1Multiplexer.html">Multiplexer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#ab7476140d0b9f77770419e69f53d0739">multiplexer_</a></td></tr>
 <tr class="memdesc:ab7476140d0b9f77770419e69f53d0739"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to multiplexer  <a href="#ab7476140d0b9f77770419e69f53d0739">More...</a><br/></td></tr>
@@ -275,6 +291,12 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a63e4785e5e919e89f53e5a5edbbb58f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtlx_1_1Semaphore.html">tlx::Semaphore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a63e4785e5e919e89f53e5a5edbbb58f7">sem_closing_blocks_</a></td></tr>
 <tr class="memdesc:a63e4785e5e919e89f53e5a5edbbb58f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of received stream closing Blocks.  <a href="#a63e4785e5e919e89f53e5a5edbbb58f7">More...</a><br/></td></tr>
 <tr class="separator:a63e4785e5e919e89f53e5a5edbbb58f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a431427565b0cf7502b47f1dcea7a148f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classthrill_1_1data_1_1StreamSetBase.html">StreamSetBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a431427565b0cf7502b47f1dcea7a148f">stream_set_base_</a></td></tr>
+<tr class="memdesc:a431427565b0cf7502b47f1dcea7a148f"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to <a class="el" href="classthrill_1_1data_1_1StreamSetBase.html" title="Base class for StreamSet. ">StreamSetBase</a> containing this <a class="el" href="classthrill_1_1data_1_1StreamData.html" title="Base class for common structures for ConcatStream and MixedStream. ">StreamData</a>  <a href="#a431427565b0cf7502b47f1dcea7a148f">More...</a><br/></td></tr>
+<tr class="separator:a431427565b0cf7502b47f1dcea7a148f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92db86d0da19833cd7d3508d15266c06"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthrill_1_1data_1_1StreamData.html#a92db86d0da19833cd7d3508d15266c06">writers_closed_</a> = 0</td></tr>
+<tr class="memdesc:a92db86d0da19833cd7d3508d15266c06"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of writers closed via <a class="el" href="classthrill_1_1data_1_1StreamSink.html" title="StreamSink is an BlockSink that sends data via a network socket to the StreamData object on a differe...">StreamSink</a>.  <a href="#a92db86d0da19833cd7d3508d15266c06">More...</a><br/></td></tr>
+<tr class="separator:a92db86d0da19833cd7d3508d15266c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a08f9d7d340d452efab7eab158fcbfe64"></a>
@@ -287,18 +309,24 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00048">48</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00051">51</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7d6edda4e94e25143bce4eedc363fc82"></a>
+<a class="anchor" id="ae7f3439985006069628c8db446d20e08"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classthrill_1_1data_1_1StreamData.html">StreamData</a> </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="classthrill_1_1data_1_1StreamSetBase.html">StreamSetBase</a> *&#160;</td>
+          <td class="paramname"><em>stream_set_base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="classthrill_1_1data_1_1Multiplexer.html">Multiplexer</a> &amp;&#160;</td>
           <td class="paramname"><em>multiplexer</em>, </td>
         </tr>
@@ -334,7 +362,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream__data_8cpp_source.html#l00023">23</a> of file <a class="el" href="stream__data_8cpp_source.html">stream_data.cpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8cpp_source.html#l00024">24</a> of file <a class="el" href="stream__data_8cpp_source.html">stream_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -387,7 +415,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classthrill_1_1data_1_1CatStreamData.html#a29dc6798f18d73abd4ba8e4910f6831f">CatStreamData</a>, and <a class="el" href="classthrill_1_1data_1_1MixStreamData.html#a29dc6798f18d73abd4ba8e4910f6831f">MixStreamData</a>.</p>
 
-<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00026">Stream::Close()</a>, and <a class="el" href="stream__data_8cpp_source.html#l00074">StreamData::Writers::~Writers()</a>.</p>
+<p>Referenced by <a class="el" href="stream_8cpp_source.html#l00026">Stream::Close()</a>, and <a class="el" href="stream__data_8cpp_source.html#l00100">StreamData::Writers::~Writers()</a>.</p>
 
 </div>
 </div>
@@ -465,11 +493,11 @@ Protected Attributes</h2></td></tr>
 
 <p>Return stream id. </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00087">87</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00091">91</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>References <a class="el" href="stream__data_8hpp_source.html#l00150">StreamData::id_</a>.</p>
+<p>References <a class="el" href="stream__data_8hpp_source.html#l00165">StreamData::id_</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00187">CatStreamData::Close()</a>.</p>
+<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00193">CatStreamData::Close()</a>.</p>
 
 </div>
 </div>
@@ -496,11 +524,11 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns my_host_rank. </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00090">90</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00097">97</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>References <a class="el" href="stream__data_8hpp_source.html#l00158">StreamData::multiplexer_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00093">Multiplexer::my_host_rank()</a>.</p>
+<p>References <a class="el" href="stream__data_8hpp_source.html#l00177">StreamData::multiplexer_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00093">Multiplexer::my_host_rank()</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00187">CatStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00306">CatStreamData::loopback_queue()</a>, <a class="el" href="stream__data_8hpp_source.html#l00099">StreamData::my_worker_rank()</a>, and <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>.</p>
+<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00193">CatStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00052">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00089">CatStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00316">CatStreamData::loopback_queue()</a>, <a class="el" href="stream__data_8hpp_source.html#l00106">StreamData::my_worker_rank()</a>, and <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>.</p>
 
 </div>
 </div>
@@ -527,11 +555,11 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns my_worker_rank_. </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00099">99</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00106">106</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>References <a class="el" href="stream__data_8hpp_source.html#l00152">StreamData::local_worker_id_</a>, <a class="el" href="stream__data_8hpp_source.html#l00090">StreamData::my_host_rank()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00097">StreamData::workers_per_host()</a>.</p>
+<p>References <a class="el" href="stream__data_8hpp_source.html#l00171">StreamData::local_worker_id_</a>, <a class="el" href="stream__data_8hpp_source.html#l00097">StreamData::my_host_rank()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00104">StreamData::workers_per_host()</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00187">CatStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00160">MixStreamData::OnStreamBlock()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00200">MixStreamData::OnStreamBlockOrdered()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00281">CatStreamData::OnStreamBlockOrdered()</a>.</p>
+<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00193">CatStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00052">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00089">CatStreamData::GetWriters()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00168">MixStreamData::OnStreamBlock()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00206">MixStreamData::OnStreamBlockOrdered()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00287">CatStreamData::OnStreamBlockOrdered()</a>, <a class="el" href="stream__data_8cpp_source.html#l00038">StreamData::OnWriterClosed()</a>, and <a class="el" href="stream_8hpp_source.html#l00089">Stream::ScatterConsume()</a>.</p>
 
 </div>
 </div>
@@ -558,11 +586,11 @@ Protected Attributes</h2></td></tr>
 
 <p>Number of hosts in system. </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00092">92</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00099">99</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>References <a class="el" href="stream__data_8hpp_source.html#l00158">StreamData::multiplexer_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00088">Multiplexer::num_hosts()</a>.</p>
+<p>References <a class="el" href="stream__data_8hpp_source.html#l00177">StreamData::multiplexer_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00088">Multiplexer::num_hosts()</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00118">MixStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>, and <a class="el" href="mix__stream_8cpp_source.html#l00027">MixStreamData::MixStreamData()</a>.</p>
+<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00124">MixStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00052">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00089">CatStreamData::GetWriters()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00027">MixStreamData::MixStreamData()</a>, and <a class="el" href="stream__data_8cpp_source.html#l00038">StreamData::OnWriterClosed()</a>.</p>
 
 </div>
 </div>
@@ -589,33 +617,94 @@ Protected Attributes</h2></td></tr>
 
 <p>Number of workers in system. </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00094">94</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00101">101</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>References <a class="el" href="stream__data_8hpp_source.html#l00158">StreamData::multiplexer_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00098">Multiplexer::num_workers()</a>.</p>
+<p>References <a class="el" href="stream__data_8hpp_source.html#l00177">StreamData::multiplexer_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00098">Multiplexer::num_workers()</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00163">CatStreamData::GetCatBlockSource()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00148">CatStreamData::GetReaders()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>, and <a class="el" href="mix__stream_8cpp_source.html#l00160">MixStreamData::OnStreamBlock()</a>.</p>
+<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00169">CatStreamData::GetCatBlockSource()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00154">CatStreamData::GetReaders()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00052">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00089">CatStreamData::GetWriters()</a>, and <a class="el" href="mix__stream_8cpp_source.html#l00168">MixStreamData::OnStreamBlock()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a060a2efa2142f5d6169ebc016692e88d"></a>
+<a class="anchor" id="a59eb2e21c5b5cf85a692f4385db43198"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void OnAllClosed </td>
+          <td class="memname">void OnAllWritersClosed </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>stream_type</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream__data_8cpp_source.html#l00035">35</a> of file <a class="el" href="stream__data_8cpp_source.html">stream_data.cpp</a>.</p>
+<p>method called when all <a class="el" href="classthrill_1_1data_1_1StreamSink.html" title="StreamSink is an BlockSink that sends data via a network socket to the StreamData object on a differe...">StreamSink</a> writers have finished </p>
 
-<p>References <a class="el" href="stream__data_8hpp_source.html#l00155">StreamData::dia_id_</a>, <a class="el" href="stream__data_8hpp_source.html#l00150">StreamData::id_</a>, <a class="el" href="stream__data_8hpp_source.html#l00152">StreamData::local_worker_id_</a>, <a class="el" href="multiplexer_8cpp_source.html#l00276">Multiplexer::logger()</a>, <a class="el" href="stream__data_8hpp_source.html#l00158">StreamData::multiplexer_</a>, <a class="el" href="stream__data_8hpp_source.html#l00090">StreamData::my_host_rank()</a>, <a class="el" href="stream__data_8hpp_source.html#l00129">StreamData::rx_int_blocks_</a>, <a class="el" href="stream__data_8hpp_source.html#l00129">StreamData::rx_int_bytes_</a>, <a class="el" href="stream__data_8hpp_source.html#l00129">StreamData::rx_int_items_</a>, <a class="el" href="stream__data_8hpp_source.html#l00119">StreamData::rx_net_blocks_</a>, <a class="el" href="stream__data_8hpp_source.html#l00119">StreamData::rx_net_bytes_</a>, <a class="el" href="stream__data_8hpp_source.html#l00119">StreamData::rx_net_items_</a>, <a class="el" href="stream__data_8hpp_source.html#l00134">StreamData::tx_int_blocks_</a>, <a class="el" href="stream__data_8hpp_source.html#l00134">StreamData::tx_int_bytes_</a>, <a class="el" href="stream__data_8hpp_source.html#l00134">StreamData::tx_int_items_</a>, <a class="el" href="stream__data_8hpp_source.html#l00124">StreamData::tx_net_blocks_</a>, <a class="el" href="stream__data_8hpp_source.html#l00124">StreamData::tx_net_bytes_</a>, <a class="el" href="stream__data_8hpp_source.html#l00124">StreamData::tx_net_items_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00103">Multiplexer::workers_per_host()</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8cpp_source.html#l00061">61</a> of file <a class="el" href="stream__data_8cpp_source.html">stream_data.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00118">MixStreamData::Close()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00187">CatStreamData::Close()</a>.</p>
+<p>References <a class="el" href="stream__data_8hpp_source.html#l00174">StreamData::dia_id_</a>, <a class="el" href="stream__data_8hpp_source.html#l00165">StreamData::id_</a>, <a class="el" href="stream__data_8hpp_source.html#l00171">StreamData::local_worker_id_</a>, <a class="el" href="multiplexer_8cpp_source.html#l00276">Multiplexer::logger()</a>, <a class="el" href="stream__data_8hpp_source.html#l00177">StreamData::multiplexer_</a>, <a class="el" href="stream__data_8hpp_source.html#l00097">StreamData::my_host_rank()</a>, <a class="el" href="stream__data_8hpp_source.html#l00144">StreamData::rx_int_blocks_</a>, <a class="el" href="stream__data_8hpp_source.html#l00144">StreamData::rx_int_bytes_</a>, <a class="el" href="stream__data_8hpp_source.html#l00144">StreamData::rx_int_items_</a>, <a class="el" href="stream__data_8hpp_source.html#l00134">StreamData::rx_net_blocks_</a>, <a class="el" href="stream__data_8hpp_source.html#l00134">StreamData::rx_net_bytes_</a>, <a class="el" href="stream__data_8hpp_source.html#l00134">StreamData::rx_net_items_</a>, <a class="el" href="classthrill_1_1data_1_1StreamData.html#a33b5e5c650779b3907cec311db7d3113">StreamData::stream_type()</a>, <a class="el" href="stream__data_8hpp_source.html#l00149">StreamData::tx_int_blocks_</a>, <a class="el" href="stream__data_8hpp_source.html#l00149">StreamData::tx_int_bytes_</a>, <a class="el" href="stream__data_8hpp_source.html#l00149">StreamData::tx_int_items_</a>, <a class="el" href="stream__data_8hpp_source.html#l00139">StreamData::tx_net_blocks_</a>, <a class="el" href="stream__data_8hpp_source.html#l00139">StreamData::tx_net_bytes_</a>, <a class="el" href="stream__data_8hpp_source.html#l00139">StreamData::tx_net_items_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00103">Multiplexer::workers_per_host()</a>.</p>
+
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00038">StreamData::OnWriterClosed()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c7ed62333b4831b52666cdb527fef42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OnWriterClosed </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>peer_worker_rank</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>sent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>method called from <a class="el" href="classthrill_1_1data_1_1StreamSink.html" title="StreamSink is an BlockSink that sends data via a network socket to the StreamData object on a differe...">StreamSink</a> when it is closed, used to aggregate Close messages to remote hosts </p>
+
+<p>Definition at line <a class="el" href="stream__data_8cpp_source.html#l00038">38</a> of file <a class="el" href="stream__data_8cpp_source.html">stream_data.cpp</a>.</p>
+
+<p>References <a class="el" href="stream__data_8hpp_source.html#l00190">StreamData::all_writers_closed_</a>, <a class="el" href="die_8hpp_source.html#l00027">die_unless</a>, <a class="el" href="extlib_2tlx_2tlx_2logger_8hpp_source.html#l00024">LOG</a>, <a class="el" href="stream__data_8hpp_source.html#l00106">StreamData::my_worker_rank()</a>, <a class="el" href="stream__data_8hpp_source.html#l00099">StreamData::num_hosts()</a>, <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, <a class="el" href="classthrill_1_1data_1_1StreamSetBase.html#a1718dcf2ba8a290dc7bd36b4f88ac72a">StreamSetBase::OnWriterClosed()</a>, <a class="el" href="stream__data_8hpp_source.html#l00168">StreamData::stream_set_base_</a>, <a class="el" href="stream__data_8hpp_source.html#l00152">StreamData::tx_lifetime_</a>, <a class="el" href="stream__data_8hpp_source.html#l00155">StreamData::tx_timespan_</a>, <a class="el" href="stream__data_8hpp_source.html#l00104">StreamData::workers_per_host()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00187">StreamData::writers_closed_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a33b5e5c650779b3907cec311db7d3113"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const char* stream_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>return stream type string </p>
+
+<p>Implemented in <a class="el" href="classthrill_1_1data_1_1CatStreamData.html#a7f3b9feae0e9ce28cd7f144fe2a586b7">CatStreamData</a>, and <a class="el" href="classthrill_1_1data_1_1MixStreamData.html#a7f3b9feae0e9ce28cd7f144fe2a586b7">MixStreamData</a>.</p>
+
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>.</p>
 
 </div>
 </div>
@@ -642,15 +731,63 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns workers_per_host. </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00097">97</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00104">104</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>References <a class="el" href="stream__data_8hpp_source.html#l00158">StreamData::multiplexer_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00103">Multiplexer::workers_per_host()</a>.</p>
+<p>References <a class="el" href="stream__data_8hpp_source.html#l00177">StreamData::multiplexer_</a>, and <a class="el" href="multiplexer_8hpp_source.html#l00103">Multiplexer::workers_per_host()</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00118">MixStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00187">CatStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00306">CatStreamData::loopback_queue()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00027">MixStreamData::MixStreamData()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00099">StreamData::my_worker_rank()</a>.</p>
+<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00124">MixStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00193">CatStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00052">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00089">CatStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00316">CatStreamData::loopback_queue()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00027">MixStreamData::MixStreamData()</a>, <a class="el" href="stream__data_8hpp_source.html#l00106">StreamData::my_worker_rank()</a>, and <a class="el" href="stream__data_8cpp_source.html#l00038">StreamData::OnWriterClosed()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a507218777ce4917a2068ddc94cb4abb3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool all_writers_closed_ = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>bool if all writers were closed </p>
+
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00190">190</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00124">MixStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00193">CatStreamData::Close()</a>, and <a class="el" href="stream__data_8cpp_source.html#l00038">StreamData::OnWriterClosed()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6b72e54baf646b08b4b87f987f583dcb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool debug = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00049">49</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a802518f1133d686c0444ff642dc65d88"></a>
 <div class="memitem">
 <div class="memproto">
@@ -669,11 +806,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Associated DIANode id. </p>
+<p>associated DIANode id. </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00155">155</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00174">174</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00041">MixStreamData::set_dia_id()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00076">CatStreamData::set_dia_id()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00043">MixStreamData::set_dia_id()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00078">CatStreamData::set_dia_id()</a>.</p>
 
 </div>
 </div>
@@ -697,9 +834,9 @@ Protected Attributes</h2></td></tr>
 
 <p>our own stream id. </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00150">150</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00165">165</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00118">MixStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00187">CatStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>, <a class="el" href="stream__data_8hpp_source.html#l00087">StreamData::id()</a>, <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00160">MixStreamData::OnStreamBlock()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00235">CatStreamData::OnStreamBlock()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00200">MixStreamData::OnStreamBlockOrdered()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00281">CatStreamData::OnStreamBlockOrdered()</a>.</p>
+<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00124">MixStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00193">CatStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00052">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00089">CatStreamData::GetWriters()</a>, <a class="el" href="stream__data_8hpp_source.html#l00091">StreamData::id()</a>, <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00168">MixStreamData::OnStreamBlock()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00243">CatStreamData::OnStreamBlock()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00206">MixStreamData::OnStreamBlockOrdered()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00287">CatStreamData::OnStreamBlockOrdered()</a>.</p>
 
 </div>
 </div>
@@ -721,9 +858,11 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00152">152</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>local worker id </p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00118">MixStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00187">CatStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00163">CatStreamData::GetCatBlockSource()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00109">MixStreamData::GetMixReader()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00148">CatStreamData::GetReaders()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00306">CatStreamData::loopback_queue()</a>, <a class="el" href="stream__data_8hpp_source.html#l00099">StreamData::my_worker_rank()</a>, <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00235">CatStreamData::OnStreamBlock()</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00171">171</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00124">MixStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00193">CatStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00169">CatStreamData::GetCatBlockSource()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00115">MixStreamData::GetMixReader()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00154">CatStreamData::GetReaders()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00052">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00089">CatStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00316">CatStreamData::loopback_queue()</a>, <a class="el" href="stream__data_8hpp_source.html#l00106">StreamData::my_worker_rank()</a>, <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00243">CatStreamData::OnStreamBlock()</a>.</p>
 
 </div>
 </div>
@@ -747,9 +886,9 @@ Protected Attributes</h2></td></tr>
 
 <p>reference to multiplexer </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00158">158</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00177">177</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00118">MixStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00187">CatStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>, <a class="el" href="stream__data_8hpp_source.html#l00090">StreamData::my_host_rank()</a>, <a class="el" href="stream__data_8hpp_source.html#l00092">StreamData::num_hosts()</a>, <a class="el" href="stream__data_8hpp_source.html#l00094">StreamData::num_workers()</a>, <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00097">StreamData::workers_per_host()</a>.</p>
+<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00124">MixStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00193">CatStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00052">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00089">CatStreamData::GetWriters()</a>, <a class="el" href="stream__data_8hpp_source.html#l00097">StreamData::my_host_rank()</a>, <a class="el" href="stream__data_8hpp_source.html#l00099">StreamData::num_hosts()</a>, <a class="el" href="stream__data_8hpp_source.html#l00101">StreamData::num_workers()</a>, <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, and <a class="el" href="stream__data_8hpp_source.html#l00104">StreamData::workers_per_host()</a>.</p>
 
 </div>
 </div>
@@ -772,9 +911,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>number of remaining expected stream closing operations. Required to know when to stop rx_lifetime </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00162">162</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00181">181</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00027">MixStreamData::MixStreamData()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00200">MixStreamData::OnStreamBlockOrdered()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00281">CatStreamData::OnStreamBlockOrdered()</a>.</p>
+<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00028">CatStreamData::CatStreamData()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00027">MixStreamData::MixStreamData()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00206">MixStreamData::OnStreamBlockOrdered()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00287">CatStreamData::OnStreamBlockOrdered()</a>.</p>
 
 </div>
 </div>
@@ -788,9 +927,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00129">129</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00144">144</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00104">Stream::rx_int_blocks()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00104">Stream::rx_int_blocks()</a>.</p>
 
 </div>
 </div>
@@ -804,9 +943,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00129">129</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00144">144</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00100">Stream::rx_int_bytes()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00100">Stream::rx_int_bytes()</a>.</p>
 
 </div>
 </div>
@@ -821,9 +960,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>StatsCounter for incoming data transfer. Exclusively contains only loopback (internal) data transfer </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00129">129</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00144">144</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00096">Stream::rx_int_items()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00096">Stream::rx_int_items()</a>.</p>
 
 </div>
 </div>
@@ -837,9 +976,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00137">137</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00152">152</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00200">MixStreamData::OnStreamBlockOrdered()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00281">CatStreamData::OnStreamBlockOrdered()</a>.</p>
+<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00206">MixStreamData::OnStreamBlockOrdered()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00287">CatStreamData::OnStreamBlockOrdered()</a>.</p>
 
 </div>
 </div>
@@ -853,9 +992,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00119">119</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00134">134</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00160">MixStreamData::OnStreamBlock()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00235">CatStreamData::OnStreamBlock()</a>, and <a class="el" href="stream_8cpp_source.html#l00078">Stream::rx_net_blocks()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00206">MixStreamData::OnStreamBlockOrdered()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00287">CatStreamData::OnStreamBlockOrdered()</a>, and <a class="el" href="stream_8cpp_source.html#l00078">Stream::rx_net_blocks()</a>.</p>
 
 </div>
 </div>
@@ -869,9 +1008,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00119">119</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00134">134</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00160">MixStreamData::OnStreamBlock()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00235">CatStreamData::OnStreamBlock()</a>, and <a class="el" href="stream_8cpp_source.html#l00074">Stream::rx_net_bytes()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00206">MixStreamData::OnStreamBlockOrdered()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00287">CatStreamData::OnStreamBlockOrdered()</a>, and <a class="el" href="stream_8cpp_source.html#l00074">Stream::rx_net_bytes()</a>.</p>
 
 </div>
 </div>
@@ -886,9 +1025,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>StatsCounter for incoming data transfer. Does not include loopback data transfer </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00119">119</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00134">134</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00160">MixStreamData::OnStreamBlock()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00235">CatStreamData::OnStreamBlock()</a>, and <a class="el" href="stream_8cpp_source.html#l00070">Stream::rx_net_items()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00206">MixStreamData::OnStreamBlockOrdered()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00287">CatStreamData::OnStreamBlockOrdered()</a>, and <a class="el" href="stream_8cpp_source.html#l00070">Stream::rx_net_items()</a>.</p>
 
 </div>
 </div>
@@ -902,9 +1041,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00140">140</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00155">155</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00163">CatStreamData::GetCatBlockSource()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00109">MixStreamData::GetMixReader()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00148">CatStreamData::GetReaders()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00160">MixStreamData::OnStreamBlock()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00235">CatStreamData::OnStreamBlock()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00200">MixStreamData::OnStreamBlockOrdered()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00281">CatStreamData::OnStreamBlockOrdered()</a>.</p>
+<p>Referenced by <a class="el" href="cat__stream_8cpp_source.html#l00169">CatStreamData::GetCatBlockSource()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00115">MixStreamData::GetMixReader()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00154">CatStreamData::GetReaders()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00168">MixStreamData::OnStreamBlock()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00243">CatStreamData::OnStreamBlock()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00206">MixStreamData::OnStreamBlockOrdered()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00287">CatStreamData::OnStreamBlockOrdered()</a>.</p>
 
 </div>
 </div>
@@ -928,9 +1067,9 @@ Protected Attributes</h2></td></tr>
 
 <p>number of received stream closing Blocks. </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00165">165</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00184">184</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00118">MixStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00187">CatStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00200">MixStreamData::OnStreamBlockOrdered()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00281">CatStreamData::OnStreamBlockOrdered()</a>.</p>
+<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00124">MixStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00193">CatStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00206">MixStreamData::OnStreamBlockOrdered()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00287">CatStreamData::OnStreamBlockOrdered()</a>.</p>
 
 </div>
 </div>
@@ -945,7 +1084,33 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>semaphore to stall the amount of PinnedBlocks (measured in bytes) passed to the network layer for transmission. </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00144">144</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00159">159</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a431427565b0cf7502b47f1dcea7a148f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classthrill_1_1data_1_1StreamSetBase.html">StreamSetBase</a>* stream_set_base_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>pointer to <a class="el" href="classthrill_1_1data_1_1StreamSetBase.html" title="Base class for StreamSet. ">StreamSetBase</a> containing this <a class="el" href="classthrill_1_1data_1_1StreamData.html" title="Base class for common structures for ConcatStream and MixedStream. ">StreamData</a> </p>
+
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00168">168</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00038">StreamData::OnWriterClosed()</a>.</p>
 
 </div>
 </div>
@@ -959,9 +1124,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00134">134</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00149">149</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00092">Stream::tx_int_blocks()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00092">Stream::tx_int_blocks()</a>.</p>
 
 </div>
 </div>
@@ -975,9 +1140,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00134">134</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00149">149</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00088">Stream::tx_int_bytes()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00088">Stream::tx_int_bytes()</a>.</p>
 
 </div>
 </div>
@@ -992,9 +1157,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>StatsCounters for outgoing data transfer - shared by all sinks. Exclusively contains only loopback (internal) data transfer </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00134">134</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00149">149</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00084">Stream::tx_int_items()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00084">Stream::tx_int_items()</a>.</p>
 
 </div>
 </div>
@@ -1010,9 +1175,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Timers from creation of stream until rx / tx direction is closed. </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00137">137</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00152">152</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00118">MixStreamData::Close()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00187">CatStreamData::Close()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00038">StreamData::OnWriterClosed()</a>.</p>
 
 </div>
 </div>
@@ -1026,9 +1191,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00124">124</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00139">139</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00066">Stream::tx_net_blocks()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00066">Stream::tx_net_blocks()</a>.</p>
 
 </div>
 </div>
@@ -1042,9 +1207,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00124">124</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00139">139</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00062">Stream::tx_net_bytes()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00062">Stream::tx_net_bytes()</a>.</p>
 
 </div>
 </div>
@@ -1059,9 +1224,9 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>StatsCounters for outgoing data transfer - shared by all sinks. Does not include loopback data transfer </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00124">124</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00139">139</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00035">StreamData::OnAllClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00058">Stream::tx_net_items()</a>.</p>
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00061">StreamData::OnAllWritersClosed()</a>, and <a class="el" href="stream_8cpp_source.html#l00058">Stream::tx_net_items()</a>.</p>
 
 </div>
 </div>
@@ -1077,9 +1242,35 @@ Protected Attributes</h2></td></tr>
 
 <p>Timers from first rx / tx package until rx / tx direction is closed. </p>
 
-<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00140">140</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00155">155</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00118">MixStreamData::Close()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00187">CatStreamData::Close()</a>, <a class="el" href="mix__stream_8cpp_source.html#l00046">MixStreamData::GetWriters()</a>, and <a class="el" href="cat__stream_8cpp_source.html#l00083">CatStreamData::GetWriters()</a>.</p>
+<p>Referenced by <a class="el" href="mix__stream_8cpp_source.html#l00052">MixStreamData::GetWriters()</a>, <a class="el" href="cat__stream_8cpp_source.html#l00089">CatStreamData::GetWriters()</a>, and <a class="el" href="stream__data_8cpp_source.html#l00038">StreamData::OnWriterClosed()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a92db86d0da19833cd7d3508d15266c06"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t writers_closed_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>number of writers closed via <a class="el" href="classthrill_1_1data_1_1StreamSink.html" title="StreamSink is an BlockSink that sends data via a network socket to the StreamData object on a differe...">StreamSink</a>. </p>
+
+<p>Definition at line <a class="el" href="stream__data_8hpp_source.html#l00187">187</a> of file <a class="el" href="stream__data_8hpp_source.html">stream_data.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="stream__data_8cpp_source.html#l00038">StreamData::OnWriterClosed()</a>.</p>
 
 </div>
 </div>
@@ -1093,7 +1284,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacethrill.html">thrill</a></li><li class="navelem"><a class="el" href="namespacethrill_1_1data.html">data</a></li><li class="navelem"><a class="el" href="classthrill_1_1data_1_1StreamData.html">StreamData</a></li>
-    <li class="footer">Generated on Wed Aug 14 2019 23:30:20 for Thrill by
+    <li class="footer">Generated on Thu Oct 17 2019 06:16:08 for Thrill by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

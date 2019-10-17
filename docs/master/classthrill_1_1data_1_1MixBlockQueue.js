@@ -9,6 +9,7 @@ var classthrill_1_1data_1_1MixBlockQueue =
     [ "AppendBlock", "classthrill_1_1data_1_1MixBlockQueue.html#a23253548b0fb88d88653d789eb795a35", null ],
     [ "block_pool", "classthrill_1_1data_1_1MixBlockQueue.html#acc3637f3c569064d67cd99e018ef774c", null ],
     [ "Close", "classthrill_1_1data_1_1MixBlockQueue.html#a80791e9acdd9218a1323658ab09f53af", null ],
+    [ "is_queue_closed", "classthrill_1_1data_1_1MixBlockQueue.html#a8702c876d23dda808b5bdc151f7db9ab", null ],
     [ "operator=", "classthrill_1_1data_1_1MixBlockQueue.html#aa40055feff7672f3d945892e4357dbbc", null ],
     [ "operator=", "classthrill_1_1data_1_1MixBlockQueue.html#a87cd7ed3da406acb1a6298c9840b027c", null ],
     [ "Pop", "classthrill_1_1data_1_1MixBlockQueue.html#ade3807705d428dd437c0d7d6e302b2ca", null ],

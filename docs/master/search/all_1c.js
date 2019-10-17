@@ -48,7 +48,7 @@ var searchData=
   ['_7edispatcher',['~Dispatcher',['../classthrill_1_1net_1_1Dispatcher.html#aedc4fe5f1377075b487f162672ff5772',1,'thrill::net::Dispatcher::~Dispatcher()'],['../classthrill_1_1net_1_1mock_1_1Dispatcher.html#aebde02bf4fd9df0eb3505a5f69e66899',1,'thrill::net::mock::Dispatcher::~Dispatcher()'],['../classthrill_1_1net_1_1mpi_1_1Dispatcher.html#aebde02bf4fd9df0eb3505a5f69e66899',1,'thrill::net::mpi::Dispatcher::~Dispatcher()']]],
   ['_7edispatcherthread',['~DispatcherThread',['../classthrill_1_1net_1_1DispatcherThread.html#a8531f0b1620c942201af92c6192b114c',1,'thrill::net::DispatcherThread']]],
   ['_7edynblocksourceinterface',['~DynBlockSourceInterface',['../classthrill_1_1data_1_1DynBlockSourceInterface.html#a767487e1aa0f294971b25f4708d59692',1,'thrill::data::DynBlockSourceInterface']]],
-  ['_7efile',['~File',['../classthrill_1_1data_1_1File.html#a241d694b0e799c0579a023e76cd97f18',1,'thrill::data::File::~File()'],['../classfoxxll_1_1file.html#a7012ca9de63ff5ac738cdc22aafc8523',1,'foxxll::file::~file()']]],
+  ['_7efile',['~file',['../classfoxxll_1_1file.html#a7012ca9de63ff5ac738cdc22aafc8523',1,'foxxll::file::~file()'],['../classthrill_1_1data_1_1File.html#a241d694b0e799c0579a023e76cd97f18',1,'thrill::data::File::~File()']]],
   ['_7efileblocksink',['~FileBlockSink',['../classthrill_1_1data_1_1FileBlockSink.html#ad1e79abf15be60a8f99f175b0d641838',1,'thrill::data::FileBlockSink']]],
   ['_7efileperblock_5ffile',['~fileperblock_file',['../classfoxxll_1_1fileperblock__file.html#a8ac77b71d6a1c7486f072d6060010be0',1,'foxxll::fileperblock_file']]],
   ['_7eflowcontrolchannel',['~FlowControlChannel',['../classthrill_1_1net_1_1FlowControlChannel.html#af48e77363ec6c8a97f95d0ba4d875d66',1,'thrill::net::FlowControlChannel']]],
