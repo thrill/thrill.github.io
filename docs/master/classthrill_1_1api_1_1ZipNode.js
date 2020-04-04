@@ -5,9 +5,15 @@ var classthrill_1_1api_1_1ZipNode =
     [ "Super", "classthrill_1_1api_1_1ZipNode.html#a891fa9a850833efd80b9a9aced7b443c", null ],
     [ "ZipArgN", "classthrill_1_1api_1_1ZipNode.html#a0a07829e230f6bae11b6b59b1bb4ec8f", null ],
     [ "ZipArgsTuple", "classthrill_1_1api_1_1ZipNode.html#aedd81fb1db3619911c8c3d4e23555d5e", null ],
-    [ "ZipNode", "classthrill_1_1api_1_1ZipNode.html#acf1530a4e9d3292c23af1b2b48f1b024", null ],
+    [ "ZipNode", "classthrill_1_1api_1_1ZipNode.html#a6fee0ad2f5e61486c5fd44870ac51fa1", null ],
+    [ "Dispose", "classthrill_1_1api_1_1ZipNode.html#ab184572dc4d3b603565e2a09315cfe5e", null ],
     [ "DoScatter", "classthrill_1_1api_1_1ZipNode.html#a5196ae124e0fb593b5e819504c7fe4ba", null ],
+    [ "Execute", "classthrill_1_1api_1_1ZipNode.html#abaefef09f7c5e04a0c2c61538d6ab0e4", null ],
     [ "MainOp", "classthrill_1_1api_1_1ZipNode.html#a50bbe9134ad3a335b52a0ca1ad4f54ab", null ],
+    [ "OnPreOpFile", "classthrill_1_1api_1_1ZipNode.html#a55d9a70368d8f0c6a0948ebec4bf80d5", null ],
+    [ "PushData", "classthrill_1_1api_1_1ZipNode.html#a77109353f39e9fb5fab00c9cccac822e", null ],
+    [ "StartPreOp", "classthrill_1_1api_1_1ZipNode.html#afa5c0989fd54c1deef4308a8fb6aa4c6", null ],
+    [ "StopPreOp", "classthrill_1_1api_1_1ZipNode.html#a6566d89f7e9e5ea89de65bba3396ea30", null ],
     [ "debug", "classthrill_1_1api_1_1ZipNode.html#a6b72e54baf646b08b4b87f987f583dcb", null ],
     [ "files_", "classthrill_1_1api_1_1ZipNode.html#a8bb9d507163ac6bc0f856fbf84ac01e6", null ],
     [ "padding_", "classthrill_1_1api_1_1ZipNode.html#a4a00f5a1392960b3fac3d769dc7baac1", null ],
@@ -16,5 +22,6 @@ var classthrill_1_1api_1_1ZipNode =
     [ "size_prefixsum_", "classthrill_1_1api_1_1ZipNode.html#abdcfac79436f78968ecc98d7b899623a", null ],
     [ "stats_enabled", "classthrill_1_1api_1_1ZipNode.html#a9fab430f144b995b17f436543d6e9662", null ],
     [ "streams_", "classthrill_1_1api_1_1ZipNode.html#a9b4666f73eace01e3926457b7e2253ae", null ],
-    [ "writers_", "classthrill_1_1api_1_1ZipNode.html#abf834c0ca686b4dc4cff54948112c2df", null ]
+    [ "writers_", "classthrill_1_1api_1_1ZipNode.html#abf834c0ca686b4dc4cff54948112c2df", null ],
+    [ "zip_function_", "classthrill_1_1api_1_1ZipNode.html#a457660ff46fdcb810cebcbc77499d411", null ]
 ];

@@ -13,7 +13,7 @@ var classfoxxll_1_1write__pool =
     [ "has_request", "classfoxxll_1_1write__pool.html#a51310bce96cf539b987038b8350ffd0c", null ],
     [ "operator=", "classfoxxll_1_1write__pool.html#a2b50eb27f77ea5455beec10e6b7b2a40", null ],
     [ "resize", "classfoxxll_1_1write__pool.html#a5d264785c6b1332458969367996bdf92", null ],
-    [ "size", "classfoxxll_1_1write__pool.html#aac782da1f912bceb5d8ad00c8dc892ac", null ],
+    [ "size", "classfoxxll_1_1write__pool.html#a259cb5a711406a8c3e5d937eb9350cca", null ],
     [ "steal", "classfoxxll_1_1write__pool.html#ad1d4f8f56d3d97a9ebcaaba77122c8ce", null ],
     [ "steal_request", "classfoxxll_1_1write__pool.html#a97cc354049d3b8c13860b913f7465787", null ],
     [ "swap", "classfoxxll_1_1write__pool.html#a4e41479e5d05463441711039f0705351", null ],

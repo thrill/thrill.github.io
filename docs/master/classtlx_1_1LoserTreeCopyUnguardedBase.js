@@ -1,6 +1,5 @@
 var classtlx_1_1LoserTreeCopyUnguardedBase =
 [
-    [ "Loser", "structtlx_1_1LoserTreeCopyUnguardedBase_1_1Loser.html", "structtlx_1_1LoserTreeCopyUnguardedBase_1_1Loser" ],
     [ "Source", "group__tlx__container__loser__tree.html#ga12092cf92cd4d6e1e7c5fde0fdff07ec", null ],
     [ "LoserTreeCopyUnguardedBase", "group__tlx__container__loser__tree.html#ga1ab3df86138384ac8759ef9a868871ef", null ],
     [ "init", "group__tlx__container__loser__tree.html#ga02fd73d861ef2e4aabb38c0c9ff82947", null ],

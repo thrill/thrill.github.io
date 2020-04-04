@@ -8,12 +8,12 @@ var classfoxxll_1_1addressable__priority__queue =
     [ "meta_type", "classfoxxll_1_1addressable__priority__queue.html#aa74d6110ac29b41f628e3b4d3ed5c682", null ],
     [ "addressable_priority_queue", "classfoxxll_1_1addressable__priority__queue.html#a080f9f80e5eb147d769ddf3f488e67a9", null ],
     [ "~addressable_priority_queue", "classfoxxll_1_1addressable__priority__queue.html#adc35f18fd0d039d189554681d79e07ec", null ],
-    [ "empty", "classfoxxll_1_1addressable__priority__queue.html#ac6e61de369e994009e36f344f99c15ad", null ],
+    [ "empty", "classfoxxll_1_1addressable__priority__queue.html#a644718bb2fb240de962dc3c9a1fdf0dc", null ],
     [ "erase", "classfoxxll_1_1addressable__priority__queue.html#a77223d9646a7a8d7dcaa4f7896b3175e", null ],
     [ "erase", "classfoxxll_1_1addressable__priority__queue.html#acf572f57e5e0c6125afc79bc030bb315", null ],
     [ "insert", "classfoxxll_1_1addressable__priority__queue.html#af79940b13cda4561d46f7ab019292e9a", null ],
     [ "pop", "classfoxxll_1_1addressable__priority__queue.html#aebc3bc6b7b2c67f6bdd25f90f99947bf", null ],
-    [ "top", "classfoxxll_1_1addressable__priority__queue.html#a357c520a0b26e1af8cdeaa2ba6485ce6", null ],
+    [ "top", "classfoxxll_1_1addressable__priority__queue.html#afe2fa1c63506c497c6a4df2bde3272ab", null ],
     [ "meta", "classfoxxll_1_1addressable__priority__queue.html#ab1aef91dca0072ff09a3d3c48b066be0", null ],
     [ "vals", "classfoxxll_1_1addressable__priority__queue.html#aa7ee8976cc43aa3dfe830adfd2ab5b5d", null ]
 ];

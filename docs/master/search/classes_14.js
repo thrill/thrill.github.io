@@ -1,8 +1,7 @@
 var searchData=
 [
   ['value_5fcompare',['value_compare',['../classtlx_1_1BTree_1_1value__compare.html',1,'tlx::BTree']]],
-  ['valuecomparator',['ValueComparator',['../structthrill_1_1api_1_1GroupByNode_1_1ValueComparator.html',1,'thrill::api::GroupByNode']]],
-  ['valuecomparator',['ValueComparator',['../classthrill_1_1api_1_1GroupToIndexNode_1_1ValueComparator.html',1,'thrill::api::GroupToIndexNode']]],
+  ['valuecomparator',['ValueComparator',['../structthrill_1_1api_1_1GroupByNode_1_1ValueComparator.html',1,'GroupByNode&lt; ValueType, KeyExtractor, GroupFunction, HashFunction, UseLocationDetection &gt;::ValueComparator'],['../classthrill_1_1api_1_1GroupToIndexNode_1_1ValueComparator.html',1,'GroupToIndexNode&lt; ValueType, KeyExtractor, GroupFunction &gt;::ValueComparator']]],
   ['vector',['Vector',['../classthrill_1_1common_1_1Vector.html',1,'thrill::common']]],
   ['vector_3c_20d_2c_20double_20_3e',['Vector&lt; D, double &gt;',['../classthrill_1_1common_1_1Vector.html',1,'thrill::common']]],
   ['vectorconcat',['VectorConcat',['../classthrill_1_1common_1_1VectorConcat.html',1,'thrill::common']]],

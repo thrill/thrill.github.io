@@ -3,7 +3,7 @@ var classthrill_1_1core_1_1MultiwayMergeTree =
     [ "LoserTreeType", "classthrill_1_1core_1_1MultiwayMergeTree.html#a7ee5dfe5847f3447c83d15694fe81628", null ],
     [ "Reader", "classthrill_1_1core_1_1MultiwayMergeTree.html#aa71240154b372bca01a04325047dc154", null ],
     [ "MultiwayMergeTree", "classthrill_1_1core_1_1MultiwayMergeTree.html#ac9755291ee1bbe6d2bc68a98542afa99", null ],
-    [ "HasNext", "classthrill_1_1core_1_1MultiwayMergeTree.html#a083952563949a6a6d009f67a26a2b207", null ],
+    [ "HasNext", "classthrill_1_1core_1_1MultiwayMergeTree.html#a492b74c019a5180c5d96772dca204344", null ],
     [ "Next", "classthrill_1_1core_1_1MultiwayMergeTree.html#aded586c61712d9849dd08f4ab9f2960e", null ],
     [ "NextWithSource", "classthrill_1_1core_1_1MultiwayMergeTree.html#a97f27207d87af0e9eca8b06c608ed513", null ],
     [ "current_", "classthrill_1_1core_1_1MultiwayMergeTree.html#a3866368e004c06de4d3562986d3b67ad", null ],

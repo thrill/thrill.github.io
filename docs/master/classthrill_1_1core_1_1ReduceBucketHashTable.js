@@ -13,7 +13,7 @@ var classthrill_1_1core_1_1ReduceBucketHashTable =
     [ "FlushPartitionEmit", "classthrill_1_1core_1_1ReduceBucketHashTable.html#a2c1ccc03f5e72474f43c0c3bcee2cd66", null ],
     [ "Initialize", "classthrill_1_1core_1_1ReduceBucketHashTable.html#a15553bb11319296f7e29f76a981b3769", null ],
     [ "Insert", "classthrill_1_1core_1_1ReduceBucketHashTable.html#a44ef62d055e63c7a5ce16005b5999c4e", null ],
-    [ "num_blocks", "classthrill_1_1core_1_1ReduceBucketHashTable.html#ae0f9086a50c83cba3e748cd7f2ab44ce", null ],
+    [ "num_blocks", "classthrill_1_1core_1_1ReduceBucketHashTable.html#ab5890721717e43b9aa0f4d320ec29081", null ],
     [ "operator=", "classthrill_1_1core_1_1ReduceBucketHashTable.html#a58b61e3b7f3cf27eecfb2d17a6610c8d", null ],
     [ "SpillAnyPartition", "classthrill_1_1core_1_1ReduceBucketHashTable.html#ac71794ce581588eff599a92d05cb5590", null ],
     [ "SpillLargestPartition", "classthrill_1_1core_1_1ReduceBucketHashTable.html#abac425293e2872d6ebb7d560f3f68430", null ],

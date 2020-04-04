@@ -1,6 +1,5 @@
 var namespacefoxxll =
 [
-    [ "async_schedule_local", "namespacefoxxll_1_1async__schedule__local.html", null ],
     [ "mng_local", "namespacefoxxll_1_1mng__local.html", "namespacefoxxll_1_1mng__local" ],
     [ "addressable_fifo_queue", "classfoxxll_1_1addressable__fifo__queue.html", "classfoxxll_1_1addressable__fifo__queue" ],
     [ "addressable_priority_queue", "classfoxxll_1_1addressable__priority__queue.html", "classfoxxll_1_1addressable__priority__queue" ],

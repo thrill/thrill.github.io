@@ -3,7 +3,7 @@ var classthrill_1_1net_1_1mpi_1_1Connection =
     [ "Initialize", "classthrill_1_1net_1_1mpi_1_1Connection.html#a1ffca0329281dde6ba84e6d019db8f43", null ],
     [ "IsValid", "classthrill_1_1net_1_1mpi_1_1Connection.html#ada0eaf84b2b8c8db68d6d24ad1a0a34a", null ],
     [ "OutputOstream", "classthrill_1_1net_1_1mpi_1_1Connection.html#a5251ac59eda56f8f0bb921601aafd7ec", null ],
-    [ "peer", "classthrill_1_1net_1_1mpi_1_1Connection.html#ab85cd94150e5399f80bf966b8ce79436", null ],
+    [ "peer", "classthrill_1_1net_1_1mpi_1_1Connection.html#ad36b7cd92c673ef55baaf24ea40adaab", null ],
     [ "RecvOne", "classthrill_1_1net_1_1mpi_1_1Connection.html#a2ee6939b8787f7fc2c094ea6c87f2583", null ],
     [ "SendOne", "classthrill_1_1net_1_1mpi_1_1Connection.html#afb5baefcdab8f0a9a60cf7544ba4a3cd", null ],
     [ "SyncRecv", "classthrill_1_1net_1_1mpi_1_1Connection.html#a2f079115a37b4e247a4fef111372f326", null ],

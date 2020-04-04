@@ -1,7 +1,7 @@
 var classtlx_1_1ThreadBarrierMutex =
 [
     [ "ThreadBarrierMutex", "classtlx_1_1ThreadBarrierMutex.html#a88e2d939cb066376dd0bad4fe2eb133a", null ],
-    [ "step", "classtlx_1_1ThreadBarrierMutex.html#aef44efce49e2e1c99c00fb249db7db06", null ],
+    [ "step", "classtlx_1_1ThreadBarrierMutex.html#a2bedb65d317d52038cf46caf43d0c61c", null ],
     [ "wait", "classtlx_1_1ThreadBarrierMutex.html#aa7147cff241694bcea94e9b281853624", null ],
     [ "wait_yield", "classtlx_1_1ThreadBarrierMutex.html#a270d3adbb1760835844863485b881700", null ],
     [ "counts_", "classtlx_1_1ThreadBarrierMutex.html#ace7c708f60ad948993b89d44642a4473", null ],

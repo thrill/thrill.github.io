@@ -8,7 +8,7 @@ var classfoxxll_1_1ufs__file__base =
     [ "close", "classfoxxll_1_1ufs__file__base.html#a5ae591df94fc66ccb85cbb6565368bca", null ],
     [ "close_remove", "classfoxxll_1_1ufs__file__base.html#a7de5b2452a3824ffeb4e9a05e7f4410b", null ],
     [ "io_type", "classfoxxll_1_1ufs__file__base.html#a1913b5bfc1fd8822e405ccbd377e2be0", null ],
-    [ "is_device", "classfoxxll_1_1ufs__file__base.html#af1f180de80a1d3027f7fe26c63165a36", null ],
+    [ "is_device", "classfoxxll_1_1ufs__file__base.html#adc327412f565913c8dbe63fa7e4bb9ae", null ],
     [ "lock", "classfoxxll_1_1ufs__file__base.html#a614364b9ff05da1b619ef30e1ce5dee0", null ],
     [ "set_size", "classfoxxll_1_1ufs__file__base.html#ab869d78aab63d9868cfc0f6a9105092b", null ],
     [ "size", "classfoxxll_1_1ufs__file__base.html#a81e11ce4438160baf39f2159255ab560", null ],

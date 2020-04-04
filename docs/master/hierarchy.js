@@ -3,7 +3,7 @@ var hierarchy =
     [ "addressable_fifo_queue< swappable_block_identifier_type >", "classfoxxll_1_1addressable__fifo__queue.html", null ],
     [ "addressable_priority_queue< swappable_block_identifier_type, foxxll::block_scheduler_algorithm_offline_lfd::priority >", "classfoxxll_1_1addressable__priority__queue.html", null ],
     [ "AllocatorBase< Byte >", "classtlx_1_1AllocatorBase.html", [
-      [ "AlignedAllocator< Byte, mem::Allocator< char > >", "classthrill_1_1mem_1_1AlignedAllocator.html", null ]
+      [ "AlignedAllocator< Byte, thrill::mem::Allocator< char > >", "classthrill_1_1mem_1_1AlignedAllocator.html", null ]
     ] ],
     [ "AllocatorBase< char >", "classtlx_1_1AllocatorBase.html", [
       [ "Allocator< char >", "classthrill_1_1mem_1_1Allocator.html", null ]
@@ -27,8 +27,8 @@ var hierarchy =
     ] ],
     [ "ConcurrentBoundedQueue< thrill::data::Block >", "classthrill_1_1common_1_1ConcurrentBoundedQueue.html", null ],
     [ "ConcurrentBoundedQueue< thrill::data::MixBlockQueue::SrcBlockPair >", "classthrill_1_1common_1_1ConcurrentBoundedQueue.html", null ],
-    [ "ConcurrentBoundedQueue< thrill::net::mock::Connection * >", "classthrill_1_1common_1_1ConcurrentBoundedQueue.html", null ],
-    [ "ConcurrentQueue< tlx::Delegate, mem::GPoolAllocator< tlx::Delegate > >", "classthrill_1_1common_1_1ConcurrentQueue.html", null ],
+    [ "ConcurrentBoundedQueue< thrill::net::mock::Connection *>", "classthrill_1_1common_1_1ConcurrentBoundedQueue.html", null ],
+    [ "ConcurrentQueue< tlx::Delegate, thrill::mem::FixedPoolAllocator< tlx::Delegate > >", "classthrill_1_1common_1_1ConcurrentQueue.html", null ],
     [ "CountingPtr< ActionNode >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< ActionResultNode< ValueType > >", "classtlx_1_1CountingPtr.html", null ],
     [ "CountingPtr< base_file_type >", "classtlx_1_1CountingPtr.html", null ],
@@ -55,19 +55,20 @@ var hierarchy =
     [ "Delegate< void(MPI_Status &), mem::GPoolAllocator< char > >", "classtlx_1_1Delegate.html", null ],
     [ "Delegate< void(request *r, bool success)>", "classtlx_1_1Delegate.html", null ],
     [ "Delegate< void(size_t)>", "classtlx_1_1Delegate.html", null ],
+    [ "DIA< BfsNode >", "classthrill_1_1api_1_1DIA.html", null ],
     [ "element_block< Type, Size >", "classfoxxll_1_1mng__local_1_1element__block.html", [
-      [ "block_w_bids< Type,((RawSize-sizeof(BID< RawSize >)*NBids)/sizeof(Type)), RawSize, NBids >", "classfoxxll_1_1mng__local_1_1block__w__bids.html", [
-        [ "block_w_info< Type, RawSize, NBids, void >", "classfoxxll_1_1mng__local_1_1block__w__info_3_01Type_00_01RawSize_00_01NBids_00_01void_01_4.html", null ]
-      ] ],
-      [ "block_w_bids< Type,((RawSize-sizeof(BID< RawSize >)*NBids-sizeof(MetaInfoType))/sizeof(Type)), RawSize, NBids >", "classfoxxll_1_1mng__local_1_1block__w__bids.html", [
+      [ "block_w_bids< Type,((RawSize - sizeof(BID< RawSize >) *NBids - sizeof(MetaInfoType))/sizeof(Type)), RawSize, NBids >", "classfoxxll_1_1mng__local_1_1block__w__bids.html", [
         [ "block_w_info< Type, RawSize, NRef, MetaInfoType >", "classfoxxll_1_1mng__local_1_1block__w__info.html", [
-          [ "add_filler< mng_local::block_w_info< Type, RawSize, NRef, MetaInfoType >, RawSize-sizeof(mng_local::block_w_info< Type, RawSize, NRef, MetaInfoType >)>", "classfoxxll_1_1mng__local_1_1add__filler.html", [
+          [ "add_filler< mng_local::block_w_info< Type, RawSize, NRef, MetaInfoType >, RawSize - sizeof(mng_local::block_w_info< Type, RawSize, NRef, MetaInfoType >)>", "classfoxxll_1_1mng__local_1_1add__filler.html", [
             [ "expand_struct< mng_local::block_w_info< Type, RawSize, NRef, MetaInfoType >, RawSize >", "classfoxxll_1_1mng__local_1_1expand__struct.html", [
               [ "typed_block< RawSize, Type, NRef, MetaInfoType >", "classfoxxll_1_1typed__block.html", null ]
             ] ]
           ] ]
         ] ],
         [ "block_w_info< Type, RawSize, NBids, MetaInfoType >", "classfoxxll_1_1mng__local_1_1block__w__info.html", null ]
+      ] ],
+      [ "block_w_bids< Type,((RawSize - sizeof(BID< RawSize >) *NBids)/sizeof(Type)), RawSize, NBids >", "classfoxxll_1_1mng__local_1_1block__w__bids.html", [
+        [ "block_w_info< Type, RawSize, NBids, void >", "classfoxxll_1_1mng__local_1_1block__w__info_3_01Type_00_01RawSize_00_01NBids_00_01void_01_4.html", null ]
       ] ],
       [ "block_w_bids< Type, Size, RawSize, NBids >", "classfoxxll_1_1mng__local_1_1block__w__bids.html", null ],
       [ "block_w_bids< Type, Size, RawSize, 0 >", "classfoxxll_1_1mng__local_1_1block__w__bids_3_01Type_00_01Size_00_01RawSize_00_010_01_4.html", null ]
@@ -193,6 +194,7 @@ var hierarchy =
     [ "uint_pair< HighType >", "classfoxxll_1_1uint__pair.html", null ],
     [ "write_pool< BlockType >", "classfoxxll_1_1write__pool.html", null ],
     [ "write_pool< BlockType >::busy_entry", "structfoxxll_1_1write__pool_1_1busy__entry.html", null ],
+    [ "FunctionStack< BfsNode >", "classtlx_1_1FunctionStack.html", null ],
     [ "GradientResult< thrill::common::Vector >", "structexamples_1_1stochastic__gradient__descent_1_1GradientResult.html", null ],
     [ "hypergeometric_distribution<>", "classthrill_1_1common_1_1hypergeometric__distribution.html", null ],
     [ "ItemReaderToolsBase< BlockReader< BlockSource > >", "classthrill_1_1common_1_1ItemReaderToolsBase.html", [
@@ -217,7 +219,7 @@ var hierarchy =
     [ "ItemWriterToolsBase< VectorWriter >", "classthrill_1_1common_1_1ItemWriterToolsBase.html", null ],
     [ "LocationDetection< thrill::api::GroupByNode::HashCount >", "classthrill_1_1core_1_1LocationDetection.html", null ],
     [ "LocationDetection< thrill::api::JoinNode::HashCount >", "classthrill_1_1core_1_1LocationDetection.html", null ],
-    [ "LruCacheSet< thrill::data::ByteBlock *, mem::GPoolAllocator< thrill::data::ByteBlock * > >", "classtlx_1_1LruCacheSet.html", null ],
+    [ "LruCacheSet< thrill::data::ByteBlock *, thrill::mem::FixedPoolAllocator< thrill::data::ByteBlock *> >", "classtlx_1_1LruCacheSet.html", null ],
     [ "type", null, [
       [ "make_index_sequence< Size >", "structtlx_1_1make__index__sequence.html", null ]
     ] ],
@@ -231,8 +233,8 @@ var hierarchy =
     [ "ReducePrePhase< TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig, IndexFunction, EqualToFunction, HashFunction, false >", "classthrill_1_1core_1_1ReducePrePhase.html", [
       [ "ReducePrePhase< TableItem, Key, Value, KeyExtractor, ReduceFunction, VolatileKey, BlockWriter, ReduceConfig, IndexFunction, EqualToFunction, HashFunction, true >", "classthrill_1_1core_1_1ReducePrePhase_3_01TableItem_00_01Key_00_01Value_00_01KeyExtractor_00_01R21d271c26c94d68a392fc2ad1836161c.html", null ]
     ] ],
-    [ "ReducePrePhase< TableItem, Key, ValueType, KeyExtractor, ReduceFunction, VolatileKey, data::Stream::Writer, ReduceConfig, core::ReduceByIndex< Key > >", "classthrill_1_1core_1_1ReducePrePhase.html", null ],
-    [ "ReducePrePhase< TableItem, Key, ValueType, KeyExtractor, ReduceFunction, VolatileKey, data::Stream::Writer, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction, KeyHashFunction, UseDuplicateDetection >", "classthrill_1_1core_1_1ReducePrePhase.html", null ],
+    [ "ReducePrePhase< TableItem, Key, ValueType, KeyExtractor, ReduceFunction, VolatileKey, thrill::data::BlockWriter, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction, KeyHashFunction, UseDuplicateDetection >", "classthrill_1_1core_1_1ReducePrePhase.html", null ],
+    [ "ReducePrePhase< TableItem, Key, ValueType, KeyExtractor, ReduceFunction, VolatileKey, thrill::data::BlockWriter, ReduceConfig, thrill::core::ReduceByIndex< Key > >", "classthrill_1_1core_1_1ReducePrePhase.html", null ],
     [ "ReduceTable< TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig, IndexFunction, KeyEqualFunction >", "classthrill_1_1core_1_1ReduceTable.html", [
       [ "ReduceBucketHashTable< TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig, IndexFunction, KeyEqualFunction >", "classthrill_1_1core_1_1ReduceBucketHashTable.html", null ]
     ] ],
@@ -244,8 +246,8 @@ var hierarchy =
     [ "ReduceTableSelect< ReduceConfig::table_impl_, TableItem, Key, Value, KeyExtractor, ReduceFunction, Emitter, VolatileKey, ReduceConfig, IndexFunction, KeyEqualFunction >", "classthrill_1_1core_1_1ReduceTableSelect.html", null ],
     [ "ReduceTableSelect< ReduceConfig::table_impl_, TableItem, Key, Value, KeyExtractor, ReduceFunction, PhaseEmitter, VolatileKey, ReduceConfig, IndexFunction, KeyEqualFunction >", "classthrill_1_1core_1_1ReduceTableSelect.html", null ],
     [ "ReduceTableSelect< ReduceConfig::table_impl_, TableItem, Key, ValueType, KeyExtractor, ReduceFunction, PhaseEmitter, VolatileKey, ReduceConfig, thrill::core::ReduceByHash, KeyEqualFunction >", "classthrill_1_1core_1_1ReduceTableSelect.html", null ],
-    [ "ReduceTableSelect< ReduceConfig::table_impl_, thrill::api::GroupByNode::HashCount, typename thrill::api::GroupByNode::HashCount::HashType, thrill::api::GroupByNode::HashCount, ExtractHash, std::plus< thrill::api::GroupByNode::HashCount >, Emitter, false, ReduceConfig >", "classthrill_1_1core_1_1ReduceTableSelect.html", null ],
-    [ "ReduceTableSelect< ReduceConfig::table_impl_, thrill::api::JoinNode::HashCount, typename thrill::api::JoinNode::HashCount::HashType, thrill::api::JoinNode::HashCount, ExtractHash, std::plus< thrill::api::JoinNode::HashCount >, Emitter, false, ReduceConfig >", "classthrill_1_1core_1_1ReduceTableSelect.html", null ],
+    [ "ReduceTableSelect< ReduceConfig::table_impl_, thrill::api::GroupByNode::HashCount, typename thrill::api::GroupByNode::HashCount ::HashType, thrill::api::GroupByNode::HashCount, ExtractHash, std::plus< thrill::api::GroupByNode::HashCount >, Emitter, false, ReduceConfig >", "classthrill_1_1core_1_1ReduceTableSelect.html", null ],
+    [ "ReduceTableSelect< ReduceConfig::table_impl_, thrill::api::JoinNode::HashCount, typename thrill::api::JoinNode::HashCount ::HashType, thrill::api::JoinNode::HashCount, ExtractHash, std::plus< thrill::api::JoinNode::HashCount >, Emitter, false, ReduceConfig >", "classthrill_1_1core_1_1ReduceTableSelect.html", null ],
     [ "ReservoirSamplingFast< ValueType, decltype(rng_)>", "classthrill_1_1common_1_1ReservoirSamplingFast.html", null ],
     [ "ReservoirSamplingGrow< SampleIndexPair >", "classthrill_1_1common_1_1ReservoirSamplingGrow.html", null ],
     [ "RingBuffer< Input >", "classtlx_1_1RingBuffer.html", null ],
@@ -253,7 +255,7 @@ var hierarchy =
     [ "shared_state< thread_state >", "classfoxxll_1_1shared__state.html", null ],
     [ "SimpleVector< block_type::raw_size >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< DiffType >", "classtlx_1_1SimpleVector.html", null ],
-    [ "SimpleVector< foxxll::disk_block_allocator * >", "classtlx_1_1SimpleVector.html", null ],
+    [ "SimpleVector< foxxll::disk_block_allocator *>", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< std::thread >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< tlx::CountingPtr >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< tlx::LoserTreeCopyBase::Loser >", "classtlx_1_1SimpleVector.html", null ],
@@ -264,7 +266,7 @@ var hierarchy =
     [ "SimpleVector< tlx::SimpleVector< tlx::parallel_mergesort_detail::PMWMSPiece< DiffType > > >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< tlx::SimpleVector< uint16_t > >", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< uint8_t >", "classtlx_1_1SimpleVector.html", null ],
-    [ "SimpleVector< ValueType * >", "classtlx_1_1SimpleVector.html", null ],
+    [ "SimpleVector< ValueType *>", "classtlx_1_1SimpleVector.html", null ],
     [ "SimpleVector< ValueType >", "classtlx_1_1SimpleVector.html", null ],
     [ "singleton< block_manager >", "classfoxxll_1_1singleton.html", [
       [ "block_manager", "classfoxxll_1_1block__manager.html", null ]
@@ -288,11 +290,7 @@ var hierarchy =
       [ "ComponentSum< std::vector< Type >, Operation >", "classthrill_1_1common_1_1ComponentSum_3_01std_1_1vector_3_01Type_01_4_00_01Operation_01_4.html", null ],
       [ "maximum< T >", "classthrill_1_1common_1_1maximum.html", null ],
       [ "minimum< T >", "classthrill_1_1common_1_1minimum.html", null ],
-      [ "VectorConcat< Type >", "classthrill_1_1common_1_1VectorConcat.html", null ],
-      [ "lexicographic< T1, T2, Comparator >", "classtlx_1_1multisequence__partition__detail_1_1lexicographic.html", null ],
-      [ "lexicographic_rev< T1, T2, Comparator >", "classtlx_1_1multisequence__partition__detail_1_1lexicographic__rev.html", null ],
-      [ "lexicographic< T1, T2, Comparator >", "classtlx_1_1multisequence__selection__detail_1_1lexicographic.html", null ],
-      [ "lexicographic_rev< T1, T2, Comparator >", "classtlx_1_1multisequence__selection__detail_1_1lexicographic__rev.html", null ]
+      [ "VectorConcat< Type >", "classthrill_1_1common_1_1VectorConcat.html", null ]
     ] ],
     [ "exception", null, [
       [ "ios_base::failure", null, [
@@ -330,7 +328,7 @@ var hierarchy =
       [ "Delegate< R(A...), Allocator >::IsMemberPair< MemberPair< C > >", "structtlx_1_1Delegate_3_01R_07A_8_8_8_08_00_01Allocator_01_4_1_1IsMemberPair_3_01MemberPair_3_01C_01_4_01_4.html", null ],
       [ "is_std_array< std::array< T, N > >", "structtlx_1_1is__std__array_3_01std_1_1array_3_01T_00_01N_01_4_01_4.html", null ],
       [ "is_std_pair< std::pair< S, T > >", "structtlx_1_1is__std__pair_3_01std_1_1pair_3_01S_00_01T_01_4_01_4.html", null ],
-      [ "is_std_tuple< std::tuple< Ts...> >", "structtlx_1_1is__std__tuple_3_01std_1_1tuple_3_01Ts_8_8_8_4_01_4.html", null ],
+      [ "is_std_tuple< std::tuple< Ts... > >", "structtlx_1_1is__std__tuple_3_01std_1_1tuple_3_01Ts_8_8_8_01_4_01_4.html", null ],
       [ "is_std_vector< std::vector< T > >", "structtlx_1_1is__std__vector_3_01std_1_1vector_3_01T_01_4_01_4.html", null ]
     ] ],
     [ "vector< T >", null, [
@@ -354,6 +352,7 @@ var hierarchy =
     [ "BernoulliSampleNode< ValueType >", "classthrill_1_1api_1_1BernoulliSampleNode.html", null ],
     [ "CollapseSwitch< ValueType, Stack >", "structthrill_1_1api_1_1CollapseSwitch.html", null ],
     [ "CollapseSwitch< ValueType, tlx::FunctionStack< ValueType > >", "structthrill_1_1api_1_1CollapseSwitch_3_01ValueType_00_01tlx_1_1FunctionStack_3_01ValueType_01_4_01_4.html", null ],
+    [ "ConcatNode< ValueType >::RegisterParent", "classthrill_1_1api_1_1ConcatNode_1_1RegisterParent.html", null ],
     [ "Context", "classthrill_1_1api_1_1Context.html", null ],
     [ "CutTag", "structthrill_1_1api_1_1CutTag.html", null ],
     [ "DefaultSortAlgorithm", "classthrill_1_1api_1_1DefaultSortAlgorithm.html", null ],
@@ -377,6 +376,7 @@ var hierarchy =
     [ "MemoryConfig", "classthrill_1_1api_1_1MemoryConfig.html", null ],
     [ "MergeNode< ValueType, Comparator, kNumInputs >::Pivot", "structthrill_1_1api_1_1MergeNode_1_1Pivot.html", null ],
     [ "MergeNode< ValueType, Comparator, kNumInputs >::ReducePivots", "classthrill_1_1api_1_1MergeNode_1_1ReducePivots.html", null ],
+    [ "MergeNode< ValueType, Comparator, kNumInputs >::RegisterParent", "classthrill_1_1api_1_1MergeNode_1_1RegisterParent.html", null ],
     [ "MergeNode< ValueType, Comparator, kNumInputs >::Stats", "classthrill_1_1api_1_1MergeNode_1_1Stats.html", null ],
     [ "NoRebalanceTag", "structthrill_1_1api_1_1NoRebalanceTag.html", null ],
     [ "PadTag", "structthrill_1_1api_1_1PadTag.html", null ],
@@ -392,6 +392,7 @@ var hierarchy =
     [ "SortNode< ValueType, CompareFunction, SortAlgorithm, Stable >::MakeDefaultMultiwayMergeTree", "structthrill_1_1api_1_1SortNode_1_1MakeDefaultMultiwayMergeTree.html", null ],
     [ "SortNode< ValueType, CompareFunction, SortAlgorithm, Stable >::MakeStableMultiwayMergeTree", "structthrill_1_1api_1_1SortNode_1_1MakeStableMultiwayMergeTree.html", null ],
     [ "SortNode< ValueType, CompareFunction, SortAlgorithm, Stable >::TreeBuilder", "classthrill_1_1api_1_1SortNode_1_1TreeBuilder.html", null ],
+    [ "UnionNode< ValueType >::RegisterParent", "classthrill_1_1api_1_1UnionNode_1_1RegisterParent.html", null ],
     [ "UnionNode< ValueType >::UnionChild", "structthrill_1_1api_1_1UnionNode_1_1UnionChild.html", null ],
     [ "VolatileKeyFlag< Value >", "structthrill_1_1api_1_1VolatileKeyFlag.html", null ],
     [ "ZipNode< ValueType, ZipFunction, Pad, UnequalCheck, NoRebalance, kNumInputs >::ReaderNext< Reader >", "classthrill_1_1api_1_1ZipNode_1_1ReaderNext.html", null ],
@@ -401,7 +402,7 @@ var hierarchy =
     [ "ZipWindowReader< ZipWindowNode, false >", "classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01false_01_4.html", null ],
     [ "ZipWindowReader< ZipWindowNode, true >", "classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01true_01_4.html", null ],
     [ "ZipWindowTraits< ReturnType(*)(Args...)>", "structthrill_1_1api_1_1ZipWindowTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4.html", null ],
-    [ "ZipWindowTraits< ReturnType(ClassType::*)(Args...) const  >", "structthrill_1_1api_1_1ZipWindowTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4.html", [
+    [ "ZipWindowTraits< ReturnType(ClassType::*)(Args...) const >", "structthrill_1_1api_1_1ZipWindowTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_4.html", [
       [ "ZipWindowTraits< ReturnType(ClassType::*)(Args...)>", "structthrill_1_1api_1_1ZipWindowTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_4.html", null ]
     ] ],
     [ "alias_cast_helper< To, From >", "structthrill_1_1common_1_1alias__cast__helper.html", null ],
@@ -410,7 +411,7 @@ var hierarchy =
     [ "ConcurrentBoundedQueue< T >", "classthrill_1_1common_1_1ConcurrentBoundedQueue.html", null ],
     [ "ConcurrentQueue< T, Allocator >", "classthrill_1_1common_1_1ConcurrentQueue.html", null ],
     [ "FunctionTraits< ReturnType(*)(Args...)>", "structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4.html", null ],
-    [ "FunctionTraits< ReturnType(ClassType::*)(Args...) const  >", "structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4.html", [
+    [ "FunctionTraits< ReturnType(ClassType::*)(Args...) const >", "structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_4.html", [
       [ "FunctionTraits< ReturnType(ClassType::*)(Args...)>", "structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_4.html", null ]
     ] ],
     [ "HashCrc32Fallback< ValueType >", "structthrill_1_1common_1_1HashCrc32Fallback.html", null ],
@@ -510,7 +511,9 @@ var hierarchy =
     [ "BlockSink", "classthrill_1_1data_1_1BlockSink.html", [
       [ "BlockQueue", "classthrill_1_1data_1_1BlockQueue.html", null ],
       [ "BlockQueueSink", "classthrill_1_1data_1_1BlockQueueSink.html", null ],
-      [ "BoundedBlockSink", "classthrill_1_1data_1_1BoundedBlockSink.html", null ],
+      [ "BoundedBlockSink", "classthrill_1_1data_1_1BoundedBlockSink.html", [
+        [ "WriteBinaryNode< ValueType >::SysFileSink", "classthrill_1_1api_1_1WriteBinaryNode_1_1SysFileSink.html", null ]
+      ] ],
       [ "DiscardSink", "classthrill_1_1data_1_1DiscardSink.html", null ],
       [ "File", "classthrill_1_1data_1_1File.html", null ],
       [ "FileBlockSink", "classthrill_1_1data_1_1FileBlockSink.html", null ],
@@ -523,9 +526,9 @@ var hierarchy =
     [ "ConsumeFileBlockSource", "classthrill_1_1data_1_1ConsumeFileBlockSource.html", null ],
     [ "TupleDeserializer< Archive, RevIndex, T, Args >", "structthrill_1_1data_1_1detail_1_1TupleDeserializer.html", null ],
     [ "TupleDeserializer< Archive, 0, std::tuple<> >", "structthrill_1_1data_1_1detail_1_1TupleDeserializer_3_01Archive_00_010_00_01std_1_1tuple_3_4_01_4.html", null ],
-    [ "TupleDeserializer< Archive, RevIndex, std::tuple< T, Args...> >", "structthrill_1_1data_1_1detail_1_1TupleDeserializer_3_01Archive_00_01RevIndex_00_01std_1_1tuple_3_01T_00_01Args_8_8_8_4_01_4.html", null ],
+    [ "TupleDeserializer< Archive, RevIndex, std::tuple< T, Args... > >", "structthrill_1_1data_1_1detail_1_1TupleDeserializer_3_01Archive_00_01RevIndex_00_01std_1_1tuple_3_01T_00_01Args_8_8_8_01_4_01_4.html", null ],
     [ "TupleSerialization< Archive, RevIndex, Args >", "structthrill_1_1data_1_1detail_1_1TupleSerialization.html", null ],
-    [ "TupleSerialization< Archive, 0, Args...>", "structthrill_1_1data_1_1detail_1_1TupleSerialization_3_01Archive_00_010_00_01Args_8_8_8_4.html", null ],
+    [ "TupleSerialization< Archive, 0, Args... >", "structthrill_1_1data_1_1detail_1_1TupleSerialization_3_01Archive_00_010_00_01Args_8_8_8_01_4.html", null ],
     [ "DynBlockSource", "classthrill_1_1data_1_1DynBlockSource.html", null ],
     [ "KeepFileBlockSource", "classthrill_1_1data_1_1KeepFileBlockSource.html", null ],
     [ "MixBlockQueue", "classthrill_1_1data_1_1MixBlockQueue.html", null ],
@@ -541,7 +544,7 @@ var hierarchy =
     [ "Serialization< Archive, std::array< T, N >, typename std::enable_if< !std::is_pod< std::array< T, N > >::value >::type >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1array_3_01T_00_01N_01_4_00_01typendd6da9eb5a32d8f993226f7c7b486035.html", null ],
     [ "Serialization< Archive, std::pair< U, V > >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1pair_3_01U_00_01V_01_4_01_4.html", null ],
     [ "Serialization< Archive, std::string >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1string_01_4.html", null ],
-    [ "Serialization< Archive, std::tuple< Args...> >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1tuple_3_01Args_8_8_8_4_01_4.html", null ],
+    [ "Serialization< Archive, std::tuple< Args... > >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4.html", null ],
     [ "Serialization< Archive, std::vector< T > >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01std_1_1vector_3_01T_01_4_01_4.html", null ],
     [ "Serialization< Archive, T, typename std::enable_if< cereal::traits::is_input_serializable< T, Archive >::value &&!std::is_pod< T >::value &&!std::is_same< T, std::string >::value &&!tlx::is_std_pair< T >::value &&!tlx::is_std_array< T >::value &&!tlx::is_std_vector< T >::value &&!tlx::is_std_tuple< T >::value >::type >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01ce5d6e20fe42ba95a9a6db50ee3d26580.html", null ],
     [ "Serialization< Archive, T, typename std::enable_if< has_member_thrill_is_fixed_size< T >::value >::type >", "structthrill_1_1data_1_1Serialization_3_01Archive_00_01T_00_01typename_01std_1_1enable__if_3_01hd08c951b6c13e047834610b1a9aacbeb.html", null ],
@@ -653,6 +656,8 @@ var hierarchy =
     [ "enable_if< true, T >", "structtlx_1_1enable__if_3_01true_00_01T_01_4.html", null ],
     [ "FunctionChain< Functors >", "classtlx_1_1FunctionChain.html", null ],
     [ "FunctionStack< Input_, Functors >", "classtlx_1_1FunctionStack.html", null ],
+    [ "has_ostream_operator< typename, typename >", "structtlx_1_1has__ostream__operator.html", null ],
+    [ "declval< std::ostream & >()<< std::declval< Type const & >(), void())>", "structtlx_1_1has__ostream__operator_3_01Type_00_01decltype_07std_1_1declval_3_01std_1_1ostream_06b744f30b39306299f1971daf5fa9614.html", null ],
     [ "index_sequence< Indexes >", "structtlx_1_1index__sequence.html", null ],
     [ "less_icase_asc", "structtlx_1_1less__icase__asc.html", null ],
     [ "less_icase_desc", "structtlx_1_1less__icase__desc.html", null ],
@@ -674,7 +679,7 @@ var hierarchy =
     [ "LoggerFormatter< std::multiset< T, C, A > >", "classtlx_1_1LoggerFormatter_3_01std_1_1multiset_3_01T_00_01C_00_01A_01_4_01_4.html", null ],
     [ "LoggerFormatter< std::pair< A, B > >", "classtlx_1_1LoggerFormatter_3_01std_1_1pair_3_01A_00_01B_01_4_01_4.html", null ],
     [ "LoggerFormatter< std::set< T, C, A > >", "classtlx_1_1LoggerFormatter_3_01std_1_1set_3_01T_00_01C_00_01A_01_4_01_4.html", null ],
-    [ "LoggerFormatter< std::tuple< Args...> >", "classtlx_1_1LoggerFormatter_3_01std_1_1tuple_3_01Args_8_8_8_4_01_4.html", null ],
+    [ "LoggerFormatter< std::tuple< Args... > >", "classtlx_1_1LoggerFormatter_3_01std_1_1tuple_3_01Args_8_8_8_01_4_01_4.html", null ],
     [ "LoggerFormatter< std::tuple<> >", "classtlx_1_1LoggerFormatter_3_01std_1_1tuple_3_4_01_4.html", null ],
     [ "LoggerFormatter< std::unordered_map< K, V, H, E, A > >", "classtlx_1_1LoggerFormatter_3_01std_1_1unordered__map_3_01K_00_01V_00_01H_00_01E_00_01A_01_4_01_4.html", null ],
     [ "LoggerFormatter< std::unordered_multimap< K, V, H, E, A > >", "classtlx_1_1LoggerFormatter_3_01std_1_1unordered__multimap_3_01K_00_01V_00_01H_00_01E_00_01A_01_4_01_4.html", null ],
@@ -714,9 +719,13 @@ var hierarchy =
     [ "CallForRangeImpl< Index, Size, Functor >", "classtlx_1_1meta__detail_1_1CallForRangeImpl.html", null ],
     [ "CallForRangeImpl< Index, 0, Functor >", "classtlx_1_1meta__detail_1_1CallForRangeImpl_3_01Index_00_010_00_01Functor_01_4.html", null ],
     [ "make_index_sequence_helper< CurrentIndex, Indexes >", "structtlx_1_1meta__detail_1_1make__index__sequence__helper.html", null ],
-    [ "make_index_sequence_helper< 0, Indexes...>", "structtlx_1_1meta__detail_1_1make__index__sequence__helper_3_010_00_01Indexes_8_8_8_4.html", null ],
+    [ "make_index_sequence_helper< 0, Indexes... >", "structtlx_1_1meta__detail_1_1make__index__sequence__helper_3_010_00_01Indexes_8_8_8_01_4.html", null ],
     [ "VMapForRangeImpl< Index, Size, Functor >", "classtlx_1_1meta__detail_1_1VMapForRangeImpl.html", null ],
     [ "VMapForRangeImpl< Index, 0, Functor >", "classtlx_1_1meta__detail_1_1VMapForRangeImpl_3_01Index_00_010_00_01Functor_01_4.html", null ],
+    [ "lexicographic< T1, T2, Comparator >", "classtlx_1_1multisequence__partition__detail_1_1lexicographic.html", null ],
+    [ "lexicographic_rev< T1, T2, Comparator >", "classtlx_1_1multisequence__partition__detail_1_1lexicographic__rev.html", null ],
+    [ "lexicographic< T1, T2, Comparator >", "classtlx_1_1multisequence__selection__detail_1_1lexicographic.html", null ],
+    [ "lexicographic_rev< T1, T2, Comparator >", "classtlx_1_1multisequence__selection__detail_1_1lexicographic__rev.html", null ],
     [ "MultiTimer", "classtlx_1_1MultiTimer.html", null ],
     [ "guarded_iterator< RandomAccessIterator, Comparator >", "classtlx_1_1multiway__merge__detail_1_1guarded__iterator.html", null ],
     [ "unguarded_iterator< RandomAccessIterator, Comparator >", "classtlx_1_1multiway__merge__detail_1_1unguarded__iterator.html", null ],
@@ -820,7 +829,7 @@ var hierarchy =
         [ "MixStreamData", "classthrill_1_1data_1_1MixStreamData.html", null ]
       ] ],
       [ "StreamSetBase", "classthrill_1_1data_1_1StreamSetBase.html", [
-        [ "StreamSet< Stream >", "classthrill_1_1data_1_1StreamSet.html", null ]
+        [ "StreamSet< StreamData >", "classthrill_1_1data_1_1StreamSet.html", null ]
       ] ],
       [ "ReadStream", "classthrill_1_1vfs_1_1ReadStream.html", null ],
       [ "WriteStream", "classthrill_1_1vfs_1_1WriteStream.html", null ]
@@ -887,7 +896,7 @@ var hierarchy =
       [ "add_filler< BaseType, 0 >", "classfoxxll_1_1mng__local_1_1add__filler_3_01BaseType_00_010_01_4.html", null ]
     ] ],
     [ "Type", null, [
-      [ "add_filler< Type, RawSize-sizeof(Type)>", "classfoxxll_1_1mng__local_1_1add__filler.html", [
+      [ "add_filler< Type, RawSize - sizeof(Type)>", "classfoxxll_1_1mng__local_1_1add__filler.html", [
         [ "expand_struct< Type, RawSize >", "classfoxxll_1_1mng__local_1_1expand__struct.html", null ]
       ] ]
     ] ]

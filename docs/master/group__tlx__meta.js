@@ -7,12 +7,12 @@ var group__tlx__meta =
     ] ],
     [ "FunctionChain", "classtlx_1_1FunctionChain.html", [
       [ "FunctionChain", "classtlx_1_1FunctionChain.html#a46bd07dd339af54250e82936fe9bb992", null ],
-      [ "FunctionChain", "classtlx_1_1FunctionChain.html#aca53db38c24e6b401b249d7596e7d677", null ],
-      [ "fold", "classtlx_1_1FunctionChain.html#ac06f776af42a28453d16ff3705002239", null ],
-      [ "fold_chain", "classtlx_1_1FunctionChain.html#a45565e85f6d1605c8cd66b5edd66238c", null ],
-      [ "operator&", "classtlx_1_1FunctionChain.html#a930ca3d8c54b91413c4847c370780a48", null ],
-      [ "operator()", "classtlx_1_1FunctionChain.html#a45fc06b0e735bf219e881e31ab939334", null ],
-      [ "push", "classtlx_1_1FunctionChain.html#a865f1dca79a29770a2c09ef35d51852f", null ],
+      [ "FunctionChain", "classtlx_1_1FunctionChain.html#a437a6a15e0cc925f4d4ab7378f38b92e", null ],
+      [ "fold", "classtlx_1_1FunctionChain.html#a4d487332d37e7712e189e5f340e80df5", null ],
+      [ "fold_chain", "classtlx_1_1FunctionChain.html#adc07bbb50766f16424b761cccc277908", null ],
+      [ "operator&", "classtlx_1_1FunctionChain.html#a002a0b7522778dd0b30150ef4db59e01", null ],
+      [ "operator()", "classtlx_1_1FunctionChain.html#acd9e79aa0105de7e402fe053f320dd9e", null ],
+      [ "push", "classtlx_1_1FunctionChain.html#a11f2c4a07bc51b549b44ba853849da23", null ],
       [ "chain_", "classtlx_1_1FunctionChain.html#ad64b07d02ed459d83d1b26d2634ae83f", null ],
       [ "empty", "classtlx_1_1FunctionChain.html#a2bb4850fb72ed6359cb85aa86baee45c", null ],
       [ "size", "classtlx_1_1FunctionChain.html#ae8542fe44413919dee9f41ede5a5032d", null ]
@@ -20,11 +20,11 @@ var group__tlx__meta =
     [ "FunctionStack", "classtlx_1_1FunctionStack.html", [
       [ "Input", "classtlx_1_1FunctionStack.html#a5cb44727263190a9529a0a44ab4a69b9", null ],
       [ "FunctionStack", "classtlx_1_1FunctionStack.html#a96d244361dd64def8f02640c782f8c26", null ],
-      [ "FunctionStack", "classtlx_1_1FunctionStack.html#a02d3c4bcd25e82bea25394a4bf69e0d7", null ],
-      [ "fold", "classtlx_1_1FunctionStack.html#ac06f776af42a28453d16ff3705002239", null ],
-      [ "fold_stack", "classtlx_1_1FunctionStack.html#af0bc060d9a25b5b470cd237b6dde786d", null ],
-      [ "operator&", "classtlx_1_1FunctionStack.html#a930ca3d8c54b91413c4847c370780a48", null ],
-      [ "push", "classtlx_1_1FunctionStack.html#a865f1dca79a29770a2c09ef35d51852f", null ],
+      [ "FunctionStack", "classtlx_1_1FunctionStack.html#a5b423160a74e6e3f05e8ead2c890cd6f", null ],
+      [ "fold", "classtlx_1_1FunctionStack.html#a4d487332d37e7712e189e5f340e80df5", null ],
+      [ "fold_stack", "classtlx_1_1FunctionStack.html#a08720a6a546b8f3d1698e432adef63fe", null ],
+      [ "operator&", "classtlx_1_1FunctionStack.html#a002a0b7522778dd0b30150ef4db59e01", null ],
+      [ "push", "classtlx_1_1FunctionStack.html#a11f2c4a07bc51b549b44ba853849da23", null ],
       [ "empty", "classtlx_1_1FunctionStack.html#a2bb4850fb72ed6359cb85aa86baee45c", null ],
       [ "size", "classtlx_1_1FunctionStack.html#ae8542fe44413919dee9f41ede5a5032d", null ],
       [ "stack_", "classtlx_1_1FunctionStack.html#a7979b121ae58ef790d1ae41e775497e6", null ]
@@ -37,7 +37,7 @@ var group__tlx__meta =
     [ "is_std_pair", "structtlx_1_1is__std__pair.html", null ],
     [ "is_std_pair< std::pair< S, T > >", "structtlx_1_1is__std__pair_3_01std_1_1pair_3_01S_00_01T_01_4_01_4.html", null ],
     [ "is_std_tuple", "structtlx_1_1is__std__tuple.html", null ],
-    [ "is_std_tuple< std::tuple< Ts...> >", "structtlx_1_1is__std__tuple_3_01std_1_1tuple_3_01Ts_8_8_8_4_01_4.html", null ],
+    [ "is_std_tuple< std::tuple< Ts... > >", "structtlx_1_1is__std__tuple_3_01std_1_1tuple_3_01Ts_8_8_8_01_4_01_4.html", null ],
     [ "is_std_vector", "structtlx_1_1is__std__vector.html", null ],
     [ "is_std_vector< std::vector< T > >", "structtlx_1_1is__std__vector_3_01std_1_1vector_3_01T_01_4_01_4.html", null ],
     [ "Log2", "classtlx_1_1Log2.html", [
@@ -71,7 +71,7 @@ var group__tlx__meta =
       [ "operator()", "classtlx_1_1NoOperation_3_01void_01_4.html#a000676efc35e7d556136c19bd0ce4643", null ]
     ] ],
     [ "StaticIndex", "structtlx_1_1StaticIndex.html", [
-      [ "operator size_t", "structtlx_1_1StaticIndex.html#a71d124e0deb33bacc550df99ab1e5b25", null ],
+      [ "operator size_t", "structtlx_1_1StaticIndex.html#ae61b1c7e6bc9772d6a5558af46b64f20", null ],
       [ "index", "structtlx_1_1StaticIndex.html#a5db12ccaeb69abb440e410e47b86d6cf", null ]
     ] ],
     [ "TLX_MAKE_HAS_MEMBER", "group__tlx__meta.html#ga57d4934d6831a219db7ed2003093fde9", null ],
@@ -82,13 +82,13 @@ var group__tlx__meta =
     [ "apply_tuple", "group__tlx__meta.html#ga697505eebc05040893022611ce8866c1", null ],
     [ "call_for_range", "group__tlx__meta.html#gaabdeef74e74806d7a81fa708ce9828e2", null ],
     [ "call_for_range", "group__tlx__meta.html#ga2abdae3c630ff66ff635822c14f8c72a", null ],
-    [ "call_foreach", "group__tlx__meta.html#ga754cf6d5c1cb28e539cbc996af91ecb5", null ],
+    [ "call_foreach", "group__tlx__meta.html#gafdc3a00abab0f113b9c11f1a5561d58b", null ],
     [ "call_foreach_tuple", "group__tlx__meta.html#ga592749f0b74d1c116893d4bc880343e3", null ],
     [ "call_foreach_tuple_with_index", "group__tlx__meta.html#ga83551ec4ad5da9352345f7178abeb056", null ],
-    [ "call_foreach_with_index", "group__tlx__meta.html#ga9a8854506459ec185c2bcbdd6fe6428b", null ],
-    [ "fold_left", "group__tlx__meta.html#ga618fa4f3ed4af06a48274926ecd95252", null ],
+    [ "call_foreach_with_index", "group__tlx__meta.html#gadbd0c811df18af6da777f5eb1434e8db", null ],
+    [ "fold_left", "group__tlx__meta.html#ga5b543b9dcbf74a3a06dedaa3ffeae6f8", null ],
     [ "fold_left_tuple", "group__tlx__meta.html#ga81c817d6c9ae0e06f4806fad21d583b8", null ],
-    [ "fold_right", "group__tlx__meta.html#gac6619c87c7a112a16cbeed0ecdd3a07c", null ],
+    [ "fold_right", "group__tlx__meta.html#gaaedde6c312729dd4e4783ea43b90b791", null ],
     [ "fold_right_tuple", "group__tlx__meta.html#ga4e169ed1c415649bc1cd112cf59f56f4", null ],
     [ "make_function_chain", "group__tlx__meta.html#gab2afc1ff7d0b9ea7a6583d0573e36ef7", null ],
     [ "make_function_chain", "group__tlx__meta.html#gadd2b32ffd2415899c6a69ccac4d7138f", null ],
@@ -96,8 +96,8 @@ var group__tlx__meta =
     [ "vexpand", "group__tlx__meta.html#ga44a90b0de44f0e1aa17ae215db35f458", null ],
     [ "vmap_for_range", "group__tlx__meta.html#ga4a1c233e7ab713b8f8f77f7149f2bc4b", null ],
     [ "vmap_for_range", "group__tlx__meta.html#ga36807642146dd614b63d26ed6bba9c19", null ],
-    [ "vmap_foreach", "group__tlx__meta.html#gaf379571cbffcf0273d0203ef53bca2b8", null ],
+    [ "vmap_foreach", "group__tlx__meta.html#ga0ce911b2bcb8fbc0ea881194265f7f5a", null ],
     [ "vmap_foreach_tuple", "group__tlx__meta.html#ga3d427a6295fdc8b9b037794a785e9926", null ],
     [ "vmap_foreach_tuple_with_index", "group__tlx__meta.html#gac60978f8100125dbfddf607bdf0cf412", null ],
-    [ "vmap_foreach_with_index", "group__tlx__meta.html#ga1a5c01183e4cc91ffbec284e8bd9437e", null ]
+    [ "vmap_foreach_with_index", "group__tlx__meta.html#ga5c22687c38478a6d11053bc19f140a16", null ]
 ];

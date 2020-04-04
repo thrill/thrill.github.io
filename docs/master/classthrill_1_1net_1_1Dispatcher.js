@@ -20,7 +20,7 @@ var classthrill_1_1net_1_1Dispatcher =
     [ "Dispatch", "classthrill_1_1net_1_1Dispatcher.html#aa6a1f4b031a0fdda685d8423fb0c0d92", null ],
     [ "DispatchOne", "classthrill_1_1net_1_1Dispatcher.html#a2c1985d161f7c8be981e6a92423d9a99", null ],
     [ "ExceptionCallback", "classthrill_1_1net_1_1Dispatcher.html#a7b4b5d0c7a527b23d84056cb3fc6c87f", null ],
-    [ "HasAsyncWrites", "classthrill_1_1net_1_1Dispatcher.html#a025efc05301eb3c4b93525b9fa190e8b", null ],
+    [ "HasAsyncWrites", "classthrill_1_1net_1_1Dispatcher.html#a049fc0242481c27906b5d86c57d5155f", null ],
     [ "Interrupt", "classthrill_1_1net_1_1Dispatcher.html#a143569e4253c02f69f3afe9fd48b919a", null ],
     [ "Loop", "classthrill_1_1net_1_1Dispatcher.html#a3cc03ff338ebac1a1602f9069f137d5a", null ],
     [ "operator=", "classthrill_1_1net_1_1Dispatcher.html#aaadc0875674af79e302b1aad7bd5cc1f", null ],

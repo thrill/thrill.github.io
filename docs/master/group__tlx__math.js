@@ -17,12 +17,12 @@ var group__tlx__math =
       [ "operator+=", "classtlx_1_1Aggregate.html#a37ee7134e4d76ba9f8eaef7b300fd2ce", null ],
       [ "serialize", "classtlx_1_1Aggregate.html#a471354d71ba97866fe5dabb75f1a016b", null ],
       [ "span", "classtlx_1_1Aggregate.html#a551b2f42da5c0e97d1446d92656e413b", null ],
-      [ "standard_deviation", "classtlx_1_1Aggregate.html#aef63242acc053c992cb02d0206c9a9f2", null ],
-      [ "stdev", "classtlx_1_1Aggregate.html#a2bf0b4bbbc941d70269dbf5d7f7ff52f", null ],
-      [ "sum", "classtlx_1_1Aggregate.html#a12b57ad1352a157d6ee94b701ee0fcf1", null ],
-      [ "total", "classtlx_1_1Aggregate.html#ae1e08c7a6fd34eca886af646b3498768", null ],
-      [ "var", "classtlx_1_1Aggregate.html#a024e7930dbabad01c6f7a067906a6ec5", null ],
-      [ "variance", "classtlx_1_1Aggregate.html#aa0f5b9d28d5875a60664dd890fe29570", null ],
+      [ "standard_deviation", "classtlx_1_1Aggregate.html#a36cfd985bd3b6c414fd9afce870eb07f", null ],
+      [ "stdev", "classtlx_1_1Aggregate.html#a8bb7b4f90c40a3406d61451dc05461c5", null ],
+      [ "sum", "classtlx_1_1Aggregate.html#a6f2123745c321b93452d057837a3844c", null ],
+      [ "total", "classtlx_1_1Aggregate.html#aa0bd001cf074a92905b8ce94ff5e76ae", null ],
+      [ "var", "classtlx_1_1Aggregate.html#aef7c918e5012a7a1068b90ed4e224ccf", null ],
+      [ "variance", "classtlx_1_1Aggregate.html#aaf8977a8e68c269119439b3c0881ff01", null ],
       [ "count_", "classtlx_1_1Aggregate.html#a6b06728795e8f208c0755874665b3a51", null ],
       [ "max_", "classtlx_1_1Aggregate.html#aaf9bdab94087c129e5821251a47c4f2b", null ],
       [ "mean_", "classtlx_1_1Aggregate.html#a830b1880f9dc271a7b6415047d893783", null ],
@@ -47,7 +47,7 @@ var group__tlx__math =
     ] ],
     [ "PolynomialRegression", "classtlx_1_1PolynomialRegression.html", [
       [ "Coefficients", "structtlx_1_1PolynomialRegression_1_1Coefficients.html", [
-        [ "evaluate", "structtlx_1_1PolynomialRegression_1_1Coefficients.html#a777eb4e94305f08439d22c8fb65d5560", null ]
+        [ "evaluate", "structtlx_1_1PolynomialRegression_1_1Coefficients.html#a394a62d29b7fd09bac9144faa5e27baa", null ]
       ] ],
       [ "Point", "structtlx_1_1PolynomialRegression_1_1Point.html", [
         [ "x", "structtlx_1_1PolynomialRegression_1_1Point.html#aa9a7dce003d26edca4e2a12d4315c5c3", null ],
@@ -60,7 +60,7 @@ var group__tlx__math =
       [ "fit_coefficients", "classtlx_1_1PolynomialRegression.html#a5c9e289ebfa6ce74573e2ae0498bcf97", null ],
       [ "point", "classtlx_1_1PolynomialRegression.html#a750d590be285c529f4ef0a9d8632e98c", null ],
       [ "r_square", "classtlx_1_1PolynomialRegression.html#ac2a661741b6400b8024d0906869b5e43", null ],
-      [ "size", "classtlx_1_1PolynomialRegression.html#aac782da1f912bceb5d8ad00c8dc892ac", null ],
+      [ "size", "classtlx_1_1PolynomialRegression.html#a259cb5a711406a8c3e5d937eb9350cca", null ],
       [ "coefficients_", "classtlx_1_1PolynomialRegression.html#a941fbb5502dec740ea5c96b0ce1b083a", null ],
       [ "order_", "classtlx_1_1PolynomialRegression.html#a4a9443feba0295716bb0c5dada330699", null ],
       [ "points_", "classtlx_1_1PolynomialRegression.html#acd7af4b587ee4a4d6772f6c892e2cb61", null ],

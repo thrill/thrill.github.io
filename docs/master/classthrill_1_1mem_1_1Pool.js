@@ -11,7 +11,7 @@ var classthrill_1_1mem_1_1Pool =
     [ "DeallocateAll", "classthrill_1_1mem_1_1Pool.html#a8b4c08b8731fdb6eb213f775b6d0c6ac", null ],
     [ "destroy", "classthrill_1_1mem_1_1Pool.html#a7019c68cf2e752e301a9e51c87ca6da0", null ],
     [ "IntDeallocateAll", "classthrill_1_1mem_1_1Pool.html#ac15daaec1938c69d26b881c1e6b7d035", null ],
-    [ "make", "classthrill_1_1mem_1_1Pool.html#ad693489ffada703de1c394433b0eeb76", null ],
+    [ "make", "classthrill_1_1mem_1_1Pool.html#a63759d39cee9e9e726e8dc03268d0cab", null ],
     [ "max_size", "classthrill_1_1mem_1_1Pool.html#aa77c5677e96e956feccbd5a7abbf8fe2", null ],
     [ "operator=", "classthrill_1_1mem_1_1Pool.html#a1224d08882845d337216ea38ad907c1b", null ],
     [ "print", "classthrill_1_1mem_1_1Pool.html#ab88c1bcfaf09495ce9c648105fb9c211", null ],

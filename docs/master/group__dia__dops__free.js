@@ -1,20 +1,20 @@
 var group__dia__dops__free =
 [
-    [ "Concat", "group__dia__dops__free.html#gab5e9f78688667eff46720cc4218ab322", null ],
+    [ "Concat", "group__dia__dops__free.html#ga88b00c5677c20268ff5376da646b2612", null ],
     [ "Concat", "group__dia__dops__free.html#ga807b1f5875e42f063a6289d99adee569", null ],
     [ "Concat", "group__dia__dops__free.html#gac04cd13f5b40abc94d30e4f387bf05e7", null ],
     [ "InnerJoin", "group__dia__dops__free.html#ga9d277ca38339e83d0ddad4fe3a91f9ce", null ],
     [ "InnerJoin", "group__dia__dops__free.html#ga1c7353d35a313e9874c2522fb81fb36e", null ],
-    [ "Merge", "group__dia__dops__free.html#gad35c16791b8d75ea6b6d741b952d7579", null ],
-    [ "Zip", "group__dia__dops__free.html#ga4048d9e5045a242ef9a8e46b4b2376cc", null ],
-    [ "Zip", "group__dia__dops__free.html#gac456b9a4cb7bb3f162c50a88a793e15e", null ],
-    [ "Zip", "group__dia__dops__free.html#gacafeeadc8ff9ac9dc8064240278197fc", null ],
-    [ "Zip", "group__dia__dops__free.html#ga8bb02112179b73fff8e6713d52a3497e", null ],
-    [ "Zip", "group__dia__dops__free.html#gaf5f01d0399a6dead127892efe08ccacd", null ],
-    [ "ZipWindow", "group__dia__dops__free.html#gab9a5e2f3b557e52a77e45d20cb7666e6", null ],
-    [ "ZipWindow", "group__dia__dops__free.html#gaa06f0ec706c6de9da7337926df46cd4e", null ],
-    [ "ZipWindow", "group__dia__dops__free.html#gad127af8190be523496e585aa3eddc6f2", null ],
-    [ "ZipWindow", "group__dia__dops__free.html#gafae88e90ddf6912aed0782e443dda3f2", null ],
-    [ "ZipWindow", "group__dia__dops__free.html#gae49cb737d0dfd79c4ef90caf7324b476", null ],
-    [ "ZipWindow", "group__dia__dops__free.html#ga28e9fdc1bf77faf34ccf6237447606cd", null ]
+    [ "Merge", "group__dia__dops__free.html#ga4c4ae3ac1d06bd8e5a68edcebc66b54f", null ],
+    [ "Zip", "group__dia__dops__free.html#gaf9430cfb0cc24ad356284c0e3a31dbac", null ],
+    [ "Zip", "group__dia__dops__free.html#gabdf94ddeb5b9e2de40b44b60bdc49b50", null ],
+    [ "Zip", "group__dia__dops__free.html#gaa18258a82b4afd8121daf16fc71c1050", null ],
+    [ "Zip", "group__dia__dops__free.html#ga588e5f2cf906b5cef89c09fd95a4f1fd", null ],
+    [ "Zip", "group__dia__dops__free.html#ga92a15f6dfc7b7ed32299fc8b3e8c80b6", null ],
+    [ "ZipWindow", "group__dia__dops__free.html#gaf7e954a6c1810d69623b61b199ac8761", null ],
+    [ "ZipWindow", "group__dia__dops__free.html#gaa4dd2d1059bddf76d371241bbde3bd3a", null ],
+    [ "ZipWindow", "group__dia__dops__free.html#ga9f39599142ff3cd1925bbe809403084c", null ],
+    [ "ZipWindow", "group__dia__dops__free.html#gabb55d5f9f7818eec1e10477f4216b62b", null ],
+    [ "ZipWindow", "group__dia__dops__free.html#ga5403cdd64c6b0a8a2b6943f4b5f725ec", null ],
+    [ "ZipWindow", "group__dia__dops__free.html#ga097f5d5e6cd69a20caeae82b4f044722", null ]
 ];

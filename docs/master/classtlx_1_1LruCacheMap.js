@@ -8,7 +8,7 @@ var classtlx_1_1LruCacheMap =
     [ "clear", "classtlx_1_1LruCacheMap.html#ac8bb3912a3ce86b15842e79d0b421204", null ],
     [ "erase", "classtlx_1_1LruCacheMap.html#ae1364dfb8a0155951a6f429588d0de68", null ],
     [ "erase_if_exists", "classtlx_1_1LruCacheMap.html#ab921b4718645e4878a4795ac650bbafd", null ],
-    [ "exists", "classtlx_1_1LruCacheMap.html#a31f8f121cf63f76af33efe163c48d0bf", null ],
+    [ "exists", "classtlx_1_1LruCacheMap.html#aad7cdcac114944b483ed2095ea7e6cc2", null ],
     [ "get", "classtlx_1_1LruCacheMap.html#a4fab7ceecac490f309109aee103889c5", null ],
     [ "get_touch", "classtlx_1_1LruCacheMap.html#a43fb3c51c8d13749ab2218dcf8d8bb55", null ],
     [ "pop", "classtlx_1_1LruCacheMap.html#aa6ff226577e0c641c859c6bdc12804c9", null ],

@@ -11,12 +11,12 @@ var thrill_2mem_2allocator__base_8hpp =
     [ "by_vector", "thrill_2mem_2allocator__base_8hpp.html#acdd6cb67d88d3f5c0144fb2556c51372", null ],
     [ "BypassAllocator", "thrill_2mem_2allocator__base_8hpp.html#a74237b06130d70256a8695cdea8cca6d", null ],
     [ "by_delete", "thrill_2mem_2allocator__base_8hpp.html#aa48f0fc4f3825d504d0b64643868d237", null ],
-    [ "by_new", "thrill_2mem_2allocator__base_8hpp.html#a029803356f9cd5737c0cde376fca291c", null ],
+    [ "by_new", "thrill_2mem_2allocator__base_8hpp.html#a4fdc83e8c6ad67b17054bf1a2538aaaa", null ],
     [ "to_string", "thrill_2mem_2allocator__base_8hpp.html#a83c1c233231a5bfd03944ee141b9609a", null ],
     [ "to_string", "thrill_2mem_2allocator__base_8hpp.html#a941e3041f233e1fc3f20d1ed9abedb96", null ],
     [ "to_string", "thrill_2mem_2allocator__base_8hpp.html#a1c0ec876049ef298e87dc600a78199cf", null ],
     [ "to_string", "thrill_2mem_2allocator__base_8hpp.html#aa978016df4356a6bc6e565df9b8c31cf", null ],
     [ "to_string", "thrill_2mem_2allocator__base_8hpp.html#a3438d3ed2b108a90a239222e9831b216", null ],
     [ "to_string", "thrill_2mem_2allocator__base_8hpp.html#a85afe8715b31a126442bf46f068e3877", null ],
-    [ "g_bypass_manager", "thrill_2mem_2allocator__base_8hpp.html#a2c2fd4b42d2bc614209a3b48febdaf2d", null ]
+    [ "g_bypass_manager", "thrill_2mem_2allocator__base_8hpp.html#aecd384f55274204da0424c6f59569993", null ]
 ];

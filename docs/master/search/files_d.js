@@ -1,16 +1,13 @@
 var searchData=
 [
-  ['main_2edox',['main.dox',['../doc_2main_8dox.html',1,'']]],
-  ['main_2edox',['main.dox',['../extlib_2tlx_2tlx_2main_8dox.html',1,'']]],
+  ['main_2edox',['main.dox',['../doc_2main_8dox.html',1,'(Global Namespace)'],['../extlib_2tlx_2tlx_2main_8dox.html',1,'(Global Namespace)']]],
   ['mainpage_2edox',['mainpage.dox',['../mainpage_8dox.html',1,'']]],
   ['malloc_5ftracker_2ecpp',['malloc_tracker.cpp',['../malloc__tracker_8cpp.html',1,'']]],
   ['malloc_5ftracker_2ehpp',['malloc_tracker.hpp',['../malloc__tracker_8hpp.html',1,'']]],
   ['manager_2ecpp',['manager.cpp',['../manager_8cpp.html',1,'']]],
-  ['manager_2ehpp',['manager.hpp',['../mem_2manager_8hpp.html',1,'']]],
-  ['manager_2ehpp',['manager.hpp',['../net_2manager_8hpp.html',1,'']]],
+  ['manager_2ehpp',['manager.hpp',['../mem_2manager_8hpp.html',1,'(Global Namespace)'],['../net_2manager_8hpp.html',1,'(Global Namespace)']]],
   ['map_2ehpp',['map.hpp',['../map_8hpp.html',1,'']]],
-  ['math_2ehpp',['math.hpp',['../thrill_2common_2math_8hpp.html',1,'']]],
-  ['math_2ehpp',['math.hpp',['../extlib_2tlx_2tlx_2math_8hpp.html',1,'']]],
+  ['math_2ehpp',['math.hpp',['../thrill_2common_2math_8hpp.html',1,'(Global Namespace)'],['../extlib_2tlx_2tlx_2math_8hpp.html',1,'(Global Namespace)']]],
   ['matrix_2ehpp',['matrix.hpp',['../matrix_8hpp.html',1,'']]],
   ['max_2ehpp',['max.hpp',['../max_8hpp.html',1,'']]],
   ['md5_2ecpp',['md5.cpp',['../md5_8cpp.html',1,'']]],
@@ -38,7 +35,6 @@ var searchData=
   ['multiplexer_5fheader_2ehpp',['multiplexer_header.hpp',['../multiplexer__header_8hpp.html',1,'']]],
   ['multisequence_5fpartition_2ehpp',['multisequence_partition.hpp',['../multisequence__partition_8hpp.html',1,'']]],
   ['multisequence_5fselection_2ehpp',['multisequence_selection.hpp',['../multisequence__selection_8hpp.html',1,'']]],
-  ['multiway_5fmerge_2ehpp',['multiway_merge.hpp',['../extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html',1,'']]],
-  ['multiway_5fmerge_2ehpp',['multiway_merge.hpp',['../thrill_2core_2multiway__merge_8hpp.html',1,'']]],
+  ['multiway_5fmerge_2ehpp',['multiway_merge.hpp',['../thrill_2core_2multiway__merge_8hpp.html',1,'(Global Namespace)'],['../extlib_2tlx_2tlx_2algorithm_2multiway__merge_8hpp.html',1,'(Global Namespace)']]],
   ['multiway_5fmerge_5fsplitting_2ehpp',['multiway_merge_splitting.hpp',['../multiway__merge__splitting_8hpp.html',1,'']]]
 ];

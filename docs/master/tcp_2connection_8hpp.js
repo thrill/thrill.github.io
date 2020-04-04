@@ -1,6 +1,6 @@
 var tcp_2connection_8hpp =
 [
-    [ "MSG_MORE", "tcp_2connection_8hpp.html#ga7b7c7e5e523ff0fc8823e7bff7665ead", null ],
+    [ "MSG_MORE", "group__net__tcp.html#ga7b7c7e5e523ff0fc8823e7bff7665ead", null ],
     [ "THRILL_NET_TCP_CONNECTION_HEADER", "tcp_2connection_8hpp.html#a1f1d99d5ee7168d17ebb35fdfca1c75c", null ],
     [ "ConnectionState", "tcp_2connection_8hpp.html#gaf905f830af92a188bfa734cbd78f7211", [
       [ "Invalid", "tcp_2connection_8hpp.html#ggaf905f830af92a188bfa734cbd78f7211ae962ea8b0b3a376575ad0e616eeac474", null ],

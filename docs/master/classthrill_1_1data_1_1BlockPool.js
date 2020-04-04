@@ -32,7 +32,7 @@ var classthrill_1_1data_1_1BlockPool =
     [ "total_blocks", "classthrill_1_1data_1_1BlockPool.html#a5fa377617c22134b8db2b48831e84ac2", null ],
     [ "total_bytes", "classthrill_1_1data_1_1BlockPool.html#a818da79a19b497fef0d810d323ff81d2", null ],
     [ "unpinned_blocks", "classthrill_1_1data_1_1BlockPool.html#a3e300e3930012e3242a13f60baff1fea", null ],
-    [ "workers_per_host", "classthrill_1_1data_1_1BlockPool.html#ab918f792039fb144dd12528701199562", null ],
+    [ "workers_per_host", "classthrill_1_1data_1_1BlockPool.html#a33e0ff43849f0674ea6398d8856883ff", null ],
     [ "writing_blocks", "classthrill_1_1data_1_1BlockPool.html#a37fc8d45a82b1ef112fb3ae91bed4229", null ],
     [ "ByteBlock", "classthrill_1_1data_1_1BlockPool.html#a081e79d0e7a3cb230f45d0008f04c925", null ],
     [ "operator<<", "classthrill_1_1data_1_1BlockPool.html#a312a8b6d32c63099141571fa19326e0c", null ],

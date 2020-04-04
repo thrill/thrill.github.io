@@ -1,13 +1,11 @@
 var searchData=
 [
   ['fake_5ftimer',['fake_timer',['../classfoxxll_1_1fake__timer.html',1,'foxxll']]],
-  ['file',['File',['../classthrill_1_1data_1_1File.html',1,'thrill::data']]],
-  ['file',['file',['../classfoxxll_1_1file.html',1,'foxxll']]],
+  ['file',['file',['../classfoxxll_1_1file.html',1,'file'],['../classthrill_1_1data_1_1File.html',1,'File']]],
   ['file_5fstats',['file_stats',['../classfoxxll_1_1file__stats.html',1,'foxxll']]],
   ['file_5fstats_5fdata',['file_stats_data',['../classfoxxll_1_1file__stats__data.html',1,'foxxll']]],
   ['fileblocksink',['FileBlockSink',['../classthrill_1_1data_1_1FileBlockSink.html',1,'thrill::data']]],
-  ['fileinfo',['FileInfo',['../structthrill_1_1api_1_1ReadBinaryNode_1_1FileInfo.html',1,'thrill::api::ReadBinaryNode']]],
-  ['fileinfo',['FileInfo',['../structthrill_1_1vfs_1_1FileInfo.html',1,'thrill::vfs']]],
+  ['fileinfo',['FileInfo',['../structthrill_1_1api_1_1ReadBinaryNode_1_1FileInfo.html',1,'ReadBinaryNode&lt; ValueType &gt;::FileInfo'],['../structthrill_1_1vfs_1_1FileInfo.html',1,'FileInfo']]],
   ['filelist',['FileList',['../structthrill_1_1vfs_1_1FileList.html',1,'thrill::vfs']]],
   ['fileperblock_5ffile',['fileperblock_file',['../classfoxxll_1_1fileperblock__file.html',1,'foxxll']]],
   ['filler_5fstruct',['filler_struct',['../classfoxxll_1_1mng__local_1_1filler__struct.html',1,'foxxll::mng_local']]],
@@ -24,8 +22,9 @@ var searchData=
   ['fully_5frandom',['fully_random',['../structfoxxll_1_1fully__random.html',1,'foxxll']]],
   ['functionchain',['FunctionChain',['../classtlx_1_1FunctionChain.html',1,'tlx']]],
   ['functionstack',['FunctionStack',['../classtlx_1_1FunctionStack.html',1,'tlx']]],
+  ['functionstack_3c_20bfsnode_20_3e',['FunctionStack&lt; BfsNode &gt;',['../classtlx_1_1FunctionStack.html',1,'tlx']]],
   ['functiontraits_3c_20returntype_28_2a_29_28args_2e_2e_2e_29_3e',['FunctionTraits&lt; ReturnType(*)(Args...)&gt;',['../structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4.html',1,'thrill::common']]],
-  ['functiontraits_3c_20returntype_28classtype_3a_3a_2a_29_28args_2e_2e_2e_29_20const_20_20_3e',['FunctionTraits&lt; ReturnType(ClassType::*)(Args...) const  &gt;',['../structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4.html',1,'thrill::common']]],
+  ['functiontraits_3c_20returntype_28classtype_3a_3a_2a_29_28args_2e_2e_2e_29_20const_20_3e',['FunctionTraits&lt; ReturnType(ClassType::*)(Args...) const &gt;',['../structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_4.html',1,'thrill::common']]],
   ['functiontraits_3c_20returntype_28classtype_3a_3a_2a_29_28args_2e_2e_2e_29_3e',['FunctionTraits&lt; ReturnType(ClassType::*)(Args...)&gt;',['../structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_4.html',1,'thrill::common']]],
   ['future',['Future',['../classthrill_1_1api_1_1Future.html',1,'thrill::api']]],
   ['future_3c_20void_20_3e',['Future&lt; void &gt;',['../classthrill_1_1api_1_1Future_3_01void_01_4.html',1,'thrill::api']]]

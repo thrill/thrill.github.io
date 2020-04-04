@@ -3,7 +3,7 @@ var classthrill_1_1common_1_1hypergeometric__distribution =
     [ "real_type", "classthrill_1_1common_1_1hypergeometric__distribution.html#a4905f4f91dd26c803b07513a694f6d42", null ],
     [ "result_type", "classthrill_1_1common_1_1hypergeometric__distribution.html#ae429e7f837b4cfa7cdb82ed41d2e6089", null ],
     [ "hypergeometric_distribution", "classthrill_1_1common_1_1hypergeometric__distribution.html#a75967b7d435cebcb5b9d28bc75c1742c", null ],
-    [ "loggam", "classthrill_1_1common_1_1hypergeometric__distribution.html#ad190742aee74a4799ed86f16d4ac1068", null ],
+    [ "loggam", "classthrill_1_1common_1_1hypergeometric__distribution.html#ab2e7dbdb2166e484ee5cee63394da52d", null ],
     [ "operator()", "classthrill_1_1common_1_1hypergeometric__distribution.html#ab14bd2b025fb53c716180613aeb33ac9", null ],
     [ "rk_hypergeometric", "classthrill_1_1common_1_1hypergeometric__distribution.html#a1de0e7a9abc93fe3714bfba336cc4b84", null ],
     [ "rk_hypergeometric_hrua", "classthrill_1_1common_1_1hypergeometric__distribution.html#a134f947f3ca769b24e21a0466b5fda1a", null ],

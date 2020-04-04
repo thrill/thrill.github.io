@@ -44,10 +44,6 @@ var group__tlx__container__loser__tree =
       [ "delete_min_insert", "group__tlx__container__loser__tree.html#ga662020d2414024ea935bf7fc67423d26", null ]
     ] ],
     [ "LoserTreeCopyUnguardedBase", "classtlx_1_1LoserTreeCopyUnguardedBase.html", [
-      [ "Loser", "structtlx_1_1LoserTreeCopyUnguardedBase_1_1Loser.html", [
-        [ "key", "group__tlx__container__loser__tree.html#gaa21e87c8b88d7759ff4af8841c89afe8", null ],
-        [ "source", "group__tlx__container__loser__tree.html#ga6bfef4fd519b1708e99617d59d9c62cd", null ]
-      ] ],
       [ "Source", "group__tlx__container__loser__tree.html#ga12092cf92cd4d6e1e7c5fde0fdff07ec", null ],
       [ "LoserTreeCopyUnguardedBase", "group__tlx__container__loser__tree.html#ga1ab3df86138384ac8759ef9a868871ef", null ],
       [ "init", "group__tlx__container__loser__tree.html#ga02fd73d861ef2e4aabb38c0c9ff82947", null ],
@@ -59,6 +55,10 @@ var group__tlx__container__loser__tree =
       [ "invalid_", "group__tlx__container__loser__tree.html#ga12a608acf2b6dc6f3f0dfc25a8ddc8dc", null ],
       [ "k_", "group__tlx__container__loser__tree.html#ga5dd0613cf9174c2621a10433acc705a1", null ],
       [ "losers_", "group__tlx__container__loser__tree.html#ga5e5ae1b3731e99dd2c3b28f0f5c893dc", null ]
+    ] ],
+    [ "Loser", "structtlx_1_1LoserTreeCopyUnguardedBase_1_1Loser.html", [
+      [ "key", "group__tlx__container__loser__tree.html#gaa21e87c8b88d7759ff4af8841c89afe8", null ],
+      [ "source", "group__tlx__container__loser__tree.html#ga6bfef4fd519b1708e99617d59d9c62cd", null ]
     ] ],
     [ "LoserTreePointer", "classtlx_1_1LoserTreePointer.html", [
       [ "Source", "group__tlx__container__loser__tree.html#ga071fda465da2cd47c848c51e802635ed", null ],
@@ -73,10 +73,6 @@ var group__tlx__container__loser__tree =
       [ "delete_min_insert", "group__tlx__container__loser__tree.html#ga662020d2414024ea935bf7fc67423d26", null ]
     ] ],
     [ "LoserTreePointerBase", "classtlx_1_1LoserTreePointerBase.html", [
-      [ "Loser", "structtlx_1_1LoserTreePointerBase_1_1Loser.html", [
-        [ "keyp", "group__tlx__container__loser__tree.html#ga4fbd05437c51b2d9e9aefae936093bf5", null ],
-        [ "source", "group__tlx__container__loser__tree.html#ga6bfef4fd519b1708e99617d59d9c62cd", null ]
-      ] ],
       [ "Source", "group__tlx__container__loser__tree.html#ga12092cf92cd4d6e1e7c5fde0fdff07ec", null ],
       [ "LoserTreePointerBase", "group__tlx__container__loser__tree.html#gad7d71e21ccc3956b99d091383c4ab616", null ],
       [ "LoserTreePointerBase", "group__tlx__container__loser__tree.html#ga3e6270f910a2024f4f4887e3258150c9", null ],
@@ -93,6 +89,10 @@ var group__tlx__container__loser__tree =
       [ "k_", "group__tlx__container__loser__tree.html#gaf6695151c0a339749b609b9fb0503480", null ],
       [ "losers_", "group__tlx__container__loser__tree.html#ga5e5ae1b3731e99dd2c3b28f0f5c893dc", null ]
     ] ],
+    [ "Loser", "structtlx_1_1LoserTreePointerBase_1_1Loser.html", [
+      [ "keyp", "group__tlx__container__loser__tree.html#ga4fbd05437c51b2d9e9aefae936093bf5", null ],
+      [ "source", "group__tlx__container__loser__tree.html#ga6bfef4fd519b1708e99617d59d9c62cd", null ]
+    ] ],
     [ "LoserTreePointerUnguarded", "classtlx_1_1LoserTreePointerUnguarded.html", [
       [ "Source", "group__tlx__container__loser__tree.html#ga071fda465da2cd47c848c51e802635ed", null ],
       [ "Super", "group__tlx__container__loser__tree.html#gab5fcec817a4a7cca2287696c3d8151e6", null ],
@@ -106,10 +106,6 @@ var group__tlx__container__loser__tree =
       [ "delete_min_insert", "group__tlx__container__loser__tree.html#ga662020d2414024ea935bf7fc67423d26", null ]
     ] ],
     [ "LoserTreePointerUnguardedBase", "classtlx_1_1LoserTreePointerUnguardedBase.html", [
-      [ "Loser", "structtlx_1_1LoserTreePointerUnguardedBase_1_1Loser.html", [
-        [ "keyp", "group__tlx__container__loser__tree.html#ga4fbd05437c51b2d9e9aefae936093bf5", null ],
-        [ "source", "group__tlx__container__loser__tree.html#ga6bfef4fd519b1708e99617d59d9c62cd", null ]
-      ] ],
       [ "Source", "group__tlx__container__loser__tree.html#ga12092cf92cd4d6e1e7c5fde0fdff07ec", null ],
       [ "LoserTreePointerUnguardedBase", "group__tlx__container__loser__tree.html#ga078f728ee1a8e2b903a86598eaf85d8a", null ],
       [ "LoserTreePointerUnguardedBase", "group__tlx__container__loser__tree.html#gabc941e5da1b62a3a51230e5782e39dd0", null ],
@@ -123,6 +119,10 @@ var group__tlx__container__loser__tree =
       [ "invalid_", "group__tlx__container__loser__tree.html#ga12a608acf2b6dc6f3f0dfc25a8ddc8dc", null ],
       [ "k_", "group__tlx__container__loser__tree.html#ga5dd0613cf9174c2621a10433acc705a1", null ],
       [ "losers_", "group__tlx__container__loser__tree.html#ga5e5ae1b3731e99dd2c3b28f0f5c893dc", null ]
+    ] ],
+    [ "Loser", "structtlx_1_1LoserTreePointerUnguardedBase_1_1Loser.html", [
+      [ "keyp", "group__tlx__container__loser__tree.html#ga4fbd05437c51b2d9e9aefae936093bf5", null ],
+      [ "source", "group__tlx__container__loser__tree.html#ga6bfef4fd519b1708e99617d59d9c62cd", null ]
     ] ],
     [ "LoserTreeSwitch", "classtlx_1_1LoserTreeSwitch.html", [
       [ "Type", "group__tlx__container__loser__tree.html#gad6f8a9e3078ec4056859079611e2ce2b", null ]

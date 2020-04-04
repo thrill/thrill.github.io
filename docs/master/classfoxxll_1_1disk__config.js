@@ -8,7 +8,7 @@ var classfoxxll_1_1disk__config =
     [ "disk_config", "classfoxxll_1_1disk__config.html#a6d7399279b1f85c3f7ebbb2bf540f068", null ],
     [ "disk_config", "classfoxxll_1_1disk__config.html#a04f4e77bf1bd7ae56ae1e5155df5682b", null ],
     [ "disk_config", "classfoxxll_1_1disk__config.html#a58bb4d43261d203ae1c3ce2de7deaa25", null ],
-    [ "fileio_string", "classfoxxll_1_1disk__config.html#a9436dc8cd93c9abe01d40dac3ab4cb37", null ],
+    [ "fileio_string", "classfoxxll_1_1disk__config.html#a2f9b5e2bb6d4186a4e23af8c2db536b7", null ],
     [ "parse_fileio", "classfoxxll_1_1disk__config.html#ad4acfe862929ebe86cede6b8472916f0", null ],
     [ "parse_line", "classfoxxll_1_1disk__config.html#ae1fbeefdb5edc779e7070229e6266e8a", null ],
     [ "autogrow", "classfoxxll_1_1disk__config.html#a311f10c0a6afeb99eee3b405542b0e32", null ],

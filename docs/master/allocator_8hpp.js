@@ -11,7 +11,7 @@ var allocator_8hpp =
     [ "stringbuf", "allocator_8hpp.html#aabc197dda8a065874d83d88fcfd77c75", null ],
     [ "unique_ptr", "allocator_8hpp.html#a1605627039c77b4bdf40f848844158f0", null ],
     [ "vector", "allocator_8hpp.html#a0dd305ebee8568fb376553a1f70b46a7", null ],
-    [ "make_unique", "allocator_8hpp.html#a80e16dfd5916afd359568ae6d30baa56", null ],
+    [ "make_unique", "allocator_8hpp.html#a7e24123f3ed24e82b72bff8154d3302c", null ],
     [ "mm_delete", "allocator_8hpp.html#a980595da03b0df8100cf4b7c59942562", null ],
-    [ "mm_new", "allocator_8hpp.html#ab64b3f4aa76d75aec4b253481823f165", null ]
+    [ "mm_new", "allocator_8hpp.html#ae37b067cb3c293e6404197bbc64a21cf", null ]
 ];

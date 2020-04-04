@@ -36,7 +36,7 @@ var classthrill_1_1net_1_1mpi_1_1Group =
     [ "ExPrefixSumPlusUnsignedInt", "classthrill_1_1net_1_1mpi_1_1Group.html#a063fb30895eb15d3ec0c1d566b605a12", null ],
     [ "ExPrefixSumPlusUnsignedLong", "classthrill_1_1net_1_1mpi_1_1Group.html#a5429b5561ebe807aa862845734a6c50b", null ],
     [ "ExPrefixSumPlusUnsignedLongLong", "classthrill_1_1net_1_1mpi_1_1Group.html#a56cd63781d034e89892177bed4720500", null ],
-    [ "group_tag", "classthrill_1_1net_1_1mpi_1_1Group.html#af49b394cf8ccd4ad2aac5f5e07c1b844", null ],
+    [ "group_tag", "classthrill_1_1net_1_1mpi_1_1Group.html#af4f308b4fc967311e632dd7e8437b7fb", null ],
     [ "num_hosts", "classthrill_1_1net_1_1mpi_1_1Group.html#a0feec208eeb70870e8ace6f308a03405", null ],
     [ "num_parallel_async", "classthrill_1_1net_1_1mpi_1_1Group.html#a9eae6dc3e79f17971c748fee2d65995a", null ],
     [ "PrefixSumPlusInt", "classthrill_1_1net_1_1mpi_1_1Group.html#a5bdcf696821869753819d077c42cb81e", null ],

@@ -11,7 +11,7 @@ var classthrill_1_1vfs_1_1glob__local_1_1CSimpleGlobTempl =
     [ "Add", "classthrill_1_1vfs_1_1glob__local_1_1CSimpleGlobTempl.html#a8ae62a71287a0692c3db91a18bb540e8", null ],
     [ "AppendName", "classthrill_1_1vfs_1_1glob__local_1_1CSimpleGlobTempl.html#a3d10399c2912165951b88676425b4d7f", null ],
     [ "File", "classthrill_1_1vfs_1_1glob__local_1_1CSimpleGlobTempl.html#a8b34d254b37e37bb83297e79bae55e2b", null ],
-    [ "FileCount", "classthrill_1_1vfs_1_1glob__local_1_1CSimpleGlobTempl.html#a01e530286b6771b252d1f14b50e623b3", null ],
+    [ "FileCount", "classthrill_1_1vfs_1_1glob__local_1_1CSimpleGlobTempl.html#a07c332e1a34e5c8f3deeebed081b7ddb", null ],
     [ "Files", "classthrill_1_1vfs_1_1glob__local_1_1CSimpleGlobTempl.html#ac0927bdbebcb8ca98ed46b714bd7f313", null ],
     [ "fileSortCompare", "classthrill_1_1vfs_1_1glob__local_1_1CSimpleGlobTempl.html#a12c21532118273b478f5f48801a6a956", null ],
     [ "GrowArgvArray", "classthrill_1_1vfs_1_1glob__local_1_1CSimpleGlobTempl.html#a23bcec00042ee47d1b1ebadfa9cb205e", null ],

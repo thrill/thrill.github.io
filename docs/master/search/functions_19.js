@@ -2,6 +2,7 @@ var searchData=
 [
   ['_7eaddressable_5ffifo_5fqueue',['~addressable_fifo_queue',['../classfoxxll_1_1addressable__fifo__queue.html#a4f590e3be6f9e47b93793cfb84660726',1,'foxxll::addressable_fifo_queue']]],
   ['_7eaddressable_5fpriority_5fqueue',['~addressable_priority_queue',['../classfoxxll_1_1addressable__priority__queue.html#adc35f18fd0d039d189554681d79e07ec',1,'foxxll::addressable_priority_queue']]],
+  ['_7eallgathernode',['~AllGatherNode',['../classthrill_1_1api_1_1AllGatherNode.html#a5a59b9b36975448000a3093546b409eb',1,'thrill::api::AllGatherNode']]],
   ['_7easyncreadbuffer',['~AsyncReadBuffer',['../classthrill_1_1net_1_1AsyncReadBuffer.html#a71060442a1fd1ddc6e719c99bdd48885',1,'thrill::net::AsyncReadBuffer']]],
   ['_7easyncreadbyteblock',['~AsyncReadByteBlock',['../classthrill_1_1net_1_1AsyncReadByteBlock.html#adc772057f0a6c44262e36e18251cf97a',1,'thrill::net::AsyncReadByteBlock']]],
   ['_7easyncrequest',['~AsyncRequest',['../classthrill_1_1net_1_1mpi_1_1AsyncRequest.html#a911057a5e055060a5e2e07df8af5c1e2',1,'thrill::net::mpi::AsyncRequest']]],

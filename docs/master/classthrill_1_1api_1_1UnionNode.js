@@ -1,5 +1,6 @@
 var classthrill_1_1api_1_1UnionNode =
 [
+    [ "RegisterParent", "classthrill_1_1api_1_1UnionNode_1_1RegisterParent.html", "classthrill_1_1api_1_1UnionNode_1_1RegisterParent" ],
     [ "UnionChild", "structthrill_1_1api_1_1UnionNode_1_1UnionChild.html", "structthrill_1_1api_1_1UnionNode_1_1UnionChild" ],
     [ "Callback", "classthrill_1_1api_1_1UnionNode.html#a7dff7225471189a35cd341f0af88fd0b", null ],
     [ "Super", "classthrill_1_1api_1_1UnionNode.html#a216d8e8f7318eb043670d4c0fd994689", null ],
@@ -8,7 +9,9 @@ var classthrill_1_1api_1_1UnionNode =
       [ "PUSHING", "classthrill_1_1api_1_1UnionNode.html#a09f901d03f9f600f1e84ee6fea8d01eca921efa431848c0b8807d3f5145d0eece", null ],
       [ "DONE", "classthrill_1_1api_1_1UnionNode.html#a09f901d03f9f600f1e84ee6fea8d01eca2ba22e58ca17bb728d522bba36cf8350", null ]
     ] ],
-    [ "UnionNode", "classthrill_1_1api_1_1UnionNode.html#ac29dba1ba60ae0bd8393318193f02b56", null ],
+    [ "UnionNode", "classthrill_1_1api_1_1UnionNode.html#a536c2995a77b112d77e3436bd88bf131", null ],
+    [ "UnionNode", "classthrill_1_1api_1_1UnionNode.html#ae78b9142ac1a6cd73d2accd9166616c6", null ],
+    [ "UnionNode", "classthrill_1_1api_1_1UnionNode.html#af2be860d4d110d56122a0b94afb15ac8", null ],
     [ "AddChild", "classthrill_1_1api_1_1UnionNode.html#a5a6b6ab63457863697a214dd71dfcc97", null ],
     [ "children", "classthrill_1_1api_1_1UnionNode.html#ac5b04b833a2c8dd2561bc552ddf964ef", null ],
     [ "consume_counter", "classthrill_1_1api_1_1UnionNode.html#a792783a150ec6fd60fed481f72085d62", null ],
@@ -17,7 +20,7 @@ var classthrill_1_1api_1_1UnionNode =
     [ "ForwardDataOnly", "classthrill_1_1api_1_1UnionNode.html#ac9f186a400494b3b48a6980606e94cc0", null ],
     [ "IncConsumeCounter", "classthrill_1_1api_1_1UnionNode.html#a7668ff6ed16f96ec64c5dda3a8360bc8", null ],
     [ "PushData", "classthrill_1_1api_1_1UnionNode.html#aeebcebe0b019aa1b4333a5bbfb39439e", null ],
-    [ "PushItem", "classthrill_1_1api_1_1UnionNode.html#a83e75fe9649bec5953a1771ae71b1aea", null ],
+    [ "PushItem", "classthrill_1_1api_1_1UnionNode.html#aa1c10b5733fa7dd9ccb9e5f07d02bca1", null ],
     [ "RemoveAllChildren", "classthrill_1_1api_1_1UnionNode.html#a3ab70296acb12039fcf63dcb75a0e36f", null ],
     [ "RemoveChild", "classthrill_1_1api_1_1UnionNode.html#a3503c8db771ac8b76ab6f6805f02bd57", null ],
     [ "RequireParentPushData", "classthrill_1_1api_1_1UnionNode.html#a46e5245619b28183d8db5e18c636c450", null ],

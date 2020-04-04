@@ -9,7 +9,7 @@ var classtlx_1_1PolynomialRegression =
     [ "fit_coefficients", "classtlx_1_1PolynomialRegression.html#a5c9e289ebfa6ce74573e2ae0498bcf97", null ],
     [ "point", "classtlx_1_1PolynomialRegression.html#a750d590be285c529f4ef0a9d8632e98c", null ],
     [ "r_square", "classtlx_1_1PolynomialRegression.html#ac2a661741b6400b8024d0906869b5e43", null ],
-    [ "size", "classtlx_1_1PolynomialRegression.html#aac782da1f912bceb5d8ad00c8dc892ac", null ],
+    [ "size", "classtlx_1_1PolynomialRegression.html#a259cb5a711406a8c3e5d937eb9350cca", null ],
     [ "coefficients_", "classtlx_1_1PolynomialRegression.html#a941fbb5502dec740ea5c96b0ce1b083a", null ],
     [ "order_", "classtlx_1_1PolynomialRegression.html#a4a9443feba0295716bb0c5dada330699", null ],
     [ "points_", "classtlx_1_1PolynomialRegression.html#acd7af4b587ee4a4d6772f6c892e2cb61", null ],

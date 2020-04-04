@@ -1,8 +1,7 @@
 var searchData=
 [
   ['radix_5fheap_2ehpp',['radix_heap.hpp',['../radix__heap_8hpp.html',1,'']]],
-  ['radix_5fsort_2ehpp',['radix_sort.hpp',['../thrill_2common_2radix__sort_8hpp.html',1,'']]],
-  ['radix_5fsort_2ehpp',['radix_sort.hpp',['../extlib_2tlx_2tlx_2sort_2strings_2radix__sort_8hpp.html',1,'']]],
+  ['radix_5fsort_2ehpp',['radix_sort.hpp',['../thrill_2common_2radix__sort_8hpp.html',1,'(Global Namespace)'],['../extlib_2tlx_2tlx_2sort_2strings_2radix__sort_8hpp.html',1,'(Global Namespace)']]],
   ['random_5fbipartition_5fshuffle_2ehpp',['random_bipartition_shuffle.hpp',['../random__bipartition__shuffle_8hpp.html',1,'']]],
   ['random_5ftext_5fwriter_2ecpp',['random_text_writer.cpp',['../random__text__writer_8cpp.html',1,'']]],
   ['random_5ftext_5fwriter_2ehpp',['random_text_writer.hpp',['../random__text__writer_8hpp.html',1,'']]],
@@ -38,8 +37,7 @@ var searchData=
   ['request_5fwith_5fwaiters_2ecpp',['request_with_waiters.cpp',['../request__with__waiters_8cpp.html',1,'']]],
   ['request_5fwith_5fwaiters_2ehpp',['request_with_waiters.hpp',['../request__with__waiters_8hpp.html',1,'']]],
   ['reservoir_5fsampling_2ehpp',['reservoir_sampling.hpp',['../reservoir__sampling_8hpp.html',1,'']]],
-  ['ring_5fbuffer_2ehpp',['ring_buffer.hpp',['../thrill_2common_2ring__buffer_8hpp.html',1,'']]],
-  ['ring_5fbuffer_2ehpp',['ring_buffer.hpp',['../extlib_2tlx_2tlx_2container_2ring__buffer_8hpp.html',1,'']]],
+  ['ring_5fbuffer_2ehpp',['ring_buffer.hpp',['../thrill_2common_2ring__buffer_8hpp.html',1,'(Global Namespace)'],['../extlib_2tlx_2tlx_2container_2ring__buffer_8hpp.html',1,'(Global Namespace)']]],
   ['rl_5fbwt_2ecpp',['rl_bwt.cpp',['../rl__bwt_8cpp.html',1,'']]],
   ['rol_2ehpp',['rol.hpp',['../rol_8hpp.html',1,'']]],
   ['ror_2ehpp',['ror.hpp',['../ror_8hpp.html',1,'']]],

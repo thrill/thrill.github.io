@@ -12,5 +12,5 @@ var pool_8hpp =
     [ "safe_string", "pool_8hpp.html#afbf49035872c64931e1f21fb32a68889", null ],
     [ "safe_unique_ptr", "pool_8hpp.html#ae068b0c2a80679a2c9cfe2b41528c770", null ],
     [ "GPool", "pool_8hpp.html#a55ecdcc4d22bd1439cbe89943478a1cf", null ],
-    [ "safe_make_unique", "pool_8hpp.html#a1b3ae792d65542926bce1f18d9f3b7fe", null ]
+    [ "safe_make_unique", "pool_8hpp.html#afc530cfb2fe2e1c55b5c82bddfbfc2cb", null ]
 ];

@@ -1,13 +1,16 @@
 var searchData=
 [
-  ['vals',['vals',['../classfoxxll_1_1addressable__fifo__queue.html#aa7ee8976cc43aa3dfe830adfd2ab5b5d',1,'foxxll::addressable_fifo_queue::vals()'],['../classfoxxll_1_1addressable__priority__queue.html#aa7ee8976cc43aa3dfe830adfd2ab5b5d',1,'foxxll::addressable_priority_queue::vals()']]],
-  ['value',['value',['../structthrill_1_1api_1_1VolatileKeyFlag.html#a11ddd051208250c32dc4985abcafa86d',1,'thrill::api::VolatileKeyFlag::value()'],['../structthrill_1_1api_1_1DuplicateDetectionFlag.html#a11ddd051208250c32dc4985abcafa86d',1,'thrill::api::DuplicateDetectionFlag::value()'],['../structthrill_1_1api_1_1LocationDetectionFlag.html#a11ddd051208250c32dc4985abcafa86d',1,'thrill::api::LocationDetectionFlag::value()'],['../structthrill_1_1api_1_1MergeNode_1_1Pivot.html#abc68f01d4987e0c41f64bdca675783de',1,'thrill::api::MergeNode::Pivot::value()'],['../namespacegen__data.html#ac4f474c82e82cbb89ca7c36dd52be0ed',1,'gen_data.value()']]],
-  ['value_5f',['value_',['../classthrill_1_1common_1_1StatsCounter_3_01ValueType___00_01true_01_4.html#aca43af8fab1829d041007e325268730c',1,'thrill::common::StatsCounter&lt; ValueType_, true &gt;::value_()'],['../classtlx_1_1Semaphore.html#ad30f307794877c16a97c16cc854e9a9e',1,'tlx::Semaphore::value_()']]],
-  ['values_5fper_5fdevice',['values_per_device',['../structfoxxll_1_1stats__data_1_1summary.html#a8dc7b4f13b19c83586a6b4dc2113ffee',1,'foxxll::stats_data::summary']]],
-  ['vec_5f',['vec_',['../classthrill_1_1core_1_1ToVectorEmitter.html#a3b88b609ead41693c60ba9a0631ed04e',1,'thrill::core::ToVectorEmitter']]],
-  ['vectors_5f',['vectors_',['../classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01false_01_4.html#a139a3810acb73fe50412517a34b7c5e3',1,'thrill::api::ZipWindowReader&lt; ZipWindowNode, false &gt;::vectors_()'],['../classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01true_01_4.html#a139a3810acb73fe50412517a34b7c5e3',1,'thrill::api::ZipWindowReader&lt; ZipWindowNode, true &gt;::vectors_()']]],
-  ['verbose_5f',['verbose_',['../classthrill_1_1api_1_1MemoryConfig.html#a86126da532c138842a42d8e9a52b0806',1,'thrill::api::MemoryConfig']]],
-  ['verbose_5fblock_5flife_5fcycle',['verbose_block_life_cycle',['../classfoxxll_1_1block__manager.html#a9066d19263a6012ac9cb2d72bfe42515',1,'foxxll::block_manager']]],
-  ['verbose_5fprocess_5f',['verbose_process_',['../classtlx_1_1CmdlineParser.html#a76c0d004bfb50442737216ec14314909',1,'tlx::CmdlineParser']]],
-  ['volatilekeytag',['VolatileKeyTag',['../namespacethrill_1_1api.html#a373d7a591766e54c1f88264fefb9bd0a',1,'thrill::api']]]
+  ['ui_5fcurr_5f',['ui_curr_',['../classthrill_1_1vfs_1_1glob__local_1_1SimpleGlobBase.html#a859eacf172008e8de4ac1535045d6210',1,'thrill::vfs::glob_local::SimpleGlobBase']]],
+  ['uniform',['uniform',['../classthrill_1_1common_1_1ReservoirSamplingFast.html#a6f1fe144396ce3510738ee8e8c0fcedd',1,'thrill::common::ReservoirSamplingFast']]],
+  ['union_5fnode_5f',['union_node_',['../classthrill_1_1api_1_1UnionNode_1_1RegisterParent.html#a768e4987900a7be053243d69d600ffb1',1,'thrill::api::UnionNode::RegisterParent']]],
+  ['unlink_5fon_5fopen',['unlink_on_open',['../classfoxxll_1_1disk__config.html#a6fe78887adbdf072ff088af877dbecf8',1,'foxxll::disk_config']]],
+  ['unsorted_5ffile_5f',['unsorted_file_',['../classthrill_1_1api_1_1SortNode.html#a816420c0e3b6a69ca3df4434dc8c95d0',1,'thrill::api::SortNode']]],
+  ['unsorted_5fwriter_5f',['unsorted_writer_',['../classthrill_1_1api_1_1SortNode.html#aec9042b732e2129eb439901e8d76290e',1,'thrill::api::SortNode']]],
+  ['use_5fbackground_5fthread_5f',['use_background_thread_',['../classthrill_1_1api_1_1SortNode.html#a17d4faa0ddcae3da8b8f4f11e868555d',1,'thrill::api::SortNode']]],
+  ['use_5fext_5ffile_5f',['use_ext_file_',['../classthrill_1_1api_1_1ReadBinaryNode.html#aafb3059e6955d24caf8356d04f5aecb5',1,'thrill::api::ReadBinaryNode']]],
+  ['use_5fidentity_5f',['use_identity_',['../classtlx_1_1radix__heap__detail_1_1IntegerRank.html#a495b26cf245e2d7a02061f8917057ea3',1,'tlx::radix_heap_detail::IntegerRank']]],
+  ['use_5fmix_5fstream_5f',['use_mix_stream_',['../classthrill_1_1api_1_1ReduceNode.html#ab2c4552c87902aff3cd748f9d39de5bb',1,'thrill::api::ReduceNode::use_mix_stream_()'],['../classthrill_1_1api_1_1ReduceToIndexNode.html#ab2c4552c87902aff3cd748f9d39de5bb',1,'thrill::api::ReduceToIndexNode::use_mix_stream_()'],['../classthrill_1_1core_1_1DefaultReduceConfig.html#ab2c4552c87902aff3cd748f9d39de5bb',1,'thrill::core::DefaultReduceConfig::use_mix_stream_()']]],
+  ['use_5fonly_5ffirst_5fsortstep',['use_only_first_sortstep',['../classtlx_1_1sort__strings__detail_1_1PS5ParametersDefault.html#af8f1ba2255bb6d665a1b7d0367d51b58',1,'tlx::sort_strings_detail::PS5ParametersDefault']]],
+  ['use_5fpost_5fthread_5f',['use_post_thread_',['../classthrill_1_1api_1_1ReduceNode.html#ad5cbd7d497b3933f17c69f5d71f6bec7',1,'thrill::api::ReduceNode::use_post_thread_()'],['../classthrill_1_1api_1_1ReduceToIndexNode.html#ad5cbd7d497b3933f17c69f5d71f6bec7',1,'thrill::api::ReduceToIndexNode::use_post_thread_()'],['../classthrill_1_1core_1_1DefaultReduceConfig.html#ad5cbd7d497b3933f17c69f5d71f6bec7',1,'thrill::core::DefaultReduceConfig::use_post_thread_()']]],
+  ['use_5fskip_5f',['use_skip_',['../classthrill_1_1api_1_1BernoulliSampleNode.html#a6ff0b9f15daef75ef0a33dd150ce8d98',1,'thrill::api::BernoulliSampleNode']]]
 ];

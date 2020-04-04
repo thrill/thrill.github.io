@@ -12,7 +12,7 @@ var classtlx_1_1AllocatorBase =
     [ "address", "classtlx_1_1AllocatorBase.html#ac76accbf197fcef37b3bebea103e4bfc", null ],
     [ "address", "classtlx_1_1AllocatorBase.html#a6fdb0e8aec957fe7b0473ab43a32d906", null ],
     [ "construct", "classtlx_1_1AllocatorBase.html#acddcb4eb6202d3d41f2afcc9933e1777", null ],
-    [ "construct", "classtlx_1_1AllocatorBase.html#a37b3525a584d58f9b0bf8cfa8bc52cca", null ],
+    [ "construct", "classtlx_1_1AllocatorBase.html#abd2bac188ba44f6b62d39716d2ed9a61", null ],
     [ "destroy", "classtlx_1_1AllocatorBase.html#a19ed9be1546e344955208e4ec59dd9a4", null ],
     [ "destroy", "classtlx_1_1AllocatorBase.html#a73ac79dce9c71cc39b3d1eb262116ab7", null ],
     [ "max_size", "classtlx_1_1AllocatorBase.html#ac2a85e463df4e95c1bf051cfb8237805", null ],

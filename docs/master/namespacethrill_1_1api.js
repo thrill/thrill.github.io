@@ -69,7 +69,7 @@ var namespacethrill_1_1api =
     [ "ZipWindowReader< ZipWindowNode, false >", "classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01false_01_4.html", "classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01false_01_4" ],
     [ "ZipWindowReader< ZipWindowNode, true >", "classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01true_01_4.html", "classthrill_1_1api_1_1ZipWindowReader_3_01ZipWindowNode_00_01true_01_4" ],
     [ "ZipWindowTraits< ReturnType(*)(Args...)>", "structthrill_1_1api_1_1ZipWindowTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4.html", "structthrill_1_1api_1_1ZipWindowTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4" ],
-    [ "ZipWindowTraits< ReturnType(ClassType::*)(Args...) const  >", "structthrill_1_1api_1_1ZipWindowTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4.html", "structthrill_1_1api_1_1ZipWindowTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4" ],
+    [ "ZipWindowTraits< ReturnType(ClassType::*)(Args...) const >", "structthrill_1_1api_1_1ZipWindowTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_4.html", "structthrill_1_1api_1_1ZipWindowTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_4" ],
     [ "ZipWindowTraits< ReturnType(ClassType::*)(Args...)>", "structthrill_1_1api_1_1ZipWindowTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_4.html", "structthrill_1_1api_1_1ZipWindowTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_4" ],
     [ "ZipWithIndexNode", "classthrill_1_1api_1_1ZipWithIndexNode.html", "classthrill_1_1api_1_1ZipWithIndexNode" ]
 ];

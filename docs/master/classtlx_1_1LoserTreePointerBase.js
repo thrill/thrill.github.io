@@ -1,6 +1,5 @@
 var classtlx_1_1LoserTreePointerBase =
 [
-    [ "Loser", "structtlx_1_1LoserTreePointerBase_1_1Loser.html", "structtlx_1_1LoserTreePointerBase_1_1Loser" ],
     [ "Source", "group__tlx__container__loser__tree.html#ga12092cf92cd4d6e1e7c5fde0fdff07ec", null ],
     [ "LoserTreePointerBase", "group__tlx__container__loser__tree.html#gad7d71e21ccc3956b99d091383c4ab616", null ],
     [ "LoserTreePointerBase", "group__tlx__container__loser__tree.html#ga3e6270f910a2024f4f4887e3258150c9", null ],

@@ -2,11 +2,12 @@ var classthrill_1_1api_1_1MergeNode =
 [
     [ "Pivot", "structthrill_1_1api_1_1MergeNode_1_1Pivot.html", "structthrill_1_1api_1_1MergeNode_1_1Pivot" ],
     [ "ReducePivots", "classthrill_1_1api_1_1MergeNode_1_1ReducePivots.html", "classthrill_1_1api_1_1MergeNode_1_1ReducePivots" ],
+    [ "RegisterParent", "classthrill_1_1api_1_1MergeNode_1_1RegisterParent.html", "classthrill_1_1api_1_1MergeNode_1_1RegisterParent" ],
     [ "Stats", "classthrill_1_1api_1_1MergeNode_1_1Stats.html", "classthrill_1_1api_1_1MergeNode_1_1Stats" ],
     [ "ArrayNumInputsSizeT", "classthrill_1_1api_1_1MergeNode.html#a26f31d2221fd5964db63cd3d9e450594", null ],
     [ "StatsTimer", "classthrill_1_1api_1_1MergeNode.html#a33d1c8b88bab0d567b08adae10771951", null ],
     [ "Super", "classthrill_1_1api_1_1MergeNode.html#a891fa9a850833efd80b9a9aced7b443c", null ],
-    [ "MergeNode", "classthrill_1_1api_1_1MergeNode.html#acdb359501c518f19a66d75703e863acd", null ],
+    [ "MergeNode", "classthrill_1_1api_1_1MergeNode.html#a2eecc320515876b53c97167e4029efb3", null ],
     [ "Dispose", "classthrill_1_1api_1_1MergeNode.html#ab184572dc4d3b603565e2a09315cfe5e", null ],
     [ "Execute", "classthrill_1_1api_1_1MergeNode.html#abaefef09f7c5e04a0c2c61538d6ab0e4", null ],
     [ "GetGlobalRanks", "classthrill_1_1api_1_1MergeNode.html#acc3694efd70821553e77c8720cd8b159", null ],

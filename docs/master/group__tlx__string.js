@@ -1,10 +1,10 @@
 var group__tlx__string =
 [
     [ "less_icase_asc", "structtlx_1_1less__icase__asc.html", [
-      [ "operator()", "structtlx_1_1less__icase__asc.html#a0f3599515dbf37239c2d0e3797d597bf", null ]
+      [ "operator()", "structtlx_1_1less__icase__asc.html#aba03cd13843d87da977e6e9ef67498ff", null ]
     ] ],
     [ "less_icase_desc", "structtlx_1_1less__icase__desc.html", [
-      [ "operator()", "structtlx_1_1less__icase__desc.html#a0f3599515dbf37239c2d0e3797d597bf", null ]
+      [ "operator()", "structtlx_1_1less__icase__desc.html#aba03cd13843d87da977e6e9ef67498ff", null ]
     ] ],
     [ "LevenshteinStandardICaseParameters", "structtlx_1_1LevenshteinStandardICaseParameters.html", [
       [ "char_equal", "structtlx_1_1LevenshteinStandardICaseParameters.html#a1aa27babd25f76b9fb821e7797748874", null ],
@@ -16,6 +16,7 @@ var group__tlx__string =
       [ "cost_insert_delete", "structtlx_1_1LevenshteinStandardParameters.html#aa2b1f0aaff1193840a5606b1c41a330d", null ],
       [ "cost_replace", "structtlx_1_1LevenshteinStandardParameters.html#acde19a6e13b252fec7473184680b2cd7", null ]
     ] ],
+    [ "appendline", "group__tlx__string.html#ga7de31bec5774af4c0a81b579dd87be53", null ],
     [ "base64_decode", "group__tlx__string.html#gac2775fbea220f27325aba0f8af1cc9a8", null ],
     [ "base64_decode", "group__tlx__string.html#gabe1e973cd3a2d5b7e55544d4c616da49", null ],
     [ "base64_encode", "group__tlx__string.html#ga691477f59c8496eec65e994ce3f6e6e5", null ],
@@ -45,10 +46,10 @@ var group__tlx__string =
     [ "equal_icase", "group__tlx__string.html#gad15c6b082515414b93a34b7ac0327df9", null ],
     [ "equal_icase", "group__tlx__string.html#ga118abe0d4d0cd1d90426121b626aeea9", null ],
     [ "equal_icase", "group__tlx__string.html#ga2c9c153df7b49712108276c9a48fe88e", null ],
-    [ "erase_all", "group__tlx__string.html#ga593df4d923a5f07d65ff39950e31e367", null ],
+    [ "erase_all", "group__tlx__string.html#gaa02a8cee5a6ee9d683fa5a77fda06913", null ],
     [ "erase_all", "group__tlx__string.html#ga290c6e7261f453c4774a0cf82586bf47", null ],
     [ "erase_all", "group__tlx__string.html#gacefd443f50a3e6123651a031eb1701c4", null ],
-    [ "erase_all", "group__tlx__string.html#ga86282247928444ece567ced18f0012b1", null ],
+    [ "erase_all", "group__tlx__string.html#ga3cd5bad774df90bb3314592e3e097ad8", null ],
     [ "erase_all", "group__tlx__string.html#ga7c0aa5a14584e80887d4afc8c34337f8", null ],
     [ "erase_all", "group__tlx__string.html#ga09e7dd3f20d8e54c8502c81d540f9916", null ],
     [ "escape_html", "group__tlx__string.html#gaa3ec7c7d258293a6891f016878d22f09", null ],
@@ -107,7 +108,7 @@ var group__tlx__string =
     [ "levenshtein_algorithm", "group__tlx__string.html#ga28296225d021e2ff9a1bedfa711b26fa", null ],
     [ "levenshtein_icase", "group__tlx__string.html#ga01fc1d66b4a6f822509d793576b2cce2", null ],
     [ "levenshtein_icase", "group__tlx__string.html#ga0d20af010f11fab72744484ef67e00b6", null ],
-    [ "pad", "group__tlx__string.html#ga03240bad0b02669f254c21c28009c21a", null ],
+    [ "pad", "group__tlx__string.html#ga60ca8653250ad56e209887e5e7183328", null ],
     [ "parse_hexdump", "group__tlx__string.html#ga81809bc5e0b69034f39659303baa4bf9", null ],
     [ "parse_si_iec_units", "group__tlx__string.html#ga58be0557b1b38913b28d947c935aed42", null ],
     [ "parse_si_iec_units", "group__tlx__string.html#ga42a656ed3586b515140cb71b312f0f9b", null ],

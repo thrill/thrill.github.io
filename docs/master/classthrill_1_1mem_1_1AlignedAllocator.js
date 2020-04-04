@@ -14,7 +14,7 @@ var classthrill_1_1mem_1_1AlignedAllocator =
     [ "AlignedAllocator", "classthrill_1_1mem_1_1AlignedAllocator.html#a9379be716b795fe56b3e1375283cc8e0", null ],
     [ "allocate", "classthrill_1_1mem_1_1AlignedAllocator.html#acc49e799fff83ac0952614d5e36b3237", null ],
     [ "allocate_bytes", "classthrill_1_1mem_1_1AlignedAllocator.html#a28938a092e61880f16eb041c6b927799", null ],
-    [ "base", "classthrill_1_1mem_1_1AlignedAllocator.html#abf971db5965d1c58d79760e329177000", null ],
+    [ "base", "classthrill_1_1mem_1_1AlignedAllocator.html#abf3e14b806d2fb7f6c428cb1375b9670", null ],
     [ "deallocate", "classthrill_1_1mem_1_1AlignedAllocator.html#a32360c6e0b0b34e8d91a0d0f7767b6ef", null ],
     [ "deallocate_bytes", "classthrill_1_1mem_1_1AlignedAllocator.html#ad98b95af1eab969a4f229c7004a5f511", null ],
     [ "operator!=", "classthrill_1_1mem_1_1AlignedAllocator.html#abaa1bffa8e08f6d7b3fb04c2a12f9687", null ],

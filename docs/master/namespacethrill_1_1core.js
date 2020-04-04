@@ -1,6 +1,5 @@
 var namespacethrill_1_1core =
 [
-    [ "hyperloglog", "namespacethrill_1_1core_1_1hyperloglog.html", null ],
     [ "BitStreamReader", "classthrill_1_1core_1_1BitStreamReader.html", "classthrill_1_1core_1_1BitStreamReader" ],
     [ "BitStreamWriter", "classthrill_1_1core_1_1BitStreamWriter.html", "classthrill_1_1core_1_1BitStreamWriter" ],
     [ "BufferedMultiwayMergeTree", "classthrill_1_1core_1_1BufferedMultiwayMergeTree.html", "classthrill_1_1core_1_1BufferedMultiwayMergeTree" ],

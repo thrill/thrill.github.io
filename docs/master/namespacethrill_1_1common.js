@@ -1,6 +1,5 @@
 var namespacethrill_1_1common =
 [
-    [ "qsort_local", "namespacethrill_1_1common_1_1qsort__local.html", null ],
     [ "alias_cast_helper", "structthrill_1_1common_1_1alias__cast__helper.html", "structthrill_1_1common_1_1alias__cast__helper" ],
     [ "AtomicMovable", "classthrill_1_1common_1_1AtomicMovable.html", "classthrill_1_1common_1_1AtomicMovable" ],
     [ "BinaryHeap", "classthrill_1_1common_1_1BinaryHeap.html", "classthrill_1_1common_1_1BinaryHeap" ],
@@ -11,7 +10,7 @@ var namespacethrill_1_1common =
     [ "ConcurrentQueue", "classthrill_1_1common_1_1ConcurrentQueue.html", "classthrill_1_1common_1_1ConcurrentQueue" ],
     [ "ErrnoException", "classthrill_1_1common_1_1ErrnoException.html", "classthrill_1_1common_1_1ErrnoException" ],
     [ "FunctionTraits< ReturnType(*)(Args...)>", "structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4.html", "structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07_5_08_07Args_8_8_8_08_4" ],
-    [ "FunctionTraits< ReturnType(ClassType::*)(Args...) const  >", "structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4.html", "structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_01_4" ],
+    [ "FunctionTraits< ReturnType(ClassType::*)(Args...) const >", "structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_4.html", "structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_01const_01_4" ],
     [ "FunctionTraits< ReturnType(ClassType::*)(Args...)>", "structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_4.html", "structthrill_1_1common_1_1FunctionTraits_3_01ReturnType_07ClassType_1_1_5_08_07Args_8_8_8_08_4" ],
     [ "HashCrc32Fallback", "structthrill_1_1common_1_1HashCrc32Fallback.html", "structthrill_1_1common_1_1HashCrc32Fallback" ],
     [ "HashDataSwitch", "structthrill_1_1common_1_1HashDataSwitch.html", "structthrill_1_1common_1_1HashDataSwitch" ],

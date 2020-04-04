@@ -1,7 +1,7 @@
 var classtlx_1_1ThreadBarrierSpin =
 [
     [ "ThreadBarrierSpin", "classtlx_1_1ThreadBarrierSpin.html#af7228eb31dcb6e3f0ab09106923e4ef7", null ],
-    [ "step", "classtlx_1_1ThreadBarrierSpin.html#aef44efce49e2e1c99c00fb249db7db06", null ],
+    [ "step", "classtlx_1_1ThreadBarrierSpin.html#a2bedb65d317d52038cf46caf43d0c61c", null ],
     [ "wait", "classtlx_1_1ThreadBarrierSpin.html#aa7147cff241694bcea94e9b281853624", null ],
     [ "wait_yield", "classtlx_1_1ThreadBarrierSpin.html#a270d3adbb1760835844863485b881700", null ],
     [ "step_", "classtlx_1_1ThreadBarrierSpin.html#a457fd583af5cd32c0a92d8c02f6db889", null ],

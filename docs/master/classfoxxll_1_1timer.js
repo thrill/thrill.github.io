@@ -1,14 +1,14 @@
 var classfoxxll_1_1timer =
 [
     [ "timer", "classfoxxll_1_1timer.html#af73b3cb0093363e9f9f021c4f03c98b6", null ],
-    [ "mseconds", "classfoxxll_1_1timer.html#a2d4cd1e012b82006d4b733d916bef040", null ],
+    [ "mseconds", "classfoxxll_1_1timer.html#a484f847befd028a0c99fb7c477d010d3", null ],
     [ "operator+=", "classfoxxll_1_1timer.html#a5b48407ec41316665b548c6c5c921543", null ],
     [ "reset", "classfoxxll_1_1timer.html#ad20897c5c8bd47f5d4005989bead0e55", null ],
-    [ "seconds", "classfoxxll_1_1timer.html#a2d2d5b27ce928633ac0fb1906a861838", null ],
+    [ "seconds", "classfoxxll_1_1timer.html#a229c06dbdb7df3141ac5a8e791a56b4e", null ],
     [ "start", "classfoxxll_1_1timer.html#a60de64d75454385b23995437f1d72669", null ],
     [ "stop", "classfoxxll_1_1timer.html#a8c528baf37154d347366083f0f816846", null ],
     [ "timestamp", "classfoxxll_1_1timer.html#a97ddd2dc6256011c51737ca9522418f8", null ],
-    [ "useconds", "classfoxxll_1_1timer.html#a6ba5e8061ac756dac4ce018d30eea240", null ],
+    [ "useconds", "classfoxxll_1_1timer.html#ae9b1cb0f5cfcf3b3bbf32023efe4f0fd", null ],
     [ "operator<<", "classfoxxll_1_1timer.html#a1e04048410c6ab335be41035fae4968c", null ],
     [ "accumulated", "classfoxxll_1_1timer.html#a394de0732b4948fd8a1008cd73c36198", null ],
     [ "is_real", "classfoxxll_1_1timer.html#a38a9d4be882bc9c8fbffe3cf40c45003", null ],
